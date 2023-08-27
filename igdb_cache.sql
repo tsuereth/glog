@@ -2452,7 +2452,7 @@ INSERT INTO game VALUES(2029,0,1579,-1,'','1','12,31,32','52549,52550','Evoland'
 INSERT INTO game VALUES(2031,0,47,-1,'1277','1','5,9,31','21684,95333','Wolfenstein: The New Order','1','1,17,18,22,23,39',1693159486,'https://www.igdb.com/games/wolfenstein-the-new-order');
 INSERT INTO game VALUES(2033,0,107,-1,'726','1,2,3','5','19982,19983,19984,19985,19987,65864','Call of Duty: Ghosts','1','1,18,20,21,23,39',1693065742,'https://www.igdb.com/games/call-of-duty-ghosts');
 INSERT INTO game VALUES(2042,0,372,-1,'','1,2,3','12,15,31,32','4225,4226','Magicka','','1,17,27,31',1692872452,'https://www.igdb.com/games/magicka');
-INSERT INTO game VALUES(2050,0,2715,49,'49,51,124,151,203,210,238,280,320,350','1,2,3','9,25,31','190022,190023','LEGO Marvel Super Heroes','2,4','1,17,27,35,40',1693098643,'https://www.igdb.com/games/lego-marvel-super-heroes');
+INSERT INTO game VALUES(2050,0,2715,49,'49,51,124,151,203,210,238,280,320,350','1,2,3','9,25,31','190022,190023','LEGO Marvel Super Heroes','2,4','1,17,27,35,40',1693161835,'https://www.igdb.com/games/lego-marvel-super-heroes');
 INSERT INTO game VALUES(2051,0,379,-1,'','1','10,33','51318,51320,51321,51322,94559,94566,94568,191863,191864,227761','OutRun','2','1,32',1692739321,'https://www.igdb.com/games/outrun');
 INSERT INTO game VALUES(2064,0,-1,-1,'','1','8,9,31,32','38506,38507','Antichamber','1','18',1692863485,'https://www.igdb.com/games/antichamber');
 INSERT INTO game VALUES(2072,0,1268,-1,'','1,2','15,16','4285,4286','Warlock: Master of the Arcane','3','17,41',1692095287,'https://www.igdb.com/games/warlock-master-of-the-arcane');
@@ -3228,7 +3228,7 @@ INSERT INTO game VALUES(26970,0,-1,-1,'','1','9,12,31,32','96773,120105,120106,1
 INSERT INTO game VALUES(26972,0,-1,-1,'','1,2,3','8,9,15,32','56904,56905,56906','Death Squared','3','35,40',1693127027,'https://www.igdb.com/games/death-squared');
 INSERT INTO game VALUES(27034,0,-1,-1,'','1','8,9,15,31,32','132569,132572','Linelight','4','1,38',1691115414,'https://www.igdb.com/games/linelight');
 INSERT INTO game VALUES(27094,0,-1,-1,'','1','9,31,32','44160,131171','Stories Untold','5','18,19',1693159210,'https://www.igdb.com/games/stories-untold');
-INSERT INTO game VALUES(27134,0,-1,-1,'','1,2,3','5,31,32','226553,226554','Deep Rock Galactic','1','1,18',1692993789,'https://www.igdb.com/games/deep-rock-galactic');
+INSERT INTO game VALUES(27134,0,-1,-1,'','1,2,3','5,31,32','226553,226554','Deep Rock Galactic','1','1,18',1693161814,'https://www.igdb.com/games/deep-rock-galactic');
 INSERT INTO game VALUES(27175,0,-1,-1,'','1','9,31,32','45587','Code 7','3,5','18,19,43',1692852597,'https://www.igdb.com/games/code-7');
 INSERT INTO game VALUES(27277,0,-1,-1,'','1','31,32,33','44355','Forma.8','4','1,18',1693099422,'https://www.igdb.com/games/forma-dot-8');
 INSERT INTO game VALUES(27367,0,-1,-1,'','1','8,9,30,31,32,33','44460,98243','Yoku''s Island Express','4','1,17',1693134913,'https://www.igdb.com/games/yokus-island-express');
@@ -3464,7 +3464,7 @@ INSERT INTO game VALUES(152061,0,-1,-1,'808','1,2,3,4','5,12,31','138563,138564'
 INSERT INTO game VALUES(152249,0,-1,-1,'124','1','5,12,31','139184,152903','Marvel''s Guardians of the Galaxy','2','1,18,27',1693134769,'https://www.igdb.com/games/marvels-guardians-of-the-galaxy');
 INSERT INTO game VALUES(165346,0,197,-1,'','1,2,3','5,31','146285,146286','Saints Row','2','1,38',1693156409,'https://www.igdb.com/games/saints-row--1');
 INSERT INTO game VALUES(201156,0,7875,-1,'1','1','31','171121,171122','Star Wars Jedi: Survivor','2','1,17,18',1692810750,'https://www.igdb.com/games/star-wars-jedi-survivor');
-INSERT INTO game VALUES(204350,8,864,-1,'2675','1','5,31','174439,174440','The Last of Us Part I','2','1,19,21,23',1693066743,'https://www.igdb.com/games/the-last-of-us-part-i');
+INSERT INTO game VALUES(204350,8,864,-1,'2675','1','5,31','174439,174440','The Last of Us Part I','2','1,19,21,23',1693161866,'https://www.igdb.com/games/the-last-of-us-part-i');
 INSERT INTO game VALUES(205064,0,-1,-1,'','1,2,3,4','9,13,15,32,33','181075','Last Call BBS','3','18,33',1692105987,'https://www.igdb.com/games/last-call-bbs');
 INSERT INTO game VALUES(208716,0,-1,-1,'','1','9,31','183862,191097','Shadow of Destiny','2','17,22,43',1690877572,'https://www.igdb.com/games/shadow-of-destiny');
 INSERT INTO game VALUES(215769,2,-1,-1,'451','1,2','5,12,31','221189','Cyberpunk 2077: Phantom Liberty','1,2','1,18,33,38',1693057052,'https://www.igdb.com/games/cyberpunk-2077-phantom-liberty');
