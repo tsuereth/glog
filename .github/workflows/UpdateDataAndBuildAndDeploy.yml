@@ -32,7 +32,7 @@ jobs:
         run: |
           ./update-game-metadata.pl \
             igdb_cache.sql \
-            ucyratl8z7mh37dwf43nvexgkuf58p \
+            jy5t8x2w2eqdc7bax2zx3rlne7eup4 \
             $TWITCH_CLIENT_SECRET
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
