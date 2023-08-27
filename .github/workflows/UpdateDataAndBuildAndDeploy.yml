@@ -1,0 +1,74 @@
+name: UpdateDataAndBuildAndDeploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  # Run on a schedule to keep data updated even if there's no new content.
+  schedule:
+    - cron: '0 12 * * 5'
+
+jobs:
+  UpdateDataAndBuildAndDeploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: shogo82148/actions-setup-perl@v1
+        with:
+          perl-version: 5
+          install-modules-with: cpanm
+          install-modules:
+            DBD::SQLite
+            DBI
+            HTTP::Request
+            LWP::Protocol::https
+            LWP::UserAgent
+
+      - name: UpdateData
+        env:
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+        run: |
+          ./update-game-metadata.pl \
+            igdb_cache.sql \
+            ucyratl8z7mh37dwf43nvexgkuf58p \
+            $TWITCH_CLIENT_SECRET
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add \
+            content/game/ \
+            igdb_cache.sql
+          git commit -m "[skip ci] Automatically-updated game data." || echo "No changes to commit."
+          git push
+
+      - name: SetupDotNet
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+
+      - name: BuildGlogGenerator
+        run: |
+          rm -rf GlogGeneratorBuild
+          dotnet build GlogGenerator/GlogGenerator.csproj --configuration Release --output GlogGeneratorBuild
+
+      - name: BuildStaticSite
+        run: |
+          rm -rf public
+          ./GlogGeneratorBuild/GlogGenerator -i . -t GlogGeneratorBuild/templates -o public
+
+      - name: Deploy
+        env:
+          DEPLOY_GLOG_PRIVATE_KEY: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
+        run: |
+          echo "$DEPLOY_GLOG_PRIVATE_KEY" > deploy-glog_id_rsa
+          chmod 0600 deploy-glog_id_rsa
+          rsync -vrtL --checksum --omit-dir-times --cvs-exclude --delete \
+            -e "ssh -p 31771 -i deploy-glog_id_rsa -o StrictHostKeyChecking=no" \
+            public/* \
+            "deploy-glog@tsuereth.com:/var/www/tsuereth_web/glog/"
+
+      - name: Cleanup
+        if: ${{ always() }}
+        run: |
+          rm -f deploy-glog_id_rsa

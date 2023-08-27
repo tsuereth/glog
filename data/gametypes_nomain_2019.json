@@ -1,0 +1,25 @@
+{
+	"cols": [
+		{"label": "Year", "type": "string"},
+		{"label": "Standalone Expansion", "type": "number"},
+		{"label": "Expansion", "type": "number"},
+		{"label": "DLC / Addon", "type": "number"}
+	],
+	"rows": [
+		{"c": [
+			{"v": "2015"}, {"v": 2}, {"v": 1}, {"v": 0}
+		]},
+		{"c": [
+			{"v": "2016"}, {"v": 1}, {"v": 0}, {"v": 3}
+		]},
+		{"c": [
+			{"v": "2017"}, {"v": 1}, {"v": 0}, {"v": 15}
+		]},
+		{"c": [
+			{"v": "2018"}, {"v": 1}, {"v": 4}, {"v": 4}
+		]},
+		{"c": [
+			{"v": "2019"}, {"v": 0}, {"v": 0}, {"v": 4}
+		]}
+	]
+}
