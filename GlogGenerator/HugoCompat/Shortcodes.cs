@@ -136,18 +136,18 @@ namespace GlogGenerator.HugoCompat
                 {
                     case "absimg":
                         var absimgParamsBuilder = new StringBuilder();
-                        if (namedArgs.ContainsKey("alt"))
+                        if (namedArgs.TryGetValue("alt", out var absimgAltArg))
                         {
-                            var escapedAltText = HttpUtility.HtmlEncode(namedArgs["alt"]);
+                            var escapedAltText = HttpUtility.HtmlEncode(absimgAltArg);
                             absimgParamsBuilder.Append(CultureInfo.InvariantCulture, $" alt=\"{escapedAltText}\"");
                         }
-                        if (namedArgs.ContainsKey("width"))
+                        if (namedArgs.TryGetValue("width", out var absimgWidthArg))
                         {
-                            absimgParamsBuilder.Append(CultureInfo.InvariantCulture, $" width=\"{namedArgs["width"]}\"");
+                            absimgParamsBuilder.Append(CultureInfo.InvariantCulture, $" width=\"{absimgWidthArg}\"");
                         }
-                        if (namedArgs.ContainsKey("height"))
+                        if (namedArgs.TryGetValue("height", out var absimgHeightArg))
                         {
-                            absimgParamsBuilder.Append(CultureInfo.InvariantCulture, $" height=\"{namedArgs["height"]}\"");
+                            absimgParamsBuilder.Append(CultureInfo.InvariantCulture, $" height=\"{absimgHeightArg}\"");
                         }
 
                         var absimgUrl = $"{site.BaseURL}{namedArgs["src"]}";
@@ -161,18 +161,18 @@ namespace GlogGenerator.HugoCompat
 
                     case "absvideo":
                         var absvideoParamsBuilder = new StringBuilder();
-                        if (namedArgs.ContainsKey("width"))
+                        if (namedArgs.TryGetValue("width", out var absvideoWidthArg))
                         {
-                            absvideoParamsBuilder.Append(CultureInfo.InvariantCulture, $" width=\"{namedArgs["width"]}\"");
+                            absvideoParamsBuilder.Append(CultureInfo.InvariantCulture, $" width=\"{absvideoWidthArg}\"");
                         }
-                        if (namedArgs.ContainsKey("height"))
+                        if (namedArgs.TryGetValue("height", out var absvideoHeightArg))
                         {
-                            absvideoParamsBuilder.Append(CultureInfo.InvariantCulture, $" height=\"{namedArgs["height"]}\"");
+                            absvideoParamsBuilder.Append(CultureInfo.InvariantCulture, $" height=\"{absvideoHeightArg}\"");
                         }
                         absvideoParamsBuilder.Append(" controls playsinline ");
-                        if (namedArgs.ContainsKey("alt"))
+                        if (namedArgs.TryGetValue("alt", out var absvideoAltArg))
                         {
-                            var escapedAltText = HttpUtility.HtmlEncode(namedArgs["alt"]);
+                            var escapedAltText = HttpUtility.HtmlEncode(absvideoAltArg);
                             absvideoParamsBuilder.Append(CultureInfo.InvariantCulture, $" alt=\"{escapedAltText}\"");
                         }
                         if (namedArgs.ContainsKey("autoplay"))
@@ -200,7 +200,16 @@ namespace GlogGenerator.HugoCompat
                         var chartDatafileJsonString = JsonConvert.SerializeObject(chartDatafileJson, Formatting.None);
                         var chartDataString = HttpUtility.JavaScriptStringEncode(chartDatafileJsonString);
 
-                        var chartType = namedArgs.ContainsKey("type") ? namedArgs["type"] : "BarChart";
+                        string chartType;
+                        if (namedArgs.TryGetValue("type", out var chartTypeArg))
+                        {
+                            chartType = chartTypeArg;
+                        }
+                        else
+                        {
+                            chartType = "BarChart";
+                        }
+
                         var chartOptionsPairs = namedArgs.Where(kv => !kv.Key.Equals("datafile", StringComparison.OrdinalIgnoreCase) && !kv.Key.Equals("type", StringComparison.OrdinalIgnoreCase));
                         var chartOptionsTextBuilder = new StringBuilder();
                         foreach (var chartOptionsPair in chartOptionsPairs.ToImmutableSortedDictionary())
@@ -226,22 +235,14 @@ namespace GlogGenerator.HugoCompat
                         }
 
                         #pragma warning disable CA5351 // Yeah MD5 is cryptographically insecure; this isn't security!
-                        string pageHash;
-                        using (var md5 = MD5.Create())
-                        {
-                            var hashInBytes = Encoding.UTF8.GetBytes(page.Permalink);
-                            var hashOutBytes = md5.ComputeHash(hashInBytes);
-                            pageHash = Convert.ToHexString(hashOutBytes);
-                        }
+                        var pageHashInBytes = Encoding.UTF8.GetBytes(page.Permalink);
+                        var pageHashOutBytes = MD5.HashData(pageHashInBytes);
+                        var pageHash = Convert.ToHexString(pageHashOutBytes);
 
-                        string chartHash;
-                        using (var md5 = MD5.Create())
-                        {
-                            var hashInString = JsonConvert.SerializeObject(namedArgs);
-                            var hashInBytes = Encoding.UTF8.GetBytes(hashInString);
-                            var hashOutBytes = md5.ComputeHash(hashInBytes);
-                            chartHash = Convert.ToHexString(hashOutBytes);
-                        }
+                        var chartHashInString = JsonConvert.SerializeObject(namedArgs);
+                        var chartHashInBytes = Encoding.UTF8.GetBytes(chartHashInString);
+                        var chartHashOutBytes = MD5.HashData(chartHashInBytes);
+                        var chartHash = Convert.ToHexString(chartHashOutBytes);
                         #pragma warning restore CA5351
 
                         replacementText = $@"<script type=""text/javascript"">
