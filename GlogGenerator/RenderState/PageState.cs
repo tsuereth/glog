@@ -162,9 +162,14 @@ namespace GlogGenerator.RenderState
 
             page.TransformMarkdownContent(site);
 
-            var pageOutputDirParts = pageData.PermalinkRelative.Split('/', StringSplitOptions.RemoveEmptyEntries);
-            var pageOutputDir = Path.Combine(pageOutputDirParts);
-            page.OutputPathRelative = Path.Combine(pageOutputDir, "index.html");
+            var outputPathRelative = pageData.PermalinkRelative;
+            if (!outputPathRelative.EndsWith('/'))
+            {
+                outputPathRelative += '/';
+            }
+            outputPathRelative += "index.html";
+
+            page.OutputPathRelative = outputPathRelative;
             page.RenderTemplateName = "single";
 
             return page;
@@ -194,9 +199,14 @@ namespace GlogGenerator.RenderState
 
             page.TransformMarkdownContent(site);
 
-            var pageOutputDirParts = postData.PermalinkRelative.Split('/', StringSplitOptions.RemoveEmptyEntries);
-            var pageOutputDir = Path.Combine(pageOutputDirParts);
-            page.OutputPathRelative = Path.Combine(pageOutputDir, "index.html");
+            var outputPathRelative = postData.PermalinkRelative;
+            if (!outputPathRelative.EndsWith('/'))
+            {
+                outputPathRelative += '/';
+            }
+            outputPathRelative += "index.html";
+
+            page.OutputPathRelative = outputPathRelative;
             page.RenderTemplateName = "single";
 
             return page;

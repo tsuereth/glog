@@ -6,7 +6,7 @@ namespace GlogGenerator.Data
 {
     public class GameData
     {
-        public static readonly string GameContentBaseDir = Path.Combine("content", "game");
+        public static readonly string GameContentBaseDir = "content/game";
 
         public string PermalinkRelative
         {

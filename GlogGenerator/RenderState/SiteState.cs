@@ -289,22 +289,23 @@ namespace GlogGenerator.RenderState
                 Title = "Posts",
                 PageType = "posts",
                 Permalink = $"{this.BaseURL}post/",
-                OutputPathRelative = Path.Combine("post", "index.html"),
+                OutputPathRelative = "post/index.html",
                 RenderTemplateName = "list",
                 LinkedPosts = allPosts,
             };
             this.ContentRoutes.Add(postsListPage.OutputPathRelative, postsListPage);
 
-            var historyPage = new PageState()
-            {
-                HideDate = true,
-                HideTitle = true,
-                Permalink = this.BaseURL, // BUG?: every history page has the BaseURL permalink!
-                RenderTemplateName = "history",
-            };
             const int pagesPerHistoryPage = 10;
             for (var historyPageNum = 0; (historyPageNum * pagesPerHistoryPage) < allPostPages.Count; ++historyPageNum)
             {
+                var historyPage = new PageState()
+                {
+                    HideDate = true,
+                    HideTitle = true,
+                    Permalink = this.BaseURL, // BUG?: every history page has the BaseURL permalink!
+                    RenderTemplateName = "history",
+                };
+
                 var pageOneBased = historyPageNum + 1;
 
                 var firstPostNum = historyPageNum * pagesPerHistoryPage;
@@ -349,7 +350,7 @@ namespace GlogGenerator.RenderState
                 }
                 else
                 {
-                    historyPage.OutputPathRelative = Path.Combine("page", pageOneBased.ToString(CultureInfo.InvariantCulture), "index.html");
+                    historyPage.OutputPathRelative = $"page/{pageOneBased}/index.html";
                 }
 
                 this.ContentRoutes.Add(historyPage.OutputPathRelative, historyPage);
@@ -368,7 +369,7 @@ namespace GlogGenerator.RenderState
             var categoriesIndex = new PageState()
             {
                 HideDate = true,
-                OutputPathRelative = Path.Combine("category", "index.html"),
+                OutputPathRelative = "category/index.html",
                 Permalink = $"{this.BaseURL}category/",
                 RenderTemplateName = "termslist",
                 Title = "Categories",
@@ -387,7 +388,7 @@ namespace GlogGenerator.RenderState
             var gamesIndex = new PageState()
             {
                 HideDate = true,
-                OutputPathRelative = Path.Combine("game", "index.html"),
+                OutputPathRelative = "game/index.html",
                 Permalink = $"{this.BaseURL}game/",
                 RenderTemplateName = "termslist",
                 Title = "Games",
@@ -406,7 +407,7 @@ namespace GlogGenerator.RenderState
             var platformsIndex = new PageState()
             {
                 HideDate = true,
-                OutputPathRelative = Path.Combine("platform", "index.html"),
+                OutputPathRelative = "platform/index.html",
                 Permalink = $"{this.BaseURL}platform/",
                 RenderTemplateName = "termslist",
                 Title = "Platforms",
@@ -425,7 +426,7 @@ namespace GlogGenerator.RenderState
             var ratingsIndex = new PageState()
             {
                 HideDate = true,
-                OutputPathRelative = Path.Combine("rating", "index.html"),
+                OutputPathRelative = "rating/index.html",
                 Permalink = $"{this.BaseURL}rating/",
                 RenderTemplateName = "termslist",
                 Title = "Ratings",
@@ -444,7 +445,7 @@ namespace GlogGenerator.RenderState
             var tagsIndex = new PageState()
             {
                 HideDate = true,
-                OutputPathRelative = Path.Combine("tag", "index.html"),
+                OutputPathRelative = "tag/index.html",
                 Permalink = $"{this.BaseURL}tag/",
                 RenderTemplateName = "termslist",
                 Title = "Tags",

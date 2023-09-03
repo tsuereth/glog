@@ -8,7 +8,7 @@ namespace GlogGenerator.Data
 {
     public class PostData
     {
-        public static readonly string PostContentBaseDir = Path.Combine("content", "post");
+        public static readonly string PostContentBaseDir = "content/post";
 
         public string SourceFilePath { get; private set; } = string.Empty;
 
