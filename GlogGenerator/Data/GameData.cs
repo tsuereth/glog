@@ -22,8 +22,7 @@ namespace GlogGenerator.Data
             get
             {
                 var urlizedDir = TemplateFunctionsStringRenderer.Urlize(this.Title, htmlEncode: false, terminologySpecial: true);
-                var urlizedDirParts = urlizedDir.Split('/');
-                return Path.Combine("game", Path.Combine(urlizedDirParts));
+                return $"game/{urlizedDir}";
             }
         }
 

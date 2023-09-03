@@ -12,6 +12,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <AssemblyAttribute Include="GlogGenerator.ProjectProperties">
+      <_Parameter1>$(MSBuildProjectDirectory)/..</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Markdig" Version="0.31.0" />
     <PackageReference Include="Mono.Options" Version="6.12.0.148" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />

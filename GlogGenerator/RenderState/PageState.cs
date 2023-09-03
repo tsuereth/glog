@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
-using Antlr4.StringTemplate;
 using GlogGenerator.Data;
 using GlogGenerator.HugoCompat;
 using Markdig;
 
 namespace GlogGenerator.RenderState
 {
-    public class PageState
+    public class PageState : IOutputContent
     {
         public List<CategoryData> Categories { get; set; } = new List<CategoryData>();
 
@@ -24,13 +24,16 @@ namespace GlogGenerator.RenderState
 
         public bool HideTitle { get; set; }
 
-        public string OutputHtmlPath { get; set; } = string.Empty;
+        // This path should ALWAYS use unix-style path separators '/'
+        public string OutputPathRelative { get; set; } = string.Empty;
 
         public string Permalink { get; set; } = string.Empty;
 
         public List<PlatformData> Platforms { get; set; } = new List<PlatformData>();
 
         public List<RatingData> Ratings { get; set; } = new List<RatingData>();
+
+        public string RenderTemplateName { get; set; } = string.Empty;
 
         public List<string> Tags { get; set; } = new List<string>();
 
@@ -87,30 +90,6 @@ namespace GlogGenerator.RenderState
         public List<string> Terms { get; set; } = new List<string>();
 
         public string TermsType { get; set; } = string.Empty;
-
-        public void RenderAndWriteFile(SiteState site, Template template, string filePath)
-        {
-            template.Add("site", site);
-            template.Add("page", this);
-
-            var rendered = template.Render(CultureInfo.InvariantCulture);
-            rendered = rendered.ReplaceLineEndings("\n");
-
-            var outputDir = Path.GetDirectoryName(filePath);
-            if (string.IsNullOrEmpty(outputDir))
-            {
-                throw new ArgumentException($"Page output path {filePath} has empty dirname");
-            }
-
-            var canonicalOutputDirPath = outputDir + Path.DirectorySeparatorChar;
-            if (!Directory.Exists(canonicalOutputDirPath))
-            {
-                Directory.CreateDirectory(canonicalOutputDirPath);
-            }
-
-            var outputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
-            File.WriteAllText(filePath, rendered, outputEncoding);
-        }
 
         private void TransformContentFromText(string text)
         {
@@ -185,7 +164,8 @@ namespace GlogGenerator.RenderState
 
             var pageOutputDirParts = pageData.PermalinkRelative.Split('/', StringSplitOptions.RemoveEmptyEntries);
             var pageOutputDir = Path.Combine(pageOutputDirParts);
-            page.OutputHtmlPath = Path.Combine(site.OutputBasePath, pageOutputDir, "index.html");
+            page.OutputPathRelative = Path.Combine(pageOutputDir, "index.html");
+            page.RenderTemplateName = "single";
 
             return page;
         }
@@ -216,7 +196,8 @@ namespace GlogGenerator.RenderState
 
             var pageOutputDirParts = postData.PermalinkRelative.Split('/', StringSplitOptions.RemoveEmptyEntries);
             var pageOutputDir = Path.Combine(pageOutputDirParts);
-            page.OutputHtmlPath = Path.Combine(site.OutputBasePath, pageOutputDir, "index.html");
+            page.OutputPathRelative = Path.Combine(pageOutputDir, "index.html");
+            page.RenderTemplateName = "single";
 
             return page;
         }
@@ -242,7 +223,8 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputHtmlPath = Path.Combine(site.OutputBasePath, categoryData.OutputDirRelative, "index.html");
+            page.OutputPathRelative = $"{categoryData.OutputDirRelative}/index.html";
+            page.RenderTemplateName = "list";
 
             return page;
         }
@@ -271,7 +253,8 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputHtmlPath = Path.Combine(site.OutputBasePath, gameData.OutputDirRelative, "index.html");
+            page.OutputPathRelative = $"{gameData.OutputDirRelative}/index.html";
+            page.RenderTemplateName = "list_game";
 
             return page;
         }
@@ -297,7 +280,8 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputHtmlPath = Path.Combine(site.OutputBasePath, platformData.OutputDirRelative, "index.html");
+            page.OutputPathRelative = $"{platformData.OutputDirRelative}/index.html";
+            page.RenderTemplateName = "list";
 
             return page;
         }
@@ -323,7 +307,8 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputHtmlPath = Path.Combine(site.OutputBasePath, ratingData.OutputDirRelative, "index.html");
+            page.OutputPathRelative = $"{ratingData.OutputDirRelative}/index.html";
+            page.RenderTemplateName = "list";
 
             return page;
         }
@@ -349,9 +334,56 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputHtmlPath = Path.Combine(site.OutputBasePath, tagData.OutputDirRelative, "index.html");
+            page.OutputPathRelative = $"{tagData.OutputDirRelative}/index.html";
+            page.RenderTemplateName = "list_tag";
 
             return page;
+        }
+
+        public void WriteFile(SiteState site, string filePath)
+        {
+            var template = site.GetTemplateGroup().GetInstanceOf(this.RenderTemplateName);
+            template.Add("site", site);
+            template.Add("page", this);
+
+            var rendered = template.Render(CultureInfo.InvariantCulture);
+            rendered = rendered.ReplaceLineEndings("\n");
+
+            var outputDir = Path.GetDirectoryName(filePath);
+            if (string.IsNullOrEmpty(outputDir))
+            {
+                throw new ArgumentException($"Page output path {filePath} has empty dirname");
+            }
+
+            var canonicalOutputDirPath = outputDir + Path.DirectorySeparatorChar;
+            if (!Directory.Exists(canonicalOutputDirPath))
+            {
+                Directory.CreateDirectory(canonicalOutputDirPath);
+            }
+
+            var outputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
+            File.WriteAllText(filePath, rendered, outputEncoding);
+        }
+
+        public void WriteHttpListenerResponse(SiteState site, ref HttpListenerResponse response)
+        {
+            response.ContentType = "text/html";
+
+            var template = site.GetTemplateGroup().GetInstanceOf(this.RenderTemplateName);
+            template.Add("site", site);
+            template.Add("page", this);
+
+            var rendered = template.Render(CultureInfo.InvariantCulture);
+            var renderedBytes = Encoding.UTF8.GetBytes(rendered);
+
+            response.ContentLength64 = renderedBytes.LongLength;
+
+            using (var byteWriter = new BinaryWriter(response.OutputStream))
+            {
+                byteWriter.Write(renderedBytes, 0, renderedBytes.Length);
+
+                byteWriter.Close();
+            }
         }
     }
 }
