@@ -55,7 +55,7 @@ jobs:
       - name: BuildStaticSite
         run: |
           rm -rf public
-          ./GlogGeneratorBuild/GlogGenerator -i . -t GlogGeneratorBuild/templates -o public
+          ./GlogGeneratorBuild/GlogGenerator build -i . -t GlogGeneratorBuild/templates -h "https://tsuereth.com" -o public
 
       - name: Deploy
         env:

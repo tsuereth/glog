@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.IO;
 using GlogGenerator.HugoCompat;
 
 namespace GlogGenerator.Data
@@ -20,8 +19,7 @@ namespace GlogGenerator.Data
             get
             {
                 var urlizedDir = TemplateFunctionsStringRenderer.Urlize(this.Name, htmlEncode: false, terminologySpecial: true);
-                var urlizedDirParts = urlizedDir.Split('/');
-                return Path.Combine("rating", Path.Combine(urlizedDirParts));
+                return $"rating/{urlizedDir}";
             }
         }
 

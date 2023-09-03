@@ -48,11 +48,12 @@ namespace GlogGenerator.HugoCompat
                 throw new FileNotFoundException($"Couldn't find \"{filePath}\" in base path \"{this.BasePath}\"");
             }
 
-            var resolveSearchPaths = new List<string>(this.searchPaths.Count + 1);
+            var resolveSearchPaths = new List<string>(this.searchPaths.Count + 2);
             if (referenceBasePath != null)
             {
                 resolveSearchPaths.Add(referenceBasePath);
             }
+            resolveSearchPaths.Add(this.BasePath);
             resolveSearchPaths.AddRange(this.searchPaths);
 
             foreach (var searchPath in resolveSearchPaths)
