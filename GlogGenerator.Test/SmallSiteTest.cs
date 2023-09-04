@@ -29,7 +29,10 @@ namespace GlogGenerator.Test
             site.LoadContent();
 
             // Ensure the output directory is clean, first.
-            Directory.Delete(staticSiteOutputBasePath, recursive: true);
+            if (Directory.Exists(staticSiteOutputBasePath))
+            {
+                Directory.Delete(staticSiteOutputBasePath, recursive: true);
+            }
             BuildStaticSite.Build(site, staticSiteOutputBasePath);
 
             var actualFilePaths = Directory.EnumerateFiles(staticSiteOutputBasePath, "*.*", SearchOption.AllDirectories).ToList();
