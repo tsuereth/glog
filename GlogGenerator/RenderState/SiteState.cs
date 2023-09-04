@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using GlogGenerator.Data;
@@ -356,13 +355,14 @@ namespace GlogGenerator.RenderState
                 this.ContentRoutes.Add(historyPage.OutputPathRelative, historyPage);
             }
 
+            var rssFeedItems = Math.Min(allPostPages.Count, 15);
             var rssFeedPage = new PageState()
             {
                 Date = allPosts[0].Date,
                 OutputPathRelative = "index.xml",
                 Permalink = this.BaseURL,
                 RenderTemplateName = "rss",
-                HistoryPosts = allPostPages.GetRange(0, 15),
+                HistoryPosts = allPostPages.GetRange(0, rssFeedItems),
             };
             this.ContentRoutes.Add(rssFeedPage.OutputPathRelative, rssFeedPage);
 
