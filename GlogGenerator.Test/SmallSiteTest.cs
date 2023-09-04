@@ -1,3 +1,5 @@
+using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using GlogGenerator.RenderState;
@@ -20,6 +22,9 @@ namespace GlogGenerator.Test
             var site = SiteState.FromInputFilesBasePath(inputFilesBasePath, templateFilesBasePath);
 
             site.BaseURL = $"{hostOrigin}{pathPrefix}"; // TODO: ensure proper slash-usage between origin and path
+
+            // For testing, pretend that our "build date" is some constant date.
+            site.BuildDate = DateTimeOffset.Parse("2023-09-04T17:00:00.0+00:00", CultureInfo.InvariantCulture);
 
             site.LoadContent();
 
