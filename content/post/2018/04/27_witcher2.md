@@ -11,7 +11,7 @@ Back in, <i>wow, January?</i>, I had already resolved to skip over a lot of {{% 
 
 Then the game crashed.  And when I brought it back up, almost an hour of my progress was lost.  There were no autosaves from when I'd crafted and equipped items, entered and left buildings, or acquired and made progress in quests.  <i>Ugh.</i>
 
-Over the following few months, I told myself that I'd muster up the patience to try again.  But I never did.  I recalled that {{% game "The Elder Scrolls V: Skyrim Special Edition" %}}Skyrim{{% /game %}} <i>also</i> screwed me out of progress a handful of times, such that its quick-save became a reflex -- but Skyrim was actually fun to play.  Witcher 2 just wasn't.  The fun was in seeing larger world events unfold, and in hearing Geralt give some NPC a dressing-down; all the rest of the game just felt like a chore between story beats.
+Over the following few months, I told myself that I'd muster up the patience to try again.  But I never did.  I recalled that {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}Skyrim{{% /game %}} <i>also</i> screwed me out of progress a handful of times, such that its quick-save became a reflex -- but Skyrim was actually fun to play.  Witcher 2 just wasn't.  The fun was in seeing larger world events unfold, and in hearing Geralt give some NPC a dressing-down; all the rest of the game just felt like a chore between story beats.
 
 So I watched <a href="https://www.youtube.com/watch?v=ieH6PrNIgmI">a movie of the game's cinematics</a>, instead.  (And, props to this movie maker for some impressive direction and editing, particularly in the mid-game sidequest montage.)
 

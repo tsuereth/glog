@@ -9,7 +9,7 @@ title = "Monkey See, Monkey Do"
 
 +++
 
-Other than {{% game "The Elder Scrolls V: Skyrim Special Edition" %}}Skyrim{{% /game %}}, this is the game I've been dumping the most hours into.
+Other than {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}Skyrim{{% /game %}}, this is the game I've been dumping the most hours into.
 
 I'm over 2200 puzzles deep, now.  I will watch this game die.
 

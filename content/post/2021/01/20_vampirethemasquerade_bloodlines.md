@@ -11,7 +11,7 @@ It's got top-tier writing and voice acting in an immersive sandbox, filled with 
 
 <i>Note that I played with the <a href="https://www.moddb.com/mods/vtmb-unofficial-patch">VTMB Unofficial Patch</a> which, as far as I know, is responsible for the game being <b>at all</b> playable on modern PCs.</i>
 
-In some ways, Bloodlines holds up way better than a 15-year-old game should.  From the start its written dialog and voice direction show impressive amounts of personality and polish -- acclimating to the game's mythos-babble about vampire clans and factions is a delight, thanks to <a href="https://vtmb.fandom.com/wiki/Smiling_Jack">Jack</a>'s anarcho-hedonistic <i>punk</i> attitude.  Almost all of Bloodlines's characters feel distinctive and engaging, in stark contrast to, say, {{% game "The Elder Scrolls V: Skyrim Special Edition" %}}generic nords{{% /game %}} or {{% game "Fallout 4" %}}generic Bostonians{{% /game %}}.
+In some ways, Bloodlines holds up way better than a 15-year-old game should.  From the start its written dialog and voice direction show impressive amounts of personality and polish -- acclimating to the game's mythos-babble about vampire clans and factions is a delight, thanks to <a href="https://vtmb.fandom.com/wiki/Smiling_Jack">Jack</a>'s anarcho-hedonistic <i>punk</i> attitude.  Almost all of Bloodlines's characters feel distinctive and engaging, in stark contrast to, say, {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}generic nords{{% /game %}} or {{% game "Fallout 4" %}}generic Bostonians{{% /game %}}.
 
 As a product of its time (two years pre-{{% game "The Elder Scrolls IV: Oblivion" %}}Oblivion{{% /game %}}), it's not hugely surprising that this game's Los Angeles isn't quite the scale of a modern-day open world.  The overworld isn't even fully connected; you can only roam freely within a handful of small, city-block-sized sections, and move between those sections using a fast-travel map.
 
@@ -36,5 +36,5 @@ And yet even with its jankiness, its archaicness, and an unbalanced and anticlim
 I have no idea what to expect from the still-being-delayed {{% game "Vampire: The Masquerade: Bloodlines 2" %}}Bloodlines 2{{% /game %}}, but I'm glad I got caught up with this franchise.
 
 <b>Better than</b>: {{% game "Fallout 4" %}}Fallout 4{{% /game %}}  
-<b>Not as good as</b>: {{% game "Deus Ex: Mankind Divided" %}}Deus Ex: Mankind Divided{{% /game %}}, {{% game "The Elder Scrolls V: Skyrim Special Edition" %}}The Elder Scrolls V: Skyrim Special Edition{{% /game %}}  
+<b>Not as good as</b>: {{% game "Deus Ex: Mankind Divided" %}}Deus Ex: Mankind Divided{{% /game %}}, {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}The Elder Scrolls V: Skyrim - Special Edition{{% /game %}}  
 <b>Arguably as good as</b>: {{% game "Deus Ex: Human Revolution" %}}Deus Ex: Human Revolution{{% /game %}}

@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-In its first few hours, {{% game "The Witcher 3: Wild Hunt" %}}Witcher 3{{% /game %}} felt "good," but not spectacular.  Not a revelatory experience that overtook my expectations, like {{% game "The Legend of Zelda: Breath of the Wild" %}}Breath of the Wild{{% /game %}}; more like a better-written (and better-voiced) iteration on {{% game "The Elder Scrolls V: Skyrim Special Edition" %}}Skyrim{{% /game %}}.
+In its first few hours, {{% game "The Witcher 3: Wild Hunt" %}}Witcher 3{{% /game %}} felt "good," but not spectacular.  Not a revelatory experience that overtook my expectations, like {{% game "The Legend of Zelda: Breath of the Wild" %}}Breath of the Wild{{% /game %}}; more like a better-written (and better-voiced) iteration on {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}Skyrim{{% /game %}}.
 
 A meaningful improvement, certainly, over {{% game "The Witcher 2: Assassins of Kings Enhanced Edition" %}}Witcher 2{{% /game %}}.  Combat is a lot more accessible, as it sticks to simple and intuitive attacks from the start, easing very slowly into things like bombs and oils.  The menus, particularly for managing character inventory -- <i>so much</i> better than before.  And maybe the most important enhancement, given my last moments with the second game, is frequent auto-saves.  (I also haven't encountered any crashes yet, fingers crossed.)
 

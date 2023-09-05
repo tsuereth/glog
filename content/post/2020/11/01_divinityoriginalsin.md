@@ -19,12 +19,12 @@ What I mean is that combat became rife with abrupt and often deadly turns which 
 
 Out-of-combat gameplay wasn't exactly a walk in the park, either.  Character prep in this game is <i>work</i>.  There were so many ability types to research, so many situational pros or cons to each weapon, so many magic scrolls and grenades and other items to stock up on; oh, and of course, each party member has their own separate inventory so I needed to manage each character's items one by one.
 
-Some of my favorite modern RPGs, like {{% game "The Elder Scrolls V: Skyrim Special Edition" %}}Skyrim{{% /game %}} or {{% game "The Witcher 3: Wild Hunt" %}}Witcher 3{{% /game %}}, are clear mechanical simplifications of their predecessors -- fewer skill and ability nuances, smaller lists of character options, even blunter storytelling.  And while it's charmingly cynical to say that these games are "dumbed down," they nevertheless delivered the content I wanted in <i>accessible</i> and <i>convenient</i> packages.
+Some of my favorite modern RPGs, like {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}Skyrim{{% /game %}} or {{% game "The Witcher 3: Wild Hunt" %}}Witcher 3{{% /game %}}, are clear mechanical simplifications of their predecessors -- fewer skill and ability nuances, smaller lists of character options, even blunter storytelling.  And while it's charmingly cynical to say that these games are "dumbed down," they nevertheless delivered the content I wanted in <i>accessible</i> and <i>convenient</i> packages.
 
 Divinity: Original Sin definitely had some content I wanted: the list of side-quests looked huge! and there were so many map areas I'd yet to reveal.  There was just too much "filler" in the way, the pages and pages of pace-breaking exposition and reference material, the meticulous inventory management and lengthy die-and-retry loops... I guess some folks are into those aspects of classic PC RPGs, but they're not for me.
 
 <b>Better than</b>: {{% game "Dragon's Dogma: Dark Arisen" %}}Dragon's Dogma: Dark Arisen{{% /game %}}, {{% game "Planescape: Torment - Enhanced Edition" %}}Planescape: Torment - Enhanced Edition{{% /game %}}  
-<b>Not as good as</b>: {{% game "The Elder Scrolls V: Skyrim Special Edition" %}}The Elder Scrolls V: Skyrim Special Edition{{% /game %}}, {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
+<b>Not as good as</b>: {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}The Elder Scrolls V: Skyrim - Special Edition{{% /game %}}, {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
 <b>This game gives me low hopes</b>: for other recent-ish CRPGs like {{% game "Pillars of Eternity" %}}Pillars of Eternity{{% /game %}} and {{% game "Wasteland 2" %}}Wasteland 2{{% /game %}}.
 
 <i>Progress: Solved the murder mystery, I guess.</i>

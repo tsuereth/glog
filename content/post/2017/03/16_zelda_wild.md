@@ -31,7 +31,7 @@ Then again, it occurs to me that {{% game "The Legend of Zelda: Ocarina of Time"
 Despite some performance issues and its story's shortcomings, I extracted nearly 100 hours of enchanting and/or exhilirating adventure out of Breath of the Wild, with no regrets.  It's pretty great.
 
 <b>Better than</b>: {{% game "The Legend of Zelda: Ocarina of Time 3D" %}}The Legend of Zelda: Ocarina of Time 3D{{% /game %}}  
-<b>Not as good as</b>: in terms of content richness, {{% game "The Elder Scrolls V: Skyrim Special Edition" %}}The Elder Scrolls V: Skyrim Special Edition{{% /game %}} and its DLCs; although Breath of the Wild's own DLCs could change this.  
+<b>Not as good as</b>: in terms of content richness, {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}The Elder Scrolls V: Skyrim - Special Edition{{% /game %}} and its DLCs; although Breath of the Wild's own DLCs could change this.  
 <b>Can't wait to play the high-performance remaster</b>: ten years from now, assuming that Nintendo is still in business by then.
 
 <i>Progress: Rescued the four things, killed the evil shit, all 120 shrines found</i>
