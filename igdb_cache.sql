@@ -2873,7 +2873,7 @@ INSERT INTO game VALUES(8803,0,-1,-1,'','1','25','21640,21641','God Hand','2','1
 INSERT INTO game VALUES(8807,0,745,-1,'','1','9','21669,21671,51840','Scribblenauts','4','33,34,35',1692540649,'https://www.igdb.com/games/scribblenauts');
 INSERT INTO game VALUES(8814,0,4494,-1,'','1,2','14,32','39153,116447','QWOP','4','1,27',1692966279,'https://www.igdb.com/games/qwop');
 INSERT INTO game VALUES(8818,0,1193,-1,'','1','12,13,15','23164,38447','Starpoint Gemini 2','','1,18,33,38',1693520552,'https://www.igdb.com/games/starpoint-gemini-2');
-INSERT INTO game VALUES(8822,0,-1,-1,'','1','4,25,32','129977,129980,192504','Mitsurugi Kamui Hikae','2','1',1693832564,'https://www.igdb.com/games/mitsurugi-kamui-hikae');
+INSERT INTO game VALUES(8822,0,-1,-1,'','1','4,25,32','129977,129980,192504','Mitsurugi Kamui Hikae','2','1',1693944571,'https://www.igdb.com/games/mitsurugi-kamui-hikae');
 INSERT INTO game VALUES(8862,10,1201,-1,'','1,2,3','4,8,25,31,32','35214,130737','Guacamelee! Super Turbo Championship Edition','4','1,17,27',1693905096,'https://www.igdb.com/games/guacamelee-super-turbo-championship-edition');
 INSERT INTO game VALUES(8864,4,554,-1,'127','1','12,15,16,31,32','37308','Shadowrun: Dragonfall - Director''s Cut','3','17,18,33',1693905151,'https://www.igdb.com/games/shadowrun-dragonfall-directors-cut');
 INSERT INTO game VALUES(8879,10,-1,-1,'','1','5,8,31,32','34704','Super Time Force Ultra','','1',1693512950,'https://www.igdb.com/games/super-time-force-ultra');
