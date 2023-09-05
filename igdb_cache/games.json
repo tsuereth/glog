@@ -1029,6 +1029,7 @@
       202081
     ],
     "name": "Assassin's Creed Brotherhood",
+    "name_glogOverride": "Assassin's Creed: Brotherhood",
     "player_perspectives": [
       2
     ],
@@ -1653,6 +1654,7 @@
       83747
     ],
     "name": "Star Wars: Jedi Knight II - Jedi Outcast",
+    "name_glogOverride": "Star Wars Jedi Knight II: Jedi Outcast",
     "player_perspectives": [
       1,
       2
@@ -1686,6 +1688,7 @@
       225597
     ],
     "name": "Star Wars: Episode I - Battle for Naboo",
+    "name_glogOverride": "Star Wars: Episode I: Battle for Naboo",
     "player_perspectives": [
       2
     ],
@@ -1849,6 +1852,7 @@
       136746
     ],
     "name": "Sam & Max Hit the Road",
+    "name_glogOverride": "Sam &amp; Max Hit the Road",
     "player_perspectives": [
       4
     ],
@@ -1882,6 +1886,7 @@
       8390
     ],
     "name": "Brütal Legend",
+    "name_glogOverride": "Br&uuml;tal Legend",
     "player_perspectives": [
       2
     ],
@@ -2466,6 +2471,7 @@
       86299
     ],
     "name": "Command & Conquer: Red Alert",
+    "name_glogOverride": "Command &amp; Conquer: Red Alert",
     "player_perspectives": [
       3
     ],
@@ -2930,6 +2936,7 @@
       218684
     ],
     "name": "Final Fantasy XI Online",
+    "name_glogOverride": "Final Fantasy XI",
     "player_perspectives": [
       2
     ],
@@ -5051,6 +5058,7 @@
       224687
     ],
     "name": "Command & Conquer",
+    "name_glogOverride": "Command &amp; Conquer",
     "player_perspectives": [
       3
     ],
@@ -5752,6 +5760,7 @@
       2279
     ],
     "name": "Sam & Max: Save the World",
+    "name_glogOverride": "Sam &amp; Max: Save the World",
     "player_perspectives": [
       2,
       5
@@ -6058,6 +6067,7 @@
       88755
     ],
     "name": "Command & Conquer: Red Alert 3",
+    "name_glogOverride": "Command &amp; Conquer: Red Alert 3",
     "player_perspectives": [
       3
     ],
@@ -6465,6 +6475,7 @@
       3701
     ],
     "name": "Syndicate",
+    "name_glogOverride": "Syndicate (2012)",
     "player_perspectives": [
       1
     ],
@@ -7749,6 +7760,7 @@
       224813
     ],
     "name": "Donkey Kong",
+    "name_glogOverride": "Donkey Kong '94",
     "player_perspectives": [
       4
     ],
@@ -8621,6 +8633,7 @@
       205388
     ],
     "name": "Tomb Raider",
+    "name_glogOverride": "Tomb Raider (2013)",
     "player_perspectives": [
       2
     ],
@@ -8900,6 +8913,7 @@
       174230
     ],
     "name": "Tales of Hearts: Anime Movie Edition",
+    "name_glogOverride": "Tales of Hearts",
     "player_perspectives": [
       3,
       4
@@ -9270,6 +9284,7 @@
       145902
     ],
     "name": "Ōkami",
+    "name_glogOverride": "Okami",
     "player_perspectives": [
       2
     ],
@@ -9342,6 +9357,7 @@
       5211
     ],
     "name": "SimCity",
+    "name_glogOverride": "SimCity (2013)",
     "player_perspectives": [
       3
     ],
@@ -9568,6 +9584,7 @@
       221108
     ],
     "name": "Ratchet & Clank",
+    "name_glogOverride": "Ratchet &amp; Clank",
     "player_perspectives": [
       2
     ],
@@ -9862,6 +9879,7 @@
       225039
     ],
     "name": "Beyond Good & Evil",
+    "name_glogOverride": "Beyond Good &amp; Evil",
     "player_perspectives": [
       1,
       2
@@ -10236,6 +10254,7 @@
       3069
     ],
     "name": "Star Wars: 1313",
+    "name_glogOverride": "Star Wars 1313",
     "player_perspectives": [
       2
     ],
@@ -10765,6 +10784,7 @@
       100075
     ],
     "name": "Sin & Punishment: Star Successor",
+    "name_glogOverride": "Sin &amp; Punishment: Star Successor",
     "player_perspectives": [
       2
     ],
@@ -10860,6 +10880,7 @@
       35805
     ],
     "name": "Pokémon Pearl Version",
+    "name_glogOverride": "Pok&eacute;mon Pearl",
     "player_perspectives": [
       3,
       4
@@ -10930,6 +10951,7 @@
       224866
     ],
     "name": "Pokémon Red Version",
+    "name_glogOverride": "Pok&eacute;mon Red",
     "player_perspectives": [
       3,
       4
@@ -11479,6 +11501,7 @@
       105916
     ],
     "name": "Mega Man & Bass",
+    "name_glogOverride": "Mega Man &amp; Bass",
     "player_perspectives": [
       4
     ],
@@ -11834,6 +11857,7 @@
       218677
     ],
     "name": "Ratchet & Clank Future: Tools of Destruction",
+    "name_glogOverride": "Ratchet &amp; Clank Future: Tools of Destruction",
     "player_perspectives": [
       2
     ],
@@ -12244,6 +12268,7 @@
       27083
     ],
     "name": "Might & Magic: Clash of Heroes",
+    "name_glogOverride": "Might &amp; Magic: Clash of Heroes",
     "player_perspectives": [
       3
     ],
@@ -12438,6 +12463,7 @@
       202816
     ],
     "name": "Beyond Good & Evil 2",
+    "name_glogOverride": "Beyond Good &amp; Evil 2",
     "player_perspectives": [
       2
     ],
@@ -12572,6 +12598,7 @@
       172352
     ],
     "name": "Alone in the Dark",
+    "name_glogOverride": "Alone in the Dark (2008)",
     "player_perspectives": [
       1,
       2
@@ -13663,6 +13690,7 @@
       180184
     ],
     "name": "Sonic & All-Stars Racing Transformed",
+    "name_glogOverride": "Sonic &amp; All-Stars Racing Transformed",
     "player_perspectives": [
       2
     ],
@@ -14120,6 +14148,7 @@
       134790
     ],
     "name": "Punch-Out!!",
+    "name_glogOverride": "Punch-Out!! (2009)",
     "player_perspectives": [
       2
     ],
@@ -14437,6 +14466,7 @@
       77993
     ],
     "name": "Zack & Wiki: Quest for Barbaros' Treasure",
+    "name_glogOverride": "Zack &amp; Wiki: Quest for Barbaros' Treasure",
     "player_perspectives": [
       4
     ],
@@ -15123,6 +15153,7 @@
       19806
     ],
     "name": "Prince of Persia",
+    "name_glogOverride": "Prince of Persia (2008)",
     "player_perspectives": [
       2
     ],
@@ -15347,6 +15378,7 @@
       42368
     ],
     "name": "Mad Max",
+    "name_glogOverride": "Mad Max (2015)",
     "player_perspectives": [
       2
     ],
@@ -16589,6 +16621,7 @@
       106631
     ],
     "name": "Superbrothers: Sword & Sworcery EP",
+    "name_glogOverride": "Superbrothers: Sword &amp; Sworcery EP",
     "player_perspectives": [
       4
     ],
@@ -16715,6 +16748,7 @@
       7535
     ],
     "name": "Banjo-Kazooie: Nuts & Bolts",
+    "name_glogOverride": "Banjo-Kazooie: Nuts &amp; Bolts",
     "player_perspectives": [
       1,
       2,
@@ -17955,6 +17989,7 @@
       107360
     ],
     "name": "Sid Meier's Civilization V: Gods & Kings",
+    "name_glogOverride": "Sid Meier's Civilization V: Gods &amp; Kings",
     "player_perspectives": [
       3
     ],
@@ -18132,6 +18167,7 @@
       226313
     ],
     "name": "Mario & Luigi: Superstar Saga",
+    "name_glogOverride": "Mario &amp; Luigi: Superstar Saga",
     "player_perspectives": [
       4
     ],
@@ -18164,6 +18200,7 @@
       8772
     ],
     "name": "Mario & Luigi: Bowser's Inside Story",
+    "name_glogOverride": "Mario &amp; Luigi: Bowser's Inside Story",
     "player_perspectives": [
       4
     ],
@@ -18196,6 +18233,7 @@
       212158
     ],
     "name": "Mario & Luigi: Partners in Time",
+    "name_glogOverride": "Mario &amp; Luigi: Partners in Time",
     "player_perspectives": [
       4
     ],
@@ -18229,6 +18267,7 @@
       8777
     ],
     "name": "Mario & Luigi: Dream Team",
+    "name_glogOverride": "Mario &amp; Luigi: Dream Team",
     "player_perspectives": [
       3,
       4
@@ -18567,6 +18606,7 @@
       225608
     ],
     "name": "Pokémon Puzzle League",
+    "name_glogOverride": "Pok&eacute;mon Puzzle League",
     "player_perspectives": [
       4
     ],
@@ -18697,6 +18737,7 @@
       171307
     ],
     "name": "Kirby & the Amazing Mirror",
+    "name_glogOverride": "Kirby &amp; The Amazing Mirror",
     "player_perspectives": [
       4
     ],
@@ -19580,6 +19621,7 @@
       10858
     ],
     "name": "Star Wars: Rogue Squadron II - Rogue Leader",
+    "name_glogOverride": "Star Wars: Rogue Squadron II: Rogue Leader",
     "player_perspectives": [
       2
     ],
@@ -19614,6 +19656,7 @@
       10861
     ],
     "name": "Star Wars: Rogue Squadron III - Rebel Strike",
+    "name_glogOverride": "Star Wars: Rogue Squadron III: Rebel Strike",
     "player_perspectives": [
       2
     ],
@@ -19739,6 +19782,7 @@
       92271
     ],
     "name": "Universal Studios Theme Parks Adventure",
+    "name_glogOverride": "Universal Studios Theme Park Adventure",
     "player_perspectives": [
       2
     ],
@@ -20003,6 +20047,7 @@
       194987
     ],
     "name": "A Boy and His Blob",
+    "name_glogOverride": "A Boy and His Blob (2009)",
     "player_perspectives": [
       4
     ],
@@ -20123,6 +20168,7 @@
       18126
     ],
     "name": "D4: Dark Dreams Don't Die - Season 1",
+    "name_glogOverride": "D4: Dark Dreams Don't Die",
     "player_perspectives": [
       2
     ],
@@ -20957,6 +21003,7 @@
       12900
     ],
     "name": "Strider",
+    "name_glogOverride": "Strider (2014)",
     "player_perspectives": [
       4
     ],
@@ -21057,6 +21104,7 @@
       178057
     ],
     "name": "SimEarth: The Living Planet",
+    "name_glogOverride": "SimEarth",
     "player_perspectives": [
       3
     ],
@@ -21332,6 +21380,7 @@
       45096
     ],
     "name": "The Witness",
+    "name_glogOverride": "The Witness (2016)",
     "player_perspectives": [
       1
     ],
@@ -22055,6 +22104,7 @@
       18650
     ],
     "name": "Shadow Warrior",
+    "name_glogOverride": "Shadow Warrior (2013)",
     "player_perspectives": [
       1
     ],
@@ -23081,6 +23131,7 @@
       128887
     ],
     "name": "Rise & Shine",
+    "name_glogOverride": "Rise &amp; Shine",
     "player_perspectives": [
       4
     ],
@@ -23310,6 +23361,7 @@
       16354
     ],
     "name": "Bionic Commando",
+    "name_glogOverride": "Bionic Commando (2009)",
     "player_perspectives": [
       2
     ],
@@ -23369,6 +23421,7 @@
       140301
     ],
     "name": "Dante's Inferno",
+    "name_glogOverride": "Dante's Inferno (2010)",
     "player_perspectives": [
       2
     ],
@@ -23550,6 +23603,7 @@
       16633
     ],
     "name": "Kane & Lynch: Dead Men",
+    "name_glogOverride": "Kane &amp; Lynch: Dead Men",
     "player_perspectives": [
       2
     ],
@@ -23698,6 +23752,7 @@
       16748
     ],
     "name": "Ilomilo",
+    "name_glogOverride": "ilomilo",
     "player_perspectives": [
       2
     ],
@@ -23883,6 +23938,7 @@
       178455
     ],
     "name": "Tron: Evolution",
+    "name_glogOverride": "TRON: Evolution",
     "player_perspectives": [
       2
     ],
@@ -24298,6 +24354,7 @@
       113422
     ],
     "name": "Inside",
+    "name_glogOverride": "INSIDE (2016)",
     "player_perspectives": [
       4
     ],
@@ -24477,6 +24534,7 @@
       17486
     ],
     "name": "Papo & Yo",
+    "name_glogOverride": "Papo &amp; Yo",
     "player_perspectives": [
       2
     ],
@@ -24569,6 +24627,7 @@
       17546
     ],
     "name": "Space Run: Fast and Safe Delivery",
+    "name_glogOverride": "Space Run",
     "player_perspectives": [
       3
     ],
@@ -24695,6 +24754,7 @@
       122255
     ],
     "name": "SimTower",
+    "name_glogOverride": "SimTower: The Vertical Empire",
     "player_perspectives": [
       4
     ],
@@ -24900,6 +24960,7 @@
       48089
     ],
     "name": "RiME",
+    "name_glogOverride": "Rime",
     "player_perspectives": [
       2
     ],
@@ -24934,6 +24995,7 @@
       126466
     ],
     "name": "Rush",
+    "name_glogOverride": "RUSH",
     "player_perspectives": [
       3
     ],
@@ -25470,6 +25532,7 @@
       19390
     ],
     "name": "Spelunky Classic",
+    "name_glogOverride": "Spelunky",
     "player_perspectives": [
       4
     ],
@@ -26034,6 +26097,7 @@
       227754
     ],
     "name": "ToeJam & Earl",
+    "name_glogOverride": "ToeJam &amp; Earl",
     "player_perspectives": [
       3
     ],
@@ -27073,6 +27137,7 @@
       104194
     ],
     "name": "Conan",
+    "name_glogOverride": "Conan (2007)",
     "player_perspectives": [
       2
     ],
@@ -27201,6 +27266,7 @@
       129342
     ],
     "name": "Ibb & Obb",
+    "name_glogOverride": "Ibb and Obb",
     "player_perspectives": [
       4
     ],
@@ -27618,6 +27684,7 @@
       228434
     ],
     "name": "Sonic & Knuckles",
+    "name_glogOverride": "Sonic &amp; Knuckles",
     "player_perspectives": [
       4
     ],
@@ -27745,6 +27812,7 @@
       22834
     ],
     "name": "SimAnt",
+    "name_glogOverride": "SimAnt: The Electronic Ant Colony",
     "player_perspectives": [
       3,
       4
@@ -27838,6 +27906,7 @@
       64333
     ],
     "name": "Zero Escape: Nine Hours, Nine Persons, Nine Doors",
+    "name_glogOverride": "Nine Hours, Nine Persons, Nine Doors",
     "player_perspectives": [
       1,
       5
@@ -28477,6 +28546,7 @@
       99633
     ],
     "name": "Phantasy Star Online Episode I & II",
+    "name_glogOverride": "Phantasy Star Online Episode I &amp; II",
     "player_perspectives": [
       2
     ],
@@ -29178,6 +29248,7 @@
       47799
     ],
     "name": "Qbeh-1: The Atlas Cube",
+    "name_glogOverride": "QBEH-1: The Atlas Cube",
     "player_perspectives": [
       1,
       7
@@ -29250,6 +29321,7 @@
       179783
     ],
     "name": "Swords & Soldiers",
+    "name_glogOverride": "Swords &amp; Soldiers",
     "player_perspectives": [
       4
     ],
@@ -29279,6 +29351,7 @@
       47683
     ],
     "name": "Detective Grimoire: Secret of the Swamp",
+    "name_glogOverride": "Detective Grimoire",
     "player_perspectives": [
       1,
       4
@@ -29710,6 +29783,7 @@
       58600
     ],
     "name": "Hitman",
+    "name_glogOverride": "HITMAN (2016)",
     "player_perspectives": [
       2
     ],
@@ -30047,6 +30121,7 @@
       162327
     ],
     "name": "Trials of Mana",
+    "name_glogOverride": "Seiken Densetsu 3",
     "player_perspectives": [
       3
     ],
@@ -30367,6 +30442,7 @@
       196426
     ],
     "name": "The Room",
+    "name_glogOverride": "The Room (2012)",
     "player_perspectives": [
       1
     ],
@@ -30397,6 +30473,7 @@
       97225
     ],
     "name": "Epistory: Typing Chronicles",
+    "name_glogOverride": "Epistory",
     "player_perspectives": [
       3
     ],
@@ -30565,6 +30642,7 @@
       25673
     ],
     "name": "Universe Sandbox Legacy",
+    "name_glogOverride": "Universe Sandbox",
     "player_perspectives": [
       4
     ],
@@ -31190,6 +31268,7 @@
       171909
     ],
     "name": "Mass Effect 2: Firewalker Pack",
+    "name_glogOverride": "Mass Effect 2: The Firewalker Pack",
     "player_perspectives": [
       2
     ],
@@ -31941,6 +32020,7 @@
       96941
     ],
     "name": "Ink",
+    "name_glogOverride": "INK",
     "player_perspectives": [
       4
     ],
@@ -32160,6 +32240,7 @@
       185108
     ],
     "name": "Rise of the Tomb Raider: Baba Yaga - The Temple of the Witch",
+    "name_glogOverride": "Rise of the Tomb Raider: Baba Yaga: The Temple of the Witch",
     "player_perspectives": [
       2
     ],
@@ -32192,6 +32273,7 @@
       110634
     ],
     "name": "Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness - Episode Two",
+    "name_glogOverride": "Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness, Episode 2",
     "player_perspectives": [
       3
     ],
@@ -32303,6 +32385,7 @@
       110633
     ],
     "name": "Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness - Episode One",
+    "name_glogOverride": "Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness, Episode 1",
     "player_perspectives": [
       3
     ],
@@ -32609,6 +32692,7 @@
       83627
     ],
     "name": "VA-11 Hall-A: Cyberpunk Bartender Action",
+    "name_glogOverride": "VA-11 HALL-A: Cyberpunk Bartender Action",
     "player_perspectives": [
       5
     ],
@@ -32941,6 +33025,7 @@
       29935
     ],
     "name": "Fract Osc",
+    "name_glogOverride": "Fract OSC",
     "player_perspectives": [
       1
     ],
@@ -33514,6 +33599,7 @@
       109263
     ],
     "name": "Ōkamiden",
+    "name_glogOverride": "Okamiden",
     "player_perspectives": [
       2
     ],
@@ -33664,6 +33750,7 @@
       31521
     ],
     "name": "Epoch",
+    "name_glogOverride": "EPOCH (2014)",
     "player_perspectives": [],
     "themes": [
       1,
@@ -34891,6 +34978,7 @@
       95322
     ],
     "name": "Prey",
+    "name_glogOverride": "Prey (2017)",
     "player_perspectives": [
       1
     ],
@@ -35021,6 +35109,7 @@
       154522
     ],
     "name": "God of War",
+    "name_glogOverride": "God of War (2018)",
     "player_perspectives": [
       2
     ],
@@ -35237,6 +35326,7 @@
       59172
     ],
     "name": "Pokémon Picross",
+    "name_glogOverride": "Pok&eacute;mon Picross",
     "player_perspectives": [
       4
     ],
@@ -35584,6 +35674,7 @@
       184934
     ],
     "name": "The Witcher 2: Assassins of Kings - Enhanced Edition",
+    "name_glogOverride": "The Witcher 2: Assassins of Kings Enhanced Edition",
     "player_perspectives": [
       2
     ],
@@ -35614,6 +35705,7 @@
       129638
     ],
     "name": "Ōkami HD",
+    "name_glogOverride": "Okami HD",
     "player_perspectives": [
       2
     ],
@@ -35715,6 +35807,7 @@
       89173
     ],
     "name": "Final Fantasy: Crystal Chronicles - My Life as a King",
+    "name_glogOverride": "Final Fantasy Crystal Chronicles: My Life as a King",
     "player_perspectives": [
       2
     ],
@@ -36249,6 +36342,7 @@
       214651
     ],
     "name": "Saints Row IV: Enter the Dominatrix",
+    "name_glogOverride": "Saints Row IV - Enter the Dominatrix",
     "player_perspectives": [
       2
     ],
@@ -36302,6 +36396,7 @@
       121886
     ],
     "name": "Bomberman",
+    "name_glogOverride": "Bomberman (2005)",
     "player_perspectives": [
       3
     ],
@@ -36415,6 +36510,7 @@
       138824
     ],
     "name": "Replay: VHS is not dead",
+    "name_glogOverride": "Replay - VHS is not dead",
     "player_perspectives": [],
     "themes": [
       1
@@ -36565,6 +36661,7 @@
     "id": 23003,
     "involved_companies": [],
     "name": "Hard Truck: Apocalypse",
+    "name_glogOverride": "Hard Truck Apocalypse",
     "player_perspectives": [],
     "themes": [
       1
@@ -36633,6 +36730,7 @@
       59320
     ],
     "name": "Saints Row IV: How the Saints Save Christmas",
+    "name_glogOverride": "Saints Row IV - How the Saints Save Christmas",
     "player_perspectives": [],
     "themes": [
       1
@@ -36762,6 +36860,7 @@
       96882
     ],
     "name": "Hackmud",
+    "name_glogOverride": "hackmud",
     "player_perspectives": [
       5
     ],
@@ -36850,6 +36949,7 @@
       43432
     ],
     "name": "Sorcery! Parts 1 & 2",
+    "name_glogOverride": "Sorcery! Parts 1 &amp; 2",
     "player_perspectives": [
       5
     ],
@@ -37008,6 +37108,7 @@
       40877
     ],
     "name": "Shenzhen I/O",
+    "name_glogOverride": "SHENZHEN I/O",
     "player_perspectives": [
       3
     ],
@@ -37447,6 +37548,7 @@
       43830
     ],
     "name": "Mark of the Ninja: Special Edition DLC",
+    "name_glogOverride": "Mark of the Ninja: Special Edition",
     "player_perspectives": [
       4
     ],
@@ -37859,6 +37961,7 @@
       98742
     ],
     "name": "Hacknet: Labyrinths",
+    "name_glogOverride": "Hacknet - Labyrinths",
     "player_perspectives": [
       5
     ],
@@ -39215,6 +39318,7 @@
       57237
     ],
     "name": "Horizon Zero Dawn: The Frozen Wilds",
+    "name_glogOverride": "Horizon Zero Dawn - The Frozen Wilds",
     "player_perspectives": [
       2
     ],
@@ -39249,6 +39353,7 @@
       51110
     ],
     "name": "Shadow of the Colossus",
+    "name_glogOverride": "Shadow of the Colossus (2018)",
     "player_perspectives": [
       2
     ],
@@ -39515,6 +39620,7 @@
       223778
     ],
     "name": "Doubutsu no Mori",
+    "name_glogOverride": "Animal Forest",
     "player_perspectives": [
       3
     ],
@@ -39548,6 +39654,7 @@
       200503
     ],
     "name": "The Legend of Zelda: Ocarina of Time - Master Quest",
+    "name_glogOverride": "The Legend of Zelda: Ocarina of Time Master Quest",
     "player_perspectives": [
       2
     ],
@@ -39580,6 +39687,7 @@
       61679
     ],
     "name": "The Legend of Zelda: Four Swords - Anniversary Edition",
+    "name_glogOverride": "The Legend of Zelda: Four Swords Anniversary Edition",
     "player_perspectives": [
       3
     ],
@@ -39713,6 +39821,7 @@
       61183
     ],
     "name": "Mario vs. Donkey Kong: Minis March Again!",
+    "name_glogOverride": "Mario vs. Donkey Kong: Minis March Again",
     "player_perspectives": [
       4
     ],
@@ -39874,6 +39983,7 @@
       66927
     ],
     "name": "The LEGO Ninjago Movie Video Game",
+    "name_glogOverride": "LEGO Ninjago Movie Video Game",
     "player_perspectives": [
       2
     ],
@@ -39975,6 +40085,7 @@
       53420
     ],
     "name": "Final Fantasy XV: Windows Edition",
+    "name_glogOverride": "Final Fantasy XV Windows Edition",
     "player_perspectives": [
       2
     ],
@@ -40090,6 +40201,7 @@
       61260
     ],
     "name": "My Nintendo Picross: The Legend of Zelda Twilight Princess",
+    "name_glogOverride": "My Nintendo Picross: The Legend of Zelda: Twilight Princess",
     "player_perspectives": [],
     "themes": [],
     "updated_at": 1682798860,
@@ -40170,6 +40282,7 @@
       73803
     ],
     "name": "20,000 Leagues Above the Clouds",
+    "name_glogOverride": "20000 Leagues Above the Clouds",
     "player_perspectives": [],
     "themes": [
       17
@@ -40327,6 +40440,7 @@
       65282
     ],
     "name": "Zone of The Enders: The 2nd Runner Mars",
+    "name_glogOverride": "Zone of the Enders: The 2nd Runner M&forall;RS",
     "player_perspectives": [
       7
     ],
@@ -41176,6 +41290,7 @@
       59166
     ],
     "name": "Phoenix Wright: Ace Attorney - Spirit of Justice: Special Episode - Turnabout Time Traveler",
+    "name_glogOverride": "Phoenix Wright: Ace Attorney - Spirit of Justice - Turnabout Time Traveler",
     "player_perspectives": [
       1,
       2,
@@ -41209,6 +41324,7 @@
       59167
     ],
     "name": "Phoenix Wright: Ace Attorney - Spirit of Justice: Phoenix Wright - Asinine Attorney",
+    "name_glogOverride": "Phoenix Wright: Ace Attorney - Spirit of Justice - Phoenix Wright: Asinine Attorney",
     "player_perspectives": [
       1,
       2,
@@ -41241,6 +41357,7 @@
       59168
     ],
     "name": "Phoenix Wright: Ace Attorney - Spirit of Justice: Apollo Justice - Asinine Attorney",
+    "name_glogOverride": "Phoenix Wright: Ace Attorney - Spirit of Justice - Apollo Justice: Asinine Attorney",
     "player_perspectives": [
       1,
       2,
@@ -41456,6 +41573,7 @@
       60480
     ],
     "name": "Dyo",
+    "name_glogOverride": "DYO",
     "player_perspectives": [
       4
     ],
@@ -41481,6 +41599,7 @@
       65861
     ],
     "name": "Cypher",
+    "name_glogOverride": "Cypher (2018)",
     "player_perspectives": [
       1
     ],
@@ -41624,6 +41743,7 @@
       128650
     ],
     "name": "Eliza",
+    "name_glogOverride": "Eliza (2019)",
     "player_perspectives": [
       1
     ],
@@ -41650,6 +41770,7 @@
     "id": 94138,
     "involved_companies": [],
     "name": "Cubots: The Origins",
+    "name_glogOverride": "CUBOTS - The Origins",
     "player_perspectives": [],
     "themes": [
       18
@@ -42292,6 +42413,7 @@
       97229
     ],
     "name": "Exapunks",
+    "name_glogOverride": "EXAPUNKS",
     "player_perspectives": [
       3
     ],
@@ -42508,6 +42630,7 @@
       71433
     ],
     "name": "Nonogram: Master's Legacy",
+    "name_glogOverride": "Nonogram - Master's Legacy",
     "player_perspectives": [],
     "themes": [],
     "updated_at": 1685765500,
@@ -42573,6 +42696,7 @@
       190289
     ],
     "name": "God of War Ragnarök",
+    "name_glogOverride": "God of War: Ragnarok",
     "player_perspectives": [
       2
     ],
@@ -42635,6 +42759,7 @@
       108827
     ],
     "name": "Hades",
+    "name_glogOverride": "Hades (2020)",
     "player_perspectives": [
       3
     ],
@@ -43344,6 +43469,7 @@
       170211
     ],
     "name": "PictoQuest: The Cursed Grids",
+    "name_glogOverride": "PictoQuest",
     "player_perspectives": [],
     "themes": [
       17
@@ -43372,6 +43498,7 @@
       128541
     ],
     "name": "Dreamo",
+    "name_glogOverride": "DREAMO",
     "player_perspectives": [],
     "themes": [
       38,
@@ -43604,6 +43731,7 @@
       86675
     ],
     "name": "Molek-Syntez",
+    "name_glogOverride": "MOLEK-SYNTEZ",
     "player_perspectives": [
       3
     ],
@@ -43749,6 +43877,7 @@
     "id": 131784,
     "involved_companies": [],
     "name": "Borderlands 3: Guns, Love and Tentacles - The Marriage of Wainwright & Hammerlock",
+    "name_glogOverride": "Borderlands 3: Guns, Love, and Tentacles",
     "player_perspectives": [
       1
     ],
@@ -43869,6 +43998,7 @@
       101997
     ],
     "name": "Borderlands 3: Bounty of Blood - A Fistful of Redemption",
+    "name_glogOverride": "Borderlands 3: Bounty of Blood",
     "player_perspectives": [],
     "themes": [],
     "updated_at": 1693847405,
@@ -44280,6 +44410,7 @@
       116411
     ],
     "name": "Nerts!: Online",
+    "name_glogOverride": "NERTS! Online",
     "player_perspectives": [
       3
     ],
@@ -44566,6 +44697,7 @@
       146286
     ],
     "name": "Saints Row",
+    "name_glogOverride": "Saints Row (2022)",
     "player_perspectives": [
       2
     ],
@@ -44821,6 +44953,7 @@
       220350
     ],
     "name": "Super Mario RPG",
+    "name_glogOverride": "Super Mario RPG (2023)",
     "player_perspectives": [
       3
     ],

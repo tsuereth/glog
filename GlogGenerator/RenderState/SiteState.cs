@@ -202,8 +202,20 @@ namespace GlogGenerator.RenderState
             foreach (var gamePath in gamePaths)
             {
                 var gameData = GameData.FromFilePath(gamePath);
-                if (gameData.IgdbId.HasValue && (this.IgdbCache.GetGame(gameData.IgdbId.Value) != null))
+
+                // FIXME: this is a temporary debugging shunt to find title mismatches!
+                if (gameData.IgdbId.HasValue)
                 {
+                    var igdbGameData = this.IgdbCache.GetGame(gameData.IgdbId.Value);
+                    if (igdbGameData != null)
+                    {
+                        var igdbGameName = igdbGameData.NameForGlog ?? igdbGameData.Name;
+                        if (!gameData.Title.Equals(igdbGameName, StringComparison.Ordinal))
+                        {
+                            throw new InvalidDataException($"Title mismatch! local is \"{gameData.Title}\" but IGDB is \"{igdbGameName}\"");
+                        }
+                    }
+
                     continue;
                 }
 
