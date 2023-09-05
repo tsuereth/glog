@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 using GlogGenerator.HugoCompat;
+using GlogGenerator.IgdbApi;
 
 namespace GlogGenerator.Data
 {
@@ -47,6 +48,103 @@ namespace GlogGenerator.Data
             game.IgdbId = data.GetValue<int?>("igdb_id");
             game.IgdbUrl = data.GetValue<string>("igdb_url") ?? null;
             game.Tags = data.GetValue<List<string>>("tag") ?? new List<string>();
+
+            return game;
+        }
+
+        public static GameData FromIgdbGame(IgdbCache igdbCache, IgdbGame igdbGame)
+        {
+            var game = new GameData();
+
+            game.Title = igdbGame.Name;
+
+            if (igdbGame.Id != IgdbGame.IdNotFound)
+            {
+                game.IgdbId = igdbGame.Id;
+            }
+
+            if (!string.IsNullOrEmpty(igdbGame.Url))
+            {
+                game.IgdbUrl = igdbGame.Url;
+            }
+
+            game.Tags.Add(igdbGame.Category.Description());
+
+            if (igdbGame.CollectionId != IgdbCollection.IdNotFound)
+            {
+                var collection = igdbCache.GetCollection(igdbGame.CollectionId);
+                if (collection != null)
+                {
+                    game.Tags.Add(collection.Name);
+                }
+            }
+
+            if (igdbGame.MainFranchiseId != IgdbFranchise.IdNotFound)
+            {
+                var franchise = igdbCache.GetFranchise(igdbGame.MainFranchiseId);
+                if (franchise != null)
+                {
+                    game.Tags.Add(franchise.Name);
+                }
+            }
+
+            foreach (var franchiseId in igdbGame.OtherFranchiseIds)
+            {
+                var franchise = igdbCache.GetFranchise(franchiseId);
+                if (franchise != null)
+                {
+                    game.Tags.Add(franchise.Name);
+                }
+            }
+
+            foreach (var involvedCompanyId in igdbGame.InvolvedCompanyIds)
+            {
+                var involvedCompany = igdbCache.GetInvolvedCompany(involvedCompanyId);
+                if (involvedCompany != null)
+                {
+                    var company = igdbCache.GetCompany(involvedCompany.CompanyId);
+                    if (company != null)
+                    {
+                        game.Tags.Add(company.Name);
+                    }
+                }
+            }
+
+            foreach (var genreId in igdbGame.GenreIds)
+            {
+                var genre = igdbCache.GetGenre(genreId);
+                if (genre != null)
+                {
+                    game.Tags.Add(genre.Name);
+                }
+            }
+
+            foreach (var gameModeId in igdbGame.GameModeIds)
+            {
+                var gameMode = igdbCache.GetGameMode(gameModeId);
+                if (gameMode != null)
+                {
+                    game.Tags.Add(gameMode.Name);
+                }
+            }
+
+            foreach (var playerPerspectiveId in igdbGame.PlayerPerspectiveIds)
+            {
+                var playerPerspective = igdbCache.GetPlayerPerspective(playerPerspectiveId);
+                if (playerPerspective != null)
+                {
+                    game.Tags.Add(playerPerspective.Name);
+                }
+            }
+
+            foreach (var themeId in igdbGame.ThemeIds)
+            {
+                var theme = igdbCache.GetTheme(themeId);
+                if (theme != null)
+                {
+                    game.Tags.Add(theme.Name);
+                }
+            }
 
             return game;
         }

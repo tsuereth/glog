@@ -41,6 +41,8 @@ namespace GlogGenerator.RenderState
 
         public Dictionary<string, IOutputContent> ContentRoutes { get; set; } = new Dictionary<string, IOutputContent>();
 
+        public IgdbCache IgdbCache { get; set; }
+
         public FilePathResolver PathResolver { get; private set; }
 
         public string TemplatesBasePath { get; private set; } = "templates";
@@ -183,7 +185,40 @@ namespace GlogGenerator.RenderState
 
         public void LoadContent()
         {
-            // TODO: clear/reset metadata lists, page lists, route lists, et al.
+            // TODO: clear/reset page lists, route lists, et al.
+
+            // Load game data from the IGDB cache.
+            foreach (var igdbGame in this.IgdbCache.GetAllGames())
+            {
+                var gameData = GameData.FromIgdbGame(this.IgdbCache, igdbGame);
+
+                var gameKey = TemplateFunctionsStringRenderer.Urlize(gameData.Title, htmlEncode: false);
+                this.Games[gameKey] = gameData;
+            }
+
+            // FIXME: load game data from outside the IGDB cache.
+            var gameContentBasePath = Path.Combine(this.PathResolver.BasePath, GameData.GameContentBaseDir);
+            var gamePaths = Directory.EnumerateFiles(gameContentBasePath, "_index.md", SearchOption.AllDirectories).ToList();
+            foreach (var gamePath in gamePaths)
+            {
+                var gameData = GameData.FromFilePath(gamePath);
+                if (gameData.IgdbId.HasValue && (this.IgdbCache.GetGame(gameData.IgdbId.Value) != null))
+                {
+                    continue;
+                }
+
+                var gameKey = TemplateFunctionsStringRenderer.Urlize(gameData.Title, htmlEncode: false);
+                this.Games[gameKey] = gameData;
+            }
+
+            // Prepare tags from game metadata.
+            foreach (var gameData in this.Games.Values)
+            {
+                foreach (var tag in gameData.Tags)
+                {
+                    this.AddTagIfMissing(tag);
+                }
+            }
 
             // List static content.
             var staticBasePath = Path.Combine(this.PathResolver.BasePath, StaticFileData.StaticContentBaseDir);
@@ -198,23 +233,8 @@ namespace GlogGenerator.RenderState
             var templateGroup = this.GetTemplateGroup();
 
             // Parse content to collect data.
-            var gameContentBasePath = Path.Combine(this.PathResolver.BasePath, GameData.GameContentBaseDir);
-            var gamePaths = Directory.EnumerateFiles(gameContentBasePath, "_index.md", SearchOption.AllDirectories).ToList();
-
             var postContentBasePath = Path.Combine(this.PathResolver.BasePath, PostData.PostContentBaseDir);
             var postPaths = Directory.EnumerateFiles(postContentBasePath, "*.md", SearchOption.AllDirectories).ToList();
-
-            foreach (var gamePath in gamePaths)
-            {
-                var gameData = GameData.FromFilePath(gamePath);
-                var gameKey = TemplateFunctionsStringRenderer.Urlize(gameData.Title, htmlEncode: false);
-                this.Games[gameKey] = gameData;
-
-                foreach (var tag in gameData.Tags)
-                {
-                    this.AddTagIfMissing(tag);
-                }
-            }
 
             var allPosts = new List<PostData>();
             foreach (var postPath in postPaths)
@@ -479,6 +499,9 @@ namespace GlogGenerator.RenderState
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
             var config = ConfigData.FromFilePath(configFilePath);
 
+            var igdbCacheFilePath = Path.Combine(inputFilesBasePath, "igdb_cache.sql");
+            var igdbCache = IgdbCache.FromSqlFile(igdbCacheFilePath);
+
             var site = new SiteState(config.DataBasePath, templatesBasePath)
             {
                 Author = config.Author,
@@ -486,7 +509,9 @@ namespace GlogGenerator.RenderState
                 BuildDate = DateTimeOffset.Now,
                 LanguageCode = config.LanguageCode,
                 NowPlaying = config.NowPlaying,
-                Title = config.Title
+                Title = config.Title,
+
+                IgdbCache = igdbCache,
             };
 
             return site;

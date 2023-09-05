@@ -13,19 +13,25 @@ namespace GlogGenerator
         {
             var projectProperties = Assembly.GetEntryAssembly().GetCustomAttribute<ProjectPropertiesAttribute>();
 
+            var igdbClientId = string.Empty;
+            var igdbClientSecret = string.Empty;
             var inputFilesBasePath = projectProperties.DefaultInputFilesBasePath;
             var templateFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "templates");
             var hostOrigin = "http://localhost:1313";
             var pathPrefix = "/glog/";
             var staticSiteOutputBasePath = Path.Combine(Directory.GetCurrentDirectory(), "public");
+            var updateIgdbCache = false;
 
             var options = new OptionSet()
             {
+                { "igdb-client-id=", "IGDB API (Twitch Developers) Client ID", o => igdbClientId = o },
+                { "igdb-client-secret=", "IGDB API (Twitch Developers) Client Secret", o => igdbClientSecret = o },
                 { "i|input-path=", $"Input files base path, default: {inputFilesBasePath}", o => inputFilesBasePath = o },
                 { "t|templates-path=", $"Template files base path, default: {templateFilesBasePath}", o => templateFilesBasePath = o },
                 { "h|host-origin=", $"Host origin (scheme + name + port) for the site, default: {hostOrigin}", o => hostOrigin = o },
                 { "p|path-prefix=", $"Path prefix, default: {pathPrefix}", o => pathPrefix = o },
                 { "o|output-path=", $"BUILD: Static site output base path, default: {staticSiteOutputBasePath}", o => staticSiteOutputBasePath = o },
+                { "u|update-igdb-cache=", $"Update the IGDB data cache (requires IGDB API credentials), default: {updateIgdbCache}", o => updateIgdbCache = bool.Parse(o) },
             };
             var verbs = options.Parse(args);
 
@@ -47,6 +53,11 @@ namespace GlogGenerator
             var site = SiteState.FromInputFilesBasePath(inputFilesBasePath, templateFilesBasePath);
 
             site.BaseURL = $"{hostOrigin}{pathPrefix}"; // TODO: ensure proper slash-usage between origin and path
+
+            if (updateIgdbCache)
+            {
+                throw new NotImplementedException();
+            }
 
             Console.WriteLine("Loading content...");
             var loadTimer = Stopwatch.StartNew();

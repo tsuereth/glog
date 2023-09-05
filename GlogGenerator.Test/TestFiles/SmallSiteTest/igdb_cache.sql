@@ -1,0 +1,18 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE collection (id INTEGER PRIMARY KEY, name TEXT);
+INSERT INTO collection VALUES(5785,'Cat Quest');
+CREATE TABLE company (id INTEGER PRIMARY KEY, name TEXT);
+CREATE TABLE franchise (id INTEGER PRIMARY KEY, name TEXT);
+CREATE TABLE game (id INTEGER PRIMARY KEY, category INTEGER, collection INTEGER, franchise INTEGER, franchises TEXT, game_modes TEXT, genres TEXT, involved_companies TEXT, name TEXT, player_perspectives TEXT, themes TEXT, updated_at INTEGER, url TEXT);
+INSERT INTO game VALUES(36597,0,5785,-1,'','','','','Cat Quest','','1,2',1693767258,'https://www.igdb.com/games/cat-quest');
+INSERT INTO game VALUES(101869,0,5785,-1,'','','','','Cat Quest II','','2,3',1693776522,'https://www.igdb.com/games/cat-quest-ii');
+CREATE TABLE game_mode (id INTEGER PRIMARY KEY, name TEXT);
+CREATE TABLE genre (id INTEGER PRIMARY KEY, name TEXT);
+CREATE TABLE involved_company (id INTEGER PRIMARY KEY, company INTEGER);
+CREATE TABLE player_perspective (id INTEGER PRIMARY KEY, name TEXT);
+CREATE TABLE theme (id INTEGER PRIMARY KEY, name TEXT);
+INSERT INTO theme VALUES(1,'Test Tag 1');
+INSERT INTO theme VALUES(2,'Test Tag 2');
+INSERT INTO theme VALUES(3,'Test Tag 3');
+COMMIT;
