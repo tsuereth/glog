@@ -17,7 +17,7 @@ So when I reached the halfway point of the game's final "bunker" area, and neede
 
 Katana ZERO's storytelling and aesthetics are really compelling; and when the action is flowing, it's a thrill.  I enjoyed those parts of the game in spite of its frustrating retry loops.  And I'm acutely aware that, if I kept going, the frustrations would overtake the fun.
 
-<b>Better than</b>: {{% game "DEADBOLT" %}}DEADBOLT{{% /game %}}, {{% game "Ronin" %}}Ronin{{% /game %}}, {{% game "Stealth Inc 2: A Game of Clones" %}}Stealth Inc 2: A Game of Clones{{% /game %}}, {{% game "Super Time Force Ultra" %}}Super Time Force Ultra{{% /game %}}  
+<b>Better than</b>: {{% game "Deadbolt" %}}Deadbolt{{% /game %}}, {{% game "Ronin" %}}Ronin{{% /game %}}, {{% game "Stealth Inc 2: A Game of Clones" %}}Stealth Inc 2: A Game of Clones{{% /game %}}, {{% game "Super Time Force Ultra" %}}Super Time Force Ultra{{% /game %}}  
 <b>Not as good as</b>: {{% game "Mark of the Ninja Remastered" %}}Mark of the Ninja Remastered{{% /game %}}  
 <b>It's a short game, but</b>: its soundtrack will be in my playlist for many more hours to come.
 
