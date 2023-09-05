@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using GlogGenerator.IgdbApi;
 using Newtonsoft.Json;
 
@@ -138,6 +139,58 @@ namespace GlogGenerator
             }
 
             return null;
+        }
+
+        public async Task UpdateFromApiClient(IgdbApiClient client)
+        {
+            // Update games first, to get current IDs for metadata references.
+            var gameIds = this.gamesById.Select(kv => kv.Key).ToList();
+            var gamesCurrent = await client.GetGamesAsync(gameIds);
+
+            // Preserve data for glog overrides to re-override the updated cache.
+            var gamesWithNameOverrides = this.gamesById.Where(kv => !string.IsNullOrEmpty(kv.Value.NameGlogOverride)).Select(kv => kv.Value).ToList();
+
+            this.gamesById = gamesCurrent.ToDictionary(o => o.Id, o => o);
+            foreach (var game in gamesWithNameOverrides)
+            {
+                this.gamesById[game.Id].NameGlogOverride = game.NameGlogOverride;
+            }
+
+            // Update involvedCompanies to get most-current company IDs.
+            var involvedCompanyIds = gamesCurrent.SelectMany(g => g.InvolvedCompanyIds).Distinct().ToList();
+            var involvedCompaniesCurrent = await client.GetInvolvedCompaniesAsync(involvedCompanyIds);
+            this.involvedCompaniesById = involvedCompaniesCurrent.ToDictionary(o => o.Id, o => o);
+
+            var companyIds = involvedCompaniesCurrent.Select(i => i.CompanyId).Distinct().ToList();
+            var companiesCurrent = await client.GetCompaniesAsync(companyIds);
+            this.companiesById = companiesCurrent.ToDictionary(o => o.Id, o => o);
+
+            // Now, update the rest of the ID-driven metadata.
+
+            var collectionIds = gamesCurrent.Where(g => g.CollectionId != IgdbCollection.IdNotFound).Select(g => g.CollectionId).Distinct().ToList();
+            var collectionsCurrent = await client.GetCollectionsAsync(collectionIds);
+            this.collectionsById = collectionsCurrent.ToDictionary(o => o.Id, o => o);
+
+            var franchiseIds = gamesCurrent.Where(g => g.MainFranchiseId != IgdbFranchise.IdNotFound).Select(g => g.MainFranchiseId).Distinct().ToList();
+            franchiseIds.AddRange(gamesCurrent.SelectMany(g => g.OtherFranchiseIds).Distinct());
+            var franchisesCurrent = await client.GetFranchisesAsync(franchiseIds);
+            this.franchisesById = franchisesCurrent.ToDictionary(o => o.Id, o => o);
+
+            var gameModeIds = gamesCurrent.SelectMany(g => g.GameModeIds).Distinct().ToList();
+            var gameModesCurrent = await client.GetGameModesAsync(gameModeIds);
+            this.gameModesById = gameModesCurrent.ToDictionary(o => o.Id, o => o);
+
+            var genreIds = gamesCurrent.SelectMany(g => g.GenreIds).Distinct().ToList();
+            var genresCurrent = await client.GetGenresAsync(genreIds);
+            this.genresById = genresCurrent.ToDictionary(o => o.Id, o => o);
+
+            var playerPerspectiveIds = gamesCurrent.SelectMany(g => g.PlayerPerspectiveIds).Distinct().ToList();
+            var playerPerspectivesCurrent = await client.GetPlayerPerspectivesAsync(playerPerspectiveIds);
+            this.playerPerspectivesById = playerPerspectivesCurrent.ToDictionary(o => o.Id, o => o);
+
+            var themeIds = gamesCurrent.SelectMany(g => g.ThemeIds).Distinct().ToList();
+            var themesCurrent = await client.GetThemesAsync(themeIds);
+            this.themesById = themesCurrent.ToDictionary(o => o.Id, o => o);
         }
 
         public void WriteToJsonFiles(string directoryPath)

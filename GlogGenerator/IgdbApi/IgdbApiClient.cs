@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Net.Http;
 using System.Reflection;
 using System.Text;
@@ -93,10 +94,20 @@ namespace GlogGenerator.IgdbApi
             foreach (var typeProperty in typeProperties)
             {
                 var jsonPropertyAttr = typeProperty.GetCustomAttribute<JsonPropertyAttribute>();
+                if (jsonPropertyAttr == null)
+                {
+                    continue;
+                }
 
                 if (string.IsNullOrEmpty(jsonPropertyAttr.PropertyName))
                 {
                     throw new ArgumentException($"{typeof(T).FullName}.{typeProperty.Name} has an empty JsonProperty name");
+                }
+
+                // SPECIAL CASE: "name_glogOverride" isn't an IGDB field.
+                if (jsonPropertyAttr.PropertyName.Equals("name_glogOverride", StringComparison.Ordinal))
+                {
+                    continue;
                 }
 
                 fields.Add(jsonPropertyAttr.PropertyName);
@@ -125,10 +136,11 @@ namespace GlogGenerator.IgdbApi
                     var queryBuilder = new StringBuilder();
                     queryBuilder.Append("fields ");
                     queryBuilder.Append(string.Join(',', requestFields.ToArray()));
-                    queryBuilder.Append(';');
-                    queryBuilder.Append("where id = (");
+                    queryBuilder.Append(";where id = (");
                     queryBuilder.Append(string.Join(',', requestIds.ToArray()));
-                    queryBuilder.Append(");");
+                    queryBuilder.Append(");limit ");
+                    queryBuilder.Append(requestIdsCount.ToString(CultureInfo.InvariantCulture));
+                    queryBuilder.Append(';');
 
                     request.Headers.Add("Accept", "application/json");
                     request.Headers.Add("Authorization", $"Bearer {bearerToken}");
@@ -137,9 +149,17 @@ namespace GlogGenerator.IgdbApi
 
                     var response = await this.httpClient.SendAsync(request);
 
-                    response.EnsureSuccessStatusCode();
-
                     var responseText = await response.Content.ReadAsStringAsync();
+
+                    try
+                    {
+                        response.EnsureSuccessStatusCode();
+                    }
+                    catch (Exception ex) when (!string.IsNullOrEmpty(responseText))
+                    {
+                        throw new AggregateException(responseText, ex);
+                    }
+
                     var responseObject = JsonConvert.DeserializeObject<List<T>>(responseText);
 
                     items.AddRange(responseObject);

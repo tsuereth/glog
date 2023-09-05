@@ -2,6 +2,8 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
+using System.Threading.Tasks;
+using GlogGenerator.IgdbApi;
 using GlogGenerator.RenderState;
 using Mono.Options;
 
@@ -9,7 +11,7 @@ namespace GlogGenerator
 {
     public static class Program
     {
-        static int Main(string[] args)
+        static async Task<int> Main(string[] args)
         {
             var projectProperties = Assembly.GetEntryAssembly().GetCustomAttribute<ProjectPropertiesAttribute>();
 
@@ -56,11 +58,22 @@ namespace GlogGenerator
 
             if (updateIgdbCache)
             {
-                // TODO: api load!
+                if (string.IsNullOrEmpty(igdbClientId))
+                {
+                    throw new ArgumentException("Missing or empty --igdb-client-id");
+                }
+                if (string.IsNullOrEmpty(igdbClientSecret))
+                {
+                    throw new ArgumentException("Missing or empty --igdb-client-secret");
+                }
+
+                using (var igdbApiClient = new IgdbApiClient(igdbClientId, igdbClientSecret))
+                {
+                    await site.IgdbCache.UpdateFromApiClient(igdbApiClient);
+                }
+
                 var igdbCacheFilesDirectory = Path.Combine(inputFilesBasePath, IgdbCache.JsonFilesBaseDir);
                 site.IgdbCache.WriteToJsonFiles(igdbCacheFilesDirectory);
-
-                throw new NotImplementedException();
             }
 
             Console.WriteLine("Loading content...");
