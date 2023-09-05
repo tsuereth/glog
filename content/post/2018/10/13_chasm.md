@@ -25,6 +25,6 @@ Chasm wears its Diablo and {{% tag "Castlevania" %}}Castlevania{{% /tag %}} insp
 
 <b>Better than</b>: {{% game "Bear Simulator" %}}Bear Simulator{{% /game %}}  
 <b>Not as good as</b>: {{% game "Torchlight" %}}Torchlight{{% /game %}}, or maybe even {{% game "SteamWorld Dig" %}}SteamWorld Dig{{% /game %}}  
-<b>Arguably on-par with</b>: {{% game "Shaq-Fu: A Legend Reborn" %}}Shaq-Fu: A Legend Reborn{{% /game %}}
+<b>Arguably on-par with</b>: {{% game "Shaq Fu: A Legend Reborn" %}}Shaq Fu: A Legend Reborn{{% /game %}}
 
 <i>Progress: Gave up in the catacombs.</i>
