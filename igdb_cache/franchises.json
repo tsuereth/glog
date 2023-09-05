@@ -1,0 +1,974 @@
+[
+  {
+    "id": 1,
+    "name": "Star Wars"
+  },
+  {
+    "id": 3,
+    "name": "Conan"
+  },
+  {
+    "id": 4,
+    "name": "Final Fantasy"
+  },
+  {
+    "id": 5,
+    "name": "Batman"
+  },
+  {
+    "id": 6,
+    "name": "Warhammer 40,000"
+  },
+  {
+    "id": 7,
+    "name": "Transformers"
+  },
+  {
+    "id": 8,
+    "name": "Ghostbusters"
+  },
+  {
+    "id": 9,
+    "name": "Tom Clancy"
+  },
+  {
+    "id": 10,
+    "name": "Sid Meier"
+  },
+  {
+    "id": 11,
+    "name": "The Lord of the Rings"
+  },
+  {
+    "id": 12,
+    "name": "Command & Conquer"
+  },
+  {
+    "id": 19,
+    "name": "The Matrix"
+  },
+  {
+    "id": 24,
+    "name": "Mario Bros."
+  },
+  {
+    "id": 26,
+    "name": "Disney"
+  },
+  {
+    "id": 28,
+    "name": "South Park"
+  },
+  {
+    "id": 29,
+    "name": "Resident Evil"
+  },
+  {
+    "id": 37,
+    "name": "James Bond"
+  },
+  {
+    "id": 38,
+    "name": "Mega Man"
+  },
+  {
+    "id": 39,
+    "name": "The Walking Dead"
+  },
+  {
+    "id": 43,
+    "name": "Dungeons & Dragons"
+  },
+  {
+    "id": 44,
+    "name": "DC Comics"
+  },
+  {
+    "id": 47,
+    "name": "XIII"
+  },
+  {
+    "id": 49,
+    "name": "The Avengers"
+  },
+  {
+    "id": 51,
+    "name": "LEGO"
+  },
+  {
+    "id": 55,
+    "name": "Deathspank"
+  },
+  {
+    "id": 60,
+    "name": "Pokémon"
+  },
+  {
+    "id": 63,
+    "name": "Alice in Wonderland"
+  },
+  {
+    "id": 66,
+    "name": "Bejeweled"
+  },
+  {
+    "id": 74,
+    "name": "Mad Max"
+  },
+  {
+    "id": 79,
+    "name": "tetris"
+  },
+  {
+    "id": 83,
+    "name": "Viewtiful Joe"
+  },
+  {
+    "id": 103,
+    "name": "Adventure Time"
+  },
+  {
+    "id": 123,
+    "name": "Earthbound"
+  },
+  {
+    "id": 124,
+    "name": "Marvel"
+  },
+  {
+    "id": 127,
+    "name": "Shadowrun"
+  },
+  {
+    "id": 134,
+    "name": "Fables"
+  },
+  {
+    "id": 135,
+    "name": "Warcraft"
+  },
+  {
+    "id": 137,
+    "name": "Halo"
+  },
+  {
+    "id": 151,
+    "name": "Spider-Man"
+  },
+  {
+    "id": 203,
+    "name": "Fantastic Four"
+  },
+  {
+    "id": 208,
+    "name": "The Hobbit"
+  },
+  {
+    "id": 210,
+    "name": "Hulk"
+  },
+  {
+    "id": 233,
+    "name": "Robotech"
+  },
+  {
+    "id": 238,
+    "name": "X-Men"
+  },
+  {
+    "id": 248,
+    "name": "Terminator"
+  },
+  {
+    "id": 250,
+    "name": "Universal Studios"
+  },
+  {
+    "id": 279,
+    "name": "Tomb Raider"
+  },
+  {
+    "id": 280,
+    "name": "Captain America"
+  },
+  {
+    "id": 311,
+    "name": "Harvey Birdman, Attorney at Law"
+  },
+  {
+    "id": 318,
+    "name": "Jumper"
+  },
+  {
+    "id": 320,
+    "name": "Iron Man"
+  },
+  {
+    "id": 350,
+    "name": "Thor"
+  },
+  {
+    "id": 351,
+    "name": "Tron"
+  },
+  {
+    "id": 363,
+    "name": "Afro Samurai"
+  },
+  {
+    "id": 366,
+    "name": "Dota"
+  },
+  {
+    "id": 390,
+    "name": "Hard Boiled"
+  },
+  {
+    "id": 395,
+    "name": "A.V.A."
+  },
+  {
+    "id": 398,
+    "name": "Around the World in 80 Days"
+  },
+  {
+    "id": 425,
+    "name": "Half-Life"
+  },
+  {
+    "id": 431,
+    "name": "Dante's Inferno"
+  },
+  {
+    "id": 440,
+    "name": "Wanted"
+  },
+  {
+    "id": 441,
+    "name": "Watchmen"
+  },
+  {
+    "id": 445,
+    "name": "Sleeping Dogs"
+  },
+  {
+    "id": 451,
+    "name": "Cyberpunk"
+  },
+  {
+    "id": 452,
+    "name": "The Witcher"
+  },
+  {
+    "id": 456,
+    "name": "The Elder Scrolls"
+  },
+  {
+    "id": 457,
+    "name": "Sonic The Hedgehog"
+  },
+  {
+    "id": 458,
+    "name": "Might and Magic"
+  },
+  {
+    "id": 462,
+    "name": "Numenera"
+  },
+  {
+    "id": 463,
+    "name": "Metal Gear"
+  },
+  {
+    "id": 492,
+    "name": "The \"Souls\" series"
+  },
+  {
+    "id": 493,
+    "name": "Grand Theft Auto"
+  },
+  {
+    "id": 495,
+    "name": "Prince of Persia"
+  },
+  {
+    "id": 509,
+    "name": "Warhammer"
+  },
+  {
+    "id": 528,
+    "name": "Justice League"
+  },
+  {
+    "id": 540,
+    "name": "Torment"
+  },
+  {
+    "id": 551,
+    "name": "Metal Gear Solid"
+  },
+  {
+    "id": 552,
+    "name": "Persona"
+  },
+  {
+    "id": 557,
+    "name": "Warlords"
+  },
+  {
+    "id": 571,
+    "name": "Assassin's Creed"
+  },
+  {
+    "id": 584,
+    "name": "Seiken Densetsu"
+  },
+  {
+    "id": 589,
+    "name": "starcraft"
+  },
+  {
+    "id": 592,
+    "name": "Megami Tensei"
+  },
+  {
+    "id": 596,
+    "name": "The Legend of Zelda"
+  },
+  {
+    "id": 600,
+    "name": "Evil Dead"
+  },
+  {
+    "id": 720,
+    "name": "Kingdom Hearts"
+  },
+  {
+    "id": 721,
+    "name": "Star Ocean"
+  },
+  {
+    "id": 726,
+    "name": "Call of Duty"
+  },
+  {
+    "id": 736,
+    "name": "Valkyria"
+  },
+  {
+    "id": 756,
+    "name": "Metroid"
+  },
+  {
+    "id": 763,
+    "name": "Donkey Kong"
+  },
+  {
+    "id": 769,
+    "name": "Fire Emblem"
+  },
+  {
+    "id": 771,
+    "name": "Star Fox"
+  },
+  {
+    "id": 774,
+    "name": "Mana"
+  },
+  {
+    "id": 784,
+    "name": "World of Darkness"
+  },
+  {
+    "id": 785,
+    "name": "Maniac Mansion"
+  },
+  {
+    "id": 789,
+    "name": "Kirby"
+  },
+  {
+    "id": 790,
+    "name": "Mii"
+  },
+  {
+    "id": 792,
+    "name": "Street Fighter"
+  },
+  {
+    "id": 799,
+    "name": "Bomberman"
+  },
+  {
+    "id": 801,
+    "name": "Phantasy Star"
+  },
+  {
+    "id": 804,
+    "name": "Fullmetal Alchemist"
+  },
+  {
+    "id": 808,
+    "name": "Borderlands"
+  },
+  {
+    "id": 814,
+    "name": "Sonic"
+  },
+  {
+    "id": 820,
+    "name": "Gundam"
+  },
+  {
+    "id": 833,
+    "name": "Streets of Rage"
+  },
+  {
+    "id": 834,
+    "name": "Devil May Cry"
+  },
+  {
+    "id": 845,
+    "name": "Mario"
+  },
+  {
+    "id": 855,
+    "name": "The Legend of Heroes"
+  },
+  {
+    "id": 857,
+    "name": "Tom Clancy’s"
+  },
+  {
+    "id": 860,
+    "name": "Super Mario"
+  },
+  {
+    "id": 870,
+    "name": "Pokemon"
+  },
+  {
+    "id": 881,
+    "name": "Zero Escape"
+  },
+  {
+    "id": 884,
+    "name": "Red Dead"
+  },
+  {
+    "id": 885,
+    "name": "Darksiders"
+  },
+  {
+    "id": 891,
+    "name": "Tekken"
+  },
+  {
+    "id": 892,
+    "name": "Pac-Man"
+  },
+  {
+    "id": 893,
+    "name": "Yarn"
+  },
+  {
+    "id": 895,
+    "name": "Castlevania"
+  },
+  {
+    "id": 907,
+    "name": "Dynasty Warriors"
+  },
+  {
+    "id": 942,
+    "name": "Tales of"
+  },
+  {
+    "id": 943,
+    "name": "Xeno"
+  },
+  {
+    "id": 950,
+    "name": "Minecraft"
+  },
+  {
+    "id": 979,
+    "name": "The Sims"
+  },
+  {
+    "id": 1017,
+    "name": "Sim"
+  },
+  {
+    "id": 1034,
+    "name": "Fallout"
+  },
+  {
+    "id": 1036,
+    "name": "Battlefield"
+  },
+  {
+    "id": 1043,
+    "name": "Forza"
+  },
+  {
+    "id": 1048,
+    "name": "Mass Effect"
+  },
+  {
+    "id": 1058,
+    "name": "Ecco the dolphin"
+  },
+  {
+    "id": 1063,
+    "name": "Dishonored"
+  },
+  {
+    "id": 1064,
+    "name": "X-COM"
+  },
+  {
+    "id": 1066,
+    "name": "Unreal Tournament"
+  },
+  {
+    "id": 1069,
+    "name": "The House of the Dead"
+  },
+  {
+    "id": 1071,
+    "name": "Kid Icarus"
+  },
+  {
+    "id": 1075,
+    "name": "Black Mirror"
+  },
+  {
+    "id": 1083,
+    "name": "okami"
+  },
+  {
+    "id": 1138,
+    "name": "Kunio / Nekketsu High"
+  },
+  {
+    "id": 1163,
+    "name": "Ace Attorney"
+  },
+  {
+    "id": 1165,
+    "name": "Professor Layton"
+  },
+  {
+    "id": 1228,
+    "name": "Splatoon"
+  },
+  {
+    "id": 1230,
+    "name": "Rise of Nations"
+  },
+  {
+    "id": 1241,
+    "name": "The Banner Saga"
+  },
+  {
+    "id": 1260,
+    "name": "Rage"
+  },
+  {
+    "id": 1276,
+    "name": "Gears of War"
+  },
+  {
+    "id": 1277,
+    "name": "Wolfenstein"
+  },
+  {
+    "id": 1351,
+    "name": "Crash Bandicoot"
+  },
+  {
+    "id": 1442,
+    "name": "Trine"
+  },
+  {
+    "id": 1467,
+    "name": "Yakuza"
+  },
+  {
+    "id": 1518,
+    "name": "Pikmin"
+  },
+  {
+    "id": 1525,
+    "name": "Banjo & Kazooie"
+  },
+  {
+    "id": 1567,
+    "name": "Yoshi"
+  },
+  {
+    "id": 1572,
+    "name": "League of Legends"
+  },
+  {
+    "id": 1628,
+    "name": "Planescape"
+  },
+  {
+    "id": 1629,
+    "name": "Game & watch"
+  },
+  {
+    "id": 1635,
+    "name": "Titanfall"
+  },
+  {
+    "id": 1644,
+    "name": "Watch_Dogs"
+  },
+  {
+    "id": 1651,
+    "name": "Bemani"
+  },
+  {
+    "id": 1686,
+    "name": "Bioshock"
+  },
+  {
+    "id": 1702,
+    "name": "Control"
+  },
+  {
+    "id": 1724,
+    "name": "Portal"
+  },
+  {
+    "id": 1725,
+    "name": "Amnesia"
+  },
+  {
+    "id": 1752,
+    "name": "Wario"
+  },
+  {
+    "id": 1755,
+    "name": "Bloodstained"
+  },
+  {
+    "id": 1764,
+    "name": "F-Zero"
+  },
+  {
+    "id": 1766,
+    "name": "Raving Rabbids"
+  },
+  {
+    "id": 1781,
+    "name": "Altered Beast"
+  },
+  {
+    "id": 1785,
+    "name": "Captain Toad"
+  },
+  {
+    "id": 1787,
+    "name": "Super Smash Bros."
+  },
+  {
+    "id": 1790,
+    "name": "Paper Mario"
+  },
+  {
+    "id": 1793,
+    "name": "Excite"
+  },
+  {
+    "id": 1811,
+    "name": "Contra"
+  },
+  {
+    "id": 1813,
+    "name": "puzzle league"
+  },
+  {
+    "id": 1814,
+    "name": "Panel de Pon"
+  },
+  {
+    "id": 1816,
+    "name": "Mother"
+  },
+  {
+    "id": 1817,
+    "name": "Wave Race"
+  },
+  {
+    "id": 1820,
+    "name": "Animal Crossing"
+  },
+  {
+    "id": 1821,
+    "name": "Punch-Out!!"
+  },
+  {
+    "id": 1828,
+    "name": "Balloon Fight"
+  },
+  {
+    "id": 1844,
+    "name": "Chrono"
+  },
+  {
+    "id": 1859,
+    "name": "Wii"
+  },
+  {
+    "id": 1863,
+    "name": "Sin & Punishment"
+  },
+  {
+    "id": 1864,
+    "name": "Chibi-Robo"
+  },
+  {
+    "id": 1865,
+    "name": "Fatal Fury"
+  },
+  {
+    "id": 1932,
+    "name": "Xenoblade"
+  },
+  {
+    "id": 1974,
+    "name": "SimCity"
+  },
+  {
+    "id": 1989,
+    "name": "Pilotwings"
+  },
+  {
+    "id": 1997,
+    "name": "Gauntlet"
+  },
+  {
+    "id": 2000,
+    "name": "Horizon"
+  },
+  {
+    "id": 2052,
+    "name": "Jak and Daxter"
+  },
+  {
+    "id": 2055,
+    "name": "Arms"
+  },
+  {
+    "id": 2089,
+    "name": "The Mysterious Murasame Castle"
+  },
+  {
+    "id": 2098,
+    "name": "God of War"
+  },
+  {
+    "id": 2118,
+    "name": "007"
+  },
+  {
+    "id": 2121,
+    "name": "Uncharted"
+  },
+  {
+    "id": 2135,
+    "name": "Zone of the Enders"
+  },
+  {
+    "id": 2151,
+    "name": "Ico"
+  },
+  {
+    "id": 2180,
+    "name": "PixelJunk"
+  },
+  {
+    "id": 2217,
+    "name": "Syndicate"
+  },
+  {
+    "id": 2239,
+    "name": "Sly Cooper"
+  },
+  {
+    "id": 2253,
+    "name": "Penny Arcade"
+  },
+  {
+    "id": 2258,
+    "name": "Rampage"
+  },
+  {
+    "id": 2341,
+    "name": "Suicide Squad"
+  },
+  {
+    "id": 2357,
+    "name": "Flicky"
+  },
+  {
+    "id": 2362,
+    "name": "Ori"
+  },
+  {
+    "id": 2376,
+    "name": "Sigmund Corporation"
+  },
+  {
+    "id": 2416,
+    "name": "Ratchet & Clank"
+  },
+  {
+    "id": 2417,
+    "name": "Diablo"
+  },
+  {
+    "id": 2422,
+    "name": "Picross"
+  },
+  {
+    "id": 2472,
+    "name": "Minit"
+  },
+  {
+    "id": 2483,
+    "name": "Drakengard"
+  },
+  {
+    "id": 2667,
+    "name": "Outer Wilds"
+  },
+  {
+    "id": 2675,
+    "name": "The Last of Us"
+  },
+  {
+    "id": 2678,
+    "name": "Blast Corps"
+  },
+  {
+    "id": 2685,
+    "name": "Mario Kart"
+  },
+  {
+    "id": 2687,
+    "name": "Perfect Dark"
+  },
+  {
+    "id": 2707,
+    "name": "The Lost Vikings"
+  },
+  {
+    "id": 2715,
+    "name": "Pong"
+  },
+  {
+    "id": 2717,
+    "name": "Ice Climber"
+  },
+  {
+    "id": 2759,
+    "name": "Cave Story"
+  },
+  {
+    "id": 2760,
+    "name": "Lemmings"
+  },
+  {
+    "id": 2775,
+    "name": "Musou"
+  },
+  {
+    "id": 2813,
+    "name": "Oxenfree"
+  },
+  {
+    "id": 2820,
+    "name": "Advance Wars"
+  },
+  {
+    "id": 2876,
+    "name": "Confrontation"
+  },
+  {
+    "id": 2886,
+    "name": "Fallen London"
+  },
+  {
+    "id": 2914,
+    "name": "Hollow Knight"
+  },
+  {
+    "id": 2984,
+    "name": "Duck Hunt"
+  },
+  {
+    "id": 3081,
+    "name": "Bayonetta"
+  },
+  {
+    "id": 3082,
+    "name": "Wii Fit"
+  },
+  {
+    "id": 3083,
+    "name": "ROB"
+  },
+  {
+    "id": 3106,
+    "name": "Wars"
+  },
+  {
+    "id": 3259,
+    "name": "Undertale"
+  },
+  {
+    "id": 3390,
+    "name": "Kunio-kun"
+  },
+  {
+    "id": 3403,
+    "name": "Souls"
+  },
+  {
+    "id": 3428,
+    "name": "Psychonauts"
+  },
+  {
+    "id": 3457,
+    "name": "Vampire the Masquerade"
+  },
+  {
+    "id": 3528,
+    "name": "Alan Wake"
+  },
+  {
+    "id": 3628,
+    "name": "Shaquille O'Neal"
+  },
+  {
+    "id": 3827,
+    "name": "Touch Detective"
+  },
+  {
+    "id": 4500,
+    "name": "Dom Zelittu's"
+  },
+  {
+    "id": 4564,
+    "name": "Xeno"
+  },
+  {
+    "id": 4751,
+    "name": "Wii"
+  }
+]

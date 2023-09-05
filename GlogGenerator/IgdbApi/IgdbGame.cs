@@ -40,6 +40,9 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("name")]
         public string Name { get; set; }
 
+        [JsonProperty("name_glogOverride")]
+        public string NameForGlog { get; set; }
+
         [JsonProperty("player_perspectives")]
         public List<int> PlayerPerspectiveIds { get; set; }
 
