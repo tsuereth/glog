@@ -2127,7 +2127,7 @@ INSERT INTO game VALUES(230,0,52,-1,'','1,2','11,15','906','StarCraft','3','18',
 INSERT INTO game VALUES(231,0,35,-1,'425','1,2','5,9,31','18908,42057,96883','Half-Life','1','1,18,19,20,39',1693835227,'https://www.igdb.com/games/half-life');
 INSERT INTO game VALUES(233,0,35,-1,'425','1','5','18928,18929,88970','Half-Life 2','1','1,18,19',1693791242,'https://www.igdb.com/games/half-life-2');
 INSERT INTO game VALUES(236,0,71,-1,'','1','2,9,15,31,32','118998,118999,119000,126028,128058','Myst','1','17,43',1692810266,'https://www.igdb.com/games/myst');
-INSERT INTO game VALUES(239,0,52,-1,'589','1,2,3','11,15','892','StarCraft II: Wings of Liberty','3','1,18,39',1693321403,'https://www.igdb.com/games/starcraft-ii-wings-of-liberty');
+INSERT INTO game VALUES(239,0,52,-1,'589','1,2,3','11,15','892','StarCraft II: Wings of Liberty','3','1,18,39',1693891637,'https://www.igdb.com/games/starcraft-ii-wings-of-liberty');
 INSERT INTO game VALUES(240,0,34,-1,'','1,2','5','3817,3818,148034','Battlefield 1942','1,2','1,22,39',1693450672,'https://www.igdb.com/games/battlefield-1942');
 INSERT INTO game VALUES(241,0,58,-1,'425','2','5','5830,5831,211860','Counter-Strike','1','1,39',1693530786,'https://www.igdb.com/games/counter-strike');
 INSERT INTO game VALUES(244,0,14,-1,'','1','5,15,24','5206,5207','The Bureau: XCOM Declassified','1','1,17,18,22',1693498288,'https://www.igdb.com/games/the-bureau-xcom-declassified');
@@ -2136,7 +2136,7 @@ INSERT INTO game VALUES(272,0,156,-1,'','1,2,3,4','5','87890,99914,99915,99916,9
 INSERT INTO game VALUES(295,0,138,12,'12','1,2','11,15','293,86295,86296,86297,86298,86299','Command & Conquer: Red Alert','3','18,22,39',1692356903,'https://www.igdb.com/games/command-conquer-red-alert');
 INSERT INTO game VALUES(337,0,230,-1,'','1','8,9,31','20512,20513,20514,20515','American McGee''s Alice','2','1,19',1693228435,'https://www.igdb.com/games/american-mcgee-s-alice');
 INSERT INTO game VALUES(343,0,34,-1,'','1,2,3','5','4188,4189','Battlefield 3','1,2,3','1,23,39',1693757106,'https://www.igdb.com/games/battlefield-3');
-INSERT INTO game VALUES(358,0,6118,24,'24,845','1,2','8,31','200086,200087,225308','Super Mario Bros.','4','1',1693479948,'https://www.igdb.com/games/super-mario-bros');
+INSERT INTO game VALUES(358,0,6118,24,'24,845','1,2','8,31','200086,200087,225308','Super Mario Bros.','4','1',1693883957,'https://www.igdb.com/games/super-mario-bros');
 INSERT INTO game VALUES(364,0,194,-1,'458','1,2','12,15,16','19116,19117,19118','Heroes of Might and Magic III: The Restoration of Erathia','3','17',1693835364,'https://www.igdb.com/games/heroes-of-might-and-magic-iii-the-restoration-of-erathia');
 INSERT INTO game VALUES(374,0,44,-1,'463','1','5,31','53407,160618,160619','Metal Gear','3','1,18,21,23',1693574049,'https://www.igdb.com/games/metal-gear');
 INSERT INTO game VALUES(376,0,2128,-1,'463','1','31','827,829','Metal Gear Solid 2: Sons of Liberty','2','1,23',1693299558,'https://www.igdb.com/games/metal-gear-solid-2-sons-of-liberty');
@@ -2165,7 +2165,7 @@ INSERT INTO game VALUES(434,0,2100,-1,'','1,2','5,12,31','3868,3869,3870,18530',
 INSERT INTO game VALUES(454,0,277,-1,'','1,2,3','8,9,15','19488,184888,184889','The Lost Vikings','4','1,17,18,27',1693398294,'https://www.igdb.com/games/the-lost-vikings');
 INSERT INTO game VALUES(456,2,52,-1,'','1,2','11,15','889,890,891','StarCraft: Brood War','3','18',1693487495,'https://www.igdb.com/games/starcraft-brood-war');
 INSERT INTO game VALUES(457,4,52,-1,'589','1,2','11,15','2332','StarCraft II: Heart of the Swarm','3','1,18,39',1692292706,'https://www.igdb.com/games/starcraft-ii-heart-of-the-swarm');
-INSERT INTO game VALUES(458,4,52,-1,'589','1,2','11,15','8333','StarCraft II: Legacy of the Void','3','1,18,39',1693322002,'https://www.igdb.com/games/starcraft-ii-legacy-of-the-void');
+INSERT INTO game VALUES(458,4,52,-1,'589','1,2','11,15','8333','StarCraft II: Legacy of the Void','3','1,18,39',1693891637,'https://www.igdb.com/games/starcraft-ii-legacy-of-the-void');
 INSERT INTO game VALUES(472,0,6,-1,'456','1','12,31','3719,95350','The Elder Scrolls V: Skyrim','1,2','1,17,23,33,38',1693876888,'https://www.igdb.com/games/the-elder-scrolls-v-skyrim');
 INSERT INTO game VALUES(475,0,60,1,'1','1,2','12,25,31','1186,42073,42075,42076,42077,182973,182974,182975','Star Wars: The Force Unleashed','2','1,17,18',1693744063,'https://www.igdb.com/games/star-wars-the-force-unleashed');
 INSERT INTO game VALUES(478,0,62,-1,'452','1','12,31','341,17773,17774,17775,17776,17777','The Witcher 2: Assassins of Kings','2','1,17',1693845092,'https://www.igdb.com/games/the-witcher-2-assassins-of-kings');
@@ -2177,8 +2177,8 @@ INSERT INTO game VALUES(496,0,579,-1,'','1,2,3','25,31','505,39365,39366','Dead 
 INSERT INTO game VALUES(497,0,-1,-1,'29','1,3','5','910,184504','Resident Evil: The Darkside Chronicles','1','1,19,21',1689929887,'https://www.igdb.com/games/resident-evil-the-darkside-chronicles');
 INSERT INTO game VALUES(498,0,225,-1,'808','1,2,3,4','5,12','375,19525,19954,42254,42255,182980,182981','Borderlands','1','1,18,38',1693585166,'https://www.igdb.com/games/borderlands');
 INSERT INTO game VALUES(499,0,70,-1,'2098','1','25,31','45114,185862,185863','God of War III','2','1,17,22',1692736030,'https://www.igdb.com/games/god-of-war-iii');
-INSERT INTO game VALUES(500,0,68,5,'5','1','25,31','5653,42241,106795,106796','Batman: Arkham Asylum','2','1,23,38',1693874805,'https://www.igdb.com/games/batman-arkham-asylum');
-INSERT INTO game VALUES(501,0,68,5,'5','1','25,31','107007,107008,107009','Batman: Arkham City','2','1,23,38',1693878266,'https://www.igdb.com/games/batman-arkham-city');
+INSERT INTO game VALUES(500,0,68,5,'5','1','25,31','5653,42241,106795,106796','Batman: Arkham Asylum','2','1,23,38',1693891970,'https://www.igdb.com/games/batman-arkham-asylum');
+INSERT INTO game VALUES(501,0,68,5,'5','1','25,31','107007,107008,107009','Batman: Arkham City','2','1,23,38',1693891945,'https://www.igdb.com/games/batman-arkham-city');
 INSERT INTO game VALUES(506,0,2156,-1,'457','1','8,31','105789,105790,105791','Sonic Generations','2,4','1,35',1693875030,'https://www.igdb.com/games/sonic-generations');
 INSERT INTO game VALUES(512,0,97,-1,'2121','1,2,3','5,8,31','1242,190096','Uncharted 3: Drake''s Deception','2','1,17,22',1693847464,'https://www.igdb.com/games/uncharted-3-drake-s-deception');
 INSERT INTO game VALUES(528,0,100,-1,'','1,2,3','5,31','5219,5220,184140','Red Faction: Armageddon','2','1,18,19,38',1693850963,'https://www.igdb.com/games/red-faction-armageddon');
@@ -2256,10 +2256,10 @@ INSERT INTO game VALUES(1011,0,225,-1,'808','1,2,3,4','5,12','3861,18953,42019,4
 INSERT INTO game VALUES(1015,0,227,-1,'','1','25,31','2441,2442','BloodRayne','2','1,19',1693573566,'https://www.igdb.com/games/bloodrayne');
 INSERT INTO game VALUES(1016,0,227,-1,'','1','25,31','2438,43427,43428,43429','BloodRayne 2','2','1,19',1693487840,'https://www.igdb.com/games/bloodrayne-2');
 INSERT INTO game VALUES(1020,0,847,-1,'493','1,2,3','5,10,31','18070,18071,20018','Grand Theft Auto V','1,2','1,27,33,38',1693847658,'https://www.igdb.com/games/grand-theft-auto-v');
-INSERT INTO game VALUES(1022,0,106,-1,'596','1','31','180342,197987,225320','The Legend of Zelda','3','1,17,38',1693795892,'https://www.igdb.com/games/the-legend-of-zelda');
+INSERT INTO game VALUES(1022,0,106,-1,'596','1','31','180342,197987,225320','The Legend of Zelda','3','1,17,38',1693884034,'https://www.igdb.com/games/the-legend-of-zelda');
 INSERT INTO game VALUES(1023,0,229,-1,'','1','9,13','2452','Hacker Evolution','5','32',1686861767,'https://www.igdb.com/games/hacker-evolution');
 INSERT INTO game VALUES(1024,0,229,-1,'','1','13,15,32','7881','Hacker Evolution: Untold','5','32',1686857771,'https://www.igdb.com/games/hacker-evolution-untold');
-INSERT INTO game VALUES(1025,0,106,-1,'596','1','8,12,31','149156,198227,225322','Zelda II: The Adventure of Link','4','1,17,33',1693635808,'https://www.igdb.com/games/zelda-ii-the-adventure-of-link');
+INSERT INTO game VALUES(1025,0,106,-1,'596','1','8,12,31','149156,198227,225322','Zelda II: The Adventure of Link','4','1,17,33',1693883780,'https://www.igdb.com/games/zelda-ii-the-adventure-of-link');
 INSERT INTO game VALUES(1026,0,106,-1,'596','1','9,31','101094,162318,162319,224534,224545,226969','The Legend of Zelda: A Link to the Past','3','1,17',1693787202,'https://www.igdb.com/games/the-legend-of-zelda-a-link-to-the-past');
 INSERT INTO game VALUES(1028,0,106,-1,'596','1','31','148225,148226,225214','The Legend of Zelda: Link''s Awakening','3,4','1,17',1693424420,'https://www.igdb.com/games/the-legend-of-zelda-links-awakening');
 INSERT INTO game VALUES(1029,0,106,-1,'596','1','12,31','196206,224722,224723,225570','The Legend of Zelda: Ocarina of Time','2','1,17,33,38',1693787186,'https://www.igdb.com/games/the-legend-of-zelda-ocarina-of-time');
@@ -2278,7 +2278,7 @@ INSERT INTO game VALUES(1051,0,428,-1,'','1','5,8,31','8226,18943,18944,18945','
 INSERT INTO game VALUES(1054,0,-1,-1,'','1,2','11,15,32','2508','Oil Rush','3','18',1692118051,'https://www.igdb.com/games/oil-rush');
 INSERT INTO game VALUES(1059,0,4808,-1,'','1','12,25','2543,5252,5253','Kingdoms of Amalur: Reckoning','2','1,17',1692874916,'https://www.igdb.com/games/kingdoms-of-amalur-reckoning');
 INSERT INTO game VALUES(1062,0,511,-1,'','1','5,31','6058,6059,6060,6061,6062,6063,73334,73335','Alan Wake','2','1,19,20',1693826844,'https://www.igdb.com/games/alan-wake');
-INSERT INTO game VALUES(1068,0,6118,24,'24,845','1,2','8','200066,200067,225228','Super Mario Bros. 3','4','1,17',1693376603,'https://www.igdb.com/games/super-mario-bros-3');
+INSERT INTO game VALUES(1068,0,6118,24,'24,845','1,2','8','200066,200067,225228','Super Mario Bros. 3','4','1,17',1693884243,'https://www.igdb.com/games/super-mario-bros-3');
 INSERT INTO game VALUES(1070,0,6128,24,'24,845','1,2','8,31','224535,224536,226961,229224,229225','Super Mario World','4','1,17',1693808547,'https://www.igdb.com/games/super-mario-world');
 INSERT INTO game VALUES(1073,0,7158,24,'24,845,1567','1','8','155520,162314,162315,225047,226966','Super Mario World 2: Yoshi''s Island','4','1,17,35',1693145575,'https://www.igdb.com/games/super-mario-world-2-yoshi-s-island');
 INSERT INTO game VALUES(1074,0,240,24,'24,845','1','8,31','98353,148028,224520,224521','Super Mario 64','2','1,17,38',1693808537,'https://www.igdb.com/games/super-mario-64');
@@ -2393,12 +2393,12 @@ INSERT INTO game VALUES(1626,0,325,24,'24,60,123,596,756,763,771,789,845,1567,17
 INSERT INTO game VALUES(1627,0,325,-1,'60,123,596,756,763,769,771,789,845,1567,1764,1787','1,2,3','4,8','7302,7303,224531','Super Smash Bros. Melee','4','1',1693145677,'https://www.igdb.com/games/super-smash-bros-melee');
 INSERT INTO game VALUES(1628,0,325,-1,'60,123,457,463,596,756,763,769,771,789,845,1518,1567,1752,1764,1787,1820','1,2,3,4','4,8','18123,43901,43902,43903,98969,98970,98971','Super Smash Bros. Brawl','4','1',1693796622,'https://www.igdb.com/games/super-smash-bros-brawl');
 INSERT INTO game VALUES(1631,0,326,37,'37','1,4','5','10274,10275,10276,10278,212824','James Bond 007: Nightfire','1','1',1692664638,'https://www.igdb.com/games/james-bond-007-nightfire');
-INSERT INTO game VALUES(1638,0,326,37,'37','1,2,4','5','20044,35561,224548','GoldenEye 007','1','1,23',1692010582,'https://www.igdb.com/games/goldeneye-007');
+INSERT INTO game VALUES(1638,0,326,37,'37','1,2,4','5','20044,35561,224548','GoldenEye 007','1','1,23',1693885061,'https://www.igdb.com/games/goldeneye-007');
 INSERT INTO game VALUES(1652,0,327,-1,'833','1,2,3','25','36031,227635,227636,227637','Streets of Rage','4','1,18',1693339923,'https://www.igdb.com/games/streets-of-rage');
 INSERT INTO game VALUES(1691,0,335,-1,'3106','1,2','13,15,16,24','223787,223788,226304','Advance Wars','3','1,18,39',1693464730,'https://www.igdb.com/games/advance-wars');
 INSERT INTO game VALUES(1701,0,336,24,'24,1752','1','8,9','130176,149449,149450','Wario: Master of Disguise','4','1,27',1693193262,'https://www.igdb.com/games/wario-master-of-disguise');
 INSERT INTO game VALUES(1706,0,1113,24,'24,1752','1,2,4','9','4802,51746,130386,130389','WarioWare: Smooth Moves','1,2,4','1,27,40',1693635805,'https://www.igdb.com/games/warioware-smooth-moves');
-INSERT INTO game VALUES(1714,0,337,38,'38','1','8,9,31','154408','Mega Man','4','1,18',1693464669,'https://www.igdb.com/games/mega-man');
+INSERT INTO game VALUES(1714,0,337,38,'38','1','8,9,31','154408','Mega Man','4','1,18',1693884139,'https://www.igdb.com/games/mega-man');
 INSERT INTO game VALUES(1720,0,337,38,'38','1','5,8,31','182464','Mega Man 7','4','1,18',1693464749,'https://www.igdb.com/games/mega-man-7');
 INSERT INTO game VALUES(1721,0,337,38,'38','1','5,8,31','21057,21058','Mega Man 8','4','1,18',1692291495,'https://www.igdb.com/games/mega-man-8');
 INSERT INTO game VALUES(1726,0,337,38,'38','1','5,8,31','105916','Mega Man & Bass','4','1,18',1693464790,'https://www.igdb.com/games/mega-man-bass');
@@ -2481,7 +2481,7 @@ INSERT INTO game VALUES(2186,0,450,-1,'','1','13,14','4634,51708','Wii Fit','1,2
 INSERT INTO game VALUES(2191,0,593,-1,'845','1','8,12,31','98979,98981,132603','Super Paper Mario','2,4','1,17,27',1693480292,'https://www.igdb.com/games/super-paper-mario');
 INSERT INTO game VALUES(2194,8,452,-1,'1821','1,2,4','4,14,31','70703,134790','Punch-Out!!','2','1,27',1693635846,'https://www.igdb.com/games/punch-out');
 INSERT INTO game VALUES(2207,0,6461,-1,'2151','1','8,9,31','107522,181346','Shadow of the Colossus','2','1,17,31,38',1693241848,'https://www.igdb.com/games/shadow-of-the-colossus');
-INSERT INTO game VALUES(2239,0,454,-1,'1518','1','11,31','224561,229577,229578','Pikmin','3','1,18',1693514544,'https://www.igdb.com/games/pikmin');
+INSERT INTO game VALUES(2239,0,454,-1,'1518','1','11,31','224561,229577,229578','Pikmin','3','1,18',1693885077,'https://www.igdb.com/games/pikmin');
 INSERT INTO game VALUES(2240,0,454,-1,'1518','1,2,3','11,31','229340,229341','Pikmin 2','3','1,18',1693423820,'https://www.igdb.com/games/pikmin-2');
 INSERT INTO game VALUES(2241,0,454,-1,'1518','1,2','11,31','5024,126203','Pikmin 3','3','1,18',1693874980,'https://www.igdb.com/games/pikmin-3');
 INSERT INTO game VALUES(2248,0,1382,-1,'','1,2','9,15,16,24,32','4768','Frozen Synapse','3','18',1693487590,'https://www.igdb.com/games/frozen-synapse');
@@ -2517,7 +2517,7 @@ INSERT INTO game VALUES(2485,0,490,24,'24,845','1','31','5860,5861,224556','Luig
 INSERT INTO game VALUES(2538,0,-1,-1,'','1','8,9,31','145207,145208','Enslaved: Odyssey to the West','2','1,18',1693487809,'https://www.igdb.com/games/enslaved-odyssey-to-the-west');
 INSERT INTO game VALUES(2539,0,-1,-1,'','1','5,12','6032,6033','Alpha Protocol','2','1,23',1693223603,'https://www.igdb.com/games/alpha-protocol');
 INSERT INTO game VALUES(2552,0,3327,74,'74','1','5,10,31','8384,40429,42368','Mad Max','2','1,21,38',1693512604,'https://www.igdb.com/games/mad-max');
-INSERT INTO game VALUES(2591,0,506,-1,'771','1,2,4','5','49010,49011,224717,225575','Star Fox 64','1,2','1,18',1693549844,'https://www.igdb.com/games/star-fox-64');
+INSERT INTO game VALUES(2591,0,506,-1,'771','1,2,4','5','49010,49011,224717,225575','Star Fox 64','1,2','1,18',1693886228,'https://www.igdb.com/games/star-fox-64');
 INSERT INTO game VALUES(2604,0,2300,-1,'1781','1,2,3','8,25','54751,54756,172585,172599,181866','Altered Beast','4','1,17,21,22',1692995543,'https://www.igdb.com/games/altered-beast');
 INSERT INTO game VALUES(2605,0,-1,-1,'','1,2,3','8,9,31,32','52157,97020,97021','BattleBlock Theater','4','1,27',1693411817,'https://www.igdb.com/games/battleblock-theater');
 INSERT INTO game VALUES(2606,0,227,-1,'','1','8,25','68730,68731,68732,194981','BloodRayne: Betrayal','4','1,17,19,20',1692882552,'https://www.igdb.com/games/bloodrayne-betrayal');
@@ -2549,7 +2549,7 @@ INSERT INTO game VALUES(2935,0,-1,-1,'','1','2,9,13,32','179932,179933','Papers,
 INSERT INTO game VALUES(2939,0,-1,-1,'','1','9,31,32','163328,163329','The Vanishing of Ethan Carter','1','19,20,43',1693550974,'https://www.igdb.com/games/the-vanishing-of-ethan-carter');
 INSERT INTO game VALUES(2940,0,-1,-1,'','1','25','14161,14162','Killer Is Dead','','1',1692853545,'https://www.igdb.com/games/killer-is-dead');
 INSERT INTO game VALUES(2956,0,1300,-1,'','1,3','7,9,32','190487','Audiosurf','2','1,40',1693393551,'https://www.igdb.com/games/audiosurf');
-INSERT INTO game VALUES(2963,0,2946,366,'366','2,3','15,36','7663','Dota 2','2,3','1,17,39',1693659811,'https://www.igdb.com/games/dota-2');
+INSERT INTO game VALUES(2963,0,2946,366,'366','2,3','15,36','7663','Dota 2','2,3','1,17,39',1693891518,'https://www.igdb.com/games/dota-2');
 INSERT INTO game VALUES(2965,0,235,11,'11','1','25,31','20058,20059,212828','The Lord of the Rings: The Two Towers','2','1,17,22',1691672892,'https://www.igdb.com/games/the-lord-of-the-rings-the-two-towers');
 INSERT INTO game VALUES(2973,0,235,11,'11','1,2,3','25,31','20061,51992,51996,52000,52001,52002,184722','The Lord of the Rings: The Return of the King','2','1,17',1692664872,'https://www.igdb.com/games/the-lord-of-the-rings-the-return-of-the-king');
 INSERT INTO game VALUES(2989,0,3502,-1,'','1','12,15,31,32,33','7423','Space Pirates and Zombies','3','1,18,33',1692968547,'https://www.igdb.com/games/space-pirates-and-zombies');
@@ -2576,7 +2576,7 @@ INSERT INTO game VALUES(3099,0,-1,-1,'','1,2,3','5,9,11,13,15,24,32','97183,1344
 INSERT INTO game VALUES(3101,0,566,-1,'','1','12,15,16,31,32','7886,7887','Wasteland 2','3','1,18,21,23',1693471381,'https://www.igdb.com/games/wasteland-2');
 INSERT INTO game VALUES(3102,0,-1,-1,'','1','13,32','201661,201662,201663','Kerbal Space Program','1,2,3','18,33,34,38',1693874231,'https://www.igdb.com/games/kerbal-space-program');
 INSERT INTO game VALUES(3152,0,2327,-1,'','1','13,31,32','8128','Don''t Starve','3','1,17,19,21,33,38',1693487859,'https://www.igdb.com/games/don-t-starve');
-INSERT INTO game VALUES(3153,0,2278,-1,'','1,2,3','9,12,25,31,32','8089','Castle Crashers','4','1,27',1692875598,'https://www.igdb.com/games/castle-crashers');
+INSERT INTO game VALUES(3153,0,2278,-1,'','1,2,3','9,12,25,31,32','8089','Castle Crashers','4','1,27',1693885798,'https://www.igdb.com/games/castle-crashers');
 INSERT INTO game VALUES(3157,2,27,-1,'135','5','12,15,31','106257,106258','World of Warcraft: Warlords of Draenor','1,2','1,17,38',1691483518,'https://www.igdb.com/games/world-of-warcraft-warlords-of-draenor');
 INSERT INTO game VALUES(3171,0,-1,-1,'','1','5,12,24,31','8158,8159','The Saboteur','2','1,22,23,33,38,39',1693745844,'https://www.igdb.com/games/the-saboteur');
 INSERT INTO game VALUES(3174,4,847,-1,'493','1,2','5,10,31','8170,8171,18533,18534','Grand Theft Auto IV: The Ballad of Gay Tony','2','1,27,33,38',1692354606,'https://www.igdb.com/games/grand-theft-auto-iv-the-ballad-of-gay-tony');
@@ -2612,7 +2612,7 @@ INSERT INTO game VALUES(3489,0,605,-1,'1764','1,2,4','10,33','148292,148293,2255
 INSERT INTO game VALUES(3490,0,605,-1,'1764','1','10','100942,224665,225081,226924,229220,229221','F-Zero','2','1,18',1693549335,'https://www.igdb.com/games/f-zero');
 INSERT INTO game VALUES(3492,0,605,-1,'1764','1,4','10','9085,9086,181935','F-Zero GX','2','1,18',1689936718,'https://www.igdb.com/games/f-zero-gx');
 INSERT INTO game VALUES(3501,0,607,-1,'','1,2,3,4','12,25,31','9106,101518,101519,101520,101521','Gauntlet Legends','3','1,17,38',1693420847,'https://www.igdb.com/games/gauntlet-legends');
-INSERT INTO game VALUES(3502,0,607,-1,'','1,2','25,33','9107,42917,42918,42919','Gauntlet','3','1,17,22',1693835339,'https://www.igdb.com/games/gauntlet');
+INSERT INTO game VALUES(3502,0,607,-1,'','1,2','25,33','9107,42917,42918,42919','Gauntlet','3','1,17,22',1693883726,'https://www.igdb.com/games/gauntlet');
 INSERT INTO game VALUES(3574,0,2723,60,'60','1,2,4','9,15','149099,149100,225608','Pokémon Puzzle League','4','1',1691105252,'https://www.igdb.com/games/pokemon-puzzle-league');
 INSERT INTO game VALUES(3592,0,5070,-1,'','1','5','9290,40148,40149,56932,56933,56934','Robotron: 2084','3','1,18',1692352496,'https://www.igdb.com/games/robotron-2084');
 INSERT INTO game VALUES(3629,0,5055,-1,'','1,2,4','10,14','149247,149248,224514,225574','Wave Race 64','1,2','1',1693808567,'https://www.igdb.com/games/wave-race-64');
@@ -2694,7 +2694,7 @@ INSERT INTO game VALUES(5418,0,8854,24,'24,845','1','8,12,31','132604,162310,162
 INSERT INTO game VALUES(5438,0,4628,-1,'1017','1','13','149785,178057','SimEarth: The Living Planet','3','',1689885406,'https://www.igdb.com/games/simearth-the-living-planet--2');
 INSERT INTO game VALUES(5445,0,1204,-1,'','1','8,9,13,32','13196','Q.U.B.E.','1,7','1,18',1692354408,'https://www.igdb.com/games/q-u-b-e');
 INSERT INTO game VALUES(5478,0,3878,363,'363','1','25','13269,13270','Afro Samurai','2','1',1693314220,'https://www.igdb.com/games/afro-samurai');
-INSERT INTO game VALUES(5503,0,68,5,'5,44','1','25,31','65727,65728,70442','Batman: Arkham Knight','2','1,20,23,38',1693818546,'https://www.igdb.com/games/batman-arkham-knight');
+INSERT INTO game VALUES(5503,0,68,5,'5,44','1','25,31','65727,65728,70442','Batman: Arkham Knight','2','1,20,23,38',1693891960,'https://www.igdb.com/games/batman-arkham-knight');
 INSERT INTO game VALUES(5508,0,1114,-1,'','1,2','12,13,15,24,32','65019,65020','The Banner Saga','4','17,22',1693584850,'https://www.igdb.com/games/the-banner-saga');
 INSERT INTO game VALUES(5565,0,956,-1,'','1,2,3','25,33','56338,56339,56340,203372,203373,227617','Golden Axe','2,4','1,17',1693339923,'https://www.igdb.com/games/golden-axe');
 INSERT INTO game VALUES(5577,0,-1,-1,'','1','7,9,32','64986','Lyne','4','',1693240138,'https://www.igdb.com/games/lyne');
@@ -2748,7 +2748,7 @@ INSERT INTO game VALUES(6505,0,913,-1,'763,845','1','8,9','100260,100261','Mario
 INSERT INTO game VALUES(6506,0,913,-1,'763,845','1','8,9','15461,135194','Mario vs. Donkey Kong 2: March of the Minis','2,4','1',1692562112,'https://www.igdb.com/games/mario-vs-donkey-kong-2-march-of-the-minis');
 INSERT INTO game VALUES(6516,0,-1,-1,'','1','9,12,31','15486,45418,45419','Radiant Historia','3,4','17,22',1692788477,'https://www.igdb.com/games/radiant-historia');
 INSERT INTO game VALUES(6550,0,1391,-1,'','1','5','15557,15558,15559,149076,149077','R-Type III: The Third Lightning','2,4','1',1685362397,'https://www.igdb.com/games/r-type-iii-the-third-lightning');
-INSERT INTO game VALUES(6558,11,2608,-1,'3390','1,2,3,4','4,12,25,31','15586,123259,123261,164478,223604,223820','River City Ransom','4','1,27,33,38',1693549369,'https://www.igdb.com/games/river-city-ransom');
+INSERT INTO game VALUES(6558,11,2608,-1,'3390','1,2,3,4','4,12,25,31','15586,123259,123261,164478,223604,223820','River City Ransom','4','1,27,33,38',1693886541,'https://www.igdb.com/games/river-city-ransom');
 INSERT INTO game VALUES(6564,0,-1,-1,'','1,2,3,4','9,10,14','15601,15602,15603,225065','Rock n'' Roll Racing','2,3','1,18',1692190221,'https://www.igdb.com/games/rock-n-roll-racing');
 INSERT INTO game VALUES(6585,0,-1,-1,'','1,2','31','15650,15651','Scurge: Hive','2,3','1,18',1693488178,'https://www.igdb.com/games/scurge-hive');
 INSERT INTO game VALUES(6630,8,1920,-1,'','1','12','15768,15769,94318','Sword of Mana','','1',1691846603,'https://www.igdb.com/games/sword-of-mana');
@@ -2843,7 +2843,7 @@ INSERT INTO game VALUES(8259,0,-1,-1,'','1','31,32','96418','Tacoma','1','18,31,
 INSERT INTO game VALUES(8286,0,-1,-1,'','1','5,9,31,32','104988,104989','Magrunner: Dark Pulse','1','1,18,19',1693486650,'https://www.igdb.com/games/magrunner-dark-pulse');
 INSERT INTO game VALUES(8311,0,2538,-1,'','1,2,3','12,25','20308,20310,42295,42296,62555','Titan Quest','3','1,17',1693847182,'https://www.igdb.com/games/titan-quest');
 INSERT INTO game VALUES(8318,0,368,-1,'','1','9','106525,106526,229678,229679','Bejeweled','','',1693787139,'https://www.igdb.com/games/bejeweled');
-INSERT INTO game VALUES(8354,0,1939,-1,'','1,2','8','20646,20647','Splosion Man','4','1,18,27',1693488350,'https://www.igdb.com/games/splosion-man');
+INSERT INTO game VALUES(8354,0,1939,-1,'','1,2','8','20646,20647','Splosion Man','4','1,18,27',1693890930,'https://www.igdb.com/games/splosion-man');
 INSERT INTO game VALUES(8371,0,-1,-1,'','1,2,3','8,15,31,32','20669,182378','Outland','4','1',1690875110,'https://www.igdb.com/games/outland');
 INSERT INTO game VALUES(8379,0,-1,-1,'','1','12,15,31,32','28564,28565,28566','Bardbarian','3','1,22',1692841095,'https://www.igdb.com/games/bardbarian');
 INSERT INTO game VALUES(8382,0,-1,-1,'','1','8,9,15,32','20680,23355','Vessel','4','1,17',1692874517,'https://www.igdb.com/games/vessel');
@@ -3215,7 +3215,7 @@ INSERT INTO game VALUES(25848,0,-1,-1,'','1','8,31,32','82916,200716','Escape th
 INSERT INTO game VALUES(26031,1,68,-1,'5','1','25,31','89538,107389,107390','Batman: Arkham Knight - Harley Quinn Story Pack','2','1,20,27,31',1692876446,'https://www.igdb.com/games/batman-arkham-knight-harley-quinn-story-pack');
 INSERT INTO game VALUES(26160,0,-1,-1,'','1','9,32','42273','Sethian','4','18,43',1692085834,'https://www.igdb.com/games/sethian');
 INSERT INTO game VALUES(26193,4,-1,-1,'2121','1,2','5,9,31','45618,45619','Uncharted: The Lost Legacy','2','1,22',1693745415,'https://www.igdb.com/games/uncharted-the-lost-legacy');
-INSERT INTO game VALUES(26226,0,3109,-1,'','1','8,31,32','193388,193389','Celeste','4','1,17',1693879342,'https://www.igdb.com/games/celeste');
+INSERT INTO game VALUES(26226,0,3109,-1,'','1','8,31,32','193388,193389','Celeste','4','1,17',1693891555,'https://www.igdb.com/games/celeste');
 INSERT INTO game VALUES(26363,0,-1,-1,'','1','5,8,32,33','96471,96472,96473,178578','Splasher','4','1,18,27',1693766299,'https://www.igdb.com/games/splasher');
 INSERT INTO game VALUES(26472,0,-1,-1,'','1','12,31','99120','Disco Elysium','3','20,31,43',1693611145,'https://www.igdb.com/games/disco-elysium');
 INSERT INTO game VALUES(26628,0,3187,-1,'','1','13,15','43179,43180','Glittermitten Grove','4','17',1691311114,'https://www.igdb.com/games/glittermitten-grove');
