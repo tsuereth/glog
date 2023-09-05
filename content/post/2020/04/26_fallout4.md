@@ -65,7 +65,7 @@ It does, though, call into question what I can expect from the next Elder Scroll
 
 Look: Fallout 4 isn't a bad game.  I don't regret spending a hundred hours in it, and I definitely got a significant amount of solid entertainment out of those hours.  But the next time a Bethesda game makes me choose which milquetoast faction to ally myself with, I might just pick "none."
 
-<b>Better than</b>: {{% game "Assassin's Creed: Revelations" %}}Assassin's Creed: Revelations{{% /game %}}  
+<b>Better than</b>: {{% game "Assassin's Creed Revelations" %}}Assassin's Creed Revelations{{% /game %}}  
 <b>Not as good as</b>: {{% game "Assassin's Creed IV: Black Flag" %}}Assassin's Creed IV: Black Flag{{% /game %}}, {{% game "The Elder Scrolls V: Skyrim" %}}The Elder Scrolls V: Skyrim{{% /game %}}, naturally {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
 <b>And despite all my whining</b>: I'm still looking forward to discovering new stories in the {{% game "Fallout 4: Far Harbor" %}}Far Harbor{{% /game %}} and {{% game "Fallout 4: Nuka World" %}}Nuka World{{% /game %}} DLCs.
 
