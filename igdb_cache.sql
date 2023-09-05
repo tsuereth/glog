@@ -3215,7 +3215,7 @@ INSERT INTO game VALUES(25848,0,-1,-1,'','1','8,31,32','82916,200716','Escape th
 INSERT INTO game VALUES(26031,1,68,-1,'5','1','25,31','89538,107389,107390','Batman: Arkham Knight - Harley Quinn Story Pack','2','1,20,27,31',1692876446,'https://www.igdb.com/games/batman-arkham-knight-harley-quinn-story-pack');
 INSERT INTO game VALUES(26160,0,-1,-1,'','1','9,32','42273','Sethian','4','18,43',1692085834,'https://www.igdb.com/games/sethian');
 INSERT INTO game VALUES(26193,4,-1,-1,'2121','1,2','5,9,31','45618,45619','Uncharted: The Lost Legacy','2','1,22',1693745415,'https://www.igdb.com/games/uncharted-the-lost-legacy');
-INSERT INTO game VALUES(26226,0,3109,-1,'','1','8,31,32','193388,193389','Celeste','4','1,17',1693875787,'https://www.igdb.com/games/celeste');
+INSERT INTO game VALUES(26226,0,3109,-1,'','1','8,31,32','193388,193389','Celeste','4','1,17',1693879342,'https://www.igdb.com/games/celeste');
 INSERT INTO game VALUES(26363,0,-1,-1,'','1','5,8,32,33','96471,96472,96473,178578','Splasher','4','1,18,27',1693766299,'https://www.igdb.com/games/splasher');
 INSERT INTO game VALUES(26472,0,-1,-1,'','1','12,31','99120','Disco Elysium','3','20,31,43',1693611145,'https://www.igdb.com/games/disco-elysium');
 INSERT INTO game VALUES(26628,0,3187,-1,'','1','13,15','43179,43180','Glittermitten Grove','4','17',1691311114,'https://www.igdb.com/games/glittermitten-grove');
