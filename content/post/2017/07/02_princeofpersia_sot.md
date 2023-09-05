@@ -20,5 +20,5 @@ But, all that considered, it's still quite good for a 14-year-old game.  Its pee
 Hell, Sands of Time still has some things to teach modern games, particularly that the ability to rewind and try again is <i>really, really satisfying</i>.  But I guess everyone is into "rogue-like" permadeath now, so... <i>sigh</i>.
 
 <b>Better than</b>: {{% game "Assassin's Creed II" %}}Assassin's Creed II{{% /game %}}, {{% game "Uncharted: Drake's Fortune" %}}Uncharted: Drake's Fortune{{% /game %}}  
-<b>Not as good as</b>: {{% game "Assassin's Creed IV: Black Flag" %}}Assassin's Creed IV: Black Flag{{% /game %}}, {{% game "Uncharted 2: Among Thieves" %}}Uncharted 2: Among Thieves{{% /game %}}  
+<b>Not as good as</b>: {{% game "Assassin's Creed IV Black Flag" %}}Assassin's Creed IV Black Flag{{% /game %}}, {{% game "Uncharted 2: Among Thieves" %}}Uncharted 2: Among Thieves{{% /game %}}  
 <b>Just a reminder, Ubisoft</b>: We haven't seen the Prince since {{% game "Prince of Persia: The Forgotten Sands" %}}Forgotten Sands{{% /game %}} in <i>2010</i>.

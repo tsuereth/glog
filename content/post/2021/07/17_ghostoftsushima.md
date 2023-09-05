@@ -40,7 +40,7 @@ In the end, Ghost suceeds in turning itself from "fascinating Japanese <i>milieu
 If Sucker Punch's next open-world game can pace its storytelling better, and fix those clear mechanical shortcomings, they could rival some of the genre's heaviest hitters.
 
 <b>Better than</b>: {{% game "Assassin's Creed III" %}}Assassin's Creed III{{% /game %}}, and almost all the other {{% tag "Assassin's Creed" %}}Assassin's Creed{{% /tag %}} games I've played.  
-<b>Not as good as</b>: {{% game "Assassin's Creed IV: Black Flag" %}}Assassin's Creed IV: Black Flag{{% /game %}}, {{% game "Batman: Arkham City" %}}Batman: Arkham City{{% /game %}}, {{% game "The Legend of Zelda: Breath of the Wild" %}}The Legend of Zelda: Breath of the Wild{{% /game %}}, {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
+<b>Not as good as</b>: {{% game "Assassin's Creed IV Black Flag" %}}Assassin's Creed IV Black Flag{{% /game %}}, {{% game "Batman: Arkham City" %}}Batman: Arkham City{{% /game %}}, {{% game "The Legend of Zelda: Breath of the Wild" %}}The Legend of Zelda: Breath of the Wild{{% /game %}}, {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
 <b>Oh, and as for the online Legends mode</b>: I got through the tutorial and already hated it.  Forcing subsets of gameplay into class-specific selections is bad enough, but -- why are the button mappings <i>different</i> than in the main game?
 
 <i>Progress: Finished on Easy, killed all the invaders.</i>

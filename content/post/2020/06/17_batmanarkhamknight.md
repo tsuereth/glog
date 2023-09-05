@@ -19,7 +19,7 @@ And I will never forget that this game's instability on PC is {{% abslink href="
 
 Arkham Knight's successes handily outpace its flaws.  Between the comprehensive and compelling side missions, the thrilling and <i>dark</i> story, and some genuinely inventive new mechanics, it really feels like a complete improvement on Arkham City - a generational leap beyond it - and an even fuller realization of Rocksteady's "vision" for a free-roaming Batman experience.
 
-<b>Better than</b>: {{% game "Assassin's Creed IV: Black Flag" %}}Assassin's Creed IV: Black Flag{{% /game %}}, {{% game "Batman: Arkham Asylum" %}}Batman: Arkham Asylum{{% /game %}} (though not its story), {{% game "Batman: Arkham City" %}}Batman: Arkham City{{% /game %}}  
+<b>Better than</b>: {{% game "Assassin's Creed IV Black Flag" %}}Assassin's Creed IV Black Flag{{% /game %}}, {{% game "Batman: Arkham Asylum" %}}Batman: Arkham Asylum{{% /game %}} (though not its story), {{% game "Batman: Arkham City" %}}Batman: Arkham City{{% /game %}}  
 <b>Not as good as</b>: {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
 <b>Once the summer sales hit</b>: I'll finally try out the {{% game "Batman: Arkham Knight - A Matter of Family" %}}A Matter of Family{{% /game %}} and {{% game "Batman: Arkham Knight - Season of Infamy: Most Wanted Expansion" %}}Season of Infamy{{% /game %}} DLCs.
 
