@@ -23,7 +23,7 @@ But if you decided not to care about optional events and sidequests - i.e. if yo
 
 Majora's Mask 3D is a commendable upgrade from the N64 original, both in its graphics and its user-friendliness -- the save system and time controls are way better, now.  But the things that made Majora's Mask so memorable for me - the richly complex sidequests - are brought low by the game's now-archaic world design.
 
-<b>Better than</b>: {{% game "Darksiders Warmastered Edition" %}}Darksiders Warmastered Edition{{% /game %}}  
+<b>Better than</b>: {{% game "Darksiders: Warmastered Edition" %}}Darksiders: Warmastered Edition{{% /game %}}  
 <b>Not as good as</b>: {{% game "The Legend of Zelda: Ocarina of Time 3D" %}}The Legend of Zelda: Ocarina of Time 3D{{% /game %}}  
 <b>Hard to say</b>: how it compares to {{% game "The Legend of Zelda: Skyward Sword" %}}Skyward Sword{{% /game %}}, which I'm not interested in playing again.
 
