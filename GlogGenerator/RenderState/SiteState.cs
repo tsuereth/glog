@@ -209,7 +209,7 @@ namespace GlogGenerator.RenderState
                     var igdbGameData = this.IgdbCache.GetGame(gameData.IgdbId.Value);
                     if (igdbGameData != null)
                     {
-                        var igdbGameName = igdbGameData.NameForGlog ?? igdbGameData.Name;
+                        var igdbGameName = igdbGameData.NameForGlog;
                         if (!gameData.Title.Equals(igdbGameName, StringComparison.Ordinal))
                         {
                             throw new InvalidDataException($"Title mismatch! local is \"{gameData.Title}\" but IGDB is \"{igdbGameName}\"");

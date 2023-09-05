@@ -23,7 +23,7 @@ The part of Black Flag that's aged the most is its mission design: there just ar
 
 In retrospect, that's probably why I got so into the side-activities in Black Flag my first time through; because they're "the good part."
 
-But this time around, I left most of the collectibles and upgrade-treadmill alone because - even 6-7 years after {{% game "Assassin's Creed: Rogue" %}}Rogue{{% /game %}} - I am still <i>burnt out</i> on the <a href="https://www.pointandclickbait.com/2014/06/ubisoft-game-review/">Ubisoft game</a> grind.  I was plenty satisfied with the amount of yo-ho-ho-ing I'd had by the end of Black Flag's campaign.
+But this time around, I left most of the collectibles and upgrade-treadmill alone because - even 6-7 years after {{% game "Assassin's Creed Rogue" %}}Rogue{{% /game %}} - I am still <i>burnt out</i> on the <a href="https://www.pointandclickbait.com/2014/06/ubisoft-game-review/">Ubisoft game</a> grind.  I was plenty satisfied with the amount of yo-ho-ho-ing I'd had by the end of Black Flag's campaign.
 
 Black Flag doesn't need a remaster -- it needs a true successor, an open-world privateer simulator <i>but also</i> compelling characters and exciting story missions.  In the meantime, though, it's still "the good pirates game" to beat.
 

@@ -2,7 +2,7 @@
 date = "2017-12-30T10:24:49-08:00"
 title = "What time is it!?"
 category = ["Looking Forward To It"]
-game = ["Adventure Time: Pirates Of The Enchiridion"]
+game = ["Adventure Time: Pirates of the Enchiridion"]
 +++
 
 In 2014, when I <a href="https://tsuereth.com/glog/2014/06/29/im-just-gonna-stick-with-the-cartoon-from-now-on/">wrote</a> that {{% game "Adventure Time: Finn and Jake's Epic Quest" %}}Finn and Jake's Epic Quest{{% /game %}} had "pretty much annihilated" my hopes for an open-world, wacky-zany Adventure Time game -- <a href="https://www.outrightgames.com/adventure-time-pirates-of-the-enchiridion/">this</a> is kind of what I was talking about.

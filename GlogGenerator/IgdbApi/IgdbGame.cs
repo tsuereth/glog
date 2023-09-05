@@ -23,31 +23,40 @@ namespace GlogGenerator.IgdbApi
         public int MainFranchiseId { get; set; }
 
         [JsonProperty("franchises")]
-        public List<int> OtherFranchiseIds { get; set; }
+        public List<int> OtherFranchiseIds { get; set; } = new List<int>();
 
         [JsonProperty("game_modes")]
-        public List<int> GameModeIds { get; set; }
+        public List<int> GameModeIds { get; set; } = new List<int>();
 
         [JsonProperty("genres")]
-        public List<int> GenreIds { get; set; }
+        public List<int> GenreIds { get; set; } = new List<int>();
 
         [JsonProperty("id")]
         public int Id { get; set; }
 
         [JsonProperty("involved_companies")]
-        public List<int> InvolvedCompanyIds { get; set; }
+        public List<int> InvolvedCompanyIds { get; set; } = new List<int>();
 
         [JsonProperty("name")]
         public string Name { get; set; }
 
         [JsonProperty("name_glogOverride")]
-        public string NameForGlog { get; set; }
+        public string NameGlogOverride { get; set; }
+
+        [JsonIgnore]
+        public string NameForGlog
+        {
+            get
+            {
+                return this.NameGlogOverride ?? this.Name;
+            }
+        }
 
         [JsonProperty("player_perspectives")]
-        public List<int> PlayerPerspectiveIds { get; set; }
+        public List<int> PlayerPerspectiveIds { get; set; } = new List<int>();
 
         [JsonProperty("themes")]
-        public List<int> ThemeIds { get; set; }
+        public List<int> ThemeIds { get; set; } = new List<int>();
 
         [JsonProperty("updated_at")]
         public long UpdatedAtSecondsSinceEpoch { get; set; }

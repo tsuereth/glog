@@ -94,7 +94,7 @@ namespace GlogGenerator.RenderState
         private void TransformContentFromText(string text)
         {
             this.Content = text;
-            
+
             this.Content = Regex.Replace(this.Content, @"<ul>  +", "<ul>");
             this.Content = Regex.Replace(this.Content, @">\n<", ">__mdquirk_linebreak<", RegexOptions.Singleline);
             this.Content = Regex.Replace(this.Content, @"(\S)\n<ul>", "$1__mdquirk_linebreak<ul>", RegexOptions.Singleline);
@@ -107,7 +107,7 @@ namespace GlogGenerator.RenderState
         private void TransformMarkdownContent(SiteState site)
         {
             var content = Shortcodes.TranslateToHtml(site.PathResolver, site, this, this.Content);
-            
+
             var mdPipeline = new MarkdownPipelineBuilder().Use<MarkdownQuirksMarkdigExtension>().Build();
             this.Content = "\t" + Markdown.ToHtml(content, mdPipeline);
 
@@ -177,6 +177,20 @@ namespace GlogGenerator.RenderState
 
         public static PageState FromPostData(SiteState site, PostData postData)
         {
+            // Verify that the post's games are found in our metadata cache.
+            foreach (var game in postData.Games)
+            {
+                var cacheEntries = site.IgdbCache.GetGameByName(game);
+                if (cacheEntries.Count == 0)
+                {
+                    throw new InvalidDataException($"No games in cache match the name \"{game}\"");
+                }
+                else if (cacheEntries.Count > 1)
+                {
+                    throw new InvalidDataException($"More than one game in cache matches the name \"{game}\"");
+                }
+            }
+
             var page = new PageState();
 
             page.Categories = postData.Categories.Select(c => new CategoryData() { Name = c }).ToList();

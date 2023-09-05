@@ -58,14 +58,7 @@ namespace GlogGenerator.Data
         {
             var game = new GameData();
 
-            if (!string.IsNullOrEmpty(igdbGame.NameForGlog))
-            {
-                game.Title = igdbGame.NameForGlog;
-            }
-            else
-            {
-                game.Title = igdbGame.Name;
-            }
+            game.Title = igdbGame.NameForGlog;
 
             if (igdbGame.Id != IgdbGame.IdNotFound)
             {

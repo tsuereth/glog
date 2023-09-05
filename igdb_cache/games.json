@@ -1,5 +1,73 @@
 [
   {
+    "id": -1,
+    "name": "Borderlands 3: Director's Cut"
+  },
+  {
+    "id": -1,
+    "name": "Depict1"
+  },
+  {
+    "id": -1,
+    "name": "Everybody Votes Channel"
+  },
+  {
+    "id": -1,
+    "name": "Gemsweeper"
+  },
+  {
+    "id": -1,
+    "name": "Internet Channel"
+  },
+  {
+    "id": -1,
+    "name": "Kabu Trader Shun"
+  },
+  {
+    "id": -1,
+    "name": "The Legend of Zelda: Four Swords"
+  },
+  {
+    "id": -1,
+    "name": "Nintendo Channel"
+  },
+  {
+    "id": -1,
+    "name": "Nintendo DS Browser"
+  },
+  {
+    "id": -1,
+    "name": "Pirate Battle"
+  },
+  {
+    "id": -1,
+    "name": "Regex Crossword"
+  },
+  {
+    "id": -1,
+    "name": "StreetPass Mii Plaza"
+  },
+  {
+    "id": 117315,
+    "name": "BioShock Infinite: Burial at Sea - Episode 2"
+  },
+  {
+    "id": 84157,
+    "name": "Panel de Pon"
+  },
+  {
+    "id": 19361,
+    "name": "Sam &amp; Max: Save the World - Episode 4: Abe Lincoln Must Die!"
+  },
+  {
+    "id": 28984,
+    "name": "Strong Bad's Cool Game for Attractive People Episode 1: Homestar Ruiner"
+  },
+  {
+    "id": 81262,
+    "name": "Tales of Monkey Island: Chapter 1 - Launch of the Screaming Narwhal"
+  },
+  {
     "category": 0,
     "checksum": "00000000-0000-0000-0000-000000000000",
     "collection": 2,

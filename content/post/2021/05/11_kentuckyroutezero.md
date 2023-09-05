@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-{{% game "Anodyne" %}}Anodyne{{% /game %}} is <i>creepy</i>.  {{% game "Magrunner: Dark Pulse" %}}Magrunner: Dark Pulse{{% /game %}} is <i>horrific</i>.  {{% game "Oxenfree" %}}Oxenfree{{% /game %}} is <i>surreal</i>.  {{% game "Jazzpunk" %}}Jazzpunk{{% /game %}} is <i>absurd</i>.  {{% game "Killer is Dead" %}}Killer Is Dead{{% /game %}} is <i>eccentric</i>.  {{% game "Wuppo: Definitive Edition" %}}Wuppo{{% /game %}} is <i>inscrutable</i>.
+{{% game "Anodyne" %}}Anodyne{{% /game %}} is <i>creepy</i>.  {{% game "Magrunner: Dark Pulse" %}}Magrunner: Dark Pulse{{% /game %}} is <i>horrific</i>.  {{% game "Oxenfree" %}}Oxenfree{{% /game %}} is <i>surreal</i>.  {{% game "Jazzpunk" %}}Jazzpunk{{% /game %}} is <i>absurd</i>.  {{% game "Killer Is Dead" %}}Killer Is Dead{{% /game %}} is <i>eccentric</i>.  {{% game "Wuppo: Definitive Edition" %}}Wuppo{{% /game %}} is <i>inscrutable</i>.
 
 All of these words are synonyms for "weird."  And {{% game "Kentucky Route Zero" %}}Kentucky Route Zero{{% /game %}} is all of those.  It's <i>weird</i>.
 
