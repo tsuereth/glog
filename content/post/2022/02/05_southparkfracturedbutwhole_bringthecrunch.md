@@ -2,12 +2,12 @@
 date = "2022-02-05T11:29:44-08:00"
 title = "Zoinks, Timmy!"
 category = ["Playing A Game"]
-game = ["South Park: The Fractured But Whole - Bring The Crunch"]
+game = ["South Park: The Fractured But Whole - Bring the Crunch"]
 platform = ["PC"]
 rating = ["Good"]
 +++
 
-Like {{% game "South Park: The Fractured But Whole - From Dusk Till Casa Bonita" %}}From Dusk Till Casa Bonita{{% /game %}}, the {{% game "South Park: The Fractured But Whole - Bring The Crunch" %}}Bring the Crunch{{% /game %}} DLC tells a self-contained South Park story and shows off a handful of new gameplay ideas.
+Like {{% game "South Park: The Fractured But Whole - From Dusk Till Casa Bonita" %}}From Dusk Till Casa Bonita{{% /game %}}, the {{% game "South Park: The Fractured But Whole - Bring the Crunch" %}}Bring the Crunch{{% /game %}} DLC tells a self-contained South Park story and shows off a handful of new gameplay ideas.
 
 This time, the kids are off to summer camp, and it's haunted - yes, this is a <a href="https://www.imdb.com/title/tt0080761/">slasher film</a> parody - but the "monsters" you run into are clearly adults in Scooby Doo outfits.  And your new class is the "Final Girl" movie stereotype, using makeshift weapons like garden shears and saw blades to survive.
 

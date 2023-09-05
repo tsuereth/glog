@@ -21,4 +21,4 @@ From Dusk Till Casa Bonita is a short, but functionally-complete slice of gamifi
 
 <b>Better than</b>: {{% game "Mass Effect 3: Leviathan" %}}Mass Effect 3: Leviathan{{% /game %}}, {{% game "South Park: The Stick of Truth" %}}South Park: The Stick of Truth{{% /game %}} (yeah, the full game!)  
 <b>Not as good as</b>: {{% game "Mass Effect 3: Citadel" %}}Mass Effect 3: Citadel{{% /game %}}, {{% game "South Park: The Fractured But Whole" %}}South Park: The Fractured But Whole{{% /game %}}  
-<b>Spoiler alert</b>: There's only {{% game "South Park: The Fractured But Whole - Bring The Crunch" %}}one more self-contained story{{% /game %}} like this one.
+<b>Spoiler alert</b>: There's only {{% game "South Park: The Fractured But Whole - Bring the Crunch" %}}one more self-contained story{{% /game %}} like this one.
