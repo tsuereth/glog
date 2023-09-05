@@ -22,7 +22,7 @@ Strider clearly doesn't care about storytelling, and wants you to enjoy the acti
 
 Really, this feels like a decades-old no-frills action game with a nice coat of paint and some under-baked features tacked onto it.  On balance, the action is "okay," but the rest of the game is simply not interesting enough to keep me going.
 
-<b>Better than</b>: {{% game "forma.8" %}}forma.8{{% /game %}}  
+<b>Better than</b>: {{% game "Forma.8" %}}Forma.8{{% /game %}}  
 <b>Not as good as</b>: {{% game "Gato Roboto" %}}Gato Roboto{{% /game %}}  
 <b>And in the "embarrassing technical issue" department</b>: I had to play on my <i>old</i> PC, because my new build has <a href="https://steamcommunity.com/app/235210/discussions/0/1634166237662954679/">too many CPU cores</a>!?
 
