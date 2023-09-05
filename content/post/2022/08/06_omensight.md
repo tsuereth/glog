@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-Am I in a time-loop of playing games that are, themselves, time-loops?  <i>Maybe</i>.  But {{% game "Omensight: Definitive Edition" %}}Omensight{{% /game %}} isn't another {{% game "DEATHLOOP" %}}DEATHLOOP{{% /game %}} or {{% game "Katana ZERO" %}}Katana Zero{{% /game %}} or {{% game "Outer Wilds" %}}Outer Wilds{{% /game %}} so much as it's another {{% game "Stories: The Path of Destinies" %}}Stories: The Path of Destinies{{% /game %}}.
+Am I in a time-loop of playing games that are, themselves, time-loops?  <i>Maybe</i>.  But {{% game "Omensight: Definitive Edition" %}}Omensight{{% /game %}} isn't another {{% game "Deathloop" %}}Deathloop{{% /game %}} or {{% game "Katana ZERO" %}}Katana Zero{{% /game %}} or {{% game "Outer Wilds" %}}Outer Wilds{{% /game %}} so much as it's another {{% game "Stories: The Path of Destinies" %}}Stories: The Path of Destinies{{% /game %}}.
 
 (It's from {{% tag "Spearhead Games" %}}the same developer{{% /tag %}}, so, makes sense.)
 

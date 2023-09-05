@@ -9,7 +9,7 @@ rating = ["Good"]
 
 {{% game "Outer Wilds" %}}Outer Wilds{{% /game %}} has a strangely bland opening, with lifeless NPCs spewing control tutorials at you and sending you on errands to talk to <i>other</i> lifeless NPCS, but after exhausting those errands (or, when you finally get tired of them) and climbing into a ramshackle spaceship -- you sloppily blast off, gaze in awe at a weird, mystifying solar system, and (if you're as bad a {{% game "Kerbal Space Program" %}}Kerbal{{% /game %}} as I am) <i>crash into the moon</i> at fatal speed.  And <i>then</i> you <b>wake up</b> ready to do it again.
 
-If {{% game "DEATHLOOP" %}}DEATHLOOP{{% /game %}} is <i><a href="https://www.imdb.com/title/tt0107048/">Groundhog Day</a></i> with guns, then Outer Wilds is <i>Groundhog Day</i> with a spaceship.
+If {{% game "Deathloop" %}}Deathloop{{% /game %}} is <i><a href="https://www.imdb.com/title/tt0107048/">Groundhog Day</a></i> with guns, then Outer Wilds is <i>Groundhog Day</i> with a spaceship.
 
 But while Colt's time-loop detective work was tempered with firefights and magic abilities, Outer Wilds is <i>all in</i> on investigation.  Each loop gives you an opportunity to explore another location, or try walking another path, to discover something new; to gradually unravel the mysteries of this system's exotic and bizarre planets, and records left by a long-dead spacefaring civilization.
 
@@ -29,6 +29,6 @@ But its obtuse points are a small part of the overall experience, and that exper
 
 <b>Better than</b>: {{% game "The Sexy Brutale" %}}The Sexy Brutale{{% /game %}}, {{% game "Stories: The Path of Destinies" %}}Stories: The Path of Destinies{{% /game %}}  
 <b>Not as good as</b>: well, I think there's yet to be a better time-loop detective story.  
-<b>Just as good as</b>: {{% game "DEATHLOOP" %}}DEATHLOOP{{% /game %}}, but with, y'know, </i>less death</i>.
+<b>Just as good as</b>: {{% game "Deathloop" %}}Deathloop{{% /game %}}, but with, y'know, </i>less death</i>.
 
 <i>Progress: completed the ship log, with internet help.</i>
