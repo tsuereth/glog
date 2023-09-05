@@ -2,7 +2,7 @@
 date = "2022-09-24T16:02:14-07:00"
 title = "Fine, one more loop"
 category = ["Playing A Game"]
-game = ["DEATHLOOP"]
+game = ["Deathloop"]
 platform = ["PC"]
 rating = ["Good"]
 +++
@@ -20,7 +20,7 @@ Eventually, when the player breaks the loop and sees the end of your story, do y
 
 The correct answer is B.  (Or even better, C: allow players to manage items <i>during regular gameplay</i> so this doesn't need to be a separate step.)
 
-{{% game "DEATHLOOP" %}}DEATHLOOP{{% /game %}} chose A, and -- it's not like I'm heartbroken that several new "Double Trinkets" and a <a href="https://deathloop.fandom.com/wiki/HALPS_Prototype">frickin' laser beam</a> vanished after I watched the <a href="https://deathloop.fandom.com/wiki/Game_Updates/04">Goldenloop update</a>'s extended ending.
+{{% game "Deathloop" %}}Deathloop{{% /game %}} chose A, and -- it's not like I'm heartbroken that several new "Double Trinkets" and a <a href="https://deathloop.fandom.com/wiki/HALPS_Prototype">frickin' laser beam</a> vanished after I watched the <a href="https://deathloop.fandom.com/wiki/Game_Updates/04">Goldenloop update</a>'s extended ending.
 
 I just think it's funny that one of the update's highlight features (the ending) was responsible for me <i>losing</i> its other additions.
 

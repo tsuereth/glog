@@ -21,7 +21,7 @@ The second problem is a simpler but even more damaging one: Prelogate's levels m
 
 Prelogate has some solid content to enjoy, but an equal amount of frustration to muddle through to get there.  That the game makes so little effort in easing the player into this frustrating content makes it all the more disappointing.
 
-<b>Better than</b>: {{% game "LYNE" %}}LYNE{{% /game %}}  
+<b>Better than</b>: {{% game "Lyne" %}}Lyne{{% /game %}}  
 <b>Not as good as</b>: {{% game "Human Resource Machine" %}}Human Resource Machine{{% /game %}}, {{% game "TIS-100" %}}TIS-100{{% /game %}}  
 <b>I'll never forgive it</b>: For "making" me <i>cheat</i> on the last few puzzles, 'cause I didn't have enough patience to guess the right logic algorithms.  It's the game's fault for breaking Karnaugh maps!  God damn it!
 

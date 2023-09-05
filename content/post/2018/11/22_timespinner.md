@@ -33,6 +33,6 @@ Ultimately, Timespinner is a success at replicating the best parts of a 2D map-b
 
 <b>Better than</b>: {{% game "Castlevania: Order of Ecclesia" %}}Castlevania: Order of Ecclesia{{% /game %}}, {{% game "Metroid: Zero Mission" %}}Metroid: Zero Mission{{% /game %}}, {{% game "Momodora: Reverie Under the Moonlight" %}}Momodora: Reverie Under the Moonlight{{% /game %}}  
 <b>Not as good as</b>: {{% game "Castlevania: Dawn of Sorrow" %}}Castlevania: Dawn of Sorrow{{% /game %}}, {{% game "Dust: An Elysian Tail" %}}Dust: An Elysian Tail{{% /game %}}  
-<b>For the record, my mostly-disappointing crowdfunding history so far</b>: {{% platform "Ouya" %}}Ouya{{% /platform %}}, {{% game "Bear Simulator" %}}Bear Simulator{{% /game %}}, {{% game "Hyper Light Drifter" %}}Hyper Light Drifter{{% /game %}} (which I dropped but should revisit), {{% game "Yooka-Laylee" %}}Yooka-Laylee{{% /game %}}, {{% game "Shaq-Fu: A Legend Reborn" %}}Shaq-Fu: A Legend Reborn{{% /game %}}, {{% game "Chasm" %}}Chasm{{% /game %}}, and finally... this!
+<b>For the record, my mostly-disappointing crowdfunding history so far</b>: {{% platform "Ouya" %}}Ouya{{% /platform %}}, {{% game "Bear Simulator" %}}Bear Simulator{{% /game %}}, {{% game "Hyper Light Drifter" %}}Hyper Light Drifter{{% /game %}} (which I dropped but should revisit), {{% game "Yooka-Laylee" %}}Yooka-Laylee{{% /game %}}, {{% game "Shaq Fu: A Legend Reborn" %}}Shaq Fu: A Legend Reborn{{% /game %}}, {{% game "Chasm" %}}Chasm{{% /game %}}, and finally... this!
 
 <i>Progress: Beat the Nightmare on Normal, 100% map completion.</i>

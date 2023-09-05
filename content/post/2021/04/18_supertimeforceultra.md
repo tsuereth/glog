@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Super Time Force Ultra" %}}Super Time Force Ultra{{% /game %}} - as its tongue-barely-in-cheek name suggests - takes a fun and flippant approach to sci-fi storytelling.  Not unlike {{% game "No Time To Explain" %}}No Time To Explain{{% /game %}}, its absurdist attitude toward time-travel-induced chaos is a great hook.
+{{% game "Super Time Force Ultra" %}}Super Time Force Ultra{{% /game %}} - as its tongue-barely-in-cheek name suggests - takes a fun and flippant approach to sci-fi storytelling.  Not unlike {{% game "No Time to Explain" %}}No Time to Explain{{% /game %}}, its absurdist attitude toward time-travel-induced chaos is a great hook.
 
 {{% absimg src="supertimeforceultra_atrip.jpg" width="640" height="360" %}}
 

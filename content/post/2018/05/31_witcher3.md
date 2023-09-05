@@ -15,6 +15,6 @@ The last few story missions were definitely a bit <i>weird</i>, but ultimately e
 
 I'd rather jump right back in.  There are still plenty of sidequests to investigate, contracts to chase, and treasure hunts to track down.  (Not to mention the {{% game "The Witcher 3: Wild Hunt - Hearts of Stone" %}}Hearts of Stone{{% /game %}} story!)
 
-<b>Better than</b>: {{% game "The Elder Scrolls V: Skyrim Special Edition" %}}The Elder Scrolls V: Skyrim Special Edition{{% /game %}}  
+<b>Better than</b>: {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}The Elder Scrolls V: Skyrim - Special Edition{{% /game %}}  
 <b>Not as good as</b>: {{% game "The Legend of Zelda: Breath of the Wild" %}}The Legend of Zelda: Breath of the Wild{{% /game %}}, in terms of mechanical fun.  
 <b>... but</b>: <i>absolutely</i> better than Breath of the Wild in terms of narrative interest, character development, and world engagement.

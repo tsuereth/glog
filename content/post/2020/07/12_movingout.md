@@ -9,7 +9,7 @@ rating = ["Good"]
 
 The past several months of quarantine have seen my local nerd gang turn to online multiplayer (largely, <a href="https://store.steampowered.com/remoteplay">Steam Remote Play Together</a>) as a substitute for in-person banter.  And though we've tried a <i>ton</i> of different co-op and counter-op games, I think the one that's impressed me most is {{% game "Moving Out" %}}Moving Out{{% /game %}}.
 
-At a glance, it resembles a chaotic move-fast-and-throw-things party game, like {{% game "Overcooked" %}}Overcooked{{% /game %}}.  But where those games tend to rely on awkward mechanics or random events to keep things unpredictable -- Moving Out has lasting appeal due to its very <i>un</i>-awkward, <i>un</i>-random level design chops.
+At a glance, it resembles a chaotic move-fast-and-throw-things party game, like {{% game "Overcooked!" %}}Overcooked!{{% /game %}}.  But where those games tend to rely on awkward mechanics or random events to keep things unpredictable -- Moving Out has lasting appeal due to its very <i>un</i>-awkward, <i>un</i>-random level design chops.
 
 The game's simple controls and straightforward carry-these-objects goal clear the way for later levels to devise truly awe-inspiring arrangements of obstacles - elevators, conveyor belts, <i>flamethrowers</i>, <b><i>lava</i></b> - without feeling unfair or punishing.  (Except for the ghosts, which can fuck right off.)  Solid fundamentals and well-crafted level layouts make these absurd challenges innately achievable.
 

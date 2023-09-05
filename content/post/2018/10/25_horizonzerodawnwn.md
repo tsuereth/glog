@@ -41,7 +41,7 @@ Generally, even the hugest, most gun-bristling machines are pretty simple to fig
 
 Zelda could have this problem too, but it feels worse in Horizon.  A few too many fights felt physically exhausting to me.
 
-Aside from fighting shit, the other big draw of Horizon's open world is just exploring it.  And it does present some interestingly-varied biomes: snowy mountains, dusty deserts, and dense jungles; but aside from the big city of Meridian, there aren't many particularly memorable regions or landmarks, and few geography-specific events.  It's immersive and fun to play around in, but doesn't really measure up to the awe-inspiring vistas of Breath of the Wild, or the character-rich set pieces in {{% game "The Elder Scrolls V: Skyrim Special Edition" %}}Skyrim{{% /game %}}.
+Aside from fighting shit, the other big draw of Horizon's open world is just exploring it.  And it does present some interestingly-varied biomes: snowy mountains, dusty deserts, and dense jungles; but aside from the big city of Meridian, there aren't many particularly memorable regions or landmarks, and few geography-specific events.  It's immersive and fun to play around in, but doesn't really measure up to the awe-inspiring vistas of Breath of the Wild, or the character-rich set pieces in {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}Skyrim{{% /game %}}.
 
 Horizon's other supporting features are kinda mediocre.  It's got cliff-climbing parkour, but the movement just doesn't work as well as an {{% tag "Uncharted" %}}Uncharted{{% /tag %}}, or even a {{% tag "Tomb Raider" %}}Tomb Raider{{% /tag %}}.  A few too many transitions can miss completely, planting Aloy's feet on a glitchy edge that inevitably falls to her death.
 

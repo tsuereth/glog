@@ -26,7 +26,7 @@ The writing's sense of humor helps, too.
 I don't want to blow too much smoke up this free game's skirt, and if it wasn't free I almost certainly wouldn't be willing to buy it.  But I really admire the amount of effort that went into creating this world, even if it is ultimately just a 90-minute-long joke.
 
 <b>Better than</b>: {{% game "DLC Quest" %}}DLC Quest{{% /game %}}  
-<b>Not as good as</b>: well, {{% game "The Elder Scrolls V: Skyrim Special Edition" %}}Skyrim{{% /game %}}, I guess.  
+<b>Not as good as</b>: well, {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}Skyrim{{% /game %}}, I guess.  
 <b>Higher-quality writing than</b>: a depressing amount of paid, even triple-A, games.
 
 <i>Progress: 100%</i>

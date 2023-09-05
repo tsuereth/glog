@@ -2,11 +2,11 @@
 date = "2018-04-10T07:44:26-07:00"
 title = "The madmen, they're actually doing it"
 category = ["Looking Forward To It"]
-game = ["Shaq-Fu: A Legend Reborn"]
+game = ["Shaq Fu: A Legend Reborn"]
 platform = ["PC"]
 +++
 
-Only a month or two after saying they would <i>have</i> a release date - and, you know, a couple years after their initial estimate - {{% game "Shaq-Fu: A Legend Reborn" %}}Shaq Fu 2{{% /game %}} is <a href="https://www.youtube.com/watch?v=sRZFqQFuaGg">finally dated</a>.  I guess I can appreciate that, after this project's tumultuous history, they really wanted to be sure of the date before announcing it.
+Only a month or two after saying they would <i>have</i> a release date - and, you know, a couple years after their initial estimate - {{% game "Shaq Fu: A Legend Reborn" %}}Shaq Fu 2{{% /game %}} is <a href="https://www.youtube.com/watch?v=sRZFqQFuaGg">finally dated</a>.  I guess I can appreciate that, after this project's tumultuous history, they really wanted to be sure of the date before announcing it.
 
 And ... wow.  I like the over-the-top irreverence angle, a'la {{% game "Marlow Briggs and the Mask of Death" %}}Marlow Briggs{{% /game %}} -- but <a href="https://www.youtube.com/watch?v=cwSjwzJbFnY">this gameplay</a> looks like a lot of bland, undercooked shit.
 

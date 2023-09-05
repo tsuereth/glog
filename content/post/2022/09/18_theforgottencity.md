@@ -9,7 +9,7 @@ rating = ["Good"]
 
 Here I go, getting stuck in <i>yet another</i> time-looping mystery.  This time, it's <a href="https://www.imdb.com/title/tt0107048/">Groundhog Day</a> with ... ancient Romans?
 
-{{% game "The Forgotten City" %}}The Forgotten City{{% /game %}} began life as a {{% game "The Elder Scrolls V: Skyrim Special Edition" %}}Skyrim{{% /game %}} mod - an <a href="https://www.nexusmods.com/skyrimspecialedition/mods/1179">award-winning one</a>, apparently - and while its transition to a standalone Unreal title hangs on to some "Bethesda game" aesthetics and control quirks, it's remarkable how clear and uncompromising The Forgotten City's narrative focus is.
+{{% game "The Forgotten City" %}}The Forgotten City{{% /game %}} began life as a {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}Skyrim{{% /game %}} mod - an <a href="https://www.nexusmods.com/skyrimspecialedition/mods/1179">award-winning one</a>, apparently - and while its transition to a standalone Unreal title hangs on to some "Bethesda game" aesthetics and control quirks, it's remarkable how clear and uncompromising The Forgotten City's narrative focus is.
 
 The game makes its intentions clear pretty immediately: you're going to watch an NPC's face move as they talk at you, you're going to respond to that NPC with a menu selection, and you're going to remember pertinent facts in a "Goals" list that points you toward the next clue, in each of a number of varied mystery threads.
 

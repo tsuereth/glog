@@ -21,7 +21,7 @@ Titanfall 2 doesn't exactly flip the script on first-person shooter campaigns, b
 
 (Also, between this game's <a href="https://titanfall.fandom.com/wiki/BT-7274">BT</a> and {{% game "Star Wars Jedi: Fallen Order" %}}Jedi: Fallen Order{{% /game %}}'s BD-1, I'm starting to suspect that someone at {{% tag "Respawn Entertainment" %}}Respawn{{% /tag %}} likes robot characters more than human ones.)
 
-<b>Better than</b>: {{% game "Bulletstorm" %}}Bulletstorm{{% /game %}}, {{% game "SUPERHOT" %}}SUPERHOT{{% /game %}}, {{% game "Wolfenstein II: The New Colossus" %}}Wolfenstein II: The New Colossus{{% /game %}}  
+<b>Better than</b>: {{% game "Bulletstorm" %}}Bulletstorm{{% /game %}}, {{% game "SuperHot" %}}SuperHot{{% /game %}}, {{% game "Wolfenstein II: The New Colossus" %}}Wolfenstein II: The New Colossus{{% /game %}}  
 <b>Not as good as</b>: {{% game "Wolfenstein: The New Order" %}}Wolfenstein: The New Order{{% /game %}}  
 <b>More engaging gameplay, but a less compelling narrative, than</b>: {{% game "Spec Ops: The Line" %}}Spec Ops: The Line{{% /game %}}
 

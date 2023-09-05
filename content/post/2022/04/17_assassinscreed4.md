@@ -2,12 +2,12 @@
 date = "2022-04-17T14:05:35-07:00"
 title = "Our Flag Means Lots of Stabbing"
 category = ["Playing A Game"]
-game = ["Assassin's Creed IV: Black Flag"]
+game = ["Assassin's Creed IV Black Flag"]
 platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Assassin's Creed IV: Black Flag" %}}Black Flag{{% /game %}} has long been "the good {{% tag "Assassin's Creed" %}}Assassin's Creed{{% /tag %}} game*" as well as "the good pirates game" in my memory, so when <a href="https://www.imdb.com/title/tt11000902/">Our Flag Means Death</a> reignited my child-like (or Stede Bonnet-like, if you prefer) fascination with the pirate life, it only felt natural to dive back into Edward Kenway's misadventure.
+{{% game "Assassin's Creed IV Black Flag" %}}Black Flag{{% /game %}} has long been "the good {{% tag "Assassin's Creed" %}}Assassin's Creed{{% /tag %}} game*" as well as "the good pirates game" in my memory, so when <a href="https://www.imdb.com/title/tt11000902/">Our Flag Means Death</a> reignited my child-like (or Stede Bonnet-like, if you prefer) fascination with the pirate life, it only felt natural to dive back into Edward Kenway's misadventure.
 
 <i>(*) Did you know?: Ubisoft has continued to make even more Assassin's Creed games!  And, believe it or not, the modern-era Abstergo plot is still part of them.  Wow!</i>
 

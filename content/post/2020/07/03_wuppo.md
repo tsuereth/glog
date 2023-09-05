@@ -17,7 +17,7 @@ And my problem with Wuppo isn't necessarily that it asks me to understand and ex
 
 I feel like I could "get" Wuppo if I kept trying, but it's not giving me a very good reason to do so.
 
-<b>Better than</b>: {{% game "forma.8" %}}forma.8{{% /game %}}  
+<b>Better than</b>: {{% game "Forma.8" %}}Forma.8{{% /game %}}  
 <b>Not as good as</b>: {{% game "Headlander" %}}Headlander{{% /game %}}  
 <b>Very distinct from, but ultimately as uncompelling as</b>: {{% game "Strider (2014)" %}}Strider (2014){{% /game %}}
 
