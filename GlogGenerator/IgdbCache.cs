@@ -5,6 +5,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using GlogGenerator.IgdbApi;
+using Newtonsoft.Json;
 
 namespace GlogGenerator
 {
@@ -121,6 +122,75 @@ namespace GlogGenerator
             }
 
             return null;
+        }
+
+        public void WriteToJsonFiles(string directoryPath)
+        {
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            var collectionsFilePath = Path.Combine(directoryPath, "collections.json");
+            File.WriteAllText(collectionsFilePath, JsonConvert.SerializeObject(this.collections.Values.OrderBy(o => o.Id), Formatting.Indented));
+
+            var companiesFilePath = Path.Combine(directoryPath, "companies.json");
+            File.WriteAllText(companiesFilePath, JsonConvert.SerializeObject(this.companies.Values.OrderBy(o => o.Id), Formatting.Indented));
+
+            var franchisesFilePath = Path.Combine(directoryPath, "franchises.json");
+            File.WriteAllText(franchisesFilePath, JsonConvert.SerializeObject(this.franchises.Values.OrderBy(o => o.Id), Formatting.Indented));
+
+            var gamesFilePath = Path.Combine(directoryPath, "games.json");
+            File.WriteAllText(gamesFilePath, JsonConvert.SerializeObject(this.games.Values.OrderBy(o => o.Id), Formatting.Indented));
+
+            var gameModesFilePath = Path.Combine(directoryPath, "gameModes.json");
+            File.WriteAllText(gameModesFilePath, JsonConvert.SerializeObject(this.gameModes.Values.OrderBy(o => o.Id), Formatting.Indented));
+
+            var genresFilePath = Path.Combine(directoryPath, "genres.json");
+            File.WriteAllText(genresFilePath, JsonConvert.SerializeObject(this.genres.Values.OrderBy(o => o.Id), Formatting.Indented));
+
+            var involvedCompaniesFilePath = Path.Combine(directoryPath, "involvedCompanies.json");
+            File.WriteAllText(involvedCompaniesFilePath, JsonConvert.SerializeObject(this.involvedCompanies.Values.OrderBy(o => o.Id), Formatting.Indented));
+
+            var playerPerspectivesFilePath = Path.Combine(directoryPath, "playerPerspectives.json");
+            File.WriteAllText(playerPerspectivesFilePath, JsonConvert.SerializeObject(this.playerPerspectives.Values.OrderBy(o => o.Id), Formatting.Indented));
+
+            var themesFilePath = Path.Combine(directoryPath, "themes.json");
+            File.WriteAllText(themesFilePath, JsonConvert.SerializeObject(this.themes.Values.OrderBy(o => o.Id), Formatting.Indented));
+        }
+
+        public static IgdbCache FromJsonFiles(string directoryPath)
+        {
+            var cache = new IgdbCache();
+
+            var collectionsFilePath = Path.Combine(directoryPath, "collections.json");
+            cache.collections = JsonConvert.DeserializeObject<List<IgdbCollection>>(File.ReadAllText(collectionsFilePath)).ToDictionary(o => o.Id, o => o);
+
+            var companiesFilePath = Path.Combine(directoryPath, "companies.json");
+            cache.companies = JsonConvert.DeserializeObject<List<IgdbCompany>>(File.ReadAllText(companiesFilePath)).ToDictionary(o => o.Id, o => o);
+
+            var franchisesFilePath = Path.Combine(directoryPath, "franchises.json");
+            cache.franchises = JsonConvert.DeserializeObject<List<IgdbFranchise>>(File.ReadAllText(franchisesFilePath)).ToDictionary(o => o.Id, o => o);
+
+            var gamesFilePath = Path.Combine(directoryPath, "games.json");
+            cache.games = JsonConvert.DeserializeObject<List<IgdbGame>>(File.ReadAllText(gamesFilePath)).ToDictionary(o => o.Id, o => o);
+
+            var gameModesFilePath = Path.Combine(directoryPath, "gameModes.json");
+            cache.gameModes = JsonConvert.DeserializeObject<List<IgdbGameMode>>(File.ReadAllText(gameModesFilePath)).ToDictionary(o => o.Id, o => o);
+
+            var genresFilePath = Path.Combine(directoryPath, "genres.json");
+            cache.genres = JsonConvert.DeserializeObject<List<IgdbGenre>>(File.ReadAllText(genresFilePath)).ToDictionary(o => o.Id, o => o);
+
+            var involvedCompaniesFilePath = Path.Combine(directoryPath, "involvedCompanies.json");
+            cache.involvedCompanies = JsonConvert.DeserializeObject<List<IgdbInvolvedCompany>>(File.ReadAllText(involvedCompaniesFilePath)).ToDictionary(o => o.Id, o => o);
+
+            var playerPerspectivesFilePath = Path.Combine(directoryPath, "playerPerspectives.json");
+            cache.playerPerspectives = JsonConvert.DeserializeObject<List<IgdbPlayerPerspective>>(File.ReadAllText(playerPerspectivesFilePath)).ToDictionary(o => o.Id, o => o);
+
+            var themesFilePath = Path.Combine(directoryPath, "themes.json");
+            cache.themes = JsonConvert.DeserializeObject<List<IgdbTheme>>(File.ReadAllText(themesFilePath)).ToDictionary(o => o.Id, o => o);
+
+            return cache;
         }
 
         // DELETEME: the .sql cache should be transitioned to JSON

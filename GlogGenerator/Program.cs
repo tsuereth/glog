@@ -56,6 +56,9 @@ namespace GlogGenerator
 
             if (updateIgdbCache)
             {
+                // TODO: api load!
+                site.IgdbCache.WriteToJsonFiles(inputFilesBasePath);
+
                 throw new NotImplementedException();
             }
 

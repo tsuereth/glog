@@ -499,8 +499,12 @@ namespace GlogGenerator.RenderState
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
             var config = ConfigData.FromFilePath(configFilePath);
 
+#if true
             var igdbCacheFilePath = Path.Combine(inputFilesBasePath, "igdb_cache.sql");
             var igdbCache = IgdbCache.FromSqlFile(igdbCacheFilePath);
+#else
+            var igdbCache = IgdbCache.FromJsonFiles(inputFilesBasePath);
+#endif
 
             var site = new SiteState(config.DataBasePath, templatesBasePath)
             {
