@@ -55,4 +55,4 @@ I'm really looking forward to a sequel that copies Zelda's versatile climbing, a
 
 <b>Better than</b>: {{% game "Middle-earth: Shadow of War" %}}Middle-earth: Shadow of War{{% /game %}}  
 <b>Not as good as</b>: {{% game "The Legend of Zelda: Breath of the Wild" %}}The Legend of Zelda: Breath of the Wild{{% /game %}} (... but the story is better), {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
-<b>The ending is a bit of a cliffhanger</b>: but I'm hoping that {{% game "Horizon Zero Dawn - The Frozen Wilds" %}}The Frozen Wilds{{% /game %}} helps wrap that up.
+<b>The ending is a bit of a cliffhanger</b>: but I'm hoping that {{% game "Horizon Zero Dawn: The Frozen Wilds" %}}The Frozen Wilds{{% /game %}} helps wrap that up.

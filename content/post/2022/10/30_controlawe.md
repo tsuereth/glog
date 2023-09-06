@@ -17,7 +17,7 @@ It doesn't have as much distinctive gameplay as The Foundation did, though; just
 
 ... but, despite AWE's fixation on <i>some other game</i>, it's still a fulfilling and fun experience for anyone wanting more Control.
 
-<b>Better than</b>: {{% game "Batman: Arkham Origins - Cold, Cold Heart" %}}Batman: Arkham Origins - Cold, Cold Heart{{% /game %}}, {{% game "Horizon Zero Dawn - The Frozen Wilds" %}}Horizon Zero Dawn - The Frozen Wilds{{% /game %}}  
+<b>Better than</b>: {{% game "Batman: Arkham Origins - Cold, Cold Heart" %}}Batman: Arkham Origins - Cold, Cold Heart{{% /game %}}, {{% game "Horizon Zero Dawn: The Frozen Wilds" %}}Horizon Zero Dawn: The Frozen Wilds{{% /game %}}  
 <b>Not as good as</b>: {{% game "Control: The Foundation" %}}Control: The Foundation{{% /game %}}  
 <b>If the next Alan Wake includes more Control lore</b>: I might actually muster up some interest for it.
 

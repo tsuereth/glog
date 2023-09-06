@@ -2,14 +2,14 @@
 date = "2021-12-12T13:00:46-08:00"
 title = "Yeah, I still hate these fucking fire wolves"
 category = ["Playing A Game"]
-game = ["Horizon Zero Dawn - The Frozen Wilds"]
+game = ["Horizon Zero Dawn: The Frozen Wilds"]
 platform = ["PC"]
 rating = ["Good"]
 +++
 
 At least I was prepared for them, this time, and knew to focus hard on weak spots -- or just run the hell away.
 
-At the end of the day, though, {{% game "Horizon Zero Dawn - The Frozen Wilds" %}}The Frozen Wilds{{% /game %}} is still {{% abslink href="2018/10/28/i-hate-these-fucking-fire-wolves/" %}}"more of the same" ... "but smaller."{{% /abslink %}}
+At the end of the day, though, {{% game "Horizon Zero Dawn: The Frozen Wilds" %}}The Frozen Wilds{{% /game %}} is still {{% abslink href="2018/10/28/i-hate-these-fucking-fire-wolves/" %}}"more of the same" ... "but smaller."{{% /abslink %}}
 
 And while more Horizon certainly isn't bad - I had no trouble dumping hours upon hours into The Cut's objectives and collectibles - it simply doesn't measure up to the main game's high-points.
 

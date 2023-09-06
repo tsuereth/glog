@@ -2,12 +2,12 @@
 date = "2018-10-28T13:15:04-07:00"
 title = "I hate these fucking fire wolves"
 category = ["Playing A Game"]
-game = ["Horizon Zero Dawn - The Frozen Wilds"]
+game = ["Horizon Zero Dawn: The Frozen Wilds"]
 platform = ["PS4"]
 rating = ["Good"]
 +++
 
-No, {{% game "Horizon Zero Dawn - The Frozen Wilds" %}}The Frozen Wilds{{% /game %}} didn't wrap up {{% game "Horizon Zero Dawn" %}}Horizon{{% /game %}}'s cliffhanger ending.  I guess they're saving that for a sequel.
+No, {{% game "Horizon Zero Dawn: The Frozen Wilds" %}}The Frozen Wilds{{% /game %}} didn't wrap up {{% game "Horizon Zero Dawn" %}}Horizon{{% /game %}}'s cliffhanger ending.  I guess they're saving that for a sequel.
 
 Overall, Frozen Wilds is more of the same Horizon stuff, but smaller: a main story, some side quests, some collectibles, and a few new weapons and enemies.
 

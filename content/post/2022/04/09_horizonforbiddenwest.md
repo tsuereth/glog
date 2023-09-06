@@ -23,7 +23,7 @@ The world is sprawling, filled with diverse environments and well-integrated eve
 
 (Forbidden West also includes a larger number of memorable destinations and landmarks, though none are as awe-inspiring as {{% spoiler %}}the ruins of Las Vegas, and Aloy's quest to restore its neon holographic lights{{% /spoiler %}} -- seeing that for the first time was a real {{% game "BioShock" %}}descending-to-Rapture{{% /game %}} moment.)
 
-The combat is heart-poundingly exciting, even if sometimes it's <i>too</i> much; I mostly avoided the {{% game "Horizon Zero Dawn - The Frozen Wilds" %}}fucking fire wolves{{% /game %}}, but now there are some <i>real asshole</i> ice turtles.  And setting aside a glut of weapon types and elemental ammo that feel unnecessary, dodging enemy attacks and targeting their weak points is still plenty satisfying.
+The combat is heart-poundingly exciting, even if sometimes it's <i>too</i> much; I mostly avoided the {{% game "Horizon Zero Dawn: The Frozen Wilds" %}}fucking fire wolves{{% /game %}}, but now there are some <i>real asshole</i> ice turtles.  And setting aside a glut of weapon types and elemental ammo that feel unnecessary, dodging enemy attacks and targeting their weak points is still plenty satisfying.
 
 So... what Zero Dawn excelled at, Forbidden West excels even more.  And while it's a shame that this sequel didn't manage to improve on the original's low points, achieving the same highs makes it a decisive "win" nevertheless.
 

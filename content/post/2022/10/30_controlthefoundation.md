@@ -21,7 +21,7 @@ And it's got a <i>substantial</i> amount of content, filling a fairly hefty sub-
 
 The Foundation ticks all the same boxes as Control's main game, without feeling overly familiar.
 
-<b>Better than</b>: {{% game "Batman: Arkham Origins - Cold, Cold Heart" %}}Batman: Arkham Origins - Cold, Cold Heart{{% /game %}}, {{% game "Horizon Zero Dawn - The Frozen Wilds" %}}Horizon Zero Dawn - The Frozen Wilds{{% /game %}}  
+<b>Better than</b>: {{% game "Batman: Arkham Origins - Cold, Cold Heart" %}}Batman: Arkham Origins - Cold, Cold Heart{{% /game %}}, {{% game "Horizon Zero Dawn: The Frozen Wilds" %}}Horizon Zero Dawn: The Frozen Wilds{{% /game %}}  
 <b>Not as good as</b>: {{% game "The Witcher 3: Wild Hunt - Hearts of Stone" %}}The Witcher 3: Wild Hunt - Hearts of Stone{{% /game %}}  
 <b>The "Swift Platform" side mission may not top the Ashtray Maze</b>: but it comes impressively close.
 
