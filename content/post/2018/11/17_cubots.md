@@ -2,12 +2,12 @@
 date = "2018-11-17T12:14:44-08:00"
 title = "The origin, and demise"
 category = ["Playing A Game"]
-game = ["CUBOTS - The Origins"]
+game = ["Cubots: The Origins"]
 platform = ["PC"]
 rating = ["Awful"]
 +++
 
-The trailer for {{% game "CUBOTS - The Origins" %}}Cubots{{% /game %}} looked so clean and polished, I was kinda surprised at how inexpensive the game is.  Well... you get what you pay for.
+The trailer for {{% game "Cubots: The Origins" %}}Cubots{{% /game %}} looked so clean and polished, I was kinda surprised at how inexpensive the game is.  Well... you get what you pay for.
 
 Specifically, what I paid for here turned out to be pretty much garbage.  Setting aside the lack of controller support, the slapdash UI (you can elect to jump to a boss fight?), the broken English in tutorial text, and the assets that look like they came out of a free art pack...
 

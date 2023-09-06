@@ -14,7 +14,7 @@ Minimal, repetitive art and audio?  Check.  A bare-bones main menu that was clea
 Spooky Cats demonstrates the creator's ability to program a modicum of game logic.  It isn't something that anyone should be expected to exchange money for.
 
 <b>Better than</b>: {{% game "Miner Ultra Adventures" %}}Miner Ultra Adventures{{% /game %}}  
-<b>Not as good as</b>: {{% game "CUBOTS - The Origins" %}}CUBOTS - The Origins{{% /game %}}  
+<b>Not as good as</b>: {{% game "Cubots: The Origins" %}}Cubots: The Origins{{% /game %}}  
 <b>The collectibles are pennies?</b>: Why not cat toys, or cat food, or ... something that has <i>anything</i> to do with cats?
 
 <i>Progress: Finished a few levels, who cares how many.</i>

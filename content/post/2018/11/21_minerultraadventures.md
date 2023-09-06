@@ -19,6 +19,6 @@ As if the ice-rink physics alone aren't bad enough, add an automatic camera that
 
 I have no compunctions in calling Miner Ultra Adventures <b>unplayably bad</b>.
 
-If nothing else, it's proof of the Steam platform's successful democratization.  When poorly-tested disasters like {{% game "Brainfuck" %}}Brainfuck{{% /game %}}, hobbyist garbage like {{% game "CUBOTS - The Origins" %}}CUBOTS{{% /game %}}, and utter shit like <i>this</i> can be sold for any amount of money; there are clearly no barriers to entry.  Truly, <i>anyone</i> can sell a game.
+If nothing else, it's proof of the Steam platform's successful democratization.  When poorly-tested disasters like {{% game "Brainfuck" %}}Brainfuck{{% /game %}}, hobbyist garbage like {{% game "Cubots: The Origins" %}}Cubots{{% /game %}}, and utter shit like <i>this</i> can be sold for any amount of money; there are clearly no barriers to entry.  Truly, <i>anyone</i> can sell a game.
 
 As for my friend, well, in the future I'll be a bit more suspicious of his gifts.

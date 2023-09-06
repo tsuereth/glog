@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-I know that I've impulse-purchased {{% game "Super Daryl Deluxe" %}}some{{% /game %}} {{% game "Mugsters" %}}questionable{{% /game %}} {{% game "CUBOTS - The Origins" %}}games{{% /game %}}, but this year - as I've made a concerted effort to clean up my backlog - it's struck me just <i>how many</i> poor purchasing decisions are in there.
+I know that I've impulse-purchased {{% game "Super Daryl Deluxe" %}}some{{% /game %}} {{% game "Mugsters" %}}questionable{{% /game %}} {{% game "Cubots: The Origins" %}}games{{% /game %}}, but this year - as I've made a concerted effort to clean up my backlog - it's struck me just <i>how many</i> poor purchasing decisions are in there.
 
 Enter {{% game "Onikira: Demon Killer" %}}Onikira: Demon Killer{{% /game %}}.  Why did I buy this?  Maybe because its screenshots look shiny and colorful, like {{% game "Muramasa: The Demon Blade" %}}Muramasa: The Demon Blade{{% /game %}}?  Evidently I didn't pay enough attention to the <a href="https://store.steampowered.com/app/310850/">Steam reviews</a>, or I would have considered that Onikira might have quality control issues.
 

@@ -21,7 +21,7 @@ And although Mugsters can be played co-operatively, the appeal of a multiplayer 
 
 If you really, really want to play around in a fairly-sparse physics sandbox with vehicles, then Mugsters offers several levels' worth of that.  But the game is otherwise outstandingly barren.
 
-<b>Better than</b>: {{% game "CUBOTS - The Origins" %}}CUBOTS - The Origins{{% /game %}}  
+<b>Better than</b>: {{% game "Cubots: The Origins" %}}Cubots: The Origins{{% /game %}}  
 <b>Not as good as</b>: {{% game "Zoo Rampage" %}}Zoo Rampage{{% /game %}}  
 <b>For a better vehicle sandbox, consider revisiting</b>: {{% game "Blast Corps" %}}Blast Corps{{% /game %}}
 

@@ -15,7 +15,7 @@ But the bigger problem with Forma.8 is that it's <b>incredibly dull</b>.  An eff
 
 The framework of the game would be perfect for ambient storytelling, but it doesn't seem to care to <i>tell</i> a story.  Forma.8 is <i>too chill</i>; I got bored and walked away.
 
-<b>Better than</b>: {{% game "CUBOTS - The Origins" %}}CUBOTS - The Origins{{% /game %}}  
+<b>Better than</b>: {{% game "Cubots: The Origins" %}}Cubots: The Origins{{% /game %}}  
 <b>Not as good as</b>: {{% game "Insanely Twisted Shadow Planet" %}}Insanely Twisted Shadow Planet{{% /game %}}, {{% game "Unmechanical" %}}Unmechanical{{% /game %}}  
 <b>Reminds me a bit of</b>: {{% game "Luminesca" %}}Luminesca{{% /game %}}, but even that unfinished proto-game was more interesting and less frustrating.
 

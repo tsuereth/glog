@@ -13,6 +13,6 @@ And it's easy to complete in half an hour or less.  (There's an achievement for 
 
 Neat, but hard to recommend for purchase, at any price.
 
-<b>Better than</b>: {{% game "CUBOTS - The Origins" %}}CUBOTS - The Origins{{% /game %}}  
+<b>Better than</b>: {{% game "Cubots: The Origins" %}}Cubots: The Origins{{% /game %}}  
 <b>Not as good as</b>: {{% game "AER: Memories of Old" %}}AER: Memories of Old{{% /game %}}  
 <b>But, kudos to the developer</b>: for making a pretty good portfolio piece.
