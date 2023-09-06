@@ -12,6 +12,11 @@ namespace GlogGenerator
     {
         public static readonly string JsonFilesBaseDir = "igdb_cache";
 
+        private static readonly JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings()
+        {
+            NullValueHandling = NullValueHandling.Ignore,
+        };
+
         private Dictionary<int, IgdbCollection> collectionsById = new Dictionary<int, IgdbCollection>();
 
         private Dictionary<int, IgdbCompany> companiesById = new Dictionary<int, IgdbCompany>();
@@ -201,33 +206,33 @@ namespace GlogGenerator
             }
 
             var collectionsFilePath = Path.Combine(directoryPath, "collections.json");
-            File.WriteAllText(collectionsFilePath, JsonConvert.SerializeObject(this.collectionsById.Values.OrderBy(o => o.Id), Formatting.Indented));
+            File.WriteAllText(collectionsFilePath, JsonConvert.SerializeObject(this.collectionsById.Values.OrderBy(o => o.Id), Formatting.Indented, jsonSerializerSettings));
 
             var companiesFilePath = Path.Combine(directoryPath, "companies.json");
-            File.WriteAllText(companiesFilePath, JsonConvert.SerializeObject(this.companiesById.Values.OrderBy(o => o.Id), Formatting.Indented));
+            File.WriteAllText(companiesFilePath, JsonConvert.SerializeObject(this.companiesById.Values.OrderBy(o => o.Id), Formatting.Indented, jsonSerializerSettings));
 
             var franchisesFilePath = Path.Combine(directoryPath, "franchises.json");
-            File.WriteAllText(franchisesFilePath, JsonConvert.SerializeObject(this.franchisesById.Values.OrderBy(o => o.Id), Formatting.Indented));
+            File.WriteAllText(franchisesFilePath, JsonConvert.SerializeObject(this.franchisesById.Values.OrderBy(o => o.Id), Formatting.Indented, jsonSerializerSettings));
 
             var gamesFilePath = Path.Combine(directoryPath, "games.json");
             var allGames = this.gamesUnidentified.OrderBy(o => o.NameForGlog).ToList();
             allGames.AddRange(this.gamesById.Values.OrderBy(o => o.Id));
-            File.WriteAllText(gamesFilePath, JsonConvert.SerializeObject(allGames, Formatting.Indented));
+            File.WriteAllText(gamesFilePath, JsonConvert.SerializeObject(allGames, Formatting.Indented, jsonSerializerSettings));
 
             var gameModesFilePath = Path.Combine(directoryPath, "gameModes.json");
-            File.WriteAllText(gameModesFilePath, JsonConvert.SerializeObject(this.gameModesById.Values.OrderBy(o => o.Id), Formatting.Indented));
+            File.WriteAllText(gameModesFilePath, JsonConvert.SerializeObject(this.gameModesById.Values.OrderBy(o => o.Id), Formatting.Indented, jsonSerializerSettings));
 
             var genresFilePath = Path.Combine(directoryPath, "genres.json");
-            File.WriteAllText(genresFilePath, JsonConvert.SerializeObject(this.genresById.Values.OrderBy(o => o.Id), Formatting.Indented));
+            File.WriteAllText(genresFilePath, JsonConvert.SerializeObject(this.genresById.Values.OrderBy(o => o.Id), Formatting.Indented, jsonSerializerSettings));
 
             var involvedCompaniesFilePath = Path.Combine(directoryPath, "involvedCompanies.json");
-            File.WriteAllText(involvedCompaniesFilePath, JsonConvert.SerializeObject(this.involvedCompaniesById.Values.OrderBy(o => o.Id), Formatting.Indented));
+            File.WriteAllText(involvedCompaniesFilePath, JsonConvert.SerializeObject(this.involvedCompaniesById.Values.OrderBy(o => o.Id), Formatting.Indented, jsonSerializerSettings));
 
             var playerPerspectivesFilePath = Path.Combine(directoryPath, "playerPerspectives.json");
-            File.WriteAllText(playerPerspectivesFilePath, JsonConvert.SerializeObject(this.playerPerspectivesById.Values.OrderBy(o => o.Id), Formatting.Indented));
+            File.WriteAllText(playerPerspectivesFilePath, JsonConvert.SerializeObject(this.playerPerspectivesById.Values.OrderBy(o => o.Id), Formatting.Indented, jsonSerializerSettings));
 
             var themesFilePath = Path.Combine(directoryPath, "themes.json");
-            File.WriteAllText(themesFilePath, JsonConvert.SerializeObject(this.themesById.Values.OrderBy(o => o.Id), Formatting.Indented));
+            File.WriteAllText(themesFilePath, JsonConvert.SerializeObject(this.themesById.Values.OrderBy(o => o.Id), Formatting.Indented, jsonSerializerSettings));
         }
 
         public static IgdbCache FromJsonFiles(string directoryPath)
