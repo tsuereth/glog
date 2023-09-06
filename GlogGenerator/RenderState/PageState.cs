@@ -104,8 +104,8 @@ namespace GlogGenerator.RenderState
 
         public string TermsType { get; set; } = string.Empty;
 
-        private SiteState siteState = null;
-        private string renderedContent = null;
+        private SiteState siteState;
+        private string renderedContent;
 
         public PageState(SiteState siteState)
         {
