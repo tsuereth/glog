@@ -20,7 +20,7 @@ Personally I find this kind of unpredictable mechanic tiring and unsatisfying - 
 7 Billion Humans was mostly fun as far as I played it, and it does boast significantly more puzzles than Human Resource Machine did.  But I got bored of its programmer-unfriendly UI and "magic" behavior around the halfway point.
 
 <b>Better than</b>: {{% game "Opus Magnum" %}}Opus Magnum{{% /game %}}, {{% game "Silicon Zeroes" %}}Silicon Zeroes{{% /game %}}  
-<b>Not as good as</b>: {{% game "EXAPUNKS" %}}EXAPUNKS{{% /game %}}, {{% game "Human Resource Machine" %}}Human Resource Machine{{% /game %}}  
+<b>Not as good as</b>: {{% game "Exapunks" %}}Exapunks{{% /game %}}, {{% game "Human Resource Machine" %}}Human Resource Machine{{% /game %}}  
 <b>Nerd alert</b>: if the game supported modular code (functions), I might even have written some type-safe helper modules.  Alas.
 
 <i>Progress: 34 "years" (puzzles completed).</i>

@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-There are {{% game "EXAPUNKS" %}}specific tastes{{% /game %}}, there are {{% game "The Saboteur" %}}guilty pleasures{{% /game %}}, and then there are games like {{% game "3030 Deathwar Redux" %}}3030 Deathwar Redux{{% /game %}} that - despite tapping into some of my most primal video game interests - I just can't recommend.
+There are {{% game "Exapunks" %}}specific tastes{{% /game %}}, there are {{% game "The Saboteur" %}}guilty pleasures{{% /game %}}, and then there are games like {{% game "3030 Deathwar Redux" %}}3030 Deathwar Redux{{% /game %}} that - despite tapping into some of my most primal video game interests - I just can't recommend.
 
 3030 Deathwar Redux is a top-down space-trading simulator, where you pick up missions at a spaceport, buy and sell space cargo, hunt space pirate bounties, buy ship upgrades, buy a bigger ship... <i>et cetera</i>.  It's a familiar formula but a difficult one to get right.  And while some of Deathwar's gameplay loops are total write-offs (asteroid mining is pointless, as is the barely-playable salvaging mechanic), enough of it <i>does</i> work to make space-truckin' around this galaxy feel pretty great.
 

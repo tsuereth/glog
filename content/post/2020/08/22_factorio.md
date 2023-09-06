@@ -30,7 +30,7 @@ Well, and you'll need to keep up an arms race as your increasing pollution level
 So, yeah, there are parts I was underwhelmed by and parts that I definitely think could have been done better.  But none of that changes the fact that Factorio is the first game in years that kept me up literally all night playing.
 
 <b>Better than</b>: {{% game "Infinifactory" %}}Infinifactory{{% /game %}}  
-<b>Not as good as</b>: {{% game "EXAPUNKS" %}}EXAPUNKS{{% /game %}}  
+<b>Not as good as</b>: {{% game "Exapunks" %}}Exapunks{{% /game %}}  
 <b>As for what's next</b>: when will {{% game "Satisfactory" %}}Satisfactory{{% /game %}} leave early access?
 
 <i>Progress: Launched a rocket.</i>
