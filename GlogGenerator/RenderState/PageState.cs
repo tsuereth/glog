@@ -41,13 +41,26 @@ namespace GlogGenerator.RenderState
 
         public string IgdbUrl { get; set; }
 
-        public string Content { get; set; } = string.Empty;
+        public string SourceContent { get; set; } = string.Empty;
+
+        public string RenderedContent
+        {
+            get
+            {
+                if (this.renderedContent == null)
+                {
+                    this.renderedContent = this.RenderContentFromSourceMarkdown();
+                }
+
+                return this.renderedContent;
+            }
+        }
 
         public string ContentEscapedForRss
         {
             get
             {
-                return this.Content
+                return this.RenderedContent
                     .Trim()
                     .Replace("&", "&amp;")
                     .Replace("<", "&lt;")
@@ -91,76 +104,86 @@ namespace GlogGenerator.RenderState
 
         public string TermsType { get; set; } = string.Empty;
 
-        private void TransformContentFromText(string text)
-        {
-            this.Content = text;
+        private SiteState siteState = null;
+        private string renderedContent = null;
 
-            this.Content = Regex.Replace(this.Content, @"<ul>  +", "<ul>");
-            this.Content = Regex.Replace(this.Content, @">\n<", ">__mdquirk_linebreak<", RegexOptions.Singleline);
-            this.Content = Regex.Replace(this.Content, @"(\S)\n<ul>", "$1__mdquirk_linebreak<ul>", RegexOptions.Singleline);
-            this.Content = Regex.Replace(this.Content, @"  +\n", "<br />");
-            this.Content = Regex.Replace(this.Content, @"(<li>.+?)(?!</li><br />)", "$1"); // OMG FIXME PLZ
-            this.Content = Regex.Replace(this.Content, @"(<li>.+?)(</li><br />)", "$1$2\n"); // OMG FIXME PLZ
-            this.Content = Regex.Replace(this.Content, @"(\d+)\) ", "$1__mdquirk_numbereditemparen ");
+        public PageState(SiteState siteState)
+        {
+            this.siteState = siteState;
         }
 
-        private void TransformMarkdownContent(SiteState site)
+        private string RenderContentFromSourceMarkdown()
         {
-            var content = Shortcodes.TranslateToHtml(site.PathResolver, site, this, this.Content);
+            if (string.IsNullOrEmpty(this.SourceContent))
+            {
+                return string.Empty;
+            }
+
+            var rendered = this.SourceContent;
+
+            rendered = Regex.Replace(rendered, @"<ul>  +", "<ul>");
+            rendered = Regex.Replace(rendered, @">\n<", ">__mdquirk_linebreak<", RegexOptions.Singleline);
+            rendered = Regex.Replace(rendered, @"(\S)\n<ul>", "$1__mdquirk_linebreak<ul>", RegexOptions.Singleline);
+            rendered = Regex.Replace(rendered, @"  +\n", "<br />");
+            rendered = Regex.Replace(rendered, @"(<li>.+?)(?!</li><br />)", "$1"); // OMG FIXME PLZ
+            rendered = Regex.Replace(rendered, @"(<li>.+?)(</li><br />)", "$1$2\n"); // OMG FIXME PLZ
+            rendered = Regex.Replace(rendered, @"(\d+)\) ", "$1__mdquirk_numbereditemparen ");
+
+            rendered = Shortcodes.TranslateToHtml(this.siteState.PathResolver, this.siteState, this, rendered);
 
             var mdPipeline = new MarkdownPipelineBuilder().Use<MarkdownQuirksMarkdigExtension>().Build();
-            this.Content = "\t" + Markdown.ToHtml(content, mdPipeline);
+            rendered = "\t" + Markdown.ToHtml(rendered, mdPipeline);
 
-            this.Content = this.Content.Replace("__mdquirk_linebreak", "\n");
+            rendered = rendered.Replace("__mdquirk_linebreak", "\n");
 
-            this.Content = this.Content.Replace("__mdquirk_numbereditemparen", ")");
+            rendered = rendered.Replace("__mdquirk_numbereditemparen", ")");
 
-            this.Content = Regex.Replace(this.Content, @"<p><p(.+?)</p></p>", "<p$1</p>");
+            rendered = Regex.Replace(rendered, @"<p><p(.+?)</p></p>", "<p$1</p>");
 
-            this.Content = this.Content.Replace("</blockquote>", "</blockquote>\n");
-            this.Content = this.Content.Replace("<br />", "<br />\n");
-            this.Content = this.Content.Replace("</div>", "</div>\n");
-            this.Content = this.Content.Replace("</ol>", "</ol>\n");
-            this.Content = this.Content.Replace("</table>", "</table>\n");
-            this.Content = this.Content.Replace("</ul>\n<p>", "</ul>\n\n<p>");
+            rendered = rendered.Replace("</blockquote>", "</blockquote>\n");
+            rendered = rendered.Replace("<br />", "<br />\n");
+            rendered = rendered.Replace("</div>", "</div>\n");
+            rendered = rendered.Replace("</ol>", "</ol>\n");
+            rendered = rendered.Replace("</table>", "</table>\n");
+            rendered = rendered.Replace("</ul>\n<p>", "</ul>\n\n<p>");
 
-            this.Content = this.Content.Replace("</p>", "</p>\n");
-            this.Content = this.Content.Replace("<script", "\n<script");
-            this.Content = this.Content.Replace("</p>\n\n</li>", "</p></li>\n");
+            rendered = rendered.Replace("</p>", "</p>\n");
+            rendered = rendered.Replace("<script", "\n<script");
+            rendered = rendered.Replace("</p>\n\n</li>", "</p></li>\n");
 
-            this.Content = this.Content.Replace("</li>\n\n</ul>", "</li>\n</ul>");
-            this.Content = this.Content.Replace("</noscript>\n\n<div", "</noscript>\n<div");
-            this.Content = this.Content.Replace("</ol>\n<br />", "</ol><br />");
+            rendered = rendered.Replace("</li>\n\n</ul>", "</li>\n</ul>");
+            rendered = rendered.Replace("</noscript>\n\n<div", "</noscript>\n<div");
+            rendered = rendered.Replace("</ol>\n<br />", "</ol><br />");
 
             // BUG: Markdown.ToHtml is escaping the '&' part of HTML escape sequences.
             // MarkdownQuirksMarkdigExtension should be disabling this behavior, but...
             // *some* HTML escaping is needed to match Hugo's/Blackfriday's &quot; proliferation.
-            this.Content = Regex.Replace(this.Content, @"&amp;(\w+);", "&$1;");
+            rendered = Regex.Replace(rendered, @"&amp;(\w+);", "&$1;");
 
-            this.Content = this.Content.Replace("é", "&eacute;");
-            this.Content = this.Content.Replace("∀", "&forall;");
-            this.Content = this.Content.Replace("¡", "&iexcl;");
-            this.Content = this.Content.Replace("ó", "&oacute;");
-            this.Content = this.Content.Replace("ú", "&uacute;");
-            this.Content = this.Content.Replace("ü", "&uuml;");
-            this.Content = this.Content.Replace("👍", "&#x1F44D;");
+            rendered = rendered.Replace("é", "&eacute;");
+            rendered = rendered.Replace("∀", "&forall;");
+            rendered = rendered.Replace("¡", "&iexcl;");
+            rendered = rendered.Replace("ó", "&oacute;");
+            rendered = rendered.Replace("ú", "&uacute;");
+            rendered = rendered.Replace("ü", "&uuml;");
+            rendered = rendered.Replace("👍", "&#x1F44D;");
 
-            this.Content = this.Content.Replace(
+            rendered = rendered.Replace(
                 "<p><noscript><i>A Google Chart would go here, but JavaScript is disabled.</i></noscript></p>\n",
                 "<noscript><i>A Google Chart would go here, but JavaScript is disabled.</i></noscript>");
+
+            return rendered;
         }
 
         public static PageState FromPageData(SiteState site, PageData pageData)
         {
-            var page = new PageState();
+            var page = new PageState(site);
             page.HideDate = true;
             page.HideTitle = true;
 
-            page.TransformContentFromText(pageData.Content);
+            page.SourceContent = pageData.Content;
 
             page.Permalink = $"{site.BaseURL}{pageData.PermalinkRelative}";
-
-            page.TransformMarkdownContent(site);
 
             var outputPathRelative = pageData.PermalinkRelative;
             if (!outputPathRelative.EndsWith('/'))
@@ -191,11 +214,9 @@ namespace GlogGenerator.RenderState
                 }
             }
 
-            var page = new PageState();
+            var page = new PageState(site);
 
             page.Categories = postData.Categories.Select(c => new CategoryData() { Name = c }).ToList();
-
-            page.TransformContentFromText(postData.Content);
 
             page.Date = postData.Date;
 
@@ -211,7 +232,7 @@ namespace GlogGenerator.RenderState
 
             page.Title = postData.Title;
 
-            page.TransformMarkdownContent(site);
+            page.SourceContent = postData.Content;
 
             var outputPathRelative = postData.PermalinkRelative;
             if (!outputPathRelative.EndsWith('/'))
@@ -228,7 +249,7 @@ namespace GlogGenerator.RenderState
 
         public static PageState FromCategoryData(SiteState site, CategoryData categoryData)
         {
-            var page = new PageState();
+            var page = new PageState(site);
 
             page.Permalink = $"{site.BaseURL}{categoryData.PermalinkRelative}";
 
@@ -255,7 +276,7 @@ namespace GlogGenerator.RenderState
 
         public static PageState FromGameData(SiteState site, GameData gameData)
         {
-            var page = new PageState();
+            var page = new PageState(site);
 
             page.Permalink = $"{site.BaseURL}{gameData.PermalinkRelative}";
 
@@ -285,7 +306,7 @@ namespace GlogGenerator.RenderState
 
         public static PageState FromPlatformData(SiteState site, PlatformData platformData)
         {
-            var page = new PageState();
+            var page = new PageState(site);
 
             page.Permalink = $"{site.BaseURL}{platformData.PermalinkRelative}";
 
@@ -312,7 +333,7 @@ namespace GlogGenerator.RenderState
 
         public static PageState FromRatingData(SiteState site, RatingData ratingData)
         {
-            var page = new PageState();
+            var page = new PageState(site);
 
             page.Permalink = $"{site.BaseURL}{ratingData.PermalinkRelative}";
 
@@ -339,7 +360,7 @@ namespace GlogGenerator.RenderState
 
         public static PageState FromTagData(SiteState site, TagData tagData)
         {
-            var page = new PageState();
+            var page = new PageState(site);
 
             page.Permalink = $"{site.BaseURL}{tagData.PermalinkRelative}";
 

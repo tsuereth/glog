@@ -271,14 +271,10 @@ namespace GlogGenerator.RenderState
                     var ratingData = this.AddRatingIfMissing(rating, overwriteData: true);
                     ratingData.LinkedPosts.Add(postData);
                 }
-
-                // We need to run shortcode parsing to detect all games, tags, etc.
-                _ = PageState.FromPostData(this, postData);
             }
 
-            allPosts = allPosts.OrderByDescending(p => p.Date).ToList();
-
             // Now, we can render content.
+            allPosts = allPosts.OrderByDescending(p => p.Date).ToList();
             var allPostPages = new List<PageState>(allPosts.Count);
             foreach (var postData in allPosts)
             {
@@ -287,7 +283,7 @@ namespace GlogGenerator.RenderState
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
-            var postsListPage = new PageState()
+            var postsListPage = new PageState(this)
             {
                 HideDate = true,
                 Title = "Posts",
@@ -302,7 +298,7 @@ namespace GlogGenerator.RenderState
             const int pagesPerHistoryPage = 10;
             for (var historyPageNum = 0; (historyPageNum * pagesPerHistoryPage) < allPostPages.Count; ++historyPageNum)
             {
-                var historyPage = new PageState()
+                var historyPage = new PageState(this)
                 {
                     HideDate = true,
                     HideTitle = true,
@@ -361,7 +357,7 @@ namespace GlogGenerator.RenderState
             }
 
             var rssFeedItems = Math.Min(allPostPages.Count, 15);
-            var rssFeedPage = new PageState()
+            var rssFeedPage = new PageState(this)
             {
                 Date = allPosts[0].Date,
                 OutputPathRelative = "index.xml",
@@ -371,7 +367,7 @@ namespace GlogGenerator.RenderState
             };
             this.ContentRoutes.Add(rssFeedPage.OutputPathRelative, rssFeedPage);
 
-            var categoriesIndex = new PageState()
+            var categoriesIndex = new PageState(this)
             {
                 HideDate = true,
                 OutputPathRelative = "category/index.html",
@@ -390,7 +386,7 @@ namespace GlogGenerator.RenderState
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
-            var gamesIndex = new PageState()
+            var gamesIndex = new PageState(this)
             {
                 HideDate = true,
                 OutputPathRelative = "game/index.html",
@@ -409,7 +405,7 @@ namespace GlogGenerator.RenderState
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
-            var platformsIndex = new PageState()
+            var platformsIndex = new PageState(this)
             {
                 HideDate = true,
                 OutputPathRelative = "platform/index.html",
@@ -428,7 +424,7 @@ namespace GlogGenerator.RenderState
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
-            var ratingsIndex = new PageState()
+            var ratingsIndex = new PageState(this)
             {
                 HideDate = true,
                 OutputPathRelative = "rating/index.html",
@@ -447,7 +443,7 @@ namespace GlogGenerator.RenderState
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
-            var tagsIndex = new PageState()
+            var tagsIndex = new PageState(this)
             {
                 HideDate = true,
                 OutputPathRelative = "tag/index.html",

@@ -85,10 +85,15 @@ namespace GlogGenerator
             switch (activeVerb.ToLowerInvariant())
             {
                 case "build":
+                    Console.WriteLine("Building content...");
+                    var buildTimer = Stopwatch.StartNew();
                     BuildStaticSite.Build(site, staticSiteOutputBasePath);
+                    buildTimer.Stop();
+                    Console.WriteLine($"Finished building in {buildTimer.ElapsedMilliseconds} ms");
                     break;
 
                 case "host":
+                    Console.WriteLine($"Hosting site at {hostOrigin}{pathPrefix}");
                     HostLocalSite.Host(site, hostOrigin, pathPrefix);
                     break;
 

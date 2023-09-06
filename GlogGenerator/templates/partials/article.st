@@ -20,7 +20,7 @@ article(site,page) ::= <<
 </div>
 <h1 class="title" itemprop="name"><a href="%page.Permalink%" itemprop="url">%page.Title%</a></h1>
 <div class="entry-content" itemprop="articleBody">
-%page.Content%
+%page.RenderedContent%
 
 %post/rating(site,page)%
 </div>
