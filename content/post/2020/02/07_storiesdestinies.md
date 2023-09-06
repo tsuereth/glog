@@ -33,7 +33,7 @@ The game's imperfections - its lackluster humor, its unexciting combat, its some
 
 A lot like {{% game "Prince of Persia: The Sands of Time" %}}Prince of Persia: The Sands of Time{{% /game %}}, I guess.  Just with worse narration and no platforming.
 
-<b>Better than</b>: {{% game "Bastion" %}}Bastion{{% /game %}}, {{% game "Nine Hours, Nine Persons, Nine Doors" %}}Nine Hours, Nine Persons, Nine Doors{{% /game %}}  
+<b>Better than</b>: {{% game "Bastion" %}}Bastion{{% /game %}}, {{% game "Zero Escape: Nine Hours, Nine Persons, Nine Doors" %}}Zero Escape: Nine Hours, Nine Persons, Nine Doors{{% /game %}}  
 <b>Not as good as</b>: {{% game "Middle-earth: Shadow of Mordor" %}}Middle-earth: Shadow of Mordor{{% /game %}}, {{% game "The Sexy Brutale" %}}The Sexy Brutale{{% /game %}}  
 <b>And way better than</b>: those shitty choose-your-own-adventure books I grew up with.
 
