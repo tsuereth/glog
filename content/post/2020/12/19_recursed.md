@@ -13,7 +13,7 @@ Jumping into a treasure chest enters a new room, and entering a room resets its 
 
 You can also pick up the treasure chest, and carry it into a new room -- changing the path to that chest, and hence the path to resetting its state.  Imagine if the chest leading to the key was "before" the room with the locked doors; that would mean each time you grab a key and bring it to the lock-room, the locks have been reset.  So you'd need to pick up the chest with the key-room, and move it into the lock-room, so that the lock-room's state can be retained while you're retrieving each key.
 
-And that's just the beginning, before rooms start having <i>variable water levels</i> and <i>stateful objects</i>.  Recursed isn't afraid of throwing some pretty tough puzzles at you; but I wouldn't say that they're intimidating or obtuse, like {{% game "DYO" %}}DYO{{% /game %}} could be.  Recursed's puzzles are generally good at making their solutions appear within reach, given a few minutes of staring at each room and poking around.
+And that's just the beginning, before rooms start having <i>variable water levels</i> and <i>stateful objects</i>.  Recursed isn't afraid of throwing some pretty tough puzzles at you; but I wouldn't say that they're intimidating or obtuse, like {{% game "Dyo" %}}Dyo{{% /game %}} could be.  Recursed's puzzles are generally good at making their solutions appear within reach, given a few minutes of staring at each room and poking around.
 
 But they're mentally exhausting, and I can only do a handful in one sitting before I need to take a break.  Keeping track of all the <a href="https://en.wikipedia.org/wiki/State_(computer_science)">state</a> involved in a given puzzle, and plotting a route through its myriad permutations, is <i>work</i>.
 
