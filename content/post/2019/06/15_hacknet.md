@@ -23,6 +23,6 @@ An aspect that Hacknet actually nails, I think, is its balance between nerd cult
 
 Overall, Hacknet is <b>good enough</b>.  The immersiveness is imperfect, the UI is just fine, and the puzzles aren't very ambitious - I was disappointed that the Decypher tool didn't require reverse-engineering its C# algorithm - but everything works moderately well, and it succeeds at stringing together objectives to be compelling, and fun.
 
-<b>Better than</b>: {{% game "Hacker Evolution" %}}Hacker Evolution{{% /game %}}, {{% game "hackmud" %}}hackmud{{% /game %}}, {{% game "NITE Team 4" %}}NITE Team 4{{% /game %}} (the demo at least), {{% game "Uplink" %}}Uplink{{% /game %}}  
+<b>Better than</b>: {{% game "Hacker Evolution" %}}Hacker Evolution{{% /game %}}, {{% game "Hackmud" %}}Hackmud{{% /game %}}, {{% game "NITE Team 4" %}}NITE Team 4{{% /game %}} (the demo at least), {{% game "Uplink" %}}Uplink{{% /game %}}  
 <b>Not as good as</b>: my perfect hacking game.  ... maybe someday.  
 <b>The internet-culture humor was amusing</b>: but surely there are more sources than just <a href="http://bash.org">bash.org</a>?  There have to be, right?  (Maybe not.)
