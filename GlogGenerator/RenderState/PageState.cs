@@ -203,15 +203,7 @@ namespace GlogGenerator.RenderState
             // Verify that the post's games are found in our metadata cache.
             foreach (var game in postData.Games)
             {
-                var cacheEntries = site.IgdbCache.GetGameByName(game);
-                if (cacheEntries.Count == 0)
-                {
-                    throw new InvalidDataException($"No games in cache match the name \"{game}\"");
-                }
-                else if (cacheEntries.Count > 1)
-                {
-                    throw new InvalidDataException($"More than one game in cache matches the name \"{game}\"");
-                }
+                _ = site.ValidateMatchingGameName(game);
             }
 
             var page = new PageState(site);

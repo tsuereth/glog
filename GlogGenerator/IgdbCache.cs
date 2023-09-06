@@ -77,16 +77,6 @@ namespace GlogGenerator
             return null;
         }
 
-        public List<IgdbGame> GetGameByName(string name)
-        {
-            var results = this.gamesById.Where(kv => kv.Value.NameForGlog.Equals(name, StringComparison.Ordinal)).Select(kv => kv.Value).ToList();
-
-            var unidentified = this.gamesUnidentified.Where(o => o.NameForGlog.Equals(name, StringComparison.Ordinal)).ToList();
-            results.AddRange(unidentified);
-
-            return results;
-        }
-
         public List<IgdbGame> GetAllGames()
         {
             var results = this.gamesById.Values.ToList();

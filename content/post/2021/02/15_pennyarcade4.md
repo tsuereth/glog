@@ -9,7 +9,7 @@ rating = ["Meh"]
 
 {{% game "Penny Arcade's On the Rain-Slick Precipice of Darkness 4" %}}Penny Arcade's On the Rain-Slick Precipice of Darkness 4{{% /game %}} takes some admirable risks in re-mixing the formula from {{% game "Penny Arcade's On the Rain-Slick Precipice of Darkness 3" %}}part 3{{% /game %}} -- with uneven, but undeniably <i>interesting</i>, results.
 
-The most immediately-apparent change is that <i>we're {{% tag "pokémon" %}}Pokémon{{% /tag %}}, now</i>.  Part 4 replaces its predecessors' class-customization system with "monstorb" monsters, such that your party is made up of little dudes like "Brodent" or "Philosofly" who each have their own advantages and skills (as well as abilities imparted by their assigned Trainer).
+The most immediately-apparent change is that <i>we're {{% tag "Pokémon" %}}Pokémon{{% /tag %}}, now</i>.  Part 4 replaces its predecessors' class-customization system with "monstorb" monsters, such that your party is made up of little dudes like "Brodent" or "Philosofly" who each have their own advantages and skills (as well as abilities imparted by their assigned Trainer).
 
 There are more than a dozen of these monsters in Rain-Slick 4, so the total spread of unique abilities is rather large; and while it's great to see comic references like <a href="https://www.penny-arcade.com/comic/2004/03/24/the-adventures-of-twisp-and-catsby">Twisp and Catsby</a> in this format, many of the monsters feel significantly less creative.
 

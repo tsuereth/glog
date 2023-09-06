@@ -276,17 +276,10 @@ function drawChart_{pageHash}_{chartHash}() {{
                         var gameName = defaultArg;
 
                         // Verify that the shortcode's game is found in our metadata cache.
-                        var cacheEntries = site.IgdbCache.GetGameByName(gameName);
-                        if (cacheEntries.Count == 0)
-                        {
-                            throw new InvalidDataException($"No games in cache match the name \"{gameName}\"");
-                        }
-                        else if (cacheEntries.Count > 1)
-                        {
-                            throw new InvalidDataException($"More than one game in cache matches the name \"{gameName}\"");
-                        }
+                        _ = site.ValidateMatchingGameName(gameName);
 
-                        replacementText = $"<a href=\"{site.BaseURL}game/{TemplateFunctionsStringRenderer.Urlize(gameName)}\">{innerText}</a>";
+                        var gameNameUrlized = TemplateFunctionsStringRenderer.Urlize(gameName);
+                        replacementText = $"<a href=\"{site.BaseURL}game/{gameNameUrlized}\">{innerText}</a>";
                         break;
 
                     case "platform":
@@ -309,9 +302,12 @@ function drawChart_{pageHash}_{chartHash}() {{
 
                     case "tag":
                         var tagName = defaultArg;
-                        site.AddTagIfMissing(tagName);
 
-                        replacementText = $"<a href=\"{site.BaseURL}tag/{TemplateFunctionsStringRenderer.Urlize(tagName)}\">{innerText}</a>";
+                        // Verify that the shortcode's tag is found in our metadata cache.
+                        _ = site.ValidateMatchingTagName(tagName);
+
+                        var tagNameUrlized = TemplateFunctionsStringRenderer.Urlize(tagName);
+                        replacementText = $"<a href=\"{site.BaseURL}tag/{tagNameUrlized}\">{innerText}</a>";
                         break;
 
                     default:

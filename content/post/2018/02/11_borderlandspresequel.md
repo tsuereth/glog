@@ -9,7 +9,7 @@ rating = ["Good"]
 
 {{% game "Borderlands: The Pre-Sequel" %}}Borderlands: The Pre-Sequel{{% /game %}} is fun to play, but feels like a ... bit of a stretch, in a few ways.
 
-For one, the fact that everyone on the moon is Australian.  Yeah, we get it, this installment was {{% tag "2k Australia" %}}made in 'straya{{% /tag %}}.  And the claptrap unit trying to do a robotic accent is a funny touch.  But the overwhelming amount of Aussies in this game - just about everyone, except characters that were already introduced in other games - makes one wonder if Pandora had been using its moon as a prison island.
+For one, the fact that everyone on the moon is Australian.  Yeah, we get it, this installment was {{% tag "2K Australia" %}}made in 'straya{{% /tag %}}.  And the claptrap unit trying to do a robotic accent is a funny touch.  But the overwhelming amount of Aussies in this game - just about everyone, except characters that were already introduced in other games - makes one wonder if Pandora had been using its moon as a prison island.
 
 For another: the moon mechanics of managing oxygen and doing high jumps.  The mobility options actually make for some "interesting" combat twists, like ground-pound attacks and mid-air direction changes; but they feel out of place in a class-based RPG.  What I mean is, these mechanics feel at home in a Quake-style arena deathmatch -- and in Borderlands, when you get one-shotted by an enemy ground-pounding on you like an angry meteorite, it doesn't feel too great.
 

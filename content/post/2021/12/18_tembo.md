@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Tembo the Badass Elephant" %}}Tembo{{% /game %}} is a better {{% tag "Sonic The Hedgehog" %}}Sonic{{% /tag %}}, but not by enough.
+{{% game "Tembo the Badass Elephant" %}}Tembo{{% /game %}} is a better {{% tag "Sonic the Hedgehog" %}}Sonic{{% /tag %}}, but not by enough.
 
 See, unlike {{% game "Hell Yeah! Wrath of the Dead Rabbit" %}}Hell Yeah!{{% /game %}}, which landed somewhere between "reference" and "parody" -- Tembo actually channels the <i>spirit</i> of a Sonic game, in that it allows you to turn into a destructive ball and charge through obstacles at high speed.  And it doesn't <i>destroy</i> you when you take damage, instead stealing just a <i>portion</i> of your health meter.  And there are checkpoints!
 

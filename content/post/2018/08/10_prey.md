@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-I knew, going into {{% game "Prey (2017)" %}}Prey{{% /game %}}, to expect some {{% tag "BioShock" %}}BioShock{{% /tag %}}-like immersive storytelling.  And it's delivering on that front, with a really intriguing plot that I'm anxious to unravel by reading notes and chasing down mysteries.
+I knew, going into {{% game "Prey (2017)" %}}Prey{{% /game %}}, to expect some {{% tag "Bioshock" %}}BioShock{{% /tag %}}-like immersive storytelling.  And it's delivering on that front, with a really intriguing plot that I'm anxious to unravel by reading notes and chasing down mysteries.
 
 What I didn't expect was how much gameplay feels borrowed from {{% tag "Deus Ex" %}}Deus Ex{{% /tag %}}.  And I <b>love it</b>.  The best parts of {{% game "Deus Ex: Human Revolution" %}}Human Revolution{{% /game %}} and {{% game "Deus Ex: Mankind Divided" %}}Mankind Divided{{% /game %}} were when my character choices led to options and openness in a mission - investing in strength opens a barricaded door, investing in hacking reveals a locked room's passcode - and Prey looks like a whole game's worth of that.
 

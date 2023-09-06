@@ -99,27 +99,6 @@ namespace GlogGenerator.RenderState
             return this.Categories[categoryKey];
         }
 
-        public GameData AddGameIfMissing(string gameName, bool overwriteData = false)
-        {
-            var gameKey = TemplateFunctionsStringRenderer.Urlize(gameName);
-
-            if (!this.Games.ContainsKey(gameKey))
-            {
-                var newGame = new GameData()
-                {
-                    Title = gameName,
-                };
-
-                this.Games[gameKey] = newGame;
-            }
-            else if (overwriteData)
-            {
-                this.Games[gameKey].Title = gameName;
-            }
-
-            return this.Games[gameKey];
-        }
-
         public PlatformData AddPlatformIfMissing(string platformName, bool overwriteData = false)
         {
             var platformKey = TemplateFunctionsStringRenderer.Urlize(platformName);
@@ -183,6 +162,38 @@ namespace GlogGenerator.RenderState
             return this.Tags[tagKey];
         }
 
+        public GameData ValidateMatchingGameName(string gameName)
+        {
+            var gameNameUrlized = TemplateFunctionsStringRenderer.Urlize(gameName);
+            if (!this.Games.TryGetValue(gameNameUrlized, out var gameData))
+            {
+                throw new ArgumentException($"Game name \"{gameName}\" doesn't appear to exist in site state");
+            }
+
+            if (!gameData.Title.Equals(gameName, StringComparison.Ordinal))
+            {
+                throw new ArgumentException($"Game name \"{gameName}\" doesn't exactly match game in site state \"{gameData.Title}\"");
+            }
+
+            return gameData;
+        }
+
+        public TagData ValidateMatchingTagName(string tagName)
+        {
+            var tagNameUrlized = TemplateFunctionsStringRenderer.Urlize(tagName);
+            if (!this.Tags.TryGetValue(tagNameUrlized, out var tagData))
+            {
+                throw new ArgumentException($"Tag name \"{tagName}\" doesn't appear to exist in site state");
+            }
+
+            if (!tagData.Name.Equals(tagName, StringComparison.Ordinal))
+            {
+                throw new ArgumentException($"Tag name \"{tagName}\" doesn't exactly match tag in site state \"{tagData.Name}\"");
+            }
+
+            return tagData;
+        }
+
         public void LoadContent()
         {
             // TODO: clear/reset page lists, route lists, et al.
@@ -242,9 +253,8 @@ namespace GlogGenerator.RenderState
                 var gameTagsByUrlized = new Dictionary<string, TagData>();
                 foreach (var game in postData.Games)
                 {
-                    // Quirk note: a "better" source of GameData has already been processed
-                    // (from game files directly), so don't allow post metadata to overwrite that.
-                    var gameData = this.AddGameIfMissing(game, overwriteData: false);
+                    var gameUrlized = TemplateFunctionsStringRenderer.Urlize(game);
+                    var gameData = this.Games[gameUrlized];
                     gameData.LinkedPosts.Add(postData);
 
                     foreach (var tag in gameData.Tags)
