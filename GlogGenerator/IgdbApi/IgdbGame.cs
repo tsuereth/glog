@@ -11,16 +11,16 @@ namespace GlogGenerator.IgdbApi
         public const int IdNotFound = -1;
 
         [JsonProperty("category")]
-        public IgdbGameCategory Category { get; set; }
+        public IgdbGameCategory Category { get; set; } = IgdbGameCategory.None;
 
         [JsonProperty("checksum")]
         public Guid ChecksumUuid { get; set; }
 
         [JsonProperty("collection")]
-        public int CollectionId { get; set; }
+        public int CollectionId { get; set; } = IgdbCollection.IdNotFound;
 
         [JsonProperty("franchise")]
-        public int MainFranchiseId { get; set; }
+        public int MainFranchiseId { get; set; } = IgdbFranchise.IdNotFound;
 
         [JsonProperty("franchises")]
         public List<int> OtherFranchiseIds { get; set; } = new List<int>();
@@ -32,7 +32,7 @@ namespace GlogGenerator.IgdbApi
         public List<int> GenreIds { get; set; } = new List<int>();
 
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public int Id { get; set; } = IdNotFound;
 
         [JsonProperty("involved_companies")]
         public List<int> InvolvedCompanyIds { get; set; } = new List<int>();

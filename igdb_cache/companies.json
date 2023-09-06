@@ -356,14 +356,6 @@
     "name": "Gearbox Software"
   },
   {
-    "id": 152,
-    "name": "MicroProse"
-  },
-  {
-    "id": 157,
-    "name": "1C Company"
-  },
-  {
     "id": 159,
     "name": "Konami Computer Entertainment Tokyo"
   },
@@ -440,10 +432,6 @@
     "name": "Iron Lore Entertainment"
   },
   {
-    "id": 200,
-    "name": "Electronic Arts Victor"
-  },
-  {
     "id": 201,
     "name": "Cyberlore Studios"
   },
@@ -492,10 +480,6 @@
     "name": "SEGA of America"
   },
   {
-    "id": 231,
-    "name": "Tec Toy Indústria de Brinquedos"
-  },
-  {
     "id": 232,
     "name": "Triptych Games"
   },
@@ -516,16 +500,8 @@
     "name": "Square"
   },
   {
-    "id": 251,
-    "name": "Sunsoft"
-  },
-  {
     "id": 252,
     "name": "Square Electronic Arts"
-  },
-  {
-    "id": 253,
-    "name": "Square Europe"
   },
   {
     "id": 256,
@@ -538,10 +514,6 @@
   {
     "id": 261,
     "name": "Quantic Dream"
-  },
-  {
-    "id": 262,
-    "name": "Flagship Studios"
   },
   {
     "id": 263,
@@ -668,10 +640,6 @@
     "name": "Nextech"
   },
   {
-    "id": 324,
-    "name": "Square Soft"
-  },
-  {
     "id": 325,
     "name": "Saffire"
   },
@@ -692,10 +660,6 @@
     "name": "Cavia"
   },
   {
-    "id": 330,
-    "name": "THQ Asia Pacific"
-  },
-  {
     "id": 331,
     "name": "Triumph Studios"
   },
@@ -706,10 +670,6 @@
   {
     "id": 338,
     "name": "Encore"
-  },
-  {
-    "id": 341,
-    "name": "Bullet-Proof Software"
   },
   {
     "id": 346,
@@ -768,10 +728,6 @@
     "name": "THQ Wireless"
   },
   {
-    "id": 391,
-    "name": "Red Fly Studio"
-  },
-  {
     "id": 392,
     "name": "High Voltage Software"
   },
@@ -810,10 +766,6 @@
   {
     "id": 404,
     "name": "Cyanide Studio"
-  },
-  {
-    "id": 406,
-    "name": "Ubisoft Massive"
   },
   {
     "id": 407,
@@ -944,10 +896,6 @@
     "name": "Delphine Software"
   },
   {
-    "id": 507,
-    "name": "Volition Inc"
-  },
-  {
     "id": 510,
     "name": "Larian Studios"
   },
@@ -986,10 +934,6 @@
   {
     "id": 555,
     "name": "EA Tiburon"
-  },
-  {
-    "id": 559,
-    "name": "Rowan Software"
   },
   {
     "id": 566,
@@ -1064,10 +1008,6 @@
     "name": "Sourcenext"
   },
   {
-    "id": 652,
-    "name": "Nintendo Australia"
-  },
-  {
     "id": 655,
     "name": "Capcom Production Studio 3"
   },
@@ -1102,10 +1042,6 @@
   {
     "id": 684,
     "name": "Budcat Creations"
-  },
-  {
-    "id": 689,
-    "name": "Garena"
   },
   {
     "id": 697,
@@ -1276,10 +1212,6 @@
     "name": "Arika Co., Ltd."
   },
   {
-    "id": 804,
-    "name": "Beam Software"
-  },
-  {
     "id": 809,
     "name": "South Park Digital Studios"
   },
@@ -1440,10 +1372,6 @@
     "name": "Sora"
   },
   {
-    "id": 881,
-    "name": "Walking Circles"
-  },
-  {
     "id": 885,
     "name": "Krisalis Software"
   },
@@ -1454,10 +1382,6 @@
   {
     "id": 894,
     "name": "DON'T NOD"
-  },
-  {
-    "id": 896,
-    "name": "(Archive) Ubisoft Quebec"
   },
   {
     "id": 898,
@@ -1624,14 +1548,6 @@
     "name": "Core Design"
   },
   {
-    "id": 1037,
-    "name": "Philips Interactive Media"
-  },
-  {
-    "id": 1044,
-    "name": "Spectrum HoloByte, Inc."
-  },
-  {
     "id": 1046,
     "name": "Stormfront Studios"
   },
@@ -1676,10 +1592,6 @@
     "name": "MECC"
   },
   {
-    "id": 1092,
-    "name": "AIM Productions"
-  },
-  {
     "id": 1093,
     "name": "Chunsoft"
   },
@@ -1690,10 +1602,6 @@
   {
     "id": 1097,
     "name": "Shiro Games"
-  },
-  {
-    "id": 1098,
-    "name": "Probe Software"
   },
   {
     "id": 1099,
@@ -1742,10 +1650,6 @@
   {
     "id": 1128,
     "name": "1st Playable Productions"
-  },
-  {
-    "id": 1135,
-    "name": "KID"
   },
   {
     "id": 1151,
@@ -1824,20 +1728,12 @@
     "name": "O3 Entertainment"
   },
   {
-    "id": 1265,
-    "name": "Tuna Technologies"
-  },
-  {
     "id": 1267,
     "name": "Backbone Entertainment"
   },
   {
     "id": 1271,
     "name": "Ocean Software"
-  },
-  {
-    "id": 1280,
-    "name": "Ocean Europe Limited"
   },
   {
     "id": 1281,
@@ -1936,10 +1832,6 @@
     "name": "Harebrained Schemes"
   },
   {
-    "id": 1430,
-    "name": "Sun Corporation of America"
-  },
-  {
     "id": 1432,
     "name": "Playground Games"
   },
@@ -1966,10 +1858,6 @@
   {
     "id": 1451,
     "name": "Black Pants Game Studio"
-  },
-  {
-    "id": 1453,
-    "name": "Sharp"
   },
   {
     "id": 1455,
@@ -2136,16 +2024,8 @@
     "name": "tri-Crescendo"
   },
   {
-    "id": 1923,
-    "name": "Barking Lizards Technologies"
-  },
-  {
     "id": 1924,
     "name": "Compulsion Games"
-  },
-  {
-    "id": 1926,
-    "name": "FUN Labs"
   },
   {
     "id": 1933,
@@ -2170,14 +2050,6 @@
   {
     "id": 1963,
     "name": "G.rev"
-  },
-  {
-    "id": 1964,
-    "name": "ESP Software"
-  },
-  {
-    "id": 1966,
-    "name": "JV Games"
   },
   {
     "id": 1967,
@@ -2214,14 +2086,6 @@
   {
     "id": 2013,
     "name": "MGM Interactive"
-  },
-  {
-    "id": 2019,
-    "name": "Humagade"
-  },
-  {
-    "id": 2020,
-    "name": "Tecmo Co., Ltd."
   },
   {
     "id": 2038,
@@ -2432,10 +2296,6 @@
     "name": "Engine Software"
   },
   {
-    "id": 2406,
-    "name": "Atari, Inc."
-  },
-  {
     "id": 2410,
     "name": "Frogwares"
   },
@@ -2494,10 +2354,6 @@
   {
     "id": 2512,
     "name": "Midnight City"
-  },
-  {
-    "id": 2516,
-    "name": "SPS"
   },
   {
     "id": 2518,
@@ -2600,10 +2456,6 @@
     "name": "Zombie Cow Studios"
   },
   {
-    "id": 2733,
-    "name": "Monkeystone Games"
-  },
-  {
     "id": 2740,
     "name": "Brandon Brizzi"
   },
@@ -2644,24 +2496,12 @@
     "name": "Iceberg Interactive"
   },
   {
-    "id": 2781,
-    "name": "Million"
-  },
-  {
-    "id": 2814,
-    "name": "Human Soft"
-  },
-  {
     "id": 2815,
     "name": "Orbital Media"
   },
   {
     "id": 2827,
     "name": "Flying Tiger Developments"
-  },
-  {
-    "id": 2839,
-    "name": "Naxat Soft"
   },
   {
     "id": 2850,
@@ -2828,10 +2668,6 @@
     "name": "Blur Studio"
   },
   {
-    "id": 3260,
-    "name": "Ubisoft Korea"
-  },
-  {
     "id": 3262,
     "name": "Ubisoft North America"
   },
@@ -2892,20 +2728,12 @@
     "name": "Roll7"
   },
   {
-    "id": 3690,
-    "name": "Tectoy"
-  },
-  {
     "id": 3697,
     "name": "Jackbox Games, Inc."
   },
   {
     "id": 3701,
     "name": "Nicalis, Inc."
-  },
-  {
-    "id": 3707,
-    "name": "Fujisankei Communications International"
   },
   {
     "id": 3775,
@@ -2996,10 +2824,6 @@
     "name": "Experimental Gameplay"
   },
   {
-    "id": 4009,
-    "name": "Sanritsu"
-  },
-  {
     "id": 4014,
     "name": "Vblank Entertainment"
   },
@@ -3032,56 +2856,8 @@
     "name": "Eyebrow Interactive"
   },
   {
-    "id": 4090,
-    "name": "Havas Interactive"
-  },
-  {
     "id": 4091,
     "name": "PQube"
-  },
-  {
-    "id": 4107,
-    "name": "SCE Australia"
-  },
-  {
-    "id": 4119,
-    "name": "Mirrorsoft"
-  },
-  {
-    "id": 4120,
-    "name": "AcademySoft"
-  },
-  {
-    "id": 4121,
-    "name": "Tandy"
-  },
-  {
-    "id": 4122,
-    "name": "DR Korea"
-  },
-  {
-    "id": 4123,
-    "name": "Alexey Pajitnov"
-  },
-  {
-    "id": 4124,
-    "name": "Vadim Gerasimov"
-  },
-  {
-    "id": 4125,
-    "name": "Elorg"
-  },
-  {
-    "id": 4126,
-    "name": "Andromeda Software"
-  },
-  {
-    "id": 4127,
-    "name": "Sphere"
-  },
-  {
-    "id": 4128,
-    "name": "ZTC Systems"
   },
   {
     "id": 4132,
@@ -3126,10 +2902,6 @@
   {
     "id": 4357,
     "name": "SIE Santa Monica Studio"
-  },
-  {
-    "id": 4363,
-    "name": "AGM Playism"
   },
   {
     "id": 4371,
@@ -3416,10 +3188,6 @@
     "name": "Lazy 8 Studios"
   },
   {
-    "id": 5369,
-    "name": "Playtonic"
-  },
-  {
     "id": 5442,
     "name": "iam8bit"
   },
@@ -3454,10 +3222,6 @@
   {
     "id": 5801,
     "name": "The Third Floor"
-  },
-  {
-    "id": 5847,
-    "name": "Hardsuit Labs"
   },
   {
     "id": 5887,
@@ -3672,20 +3436,12 @@
     "name": "SOEDESCO Publishing"
   },
   {
-    "id": 7041,
-    "name": "Ubisoft"
-  },
-  {
     "id": 7043,
     "name": "Tag Games"
   },
   {
     "id": 7047,
     "name": "Dominique Grieshofer"
-  },
-  {
-    "id": 7049,
-    "name": "Draknek"
   },
   {
     "id": 7052,
@@ -3972,12 +3728,8 @@
     "name": "DR Studios"
   },
   {
-    "id": 8799,
-    "name": "Kitfox Games"
-  },
-  {
     "id": 8863,
-    "name": "Hyper Hippo Games"
+    "name": "Hyper Hippo Entertainment"
   },
   {
     "id": 8878,
@@ -4060,10 +3812,6 @@
     "name": "Ant Workshop Ltd"
   },
   {
-    "id": 9372,
-    "name": "Fairchild Semiconductor"
-  },
-  {
     "id": 9385,
     "name": "Square Enix Collective"
   },
@@ -4086,10 +3834,6 @@
   {
     "id": 9459,
     "name": "Wild Factor"
-  },
-  {
-    "id": 9489,
-    "name": "Sun Electronics"
   },
   {
     "id": 9507,
@@ -4172,10 +3916,6 @@
     "name": "Mi'pu'mi Games"
   },
   {
-    "id": 10392,
-    "name": "Deported B.V."
-  },
-  {
     "id": 10490,
     "name": "Dan & Gary Games"
   },
@@ -4256,10 +3996,6 @@
     "name": "Mindscape, Inc."
   },
   {
-    "id": 11248,
-    "name": "Presage Software, Inc."
-  },
-  {
     "id": 11262,
     "name": "Gearbox Publishing"
   },
@@ -4298,10 +4034,6 @@
   {
     "id": 11662,
     "name": "Annapurna Interactive"
-  },
-  {
-    "id": 11739,
-    "name": "(Archive) SEGA Enterprises Ltd."
   },
   {
     "id": 11756,
@@ -4374,10 +4106,6 @@
   {
     "id": 12186,
     "name": "Coffee Stain Publishing"
-  },
-  {
-    "id": 12225,
-    "name": "Treasure Co. Ltd"
   },
   {
     "id": 12239,
@@ -4468,16 +4196,8 @@
     "name": "Carbon Studio"
   },
   {
-    "id": 13377,
-    "name": "Asmik Corporation"
-  },
-  {
     "id": 13452,
     "name": "Golden Glitch Studios"
-  },
-  {
-    "id": 13460,
-    "name": "General Instrument Microelectronic"
   },
   {
     "id": 13492,
@@ -4500,10 +4220,6 @@
     "name": "Superior Interactive"
   },
   {
-    "id": 13712,
-    "name": "Gradiente Entertainment"
-  },
-  {
     "id": 13722,
     "name": "Digital Eclipse Software"
   },
@@ -4514,10 +4230,6 @@
   {
     "id": 13848,
     "name": "Outright Games"
-  },
-  {
-    "id": 13875,
-    "name": "Kuusoukagaku"
   },
   {
     "id": 14001,
@@ -4692,10 +4404,6 @@
     "name": "Blind Sky Studios"
   },
   {
-    "id": 17064,
-    "name": "Ubisoft Bordeaux"
-  },
-  {
     "id": 17082,
     "name": "Archpray"
   },
@@ -4740,10 +4448,6 @@
     "name": "Crunchy Leaf Games"
   },
   {
-    "id": 18558,
-    "name": "tinyBuild Games"
-  },
-  {
     "id": 18629,
     "name": "Fellow Traveller"
   },
@@ -4756,10 +4460,6 @@
     "name": "CD Projekt Red Wrocław"
   },
   {
-    "id": 19320,
-    "name": "Ocean Software Ltd."
-  },
-  {
     "id": 19848,
     "name": "Peltast Design"
   },
@@ -4770,10 +4470,6 @@
   {
     "id": 20207,
     "name": "QubicGames S.A."
-  },
-  {
-    "id": 20220,
-    "name": "Ubisoft Divertissements"
   },
   {
     "id": 20228,
@@ -4828,10 +4524,6 @@
     "name": "Gamepoch"
   },
   {
-    "id": 21312,
-    "name": "Red Art Games"
-  },
-  {
     "id": 21313,
     "name": "Dear Villagers"
   },
@@ -4856,10 +4548,6 @@
     "name": "NanoPiko Games"
   },
   {
-    "id": 21500,
-    "name": "Microcabin"
-  },
-  {
     "id": 21507,
     "name": "Simon Fredholm"
   },
@@ -4880,20 +4568,8 @@
     "name": "Shambles Software"
   },
   {
-    "id": 21611,
-    "name": "Invisible Handlebar"
-  },
-  {
     "id": 21667,
     "name": "CDP"
-  },
-  {
-    "id": 21695,
-    "name": "BANDIT Inc."
-  },
-  {
-    "id": 21992,
-    "name": "ILCA, Inc."
   },
   {
     "id": 22094,
@@ -5000,10 +4676,6 @@
     "name": "Pineapple Works"
   },
   {
-    "id": 24170,
-    "name": "Squaresoft"
-  },
-  {
     "id": 24171,
     "name": "Nai'a Digital Works"
   },
@@ -5034,10 +4706,6 @@
   {
     "id": 24943,
     "name": "Deep Silver Volition"
-  },
-  {
-    "id": 25048,
-    "name": "EA"
   },
   {
     "id": 25077,
@@ -5082,10 +4750,6 @@
   {
     "id": 27073,
     "name": "Marina Kittaka"
-  },
-  {
-    "id": 27176,
-    "name": "MWM Interactive"
   },
   {
     "id": 27224,
@@ -5134,10 +4798,6 @@
   {
     "id": 31592,
     "name": "Limited Run Games"
-  },
-  {
-    "id": 31944,
-    "name": "Camelot"
   },
   {
     "id": 32111,
@@ -5204,10 +4864,6 @@
     "name": "Marvelous Entertainment Inc."
   },
   {
-    "id": 35643,
-    "name": "SEGA of America, Inc."
-  },
-  {
     "id": 38087,
     "name": "American Technos"
   },
@@ -5216,20 +4872,12 @@
     "name": "Playtonic Games"
   },
   {
-    "id": 38678,
-    "name": "Tec Toy Indústria de Brinquedos S.A."
-  },
-  {
     "id": 38798,
     "name": "DIMANCHE CORP"
   },
   {
     "id": 38814,
     "name": "Jetpack Interactive"
-  },
-  {
-    "id": 39615,
-    "name": "iFone"
   },
   {
     "id": 41283,
@@ -5254,18 +4902,6 @@
   {
     "id": 45209,
     "name": "Nintendo EPD Production Group No. 3"
-  },
-  {
-    "id": 45809,
-    "name": "8Bit Games"
-  },
-  {
-    "id": 45839,
-    "name": "E&E Software"
-  },
-  {
-    "id": 45841,
-    "name": "4000Do."
   },
   {
     "id": 47126,

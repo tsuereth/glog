@@ -70,7 +70,10 @@ namespace GlogGenerator.Data
                 game.IgdbUrl = igdbGame.Url;
             }
 
-            game.Tags.Add(igdbGame.Category.Description());
+            if (igdbGame.Category != IgdbGameCategory.None)
+            {
+                game.Tags.Add(igdbGame.Category.Description());
+            }
 
             if (igdbGame.CollectionId != IgdbCollection.IdNotFound)
             {

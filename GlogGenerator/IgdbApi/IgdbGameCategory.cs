@@ -6,6 +6,8 @@ namespace GlogGenerator.IgdbApi
 #pragma warning disable CA1707 // Identifiers should not contain underscores
     public enum IgdbGameCategory
     {
+        None = -1,
+
         [Description("Main game")]
         main_game = 0,
 

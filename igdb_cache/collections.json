@@ -196,14 +196,6 @@
     "name": "Civilization"
   },
   {
-    "id": 90,
-    "name": "Sim City"
-  },
-  {
-    "id": 93,
-    "name": "Sonic"
-  },
-  {
     "id": 97,
     "name": "Uncharted"
   },
@@ -640,10 +632,6 @@
     "name": "Dark Souls"
   },
   {
-    "id": 549,
-    "name": "Bomberman"
-  },
-  {
     "id": 550,
     "name": "Dynasty Warriors"
   },
@@ -654,10 +642,6 @@
   {
     "id": 555,
     "name": "Terraria"
-  },
-  {
-    "id": 556,
-    "name": "Defense of the Ancients"
   },
   {
     "id": 561,
@@ -676,20 +660,12 @@
     "name": "Wasteland"
   },
   {
-    "id": 571,
-    "name": "Mother"
-  },
-  {
     "id": 572,
     "name": "Plants vs. Zombies"
   },
   {
     "id": 579,
     "name": "Dead Rising"
-  },
-  {
-    "id": 582,
-    "name": "Yoshi"
   },
   {
     "id": 593,
@@ -876,10 +852,6 @@
     "name": "Space Rangers"
   },
   {
-    "id": 1041,
-    "name": "Ecco"
-  },
-  {
     "id": 1049,
     "name": "D4"
   },
@@ -926,10 +898,6 @@
   {
     "id": 1180,
     "name": "Drox Operative"
-  },
-  {
-    "id": 1181,
-    "name": "Anomaly: Warzone Earth"
   },
   {
     "id": 1193,
@@ -1056,10 +1024,6 @@
     "name": "Universe Sandbox"
   },
   {
-    "id": 1634,
-    "name": "Breakout"
-  },
-  {
     "id": 1664,
     "name": "Gravity Rush"
   },
@@ -1070,10 +1034,6 @@
   {
     "id": 1820,
     "name": "DriveClub"
-  },
-  {
-    "id": 1854,
-    "name": "Ghostbusters"
   },
   {
     "id": 1883,
@@ -1110,10 +1070,6 @@
   {
     "id": 2007,
     "name": "Dragon's Dogma"
-  },
-  {
-    "id": 2017,
-    "name": "Okami"
   },
   {
     "id": 2022,
@@ -1186,10 +1142,6 @@
   {
     "id": 2227,
     "name": "Muramasa"
-  },
-  {
-    "id": 2232,
-    "name": "Mighty Switch Force"
   },
   {
     "id": 2233,
@@ -1340,10 +1292,6 @@
     "name": "Metal Gear Rising"
   },
   {
-    "id": 2807,
-    "name": "Final Fantasy VII"
-  },
-  {
     "id": 2810,
     "name": "Forza Horizon"
   },
@@ -1420,16 +1368,8 @@
     "name": "Watchmen"
   },
   {
-    "id": 3197,
-    "name": "Transformers"
-  },
-  {
     "id": 3207,
     "name": "Rusty Lake"
-  },
-  {
-    "id": 3248,
-    "name": "DC Universe"
   },
   {
     "id": 3314,
@@ -1476,16 +1416,8 @@
     "name": "LEGO City"
   },
   {
-    "id": 3692,
-    "name": "X-Plane"
-  },
-  {
     "id": 3699,
     "name": "Pong"
-  },
-  {
-    "id": 3803,
-    "name": "Grim Tales"
   },
   {
     "id": 3816,
@@ -1536,10 +1468,6 @@
     "name": "Star Wars: Jedi Knight"
   },
   {
-    "id": 4340,
-    "name": "X-Men"
-  },
-  {
     "id": 4357,
     "name": "SimCity"
   },
@@ -1578,10 +1506,6 @@
   {
     "id": 4592,
     "name": "Homestar Runner"
-  },
-  {
-    "id": 4611,
-    "name": "Excitebike"
   },
   {
     "id": 4628,
@@ -1634,14 +1558,6 @@
   {
     "id": 5134,
     "name": "Compilation of Final Fantasy VII"
-  },
-  {
-    "id": 5145,
-    "name": "Gunstar"
-  },
-  {
-    "id": 5156,
-    "name": "Shadow of Memories"
   },
   {
     "id": 5345,
@@ -1704,10 +1620,6 @@
     "name": "Donkey Kong Country"
   },
   {
-    "id": 6076,
-    "name": "Bloodstained"
-  },
-  {
     "id": 6083,
     "name": "Super Mario Galaxy"
   },
@@ -1740,10 +1652,6 @@
     "name": "Super Mario World"
   },
   {
-    "id": 6129,
-    "name": "Captain Toad"
-  },
-  {
     "id": 6172,
     "name": "Sonic Adventure"
   },
@@ -1766,14 +1674,6 @@
   {
     "id": 6304,
     "name": "Horizon"
-  },
-  {
-    "id": 6321,
-    "name": "Wars"
-  },
-  {
-    "id": 6425,
-    "name": "Mario RPG"
   },
   {
     "id": 6448,
@@ -1876,10 +1776,6 @@
     "name": "Star Wars Jedi"
   },
   {
-    "id": 8228,
-    "name": "Baba is You"
-  },
-  {
     "id": 8319,
     "name": "Bloodstained: Ritual of the Night"
   },
@@ -1902,6 +1798,10 @@
   {
     "id": 8487,
     "name": "Elebits"
+  },
+  {
+    "id": 8488,
+    "name": "Strong Bad"
   },
   {
     "id": 8564,
