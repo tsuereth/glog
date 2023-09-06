@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-It's been {{% abslink href="2011/02/08/penny-arcade-adventures-on-the-rain-slick-precipice-of-darkness-episode-2-2/" %}}almost ten years{{% /abslink %}} since I played {{% game "Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness, Episode 2" %}}Episode 2{{% /game %}}.  Let's see if I can remember the plot... oh, steampunk-ey <a href="https://www.penny-arcade.com/">Gabe and Tycho</a> are fighting eldritch gods.  Yeah, got it.
+It's been {{% abslink href="2011/02/08/penny-arcade-adventures-on-the-rain-slick-precipice-of-darkness-episode-2-2/" %}}almost ten years{{% /abslink %}} since I played {{% game "Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness - Episode Two" %}}Episode Two{{% /game %}}.  Let's see if I can remember the plot... oh, steampunk-ey <a href="https://www.penny-arcade.com/">Gabe and Tycho</a> are fighting eldritch gods.  Yeah, got it.
 
 <i>(Deep breath)</i> {{% game "Penny Arcade's On the Rain-Slick Precipice of Darkness 3" %}}Penny Arcade's On the Rain-Slick Precipice of Darkness 3{{% /game %}} <i>looks</i> like a significant departure from its predecessors, and not only because the words "Adventures" and "Episode" were dropped from the title -- part 3 is from a totally different developer, has a much lower-fidelity presentation, and is mechanically quite distinct.
 
@@ -23,6 +23,6 @@ So I tolerated Rain-Slick 3's unpolished edges, and its gradually-tiresome comba
 
 <b>Better than</b>: {{% game "Cosmic Star Heroine" %}}Cosmic Star Heroine{{% /game %}}, {{% game "Cthulhu Saves the World" %}}Cthulhu Saves the World{{% /game %}}  
 <b>Not as good as</b>: {{% game "Final Fantasy VI" %}}Final Fantasy VI{{% /game %}}  
-<b>Arguably as good as</b>: {{% game "Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness, Episode 2" %}}Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness, Episode 2{{% /game %}}
+<b>Arguably as good as</b>: {{% game "Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness - Episode Two" %}}Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness - Episode Two{{% /game %}}
 
 <i>Progress: Finished on Normal, got the ... good? ending.</i>
