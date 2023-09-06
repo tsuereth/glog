@@ -25,7 +25,7 @@ When you ignore its thin adventure-like elements, PictoQuest ends up being a rel
 
 PictoQuest isn't a bad nonogram game, but there are plenty of better ones.  And its attempted integration of RPG/adventure aspects doesn't really pay off.
 
-<b>Better than</b>: {{% game "Picross Fairytale" %}}Picross Fairytale{{% /game %}}, {{% game "Pok&eacute;mon Picross" %}}Pok&eacute;mon Picross{{% /game %}}, {{% game "Puppy Cross" %}}Puppy Cross{{% /game %}}  
+<b>Better than</b>: {{% game "Picross Fairytale" %}}Picross Fairytale{{% /game %}}, {{% game "Pokémon Picross" %}}Pokémon Picross{{% /game %}}, {{% game "Puppy Cross" %}}Puppy Cross{{% /game %}}  
 <b>Not as good as</b>: {{% game "Murder by Numbers" %}}Murder by Numbers{{% /game %}}, {{% game "Paint it Back" %}}Paint it Back{{% /game %}}, {{% game "Pepper's Puzzles" %}}Pepper's Puzzles{{% /game %}}  
 <b>Lackluster quest-ing on par with</b>: {{% game "Puzzle Quest: Challenge of the Warlords" %}}Puzzle Quest: Challenge of the Warlords{{% /game %}}
 

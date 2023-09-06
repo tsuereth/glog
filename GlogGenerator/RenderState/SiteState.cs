@@ -80,7 +80,7 @@ namespace GlogGenerator.RenderState
 
         public CategoryData AddCategoryIfMissing(string categoryName, bool overwriteData = false)
         {
-            var categoryKey = TemplateFunctionsStringRenderer.Urlize(categoryName, htmlEncode: false);
+            var categoryKey = TemplateFunctionsStringRenderer.Urlize(categoryName);
 
             if (!this.Categories.ContainsKey(categoryKey))
             {
@@ -101,7 +101,7 @@ namespace GlogGenerator.RenderState
 
         public GameData AddGameIfMissing(string gameName, bool overwriteData = false)
         {
-            var gameKey = TemplateFunctionsStringRenderer.Urlize(gameName, htmlEncode: false);
+            var gameKey = TemplateFunctionsStringRenderer.Urlize(gameName);
 
             if (!this.Games.ContainsKey(gameKey))
             {
@@ -122,7 +122,7 @@ namespace GlogGenerator.RenderState
 
         public PlatformData AddPlatformIfMissing(string platformName, bool overwriteData = false)
         {
-            var platformKey = TemplateFunctionsStringRenderer.Urlize(platformName, htmlEncode: false);
+            var platformKey = TemplateFunctionsStringRenderer.Urlize(platformName);
 
             if (!this.Platforms.ContainsKey(platformKey))
             {
@@ -143,7 +143,7 @@ namespace GlogGenerator.RenderState
 
         public RatingData AddRatingIfMissing(string ratingName, bool overwriteData = false)
         {
-            var ratingKey = TemplateFunctionsStringRenderer.Urlize(ratingName, htmlEncode: false);
+            var ratingKey = TemplateFunctionsStringRenderer.Urlize(ratingName);
 
             if (!this.Ratings.ContainsKey(ratingKey))
             {
@@ -164,7 +164,7 @@ namespace GlogGenerator.RenderState
 
         public TagData AddTagIfMissing(string tagName, bool overwriteData = false)
         {
-            var tagKey = TemplateFunctionsStringRenderer.Urlize(tagName, htmlEncode: false);
+            var tagKey = TemplateFunctionsStringRenderer.Urlize(tagName);
 
             if (!this.Tags.ContainsKey(tagKey))
             {
@@ -192,7 +192,7 @@ namespace GlogGenerator.RenderState
             {
                 var gameData = GameData.FromIgdbGame(this.IgdbCache, igdbGame);
 
-                var gameKey = TemplateFunctionsStringRenderer.Urlize(gameData.Title, htmlEncode: false);
+                var gameKey = TemplateFunctionsStringRenderer.Urlize(gameData.Title);
                 this.Games[gameKey] = gameData;
             }
 
@@ -249,7 +249,7 @@ namespace GlogGenerator.RenderState
 
                     foreach (var tag in gameData.Tags)
                     {
-                        var tagUrlized = TemplateFunctionsStringRenderer.Urlize(tag, htmlEncode: false);
+                        var tagUrlized = TemplateFunctionsStringRenderer.Urlize(tag);
                         var tagData = this.AddTagIfMissing(tag, overwriteData: false);
                         gameTagsByUrlized[tagUrlized] = tagData;
                     }

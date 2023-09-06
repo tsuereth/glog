@@ -9,17 +9,8 @@ namespace GlogGenerator.Data
         {
             get
             {
-                var urlized = TemplateFunctionsStringRenderer.Urlize(this.Name, htmlEncode: true);
+                var urlized = TemplateFunctionsStringRenderer.Urlize(this.Name);
                 return $"platform/{urlized}/";
-            }
-        }
-
-        public string OutputDirRelative
-        {
-            get
-            {
-                var urlizedDir = TemplateFunctionsStringRenderer.Urlize(this.Name, htmlEncode: false, terminologySpecial: true);
-                return $"platform/{urlizedDir}";
             }
         }
 

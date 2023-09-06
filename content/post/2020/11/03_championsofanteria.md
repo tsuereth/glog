@@ -24,7 +24,7 @@ And the story, despite some dry-wit charm from the narrator, isn't attention-gra
 Champions of Anteria isn't "bad," exactly, but none of its key features are stand-out successes either.  After 2-3 hours I feel like I've seen enough of Anteria.
 
 <b>Better than</b>: {{% game "Majesty: The Fantasy Kingdom Sim" %}}Majesty: The Fantasy Kingdom Sim{{% /game %}}  
-<b>Not as good as</b>: {{% game "Br&uuml;tal Legend" %}}Br&uuml;tal Legend{{% /game %}}, {{% game "Sid Meier's Civilization V" %}}Sid Meier's Civilization V{{% /game %}}  
+<b>Not as good as</b>: {{% game "Brütal Legend" %}}Brütal Legend{{% /game %}}, {{% game "Sid Meier's Civilization V" %}}Sid Meier's Civilization V{{% /game %}}  
 <b>For a more intriguing genre hybrid, see</b>: {{% game "CastleStorm" %}}CastleStorm{{% /game %}}
 
 <i>Progress: Conquered like, two new territories.</i>

@@ -1831,7 +1831,6 @@
       136746
     ],
     "name": "Sam & Max Hit the Road",
-    "name_glogOverride": "Sam &amp; Max Hit the Road",
     "player_perspectives": [
       4
     ],
@@ -1863,7 +1862,6 @@
       8390
     ],
     "name": "Brütal Legend",
-    "name_glogOverride": "Br&uuml;tal Legend",
     "player_perspectives": [
       2
     ],
@@ -2412,7 +2410,6 @@
       86299
     ],
     "name": "Command & Conquer: Red Alert",
-    "name_glogOverride": "Command &amp; Conquer: Red Alert",
     "player_perspectives": [
       3
     ],
@@ -4846,7 +4843,6 @@
       224687
     ],
     "name": "Command & Conquer",
-    "name_glogOverride": "Command &amp; Conquer",
     "player_perspectives": [
       3
     ],
@@ -5506,7 +5502,6 @@
       2279
     ],
     "name": "Sam & Max: Save the World",
-    "name_glogOverride": "Sam &amp; Max: Save the World",
     "player_perspectives": [
       2,
       5
@@ -5797,7 +5792,6 @@
       88755
     ],
     "name": "Command & Conquer: Red Alert 3",
-    "name_glogOverride": "Command &amp; Conquer: Red Alert 3",
     "player_perspectives": [
       3
     ],
@@ -8820,7 +8814,6 @@
       145902
     ],
     "name": "Ōkami",
-    "name_glogOverride": "Okami",
     "player_perspectives": [
       2
     ],
@@ -9102,7 +9095,6 @@
       221108
     ],
     "name": "Ratchet & Clank",
-    "name_glogOverride": "Ratchet &amp; Clank",
     "player_perspectives": [
       2
     ],
@@ -9379,7 +9371,6 @@
       225039
     ],
     "name": "Beyond Good & Evil",
-    "name_glogOverride": "Beyond Good &amp; Evil",
     "player_perspectives": [
       1,
       2
@@ -10227,7 +10218,6 @@
       100075
     ],
     "name": "Sin & Punishment: Star Successor",
-    "name_glogOverride": "Sin &amp; Punishment: Star Successor",
     "player_perspectives": [
       2
     ],
@@ -10317,7 +10307,6 @@
       35805
     ],
     "name": "Pokémon Pearl Version",
-    "name_glogOverride": "Pok&eacute;mon Pearl",
     "player_perspectives": [
       3,
       4
@@ -10384,7 +10373,6 @@
       224866
     ],
     "name": "Pokémon Red Version",
-    "name_glogOverride": "Pok&eacute;mon Red",
     "player_perspectives": [
       3,
       4
@@ -10904,7 +10892,6 @@
       105916
     ],
     "name": "Mega Man & Bass",
-    "name_glogOverride": "Mega Man &amp; Bass",
     "player_perspectives": [
       4
     ],
@@ -11238,7 +11225,6 @@
       218677
     ],
     "name": "Ratchet & Clank Future: Tools of Destruction",
-    "name_glogOverride": "Ratchet &amp; Clank Future: Tools of Destruction",
     "player_perspectives": [
       2
     ],
@@ -11625,7 +11611,6 @@
       27083
     ],
     "name": "Might & Magic: Clash of Heroes",
-    "name_glogOverride": "Might &amp; Magic: Clash of Heroes",
     "player_perspectives": [
       3
     ],
@@ -11808,7 +11793,6 @@
       202816
     ],
     "name": "Beyond Good & Evil 2",
-    "name_glogOverride": "Beyond Good &amp; Evil 2",
     "player_perspectives": [
       2
     ],
@@ -12965,7 +12949,6 @@
       180184
     ],
     "name": "Sonic & All-Stars Racing Transformed",
-    "name_glogOverride": "Sonic &amp; All-Stars Racing Transformed",
     "player_perspectives": [
       2
     ],
@@ -13693,7 +13676,6 @@
       77993
     ],
     "name": "Zack & Wiki: Quest for Barbaros' Treasure",
-    "name_glogOverride": "Zack &amp; Wiki: Quest for Barbaros' Treasure",
     "player_perspectives": [
       4
     ],
@@ -15718,7 +15700,6 @@
       106631
     ],
     "name": "Superbrothers: Sword & Sworcery EP",
-    "name_glogOverride": "Superbrothers: Sword &amp; Sworcery EP",
     "player_perspectives": [
       4
     ],
@@ -15837,7 +15818,6 @@
       7535
     ],
     "name": "Banjo-Kazooie: Nuts & Bolts",
-    "name_glogOverride": "Banjo-Kazooie: Nuts &amp; Bolts",
     "player_perspectives": [
       1,
       2,
@@ -17003,7 +16983,6 @@
       107360
     ],
     "name": "Sid Meier's Civilization V: Gods & Kings",
-    "name_glogOverride": "Sid Meier's Civilization V: Gods &amp; Kings",
     "player_perspectives": [
       3
     ],
@@ -17171,7 +17150,6 @@
       226313
     ],
     "name": "Mario & Luigi: Superstar Saga",
-    "name_glogOverride": "Mario &amp; Luigi: Superstar Saga",
     "player_perspectives": [
       4
     ],
@@ -17202,7 +17180,6 @@
       8772
     ],
     "name": "Mario & Luigi: Bowser's Inside Story",
-    "name_glogOverride": "Mario &amp; Luigi: Bowser's Inside Story",
     "player_perspectives": [
       4
     ],
@@ -17233,7 +17210,6 @@
       212158
     ],
     "name": "Mario & Luigi: Partners in Time",
-    "name_glogOverride": "Mario &amp; Luigi: Partners in Time",
     "player_perspectives": [
       4
     ],
@@ -17265,7 +17241,6 @@
       8777
     ],
     "name": "Mario & Luigi: Dream Team",
-    "name_glogOverride": "Mario &amp; Luigi: Dream Team",
     "player_perspectives": [
       3,
       4
@@ -17583,7 +17558,6 @@
       225608
     ],
     "name": "Pokémon Puzzle League",
-    "name_glogOverride": "Pok&eacute;mon Puzzle League",
     "player_perspectives": [
       4
     ],
@@ -17706,7 +17680,6 @@
       171307
     ],
     "name": "Kirby & the Amazing Mirror",
-    "name_glogOverride": "Kirby &amp; The Amazing Mirror",
     "player_perspectives": [
       4
     ],
@@ -21792,7 +21765,6 @@
       128887
     ],
     "name": "Rise & Shine",
-    "name_glogOverride": "Rise &amp; Shine",
     "player_perspectives": [
       4
     ],
@@ -22234,7 +22206,6 @@
       16633
     ],
     "name": "Kane & Lynch: Dead Men",
-    "name_glogOverride": "Kane &amp; Lynch: Dead Men",
     "player_perspectives": [
       2
     ],
@@ -23104,7 +23075,6 @@
       17486
     ],
     "name": "Papo & Yo",
-    "name_glogOverride": "Papo &amp; Yo",
     "player_perspectives": [
       2
     ],
@@ -24564,7 +24534,6 @@
       227754
     ],
     "name": "ToeJam & Earl",
-    "name_glogOverride": "ToeJam &amp; Earl",
     "player_perspectives": [
       3
     ],
@@ -25664,7 +25633,6 @@
       129342
     ],
     "name": "Ibb & Obb",
-    "name_glogOverride": "Ibb and Obb",
     "player_perspectives": [
       4
     ],
@@ -26056,7 +26024,6 @@
       228434
     ],
     "name": "Sonic & Knuckles",
-    "name_glogOverride": "Sonic &amp; Knuckles",
     "player_perspectives": [
       4
     ],
@@ -26864,7 +26831,6 @@
       99633
     ],
     "name": "Phantasy Star Online Episode I & II",
-    "name_glogOverride": "Phantasy Star Online Episode I &amp; II",
     "player_perspectives": [
       2
     ],
@@ -27586,7 +27552,6 @@
       179783
     ],
     "name": "Swords & Soldiers",
-    "name_glogOverride": "Swords &amp; Soldiers",
     "player_perspectives": [
       4
     ],
@@ -31578,7 +31543,6 @@
       109263
     ],
     "name": "Ōkamiden",
-    "name_glogOverride": "Okamiden",
     "player_perspectives": [
       2
     ],
@@ -32746,7 +32710,6 @@
       88989
     ],
     "name": "Sam & Max: Save the World - Episode 4: Abe Lincoln Must Die!",
-    "name_glogOverride": "Sam &amp; Max: Save the World - Episode 4: Abe Lincoln Must Die!",
     "player_perspectives": [
       2
     ],
@@ -33219,7 +33182,6 @@
       59172
     ],
     "name": "Pokémon Picross",
-    "name_glogOverride": "Pok&eacute;mon Picross",
     "player_perspectives": [
       4
     ],
@@ -33571,7 +33533,6 @@
       129638
     ],
     "name": "Ōkami HD",
-    "name_glogOverride": "Okami HD",
     "player_perspectives": [
       2
     ],
@@ -34719,7 +34680,6 @@
       43432
     ],
     "name": "Sorcery! Parts 1 & 2",
-    "name_glogOverride": "Sorcery! Parts 1 &amp; 2",
     "player_perspectives": [
       5
     ],
@@ -37962,7 +37922,6 @@
       65282
     ],
     "name": "Zone of The Enders: The 2nd Runner Mars",
-    "name_glogOverride": "Zone of the Enders: The 2nd Runner M&forall;RS",
     "player_perspectives": [
       7
     ],
@@ -40122,7 +40081,6 @@
       190289
     ],
     "name": "God of War Ragnarök",
-    "name_glogOverride": "God of War: Ragnarok",
     "player_perspectives": [
       2
     ],
@@ -41272,7 +41230,6 @@
     "id": 131784,
     "involved_companies": [],
     "name": "Borderlands 3: Guns, Love and Tentacles - The Marriage of Wainwright & Hammerlock",
-    "name_glogOverride": "Borderlands 3: Guns, Love, and Tentacles",
     "player_perspectives": [
       1
     ],

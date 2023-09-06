@@ -21,4 +21,4 @@ Is it a problem with the game's recognition of an Xbox One gamepad?  Are the gam
 
 <a href="https://www.pcgamingwiki.com/wiki/Deadly_Premonition:_The_Director's_Cut">Community warnings</a> like "make occasional backup copies of the save file" give me no hope for Deadly Premonition's technical integrity going forward.
 
-Not since {{% game "Sonic &amp; All-Stars Racing Transformed" %}}Sonic &amp; All-Stars Racing Transformed{{% /game %}} have I been so completely <b>blocked</b> from attempting to play a game.
+Not since {{% game "Sonic & All-Stars Racing Transformed" %}}Sonic & All-Stars Racing Transformed{{% /game %}} have I been so completely <b>blocked</b> from attempting to play a game.

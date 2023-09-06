@@ -25,4 +25,4 @@ Picrozelda is an admirable and satisfying entry in the ever-growing collection o
 
 <b>Better than</b>: {{% game "Picross e" %}}Picross e{{% /game %}}, {{% game "SquareCells" %}}SquareCells{{% /game %}}  
 <b>Not as good as</b>: {{% game "Paint it Back" %}}Paint it Back{{% /game %}}  
-<b>Also much better than</b>: {{% game "Pok&eacute;mon Picross" %}}Pok&eacute;mon Picross{{% /game %}}, but stay tuned for that.
+<b>Also much better than</b>: {{% game "Pokémon Picross" %}}Pokémon Picross{{% /game %}}, but stay tuned for that.

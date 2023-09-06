@@ -13,6 +13,6 @@ But even from very early in the campaign, it's clear that Iron Brigade isn't tho
 
 And, as much as the {{% tag "Double Fine Productions" %}}Double Fine{{% /tag %}} level of audio-visual polish tries to conceal it, each mission is still just a wave-after-wave series of brainless enemies that you need to unload bullets into.  The narrative backdrop is transparent and disposable.
 
-And so, like {{% game "Br&uuml;tal Legend" %}}Br&uuml;tal Legend{{% /game %}} before it, Iron Brigade comes across like a riveting high-concept that was blessed with high production values and enough micro-level design to be playable, but not enough macro-level design to be cohesively engaging.
+And so, like {{% game "Brütal Legend" %}}Brütal Legend{{% /game %}} before it, Iron Brigade comes across like a riveting high-concept that was blessed with high production values and enough micro-level design to be playable, but not enough macro-level design to be cohesively engaging.
 
 <i>Progress: Finished the first non-tutorial mission (Europe, Beach).</i>

@@ -2,12 +2,12 @@
 date = "2021-01-10T00:45:40-08:00"
 title = "Match-three of Heroes"
 category = ["Playing A Game"]
-game = ["Might &amp; Magic: Clash of Heroes"]
+game = ["Might & Magic: Clash of Heroes"]
 platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Might &amp; Magic: Clash of Heroes" %}}Might & Magic: Clash of Heroes{{% /game %}} is a solid attempt at combining a story-driven campaign, RPG progression, and puzzle gameplay.  Certainly better than the likes of {{% game "Puzzle Quest: Challenge of the Warlords" %}}Puzzle Quest{{% /game %}} or {{% game "PictoQuest: The Cursed Grids" %}}PictoQuest{{% /game %}}.
+{{% game "Might & Magic: Clash of Heroes" %}}Might & Magic: Clash of Heroes{{% /game %}} is a solid attempt at combining a story-driven campaign, RPG progression, and puzzle gameplay.  Certainly better than the likes of {{% game "Puzzle Quest: Challenge of the Warlords" %}}Puzzle Quest{{% /game %}} or {{% game "PictoQuest: The Cursed Grids" %}}PictoQuest{{% /game %}}.
 
 The match-three mechanics are fun to learn and experiment with -- well, the horizontal-matching "wall" effect is kinda bullshit, since it eats away from your army count while the walls just <i>sit around</i>.  But aside from that annoying quirk, the learning curve of Clash of Heroes' combat tactics feels like a really rewarding balance of "solving" the puzzle to win battles and progressively adding twists like elite units and linked attacks.
 

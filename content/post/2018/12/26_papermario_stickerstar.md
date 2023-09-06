@@ -14,7 +14,7 @@ An interesting story?  Nope.  This narrative setup is less complicated than many
 
 His only traveling companion is an annoying talking crown, who provides some gameplay tips a'la {{% game "The Legend of Zelda: Ocarina of Time 3D" %}}Navi the fairy{{% /game %}}.  And since Mario himself remains mute (as is tradition), there isn't much in the way of dialog.  NPCs have some light-hearted throwaway lines, but the humor feels underwhelmingly mild.
 
-As far as I remember, {{% game "Paper Mario: The Thousand-Year Door" %}}Paper Mario: The Thousand-Year Door{{% /game %}} had a surprisingly complicated plot.  And while the story of {{% game "Mario &amp; Luigi: Bowser's Inside Story" %}}Mario & Luigi: Bowser's Inside Story{{% /game %}} wasn't very good, I respect that it at least <i>existed</i>.  Sticker Star, in spite of its predecessors, clearly never intended to tell a story at all.
+As far as I remember, {{% game "Paper Mario: The Thousand-Year Door" %}}Paper Mario: The Thousand-Year Door{{% /game %}} had a surprisingly complicated plot.  And while the story of {{% game "Mario & Luigi: Bowser's Inside Story" %}}Mario & Luigi: Bowser's Inside Story{{% /game %}} wasn't very good, I respect that it at least <i>existed</i>.  Sticker Star, in spite of its predecessors, clearly never intended to tell a story at all.
 
 So does it make up for that with some thrilling combat mechanics?  Eh... no.  Its sticker-based combat is based on, well, your inventory of stickers.  Mario doesn't have any default attacks, or abilities that he can learn by leveling up -- because there is no leveling up.  Nor are there equipment slots, stat upgrades, or ... even character stats, really.
 

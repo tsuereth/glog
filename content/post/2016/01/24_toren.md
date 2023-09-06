@@ -18,5 +18,5 @@ Top that with a mess of a camera, terribly-communicated control mechanics (i.e. 
 Toren would be pretty good for a student project, but as a commercial game it falls short on virtually every level.  Its art is really the only worthwhile thing in here.
 
 <b>Better than</b>: ... hmm.  
-<b>Not as good as</b>: {{% game "Ico" %}}Ico{{% /game %}}, {{% game "Papo &amp; Yo" %}}Papo &amp; Yo{{% /game %}}  
+<b>Not as good as</b>: {{% game "Ico" %}}Ico{{% /game %}}, {{% game "Papo & Yo" %}}Papo & Yo{{% /game %}}  
 <b>And the soundtrack, while clearly a big effort</b>: feels generic and flat.  Orchestral strings do not an epic game make.

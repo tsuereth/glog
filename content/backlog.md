@@ -6,7 +6,7 @@ hide_date = true
 # Games I Will Play One Day, Maybe
 
 * {{% game "Afterparty" %}}Afterparty{{% /game %}} ({{% platform" PC" %}}PC{{% /platform %}})
-* {{% game "God of War: Ragnarok" %}}God of War: Ragnarok{{% /game %}} ({{% platform "PS4" %}}PS4{{% /platform %}})
+* {{% game "God of War Ragnarök" %}}God of War Ragnarök{{% /game %}} ({{% platform "PS4" %}}PS4{{% /platform %}})
 * {{% game "Horizon Forbidden West: Burning Shores" %}}Horizon Forbidden West: Burning Shores{{% /game %}} ({{% platform "PS5" %}}PS5{{% /platform %}})
 * {{% game "The Last of Us Part I" %}}The Last of Us Part I{{% /game %}} ({{% platform "PC" %}}PC{{% /platform %}})
 * {{% game "Metroid Dread" %}}Metroid Dread{{% /game %}} ({{% platform "Switch" %}}Switch{{% /platform %}})

@@ -2,14 +2,14 @@
 date = "2017-12-03T09:50:04-08:00"
 title = "Come along and ride on a fantastic voyage"
 category = ["Playing A Game"]
-game = ["Mario &amp; Luigi: Bowser's Inside Story"]
+game = ["Mario & Luigi: Bowser's Inside Story"]
 platform = ["DS"]
 rating = []
 +++
 
-So I guess {{% game "Mario &amp; Luigi: Bowser's Inside Story" %}}Mario &amp; Luigi: Bowser's Inside Story{{% /game %}} has been on my backlog for about eight years.  I'd totally forgotten about it.
+So I guess {{% game "Mario & Luigi: Bowser's Inside Story" %}}Mario & Luigi: Bowser's Inside Story{{% /game %}} has been on my backlog for about eight years.  I'd totally forgotten about it.
 
-And considering my fond memories of {{% game "Mario &amp; Luigi: Superstar Saga" %}}Superstar Saga{{% /game %}} and less-than-fond ones of {{% game "Mario &amp; Luigi: Partners in Time" %}}Partners in Time{{% /game %}}, this installment is ... well, it's pretty okay.
+And considering my fond memories of {{% game "Mario & Luigi: Superstar Saga" %}}Superstar Saga{{% /game %}} and less-than-fond ones of {{% game "Mario & Luigi: Partners in Time" %}}Partners in Time{{% /game %}}, this installment is ... well, it's pretty okay.
 
 * The light-hearted storytelling and strangely-Italian miming are still somewhat charming (especially now that Bowser's in on it).  But the larger plot seems silly and unstructured, more like I'm following dots on a map than like I'm actually on a mission.
 

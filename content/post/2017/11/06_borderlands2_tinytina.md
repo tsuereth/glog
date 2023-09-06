@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Borderlands 2: Tiny Tina's Assault on Dragon Keep" %}}Tiny Tina's Assault on Dragon Keep{{% /game %}} - between its irreverent Dungeons &amp; Dragons parody, reunion of favorite characters, and really, actually well-crafted questing content - is a thankful return to form for {{% game "Borderlands 2" %}}Borderlands 2{{% /game %}}, after {{% game "Borderlands 2: Sir Hammerlock's Big Game Hunt" %}}Sir Hammerlock{{% /game %}}'s disappointing DLC.
+{{% game "Borderlands 2: Tiny Tina's Assault on Dragon Keep" %}}Tiny Tina's Assault on Dragon Keep{{% /game %}} - between its irreverent Dungeons & Dragons parody, reunion of favorite characters, and really, actually well-crafted questing content - is a thankful return to form for {{% game "Borderlands 2" %}}Borderlands 2{{% /game %}}, after {{% game "Borderlands 2: Sir Hammerlock's Big Game Hunt" %}}Sir Hammerlock{{% /game %}}'s disappointing DLC.
 
 It's not perfect, as some combat sections drag on a bit, and the ending is kind of a let-down.  (Par for the course in {{% tag "Borderlands" %}}Borderlands{{% /tag %}} games, apparently.)  But it's definitely the best post-game that Borderlands 2 has to offer.
 

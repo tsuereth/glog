@@ -25,7 +25,7 @@ And I can't get away with not mentioning the epic, awe-inspiring soundtrack.  Th
 
 But while back in 2005, the colossi were the highlight of an inventive, fascinating package of a game; now, they feel a bit more like pearls resting in a crusty old clam.
 
-<b>Better than</b>: {{% game "Br&uuml;tal Legend" %}}Br&uuml;tal Legend{{% /game %}}, {{% game "Grow Home" %}}Grow Home{{% /game %}} (and {{% game "Shadow of the Colossus" %}}the original{{% /game %}})  
+<b>Better than</b>: {{% game "Brütal Legend" %}}Brütal Legend{{% /game %}}, {{% game "Grow Home" %}}Grow Home{{% /game %}} (and {{% game "Shadow of the Colossus" %}}the original{{% /game %}})  
 <b>Not as good as</b>: {{% game "The Legend of Zelda: Breath of the Wild" %}}The Legend of Zelda: Breath of the Wild{{% /game %}}, {{% game "Toki Tori 2+" %}}Toki Tori 2+{{% /game %}}  
 <b>There is a New Game +, but...</b>: I'm not that interested in doing all the same fights over again.  Maybe in another 10 or 15 years.
 

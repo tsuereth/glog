@@ -1,48 +1,19 @@
 using System;
 using System.Globalization;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace GlogGenerator.HugoCompat
 {
     public class TemplateFunctionsStringRenderer : Antlr4.StringTemplate.StringRenderer
     {
-        public static string Urlize(string str, bool htmlEncode, bool terminologySpecial = false)
+        public static string Urlize(string str)
         {
-            // https://github.com/gohugoio/hugo/blob/master/helpers/url_test.go
-
+            str = str.Normalize(NormalizationForm.FormD);
             str = str.Trim().ToLowerInvariant();
-
-            str = Regex.Replace(str, @"['""’,@\?\!\(\)\[\]\<\>=:]+", string.Empty);
-
-            str = Regex.Replace(str, @"\s+", "-");
-
-            str = Regex.Replace(str, @"[%\-]+", "-");
-
-            if (htmlEncode)
-            {
-                str = Regex.Replace(str, "&([a-z]+);", "$1");
-                str = Uri.EscapeDataString(str);
-
-                // Not this one!
-                str = str.Replace("%2F", "/");
-
-                // Weird: '&' was percent-encoded, but we want it gone.
-                str = str.Replace("%26", string.Empty);
-
-                // WEIRD: '+' was percent-encoded, but we want it HTML-encoded.
-                str = str.Replace("%2B", "&#43;");
-            }
-            else
-            {
-                str = Regex.Replace(str, @"[&;]+", string.Empty);
-
-                if (!terminologySpecial)
-                {
-                    str = str.Replace("+", "-");
-                }
-            }
-
-            str = Regex.Replace(str, "-+", "-");
+            str = Regex.Replace(str, "[^0-9a-z -]", string.Empty);
+            str = Regex.Replace(str, "[ -]+", "-");
+            str = str.Trim('-');
 
             return str;
         }
@@ -73,7 +44,7 @@ namespace GlogGenerator.HugoCompat
 
             if (formatString.Equals("urlize", StringComparison.OrdinalIgnoreCase))
             {
-                return Urlize(str, htmlEncode: true);
+                return Urlize(str);
             }
 
             return base.ToString(o, formatString, culture);

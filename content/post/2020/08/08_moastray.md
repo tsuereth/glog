@@ -21,7 +21,7 @@ Meanwhile, the atmospheric ambience can be engrossing in how well it pulls off t
 
 MO:Astray isn't a bad game, but it's not that compelling, either.  There are plenty of other platform-puzzlers, and true Metroidvanias, with more interesting gameplay and storytelling.
 
-<b>Better than</b>: {{% game "Rise &amp; Shine" %}}Rise &amp; Shine{{% /game %}}  
+<b>Better than</b>: {{% game "Rise & Shine" %}}Rise & Shine{{% /game %}}  
 <b>Not as good as</b>: {{% game "The Swapper" %}}The Swapper{{% /game %}}  
 <b>Less combat-focused, but arguably on par with</b>: {{% game "Capsized" %}}Capsized{{% /game %}}
 

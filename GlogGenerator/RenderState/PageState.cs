@@ -247,7 +247,7 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputPathRelative = $"{categoryData.OutputDirRelative}/index.html";
+            page.OutputPathRelative = $"{categoryData.PermalinkRelative}index.html";
             page.RenderTemplateName = "list";
 
             return page;
@@ -277,7 +277,7 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputPathRelative = $"{gameData.OutputDirRelative}/index.html";
+            page.OutputPathRelative = $"{gameData.PermalinkRelative}index.html";
             page.RenderTemplateName = "list_game";
 
             return page;
@@ -304,7 +304,7 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputPathRelative = $"{platformData.OutputDirRelative}/index.html";
+            page.OutputPathRelative = $"{platformData.PermalinkRelative}index.html";
             page.RenderTemplateName = "list";
 
             return page;
@@ -331,7 +331,7 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputPathRelative = $"{ratingData.OutputDirRelative}/index.html";
+            page.OutputPathRelative = $"{ratingData.PermalinkRelative}index.html";
             page.RenderTemplateName = "list";
 
             return page;
@@ -358,7 +358,7 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputPathRelative = $"{tagData.OutputDirRelative}/index.html";
+            page.OutputPathRelative = $"{tagData.PermalinkRelative}index.html";
             page.RenderTemplateName = "list_tag";
 
             return page;

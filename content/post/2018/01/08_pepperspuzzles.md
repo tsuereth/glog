@@ -23,7 +23,7 @@ As impressed as I was by how <i>many</i> puzzles Pepper threw at me, only one or
 
 So I wouldn't call it a bar-raising picross package.  But, if you want an <i>absolute fuckload</i> of puzzles, Pepper's got you covered.
 
-<b>Better than</b>: {{% game "InfiniPicross" %}}InfiniPicross{{% /game %}}, {{% game "Pok&eacute;mon Picross" %}}Pok&eacute;mon Picross{{% /game %}}  
+<b>Better than</b>: {{% game "InfiniPicross" %}}InfiniPicross{{% /game %}}, {{% game "Pokémon Picross" %}}Pokémon Picross{{% /game %}}  
 <b>Not as good as</b>: {{% game "My Nintendo Picross: The Legend of Zelda Twilight Princess" %}}My Nintendo Picross: The Legend of Zelda Twilight Princess{{% /game %}}, {{% game "Paint it Back" %}}Paint it Back{{% /game %}}  
 <b>That should probably be enough nonograms</b>: for the rest of 2018.
 

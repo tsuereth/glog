@@ -188,7 +188,7 @@ namespace GlogGenerator.HugoCompat
                         var categoryName = defaultArg;
                         site.AddCategoryIfMissing(categoryName);
 
-                        replacementText = $"<a href=\"{site.BaseURL}category/{TemplateFunctionsStringRenderer.Urlize(categoryName, htmlEncode: true)}\">{innerText}</a>";
+                        replacementText = $"<a href=\"{site.BaseURL}category/{TemplateFunctionsStringRenderer.Urlize(categoryName)}\">{innerText}</a>";
                         break;
 
                     case "chart":
@@ -273,21 +273,21 @@ function drawChart_{pageHash}_{chartHash}() {{
                             throw new InvalidDataException($"More than one game in cache matches the name \"{gameName}\"");
                         }
 
-                        replacementText = $"<a href=\"{site.BaseURL}game/{TemplateFunctionsStringRenderer.Urlize(gameName, htmlEncode: true)}\">{innerText}</a>";
+                        replacementText = $"<a href=\"{site.BaseURL}game/{TemplateFunctionsStringRenderer.Urlize(gameName)}\">{innerText}</a>";
                         break;
 
                     case "platform":
                         var platformName = defaultArg;
                         site.AddPlatformIfMissing(platformName);
 
-                        replacementText = $"<a href=\"{site.BaseURL}platform/{TemplateFunctionsStringRenderer.Urlize(platformName, htmlEncode: true)}\">{innerText}</a>";
+                        replacementText = $"<a href=\"{site.BaseURL}platform/{TemplateFunctionsStringRenderer.Urlize(platformName)}\">{innerText}</a>";
                         break;
 
                     case "rating":
                         var ratingName = defaultArg;
                         site.AddRatingIfMissing(ratingName);
 
-                        replacementText = $"<a href=\"{site.BaseURL}rating/{TemplateFunctionsStringRenderer.Urlize(ratingName, htmlEncode: true)}\">{innerText}</a>";
+                        replacementText = $"<a href=\"{site.BaseURL}rating/{TemplateFunctionsStringRenderer.Urlize(ratingName)}\">{innerText}</a>";
                         break;
 
                     case "spoiler":
@@ -298,7 +298,7 @@ function drawChart_{pageHash}_{chartHash}() {{
                         var tagName = defaultArg;
                         site.AddTagIfMissing(tagName);
 
-                        replacementText = $"<a href=\"{site.BaseURL}tag/{TemplateFunctionsStringRenderer.Urlize(tagName, htmlEncode: true)}\">{innerText}</a>";
+                        replacementText = $"<a href=\"{site.BaseURL}tag/{TemplateFunctionsStringRenderer.Urlize(tagName)}\">{innerText}</a>";
                         break;
 
                     default:

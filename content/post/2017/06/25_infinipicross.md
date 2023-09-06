@@ -17,6 +17,6 @@ It was the fact that I generated a <b>99 x 50</b> puzzle - <i>obliterating</i> t
 
 Even if I never start the game up again, that solve alone feels well worth InfiniPicross's paltry asking price.
 
-<b>Better than</b>: {{% game "Pok&eacute;mon Picross" %}}Pok&eacute;mon Picross{{% /game %}}  
+<b>Better than</b>: {{% game "Pokémon Picross" %}}Pokémon Picross{{% /game %}}  
 <b>Not as good as</b>: {{% game "Paint it Back" %}}Paint it Back{{% /game %}}, just because I do like a scripted "campaign" of puzzles to solve.  
 <b>It can generate up to 99 x 99</b>: but I think I'll need a bigger monitor (and probably a full day) to pull that off.

@@ -83,6 +83,6 @@ I fell in love with CrossCode's provocative introduction, but fell out of love w
 
 If you're a big fan of those things, maybe CrossCode will be better, for you.
 
-<b>Better than</b>: {{% game "Final Fantasy XII" %}}Final Fantasy XII{{% /game %}}, {{% game "Mario &amp; Luigi: Bowser's Inside Story" %}}Mario &amp; Luigi: Bowser's Inside Story{{% /game %}}  
+<b>Better than</b>: {{% game "Final Fantasy XII" %}}Final Fantasy XII{{% /game %}}, {{% game "Mario & Luigi: Bowser's Inside Story" %}}Mario & Luigi: Bowser's Inside Story{{% /game %}}  
 <b>Not as good as</b>: {{% game "Child of Light" %}}Child of Light{{% /game %}}, {{% game "Timespinner" %}}Timespinner{{% /game %}}  
 <b>For better virtual-world meta-storytelling, see</b>: {{% game "Assassin's Creed" %}}Assassin's Creed{{% /game %}} and {{% game "Saints Row IV" %}}Saints Row IV{{% /game %}}

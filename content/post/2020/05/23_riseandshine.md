@@ -2,12 +2,12 @@
 date = "2020-05-23T17:58:52-07:00"
 title = "Go back to bed"
 category = ["Playing A Game"]
-game = ["Rise &amp; Shine"]
+game = ["Rise & Shine"]
 platform = ["PC"]
 rating = ["Bad"]
 +++
 
-{{% game "Rise &amp; Shine" %}}Rise &amp; Shine{{% /game %}} makes its purpose, arcade action, clear from the beginning: its throwaway, self-parodying story about video game tropes is dumb and meaningless filler between shooting (and ... some puzzling).
+{{% game "Rise & Shine" %}}Rise & Shine{{% /game %}} makes its purpose, arcade action, clear from the beginning: its throwaway, self-parodying story about video game tropes is dumb and meaningless filler between shooting (and ... some puzzling).
 
 The problem with its action (and ... puzzle) sequences is that <b>I hate the aiming controls</b>.  It's a twin-stick shooter with too much zoom distance and not enough aim sighting -- that is to say, I end up spamming the trigger button because it's so unclear where my shots will land.
 

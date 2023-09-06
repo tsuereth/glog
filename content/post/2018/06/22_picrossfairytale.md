@@ -19,7 +19,7 @@ And you can pay real money for some kind of currency.  I don't know what it does
 
 Even considering that it's free, this isn't worth it.  You'd do better to shell out a few bucks for a picross game that isn't as outright <i>shitty</i>.
 
-<b>Better than</b>: {{% game "Pok&eacute;mon Picross" %}}Pok&eacute;mon Picross{{% /game %}}  
+<b>Better than</b>: {{% game "Pokémon Picross" %}}Pokémon Picross{{% /game %}}  
 <b>Not as good as</b>: {{% game "Pepper's Puzzles" %}}Pepper's Puzzles{{% /game %}}  
 <b>Slightly worse than</b>: {{% game "Regency Solitaire" %}}Regency Solitaire{{% /game %}}
 

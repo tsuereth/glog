@@ -25,7 +25,7 @@ Even though there's barely any text in the game, it suffers from a clear and <i>
 
 Much as I appreciate the game's amount of content and its thorough hinting system, the input issues are fairly critical.  Puppy Cross is certainly playable, but hard to recommend over more basically-functional nonogram games.
 
-<b>Better than</b>: {{% game "Pok&eacute;mon Picross" %}}Pok&eacute;mon Picross{{% /game %}}  
+<b>Better than</b>: {{% game "Pokémon Picross" %}}Pokémon Picross{{% /game %}}  
 <b>Not as good as</b>: {{% game "Nonogram - The Greatest Painter" %}}Nonogram - The Greatest Painter{{% /game %}}  
 <b>Dog and cat puns not as good as</b>: {{% game "Cat Quest" %}}Cat Quest{{% /game %}}
 

@@ -21,7 +21,7 @@ The difficulty level did end up biting me a few times.  Some encounters in the g
 
 So, yeah.  Enlarge the battle parties, and get rid of the obstructive rhyme-based storytelling, and baby -- you've got a stew going.
 
-<b>Better than</b>: {{% game "Mario &amp; Luigi: Partners in Time" %}}Mario &amp; Luigi: Partners in Time{{% /game %}}  
+<b>Better than</b>: {{% game "Mario & Luigi: Partners in Time" %}}Mario & Luigi: Partners in Time{{% /game %}}  
 <b>Not as good as</b>: I guess... classics like {{% game "Chrono Trigger" %}}Chrono Trigger{{% /game %}}? (Has it really been so long since I've played an excellent 2D RPG?)  
 <b>Also better than</b>: {{% game "Valiant Hearts: The Great War" %}}Valiant Hearts{{% /game %}}, that other debut UbiArt game.
 

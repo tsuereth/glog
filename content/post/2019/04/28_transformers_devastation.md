@@ -26,7 +26,7 @@ I really, really enjoyed the presentation and gameplay of Transformers: Devastat
 But it felt like, after Chapter 1, the wheels came off this game and it just kinda laid there.
 
 <b>Better than</b>: {{% game "Transformers: War for Cybertron" %}}Transformers: War for Cybertron{{% /game %}}  
-<b>Not as good as</b>: {{% game "Okami HD" %}}Okami HD{{% /game %}}  
+<b>Not as good as</b>: {{% game "Ōkami HD" %}}Ōkami HD{{% /game %}}  
 <b>Basically as good as</b>: {{% game "Vanquish" %}}Vanquish{{% /game %}}
 
 <i>Progress: Finished Chapter ... 4, I think?</i>

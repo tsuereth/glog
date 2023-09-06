@@ -13,17 +13,8 @@ namespace GlogGenerator.Data
         {
             get
             {
-                var urlized = TemplateFunctionsStringRenderer.Urlize(this.Title, htmlEncode: true);
+                var urlized = TemplateFunctionsStringRenderer.Urlize(this.Title);
                 return $"game/{urlized}/";
-            }
-        }
-
-        public string OutputDirRelative
-        {
-            get
-            {
-                var urlizedDir = TemplateFunctionsStringRenderer.Urlize(this.Title, htmlEncode: false, terminologySpecial: true);
-                return $"game/{urlizedDir}";
             }
         }
 

@@ -21,6 +21,6 @@ Much as I admire the simultaneous underworld-management and overworld-exploratio
 
 <b>Better than</b>: ehh, I barely played {{% game "Evil Genius" %}}Evil Genius{{% /game %}}, which is also more than 15 years old, but... yeah?  
 <b>Not as good as</b>: {{% game "Overlord" %}}Overlord{{% /game %}}  
-<b>Maybe, possibly, better than</b>: {{% game "Br&uuml;tal Legend" %}}Br&uuml;tal Legend{{% /game %}}, but only if you ignore that game's voice cast (which is one of Br&uuml;tal Legend's greatest features).
+<b>Maybe, possibly, better than</b>: {{% game "Brütal Legend" %}}Brütal Legend{{% /game %}}, but only if you ignore that game's voice cast (which is one of Brütal Legend's greatest features).
 
 <i>Progress: Finished campaign mission 4 / met the Nagas.</i>

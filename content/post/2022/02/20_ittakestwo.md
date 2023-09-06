@@ -37,6 +37,6 @@ So, ignore the story -- enjoy that May and Cody make a good gameplay team, and i
 
 I don't know if I'd agree that It Takes Two is <a href="https://www.pcgamer.com/it-takes-two-wins-game-of-the-year-at-the-game-awards/">award-worthy</a>, compared to more tightly-focused, technically-polished, or narratively-thrilling titles.  But it's a fun ride filled with creative imagination, and by the - admittedly, kinda low - standards of couple-friendly co-op games, there isn't much else that tops it.
 
-<b>Better than</b>: {{% game "Biped" %}}Biped{{% /game %}}, {{% game "Ibb and Obb" %}}Ibb and Obb{{% /game %}}  
+<b>Better than</b>: {{% game "Biped" %}}Biped{{% /game %}}, {{% game "Ibb & Obb" %}}Ibb & Obb{{% /game %}}  
 <b>Not as good as</b>: {{% game "Pitfall Planet" %}}Pitfall Planet{{% /game %}}  
 <b><i>Lots</i> more content than, but mechanically comparable to</b>: {{% game "Brothers: A Tale of Two Sons" %}}Brothers: A Tale of Two Sons{{% /game %}}

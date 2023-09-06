@@ -7,9 +7,9 @@ platform = ["PS4"]
 rating = ["Good"]
 +++
 
-Like {{% game "Okami HD" %}}Okami HD{{% /game %}} before it, the new {{% game "Shadow of the Colossus (2018)" %}}Shadow of the Colossus{{% /game %}} excellently recaptures both the magical highs and the irritating lows of the {{% game "Shadow of the Colossus" %}}2005 original{{% /game %}}.
+Like {{% game "Ōkami HD" %}}Ōkami HD{{% /game %}} before it, the new {{% game "Shadow of the Colossus (2018)" %}}Shadow of the Colossus{{% /game %}} excellently recaptures both the magical highs and the irritating lows of the {{% game "Shadow of the Colossus" %}}2005 original{{% /game %}}.
 
-It shouldn't be terribly surprising that this remake of Colossus looks and runs much better -- given that the original was such a strain on the {{% platform "PS2" %}}PS2{{% /platform %}}, throwing more hardware at it is certainly helpful.  But this remake goes beyond higher resolutions and framerates; new art and animation techniques make it remarkably, sometimes breathtakingly beautiful.  It's not as stylistically impressive as Okami, but still looks pretty damned good.
+It shouldn't be terribly surprising that this remake of Colossus looks and runs much better -- given that the original was such a strain on the {{% platform "PS2" %}}PS2{{% /platform %}}, throwing more hardware at it is certainly helpful.  But this remake goes beyond higher resolutions and framerates; new art and animation techniques make it remarkably, sometimes breathtakingly beautiful.  It's not as stylistically impressive as Ōkami, but still looks pretty damned good.
 
 The introductory story sequence is rougher than I'd remembered.  Not just for being obtusely mysterious, but for how <i>long</i> it is.  I seriously don't remember Dormin droning on so much, and I think the game would have been better-served to just skip it and drop you into the world immediately.
 
@@ -25,6 +25,6 @@ That said, my biggest worry about this remake was the controls, and they're stil
 
 The challenging aspects of the game's controls are fine, but there are still some behaviors, especially with the camera, that just feel broken.
 
-So, like the recently-facelifted Okami, Shadow of the Colossus remains imperfect.  But its beating heart - the colossi fights - is intact, and I'm itching to stab more stone giants in their big furry heads.
+So, like the recently-facelifted Ōkami, Shadow of the Colossus remains imperfect.  But its beating heart - the colossi fights - is intact, and I'm itching to stab more stone giants in their big furry heads.
 
 <i>Progress: Felled the 8th colossus.</i>

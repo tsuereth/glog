@@ -22,5 +22,5 @@ Fantastic Fustercluck has a couple of cool ideas, particularly the segments in w
 But it never really capitalizes on its ideas; including Locomobius, which just ends in a boss fight where you shoot at the train a bunch.
 
 <b>Better than</b>: {{% game "Borderlands 3: Bounty of Blood - A Fistful of Redemption" %}}Borderlands 3: Bounty of Blood - A Fistful of Redemption{{% /game %}}, {{% game "Borderlands: The Pre-Sequel - Claptastic Voyage" %}}Borderlands: The Pre-Sequel - Claptastic Voyage{{% /game %}}  
-<b>Not as good as</b>: {{% game "Borderlands 2: Sir Hammerlock vs. the Son of Crawmerax" %}}Borderlands 2: Sir Hammerlock vs. the Son of Crawmerax{{% /game %}}, {{% game "Borderlands 3: Guns, Love, and Tentacles" %}}Borderlands 3: Guns, Love, and Tentacles{{% /game %}}  
+<b>Not as good as</b>: {{% game "Borderlands 2: Sir Hammerlock vs. the Son of Crawmerax" %}}Borderlands 2: Sir Hammerlock vs. the Son of Crawmerax{{% /game %}}, {{% game "Borderlands 3: Guns, Love and Tentacles - The Marriage of Wainwright & Hammerlock" %}}Borderlands 3: Guns, Love and Tentacles - The Marriage of Wainwright & Hammerlock{{% /game %}}  
 <b>Krieg's tragic science-experiment backstory</b>: feels like it might have meant to hint at a broader "origins of the psychos" plot point; I'm not really sure why this DLC dug itself in so deep, there.

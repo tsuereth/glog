@@ -69,7 +69,7 @@ namespace GlogGenerator.Data
             }
             else
             {
-                permalinkPathParts.Add(TemplateFunctionsStringRenderer.Urlize(post.Title, htmlEncode: false));
+                permalinkPathParts.Add(TemplateFunctionsStringRenderer.Urlize(post.Title));
             }
 
             var permalinkPath = string.Join('/', permalinkPathParts) + '/';

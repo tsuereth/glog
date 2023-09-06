@@ -21,6 +21,6 @@ It's unfortunate that the game's back half has fewer opportunities for self-dire
 
 Nevertheless, Stick of Truth is a fun and funny jaunt through South Park, and that it leaves me <i>wanting more</i> is hardly a bad thing.  Especially since {{% game "South Park: The Fractured But Whole" %}}there <i>is</i> more{{% /game %}}.
 
-<b>Better than</b>: {{% game "Mario &amp; Luigi: Bowser's Inside Story" %}}Mario &amp; Luigi: Bowser's Inside Story{{% /game %}}, {{% game "Penny Arcade's On the Rain-Slick Precipice of Darkness 3" %}}Penny Arcade's On the Rain-Slick Precipice of Darkness 3{{% /game %}}  
+<b>Better than</b>: {{% game "Mario & Luigi: Bowser's Inside Story" %}}Mario & Luigi: Bowser's Inside Story{{% /game %}}, {{% game "Penny Arcade's On the Rain-Slick Precipice of Darkness 3" %}}Penny Arcade's On the Rain-Slick Precipice of Darkness 3{{% /game %}}  
 <b>Not as good as</b>: {{% game "Mass Effect 3" %}}Mass Effect 3{{% /game %}}, {{% game "Shadowrun: Dragonfall - Director's Cut" %}}Shadowrun: Dragonfall - Director's Cut{{% /game %}}  
 <b>But, uh, keep its release date (2014) in mind</b>: because some of the game's "classic South Park" humor, like nonchalantly dropping the word "retard," hasn't aged especially well.
