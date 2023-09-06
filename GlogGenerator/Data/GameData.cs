@@ -9,8 +9,6 @@ namespace GlogGenerator.Data
 {
     public class GameData
     {
-        public static readonly string GameContentBaseDir = "content/game";
-
         public string PermalinkRelative
         {
             get
@@ -38,21 +36,6 @@ namespace GlogGenerator.Data
         public List<string> Tags { get; set; } = new List<string>();
 
         public List<PostData> LinkedPosts { get; set; } = new List<PostData>();
-
-        public static GameData FromFilePath(string filePath)
-        {
-            var fileLines = File.ReadAllLines(filePath);
-            var data = FrontMatterToml.FromLines(fileLines);
-
-            var game = new GameData();
-
-            game.Title = data.GetValue<string>("title") ?? string.Empty;
-            game.IgdbId = data.GetValue<int?>("igdb_id");
-            game.IgdbUrl = data.GetValue<string>("igdb_url") ?? null;
-            game.Tags = data.GetValue<List<string>>("tag") ?? new List<string>();
-
-            return game;
-        }
 
         public static GameData FromIgdbGame(IgdbCache igdbCache, IgdbGame igdbGame)
         {

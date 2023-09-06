@@ -196,33 +196,6 @@ namespace GlogGenerator.RenderState
                 this.Games[gameKey] = gameData;
             }
 
-            // FIXME: load game data from outside the IGDB cache.
-            var gameContentBasePath = Path.Combine(this.PathResolver.BasePath, GameData.GameContentBaseDir);
-            var gamePaths = Directory.EnumerateFiles(gameContentBasePath, "_index.md", SearchOption.AllDirectories).ToList();
-            foreach (var gamePath in gamePaths)
-            {
-                var gameData = GameData.FromFilePath(gamePath);
-
-                // FIXME: this is a temporary debugging shunt to find title mismatches!
-                if (gameData.IgdbId.HasValue)
-                {
-                    var igdbGameData = this.IgdbCache.GetGame(gameData.IgdbId.Value);
-                    if (igdbGameData != null)
-                    {
-                        var igdbGameName = igdbGameData.NameForGlog;
-                        if (!gameData.Title.Equals(igdbGameName, StringComparison.Ordinal))
-                        {
-                            throw new InvalidDataException($"Title mismatch! local is \"{gameData.Title}\" but IGDB is \"{igdbGameName}\"");
-                        }
-                    }
-
-                    continue;
-                }
-
-                var gameKey = TemplateFunctionsStringRenderer.Urlize(gameData.Title, htmlEncode: false);
-                this.Games[gameKey] = gameData;
-            }
-
             // Prepare tags from game metadata.
             foreach (var gameData in this.Games.Values)
             {
