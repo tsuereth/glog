@@ -2,14 +2,14 @@
 date = "2021-06-29T18:26:49-07:00"
 title = "What a piece of junk!"
 category = ["Playing A Game"]
-game = ["Mass Effect 2: The Firewalker Pack"]
+game = ["Mass Effect 2: Firewalker Pack"]
 platform = ["PC"]
 rating = ["Bad"]
 +++
 
 {{% game "Mass Effect" %}}Mass Effect{{% /game %}}'s Mako tank sections were <i>so bad</i>, that {{% game "Mass Effect 2" %}}Mass Effect 2{{% /game %}}'s launch-day content didn't have <i>any</i> driving sections.  I'd argue that it should have stayed that way.  Alas...
 
-{{% game "Mass Effect 2: The Firewalker Pack" %}}The Firewalker Pack{{% /game %}} adds a small handful of missions where you pilot the Hammerhead hover-tank, and if you think the word "hover" makes that sound cool, just, simmer down and remember the Mako for a moment.
+The {{% game "Mass Effect 2: Firewalker Pack" %}}Firewalker Pack{{% /game %}} adds a small handful of missions where you pilot the Hammerhead hover-tank, and if you think the word "hover" makes that sound cool, just, simmer down and remember the Mako for a moment.
 
 Conceptual coolness aside, the Hammerhead is not fun to use.  It hovers about as well as a tumbleweed, getting stuck on terrain almost as often as a <i>non-hovering</i> tank would; its mission objectives are limited to remedial strafe-around-stationary-targets combat, and <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/PassThroughTheRings">tediously flying through nav markers</a>; and the narrative backing for these missions is a lazy throwaway side-plot about researchers finding a wholly-unremarkable Prothean ruin.
 
