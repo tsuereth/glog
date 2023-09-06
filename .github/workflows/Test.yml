@@ -1,0 +1,24 @@
+name: Test
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: SetupDotNet
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+
+      - name: TestGlogGenerator
+        run: |
+          dotnet test GlogGenerator.Test/GlogGenerator.Test.csproj
+
