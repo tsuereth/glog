@@ -9,7 +9,7 @@ rating = ["Awful"]
 
 <i>Technically</i>, I've played a bit of {{% game "Deadly Premonition" %}}Deadly Premonition{{% /game %}} before; back on the {{% platform "Xbox 360" %}}Xbox 360{{% /platform %}}, the game was both "too weird" and "too boring" to keep me interested for long.
 
-Since then, the game's weirdness has become more well-known, cultivating a status like ... <a href="https://www.imdb.com/title/tt0368226/">The Room</a> of video games.  One I looked forward to trying again, in its enhanced PC release.  (Despite the utter idiocy of follow-up {{% game "D4: Dark Dreams Don't Die" %}}D4: Dark Dreams Don't Die{{% /game %}}.)
+Since then, the game's weirdness has become more well-known, cultivating a status like ... <a href="https://www.imdb.com/title/tt0368226/">The Room</a> of video games.  One I looked forward to trying again, in its enhanced PC release.  (Despite the utter idiocy of follow-up {{% game "D4: Dark Dreams Don't Die - Season 1" %}}D4: Dark Dreams Don't Die{{% /game %}}.)
 
 But Deadly Premonition's "{{% game "Deadly Premonition: Director's Cut" %}}Director's Cut{{% /game %}}" feels more like a meta-joke than a real attempt to enhance, or even to re-iterate, a game.  I have trouble believing that anyone involved in this release seriously expected it to be <i>played</i>.
 
