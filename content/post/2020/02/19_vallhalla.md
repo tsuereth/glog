@@ -2,12 +2,12 @@
 date = "2020-02-19T08:03:34-08:00"
 title = "Time to mix drinks and click through pages and pages of dialog"
 category = ["Playing A Game"]
-game = ["VA-11 HALL-A: Cyberpunk Bartender Action"]
+game = ["VA-11 Hall-A: Cyberpunk Bartender Action"]
 platform = ["PC"]
 rating = ["Meh"]
 +++
 
-Maybe the <i>worst</i> thing about {{% game "VA-11 HALL-A: Cyberpunk Bartender Action" %}}VA-11 HALL-A: Cyberpunk Bartender Action{{% /game %}} is its title.  I really don't want to type out that whole mess again.  ... that's my glib way of saying that Valhalla is <i>not</i> a bad game, though I did find it extremely tepid.
+Maybe the <i>worst</i> thing about {{% game "VA-11 Hall-A: Cyberpunk Bartender Action" %}}VA-11 Hall-A: Cyberpunk Bartender Action{{% /game %}} is its title.  I really don't want to type out that whole mess again.  ... that's my glib way of saying that Valhalla is <i>not</i> a bad game, though I did find it extremely tepid.
 
 At first, its bartending mechanics are more than a little bewildering - the ingredients don't map to real ones at all, and the controls for "aging" and "blending" a drink are pretty counterintuitive - so it takes a few rounds to get the hang of.  But, before you know it, you'll be slinging Brandtinis and Grizzly Temples with the best of them.
 
