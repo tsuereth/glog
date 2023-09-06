@@ -15,6 +15,6 @@ The house-building project, though, is oddly satisfying; collecting the necessar
 
 Hearthfire doesn't add a whole lot to Skyrim, but what it does add is pretty, pretty good.
 
-<b>Better than</b>: {{% game "Saints Row IV - Enter the Dominatrix" %}}Saints Row IV - Enter the Dominatrix{{% /game %}}  
+<b>Better than</b>: {{% game "Saints Row IV: Enter the Dominatrix" %}}Saints Row IV: Enter the Dominatrix{{% /game %}}  
 <b>Not as good as</b>: {{% game "The Elder Scrolls V: Skyrim - Dawnguard" %}}The Elder Scrolls V: Skyrim - Dawnguard{{% /game %}}  
 <b>Comparable to</b>: base-building in {{% game "World of Warcraft: Warlords of Draenor" %}}World of Warcraft: Warlords of Draenor{{% /game %}}, but better because it's less annoyingly demanding.

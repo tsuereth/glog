@@ -18,7 +18,7 @@ With its exceptionally-brief critical path, underwhelming final boss, sprawling 
 It's just not very good.
 
 <b>Better than</b>: maybe {{% game "Red Faction: Guerrilla - Demons of the Badlands" %}}Red Faction: Guerrilla - Demons of the Badlands{{% /game %}}  
-<b>Not as good as</b>: {{% game "Borderlands 2: Mr. Torgue's Campaign of Carnage" %}}Borderlands 2: Mr. Torgue's Campaign of Carnage{{% /game %}}, or even {{% game "Saints Row IV - Enter the Dominatrix" %}}Enter the Dominatrix{{% /game %}}, which was like the worst Saints Row DLC.  
+<b>Not as good as</b>: {{% game "Borderlands 2: Mr. Torgue's Campaign of Carnage" %}}Borderlands 2: Mr. Torgue's Campaign of Carnage{{% /game %}}, or even {{% game "Saints Row IV: Enter the Dominatrix" %}}Enter the Dominatrix{{% /game %}}, which was like the worst Saints Row DLC.  
 <b>But there's a light at the end of this tunnel</b>: and it's {{% game "Borderlands 2: Tiny Tina's Assault on Dragon Keep" %}}a critical hit!{{% /game %}}
 
 <i>Progress: Bunch of sidequests left to do.</i>
