@@ -8,7 +8,7 @@ platform = ["PS4"]
 
 The gameplay is ... okay.  But storytelling has been my biggest concern with {{% game "Final Fantasy VII Remake" %}}Final Fantasy VII Remake{{% /game %}}, and the demo's take on FF7's seminal reactor mission offered no solace.
 
-Converting a turn-based RPG into a real-time action RPG may sound absurd, but when you come at it from the direction of {{% game "Kingdom Hearts" %}}Kingdom Hearts{{% /game %}} - or perhaps more recently, {{% game "Final Fantasy XV Windows Edition" %}}Final Fantasy XV{{% /game %}} - it actually kinda works.  Basic attacks map to button-mashing, magic and items are in quick-access menus, cooldowns and power meters act as throttles on super-moves, lock-on targeting keeps the action moving except when it auto-selects the wrong thing...
+Converting a turn-based RPG into a real-time action RPG may sound absurd, but when you come at it from the direction of {{% game "Kingdom Hearts" %}}Kingdom Hearts{{% /game %}} - or perhaps more recently, {{% game "Final Fantasy XV: Windows Edition" %}}Final Fantasy XV{{% /game %}} - it actually kinda works.  Basic attacks map to button-mashing, magic and items are in quick-access menus, cooldowns and power meters act as throttles on super-moves, lock-on targeting keeps the action moving except when it auto-selects the wrong thing...
 
 Blocking and dodging is terrible.  Or, if I'm being very generous, I may not have <i>gotten the hang of</i> this game's defensive moves.  Learning anything "advanced" in this demo was pretty tough, since most enemies were a total pushover and the scorpion-tank boss was such a visual mess of distracting explosions.
 
