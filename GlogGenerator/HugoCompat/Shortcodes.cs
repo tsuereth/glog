@@ -261,7 +261,17 @@ function drawChart_{pageHash}_{chartHash}() {{
 
                     case "game":
                         var gameName = defaultArg;
-                        site.AddGameIfMissing(gameName);
+
+                        // Verify that the shortcode's game is found in our metadata cache.
+                        var cacheEntries = site.IgdbCache.GetGameByName(gameName);
+                        if (cacheEntries.Count == 0)
+                        {
+                            throw new InvalidDataException($"No games in cache match the name \"{gameName}\"");
+                        }
+                        else if (cacheEntries.Count > 1)
+                        {
+                            throw new InvalidDataException($"More than one game in cache matches the name \"{gameName}\"");
+                        }
 
                         replacementText = $"<a href=\"{site.BaseURL}game/{TemplateFunctionsStringRenderer.Urlize(gameName, htmlEncode: true)}\">{innerText}</a>";
                         break;

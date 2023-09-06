@@ -35,6 +35,6 @@ The last level, especially (the one {{% spoiler %}}at the top of the tower{{% /s
 
 <b>Better than</b>: {{% game "The Turing Test" %}}The Turing Test{{% /game %}}  
 <b>Not as good as</b>: {{% game "The Witness (2016)" %}}The Witness (2016){{% /game %}}  
-<b>Narratively, good, but not as good as</b>: {{% game "Horizon: Zero Dawn" %}}Horizon: Zero Dawn{{% /game %}}
+<b>Narratively, good, but not as good as</b>: {{% game "Horizon Zero Dawn" %}}Horizon Zero Dawn{{% /game %}}
 
 <i>Progress: Saw all three endings, with interweb hints.</i>

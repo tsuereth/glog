@@ -15,32 +15,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: shogo82148/actions-setup-perl@v1
-        with:
-          perl-version: 5
-          install-modules-with: cpanm
-          install-modules:
-            DBD::SQLite
-            DBI
-            HTTP::Request
-            LWP::Protocol::https
-            LWP::UserAgent
-
-      - name: UpdateData
-        env:
-          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
-        run: |
-          ./update-game-metadata.pl \
-            igdb_cache.sql \
-            jy5t8x2w2eqdc7bax2zx3rlne7eup4 \
-            $TWITCH_CLIENT_SECRET
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add \
-            content/game/ \
-            igdb_cache.sql
-          git commit -m "[skip ci] Automatically-updated game data." || echo "No changes to commit."
-          git push
 
       - name: SetupDotNet
         uses: actions/setup-dotnet@v3
@@ -56,10 +30,20 @@ jobs:
           rm -rf GlogGeneratorBuild
           dotnet build GlogGenerator/GlogGenerator.csproj --configuration Release --output GlogGeneratorBuild
 
-      - name: BuildStaticSite
+      - name: UpdateDataAndBuildStaticSite
+        env:
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
         run: |
           rm -rf public
-          ./GlogGeneratorBuild/GlogGenerator build -i . -t GlogGeneratorBuild/templates -h "https://tsuereth.com" -o public
+          ./GlogGeneratorBuild/GlogGenerator build -i . -t GlogGeneratorBuild/templates -u true --igdb-client-id jy5t8x2w2eqdc7bax2zx3rlne7eup4 --igdb-client-secret $TWITCH_CLIENT_SECRET -h "https://tsuereth.com" -o public
+
+      - name: CommitDataUpdates
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add igdb_cache
+          git commit -m "[skip ci] Automatically-updated game data." || echo "No changes to commit."
+          git push
 
       - name: Deploy
         env:
@@ -76,3 +60,4 @@ jobs:
         if: ${{ always() }}
         run: |
           rm -f deploy-glog_id_rsa
+

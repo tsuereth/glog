@@ -2,12 +2,12 @@
 date = "2019-11-24T09:35:16-08:00"
 title = "A new rival to Ubisoft Game"
 category = ["Playing A Game"]
-game = ["Open World Game: the Open World Game"]
+game = ["Open World Game: The Open World Game"]
 platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Open World Game: the Open World Game" %}}Open World Game: the Open World Game{{% /game %}} is about as subtle as you'd expect from the title -- that is, <i>not at all</i> subtle.  It's a precisely-on-the-nose satire of the tendency for {{% tag "Open world" %}}open-world games{{% /tag %}} like {{% tag "Assassin's Creed" %}}Assassin's Creed{{% /tag %}} or {{% tag "The Elder Scrolls" %}}The Elder Scrolls{{% /tag %}} to devolve into a checklist of flat and familiar objectives.
+{{% game "Open World Game: The Open World Game" %}}Open World Game: The Open World Game{{% /game %}} is about as subtle as you'd expect from the title -- that is, <i>not at all</i> subtle.  It's a precisely-on-the-nose satire of the tendency for {{% tag "Open world" %}}open-world games{{% /tag %}} like {{% tag "Assassin's Creed" %}}Assassin's Creed{{% /tag %}} or {{% tag "The Elder Scrolls" %}}The Elder Scrolls{{% /tag %}} to devolve into a checklist of flat and familiar objectives.
 
 Open World Game is a 2D map with quest markers that you can complete by pressing a button.  That's all it is.  ... Well, that and text descriptions for those quests, which also take jabs at RPG tropes.
 

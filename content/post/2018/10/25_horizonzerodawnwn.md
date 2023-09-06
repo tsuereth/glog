@@ -53,6 +53,6 @@ But!  But.  Horizon's lows can't compare to its highs, not just the usually-fun 
 
 I'm really looking forward to a sequel that copies Zelda's versatile climbing, adds some kind of lock-on targeting, and throws out this garbage-fire of an inventory system.
 
-<b>Better than</b>: {{% game "Middle-Earth: Shadow of War" %}}Middle-Earth: Shadow of War{{% /game %}}  
+<b>Better than</b>: {{% game "Middle-earth: Shadow of War" %}}Middle-earth: Shadow of War{{% /game %}}  
 <b>Not as good as</b>: {{% game "The Legend of Zelda: Breath of the Wild" %}}The Legend of Zelda: Breath of the Wild{{% /game %}} (... but the story is better), {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
 <b>The ending is a bit of a cliffhanger</b>: but I'm hoping that {{% game "Horizon Zero Dawn - The Frozen Wilds" %}}The Frozen Wilds{{% /game %}} helps wrap that up.

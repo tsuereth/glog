@@ -33,7 +33,7 @@ UI problems seem trivial in comparison, ... but they are still hard to ignore.  
 
 And yet even with its jankiness, its archaicness, and an unbalanced and anticlimactic ending that eschews self-directed content for shoving you down a linear series of ridiculously unbalanced combat encounters -- in spite of all that, Bloodlines is still <i>fun</i> for most of its running length, and <i>impactful</i> due to the quality of its storytelling.
 
-I have no idea what to expect from the still-being-delayed {{% game "Vampire: The Masquerade: Bloodlines 2" %}}Bloodlines 2{{% /game %}}, but I'm glad I got caught up with this franchise.
+I have no idea what to expect from the still-being-delayed {{% game "Vampire: The Masquerade - Bloodlines 2" %}}Bloodlines 2{{% /game %}}, but I'm glad I got caught up with this franchise.
 
 <b>Better than</b>: {{% game "Fallout 4" %}}Fallout 4{{% /game %}}  
 <b>Not as good as</b>: {{% game "Deus Ex: Mankind Divided" %}}Deus Ex: Mankind Divided{{% /game %}}, {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}The Elder Scrolls V: Skyrim - Special Edition{{% /game %}}  
