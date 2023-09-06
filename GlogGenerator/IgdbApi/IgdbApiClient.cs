@@ -16,6 +16,10 @@ namespace GlogGenerator.IgdbApi
 
         private const int RequestItemsMax = 500;
 
+        // "There is a rate limit of 4 requests per second."
+        // https://api-docs.igdb.com/#rate-limits
+        private static readonly TimeSpan RequestDelayTimeMin = TimeSpan.FromSeconds(0.25);
+
         private readonly string clientId;
         private readonly string clientSecret;
 
@@ -23,6 +27,8 @@ namespace GlogGenerator.IgdbApi
         private bool disposed;
 
         private IgdbApiClientToken token;
+
+        private DateTimeOffset lastRequestTime = DateTimeOffset.MinValue;
 
         public IgdbApiClient(
             string clientId, string clientSecret)
@@ -147,7 +153,21 @@ namespace GlogGenerator.IgdbApi
                     request.Headers.Add("Client-ID", this.clientId);
                     request.Content = new StringContent(queryBuilder.ToString());
 
-                    var response = await this.httpClient.SendAsync(request);
+                    var timeSinceLastRequest = DateTimeOffset.UtcNow - this.lastRequestTime;
+                    if (timeSinceLastRequest < RequestDelayTimeMin)
+                    {
+                        await Task.Delay(RequestDelayTimeMin - timeSinceLastRequest);
+                    }
+
+                    HttpResponseMessage response;
+                    try
+                    {
+                        response = await this.httpClient.SendAsync(request);
+                    }
+                    finally
+                    {
+                        this.lastRequestTime = DateTimeOffset.UtcNow;
+                    }
 
                     var responseText = await response.Content.ReadAsStringAsync();
 
