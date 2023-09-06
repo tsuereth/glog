@@ -15,6 +15,6 @@ I mean, I'm not going to complain about more puzzles, so long as they continue t
 
 And as the puzzles become more complex, a surprising challenge has emerged: being able to move the avatar around the puzzle, and reach equipment you need to manipulate.  I'd much rather that the avatar had no collision physics, so I could more easily debug my increasingly tightly-packed machinery.
 
-Also, I was really hoping to close the book on this and move ahead to {{% game "SHENZHEN I/O" %}}SHENZHEN I/O{{% /game %}}.  Oh, Zachtronics, you spoil me so.
+Also, I was really hoping to close the book on this and move ahead to {{% game "Shenzhen I/O" %}}Shenzhen I/O{{% /game %}}.  Oh, Zachtronics, you spoil me so.
 
 <i>Progress: Resource Site 902.42</i>

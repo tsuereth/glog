@@ -15,7 +15,7 @@ I would have to call these last few levels an unfortunate misstep for Infinifact
 
 But despite that, I have to commend Infinifactory on the whole, for delivering an impressive amount of great puzzle content.  Not all of its puzzles are winners, but ... a great many of them are.
 
-<b>Better than</b>: {{% game "SHENZHEN I/O" %}}SHENZHEN I/O{{% /game %}} and {{% game "TIS-100" %}}TIS-100{{% /game %}} for sure; and probably {{% game "SpaceChem" %}}SpaceChem{{% /game %}}, in general.  
+<b>Better than</b>: {{% game "Shenzhen I/O" %}}Shenzhen I/O{{% /game %}} and {{% game "TIS-100" %}}TIS-100{{% /game %}} for sure; and probably {{% game "SpaceChem" %}}SpaceChem{{% /game %}}, in general.  
 <b>Not as good as</b>: {{% game "SpaceChem" %}}SpaceChem{{% /game %}} had a better difficulty curve (although its final boss was kind of terrible bullshit, too).  
 <b>Just in time</b>: for {{% game "Opus Magnum" %}}Opus Magnum{{% /game %}}! (hopefully coming out of Early Access <a href="http://steamcommunity.com/games/558990/announcements/detail/1465222576769789696">soon?</a>)
 

@@ -11,7 +11,7 @@ title = "Visual Programming"
 
 {{% game "Silicon Zeroes" %}}Silicon Zeroes{{% /game %}}, in the same vein as {{% game "Human Resource Machine" %}}Human Resource Machine{{% /game %}}, is like a Zachtronics programming metaphor that's pretty thin on the "metaphor."  It's set in 1960s Silicon Valley.  You use adders and memory to perform math and logic.  It's pretty straightforward.
 
-The facade that distinguishes it from straight-up programming is that you develop algorithms using a visual node graph -- similar to how {{% game "SHENZHEN I/O" %}}SHENZHEN I/O{{% /game %}} visualized connecting inputs and outputs.  (Except that Silicon Zeroes doesn't make you micromanage the connection lines.)
+The facade that distinguishes it from straight-up programming is that you develop algorithms using a visual node graph -- similar to how {{% game "Shenzhen I/O" %}}Shenzhen I/O{{% /game %}} visualized connecting inputs and outputs.  (Except that Silicon Zeroes doesn't make you micromanage the connection lines.)
 
 It's got a charming aesthetic, and there are optimization goals for each puzzle.
 

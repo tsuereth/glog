@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "MOLEK-SYNTEZ" %}}MOLEK-SYNTEZ{{% /game %}} is to {{% game "SpaceChem" %}}SpaceChem{{% /game %}} as {{% game "TIS-100" %}}TIS-100{{% /game %}} is to {{% game "SHENZHEN I/O" %}}SHENZHEN I/O{{% /game %}}.  If you've played {{% tag "Zachtronics" %}}Zachtronics{{% /tag %}} games before, this analogy should be a fairly complete description.
+{{% game "MOLEK-SYNTEZ" %}}MOLEK-SYNTEZ{{% /game %}} is to {{% game "SpaceChem" %}}SpaceChem{{% /game %}} as {{% game "TIS-100" %}}TIS-100{{% /game %}} is to {{% game "Shenzhen I/O" %}}Shenzhen I/O{{% /game %}}.  If you've played {{% tag "Zachtronics" %}}Zachtronics{{% /tag %}} games before, this analogy should be a fairly complete description.
 
 Like TIS, it has a pretty simple base instruction set: synthesizer lasers can add and remove hydrogen atoms, move and rotate molecules, and perform a couple of other miscellaneous functions.  Goal molecules must be synthesized from input molecules by executing these instructions in the right sequence.
 

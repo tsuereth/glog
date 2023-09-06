@@ -13,6 +13,6 @@ Although the level-select screen makes me appear within striking distance of {{%
 
 I've still been enjoying my time working through them, but ... each one takes an evening, now, or even <i>multiple</i> evenings.  These last few puzzles require enough task planning and complexity management to rival software challenges I've actually been paid to work on.
 
-So it may seem weird that I'm taking a "break" by playing {{% game "SHENZHEN I/O" %}}SHENZHEN I/O{{% /game %}}, but relatively speaking, it really does feel quite relaxing.
+So it may seem weird that I'm taking a "break" by playing {{% game "Shenzhen I/O" %}}Shenzhen I/O{{% /game %}}, but relatively speaking, it really does feel quite relaxing.
 
 <i>Progress: The Homeward Fleet</i>
