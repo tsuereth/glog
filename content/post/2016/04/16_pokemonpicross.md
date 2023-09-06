@@ -20,7 +20,7 @@ I barely even got a chance to get frustrated by the game's energy mechanic, whic
 It's entirely possible that, if I were to pay to unlock more levels and un-limit my energy, there could be a thrillingly-competent picross game in here (the game map certainly looks large enough for it).  But in terms of overall design, <b>the game assumes that I'm not interested in solving puzzles</b>, which is very distasteful and off-putting.
 
 <b>Better than</b>: ¯\\\_(ツ)\_/¯  
-<b>Not as good as</b>: {{% game "My Nintendo Picross: The Legend of Zelda: Twilight Princess" %}}My Nintendo Picross: The Legend of Zelda: Twilight Princess{{% /game %}}  
+<b>Not as good as</b>: {{% game "My Nintendo Picross: The Legend of Zelda Twilight Princess" %}}My Nintendo Picross: The Legend of Zelda Twilight Princess{{% /game %}}  
 <b>Nevermind the stupid control scheme</b>: Which forces you to use <i>either</i> the stylus or face buttons, and doesn't allow you to switch without going to the options menu.
 
 <i>Progress: Got to the end of Area 04</i>

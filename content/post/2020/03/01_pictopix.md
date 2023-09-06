@@ -27,6 +27,6 @@ While Pictopix isn't quite as feature-rich as Nonogram - The Greatest Painter, i
 
 <b>Better than</b>: {{% game "Nonogram - The Greatest Painter" %}}Nonogram - The Greatest Painter{{% /game %}}, {{% game "Paint it Back" %}}Paint it Back{{% /game %}}, {{% game "Pepper's Puzzles" %}}Pepper's Puzzles{{% /game %}}  
 <b>Not as good as</b>: ... well, I guess that makes it the best nonogram game I've played so far.  
-<b>Though I do wish it had some personality, or theme</b>: like {{% game "My Nintendo Picross: The Legend of Zelda: Twilight Princess" %}}My Nintendo Picross: The Legend of Zelda: Twilight Princess{{% /game %}}
+<b>Though I do wish it had some personality, or theme</b>: like {{% game "My Nintendo Picross: The Legend of Zelda Twilight Princess" %}}My Nintendo Picross: The Legend of Zelda Twilight Princess{{% /game %}}
 
 <i>Progress: Finished all non-workshop puzzles, got all achievements.  Phew!</i>
