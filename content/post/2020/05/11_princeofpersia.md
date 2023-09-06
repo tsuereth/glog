@@ -23,7 +23,7 @@ The years haven't been kind to our prince.  I'll admit that I still have a soft 
 
 I hope that, someday, someone figures out how to properly revive this series.  <a href="https://arstechnica.com/gaming/2020/05/prince-of-persia-concept-video-appears-and-confirms-why-series-has-been-dormant/">A man can dream...</a>
 
-<b>Better than</b>: {{% game "Rime" %}}Rime{{% /game %}}  
+<b>Better than</b>: {{% game "RiME" %}}RiME{{% /game %}}  
 <b>Not as good as</b>: {{% game "Prince of Persia: The Sands of Time" %}}Prince of Persia: The Sands of Time{{% /game %}}, whose storytelling, at least, still holds up.  
 <b>Oh hey, remember the demo for</b>: {{% game "Raji: An Ancient Epic" %}}Raji: An Ancient Epic{{% /game %}}?  Not holding my breath, but, <a href="https://www.youtube.com/watch?v=KX5jNnDMfxA">there's a chance</a>!
 

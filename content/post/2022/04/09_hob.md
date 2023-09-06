@@ -25,7 +25,7 @@ So I guess I joined the enemy and the game ended.  Whatever.
 
 In theory, Hob is a fascinating {{% tag "The Legend of Zelda" %}}Zelda{{% /tag %}}-like with minimal, straightforward mechanics; in practice, its minimalism is more hindrance than help.
 
-<b>Better than</b>: {{% game "Oceanhorn: Monster of Uncharted Seas" %}}Oceanhorn: Monster of Uncharted Seas{{% /game %}}, {{% game "Rime" %}}Rime{{% /game %}}  
+<b>Better than</b>: {{% game "Oceanhorn: Monster of Uncharted Seas" %}}Oceanhorn: Monster of Uncharted Seas{{% /game %}}, {{% game "RiME" %}}RiME{{% /game %}}  
 <b>Not as good as</b>: {{% game "Cat Quest II" %}}Cat Quest II{{% /game %}}  
 <b>Let's say, as good as</b>: {{% game "AER: Memories of Old" %}}AER: Memories of Old{{% /game %}}
 

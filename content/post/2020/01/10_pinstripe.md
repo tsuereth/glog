@@ -23,6 +23,6 @@ This game has some admirable production values, in terms of its art style and mo
 
 <b>Better than</b>: {{% game "Toren" %}}Toren{{% /game %}}  
 <b>Not as good as</b>: {{% game "Broken Age" %}}Broken Age{{% /game %}}  
-<b>Did I really prefer</b>: {{% game "Rime" %}}Rime{{% /game %}} over this?  Yeah, if just barely.
+<b>Did I really prefer</b>: {{% game "RiME" %}}RiME{{% /game %}} over this?  Yeah, if just barely.
 
 <i>Progress: Finished the story, didn't bother with any extras.</i>

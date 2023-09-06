@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-After my somewhat-disappointing trip through {{% game "Rime" %}}Rime{{% /game %}}, I glanced at {{% tag "Tequila Works" %}}Tequila Works{{% /tag %}}'s resume and was like... oh, yeah, {{% game "The Sexy Brutale" %}}The Sexy Brutale{{% /game %}}!  Yet another game that looked good, I bought, then got lost in my backlog.
+After my somewhat-disappointing trip through {{% game "RiME" %}}RiME{{% /game %}}, I glanced at {{% tag "Tequila Works" %}}Tequila Works{{% /tag %}}'s resume and was like... oh, yeah, {{% game "The Sexy Brutale" %}}The Sexy Brutale{{% /game %}}!  Yet another game that looked good, I bought, then got lost in my backlog.
 
 The Sexy Brutale has a really compelling hook: murder mystery party!  Also ... time travel!  Imagine if the time-warping in {{% game "The Legend of Zelda: Majora's Mask 3D" %}}The Legend of Zelda: Majora's Mask{{% /game %}} was applied to <i><a href="https://www.imdb.com/title/tt0088930/">Clue</a></i>, and you've pretty much got it.
 
