@@ -13,7 +13,7 @@ If you bother <a href="https://borderlands.com/en-US/seasonpass2/">reading into 
 
 The only new narrative content is a <a href="https://borderlands.fandom.com/wiki/Director%27s_Cut#Missions">quartet of missions</a> in the {{% game "Borderlands 3: Director's Cut" %}}Director's Cut{{% /game %}} add-on, which sure doesn't seem like a "season" worth of content to me.
 
-Alright, so, here's the good news: those Director's Cut missions are actually pretty fun!  Moreso than the morose and melodramatic {{% game "Borderlands 3: Bounty of Blood" %}}Bounty of Blood{{% /game %}} and {{% game "Borderlands 3: Psycho Krieg and the Fantastic Fustercluck" %}}Fantastic Fustercluck{{% /game %}}, these investigations on behalf of Ava's "Mysteriouslier" podcast demonstrate the kinds of irreverent humor and thrilling pacing that are <i>peak</i> Borderlands.
+Alright, so, here's the good news: those Director's Cut missions are actually pretty fun!  Moreso than the morose and melodramatic {{% game "Borderlands 3: Bounty of Blood - A Fistful of Redemption" %}}Bounty of Blood{{% /game %}} and {{% game "Borderlands 3: Psycho Krieg and the Fantastic Fustercluck" %}}Fantastic Fustercluck{{% /game %}}, these investigations on behalf of Ava's "Mysteriouslier" podcast demonstrate the kinds of irreverent humor and thrilling pacing that are <i>peak</i> Borderlands.
 
 There's even a solid <i><a href="https://en.wikipedia.org/wiki/Film_noir">film noir</a></i> aesthetic in its intro mission, which, well, is an instant "win" for me.
 

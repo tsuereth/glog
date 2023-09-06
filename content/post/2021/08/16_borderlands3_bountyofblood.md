@@ -2,12 +2,12 @@
 date = "2021-08-16T22:39:37-07:00"
 title = "Should've kept the receipt."
 category = ["Playing A Game"]
-game = ["Borderlands 3: Bounty of Blood"]
+game = ["Borderlands 3: Bounty of Blood - A Fistful of Redemption"]
 platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Borderlands 3: Bounty of Blood" %}}Borderlands 3: Bounty of Blood{{% /game %}} commits what might be a cardinal sin, for {{% tag "Borderlands" %}}Borderlands{{% /tag %}}: it tries to tell a serious story.
+{{% game "Borderlands 3: Bounty of Blood - A Fistful of Redemption" %}}Borderlands 3: Bounty of Blood - A Fistful of Redemption{{% /game %}} commits what might be a cardinal sin, for {{% tag "Borderlands" %}}Borderlands{{% /tag %}}: it tries to tell a serious story.
 
 I can definitely see what it was going for, with its "western but slightly different" aesthetic (bizarrely reminiscent of {{% game "Red Steel 2" %}}Red Steel 2{{% /game %}}), its narrator channeling a "truly gritty" tone of cynicism, and its attention-grabbing hook of (trivial spoiler) introducing you to the story's villain before you <i>find out</i> that she's the villain.
 

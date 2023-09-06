@@ -13,7 +13,7 @@ Its aesthetically-imaginative level designs <i>look</i> neat, but enemy behavior
 
 By focusing the story on one character, and not a very compelling one at that, it neglects two of the franchise's typical narrative strengths: wacky tertiary characters and comedic character interactions.  (Krieg's "sane" inner-voice straight-manning himself just isn't enough to carry the tale.)
 
-And, though less-so than {{% game "Borderlands 3: Bounty of Blood" %}}Bounty of Blood{{% /game %}}, Fantastic Fustercluck similarly tries a little too hard for some "serious" story beats.  Krieg's heartache over Maya is borderline creepy, and his tragic origin story turns out to be a familiar psychotic-break trope.
+And, though less-so than {{% game "Borderlands 3: Bounty of Blood - A Fistful of Redemption" %}}Bounty of Blood{{% /game %}}, Fantastic Fustercluck similarly tries a little too hard for some "serious" story beats.  Krieg's heartache over Maya is borderline creepy, and his tragic origin story turns out to be a familiar psychotic-break trope.
 
 This DLC also has a shockingly difficult final boss battle, considering how easy the rest of its encounters were.  (Though unlike in Claptastic Voyage, we did actually finish this one.)  Here's a combat design suggestion: when character options heavily feature "Kill Skills," buffing the player after each kill, you probably shouldn't make a boss fight that <i>has nothing to kill</i>.
 
@@ -21,6 +21,6 @@ Fantastic Fustercluck has a couple of cool ideas, particularly the segments in w
 
 But it never really capitalizes on its ideas; including Locomobius, which just ends in a boss fight where you shoot at the train a bunch.
 
-<b>Better than</b>: {{% game "Borderlands 3: Bounty of Blood" %}}Borderlands 3: Bounty of Blood{{% /game %}}, {{% game "Borderlands: The Pre-Sequel - Claptastic Voyage" %}}Borderlands: The Pre-Sequel - Claptastic Voyage{{% /game %}}  
+<b>Better than</b>: {{% game "Borderlands 3: Bounty of Blood - A Fistful of Redemption" %}}Borderlands 3: Bounty of Blood - A Fistful of Redemption{{% /game %}}, {{% game "Borderlands: The Pre-Sequel - Claptastic Voyage" %}}Borderlands: The Pre-Sequel - Claptastic Voyage{{% /game %}}  
 <b>Not as good as</b>: {{% game "Borderlands 2: Sir Hammerlock vs. the Son of Crawmerax" %}}Borderlands 2: Sir Hammerlock vs. the Son of Crawmerax{{% /game %}}, {{% game "Borderlands 3: Guns, Love, and Tentacles" %}}Borderlands 3: Guns, Love, and Tentacles{{% /game %}}  
 <b>Krieg's tragic science-experiment backstory</b>: feels like it might have meant to hint at a broader "origins of the psychos" plot point; I'm not really sure why this DLC dug itself in so deep, there.
