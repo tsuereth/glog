@@ -2,7 +2,7 @@
 date = "2020-12-25T12:10:24-08:00"
 title = "The Legend of Picross"
 category = ["Playing A Game"]
-game = ["PictoQuest"]
+game = ["PictoQuest: The Cursed Grids"]
 platform = ["PC"]
 rating = ["Meh"]
 +++
@@ -11,7 +11,7 @@ rating = ["Meh"]
 
 {{% absimg src="pictoquest_moonface.jpg" width="400" height="300" %}}
 
-{{% game "PictoQuest" %}}PictoQuest{{% /game %}} doesn't seem like it's trying to offend, though; its translation just has a few rough spots.  And other than that, the game is well-polished and mechanically solid: input handling works great (so much better than {{% game "Puppy Cross" %}}Puppy Cross{{% /game %}}'s), puzzles get up to a reasonable size (20x20), and it doesn't screw around with nonsense like making you re-play a puzzle if you make a mistake.
+{{% game "PictoQuest: The Cursed Grids" %}}PictoQuest{{% /game %}} doesn't seem like it's trying to offend, though; its translation just has a few rough spots.  And other than that, the game is well-polished and mechanically solid: input handling works great (so much better than {{% game "Puppy Cross" %}}Puppy Cross{{% /game %}}'s), puzzles get up to a reasonable size (20x20), and it doesn't screw around with nonsense like making you re-play a puzzle if you make a mistake.
 
 Unfortunately the <i>interesting</i> parts of PictoQuest, the "quest" parts, are underwhelming.  There's no story other than the establishment of ... the aforementioned villain.  There's a world map with distinct regions, but your path through it is a line; one puzzle is available at a time, with the exception of a few optional side-puzzles.
 

@@ -23,6 +23,6 @@ But the quirky charm of these awkward monster girls really <i>makes</i> the game
 
 ... oh, and there <i>is</i> one pretty neat mechanic in the final boss battle, using rapid-fire timed puzzles to implement attacking and defending.  I kinda hope that a sequel explores this idea some more.
 
-<b>Better than</b>: {{% game "PictoQuest" %}}PictoQuest{{% /game %}}  
+<b>Better than</b>: {{% game "PictoQuest: The Cursed Grids" %}}PictoQuest: The Cursed Grids{{% /game %}}  
 <b>Not as good as</b>: {{% game "Piczle Cross Adventure" %}}Piczle Cross Adventure{{% /game %}}  
 <b>Different, but basically as good as</b>: {{% game "Murder by Numbers" %}}Murder by Numbers{{% /game %}}

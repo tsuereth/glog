@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-Here's the headline: {{% game "Piczle Cross Adventure" %}}Piczle Cross Adventure{{% /game %}} is basically what I "wanted" {{% game "PictoQuest" %}}PictoQuest{{% /game %}} to be.  It's an imperfect, but delightfully <i>satisfying</i>, hybrid of exploration-based adventuring and nonogram puzzle solving.
+Here's the headline: {{% game "Piczle Cross Adventure" %}}Piczle Cross Adventure{{% /game %}} is basically what I "wanted" {{% game "PictoQuest: The Cursed Grids" %}}PictoQuest{{% /game %}} to be.  It's an imperfect, but delightfully <i>satisfying</i>, hybrid of exploration-based adventuring and nonogram puzzle solving.
 
 {{% absimg src="piczlecrossadventure_map.jpg" width="640" height="360" %}}
 
@@ -31,7 +31,7 @@ But! Piczle Cross Adventure succeeds where previous puzzle-hybrids have failed: 
 
 {{% absimg src="piczlecrossadventure_chainsaw.jpg" width="640" height="360" %}}
 
-<b>Better than</b>: {{% game "Murder by Numbers" %}}Murder by Numbers{{% /game %}}, {{% game "PictoQuest" %}}PictoQuest{{% /game %}}, {{% game "Puppy Cross" %}}Puppy Cross{{% /game %}}  
+<b>Better than</b>: {{% game "Murder by Numbers" %}}Murder by Numbers{{% /game %}}, {{% game "PictoQuest: The Cursed Grids" %}}PictoQuest: The Cursed Grids{{% /game %}}, {{% game "Puppy Cross" %}}Puppy Cross{{% /game %}}  
 <b>Not as good as</b>: {{% game "Pictopix" %}}Pictopix{{% /game %}}, in "pure puzzle" terms... but this is definitely the best nonogram-hybrid game I've played so far.  
 <b>That said</b>: I can't wait to see what's next in an iterative follow-up, or for other developers to riff on this formula.
 

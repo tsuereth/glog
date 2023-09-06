@@ -17,6 +17,6 @@ Voxelgram is a solidly-built, content-full, easy-to-play puzzle game that also h
 
 <b>Better than</b>: {{% game "Paint it Back" %}}Paint it Back{{% /game %}}, {{% game "Picross 3D" %}}Picross 3D{{% /game %}}  
 <b>Not as good as</b>: {{% game "Pictopix" %}}Pictopix{{% /game %}}  
-<b>But what it really needs is</b>: some {{% game "PictoQuest" %}}RPG elements{{% /game %}}!  Or maybe a {{% game "Murder by Numbers" %}}visual novel storyline{{% /game %}} ... do I play too many nonogram games?  <i>Nahhhh</i>.
+<b>But what it really needs is</b>: some {{% game "PictoQuest: The Cursed Grids" %}}RPG elements{{% /game %}}!  Or maybe a {{% game "Murder by Numbers" %}}visual novel storyline{{% /game %}} ... do I play too many nonogram games?  <i>Nahhhh</i>.
 
 <i>Progress: Finished all 196 diorama puzzles.</i>
