@@ -19,4 +19,4 @@ Maybe it wasn't the past several years of video games that spoiled me -- maybe i
 
 <b>Better than</b>: {{% game "Shank" %}}Shank{{% /game %}}, {{% game "Shank 2" %}}Shank 2{{% /game %}}  
 <b>Not as good as</b>: when I played it the first time.  
-<b>And the {{% game "Mark of the Ninja: Special Edition" %}}Special Edition{{% /game %}} bonus level</b>: even remastered, is still pretty "Meh."
+<b>And the {{% game "Mark of the Ninja: Special Edition DLC" %}}Special Edition{{% /game %}} bonus level</b>: even remastered, is still pretty "Meh."
