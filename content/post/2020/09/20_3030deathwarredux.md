@@ -31,7 +31,7 @@ I'm not even going to get into the game's control and UI bugs, except to note th
 
 3030 Deathwar Redux starts strong, with a promising variety of activities and some fresh new ideas for the genre; props to the early game for giving me a good dose of space-trading action.  But by the time the credits rolled, all I could see in Deathwar was disappointment.
 
-<b>Better than</b>: {{% game "Space Run" %}}Space Run{{% /game %}}  
+<b>Better than</b>: {{% game "Space Run: Fast and Safe Delivery" %}}Space Run{{% /game %}}  
 <b>Not as good as</b>: {{% game "Rebel Galaxy" %}}Rebel Galaxy{{% /game %}}  
 <b>And...</b>: I don't know that they're even playable, anymore, but <i>also</i> not as good as {{% game "Escape Velocity" %}}Escape Velocity{{% /game %}} or {{% game "Escape Velocity Nova" %}}Escape Velocity Nova{{% /game %}}
 

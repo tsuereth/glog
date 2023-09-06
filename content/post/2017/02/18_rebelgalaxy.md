@@ -30,7 +30,7 @@ I would say that some of Rebel Galaxy's shortcomings could be addressed pretty e
 
 But nevertheless, the upgrade chase and the space-truckin' soundtrack worked well enough for me.
 
-<b>Better than</b>: {{% game "Space Run" %}}Space Run{{% /game %}}  
+<b>Better than</b>: {{% game "Space Run: Fast and Safe Delivery" %}}Space Run{{% /game %}}  
 <b>Not as good as</b>: {{% game "Strike Suit Zero: Director's Cut" %}}Strike Suit Zero: Director's Cut{{% /game %}}  
 <b>Maybe better, maybe worse than</b>: {{% game "Escape Velocity Nova" %}}Escape Velocity Nova{{% /game %}}, but hard to compare them a decade apart
 
