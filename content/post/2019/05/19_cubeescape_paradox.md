@@ -21,6 +21,6 @@ The first chapter of Cube Escape: Paradox was a neat diversion, and I'm really g
 
 <b>Better than</b>: {{% game "Puzzle Agent" %}}Puzzle Agent{{% /game %}}  
 <b>Not as good as</b>: {{% game "Oxenfree" %}}Oxenfree{{% /game %}}  
-<b>Thematically distinct from, but arguably on par with</b>: {{% game "Detective Grimoire" %}}Detective Grimoire{{% /game %}}
+<b>Thematically distinct from, but arguably on par with</b>: {{% game "Detective Grimoire: Secret of the Swamp" %}}Detective Grimoire{{% /game %}}
 
 <i>Progress: finished Chapter 1 (the free part).</i>

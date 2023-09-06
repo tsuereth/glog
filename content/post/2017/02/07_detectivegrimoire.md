@@ -2,14 +2,14 @@
 category = ["Playing A Game"]
 date = "2017-02-07T18:06:09-08:00"
 draft = false
-game = ["Detective Grimoire"]
+game = ["Detective Grimoire: Secret of the Swamp"]
 platform = ["PC"]
 rating = ["Meh"]
 title = "No match for Inspector Spacetime"
 
 +++
 
-{{% game "Detective Grimoire" %}}Detective Grimoire{{% /game %}} has:
+{{% game "Detective Grimoire: Secret of the Swamp" %}}Detective Grimoire{{% /game %}} has:
 
 * Smart, engaging, and humorous writing;
 * Talented rapid-fire voice-acting;
