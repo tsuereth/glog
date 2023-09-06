@@ -17,7 +17,7 @@ The surprising thing about Open World Game is that it's actually kinda good.  No
 
 The map is surprisingly big, with distinct regions; there are named characters, and their backstories intertwine with the political state of the world.  Granted, your interactions with those characters are limited to reading text, and the plot is also heavily influenced by (sometimes practically copied from) well-known fantasy RPGs.
 
-But my point is that there is more and better world-building in Open World Game than I would ever have expected.  And in that way, it actually taps into the same conceit that makes a samey, repetitive game like {{% game "Assassin's Creed: Brotherhood" %}}Assassin's Creed: Brotherhood{{% /game %}} successful: working through that quest-marker checklist is like an excuse to reveal more about the game's setting and lore.
+But my point is that there is more and better world-building in Open World Game than I would ever have expected.  And in that way, it actually taps into the same conceit that makes a samey, repetitive game like {{% game "Assassin's Creed Brotherhood" %}}Assassin's Creed Brotherhood{{% /game %}} successful: working through that quest-marker checklist is like an excuse to reveal more about the game's setting and lore.
 
 The writing's sense of humor helps, too.
 

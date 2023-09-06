@@ -33,7 +33,7 @@ I felt like the environment design wasn't engaging enough to support the amount 
 
 Want to change your three-agent loadout?  Need to jump to the Ark, then warp back to the city -- with a loading screen on each.  Want to build and equip a tech upgrade you just found?  Need to jump to the Ark, then warp back to the city.  Want to send an agent on a new Global Conflict mission?  Need to jump to the Ark...
 
-That "Global Conflict" mode, by the way, is the worst attempt I've seen yet at an asynchronous time-management minigame.  You send some agents off to do a timed mission, after which they bring back some reward and unlock more missions.  Right?  {{% tag "Assassin's Creed" %}}Assassin's Creed{{% /tag %}} has been doing this since {{% game "Assassin's Creed: Brotherhood" %}}Brotherhood{{% /game %}} - in <i>2010</i> - and AoM's implementation is worse, in difficult-to-understand ways.
+That "Global Conflict" mode, by the way, is the worst attempt I've seen yet at an asynchronous time-management minigame.  You send some agents off to do a timed mission, after which they bring back some reward and unlock more missions.  Right?  {{% tag "Assassin's Creed" %}}Assassin's Creed{{% /tag %}} has been doing this since {{% game "Assassin's Creed Brotherhood" %}}Brotherhood{{% /game %}} - in <i>2010</i> - and AoM's implementation is worse, in difficult-to-understand ways.
 
 * The Global Conflict world map is split into multiple regions.  To start, the East Asia region is unlocked; all the rest are locked.  To unlock a new region ... you need to do all the missions in your current region.  Hence: you can only have one region unlocked at a time.  <i>Why even have a world map?</i>
 
