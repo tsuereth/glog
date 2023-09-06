@@ -11,7 +11,7 @@ Two years later, many parts of {{% game "The Legend of Zelda: Breath of the Wild
 
 But that's not to say the thrill is gone, as it was when I replayed {{% game "BioShock Infinite" %}}BioShock Infinite{{% /game %}} or {{% game "The Legend of Zelda: Majora's Mask 3D" %}}Majora's Mask{{% /game %}}.  This iteration of Hyrule remains thoroughly <i>majestic</i>, bursting with wonder, plentiful with activity.  So much of Breath of the Wild is just satisfying to participate in.
 
-(The "endgame" stuff I {{% abslink href="2017/03/16/the-endgame-smells-a-little-uh-...-wild/" %}}whined about before{{% /abslink %}} is still fairly unsatisfying.  But hey, I'm <i>trying</i> it this time, so it can't be all that bad ... right?)
+(The "endgame" stuff I {{% abslink href="2017/03/16/the-endgame-smells-a-little-uh-wild/" %}}whined about before{{% /abslink %}} is still fairly unsatisfying.  But hey, I'm <i>trying</i> it this time, so it can't be all that bad ... right?)
 
 One positive of this playthrough is that I'm appreciating the storytelling a bit more -- now that my expectations for it are low.  The supporting cast is flat (granted I haven't worked up to {{% game "The Legend of Zelda: Breath of the Wild - The Champions' Ballad" %}}The Champions' Ballad{{% /game %}} just yet), Link doesn't emote, Ganon is an amorphous blob, and Princess Zelda is <i>annoying</i> and kind of shitty.  But! when you realize her personal plight, the shadow of self-disappointment that she wallows in, Zelda's shittiness becomes a little easier to relate to and her character can seem borderline <i>convincing</i>.
 

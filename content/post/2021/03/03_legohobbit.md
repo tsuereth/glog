@@ -17,7 +17,7 @@ What makes LEGO The Hobbit compelling, then, is - again, like LEGO LotR - an <b>
 
 Its gameplay mechanics and core loops are familiar if you've played a {{% tag "LEGO" %}}LEGO{{% /tag %}} game before: collect studs to unlock items to collect more studs to unlock characters to ... <i>collect everything</i>.  And aside from character-specific abilities, these mechanics don't have a hell of a lot to do with Tolkien's world -- the dwarves have axes, Legolas has a bow, and Gandalf can fire magic missiles, so you'll need to switch to the proper character to take out particular obstacles.  It's not exactly rocket science.
 
-But like I wrote {{% abslink href="2020/11/27/go-go-power-...-ninja/" %}}not long ago{{% /abslink %}} about another LEGO title, my enjoyment of these games has a lot to do with my attachment to the source material.  And even if this game doesn't add much to what worked about LEGO LotR, ... well, as with <i>The Hobbit</i> movies, I'll take any excuse to get lost in Middle-earth again.
+But like I wrote {{% abslink href="2020/11/27/go-go-power-ninja/" %}}not long ago{{% /abslink %}} about another LEGO title, my enjoyment of these games has a lot to do with my attachment to the source material.  And even if this game doesn't add much to what worked about LEGO LotR, ... well, as with <i>The Hobbit</i> movies, I'll take any excuse to get lost in Middle-earth again.
 
 <b>Better than</b>: {{% game "The LEGO Movie Videogame" %}}The LEGO Movie Videogame{{% /game %}}  
 <b>Not as good as</b>: {{% game "LEGO The Lord of the Rings" %}}LEGO The Lord of the Rings{{% /game %}}, {{% game "Middle-earth: Shadow of Mordor" %}}Middle-earth: Shadow of Mordor{{% /game %}}  

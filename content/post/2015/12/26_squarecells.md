@@ -8,7 +8,7 @@ title = "Clever things make people feel stupid, and unexpected things make them 
 
 +++
 
-Did I mention that {{% abslink href="2015/12/26/not-to-be-confused-with-the-similarly-named-rolling-stones-song" %}}I fucking love picross{{% /abslink %}}?  Because I do.  And that's what makes {{% game "SquareCells" %}}SquareCells{{% /game %}} so confusing: It's <i>sort of</i> like picross.  But it's different in ways I'm not really sure about yet.
+Did I mention that {{% abslink href="2015/12/26/not-to-be-confused-with-the-similarly-named-rolling-stones-song/" %}}I fucking love picross{{% /abslink %}}?  Because I do.  And that's what makes {{% game "SquareCells" %}}SquareCells{{% /game %}} so confusing: It's <i>sort of</i> like picross.  But it's different in ways I'm not really sure about yet.
 
 SquareCells mixes up the traditional nonogram ruleset in some pretty fundamental ways.  It shows the total number of marked and unmarked squares for each puzzle, so you know how many there should be in the end; it tosses in numbered blocks, which indicate how many marked squares are contiguously connected; it throws in bracketed row/column numbers, which indicate how many squares are marked, but not in what arrangements; and as a result of these new rules, sometimes row/column markers are <i>blank</i>, leaving you to figure the context out from other surrounding clues.
 

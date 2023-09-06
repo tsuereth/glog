@@ -155,7 +155,20 @@ namespace GlogGenerator.HugoCompat
                         break;
 
                     case "abslink":
-                        var abslinkUrl = $"{site.BaseURL}{namedArgs["href"]}";
+                        var abslinkHref = namedArgs["href"];
+
+                        // Verify that the href target is a valid site route/permalink.
+                        var abslinkContentRoute = abslinkHref;
+                        if (abslinkContentRoute.EndsWith('/'))
+                        {
+                            abslinkContentRoute += "index.html";
+                        }
+                        if (!site.ContentRoutes.ContainsKey(abslinkContentRoute))
+                        {
+                            throw new InvalidDataException($"No content route matches the abslink href \"{abslinkHref}\" (guessed route \"{abslinkContentRoute}\")");
+                        }
+
+                        var abslinkUrl = $"{site.BaseURL}{abslinkHref}";
                         replacementText = $"<a href=\"{abslinkUrl}\">{innerText}</a>";
                         break;
 

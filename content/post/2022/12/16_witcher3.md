@@ -11,7 +11,7 @@ I've been hankering for {{% game "The Witcher 3: Wild Hunt" %}}Witcher 3{{% /gam
 
 Not like I was about to <i>put the controller down</i> and go back to waiting, though.  I was already in <i>too deep</i>.
 
-I had forgotten about the {{% abslink href="2018/06/03/lets-play-cards.-gwent-wouldnt-be-bad./" %}}early-ish-game quest drought{{% /abslink %}}, after White Orchard but before most of Velen's content is level-appropriate; even Gwent opponents can feel over-powered until Geralt's put in a bit of exploratory grinding.
+I had forgotten about the {{% abslink href="2018/06/03/lets-play-cards-gwent-wouldnt-be-bad/" %}}early-ish-game quest drought{{% /abslink %}}, after White Orchard but before most of Velen's content is level-appropriate; even Gwent opponents can feel over-powered until Geralt's put in a bit of exploratory grinding.
 
 And I'd also forgotten how clunky the basic controls can feel -- Geralt's turning radius making it an occasional challenge to precisely target lootable objects.
 
