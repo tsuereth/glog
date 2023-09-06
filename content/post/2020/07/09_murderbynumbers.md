@@ -43,6 +43,6 @@ The whole package could have been even better, though, with just a bit more atte
 
 <b>Better than</b>: {{% game "Professor Layton and the Curious Village" %}}Professor Layton and the Curious Village{{% /game %}}, {{% game "Puppy Cross" %}}Puppy Cross{{% /game %}}  
 <b>Not as good as</b>: {{% game "Nonogram - The Greatest Painter" %}}Nonogram - The Greatest Painter{{% /game %}}, {{% game "Professor Layton vs. Phoenix Wright: Ace Attorney" %}}Professor Layton vs. Phoenix Wright: Ace Attorney{{% /game %}}  
-<b>Not as good as most {{% tag "Ace Attorney" %}}Ace Attorney{{% /tag %}} games</b>: except for that {{% game "Ace Attorney Investigations: Miles Edgeworth" %}}Edgeworth spin-off{{% /game %}} and those godawful "{{% game "Phoenix Wright: Ace Attorney - Spirit of Justice - Phoenix Wright: Asinine Attorney" %}}Asinine{{% /game %}} {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice - Apollo Justice: Asinine Attorney" %}}Attorney{{% /game %}}" DLCs.
+<b>Not as good as most {{% tag "Ace Attorney" %}}Ace Attorney{{% /tag %}} games</b>: except for that {{% game "Ace Attorney Investigations: Miles Edgeworth" %}}Edgeworth spin-off{{% /game %}} and those godawful "{{% game "Phoenix Wright: Ace Attorney - Spirit of Justice: Phoenix Wright - Asinine Attorney" %}}Asinine{{% /game %}} {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice: Apollo Justice - Asinine Attorney" %}}Attorney{{% /game %}}" DLCs.
 
 <i>Progress: Finished all cases and all memory puzzles.</i>

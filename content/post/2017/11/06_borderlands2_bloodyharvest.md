@@ -19,6 +19,6 @@ And even though it's shockingly short, like an hour at most, it feels too long. 
 
 This makes a very poor first impression for Borderlands 2's "Headhunter" mini-DLCs.
 
-<b>Better than</b>: {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice - Phoenix Wright: Asinine Attorney" %}}Phoenix Wright: Ace Attorney - Spirit of Justice - Phoenix Wright: Asinine Attorney{{% /game %}}  
+<b>Better than</b>: {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice: Phoenix Wright - Asinine Attorney" %}}Phoenix Wright: Ace Attorney - Spirit of Justice: Phoenix Wright - Asinine Attorney{{% /game %}}  
 <b>Not as good as</b>: seriously, {{% game "Borderlands 2: Sir Hammerlock's Big Game Hunt" %}}Borderlands 2: Sir Hammerlock's Big Game Hunt{{% /game %}}  
 <b>Please, please</b>: let {{% game "Borderlands 2: The Horrible Hunger of the Ravenous Wattle Gobbler" %}}the next one{{% /game %}} be better.

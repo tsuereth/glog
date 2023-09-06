@@ -19,6 +19,6 @@ Well, yeah.  It's like I said in 2011, then.  Pretty "meh."
 
 Uninteresting sidenote: In this post-{{% game "Dear Esther" %}}Dear Esther{{% /game %}} world, the walking-through-narrative-voiceovers ending sequence of Minerva's Den clearly sets the stage for what we now call a Walking Simulator.
 
-<b>Better than</b>: {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice - Phoenix Wright: Asinine Attorney" %}}Asinine Attorney{{% /game %}}  
+<b>Better than</b>: {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice: Phoenix Wright - Asinine Attorney" %}}Asinine Attorney{{% /game %}}  
 <b>Not as good as</b>: {{% game "BioShock 2 Remastered" %}}BioShock 2 Remastered{{% /game %}}  
 <b>The best part</b>: feeling free to move on to {{% game "BioShock Infinite" %}}BioShock Infinite{{% /game %}}

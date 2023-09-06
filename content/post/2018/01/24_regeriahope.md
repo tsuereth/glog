@@ -19,6 +19,6 @@ And aside from those new ideas, this first episode of Regeria Hope is mostly wha
 
 If Regeria Hope's author can iterate on this strategy, then I might really look forward to a Phoenix Wright rival.  But in the meantime, Hope seems pretty-well sequestered to "fanfic" - and if you're looking for a prosecutor-versus-defendant adventure with <i>credentials</i>, {{% game "Aviary Attorney" %}}Aviary Attorney{{% /game %}} is a better bet than this imitator.
 
-<b>Better than</b>: {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice - Phoenix Wright: Asinine Attorney" %}}Phoenix Wright: Asinine Attorney{{% /game %}}, an officially-sanctioned fan-game disaster.  
+<b>Better than</b>: {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice: Phoenix Wright - Asinine Attorney" %}}Phoenix Wright: Asinine Attorney{{% /game %}}, an officially-sanctioned fan-game disaster.  
 <b>Not as good as</b>: {{% game "Aviary Attorney" %}}Aviary Attorney{{% /game %}}, a fan game with its own intriguing characters and plot.  
 <b>Really, author</b>: You can do better, if you recognize that the strength of Ace Attorney isn't <i>suits and ties</i>, but the interaction of uniquely interesting characters.  Larry was a great foil for Phoenix because their childhood friendship conflicted with the Steel Samurai case.  How can you make me <i>care about</i> Brock 'En Hart?  What's my <i>motivation</i>?
