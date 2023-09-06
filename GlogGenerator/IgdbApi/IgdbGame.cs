@@ -13,9 +13,6 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("category")]
         public IgdbGameCategory Category { get; set; } = IgdbGameCategory.None;
 
-        [JsonProperty("checksum")]
-        public Guid ChecksumUuid { get; set; }
-
         [JsonProperty("collection")]
         public int CollectionId { get; set; } = IgdbCollection.IdNotFound;
 
@@ -57,9 +54,6 @@ namespace GlogGenerator.IgdbApi
 
         [JsonProperty("themes")]
         public List<int> ThemeIds { get; set; } = new List<int>();
-
-        [JsonProperty("updated_at")]
-        public long UpdatedAtSecondsSinceEpoch { get; set; }
 
         [JsonProperty("url")]
         public string Url { get; set; }
