@@ -29,4 +29,4 @@ Overall, Spirit of Justice is a satisfying and worthwhile Ace Attorney entry for
 
 <b>Better than</b>: {{% game "Professor Layton vs. Phoenix Wright: Ace Attorney" %}}Professor Layton vs. Phoenix Wright: Ace Attorney{{% /game %}}  
 <b>Not as good as</b>: {{% game "Phoenix Wright: Ace Attorney - Dual Destinies" %}}Phoenix Wright: Ace Attorney - Dual Destinies{{% /game %}}  
-<b>But we're not done yet!</b>: I've got the DLC {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice - Turnabout Time Traveler" %}}Special Episode{{% /game %}} yet to do, which may or may not address the <i>mysterious teaser</i> in this game's ending.
+<b>But we're not done yet!</b>: I've got the DLC {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice: Special Episode - Turnabout Time Traveler" %}}Special Episode{{% /game %}} yet to do, which may or may not address the <i>mysterious teaser</i> in this game's ending.

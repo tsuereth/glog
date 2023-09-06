@@ -2,7 +2,7 @@
 category = ["Playing A Game"]
 date = "2017-04-08T13:02:28-07:00"
 draft = false
-game = ["Phoenix Wright: Ace Attorney - Spirit of Justice - Turnabout Time Traveler"]
+game = ["Phoenix Wright: Ace Attorney - Spirit of Justice: Special Episode - Turnabout Time Traveler"]
 platform = ["3DS"]
 rating = ["Good"]
 title = "The Time Traveler's Husband"
