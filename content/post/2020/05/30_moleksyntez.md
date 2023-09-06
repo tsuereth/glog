@@ -2,16 +2,16 @@
 date = "2020-05-30T12:32:02-07:00"
 title = "Just makin' some drugs"
 category = ["Playing A Game"]
-game = ["MOLEK-SYNTEZ"]
+game = ["Molek-Syntez"]
 platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "MOLEK-SYNTEZ" %}}MOLEK-SYNTEZ{{% /game %}} is to {{% game "SpaceChem" %}}SpaceChem{{% /game %}} as {{% game "TIS-100" %}}TIS-100{{% /game %}} is to {{% game "Shenzhen I/O" %}}Shenzhen I/O{{% /game %}}.  If you've played {{% tag "Zachtronics" %}}Zachtronics{{% /tag %}} games before, this analogy should be a fairly complete description.
+{{% game "Molek-Syntez" %}}Molek-Syntez{{% /game %}} is to {{% game "SpaceChem" %}}SpaceChem{{% /game %}} as {{% game "TIS-100" %}}TIS-100{{% /game %}} is to {{% game "Shenzhen I/O" %}}Shenzhen I/O{{% /game %}}.  If you've played {{% tag "Zachtronics" %}}Zachtronics{{% /tag %}} games before, this analogy should be a fairly complete description.
 
 Like TIS, it has a pretty simple base instruction set: synthesizer lasers can add and remove hydrogen atoms, move and rotate molecules, and perform a couple of other miscellaneous functions.  Goal molecules must be synthesized from input molecules by executing these instructions in the right sequence.
 
-<i>Un</i>like TIS, your resources (instruction memory and playfield space) aren't dramatically limited.  This leads to a much "freer" feel in MOLEK-SYNTEZ's puzzles; without resource constraints, there's more room for unoptimized or experimental solutions.
+<i>Un</i>like TIS, your resources (instruction memory and playfield space) aren't dramatically limited.  This leads to a much "freer" feel in Molek-Syntez's puzzles; without resource constraints, there's more room for unoptimized or experimental solutions.
 
 Of course my ultimate goal is still to run those lasers in parallel and get the job done in as few cycles as possible, but I love having the option to brute-force my way through and optimize later.
 
@@ -21,7 +21,7 @@ It's certainly not to the absurd scale of {{% game "Infinifactory" %}}Infinifact
 
 It doesn't help my motivation that, like TIS, this game drip-feeds a barely-there story.
 
-I feel kinda bad for bailing on a Zachtronics game without finishing its main puzzles, and <i>especially</i> bad that I still haven't caught up to one of my Steam friends in the optimization leaderboards.  That may haunt me enough that I need to return to the synthesizer someday.  But for now, I'm satisfied with what I got out of MOLEK-SYNTEZ.
+I feel kinda bad for bailing on a Zachtronics game without finishing its main puzzles, and <i>especially</i> bad that I still haven't caught up to one of my Steam friends in the optimization leaderboards.  That may haunt me enough that I need to return to the synthesizer someday.  But for now, I'm satisfied with what I got out of Molek-Syntez.
 
 <b>Better than</b>: {{% game "Opus Magnum" %}}Opus Magnum{{% /game %}}  
 <b>Not as good as</b>: {{% game "SpaceChem" %}}SpaceChem{{% /game %}}  
