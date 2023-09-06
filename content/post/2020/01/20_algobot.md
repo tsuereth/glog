@@ -23,6 +23,6 @@ Algo Bot is too simple, and has no interesting payoff -- playing it feels like a
 
 <b>Better than</b>: {{% game "Glyphs Apprentice" %}}Glyphs Apprentice{{% /game %}}, since at least this game is tutorialized well.  
 <b>Not as good as</b>: {{% game "Prelogate" %}}Prelogate{{% /game %}}, {{% game "Prime Mover" %}}Prime Mover{{% /game %}}  
-<b>Compared to the developer's last game</b>: {{% game "Epistory" %}}Epistory{{% /game %}}, it's surprising how low Algo Bot's narrative ambitions are.
+<b>Compared to the developer's last game</b>: {{% game "Epistory: Typing Chronicles" %}}Epistory: Typing Chronicles{{% /game %}}, it's surprising how low Algo Bot's narrative ambitions are.
 
 <i>Progress: Level 4-2</i>

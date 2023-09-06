@@ -6,7 +6,7 @@ game = ["Inked"]
 platform = ["PC"]
 +++
 
-These days, I think the phrase "art game" could mean one of two things.  You could use it to describe games that focus on visual spectacle, like {{% game "Journey" %}}Journey{{% /game %}} or {{% game "Epistory" %}}Epistory{{% /game %}}; you could also, snidely, use it to describe <i>avant-garde</i> "games" like {{% game "Dear Esther" %}}Dear Esther{{% /game %}} that slog their way through a story about The Human Condition.
+These days, I think the phrase "art game" could mean one of two things.  You could use it to describe games that focus on visual spectacle, like {{% game "Journey" %}}Journey{{% /game %}} or {{% game "Epistory: Typing Chronicles" %}}Epistory{{% /game %}}; you could also, snidely, use it to describe <i>avant-garde</i> "games" like {{% game "Dear Esther" %}}Dear Esther{{% /game %}} that slog their way through a story about The Human Condition.
 
 {{% game "Inked" %}}Inked{{% /game %}} is both.  ... And it's also a fidgety physics-puzzle game, but not a very good one.
 

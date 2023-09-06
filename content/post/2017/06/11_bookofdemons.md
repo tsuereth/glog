@@ -9,7 +9,7 @@ title = "Diablo: Lord of Papercraft"
 
 +++
 
-{{% game "Book of Demons" %}}Book of Demons{{% /game %}} is immediately jarring, not just because of its slickly-animated high-definition papercraft presentation (like an amped-up {{% game "Epistory" %}}Epistory{{% /game %}}), but also because it's a clear "homage" to {{% game "Diablo" %}}Diablo{{% /game %}}.  And when I say "homage," I mean that there is an old man standing by the tiny, depressed village's well, and he asks you to delve under the haunted church, into the 3/4-isometric catacombs to fight evil.
+{{% game "Book of Demons" %}}Book of Demons{{% /game %}} is immediately jarring, not just because of its slickly-animated high-definition papercraft presentation (like an amped-up {{% game "Epistory: Typing Chronicles" %}}Epistory{{% /game %}}), but also because it's a clear "homage" to {{% game "Diablo" %}}Diablo{{% /game %}}.  And when I say "homage," I mean that there is an old man standing by the tiny, depressed village's well, and he asks you to delve under the haunted church, into the 3/4-isometric catacombs to fight evil.
 
 They're clearly going for a nostalgia angle, but to me it just feels uninspired.  At least {{% game "Torchlight" %}}Torchlight{{% /game %}}, for all it cribbed from Diablo, tried <i>a little bit</i> to make a game world of its own.  Book of Demons puts forth no effort whatsoever.
 
