@@ -11,7 +11,7 @@ Given my <i>inexhaustible disdain</i> for the simulated data-entry tedium of {{%
 
 Three hours later... who the hell <i>are</i> these 51 dead sailors?  Or, more to the point -- why are my <i>automatic notebook</i> and <i>magic moment-of-death-vision pocketwatch</i> so awful at helping me solve this?
 
-The confounding user interface - like {{% game "INSIDE (2016)" %}}INSIDE{{% /game %}}, allergic to the idea of <i>explaining itself</i> - would be bad enough.  But what I didn't realize about Obra Dinn's hint-collection system, until after collecting them <i>all</i>, was how <i>unhelpful</i> it is correlating post-facto notes with the relevant moment-of-death context.
+The confounding user interface - like {{% game "Inside (2016)" %}}Inside{{% /game %}}, allergic to the idea of <i>explaining itself</i> - would be bad enough.  But what I didn't realize about Obra Dinn's hint-collection system, until after collecting them <i>all</i>, was how <i>unhelpful</i> it is correlating post-facto notes with the relevant moment-of-death context.
 
 To put it another way: as you discover death events around the Obra Dinn, recognizing the parties in that event <i>almost always</i> requires more knowledge than you have; and then later, once you've collected more knowledge, it's <i>unreasonably inconvenient</i> to go find and re-observe those events to recover their full context.
 
