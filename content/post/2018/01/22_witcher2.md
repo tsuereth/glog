@@ -2,14 +2,14 @@
 date = "2018-01-22T20:54:26-08:00"
 title = "I am the one who witches"
 category = ["Playing A Game"]
-game = ["The Witcher 2: Assassins of Kings Enhanced Edition"]
+game = ["The Witcher 2: Assassins of Kings - Enhanced Edition"]
 platform = ["PC"]
 rating = ["Good"]
 +++
 
 I should probably note that I <i>tried</i> playing {{% game "The Witcher: Enhanced Edition" %}}The Witcher{{% /game %}} some years back, but quickly bounced off of it.  The animation quality was distractingly bad - like that time I tried {{% game "Fallout: New Vegas" %}}New Vegas{{% /game %}} after having finished {{% game "The Elder Scrolls V: Skyrim" %}}Skyrim{{% /game %}} - and the controls were just a mess.
 
-As for {{% game "The Witcher 2: Assassins of Kings Enhanced Edition" %}}Witcher 2{{% /game %}}, well, the animations are a lot better.
+As for {{% game "The Witcher 2: Assassins of Kings - Enhanced Edition" %}}Witcher 2{{% /game %}}, well, the animations are a lot better.
 
 ...
 
