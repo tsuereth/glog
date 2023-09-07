@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using GlogGenerator.Data;
 using GlogGenerator.HugoCompat;
 using Markdig;
+using Microsoft.AspNetCore.StaticFiles;
 
 namespace GlogGenerator.RenderState
 {
@@ -404,7 +405,15 @@ namespace GlogGenerator.RenderState
 
         public void WriteHttpListenerResponse(SiteState site, ref HttpListenerResponse response)
         {
-            response.ContentType = "text/html";
+            var typeProvider = new FileExtensionContentTypeProvider();
+            if (typeProvider.TryGetContentType(this.OutputPathRelative, out var contentType))
+            {
+                response.ContentType = contentType;
+            }
+            else
+            {
+                response.ContentType = "text/html";
+            }
 
             var template = site.GetTemplateGroup().GetInstanceOf(this.RenderTemplateName);
             template.Add("site", site);
