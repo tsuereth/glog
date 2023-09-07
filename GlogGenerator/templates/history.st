@@ -14,7 +14,7 @@ history(site,page) ::= <<
 					
 %page.HistoryPosts :{postPage |
 					    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-%partials/article_inhistory(site,postPage)%
+%partials/article(site,postPage)%
 </article>
 };separator="\t\n\t\n"%
                     
