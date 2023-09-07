@@ -39,9 +39,9 @@ jobs:
 
       - name: CommitDataUpdates
         env:
+          BRANCH: ${{ github.head_ref }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          export BRANCH=${{ github.head_ref }}
           gh api --method PUT /repos/:owner/:repo/contents/igdb_cache.json \
             --field branch="$BRANCH" \
             --field encoding="base64" \
