@@ -72,8 +72,7 @@ namespace GlogGenerator
                     await site.IgdbCache.UpdateFromApiClient(igdbApiClient);
                 }
 
-                var igdbCacheFilesDirectory = Path.Combine(inputFilesBasePath, IgdbCache.JsonFilesBaseDir);
-                site.IgdbCache.WriteToJsonFiles(igdbCacheFilesDirectory);
+                site.IgdbCache.WriteToJsonFile(inputFilesBasePath);
             }
 
             Console.WriteLine("Loading content...");
