@@ -41,11 +41,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          export BRANCH=${{ github.head_ref }}
           gh api --method PUT /repos/:owner/:repo/contents/igdb_cache.json \
-            --field branch="${{ github.head_ref }}" \
+            --field branch="$BRANCH" \
             --field encoding="base64" \
-            --field content="$(base64 -i igdb_cache.json)" \
-            --field sha="$(git rev-parse ${{ github.head_ref }}:igdb_cache.json)" \
+            --field content=@<(base64 -i igdb_cache.json) \
+            --field sha="$(git rev-parse $BRANCH:igdb_cache.json)" \
             --field message="[skip ci] Automatically-updated game data."
 
       - name: Deploy
