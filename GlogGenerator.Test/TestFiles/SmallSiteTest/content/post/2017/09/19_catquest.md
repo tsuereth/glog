@@ -27,7 +27,7 @@ For what it is, Cat Quest is a satisfying - and sometimes even challenging - act
 
 {{% absimg src="catquest-4.png" width="400" height="300" %}}
 
-<b>Better than</b>: {{% game "Swords &amp; Soldiers" %}}Swords &amp; Soldiers{{% /game %}}, {{% game "Uncharted: Fortune Hunter" %}}Uncharted: Fortune Hunter{{% /game %}} (in other words: the few other mobile action games I've played)  
+<b>Better than</b>: {{% game "Swords & Soldiers" %}}Swords & Soldiers{{% /game %}}, {{% game "Uncharted: Fortune Hunter" %}}Uncharted: Fortune Hunter{{% /game %}} (in other words: the few other mobile action games I've played)  
 <b>Not as good as</b>: {{% game "Child of Light" %}}Child of Light{{% /game %}}, {{% game "Ittle Dew" %}}Ittle Dew{{% /game %}} (in other words: a deeper RPG)  
 <b>The game hints at a sequel or expansion, with dogs</b>: I hope it's a <i>good boy</i>.
 
