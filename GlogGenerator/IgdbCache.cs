@@ -205,8 +205,8 @@ namespace GlogGenerator
             cacheJson["collections"] = JArray.FromObject(this.collectionsById.Values.OrderBy(o => o.Id), jsonSerializer);
             cacheJson["companies"] = JArray.FromObject(this.companiesById.Values.OrderBy(o => o.Id), jsonSerializer);
             cacheJson["franchises"] = JArray.FromObject(this.franchisesById.Values.OrderBy(o => o.Id), jsonSerializer);
-            cacheJson["games"] = JArray.FromObject(allGames, jsonSerializer);
             cacheJson["gameModes"] = JArray.FromObject(this.gameModesById.Values.OrderBy(o => o.Id), jsonSerializer);
+            cacheJson["games"] = JArray.FromObject(allGames, jsonSerializer);
             cacheJson["genres"] = JArray.FromObject(this.genresById.Values.OrderBy(o => o.Id), jsonSerializer);
             cacheJson["involvedCompanies"] = JArray.FromObject(this.involvedCompaniesById.Values.OrderBy(o => o.Id), jsonSerializer);
             cacheJson["playerPerspectives"] = JArray.FromObject(this.playerPerspectivesById.Values.OrderBy(o => o.Id), jsonSerializer);
@@ -225,9 +225,9 @@ namespace GlogGenerator
             cache.collectionsById = cacheJson["collections"].ToObject<List<IgdbCollection>>().ToDictionary(o => o.Id, o => o);
             cache.companiesById = cacheJson["companies"].ToObject<List<IgdbCompany>>().ToDictionary(o => o.Id, o => o);
             cache.franchisesById = cacheJson["franchises"].ToObject<List<IgdbFranchise>>().ToDictionary(o => o.Id, o => o);
+            cache.gameModesById = cacheJson["gameModes"].ToObject<List<IgdbGameMode>>().ToDictionary(o => o.Id, o => o);
             cache.gamesById = allGames.Where(o => o.Id != IgdbGame.IdNotFound).ToDictionary(o => o.Id, o => o);
             cache.gamesUnidentified = allGames.Where(o => o.Id == IgdbGame.IdNotFound).ToList();
-            cache.gameModesById = cacheJson["gameModes"].ToObject<List<IgdbGameMode>>().ToDictionary(o => o.Id, o => o);
             cache.genresById = cacheJson["genres"].ToObject<List<IgdbGenre>>().ToDictionary(o => o.Id, o => o);
             cache.involvedCompaniesById = cacheJson["involvedCompanies"].ToObject<List<IgdbInvolvedCompany>>().ToDictionary(o => o.Id, o => o);
             cache.playerPerspectivesById = cacheJson["playerPerspectives"].ToObject<List<IgdbPlayerPerspective>>().ToDictionary(o => o.Id, o => o);

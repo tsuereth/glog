@@ -7409,6 +7409,32 @@
       "name": "Wii"
     }
   ],
+  "gameModes": [
+    {
+      "id": 1,
+      "name": "Single player"
+    },
+    {
+      "id": 2,
+      "name": "Multiplayer"
+    },
+    {
+      "id": 3,
+      "name": "Co-operative"
+    },
+    {
+      "id": 4,
+      "name": "Split screen"
+    },
+    {
+      "id": 5,
+      "name": "Massively Multiplayer Online (MMO)"
+    },
+    {
+      "id": 6,
+      "name": "Battle Royale"
+    }
+  ],
   "games": [
     {
       "name": "Tyrion Cuthbert: Attorney of the Arcane",
@@ -49737,32 +49763,6 @@
         17
       ],
       "url": "https://www.igdb.com/games/super-mario-rpg"
-    }
-  ],
-  "gameModes": [
-    {
-      "id": 1,
-      "name": "Single player"
-    },
-    {
-      "id": 2,
-      "name": "Multiplayer"
-    },
-    {
-      "id": 3,
-      "name": "Co-operative"
-    },
-    {
-      "id": 4,
-      "name": "Split screen"
-    },
-    {
-      "id": 5,
-      "name": "Massively Multiplayer Online (MMO)"
-    },
-    {
-      "id": 6,
-      "name": "Battle Royale"
     }
   ],
   "genres": [
