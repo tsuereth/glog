@@ -15306,8 +15306,8 @@
     "involved_companies": [
       176505,
       176507,
-      221358,
-      221359
+      230368,
+      230369
     ],
     "name": "EarthBound",
     "player_perspectives": [
@@ -34993,7 +34993,7 @@
   },
   {
     "category": 4,
-    "collection": -1,
+    "collection": 97,
     "franchise": -1,
     "franchises": [
       2121
@@ -40291,7 +40291,7 @@
   },
   {
     "category": 0,
-    "collection": -1,
+    "collection": 8178,
     "franchise": -1,
     "franchises": [],
     "game_modes": [
