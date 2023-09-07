@@ -38,12 +38,15 @@ jobs:
           ./GlogGeneratorBuild/GlogGenerator build -i . -t GlogGeneratorBuild/templates -u true --igdb-client-id jy5t8x2w2eqdc7bax2zx3rlne7eup4 --igdb-client-secret $TWITCH_CLIENT_SECRET -h "https://tsuereth.com" -o public
 
       - name: CommitDataUpdates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add igdb_cache.json
-          git commit -m "[skip ci] Automatically-updated game data." || echo "No changes to commit."
-          git push
+          gh api --method PUT /repos/:owner/:repo/contents/igdb_cache.json \
+            --field branch="${{ github.head_ref }}" \
+            --field encoding="base64" \
+            --field content="$(base64 -i igdb_cache.json)" \
+            --field sha="$(git rev-parse ${{ github.head_ref }}:igdb_cache.json)" \
+            --field message="[skip ci] Automatically-updated game data."
 
       - name: Deploy
         env:
