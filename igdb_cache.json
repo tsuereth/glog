@@ -6699,6 +6699,10 @@
       "name": "Marvelous Entertainment Inc."
     },
     {
+      "id": 36410,
+      "name": "Diamondhenge Entertainment"
+    },
+    {
       "id": 38087,
       "name": "American Technos"
     },
@@ -7436,10 +7440,6 @@
     }
   ],
   "games": [
-    {
-      "name": "Tyrion Cuthbert: Attorney of the Arcane",
-      "id": 149149
-    },
     {
       "category": -1,
       "collection": -1,
@@ -49380,6 +49380,31 @@
       "category": 0,
       "collection": -1,
       "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        9,
+        32,
+        34
+      ],
+      "id": 149149,
+      "involved_companies": [
+        211593
+      ],
+      "name": "Tyrion Cuthbert: Attorney of the Arcane",
+      "player_perspectives": [],
+      "themes": [
+        17,
+        43
+      ],
+      "url": "https://www.igdb.com/games/tyrion-cuthbert-attorney-of-the-arcane"
+    },
+    {
+      "category": 0,
+      "collection": -1,
+      "franchise": -1,
       "franchises": [
         808
       ],
@@ -62995,6 +63020,10 @@
     {
       "id": 211168,
       "company": 784
+    },
+    {
+      "id": 211593,
+      "company": 36410
     },
     {
       "id": 211621,
