@@ -501,10 +501,6 @@
       "name": "Alone in the Dark"
     },
     {
-      "id": 366,
-      "name": "Red Dead"
-    },
-    {
       "id": 368,
       "name": "Bejeweled"
     },
@@ -19375,7 +19371,7 @@
     },
     {
       "category": 0,
-      "collection": 366,
+      "collection": 2100,
       "franchise": -1,
       "franchises": [],
       "game_modes": [
