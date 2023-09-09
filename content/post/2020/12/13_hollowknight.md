@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-In {{% abslink href="2020/01/01/2019-in-review-less-isnt-more/" %}}my 2019 review{{% /abslink %}}, I made a promise - to myself, I suppose - that I would attempt {{% game "Hollow Knight" %}}Hollow Knight{{% /game %}} again.
+In {{% abslink href="2020/01/01/2019-in-review-less-isnt-more/" %}}my 2019 review{{% /abslink %}}, I made a promise - to myself, I suppose - that I would attempt <game:Hollow Knight> again.
 
 That's why it's been sitting in my "Playing" section for the last 11 months.
 
@@ -27,7 +27,7 @@ But there is a, er, "dark" side to Hollow Knight that goes beyond its pitch-blac
 
 It doesn't help that traversing the game's massive map, to scour it for missed secrets, is fairly inconvenient.  While Hallownest does offer some fast travel options in its Stagways and Tram, big sections of it are still several lengthy rooms - and several annoying fights - removed from travel points.
 
-Also, the sometimes-evil challenges are ... evil, sometimes.  Many hazards or encounters seem to hit you out of nowhere.  Most bosses are, just, <i>complete</i> assholes.  The White Palace is some {{% game "Super Meat Boy" %}}Super Meat Boy{{% /game %}} kinda shit.  Checkpoint and save-bench placements aren't <i>brutally</i> unfair, but still feel more punishing than they need to be.
+Also, the sometimes-evil challenges are ... evil, sometimes.  Many hazards or encounters seem to hit you out of nowhere.  Most bosses are, just, <i>complete</i> assholes.  The White Palace is some <game:Super Meat Boy> kinda shit.  Checkpoint and save-bench placements aren't <i>brutally</i> unfair, but still feel more punishing than they need to be.
 
 Ultimately I would say that my successes in Hollow Knight had less to do with my timing or reflexes, and more to do with my studious investments in health and damage upgrades.
 
@@ -39,8 +39,8 @@ Its expertly-crafted content misses the mark just a bit for its hostility toward
 
 Also, the story just didn't make sense.  Even after reading a synopsis online, I've got no investment in the Pale King or the dreamscape or whatever the hell this plot was supposed to be about.
 
-<b>Better than</b>: {{% game "Headlander" %}}Headlander{{% /game %}}, {{% game "Iconoclasts" %}}Iconoclasts{{% /game %}}, {{% game "Ori and the Blind Forest: Definitive Edition" %}}Ori and the Blind Forest: Definitive Edition{{% /game %}}, {{% game "Timespinner" %}}Timespinner{{% /game %}}  
-<b>Not as good as</b>: {{% game "Bloodstained: Ritual of the Night" %}}Bloodstained: Ritual of the Knight{{% /game %}}, {{% game "Indivisible" %}}Indivisible{{% /game %}}  
-<b>Anxiously optimistic for</b>: {{% game "Hollow Knight: Silksong" %}}Hollow Knight: Silksong{{% /game %}}
+<b>Better than</b>: <game:Headlander>, <game:Iconoclasts>, <game:Ori and the Blind Forest: Definitive Edition>, <game:Timespinner>  
+<b>Not as good as</b>: [Bloodstained: Ritual of the Knight](game:Bloodstained: Ritual of the Night), <game:Indivisible>  
+<b>Anxiously optimistic for</b>: <game:Hollow Knight: Silksong>
 
 <i>Progress: Defeated the Radiance, 101%</i>

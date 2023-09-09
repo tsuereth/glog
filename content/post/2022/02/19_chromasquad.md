@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Chroma Squad" %}}Chroma Squad{{% /game %}} is a bit of a paradox.  A good one, though.
+<game:Chroma Squad> is a bit of a paradox.  A good one, though.
 
-The game is unabashedly "indie," with its zoomed-in sprite art, unpolished grammar, overlong pre-battle animations, and spotty or <i>absent</i> tutorials.  <i>But</i>, it takes itself un-seriously enough that these rough edges actually feel charming -- especially when the game's cast pokes fun at their own narrator.  More often than not, Chroma Squad comes across as "in" on the joke - the joke that is the real history of <a href="https://en.wikipedia.org/wiki/Power_Rangers">Power Rangers</a> - instead of falling into a {{% game "Shaq Fu: A Legend Reborn" %}}parody trap{{% /game %}}.
+The game is unabashedly "indie," with its zoomed-in sprite art, unpolished grammar, overlong pre-battle animations, and spotty or <i>absent</i> tutorials.  <i>But</i>, it takes itself un-seriously enough that these rough edges actually feel charming -- especially when the game's cast pokes fun at their own narrator.  More often than not, Chroma Squad comes across as "in" on the joke - the joke that is the real history of <a href="https://en.wikipedia.org/wiki/Power_Rangers">Power Rangers</a> - instead of falling into a [parody trap](game:Shaq Fu: A Legend Reborn).
 
 It's filled with mechanics, like, definitely too many mechanics: not just strategy RPG tactics and character progression and TV studio management, but also item crafting! and mecha battles! and a branching narrative!?  The scope of Chroma Squad is so sprawling that <i>of course</i> a lot of it doesn't pan out, and it's hardly surprising that, for example, the crafting UI can't indicate whether an item is an upgrade or a downgrade.  <i>But</i>, the critical path - increasing fanpower, generating income, buying new weapons and armor - works well enough that the rest is, well, easy to ignore.
 
@@ -21,8 +21,8 @@ Chroma Squad is an ambitious game, and far from perfect.
 
 <i>But</i>, it nails - or gets close enough to nailing - a core loop of fighting, upgrading, and lampooning that <b>it works</b>.  There are opportunities to improve for sure (which <a href="https://www.beholdstudios.com.br/">the developers</a> sadly seem to be uninterested in), but even in this unrefined form, the concept is proven: managing a fake Super Sentai team is pretty fun.
 
-<b>Better than</b>: {{% game "Massive Chalice" %}}Massive Chalice{{% /game %}}, {{% game "Shadowrun: Dragonfall - Director's Cut" %}}Shadowrun: Dragonfall - Director's Cut{{% /game %}}, {{% game "SteamWorld Heist" %}}SteamWorld Heist{{% /game %}}  
-<b>Not as good as</b>: {{% game "Shadowrun Returns" %}}Shadowrun Returns{{% /game %}}, {{% game "South Park: The Fractured But Whole" %}}South Park: The Fractured But Whole{{% /game %}}  
+<b>Better than</b>: <game:Massive Chalice>, <game:Shadowrun: Dragonfall - Director's Cut>, <game:SteamWorld Heist>  
+<b>Not as good as</b>: <game:Shadowrun Returns>, <game:South Park: The Fractured But Whole>  
 <b>And it helps</b>: that <a href="https://store.steampowered.com/app/363800/Chroma_Squad__Soundtrack/">the soundtrack</a> is damn catchy.
 
 <i>Progress: Finished a campaign on "Interesting" difficulty.</i>

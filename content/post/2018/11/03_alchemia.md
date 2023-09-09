@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-When I saw {{% game "Alchemia" %}}Alchemia{{% /game %}} pop up on Steam, I thought it might be a nice break from the brain-busting puzzles I was stuck on in {{% game "Cypher (2018)" %}}Cypher{{% /game %}}.
+When I saw <game:Alchemia> pop up on Steam, I thought it might be a nice break from the brain-busting puzzles I was stuck on in [Cypher](game:Cypher (2018)).
 
 Hahaha.  Hah.  Hahah.
 

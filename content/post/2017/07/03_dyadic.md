@@ -9,7 +9,7 @@ title = "100% in 90 minutes"
 
 +++
 
-On its face, {{% game "Dyadic" %}}Dyadic{{% /game %}} is a simple and clever puzzle-platformer for two players (or for one player, a'la {{% game "Brothers: A Tale of Two Sons" %}}Brothers{{% /game %}}).  What sells it - or what sold it to me - is how accessible the controls are, and how easy the game is to jump into.
+On its face, <game:Dyadic> is a simple and clever puzzle-platformer for two players (or for one player, a'la [Brothers](game:Brothers: A Tale of Two Sons)).  What sells it - or what sold it to me - is how accessible the controls are, and how easy the game is to jump into.
 
 And the puzzles themselves are pretty well crafted; never devilishly difficult, but just complicated enough to make you think.
 
@@ -21,6 +21,6 @@ That Dyadic is over almost as soon as it starts <i>might</i> be seen as merciful
 
 It's impressively fun, in its core conceit, but Dyadic is dearly in need of more development love before it could be considered a "good" game.
 
-<b>Better than</b>: {{% game "Eon Altar" %}}Eon Altar{{% /game %}}  
-<b>Not as good as</b>: {{% game "Brothers: A Tale of Two Sons" %}}Brothers: A Tale of Two Sons{{% /game %}}  
+<b>Better than</b>: <game:Eon Altar>  
+<b>Not as good as</b>: <game:Brothers: A Tale of Two Sons>  
 <b>At least it does shine at</b>: the ability to accidentally - or not-so-accidentally - kill your co-op partner.

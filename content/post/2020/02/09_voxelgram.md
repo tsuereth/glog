@@ -6,7 +6,7 @@ game = ["Voxelgram"]
 platform = ["PC"]
 +++
 
-I went into the {{% game "Voxelgram" %}}Voxelgram{{% /game %}} demo expecting it to be exactly like {{% game "Picross 3D" %}}Picross 3D{{% /game %}}, and it <i>is</i> extremely similar.  But, thanks to PCs generally having larger displays than a Nintendo DS, Voxelgram is able to pull off some much larger puzzles.  Just in its first 10 or 20 puzzles, I think they've already exceeded Picross 3D's peak size and complexity.
+I went into the <game:Voxelgram> demo expecting it to be exactly like <game:Picross 3D>, and it <i>is</i> extremely similar.  But, thanks to PCs generally having larger displays than a Nintendo DS, Voxelgram is able to pull off some much larger puzzles.  Just in its first 10 or 20 puzzles, I think they've already exceeded Picross 3D's peak size and complexity.
 
 The controls have a bit of a learning curve: at first, I was really frustrated trying to find hints by rotating the puzzle around.  But the game made a lot more sense once I caught on to the layer-walking mechanics, and solving each layer as a 2D portion of the larger puzzle.  The camera rotation still isn't perfect, like sometimes my clicks hit an empty puzzle space when I wanted to grab <i>outside</i> the puzzle, but the "undo" button resolves such problems easily enough.
 

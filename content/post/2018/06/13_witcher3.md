@@ -7,11 +7,11 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-One more aspect of {{% game "The Witcher 3: Wild Hunt" %}}Witcher 3{{% /game %}} - actually, of the whole series - that I've been saving up praise for is <a href="https://www.imdb.com/name/nm0168339/">Geralt's voice actor</a>.
+One more aspect of [Witcher 3](game:The Witcher 3: Wild Hunt) - actually, of the whole series - that I've been saving up praise for is <a href="https://www.imdb.com/name/nm0168339/">Geralt's voice actor</a>.
 
 Most of the time, Geralt is a stubborn, cynical, sarcastic son of a bitch; and the delivery of his gravelly and wry lines is <i>perfect</i>.  He sounds like exactly who I'd want to hire to clear the rotfiends out of my yard.
 
-But then there are occasions where Geralt goes out of character - particularly the Kaer Morhen drinking scene, and the wedding sequence in {{% game "The Witcher 3: Wild Hunt - Hearts of Stone" %}}Hearts of Stone{{% /game %}} - and these superb performances are some of the game's most memorable moments.  "Drunk Geralt" and "Happy-Possessed Geralt" shine brightly in their contrast to the White Wolf from the rest of the game.
+But then there are occasions where Geralt goes out of character - particularly the Kaer Morhen drinking scene, and the wedding sequence in [Hearts of Stone](game:The Witcher 3: Wild Hunt - Hearts of Stone) - and these superb performances are some of the game's most memorable moments.  "Drunk Geralt" and "Happy-Possessed Geralt" shine brightly in their contrast to the White Wolf from the rest of the game.
 
 That such a somber and depressing world can still be livened-up in these moments is a testament, both to CD Projekt's writing, and to their voice actors' performances.
 

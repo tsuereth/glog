@@ -7,13 +7,13 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-Most of {{% game "The Witcher 3: Wild Hunt" %}}Witcher 3{{% /game %}}'s environmental influences have been "vaguely" European; aside from Skellige's nordic aesthetics (and Irish accents?), the lands of Velen and Novigrad generally felt, somehow, indistictly-but-obviously from somewhere between Central and Eastern Europe.  The spoken accents and mythological references certainly seemed like they were picked from that rough set of inspirations.
+Most of [Witcher 3](game:The Witcher 3: Wild Hunt)'s environmental influences have been "vaguely" European; aside from Skellige's nordic aesthetics (and Irish accents?), the lands of Velen and Novigrad generally felt, somehow, indistictly-but-obviously from somewhere between Central and Eastern Europe.  The spoken accents and mythological references certainly seemed like they were picked from that rough set of inspirations.
 
-Toussaint, the setting of {{% game "The Witcher 3: Wild Hunt - Blood and Wine" %}}Blood and Wine{{% /game %}}, is France.
+Toussaint, the setting of [Blood and Wine](game:The Witcher 3: Wild Hunt - Blood and Wine), is France.
 
 This association is made loud and clear from the outset of the expansion: in how Toussaint's knights speak and act, in the layout of the beautiful, vineyard-dotted landscape, in how the people of Beauclair are always talking about wines and cheeses, and happily, in French puns like the <a href="http://witcher.wikia.com/wiki/M%C3%A8re-Lachaiselongue_Cemetery">Mere-Lachaiselongue Cemetery</a>.
 
-Wild Hunt and {{% game "The Witcher 3: Wild Hunt - Hearts of Stone" %}}Hearts of Stone{{% /game %}} had their fair shares of humor, but it really feels like CD Projekt let loose and enjoyed themselves this time.
+Wild Hunt and [Hearts of Stone](game:The Witcher 3: Wild Hunt - Hearts of Stone) had their fair shares of humor, but it really feels like CD Projekt let loose and enjoyed themselves this time.
 
 {{% absvideo src="witcher3_roach.mp4" type="video/mp4" width="960" height="540" %}}
 
@@ -31,6 +31,6 @@ And I've still got plenty of adventuring left to do.
 
 {{% absimg src="witcher3_thepath.jpg" width="960" height="540" %}}
 
-<b>Better than</b>: {{% game "The Witcher 3: Wild Hunt - Hearts of Stone" %}}The Witcher 3: Wild Hunt - Hearts of Stone{{% /game %}}  
-<b>Not as good as</b>: the sheer volume and gravitas of {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}'s main campaign.  
-<b>And I've still got plenty of sidequests to keep me busy</b>: maybe until {{% game "Cyberpunk 2077" %}}Cyberpunk 2077{{% /game %}}
+<b>Better than</b>: <game:The Witcher 3: Wild Hunt - Hearts of Stone>  
+<b>Not as good as</b>: the sheer volume and gravitas of <game:The Witcher 3: Wild Hunt>'s main campaign.  
+<b>And I've still got plenty of sidequests to keep me busy</b>: maybe until <game:Cyberpunk 2077>

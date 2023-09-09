@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awful"]
 +++
 
-The trailer for {{% game "Cubots: The Origins" %}}Cubots{{% /game %}} looked so clean and polished, I was kinda surprised at how inexpensive the game is.  Well... you get what you pay for.
+The trailer for [Cubots](game:Cubots: The Origins) looked so clean and polished, I was kinda surprised at how inexpensive the game is.  Well... you get what you pay for.
 
 Specifically, what I paid for here turned out to be pretty much garbage.  Setting aside the lack of controller support, the slapdash UI (you can elect to jump to a boss fight?), the broken English in tutorial text, and the assets that look like they came out of a free art pack...
 
@@ -17,8 +17,8 @@ I also somehow broke the UI when I tried exiting the game.  The sequence of butt
 
 For a hobby project, Cubots isn't bad -- but for a product, it's just trash.
 
-<b>Better than</b>: {{% game "Legends of Persia" %}}Legends of Persia{{% /game %}}  
-<b>Not as good as</b>: {{% game "Finding Teddy" %}}Finding Teddy{{% /game %}}  
+<b>Better than</b>: <game:Legends of Persia>  
+<b>Not as good as</b>: <game:Finding Teddy>  
 <b>I really had to go looking</b>: to find past games I rated "Awful" that are comparable.
 
 <i>Progress: Finished a few puzzles.</i>

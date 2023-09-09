@@ -8,7 +8,7 @@ title = "Eerily reminiscent of Tingle's catchphrase"
 
 +++
 
-In the first few moments of {{% game "Kalimba" %}}Kalimba{{% /game %}}'s co-op, one player has one totem piece, and the other player has another piece.  They need to be moved in tandem, stacked in a particular order, and jumped with coordinated timing.  Simple, cool, fun.
+In the first few moments of <game:Kalimba>'s co-op, one player has one totem piece, and the other player has another piece.  They need to be moved in tandem, stacked in a particular order, and jumped with coordinated timing.  Simple, cool, fun.
 
 It isn't long, though, before the game gives <i>two</i> totem pieces to each player.  And then - given that either player's pieces usually move at the same time - both players need to coordinate stacking <i>all four</i> totems in specific arrangements.
 

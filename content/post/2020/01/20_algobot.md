@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-As far as programming-puzzle games go, {{% game "Algo Bot" %}}Algo Bot{{% /game %}} is over-polished tripe.
+As far as programming-puzzle games go, <game:Algo Bot> is over-polished tripe.
 
 The puzzles are just too <i>easy</i>.  Algo Bot is like a gamified version of <a href="https://en.wikipedia.org/wiki/Logo_(programming_language)">Logo</a>, with one path to follow; your job is to lay out a sequence of movement commands that will get the little 'bot to its destination.  That's it.
 
@@ -21,8 +21,8 @@ There's no redemption to be found in the game's story, either, which is a very s
 
 Algo Bot is too simple, and has no interesting payoff -- playing it feels like a waste of time.
 
-<b>Better than</b>: {{% game "Glyphs Apprentice" %}}Glyphs Apprentice{{% /game %}}, since at least this game is tutorialized well.  
-<b>Not as good as</b>: {{% game "Prelogate" %}}Prelogate{{% /game %}}, {{% game "Prime Mover" %}}Prime Mover{{% /game %}}  
-<b>Compared to the developer's last game</b>: {{% game "Epistory: Typing Chronicles" %}}Epistory: Typing Chronicles{{% /game %}}, it's surprising how low Algo Bot's narrative ambitions are.
+<b>Better than</b>: <game:Glyphs Apprentice>, since at least this game is tutorialized well.  
+<b>Not as good as</b>: <game:Prelogate>, <game:Prime Mover>  
+<b>Compared to the developer's last game</b>: <game:Epistory: Typing Chronicles>, it's surprising how low Algo Bot's narrative ambitions are.
 
 <i>Progress: Level 4-2</i>

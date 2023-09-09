@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Rise of the Tomb Raider" %}}Rise of the Tomb Raider{{% /game %}} just doesn't feel like a positive iteration on {{% game "Tomb Raider (2013)" %}}its predecessor{{% /game %}}.
+<game:Rise of the Tomb Raider> just doesn't feel like a positive iteration on [its predecessor](game:Tomb Raider (2013)).
 
-It has the same gameplay elements that made the 2013 game work -- blending stealthy assassination with run-and-gun action, combining thoughtful wilderness exploration and high-octane chases through exploding ruins.  A few years ago, this mixture of gameplay had Lara Croft challenging the likes of {{% tag "Uncharted" %}}Nathan Drake{{% /tag %}} and {{% tag "Batman: Arkham" %}}Batman{{% /tag %}}.  But while {{% game "Batman: Arkham Knight" %}}Arkham Knight{{% /game %}} and {{% game "Uncharted 4: A Thief's End" %}}Uncharted 4{{% /game %}} pushed envelopes like open-world traversal, exploration puzzles, and <i>parkour combat</i>, not to mention strong characterization and storytelling... Tomb Raider hasn't evolved.
+It has the same gameplay elements that made the 2013 game work -- blending stealthy assassination with run-and-gun action, combining thoughtful wilderness exploration and high-octane chases through exploding ruins.  A few years ago, this mixture of gameplay had Lara Croft challenging the likes of [Nathan Drake](tag:Uncharted) and [Batman](tag:Batman: Arkham).  But while [Arkham Knight](game:Batman: Arkham Knight) and [Uncharted 4](game:Uncharted 4: A Thief's End) pushed envelopes like open-world traversal, exploration puzzles, and <i>parkour combat</i>, not to mention strong characterization and storytelling... Tomb Raider hasn't evolved.
 
 Rise's open-ish hub areas have lots "to do," in the form of vapid collectibles and checkbox challenges.  But their implementation suffers from a trio of fundamental flaws-
 
@@ -29,8 +29,8 @@ If Nathan Drake is like the <i>Indiana Jones</i> of video games, Lara is startin
 
 It's this foundational failure to build an interesting plot that hurts the most.  Rise's failed attempts to improve the formula - the tiresome NPC sidequests, the difficult-to-use Broadhead Arrows, the <a href="https://gaming.stackexchange.com/questions/261672/what-are-cards-and-how-do-they-work">microtransaction-driven Expedition Mode</a> - and even its occasional bugginess, like when I kept getting hit by an invisible enemy and had to reload my save file ... all of that would have been easy to forgive if I was <i>engaged</i> in Lara's journey.
 
-It'll be nice if {{% game "Shadow of the Tomb Raider" %}}Shadow of the Tomb Raider{{% /game %}} makes its hub areas less boring, and even better if it adds truly meaningful new mechanics -- but the <i>best</i> thing it can do for Lara is to give her a riveting and compelling story.
+It'll be nice if <game:Shadow of the Tomb Raider> makes its hub areas less boring, and even better if it adds truly meaningful new mechanics -- but the <i>best</i> thing it can do for Lara is to give her a riveting and compelling story.
 
-<b>Better than</b>: {{% game "Uncharted: Drake's Fortune" %}}Uncharted: Drake's Fortune{{% /game %}}  
-<b>Not as good as</b>: {{% game "Tomb Raider (2013)" %}}Tomb Raider (2013){{% /game %}}, or any of the Uncharted sequels.  
+<b>Better than</b>: <game:Uncharted: Drake's Fortune>  
+<b>Not as good as</b>: <game:Tomb Raider (2013)>, or any of the Uncharted sequels.  
 <b>The cliffhanger mystery ending</b>: did not hook me.  I don't care what happens with Trinity.  There's your challenge, Crystal Dynamics: make me care.

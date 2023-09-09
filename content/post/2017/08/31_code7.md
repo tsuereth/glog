@@ -8,11 +8,11 @@ title = "It's no Order 66"
 
 +++
 
-{{% game "Code 7" %}}Code 7{{% /game %}} has some interesting ideas going for it: an intriguing sci-fi story, a straightforward-yet-satisfying text interface, and little real-time minigames for puzzles.
+<game:Code 7> has some interesting ideas going for it: an intriguing sci-fi story, a straightforward-yet-satisfying text interface, and little real-time minigames for puzzles.
 
 But the execution is overall lackluster.  The writing isn't very good.  Command-line challenges feel contrived and silly.  The minigames are ... pretty dumb, frankly.
 
-When I compare its "hacking" elements to similar implementations in {{% game "Hackmud" %}}Hackmud{{% /game %}} or {{% game "Pony Island" %}}Pony Island{{% /game %}} - which had problems of their own - Code 7 doesn't measure up.
+When I compare its "hacking" elements to similar implementations in <game:Hackmud> or <game:Pony Island> - which had problems of their own - Code 7 doesn't measure up.
 
 Also, at least in the demo episode, most of the voice acting is really, really terrible.  (The main character does fine, but the rest are quite awful.)  And the game has an annoying habit of letting its speech-to-text transcripts get way ahead of the spoken dialog, but still makes you wait for the actor to finish talking.
 

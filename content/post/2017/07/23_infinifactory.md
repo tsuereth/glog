@@ -9,9 +9,9 @@ title = "Seeing the light at the end of the infinite tunnel"
 
 +++
 
-While the last few levels of {{% game "Infinifactory" %}}Infinifactory{{% /game %}}'s first half had begun to feel {{% abslink href="2017/06/25/dont-know-why-i-assumed-it-would-be-so-finite/" %}}tiresome{{% /abslink %}}, its second half comes out swinging, with new blocks and new environmental quirks.  The puzzles built on these new mechanics feel fresh, and have really revitalized my interest in pushing forward.
+While the last few levels of <game:Infinifactory>'s first half had begun to feel {{% abslink href="2017/06/25/dont-know-why-i-assumed-it-would-be-so-finite/" %}}tiresome{{% /abslink %}}, its second half comes out swinging, with new blocks and new environmental quirks.  The puzzles built on these new mechanics feel fresh, and have really revitalized my interest in pushing forward.
 
-The story is heating up a little bit, too, although it's still not exactly thrilling stuff.  More compelling than {{% game "TIS-100" %}}TIS-100{{% /game %}}, but only about par with {{% game "SpaceChem" %}}SpaceChem{{% /game %}}.
+The story is heating up a little bit, too, although it's still not exactly thrilling stuff.  More compelling than <game:TIS-100>, but only about par with <game:SpaceChem>.
 
 The end of the game - the <i>real</i> end, this time, I'm ... pretty sure - is practically within my reach, now.
 

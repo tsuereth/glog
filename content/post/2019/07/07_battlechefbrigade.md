@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Battle Chef Brigade" %}}Battle Chef Brigade{{% /game %}} is a peculiar mix: part side-scrolling action/combat game, part puzzle game, and part fantasy adventure where fates are decided by <i>Iron Chef</i> style cooking competitions.  Fight monsters, cook their parts into a meal, and win chef battles to earn your way into the noble Brigade!
+<game:Battle Chef Brigade> is a peculiar mix: part side-scrolling action/combat game, part puzzle game, and part fantasy adventure where fates are decided by <i>Iron Chef</i> style cooking competitions.  Fight monsters, cook their parts into a meal, and win chef battles to earn your way into the noble Brigade!
 
 {{% absimg src="battlechefbrigade_trial.jpg" width="640" height="360" %}}
 
@@ -24,5 +24,5 @@ While elements of Battle Chef Brigade may appear familiar, the package as a whol
 Some extra tutorialization around how a dish's score is calculated, and some more depth in the monster-fighting action, could make a really impressive sequel.
 
 <b>Better than</b>: most beat-em-up, match-three, or cooking games.  
-<b>Not as good as</b>: {{% game "Phoenix Wright: Ace Attorney Trilogy" %}}Phoenix Wright: Ace Attorney Trilogy{{% /game %}}  
+<b>Not as good as</b>: <game:Phoenix Wright: Ace Attorney Trilogy>  
 <b>It's hard</b>: to find other games with meaningful comparisons.

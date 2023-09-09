@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-For a while, {{% game "Prime Mover" %}}Prime Mover{{% /game %}} seemed <i>too easy</i>.  Wire this to that, put this piece over here... its first 13 puzzles were very straightforward.  It turns out, that was the tutorial.
+For a while, <game:Prime Mover> seemed <i>too easy</i>.  Wire this to that, put this piece over here... its first 13 puzzles were very straightforward.  It turns out, that was the tutorial.
 
-After those puzzles, the game takes the gloves off and becomes really, dastardly frustrating.  You see, the problem with Prime Mover is that it isn't just a game about logical problem solving, like {{% game "Silicon Zeroes" %}}Silicon Zeroes{{% /game %}}; nor is it just a game about solving problems with limited resources, like {{% game "TIS-100" %}}TIS-100{{% /game %}}.
+After those puzzles, the game takes the gloves off and becomes really, dastardly frustrating.  You see, the problem with Prime Mover is that it isn't just a game about logical problem solving, like <game:Silicon Zeroes>; nor is it just a game about solving problems with limited resources, like <game:TIS-100>.
 
 It's a game about solving problems with <b>broken</b> resources.  We're well past "there's no multiply, so you need to keep adding" territory here -- I'm talking about circuitry components that work contrary to how you need them to work: routing switches that switch themselves, triggers that need to be placed directly next to the component they actuate.
 
@@ -21,8 +21,8 @@ There's also some kind of story being hinted at in between-chapter cutscenes.  B
 
 Prime Mover isn't a bad puzzle game, but its internal logic is outwardly hostile; its challenge comes from how its tools make a simple-looking puzzle into a surprisingly byzantine problem.  And while I can kind-of respect that in concept, actually doing it isn't very fun.
 
-<b>Better than</b>: {{% game "Great Permutator" %}}Great Permutator{{% /game %}}  
-<b>Not as good as</b>: {{% game "Silicon Zeroes" %}}Silicon Zeroes{{% /game %}}  
-<b>Maybe comparable with</b>: {{% game "Prelogate" %}}Prelogate{{% /game %}}, but I don't have the patience to suffer through another game like that.
+<b>Better than</b>: <game:Great Permutator>  
+<b>Not as good as</b>: <game:Silicon Zeroes>  
+<b>Maybe comparable with</b>: <game:Prelogate>, but I don't have the patience to suffer through another game like that.
 
 <i>Progress: Finished 16 puzzles.</i>

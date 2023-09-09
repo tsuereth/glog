@@ -6,7 +6,7 @@ game = ["Tales of Lazo"]
 platform = ["PC"]
 +++
 
-In {{% game "Tales of Lazo" %}}Tales of Lazo{{% /game %}}, you write prose descriptions of how the hero (er, Lazo) overcomes platforming and combat challenges.  Explain how to beat the level, and then watch him do it!  Like the English version of a programming-puzzle game.  What a premise, right?
+In <game:Tales of Lazo>, you write prose descriptions of how the hero (er, Lazo) overcomes platforming and combat challenges.  Explain how to beat the level, and then watch him do it!  Like the English version of a programming-puzzle game.  What a premise, right?
 
 Of course the obvious question is, does it work well enough to maintain the illusion that you're writing a story instead of just entering keywords?  And the answer is, no, it doesn't.
 

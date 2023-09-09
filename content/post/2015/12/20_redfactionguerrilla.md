@@ -9,7 +9,7 @@ title = "The Red Faction is dead; Long live the Red Faction"
 
 +++
 
-Six years later, {{% game "Red Faction: Guerrilla" %}}Red Faction: Guerrilla{{% /game %}} still has no problem absolutely entrancing me.  Of course it helps that the "Steam Edition" released last year included a nice renderer upgrade; Guerrilla looks better than a six-year-old game has any right to.
+Six years later, <game:Red Faction: Guerrilla> still has no problem absolutely entrancing me.  Of course it helps that the "Steam Edition" released last year included a nice renderer upgrade; Guerrilla looks better than a six-year-old game has any right to.
 
 But what makes Guerrilla one of history's finest pieces of explosion-based art isn't its visual prowess, nor the throwaway story and characters.  It's the fact that you can crash a truck through the front of a suspension bridge, hang out on your artificial island, launch rockets at hostile fighters, and use your jetpack to escape to the valley below.  And then home-run a guy with your sledgehammer, sending his ragdoll flying into the Martian rocks.
 

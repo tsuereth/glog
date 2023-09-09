@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-The evil-base-defense-building genre isn't <i>exactly</i> novel, but it <i>is</i> rare, and {{% game "Dungeons 2" %}}Dungeons 2{{% /game %}} is an encouraging example of what this kind of game can offer.  If only it was less of a pain to play.
+The evil-base-defense-building genre isn't <i>exactly</i> novel, but it <i>is</i> rare, and <game:Dungeons 2> is an encouraging example of what this kind of game can offer.  If only it was less of a pain to play.
 
 Going well beyond tower defense tactics, Dungeons 2 missions include RTS-style resource management and tech-tree growth.  Actually, those mechanics are more prominent than laying traps or creating mazes; and it's a real delight to expand the Absolute Evil's power base, literally by digging out rooms or figuratively by investing in upgrades.
 
@@ -19,8 +19,8 @@ I'm tempted to complain about low unit limits and slow base-building, but my mos
 
 Much as I admire the simultaneous underworld-management and overworld-exploration elements, Dungeons 2 makes <i>controlling</i> those elements a frustrating chore.
 
-<b>Better than</b>: ehh, I barely played {{% game "Evil Genius" %}}Evil Genius{{% /game %}}, which is also more than 15 years old, but... yeah?  
-<b>Not as good as</b>: {{% game "Overlord" %}}Overlord{{% /game %}}  
-<b>Maybe, possibly, better than</b>: {{% game "Brütal Legend" %}}Brütal Legend{{% /game %}}, but only if you ignore that game's voice cast (which is one of Brütal Legend's greatest features).
+<b>Better than</b>: ehh, I barely played <game:Evil Genius>, which is also more than 15 years old, but... yeah?  
+<b>Not as good as</b>: <game:Overlord>  
+<b>Maybe, possibly, better than</b>: <game:Brütal Legend>, but only if you ignore that game's voice cast (which is one of Brütal Legend's greatest features).
 
 <i>Progress: Finished campaign mission 4 / met the Nagas.</i>

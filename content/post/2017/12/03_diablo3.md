@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-I've {{% abslink href="2012/05/20/diablo-iii-12/" %}}remarked before{{% /abslink %}} on {{% game "Diablo III" %}}Diablo III{{% /game %}}'s uninteresting environments:
+I've {{% abslink href="2012/05/20/diablo-iii-12/" %}}remarked before{{% /abslink %}} on <game:Diablo III>'s uninteresting environments:
 
 <blockquote>... all of these design themes and elements work fine, but they seem lifted from Diablo II as a template, rather than originally designed from its inspiration.</blockquote>
 
@@ -15,7 +15,7 @@ I've {{% abslink href="2012/05/20/diablo-iii-12/" %}}remarked before{{% /abslink
 
 <blockquote>And the fact that the plot is totally fucking stupid is still impossible to ignore. Even when skipping cinematics and story scenes, the game's dumb characters are irritatingly aggressive at showing off how silly the story is.</blockquote>
 
-Still, the core loot-driven progression formula got a lot better post-launch; and I figured that this would be a compelling system for me and my dedicated co-op partner, coming off of {{% game "Borderlands 2" %}}Borderlands 2{{% /game %}}.
+Still, the core loot-driven progression formula got a lot better post-launch; and I figured that this would be a compelling system for me and my dedicated co-op partner, coming off of <game:Borderlands 2>.
 
 But I don't know what they changed since 2014 -- or if they even changed anything, maybe it's me?  This game is <i>boring</i>, now.  Normal and Hard mode, at least, are basically indistinguishable from a clicker game.
 
@@ -27,6 +27,6 @@ It feels like the current game's sense of difficulty is premised on swarms of en
 
 Maybe we'll see if the "Expert" difficulty changes anything.  I hope it doesn't just throw even more underpowered enemies at us.
 
-It'd be a bit of a shame if we get completely bored of Diablo III before even making it to the new {{% game "Diablo III: Reaper of Souls" %}}Act V{{% /game %}}.
+It'd be a bit of a shame if we get completely bored of Diablo III before even making it to the new [Act V](game:Diablo III: Reaper of Souls).
 
 <i>Progress: Somewhere in the fucking desert</i>

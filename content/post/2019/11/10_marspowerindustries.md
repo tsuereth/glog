@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Mars Power Industries Deluxe" %}}Mars Power Industries Deluxe{{% /game %}} doesn't really scale up from mobile to desktop very well.
+<game:Mars Power Industries Deluxe> doesn't really scale up from mobile to desktop very well.
 
 For one thing, in a literal sense, the graphics are distractingly zoomed-in and imprecise.  The game's "cute" aesthetic looks like it was designed for small screens where edges would look sharper.  It doesn't help that a minimalist UI gives you little to look at except the weirdly-blurry artifacts of scaling and rotating sprites.
 

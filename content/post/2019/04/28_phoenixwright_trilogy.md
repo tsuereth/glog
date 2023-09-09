@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-Hold it!  Has it really been <i>almost fifteen years</i> since {{% game "Phoenix Wright: Ace Attorney" %}}Phoenix Wright: Ace Attorney{{% /game %}} first showed me how fun the law could be?
+Hold it!  Has it really been <i>almost fifteen years</i> since <game:Phoenix Wright: Ace Attorney> first showed me how fun the law could be?
 
-The {{% game "Phoenix Wright: Ace Attorney Trilogy" %}}Phoenix Wright: Ace Attorney Trilogy{{% /game %}} package presented a surprising, and exciting, opportunity for me to revisit all those fondly-remembered cases from early in Phoenix's career.  More recent installments like {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice" %}}Spirit of Justice{{% /game %}} have made me wonder, are the original games <i>really</i> as good as I remember?
+The <game:Phoenix Wright: Ace Attorney Trilogy> package presented a surprising, and exciting, opportunity for me to revisit all those fondly-remembered cases from early in Phoenix's career.  More recent installments like [Spirit of Justice](game:Phoenix Wright: Ace Attorney - Spirit of Justice) have made me wonder, are the original games <i>really</i> as good as I remember?
 
 So far, the answer is... mostly.  I remembered there were some frustrating instances of dialog-tree "<a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/PixelHunt">pixel hunting</a>" in Phoenix's early cases, so running into those hurdles again wasn't <i>too</i> disappointing -- but I had forgotten how inconvenient the out-of-court sequences could be to navigate, sometimes taking five or more click-throughs to get to a particular scene.
 

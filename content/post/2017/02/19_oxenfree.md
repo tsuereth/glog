@@ -9,7 +9,7 @@ title = "Name is accurate, no oxen here"
 
 +++
 
-In its opening scenes, {{% game "Oxenfree" %}}Oxenfree{{% /game %}} seemed like a clever-but-flawed story-based adventure game.
+In its opening scenes, <game:Oxenfree> seemed like a clever-but-flawed story-based adventure game.
 
 The clever part is that dialog choices take place in real time, as other characters are engaged in active conversation, and you decide how to contribute to it -- or to not contribute, choosing nothing and staying silent.  It makes the characters really feel alive and fun to talk to.  The flawed part is that the time limits on these choices are sometimes way too brief, and I felt at times like the game had cheated me out of an option by going too fast (or, other times, cheated another character's story by making me interrupt them).
 
@@ -21,6 +21,6 @@ I would complain that Oxenfree has an occasional problem with backtracking; the 
 
 Consequently, I don't have any interest in playing through it a second time to explore the different possibilities and alternate endings.  But the first playthrough was definitely, absolutely worthwhile.
 
-<b>Better than</b>: {{% game "Zero Escape: Nine Hours, Nine Persons, Nine Doors" %}}Zero Escape: Nine Hours, Nine Persons, Nine Doors{{% /game %}}, {{% game "Until Dawn" %}}Until Dawn{{% /game %}}  
-<b>Not as good as</b>: well, it's a rough comparison, but Oxenfree's story falls just short of {{% game "BioShock Infinite" %}}BioShock Infinite{{% /game %}}'s  
+<b>Better than</b>: <game:Zero Escape: Nine Hours, Nine Persons, Nine Doors>, <game:Until Dawn>  
+<b>Not as good as</b>: well, it's a rough comparison, but Oxenfree's story falls just short of <game:BioShock Infinite>'s  
 <b>Also better than</b>: <a href="http://www.imdb.com/title/tt0246578/">Donnie Darko</a>, and if you liked that, you'll absolutely love this.

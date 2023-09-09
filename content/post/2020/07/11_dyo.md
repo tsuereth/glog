@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Dyo" %}}Dyo{{% /game %}} is a take on the two-player-puzzle genre that I haven't seen before: with one minotaur on the left half of the screen, and the other on the right, you can lock the viewports and <i>walk into the other half</i>.  So, for example:
+<game:Dyo> is a take on the two-player-puzzle genre that I haven't seen before: with one minotaur on the left half of the screen, and the other on the right, you can lock the viewports and <i>walk into the other half</i>.  So, for example:
 
 * A platform is too high to jump to.  Nuts.
 * But you can jump on the other character, and leapfrog up to it!
@@ -20,10 +20,10 @@ The problem is... Dyo is <i>terrible</i> at teaching you how to play.  There are
 
 The result is that figuring out each level involves a lot of staring, and a lot of trial-and-error testing if your character can make a certain-length leap or fit through a certain-size gap.  Learning the unique ins and outs of a level is tedious, and boring.
 
-I'm impressed by Dyo's cleverness (and I love the {{% game "Prince of Persia: The Sands of Time" %}}Sands of Time{{% /game %}}-style rewind/undo feature), but actually playing the game isn't very fun.
+I'm impressed by Dyo's cleverness (and I love the [Sands of Time](game:Prince of Persia: The Sands of Time)-style rewind/undo feature), but actually playing the game isn't very fun.
 
-<b>Better than</b>: {{% game "Kalimba" %}}Kalimba{{% /game %}}  
-<b>Not as good as</b>: {{% game "Dyadic" %}}Dyadic{{% /game %}}  
+<b>Better than</b>: <game:Kalimba>  
+<b>Not as good as</b>: <game:Dyadic>  
 <b>What the fuck</b>: is the point of <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2098676375">this guide</a>?  "Press Ctrl + F2 to instantly win a level."  Brilliant solution, genius.  (Asshole.)
 
 <i>Progress: Got to the crossroads, and a few puzzles after that.</i>

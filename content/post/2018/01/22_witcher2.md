@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-I should probably note that I <i>tried</i> playing {{% game "The Witcher: Enhanced Edition" %}}The Witcher{{% /game %}} some years back, but quickly bounced off of it.  The animation quality was distractingly bad - like that time I tried {{% game "Fallout: New Vegas" %}}New Vegas{{% /game %}} after having finished {{% game "The Elder Scrolls V: Skyrim" %}}Skyrim{{% /game %}} - and the controls were just a mess.
+I should probably note that I <i>tried</i> playing [The Witcher](game:The Witcher: Enhanced Edition) some years back, but quickly bounced off of it.  The animation quality was distractingly bad - like that time I tried [New Vegas](game:Fallout: New Vegas) after having finished [Skyrim](game:The Elder Scrolls V: Skyrim) - and the controls were just a mess.
 
-As for {{% game "The Witcher 2: Assassins of Kings - Enhanced Edition" %}}Witcher 2{{% /game %}}, well, the animations are a lot better.
+As for [Witcher 2](game:The Witcher 2: Assassins of Kings - Enhanced Edition), well, the animations are a lot better.
 
 ...
 
@@ -19,7 +19,7 @@ So I'm putting up with the controls.  The moments when I have to press a button 
 
 (It's a good thing that the game automatically put me in Easy mode, because otherwise I'd be dead, like, all the time.)
 
-And I should be a little discerning in my praise of the game's writing.  It somewhat frequently betrays the franchise's literary roots, by telling events in an order that would be cool - in a book - but is maddening in the context of player choice.  (Read: having to select Geralt's dialog without knowing who or what he's talking about, yet.)  And it <i>sometimes</i> suffers from the same misleading-dialog-option problem that I keep pinning on {{% game "Mass Effect" %}}Mass Effect{{% /game %}}, where Geralt and I have differing opinions on conversational etiquette.
+And I should be a little discerning in my praise of the game's writing.  It somewhat frequently betrays the franchise's literary roots, by telling events in an order that would be cool - in a book - but is maddening in the context of player choice.  (Read: having to select Geralt's dialog without knowing who or what he's talking about, yet.)  And it <i>sometimes</i> suffers from the same misleading-dialog-option problem that I keep pinning on <game:Mass Effect>, where Geralt and I have differing opinions on conversational etiquette.
 
 But in spite of its flaws, Witcher 2 is <b>compelling</b> due to the strength of its characters and events.  I'm genuinely interested in what Geralt has to say.  I'm curious about his companions' motivations, and intrigued by the mystery he's stumbled into.  I want to learn more about his gray-soaked fantasy world, and I want to see him deal with the relatable, <i>human</i> evils throughout it.
 

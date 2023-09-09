@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-{{% game "Mugsters" %}}Mugsters{{% /game %}} has some slick and action-packed trailers (as seen on its <a href="https://store.steampowered.com/app/712180/Mugsters/">Steam page</a>).  Sadly, the game itself is ... fairly different.
+<game:Mugsters> has some slick and action-packed trailers (as seen on its <a href="https://store.steampowered.com/app/712180/Mugsters/">Steam page</a>).  Sadly, the game itself is ... fairly different.
 
 There's no introduction, cinematic or otherwise.  There's no in-game storytelling except what's implied by the existence of teleporters and loud machines.  There isn't even any background music!
 
@@ -21,8 +21,8 @@ And although Mugsters can be played co-operatively, the appeal of a multiplayer 
 
 If you really, really want to play around in a fairly-sparse physics sandbox with vehicles, then Mugsters offers several levels' worth of that.  But the game is otherwise outstandingly barren.
 
-<b>Better than</b>: {{% game "Cubots: The Origins" %}}Cubots: The Origins{{% /game %}}  
-<b>Not as good as</b>: {{% game "Zoo Rampage" %}}Zoo Rampage{{% /game %}}  
-<b>For a better vehicle sandbox, consider revisiting</b>: {{% game "Blast Corps" %}}Blast Corps{{% /game %}}
+<b>Better than</b>: <game:Cubots: The Origins>  
+<b>Not as good as</b>: <game:Zoo Rampage>  
+<b>For a better vehicle sandbox, consider revisiting</b>: <game:Blast Corps>
 
 <i>Progress: got to island 7</i>

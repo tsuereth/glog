@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-I've been hankering for {{% game "The Witcher 3: Wild Hunt" %}}Witcher 3{{% /game %}}'s "next-gen" (now well into current-gen) update since {{% abslink href="2021/12/12/dawn-harder/" %}}last year{{% /abslink %}}, so it's somewhat predictable that I had to <i>stop</i> waiting and just toss another coin at the existing Witcher before - literally <a href="https://www.reuters.com/technology/cd-projekt-release-witcher-3-next-gen-consoles-dec-14-2022-11-14/">the following week</a> - the update finally got a release date.
+I've been hankering for [Witcher 3](game:The Witcher 3: Wild Hunt)'s "next-gen" (now well into current-gen) update since {{% abslink href="2021/12/12/dawn-harder/" %}}last year{{% /abslink %}}, so it's somewhat predictable that I had to <i>stop</i> waiting and just toss another coin at the existing Witcher before - literally <a href="https://www.reuters.com/technology/cd-projekt-release-witcher-3-next-gen-consoles-dec-14-2022-11-14/">the following week</a> - the update finally got a release date.
 
 Not like I was about to <i>put the controller down</i> and go back to waiting, though.  I was already in <i>too deep</i>.
 
@@ -19,6 +19,6 @@ No regrets, though.  Even the un-updated game holds up well, telling an epic, en
 
 (This time around, I tried using internet guidance to ensure I got "the most" out the game - meaning, to avoid missing optional quest cutoffs - but I can't really recommend this approach.  Tracking multi-dimensional storyline completion criteria is more work than it's worth, and felt like a distraction from the game's natural flow of events.)
 
-Has the clunkiness been improved in this month's update?  Is the (very slight) new content worthwhile?  Well, I dunno yet.  It was hard enough saving <i>any</i> quests until after the update finally went live; next stop, {{% game "The Witcher 3: Wild Hunt - Blood and Wine" %}}Beauclair{{% /game %}}.
+Has the clunkiness been improved in this month's update?  Is the (very slight) new content worthwhile?  Well, I dunno yet.  It was hard enough saving <i>any</i> quests until after the update finally went live; next stop, [Beauclair](game:The Witcher 3: Wild Hunt - Blood and Wine).
 
-<i>Progress: Finished all main (and secondary? I think?) quests in the base game and {{% game "The Witcher 3: Wild Hunt - Hearts of Stone" %}}Hearts of Stone{{% /game %}}.</i>
+<i>Progress: Finished all main (and secondary? I think?) quests in the base game and [Hearts of Stone](game:The Witcher 3: Wild Hunt - Hearts of Stone).</i>

@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Hollow Knight" %}}Hollow Knight{{% /game %}} recently left me itching for "more Metroidvania," and {{% game "Valdis Story: Abyssal City" %}}Valdis Story: Abyssal City{{% /game %}} ... did not help.
+<game:Hollow Knight> recently left me itching for "more Metroidvania," and <game:Valdis Story: Abyssal City> ... did not help.
 
 Its <a href="https://www.pcgamingwiki.com/wiki/Valdis_Story:_Abyssal_City#Video_settings">awkward screen size</a> and poorly-written story are both off-putting, though not deal-breakers.  Input-handling feels a little loose, but Valdis Story's bigger problem is that the controls <i>don't make sense</i>, due to both poor tutorialization (I had to read the online manual to figure out what Focus is) and counter-intuitive button mapping.
 

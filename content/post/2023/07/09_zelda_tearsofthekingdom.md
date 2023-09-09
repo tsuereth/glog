@@ -7,7 +7,7 @@ platform = ["Switch"]
 rating = ["Awesome"]
 +++
 
-{{% game "The Legend of Zelda: Tears of the Kingdom" %}}Tears of the Kingdom{{% /game %}}, in revisiting {{% game "The Legend of Zelda: Breath of the Wild" %}}Breath of the Wild{{% /game %}}'s story and environment, isn't just a {{% tag "The Legend of Zelda" %}}Zelda{{% /tag %}} anomaly; it's also a big risk.  How is a game with the same mechanics, and same environment, supposed to measure up to the sense of wonder - the awesome scale and the <i>intimidating</i> scope - that felt so fresh back in 2017?
+[Tears of the Kingdom](game:The Legend of Zelda: Tears of the Kingdom), in revisiting [Breath of the Wild](game:The Legend of Zelda: Breath of the Wild)'s story and environment, isn't just a [Zelda](tag:The Legend of Zelda) anomaly; it's also a big risk.  How is a game with the same mechanics, and same environment, supposed to measure up to the sense of wonder - the awesome scale and the <i>intimidating</i> scope - that felt so fresh back in 2017?
 
 With the Depths, is how.  Hyrule's Depths, a dark mirror of the overworld, are equally sprawling but well... <i>dark</i>.  So dark that you can't see your surroundings, can't see a cliff right in front of you!, without <a href="https://zeldawiki.wiki/wiki/Brightbloom_Seed">guide lamps</a>.  It's confusing, it's spooky, the <a href="https://zeldawiki.wiki/wiki/Gloom">gloom</a> weakens you, and there are probably monsters hiding <i>right over there!</i>
 
@@ -33,8 +33,8 @@ But!  Like last time, those issues melt away in light of Tears of the Kingdom's 
 
 Breath of the Wild set a high bar for any follow-up, but Tears of the Kingdom totally clears it.
 
-<b>Better than</b>: {{% game "The Legend of Zelda: Breath of the Wild" %}}The Legend of Zelda: Breath of the Wild{{% /game %}}  
-<b>Not as good as</b>: {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
-<b>I dunno if there'll be DLC, let alone what the 'C' might be</b>: but I hope, I <i>pine</i>, for an equivalent to {{% game "The Elder Scrolls V: Skyrim - Hearthfire" %}}Skyrim's Hearthfire add-on{{% /game %}}.  More house locations?  More room options?  <i>Some windows??</i>  Whatever, I just want more house stuff!
+<b>Better than</b>: <game:The Legend of Zelda: Breath of the Wild>  
+<b>Not as good as</b>: <game:The Witcher 3: Wild Hunt>  
+<b>I dunno if there'll be DLC, let alone what the 'C' might be</b>: but I hope, I <i>pine</i>, for an equivalent to [Skyrim's Hearthfire add-on](game:The Elder Scrolls V: Skyrim - Hearthfire).  More house locations?  More room options?  <i>Some windows??</i>  Whatever, I just want more house stuff!
 
 <i>Progress: Beat Ganon, found all the shrines and lightroots, did almost all the sidequests.</i>

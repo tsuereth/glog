@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-{{% game "Super Daryl Deluxe" %}}Super Daryl Deluxe{{% /game %}} is ambitious in its attempt to combine action-platforming adventure, action-RPG combat, and cynical-teenager fantasy storytelling.  It's <i>too</i> ambitious.  It doesn't pull off any of these things.
+<game:Super Daryl Deluxe> is ambitious in its attempt to combine action-platforming adventure, action-RPG combat, and cynical-teenager fantasy storytelling.  It's <i>too</i> ambitious.  It doesn't pull off any of these things.
 
 The opening scene shows off Daryl's combat, in an obvious dream-sequence scenario where your fighting skills are already significantly upgraded.  Which would be a good "hook," except that it's overwhelming and confusing -- there are <i>five</i> combat skills to use! and wave after wave of enemies keep spawning in just to supply more punching bags for you.  This thrown-into-the-deep-end intro gives the unfortunate impression that combat is a mindless button-mashing affair.
 

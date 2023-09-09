@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Super Time Force Ultra" %}}Super Time Force Ultra{{% /game %}} - as its tongue-barely-in-cheek name suggests - takes a fun and flippant approach to sci-fi storytelling.  Not unlike {{% game "No Time to Explain" %}}No Time to Explain{{% /game %}}, its absurdist attitude toward time-travel-induced chaos is a great hook.
+<game:Super Time Force Ultra> - as its tongue-barely-in-cheek name suggests - takes a fun and flippant approach to sci-fi storytelling.  Not unlike <game:No Time to Explain>, its absurdist attitude toward time-travel-induced chaos is a great hook.
 
 {{% absimg src="supertimeforceultra_atrip.jpg" width="640" height="360" %}}
 
@@ -23,6 +23,6 @@ This "combine forces with yourself" mechanic is incentivized by having a time li
 
 And what's the solution to that?  Why, rewinding time some more, of course; in effect, replaying the level, but faster.  Which is more than a little tedious.
 
-Again, while I <i>admire</i> STFU's attempts to be more sophisticated than dumb-chaos run-and-guns like {{% game "Broforce" %}}Broforce{{% /game %}}, I don't think those attempts really paid off.  Making good use of time-rewinding is hard, and most often just feels repetitive.
+Again, while I <i>admire</i> STFU's attempts to be more sophisticated than dumb-chaos run-and-guns like <game:Broforce>, I don't think those attempts really paid off.  Making good use of time-rewinding is hard, and most often just feels repetitive.
 
 <i>Progress: Finished the intro level, almost(?) finished the Year 673 level.</i>

@@ -7,7 +7,7 @@ platform = ["Switch"]
 rating = ["Awesome"]
 +++
 
-Counting {{% game "Super Mario Odyssey" %}}Super Mario Odyssey{{% /game %}}'s power moons is a little complicated.  For one thing, some of the collectible moons are actually <i>triple moons</i> that increment the counter on your spaceship by 3; but they still only count as one in the list of collectibles.
+Counting <game:Super Mario Odyssey>'s power moons is a little complicated.  For one thing, some of the collectible moons are actually <i>triple moons</i> that increment the counter on your spaceship by 3; but they still only count as one in the list of collectibles.
 
 For another thing, you can use gold coins to <i>buy</i> an infinite amount of moons.  So... huh.
 

@@ -6,7 +6,7 @@ game = ["Toodee and Topdee"]
 platform = ["PC"]
 +++
 
-{{% game "Toodee and Topdee" %}}Toodee and Topdee{{% /game %}} starts with a really fascinating premise: mashing up side-scrolling and top-down paradigms.  Switch between a Mario-style character who can jump between platforms, and a Link-style character who can <i>move those platforms</i>.  Toodee's initial levels feel like a call-out to games like {{% game "Fez" %}}Fez{{% /game %}} or {{% game "Super Paper Mario" %}}Super Paper Mario{{% /game %}} -- "perspective changes are <i>old news</i>."
+<game:Toodee and Topdee> starts with a really fascinating premise: mashing up side-scrolling and top-down paradigms.  Switch between a Mario-style character who can jump between platforms, and a Link-style character who can <i>move those platforms</i>.  Toodee's initial levels feel like a call-out to games like <game:Fez> or <game:Super Paper Mario> -- "perspective changes are <i>old news</i>."
 
 Unfortunately, the puzzle mechanics built on top of that premise are mostly underwhelming.  The first time I jumped in sidescroller mode, then switched to top-down and placed a box under myself, was cool; but doing this move three or more times in a row just to cross a gap is kinda lame.  As is switching back and forth to control gravity with precise timing (aligning falling sidescroller blocks with top-down pits).  And there are some counter-intuitive assumptions in mechanics like keys, which apparently still count even if an enemy picks them up.
 

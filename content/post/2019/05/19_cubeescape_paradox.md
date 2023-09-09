@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Cube Escape: Paradox" %}}Cube Escape: Paradox{{% /game %}} is a weird, spooky, inventive, and <i>mostly</i> satisfying convergence of point-and-click adventure games and an escape-room puzzle.
+<game:Cube Escape: Paradox> is a weird, spooky, inventive, and <i>mostly</i> satisfying convergence of point-and-click adventure games and an escape-room puzzle.
 
 Its creepy atmosphere is thoroughly executed, between scattered and mysterious symbols, the crow-headed dude in the painting, and moody background music.  I would argue, though, that it uses too many jump-scare moments; especially since they're fairly neutral on the "scary" scale -- really just sudden, startling movements.
 
@@ -19,8 +19,8 @@ It's also a bit worrying that Chapter 1's ending suggests Chapter 2 <i>still</i>
 
 The first chapter of Cube Escape: Paradox was a neat diversion, and I'm really glad that I tried it out.  But I didn't enjoy it quite enough to go paying for more.
 
-<b>Better than</b>: {{% game "Puzzle Agent" %}}Puzzle Agent{{% /game %}}  
-<b>Not as good as</b>: {{% game "Oxenfree" %}}Oxenfree{{% /game %}}  
-<b>Thematically distinct from, but arguably on par with</b>: {{% game "Detective Grimoire: Secret of the Swamp" %}}Detective Grimoire{{% /game %}}
+<b>Better than</b>: <game:Puzzle Agent>  
+<b>Not as good as</b>: <game:Oxenfree>  
+<b>Thematically distinct from, but arguably on par with</b>: [Detective Grimoire](game:Detective Grimoire: Secret of the Swamp)
 
 <i>Progress: finished Chapter 1 (the free part).</i>

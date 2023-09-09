@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Untitled Goose Game" %}}Untitled Goose Game{{% /game %}} has more of a {{% game "QWOP" %}}QWOP{{% /game %}}-like, hard-to-control angle than I expected.  Not that it's an outright {{% game "Manual Samuel" %}}gamepad stress-test{{% /game %}}, but, moving around and picking things up is just difficult enough (and slow enough) to discourage me from experimenting in the game's sandbox.
+<game:Untitled Goose Game> has more of a <game:QWOP>-like, hard-to-control angle than I expected.  Not that it's an outright [gamepad stress-test](game:Manual Samuel), but, moving around and picking things up is just difficult enough (and slow enough) to discourage me from experimenting in the game's sandbox.
 
 Which makes "playing" the game, as in figuring out how to fulfill its puzzle-y objectives, basically moot: I'm not having fun discovering how the level's elements work, let alone putting those elements together for a solution.
 

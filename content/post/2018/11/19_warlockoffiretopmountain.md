@@ -6,7 +6,7 @@ game = ["The Warlock of Firetop Mountain"]
 platform = ["PC"]
 +++
 
-I was really hoping that {{% game "The Warlock of Firetop Mountain" %}}The Warlock of Firetop Mountain{{% /game %}} would be a more dragon-flavored {{% game "Thronebreaker: The Witcher Tales" %}}Thronebreaker{{% /game %}}.  Not really.
+I was really hoping that <game:The Warlock of Firetop Mountain> would be a more dragon-flavored [Thronebreaker](game:Thronebreaker: The Witcher Tales).  Not really.
 
 Complain as I did about Thronebreaker's lack of compelling characters, at least its story was engaging and well-told.  Warlock is more like, well, <i>reading a game book</i>.  No voice acting, no free-form exploration, limited animations - made to resemble a tabletop game, rather than a fantasy world - and random, bullshit events that would feel right at home in a hackneyed choose-your-own-adventure book.
 

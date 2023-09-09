@@ -21,18 +21,6 @@ namespace GlogGenerator.HugoCompat
         private static readonly Regex NamedArgSingleQuotePattern = new Regex(@"(?<ArgName>\w+?)\s*=\s*'(?<ArgValue>.+?)(?<!\\)'", RegexOptions.Compiled);
         private static readonly Regex NamedArgDoubleQuotePattern = new Regex(@"(?<ArgName>\w+?)\s*=\s*""(?<ArgValue>.+?)(?<!\\)""", RegexOptions.Compiled);
 
-        private static string EnsureNonEmptyDefaultArg(string argsString)
-        {
-            var defaultArg = argsString.Trim(new char[] { '\'', '"' });
-
-            if (string.IsNullOrEmpty(defaultArg))
-            {
-                throw new ArgumentException("Missing default (unnamed) argument string");
-            }
-
-            return defaultArg;
-        }
-
         private static Dictionary<string, string> EnsureIncludesNamedArgs(string argsString, params string[] requiredArgNames)
         {
             var namedArgMatches = NamedArgSingleQuotePattern.Matches(argsString).ToList();
@@ -79,15 +67,6 @@ namespace GlogGenerator.HugoCompat
                     {
                         case "spoiler":
                             shortcodeRequiresClose = true;
-                            break;
-
-                        case "category":
-                        case "game":
-                        case "platform":
-                        case "rating":
-                        case "tag":
-                            shortcodeRequiresClose = true;
-                            defaultArg = EnsureNonEmptyDefaultArg(argsString);
                             break;
 
                         case "absimg":
@@ -197,13 +176,6 @@ namespace GlogGenerator.HugoCompat
                         replacementText = $"<a href=\"{absvideoUrl}\"><video{absvideoParamsBuilder.ToString()}><source src=\"{absvideoUrl}\" /></video></a>";
                         break;
 
-                    case "category":
-                        var categoryName = defaultArg;
-                        site.AddCategoryIfMissing(categoryName);
-
-                        replacementText = $"<a href=\"{site.BaseURL}category/{TemplateFunctionsStringRenderer.Urlize(categoryName)}\">{innerText}</a>";
-                        break;
-
                     case "chart":
                         var chartDatafilePath = filePathResolver.Resolve(namedArgs["datafile"]);
                         var chartDatafileContent = File.ReadAllText(chartDatafilePath);
@@ -272,42 +244,8 @@ function drawChart_{pageHash}_{chartHash}() {{
 <div class=""center""><chart id=""chart_{pageHash}_{chartHash}"" callback=""drawChart_{pageHash}_{chartHash}""></chart></div>";
                         break;
 
-                    case "game":
-                        var gameName = defaultArg;
-
-                        // Verify that the shortcode's game is found in our metadata cache.
-                        _ = site.ValidateMatchingGameName(gameName);
-
-                        var gameNameUrlized = TemplateFunctionsStringRenderer.Urlize(gameName);
-                        replacementText = $"<a href=\"{site.BaseURL}game/{gameNameUrlized}\">{innerText}</a>";
-                        break;
-
-                    case "platform":
-                        var platformName = defaultArg;
-                        site.AddPlatformIfMissing(platformName);
-
-                        replacementText = $"<a href=\"{site.BaseURL}platform/{TemplateFunctionsStringRenderer.Urlize(platformName)}\">{innerText}</a>";
-                        break;
-
-                    case "rating":
-                        var ratingName = defaultArg;
-                        site.AddRatingIfMissing(ratingName);
-
-                        replacementText = $"<a href=\"{site.BaseURL}rating/{TemplateFunctionsStringRenderer.Urlize(ratingName)}\">{innerText}</a>";
-                        break;
-
                     case "spoiler":
                         replacementText = $"<noscript><i>JavaScript is disabled, and this concealed spoiler may not appear as expected.</i></noscript><spoiler class=\"spoiler_hidden\" onClick=\"spoiler_toggle(this);\">{innerText}</spoiler>";
-                        break;
-
-                    case "tag":
-                        var tagName = defaultArg;
-
-                        // Verify that the shortcode's tag is found in our metadata cache.
-                        _ = site.ValidateMatchingTagName(tagName);
-
-                        var tagNameUrlized = TemplateFunctionsStringRenderer.Urlize(tagName);
-                        replacementText = $"<a href=\"{site.BaseURL}tag/{tagNameUrlized}\">{innerText}</a>";
                         break;
 
                     default:

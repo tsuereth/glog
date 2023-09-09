@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-I just wasn't having any fun playing {{% game "Shantae: Risky's Revenge - Director's Cut" %}}Shantae: Risky's Revenge{{% /game %}}.
+I just wasn't having any fun playing [Shantae: Risky's Revenge](game:Shantae: Risky's Revenge - Director's Cut).
 
-For one thing, it's a pretty bad Metroidvania.  Not in quite the same way as {{% game "Ori and the Blind Forest: Definitive Edition" %}}Ori and the Blind Forest{{% /game %}}, which felt more like a linear adventure with optional exploration; Risky's Revenge does include some meaningful backtracking, to discover routes that were previously locked or unreachable.
+For one thing, it's a pretty bad Metroidvania.  Not in quite the same way as [Ori and the Blind Forest](game:Ori and the Blind Forest: Definitive Edition), which felt more like a linear adventure with optional exploration; Risky's Revenge does include some meaningful backtracking, to discover routes that were previously locked or unreachable.
 
 But the world map <i>sucks</i>, with whole sections that are uncharted, and frustratingly-placed teleporters.  (They're rarely any better than walking.)  Aside from how annoying it is just to <i>open</i> the map; actually getting from place to place, navigating the same mazes and fighting the same enemies over again, is surprisingly irritating for how tiny the game's world is.
 

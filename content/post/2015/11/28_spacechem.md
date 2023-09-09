@@ -8,6 +8,6 @@ title = "My ego is massively parallelized"
 
 +++
 
-In case there was any uncertainty about the kind of game that {{% game "TIS-100" %}}TIS-100{{% /game %}} is: I've started replaying SpaceChem so that I can feel smart again.
+In case there was any uncertainty about the kind of game that <game:TIS-100> is: I've started replaying SpaceChem so that I can feel smart again.
 
 <i>Progress: Alkonost - No Thanks Necessary</i>

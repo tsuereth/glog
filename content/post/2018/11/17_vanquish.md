@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-Nearly a decade later, the PC re-release of {{% game "Vanquish" %}}Vanquish{{% /game %}} is a little more underwhelming (less whelming?) than I expected.
+Nearly a decade later, the PC re-release of <game:Vanquish> is a little more underwhelming (less whelming?) than I expected.
 
 I remembered the story being throwaway and stupid, and that memory was spot-on.  Although it's a surprise how recent geopolitical players are reflected in the plot -- kudos to the <a href="https://www.platinumgames.com/official-blog/article/2699">writer who said</a> <i>"Vanquish is based on an extension of our current world into the future."</i>  Surprisingly insightful!  At any rate, the story wasn't a good reason to play Vanquish in 2010, and it's even less of one now.
 
@@ -23,8 +23,8 @@ Vanquish was a visual spectacle back in 2010, so it's a bit of a shame that the 
 
 Stripped of that previously-bombastic graphical prowess, Vanquish is just a score-chasing action game with some slightly-crufty design and writing baggage.  Which is fine, I guess.
 
-<b>Better than</b>: {{% game "MadWorld" %}}MadWorld{{% /game %}}  
-<b>Not as good as</b>: {{% game "Red Faction: Guerrilla Re-Mars-tered" %}}Red Faction: Guerrilla Re-Mars-tered{{% /game %}}  
-<b>Oh yeah... Vanquish reminds me</b>: that I still need to get back to {{% game "Metal Gear Rising: Revengeance" %}}Metal Gear Rising: Revengeance{{% /game %}}.
+<b>Better than</b>: <game:MadWorld>  
+<b>Not as good as</b>: <game:Red Faction: Guerrilla Re-Mars-tered>  
+<b>Oh yeah... Vanquish reminds me</b>: that I still need to get back to <game:Metal Gear Rising: Revengeance>.
 
 <i>Progress: Finished on Normal.</i>

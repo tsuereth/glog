@@ -9,7 +9,7 @@ title = "He knows most who speaks last"
 
 +++
 
-{{% game "Last Word" %}}Last Word{{% /game %}} is an RPG about verbal discourse.  No, not that kind of-- not with {{% game "Mass Effect" %}}dialog trees{{% /game %}} or shit like that.  Last Word is a combat-based game where the fighting is done with character attacks and tactful submission.  You gain experience by winning arguments.  If that isn't one of the coolest game ideas you've ever heard, then, you're wrong.
+<game:Last Word> is an RPG about verbal discourse.  No, not that kind of-- not with [dialog trees](game:Mass Effect) or shit like that.  Last Word is a combat-based game where the fighting is done with character attacks and tactful submission.  You gain experience by winning arguments.  If that isn't one of the coolest game ideas you've ever heard, then, you're wrong.
 
 Unfortunately, one of the biggest problems with Last Word is that this combat isn't quite as fully-realized as it could be; that is, although you'll select moves in battle based on conversational tactics, the words associated with them are never spoken or even subtitled.  Exactly <i>what</i> sharp-witted barb left your opponent in tatters is left to the player's imagination.
 
@@ -19,14 +19,14 @@ Outside of combat, the game is a well-written (and excellently-typed) story abou
 
 It's a shame, then, that a non-trivial amount of that optional content requires experience-grinding or pixel-hunting to unlock.  And there are a few extras that can be permanently missed as the game progresses; they're not relevant to the storytelling, so it's not a big deal, but still a slightly obnoxious design quirk.
 
-As in {{% game "To the Moon" %}}To the Moon{{% /game %}}, Last Word suffers somewhat from the RPG Maker engine underpinning it: The controls are garbage, menu transitions can be flaky, and the game lacks crucial options like <i>screen resolution</i>.  But the good news is that Last Word has a tiny map, so it isn't as ass-blastingly annoying to walk around in as To the Moon was.
+As in <game:To the Moon>, Last Word suffers somewhat from the RPG Maker engine underpinning it: The controls are garbage, menu transitions can be flaky, and the game lacks crucial options like <i>screen resolution</i>.  But the good news is that Last Word has a tiny map, so it isn't as ass-blastingly annoying to walk around in as To the Moon was.
 
 Despite its shortcomings - the less-than-fully-whelming combat flavor, the occasionally archaic extra content, the <a href="https://simpsonswiki.com/wiki/Springfield_Tire_Yard">tire fire</a> that is RPG Maker - Last Word is a laudably creative game that's also impressively well-executed.
 
 I would be very interested to see a spiritual sequel with a bigger budget, done in an engine that isn't just ... shit.
 
-<b>Better than</b>: {{% game "To the Moon" %}}To the Moon{{% /game %}}  
-<b>Not as good as</b>: {{% game "Chrono Trigger" %}}Chrono Trigger{{% /game %}}, I guess  
+<b>Better than</b>: <game:To the Moon>  
+<b>Not as good as</b>: <game:Chrono Trigger>, I guess  
 <b>I'm serious about that sequel</b>: I would kickstart the fuck out of that.
 
 <i>Progress: Secret ending.</i>

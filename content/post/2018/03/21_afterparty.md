@@ -6,6 +6,6 @@ game = ["Afterparty"]
 platform = ["PC"]
 +++
 
-{{% game "Oxenfree" %}}Oxenfree{{% /game %}} wasn't perfect, but it was thrilling and exceptionally memorable.  More than a year later, I still fondly recall its endearingly-anxious characters and "creepy-shit" (my words) storytelling.
+<game:Oxenfree> wasn't perfect, but it was thrilling and exceptionally memorable.  More than a year later, I still fondly recall its endearingly-anxious characters and "creepy-shit" (my words) storytelling.
 
-Add a dash of <a href="http://nightschoolstudio.com/afterparty/">neon-backlit <i>hell</i></a>, and -- yeah, {{% game "Afterparty" %}}Afterparty{{% /game %}} looks like something I want to play.
+Add a dash of <a href="http://nightschoolstudio.com/afterparty/">neon-backlit <i>hell</i></a>, and -- yeah, <game:Afterparty> looks like something I want to play.

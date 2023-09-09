@@ -7,11 +7,11 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Middle-earth: Shadow of War" %}}Middle-earth: Shadow of War{{% /game %}} is a lot like {{% game "Middle-earth: Shadow of Mordor" %}}its predecessor{{% /game %}} -- like, <i>a lot</i> like it.
+<game:Middle-earth: Shadow of War> is a lot like [its predecessor](game:Middle-earth: Shadow of Mordor) -- like, <i>a lot</i> like it.
 
 * Shadow of Mordor's story was well-acted and cinematically cool, but the lore and setup felt dumb.  That's still true in Shadow of War.  (A "New Ring?"  Yeah, okay.  But Talion still looks like he could be in a Peter Jackson movie.)
 
-* Shadow of Mordor's mechanics felt very lifted from other games, like {{% tag "Assassin's Creed" %}}Assassin's Creed{{% /tag %}}-style sneaking and {{% tag "Batman: Arkham" %}}Batman Arkham{{% /tag %}}-style brawling.  Shadow of War layers on some new mechanics, like {{% tag "Dark Souls" %}}Dark Souls{{% /tag %}}-style online integration and ... some more Assassin's Creed-style meaningless collectibles.
+* Shadow of Mordor's mechanics felt very lifted from other games, like <tag:Assassin's Creed>-style sneaking and [Batman Arkham](tag:Batman: Arkham)-style brawling.  Shadow of War layers on some new mechanics, like <tag:Dark Souls>-style online integration and ... some more Assassin's Creed-style meaningless collectibles.
 
 * Shadow of Mordor didn't show its whole hand until several hours in, when Talion learned how to dominate and brainwash uruks.  Somehow, he <i>forgot</i> how to do this, and Shadow of War also keeps that card hidden up its sleeve for the first several hours.
 
@@ -25,7 +25,7 @@ Taking the first fortress was easy, but by the second, it became clear that hunt
 
 I'm not sure how well it'll all turn out, considering that Frodo and Sam never saw the Bright Lord on their way through Mordor.  But at least for now, I really feel like I'm delivering on Celebrimbor's goal of building an army to rival Sauron's.
 
-Shadow of War is a good counter-example to my recent experience with {{% game "Agents of Mayhem" %}}Agents of Mayhem{{% /game %}}.  The latter had mechanically fun gameplay, but a dumb and unengaging plot, and I was unsatisfied with its sense of progression; I didn't feel like I was really making a difference in Seoul.
+Shadow of War is a good counter-example to my recent experience with <game:Agents of Mayhem>.  The latter had mechanically fun gameplay, but a dumb and unengaging plot, and I was unsatisfied with its sense of progression; I didn't feel like I was really making a difference in Seoul.
 
 Shadow of War also has mechanically fun gameplay, and while its plot is still dumb and unengaging -- the sense of progression is <i>very</i> satisfying.  As I slaughter uruks by the hundreds, I know that their corpses are building my way toward a better Mordor.
 

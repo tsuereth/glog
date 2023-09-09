@@ -7,11 +7,11 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Khimera: Puzzle Island" %}}Khimera: Puzzle Island{{% /game %}} is a good example of how adding characters with strong personalities can spice up an otherwise-rote game design.
+<game:Khimera: Puzzle Island> is a good example of how adding characters with strong personalities can spice up an otherwise-rote game design.
 
-I mean, not to overly impugne Puzzle Island's roteness - it's got solid controls, and a large <i>amount</i> of puzzles - but it certainly doesn't have big enough grids or unique enough mechanics to stand out among your {{% game "Pictopix" %}}Pictopix{{% /game %}}es or your {{% game "Voxelgram" %}}Voxelgram{{% /game %}}s.
+I mean, not to overly impugne Puzzle Island's roteness - it's got solid controls, and a large <i>amount</i> of puzzles - but it certainly doesn't have big enough grids or unique enough mechanics to stand out among your <game:Pictopix>es or your <game:Voxelgram>s.
 
-What it does have is a cast of, uh, {{% game "Khimera: Destroy All Monster Girls" %}}monster girls{{% /game %}}? who develop adorable friendships through a bizarre puzzle-filled misadventure.
+What it does have is a cast of, uh, [monster girls](game:Khimera: Destroy All Monster Girls)? who develop adorable friendships through a bizarre puzzle-filled misadventure.
 
 Puzzle Island's "story" isn't taken seriously; cutscene dialog is filled with lighthearted gags and silly puns.  The whole package is just <i>fun</i>, from the option to replace grid icons with hamburgers, to the loading screen's <i>Loadin'</i> notification.
 
@@ -23,6 +23,6 @@ But the quirky charm of these awkward monster girls really <i>makes</i> the game
 
 ... oh, and there <i>is</i> one pretty neat mechanic in the final boss battle, using rapid-fire timed puzzles to implement attacking and defending.  I kinda hope that a sequel explores this idea some more.
 
-<b>Better than</b>: {{% game "PictoQuest: The Cursed Grids" %}}PictoQuest: The Cursed Grids{{% /game %}}  
-<b>Not as good as</b>: {{% game "Piczle Cross Adventure" %}}Piczle Cross Adventure{{% /game %}}  
-<b>Different, but basically as good as</b>: {{% game "Murder by Numbers" %}}Murder by Numbers{{% /game %}}
+<b>Better than</b>: <game:PictoQuest: The Cursed Grids>  
+<b>Not as good as</b>: <game:Piczle Cross Adventure>  
+<b>Different, but basically as good as</b>: <game:Murder by Numbers>

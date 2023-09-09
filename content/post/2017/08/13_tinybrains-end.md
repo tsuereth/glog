@@ -9,7 +9,7 @@ title = "Tiny game"
 
 +++
 
-Well, we're done with {{% game "Tiny Brains" %}}Tiny Brains{{% /game %}}.  Total running time was about two hours.
+Well, we're done with <game:Tiny Brains>.  Total running time was about two hours.
 
 I guess the campaign is short enough to run through repeatedly, maybe even as a party game, but I'm not especially anxious to revisit these glitchy physics.
 
@@ -17,8 +17,8 @@ I guess the campaign is short enough to run through repeatedly, maybe even as a 
 
 There are a handful of tricky brain-teasers in here, and the game thankfully doesn't overstay its welcome.  But neither does it ever really <i>impress</i>.
 
-<b>Better than</b>: {{% game "HeartZ: Co-Hope Puzzles" %}}HeartZ: Co-Hope Puzzles{{% /game %}}, {{% game "Kalimba" %}}Kalimba{{% /game %}}  
-<b>Not as good as</b>: {{% game "Pitfall Planet" %}}Pitfall Planet{{% /game %}}, {{% game "Trine Enchanted Edition" %}}Trine Enchanted Edition{{% /game %}}  
+<b>Better than</b>: <game:HeartZ: Co-Hope Puzzles>, <game:Kalimba>  
+<b>Not as good as</b>: <game:Pitfall Planet>, <game:Trine Enchanted Edition>  
 <b>Best not to bring this game up</b>: to PETA, what with all the laboratory animal testing.
 
 <i>Progress: Finished the campaign with two players.</i>

@@ -7,7 +7,7 @@ platform = ["DS"]
 rating = ["Meh"]
 +++
 
-{{% game "Mario & Luigi: Bowser's Inside Story" %}}Bowser's Inside Story{{% /game %}} has some good fundamentals, but its pacing is a <i>mess</i>, and balancing problems can unexpectedly flip its combat from "fun" to "frustrating."
+[Bowser's Inside Story](game:Mario & Luigi: Bowser's Inside Story) has some good fundamentals, but its pacing is a <i>mess</i>, and balancing problems can unexpectedly flip its combat from "fun" to "frustrating."
 
 Let's start with some praise: as ever, the Mario RPG combination of platforming, turn-based battles, and real-time action is <i>a good idea</i>.  When it works, it works great.
 
@@ -43,10 +43,10 @@ It's in these moments, when it feels like an endless series of similar-looking r
 
 I keep having to go back and remind myself that, yeah -- <i>when the game works, it works well.</i>  And the combat works more often than it doesn't.  If the overall story hadn't been so vacant and disoriented, and if the game's levels hadn't been so dull and tiresome, I wouldn't have given most of those flaws a second thought.
 
-It's the fact that {{% game "Mario & Luigi: Partners in Time" %}}Partners in Time{{% /game %}} had these <b>same problems</b> with story pace and overlong levels, that makes me very wary about continuing on with the {{% tag "Mario & Luigi" %}}Mario & Luigi{{% /tag %}} series.  My playing time in this installment was on par with <a href="https://howlongtobeat.com/game.php?id=5619">internet measurements</a>, which estimate <a href="https://howlongtobeat.com/game.php?id=5620">almost twice as long</a> for the next installment, {{% game "Mario & Luigi: Dream Team" %}}Dream Team{{% /game %}}.
+It's the fact that [Partners in Time](game:Mario & Luigi: Partners in Time) had these <b>same problems</b> with story pace and overlong levels, that makes me very wary about continuing on with the <tag:Mario & Luigi> series.  My playing time in this installment was on par with <a href="https://howlongtobeat.com/game.php?id=5619">internet measurements</a>, which estimate <a href="https://howlongtobeat.com/game.php?id=5620">almost twice as long</a> for the next installment, [Dream Team](game:Mario & Luigi: Dream Team).
 
 I really would like more of the Mario RPG gameplay formula, even with the combat annoyances this series may have.  But I'm not willing to slog through this caliber of storytelling for that many hours.
 
-<b>Better than</b>: {{% game "Mario & Luigi: Partners in Time" %}}Mario & Luigi: Partners in Time{{% /game %}} (Yeah, I know I said "Good" on that one, but ... hell, that was more than a decade ago.)  
-<b>Not as good as</b>: {{% game "Paper Mario: The Thousand-Year Door" %}}Paper Mario: The Thousand-Year Door{{% /game %}}, at least in terms of story and world-building.  
-<b>I wonder</b>: if {{% game "Super Mario RPG: Legend of the Seven Stars" %}}Super Mario RPG{{% /game %}} has aged well at all.
+<b>Better than</b>: <game:Mario & Luigi: Partners in Time> (Yeah, I know I said "Good" on that one, but ... hell, that was more than a decade ago.)  
+<b>Not as good as</b>: <game:Paper Mario: The Thousand-Year Door>, at least in terms of story and world-building.  
+<b>I wonder</b>: if [Super Mario RPG](game:Super Mario RPG: Legend of the Seven Stars) has aged well at all.

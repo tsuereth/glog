@@ -6,7 +6,7 @@ game = ["Shantae and the Pirate's Curse"]
 platform = ["PC"]
 +++
 
-I only played {{% game "Shantae and the Pirate's Curse" %}}Shantae and the Pirate's Curse{{% /game %}} for a few minutes; I didn't even get far enough to judge "how Metroidvania" it is.  But I did see enough superficial, <i>non-subtle</i> similarities to {{% game "Shantae: Risky's Revenge - Director's Cut" %}}Risky's Revenge - Director's Cut{{% /game %}} to tune me out pretty immediately.
+I only played <game:Shantae and the Pirate's Curse> for a few minutes; I didn't even get far enough to judge "how Metroidvania" it is.  But I did see enough superficial, <i>non-subtle</i> similarities to [Risky's Revenge - Director's Cut](game:Shantae: Risky's Revenge - Director's Cut) to tune me out pretty immediately.
 
 Awkward hitboxes and clunky controls?  Check.  Jarring combination of high-definition UI and low-res pixel animations?  Check.
 

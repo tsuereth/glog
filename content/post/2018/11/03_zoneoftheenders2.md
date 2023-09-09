@@ -6,9 +6,9 @@ game = ["Zone of The Enders: The 2nd Runner Mars"]
 platform = ["PC"]
 +++
 
-Given it's been over a decade since I played {{% game "Zone of the Enders" %}}Zone of the Enders{{% /game %}}, I was surprised at how <i>distinctly</i> the demo of {{% game "Zone of The Enders: The 2nd Runner Mars" %}}Zone of The Enders: The 2nd Runner Mars{{% /game %}} reminded me of the original.
+Given it's been over a decade since I played <game:Zone of the Enders>, I was surprised at how <i>distinctly</i> the demo of <game:Zone of The Enders: The 2nd Runner Mars> reminded me of the original.
 
-At first, I'd mistakenly believed that this sequel was brand new -- but, no, it's a remaster of a {{% platform "PS2" %}}PS2{{% /platform %}} game from 2003.  And through that lens, the game's apparent shortcomings make a lot more sense.
+At first, I'd mistakenly believed that this sequel was brand new -- but, no, it's a remaster of a <platform:PS2> game from 2003.  And through that lens, the game's apparent shortcomings make a lot more sense.
 
 To be fair: the remaster looks great, with crisp models and silky-smooth effects.  And, admirably, the control scheme still holds up fairly well.
 

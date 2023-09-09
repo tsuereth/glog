@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-It's <i>kind-of</i> amazing just how up-to-date {{% game "Ōkami HD" %}}Ōkami HD{{% /game %}} feels, despite the original game's age.  It still has some flaws, but is nevertheless distinctly refreshing.
+It's <i>kind-of</i> amazing just how up-to-date <game:Ōkami HD> feels, despite the original game's age.  It still has some flaws, but is nevertheless distinctly refreshing.
 
-Going back to what I {{% game "Ōkami" %}}wrote about it on PS2{{% /game %}}:
+Going back to what I [wrote about it on PS2](game:Ōkami):
 
 > [...] intricately woven into the fabric of ancient tales. This manner of storytelling, combined with the game's infamous and extremely distinctive aesthetics, make for a really unique experience.
 

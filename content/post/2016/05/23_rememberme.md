@@ -9,7 +9,7 @@ title = "Forgettable"
 
 +++
 
-Starting {{% game "Remember Me" %}}Remember Me{{% /game %}} so soon after {{% game "Uncharted 4: A Thief's End" %}}Uncharted 4{{% /game %}} was definitely a mistake.  Both games prominently feature acrobatic environment traversal and dialog-based storytelling, and the latter blows the former out of the water in both cases.  Hell, combo-based combat is an <i>afterthought</i> in Uncharted, and it still works better than Remember Me's, which thus far seems to be more dodge-based than attack-based.
+Starting <game:Remember Me> so soon after [Uncharted 4](game:Uncharted 4: A Thief's End) was definitely a mistake.  Both games prominently feature acrobatic environment traversal and dialog-based storytelling, and the latter blows the former out of the water in both cases.  Hell, combo-based combat is an <i>afterthought</i> in Uncharted, and it still works better than Remember Me's, which thus far seems to be more dodge-based than attack-based.
 
 Even the memory remixing sequence I did in Episode 1 was pretty underwhelming.  Setting aside that a crucial bit of the controls weren't explained properly (a UI prompt that looked like "click the left stick" actually meant "move the left stick down") it really just feels like a hidden object game with a time dimension.
 

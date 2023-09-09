@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-After a month, and 100+ hours, of {{% game "Fallout 4" %}}Fallout 4{{% /game %}} ... well, it's okay, I guess.
+After a month, and 100+ hours, of <game:Fallout 4> ... well, it's okay, I guess.
 
-I kid.  Fallout 4 continues {{% tag "Bethesda Game Studios" %}}Bethesda{{% /tag %}}'s traditions of loading a <i>ton</i> of content into a robust open world, and of propping it up with a rich set of progression and customization mechanics.  But it <i>also</i> continues their traditions of shoddy technical workmanship, and of investing in sometimes-baffling design ambitions while neglecting core game systems.
+I kid.  Fallout 4 continues [Bethesda](tag:Bethesda Game Studios)'s traditions of loading a <i>ton</i> of content into a robust open world, and of propping it up with a rich set of progression and customization mechanics.  But it <i>also</i> continues their traditions of shoddy technical workmanship, and of investing in sometimes-baffling design ambitions while neglecting core game systems.
 
 Although I've overall enjoyed my time with the game, the majority of this post will be a scathing critique of its flaws (as is tradition).
 
@@ -21,9 +21,9 @@ That's right -- you can't use Tab to go backward in the workshop menu until you 
 
 This is but one example of the over-overloaded base-building interface mess, and the payoff at the end of this learning curve isn't really worthwhile.  Placing structures "neatly" is a fiddly exercise in frustration, so making anything aesthetically-satisfying is an inordinate amount of work.  The overwhelming majority of building options have no gameplay effect whatsoever; I never placed <i>any</i> furniture except beds, and storage containers.  Managing raw material inventory between multiple settlements is a ridiculous chore, <i>even with</i> the Supply Lines skill, which is locked behind an optional perk!  And if you do decide to <i>care</i> about your settlers and their depressing living conditions, you'd better be prepared to frequently drop what you're doing and fast-travel to a settlement that's come "under attack."
 
-{{% game "The Elder Scrolls V: Skyrim - Hearthfire" %}}Hearthfire{{% /game %}}'s purely dialog-selection-based construction options were more satisfying than this under-baked, underwhelming feature set.  And while I appreciate the premise of "rebuilding" the wasteland, Fallout 4's workshops are a poor execution of that idea; it doesn't feel like I'm restoring the Commonwealth as much as it feels like I'm playing a shitty hacked-together version of {{% tag "The Sims" %}}The Sims{{% /tag %}}.
+[Hearthfire](game:The Elder Scrolls V: Skyrim - Hearthfire)'s purely dialog-selection-based construction options were more satisfying than this under-baked, underwhelming feature set.  And while I appreciate the premise of "rebuilding" the wasteland, Fallout 4's workshops are a poor execution of that idea; it doesn't feel like I'm restoring the Commonwealth as much as it feels like I'm playing a shitty hacked-together version of <tag:The Sims>.
 
-Base-building also highlights how underdeveloped this game's inventory-management tools are.  And I mean ... trying to organize your stuff in {{% game "The Elder Scrolls V: Skyrim" %}}Skyrim{{% /game %}} was already pretty goddamn awful, but some of that felt like "my fault" for my pack-rat, virtual-hoarder playstyle.  Bafflingly, Fallout 4 introduces no mechanical or design changes to solve this problem; instead, it <i>incentivizes hoarding</i> by making settlement upgrades cost "junk."  Oh, and not just settlement upgrades -- weapon and armor crafting <i>also</i> requires junk, including a few resources that are consistently hard-to-find (looking at you, <a href="https://fallout.fandom.com/wiki/Adhesive_(Fallout_4)">adhesive</a>).
+Base-building also highlights how underdeveloped this game's inventory-management tools are.  And I mean ... trying to organize your stuff in [Skyrim](game:The Elder Scrolls V: Skyrim) was already pretty goddamn awful, but some of that felt like "my fault" for my pack-rat, virtual-hoarder playstyle.  Bafflingly, Fallout 4 introduces no mechanical or design changes to solve this problem; instead, it <i>incentivizes hoarding</i> by making settlement upgrades cost "junk."  Oh, and not just settlement upgrades -- weapon and armor crafting <i>also</i> requires junk, including a few resources that are consistently hard-to-find (looking at you, <a href="https://fallout.fandom.com/wiki/Adhesive_(Fallout_4)">adhesive</a>).
 
 So to invest in the game's crafting systems, you'll need to meticulously explore and loot dungeons for crafting materials, consume a significant amount of your precious carrying capacity with <i>literal junk</i>, and make frequent pit-stops back to base for unloading said junk.  This routine makes the <a href="https://fallout.fandom.com/wiki/Strong_Back">Strong Back</a> level 4 perk the most valuable character upgrade in the game.
 
@@ -65,8 +65,8 @@ It does, though, call into question what I can expect from the next Elder Scroll
 
 Look: Fallout 4 isn't a bad game.  I don't regret spending a hundred hours in it, and I definitely got a significant amount of solid entertainment out of those hours.  But the next time a Bethesda game makes me choose which milquetoast faction to ally myself with, I might just pick "none."
 
-<b>Better than</b>: {{% game "Assassin's Creed Revelations" %}}Assassin's Creed Revelations{{% /game %}}  
-<b>Not as good as</b>: {{% game "Assassin's Creed IV Black Flag" %}}Assassin's Creed IV Black Flag{{% /game %}}, {{% game "The Elder Scrolls V: Skyrim" %}}The Elder Scrolls V: Skyrim{{% /game %}}, naturally {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
-<b>And despite all my whining</b>: I'm still looking forward to discovering new stories in the {{% game "Fallout 4: Far Harbor" %}}Far Harbor{{% /game %}} and {{% game "Fallout 4: Nuka World" %}}Nuka World{{% /game %}} DLCs.
+<b>Better than</b>: <game:Assassin's Creed Revelations>  
+<b>Not as good as</b>: <game:Assassin's Creed IV Black Flag>, <game:The Elder Scrolls V: Skyrim>, naturally <game:The Witcher 3: Wild Hunt>  
+<b>And despite all my whining</b>: I'm still looking forward to discovering new stories in the [Far Harbor](game:Fallout 4: Far Harbor) and [Nuka World](game:Fallout 4: Nuka World) DLCs.
 
 <i>Progress: Helped the Railroad nuke the Institute.</i>

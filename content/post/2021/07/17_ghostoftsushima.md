@@ -7,7 +7,7 @@ platform = ["PS4"]
 rating = ["Awesome"]
 +++
 
-{{% game "Ghost of Tsushima" %}}Ghost of Tsushima{{% /game %}}'s <i>beautiful</i> open world is inlaid with engaging action gameplay and touching character stories.  But not at first.
+<game:Ghost of Tsushima>'s <i>beautiful</i> open world is inlaid with engaging action gameplay and touching character stories.  But not at first.
 
 At first, the story is painfully vapid: Mongols are invading Tsushima and <i>all</i> these characters will talk about is "honor" and "code."  Like, <i>I get it</i>, the Samurai are philosophically unprepared for the Mongols' tactics.  And they will not.  Stop.  Droning on about it.  In utterly emotionless dialog, no less.
 
@@ -15,7 +15,7 @@ The uncharismatic main plot steered my focus toward the game's other activities,
 
 Even at their most dramatic - like when the musician Yamato sends you on scavenger hunts to recover legendary weapons - none of these stories are exactly mind-blowing; they're mostly low-key insights into townsfolk's day-to-day lives.  But they <i>fit</i> so well in the game's world, and <i>engross</i> you in it as you ride through pastoral flower fields, suffocating bamboo forests, and foggy graveyards.
 
-This part of the game squeezes some of the same juice as {{% game "The Legend of Zelda: Breath of the Wild" %}}Breath of the Wild{{% /game %}}, though lacking Zelda's exploratory climbing and hidden secrets.  Roaming across the map, just <i>existing</i> in this world, is calming and satisfying.
+This part of the game squeezes some of the same juice as [Breath of the Wild](game:The Legend of Zelda: Breath of the Wild), though lacking Zelda's exploratory climbing and hidden secrets.  Roaming across the map, just <i>existing</i> in this world, is calming and satisfying.
 
 And that's about all I can praise about the early game.  Aside from an underwhelming main plot, the "combat" part of Ghost's combat-sneaking-hybrid action is ... pretty <b>broken</b>.  I don't just mean that it's hard, although, it <i>is</i> hard, leveling significant demands on a player's response time and gamepad muscle memory -- but also, several implementation details seem <i>wrong</i>.
 
@@ -39,8 +39,8 @@ In the end, Ghost suceeds in turning itself from "fascinating Japanese <i>milieu
 
 If Sucker Punch's next open-world game can pace its storytelling better, and fix those clear mechanical shortcomings, they could rival some of the genre's heaviest hitters.
 
-<b>Better than</b>: {{% game "Assassin's Creed III" %}}Assassin's Creed III{{% /game %}}, and almost all the other {{% tag "Assassin's Creed" %}}Assassin's Creed{{% /tag %}} games I've played.  
-<b>Not as good as</b>: {{% game "Assassin's Creed IV Black Flag" %}}Assassin's Creed IV Black Flag{{% /game %}}, {{% game "Batman: Arkham City" %}}Batman: Arkham City{{% /game %}}, {{% game "The Legend of Zelda: Breath of the Wild" %}}The Legend of Zelda: Breath of the Wild{{% /game %}}, {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
+<b>Better than</b>: <game:Assassin's Creed III>, and almost all the other <tag:Assassin's Creed> games I've played.  
+<b>Not as good as</b>: <game:Assassin's Creed IV Black Flag>, <game:Batman: Arkham City>, <game:The Legend of Zelda: Breath of the Wild>, <game:The Witcher 3: Wild Hunt>  
 <b>Oh, and as for the online Legends mode</b>: I got through the tutorial and already hated it.  Forcing subsets of gameplay into class-specific selections is bad enough, but -- why are the button mappings <i>different</i> than in the main game?
 
 <i>Progress: Finished on Easy, killed all the invaders.</i>

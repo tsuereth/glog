@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-There is a certain amount of... I guess, <i>existential angst</i> which comes from knowing that an excellent game like {{% game "VVVVVV" %}}VVVVVV{{% /game %}} is powered by <a href="http://distractionware.com/blog/2020/01/vvvvvv-is-now-open-source/">a switch statement with <tt>case 4099</tt></a>.
+There is a certain amount of... I guess, <i>existential angst</i> which comes from knowing that an excellent game like <game:VVVVVV> is powered by <a href="http://distractionware.com/blog/2020/01/vvvvvv-is-now-open-source/">a switch statement with <tt>case 4099</tt></a>.
 
 In his decennial musings on VVVVVV, Terry Cavanagh observes:
 

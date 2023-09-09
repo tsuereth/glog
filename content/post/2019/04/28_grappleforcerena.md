@@ -6,7 +6,7 @@ game = ["Grapple Force Rena"]
 platform = ["PC"]
 +++
 
-{{% game "Grapple Force Rena" %}}Grapple Force Rena{{% /game %}} is an odd combination of old and new.  Its core grappling-hook mechanic is pretty cool in action, while also feeling "simple" in a way that may actually have worked in a Sega Genesis game.  Its flavor text is fun and irreverent, without dominating the flow of the game.
+<game:Grapple Force Rena> is an odd combination of old and new.  Its core grappling-hook mechanic is pretty cool in action, while also feeling "simple" in a way that may actually have worked in a Sega Genesis game.  Its flavor text is fun and irreverent, without dominating the flow of the game.
 
 Sadly, that flow is also "simple" enough to be at home in a 20-year-old game.  Aside from the grappling, there isn't much gameplay going on in here; that's Rena's only attack move.  Enemies have some varied patterns, but are universally dumb and easy to out-wit.  The levels feel too maze-like, and there's no map.
 

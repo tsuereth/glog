@@ -7,15 +7,15 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-I can only really recommend {{% game "Cyberpunk 2077" %}}Cyberpunk 2077{{% /game %}} with a significant qualification -- even if you're addicted to open-world RPGs, even if you're a huge fan of the dystopian sci-fi theme, and even if you absolutely loved {{% game "The Witcher 3: Wild Hunt" %}}Witcher 3{{% /game %}}.  You need to be feeling <i>charitable</i> toward {{% tag "CD Projekt RED" %}}CD Projekt RED{{% /tag %}}; you need to be willing to tolerate some boredom, some befuddlement, and some bugs (yes, still!), inbetween the "good parts."
+I can only really recommend <game:Cyberpunk 2077> with a significant qualification -- even if you're addicted to open-world RPGs, even if you're a huge fan of the dystopian sci-fi theme, and even if you absolutely loved [Witcher 3](game:The Witcher 3: Wild Hunt).  You need to be feeling <i>charitable</i> toward <tag:CD Projekt RED>; you need to be willing to tolerate some boredom, some befuddlement, and some bugs (yes, still!), inbetween the "good parts."
 
 There <b>are</b> good parts: mechanics that're functional and fun, missions that tell memorable stories, character interactions that feel real and engaging.  But there are also plenty of lulls, and misses, and outright mistakes.  There's a lot of material for me to complain about.
 
 Let's start with the positives, though.
 
-Braindances!  Or, "{{% game "Remember Me" %}}Remember Me{{% /game %}} but better."  Cyberpunk deserves kudos for pulling off a usable memory-playback interface, and for putting together investigative sequences that Geralt and {{% tag "Batman: Arkham" %}}Batman{{% /tag %}} would feel at-home in.  Its sensory layer-switching is sadly underutilized - I can only remember one case that used the thermal layer - but I'd have loved to play more of these.
+Braindances!  Or, "<game:Remember Me> but better."  Cyberpunk deserves kudos for pulling off a usable memory-playback interface, and for putting together investigative sequences that Geralt and [Batman](tag:Batman: Arkham) would feel at-home in.  Its sensory layer-switching is sadly underutilized - I can only remember one case that used the thermal layer - but I'd have loved to play more of these.
 
-Quickhacks!  While Cyberpunk's combat can be approached from multiple angles, its aim-and-hack angle is definitely the most satisfying.  Quickhack abilities take the networked-camera hopping of {{% game "Watch Dogs" %}}Watch Dogs{{% /game %}} and crank it up to 11, because - since everyone has cyber-implants - you can reset an enemy's vision, short out their weapons, even <i>set their equipment on fire</i>.  Wreaking absolute havoc from a distance is a <i>delight</i>.  I'm also a fan of the {{% tag "Shadowrun" %}}Shadowrun{{% /tag %}}-style deck upgrades and software management meta-game.
+Quickhacks!  While Cyberpunk's combat can be approached from multiple angles, its aim-and-hack angle is definitely the most satisfying.  Quickhack abilities take the networked-camera hopping of <game:Watch Dogs> and crank it up to 11, because - since everyone has cyber-implants - you can reset an enemy's vision, short out their weapons, even <i>set their equipment on fire</i>.  Wreaking absolute havoc from a distance is a <i>delight</i>.  I'm also a fan of the <tag:Shadowrun>-style deck upgrades and software management meta-game.
 
 And ... <i>some</i> sidequests!  A handful of Cyberpunk's optional stories are genuinely compelling, explore tough topics and dark themes through relatable characters, and demonstrate writing strengths commensurate with CD Projekt's resume.
 
@@ -39,8 +39,8 @@ But I think I can understand why Cyberpunk avoided cutting its scope, too: a sma
 
 It's a shame that Cyberpunk 2077's impossible ambition prevented it from telling a complete story.  Like I said, though, if you're willing to give the game enough chances - clicking through its less-interesting content, on your way to the good parts - there are some worthwhile experiences in it.
 
-And unlike {{% game "Red Dead Redemption 2" %}}Arthur Morgan's over-ambitious story{{% /game %}}, at least I could tackle this one at my own pace.
+And unlike [Arthur Morgan's over-ambitious story](game:Red Dead Redemption 2), at least I could tackle this one at my own pace.
 
-<b>Better than</b>: {{% game "Fallout 4" %}}Fallout 4{{% /game %}}, {{% game "The Outer Worlds" %}}The Outer Worlds{{% /game %}}, {{% game "Red Dead Redemption 2" %}}Red Dead Redemption 2{{% /game %}}, {{% game "Watch Dogs" %}}Watch Dogs{{% /game %}}  
-<b>Not as good as</b>: {{% game "Batman: Arkham Knight" %}}Batman: Arkham Knight{{% /game %}}, {{% game "Deus Ex: Human Revolution" %}}Deus Ex: Human Revolution{{% /game %}}, {{% game "Grand Theft Auto V" %}}Grand Theft Auto V{{% /game %}}, {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
-<b>So, about that upcoming {{% game "Cyberpunk 2077: Phantom Liberty" %}}Phantom Liberty{{% /game %}} expansion</b>: <I>we'll see</i>.
+<b>Better than</b>: <game:Fallout 4>, <game:The Outer Worlds>, <game:Red Dead Redemption 2>, <game:Watch Dogs>  
+<b>Not as good as</b>: <game:Batman: Arkham Knight>, <game:Deus Ex: Human Revolution>, <game:Grand Theft Auto V>, <game:The Witcher 3: Wild Hunt>  
+<b>So, about that upcoming [Phantom Liberty](game:Cyberpunk 2077: Phantom Liberty) expansion</b>: <I>we'll see</i>.

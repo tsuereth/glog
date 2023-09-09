@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-{{% game "Deus Ex: The Fall" %}}Deus Ex: The Fall{{% /game %}} is exactly what I would expect from asking a mobile game studio to re-make {{% game "Deus Ex: Human Revolution" %}}Deus Ex: Human Revolution{{% /game %}} in the Unity engine with a minimal budget.
+<game:Deus Ex: The Fall> is exactly what I would expect from asking a mobile game studio to re-make <game:Deus Ex: Human Revolution> in the Unity engine with a minimal budget.
 
-<b>Everything</b> about this game is "cheap."  The animations and models are low-effort.  The camera often clips into the environment.  The UI art is flat and under-detailed.  The writing is poorly-edited schlock, the voice acting is rote and dull.  The inventory controls are a wreck, due to having crammed too many options into a touch-screen interface, <i>and then</i> haphazardly translating them back onto a keyboard.  (Movement controls, at least, <i>mostly</i> work by simply duplicating the control scheme from Human Revolution and {{% game "Deus Ex: Mankind Divided" %}}Mankind Divided{{% /game %}}.)
+<b>Everything</b> about this game is "cheap."  The animations and models are low-effort.  The camera often clips into the environment.  The UI art is flat and under-detailed.  The writing is poorly-edited schlock, the voice acting is rote and dull.  The inventory controls are a wreck, due to having crammed too many options into a touch-screen interface, <i>and then</i> haphazardly translating them back onto a keyboard.  (Movement controls, at least, <i>mostly</i> work by simply duplicating the control scheme from Human Revolution and [Mankind Divided](game:Deus Ex: Mankind Divided).)
 
 I didn't even get far enough in the game to see its Detroit- or Prague-equivalent hub area, but <a href="https://steamcommunity.com/app/258180/discussions/0/540741858706530751/">the internet tells me</a> that I'm not missing much.
 
@@ -19,8 +19,8 @@ Some of Human Revolution's features should map <i>perfectly</i> to a mobile devi
 
 This small-screen spin-off is clunky for a mobile game, and just plain bad for a PC game.  Its resemblance to Human Revolution and Mankind Divided invites some intensely unfortunate comparisons to triple-A productions; The Fall is just like them, but, worse.
 
-<b>Better than</b>: {{% game "Batman: Arkham Origins Blackgate" %}}Batman: Arkham Origins Blackgate{{% /game %}}  
-<b>Not as good as</b>: {{% game "Cat Quest" %}}Cat Quest{{% /game %}}, {{% game "Deus Ex: Human Revolution - The Missing Link" %}}Deus Ex: Human Revolution - The Missing Link{{% /game %}} (or even {{% game "Alpha Protocol" %}}Alpha Protocol{{% /game %}})  
-<b>As with {{% game "Just Cause 3" %}}Just Cause 3{{% /game %}}</b>: I didn't expect much, but at least it was <a href="https://www.techradar.com/news/get-54-square-enix-pc-games-for-under-dollar40-in-this-amazing-steam-charity-bundle">for a good cause</a>.
+<b>Better than</b>: <game:Batman: Arkham Origins Blackgate>  
+<b>Not as good as</b>: <game:Cat Quest>, <game:Deus Ex: Human Revolution - The Missing Link> (or even <game:Alpha Protocol>)  
+<b>As with <game:Just Cause 3></b>: I didn't expect much, but at least it was <a href="https://www.techradar.com/news/get-54-square-enix-pc-games-for-under-dollar40-in-this-amazing-steam-charity-bundle">for a good cause</a>.
 
 <i>Progress: Gave up after I fell through the map in the first mission.</i>

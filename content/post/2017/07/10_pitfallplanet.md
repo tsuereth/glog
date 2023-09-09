@@ -9,7 +9,7 @@ title = "Unrelated to Pitfall Harry's alligator adventure"
 
 +++
 
-{{% game "Pitfall Planet" %}}Pitfall Planet{{% /game %}} is the endearing story of two simple robots trying to repair their spaceship, by harvesting ore from co-operative puzzle-platform levels.
+<game:Pitfall Planet> is the endearing story of two simple robots trying to repair their spaceship, by harvesting ore from co-operative puzzle-platform levels.
 
 As in any successful co-op game, you can grab and throw your fellow robot, over an obstacle -- or off of a cliff.
 

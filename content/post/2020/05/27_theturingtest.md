@@ -9,7 +9,7 @@ rating = ["Good"]
 
 Finally, a game from <a href="https://www.techradar.com/news/get-54-square-enix-pc-games-for-under-dollar40-in-this-amazing-steam-charity-bundle">that charity bundle</a> which I don't have to dismiss as "for a good cause."
 
-{{% game "The Turing Test" %}}The Turing Test{{% /game %}} is a {{% game "Portal" %}}Portal{{% /game %}}-alike, complete with first-person puzzles, a robot narrator, and a relatively-brief running length.  What sets it apart from sub-genre peers like {{% game "Q.U.B.E." %}}Q.U.B.E.{{% /game %}} and {{% game "Quantum Conundrum" %}}Quantum Conundrum{{% /game %}} - which felt a little like one-trick ponies falling into a rut - is that Turing continues to introduce new and exciting mechanics, and reveal interesting story twists, <i>throughout</i> that length.
+<game:The Turing Test> is a <game:Portal>-alike, complete with first-person puzzles, a robot narrator, and a relatively-brief running length.  What sets it apart from sub-genre peers like <game:Q.U.B.E.> and <game:Quantum Conundrum> - which felt a little like one-trick ponies falling into a rut - is that Turing continues to introduce new and exciting mechanics, and reveal interesting story twists, <i>throughout</i> that length.
 
 Pacing is hard to get right, but it feels like The Turing Test pretty much nailed it.  The game is split into seven chapters of ten puzzles each, with a significant story beat at the end of every chapter; while the game's plot is obviously building up to something, it has some twists up its sleeve up to the very end, and the dialog between protagonist Ava and AI overseer Tom invites some metaphysical curiosity inbetween those twists.
 
@@ -21,6 +21,6 @@ The biggest disappointment for me was that the game's supporting cast, and their
 
 It's a good puzzle game with engaging storytelling.  It's no Cave Johnson, but it'll do!
 
-<b>Better than</b>: {{% game "Magrunner: Dark Pulse" %}}Magrunner: Dark Pulse{{% /game %}}  
-<b>Not as good as</b>: {{% game "Portal 2" %}}Portal 2{{% /game %}}  
-<b>Hard to say against the first {{% game "Portal" %}}Portal{{% /game %}}</b>: Valve's humor and puzzles got more intricate, while Turing's story and mechanics showed more variety.
+<b>Better than</b>: <game:Magrunner: Dark Pulse>  
+<b>Not as good as</b>: <game:Portal 2>  
+<b>Hard to say against the first <game:Portal></b>: Valve's humor and puzzles got more intricate, while Turing's story and mechanics showed more variety.

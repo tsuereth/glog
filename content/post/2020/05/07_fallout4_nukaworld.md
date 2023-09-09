@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-{{% game "Fallout 4: Nuka World" %}}Nuka World{{% /game %}} has some great level design: the theme park concept makes for some excellently-varied and borderline-fantastical environments.  That's the good news about this {{% game "Fallout 4" %}}Fallout 4{{% /game %}} expansion -- the only good news.  (Unless you really like raiders, I guess.)
+[Nuka World](game:Fallout 4: Nuka World) has some great level design: the theme park concept makes for some excellently-varied and borderline-fantastical environments.  That's the good news about this <game:Fallout 4> expansion -- the only good news.  (Unless you really like raiders, I guess.)
 
 Everything else about Nuka World is <b>insubstantial</b>.
 
@@ -23,8 +23,8 @@ Aside from the nondescript raider factions, and the underwhelming parks, there's
 
 If there's a strength, a "selling point," to Nuka World, it's that your allegiance with the raider factions can unlock <i>conquering</i> Commonwealth settlements -- replacing your settlers with raiders.  But that's <b>so stupid!</b>  Not just because it's such an unexpectedly narrow option, considering the comparatively-ambiguous moral choices in the main game, but also because it's so transparently <i>inconsequential</i>.  Settlements were already an afterthought in the main game; why would I care if raiders took them instead?
 
-Unlike {{% game "Fallout 4: Far Harbor" %}}Far Harbor{{% /game %}}, which had some legitimately interesting ideas but lazy and lackluster execution, Nuka World doesn't feel like it has any ideas at all.  I mean, I'll give credit to the level designers for crafting thematically and visually interesting environments -- but everything else in this DLC feels completely phoned-in.
+Unlike [Far Harbor](game:Fallout 4: Far Harbor), which had some legitimately interesting ideas but lazy and lackluster execution, Nuka World doesn't feel like it has any ideas at all.  I mean, I'll give credit to the level designers for crafting thematically and visually interesting environments -- but everything else in this DLC feels completely phoned-in.
 
-<b>Better than</b>: {{% game "Fallout 4: Automatron" %}}Fallout 4: Automatron{{% /game %}}  
-<b>Not as good as</b>: {{% game "Fallout 4: Far Harbor" %}}Fallout 4: Far Harbor{{% /game %}}  
+<b>Better than</b>: <game:Fallout 4: Automatron>  
+<b>Not as good as</b>: <game:Fallout 4: Far Harbor>  
 <b>At this point</b>: I'm so thoroughly <i>sick</i> of Fallout 4 that I'm glad to be done with it.

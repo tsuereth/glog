@@ -9,7 +9,7 @@ title = "I swear, I'm a very good speller"
 
 +++
 
-I had high hopes for {{% game "Words for Evil" %}}Words for Evil{{% /game %}}, but ended up hating it even more than {{% game "Letter Quest: Grimm's Journey" %}}Letter Quest: Grimm's Journey{{% /game %}}.
+I had high hopes for <game:Words for Evil>, but ended up hating it even more than <game:Letter Quest: Grimm's Journey>.
 
 My reason is pretty simple.  I was annoyed by Letter Quest because it didn't have very many letters, and spelling satisfying words wasn't usually possible.  Words for Evil has a visibly larger letter field, which is great!, but you can only spell using letters that are <b>next to</b> each other -- which is even more limiting.
 

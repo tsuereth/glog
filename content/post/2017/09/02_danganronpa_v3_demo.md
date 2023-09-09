@@ -8,7 +8,7 @@ title = "Something something ultimate despair"
 
 +++
 
-I heard on the internet, somewhere, that the Danganronpa series was kind of like a pop-anime version of {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice" %}}Phoenix Wright{{% /game %}}.  At least based on my experience with the demo for {{% game "Danganronpa V3: Killing Harmony" %}}Danganronpa V3: Killing Harmony{{% /game %}}, this ... seems like an artful comparison.
+I heard on the internet, somewhere, that the Danganronpa series was kind of like a pop-anime version of [Phoenix Wright](game:Phoenix Wright: Ace Attorney - Spirit of Justice).  At least based on my experience with the demo for <game:Danganronpa V3: Killing Harmony>, this ... seems like an artful comparison.
 
 While these franchises share the theme of solving a mystery through adventure-game choices, everything else about Danganronpa is pretty unique.  And not to Danganronpa's benefit.
 
@@ -36,13 +36,13 @@ Danganronpa has matching puzzles.
 
 {{% absimg src="danganronpa_v3_demo_matching.jpg" width="400" height="300" %}}
 
-And ... {{% game "OutRun" %}}OutRun{{% /game %}}?
+And ... <game:OutRun>?
 
 {{% absimg src="danganronpa_v3_demo_driving.jpg" width="400" height="300" %}}
 
 These are just, plain, stupid.
 
-And then there are the technical issues.  The screen is scaled to the {{% platform "Vita" %}}Vita{{% /platform %}}'s aspect ratio.  You can't save your progress except inbetween chapters.  The controls are just ... bonkers.
+And then there are the technical issues.  The screen is scaled to the <platform:Vita>'s aspect ratio.  You can't save your progress except inbetween chapters.  The controls are just ... bonkers.
 
 Here's how to control the debate segments:
 

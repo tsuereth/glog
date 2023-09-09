@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-The ending is ... okay.  Like the rest of {{% game "Middle-earth: Shadow of War" %}}Shadow of War{{% /game %}}'s story, it somehow manages to simultaneously feel <i>cool</i> and <i>bizarre</i>.  The final act is pretty impressive, but more for its visual flair and its new gameplay than for any narrative payoff.
+The ending is ... okay.  Like the rest of [Shadow of War](game:Middle-earth: Shadow of War)'s story, it somehow manages to simultaneously feel <i>cool</i> and <i>bizarre</i>.  The final act is pretty impressive, but more for its visual flair and its new gameplay than for any narrative payoff.
 
 When I say "final act," I mean <i>Act III: Shadow and Flames</i>.  This linear capstone on Act II's open-world orc-slaughter represents the cinematic culmination of Talion's struggle against Sauron.
 
@@ -19,10 +19,10 @@ Evidently, Shadow Wars requires a hell of a lot more grinding through orcs, leve
 
 By electing <i>not</i> to continue this tiring routine, I'm departing Shadow of War with a high opinion of it.  Building my army and conquering Mordor was way fun.  After 40 hours of it, though, I've got no interest in the epilogue -- nor in its awkward-sounding DLCs.
 
-({{% game "Middle-earth: Shadow of War - The Blade of Galadriel" %}}Blade of Galadriel{{% /game %}} strips out the Nemesis system?  And {{% game "Middle-earth: Shadow of War - The Desolation of Mordor" %}}Desolation of Mordor{{% /game %}} removes respawning?  Nah, thanks.)
+([Blade of Galadriel](game:Middle-earth: Shadow of War - The Blade of Galadriel) strips out the Nemesis system?  And [Desolation of Mordor](game:Middle-earth: Shadow of War - The Desolation of Mordor) removes respawning?  Nah, thanks.)
 
-<b>Better than</b>: {{% game "Middle-earth: Shadow of Mordor" %}}Middle-earth: Shadow of Mordor{{% /game %}}, {{% game "Agents of Mayhem" %}}Agents of Mayhem{{% /game %}}  
-<b>Not as good as</b>: {{% game "The Legend of Zelda: Breath of the Wild" %}}The Legend of Zelda: Breath of the Wild{{% /game %}}, {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
+<b>Better than</b>: <game:Middle-earth: Shadow of Mordor>, <game:Agents of Mayhem>  
+<b>Not as good as</b>: <game:The Legend of Zelda: Breath of the Wild>, <game:The Witcher 3: Wild Hunt>  
 <b>Boy, if they try to sequelize this <i>again</i></b>: Monolith will really have their lore-work cut out for them.
 
 <i>Progress: 95%, level 48</i>

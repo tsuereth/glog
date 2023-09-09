@@ -9,7 +9,7 @@ title = "A light adventure"
 
 +++
 
-{{% game "Child of Light" %}}Child of Light{{% /game %}}'s story continued being obtuse, and obfuscated by unnecessary rhyming, for most of its running length.  The ending moments worked well enough, but it really feels like this story could have been told a lot better than it was.
+<game:Child of Light>'s story continued being obtuse, and obfuscated by unnecessary rhyming, for most of its running length.  The ending moments worked well enough, but it really feels like this story could have been told a lot better than it was.
 
 It was the RPG gameplay that kept me coming back.  And I wouldn't say that it was quite perfect, either; but it <i>worked</i>, and the ideas it presented (particularly around the timeline and interruptions) were uniquely compelling.
 
@@ -21,8 +21,8 @@ The difficulty level did end up biting me a few times.  Some encounters in the g
 
 So, yeah.  Enlarge the battle parties, and get rid of the obstructive rhyme-based storytelling, and baby -- you've got a stew going.
 
-<b>Better than</b>: {{% game "Mario & Luigi: Partners in Time" %}}Mario & Luigi: Partners in Time{{% /game %}}  
-<b>Not as good as</b>: I guess... classics like {{% game "Chrono Trigger" %}}Chrono Trigger{{% /game %}}? (Has it really been so long since I've played an excellent 2D RPG?)  
-<b>Also better than</b>: {{% game "Valiant Hearts: The Great War" %}}Valiant Hearts{{% /game %}}, that other debut UbiArt game.
+<b>Better than</b>: <game:Mario & Luigi: Partners in Time>  
+<b>Not as good as</b>: I guess... classics like <game:Chrono Trigger>? (Has it really been so long since I've played an excellent 2D RPG?)  
+<b>Also better than</b>: [Valiant Hearts](game:Valiant Hearts: The Great War), that other debut UbiArt game.
 
 <i>Progress: Finished on Expert.</i>

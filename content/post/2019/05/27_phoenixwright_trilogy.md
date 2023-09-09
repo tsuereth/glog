@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-Moving forward in the {{% game "Phoenix Wright: Ace Attorney Trilogy" %}}Phoenix Wright: Ace Attorney Trilogy{{% /game %}} collection shows incremental mechanical improvements (the psyche-locks in investigation phases), and highlights lingering mechanical shortcomings (navigating a map with more than four destinations) -- but mostly reinforces that the strength of these games <i>isn't</i> mechanical.
+Moving forward in the <game:Phoenix Wright: Ace Attorney Trilogy> collection shows incremental mechanical improvements (the psyche-locks in investigation phases), and highlights lingering mechanical shortcomings (navigating a map with more than four destinations) -- but mostly reinforces that the strength of these games <i>isn't</i> mechanical.
 
 It's the quality of the writing and localization that makes Phoenix Wright's cast of wacky characters so engaging and entertaining.  More than merely a vehicle for cartoony comic relief...
 

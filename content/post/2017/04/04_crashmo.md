@@ -9,7 +9,7 @@ title = "Mehmo"
 
 +++
 
-I love puzzle games.  I swear, I do!  But I just can't love {{% game "Crashmo" %}}Crashmo{{% /game %}}.
+I love puzzle games.  I swear, I do!  But I just can't love <game:Crashmo>.
 
 The first problem it presents is one of over-cautious handholding.  This is especially perplexing for a handheld game, with limited battery life and attention span; Crashmo starts with unskippable cutscenes, and slow-scrolling dialog that explains <b>obvious</b> mechanics.  When you push a block in a direction, the block moves in that direction.  <i>You don't say?  Fascinating.</i>
 
@@ -21,8 +21,8 @@ Consequently, puzzle-solving tends to devolve into a mess of trial-and-error, fo
 
 Crashmo's puzzles aren't "bad," exactly, but the slipshod sense of learning and progression wasn't good enough to keep me interested.
 
-<b>Better than</b>: {{% game "Exit DS" %}}Exit DS{{% /game %}}  
-<b>Not as good as</b>: {{% game "Picross 3D" %}}Picross 3D{{% /game %}}  
+<b>Better than</b>: <game:Exit DS>  
+<b>Not as good as</b>: <game:Picross 3D>  
 <b>I still can't believe</b>: That the game bothers trying to attach story and personality to its characters.  Seriously, old man, I don't care about your lost birds!
 
 <i>Progress: Completed 68/100 puzzles</i>

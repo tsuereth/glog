@@ -9,7 +9,7 @@ title = "The Doldrums of Deus Ex"
 
 +++
 
-I would say that there are really two games in {{% game "Deus Ex: Mankind Divided" %}}Mankind Divided{{% /game %}}: A city-sized cyberpunk {{% game "The Elder Scrolls V: Skyrim" %}}Skyrim{{% /game %}} with apartments to break into, e-books to read, and trinkets to collect; and a conspiracy thriller story that's unfortunately and inertly squeezed between the stage-setting of {{% game "Deus Ex: Human Revolution" %}}Human Revolution{{% /game %}} and an inevitable threequel.
+I would say that there are really two games in [Mankind Divided](game:Deus Ex: Mankind Divided): A city-sized cyberpunk [Skyrim](game:The Elder Scrolls V: Skyrim) with apartments to break into, e-books to read, and trinkets to collect; and a conspiracy thriller story that's unfortunately and inertly squeezed between the stage-setting of [Human Revolution](game:Deus Ex: Human Revolution) and an inevitable threequel.
 
 The story of DXMD isn't bad, really, but neither is it good.  It's mostly <b>insubstantial</b>.  If Deus Ex was a series of novels, this game's plot would account for three or four middle chapters of one book.  While there's a terrific amount of world-building to serve the exploration and self-discovery elements of the game, in the critical path <i>there just isn't much going on</i>.
 
@@ -23,6 +23,6 @@ And I'm not ashamed to admit that I save-scummed the hell out of it, reloading a
 
 Even though it tells an awkward non-story that barely even cliffhangers for the next game, even though the pacing of story events can fuck up the "fun" parts, and even though it has some frustrating technical quirks like the inventory one I posted previously -- Deus Ex: Mankind Divided has a lot of fun in it, if you're into exploring finely-detailed game worlds and scouring over their lore.  About 40 hours worth, of that stuff.
 
-<b>Better than</b>: {{% game "Deus Ex: Human Revolution" %}}Deus Ex: Human Revolution{{% /game %}}, because the non-combat path actually works all the way through.  
-<b>Not as good as</b>: {{% game "The Elder Scrolls V: Skyrim" %}}The Elder Scrolls V: Skyrim{{% /game %}}, simply because Prague (dense as it is) can't match the amount of <i>stuff</i> Bethesda made.  
-<b>Much as I love the idea of AUGMENTED BANK HEIST</b>: The fact that the "System Rift" DLC resets your hard-specced talents - much like {{% game "Deus Ex: Human Revolution - The Missing Link" %}}Missing Link{{% /game %}}, I guess - is an instant turn-off.
+<b>Better than</b>: <game:Deus Ex: Human Revolution>, because the non-combat path actually works all the way through.  
+<b>Not as good as</b>: <game:The Elder Scrolls V: Skyrim>, simply because Prague (dense as it is) can't match the amount of <i>stuff</i> Bethesda made.  
+<b>Much as I love the idea of AUGMENTED BANK HEIST</b>: The fact that the "System Rift" DLC resets your hard-specced talents - much like [Missing Link](game:Deus Ex: Human Revolution - The Missing Link), I guess - is an instant turn-off.

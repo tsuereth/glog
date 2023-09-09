@@ -9,12 +9,12 @@ title = "Wing it!"
 
 +++
 
-It would be easy to describe {{% game "Aviary Attorney" %}}Aviary Attorney{{% /game %}} as {{% game "Phoenix Wright: Ace Attorney" %}}Phoenix Wright{{% /game %}} with birds, instead.  But it's not just an investigation-and-trial game about <a href="https://www.youtube.com/watch?v=qcderLXiwa8#t=1m10s">bird law</a> -- Aviary Attorney's unique aesthetic incorporates the setting of revolutionary France, and animal puns, into an imaginative and greatly amusing tale.  It's smart, funny, and almost entirely logical, despite ... birds.
+It would be easy to describe <game:Aviary Attorney> as [Phoenix Wright](game:Phoenix Wright: Ace Attorney) with birds, instead.  But it's not just an investigation-and-trial game about <a href="https://www.youtube.com/watch?v=qcderLXiwa8#t=1m10s">bird law</a> -- Aviary Attorney's unique aesthetic incorporates the setting of revolutionary France, and animal puns, into an imaginative and greatly amusing tale.  It's smart, funny, and almost entirely logical, despite ... birds.
 
 The downside is that it's pretty short.  You should be able to get to one of the game's three endings in about 3 hours.  And the other two endings are worth seeing, but don't add much to that running length.
 
 Aviary Attorney is super-fun while it lasts.
 
-<b>Better than</b>: {{% game "Ace Attorney Investigations: Miles Edgeworth" %}}Ace Attorney Investigations: Miles Edgeworth{{% /game %}}  
-<b>Not as good as</b>: {{% game "Phoenix Wright: Ace Attorney - Dual Destinies" %}}Phoenix Wright: Ace Attorney - Dual Destinies{{% /game %}} (or any other full-length Phoenix Wright adventure)  
+<b>Better than</b>: <game:Ace Attorney Investigations: Miles Edgeworth>  
+<b>Not as good as</b>: <game:Phoenix Wright: Ace Attorney - Dual Destinies> (or any other full-length Phoenix Wright adventure)  
 <b>I would happily give these guys more money</b>: For more Ace Attorney clones.

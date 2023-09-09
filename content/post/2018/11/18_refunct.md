@@ -7,12 +7,12 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Refunct" %}}Refunct{{% /game %}} is a neat little experiment in first-person parkour gaming.  It does a cool job of organically introducing core mechanics - <i>how do I climb this tower? better jump around randomly until I discover the wall-jump</i> - and it has a clean, simple aesthetic.
+<game:Refunct> is a neat little experiment in first-person parkour gaming.  It does a cool job of organically introducing core mechanics - <i>how do I climb this tower? better jump around randomly until I discover the wall-jump</i> - and it has a clean, simple aesthetic.
 
 And it's easy to complete in half an hour or less.  (There's an achievement for completing the game in under 4 minutes.)
 
 Neat, but hard to recommend for purchase, at any price.
 
-<b>Better than</b>: {{% game "Cubots: The Origins" %}}Cubots: The Origins{{% /game %}}  
-<b>Not as good as</b>: {{% game "AER: Memories of Old" %}}AER: Memories of Old{{% /game %}}  
+<b>Better than</b>: <game:Cubots: The Origins>  
+<b>Not as good as</b>: <game:AER: Memories of Old>  
 <b>But, kudos to the developer</b>: for making a pretty good portfolio piece.

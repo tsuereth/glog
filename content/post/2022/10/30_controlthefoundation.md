@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-{{% game "Control: The Foundation" %}}Control: The Foundation{{% /game %}} adds lore and mechanics to the base game, but they fit {{% game "Control" %}}Control{{% /game %}}'s mold so well, that I'd really call The Foundation "more of the same."  In a good way!
+<game:Control: The Foundation> adds lore and mechanics to the base game, but they fit <game:Control>'s mold so well, that I'd really call The Foundation "more of the same."  In a good way!
 
 More strange and imaginative environments, including the tried-and-true like haunted offices, but also new cavern spaces that showcase late-game mobility powers.
 
@@ -21,8 +21,8 @@ And it's got a <i>substantial</i> amount of content, filling a fairly hefty sub-
 
 The Foundation ticks all the same boxes as Control's main game, without feeling overly familiar.
 
-<b>Better than</b>: {{% game "Batman: Arkham Origins - Cold, Cold Heart" %}}Batman: Arkham Origins - Cold, Cold Heart{{% /game %}}, {{% game "Horizon Zero Dawn: The Frozen Wilds" %}}Horizon Zero Dawn: The Frozen Wilds{{% /game %}}  
-<b>Not as good as</b>: {{% game "The Witcher 3: Wild Hunt - Hearts of Stone" %}}The Witcher 3: Wild Hunt - Hearts of Stone{{% /game %}}  
+<b>Better than</b>: <game:Batman: Arkham Origins - Cold, Cold Heart>, <game:Horizon Zero Dawn: The Frozen Wilds>  
+<b>Not as good as</b>: <game:The Witcher 3: Wild Hunt - Hearts of Stone>  
 <b>The "Swift Platform" side mission may not top the Ashtray Maze</b>: but it comes impressively close.
 
 <i>Progress: Finished all the main and side missions.</i>

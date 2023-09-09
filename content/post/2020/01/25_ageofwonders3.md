@@ -6,9 +6,9 @@ game = ["Age of Wonders III"]
 platform = ["PC"]
 +++
 
-{{% game "Age of Wonders III" %}}Age of Wonders III{{% /game %}} is a feature-rich and fairly sophisticated take on fantasy-themed 4X, but it just didn't quite "do it" for me.
+<game:Age of Wonders III> is a feature-rich and fairly sophisticated take on fantasy-themed 4X, but it just didn't quite "do it" for me.
 
-Like {{% game "Warlock: Master of the Arcane" %}}Warlock: Master of the Arcane{{% /game %}}, Age of Wonders is largely comparable to a fantasy-themed {{% game "Sid Meier's Civilization V" %}}Civ V{{% /game %}}/{{% game "Sid Meier's Civilization VI" %}}VI{{% /game %}}, but with two significant differences: story campaigns! and tactical combat!
+Like <game:Warlock: Master of the Arcane>, Age of Wonders is largely comparable to a fantasy-themed [Civ V](game:Sid Meier's Civilization V)/[VI](game:Sid Meier's Civilization VI), but with two significant differences: story campaigns! and tactical combat!
 
 The combat was pretty fun at first, taking direct control of units in the battlefield for optimal positioning and ability usage.  It can be a bit hard to predict the strength (or attack range) of enemy units, but this becomes clearer with more encounters and more practice.
 
@@ -24,7 +24,7 @@ But there are no infrastructural defenses that can repel invaders -- you need to
 
 At least in the campaign missions I was playing, there are no Civ-style peaceful victory conditions: no United Nations of Wizards, no magic space rockets.  Just war.
 
-Structurally, I'm really impressed by Age of Wonders III, and in a way it's the follow-up I've always wanted to {{% game "Heroes of Might and Magic III: The Restoration of Erathia" %}}Heroes of Might and Magic III{{% /game %}} (a childhood favorite).  I think it could be a real treat for someone who's super-into turn-based combat strategy.
+Structurally, I'm really impressed by Age of Wonders III, and in a way it's the follow-up I've always wanted to [Heroes of Might and Magic III](game:Heroes of Might and Magic III: The Restoration of Erathia) (a childhood favorite).  I think it could be a real treat for someone who's super-into turn-based combat strategy.
 
 But my preferred playstyle doesn't seem compatible with the campaign, and I don't find the tactical combat interesting enough to keep working at it.
 

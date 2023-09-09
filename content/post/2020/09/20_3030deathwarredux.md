@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-There are {{% game "Exapunks" %}}specific tastes{{% /game %}}, there are {{% game "The Saboteur" %}}guilty pleasures{{% /game %}}, and then there are games like {{% game "3030 Deathwar Redux" %}}3030 Deathwar Redux{{% /game %}} that - despite tapping into some of my most primal video game interests - I just can't recommend.
+There are [specific tastes](game:Exapunks), there are [guilty pleasures](game:The Saboteur), and then there are games like <game:3030 Deathwar Redux> that - despite tapping into some of my most primal video game interests - I just can't recommend.
 
 3030 Deathwar Redux is a top-down space-trading simulator, where you pick up missions at a spaceport, buy and sell space cargo, hunt space pirate bounties, buy ship upgrades, buy a bigger ship... <i>et cetera</i>.  It's a familiar formula but a difficult one to get right.  And while some of Deathwar's gameplay loops are total write-offs (asteroid mining is pointless, as is the barely-playable salvaging mechanic), enough of it <i>does</i> work to make space-truckin' around this galaxy feel pretty great.
 
@@ -31,8 +31,8 @@ I'm not even going to get into the game's control and UI bugs, except to note th
 
 3030 Deathwar Redux starts strong, with a promising variety of activities and some fresh new ideas for the genre; props to the early game for giving me a good dose of space-trading action.  But by the time the credits rolled, all I could see in Deathwar was disappointment.
 
-<b>Better than</b>: {{% game "Space Run: Fast and Safe Delivery" %}}Space Run{{% /game %}}  
-<b>Not as good as</b>: {{% game "Rebel Galaxy" %}}Rebel Galaxy{{% /game %}}  
-<b>And...</b>: I don't know that they're even playable, anymore, but <i>also</i> not as good as {{% game "Escape Velocity" %}}Escape Velocity{{% /game %}} or {{% game "Escape Velocity Nova" %}}Escape Velocity Nova{{% /game %}}
+<b>Better than</b>: [Space Run](game:Space Run: Fast and Safe Delivery)  
+<b>Not as good as</b>: <game:Rebel Galaxy>  
+<b>And...</b>: I don't know that they're even playable, anymore, but <i>also</i> not as good as <game:Escape Velocity> or <game:Escape Velocity Nova>
 
 <i>Progress: Finished the story in a heavily-upgraded Lochu.</i>

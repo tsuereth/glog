@@ -9,13 +9,13 @@ title = "How Droll"
 
 +++
 
-{{% game "Regency Solitaire" %}}Regency Solitaire{{% /game %}} isn't what I expected, in a few different ways.
+<game:Regency Solitaire> isn't what I expected, in a few different ways.
 
 For one thing, it isn't quite the solitaire ruleset that I'm familiar with (which is <a href="https://en.wikipedia.org/wiki/Klondike_(solitaire)">Klondike</a>, I guess).  Rather than playing cards from piles or from the deck onto multiple "foundations," cards from the piles are played onto the deck; effectively replacing four persistent foundations with one, volatile one.  This simplification makes the game easy to jump into, but also reduces the number of possible plays at any given time, making it pretty easy to get stuck.
 
 (Of note is that you cannot recycle the deck; once you've run through it, the round is over.)
 
-Also, <b>you play as a noble daughter attempting to court with a rich lord</b>.  Not only is this Jane Eyre-esque plot ... bizarre, for a video game, it has <i>nothing to do with</i> the game itself.  The protagonist isn't some ace card player on a quest to prove herself a solitaire champion; the game sessions and storytelling simply take detached turns, one after the other.  Imagine if {{% game "God of War" %}}Kratos{{% /game %}} played checkers inbetween cutscenes of Greek gods being disemboweled.
+Also, <b>you play as a noble daughter attempting to court with a rich lord</b>.  Not only is this Jane Eyre-esque plot ... bizarre, for a video game, it has <i>nothing to do with</i> the game itself.  The protagonist isn't some ace card player on a quest to prove herself a solitaire champion; the game sessions and storytelling simply take detached turns, one after the other.  Imagine if [Kratos](game:God of War) played checkers inbetween cutscenes of Greek gods being disemboweled.
 
 Regency Solitaire also has <i>power-ups</i>, unlocked by upgrades that you purchase with gold from clearing piles of cards.  These power-ups reveal hidden cards on the board, clear arbitrary cards, allow you to play wildcards... Oh, and there are also lock cards, and key cards, and some special lock cards that unlock when you play a certain number of face cards.  Yeah, there's plenty of wacky shit in here.
 

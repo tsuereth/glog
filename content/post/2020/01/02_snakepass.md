@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-There are games that have bad controls, and then there are games that <i>are about</i> hard controls, like {{% game "QWOP" %}}QWOP{{% /game %}} or ... {{% game "Drunken Fist" %}}Drunken Fist{{% /game %}}.
+There are games that have bad controls, and then there are games that <i>are about</i> hard controls, like <game:QWOP> or ... <game:Drunken Fist>.
 
-{{% game "Snake Pass" %}}Snake Pass{{% /game %}} is the latter; actually, quite a bit friendlier than its peers, as it eases you into the game's slithering and climbing mechanics with a cute cartoony snake, bright colorful collectibles, and a friendly hummingbird who ... narrates.
+<game:Snake Pass> is the latter; actually, quite a bit friendlier than its peers, as it eases you into the game's slithering and climbing mechanics with a cute cartoony snake, bright colorful collectibles, and a friendly hummingbird who ... narrates.
 
 But make no mistake: this <b>is</b> a game about overcoming awkward controls.  I had some fun learning how to move and maneuver the snake, but at a certain point that learning turned into foolishly throwing my body at obstacles over and over.
 

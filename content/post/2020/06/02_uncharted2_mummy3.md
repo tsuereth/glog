@@ -5,7 +5,7 @@ category = ["Video Game Theory"]
 game = ["Uncharted 2: Among Thieves"]
 +++
 
-I recently watched <a href="https://www.imdb.com/title/tt0859163/">The Mummy: Tomb of the Dragon Emperor</a> (December, 2008) and was shocked at some of the visual similarities to {{% game "Uncharted 2: Among Thieves" %}}Uncharted 2{{% /game %}} (October, 2009).
+I recently watched <a href="https://www.imdb.com/title/tt0859163/">The Mummy: Tomb of the Dragon Emperor</a> (December, 2008) and was shocked at some of the visual similarities to [Uncharted 2](game:Uncharted 2: Among Thieves) (October, 2009).
 
 For the record, <i>Mummy: Jet Li</i> was <a href="https://www.rottentomatoes.com/m/mummy_tomb_of_the_dragon_emperor">pretty awful</a>.
 
@@ -35,6 +35,6 @@ For the record, <i>Mummy: Jet Li</i> was <a href="https://www.rottentomatoes.com
 
 Although its commercial failure suggests that not many people actually saw <i>The Mummy: Tomb of the Dragon Emperor</i>, I'm <a href="https://gamefaqs.gamespot.com/boards/955125-uncharted-2-among-thieves/57530897">not the only one</a> to note some resemblance between these two productions.  Did Naughty Dog draw inspiration from Mummy 3 for some of its late-game environment art?
 
-... or did both productions use some common reference material?  Yeah, that seems more likely, especially since by 2008 much of Uncharted 2's art should already have been done.  In fact, some <a href="https://psychphan.wordpress.com/tag/uncharted-2-among-thieves/">internet sleuthing</a> shows that some of these common elements may have prior art from <i>1997</i>, in {{% game "Tomb Raider II" %}}Tomb Raider II{{% /game %}}.
+... or did both productions use some common reference material?  Yeah, that seems more likely, especially since by 2008 much of Uncharted 2's art should already have been done.  In fact, some <a href="https://psychphan.wordpress.com/tag/uncharted-2-among-thieves/">internet sleuthing</a> shows that some of these common elements may have prior art from <i>1997</i>, in <game:Tomb Raider II>.
 
 So I guess the moral here is that <a href="https://www.goodreads.com/quotes/131591-nothing-is-original-steal-from-anywhere-that-resonates-with-inspiration">nothing is original</a> (including the very realization that <a href="https://www.businessinsider.com/nothing-we-do-is-original-anymore-so-find-things-worth-imitating-2012-8">nothing is original</a>).

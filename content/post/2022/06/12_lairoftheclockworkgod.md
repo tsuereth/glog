@@ -6,7 +6,7 @@ game = ["Lair of the Clockwork God"]
 platform = ["PC"]
 +++
 
-I <i>loved</i> the comedy writing in both {{% game "Ben There, Dan That!" %}}Ben There, Dan That!{{% /game %}} and {{% game "Time Gentlemen, Please!" %}}Time Gentlemen, Please!{{% /game %}}, but the latter's <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/MoonLogicPuzzle">adventure game logic</a> more than wore out its welcome.  So I was excited about {{% game "Lair of the Clockwork God" %}}Lair of the Clockwork God{{% /game %}} <i>because</i> of its new gameplay formula, foregoing points and clicks in favor of runs and jumps.
+I <i>loved</i> the comedy writing in both <game:Ben There, Dan That!> and <game:Time Gentlemen, Please!>, but the latter's <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/MoonLogicPuzzle">adventure game logic</a> more than wore out its welcome.  So I was excited about <game:Lair of the Clockwork God> <i>because</i> of its new gameplay formula, foregoing points and clicks in favor of runs and jumps.
 
 Except... it doesn't.  In truth, Clockwork God is <b>still an adventure game</b> with counterintuitive puzzles and laborious traversal -- it just <i>also</i> has pressure-plates and block-pushing as part of those puzzles.  (And <a href="https://steamcommunity.com/app/1060600/discussions/0/3111395113763947812/">physics bugs</a>, naturally.)
 

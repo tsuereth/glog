@@ -9,7 +9,7 @@ title = "Paid Fanfiction"
 
 +++
 
-{{% game "Phoenix Wright: Ace Attorney - Spirit of Justice: Phoenix Wright - Asinine Attorney" %}}Phoenix Wright: Asinine Attorney{{% /game %}} is <i>not</i> the real "Special Episode" DLC for {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice" %}}Spirit of Justice{{% /game %}}.  But it <i>does</i> cost $3.99 (and is bundled with a 3DS home menu theme).
+[Phoenix Wright: Asinine Attorney](game:Phoenix Wright: Ace Attorney - Spirit of Justice: Phoenix Wright - Asinine Attorney) is <i>not</i> the real "Special Episode" DLC for [Spirit of Justice](game:Phoenix Wright: Ace Attorney - Spirit of Justice).  But it <i>does</i> cost $3.99 (and is bundled with a 3DS home menu theme).
 
 It's terribly stupid.  It's of a subpar quality even by fan-fiction standards.  It's short -- 30 minutes, tops.  It isn't even funny.
 

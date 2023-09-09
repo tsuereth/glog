@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-I'm less persistent than I was {{% abslink href="2013/06/20/stealth-maybe-bastard-definitely/" %}}back in 2013{{% /abslink %}} -- that's one reason why I'm not sticking with {{% game "Stealth Inc 2: A Game of Clones" %}}Stealth <s>Bastard</s> Inc 2{{% /game %}}.  I've got less patience for <i>SURPRISE DEATHTRAP!</i> than I once did.
+I'm less persistent than I was {{% abslink href="2013/06/20/stealth-maybe-bastard-definitely/" %}}back in 2013{{% /abslink %}} -- that's one reason why I'm not sticking with [Stealth <s>Bastard</s> Inc 2](game:Stealth Inc 2: A Game of Clones).  I've got less patience for <i>SURPRISE DEATHTRAP!</i> than I once did.
 
-But regardless, I'm ... not sure if this sequel's improvements really "improve" upon {{% game "Stealth Bastard Deluxe" %}}Stealth Bastard Deluxe{{% /game %}}.
+But regardless, I'm ... not sure if this sequel's improvements really "improve" upon <game:Stealth Bastard Deluxe>.
 
 * Its 2.5-d presentation makes it difficult to visually parse background flavor vs. foreground obstacles.
 * Its additional complexities - clones moving on their own, gadgets adding tactical twists - mesh poorly with time-sensitive <i>SURPRISE DEATHTRAPS</i>.

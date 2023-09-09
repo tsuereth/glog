@@ -9,7 +9,7 @@ title = "Take a hike, Hoebear"
 
 +++
 
-Flying solo, {{% game "Kalimba" %}}Kalimba{{% /game %}} feels totally different.  I think that's for two reasons, one being the single-player campaign's "unique" mechanics -- like color-swapping, ice platforms, and anti-gravity.  I'm fake-quoting "unique" because, since I didn't make it very far in the co-op campaign, it's possible that these features would have popped up eventually.
+Flying solo, <game:Kalimba> feels totally different.  I think that's for two reasons, one being the single-player campaign's "unique" mechanics -- like color-swapping, ice platforms, and anti-gravity.  I'm fake-quoting "unique" because, since I didn't make it very far in the co-op campaign, it's possible that these features would have popped up eventually.
 
 But the other reason is that, like I complained about {{% abslink href="2017/07/10/eerily-reminiscent-of-tingles-catchphrase/" %}}last time{{% /abslink %}}, co-op's <i>fundamental</i> four-totem stacking mechanic is simply broken.  The timing and positioning requirements are just too precise.
 

@@ -9,7 +9,7 @@ title = "No match for Inspector Spacetime"
 
 +++
 
-{{% game "Detective Grimoire: Secret of the Swamp" %}}Detective Grimoire{{% /game %}} has:
+[Detective Grimoire](game:Detective Grimoire: Secret of the Swamp) has:
 
 * Smart, engaging, and humorous writing;
 * Talented rapid-fire voice-acting;
@@ -27,6 +27,6 @@ But it also:
 
 Grimoire has some narrative chops, for sure.  But it just isn't <i>implemented</i> as well as, say, an Ace Attorney.
 
-<b>Better than</b>: {{% game "Puzzle Agent" %}}Puzzle Agent{{% /game %}}  
-<b>Not as good as</b>: {{% game "Phoenix Wright: Ace Attorney" %}}Phoenix Wright: Ace Attorney{{% /game %}}  
+<b>Better than</b>: <game:Puzzle Agent>  
+<b>Not as good as</b>: <game:Phoenix Wright: Ace Attorney>  
 <b>The ending was also a little</b>: ... bizarre.

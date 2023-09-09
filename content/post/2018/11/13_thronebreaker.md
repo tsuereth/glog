@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Thronebreaker: The Witcher Tales" %}}Thronebreaker{{% /game %}} ends up feeling like a pretty impressive card-based adventure game, but a missed opportunity to teach advanced Gwent mechanics; and a well-told story on its own, but a failure to live up to {{% game "The Witcher 3: Wild Hunt" %}}The Witcher{{% /game %}}'s narrative pedigree.
+[Thronebreaker](game:Thronebreaker: The Witcher Tales) ends up feeling like a pretty impressive card-based adventure game, but a missed opportunity to teach advanced Gwent mechanics; and a well-told story on its own, but a failure to live up to [The Witcher](game:The Witcher 3: Wild Hunt)'s narrative pedigree.
 
 Queen Meve's story is an interesting tale of betrayal and conquest, but -- that's just it: the story isn't really about Queen Meve.  It's about the betrayal, and the conquest.  Thronebreaker's tale has a satisfying plot arc, crossing diverse environs and factions, and introducing the Lyrians to some exotic characters.  But all of those characters have one-note personalities.  Only Meve herself, and her attach&eacute;s Reynard and Gascon, ever show more than one dimension of themselves; and even them, only barely.
 
@@ -25,7 +25,7 @@ The presentation of Thronebreaker's story is pretty consistently great, except f
 
 But the game's <i>story</i> is only half of the game's "story."  When it isn't a text adventure with light resource management, Thronebreaker is Gwent, the card game!  And like {{% abslink href="2018/11/03/not-your-granddads-gwent/" %}}I wrote before{{% /abslink %}}, that game is further subdivided into "regular" matches, and puzzles.
 
-Contrary to my earlier assumption, the puzzles aren't generally about trying to teach you "how to Gwent."  Some of them are brain-teasing, often <i>hard</i> challenges that ask you to exploit the intricacies of card rules against one another.  And some of them use custom rules to be clever and inventive, like a {{% game "Hearthstone" %}}Hearthstone{{% /game %}} parody, or a card-based stealth maze (avoid patrolling guard cards!).  They all feel pretty novel, and I was consistently impressed with the puzzles' creativity.
+Contrary to my earlier assumption, the puzzles aren't generally about trying to teach you "how to Gwent."  Some of them are brain-teasing, often <i>hard</i> challenges that ask you to exploit the intricacies of card rules against one another.  And some of them use custom rules to be clever and inventive, like a <game:Hearthstone> parody, or a card-based stealth maze (avoid patrolling guard cards!).  They all feel pretty novel, and I was consistently impressed with the puzzles' creativity.
 
 Then there's the regular game of Gwent: a game of deck-building and card-playing.  Compared with the Gwent mechanics in Witcher 3, this version has a lot more card effects and possibilities for interaction; there's a lot of potential ground to cover, in terms of strategies and counter-strategies.
 
@@ -41,8 +41,8 @@ At the end of the day, Thronebreaker is an exciting adventure with substantial c
 
 But I don't regret the 40-some hours I spent with Queen Meve.  Despite its shortcomings, Thronebreaker was still a fun journey.
 
-<b>Better than</b>: {{% game "Card City Nights" %}}Card City Nights{{% /game %}}  
-<b>Not as good as</b>: {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
+<b>Better than</b>: <game:Card City Nights>  
+<b>Not as good as</b>: <game:The Witcher 3: Wild Hunt>  
 <b>I might've kept trying to murder my way out of the final boss</b>: if not for an <a href="https://www.reddit.com/r/gwent/comments/9r4kmz/thronebreaker_strays_of_spalla_card_bug/">unexpected bug</a> that made my killer strategy unworkable.
 
 <i>Progress: Finished on Normal.</i>

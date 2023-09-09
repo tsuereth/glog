@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-Even in its time, the first {{% game "Mass Effect" %}}Mass Effect{{% /game %}} was a mixed bag.  The {{% game "Mass Effect Legendary Edition" %}}Legendary Edition{{% /game %}} remaster shows that its good qualities still hold up; despite its bad qualities, which the remaster has ... also preserved.
+Even in its time, the first <game:Mass Effect> was a mixed bag.  The [Legendary Edition](game:Mass Effect Legendary Edition) remaster shows that its good qualities still hold up; despite its bad qualities, which the remaster has ... also preserved.
 
 Maybe it shouldn't be a surprise that the Legendary Edition still has lackluster side-missions, an empty-feeling galaxy, narrow characterization choices, and confounding inventory management.  (The item limit is higher, now, but cleaning items out remains a chore.)
 
@@ -19,10 +19,10 @@ But the sometimes-tedious gunplay, the often-awkward dialog, and the usually-dul
 
 The "world" is the real star of this show, and the Legendary Edition's updated graphics show it off splendidly.
 
-... I mean, given how much-improved I remember {{% game "Mass Effect 2" %}}the next game{{% /game %}} being, I might still consider this entry little more than a prologue.  But it's a fine prologue, just like it was before.
+... I mean, given how much-improved I remember [the next game](game:Mass Effect 2) being, I might still consider this entry little more than a prologue.  But it's a fine prologue, just like it was before.
 
-<b>Better than</b>: {{% game "3030 Deathwar Redux" %}}3030 Deathwar Redux{{% /game %}}, {{% game "Uncharted: Drake's Fortune" %}}Uncharted: Drake's Fortune{{% /game %}}  
-<b>Not as good as</b>: {{% game "Horizon Zero Dawn" %}}Horizon Zero Dawn{{% /game %}}, {{% game "Uncharted 2: Among Thieves" %}}Uncharted 2: Among Thieves{{% /game %}}  
-<b>As for the DLC</b>: well... {{% game "Mass Effect: Bring Down the Sky" %}}I'll be brief{{% /game %}}.
+<b>Better than</b>: <game:3030 Deathwar Redux>, <game:Uncharted: Drake's Fortune>  
+<b>Not as good as</b>: <game:Horizon Zero Dawn>, <game:Uncharted 2: Among Thieves>  
+<b>As for the DLC</b>: well... [I'll be brief](game:Mass Effect: Bring Down the Sky).
 
 <i>Progress: Finished on Normal.</i>

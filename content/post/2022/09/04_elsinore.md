@@ -9,7 +9,7 @@ rating = ["Good"]
 
 So... this time, it's <i><a href="https://www.imdb.com/title/tt0107048/">Groundhog Day</a></i> with Shakespeare.
 
-{{% game "Elsinore" %}}Elsinore{{% /game %}} is, from the jump, a contemporary re-telling of <a href="https://en.wikipedia.org/wiki/Hamlet">Hamlet</a>.  You've got your throne-stealing fratricide, your dead king haunting up the place, your angsty teenage prince hanging out in graveyards, all the classic plot points; but Elsinore's dialog is written more like what human beings in the 21st century might say to each other.
+<game:Elsinore> is, from the jump, a contemporary re-telling of <a href="https://en.wikipedia.org/wiki/Hamlet">Hamlet</a>.  You've got your throne-stealing fratricide, your dead king haunting up the place, your angsty teenage prince hanging out in graveyards, all the classic plot points; but Elsinore's dialog is written more like what human beings in the 21st century might say to each other.
 
 There are a few casting adjustments, including gender-swapped Rosencrantz and Guildenstern (now, cheekily, "Rosie" and "Guilda") and multi-racial Ophelia and Laertes.  These aren't just superficial tweaks: female characters lament their lack of freedom and influence in the world, and Laertes' personality is shaped by the alienation and discrimination he's faced in super-duper-white Denmark.
 
@@ -17,7 +17,7 @@ There are a few casting adjustments, including gender-swapped Rosencrantz and Gu
 
 But Elsinore isn't <i>just</i> a punched-up and self-sufficient take on classic Shakespeare -- it's also a time-looping murder mystery game.  You, as Ophelia, must prevent your own untimely death!
 
-The majority of Elsinore's gameplay is information gathering, talking to and observing characters to learn their scandalous secrets.  An in-game timeline (like the Bombers' Notebook in {{% game "The Legend of Zelda: Majora's Mask 3D" %}}Majora's Mask{{% /game %}}), and a map tracking the cast's movements, guide you toward the story's many parallel and intertwining threads; being in the right place at the right time, to eavesdrop on the right person, will unlock some new information that you can reveal to someone <i>else</i> leading to <i>more</i> revelations and so on.
+The majority of Elsinore's gameplay is information gathering, talking to and observing characters to learn their scandalous secrets.  An in-game timeline (like the Bombers' Notebook in [Majora's Mask](game:The Legend of Zelda: Majora's Mask 3D)), and a map tracking the cast's movements, guide you toward the story's many parallel and intertwining threads; being in the right place at the right time, to eavesdrop on the right person, will unlock some new information that you can reveal to someone <i>else</i> leading to <i>more</i> revelations and so on.
 
 And as you gradually uncover the truths behind King Hamlet's death, and Claudius's plans, and the Norwegian spy, and the castle guards' late-night tomfoolery, you can use this information to <i>change</i> the story.  Tell someone a secret - or even a lie - that will influence them to do something different, and that could alter the chain of events throughout Elsinore.
 
@@ -31,8 +31,8 @@ But ultimately those are pretty minor defects in Elsinore's expertly-written sto
 
 Not what I was expecting from a game based on Shakespeare.
 
-<b>Better than</b>: {{% game "Eliza (2019)" %}}Eliza (2019){{% /game %}}, {{% game "Omensight: Definitive Edition" %}}Omensight: Definitive Edition{{% /game %}}, {{% game "The Sexy Brutale" %}}The Sexy Brutale{{% /game %}}  
-<b>Not as good as</b>: {{% game "The Great Ace Attorney: Adventures" %}}The Great Ace Attorney: Adventures{{% /game %}}, {{% game "The Great Ace Attorney 2: Resolve" %}}The Great Ace Attorney 2: Resolve{{% /game %}}  
-<b>A much slower burn, but about as good as</b>: {{% game "Outer Wilds" %}}Outer Wilds{{% /game %}}
+<b>Better than</b>: <game:Eliza (2019)>, <game:Omensight: Definitive Edition>, <game:The Sexy Brutale>  
+<b>Not as good as</b>: <game:The Great Ace Attorney: Adventures>, <game:The Great Ace Attorney 2: Resolve>  
+<b>A much slower burn, but about as good as</b>: <game:Outer Wilds>
 
 <i>Progress: saw all the endings, with some internet tips.</i>

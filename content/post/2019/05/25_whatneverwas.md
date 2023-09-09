@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-Not many 20-minute-long games impress me, but {{% game "What Never Was" %}}What Never Was{{% /game %}} did.
+Not many 20-minute-long games impress me, but <game:What Never Was> did.
 
 It takes place in a single room, and there are only three puzzles.  But!  It strikes an excellent balance between environmental storytelling and gameplay pacing.
 
@@ -17,6 +17,6 @@ The puzzles felt organically integrated into the story's easy-to-understand prem
 
 This little freely-downloadable passion project shows incredible potential for a full-fledged puzzle adventure game.
 
-<b>Better than</b>: {{% game "The Room (2012)" %}}The Room{{% /game %}} (the puzzle game, not the <i>cinematic masterpiece</i>)  
-<b>Not as good as</b>: {{% game "Mandagon" %}}Mandagon{{% /game %}}  
-<b>Less content than, but arguably on quality par with</b>: {{% game "Gone Home" %}}Gone Home{{% /game %}}
+<b>Better than</b>: [The Room](game:The Room (2012)) (the puzzle game, not the <i>cinematic masterpiece</i>)  
+<b>Not as good as</b>: <game:Mandagon>  
+<b>Less content than, but arguably on quality par with</b>: <game:Gone Home>

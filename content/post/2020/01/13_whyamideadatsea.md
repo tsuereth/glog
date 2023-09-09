@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-I'm not <i>positive</i> that {{% game "Why Am I Dead At Sea" %}}Why Am I Dead At Sea{{% /game %}} is an RPG Maker game - it's got some UI bits that I don't exactly recognize - but it certainly has the half-baked implementation quirks that I've come to associate with the engine.
+I'm not <i>positive</i> that <game:Why Am I Dead At Sea> is an RPG Maker game - it's got some UI bits that I don't exactly recognize - but it certainly has the half-baked implementation quirks that I've come to associate with the engine.
 
-First, the good news: this game tells a compellingly <b>dark</b> mystery story.  What initially appears to be a possession-puzzle game like {{% game "Geist" %}}Geist{{% /game %}} or {{% game "Ghost Trick: Phantom Detective" %}}Ghost Trick{{% /game %}} turns out to, in fact, be a dialog-based text-adventure thriller.  Its characters are satisfyingly deep, and the interactions that you force them into weave a genuinely interesting and memorable tale.
+First, the good news: this game tells a compellingly <b>dark</b> mystery story.  What initially appears to be a possession-puzzle game like <game:Geist> or [Ghost Trick](game:Ghost Trick: Phantom Detective) turns out to, in fact, be a dialog-based text-adventure thriller.  Its characters are satisfyingly deep, and the interactions that you force them into weave a genuinely interesting and memorable tale.
 
 Unfortunately the tools employed to tell that story are clunky at their best, and sometimes are outright broken.
 
@@ -25,6 +25,6 @@ Some of the plot's hints are so obtuse, and the work involved in its dialog gets
 
 The story is great, and I'm glad that I saw the game through to experience it.  But my recommendation to others will be to find a well-edited gameplay video instead -- one that doesn't waste its time on all the pointless re-clicking and re-reading that the game essentially forces upon you.
 
-<b>Better than</b>: {{% game "Murdered: Soul Suspect" %}}Murdered: Soul Suspect{{% /game %}}, {{% game "Red Spider: Vengeance" %}}Red Spider: Vengeance{{% /game %}}  
-<b>Not as good as</b>: {{% game "Last Word" %}}Last Word{{% /game %}}  
-<b>Also not as good as</b>: {{% game "To the Moon" %}}To the Moon{{% /game %}}, if only because those dialog trees - the whole point of the game - are such a pain.
+<b>Better than</b>: <game:Murdered: Soul Suspect>, <game:Red Spider: Vengeance>  
+<b>Not as good as</b>: <game:Last Word>  
+<b>Also not as good as</b>: <game:To the Moon>, if only because those dialog trees - the whole point of the game - are such a pain.

@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Headlander" %}}Headlander{{% /game %}} is an imperfect game with some strong core mechanics and a fun gameplay loop -- which is about as much praise as I've given any game in the last 2-3 months.
+<game:Headlander> is an imperfect game with some strong core mechanics and a fun gameplay loop -- which is about as much praise as I've given any game in the last 2-3 months.
 
 It's an action-adventure game with an interconnected world map, <i>i.e. a Metroidvania</i>, although it isn't an excellent example of the genre; the campaign's critical path rarely involves revisiting a previous area.  But it nails the sense of exploration that comes from filling-in a map grid, and the undirected freedom of scouring that grid for overlooked doors and missing upgrades.
 
@@ -21,8 +21,8 @@ Headlander's overall <i>style</i>, its tubular soundtrack and retro-futuristic v
 
 You're a floating head who possesses robots with laser guns, and everything else is pretty much <i>gravy</i> on top of that.
 
-<b>Better than</b>: {{% game "Momodora: Reverie Under the Moonlight" %}}Momodora: Reverie Under the Moonlight{{% /game %}}, {{% game "Stacking" %}}Stacking{{% /game %}}  
-<b>Not as good as</b>: {{% game "Indivisible" %}}Indivisible{{% /game %}}  
-<b>Roughly on par with</b>: {{% game "Timespinner" %}}Timespinner{{% /game %}}, plus-or-minus that game's seriousness vs. this game's lack thereof.
+<b>Better than</b>: <game:Momodora: Reverie Under the Moonlight>, <game:Stacking>  
+<b>Not as good as</b>: <game:Indivisible>  
+<b>Roughly on par with</b>: <game:Timespinner>, plus-or-minus that game's seriousness vs. this game's lack thereof.
 
 <i>Progress: 100% map and upgrade completion.</i>

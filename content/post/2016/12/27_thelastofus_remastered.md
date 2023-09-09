@@ -9,9 +9,9 @@ title = "So much for the human race"
 
 +++
 
-I could tell, in my relatively short time with {{% game "The Last of Us Remastered" %}}The Last of Us Remastered{{% /game %}}, that it isn't a "bad" game; but it is bad for me.  Or, I'm bad for it.  Maybe both.
+I could tell, in my relatively short time with <game:The Last of Us Remastered>, that it isn't a "bad" game; but it is bad for me.  Or, I'm bad for it.  Maybe both.
 
-Naughty Dog has become quite good at writing sympathetic characters and engrossing stories; and the world of TLoU did a great job of pulling me in, at first.  But the same controls and encounter designs that I hated in {{% game "Uncharted: Drake's Fortune" %}}Uncharted{{% /game %}} are present here, and in a <i>big</i> way.
+Naughty Dog has become quite good at writing sympathetic characters and engrossing stories; and the world of TLoU did a great job of pulling me in, at first.  But the same controls and encounter designs that I hated in [Uncharted](game:Uncharted: Drake's Fortune) are present here, and in a <i>big</i> way.
 
 I'm not very good at sneaking, and I'm not very good at shooting.  The Uncharted games - at least, after the first one - got me through these sequences on the strength of their Hollywood-style set pieces.  I wanted to see what came next; I wanted it hard enough to continue trying to kill the ridiculous bullet-sponge mercenary in front of me.
 

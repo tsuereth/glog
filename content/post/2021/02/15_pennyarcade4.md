@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Penny Arcade's On the Rain-Slick Precipice of Darkness 4" %}}Penny Arcade's On the Rain-Slick Precipice of Darkness 4{{% /game %}} takes some admirable risks in re-mixing the formula from {{% game "Penny Arcade's On the Rain-Slick Precipice of Darkness 3" %}}part 3{{% /game %}} -- with uneven, but undeniably <i>interesting</i>, results.
+<game:Penny Arcade's On the Rain-Slick Precipice of Darkness 4> takes some admirable risks in re-mixing the formula from [part 3](game:Penny Arcade's On the Rain-Slick Precipice of Darkness 3) -- with uneven, but undeniably <i>interesting</i>, results.
 
-The most immediately-apparent change is that <i>we're {{% tag "Pokémon" %}}Pokémon{{% /tag %}}, now</i>.  Part 4 replaces its predecessors' class-customization system with "monstorb" monsters, such that your party is made up of little dudes like "Brodent" or "Philosofly" who each have their own advantages and skills (as well as abilities imparted by their assigned Trainer).
+The most immediately-apparent change is that <i>we're <tag:Pokémon>, now</i>.  Part 4 replaces its predecessors' class-customization system with "monstorb" monsters, such that your party is made up of little dudes like "Brodent" or "Philosofly" who each have their own advantages and skills (as well as abilities imparted by their assigned Trainer).
 
 There are more than a dozen of these monsters in Rain-Slick 4, so the total spread of unique abilities is rather large; and while it's great to see comic references like <a href="https://www.penny-arcade.com/comic/2004/03/24/the-adventures-of-twisp-and-catsby">Twisp and Catsby</a> in this format, many of the monsters feel significantly less creative.
 
@@ -35,8 +35,8 @@ There are still fun bits of text, mind you, but fewer than last time.  It seems 
 
 So, even though I'd call Rain-Slick 4's design changes a <i>net gameplay win</i> - despite missteps in character progression and game-world pacing - at the end of the day, its most critical failure is reducing the amount of written dialog.  Kudos for iterating on the "game" part of this game, but it just didn't play enough to Penny Arcade's writing strength.
 
-<b>Better than</b>: {{% game "Cosmic Star Heroine" %}}Cosmic Star Heroine{{% /game %}}  
-<b>Not as good as</b>: {{% game "Penny Arcade's On the Rain-Slick Precipice of Darkness 3" %}}Penny Arcade's On the Rain-Slick Precipice of Darkness 3{{% /game %}}  
+<b>Better than</b>: <game:Cosmic Star Heroine>  
+<b>Not as good as</b>: <game:Penny Arcade's On the Rain-Slick Precipice of Darkness 3>  
 <b>But at least there's still</b>: you know, <a href="https://penny-arcade.com">the comic</a>.
 
 <i>Progress: Finished on Normal.</i>

@@ -6,7 +6,7 @@ game = ["Red Spider 2: Exiled"]
 platform = ["PC"]
 +++
 
-Back in 2018 I said that I was "really not interested in replaying" {{% game "Red Spider: Vengeance" %}}Red Spider: Vengeance{{% /game %}}, and that leaves me in an awkward, confusing spot with its prequel {{% game "Red Spider 2: Exiled" %}}Red Spider 2: Exiled{{% /game %}}.  Because the opening minutes of this game are filled with character names and relationship references that I don't remember anymore.
+Back in 2018 I said that I was "really not interested in replaying" <game:Red Spider: Vengeance>, and that leaves me in an awkward, confusing spot with its prequel <game:Red Spider 2: Exiled>.  Because the opening minutes of this game are filled with character names and relationship references that I don't remember anymore.
 
 Like, I remember that "Fatso" was a person in the first game.  Was he a good person or a bad person?  Was Lau supposed to be a crime lord, or big-wig in the police ... or a dirty cop?
 

@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "CrossCode" %}}CrossCode{{% /game %}} gets a lot "right," and achieves a lot in terms of mechanical and world design.  But I <i>hated</i> playing it, just as much as I enjoyed it.
+<game:CrossCode> gets a lot "right," and achieves a lot in terms of mechanical and world design.  But I <i>hated</i> playing it, just as much as I enjoyed it.
 
 The game's prologue and opening chapter tease a cyberpunk thriller story, in the vein of <i>Ready Player One</i> or <i>Snow Crash</i>'s "metaverse."  You control an avatar in a game called CrossWorlds, similar to a present-day MMORPG, but -- this game isn't merely virtual.  Set in a distant future with terraformed planets, instantaneous data transmission, and a lightweight but versatile "instant matter" which can be printed and reconfigured remotely: CrossWorlds is a <i>physical place</i>, populated with what are essentially 3D-printed players, NPCs, enemies, wildlife, houses...
 
@@ -19,7 +19,7 @@ That "blending in" - joining a party with a random acquaintance, becoming part o
 
 Lacking development in that real-world thriller story, you're stuck playing the <i>game within</i> the game.  Complete with other "players" who you'll often overhear conversing about their daily lives, or complaining about how long it's taking the CrossWorlds dev team to release an expansion pack.
 
-To put it another way, imagine if {{% game "Secret of Mana" %}}Secret of Mana{{% /game %}} had a bunch of background characters who, at the end of every dungeon, threw out flavor text about <i>their</i> experience with the same boss fight you'd just finished.  As an accurate simulation of real-world MMO experience, it deflates and devalues any narrative strength you might be tempted to attach to the meta-game world of CrossWorlds.
+To put it another way, imagine if <game:Secret of Mana> had a bunch of background characters who, at the end of every dungeon, threw out flavor text about <i>their</i> experience with the same boss fight you'd just finished.  As an accurate simulation of real-world MMO experience, it deflates and devalues any narrative strength you might be tempted to attach to the meta-game world of CrossWorlds.
 
 And that would be fine, if the "real" game of CrossCode would continue developing its cyberpunk thriller narrative.  <b>But it doesn't.</b>  This story goes totally dark for the first <i>half</i> of its running length.
 
@@ -41,7 +41,7 @@ Now, to be clear: I wasn't forced to fight these enemies.  A really smart facet 
 
 When you don't maintain pace with the game's suggested character level and equipment level, you're simply unable to keep up with scripted encounters.  And that pace often feels like a real grind.
 
-Another big mechanic in CrossCode is puzzle-solving.  Your avatar can push blocks and hit switches - so, {{% tag "The Legend of Zelda" %}}Zelda{{% /tag %}}-style puzzles - and your ranged attack can also reflect against some surfaces, supporting <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/LightAndMirrorsPuzzle">light and mirror</a> puzzle mechanics.
+Another big mechanic in CrossCode is puzzle-solving.  Your avatar can push blocks and hit switches - so, [Zelda](tag:The Legend of Zelda)-style puzzles - and your ranged attack can also reflect against some surfaces, supporting <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/LightAndMirrorsPuzzle">light and mirror</a> puzzle mechanics.
 
 When these combine, i.e. push the blocks to the right positions for reflecting a shot to an ultimate destination, and <i>then</i> you throw in elemental specializations - like the ice shot freezing water into a reflective surface, or the lightning shot triggering a magnet that attracts a block! - CrossCode's puzzles get really satisfyingly complex.  I legit enjoyed figuring a bunch of these out.
 
@@ -59,7 +59,7 @@ But in the back half, I found a new problem with CrossCode.
 
 CrossCode's combat was always tactically demanding, even in the early game; but around the end of Chapter 8, that demand became intensely disrespectful of my time.  I'm talking about encounters - both bosses and otherwise - with multiple phases over several minutes, that you have to restart from scratch if you die at the end.  Encounters where a <i>single</i> slip-up may mean death, and the game will ask you to flawlessly repeat the last five minutes all over again.
 
-For people who really like character-action games, this might not be a problem; like a {{% game "Devil May Cry" %}}DMC{{% /game %}} or {{% game "Bayonetta" %}}Bayonetta{{% /game %}}, CrossCode continues to challenge you to perfect your techniques, all the way to the end.  These techniques include not only finely honing your attack, evade, and block timings, but also exploiting "buffs" from consumable items, and gathering rare materials for equipment crafting (to surpass the gear you can buy).
+For people who really like character-action games, this might not be a problem; like a [DMC](game:Devil May Cry) or <game:Bayonetta>, CrossCode continues to challenge you to perfect your techniques, all the way to the end.  These techniques include not only finely honing your attack, evade, and block timings, but also exploiting "buffs" from consumable items, and gathering rare materials for equipment crafting (to surpass the gear you can buy).
 
 But because of the frustrating die-and-retry repetition of these late-game encounters - and, perhaps, because I had become exhausted by the game already - I didn't rise to those challenges.  I hit a wall, I think it was a fight with multiple Blue Rays?, and had just had enough; so I turned the game's difficulty sliders all the way down.
 
@@ -83,6 +83,6 @@ I fell in love with CrossCode's provocative introduction, but fell out of love w
 
 If you're a big fan of those things, maybe CrossCode will be better, for you.
 
-<b>Better than</b>: {{% game "Final Fantasy XII" %}}Final Fantasy XII{{% /game %}}, {{% game "Mario & Luigi: Bowser's Inside Story" %}}Mario & Luigi: Bowser's Inside Story{{% /game %}}  
-<b>Not as good as</b>: {{% game "Child of Light" %}}Child of Light{{% /game %}}, {{% game "Timespinner" %}}Timespinner{{% /game %}}  
-<b>For better virtual-world meta-storytelling, see</b>: {{% game "Assassin's Creed" %}}Assassin's Creed{{% /game %}} and {{% game "Saints Row IV" %}}Saints Row IV{{% /game %}}
+<b>Better than</b>: <game:Final Fantasy XII>, <game:Mario & Luigi: Bowser's Inside Story>  
+<b>Not as good as</b>: <game:Child of Light>, <game:Timespinner>  
+<b>For better virtual-world meta-storytelling, see</b>: <game:Assassin's Creed> and <game:Saints Row IV>

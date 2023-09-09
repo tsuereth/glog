@@ -9,7 +9,7 @@ title = "Much more fun than the Harrison Ford movie"
 
 +++
 
-{{% game "The Witness (2016)" %}}The Witness{{% /game %}} starts slow, but ultimately has no problem matching {{% game "Braid" %}}Braid{{% /game %}} in terms of mental challenge and intellectual intrigue.
+[The Witness](game:The Witness (2016)) starts slow, but ultimately has no problem matching <game:Braid> in terms of mental challenge and intellectual intrigue.
 
 Virtually everything about the game, from tiny puzzle mechanics to world-spanning environmental mysteries, is crafted with such incredible <i>care</i> that it all feels ... real, in a way.  The game's island is just so cohesive, meticulous, and entrancing; it's a thing of beauty, aesthetically and technologically.  It's not hard to understand why Jonathan Blow took so long making this game, and I would certainly call it worthwhile.
 
@@ -19,6 +19,6 @@ And yet, there are still some things about this game I haven't figured out.  Som
 
 It's hard to say if The Witness is really for everyone - although it could be?, due to its friendly learning curve - but if you're even remotely interested in puzzles, it's a no-brainer.  Which is good, because you'll need that brain to actually complete it.
 
-<b>Better than</b>: {{% game "Myst" %}}Myst{{% /game %}}  
-<b>Not as good as</b>: maybe {{% game "Portal 2" %}}Portal 2{{% /game %}}, and its humorous narrative?  That's a tough one.  
-<b>Anxious to see how it stacks up against</b>: {{% game "The Talos Principle" %}}The Talos Principle{{% /game %}}
+<b>Better than</b>: <game:Myst>  
+<b>Not as good as</b>: maybe <game:Portal 2>, and its humorous narrative?  That's a tough one.  
+<b>Anxious to see how it stacks up against</b>: <game:The Talos Principle>

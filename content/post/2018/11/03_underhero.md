@@ -6,13 +6,13 @@ game = ["Underhero"]
 platform = ["PC"]
 +++
 
-{{% game "Underhero" %}}Underhero{{% /game %}} has a pretty neat premise: you're trying to save the world, but you work for The Bad Guy.  The Good Guy died, so you loot his magical equipment, and go on a sabotage mission within the Bad Guy organization.
+<game:Underhero> has a pretty neat premise: you're trying to save the world, but you work for The Bad Guy.  The Good Guy died, so you loot his magical equipment, and go on a sabotage mission within the Bad Guy organization.
 
 Unfortunately Underhero's storytelling isn't creative enough to live up to that premise.  The game brings a light sense of humor to this role-reversal setup, but at least within the span of the demo, it didn't sell me on the characters, the world, or how the plot might turn out.
 
-Its storytelling techniques are... well, they're blatantly inspired by {{% game "Super Mario RPG: Legend of the Seven Stars" %}}Super Mario RPG{{% /game %}} and the {{% tag "Mario & Luigi" %}}Mario & Luigi games{{% /tag %}}.  The protagonist is mute, while real exposition is delivered by an annoying companion, to whom the protagonist reacts with pop-up exclamation points, wild hand-waving emotes, spontaneously falling down, <i>et cetera</i>.
+Its storytelling techniques are... well, they're blatantly inspired by [Super Mario RPG](game:Super Mario RPG: Legend of the Seven Stars) and the [Mario & Luigi games](tag:Mario & Luigi).  The protagonist is mute, while real exposition is delivered by an annoying companion, to whom the protagonist reacts with pop-up exclamation points, wild hand-waving emotes, spontaneously falling down, <i>et cetera</i>.
 
-The game is presented as a side-scrolling platformer, with some dubious ground rules - literally, it's inconsistent on whether stair-like platforms have horizontal collision - and the level available in the demo felt bland and remedial.  Like the {{% game "Adventure Time: Hey Ice King! Why'd You Steal Our Garbage?!" %}}Adventure Time: Hey Ice King!{{% /game %}} game, boring level design feels <i>doubly</i> boring when you ask the player to backtrack through it.
+The game is presented as a side-scrolling platformer, with some dubious ground rules - literally, it's inconsistent on whether stair-like platforms have horizontal collision - and the level available in the demo felt bland and remedial.  Like the [Adventure Time: Hey Ice King!](game:Adventure Time: Hey Ice King! Why'd You Steal Our Garbage?!) game, boring level design feels <i>doubly</i> boring when you ask the player to backtrack through it.
 
 Combat segments are where the game could shine, except the rules feel poorly thought out.  It bears some similarity to, uh, the <i>Mario & Luigi</i> gimmick of using timing to dodge or parry enemy attacks.  Including the aspect that enemy "tells" are totally unpredictable until you've seen them at least once, <i>which I hate</i>.
 

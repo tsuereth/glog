@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Opus Magnum" %}}Opus Magnum{{% /game %}} feels a bit like it carved a chunk out of {{% game "SpaceChem" %}}SpaceChem{{% /game %}}, added one or two new ideas, and spent most of its development cycle trying to look pretty.  (Like {{% game "Shenzhen I/O" %}}Shenzhen I/O{{% /game %}} did to {{% game "TIS-100" %}}TIS-100{{% /game %}} before it.)
+<game:Opus Magnum> feels a bit like it carved a chunk out of <game:SpaceChem>, added one or two new ideas, and spent most of its development cycle trying to look pretty.  (Like <game:Shenzhen I/O> did to <game:TIS-100> before it.)
 
 Where SpaceChem had chemical elements, Opus Magnum has <i>alchemical</i> elements.  And where SpaceChem used traveling waldos to move atoms around, Opus Magnum uses arms, which can rotate or extend.  (... But can also travel a path.)  At least so far, there is no equivalent to SpaceChem's complex multi-factory problems.  And the input/output sequence is locked, so there's no room for cleverly processing multiple jobs simultaneously; only one output at a time is allowed.
 

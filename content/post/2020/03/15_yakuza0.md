@@ -9,9 +9,9 @@ rating = ["Meh"]
 
 I never expected to be <i>more critical</i> of a game than both <a href="https://www.youtube.com/watch?v=FBtgI8lJ9r4">Dunkey</a> and <a href="https://www.youtube.com/watch?v=tK5iAzRWR_k">Yahtzee</a>, but, here we are.
 
-Maybe they have a pre-existing attachment to the {{% tag "Yakuza" %}}Yakuza{{% /tag %}} franchise that I don't?  At any rate, where they found {{% game "Yakuza 0" %}}Yakuza 0{{% /game %}} charming in spite of its flaws, all I found was a bunch of slow, dull bullshit.
+Maybe they have a pre-existing attachment to the <tag:Yakuza> franchise that I don't?  At any rate, where they found <game:Yakuza 0> charming in spite of its flaws, all I found was a bunch of slow, dull bullshit.
 
-It's not <i>quite</i> the same situation that I {{% abslink href="2020/03/04/hey-cousin-lets-restart-the-mission/" %}}recently lamented{{% /abslink %}} regarding {{% game "Grand Theft Auto IV" %}}Grand Theft Auto IV{{% /game %}} -- although Yakuza does have more than its fair share of uninteresting bowling-style minigames.  Yakuza's dullness is more an artifact of its agonizing dialog pacing and verbosity.
+It's not <i>quite</i> the same situation that I {{% abslink href="2020/03/04/hey-cousin-lets-restart-the-mission/" %}}recently lamented{{% /abslink %}} regarding <game:Grand Theft Auto IV> -- although Yakuza does have more than its fair share of uninteresting bowling-style minigames.  Yakuza's dullness is more an artifact of its agonizing dialog pacing and verbosity.
 
 Characters reiterate themselves in dialog, often multiple times, for seemingly no reason.  They digress into unrelated tangential backstories way more often than is appropriate.  And their speech is melodramatically slow and halting, which just compounds the issue of dialog scenes <i>taking forever</i>.
 

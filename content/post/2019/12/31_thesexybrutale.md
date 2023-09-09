@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-After my somewhat-disappointing trip through {{% game "RiME" %}}RiME{{% /game %}}, I glanced at {{% tag "Tequila Works" %}}Tequila Works{{% /tag %}}'s resume and was like... oh, yeah, {{% game "The Sexy Brutale" %}}The Sexy Brutale{{% /game %}}!  Yet another game that looked good, I bought, then got lost in my backlog.
+After my somewhat-disappointing trip through <game:RiME>, I glanced at <tag:Tequila Works>'s resume and was like... oh, yeah, <game:The Sexy Brutale>!  Yet another game that looked good, I bought, then got lost in my backlog.
 
-The Sexy Brutale has a really compelling hook: murder mystery party!  Also ... time travel!  Imagine if the time-warping in {{% game "The Legend of Zelda: Majora's Mask 3D" %}}The Legend of Zelda: Majora's Mask{{% /game %}} was applied to <i><a href="https://www.imdb.com/title/tt0088930/">Clue</a></i>, and you've pretty much got it.
+The Sexy Brutale has a really compelling hook: murder mystery party!  Also ... time travel!  Imagine if the time-warping in [The Legend of Zelda: Majora's Mask](game:The Legend of Zelda: Majora's Mask 3D) was applied to <i><a href="https://www.imdb.com/title/tt0088930/">Clue</a></i>, and you've pretty much got it.
 
 Crucially, one of this party's rules is that you shouldn't be seen by other guests -- so there's no interviewing and no direct intervention.  Instead, you'll observe guests' movements by peeping through keyholes, and learn their "loop" through the course of the day, to figure out how they die.  Then you rewind time and manipulate the environment to, hopefully, prevent their grisly deaths.
 
@@ -25,8 +25,8 @@ The Sexy Brutale is fun and engaging, though its puzzles are pretty simple and m
 
 Nevertheless, it's a really cool experience that unravels a uniquely interesting story, and I'd definitely look forward to another game in this format.
 
-<b>Better than</b>: {{% game "Her Story" %}}Her Story{{% /game %}}, {{% game "Zero Escape: Nine Hours, Nine Persons, Nine Doors" %}}Zero Escape: Nine Hours, Nine Persons, Nine Doors{{% /game %}}  
-<b>Not as good as</b>: {{% game "The Witness (2016)" %}}The Witness (2016){{% /game %}}  
-<b>Maybe this needs comparison to</b>: {{% game "Return of the Obra Dinn" %}}Return of the Obra Dinn{{% /game %}}?
+<b>Better than</b>: <game:Her Story>, <game:Zero Escape: Nine Hours, Nine Persons, Nine Doors>  
+<b>Not as good as</b>: <game:The Witness (2016)>  
+<b>Maybe this needs comparison to</b>: <game:Return of the Obra Dinn>?
 
 <i>Progress: 100%</i>

@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-I just don't "get" {{% game "Dragon's Dogma: Dark Arisen" %}}Dragon's Dogma: Dark Arisen{{% /game %}}.
+I just don't "get" <game:Dragon's Dogma: Dark Arisen>.
 
-The game's intro sequence is immediately impressive, by virtue of its robust and intricate combat system.  Commands are simple to execute; AI-controlled "pawns" keep the action flowing; and there are surprising, mini-game-like strategic twists, like climbing on top of large monsters or removing their limbs (like cutting off a scorpion tail to prevent poison attacks).  The intro sequence's fights stoke the imagination about treating enemies like puzzles, and {{% game "Shadow of the Colossus" %}}Shadow of the Colossus{{% /game %}}-like encounters with oversized baddies.
+The game's intro sequence is immediately impressive, by virtue of its robust and intricate combat system.  Commands are simple to execute; AI-controlled "pawns" keep the action flowing; and there are surprising, mini-game-like strategic twists, like climbing on top of large monsters or removing their limbs (like cutting off a scorpion tail to prevent poison attacks).  The intro sequence's fights stoke the imagination about treating enemies like puzzles, and <game:Shadow of the Colossus>-like encounters with oversized baddies.
 
 Then time fast-forwards, you customize a character, some heavy story cutscenes play out, and there are a few <i>more</i> boss fights, before the game "opens up."  And that's where the wheels came off, for me.
 
@@ -23,6 +23,6 @@ And the payoff for suffering through these trials doesn't feel worth it.  Grante
 
 The last quest I did, a detour to find a witch in the woods who would answer some questions about the main quest... didn't answer anything at all.  An hour's journey followed by a minute of stilted conversation with zero information, and then it was time to head back home!  Thanks, witch.
 
-I think there may be a working, enjoyable sandbox RPG in here that I'm just unable to understand.  Unfortunately online resources for Dragon's Dogma seem to fall into the same hostile-unhelpful category as {{% game "Dark Souls: Prepare to Die Edition" %}}Dark Souls{{% /game %}}, i.e. none of the tips I've found have really addressed my problems.  For me, the combat is too high-risk, and the story too low-reward, to justify dumping more hours into it.
+I think there may be a working, enjoyable sandbox RPG in here that I'm just unable to understand.  Unfortunately online resources for Dragon's Dogma seem to fall into the same hostile-unhelpful category as [Dark Souls](game:Dark Souls: Prepare to Die Edition), i.e. none of the tips I've found have really addressed my problems.  For me, the combat is too high-risk, and the story too low-reward, to justify dumping more hours into it.
 
 <i>Progress: Level 10-ish, found the witch in the woods.</i>

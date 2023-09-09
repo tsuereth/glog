@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-I found <i>the problem</i> with {{% game "Nonogram - The Greatest Painter" %}}Nonogram{{% /game %}}.
+I found <i>the problem</i> with [Nonogram](game:Nonogram - The Greatest Painter).
 
 The "Classic" puzzles are big, right?  I got up to a <b>70 x 40</b> puzzle.  <b>That's big.</b>  But as Nonogram's puzzles get bigger, its technical issues become harder to ignore.
 
@@ -23,8 +23,8 @@ I might have been willing to put up with Nonogram's technical infidelity if it a
 
 It's a shame, because otherwise, Nonogram is a great implementation of picross puzzling.  Its UX is the best I've ever seen, and its puzzle gallery might be, too.  <i>If only it didn't crash and lose progress</i>.
 
-<b>Better than</b>: {{% game "InfiniPicross" %}}InfiniPicross{{% /game %}}  
-<b>Not as good as</b>: {{% game "Paint it Back" %}}Paint it Back{{% /game %}}, {{% game "Pepper's Puzzles" %}}Pepper's Puzzles{{% /game %}}  
+<b>Better than</b>: <game:InfiniPicross>  
+<b>Not as good as</b>: <game:Paint it Back>, <game:Pepper's Puzzles>  
 <b>Just because you're using Unity to make checkbox puzzles</b>: doesn't mean that you can ignore your memory usage.
 
 <i>Progress: 126/126 Gallery, 13/50 Classic, 35/50 Speed</i>

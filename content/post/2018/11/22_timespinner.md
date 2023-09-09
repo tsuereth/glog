@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-Of the games I've crowdfunded - and which actually got released - {{% game "Timespinner" %}}Timespinner{{% /game %}} holds the honor of being the best so far.  (Granted, that bar is pretty low.)
+Of the games I've crowdfunded - and which actually got released - <game:Timespinner> holds the honor of being the best so far.  (Granted, that bar is pretty low.)
 
-Aesthetically and thematically, Timespinner pulls a lot from 16-bit classics like {{% game "Chrono Trigger" %}}Chrono Trigger{{% /game %}}; but foremost, and overwhelmingly so, from {{% game "Castlevania: Symphony of the Night" %}}Castlevania: Symphony of the Night{{% /game %}} and its {{% game "Castlevania: Aria of Sorrow" %}}many{{% /game %}} {{% game "Castlevania: Dawn of Sorrow" %}}handheld{{% /game %}} {{% game "Castlevania: Portrait of Ruin" %}}sequels{{% /game %}}.  It's exceptionally clear that Timespinner's creator was a <b>big fan</b> of those games.
+Aesthetically and thematically, Timespinner pulls a lot from 16-bit classics like <game:Chrono Trigger>; but foremost, and overwhelmingly so, from <game:Castlevania: Symphony of the Night> and its [many](game:Castlevania: Aria of Sorrow) [handheld](game:Castlevania: Dawn of Sorrow) [sequels](game:Castlevania: Portrait of Ruin).  It's exceptionally clear that Timespinner's creator was a <b>big fan</b> of those games.
 
 Not just because it's got an interconnected world map that you backtrack through as the game proceeds, and not just because you gain experience points and level-up, as do your weapons and your familiar sidekick.  The movement of the whip-like orbs, the layout of the UI, the boss-kill effects, and even the soundtrack all feel <i>practically copied</i> from an Igavania.
 
@@ -31,8 +31,8 @@ Thankfully, that awkward dialog isn't an important-enough part of the game to dr
 
 Ultimately, Timespinner is a success at replicating the best parts of a 2D map-based Castlevania game.  Its combat is simple and fun, and its map and collectibles were interesting enough to drive me to 100%.  It's a little shorter than its forebears, but I enjoyed my time with it just the same.
 
-<b>Better than</b>: {{% game "Castlevania: Order of Ecclesia" %}}Castlevania: Order of Ecclesia{{% /game %}}, {{% game "Metroid: Zero Mission" %}}Metroid: Zero Mission{{% /game %}}, {{% game "Momodora: Reverie Under the Moonlight" %}}Momodora: Reverie Under the Moonlight{{% /game %}}  
-<b>Not as good as</b>: {{% game "Castlevania: Dawn of Sorrow" %}}Castlevania: Dawn of Sorrow{{% /game %}}, {{% game "Dust: An Elysian Tail" %}}Dust: An Elysian Tail{{% /game %}}  
-<b>For the record, my mostly-disappointing crowdfunding history so far</b>: {{% platform "Ouya" %}}Ouya{{% /platform %}}, {{% game "Bear Simulator" %}}Bear Simulator{{% /game %}}, {{% game "Hyper Light Drifter" %}}Hyper Light Drifter{{% /game %}} (which I dropped but should revisit), {{% game "Yooka-Laylee" %}}Yooka-Laylee{{% /game %}}, {{% game "Shaq Fu: A Legend Reborn" %}}Shaq Fu: A Legend Reborn{{% /game %}}, {{% game "Chasm" %}}Chasm{{% /game %}}, and finally... this!
+<b>Better than</b>: <game:Castlevania: Order of Ecclesia>, <game:Metroid: Zero Mission>, <game:Momodora: Reverie Under the Moonlight>  
+<b>Not as good as</b>: <game:Castlevania: Dawn of Sorrow>, <game:Dust: An Elysian Tail>  
+<b>For the record, my mostly-disappointing crowdfunding history so far</b>: <platform:Ouya>, <game:Bear Simulator>, <game:Hyper Light Drifter> (which I dropped but should revisit), <game:Yooka-Laylee>, <game:Shaq Fu: A Legend Reborn>, <game:Chasm>, and finally... this!
 
 <i>Progress: Beat the Nightmare on Normal, 100% map completion.</i>
