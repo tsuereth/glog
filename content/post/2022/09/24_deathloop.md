@@ -13,10 +13,8 @@ Your player is stuck in a time loop; their goal is to break the loop.  Until the
 
 Eventually, when the player breaks the loop and sees the end of your story, do you:
 
-<ol type="A">
-<li>Skip the loadout menu and its option to save items, because narratively, the loop is broken; or</li>
-<li>Still allow the player to save items, because it's a video game, and they might play it again.</li>
-</ol>
+A. Skip the loadout menu and its option to save items, because narratively, the loop is broken; or
+B. Still allow the player to save items, because it's a video game, and they might play it again.
 
 The correct answer is B.  (Or even better, C: allow players to manage items <i>during regular gameplay</i> so this doesn't need to be a separate step.)
 

@@ -17,11 +17,9 @@ The bad news is that games have come a long way since the year 2000, but Yooka-L
 
 It has to be intentional, I mean -- I have to believe that the spastic camera, the squishy collision physics, and the (occasionally) unskippable dialog boxes, were done this way <i>on purpose</i>.  Because there are only three explanations I can conceive of for blatantly irritating designs like this:
 
-<ol>
-<li>They're intentional;</li>
-<li>Playtonic literally invented a time machine, and developed the game fifteen years ago;</li>
-<li>Or none of this game's designers played <i>any video games released after the year 2000</i>.</li>
-</ol>
+1. They're intentional;
+2. Playtonic literally invented a time machine, and developed the game fifteen years ago;
+3. Or none of this game's designers played <i>any video games released after the year 2000</i>.
 
 I can't wholly write Yooka-Laylee off, because its core loop of exploring worlds and collecting random stuff is still rewarding and fun.  It's just ... everything around this core, is stale, and kind of sucks.  (Except for the writing, which is humorously self-deprecating in all the right ways.)
 

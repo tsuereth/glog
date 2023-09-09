@@ -11,12 +11,10 @@ rating = ["Good"]
 
 Nearly a decade on, Talion's quest plays mostly {{% abslink href="2014/10/07/hes-not-human-hes-like-a-piece-of-mithril/" %}}as I remember it{{% /abslink %}}, for better and for worse:
 
-<ul>
-<li>Narratively explaining, and <i>justifying</i>, how Talion returns after death is still a cool ludonarrative trick.</li>
-<li>The story overall isn't very impressive, with Talion and Celebrimbor experiencing little growth from beginning to end, and quest NPCs feeling entirely disposable.</li>
-<li>Sneaking around and stealthily dispatching orcs is a brutal, merciless joy.  So is un-stealthily brawling with a group as you dodge, counter, and execute them one by one.  (Some frustrating bullshit notwithstanding, like <a href="https://shadowofwar.fandom.com/wiki/Nemesis_Traits#Invulnerability_Strengths">captains with multiple invulnerabilities</a>.)</li>
-<li>It takes entirely too long for the "brand" power to unlock; without the ability to brainwash orcs, the first <i>half</i> of the game feels mechanically incomplete.</li>
-</ul>
+* Narratively explaining, and <i>justifying</i>, how Talion returns after death is still a cool ludonarrative trick.
+* The story overall isn't very impressive, with Talion and Celebrimbor experiencing little growth from beginning to end, and quest NPCs feeling entirely disposable.
+* Sneaking around and stealthily dispatching orcs is a brutal, merciless joy.  So is un-stealthily brawling with a group as you dodge, counter, and execute them one by one.  (Some frustrating bullshit notwithstanding, like <a href="https://shadowofwar.fandom.com/wiki/Nemesis_Traits#Invulnerability_Strengths">captains with multiple invulnerabilities</a>.)
+* It takes entirely too long for the "brand" power to unlock; without the ability to brainwash orcs, the first <i>half</i> of the game feels mechanically incomplete.
 
 This time around, though, Shadow of Mordor's high points feel more familiar and its low points more prominent -- particularly since that "brand" pacing stumble hides the true potential of the Nemesis system for so long.
 

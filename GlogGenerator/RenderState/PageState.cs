@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using GlogGenerator.Data;
 using GlogGenerator.HugoCompat;
 using Markdig;
+using Markdig.Extensions.ListExtras;
 using Microsoft.AspNetCore.StaticFiles;
 
 namespace GlogGenerator.RenderState
@@ -132,7 +133,10 @@ namespace GlogGenerator.RenderState
 
             rendered = Shortcodes.TranslateToHtml(this.siteState.PathResolver, this.siteState, this, rendered);
 
-            var mdPipeline = new MarkdownPipelineBuilder().Use<MarkdownQuirksMarkdigExtension>().Build();
+            var mdPipeline = new MarkdownPipelineBuilder()
+                .Use<ListExtraExtension>()
+                .Use<MarkdownQuirksMarkdigExtension>()
+                .Build();
             rendered = "\t" + Markdown.ToHtml(rendered, mdPipeline);
 
             rendered = rendered.Replace("__mdquirk_linebreak", "\n");

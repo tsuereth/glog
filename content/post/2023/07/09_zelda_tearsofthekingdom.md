@@ -14,11 +14,10 @@ With the Depths, is how.  Hyrule's Depths, a dark mirror of the overworld, are e
 The Depths recapture the same feelings that made Breath of the Wild so memorable: being overwhelmed by a huge new world, and terrified by its angry inhabitants; getting taunted by its dangers as you carefully work on quests in its margins; gradually powering up and becoming more comfortable in it; and eventually <b>overpowering it</b> by eating its big, weird baddies for breakfast.
 
 Depths aside, many parts of Tears of the Kingdom may appear familiar, but there are enough new angles and remixed challenges to distinguish them from Link's last adventure:
-<ul>
-<li>The overworld's terrain is mostly the same, but thanks to <a href="https://zeldawiki.wiki/wiki/Skyview_Tower">Skyview Towers</a> shooting you into the air, you don't need to re-tread the same ground all over again.</li>
-<li>Rito, Zora, Goron, and Gerudo towns need you to solve their problems by beating their dungeons - again - but the dungeons are new, their challenges are new, the bosses are original, and companions with unique abilities tag along!</li>
-<li>There are another zillion hidden Koroks to find, but they bring some new mini-objectives, like transportation puzzles to help a Korok reach its friend! (granted, I found those ones pretty tedious, but... they're new!)</li>
-</ul>
+
+* The overworld's terrain is mostly the same, but thanks to <a href="https://zeldawiki.wiki/wiki/Skyview_Tower">Skyview Towers</a> shooting you into the air, you don't need to re-tread the same ground all over again.
+* Rito, Zora, Goron, and Gerudo towns need you to solve their problems by beating their dungeons - again - but the dungeons are new, their challenges are new, the bosses are original, and companions with unique abilities tag along!
+* There are another zillion hidden Koroks to find, but they bring some new mini-objectives, like transportation puzzles to help a Korok reach its friend! (granted, I found those ones pretty tedious, but... they're new!)
 
 And tons of content, from caves and shrine puzzles to random sidequests, take clever advantage of TotK's brand new abilities.  Using <a href="https://zeldawiki.wiki/wiki/Ascend">Ascend</a> to traverse vertical obstacles always feels <i>rad</i>.  And using <a href="https://zeldawiki.wiki/wiki/Ultrahand">Ultrahand</a> construction to solve <a href="https://zeldawiki.wiki/wiki/Addison">Addison</a>'s hold-up-a-signpost physics puzzles is an easy favorite.
 
