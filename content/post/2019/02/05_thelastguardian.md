@@ -7,9 +7,9 @@ platform = ["PS4"]
 rating = ["Meh"]
 +++
 
-{{% game "The Last Guardian" %}}The Last Guardian{{% /game %}} doesn't feel like a game that took <i>ten damn years to make</i>.  At least, not in the typical sense.
+<game:The Last Guardian> doesn't feel like a game that took <i>ten damn years to make</i>.  At least, not in the typical sense.
 
-Titles stuck in {{% game "Duke Nukem Forever" %}}development hell{{% /game %}} tend to come out as a scrambled mess of unrelated ideas, as a result of being left "in the oven" for so long; and often, after being rushed into a releasable state, end up unpolished and obtuse.  But that's not the case here: The Last Guardian has a fairly-direct presentation, appropriately-spartan mechanics, and a focused theme.  It's a lot like {{% game "Ico" %}}Ico{{% /game %}} and {{% game "Shadow of the Colossus (2018)" %}}Shadow of the Colossus{{% /game %}} in those ways.
+Titles stuck in [development hell](game:Duke Nukem Forever) tend to come out as a scrambled mess of unrelated ideas, as a result of being left "in the oven" for so long; and often, after being rushed into a releasable state, end up unpolished and obtuse.  But that's not the case here: The Last Guardian has a fairly-direct presentation, appropriately-spartan mechanics, and a focused theme.  It's a lot like <game:Ico> and [Shadow of the Colossus](game:Shadow of the Colossus (2018)) in those ways.
 
 <b>That's</b> the problem.  The Last Guardian is <i>too much like</i> the games that Fumito Ueda has been making for the last 20 years or so.  And without Colossus's thrilling puzzle-parkour boss fights.
 

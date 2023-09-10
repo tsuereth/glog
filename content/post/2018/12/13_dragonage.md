@@ -6,11 +6,11 @@ game = ["Dragon Age: Origins"]
 platform = ["PC"]
 +++
 
-I waited too long to try {{% game "Dragon Age: Origins" %}}Dragon Age: Origins{{% /game %}}.
+I waited too long to try <game:Dragon Age: Origins>.
 
 To its credit, some aspects of Dragon Age still shine brightly -- chiefly, the writing quality and voice acting.  Just a few minutes with this game reminded me of BioWare's aptitude for building interesting, entertaining characters; and how compelling their games become <i>through</i> that characterization, in making me curious about how their lovable miscreants will develop.
 
-Also -- the real-time-with-pause combat, wrapped in hybrid RPG-RTS camera controls, has a slight learning curve but ends up working quite well.  I was pleasantly surprised by how expertly it marries the control strengths of {{% game "Baldur's Gate" %}}Baldur's Gate{{% /game %}} and {{% game "Warcraft III: Reign of Chaos" %}}Warcraft{{% /game %}}.  As weird a combo as it seems, they pull it off very competently.
+Also -- the real-time-with-pause combat, wrapped in hybrid RPG-RTS camera controls, has a slight learning curve but ends up working quite well.  I was pleasantly surprised by how expertly it marries the control strengths of <game:Baldur's Gate> and [Warcraft](game:Warcraft III: Reign of Chaos).  As weird a combo as it seems, they pull it off very competently.
 
 But while some parts of Dragon Age are easy to appreciate even today, others have aged pretty poorly.  Game design and technology have made great strides since 2009, and things like enemies being visually unremarkable against the environment; or the terrain's collision not really matching up with the visuals; or UI elements and fonts being under-scaled at modern resolutions, are all "old" problems to have.
 
@@ -20,9 +20,9 @@ Meanwhile, the gameplay that comes out of those character sheets is bit underwhe
 
 The mute protagonist is a more debatable "problem," but one that I'd argue still feels antiquated.  On the one hand, since Dragon Age lets you choose a gender <i>and race</i>, and has a shitton of dialog options, recording voice-overs for everything the protagonist might say would be a significant undertaking (even by modern standards).  On the other hand, <b>without a voice</b>, the protagonist comes off as out-of-place among the vocal party members and NPCs.
 
-{{% game "Mass Effect" %}}Mass Effect{{% /game %}}, which BioWare made <i>earlier</i>, sacrificed racial choices and thus had a fully-voiced protagonist.  And {{% game "The Witcher 3: Wild Hunt" %}}Witcher 3{{% /game %}}, <i>par exemple</i>, with no gender or race choices, made Geralt sound really at-home in its game world.  Personally, I lean more toward voicing the protagonist, even at the cost of customizability.
+<game:Mass Effect>, which BioWare made <i>earlier</i>, sacrificed racial choices and thus had a fully-voiced protagonist.  And [Witcher 3](game:The Witcher 3: Wild Hunt), <i>par exemple</i>, with no gender or race choices, made Geralt sound really at-home in its game world.  Personally, I lean more toward voicing the protagonist, even at the cost of customizability.
 
-Finally, while those things made me somewhat <i>blas&eacute;</i> on Dragon Age, what actually made me <b>give up</b> on it was the lazy autosave.  Sure, <i>for its time</i>, it wasn't that surprising that a game would expect you to make heavy and regular use of the quicksave hot-key; two years later, {{% game "The Elder Scrolls V: Skyrim" %}}Skyrim{{% /game %}} was still reliant on manual saving as insurance against game crashes.
+Finally, while those things made me somewhat <i>blas&eacute;</i> on Dragon Age, what actually made me <b>give up</b> on it was the lazy autosave.  Sure, <i>for its time</i>, it wasn't that surprising that a game would expect you to make heavy and regular use of the quicksave hot-key; two years later, [Skyrim](game:The Elder Scrolls V: Skyrim) was still reliant on manual saving as insurance against game crashes.
 
 But Dragon Age's autosaves are extraordinarily rare.  On a few occasions, the game will trigger a checkpoint before a battle, but this is more the exception than the rule.  And in Dragon Age, when your party dies - which happened many times to me, due to tactical miscalculations - you have to reload a save file.
 

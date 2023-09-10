@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-An earnest attempt at {{% game "Divinity: Original Sin - Enhanced Edition" %}}Divinity: Original Sin{{% /game %}} last year <i>finally</i> convinced me that I'm not "into" traditional CRPGs.  Surprisingly, and thankfully, my experience with {{% game "Shadowrun Returns" %}}Shadowrun Returns{{% /game %}} felt less like a deeply-technical party-management and -tactics game than it did like a sci-fi visual novel punctuated with simple turn-based combat.
+An earnest attempt at [Divinity: Original Sin](game:Divinity: Original Sin - Enhanced Edition) last year <i>finally</i> convinced me that I'm not "into" traditional CRPGs.  Surprisingly, and thankfully, my experience with <game:Shadowrun Returns> felt less like a deeply-technical party-management and -tactics game than it did like a sci-fi visual novel punctuated with simple turn-based combat.
 
 After a relatively simple character creator, Shadowrun Returns dives right into its narrative, which is compelling by virtue of both a distinctive <a href="https://en.wikipedia.org/wiki/Shadowrun">techno-elves setting</a> as well as high-quality written dialog.  Its aesthetics and character attitudes nail the "cyberpunk" feeling, and its mystery plot is rife with genuine intrigue.
 
@@ -15,7 +15,7 @@ After a relatively simple character creator, Shadowrun Returns dives right into 
 
 The story is unabashedly linear, which is <i>mostly</i> to the game's benefit.  I almost never felt like the game was rail-roading me in a direction I didn't want: charming NPC personalities and tantalizing mission events kept this ride exciting from one beat to the next.  Only occasionally did I wish for more control over the pace of that ride, for example to do some "hacking" instead of starting another combat mission.
 
-Compared to a choose-your-own-solution architecture like {{% tag "Deus Ex" %}}Deus Ex{{% /tag %}}, Shadowrun Returns doesn't really allow character-based approaches to obstacles -- you can't charm, or hack, or fight your way through "X" problem; rather, high Charisma allows you to charm "Y" and high Intelligence allows you to hack "Z" but you won't necessarily be able to do both Y and Z.  And the fight with "X" is generally not avoidable; everybody fights.
+Compared to a choose-your-own-solution architecture like <tag:Deus Ex>, Shadowrun Returns doesn't really allow character-based approaches to obstacles -- you can't charm, or hack, or fight your way through "X" problem; rather, high Charisma allows you to charm "Y" and high Intelligence allows you to hack "Z" but you won't necessarily be able to do both Y and Z.  And the fight with "X" is generally not avoidable; everybody fights.
 
 That's fine for telling the game's (again, linear) story, but it does make character progression feel more puzzling than empowering.  I can't skip some Strength challenges, buff up my Strength, then backtrack and revisit them; all I can do is invest skill points in the things that sound fun, and hope that the next mission caters to my investment.
 
@@ -35,10 +35,10 @@ Anyway, my point is that while Shadowrun Returns didn't do well at teaching me h
 
 That story - a noir-styled murder mystery, strongly-written NPC personalities, megacorp conspiracies, and a spicy twist of magical fantasy - kept me interested in following its threads all the way through.
 
-So long as the {{% game "Shadowrun: Dragonfall - Director's Cut" %}}Dragonfall{{% /game %}} and {{% game "Shadowrun: Hong Kong - Extended Edition" %}}Hong Kong{{% /game %}} expansion-sequels keep up this narrative quality, I'm not too worried about whether I do or don't become "better" at Shadowrun.
+So long as the [Dragonfall](game:Shadowrun: Dragonfall - Director's Cut) and [Hong Kong](game:Shadowrun: Hong Kong - Extended Edition) expansion-sequels keep up this narrative quality, I'm not too worried about whether I do or don't become "better" at Shadowrun.
 
-<b>Better than</b>: {{% game "Dex" %}}Dex{{% /game %}}, {{% game "Divinity: Original Sin - Enhanced Edition" %}}Divinity: Original Sin - Enhanced Edition{{% /game %}}  
-<b>Not as good as</b>: {{% game "Deus Ex: Mankind Divided" %}}Deus Ex: Mankind Divided{{% /game %}}  
-<b>Basically as good as</b>: {{% game "Masquerada: Songs and Shadows" %}}Masquerada: Songs and Shadows{{% /game %}}
+<b>Better than</b>: <game:Dex>, <game:Divinity: Original Sin - Enhanced Edition>  
+<b>Not as good as</b>: <game:Deus Ex: Mankind Divided>  
+<b>Basically as good as</b>: <game:Masquerada: Songs and Shadows>
 
 <i>Progress: Finished the Dead Man's Switch campaign on Normal.</i>

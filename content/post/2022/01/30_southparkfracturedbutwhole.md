@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "South Park: The Fractured But Whole" %}}South Park: The Fractured But Whole{{% /game %}} is a slower "burn" than {{% game "South Park: The Stick of Truth" %}}Stick of Truth{{% /game %}} was, but I'd ultimately call Fractured But Whole (<a href="https://knowyourmeme.com/memes/laughing-lizard-hhhehehe">hhhehehe</a>) more fulfilling <i>and</i> more entertaining than its forebear.
+<game:South Park: The Fractured But Whole> is a slower "burn" than [Stick of Truth](game:South Park: The Stick of Truth) was, but I'd ultimately call Fractured But Whole (<a href="https://knowyourmeme.com/memes/laughing-lizard-hhhehehe">hhhehehe</a>) more fulfilling <i>and</i> more entertaining than its forebear.
 
-The game can be off-putting, at first, in large part because of its {{% game "Mega Man Battle Network" %}}Mega Man Battle Network{{% /game %}}-like combat system: the battle grid and attack options <i>look</i> complicated, but really aren't (just deal damage!); and Quick Time Events for attacking and defending are simple and flat.  So, battles can come across as dull and slow.
+The game can be off-putting, at first, in large part because of its <game:Mega Man Battle Network>-like combat system: the battle grid and attack options <i>look</i> complicated, but really aren't (just deal damage!); and Quick Time Events for attacking and defending are simple and flat.  So, battles can come across as dull and slow.
 
 Also, literally, you can't run very fast -- and it's quite a jog from one map location to another.  The distance inbetween is usually dense with activities and collectibles, except, the abilities you need for them ... aren't unlocked until you make more story progress.
 
@@ -33,8 +33,8 @@ South Park: The Fractured But Whole takes some time to warm up, but it eventuall
 
 And most importantly: no missable collectibles!  So you can actually complete those sidequests in the post-game.  <i>About time</i>.
 
-<b>Better than</b>: {{% game "South Park: The Stick of Truth" %}}South Park: The Stick of Truth{{% /game %}}  
-<b>Not as good as</b>: {{% game "Mass Effect 3" %}}Mass Effect 3{{% /game %}}  
-<b>Maybe even as good as</b>: {{% game "Shadowrun: Dragonfall - Director's Cut" %}}Shadowrun: Dragonfall - Director's Cut{{% /game %}}
+<b>Better than</b>: <game:South Park: The Stick of Truth>  
+<b>Not as good as</b>: <game:Mass Effect 3>  
+<b>Maybe even as good as</b>: <game:Shadowrun: Dragonfall - Director's Cut>
 
 <i>Progress: Finished on Heroic (normal), mastered all the toilets, collected all the, uh, <a href="https://southpark.fandom.com/wiki/Tweek_x_Craig">fanart</a>.</i>

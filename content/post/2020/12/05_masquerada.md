@@ -7,13 +7,13 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Masquerada: Songs and Shadows" %}}Masquerada: Songs and Shadows{{% /game %}} feels spiritually similar to a {{% tag "Final Fantasy" %}}Final Fantasy{{% /tag %}} game, in some key ways.
+<game:Masquerada: Songs and Shadows> feels spiritually similar to a <tag:Final Fantasy> game, in some key ways.
 
-Its got a deep world-mythos, for one.  Not unlike your {{% game "Final Fantasy VI" %}}Espers{{% /game %}} or your {{% game "Final Fantasy VII" %}}Mako{{% /game %}}, the setting of Masquerada is steeped in an original mythology which shapes the game's characters and events; and the protagonists discover dramatic truths about that mythology as the story proceeds.
+Its got a deep world-mythos, for one.  Not unlike your [Espers](game:Final Fantasy VI) or your [Mako](game:Final Fantasy VII), the setting of Masquerada is steeped in an original mythology which shapes the game's characters and events; and the protagonists discover dramatic truths about that mythology as the story proceeds.
 
 The game has an introductory problem, with an overload of mytho-babble about mascherines and Contadani and The Registry and other buzzwords that haven't been explained yet.  But the pieces come together after the first hour or so, and as the plot's central mystery takes off, that initial sense of confusion turns into a <i>hunger</i> to learn more about this magical world.
 
-Through a handy {{% tag "Mass Effect" %}}Mass Effect{{% /tag %}}-style in-game codex, lore-nerds like myself can spend a large chunk of playtime reading background exposition and well-written, in-character anecdotes.
+Through a handy <tag:Mass Effect>-style in-game codex, lore-nerds like myself can spend a large chunk of playtime reading background exposition and well-written, in-character anecdotes.
 
 {{% absimg src="masquerada_science.jpg" width="400" height="300" %}}
 
@@ -37,8 +37,8 @@ Considering that Masquerada's writing and story presentation are far and away th
 
 It makes me feel a little bad for the people who worked on those parts of the game; their admirable design considerations and attention to detail didn't really pay off.  But Masquerada was nevertheless a satisfying experience, due to its well-grounded, and well-told, fantasy story.
 
-<b>Better than</b>: {{% game "Analogue: A Hate Story" %}}Analogue: A Hate Story{{% /game %}}, {{% game "CrossCode" %}}CrossCode{{% /game %}}, {{% game "Final Fantasy XII" %}}Final Fantasy XII{{% /game %}}  
-<b>Not as good as</b>: {{% game "Chrono Trigger" %}}Chrono Trigger{{% /game %}}, {{% game "Indivisible" %}}Indivisible{{% /game %}}  
-<b>It's awkward to compare it to</b>: other real-time-with-pause RPGs like {{% tag "Baldur's Gate" %}}Baldur's Gate{{% /tag %}} or {{% tag "Dragon Age" %}}Dragon Age{{% /tag %}}, because Masquerada's combat is such an <i>insignificant</i> part of the game overall.
+<b>Better than</b>: <game:Analogue: A Hate Story>, <game:CrossCode>, <game:Final Fantasy XII>  
+<b>Not as good as</b>: <game:Chrono Trigger>, <game:Indivisible>  
+<b>It's awkward to compare it to</b>: other real-time-with-pause RPGs like <tag:Baldur's Gate> or <tag:Dragon Age>, because Masquerada's combat is such an <i>insignificant</i> part of the game overall.
 
 <i>Progress: Finished on Normal, got ... most? of the lore pickups.</i>

@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "See No Evil" %}}See No Evil{{% /game %}} does a respectable job of twisting and augmenting familiar puzzle mechanics.  Sure, you push blocks to hold down buttons, and reflect <s>lasers</s> <i>sound waves</i> using <s>angled mirrors</s> <i>bent pipes</i> -- but you also use these tricks to manipulate enemies into hitting unreachable switches, or to distract them away from catching you.
+<game:See No Evil> does a respectable job of twisting and augmenting familiar puzzle mechanics.  Sure, you push blocks to hold down buttons, and reflect <s>lasers</s> <i>sound waves</i> using <s>angled mirrors</s> <i>bent pipes</i> -- but you also use these tricks to manipulate enemies into hitting unreachable switches, or to distract them away from catching you.
 
-In theory, this is a refreshing combination of sneaking and puzzles (like {{% game "Boktai: The Sun Is in Your Hand" %}}Boktai{{% /game %}}, sans combat).  In practice, though, See No Evil suffers from some fundamental problems: visual ambiguity and fiddly movement.
+In theory, this is a refreshing combination of sneaking and puzzles (like [Boktai](game:Boktai: The Sun Is in Your Hand), sans combat).  In practice, though, See No Evil suffers from some fundamental problems: visual ambiguity and fiddly movement.
 
 The game is shown at an isometric 3/4 overhead perspective, and the art for objects and characters shows depth, but that depth doesn't exactly match up with collision; I frequently activated buttons that I was trying to walk around.  Meanwhile, sound wave reflection puzzles require precise positioning while facing in a specific direction, and there's no control to rotate in place -- so getting it exactly right can take several walking-in-circles attempts.
 
@@ -19,8 +19,8 @@ As for the story, it's surprising enough that See No Evil <i>has</i> one - this 
 
 But, not neat enough to goad me into playing more.  See No Evil certainly isn't the most frustrating puzzle game I've played, but its precision issues are just frustrating enough to turn me off.
 
-<b>Better than</b>: {{% game "Great Permutator" %}}Great Permutator{{% /game %}}  
-<b>Not as good as</b>: {{% game "Toki Tori" %}}Toki Tori{{% /game %}}  
-<b>Definitely not as good as</b>: {{% game "Mark of the Ninja Remastered" %}}Mark of the Ninja Remastered{{% /game %}}
+<b>Better than</b>: <game:Great Permutator>  
+<b>Not as good as</b>: <game:Toki Tori>  
+<b>Definitely not as good as</b>: <game:Mark of the Ninja Remastered>
 
 <i>Progress: Got to Chapter 3.</i>

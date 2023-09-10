@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Cosmic Star Heroine" %}}Cosmic Star Heroine{{% /game %}} starts out promisingly enough, with an opening that gets straight to the action (reminiscent of {{% game "Final Fantasy VII" %}}Final Fantasy VII{{% /game %}}'s reactor raid) and a practical sci-fi aesthetic that feels like a comfortable resurrection of {{% game "Phantasy Star" %}}Phantasy Star{{% /game %}} or {{% game "Star Ocean" %}}Star Ocean{{% /game %}}.
+<game:Cosmic Star Heroine> starts out promisingly enough, with an opening that gets straight to the action (reminiscent of <game:Final Fantasy VII>'s reactor raid) and a practical sci-fi aesthetic that feels like a comfortable resurrection of <game:Phantasy Star> or <game:Star Ocean>.
 
 It sets up an adventure with diverse characters spanning multiple worlds, a unique combat system with frequent surprises, and some modern sensibilities to smooth over common JRPG rough spots.  But over the course of its campaign, Cosmic Star Heroine gradually neglects and ultimately discards most of that promise.
 
@@ -39,8 +39,8 @@ All in all, though, Cosmic Star Heroine still isn't what I would call a "bad" ga
 
 It's a shame though, because its premise and structure show so much potential for more.
 
-<b>Better than</b>: {{% game "Final Fantasy IV" %}}Final Fantasy IV{{% /game %}}, {{% game "Lunar Legend" %}}Lunar Legend{{% /game %}}, {{% game "Secret of Evermore" %}}Secret of Evermore{{% /game %}}  
-<b>Not as good as</b>: {{% game "Chrono Trigger" %}}Chrono Trigger{{% /game %}}, {{% game "Final Fantasy VI" %}}Final Fantasy VI{{% /game %}}, {{% game "Mass Effect" %}}Mass Effect{{% /game %}}  
-<b>Less frustrating than, but not as interesting as</b>: {{% game "CrossCode" %}}CrossCode{{% /game %}}
+<b>Better than</b>: <game:Final Fantasy IV>, <game:Lunar Legend>, <game:Secret of Evermore>  
+<b>Not as good as</b>: <game:Chrono Trigger>, <game:Final Fantasy VI>, <game:Mass Effect>  
+<b>Less frustrating than, but not as interesting as</b>: <game:CrossCode>
 
 <i>Progress: Finished on Agent difficulty.</i>

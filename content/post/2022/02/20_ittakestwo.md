@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "It Takes Two" %}}It Takes Two{{% /game %}} has a <i>lot</i> of ideas.  Some of them work pretty well!  Some of them don't.  On average, though, it's fun enough to keep two people entertained for a surprising number of hours.
+<game:It Takes Two> has a <i>lot</i> of ideas.  Some of them work pretty well!  Some of them don't.  On average, though, it's fun enough to keep two people entertained for a surprising number of hours.
 
 Through seven chapters, and a handful of levels in each, It Takes Two challenges you and a partner to platforming and puzzling and button-mashy combatting with a wide, continuous variety of mechanics.  In a workshop-themed level, one player uses a nailgun to create wall-mounted poles for the other player's hammer to swing on.  In a playroom level filled with toys, one player drives a dinosaur-shaped crane to move platforms that the other player jumps around on.
 
@@ -37,6 +37,6 @@ So, ignore the story -- enjoy that May and Cody make a good gameplay team, and i
 
 I don't know if I'd agree that It Takes Two is <a href="https://www.pcgamer.com/it-takes-two-wins-game-of-the-year-at-the-game-awards/">award-worthy</a>, compared to more tightly-focused, technically-polished, or narratively-thrilling titles.  But it's a fun ride filled with creative imagination, and by the - admittedly, kinda low - standards of couple-friendly co-op games, there isn't much else that tops it.
 
-<b>Better than</b>: {{% game "Biped" %}}Biped{{% /game %}}, {{% game "Ibb & Obb" %}}Ibb & Obb{{% /game %}}  
-<b>Not as good as</b>: {{% game "Pitfall Planet" %}}Pitfall Planet{{% /game %}}  
-<b><i>Lots</i> more content than, but mechanically comparable to</b>: {{% game "Brothers: A Tale of Two Sons" %}}Brothers: A Tale of Two Sons{{% /game %}}
+<b>Better than</b>: <game:Biped>, <game:Ibb & Obb>  
+<b>Not as good as</b>: <game:Pitfall Planet>  
+<b><i>Lots</i> more content than, but mechanically comparable to</b>: <game:Brothers: A Tale of Two Sons>

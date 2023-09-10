@@ -9,7 +9,7 @@ title = "WITNESS ME"
 
 +++
 
-Imagine the island from {{% game "Myst" %}}Myst{{% /game %}}.  Not the esoteric book-worlds, not the mechanical puzzles, not the grainy FMV animations -- just the mysterious island that you were dropped on, with no introduction, and no directive but to explore, discover, and "solve."  {{% game "The Witness (2016)" %}}The Witness{{% /game %}} brings back that lonely exhiliration, that feeling of an alien land begging to be figured out.
+Imagine the island from <game:Myst>.  Not the esoteric book-worlds, not the mechanical puzzles, not the grainy FMV animations -- just the mysterious island that you were dropped on, with no introduction, and no directive but to explore, discover, and "solve."  [The Witness](game:The Witness (2016)) brings back that lonely exhiliration, that feeling of an alien land begging to be figured out.
 
 The puzzles start out pretty simple, and you'll blow through a few dozen of them with basically no resistance.  The learning curve is pleasantly <i>subtle</i> - gently introducing new concepts and tricks - and by the time the island feels like it's "opened up" there is a new, bewildering mechanic to encounter at almost every turn.  Outside-the-box stuff.  Revelatory stuff.  Sick shit.
 

@@ -6,7 +6,7 @@ game = ["Hitman (2016)"]
 platform = ["PC"]
 +++
 
-Ages ago, I bounced off of the older {{% tag "Hitman" %}}Hitman{{% /tag %}} games due to sheer difficulty.  So it's great that {{% game "Hitman (2016)" %}}Hitman (2016){{% /game %}} has added user interface conveniences that help you stay hidden; mostly-generous autosaves to simplify recovering from a mistake; and plentiful hints (eavesdropping and otherwise) which reveal potential assassination solutions.
+Ages ago, I bounced off of the older <tag:Hitman> games due to sheer difficulty.  So it's great that <game:Hitman (2016)> has added user interface conveniences that help you stay hidden; mostly-generous autosaves to simplify recovering from a mistake; and plentiful hints (eavesdropping and otherwise) which reveal potential assassination solutions.
 
 And I gotta say, interpreting each mission as a puzzle - sneakily impersonating wait staff to observe the target, carefully laying out the pieces of a death trap, and finally watching those pieces come together - can be pretty damn satisfying.  Particularly because of how elaborate Hitman's levels are, with so many moving parts to take advantage of.
 

@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-So yeah, I've been putting off revisiting - let alone posting about - {{% game "Outer Wilds" %}}Outer Wilds{{% /game %}} DLC {{% game "Outer Wilds: Echoes of the Eye" %}}Echoes of the Eye{{% /game %}} for quite a while.
+So yeah, I've been putting off revisiting - let alone posting about - <game:Outer Wilds> DLC [Echoes of the Eye](game:Outer Wilds: Echoes of the Eye) for quite a while.
 
 Not because it feels unnecessary or tacked-onto the main game's trippy space mystery; I mean, Outer Wilds was just fine on its own, but the Eye's story integrates itself really well!  And not because its new gameplay is a disappointment, although, <i>it is</i>; the spooky segments which earn this DLC's "Horror" tag are more off-putting than the annoying <a href="https://outerwilds.fandom.com/wiki/Anglerfish">anglerfish</a> were.
 
@@ -17,8 +17,8 @@ Dense locations that make specific points-of-interest difficult to locate; timed
 
 It's a shame that this DLC's fascinating story, which manages to feel fresh while also pairing excellently with the existing lore, is something I only know because I <a href="https://outerwilds.fandom.com/wiki/The_Stranger%27s_inhabitants">read about it online</a>.
 
-<b>Better than</b>: {{% game "Fallout 4: Nuka World" %}}Fallout 4: Nuka World{{% /game %}}  
-<b>Not as good as</b>: {{% game "Fallout 4: Far Harbor" %}}Fallout 4: Far Harbor{{% /game %}}, {{% game "Outer Wilds" %}}Outer Wilds{{% /game %}}  
-<b>Proposed spinoffs, just to troll on {{% game "The Outer Worlds" %}}The Outer Worlds{{% /game %}}</b>: "Outer Words," a space exploration game where ancient ruins are locked by crossword puzzles; "Outer Swirls," a space exploration game with art styled after Picasso's <i>The Starry Night</i>; "Shouter Worlds," a space exploration game guided by NPCs rage-yelling on radio broadcasts.  I've got more, guys.
+<b>Better than</b>: <game:Fallout 4: Nuka World>  
+<b>Not as good as</b>: <game:Fallout 4: Far Harbor>, <game:Outer Wilds>  
+<b>Proposed spinoffs, just to troll on <game:The Outer Worlds></b>: "Outer Words," a space exploration game where ancient ruins are locked by crossword puzzles; "Outer Swirls," a space exploration game with art styled after Picasso's <i>The Starry Night</i>; "Shouter Worlds," a space exploration game guided by NPCs rage-yelling on radio broadcasts.  I've got more, guys.
 
 <i>Progress: gave up!</i>

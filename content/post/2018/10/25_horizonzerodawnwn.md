@@ -7,7 +7,7 @@ platform = ["PS4"]
 rating = ["Awesome"]
 +++
 
-It's kind of a shame that {{% game "Horizon Zero Dawn" %}}Horizon Zero Dawn{{% /game %}} came out at, like, <i>the same time</i> as {{% game "The Legend of Zelda: Breath of the Wild" %}}Breath of the Wild{{% /game %}}.  It's impossible to avoid comparing the two.  (In fairness, Horizon did beat Zelda to store shelves by ... uh, a week.)
+It's kind of a shame that <game:Horizon Zero Dawn> came out at, like, <i>the same time</i> as [Breath of the Wild](game:The Legend of Zelda: Breath of the Wild).  It's impossible to avoid comparing the two.  (In fairness, Horizon did beat Zelda to store shelves by ... uh, a week.)
 
 So here's the short version: Horizon has a much better main story, but its combat is a bit sloppier, and its open world isn't as strong overall.  On its own, though, it's still a fantastic adventure and a fun sandbox to play around in.
 
@@ -19,11 +19,11 @@ One painful hiccup in Horizon's technique is the lip sync animations.  The anima
 
 Unfortunately, the optional side quests don't fare as well; the majority of them feel like more of the same from the intro.  That is, throwaway characters and mundane events.  Horizon's side quests feel a little like filler material as Aloy travels between major plot beats.
 
-And the mechanics used in most quests are ... well, they work fine, but they don't feel very unique.  You've got your "go to this object and press a button" mechanic, your "talk to this character" mechanic, naturally a "kill this group of things" mechanic; and there's a Focus-vision for finding clues and following trails, a'la {{% game "Batman: Arkham Asylum" %}}Detective Mode{{% /game %}} or {{% game "The Witcher 3: Wild Hunt" %}}Witcher Vision{{% /game %}}, but its uses are pretty dull and uninspired.
+And the mechanics used in most quests are ... well, they work fine, but they don't feel very unique.  You've got your "go to this object and press a button" mechanic, your "talk to this character" mechanic, naturally a "kill this group of things" mechanic; and there's a Focus-vision for finding clues and following trails, a'la [Detective Mode](game:Batman: Arkham Asylum) or [Witcher Vision](game:The Witcher 3: Wild Hunt), but its uses are pretty dull and uninspired.
 
-Interestingly, dialog scenes occasionally have choices, but not for anything important.  Any moments that would actually change the outcome of an event are fully scripted.  A little like {{% game "Golden Sun" %}}Golden Sun{{% /game %}}, these choices supposedly allow you to inject your personality into the story, but it's fairly transparent that these decisions are totally inconsequential.
+Interestingly, dialog scenes occasionally have choices, but not for anything important.  Any moments that would actually change the outcome of an event are fully scripted.  A little like <game:Golden Sun>, these choices supposedly allow you to inject your personality into the story, but it's fairly transparent that these decisions are totally inconsequential.
 
-Really, Horizon's story didn't need these at all.  This is no Witcher or {{% tag "Mass Effect" %}}Mass Effect{{% /tag %}}; Horizon has one scripted sequence of events to show off, and that sequence is damn good just as it is.
+Really, Horizon's story didn't need these at all.  This is no Witcher or <tag:Mass Effect>; Horizon has one scripted sequence of events to show off, and that sequence is damn good just as it is.
 
 (Standing in stark contrast to Breath of the Wild's rote and barely-there backstory.)
 
@@ -41,9 +41,9 @@ Generally, even the hugest, most gun-bristling machines are pretty simple to fig
 
 Zelda could have this problem too, but it feels worse in Horizon.  A few too many fights felt physically exhausting to me.
 
-Aside from fighting shit, the other big draw of Horizon's open world is just exploring it.  And it does present some interestingly-varied biomes: snowy mountains, dusty deserts, and dense jungles; but aside from the big city of Meridian, there aren't many particularly memorable regions or landmarks, and few geography-specific events.  It's immersive and fun to play around in, but doesn't really measure up to the awe-inspiring vistas of Breath of the Wild, or the character-rich set pieces in {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}Skyrim{{% /game %}}.
+Aside from fighting shit, the other big draw of Horizon's open world is just exploring it.  And it does present some interestingly-varied biomes: snowy mountains, dusty deserts, and dense jungles; but aside from the big city of Meridian, there aren't many particularly memorable regions or landmarks, and few geography-specific events.  It's immersive and fun to play around in, but doesn't really measure up to the awe-inspiring vistas of Breath of the Wild, or the character-rich set pieces in [Skyrim](game:The Elder Scrolls V: Skyrim - Special Edition).
 
-Horizon's other supporting features are kinda mediocre.  It's got cliff-climbing parkour, but the movement just doesn't work as well as an {{% tag "Uncharted" %}}Uncharted{{% /tag %}}, or even a {{% tag "Tomb Raider" %}}Tomb Raider{{% /tag %}}.  A few too many transitions can miss completely, planting Aloy's feet on a glitchy edge that inevitably falls to her death.
+Horizon's other supporting features are kinda mediocre.  It's got cliff-climbing parkour, but the movement just doesn't work as well as an <tag:Uncharted>, or even a <tag:Tomb Raider>.  A few too many transitions can miss completely, planting Aloy's feet on a glitchy edge that inevitably falls to her death.
 
 And the inventory system is a train-wreck, with no good way of sorting "useless" and "important" items.  My pack is full of resources that I'll <i>probably</i> never need, but they claim to be used in some crafting recipes, so who knows if I'll want them in the future?  I could sell them for money (Scraps), but the only use I even have for that is to buy <i>treasure boxes</i> with <b>random</b> loot, usually even more stuff that I don't need or want.
 
@@ -53,6 +53,6 @@ But!  But.  Horizon's lows can't compare to its highs, not just the usually-fun 
 
 I'm really looking forward to a sequel that copies Zelda's versatile climbing, adds some kind of lock-on targeting, and throws out this garbage-fire of an inventory system.
 
-<b>Better than</b>: {{% game "Middle-earth: Shadow of War" %}}Middle-earth: Shadow of War{{% /game %}}  
-<b>Not as good as</b>: {{% game "The Legend of Zelda: Breath of the Wild" %}}The Legend of Zelda: Breath of the Wild{{% /game %}} (... but the story is better), {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
-<b>The ending is a bit of a cliffhanger</b>: but I'm hoping that {{% game "Horizon Zero Dawn: The Frozen Wilds" %}}The Frozen Wilds{{% /game %}} helps wrap that up.
+<b>Better than</b>: <game:Middle-earth: Shadow of War>  
+<b>Not as good as</b>: <game:The Legend of Zelda: Breath of the Wild> (... but the story is better), <game:The Witcher 3: Wild Hunt>  
+<b>The ending is a bit of a cliffhanger</b>: but I'm hoping that [The Frozen Wilds](game:Horizon Zero Dawn: The Frozen Wilds) helps wrap that up.

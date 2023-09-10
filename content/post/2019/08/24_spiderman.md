@@ -7,7 +7,7 @@ platform = ["PS4"]
 rating = ["Good"]
 +++
 
-It would be easy to dismiss {{% game "Marvel's Spider-Man" %}}Marvel's Spider-Man{{% /game %}} as the Marvel version of {{% game "Batman: Arkham City" %}}Batman: Arkham City{{% /game %}}, but that's a little reductive.  After all: Spider-Man has more costumes.
+It would be easy to dismiss <game:Marvel's Spider-Man> as the Marvel version of <game:Batman: Arkham City>, but that's a little reductive.  After all: Spider-Man has more costumes.
 
 I'm being a bit facetious, but really, much of what Spider-Man succeeds at feels directly aped from the open-world Arkham games: you fly through the city bounding between (or over) rooftops, side-missions explore the backgrounds of various allies and villains from the comics, and although Spidey can be upgraded to take more bullets than the Dark Knight could, the overall flow of combat is pretty similar.
 
@@ -25,6 +25,6 @@ Spider-Man is a well-polished and, ultimately, fun enough game; but it doesn't e
 
 ... as an aside, one thing that could really have helped Spider-Man stand out more is <i>art style</i>.  This game doesn't really have one; it looks too realistic.  The unlockable <a href="https://www.youtube.com/watch?v=il09pDsmOiY">Comic Book Suit</a> made me wish that the whole game had looked that cool.
 
-<b>Better than</b>: {{% game "Transformers: Devastation" %}}Transformers: Devastation{{% /game %}}  
-<b>Not as good as</b>: {{% game "Batman: Arkham Asylum" %}}Batman: Arkham Asylum{{% /game %}}  
+<b>Better than</b>: <game:Transformers: Devastation>  
+<b>Not as good as</b>: <game:Batman: Arkham Asylum>  
 <b>Also not as good as</b>: <a href="https://www.imdb.com/title/tt2250912">Spider-Man: Homecoming</a> or <a href="https://www.imdb.com/title/tt4633694">Spider-Man: Into the Spider-Verse</a>.

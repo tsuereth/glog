@@ -9,7 +9,7 @@ title = "These rhymes should cease, oh look some geese"
 
 +++
 
-{{% game "Child of Light" %}}Child of Light{{% /game %}}'s fairytale narrative is diluted, significantly, by its insistence on rhyming dialog.  The writing is routinely stretched and twisted just for the sake of a barely-rhyming word, sucking the personality out of any given character's lines.
+<game:Child of Light>'s fairytale narrative is diluted, significantly, by its insistence on rhyming dialog.  The writing is routinely stretched and twisted just for the sake of a barely-rhyming word, sucking the personality out of any given character's lines.
 
 (With the exception of the jester, Rubella, who adorably flubs the system by using a rhyming word's non-rhyming synonym instead.)
 

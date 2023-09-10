@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-{{% game "Pinstripe" %}}Pinstripe{{% /game %}} is more tedious and boring than you'd expect for a game that's only two or three hours long.
+<game:Pinstripe> is more tedious and boring than you'd expect for a game that's only two or three hours long.
 
 It's got platforming, but it isn't very well-architected; the jumping works fine, but movement on <i>bouncy</i> elements is too hard to predict, platforms aren't always visually clear, and its scant enemies are consistently dull.
 
@@ -21,8 +21,8 @@ Imagine if you saw the beginning and end of <i><a href="https://www.imdb.com/tit
 
 This game has some admirable production values, in terms of its art style and moody soundtrack.  Even the voice acting is pretty good, considering the source material its actors had to read.  But that speaks to Pinstripe's core problem: the source material isn't any good.  Despite its aesthetic trappings, this is a mechanically-stilted, tiresome, repetitive, <i>unsatisfying</i> adventure.
 
-<b>Better than</b>: {{% game "Toren" %}}Toren{{% /game %}}  
-<b>Not as good as</b>: {{% game "Broken Age" %}}Broken Age{{% /game %}}  
-<b>Did I really prefer</b>: {{% game "RiME" %}}RiME{{% /game %}} over this?  Yeah, if just barely.
+<b>Better than</b>: <game:Toren>  
+<b>Not as good as</b>: <game:Broken Age>  
+<b>Did I really prefer</b>: <game:RiME> over this?  Yeah, if just barely.
 
 <i>Progress: Finished the story, didn't bother with any extras.</i>

@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Danger Crew" %}}Danger Crew{{% /game %}}, a turn-based RPG themed around computer programming and tech culture, is a cute idea -- and not much more.
+<game:Danger Crew>, a turn-based RPG themed around computer programming and tech culture, is a cute idea -- and not much more.
 
 It's neat that an attack called <a href="https://curl.se/">curl</a> steals (<tt>GET</tt>s) an item from the enemy; and it's fun that NPC dialog lampoons tropes like "everyone has a startup," and "<a href="https://medium.com/hackernoon/why-coding-interviews-still-suck-aa189e3b6c93">interviews are a nightmare</a>."
 

@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-Take {{% game "Hotline Miami" %}}Hotline Miami{{% /game %}}, remove the acid trip, then add a "blink"-style teleport and you might end up with something like {{% game "Mr. Shifty" %}}Mr. Shifty{{% /game %}}.
+Take <game:Hotline Miami>, remove the acid trip, then add a "blink"-style teleport and you might end up with something like <game:Mr. Shifty>.
 
 The premise is simple: teleport around to avoid getting shot, while punching henchmen to death.  One hit will kill you, so skillful evasion is important, as is using the environment to block enemies' line of sight.  And you don't have your own gun, which means you'll need to balance that one-hit-kill risk against the exhilirating reward of teleporting your fist directly into a bad guy's face.
 
@@ -23,6 +23,6 @@ Every once in a while, you'll have a special objective like activating a switch,
 
 Mr. Shifty isn't an incredibly ambitious game, but it really does its premise justice.  Occasionally-frustrating gauntlets aside, it's pure, dumb, explosive fun.
 
-<b>Better than</b>: {{% game "Hotline Miami" %}}Hotline Miami{{% /game %}}  
-<b>Not as good as</b>: {{% game "Dishonored" %}}Dishonored{{% /game %}}  
+<b>Better than</b>: <game:Hotline Miami>  
+<b>Not as good as</b>: <game:Dishonored>  
 <b>If it's sequelized</b>: <i>please</i> add a stationary-aiming control.

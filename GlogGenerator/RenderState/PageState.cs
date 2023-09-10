@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using GlogGenerator.Data;
 using GlogGenerator.HugoCompat;
+using GlogGenerator.MarkdownExtensions;
 using Markdig;
 using Markdig.Extensions.ListExtras;
 using Microsoft.AspNetCore.StaticFiles;
@@ -129,19 +130,17 @@ namespace GlogGenerator.RenderState
             rendered = Regex.Replace(rendered, @"  +\n", "<br />");
             rendered = Regex.Replace(rendered, @"(<li>.+?)(?!</li><br />)", "$1"); // OMG FIXME PLZ
             rendered = Regex.Replace(rendered, @"(<li>.+?)(</li><br />)", "$1$2\n"); // OMG FIXME PLZ
-            rendered = Regex.Replace(rendered, @"(\d+)\) ", "$1__mdquirk_numbereditemparen ");
 
             rendered = Shortcodes.TranslateToHtml(this.siteState.PathResolver, this.siteState, this, rendered);
 
             var mdPipeline = new MarkdownPipelineBuilder()
                 .Use<ListExtraExtension>()
+                .Use(new GlogMarkdownExtension(this.siteState))
                 .Use<MarkdownQuirksMarkdigExtension>()
                 .Build();
             rendered = "\t" + Markdown.ToHtml(rendered, mdPipeline);
 
             rendered = rendered.Replace("__mdquirk_linebreak", "\n");
-
-            rendered = rendered.Replace("__mdquirk_numbereditemparen", ")");
 
             rendered = Regex.Replace(rendered, @"<p><p(.+?)</p></p>", "<p$1</p>");
 

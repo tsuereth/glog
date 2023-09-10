@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-{{% game "Shaq Fu: A Legend Reborn" %}}Shaq Fu: A Legend Reborn{{% /game %}} ends up feeling most like a parody game.  And it <i>isn't the worst</i> parody-game I've played.
+<game:Shaq Fu: A Legend Reborn> ends up feeling most like a parody game.  And it <i>isn't the worst</i> parody-game I've played.
 
 Its mechanics are simple, but basically functional -- at times, even "fun."  And what I appreciated the most in the first stage was the game's off-the-wall humor.
 
@@ -29,8 +29,8 @@ Shaq Fu 2's troubled development story - which the game <i>attempts</i> to lampo
 
 So, file Shaq Fu: A Legend Reborn under "mocks game design mistakes that it has itself made."  And like I said, not the <i>worst</i> of those I've played.
 
-<b>Better than</b>: {{% game "Eat Lead: The Return of Matt Hazard" %}}Eat Lead: The Return of Matt Hazard{{% /game %}}  
-<b>Not as good as</b>: {{% game "Marlow Briggs and the Mask of Death" %}}Marlow Briggs and the Mask of Death{{% /game %}}  
-<b>Probably also better than</b>: {{% game "Shaq-Fu" %}}Shaq-Fu{{% /game %}}, but, c'mon.
+<b>Better than</b>: <game:Eat Lead: The Return of Matt Hazard>  
+<b>Not as good as</b>: <game:Marlow Briggs and the Mask of Death>  
+<b>Probably also better than</b>: <game:Shaq-Fu>, but, c'mon.
 
 <i>Progress: Finished on Normal.</i>

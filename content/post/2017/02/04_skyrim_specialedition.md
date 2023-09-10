@@ -9,7 +9,7 @@ title = "I used to be an adventurer, like you..."
 
 +++
 
-I got 100% of the Steam achievements for {{% game "The Elder Scrolls V: Skyrim - Special Edition" %}}Skyrim{{% /game %}}, and I barely cheated at all!
+I got 100% of the Steam achievements for [Skyrim](game:The Elder Scrolls V: Skyrim - Special Edition), and I barely cheated at all!
 
 * For <a href="http://elderscrolls.wikia.com/wiki/Oblivion_Walker">Oblivion Walker</a>, I tried to re-do the "Waking Nightmare" quest (because I had picked the "wrong" outcome last time), but nothing I was doing would reset the quest NPC correctly.  So instead I gave myself a second copy of the Savior's Hide item, and that triggered the achievement.
 * And for <a href="http://elderscrolls.wikia.com/wiki/Achievements_(Dawnguard)#Legend">Legend</a>, after <i>finally</i> reaching level 50, I saw that this kind of dragon doesn't show up until level <b>78</b> -- so I just said "Fuck it" while cheating my level up 28 times.  (I still fought and killed the dragon!)

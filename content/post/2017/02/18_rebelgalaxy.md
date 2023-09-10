@@ -9,7 +9,7 @@ title = "Now THIS is Space Trucking"
 
 +++
 
-{{% game "Rebel Galaxy" %}}Rebel Galaxy{{% /game %}} is a jack of many trades, and - thankfully - a master of one.  Maybe two.
+<game:Rebel Galaxy> is a jack of many trades, and - thankfully - a master of one.  Maybe two.
 
 There is an attachment curve, at first, trying to figure out what the "deal" is in Rebel Galaxy.  As an open-world nonlinear sandbox, there are a bunch of activities you can do... but most of them aren't very fun.
 
@@ -30,8 +30,8 @@ I would say that some of Rebel Galaxy's shortcomings could be addressed pretty e
 
 But nevertheless, the upgrade chase and the space-truckin' soundtrack worked well enough for me.
 
-<b>Better than</b>: {{% game "Space Run: Fast and Safe Delivery" %}}Space Run{{% /game %}}  
-<b>Not as good as</b>: {{% game "Strike Suit Zero: Director's Cut" %}}Strike Suit Zero: Director's Cut{{% /game %}}  
-<b>Maybe better, maybe worse than</b>: {{% game "Escape Velocity Nova" %}}Escape Velocity Nova{{% /game %}}, but hard to compare them a decade apart
+<b>Better than</b>: [Space Run](game:Space Run: Fast and Safe Delivery)  
+<b>Not as good as</b>: <game:Strike Suit Zero: Director's Cut>  
+<b>Maybe better, maybe worse than</b>: <game:Escape Velocity Nova>, but hard to compare them a decade apart
 
 <i>Progress: Finished the main story, bought a <a href="http://rebelgalaxy.gamepedia.com/Ships/Blackgate">Blackgate</a></i>

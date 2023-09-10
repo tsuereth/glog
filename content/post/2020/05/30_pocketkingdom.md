@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-On one hand, {{% game "Pocket Kingdom" %}}Pocket Kingdom{{% /game %}} is a welcome entry in the under-served "puzzlevania" sub-genre.  It combines exploration-based storytelling and platform-puzzle mechanics in a semi-open world -- a rare pairing which I'd love to see more of.
+On one hand, <game:Pocket Kingdom> is a welcome entry in the under-served "puzzlevania" sub-genre.  It combines exploration-based storytelling and platform-puzzle mechanics in a semi-open world -- a rare pairing which I'd love to see more of.
 
 On the other hand, this implementation leaves a lot to be desired.  The story it tells is just a flimsy justification for some fantastical environments and mechanics - a threadbare example of a <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/TrappedInAnotherWorld">magical world trope</a> - and its conversation-based exposition is more annoying than it is fascinating.
 
@@ -25,8 +25,8 @@ And despite Pocket Kingdom's relatively small scale, it frequently shows a disti
 
 Pocket Kingdom is generally <i>playable</i>, and definitely worth trying for fans of puzzles and interconnected world maps.  But its world-building and puzzle variety, as well as its production values overall, are bluntly mediocre.
 
-<b>Better than</b>: {{% game "Qora" %}}Qora{{% /game %}}  
-<b>Not as good as</b>: {{% game "Toki Tori 2+" %}}Toki Tori 2+{{% /game %}}  
-<b>Definitely not as good as</b>: {{% game "Fez" %}}Fez{{% /game %}}, {{% game "The Witness (2016)" %}}The Witness (2016){{% /game %}}
+<b>Better than</b>: <game:Qora>  
+<b>Not as good as</b>: <game:Toki Tori 2+>  
+<b>Definitely not as good as</b>: <game:Fez>, <game:The Witness (2016)>
 
 <i>Progress: Got all the achievements, though I think there are still some items left.</i>

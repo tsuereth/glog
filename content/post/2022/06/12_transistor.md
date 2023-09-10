@@ -13,9 +13,9 @@ rating = ["Good"]
 
 ... well, anyway.
 
-{{% game "Transistor" %}}Transistor{{% /game %}} definitely succeeds at mixing {{% tag "Supergiant Games" %}}Supergiant{{% /tag %}}'s colorful style with a techno-mystical TRON motif.  And its blend of real-time and turn-based combat mechanics, though jarring at first, feels unique and exciting.
+<game:Transistor> definitely succeeds at mixing [Supergiant](tag:Supergiant Games)'s colorful style with a techno-mystical TRON motif.  And its blend of real-time and turn-based combat mechanics, though jarring at first, feels unique and exciting.
 
-Unfortunately the narrative takes a hit from ... <i>the narrator</i>: while his character is better-integrated with the game than in {{% game "Bastion" %}}Bastion{{% /game %}}, he talks so much - and there are so few other voice actors - that eventually the exposition <i>sounds</i> samey and repetitive.
+Unfortunately the narrative takes a hit from ... <i>the narrator</i>: while his character is better-integrated with the game than in <game:Bastion>, he talks so much - and there are so few other voice actors - that eventually the exposition <i>sounds</i> samey and repetitive.
 
 And the gameplay is let down by an intimidating volume of progression options: being able to use every Function as an ability <i>or</i> an ability upgrade <i>or</i> a passive upgrade is a "cool idea," but the resulting matrix of choices is overwhelming, and wasteful.  (After finding a setup that worked for me, I wasn't compelled to experiment any more.)
 
@@ -23,8 +23,8 @@ And -- both the story and the mechanics are limited by Transistor's short runnin
 
 I guess the game might be expecting me to "recurse" and run it again - adding Limiters for extra challenge - but that's really not my thing.
 
-I enjoyed my (brief) time with Transistor, to be clear; it just doesn't feel like it lives up to the potential of its ideas.  And in retrospect, seems less like a setup for a TRON-like epic than it does a proof-of-concept for {{% game "Hades (2020)" %}}Hades{{% /game %}}.
+I enjoyed my (brief) time with Transistor, to be clear; it just doesn't feel like it lives up to the potential of its ideas.  And in retrospect, seems less like a setup for a TRON-like epic than it does a proof-of-concept for [Hades](game:Hades (2020)).
 
-<b>Better than</b>: {{% game "Bastion" %}}Bastion{{% /game %}}, {{% game "Tron: Evolution" %}}Tron: Evolution{{% /game %}}  
-<b>Not as good as</b>: {{% game "Shadowrun: Dragonfall - Director's Cut" %}}Shadowrun: Dragonfall - Director's Cut{{% /game %}}  
-<b>Maybe the best "inside the computer" game so far</b>: But that competition isn't very stiff.  Certainly way better than the hacking minigame in {{% game "Fallout 4: Far Harbor" %}}Fallout 4: Far Harbor{{% /game %}}.
+<b>Better than</b>: <game:Bastion>, <game:Tron: Evolution>  
+<b>Not as good as</b>: <game:Shadowrun: Dragonfall - Director's Cut>  
+<b>Maybe the best "inside the computer" game so far</b>: But that competition isn't very stiff.  Certainly way better than the hacking minigame in <game:Fallout 4: Far Harbor>.

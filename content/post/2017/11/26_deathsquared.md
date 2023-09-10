@@ -6,7 +6,7 @@ game = ["Death Squared"]
 platform = ["PC"]
 +++
 
-I'd been looking forward to {{% game "Death Squared" %}}Death Squared{{% /game %}}, thinking that it looked like a fun co-op puzzler in the vein of {{% game "Pitfall Planet" %}}Pitfall Planet{{% /game %}}.  Good thing I tried the demo, first.
+I'd been looking forward to <game:Death Squared>, thinking that it looked like a fun co-op puzzler in the vein of <game:Pitfall Planet>.  Good thing I tried the demo, first.
 
 Death Squared seems not as much to be a thoughtful, methodical puzzle game, as it is a die-and-retry, getting-punched-in-the-face kind of puzzle game.
 
@@ -14,4 +14,4 @@ At least in two-player mode, levels are scripted such that each player's movemen
 
 Naturally, <i>discovering</i> these traps tends to involve being killed by surprise and having to restart from scratch.
 
-By myself, controlling both characters with one brain, I couldn't even make it through the whole demo.  I can only imagine that in co-op, Death Squared would incur even more severe coordination frustration than what drove me to give up on {{% game "Kalimba" %}}Kalimba{{% /game %}}.
+By myself, controlling both characters with one brain, I couldn't even make it through the whole demo.  I can only imagine that in co-op, Death Squared would incur even more severe coordination frustration than what drove me to give up on <game:Kalimba>.

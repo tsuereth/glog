@@ -9,7 +9,7 @@ title = "Wave after wave of brainless bags of demon blood"
 
 +++
 
-More than it did {{% abslink href="2010/07/18/darksiders-6/" %}}back in 2010{{% /abslink %}}, the combat in {{% game "Darksiders: Warmastered Edition" %}}Darksiders: Warmastered Edition{{% /game %}} is really boring me.
+More than it did {{% abslink href="2010/07/18/darksiders-6/" %}}back in 2010{{% /abslink %}}, the combat in <game:Darksiders: Warmastered Edition> is really boring me.
 
 Maybe this will become less of a problem once I accumulate more combat abilities; or maybe I'll become more distracted from it once I reach some real dungeon puzzles.  But this dishwater-dull button-mashing makes a poor first(-ish) impression.
 

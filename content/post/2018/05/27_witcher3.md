@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-Though it's considerably more playable than its predecessors, {{% game "The Witcher 3: Wild Hunt" %}}Witcher 3{{% /game %}} still has its share of oddities and frustrations.  Like the dramatic disparity between how many skills you can invest points into (80) and how many can be activated at once (12).  And how the Alchemy menu doesn't allow you to buy materials directly from its crafting screen, even though armor and weapon crafting does, and the menus are identical.
+Though it's considerably more playable than its predecessors, [Witcher 3](game:The Witcher 3: Wild Hunt) still has its share of oddities and frustrations.  Like the dramatic disparity between how many skills you can invest points into (80) and how many can be activated at once (12).  And how the Alchemy menu doesn't allow you to buy materials directly from its crafting screen, even though armor and weapon crafting does, and the menus are identical.
 
 Foremost in my mind is how incredibly picky the game can be about context-specific actions.  Being able to interact with an object requires both that Geralt is roughly facing it, and that the camera is somewhat centered on it; and so many times, Geralt's wide turning radius has resulted in me awkwardly trying to dance into the right position to press the 'A' button.  It can be ... maddening.
 

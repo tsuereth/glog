@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Prismata" %}}Prismata{{% /game %}} is half visual-novel, and half turn-based strategy game -- except the strategy game is really a card game, and the card game feels a lot like a puzzle ... well, let's slow down a bit.
+<game:Prismata> is half visual-novel, and half turn-based strategy game -- except the strategy game is really a card game, and the card game feels a lot like a puzzle ... well, let's slow down a bit.
 
 Prismata starts out pretty strong, with a cool sci-fi future setting and a sardonic smartass protagonist.  The main character's apathy is a convenient vehicle for the game's tutorial missions; other characters rib him for not keeping his skills up, and then teach you, the player, how to control swarms of battling robots.
 
@@ -27,8 +27,8 @@ I probably would have been fine with that puzzle game, except that I'd <i>just</
 
 There is some pretty cool stuff in Prismata, but the tutorial pulled a fast one on me, and I just didn't feel like re-examining all of my tactics in order to get to Episode 2.
 
-<b>Better than</b>: {{% game "Card City Nights" %}}Card City Nights{{% /game %}}  
-<b>Not as good as</b>: {{% game "Thronebreaker: The Witcher Tales" %}}Thronebreaker: The Witcher Tales{{% /game %}}  
+<b>Better than</b>: <game:Card City Nights>  
+<b>Not as good as</b>: <game:Thronebreaker: The Witcher Tales>  
 <b>The visual-novel part</b>: isn't bad!  The writing and <i>ambience</i> are good on their own, but not good enough that I want to re-learn the game.
 
 <i>Progress: Didn't quite finish Episode 1 of the campaign.</i>

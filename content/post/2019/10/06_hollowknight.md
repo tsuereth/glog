@@ -7,15 +7,15 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-I've been "playing" {{% game "Hollow Knight" %}}Hollow Knight{{% /game %}} for about three months now.  In truth I was only <i>actively</i> playing it for a few weeks back in July -- and while those few weeks were quite good, since then I've <i>lacked the courage</i> to come back to it.
+I've been "playing" <game:Hollow Knight> for about three months now.  In truth I was only <i>actively</i> playing it for a few weeks back in July -- and while those few weeks were quite good, since then I've <i>lacked the courage</i> to come back to it.
 
-Hollow Knight is both difficult and frustrating, but not in the same way as {{% game "Ori and the Blind Forest: Definitive Edition" %}}Ori and the Blind Forest{{% /game %}}.  Ori was frustrating to play due to slippery controls and poor checkpointing (... often a consequence of manually placing those checkpoints), and those frustrating fundamentals made it difficult to progress in the game.
+Hollow Knight is both difficult and frustrating, but not in the same way as [Ori and the Blind Forest](game:Ori and the Blind Forest: Definitive Edition).  Ori was frustrating to play due to slippery controls and poor checkpointing (... often a consequence of manually placing those checkpoints), and those frustrating fundamentals made it difficult to progress in the game.
 
 Hollow Knight, on the other hand, has difficult action gameplay - a pure challenge of defeating enemies while avoiding their attacks - and as that difficulty ramps up, I start to get frustrated at my lack of progress.
 
 Does that make sense?  The difference is subtle, but important: in Ori, the (I would say) flaws in its gameplay made it hard for me to truly enjoy the bigger picture; while in Hollow Knight, my lack of skill results in me being <i>unable to see</i> the bigger picture.
 
-For the most part, my failings in Hollow Knight are my own fault.  (Though I will levy some criticism at the long distances between save points and a few boss fights.)  While the Knight does gather stronger equipment and more powerful abilities through map exploration, this game places a much heavier emphasis on <b>skill building</b> than, say, {{% game "Bloodstained: Ritual of the Night" %}}Bloodstained{{% /game %}}.  Just having more health isn't enough to withstand later enemies' attacks; I need to get better at dodging and blocking them.
+For the most part, my failings in Hollow Knight are my own fault.  (Though I will levy some criticism at the long distances between save points and a few boss fights.)  While the Knight does gather stronger equipment and more powerful abilities through map exploration, this game places a much heavier emphasis on <b>skill building</b> than, say, [Bloodstained](game:Bloodstained: Ritual of the Night).  Just having more health isn't enough to withstand later enemies' attacks; I need to get better at dodging and blocking them.
 
 And what I'm afraid of is that I may already have hit the ceiling of my skills.  The amount of deaths I'm racking up in The Hive, not just in its boss fight but <i>on my way to the boss</i>, is intimidatingly large.  These giant angry bees are no joke.
 

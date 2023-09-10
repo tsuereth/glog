@@ -9,9 +9,9 @@ title = "Diablo: Lord of Papercraft"
 
 +++
 
-{{% game "Book of Demons" %}}Book of Demons{{% /game %}} is immediately jarring, not just because of its slickly-animated high-definition papercraft presentation (like an amped-up {{% game "Epistory: Typing Chronicles" %}}Epistory{{% /game %}}), but also because it's a clear "homage" to {{% game "Diablo" %}}Diablo{{% /game %}}.  And when I say "homage," I mean that there is an old man standing by the tiny, depressed village's well, and he asks you to delve under the haunted church, into the 3/4-isometric catacombs to fight evil.
+<game:Book of Demons> is immediately jarring, not just because of its slickly-animated high-definition papercraft presentation (like an amped-up [Epistory](game:Epistory: Typing Chronicles)), but also because it's a clear "homage" to <game:Diablo>.  And when I say "homage," I mean that there is an old man standing by the tiny, depressed village's well, and he asks you to delve under the haunted church, into the 3/4-isometric catacombs to fight evil.
 
-They're clearly going for a nostalgia angle, but to me it just feels uninspired.  At least {{% game "Torchlight" %}}Torchlight{{% /game %}}, for all it cribbed from Diablo, tried <i>a little bit</i> to make a game world of its own.  Book of Demons puts forth no effort whatsoever.
+They're clearly going for a nostalgia angle, but to me it just feels uninspired.  At least <game:Torchlight>, for all it cribbed from Diablo, tried <i>a little bit</i> to make a game world of its own.  Book of Demons puts forth no effort whatsoever.
 
 That said, Book of Demons <i>does</i> propose a suitably unique set of gameplay systems: equipment, spells, and passive skills are all squashed into virtual cards.  Your mana is consumed either by a card's base/equip cost, or by using an ability -- so, with six mana points, you could equip a four-mana weapon and cast a one-mana spell twice.  (If I understood the system correctly.)
 

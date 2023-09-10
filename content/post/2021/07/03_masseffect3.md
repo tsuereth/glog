@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Mass Effect 2" %}}Mass Effect 2{{% /game %}} was <i>better</i> the second time around, because I knew what to expect and what I should focus on.  {{% game "Mass Effect 3" %}}Mass Effect 3{{% /game %}}, in my {{% game "Mass Effect Legendary Edition" %}}Legendary Edition{{% /game %}} revisit, ... was not.  But it's still a fun adventure and ({{% game "Mass Effect 3: Extended Cut" %}}now more than ever{{% /game %}}) a satisfying conclusion to Shepard's story.
+<game:Mass Effect 2> was <i>better</i> the second time around, because I knew what to expect and what I should focus on.  <game:Mass Effect 3>, in my [Legendary Edition](game:Mass Effect Legendary Edition) revisit, ... was not.  But it's still a fun adventure and ([now more than ever](game:Mass Effect 3: Extended Cut)) a satisfying conclusion to Shepard's story.
 
 Some of Mass Effect's game systems have really improved in its third outing: snapping to cover is less error-prone, a "reputation" score allows you to benefit from mixing Paragon and Renegade decisions, and exploring the galaxy map is much less tedious (no resource scanning!).  Some other improvements are more debatable: hacking minigames have been removed entirely, and - as an Infiltrator, again - moving the time-slow buff from a character stat to a weapon upgrade is just confusing.
 
@@ -19,8 +19,8 @@ And, most notably, ME3's squadmate roster is a significant downgrade from ME2's.
 
 It feels great to finally bring the fight to the Reapers, and shooting alien monsters to death feels as good as it ever has.  But Mass Effect 3 still feels like a step back from its predecessor's non-linear mission structure and character-centric storytelling.
 
-<b>Better than</b>: {{% game "Mass Effect" %}}Mass Effect{{% /game %}}, any of the second game's DLCs.  
-<b>Not as good as</b>: {{% game "Mass Effect 2" %}}Mass Effect 2{{% /game %}}, {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
+<b>Better than</b>: <game:Mass Effect>, any of the second game's DLCs.  
+<b>Not as good as</b>: <game:Mass Effect 2>, <game:The Witcher 3: Wild Hunt>  
 <b>And, as for <i>this</i> installment's DLC</b>: fewer in quantity, greater in quality!  But I'll talk more about those soon.
 
 <i>Progress: Finished on Normal.</i>

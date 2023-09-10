@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-I've revisited many of my "old favorite" games, and sometimes observed age getting the better of them.  But I just can't look at {{% game "Chrono Trigger" %}}Chrono Trigger{{% /game %}} through that same lens.  I may never be able to objectively measure it against contemporary games.
+I've revisited many of my "old favorite" games, and sometimes observed age getting the better of them.  But I just can't look at <game:Chrono Trigger> through that same lens.  I may never be able to objectively measure it against contemporary games.
 
 Chrono Trigger is a <a href="https://en.wikipedia.org/wiki/The_Well-Tempered_Clavier_(Westworld)">cornerstone</a> of my gaming life; I don't know if I can fully describe this game because of how integral it is to the <i>way I think</i> about games.
 

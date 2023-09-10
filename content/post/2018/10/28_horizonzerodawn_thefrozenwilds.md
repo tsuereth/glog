@@ -7,7 +7,7 @@ platform = ["PS4"]
 rating = ["Good"]
 +++
 
-No, {{% game "Horizon Zero Dawn: The Frozen Wilds" %}}The Frozen Wilds{{% /game %}} didn't wrap up {{% game "Horizon Zero Dawn" %}}Horizon{{% /game %}}'s cliffhanger ending.  I guess they're saving that for a sequel.
+No, [The Frozen Wilds](game:Horizon Zero Dawn: The Frozen Wilds) didn't wrap up [Horizon](game:Horizon Zero Dawn)'s cliffhanger ending.  I guess they're saving that for a sequel.
 
 Overall, Frozen Wilds is more of the same Horizon stuff, but smaller: a main story, some side quests, some collectibles, and a few new weapons and enemies.
 
@@ -27,6 +27,6 @@ What I will begrudge it, a little, is not pushing the envelope more -- especiall
 
 The Frozen Wilds is worthwhile, but I don't think it quite meets the quality bar set by the main game.
 
-<b>Better than</b>: {{% game "Grand Theft Auto IV: The Lost and Damned" %}}Grand Theft Auto IV: The Lost and Damned{{% /game %}}  
-<b>Not as good as</b>: {{% game "Grand Theft Auto IV: The Ballad of Gay Tony" %}}Grand Theft Auto IV: The Ballad of Gay Tony{{% /game %}}  
+<b>Better than</b>: <game:Grand Theft Auto IV: The Lost and Damned>  
+<b>Not as good as</b>: <game:Grand Theft Auto IV: The Ballad of Gay Tony>  
 <b>While most of Horizon's backstory is well-researched and believable</b>: the idea that real scientists would do a node-rotating puzzle for security clearance is pretty silly.

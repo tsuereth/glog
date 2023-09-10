@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Iconoclasts" %}}Iconoclasts{{% /game %}} feels like a significant leap forward from the developer's previous game, {{% game "Noitu Love 2: Devolution" %}}Noitu Love 2{{% /game %}}.  This is way more than a {{% tag "Mega Man" %}}Mega Man{{% /tag %}} homage -- Iconoclasts tells an epic story using multiple protagonists as they explore an interconnected, Metroidvania-style world.
+<game:Iconoclasts> feels like a significant leap forward from the developer's previous game, [Noitu Love 2](game:Noitu Love 2: Devolution).  This is way more than a <tag:Mega Man> homage -- Iconoclasts tells an epic story using multiple protagonists as they explore an interconnected, Metroidvania-style world.
 
-Well, the world isn't <i>that</i> interconnected; more like the separate-but-adjacent map regions of {{% game "Dust: An Elysian Tail" %}}Dust: An Elysian Tail{{% /game %}}.  (And like {{% game "Indivisible" %}}Indivisible{{% /game %}}, Iconoclasts frustratingly refuses to show you more than the current region's map.)  The "multiple" protagonists point is also kind of a stretch; main character Robin is frequently rolling with a party of companions, but those characters are only playable for a few minutes of the game's running length.  And that "epic" story ... is hard to understand.
+Well, the world isn't <i>that</i> interconnected; more like the separate-but-adjacent map regions of <game:Dust: An Elysian Tail>.  (And like <game:Indivisible>, Iconoclasts frustratingly refuses to show you more than the current region's map.)  The "multiple" protagonists point is also kind of a stretch; main character Robin is frequently rolling with a party of companions, but those characters are only playable for a few minutes of the game's running length.  And that "epic" story ... is hard to understand.
 
 The first half of Iconoclasts' campaign is pretty light on storytelling, and yet is still difficult to follow due to a crazy amount of factional jargon.  The <i>One Concern</i> is an army fighting for the defense of <i>City One</i> which is ruled by <i>Mother</i>, and there are <i>Agents</i> with super-human abilities granted by <i>Ivory</i> which is also the planet's primary fuel source, while the One Concern <i>General</i> hates the Agents (and also... is one?) and they all enforce <i>Penance</i> upon religious criminals, especially the <i>Pirates</i> which are really a tribe called the <i>Isi</i> who also get Ivory from plants? but not upon the <i>ChemiCo</i> science group which works for the One Concern but also helps the Pirates and <i>Settlers</i> under the table by <a href="https://knowyourmeme.com/memes/math-lady-confused-lady">crafting your weapon upgrades</a>.
 
@@ -29,8 +29,8 @@ The action and puzzle gameplay in Iconoclasts may not be mind-blowing, but it wo
 
 It's a shame that the story is so messy, but overall Iconoclasts is fun <i>enough</i> to be worthwhile from start to finish.
 
-<b>Better than</b>: {{% game "Pocket Kingdom" %}}Pocket Kingdom{{% /game %}}  
-<b>Not as good as</b>: {{% game "Indivisible" %}}Indivisible{{% /game %}}  
-<b>More exciting, but less puzzling, than</b>: {{% game "Toki Tori 2+" %}}Toki Tori 2+{{% /game %}}
+<b>Better than</b>: <game:Pocket Kingdom>  
+<b>Not as good as</b>: <game:Indivisible>  
+<b>More exciting, but less puzzling, than</b>: <game:Toki Tori 2+>
 
 <i>Progress: 100% on Standard mode.</i>

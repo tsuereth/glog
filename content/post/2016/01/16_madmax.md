@@ -17,10 +17,10 @@ And there are some clear cases where content was stretched thin -- like all the 
 
 But what hurts Mad Max the most are the parts that are working correctly, and were designed and implemented to completion, but just <i>aren't fun</i>.  Most of the enemy "camp" dungeons are confusing and ponderous mazes.  Attacking a Convoy is fun the first time, but quickly becomes repetitive.  Scarecrows and other static objectives littering the map are thoroughly unrewarding.  Even the Death Race events are invariably either dull, due to the opponents being basically useless, or unfairly aggravating, due to an overpowered enemy being able to kill you almost immediately.
 
-There is some good in Mad Max, specifically the thrill of speeding through the desert in a haphazardly-constructed car.  But you really need to have a solid tolerance for {{% game "Assassin's Creed Rogue" %}}same-y open world games{{% /game %}} to put up with its generally-mediocre content.
+There is some good in Mad Max, specifically the thrill of speeding through the desert in a haphazardly-constructed car.  But you really need to have a solid tolerance for [same-y open world games](game:Assassin's Creed Rogue) to put up with its generally-mediocre content.
 
-<b>Better than</b>: {{% game "Assassin's Creed: Freedom Cry" %}}Assassin's Creed: Freedom Cry{{% /game %}}  
-<b>Not as good as</b>: {{% game "Middle-earth: Shadow of Mordor" %}}Middle-earth: Shadow of Mordor{{% /game %}}  
-<b>Too many times during the game</b>: I felt like I should be watching <i>Fury Road</i>, or playing {{% game "Borderlands: The Pre-Sequel" %}}Borderlands{{% /game %}}, instead.
+<b>Better than</b>: <game:Assassin's Creed: Freedom Cry>  
+<b>Not as good as</b>: <game:Middle-earth: Shadow of Mordor>  
+<b>Too many times during the game</b>: I felt like I should be watching <i>Fury Road</i>, or playing [Borderlands](game:Borderlands: The Pre-Sequel), instead.
 
 <i>Progress: Defeated Scrotus, did some other stuff.</i>

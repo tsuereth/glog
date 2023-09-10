@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Ibb & Obb" %}}Ibb & Obb{{% /game %}} is an adorable co-op puzzle-platformer with cute little characters who will be taunting you in your nightmares before you reach the end.
+<game:Ibb & Obb> is an adorable co-op puzzle-platformer with cute little characters who will be taunting you in your nightmares before you reach the end.
 
 Its primary puzzle mechanic is a, uh... gravity line?  Imagine that the ground is a mostly-horizontal line, and a character above it will be drawn downward, while a character below it will be drawn <i>upward</i>.  Portals on the surface (or in walls) can be used to swap from one side of the line to the other, and you and your co-op partner will need to manage "who's on which side" to defeat enemies and overcome hurdles as you travel from left to right.
 
@@ -21,8 +21,8 @@ The late game just cranked up its bar for precision platforming and reaction tim
 
 Good fun up until that point, though.  Sincerely: this is the best co-op puzzler we've tackled in a while, despite its eventual, unreasonable difficulty.
 
-<b>Better than</b>: {{% game "Dyadic" %}}Dyadic{{% /game %}}, {{% game "Kalimba" %}}Kalimba{{% /game %}}  
-<b>Not as good as</b>: {{% game "Pitfall Planet" %}}Pitfall Planet{{% /game %}}  
+<b>Better than</b>: <game:Dyadic>, <game:Kalimba>  
+<b>Not as good as</b>: <game:Pitfall Planet>  
 <b>Unlike some other "relationship ruiner" games</b>: here, you can commiserate against a shared enemy (the game).
 
 <i>Progress: Got part-way through level 13 of 15.</i>

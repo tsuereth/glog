@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-I don't know if it was the launch's technical infidelity, or if critics just romanticized {{% game "Batman: Arkham City" %}}Arkham City{{% /game %}} more than I did, but <a href="https://opencritic.com/game/1383/batman-arkham-knight">consensus</a> still ranks {{% game "Batman: Arkham Knight" %}}Batman: Arkham Knight{{% /game %}} below its predecessor and I just <i>don't</i> agree.
+I don't know if it was the launch's technical infidelity, or if critics just romanticized [Arkham City](game:Batman: Arkham City) more than I did, but <a href="https://opencritic.com/game/1383/batman-arkham-knight">consensus</a> still ranks <game:Batman: Arkham Knight> below its predecessor and I just <i>don't</i> agree.
 
 Sure, some narrative sequences feel forced and melodramatic, especially the first-person diner intro and <i>especially</i> especially the over-long Joker hallucination near the outro.  The ending, even the 100%-completion ending, is underwhelming.  But Knight's story succeeds at delivering impressive set-piece encounters, at continually teasing you with a tantalizing "what's next" objective, and at integrating sidequests that finally make the open world feel engaging and immersive.
 
@@ -19,8 +19,8 @@ And I will never forget that this game's instability on PC is {{% abslink href="
 
 Arkham Knight's successes handily outpace its flaws.  Between the comprehensive and compelling side missions, the thrilling and <i>dark</i> story, and some genuinely inventive new mechanics, it really feels like a complete improvement on Arkham City - a generational leap beyond it - and an even fuller realization of Rocksteady's "vision" for a free-roaming Batman experience.
 
-<b>Better than</b>: {{% game "Assassin's Creed IV Black Flag" %}}Assassin's Creed IV Black Flag{{% /game %}}, {{% game "Batman: Arkham Asylum" %}}Batman: Arkham Asylum{{% /game %}} (though not its story), {{% game "Batman: Arkham City" %}}Batman: Arkham City{{% /game %}}  
-<b>Not as good as</b>: {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}  
-<b>Once the summer sales hit</b>: I'll finally try out the {{% game "Batman: Arkham Knight - A Matter of Family" %}}A Matter of Family{{% /game %}} and {{% game "Batman: Arkham Knight - Season of Infamy: Most Wanted Expansion" %}}Season of Infamy{{% /game %}} DLCs.
+<b>Better than</b>: <game:Assassin's Creed IV Black Flag>, <game:Batman: Arkham Asylum> (though not its story), <game:Batman: Arkham City>  
+<b>Not as good as</b>: <game:The Witcher 3: Wild Hunt>  
+<b>Once the summer sales hit</b>: I'll finally try out the [A Matter of Family](game:Batman: Arkham Knight - A Matter of Family) and [Season of Infamy](game:Batman: Arkham Knight - Season of Infamy: Most Wanted Expansion) DLCs.
 
 <i>Progress: Finished just about everything except that Riddler bullshit.</i>

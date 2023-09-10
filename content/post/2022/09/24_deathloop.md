@@ -18,7 +18,7 @@ B. Still allow the player to save items, because it's a video game, and they mig
 
 The correct answer is B.  (Or even better, C: allow players to manage items <i>during regular gameplay</i> so this doesn't need to be a separate step.)
 
-{{% game "Deathloop" %}}Deathloop{{% /game %}} chose A, and -- it's not like I'm heartbroken that several new "Double Trinkets" and a <a href="https://deathloop.fandom.com/wiki/HALPS_Prototype">frickin' laser beam</a> vanished after I watched the <a href="https://deathloop.fandom.com/wiki/Game_Updates/04">Goldenloop update</a>'s extended ending.
+<game:Deathloop> chose A, and -- it's not like I'm heartbroken that several new "Double Trinkets" and a <a href="https://deathloop.fandom.com/wiki/HALPS_Prototype">frickin' laser beam</a> vanished after I watched the <a href="https://deathloop.fandom.com/wiki/Game_Updates/04">Goldenloop update</a>'s extended ending.
 
 I just think it's funny that one of the update's highlight features (the ending) was responsible for me <i>losing</i> its other additions.
 

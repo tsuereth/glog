@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Transformers: Devastation" %}}Transformers: Devastation{{% /game %}} starts strong, with a gorgeous cartoon aesthetic, flashy character introductions, and <a href="https://www.imdb.com/name/nm0191520">Peter Cullen</a>'s commanding voice.  The fighting action is tightly-crafted, but still approachable and easy to learn.  Its narrative points move quickly, from one fast and focused encounter to the next; and it even has some optional, non-linear objectives to encourage a little map exploration.
+<game:Transformers: Devastation> starts strong, with a gorgeous cartoon aesthetic, flashy character introductions, and <a href="https://www.imdb.com/name/nm0191520">Peter Cullen</a>'s commanding voice.  The fighting action is tightly-crafted, but still approachable and easy to learn.  Its narrative points move quickly, from one fast and focused encounter to the next; and it even has some optional, non-linear objectives to encourage a little map exploration.
 
 This first chapter of the game is really promising, despite how completely dumb the plot is.  Getting to listen to "the Transformers sound effect" more than makes up for that.  But unfortunately, as the game marches forward, its early luster starts to fade.
 
@@ -25,8 +25,8 @@ I really, really enjoyed the presentation and gameplay of Transformers: Devastat
 
 But it felt like, after Chapter 1, the wheels came off this game and it just kinda laid there.
 
-<b>Better than</b>: {{% game "Transformers: War for Cybertron" %}}Transformers: War for Cybertron{{% /game %}}  
-<b>Not as good as</b>: {{% game "Ōkami HD" %}}Ōkami HD{{% /game %}}  
-<b>Basically as good as</b>: {{% game "Vanquish" %}}Vanquish{{% /game %}}
+<b>Better than</b>: <game:Transformers: War for Cybertron>  
+<b>Not as good as</b>: <game:Ōkami HD>  
+<b>Basically as good as</b>: <game:Vanquish>
 
 <i>Progress: Finished Chapter ... 4, I think?</i>

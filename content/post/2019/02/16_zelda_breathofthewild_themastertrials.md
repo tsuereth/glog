@@ -7,7 +7,7 @@ platform = ["Switch"]
 rating = ["Bad"]
 +++
 
-{{% game "The Legend of Zelda: Breath of the Wild - The Master Trials" %}}The Master Trials{{% /game %}} DLC adds "more" content to {{% game "The Legend of Zelda: Breath of the Wild" %}}Breath of the Wild{{% /game %}}, but <i>not good</i> content.
+[The Master Trials](game:The Legend of Zelda: Breath of the Wild - The Master Trials) DLC adds "more" content to [Breath of the Wild](game:The Legend of Zelda: Breath of the Wild), but <i>not good</i> content.
 
 Its titular feature is the Trial of the Sword sidequest: a three-part series of combat-oriented challenges.  Like the main game's Eventide Island, these challenges strip you of all items and equipment -- so, on top of needing to scavenge for weapons and food, enemy attacks deal a shit-ton of damage.
 
@@ -27,6 +27,6 @@ The Trials of the Sword quest, and the hard mode, might be meaningful for a play
 
 <b>Better than</b>: I don't have a good comparison, as I tend not to review story-less DLC.  
 <b>Not as good as</b>: real downloadable <i>content</i>.  
-<b>At least The Master Trials isn't sold separately</b>: it just comes as a "bonus" alongside {{% game "The Legend of Zelda: Breath of the Wild - The Champions' Ballad" %}}The Champions' Ballad{{% /game %}}.
+<b>At least The Master Trials isn't sold separately</b>: it just comes as a "bonus" alongside [The Champions' Ballad](game:The Legend of Zelda: Breath of the Wild - The Champions' Ballad).
 
 <i>Progress: did the first part of Trial of the Sword, and collected the shiny armors.</i>

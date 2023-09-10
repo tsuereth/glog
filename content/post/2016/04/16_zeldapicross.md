@@ -9,13 +9,13 @@ title = "I always thought Zelda could use more picture puzzles"
 
 +++
 
-Aside from the fact that you have to sit through Miitomo to gain enough internet-points to unlock it - and aside from the excruciatingly slow introductory tutorial - {{% game "My Nintendo Picross: The Legend of Zelda Twilight Princess" %}}My Nintendo Picross: The Legend of Zelda Twilight Princess{{% /game %}} (or henceforth, "Picrozelda") is an astoundingly solid entry in Picross.
+Aside from the fact that you have to sit through Miitomo to gain enough internet-points to unlock it - and aside from the excruciatingly slow introductory tutorial - <game:My Nintendo Picross: The Legend of Zelda Twilight Princess> (or henceforth, "Picrozelda") is an astoundingly solid entry in Picross.
 
-For one thing, it has an impressive number of puzzles, and they ramp up in complexity pretty rapidly.  The 45 normal puzzles get up to 20x15 in size, which is more than {{% game "Picross e" %}}Picross e{{% /game %}} managed.
+For one thing, it has an impressive number of puzzles, and they ramp up in complexity pretty rapidly.  The 45 normal puzzles get up to 20x15 in size, which is more than <game:Picross e> managed.
 
 What's that?  "Normal?"  Yuuuup: There are <i>another</i> 45 "Mega Picross" puzzles, which add a whole new mechanic to the game.  In these puzzles, two adjacent rows or columns will sometimes have a grouped clue, indicating e.g. that there is a contiguous group of 5 blocks spanning two columns.
 
-At first, this mechanic felt a little wacky (not unlike the quirks of {{% game "SquareCells" %}}SquareCells{{% /game %}}), but Picrozelda ramps up the complexity of this system gradually enough that you can learn its ins and outs -- what hints can be divined from what information, gradually and comprehensively.  <b>It works</b>.  And it's pretty cool.
+At first, this mechanic felt a little wacky (not unlike the quirks of <game:SquareCells>), but Picrozelda ramps up the complexity of this system gradually enough that you can learn its ins and outs -- what hints can be divined from what information, gradually and comprehensively.  <b>It works</b>.  And it's pretty cool.
 
 There is even a third kind of puzzle, deemed "Micross," which is a bunch of 10x10 ("micro"-sized) puzzles grouped together to form one large image.  The novelty wears off fast, but hey, more puzzles.
 
@@ -23,6 +23,6 @@ Beyond all that, what I really consider my favorite part of Picrozelda is that i
 
 Picrozelda is an admirable and satisfying entry in the ever-growing collection of Jupiter-developed Picross games.
 
-<b>Better than</b>: {{% game "Picross e" %}}Picross e{{% /game %}}, {{% game "SquareCells" %}}SquareCells{{% /game %}}  
-<b>Not as good as</b>: {{% game "Paint it Back" %}}Paint it Back{{% /game %}}  
-<b>Also much better than</b>: {{% game "Pokémon Picross" %}}Pokémon Picross{{% /game %}}, but stay tuned for that.
+<b>Better than</b>: <game:Picross e>, <game:SquareCells>  
+<b>Not as good as</b>: <game:Paint it Back>  
+<b>Also much better than</b>: <game:Pokémon Picross>, but stay tuned for that.

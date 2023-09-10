@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Momodora: Reverie Under the Moonlight" %}}Momodora: Reverie Under the Moonlight{{% /game %}} does <i>some</i> things well.  The combat mechanics are easy to learn, and have a bit of satisfying depth; upgrades come at a good pace and feel meaningful; regions have distinctive visual and audio themes.  And the map is a good-enough example of non-linear Metroidvania layout, given how short the game is.
+<game:Momodora: Reverie Under the Moonlight> does <i>some</i> things well.  The combat mechanics are easy to learn, and have a bit of satisfying depth; upgrades come at a good pace and feel meaningful; regions have distinctive visual and audio themes.  And the map is a good-enough example of non-linear Metroidvania layout, given how short the game is.
 
-But - <i>despite</i> how short it is - Reverie fails to make a meaningful impression.  Its mechanics aren't special, its art style is unremarkable, and its story is threadbare, supported by a handful of impersonal lines and a small cast of incredibly flat characters.  Even with NPCs, this game feels deader and emptier than {{% game "Metroid: Zero Mission" %}}Metroid{{% /game %}} or {{% game "Super Metroid" %}}Super Metroid{{% /game %}}.
+But - <i>despite</i> how short it is - Reverie fails to make a meaningful impression.  Its mechanics aren't special, its art style is unremarkable, and its story is threadbare, supported by a handful of impersonal lines and a small cast of incredibly flat characters.  Even with NPCs, this game feels deader and emptier than [Metroid](game:Metroid: Zero Mission) or <game:Super Metroid>.
 
 Without interesting gameplay or narrative stakes, the map itself was the only motivation I had to keep playing.  And that isn't a great motivation.
 
@@ -19,8 +19,8 @@ Only one anecdote stands out in my memory, and it isn't a good one.  I got to th
 
 Momodora: Reverie Under the Moonlight is competent enough in its fundamentals, but just doesn't have anything noteworthy to say for itself.  I don't regret the three-and-a-half hours I spent with it, but have no interest in hunting down its secrets -- nor in trying the rest of the Momodora series.
 
-<b>Better than</b>: {{% game "Shantae: Risky's Revenge - Director's Cut" %}}Shantae: Risky's Revenge - Director's Cut{{% /game %}}, if only just.  
-<b>Not as good as</b>: {{% game "Guacamelee! Super Turbo Championship Edition" %}}Guacamelee! Super Turbo Championship Edition{{% /game %}}, which wasn't really my favorite, either.  
-<b>Hard to say if better or worse than</b>: {{% game "Ori and the Blind Forest: Definitive Edition" %}}Ori and the Blind Forest: Definitive Edition{{% /game %}}; at least that was memorable, albeit frustrating as shit.
+<b>Better than</b>: <game:Shantae: Risky's Revenge - Director's Cut>, if only just.  
+<b>Not as good as</b>: <game:Guacamelee! Super Turbo Championship Edition>, which wasn't really my favorite, either.  
+<b>Hard to say if better or worse than</b>: <game:Ori and the Blind Forest: Definitive Edition>; at least that was memorable, albeit frustrating as shit.
 
 <i>Progress: Got the True Ending, 98% map completion.</i>

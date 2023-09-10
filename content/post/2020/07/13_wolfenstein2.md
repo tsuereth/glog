@@ -9,7 +9,7 @@ rating = ["Meh"]
 
 "That's it?"
 
-{{% game "Wolfenstein II: The New Colossus" %}}Wolfenstein II: The New Colossus{{% /game %}} achieves the same bombastic narrative heights as its predecessor, {{% game "Wolfenstein: The New Order" %}}The New Order{{% /game %}}.  Eventually.  And briefly.
+<game:Wolfenstein II: The New Colossus> achieves the same bombastic narrative heights as its predecessor, [The New Order](game:Wolfenstein: The New Order).  Eventually.  And briefly.
 
 In its first half, The New Colossus is ... depressing.  Our dear friend B.J. Blazkowicz was gravely injured at the end of TNO, and the sequel's intro doesn't let up: B.J. is stuck in a wheelchair, resistance headquarters is attacked by Frau Engel, Caroline gets her fuckin' head cut off -- it's <b>dark</b>.  The game's opening mission lays the pathos on <i>thick</i>, well beyond what's necessary to establish some Nazi-killin' motivation.
 
@@ -33,8 +33,8 @@ My opinions on the shooting gameplay should, of course, be taken with the grain 
 
 Its back half succeeds in delivering a thrilling high-action campaign narrative, but is cut short before The New Colossus can really redeem itself.  Overall, this sequel failed to live up to the expectations its predecessor so expertly set.
 
-<b>Better than</b>: {{% game "Wolfenstein: The Old Blood" %}}Wolfenstein: The Old Blood{{% /game %}}  
-<b>Not as good as</b>: {{% game "Wolfenstein: The New Order" %}}Wolfenstein: The New Order{{% /game %}}  
-<b>Maybe my glasses are rose-tinted, but also not as good as?</b>: {{% game "Bulletstorm" %}}Bulletstorm{{% /game %}}
+<b>Better than</b>: <game:Wolfenstein: The Old Blood>  
+<b>Not as good as</b>: <game:Wolfenstein: The New Order>  
+<b>Maybe my glasses are rose-tinted, but also not as good as?</b>: <game:Bulletstorm>
 
 <i>Progress: Finished on "Can I play, Daddy?" difficulty, did almost no side missions.</i>

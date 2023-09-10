@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-Well, did {{% game "The Witcher 3: Wild Hunt" %}}Witcher 3{{% /game %}}'s new-gen patch resolve its {{% abslink href="2022/12/16/oh-valley-of-plenty-ah-ah-aaaaah/" %}}clunky controls{{% /abslink %}}?  <i>Is</i> its slight amount of new content worthwhile?  Does it breathe new life into the gradually-aging masterpiece?
+Well, did [Witcher 3](game:The Witcher 3: Wild Hunt)'s new-gen patch resolve its {{% abslink href="2022/12/16/oh-valley-of-plenty-ah-ah-aaaaah/" %}}clunky controls{{% /abslink %}}?  <i>Is</i> its slight amount of new content worthwhile?  Does it breathe new life into the gradually-aging masterpiece?
 
 ... not really, I guess, and it didn't exactly need to.
 
@@ -15,11 +15,11 @@ Some minor quality-of-life improvements like <a href="https://www.ign.com/wikis/
 
 The new "<a href="https://witcher.fandom.com/wiki/Forgotten_Wolf_School_Gear">Netflix armor</a>" quest, <i><a href="https://witcher.fandom.com/wiki/In_the_Eternal_Fire%27s_Shadow">In the Eternal Fire's Shadow</a></i>, is a meaty side-story and includes some solid writing -- but it's still just one sidequest.
 
-And Witcher 3 on {{% platform "PC" %}}PC{{% /platform %}} already looked great, at least to me, despite its apparent lack of <a href="https://witcher.fandom.com/wiki/Patch_4.0_(The_Witcher_3)#PC_and_Next-Gen_Exclusives">ray-tracing and 4K faces and <i>et cetera</i></a>.
+And Witcher 3 on <platform:PC> already looked great, at least to me, despite its apparent lack of <a href="https://witcher.fandom.com/wiki/Patch_4.0_(The_Witcher_3)#PC_and_Next-Gen_Exclusives">ray-tracing and 4K faces and <i>et cetera</i></a>.
 
 (The less said about <a href="https://primagames.com/tips/how-to-get-the-netflix-alternative-dandelion-appearance-in-witcher-3">Dandelion's new look</a>, the better.)
 
-But, see, Witcher 3 didn't <i>need</i> an update to make it worth replaying.  And nowhere is this more evident than Toussaint, where the {{% game "The Witcher 3: Wild Hunt - Blood and Wine" %}}Blood and Wine{{% /game %}} expansion doesn't <i>just</i> paint a beautiful rural-urban-hybrid landscape with the same kind of deeply enthralling content as the main game.
+But, see, Witcher 3 didn't <i>need</i> an update to make it worth replaying.  And nowhere is this more evident than Toussaint, where the [Blood and Wine](game:The Witcher 3: Wild Hunt - Blood and Wine) expansion doesn't <i>just</i> paint a beautiful rural-urban-hybrid landscape with the same kind of deeply enthralling content as the main game.
 
 It also adds <a href="https://witcher.fandom.com/wiki/Knight_for_Hire">narratively-relevant Knight Errant missions</a>.  And expanded, super-powerful <a href="https://witcher.fandom.com/wiki/Mutations_(Blood_and_Wine)">skill mutations</a>.  And a <a href="https://witcher.fandom.com/wiki/Corvo_Bianco">homestead</a> which you can decorate with <a href="https://witcher.fandom.com/wiki/A_Portrait_of_the_Witcher_as_an_Old_Man">fine art</a>.
 

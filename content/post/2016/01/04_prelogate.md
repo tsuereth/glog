@@ -9,7 +9,7 @@ title = "Where the fuck is the NAND gate!?"
 
 +++
 
-Like {{% game "TIS-100" %}}TIS-100{{% /game %}}, {{% game "Prelogate" %}}Prelogate{{% /game %}} was frequently infuriating to me because of how it's <i>almost</i> like real computer programming.  Unlike TIS - and several other contemporaries - Prelogate suffered worse for this due to some unfortunate design flaws.
+Like <game:TIS-100>, <game:Prelogate> was frequently infuriating to me because of how it's <i>almost</i> like real computer programming.  Unlike TIS - and several other contemporaries - Prelogate suffered worse for this due to some unfortunate design flaws.
 
 Prelogate is a curious combination of color-based mirror puzzles and signal-based logic puzzles.  At its most clever, it up-ends binary logic problems with the additional dimensions of colors and color combinations -- plus organizing reflectors and gates in physical space.  Some of its puzzles are pretty damned cool.
 
@@ -21,8 +21,8 @@ The second problem is a simpler but even more damaging one: Prelogate's levels m
 
 Prelogate has some solid content to enjoy, but an equal amount of frustration to muddle through to get there.  That the game makes so little effort in easing the player into this frustrating content makes it all the more disappointing.
 
-<b>Better than</b>: {{% game "Lyne" %}}Lyne{{% /game %}}  
-<b>Not as good as</b>: {{% game "Human Resource Machine" %}}Human Resource Machine{{% /game %}}, {{% game "TIS-100" %}}TIS-100{{% /game %}}  
+<b>Better than</b>: <game:Lyne>  
+<b>Not as good as</b>: <game:Human Resource Machine>, <game:TIS-100>  
 <b>I'll never forgive it</b>: For "making" me <i>cheat</i> on the last few puzzles, 'cause I didn't have enough patience to guess the right logic algorithms.  It's the game's fault for breaking Karnaugh maps!  God damn it!
 
 <i>Progress: Finished all puzzles.</i>

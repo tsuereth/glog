@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Puppy Cross" %}}Puppy Cross{{% /game %}} has a cute premise - completing nonograms of dogs (and cats!) to let them frolic around a garden - and a hefty amount of puzzles backing it up.  Even if the customization aspect of the garden is kinda shallow, finishing all the puzzles feels like its own reward.
+<game:Puppy Cross> has a cute premise - completing nonograms of dogs (and cats!) to let them frolic around a garden - and a hefty amount of puzzles backing it up.  Even if the customization aspect of the garden is kinda shallow, finishing all the puzzles feels like its own reward.
 
 It even has one of the best quality-of-life improvements I've seen in a nonogram game: once you've marked all the right cells in a row or column, the "X" cells are filled in automatically.  This is a pretty great time-saving convenience that streamlines the flow to the next row or column.
 
@@ -25,8 +25,8 @@ Even though there's barely any text in the game, it suffers from a clear and <i>
 
 Much as I appreciate the game's amount of content and its thorough hinting system, the input issues are fairly critical.  Puppy Cross is certainly playable, but hard to recommend over more basically-functional nonogram games.
 
-<b>Better than</b>: {{% game "Pokémon Picross" %}}Pokémon Picross{{% /game %}}  
-<b>Not as good as</b>: {{% game "Nonogram - The Greatest Painter" %}}Nonogram - The Greatest Painter{{% /game %}}  
-<b>Dog and cat puns not as good as</b>: {{% game "Cat Quest" %}}Cat Quest{{% /game %}}
+<b>Better than</b>: <game:Pokémon Picross>  
+<b>Not as good as</b>: <game:Nonogram - The Greatest Painter>  
+<b>Dog and cat puns not as good as</b>: <game:Cat Quest>
 
 <i>Progress: 100%</i>

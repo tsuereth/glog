@@ -6,7 +6,7 @@ game = ["Final Fantasy XV: Windows Edition"]
 platform = ["PC"]
 +++
 
-It's been about eight-and-a-half <i>years</i> since {{% abslink href="2009/11/17/final-fantasy-xii-9/" %}}my last go{{% /abslink %}} at a {{% tag "Final Fantasy" %}}Final Fantasy{{% /tag %}}, and some parts of {{% game "Final Fantasy XV: Windows Edition" %}}FF XV{{% /game %}} looked kind-of appealing to me: like driving a car around an open world, and fully real-time action combat.
+It's been about eight-and-a-half <i>years</i> since {{% abslink href="2009/11/17/final-fantasy-xii-9/" %}}my last go{{% /abslink %}} at a <tag:Final Fantasy>, and some parts of [FF XV](game:Final Fantasy XV: Windows Edition) looked kind-of appealing to me: like driving a car around an open world, and fully real-time action combat.
 
 The demo makes a pretty poor case for it, though.  What passing interest I might have had is dead and buried, now.
 
@@ -18,7 +18,7 @@ The open world is kind of a mess, too.  It's certainly pretty-looking, but actio
 
 And the story and pacing - not that I expected much - is ... kind of a mess.  You've got your ambiguously evil "empire" and obvious foreshadowing of war, you've got your ancient prophecy and royal lineage of magic, you've got your fish-out-of-water protagonist and his childhood friend(s) guiding him along; it's a smattering of various clich&eacute;s, plus the flat characterization and stilted dialog (and awkward voice acting) you'd expect of a Japanese RPG from <i>last</i> decade.  And of course, the cutscene-heavy exposition that has come to define this franchise.
 
-Frankly, in terms of "sort of realistic but also wacky and fantastical" worlds, {{% game "Super Mario Odyssey" %}}Super Mario Odyssey{{% /game %}}'s New Donk City was better-executed than the locales and "humans" I saw in the Final Fantasy XV demo.
+Frankly, in terms of "sort of realistic but also wacky and fantastical" worlds, <game:Super Mario Odyssey>'s New Donk City was better-executed than the locales and "humans" I saw in the Final Fantasy XV demo.
 
 The emptiness and boredom of the open world is what disappointed me the most.  My fondest memories of older Final Fantasies are largely around exploring their world maps, and being enticed by far-off sights or hunting for hidden secrets; the map I <s>got</s> had to explore here just felt like <a href="https://www.youtube.com/watch?v=fksu6FENojY">butter scraped over too much bread</a>.
 

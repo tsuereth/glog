@@ -9,7 +9,7 @@ rating = ["Awful"]
 
 <a href="https://en.wikipedia.org/wiki/Regular_expression">Regular expressions</a> get a <a href="https://thedailywtf.com/articles/and-now-you-have-two-problems">bad rap</a> -- a regex is a powerful tool, good for some jobs and terrible for others.
 
-I would be pretty interested in a puzzle game with gradually-escalating regex complexity (especially using the search text for storytelling).  But {{% game "Copy Editor" %}}Copy Editor{{% /game %}} takes an early turn in ... another direction.
+I would be pretty interested in a puzzle game with gradually-escalating regex complexity (especially using the search text for storytelling).  But <game:Copy Editor> takes an early turn in ... another direction.
 
 In this level, the search text has gendered pronouns that need to be gender-swapped.  So how do you change "His" to "Her" and "Her" to "His" without undoing yourself?  The real-life answer is <b>don't use regex</b>. It's the <a href="https://en.wikipedia.org/wiki/Law_of_the_instrument">wrong tool for this job</a>, and this problem shouldn't be in a regex game at all.
 

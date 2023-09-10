@@ -9,7 +9,7 @@ title = "A purrfect fit"
 
 +++
 
-{{% game "Cat Quest" %}}Cat Quest{{% /game %}} finally came out on Android, and now my phone's battery is dead.
+<game:Cat Quest> finally came out on Android, and now my phone's battery is dead.
 
 Despite how proud I am of this post's title, mobile isn't a "perfect" fit for Cat Quest's combat: avoiding attacks (by moving away from them) is harder than with a mouse or controller, and so combat is more spammy and chaotic than when I {{% abslink href="2017/08/13/an-rpg-for-kittens/" %}}played on PC{{% /abslink %}}.
 

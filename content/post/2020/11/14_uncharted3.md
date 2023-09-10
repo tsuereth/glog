@@ -7,7 +7,7 @@ platform = ["PS4"]
 rating = ["Good"]
 +++
 
-My previous writings on {{% game "Uncharted 3: Drake's Deception" %}}Uncharted 3{{% /game %}} ranked it just below {{% game "Uncharted 2: Among Thieves" %}}its predecessor{{% /game %}}, but this most-recent playthrough has me reconsidering.
+My previous writings on [Uncharted 3](game:Uncharted 3: Drake's Deception) ranked it just below [its predecessor](game:Uncharted 2: Among Thieves), but this most-recent playthrough has me reconsidering.
 
 Particularly, I'm re-thinking takes like <i>{{% abslink href="2011/11/05/uncharted-3-drakes-deception-6/" %}}there aren't as many standout "Uncharted" moments{{% /abslink %}}</i> and <i>{{% abslink href="2012/11/17/uncharted-3-drakes-deception-4/" %}}pacing is kind of wacky{{% /abslink %}}</i>.  Yes, this round of adventuring sees Nate and his crew racking up a crazy amount of air-miles, and none of their destinations have quite the <i>gravitas</i> of Nepal or Shambhala...
 
@@ -15,8 +15,8 @@ But the other side of that coin is a considerable accumulation of "postcard mome
 
 And my anecdotal impression - that is, not a conclusion I've decisively measured - is that Naughty Dog (or perhaps Bluepoint) did a better job of facilitating the "Explorer" playstyle this time around.  Generally speaking, Uncharted 3's combat encounters felt lighter in terms of tiresome bodycount, having fewer waves of mooks to senselessly mow down.  Still enough to classify Nathan Drake as a bloodthirsty warlord, but, making positive progress.
 
-On the other hand, I also encountered more-frequent frustrations with unclear parkour directions than in the last game.  Especially in several {{% game "Crash Bandicoot" %}}Crash Bandicoot{{% /game %}}-esque "running towards the camera" chases which, just, come on guys -- some thrilling screenshots of Nate's "oh no" face aren't worth so many die-and-retry loops caused by <i>invisible obstacles</i>.
+On the other hand, I also encountered more-frequent frustrations with unclear parkour directions than in the last game.  Especially in several <game:Crash Bandicoot>-esque "running towards the camera" chases which, just, come on guys -- some thrilling screenshots of Nate's "oh no" face aren't worth so many die-and-retry loops caused by <i>invisible obstacles</i>.
 
-At this point in the franchise, though, trying to rank Uncharted 2 and 3 against each other is basically futile.  We know that {{% game "Uncharted 4: A Thief's End" %}}the fourth game{{% /game %}} out-classes them both.
+At this point in the franchise, though, trying to rank Uncharted 2 and 3 against each other is basically futile.  We know that [the fourth game](game:Uncharted 4: A Thief's End) out-classes them both.
 
 <i>Progress: Finished on Explorer, again.</i>

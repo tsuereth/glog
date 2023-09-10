@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-Unlike previous Bat-DLCs, <i>(deep breath)</i> {{% game "Batman: Arkham Knight - Season of Infamy: Most Wanted Expansion" %}}Batman: Arkham Knight - Season of Infamy: Most Wanted Expansion{{% /game %}} doesn't just throw you into a series of arenas and ignore everything you've done in the main game.  Instead, it <b>adds optional missions to {{% game "Batman: Arkham Knight" %}}Arkham Knight{{% /game %}}'s campaign</b>.
+Unlike previous Bat-DLCs, <i>(deep breath)</i> <game:Batman: Arkham Knight - Season of Infamy: Most Wanted Expansion> doesn't just throw you into a series of arenas and ignore everything you've done in the main game.  Instead, it <b>adds optional missions to [Arkham Knight](game:Batman: Arkham Knight)'s campaign</b>.
 
 What a thought, right?  Actually "expanding" the existing game?  Brilliant.
 
@@ -17,6 +17,6 @@ Do I wish that there were more than four new missions?  Yup.  Do I wish that the
 
 But I'm happy with the gameplay and narrative quality of these diversions, I'm happy with how well they integrate into Arkham Knight's story, and hell, I'm even happy to see Killer Croc again.
 
-<b>Better than</b>: {{% game "Batman: Arkham Origins - Cold, Cold Heart" %}}Batman: Arkham Origins - Cold, Cold Heart{{% /game %}} and all the other Arkham DLCs.  
-<b>Not as good as</b>: {{% game "The Witcher 3: Wild Hunt - Hearts of Stone" %}}The Witcher 3: Wild Hunt - Hearts of Stone{{% /game %}}  
+<b>Better than</b>: <game:Batman: Arkham Origins - Cold, Cold Heart> and all the other Arkham DLCs.  
+<b>Not as good as</b>: <game:The Witcher 3: Wild Hunt - Hearts of Stone>  
 <b>The "right" way to play this</b>: is probably by having it from the <i>beginning</i> of Arkham Knight.

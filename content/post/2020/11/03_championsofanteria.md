@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-I played a demo of {{% game "Champions of Anteria" %}}Champions of Anteria{{% /game %}}, what feels like forever ago, and remembered it as a simple tactical RPG with a light base-building touch.  I don't know how I managed to avoid seeing the {{% game "Warcraft III: Reign of Chaos" %}}Warcraft III{{% /game %}} influences.  Just imagine a custom map with only hero units (you know... like {{% game "Dota 2" %}}Dota{{% /game %}}), and which restricts base-building to turns inbetween hero missions.
+I played a demo of <game:Champions of Anteria>, what feels like forever ago, and remembered it as a simple tactical RPG with a light base-building touch.  I don't know how I managed to avoid seeing the [Warcraft III](game:Warcraft III: Reign of Chaos) influences.  Just imagine a custom map with only hero units (you know... like [Dota](game:Dota 2)), and which restricts base-building to turns inbetween hero missions.
 
 In other words, Champions of Anteria is <i>most</i> like a remixed real-time strategy game with an action focus.  That action focus isn't very good, though.  (To be fair, neither is the base-building.)
 
@@ -23,8 +23,8 @@ And the story, despite some dry-wit charm from the narrator, isn't attention-gra
 
 Champions of Anteria isn't "bad," exactly, but none of its key features are stand-out successes either.  After 2-3 hours I feel like I've seen enough of Anteria.
 
-<b>Better than</b>: {{% game "Majesty: The Fantasy Kingdom Sim" %}}Majesty: The Fantasy Kingdom Sim{{% /game %}}  
-<b>Not as good as</b>: {{% game "Brütal Legend" %}}Brütal Legend{{% /game %}}, {{% game "Sid Meier's Civilization V" %}}Sid Meier's Civilization V{{% /game %}}  
-<b>For a more intriguing genre hybrid, see</b>: {{% game "CastleStorm" %}}CastleStorm{{% /game %}}
+<b>Better than</b>: <game:Majesty: The Fantasy Kingdom Sim>  
+<b>Not as good as</b>: <game:Brütal Legend>, <game:Sid Meier's Civilization V>  
+<b>For a more intriguing genre hybrid, see</b>: <game:CastleStorm>
 
 <i>Progress: Conquered like, two new territories.</i>

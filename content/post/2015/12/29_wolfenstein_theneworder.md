@@ -9,7 +9,7 @@ title = "A New Wolf for a New Era"
 
 +++
 
-I never got into the "pure" FPS sub-genre -- your Dooms, your Serious Sams, what have you.  So it's a good thing that {{% game "Wolfenstein: The New Order" %}}Wolfenstein: The New Order{{% /game %}} actually has a lot more than mere "purism" going for it.  Sure, yeah, it has assault rifles and linear levels and you fight a bunch of Nazis.  And the gameplay extras don't really add up to much -- some health upgrades, some skippable weapon enhancements and perks.  But to me, the real story in New Order is ... uh.  The story.
+I never got into the "pure" FPS sub-genre -- your Dooms, your Serious Sams, what have you.  So it's a good thing that <game:Wolfenstein: The New Order> actually has a lot more than mere "purism" going for it.  Sure, yeah, it has assault rifles and linear levels and you fight a bunch of Nazis.  And the gameplay extras don't really add up to much -- some health upgrades, some skippable weapon enhancements and perks.  But to me, the real story in New Order is ... uh.  The story.
 
 Even in the game's introductory WWII sequence, its narrative feels like the star of the show.  B.J. Blazkowicz has a burdensome past (...which I <a href="http://wolfenstein.wikia.com/wiki/Wolfenstein_Wiki">had to research</a>) and his compatriots build up personalities of their own very quickly.  The characters B.J. interacts with throughout story missions show real senses of humanity, and the events - in both historic backstory and real-time gameplay - are genuinely interesting and well-written.  And the soundtrack is just phenomenal, a great combination of ominous ambience, thrilling action riffs, awe-inspiring environment cues, and chilling alternate-history Imperial Germany versions of 1960s pop music.
 

@@ -9,7 +9,7 @@ title = "If only real humans would obey my instructions like this"
 
 +++
 
-More so than {{% game "TIS-100" %}}TIS-100{{% /game %}}, {{% game "Human Resource Machine" %}}Human Resource Machine{{% /game %}} makes me appreciate the fact that C is a high-level language.  Because while TIS-100 (as with {{% game "SpaceChem" %}}SpaceChem{{% /game %}} and {{% game "Infinifactory" %}}Infinifactory{{% /game %}} before it) upturns programming fundamentals to build a game about concurrency/parallelism, HRM is actually more like a real, tiny but fully-functional computer.  And it will remind any computer science student of what it's like to take <i>conditional statements</i> and <i>variables</i> for granted.
+More so than <game:TIS-100>, <game:Human Resource Machine> makes me appreciate the fact that C is a high-level language.  Because while TIS-100 (as with <game:SpaceChem> and <game:Infinifactory> before it) upturns programming fundamentals to build a game about concurrency/parallelism, HRM is actually more like a real, tiny but fully-functional computer.  And it will remind any computer science student of what it's like to take <i>conditional statements</i> and <i>variables</i> for granted.
 
 (Specifically: HRM provides an unconditional jump, and jumps when zero and negative, but not for a positive case; so creating logical blocks of code for this can make for a very messy jump diagram.  And while most of HRM's puzzles include memory in the form of addressable locations, managing all of the requried "copy from" and "copy to" instructions manually gets pretty exhausting.)
 
@@ -21,8 +21,8 @@ Still, despite these flaws, Human Resource Machine is a pretty fun programming g
 
 I'll be spending some more time on that, though, and on trying to meet the optimization challenges in other levels.  This may not be as much of an ego-stroke as literally comparing my performance numbers to my friends' (as the Zachtronics games do), but, my pride requires I do it anyway.
 
-<b>Better than</b>: {{% game "Little Inferno" %}}Little Inferno{{% /game %}}  
-<b>Not as good as</b>: {{% game "TIS-100" %}}TIS-100{{% /game %}} -- but maybe just because I'm a masochist  
+<b>Better than</b>: <game:Little Inferno>  
+<b>Not as good as</b>: <game:TIS-100> -- but maybe just because I'm a masochist  
 <b>And the ending</b>: Is a satisfyingly humorous send-off.
 
 <i>Progress: Finished all but Prime Factory, missing a bunch of optimization challenges.</i>

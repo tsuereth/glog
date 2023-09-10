@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-Am I in a time-loop of playing games that are, themselves, time-loops?  <i>Maybe</i>.  But {{% game "Omensight: Definitive Edition" %}}Omensight{{% /game %}} isn't another {{% game "Deathloop" %}}Deathloop{{% /game %}} or {{% game "Katana Zero" %}}Katana Zero{{% /game %}} or {{% game "Outer Wilds" %}}Outer Wilds{{% /game %}} so much as it's another {{% game "Stories: The Path of Destinies" %}}Stories: The Path of Destinies{{% /game %}}.
+Am I in a time-loop of playing games that are, themselves, time-loops?  <i>Maybe</i>.  But [Omensight](game:Omensight: Definitive Edition) isn't another <game:Deathloop> or <game:Katana Zero> or <game:Outer Wilds> so much as it's another <game:Stories: The Path of Destinies>.
 
-(It's from {{% tag "Spearhead Games" %}}the same developer{{% /tag %}}, so, makes sense.)
+(It's from [the same developer](tag:Spearhead Games), so, makes sense.)
 
 Just like Stories, this is a hybrid of button-mashy combat and choose-your-own-adventure-style branching paths; here, the trick is that some information you learn - the titular "omen sights" - can be shared with NPCs in the next loop, causing them to make different choices and reveal even more clues.
 
@@ -21,6 +21,6 @@ It's still fun most of the time, though.  And even when it isn't, combat is kind
 
 At the end of the day, Omensight is a better version of Spearhead's previous time-looping adventure, and I don't think I'd be disappointed if they keep on making them.
 
-<b>Better than</b>: {{% game "Stories: The Path of Destinies" %}}Stories: The Path of Destinies{{% /game %}}  
-<b>Not as good as</b>: {{% game "The Sexy Brutale" %}}The Sexy Brutale{{% /game %}}  
+<b>Better than</b>: <game:Stories: The Path of Destinies>  
+<b>Not as good as</b>: <game:The Sexy Brutale>  
 <b>It's funny</b>: I hate dying-and-retrying in a game, but these time loop narratives do the same thing and I love it.

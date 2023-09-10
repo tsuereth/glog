@@ -8,11 +8,11 @@ title = "Ori and the Terrible, Horrible, No Good, Very Bad Day"
 
 +++
 
-{{% game "Ori and the Blind Forest: Definitive Edition" %}}Ori{{% /game %}} has some strong segments, but they're buried underneath a few too many poor design decisions around difficulty and pacing.
+[Ori](game:Ori and the Blind Forest: Definitive Edition) has some strong segments, but they're buried underneath a few too many poor design decisions around difficulty and pacing.
 
-Some parts of this game are really quite good.  Multiple sections are really creative, like a {{% game "The Legend of Zelda: Ocarina of Time 3D" %}}Lost Woods{{% /game %}}-style part that rewrites the map, or a gravity-bending area that has you falling through a room in <i>different directions!</i>  Pretty cool stuff.
+Some parts of this game are really quite good.  Multiple sections are really creative, like a [Lost Woods](game:The Legend of Zelda: Ocarina of Time 3D)-style part that rewrites the map, or a gravity-bending area that has you falling through a room in <i>different directions!</i>  Pretty cool stuff.
 
-And once you get the (very poorly-named) "Bash" ability, which allows you to ping-pong between obstacles and projectiles, you'll be executing jump-chains that would make {{% game "Super Mario Galaxy 2" %}}Mario{{% /game %}} jealous.
+And once you get the (very poorly-named) "Bash" ability, which allows you to ping-pong between obstacles and projectiles, you'll be executing jump-chains that would make [Mario](game:Super Mario Galaxy 2) jealous.
 
 Anyway, the "good news" about Ori is that - in addition to being quite pretty - some of its platforming ideas are really impressive.
 
@@ -38,8 +38,8 @@ The parts of Ori that are good, are pretty good!  And the quality of its audiovi
 
 Ultimately, I'm not sure if I'd call it worthwhile.
 
-<b>Better than</b>: {{% game "Teslagrad" %}}Teslagrad{{% /game %}}  
-<b>Not as good as</b>: {{% game "Dust: An Elysian Tail" %}}Dust: An Elysian Tail{{% /game %}}  
-<b>Hey they're making {{% game "Ori and the Will of the Wisps" %}}a sequel{{% /game %}}!</b>: call me when there's a "Very Easy" mode.
+<b>Better than</b>: <game:Teslagrad>  
+<b>Not as good as</b>: <game:Dust: An Elysian Tail>  
+<b>Hey they're making [a sequel](game:Ori and the Will of the Wisps)!</b>: call me when there's a "Very Easy" mode.
 
 <i>Progress: Finished on Easy, 85% completion.</i>

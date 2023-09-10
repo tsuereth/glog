@@ -9,9 +9,9 @@ rating = ["Awesome"]
 
 Okay, I found something to actually complain about: the controls.  Foremost, that - despite the game's insistence on mapping some moves to motion-only - the gestures for things like throwing Cappy in a circle, or in particular directions, don't work well at all.  Yes, even when using two detached Joy-Con controllers, as the loading screen continues to annoyingly recommend.
 
-(Which, by the way, just isn't as comfortable as using the {{% platform "Switch" %}}Switch{{% /platform %}}'s Pro Controller.  The right-hand Joy-Con's analog stick is difficult to use, since pushing it requires loosing your grip on the controller itself.)
+(Which, by the way, just isn't as comfortable as using the <platform:Switch>'s Pro Controller.  The right-hand Joy-Con's analog stick is difficult to use, since pushing it requires loosing your grip on the controller itself.)
 
-It's kind of a shame that, more than a decade after the {{% platform "Wii" %}}Wii{{% /platform %}} - and six years after {{% game "The Legend of Zelda: Skyward Sword" %}}Skyward Sword{{% /game %}} finally got some <i>working</i> gestures - Nintendo is still pulling shit like this.  Especially when the button-mappings aren't all being used -- "X" and "Y" do the same thing! as do "A" and "B" most of the time.  <b>Just let me use buttons!</b>
+It's kind of a shame that, more than a decade after the <platform:Wii> - and six years after [Skyward Sword](game:The Legend of Zelda: Skyward Sword) finally got some <i>working</i> gestures - Nintendo is still pulling shit like this.  Especially when the button-mappings aren't all being used -- "X" and "Y" do the same thing! as do "A" and "B" most of the time.  <b>Just let me use buttons!</b>
 
 ... anyway.  It sounds upsetting, but in <i>practice</i> the controls are rarely a real problem.  Only a handful of the game's 800+ power moons have given me trouble that I'd really blame on the controls.
 
@@ -27,10 +27,10 @@ It's interesting to me that this feeling - the exploration, not the outfit-colle
 
 Super Mario Odyssey is an amazing journey through awesome worlds, with a ton of thrilling and entertaining things to do.  It has some really unique and memorable content, and it's a blast just to run around in.
 
-But since its critical-path story is as throwaway as Mario's ever had, I don't think it's easy to say that this deeper-but-narrower world design is a total victory over, say, {{% game "Super Mario 3D World" %}}3D World{{% /game %}}'s prolific level count.
+But since its critical-path story is as throwaway as Mario's ever had, I don't think it's easy to say that this deeper-but-narrower world design is a total victory over, say, [3D World](game:Super Mario 3D World)'s prolific level count.
 
-<b>Better than</b>: {{% game "Super Mario Galaxy 2" %}}Super Mario Galaxy 2{{% /game %}}  
-<b>Not as good as</b>: {{% game "The Legend of Zelda: Breath of the Wild" %}}The Legend of Zelda: Breath of the Wild{{% /game %}}  
-<b>About as good as</b>: {{% game "Super Mario 3D World" %}}Super Mario 3D World{{% /game %}}, albeit in different ways.
+<b>Better than</b>: <game:Super Mario Galaxy 2>  
+<b>Not as good as</b>: <game:The Legend of Zelda: Breath of the Wild>  
+<b>About as good as</b>: <game:Super Mario 3D World>, albeit in different ways.
 
 <i>Progress: 782 moons</i>

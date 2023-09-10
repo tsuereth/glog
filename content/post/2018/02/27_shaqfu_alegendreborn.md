@@ -6,7 +6,7 @@ game = ["Shaq Fu: A Legend Reborn"]
 platform = ["PC"]
 +++
 
-{{% abslink href="2018/01/21/early-access-late-release/" %}}Last month{{% /abslink %}}, I lamented the protracted development period of - among other Kickstarter and Indiegogo projects - {{% game "Shaq Fu: A Legend Reborn" %}}Shaq Fu: A Legend Reborn{{% /game %}}.  As if the {{% game "Shaq-Fu" %}}original game{{% /game %}} wasn't enough of a joke, this sequel project had claimed to be "99% there" <b>over a year ago</b>, before going silent.
+{{% abslink href="2018/01/21/early-access-late-release/" %}}Last month{{% /abslink %}}, I lamented the protracted development period of - among other Kickstarter and Indiegogo projects - <game:Shaq Fu: A Legend Reborn>.  As if the [original game](game:Shaq-Fu) wasn't enough of a joke, this sequel project had claimed to be "99% there" <b>over a year ago</b>, before going silent.
 
 Recently, <a href="https://www.indiegogo.com/projects/shaq-fu-a-legend-reborn#/updates/all">a wild update appeared</a>, encouragingly titled: "Finally we are getting close to release!"
 

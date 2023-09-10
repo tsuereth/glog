@@ -9,7 +9,7 @@ title = "Toad found more fortune than this"
 
 +++
 
-{{% game "Uncharted: Fortune Hunter" %}}Uncharted: Fortune Hunter{{% /game %}} is a pretty great-looking mobile game, and even includes some <i>fun</i>, if you can believe it.  Block and movement puzzles, you know?
+<game:Uncharted: Fortune Hunter> is a pretty great-looking mobile game, and even includes some <i>fun</i>, if you can believe it.  Block and movement puzzles, you know?
 
 But its bite-sized appeal is hampered somewhat by long loading times, and at least in the early game, the puzzles themselves are more laborious than they are clever -- flipping all the switches to see what they do, and waiting for Drake to finish walking to his destination.
 

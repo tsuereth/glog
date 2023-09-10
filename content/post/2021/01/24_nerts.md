@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-What surprised me the most about {{% game "Nerts!: Online" %}}Nerts!: Online{{% /game %}} wasn't that Zachtronics made a new cards-only game, nor that they made a <i>multiplayer</i> game -- it's that, I didn't think anyone else knew about "multiplayer solitaire."  I always thought that was a weird thing my family did.
+What surprised me the most about <game:Nerts!: Online> wasn't that Zachtronics made a new cards-only game, nor that they made a <i>multiplayer</i> game -- it's that, I didn't think anyone else knew about "multiplayer solitaire."  I always thought that was a weird thing my family did.
 
 The rules of Nerts are a little different from the game I grew up with, but the objective is roughly the same: play cards from your personal solitaire deck into the suit-specific piles shared among all players.  It's a race to deplete your own deck (or at least, some part of your deck) as quickly as possible, and when one of your friends snipes a pile position from you, you yell expletives at them in voice chat.
 

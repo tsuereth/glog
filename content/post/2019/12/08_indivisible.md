@@ -7,17 +7,17 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-Every time I tell someone that "{{% game "Indivisible" %}}Indivisible{{% /game %}} is kinda like {{% game "Valkyrie Profile" %}}Valkyrie Profile{{% /game %}}," they respond with a shrug -- which is more than fair, since I've barely played Valkyrie Profile myself.  And like I said {{% abslink href="2011/06/19/valkyrie-profile-3/" %}}back in 2011{{% /abslink %}} - about a game released in <i>1999</i> - surprisingly, not many titles have tried to imitate it.
+Every time I tell someone that "<game:Indivisible> is kinda like <game:Valkyrie Profile>," they respond with a shrug -- which is more than fair, since I've barely played Valkyrie Profile myself.  And like I said {{% abslink href="2011/06/19/valkyrie-profile-3/" %}}back in 2011{{% /abslink %}} - about a game released in <i>1999</i> - surprisingly, not many titles have tried to imitate it.
 
 So to put it another way: Indivisible is a side-scrolling action-RPG with real-time multi-character combat, platforming challenges in a Metroidvania-like interconnected world, a plot inspired by Southeast Asian mythology, and a large cast of unique characters who by the way accompany the protagonist Ajna by living inside of her head.  Does ... does that clarify things?
 
-Combat is Indivisible's most distinctive aspect.  If you aren't familiar with Valkyrie Profile, the {{% tag "Mario & Luigi" %}}Mario & Luigi{{% /tag %}} games might be the next best comparison: your party has four members, and each one is mapped to a <b>face button</b> on the controller.  Pressing a character's button will order that character to attack, or if an enemy is currently attacking, will order your character to defend.  Each character also has modified attacks when you hold Up, Down, or Left/Right while pressing their corresponding button.
+Combat is Indivisible's most distinctive aspect.  If you aren't familiar with Valkyrie Profile, the <tag:Mario & Luigi> games might be the next best comparison: your party has four members, and each one is mapped to a <b>face button</b> on the controller.  Pressing a character's button will order that character to attack, or if an enemy is currently attacking, will order your character to defend.  Each character also has modified attacks when you hold Up, Down, or Left/Right while pressing their corresponding button.
 
 Indivisible's combat is all real-time, so if the action meters are full, you could mash all four buttons at once to have the whole party attack together.  A shared <a href="https://en.wikipedia.org/wiki/%E1%B9%9Addhi">iddhi</a> meter encourages you to defend sparingly, and timely defenses are rewarded with a little healing.  (The iddhi meter can also be used by some characters for ultra-powerful super attacks.)
 
 Where it gets really interesting is that, of Indivisible's <i>dozens-strong</i> cast, each character has a totally unique set of moves.  Some can heal, some have projectiles, some use elemental effects, some deal damage to multiple targets, some launch enemies into the air or can pierce their defenses... some <i>lay traps</i>, or have delayed effects like charging up a later attack.
 
-Indivisible isn't a "fighting game," but you can tell that {{% tag "Lab Zero Games" %}}Lab Zero{{% /tag %}}'s fighter background helped in building this system up.  Each character's move-set feels uniquely tailored to their fighting style.  For example, there's a dog, and he does damage by barking.  You can also build your iddhi meter by petting the dog.  (Aww.)
+Indivisible isn't a "fighting game," but you can tell that [Lab Zero](tag:Lab Zero Games)'s fighter background helped in building this system up.  Each character's move-set feels uniquely tailored to their fighting style.  For example, there's a dog, and he does damage by barking.  You can also build your iddhi meter by petting the dog.  (Aww.)
 
 Outside of combat, Indivisible is a platform-puzzle-y Metroidvania: the main story will take you through a huge interconnected map of varied environments, and as you make progress and learn new abilities, you'll be able to unlock new areas or uncover new secrets in previously-visited locations.  Sometimes these progress gates are pretty direct, i.e. you need an ability to open a door; and sometimes they're indirect, i.e. you need an ability to increase your aerial range in order to reach a platform.
 
@@ -45,8 +45,8 @@ What did I miss?  Oh, the rest of the audio is solid - including some catchy bac
 
 Indivisible's imperfections - confusing world navigation, and the ass-ache that is Mt. Sumeru - were just enough to keep me from calling it an unconditional success.  But it delivers <i>strong</i> on its core gameplay mechanics, builds a unique and refreshing world, and tells an interesting story; and for a studio's first attempt at an RPG, that's really damn good.
 
-<b>Better than</b>: {{% game "Timespinner" %}}Timespinner{{% /game %}}  
-<b>Not as good as</b>: {{% game "Bloodstained: Ritual of the Night" %}}Bloodstained: Ritual of the Night{{% /game %}}  
+<b>Better than</b>: <game:Timespinner>  
+<b>Not as good as</b>: <game:Bloodstained: Ritual of the Night>  
 <b>Whatever story-based game Lab Zero makes next</b>: sign me up.
 
 <i>Progress: 100%, except the secret ... cat boss?</i>

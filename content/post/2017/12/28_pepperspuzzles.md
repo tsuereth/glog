@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Pepper's Puzzles" %}}Pepper's Puzzles{{% /game %}} is a humble little picross game, perhaps even humbler than {{% game "Paint it Back" %}}Paint it Back{{% /game %}}.  It pays some welcome attention toward subtle quality-of-life features, like a randomized soundtrack and a "dynamic background" to prevent the brain equivalent of <a href="https://en.wikipedia.org/wiki/Screen_burn-in">burn-in</a>.
+<game:Pepper's Puzzles> is a humble little picross game, perhaps even humbler than <game:Paint it Back>.  It pays some welcome attention toward subtle quality-of-life features, like a randomized soundtrack and a "dynamic background" to prevent the brain equivalent of <a href="https://en.wikipedia.org/wiki/Screen_burn-in">burn-in</a>.
 
 It's also got a very-slightly quirky sense of humor, which is neat.
 

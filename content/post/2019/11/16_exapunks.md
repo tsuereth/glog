@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-{{% game "Exapunks" %}}Exapunks{{% /game %}} has me falling in love with {{% tag "Zachtronics" %}}Zachtronics{{% /tag %}} all over again.
+<game:Exapunks> has me falling in love with <tag:Zachtronics> all over again.
 
-{{% game "SpaceChem" %}}SpaceChem{{% /game %}} was one of my all-time favorites; and {{% game "Infinifactory" %}}Infinifactory{{% /game %}} and {{% game "TIS-100" %}}TIS-100{{% /game %}} were worthy, if somewhat experimental, follow-ups.  But {{% game "Shenzhen I/O" %}}Shenzhen I/O{{% /game %}} was ultimately unsatisfying, and {{% game "Opus Magnum" %}}Opus Magnum{{% /game %}} was a disappointment.  In my book, Zachtronics games were declining in the quality of their puzzles, and failing in their attempts to build compelling narratives.
+<game:SpaceChem> was one of my all-time favorites; and <game:Infinifactory> and <game:TIS-100> were worthy, if somewhat experimental, follow-ups.  But <game:Shenzhen I/O> was ultimately unsatisfying, and <game:Opus Magnum> was a disappointment.  In my book, Zachtronics games were declining in the quality of their puzzles, and failing in their attempts to build compelling narratives.
 
 This resulted in me taking <i>entirely too long</i> to start Exapunks, which might now be my <b>new favorite</b> programming game.
 

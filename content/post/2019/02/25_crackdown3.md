@@ -7,9 +7,9 @@ platform = ["Xbox One"]
 rating = ["Good"]
 +++
 
-{{% game "Crackdown 3" %}}Crackdown 3{{% /game %}} isn't terrible.
+<game:Crackdown 3> isn't terrible.
 
-Okay, maybe that's a little too reductive.  But it's really not difficult to sum up Crackdown 3 in a few words.  For instance, these words: it's a sequel to {{% game "Crackdown" %}}Crackdown{{% /game %}}.
+Okay, maybe that's a little too reductive.  But it's really not difficult to sum up Crackdown 3 in a few words.  For instance, these words: it's a sequel to <game:Crackdown>.
 
 No, I mean, that's really all you need to know.
 
@@ -30,6 +30,6 @@ The worst part is, I doubt that someone who hadn't played Crackdown before will 
 
 But, for someone who enjoyed Crackdown, this is the same thing again.  With <a href="https://www.youtube.com/watch?v=uBlhhvJ--ko">Terry Crews in it</a>.
 
-<b>Better than</b>: {{% game "Yooka-Laylee" %}}Yooka-Laylee{{% /game %}}  
-<b>Not as good as</b>: {{% game "Saints Row IV" %}}Saints Row IV{{% /game %}}  
-<b>More thrilling, but less mechanically fascinating, than</b>: {{% game "Agents of Mayhem" %}}Agents of Mayhem{{% /game %}}
+<b>Better than</b>: <game:Yooka-Laylee>  
+<b>Not as good as</b>: <game:Saints Row IV>  
+<b>More thrilling, but less mechanically fascinating, than</b>: <game:Agents of Mayhem>

@@ -6,7 +6,7 @@ game = ["The Pedestrian"]
 platform = ["PC"]
 +++
 
-{{% game "The Pedestrian" %}}The Pedestrian{{% /game %}} has a very cool aesthetic: its 3D backdrops make the simple platforming levels seem a lot more interesting than they actually are.
+<game:The Pedestrian> has a very cool aesthetic: its 3D backdrops make the simple platforming levels seem a lot more interesting than they actually are.
 
 But, yeah.  The platforming is pretty remedial.  Controls feel a bit slippery, too; considering the 2D platform levels are all about sharp lines, it's surprising how squishy the hit detection is.
 

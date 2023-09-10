@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-It's definitely a more-enjoyable <i>game</i> than {{% game "SteamWorld Dig" %}}Dig{{% /game %}}, but {{% game "SteamWorld Heist" %}}SteamWorld Heist{{% /game %}} likewise comes across as though most of its polish was applied in the wrong places.
+It's definitely a more-enjoyable <i>game</i> than [Dig](game:SteamWorld Dig), but <game:SteamWorld Heist> likewise comes across as though most of its polish was applied in the wrong places.
 
-SteamWorld Heist takes the turn-based tactics of something like {{% tag "X-COM" %}}XCOM{{% /tag %}}, flattens them into a side-scroller, and adds <i>aiming controls</i>.  This feels like a meaningful improvement over "X percent to hit" dice-roll combat, since hits and misses aren't really random: the game is visually clear on how weapon-type, range, and cover affect your hit chance; and timing your shot with the swaying of a character's gun-hand is a learnable skill.
+SteamWorld Heist takes the turn-based tactics of something like [XCOM](tag:X-COM), flattens them into a side-scroller, and adds <i>aiming controls</i>.  This feels like a meaningful improvement over "X percent to hit" dice-roll combat, since hits and misses aren't really random: the game is visually clear on how weapon-type, range, and cover affect your hit chance; and timing your shot with the swaying of a character's gun-hand is a learnable skill.
 
 The mission-based campaign wrapped around this turn-based shooting is ... more mixed.
 
@@ -29,8 +29,8 @@ The UI is workable but inconvenient, the music gets grating over time, and the i
 
 I had fun with the core tactical gameplay, and I can't deny that overall I enjoyed playing through each mission -- after lowering the default difficulty to avoid death-spirals.  But that fun was <i>just</i> enough to get me through an un-captivating campaign.
 
-<b>Better than</b>: {{% game "Frozen Synapse" %}}Frozen Synapse{{% /game %}}, {{% game "SteamWorld Dig" %}}SteamWorld Dig{{% /game %}}  
-<b>Not as good as</b>: {{% game "Mega Man Battle Network" %}}Mega Man Battle Network{{% /game %}}, I guess?  Wow, I really haven't played many tactical games recently.  
+<b>Better than</b>: <game:Frozen Synapse>, <game:SteamWorld Dig>  
+<b>Not as good as</b>: <game:Mega Man Battle Network>, I guess?  Wow, I really haven't played many tactical games recently.  
 <b>Maybe you'll be more stoked about SteamWorld Heist</b>: if you fucking <i>love</i> cosmetic hats.
 
-<i>Progress: Finished on Normal difficulty, all stars including the {{% game "SteamWorld Heist: The Outsider" %}}Outsider{{% /game %}} missions.</i>
+<i>Progress: Finished on Normal difficulty, all stars including the [Outsider](game:SteamWorld Heist: The Outsider) missions.</i>

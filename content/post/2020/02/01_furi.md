@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awful"]
 +++
 
-{{% game "Furi" %}}Furi{{% /game %}} is a bastard of a game.
+<game:Furi> is a bastard of a game.
 
 It isn't without merit: the fundamentals of combat are satisfyingly <i>tight</i>, the boss encounters are creatively designed, and the pulse-pounding soundtrack is great at building up each fight.
 
@@ -25,12 +25,12 @@ Even on the easy-peasy "Promenade" difficulty, where you deal more damage and ha
 
 And what is your reward for defeating each boss?  It sure isn't the story, which is slowly teased with indecipherable hints, or the ponderously boring path that you're made to walk to the next boss.  The only thing you have to look forward to is the <i>next</i> boss.
 
-Furi is a game for people who want to fight bosses and do nothing else.  And at a totally different scale from {{% game "Shadow of the Colossus (2018)" %}}Shadow of the Colossus{{% /game %}}; Furi is more demanding of your agility, more exhausting in fight complexity, and more punishing in its retry-loop.  Figuring out each encounter is largely a function of throwing your corpse at it over, and over, and over again.
+Furi is a game for people who want to fight bosses and do nothing else.  And at a totally different scale from [Shadow of the Colossus](game:Shadow of the Colossus (2018)); Furi is more demanding of your agility, more exhausting in fight complexity, and more punishing in its retry-loop.  Figuring out each encounter is largely a function of throwing your corpse at it over, and over, and over again.
 
 Furi's good ideas are made intolerable by how much it clearly wants you to <i>suffer</i> instead of having fun.
 
-<b>Better than</b>: most other {{% rating "Awful" %}}Awful{{% /rating %}} games; at least Furi shows signs of competence, and has a cool soundtrack.  
-<b>Not as good as</b>: {{% game "Shadow of the Colossus (2018)" %}}Shadow of the Colossus (2018){{% /game %}}  
+<b>Better than</b>: most other <rating:Awful> games; at least Furi shows signs of competence, and has a cool soundtrack.  
+<b>Not as good as</b>: <game:Shadow of the Colossus (2018)>  
 <b>I watched the ending online</b>: and it sure doesn't seem worth the effort.  The story teasers remain obtusely teasy all the way until the very end, which is basically a <a href="https://knowyourmeme.com/memes/what-a-twist">shitty twist</a>.
 
 <i>Progress: Beat the first boss on Furi difficulty, second and third bosses on Promenade difficulty.</i>

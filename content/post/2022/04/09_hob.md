@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Hob" %}}Hob{{% /game %}} looks nice.
+<game:Hob> looks nice.
 
 That's the good part: it prioritizes a consistent art style, simple yet evocative environments, and fixed camera views that show off some finely-curated scenes.
 
@@ -23,10 +23,10 @@ To that point: in the game's <a href="https://www.neoseeker.com/hob-game/walkthr
 
 So I guess I joined the enemy and the game ended.  Whatever.
 
-In theory, Hob is a fascinating {{% tag "The Legend of Zelda" %}}Zelda{{% /tag %}}-like with minimal, straightforward mechanics; in practice, its minimalism is more hindrance than help.
+In theory, Hob is a fascinating [Zelda](tag:The Legend of Zelda)-like with minimal, straightforward mechanics; in practice, its minimalism is more hindrance than help.
 
-<b>Better than</b>: {{% game "Oceanhorn: Monster of Uncharted Seas" %}}Oceanhorn: Monster of Uncharted Seas{{% /game %}}, {{% game "RiME" %}}RiME{{% /game %}}  
-<b>Not as good as</b>: {{% game "Cat Quest II" %}}Cat Quest II{{% /game %}}  
-<b>Let's say, as good as</b>: {{% game "AER: Memories of Old" %}}AER: Memories of Old{{% /game %}}
+<b>Better than</b>: <game:Oceanhorn: Monster of Uncharted Seas>, <game:RiME>  
+<b>Not as good as</b>: <game:Cat Quest II>  
+<b>Let's say, as good as</b>: <game:AER: Memories of Old>
 
 <i>Progress: got the bad(?) ending.</i>

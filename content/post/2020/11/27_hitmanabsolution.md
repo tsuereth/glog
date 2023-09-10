@@ -6,7 +6,7 @@ game = ["Hitman: Absolution"]
 platform = ["PC"]
 +++
 
-Given my recent positive impressions of {{% game "Hitman (2016)" %}}Hitman (2016){{% /game %}}, is it possible that I missed some fun assassination-puzzle gameplay in 2012's {{% game "Hitman: Absolution" %}}Hitman: Absolution{{% /game %}}?
+Given my recent positive impressions of <game:Hitman (2016)>, is it possible that I missed some fun assassination-puzzle gameplay in 2012's <game:Hitman: Absolution>?
 
 Well let me put it this way: when you re-load a checkpoint, previously-killed goons <b>respawn</b> (<a href="https://steamcommunity.com/app/203140/discussions/0/864951657863225736/">reference 1</a>, <a href="https://steamcommunity.com/app/203140/discussions/0/490125737473321024/">reference 2</a>).
 

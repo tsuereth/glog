@@ -7,12 +7,12 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Mandagon" %}}Mandagon{{% /game %}} is a brief experience -- I played through it in 36 minutes, and even got all the "hidden" achivements without trying.  And it's not a complicated game; nor is it thrilling, nor very thought-provoking.
+<game:Mandagon> is a brief experience -- I played through it in 36 minutes, and even got all the "hidden" achivements without trying.  And it's not a complicated game; nor is it thrilling, nor very thought-provoking.
 
 But it's serene and relaxing, and exploring its single, Tibet-infused level is exactly engaging enough to sustain that running length.  (And it's free, which is good.)
 
-It's no {{% game "Uncharted 2: Among Thieves" %}}Uncharted 2{{% /game %}}, but Mandagon's short trip to a snowy mountain peak is pretty satisfying, for what it is.
+It's no [Uncharted 2](game:Uncharted 2: Among Thieves), but Mandagon's short trip to a snowy mountain peak is pretty satisfying, for what it is.
 
-<b>Better than</b>: {{% game "Escape the Game" %}}Escape the Game{{% /game %}}  
-<b>Not as good as</b>: {{% game "Dyadic" %}}Dyadic{{% /game %}}, I guess?  
+<b>Better than</b>: <game:Escape the Game>  
+<b>Not as good as</b>: <game:Dyadic>, I guess?  
 <b>And...</b>: this <i>isn't</i> a promotional demo for a paid game?  Feels surprisingly "zen."

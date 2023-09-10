@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-It's not that I don't "get" {{% game "Undertale" %}}Undertale{{% /game %}}.  Its off-beat sense of humor can be pretty good, and I appreciate the effort it puts into subverting RPG tropes.
+It's not that I don't "get" <game:Undertale>.  Its off-beat sense of humor can be pretty good, and I appreciate the effort it puts into subverting RPG tropes.
 
 But those elements are overshadowed by plodding field gameplay and sometimes-<i>infuriating</i> avoid-em-up combat.  (Which, to be fair, is a personal distaste.)  And its quirkiness and subversiveness also manifests as <i>unpredictability</i>, which pairs poorly with the distance between save points.
 

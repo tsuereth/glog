@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-Like the first {{% game "Cat Quest" %}}Cat Quest{{% /game %}}, {{% game "Cat Quest II" %}}Cat Quest II{{% /game %}} is, well, not exactly a genre-redefining masterpiece.  (Unless that genre is <i>cat puns</i>.)  It's a competent, adorable, and straightforward action RPG; with experience points and gold pieces, upgrade-able weapons and armor, and a whole lot of "go here" or "kill that" quests serving an unremarkable narrative.
+Like the first <game:Cat Quest>, <game:Cat Quest II> is, well, not exactly a genre-redefining masterpiece.  (Unless that genre is <i>cat puns</i>.)  It's a competent, adorable, and straightforward action RPG; with experience points and gold pieces, upgrade-able weapons and armor, and a whole lot of "go here" or "kill that" quests serving an unremarkable narrative.
 
 A headline for this sequel is: <b>co-op</b>!  Two players can do those quests, buy those upgrades, and bludgeon enemies to death <i>together</i>.  The simple formula allows partners of any skill level to collaborate on this pun-filled adventure through the Felingard and Lupus kingdoms.
 
@@ -19,8 +19,8 @@ So it's disappointing that some tedious level-grinding is required to get strong
 
 Otherwise, Cat Quest II is a simple and fun button-mashy romp, and dressing up your kitten (and now, a puppy!) in little warrior outfits is just too damn cute.
 
-<b>Better than</b>: {{% game "Biped" %}}Biped{{% /game %}}  
-<b>Not as good as</b>: the first {{% game "Cat Quest" %}}Cat Quest{{% /game %}}, in terms of difficulty pace.  (If only that was co-op!)  
+<b>Better than</b>: <game:Biped>  
+<b>Not as good as</b>: the first <game:Cat Quest>, in terms of difficulty pace.  (If only that was co-op!)  
 <b>The ending implies there <i>will</i> be a Cat Quest III</b>: and, hey, why not?  I'm in for it.
 
 <i>Progress: Level 180, completed all dungeons and found all equipment.</i>

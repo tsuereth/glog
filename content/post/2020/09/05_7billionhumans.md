@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "7 Billion Humans" %}}7 Billion Humans{{% /game %}} isn't "just" a sequel to {{% game "Human Resource Machine" %}}Human Resource Machine{{% /game %}}; it also expands the fake-programming domain to <i>multi-threading</i>.  Your program runs on multiple agents/workers at once!
+<game:7 Billion Humans> isn't "just" a sequel to <game:Human Resource Machine>; it also expands the fake-programming domain to <i>multi-threading</i>.  Your program runs on multiple agents/workers at once!
 
 Unfortunately 7BH doesn't fix the biggest problems I had with its predecessor: dragging-and-dropping instructions is a chore, the instruction set is awkwardly limited, as is its concept of memory or variables... and this game's new complexities <i>exacerbate</i> a voodoo-polymorphism problem that the previous game merely hinted at.
 
@@ -19,8 +19,8 @@ Personally I find this kind of unpredictable mechanic tiring and unsatisfying - 
 
 7 Billion Humans was mostly fun as far as I played it, and it does boast significantly more puzzles than Human Resource Machine did.  But I got bored of its programmer-unfriendly UI and "magic" behavior around the halfway point.
 
-<b>Better than</b>: {{% game "Opus Magnum" %}}Opus Magnum{{% /game %}}, {{% game "Silicon Zeroes" %}}Silicon Zeroes{{% /game %}}  
-<b>Not as good as</b>: {{% game "Exapunks" %}}Exapunks{{% /game %}}, {{% game "Human Resource Machine" %}}Human Resource Machine{{% /game %}}  
+<b>Better than</b>: <game:Opus Magnum>, <game:Silicon Zeroes>  
+<b>Not as good as</b>: <game:Exapunks>, <game:Human Resource Machine>  
 <b>Nerd alert</b>: if the game supported modular code (functions), I might even have written some type-safe helper modules.  Alas.
 
 <i>Progress: 34 "years" (puzzles completed).</i>

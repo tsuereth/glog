@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-As an RPG, {{% game "South Park: The Stick of Truth" %}}South Park: The Stick of Truth{{% /game %}} could use work: some combat features are wildly unbalanced (like <a href="https://spgame.fandom.com/wiki/Status_Effects#Negative_Status_Effects">the Screwed debuff</a>), inventory management is a chore, skills and perks don't feel very significant, and - while I love that it has real-time combat prompts, like {{% tag "Mario & Luigi" %}}Mario & Luigi{{% /tag %}} and {{% tag "Paper Mario" %}}Paper Mario{{% /tag %}} - the timing windows of those prompts are staggeringly inconsistent.
+As an RPG, <game:South Park: The Stick of Truth> could use work: some combat features are wildly unbalanced (like <a href="https://spgame.fandom.com/wiki/Status_Effects#Negative_Status_Effects">the Screwed debuff</a>), inventory management is a chore, skills and perks don't feel very significant, and - while I love that it has real-time combat prompts, like <tag:Mario & Luigi> and <tag:Paper Mario> - the timing windows of those prompts are staggeringly inconsistent.
 
 But it gets away with these flaws because, even when the game isn't "fair," it's (usually) easy to button-mash through.
 
@@ -19,8 +19,8 @@ At its best, when you can freely explore South Park and meet its wacky cast memb
 
 It's unfortunate that the game's back half has fewer opportunities for self-directed activity (favoring an on-rails series of story missions), and especially that a bunch of optional events and items <a href="https://www.ign.com/wikis/south-park-the-stick-of-truth/Easy_to_Miss_Collectibles,_Items_and_Quests">are permanently missable</a>.  That puts a bit of a damper on post-game sidequesting.
 
-Nevertheless, Stick of Truth is a fun and funny jaunt through South Park, and that it leaves me <i>wanting more</i> is hardly a bad thing.  Especially since {{% game "South Park: The Fractured But Whole" %}}there <i>is</i> more{{% /game %}}.
+Nevertheless, Stick of Truth is a fun and funny jaunt through South Park, and that it leaves me <i>wanting more</i> is hardly a bad thing.  Especially since [there <i>is</i> more](game:South Park: The Fractured But Whole).
 
-<b>Better than</b>: {{% game "Mario & Luigi: Bowser's Inside Story" %}}Mario & Luigi: Bowser's Inside Story{{% /game %}}, {{% game "Penny Arcade's On the Rain-Slick Precipice of Darkness 3" %}}Penny Arcade's On the Rain-Slick Precipice of Darkness 3{{% /game %}}  
-<b>Not as good as</b>: {{% game "Mass Effect 3" %}}Mass Effect 3{{% /game %}}, {{% game "Shadowrun: Dragonfall - Director's Cut" %}}Shadowrun: Dragonfall - Director's Cut{{% /game %}}  
+<b>Better than</b>: <game:Mario & Luigi: Bowser's Inside Story>, <game:Penny Arcade's On the Rain-Slick Precipice of Darkness 3>  
+<b>Not as good as</b>: <game:Mass Effect 3>, <game:Shadowrun: Dragonfall - Director's Cut>  
 <b>But, uh, keep its release date (2014) in mind</b>: because some of the game's "classic South Park" humor, like nonchalantly dropping the word "retard," hasn't aged especially well.

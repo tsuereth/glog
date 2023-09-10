@@ -9,7 +9,7 @@ rating = ["Good"]
 
 Mr. Torgue is here again to save the day!
 
-{{% game "Borderlands 2: The Horrible Hunger of the Ravenous Wattle Gobbler" %}}Borderlands 2: The Horrible Hunger of the Ravenous Wattle Gobbler{{% /game %}} is a full-on redemption for the "Headhunter" DLCs, after {{% game "Borderlands 2: T.K. Baha's Bloody Harvest" %}}T.K. Baha{{% /game %}} made such a mess of things.
+<game:Borderlands 2: The Horrible Hunger of the Ravenous Wattle Gobbler> is a full-on redemption for the "Headhunter" DLCs, after [T.K. Baha](game:Borderlands 2: T.K. Baha's Bloody Harvest) made such a mess of things.
 
 One: It's got Mr. Torgue.  SQUIBBLYBAMBLYMEEDLYMOWWWWWWWWWWWWWWW!
 
@@ -21,8 +21,8 @@ And four: You blow up a giant turkey.  As is tradition.
 
 ... and then there's Grandma Flexington's sit-and-listen story quest, which is an enormous waste of time but is still funny in a subversive, masochistic kind of way.
 
-Wattle Gobbler makes the case for short, funny additions to {{% game "Borderlands 2" %}}Borderlands 2{{% /game %}}.  Here's hoping for more like this.
+Wattle Gobbler makes the case for short, funny additions to <game:Borderlands 2>.  Here's hoping for more like this.
 
-<b>Better than</b>: {{% game "Borderlands 2: T.K. Baha's Bloody Harvest" %}}Borderlands 2: T.K. Baha's Bloody Harvest{{% /game %}}  
-<b>Not as good as</b>: {{% game "Borderlands 2: Mr. Torgue's Campaign of Carnage" %}}Borderlands 2: Mr. Torgue's Campaign of Carnage{{% /game %}}  
+<b>Better than</b>: <game:Borderlands 2: T.K. Baha's Bloody Harvest>  
+<b>Not as good as</b>: <game:Borderlands 2: Mr. Torgue's Campaign of Carnage>  
 <b>I really wonder</b>: how much mileage Gearbox could get out of a Mr. Torgue spinoff game?

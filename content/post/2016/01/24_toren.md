@@ -9,7 +9,7 @@ title = "Some towers aren't worth climbing"
 
 +++
 
-{{% game "Toren" %}}Toren{{% /game %}} is a two-hour game, and I was bored of it within 45 minutes.
+<game:Toren> is a two-hour game, and I was bored of it within 45 minutes.
 
 To its credit, Toren has some incredible art and an impressive air of mystery.  But it squanders these talents on subpar animation and modeling, and a story that just doesn't go anywhere; an obtuse fable that twists and writhes in its own nonsense.
 
@@ -18,5 +18,5 @@ Top that with a mess of a camera, terribly-communicated control mechanics (i.e. 
 Toren would be pretty good for a student project, but as a commercial game it falls short on virtually every level.  Its art is really the only worthwhile thing in here.
 
 <b>Better than</b>: ... hmm.  
-<b>Not as good as</b>: {{% game "Ico" %}}Ico{{% /game %}}, {{% game "Papo & Yo" %}}Papo & Yo{{% /game %}}  
+<b>Not as good as</b>: <game:Ico>, <game:Papo & Yo>  
 <b>And the soundtrack, while clearly a big effort</b>: feels generic and flat.  Orchestral strings do not an epic game make.

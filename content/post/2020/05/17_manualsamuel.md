@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-{{% game "Manual Samuel" %}}Manual Samuel{{% /game %}} isn't <i>completely</i> awful, but it sure tries its hardest.
+<game:Manual Samuel> isn't <i>completely</i> awful, but it sure tries its hardest.
 
-That's the thing -- Manual Samuel is <i>trying</i> to piss you off.  Like {{% game "QWOP" %}}QWOP{{% /game %}}, the frustration inherent in its basic controls is "the point."  But Manual Samuel takes it a step further: you're not just required to carefully time your walking to avoid falling down, you must also regularly press the blink button, and the breathe-in button, and the breathe-out button!  And, whenever Samuel happens to slouch over, the straighten-spine button!
+That's the thing -- Manual Samuel is <i>trying</i> to piss you off.  Like <game:QWOP>, the frustration inherent in its basic controls is "the point."  But Manual Samuel takes it a step further: you're not just required to carefully time your walking to avoid falling down, you must also regularly press the blink button, and the breathe-in button, and the breathe-out button!  And, whenever Samuel happens to slouch over, the straighten-spine button!
 
 Some kudos must go to whoever figured out the button mappings that make all this possible, even if only barely so.  On their own, the designs of this game's complex-but-accessible coordination challenges - from a drink-coffee minigame, to stick-shift driving - are somewhat impressive.
 
@@ -19,8 +19,8 @@ There's no external motivation from the game's story or presentation, either.  T
 
 That Manual Samuel has working gameplay at all is slightly praiseworthy; but it isn't <i>fun</i> to play, and I don't care enough about Sam's story to see it through.
 
-<b>Better than</b>: {{% game "Pinstripe" %}}Pinstripe{{% /game %}}  
-<b>Not as good as</b>: {{% game "Snake Pass" %}}Snake Pass{{% /game %}}  
+<b>Better than</b>: <game:Pinstripe>  
+<b>Not as good as</b>: <game:Snake Pass>  
 <b>I can die happy</b>: if I never hear the self-censored phrase "holy feces" again.
 
 <i>Progress: Chapter 7, fought some robots before giving up.</i>

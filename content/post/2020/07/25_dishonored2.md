@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-The first {{% game "Dishonored" %}}Dishonored{{% /game %}} impressed me with its ambitious variety of gameplay options, in spite of an awkwardly-linear world and unsatisfying narrative "choice."  {{% tag "Arkane Studios" %}}Arkane{{% /tag %}} Austin followed this up with {{% game "Prey (2017)" %}}Prey (2017){{% /game %}}, which felt like a great (if still-imperfect) evolution of gameplay freedom and narrative integration.  So it's funny that, in parallel, Arkane Lyon's attempt to iterate in {{% game "Dishonored 2" %}}Dishonored 2{{% /game %}} ignored those evolutionary opportunities and instead made the existing formula a little more bland.
+The first <game:Dishonored> impressed me with its ambitious variety of gameplay options, in spite of an awkwardly-linear world and unsatisfying narrative "choice."  [Arkane](tag:Arkane Studios) Austin followed this up with <game:Prey (2017)>, which felt like a great (if still-imperfect) evolution of gameplay freedom and narrative integration.  So it's funny that, in parallel, Arkane Lyon's attempt to iterate in <game:Dishonored 2> ignored those evolutionary opportunities and instead made the existing formula a little more bland.
 
 Dishonored 2 is structured just like its predecessor: a linear series of semi-open levels, each of which has optional missions, collectibles, and hidden secrets to uncover.  And as before, missions are designed to provide you with several options of varying "chaos:" brutal combat, stealth assassination, non-lethal takedowns, even environmental sabotage.  That's the theory, anyway.
 
@@ -24,16 +24,16 @@ If character choice was <i>supposed</i> to have an impact on playstyle, then the
 
 Emily's story, by the way, did not turn out to be as interesting as I expected.  Both the first and second games are essentially revenge plots with some political and supernatural dressing, but Dishonored at least had an unexpected twist or two up its sleeves.  The sequel's storytelling is more by-the-numbers, each mission merely filling in some details of an overall picture that you already know.
 
-Its premise is also shockingly ... lazy.  Delilah, the game's main villain, is the <i>same</i> villain from Dishonored's {{% game "Dishonored: The Brigmore Witches" %}}Brigmore Witches DLC{{% /game %}}.  (And to hammer home how un-memorable her story was, I didn't even recognize her until several missions into Dishonored 2.  "Oh, it's that lady again!")
+Its premise is also shockingly ... lazy.  Delilah, the game's main villain, is the <i>same</i> villain from Dishonored's [Brigmore Witches DLC](game:Dishonored: The Brigmore Witches).  (And to hammer home how un-memorable her story was, I didn't even recognize her until several missions into Dishonored 2.  "Oh, it's that lady again!")
 
-That said, while its big picture may be a let-down, the <i>small</i> details of Dishonored 2's world-building are impressively engrossing and evocative.  It's always fun to find a written note planning a heist of some hidden treasure cache, or to see a cursed bonecharm surrounded by the corpses of those who tried to use it.  This intricate environmental storytelling rivals the audio logs of a {{% game "BioShock Remastered" %}}BioShock{{% /game %}} -- if not the rich email-hacking of a {{% game "Deus Ex: Human Revolution" %}}Deus Ex{{% /game %}}.
+That said, while its big picture may be a let-down, the <i>small</i> details of Dishonored 2's world-building are impressively engrossing and evocative.  It's always fun to find a written note planning a heist of some hidden treasure cache, or to see a cursed bonecharm surrounded by the corpses of those who tried to use it.  This intricate environmental storytelling rivals the audio logs of a [BioShock](game:BioShock Remastered) -- if not the rich email-hacking of a [Deus Ex](game:Deus Ex: Human Revolution).
 
-Ultimately, Dishonored 2 comes across as more of the same Dishonored, but with some smaller risks that didn't pay off.  I still had a blast assassinating traitorous goons, but the protagonist-selector was more of an obstacle than a feature, and even the game's few attempts at impressively unique levels - Kirin Jindosh's mechanically-shifting laboratory, and Aramis Stilton's {{% game "The Legend of Zelda: A Link to the Past" %}}Link to the Past{{% /game %}}-style mansion - were more gimmicky than they were fun to play.
+Ultimately, Dishonored 2 comes across as more of the same Dishonored, but with some smaller risks that didn't pay off.  I still had a blast assassinating traitorous goons, but the protagonist-selector was more of an obstacle than a feature, and even the game's few attempts at impressively unique levels - Kirin Jindosh's mechanically-shifting laboratory, and Aramis Stilton's [Link to the Past](game:The Legend of Zelda: A Link to the Past)-style mansion - were more gimmicky than they were fun to play.
 
 Prey (2017), with its liberating openness and thrilling plot, was a step forward for Dishonored's supernatural combat mechanics.  But Dishonored 2 is more of a step to the side, and a slight stumble backwards.
 
-<b>Better than</b>: {{% game "BioShock 2 Remastered" %}}BioShock 2 Remastered{{% /game %}}, {{% game "Thief" %}}Thief{{% /game %}}  
-<b>Not as good as</b>: {{% game "BioShock Remastered" %}}BioShock Remastered{{% /game %}}, {{% game "Dishonored" %}}Dishonored{{% /game %}} (as I remember it), {{% game "Prey (2017)" %}}Prey (2017){{% /game %}}  
-<b>I really hope that there's some <i>new</i> story to uncover in</b>: {{% game "Dishonored: Death of the Outsider" %}}Dishonored: Death of the Outsider{{% /game %}}
+<b>Better than</b>: <game:BioShock 2 Remastered>, <game:Thief>  
+<b>Not as good as</b>: <game:BioShock Remastered>, <game:Dishonored> (as I remember it), <game:Prey (2017)>  
+<b>I really hope that there's some <i>new</i> story to uncover in</b>: <game:Dishonored: Death of the Outsider>
 
 <i>Progress: Finished as Emily with high chaos.</i>

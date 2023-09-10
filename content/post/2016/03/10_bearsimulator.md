@@ -9,7 +9,7 @@ title = "I don't know what I expected"
 
 +++
 
-<a href="http://i.imgur.com/jDTGT.jpg">Well</a>-- actually, what I expected based on the <a href="https://www.kickstarter.com/projects/1330754003/bear-simulator">campaign</a> was a little joke game with some satirical nods to sandboxes like {{% game "The Elder Scrolls V: Skyrim" %}}Skyrim{{% /game %}} and {{% game "Grand Theft Auto V" %}}GTA 5{{% /game %}}.  But that expectation faded once {{% game "Bear Simulator" %}}Bear Simulator{{% /game %}}'s campaign updates indicated that the developer was trying to ... make a real game, I guess.
+<a href="http://i.imgur.com/jDTGT.jpg">Well</a>-- actually, what I expected based on the <a href="https://www.kickstarter.com/projects/1330754003/bear-simulator">campaign</a> was a little joke game with some satirical nods to sandboxes like [Skyrim](game:The Elder Scrolls V: Skyrim) and [GTA 5](game:Grand Theft Auto V).  But that expectation faded once <game:Bear Simulator>'s campaign updates indicated that the developer was trying to ... make a real game, I guess.
 
 And the result is, aside from being fairly un-funny, just a poor game in general.  Even disregarding its graphical infidelities (distracting pop-in and jagged terrain, for example), the game's mechanics and stats are poorly explained, and trying to do something as simple as bear-swipe a duck is bafflingly frustrating.
 

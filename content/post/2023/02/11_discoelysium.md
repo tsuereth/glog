@@ -6,7 +6,7 @@ game = ["Disco Elysium: The Final Cut"]
 platform = ["PC"]
 +++
 
-Lengthy sections of text, random dice-roll checks, having to wait while you walk to an objective, overly-sporadic autosaves; {{% game "Disco Elysium: The Final Cut" %}}Disco Elysium{{% /game %}} checks quite a few of my "no, thanks" boxes.  So it's <i>especially</i> remarkable, thanks to its thoroughly engrossing writing and world-building, that I'm still interested in playing it.  (Even after I <a href="https://old.reddit.com/r/DiscoElysium/comments/rp67l4/talked_to_cuno_throwing_rocks_at_the_body_next">died abruptly from a mean kid damaging my morale</a>.)
+Lengthy sections of text, random dice-roll checks, having to wait while you walk to an objective, overly-sporadic autosaves; [Disco Elysium](game:Disco Elysium: The Final Cut) checks quite a few of my "no, thanks" boxes.  So it's <i>especially</i> remarkable, thanks to its thoroughly engrossing writing and world-building, that I'm still interested in playing it.  (Even after I <a href="https://old.reddit.com/r/DiscoElysium/comments/rp67l4/talked_to_cuno_throwing_rocks_at_the_body_next">died abruptly from a mean kid damaging my morale</a>.)
 
 Disco Elysium puts its best foot immediately forward, and it's a hell of a foot: your avatar's consciousness is its own character -- multiple characters, in fact.  The call of the void, the thirst for adventure, the pull of chemical addiction, all of these urges are implemented as personalities - voiced by the same actor, with unique inflections - who tell the avatar's story and who you (the player) interact with via dialog choices.
 

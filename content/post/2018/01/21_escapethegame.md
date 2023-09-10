@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Escape the Game" %}}Escape the Game{{% /game %}}'s fourth-wall-breaking self-awareness isn't great, but not as bad as {{% game "The Magic Circle" %}}some{{% /game %}} {{% game "Eat Lead: The Return of Matt Hazard" %}}others{{% /game %}} I've played.  And the gameplay is rote at first, but quickly adds a grappling-hook power that makes the game feel fast, and interesting.
+<game:Escape the Game>'s fourth-wall-breaking self-awareness isn't great, but not as bad as [some](game:The Magic Circle) [others](game:Eat Lead: The Return of Matt Hazard) I've played.  And the gameplay is rote at first, but quickly adds a grappling-hook power that makes the game feel fast, and interesting.
 
 And then it's over.  In <b>ten minutes</b>.
 
@@ -15,6 +15,6 @@ This free game is over two years old, and I guess it was supposed to serve as a 
 
 Well, good luck with all that!
 
-<b>Better than</b>: {{% game "Toren" %}}Toren{{% /game %}}  
-<b>Not as good as</b>: {{% game "Thomas Was Alone" %}}Thomas Was Alone{{% /game %}}  
-<b>For more in "vaporware," see</b>: {{% game "Luminesca" %}}Luminesca{{% /game %}}
+<b>Better than</b>: <game:Toren>  
+<b>Not as good as</b>: <game:Thomas Was Alone>  
+<b>For more in "vaporware," see</b>: <game:Luminesca>

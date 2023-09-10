@@ -10,7 +10,7 @@ title = "Multi-User Doldrums"
 
 Slight disclaimer: I went to college with the guy who made this game.
 
-{{% game "Hackmud" %}}Hackmud{{% /game %}} caught my eye for the "hack" part much more than for the "<a href="https://en.wikipedia.org/wiki/MUD">mud</a>" part.  I'm not really interested in playing with <a href="http://www.reactiongifs.us/wp-content/uploads/2013/08/people_bastards_it_crowd.gif">people</a> online, but terminal emulators and hacking stories are very much within my interests.  Unfortunately, Hackmud has its own oil-and-water relationship with hacking and mudding.
+<game:Hackmud> caught my eye for the "hack" part much more than for the "<a href="https://en.wikipedia.org/wiki/MUD">mud</a>" part.  I'm not really interested in playing with <a href="http://www.reactiongifs.us/wp-content/uploads/2013/08/people_bastards_it_crowd.gif">people</a> online, but terminal emulators and hacking stories are very much within my interests.  Unfortunately, Hackmud has its own oil-and-water relationship with hacking and mudding.
 
 The first two hours or so of the game are a tutorial mode - in a (pretend) isolated VLAN, as opposed to the wider internet - made up of scripted missions given by NPCs, with their own brief, AI-based backstories.  You'll follow their directions and use some critical thinking (and probably some Google thinking) to solve password riddles, read log files, uncover secret keys, transfer virtual credits, <i>et cetera</i>.
 

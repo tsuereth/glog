@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-Architecturally and thematically, {{% game "Dex" %}}Dex{{% /game %}} is a 2D side-scrolling interpretation of {{% tag "Deus Ex" %}}Deus Ex{{% /tag %}}: an open-world cyberpunk dystopia that encourages varied playstyles.  It's an ambitious design to ape, and while Dex pulls off a surprisingly-good narrative, the execution of its gameplay leaves <i>much</i> to be desired.
+Architecturally and thematically, <game:Dex> is a 2D side-scrolling interpretation of <tag:Deus Ex>: an open-world cyberpunk dystopia that encourages varied playstyles.  It's an ambitious design to ape, and while Dex pulls off a surprisingly-good narrative, the execution of its gameplay leaves <i>much</i> to be desired.
 
 Dex's story starts with a cryptic message from an elite hacker, a "chase" sequence (low-key since it's also a tutorial), and the reveal of the game's central conspiracy: a shadowy techno-oligarchy attempting to control society with weaponized AI.  ... that summary may sound a bit hackneyed, but the game's writing and characterization are on-point, full of sordidly detailed technobabble to flesh the story out.
 
@@ -23,12 +23,12 @@ The hacking interface is basically a twin-stick shooter, and on top of being fai
 
 All of these mechanics can be made less awful by investing skill/upgrade points against them: punch enemies harder, shoot at them more accurately, hack faster, <i>et cetera</i>.  But even fully-upgraded, these core components of Dex's gameplay <i>peak</i> at "mildly annoying."  At their worst - especially early in the game, when you don't have upgrades yet - combat and hacking are frustrating chores.
 
-And while Dex embraces the spirit of Deus Ex in providing non-combat methods to solve problems, in practice it's got the same flaw as {{% game "Deus Ex: Human Revolution" %}}Human Revolution{{% /game %}}'s bosses: there are some fights that you just can't sneak or hack your way around.
+And while Dex embraces the spirit of Deus Ex in providing non-combat methods to solve problems, in practice it's got the same flaw as [Human Revolution](game:Deus Ex: Human Revolution)'s bosses: there are some fights that you just can't sneak or hack your way around.
 
 Dex is impressively competent at the storytelling aspects of a techno-conspiracy thriller, and its world-building sidequests are genuinely awesome.  But the game's non-narrative mechanics are poorly executed and un-fun, ultimately bringing the whole experience down with them.
 
-<b>Better than</b>: {{% game "Deus Ex: The Fall" %}}Deus Ex: The Fall{{% /game %}}  
-<b>Not as good as</b>: {{% game "Deus Ex: Human Revolution - The Missing Link" %}}Deus Ex: Human Revolution - The Missing Link{{% /game %}}  
+<b>Better than</b>: <game:Deus Ex: The Fall>  
+<b>Not as good as</b>: <game:Deus Ex: Human Revolution - The Missing Link>  
 <b>This game was "enhanced" at some point in the past few years</b>: which makes me wonder, and fear, how rough its original gameplay might have been.
 
 <i>Progress: Finished on "Casual" combat difficulty.</i>

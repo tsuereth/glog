@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Murder by Numbers" %}}Murder by Numbers{{% /game %}} is a murder-mystery visual novel with investigation elements inspired by {{% tag "Ace Attorney" %}}Phoenix Wright{{% /tag %}}, and punctuated by nonogram puzzles.  It even shares some of Ace Attorney's <a href="https://aceattorney.fandom.com/wiki/Masakazu_Sugimori">musical pedigree</a>.  This... should really be a slam dunk for me.  And while I ultimately still <i>liked</i> this detective-story-and-puzzles game, I can't help but obsess over how I might have liked it even more.
+<game:Murder by Numbers> is a murder-mystery visual novel with investigation elements inspired by [Phoenix Wright](tag:Ace Attorney), and punctuated by nonogram puzzles.  It even shares some of Ace Attorney's <a href="https://aceattorney.fandom.com/wiki/Masakazu_Sugimori">musical pedigree</a>.  This... should really be a slam dunk for me.  And while I ultimately still <i>liked</i> this detective-story-and-puzzles game, I can't help but obsess over how I might have liked it even more.
 
 {{% absimg src="murderbynumbers_nerd.jpg" width="400" height="300" %}}
 
@@ -35,14 +35,14 @@ Outside of the story, there's also the Memories section, where - without narrati
 
 The backstory rewards you get for completing these Memory puzzles are also thoroughly underwhelming, but, hey -- more puzzles.
 
-Finally, I'd be remiss - given my recent complaints about {{% game "Puppy Cross" %}}Puppy Cross{{% /game %}} - if I didn't mention that Murder by Numbers has somewhat mediocre input handling of its own.  It's nothing so bad as having to wait for irrelevant animations, but click-and-drag doesn't lock to a row or column at all; and there's no undo button, so it's awkwardly easy to drift into marks you've already made and overwrite them by accident.
+Finally, I'd be remiss - given my recent complaints about <game:Puppy Cross> - if I didn't mention that Murder by Numbers has somewhat mediocre input handling of its own.  It's nothing so bad as having to wait for irrelevant animations, but click-and-drag doesn't lock to a row or column at all; and there's no undo button, so it's awkwardly easy to drift into marks you've already made and overwrite them by accident.
 
 I don't want to make it sound like I <i>merely tolerated</i> the game's shortcomings.  I mean... I kinda did, in the Memory puzzles.  But it isn't as if the game's story mode was "bad," hell, the storytelling was actually pretty good!  The art is great, the music is catchy, and the puzzles are as functional as they need to be.
 
 The whole package could have been even better, though, with just a bit more attention paid to the narrative-puzzle bridge.
 
-<b>Better than</b>: {{% game "Professor Layton and the Curious Village" %}}Professor Layton and the Curious Village{{% /game %}}, {{% game "Puppy Cross" %}}Puppy Cross{{% /game %}}  
-<b>Not as good as</b>: {{% game "Nonogram - The Greatest Painter" %}}Nonogram - The Greatest Painter{{% /game %}}, {{% game "Professor Layton vs. Phoenix Wright: Ace Attorney" %}}Professor Layton vs. Phoenix Wright: Ace Attorney{{% /game %}}  
-<b>Not as good as most {{% tag "Ace Attorney" %}}Ace Attorney{{% /tag %}} games</b>: except for that {{% game "Ace Attorney Investigations: Miles Edgeworth" %}}Edgeworth spin-off{{% /game %}} and those godawful "{{% game "Phoenix Wright: Ace Attorney - Spirit of Justice: Phoenix Wright - Asinine Attorney" %}}Asinine{{% /game %}} {{% game "Phoenix Wright: Ace Attorney - Spirit of Justice: Apollo Justice - Asinine Attorney" %}}Attorney{{% /game %}}" DLCs.
+<b>Better than</b>: <game:Professor Layton and the Curious Village>, <game:Puppy Cross>  
+<b>Not as good as</b>: <game:Nonogram - The Greatest Painter>, <game:Professor Layton vs. Phoenix Wright: Ace Attorney>  
+<b>Not as good as most <tag:Ace Attorney> games</b>: except for that [Edgeworth spin-off](game:Ace Attorney Investigations: Miles Edgeworth) and those godawful "[Asinine](game:Phoenix Wright: Ace Attorney - Spirit of Justice: Phoenix Wright - Asinine Attorney) [Attorney](game:Phoenix Wright: Ace Attorney - Spirit of Justice: Apollo Justice - Asinine Attorney)" DLCs.
 
 <i>Progress: Finished all cases and all memory puzzles.</i>

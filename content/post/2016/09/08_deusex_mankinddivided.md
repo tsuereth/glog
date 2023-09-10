@@ -9,7 +9,7 @@ title = "Divided Opinion"
 
 +++
 
-It took me until the 15 hour mark to actually get going on the next story mission.  That is to say, I spent about 14 hours just exploring Prague: breaking into people's apartments, reading their emails, stealing all their stuff.  There is <i>so, so much</i> to explore in this world's nooks and crannies.  It scratches that {{% game "The Elder Scrolls V: Skyrim" %}}Skyrim{{% /game %}} itch all over again, of scouring an open-world map and scrounging up all its garbage items.
+It took me until the 15 hour mark to actually get going on the next story mission.  That is to say, I spent about 14 hours just exploring Prague: breaking into people's apartments, reading their emails, stealing all their stuff.  There is <i>so, so much</i> to explore in this world's nooks and crannies.  It scratches that [Skyrim](game:The Elder Scrolls V: Skyrim) itch all over again, of scouring an open-world map and scrounging up all its garbage items.
 
 I'm certain that most of the notes I'm reading, about Pavel joining a gang or Ivenka being deported or whatever the fuck, will never lead anywhere relevant to the main story.  But the amount of attention that's paid to these trivial little side-stories is engrossing and awe-inspiring.
 

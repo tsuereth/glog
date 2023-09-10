@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-{{% game "Stories: The Path of Destinies" %}}Stories: The Path of Destinies{{% /game %}} is (aside from a shockingly bland title) a distinctive mixture of {{% tag "Diablo" %}}Diablo{{% /tag %}}-like hack-and-slash, and choice-based narrative adventure.  Stories isn't <i>perfect</i> at either of these things, but it is pretty good at one of them.  The second one.
+<game:Stories: The Path of Destinies> is (aside from a shockingly bland title) a distinctive mixture of <tag:Diablo>-like hack-and-slash, and choice-based narrative adventure.  Stories isn't <i>perfect</i> at either of these things, but it is pretty good at one of them.  The second one.
 
-Its action gameplay is competent, but not much else -- there's a dash move, and there's a hookshot/grapple move, but <i>most</i> of the time you'll just be mashing the attack button.  In the style of {{% tag "Batman: Arkham" %}}Batman{{% /tag %}}, enemies will telegraph when they're about to attack, and you'll need to counter them to avoid heavy damage.
+Its action gameplay is competent, but not much else -- there's a dash move, and there's a hookshot/grapple move, but <i>most</i> of the time you'll just be mashing the attack button.  In the style of [Batman](tag:Batman: Arkham), enemies will telegraph when they're about to attack, and you'll need to counter them to avoid heavy damage.
 
 Except when multiple enemies attack at the same instant and you need to dash out to avoid them, unless you don't have the upgrade to dash through surrounding enemies, in which case you just die.  That's a rarity, though.
 
@@ -31,10 +31,10 @@ But the payoff is worth it.  Again, not because of the quality of the underlying
 
 The game's imperfections - its lackluster humor, its unexciting combat, its sometimes-redundant paths, the way its narrator laboriously adds "he said" to each line of dialog - really get balanced out by the <i>cool</i> factor of going back in time to correct your decisions.
 
-A lot like {{% game "Prince of Persia: The Sands of Time" %}}Prince of Persia: The Sands of Time{{% /game %}}, I guess.  Just with worse narration and no platforming.
+A lot like <game:Prince of Persia: The Sands of Time>, I guess.  Just with worse narration and no platforming.
 
-<b>Better than</b>: {{% game "Bastion" %}}Bastion{{% /game %}}, {{% game "Zero Escape: Nine Hours, Nine Persons, Nine Doors" %}}Zero Escape: Nine Hours, Nine Persons, Nine Doors{{% /game %}}  
-<b>Not as good as</b>: {{% game "Middle-earth: Shadow of Mordor" %}}Middle-earth: Shadow of Mordor{{% /game %}}, {{% game "The Sexy Brutale" %}}The Sexy Brutale{{% /game %}}  
+<b>Better than</b>: <game:Bastion>, <game:Zero Escape: Nine Hours, Nine Persons, Nine Doors>  
+<b>Not as good as</b>: <game:Middle-earth: Shadow of Mordor>, <game:The Sexy Brutale>  
 <b>And way better than</b>: those shitty choose-your-own-adventure books I grew up with.
 
 <i>Progress: Got the good ending, and like 5 of the 24 other endings.</i>

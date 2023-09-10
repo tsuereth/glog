@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-First thing's first: {{% game "MO:Astray" %}}MO:Astray{{% /game %}}'s <a href="https://store.steampowered.com/app/1104660/MOAstray/">Steam tags</a> call it a Metroidvania.  It isn't.  At least as far as I saw, there's no backtracking, no world map, and not a lot in the way of ability upgrades.
+First thing's first: <game:MO:Astray>'s <a href="https://store.steampowered.com/app/1104660/MOAstray/">Steam tags</a> call it a Metroidvania.  It isn't.  At least as far as I saw, there's no backtracking, no world map, and not a lot in the way of ability upgrades.
 
 MO:Astray is instead a linear platform-puzzle game with a sci-fi narrative.  The story seems fairly predictable: underground science facility, experiments gone wrong, scientists turned into zombies; you know the drill.
 
@@ -21,8 +21,8 @@ Meanwhile, the atmospheric ambience can be engrossing in how well it pulls off t
 
 MO:Astray isn't a bad game, but it's not that compelling, either.  There are plenty of other platform-puzzlers, and true Metroidvanias, with more interesting gameplay and storytelling.
 
-<b>Better than</b>: {{% game "Rise & Shine" %}}Rise & Shine{{% /game %}}  
-<b>Not as good as</b>: {{% game "The Swapper" %}}The Swapper{{% /game %}}  
-<b>Less combat-focused, but arguably on par with</b>: {{% game "Capsized" %}}Capsized{{% /game %}}
+<b>Better than</b>: <game:Rise & Shine>  
+<b>Not as good as</b>: <game:The Swapper>  
+<b>Less combat-focused, but arguably on par with</b>: <game:Capsized>
 
 <i>Progress: gave up after a few minutes in Chapter 2.</i>

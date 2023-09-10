@@ -6,9 +6,9 @@ game = ["Ori and the Will of the Wisps"]
 platform = ["PC"]
 +++
 
-<a href="https://www.youtube.com/watch?v=6JxfuAl4KLM">Review 1</a> (paraphrased): {{% game "Ori and the Will of the Wisps" %}}Ori and the Will of the Wisps{{% /game %}} is <i>heavily inspired</i> by ideas and mechanics from {{% game "Hollow Knight" %}}Hollow Knight{{% /game %}}.  It has customizable "shard" (pin) slots, it has an upgradeable sword, it has informative NPCs, it has tactical combat against diverse enemies and bosses, it even has an undergound environment infested with bugs.
+<a href="https://www.youtube.com/watch?v=6JxfuAl4KLM">Review 1</a> (paraphrased): <game:Ori and the Will of the Wisps> is <i>heavily inspired</i> by ideas and mechanics from <game:Hollow Knight>.  It has customizable "shard" (pin) slots, it has an upgradeable sword, it has informative NPCs, it has tactical combat against diverse enemies and bosses, it even has an undergound environment infested with bugs.
 
-And... that's cool, I guess.  But it doesn't resolve my frustrations with {{% game "Ori and the Blind Forest: Definitive Edition" %}}the original game{{% /game %}}'s punishing save system.
+And... that's cool, I guess.  But it doesn't resolve my frustrations with [the original game](game:Ori and the Blind Forest: Definitive Edition)'s punishing save system.
 
 <a href="https://www.youtube.com/watch?v=fgxLf3GY8RY">Review 2</a>: "One element that factored into the original's difficulty, that's no longer present, was the option to manually generate your own save points.  Instead, the sequel automatically does this for you.  This is a much better solution that allows you to focus on the best parts of the game, rather than worrying about a bothersome mechanic that could potentially result in losing progress."
 

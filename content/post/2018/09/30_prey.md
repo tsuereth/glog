@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-{{% game "Prey (2017)" %}}Prey{{% /game %}} is a great free-roam action-RPG, in the vein of {{% game "Deus Ex: Human Revolution" %}}Deus Ex{{% /game %}}.  It's a great story-driven adventure, a'la {{% game "BioShock" %}}BioShock{{% /game %}}.  <i>And</i> it's a great pulse-pounding survival-action game, like {{% game "Resident Evil 4: Wii Edition" %}}Resident Evil 4{{% /game %}}.  I loved it, and will never forget my experience on Talos I.  But how those aspects sometimes <i>conflict</i> with one another wasn't so great.
+[Prey](game:Prey (2017)) is a great free-roam action-RPG, in the vein of [Deus Ex](game:Deus Ex: Human Revolution).  It's a great story-driven adventure, a'la <game:BioShock>.  <i>And</i> it's a great pulse-pounding survival-action game, like [Resident Evil 4](game:Resident Evil 4: Wii Edition).  I loved it, and will never forget my experience on Talos I.  But how those aspects sometimes <i>conflict</i> with one another wasn't so great.
 
 The game's atmosphere is incredibly tense and foreboding: enemies look and behave legitimately frightening; the disaster-struck level design looks thoroughly unsafe; and the music, man, the music is <i>anxiety incarnate</i>.  Speaking as someone who doesn't care for horror games, I can still appreciate and respect how <b>evocative</b> Prey is in this way.  <i>But...</i>
 
@@ -15,11 +15,11 @@ As I crawled slowly down corridors and hid from Phantoms, avoiding traps and try
 
 The jump-scaring "mimics" are an excellent example of a great mechanic that felt detrimental to the overall game.  Aside from a handful of scripted moments, they were legitimately and expertly hidden among a room's objects, and being surprised by one meant - in addition to jumping up in my chair - taking a big chunk of damage.
 
-So of course, I equipped the Psychoscope upgrade that allowed me to see disguised mimics, and kept my 'scope on ... <i>all the time</i>.  That solved my scared-and-dead problem, but sacrified some audio clarity and visual quality, like {{% game "Batman: Arkham Asylum" %}}Batman{{% /game %}}'s Detective Mode or {{% game "The Witcher 3: Wild Hunt" %}}Witcher{{% /game %}} Vision.  I was pretty disappointed that there was never a <i>passive</i> upgrade for detecting mimics.
+So of course, I equipped the Psychoscope upgrade that allowed me to see disguised mimics, and kept my 'scope on ... <i>all the time</i>.  That solved my scared-and-dead problem, but sacrified some audio clarity and visual quality, like [Batman](game:Batman: Arkham Asylum)'s Detective Mode or [Witcher](game:The Witcher 3: Wild Hunt) Vision.  I was pretty disappointed that there was never a <i>passive</i> upgrade for detecting mimics.
 
 Maybe I'm just a scaredy-cat; but that wasn't the only way that I felt Prey was conflicted.  Another big one was narrative choice, and my "<a href="https://en.wikipedia.org/wiki/Fear_of_missing_out">fear of missing out</a>."
 
-The quality of Prey's narrative content was consistently excellent, not just in the main story and side missions, but even in the text and audio logs that filled in background details and characterization.  This story wasn't great in the same way as The Witcher's -- but more like {{% game "Metroid Prime" %}}Metroid Prime{{% /game %}}, in that I was collecting clues and hints to gradually uncover the plot's mystery.  And that's where Prey's strength as a story-driven adventure ran headlong into its strength as an RPG.
+The quality of Prey's narrative content was consistently excellent, not just in the main story and side missions, but even in the text and audio logs that filled in background details and characterization.  This story wasn't great in the same way as The Witcher's -- but more like <game:Metroid Prime>, in that I was collecting clues and hints to gradually uncover the plot's mystery.  And that's where Prey's strength as a story-driven adventure ran headlong into its strength as an RPG.
 
 Occasionally, the game would present me with a choice - like saving or killing a person, using a key item or destroying it - that just deprived me of some amount of that backstory.  And what was worse was when I wasn't "presented" with a choice at all; Prey has a few instances of <i>surprise</i> choice.  Following one mission might prevent another one from showing up.  Upgrading your Typhon powers will - surprise! - make the anti-Typhon defenses start to target you.  Even something as simple as walking into a room at a certain time might set story-changing events into motion.
 
@@ -37,6 +37,6 @@ Nevertheless, I fell in love with those parts.  The character- and equipment-upg
 
 As much as I wish it was <i>better</i>, Prey is impressively great already.  My criticisms don't change the fact that it's a masterful blast of a game.
 
-<b>Better than</b>: {{% game "BioShock Infinite" %}}BioShock Infinite{{% /game %}}, {{% game "Dishonored" %}}Dishonored{{% /game %}}, {{% game "Metroid Prime" %}}Metroid Prime{{% /game %}}, {{% game "Resident Evil 4: Wii Edition" %}}Resident Evil 4: Wii Edition{{% /game %}}  
-<b>Not as good as</b>: {{% game "The Elder Scrolls V: Skyrim" %}}The Elder Scrolls V: Skyrim{{% /game %}}, {{% game "The Witcher 3: Wild Hunt" %}}The Witcher 3: Wild Hunt{{% /game %}}, the non-story aspects of {{% game "Deus Ex: Mankind Divided" %}}Deus Ex: Mankind Divided{{% /game %}}  
-<b>But</b>: an emphatic <i>no, thank you</i> to the rogue-like {{% game "Prey: Mooncrash" %}}Mooncrash DLC{{% /game %}}.
+<b>Better than</b>: <game:BioShock Infinite>, <game:Dishonored>, <game:Metroid Prime>, <game:Resident Evil 4: Wii Edition>  
+<b>Not as good as</b>: <game:The Elder Scrolls V: Skyrim>, <game:The Witcher 3: Wild Hunt>, the non-story aspects of <game:Deus Ex: Mankind Divided>  
+<b>But</b>: an emphatic <i>no, thank you</i> to the rogue-like [Mooncrash DLC](game:Prey: Mooncrash).

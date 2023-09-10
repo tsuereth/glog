@@ -9,7 +9,7 @@ title = "Breath of the Bizarre"
 
 +++
 
-I've tried, and failed, to really sink into {{% game "The Legend of Zelda: Majora's Mask 3D" %}}Majora's Mask 3D{{% /game %}} multiple times over the past two and a half years.  I think it's fair to say that the game's opening hasn't aged very well:
+I've tried, and failed, to really sink into [Majora's Mask 3D](game:The Legend of Zelda: Majora's Mask 3D) multiple times over the past two and a half years.  I think it's fair to say that the game's opening hasn't aged very well:
 
 * Narratively, it's <i>weird</i> and fairly un-charming;
 * Before you've picked up some key items (like the bow), it's extremely linear;
@@ -19,7 +19,7 @@ I've tried, and failed, to really sink into {{% game "The Legend of Zelda: Major
 
 As for that last bit; well, there's an in-game hint system, now.
 
-Majora's Mask doesn't really command the same regard that it did back in 2000, especially in light of {{% game "The Legend of Zelda: Breath of the Wild" %}}Breath of the Wild{{% /game %}}'s fresh and powerful take on an open Zelda world.  But the adventure is still fun.
+Majora's Mask doesn't really command the same regard that it did back in 2000, especially in light of [Breath of the Wild](game:The Legend of Zelda: Breath of the Wild)'s fresh and powerful take on an open Zelda world.  But the adventure is still fun.
 
 And, more than anything else, I'm looking forward to filling up my Bomber's Notebook again.
 

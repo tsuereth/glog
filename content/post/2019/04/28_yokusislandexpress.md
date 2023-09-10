@@ -6,7 +6,7 @@ game = ["Yoku's Island Express"]
 platform = ["PC"]
 +++
 
-{{% game "Yoku's Island Express" %}}Yoku's Island Express{{% /game %}} is a charming, pretty, and mechanically-solid spin on the Metroidvania concept.  Actually, a more direct comparison would be {{% game "Toki Tori 2+" %}}Toki Tori 2+{{% /game %}}, as this is a similarly open and interconnected map of puzzles to solve.
+<game:Yoku's Island Express> is a charming, pretty, and mechanically-solid spin on the Metroidvania concept.  Actually, a more direct comparison would be <game:Toki Tori 2+>, as this is a similarly open and interconnected map of puzzles to solve.
 
 The difference is that Yoku's Island is full of <i>pinball</i> puzzles.
 

@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Gears 5" %}}Gears 5{{% /game %}}'s opening act is <i>peak {{% tag "Gears of War" %}}Gears{{% /tag %}}</i>, a tutorial-ish opening mission followed by scope-setting exposition that quickly gives way to a <b>bombastic non-stop thrill-ride</b> through multiple set-piece moments overflowing with bullets and explosions.
+<game:Gears 5>'s opening act is <i>peak [Gears](tag:Gears of War)</i>, a tutorial-ish opening mission followed by scope-setting exposition that quickly gives way to a <b>bombastic non-stop thrill-ride</b> through multiple set-piece moments overflowing with bullets and explosions.
 
 Then, the game slows <i>way</i> down for a jarringly mellow walk-around-town sequence.  You can eavesdrop on NPCs' idle chatter, and collect a bunch of nigh-meaningless collectibles, until you eventually find out that <a href="https://gearsofwar.fandom.com/wiki/Oscar_Diaz">Jimmy Smits was re-cast</a> in a narratively-weighty sequence that <i>finally</i> plots an interesting character arc for Kait.
 
@@ -25,8 +25,8 @@ Gears 5's reach definitely exceeded its grasp.  The open areas have excellent vi
 
 Not to mention, Kait's character growth is <i>once again</i> drip-fed and left dangling until the next game.
 
-<b>Better than</b>: {{% game "Wolfenstein II: The New Colossus" %}}Wolfenstein II: The New Colossus{{% /game %}}  
-<b>Not as good as</b>: {{% game "Borderlands 3" %}}Borderlands 3{{% /game %}}, {{% game "Gears of War 4" %}}Gears of War 4{{% /game %}}  
-<b>About as good as</b>: {{% game "Rise of the Tomb Raider" %}}Rise of the Tomb Raider{{% /game %}} and {{% game "Tomb Raider (2013)" %}}Tomb Raider (2013){{% /game %}}, granted my praise for the latter {{% abslink href="2018/07/27/melancholy-of-the-tomb-raider/" %}}<i>did not</i> age well{{% /abslink %}}.
+<b>Better than</b>: <game:Wolfenstein II: The New Colossus>  
+<b>Not as good as</b>: <game:Borderlands 3>, <game:Gears of War 4>  
+<b>About as good as</b>: <game:Rise of the Tomb Raider> and <game:Tomb Raider (2013)>, granted my praise for the latter {{% abslink href="2018/07/27/melancholy-of-the-tomb-raider/" %}}<i>did not</i> age well{{% /abslink %}}.
 
 <i>Progress: Finished the campaign on Intermediate.</i>

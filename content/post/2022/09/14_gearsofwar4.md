@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-My {{% abslink href="2011/10/09/gears-of-war-3-2/" %}}recorded memory{{% /abslink %}} of {{% game "Gears of War 3" %}}Gears of War 3{{% /game %}} was surprisingly positive, especially about the quality of its writing.  What happened in that game again?  I think... a grizzled old military scientist, the presumed-dead father of the franchise's protagonist, committed chemical-weapon genocide against the under-dwelling "Locust" bug-mutant people...?
+My {{% abslink href="2011/10/09/gears-of-war-3-2/" %}}recorded memory{{% /abslink %}} of <game:Gears of War 3> was surprisingly positive, especially about the quality of its writing.  What happened in that game again?  I think... a grizzled old military scientist, the presumed-dead father of the franchise's protagonist, committed chemical-weapon genocide against the under-dwelling "Locust" bug-mutant people...?
 
-Well, whether or not that memory is reliable, I know it's <i>possible</i> for an action-oriented shoot-bad-dudes game to also have great writing and showcase compelling characters (like {{% tag "Uncharted" %}}Nate and Sully{{% /tag %}}).  And I know that {{% game "Gears of War 4" %}}Gears of War 4{{% /game %}} doesn't come anywhere close.
+Well, whether or not that memory is reliable, I know it's <i>possible</i> for an action-oriented shoot-bad-dudes game to also have great writing and showcase compelling characters (like [Nate and Sully](tag:Uncharted)).  And I know that <game:Gears of War 4> doesn't come anywhere close.
 
 I'm not complaining about its non-subtle, obviously-reiterated premise of "human-on-human conflict interrupted by gross monsters" -- hell, a prologue chapter goes out of its way to <i>remind you</i> that <a href="https://gearsofwar.fandom.com/wiki/Pendulum_Wars">this has happened before</a>.  The theme of failing to learn from past wars' mistakes is practically in the title.
 
@@ -25,14 +25,14 @@ There are some new robotic enemy types who bring a few new weapons with them ...
 
 Even Gears 4's lowlights, super-annoying <a href="https://gearsofwar.fandom.com/wiki/Juvie">swarm grubs</a> and occasional <a href="https://gearsofwar.fandom.com/wiki/Carrier">bullet-sponge mid-bosses</a>, are <a href="https://gearsofwar.fandom.com/wiki/Wretch">overtly (1)</a> <a href="https://gearsofwar.fandom.com/wiki/Brumak">familiar (2)</a>.
 
-I know I'm sounding pretty <i>down</i> on Gears 4, and its seeming contentment to exist in its predecessors' shadow, but it's worth keeping in mind that <b>a different development studio made this</b>.  From a technical and production perspective, it's pretty impressive that {{% tag "The Coalition" %}}The Coalition{{% /tag %}} was able to replicate {{% tag "Epic Games" %}}Epic{{% /tag %}}'s trilogy so competently.
+I know I'm sounding pretty <i>down</i> on Gears 4, and its seeming contentment to exist in its predecessors' shadow, but it's worth keeping in mind that <b>a different development studio made this</b>.  From a technical and production perspective, it's pretty impressive that <tag:The Coalition> was able to replicate [Epic](tag:Epic Games)'s trilogy so competently.
 
 Still, as a player, I would've been "meh" on Gears 4 if not for its genuinely fresh and awesomely satisfying final act where {{% spoiler %}}you pilot a g-damn giant mecha, and literally stomp on enemies like they're ants.{{% /spoiler %}}
 
 Gears 4 shows that the new crew can do what the old one did.  Now I'm looking forward to seeing what <i>else</i> they can do.
 
-<b>Better than</b>: {{% game "Uncharted: Drake's Fortune" %}}Uncharted: Drake's Fortune{{% /game %}}, {{% game "Wolfenstein II: The New Colossus" %}}Wolfenstein II: The New Colossus{{% /game %}}  
-<b>Not as good as</b>: [my memory of] {{% game "Gears of War 3" %}}Gears of War 3{{% /game %}}, {{% game "Titanfall 2" %}}Titanfall 2{{% /game %}}, {{% game "Uncharted 3: Drake's Deception" %}}Uncharted 3: Drake's Deception{{% /game %}}  
-<b>I just hope that {{% game "Gears 5" %}}Gears 5{{% /game %}}'s campaign</b>: reaches a little higher than "<a href="https://knowyourmeme.com/memes/somehow-palpatine-returned">somehow, the Locust returned</a>."
+<b>Better than</b>: <game:Uncharted: Drake's Fortune>, <game:Wolfenstein II: The New Colossus>  
+<b>Not as good as</b>: [my memory of] <game:Gears of War 3>, <game:Titanfall 2>, <game:Uncharted 3: Drake's Deception>  
+<b>I just hope that <game:Gears 5>'s campaign</b>: reaches a little higher than "<a href="https://knowyourmeme.com/memes/somehow-palpatine-returned">somehow, the Locust returned</a>."
 
 <i>Progress: Finished the campaign on Normal.</i>

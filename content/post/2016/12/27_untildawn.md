@@ -9,7 +9,7 @@ title = "From Dusk till I Got Bored"
 
 +++
 
-{{% game "Until Dawn" %}}Until Dawn{{% /game %}} started slowly, but promisingly; the game is basically a teenager-slaying horror film in videogame form.  Occasionally cheesy, occasionally jump-scary, and occasionally ominous, Until Dawn excels at building a creepy, anxious atmosphere.  In this game, you actually get to tell the bitchy cheerleader whether or not she should open the door to investigate a noise outside.  (She may do it anyway, but it's still pretty immersive.)
+<game:Until Dawn> started slowly, but promisingly; the game is basically a teenager-slaying horror film in videogame form.  Occasionally cheesy, occasionally jump-scary, and occasionally ominous, Until Dawn excels at building a creepy, anxious atmosphere.  In this game, you actually get to tell the bitchy cheerleader whether or not she should open the door to investigate a noise outside.  (She may do it anyway, but it's still pretty immersive.)
 
 It is at times a master class in tension building -- when a lighthearted snowball fight is bookended by carefully exploring dark passages or running from a wild animal, Until Dawn does a fantastic job of raising your heart rate, cooling it back down, and jacking it up again.
 

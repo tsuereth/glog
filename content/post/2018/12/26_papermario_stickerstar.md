@@ -6,15 +6,15 @@ game = ["Paper Mario: Sticker Star"]
 platform = ["3DS"]
 +++
 
-I'll confess that I didn't come into {{% game "Paper Mario: Sticker Star" %}}Paper Mario: Sticker Star{{% /game %}} with a very open mind.  It's the last {{% platform "3DS" %}}3DS{{% /platform %}} game in my backlog, and I really wanted to pack the system up before the end of the year.
+I'll confess that I didn't come into <game:Paper Mario: Sticker Star> with a very open mind.  It's the last <platform:3DS> game in my backlog, and I really wanted to pack the system up before the end of the year.
 
 That being said, the 30 minutes I spent with Sticker Star were enough for me.  While I might not call it an outright "bad" game, it certainly didn't offer anything I'd call "good," either.
 
 An interesting story?  Nope.  This narrative setup is less complicated than many of Mario's <i>platform games</i>.  That is to say, in Sticker Star, an opening cinematic establishes - almost wordlessly - that Bowser interrupted a Mushroom Kingdom event, a magic macguffin split into six pieces, and Peach got herself kidnapped.  So ... I guess it's time for Mario to do that thing, you know, the thing he always does.  With the princess saving.
 
-His only traveling companion is an annoying talking crown, who provides some gameplay tips a'la {{% game "The Legend of Zelda: Ocarina of Time 3D" %}}Navi the fairy{{% /game %}}.  And since Mario himself remains mute (as is tradition), there isn't much in the way of dialog.  NPCs have some light-hearted throwaway lines, but the humor feels underwhelmingly mild.
+His only traveling companion is an annoying talking crown, who provides some gameplay tips a'la [Navi the fairy](game:The Legend of Zelda: Ocarina of Time 3D).  And since Mario himself remains mute (as is tradition), there isn't much in the way of dialog.  NPCs have some light-hearted throwaway lines, but the humor feels underwhelmingly mild.
 
-As far as I remember, {{% game "Paper Mario: The Thousand-Year Door" %}}Paper Mario: The Thousand-Year Door{{% /game %}} had a surprisingly complicated plot.  And while the story of {{% game "Mario & Luigi: Bowser's Inside Story" %}}Mario & Luigi: Bowser's Inside Story{{% /game %}} wasn't very good, I respect that it at least <i>existed</i>.  Sticker Star, in spite of its predecessors, clearly never intended to tell a story at all.
+As far as I remember, <game:Paper Mario: The Thousand-Year Door> had a surprisingly complicated plot.  And while the story of <game:Mario & Luigi: Bowser's Inside Story> wasn't very good, I respect that it at least <i>existed</i>.  Sticker Star, in spite of its predecessors, clearly never intended to tell a story at all.
 
 So does it make up for that with some thrilling combat mechanics?  Eh... no.  Its sticker-based combat is based on, well, your inventory of stickers.  Mario doesn't have any default attacks, or abilities that he can learn by leveling up -- because there is no leveling up.  Nor are there equipment slots, stat upgrades, or ... even character stats, really.
 

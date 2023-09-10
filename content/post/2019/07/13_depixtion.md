@@ -6,7 +6,7 @@ game = ["Depixtion"]
 platform = ["PC"]
 +++
 
-{{% game "Depixtion" %}}Depixtion{{% /game %}} <i>looks</i> like it's just doing three nonograms to blend red, green, and blue tiles together -- but it's actually more than that.  It changes the fundamental rules of picross-style puzzles, in a way that I'm not sure I really like.
+<game:Depixtion> <i>looks</i> like it's just doing three nonograms to blend red, green, and blue tiles together -- but it's actually more than that.  It changes the fundamental rules of picross-style puzzles, in a way that I'm not sure I really like.
 
 In each of the red or green or blue puzzles, there are <i>two "marked" states</i>: a light version of the color, and a dark version of the color.  (You click twice to color in darker, which isn't a great UX but whatever.)  And when light- and dark- colored sections are next to each other, there <i>isn't necessarily</i> a blank space inbetween them.
 

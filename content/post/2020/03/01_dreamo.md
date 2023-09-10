@@ -6,7 +6,7 @@ game = ["Dreamo"]
 platform = ["PC"]
 +++
 
-{{% game "The Witness (2016)" %}}The Witness{{% /game %}} did a really fantastic job of building a {{% game "Myst" %}}myst{{% /game %}}erious world around its seemingly-incongruous puzzles.  {{% game "Dreamo" %}}Dreamo{{% /game %}} appears to have the same goal -- unfortunately its demo doesn't show much of that world; instead, it focuses on the puzzle mechanics.
+[The Witness](game:The Witness (2016)) did a really fantastic job of building a [myst](game:Myst)erious world around its seemingly-incongruous puzzles.  <game:Dreamo> appears to have the same goal -- unfortunately its demo doesn't show much of that world; instead, it focuses on the puzzle mechanics.
 
 And while you could argue that The Witness's puzzles were sometimes simple - at least to start - they were very rarely "stupid" in the sense of being fiddly or frustrating.  Dreamo's demo, on the other hand, took only a few minutes to show me a really ambiguous and aggravating mechanic that quickly turned me off.
 

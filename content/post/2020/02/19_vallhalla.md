@@ -7,13 +7,13 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-Maybe the <i>worst</i> thing about {{% game "VA-11 Hall-A: Cyberpunk Bartender Action" %}}VA-11 Hall-A: Cyberpunk Bartender Action{{% /game %}} is its title.  I really don't want to type out that whole mess again.  ... that's my glib way of saying that Valhalla is <i>not</i> a bad game, though I did find it extremely tepid.
+Maybe the <i>worst</i> thing about <game:VA-11 Hall-A: Cyberpunk Bartender Action> is its title.  I really don't want to type out that whole mess again.  ... that's my glib way of saying that Valhalla is <i>not</i> a bad game, though I did find it extremely tepid.
 
 At first, its bartending mechanics are more than a little bewildering - the ingredients don't map to real ones at all, and the controls for "aging" and "blending" a drink are pretty counterintuitive - so it takes a few rounds to get the hang of.  But, before you know it, you'll be slinging Brandtinis and Grizzly Temples with the best of them.
 
 And for the rest of the game, which is to say the vast majority of it, the gameplay doesn't evolve any further.  That's it.
 
-You'll shortly come to find that the bartending mechanics aren't really Valhalla's focus -- they're just an engagement tool, a way to make sure you're awake, as you click through screen after screen of dialog with your virtual bar patrons.  It'd be a misrepresentation to call Valhalla anything other than a {{% tag "Visual Novel" %}}Visual Novel{{% /tag %}}.
+You'll shortly come to find that the bartending mechanics aren't really Valhalla's focus -- they're just an engagement tool, a way to make sure you're awake, as you click through screen after screen of dialog with your virtual bar patrons.  It'd be a misrepresentation to call Valhalla anything other than a <tag:Visual Novel>.
 
 And in that regard, Valhalla <i>isn't bad</i>.  Its characters have well-written personalities, and some of their stories are kinda interesting.  But... it doesn't feel like quite <i>enough</i>.
 
@@ -25,6 +25,6 @@ For all the times I was curious to hear more about a character's backstory, actu
 
 Valhalla's got a great sense of personality, but no real gameplay and no central plot.  (The protagonist does have a character-defining story toward the end; but it doesn't feel much more impactful than any other character's story.)  I don't want to say that Valhalla is all style and no substance -- because there is quite a lot of substance, in its reams of written dialog.  It just ... isn't very <i>interesting</i> substance.
 
-<b>Better than</b>: {{% game "Hate Plus" %}}Hate Plus{{% /game %}}  
-<b>Not as good as</b>: {{% game "Phoenix Wright: Ace Attorney" %}}Phoenix Wright: Ace Attorney{{% /game %}}  
-<b>Perhaps slightly not-as-good-as</b>: {{% game "Analogue: A Hate Story" %}}Analogue: A Hate Story{{% /game %}}, which at least had a core mystery to solve.
+<b>Better than</b>: <game:Hate Plus>  
+<b>Not as good as</b>: <game:Phoenix Wright: Ace Attorney>  
+<b>Perhaps slightly not-as-good-as</b>: <game:Analogue: A Hate Story>, which at least had a core mystery to solve.

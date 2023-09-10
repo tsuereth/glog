@@ -9,7 +9,7 @@ title = "Dungeons and Bullshit"
 
 +++
 
-{{% game "Eon Altar" %}}Eon Altar{{% /game %}} swings hard at establishing a next generation of digital RPGs; by putting your character sheet and controls on your smartphone, {{% game "The Jackbox Party Pack 3" %}}Jackbox{{% /game %}}-style, it <i>could</i> deliver on a true multiplayer approach to CRPGs like {{% game "Baldur's Gate" %}}Baldur's Gate{{% /game %}}.  Unfortunately, it strikes out due to numerous implementation issues.
+<game:Eon Altar> swings hard at establishing a next generation of digital RPGs; by putting your character sheet and controls on your smartphone, [Jackbox](game:The Jackbox Party Pack 3)-style, it <i>could</i> deliver on a true multiplayer approach to CRPGs like <game:Baldur's Gate>.  Unfortunately, it strikes out due to numerous implementation issues.
 
 First: There are <b>five</b> characters to select from, but you can only have up to <b>four</b> players.  <i>What up with that?</i>
 

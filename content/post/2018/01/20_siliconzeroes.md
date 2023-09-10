@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Silicon Zeroes" %}}Silicon Zeroes{{% /game %}} started out pretty simple, as I saw in {{% abslink href="2017/09/24/visual-programming/" %}}the demo{{% /abslink %}}; and these humble beginnings had me looking forward to more complex algorithmic puzzles in the later game.
+<game:Silicon Zeroes> started out pretty simple, as I saw in {{% abslink href="2017/09/24/visual-programming/" %}}the demo{{% /abslink %}}; and these humble beginnings had me looking forward to more complex algorithmic puzzles in the later game.
 
-Unfortunately, the later puzzles tend to feel more like <i>riddles</i>: solving an otherwise-straightforward problem without using a crucial component, or in a time limit that requires otherwise-counterproductive pipelining.  It's even worse than {{% game "TIS-100" %}}TIS-100{{% /game %}}, whose limitations were at least consistent within the world of the game; in Silicon Zeroes, a component will be given to you in one puzzle, then taken away in another.
+Unfortunately, the later puzzles tend to feel more like <i>riddles</i>: solving an otherwise-straightforward problem without using a crucial component, or in a time limit that requires otherwise-counterproductive pipelining.  It's even worse than <game:TIS-100>, whose limitations were at least consistent within the world of the game; in Silicon Zeroes, a component will be given to you in one puzzle, then taken away in another.
 
 One particularly frustrating aspect of the game's mechanics is how it treats floating or undefined values.  In digital electronics, an undefined voltage level is never useful; but in many of Silicon Zeroes' puzzles, an undefined input gets used as a behavioral switch, effectively disabling a component's output.  And this mechanic is a critical part of many puzzles' solutions.
 
@@ -21,10 +21,10 @@ I don't want to overplay my frustrations with the game, because I did have some 
 
 The dull story didn't help, either.  (I'd recommend the first season of <a href="http://www.imdb.com/title/tt2543312">Halt and Catch Fire</a>, instead.)
 
-Silicon Zeroes is somewhat short, unless you want to do the extra post-campaign puzzles -- which I didn't.  Longer than {{% game "Human Resource Machine" %}}Human Resource Machine{{% /game %}}, if not by much.  By the time I saw the "ending" cinematic, I was very ready to stop playing, despite how many more puzzles I have left.
+Silicon Zeroes is somewhat short, unless you want to do the extra post-campaign puzzles -- which I didn't.  Longer than <game:Human Resource Machine>, if not by much.  By the time I saw the "ending" cinematic, I was very ready to stop playing, despite how many more puzzles I have left.
 
-<b>Better than</b>: {{% game "Prelogate" %}}Prelogate{{% /game %}}  
-<b>Not as good as</b>: {{% game "Human Resource Machine" %}}Human Resource Machine{{% /game %}}, {{% game "Opus Magnum" %}}Opus Magnum{{% /game %}}  
+<b>Better than</b>: <game:Prelogate>  
+<b>Not as good as</b>: <game:Human Resource Machine>, <game:Opus Magnum>  
 <b>Instead of outshining Opus Magnum</b>: Silicon Zeroes ended up reminding me that Zachtronics, even at its worst, is still pretty good.
 
 <i>Progress: Finished board 3.</i>

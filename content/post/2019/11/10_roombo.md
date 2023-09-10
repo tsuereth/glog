@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-Based on its low price, you might guess that {{% game "Roombo: First Blood" %}}Roombo: First Blood{{% /game %}} <i>(great title, by the way)</i> is a one-note joke of a game.  And you'd be pretty much right.
+Based on its low price, you might guess that <game:Roombo: First Blood> <i>(great title, by the way)</i> is a one-note joke of a game.  And you'd be pretty much right.
 
 I love this premise -- that you have the stealth attributes of a robot vacuum cleaner, and sneak around the house to brutally neutralize burglars, then clean up the evidence!  There's an admirable variety of traps you can "hack" (like ceiling fans and refrigerators) to damage the burglars, and by vacuuming up their blood, you build a power/rage meter for a ramming attack.
 

@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-{{% game "Factorio" %}}Factorio{{% /game %}} isn't a perfect game -- not even "perfect for me," in the sense that some narrative elements and improvements to tech-tree pacing could make it "more perfect for me."  But, well, it's a good thing that I had this past week off of work and could spend multiple full days (and two all-nighters!) building a spaceship factory.
+<game:Factorio> isn't a perfect game -- not even "perfect for me," in the sense that some narrative elements and improvements to tech-tree pacing could make it "more perfect for me."  But, well, it's a good thing that I had this past week off of work and could spend multiple full days (and two all-nighters!) building a spaceship factory.
 
 Calling my 60-hour creation a spaceship factory is absurdly reductive, but that reduction is the key to Factorio's charm.  To create <a href="https://wiki.factorio.com/Rocket_fuel">rocket fuel</a>, you need <a href="https://wiki.factorio.com/Light_oil">light oil</a>; for that, you need a <a href="https://wiki.factorio.com/Chemical_plant">chemical plant</a>; for that, you need <a href="https://wiki.factorio.com/Steel_plate">steel plates</a>... <i>ad infinitum</i>.  The <a href="https://en.wikipedia.org/wiki/Turtles_all_the_way_down">layers upon layers</a> of manufacturing objectives, not to mention the required <a href="https://wiki.factorio.com/Research">research</a> to unlock them (and the <a href="https://wiki.factorio.com/Science_pack">science packs</a> to perform research!), are wonderfully clear in defining "what" you need to do and delightfully vague in "how" to bring it all together.
 
@@ -29,8 +29,8 @@ Well, and you'll need to keep up an arms race as your increasing pollution level
 
 So, yeah, there are parts I was underwhelmed by and parts that I definitely think could have been done better.  But none of that changes the fact that Factorio is the first game in years that kept me up literally all night playing.
 
-<b>Better than</b>: {{% game "Infinifactory" %}}Infinifactory{{% /game %}}  
-<b>Not as good as</b>: {{% game "Exapunks" %}}Exapunks{{% /game %}}  
-<b>As for what's next</b>: when will {{% game "Satisfactory" %}}Satisfactory{{% /game %}} leave early access?
+<b>Better than</b>: <game:Infinifactory>  
+<b>Not as good as</b>: <game:Exapunks>  
+<b>As for what's next</b>: when will <game:Satisfactory> leave early access?
 
 <i>Progress: Launched a rocket.</i>

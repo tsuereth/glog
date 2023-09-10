@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-I don't know if I'm getting this title right.  Steam calls it "{{% game "Picross Fairytale" %}}Picross Fairytale{{% /game %}} - nonogram: Red Riding Hood Secret" which sounds like a poor translation from ... something.  And that fits with the general production value of the game.
+I don't know if I'm getting this title right.  Steam calls it "<game:Picross Fairytale> - nonogram: Red Riding Hood Secret" which sounds like a poor translation from ... something.  And that fits with the general production value of the game.
 
 That is, like it was ported from a mobile game, and not very well.
 
@@ -19,8 +19,8 @@ And you can pay real money for some kind of currency.  I don't know what it does
 
 Even considering that it's free, this isn't worth it.  You'd do better to shell out a few bucks for a picross game that isn't as outright <i>shitty</i>.
 
-<b>Better than</b>: {{% game "Pokémon Picross" %}}Pokémon Picross{{% /game %}}  
-<b>Not as good as</b>: {{% game "Pepper's Puzzles" %}}Pepper's Puzzles{{% /game %}}  
-<b>Slightly worse than</b>: {{% game "Regency Solitaire" %}}Regency Solitaire{{% /game %}}
+<b>Better than</b>: <game:Pokémon Picross>  
+<b>Not as good as</b>: <game:Pepper's Puzzles>  
+<b>Slightly worse than</b>: <game:Regency Solitaire>
 
 <i>Progress: Got to puzzle 8.</i>

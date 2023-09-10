@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awful"]
 +++
 
-I received {{% game "Miner Ultra Adventures" %}}Miner Ultra Adventures{{% /game %}} as a gift, from a friend.  At least I think we're friends.  This gift has made me wonder.
+I received <game:Miner Ultra Adventures> as a gift, from a friend.  At least I think we're friends.  This gift has made me wonder.
 
 The "adventure" began immediately, on the baffling title screen.  Baffling, not because the title image was baked with Portuguese text -- a damning marketing failure, for sure, but easy enough to figure out.  But what I struggle to figure out is <i>how</i> the developer managed to make the main menu.  Arrow keys move a cursor up and down, not from one option to another, but <b>one pixel at a time</b>.  <i>What?</i>
 
@@ -19,6 +19,6 @@ As if the ice-rink physics alone aren't bad enough, add an automatic camera that
 
 I have no compunctions in calling Miner Ultra Adventures <b>unplayably bad</b>.
 
-If nothing else, it's proof of the Steam platform's successful democratization.  When poorly-tested disasters like {{% game "Brainfuck" %}}Brainfuck{{% /game %}}, hobbyist garbage like {{% game "Cubots: The Origins" %}}Cubots{{% /game %}}, and utter shit like <i>this</i> can be sold for any amount of money; there are clearly no barriers to entry.  Truly, <i>anyone</i> can sell a game.
+If nothing else, it's proof of the Steam platform's successful democratization.  When poorly-tested disasters like <game:Brainfuck>, hobbyist garbage like [Cubots](game:Cubots: The Origins), and utter shit like <i>this</i> can be sold for any amount of money; there are clearly no barriers to entry.  Truly, <i>anyone</i> can sell a game.
 
 As for my friend, well, in the future I'll be a bit more suspicious of his gifts.

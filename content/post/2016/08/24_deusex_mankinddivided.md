@@ -9,7 +9,7 @@ title = "The Second Human Revolution"
 
 +++
 
-After a slightly-over-plotted introduction, {{% game "Deus Ex: Mankind Divided" %}}Mankind Divided{{% /game %}} plops Adam Jensen into Prague -- a brighter, more Slavic spin on {{% game "Deus Ex: Human Revolution" %}}Human Revolution{{% /game %}}'s Detroit hub.  And it's as dense with detail and <i>care</i> as {{% game "Mass Effect" %}}The Citadel{{% /game %}} or anything else of its ilk.  I'm picking up sidequests and collectibles and flavor text all over the place.
+After a slightly-over-plotted introduction, [Mankind Divided](game:Deus Ex: Mankind Divided) plops Adam Jensen into Prague -- a brighter, more Slavic spin on [Human Revolution](game:Deus Ex: Human Revolution)'s Detroit hub.  And it's as dense with detail and <i>care</i> as [The Citadel](game:Mass Effect) or anything else of its ilk.  I'm picking up sidequests and collectibles and flavor text all over the place.
 
 And while the press has pretty universally panned its plot, so far I'm delighted in the color being built up by Prague's ambience, and in the conspiratorial intrigue attached to both the world and to Jensen.
 

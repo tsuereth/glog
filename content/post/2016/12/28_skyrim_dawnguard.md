@@ -9,7 +9,7 @@ title = "I am the night"
 
 +++
 
-{{% game "The Elder Scrolls V: Skyrim - Dawnguard" %}}Dawnguard{{% /game %}} gives you the choice of helping the Dawnguard hunt down the lord of the vampires, or joining said vampires and gaining the powers of evil blood-drinking magic.  Is that even really a choice?  Who wouldn't want to be a vampire, at least for a little while?
+[Dawnguard](game:The Elder Scrolls V: Skyrim - Dawnguard) gives you the choice of helping the Dawnguard hunt down the lord of the vampires, or joining said vampires and gaining the powers of evil blood-drinking magic.  Is that even really a choice?  Who wouldn't want to be a vampire, at least for a little while?
 
 What surprised me most about Dawnguard was that its main storyline is actually quite engrossing.  Beyond just siding with vampires or vampire hunters, there is a whole <i>thing</i> here that dives into the backstory of the snow elves, and there are a bunch of interesting encounters to work through along the way.
 
@@ -21,6 +21,6 @@ Dawnguard's biggest failing is that it just doesn't fit well on the map.  The th
 
 Otherwise, this is a solid addition of questing and exploration to Skyrim's already-impressive world.
 
-<b>Better than</b>: {{% game "Dishonored: The Brigmore Witches" %}}Dishonored: The Brigmore Witches{{% /game %}}  
-<b>Not as good as</b>: {{% game "Borderlands 2: Tiny Tina's Assault on Dragon Keep" %}}Borderlands 2: Tiny Tina's Assault on Dragon Keep{{% /game %}}  
-<b>And if I'm thinking about it</b>: the Dawnguard campaign is really better than most of {{% game "The Elder Scrolls V: Skyrim" %}}Skyrim{{% /game %}}'s built-in faction storylines
+<b>Better than</b>: <game:Dishonored: The Brigmore Witches>  
+<b>Not as good as</b>: <game:Borderlands 2: Tiny Tina's Assault on Dragon Keep>  
+<b>And if I'm thinking about it</b>: the Dawnguard campaign is really better than most of [Skyrim](game:The Elder Scrolls V: Skyrim)'s built-in faction storylines

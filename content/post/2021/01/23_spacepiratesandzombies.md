@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-{{% game "Space Pirates and Zombies" %}}Space Pirates and Zombies{{% /game %}} is an unambiguous attempt to rekindle the system-hopping, Newtonian-physics, do-missions-to-earn-cash-to-upgrade-ships charm of older games like {{% tag "Escape Velocity" %}}Escape Velocity{{% /tag %}}.  More so than modern reinterpretations like {{% game "Rebel Galaxy" %}}Rebel Galaxy{{% /game %}}, this is essentially the <i>same game</i>, hewing even closer to decades-old interfaces and mechanics than {{% game "3030 Deathwar Redux" %}}3030 Deathwar Redux{{% /game %}} did.
+<game:Space Pirates and Zombies> is an unambiguous attempt to rekindle the system-hopping, Newtonian-physics, do-missions-to-earn-cash-to-upgrade-ships charm of older games like <tag:Escape Velocity>.  More so than modern reinterpretations like <game:Rebel Galaxy>, this is essentially the <i>same game</i>, hewing even closer to decades-old interfaces and mechanics than <game:3030 Deathwar Redux> did.
 
 ... but unfortunately, combat - which Space Pirates embraces as its central form of gameplay - is painfully un-fun.  The controls are just as clunky as this game's now-archaic ancestors: selecting enemy targets is awkward, and aiming line-of-sight weapons at them is an annoying pain.  That aiming frustration is amplified by the fact that enemy AI loves to run away, often leading to tedious cat-and-mouse chases.
 

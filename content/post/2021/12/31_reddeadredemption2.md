@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-Thesis statement: {{% game "Red Dead Redemption 2" %}}Red Dead Redemption 2{{% /game %}} is a $450 million (<a href="https://en.wikipedia.org/wiki/Red_Dead_Redemption_2">source</a>) <b>wildlife simulator</b>.
+Thesis statement: <game:Red Dead Redemption 2> is a $450 million (<a href="https://en.wikipedia.org/wiki/Red_Dead_Redemption_2">source</a>) <b>wildlife simulator</b>.
 
-I could go on, and on, <i>and on</i>, about how <i>slowly</i> RDR2 tends to move.  Not in the same way as {{% game "Red Dead Redemption" %}}John Marston's story{{% /game %}}, that is, Arthur Morgan doesn't need to herd cattle or break horses for two hours before something interesting happens... but.
+I could go on, and on, <i>and on</i>, about how <i>slowly</i> RDR2 tends to move.  Not in the same way as [John Marston's story](game:Red Dead Redemption), that is, Arthur Morgan doesn't need to herd cattle or break horses for two hours before something interesting happens... but.
 
 He <i>does</i> need to ride his horse from point A to B, for minutes at a time, in and between practically every mission.  Sometimes the narrative scripting skips this ride, and sometimes it doesn't.  Sometimes a riding companion will provide dialog, and sometimes they won't.  Sometimes there's a "fast travel" option at A to go directly to B, and <i>usually there isn't</i>.
 
@@ -37,8 +37,8 @@ And the quality of those floral and faunal animations is top notch.  So, for a w
 
 For an epic narrative, it's pretty good, except when it's slowing itself down; and for an open-world sandbox, it's simply not open enough.
 
-<b>Better than</b>: {{% game "Red Dead Redemption" %}}Red Dead Redemption{{% /game %}}  
-<b>Not as good as</b>: {{% game "Grand Theft Auto V" %}}Grand Theft Auto V{{% /game %}}  
-<b>Hard to be sure, but probably better than</b>: {{% game "Grand Theft Auto IV" %}}Grand Theft Auto IV{{% /game %}}, since this game at least <i>has</i> checkpoints.
+<b>Better than</b>: <game:Red Dead Redemption>  
+<b>Not as good as</b>: <game:Grand Theft Auto V>  
+<b>Hard to be sure, but probably better than</b>: <game:Grand Theft Auto IV>, since this game at least <i>has</i> checkpoints.
 
 <i>Progress: Finished the epilogue.</i>

@@ -7,15 +7,15 @@ platform = ["PS4"]
 rating = ["Good"]
 +++
 
-Like {{% game "Ōkami HD" %}}Ōkami HD{{% /game %}} before it, the new {{% game "Shadow of the Colossus (2018)" %}}Shadow of the Colossus{{% /game %}} excellently recaptures both the magical highs and the irritating lows of the {{% game "Shadow of the Colossus" %}}2005 original{{% /game %}}.
+Like <game:Ōkami HD> before it, the new [Shadow of the Colossus](game:Shadow of the Colossus (2018)) excellently recaptures both the magical highs and the irritating lows of the [2005 original](game:Shadow of the Colossus).
 
-It shouldn't be terribly surprising that this remake of Colossus looks and runs much better -- given that the original was such a strain on the {{% platform "PS2" %}}PS2{{% /platform %}}, throwing more hardware at it is certainly helpful.  But this remake goes beyond higher resolutions and framerates; new art and animation techniques make it remarkably, sometimes breathtakingly beautiful.  It's not as stylistically impressive as Ōkami, but still looks pretty damned good.
+It shouldn't be terribly surprising that this remake of Colossus looks and runs much better -- given that the original was such a strain on the <platform:PS2>, throwing more hardware at it is certainly helpful.  But this remake goes beyond higher resolutions and framerates; new art and animation techniques make it remarkably, sometimes breathtakingly beautiful.  It's not as stylistically impressive as Ōkami, but still looks pretty damned good.
 
 The introductory story sequence is rougher than I'd remembered.  Not just for being obtusely mysterious, but for how <i>long</i> it is.  I seriously don't remember Dormin droning on so much, and I think the game would have been better-served to just skip it and drop you into the world immediately.
 
 The openness of that world was staggering, back in the 2000s, and it's a little less-so today.  So many other open-world games have come and gone, and this world is so comparatively <b>empty</b>.  It's not generally "bad" - merely unengaging - except in a few cases where directions to the next colossus are ambiguous, and you get lost in a world that has nothing else to do.
 
-That happened to me on the 8th colossus, and even after I looked up directions from the interweb, I still couldn't find that damned cave entrance for like half an hour.  As elegantly simple as this game's sword-shining navigation is, I think it could really stand to be modernized like {{% game "BioShock Infinite" %}}BioShock Infinite{{% /game %}}'s path-finding arrow.
+That happened to me on the 8th colossus, and even after I looked up directions from the interweb, I still couldn't find that damned cave entrance for like half an hour.  As elegantly simple as this game's sword-shining navigation is, I think it could really stand to be modernized like <game:BioShock Infinite>'s path-finding arrow.
 
 And the horse is still a pain to ride.  No surprise there.
 
