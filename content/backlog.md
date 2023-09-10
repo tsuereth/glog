@@ -16,4 +16,5 @@ hide_date = true
 * <game:Saints Row (2022)> (<platform:PC>)
 * <game:Spiritfarer> (<platform:PC>)
 * <game:Star Wars Jedi: Survivor> (<platform:PC>)
+* <game:Starfield> (<platform:PC>)
 * <game:Tiny Tina's Wonderlands> (<platform:PC>)

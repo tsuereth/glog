@@ -5,7 +5,6 @@ hide_date = true
 
 # Upcoming Releases of Interest
 
-* 9/6/2023 - <game:Starfield> (<platform:PC>)
 * 9/26/2023 - <game:Cyberpunk 2077: Phantom Liberty> (<platform:PC>)
 * 11/17/2023 - <game:Super Mario RPG (2023)> (<platform:Switch>)
 * ??/2023 - <game:The Talos Principle II> (<platform:PC>)
