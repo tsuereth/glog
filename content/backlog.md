@@ -6,6 +6,7 @@ hide_date = true
 # Games I Will Play One Day, Maybe
 
 * <game:Afterparty> (<platform:PC>)
+* <game:Baldur's Gate 3> (<platform:PC>)
 * <game:God of War Ragnarök> (<platform:PS4>)
 * <game:Horizon Forbidden West: Burning Shores> (<platform:PS5>)
 * <game:The Last of Us Part I> (<platform:PC>)
