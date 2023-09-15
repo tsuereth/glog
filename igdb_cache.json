@@ -6531,10 +6531,6 @@
       "name": "Null Reference Studio"
     },
     {
-      "id": 24943,
-      "name": "Deep Silver Volition"
-    },
-    {
       "id": 25077,
       "name": "Intelligent Systems"
     },
@@ -12906,7 +12902,8 @@
       ],
       "genres": [
         11,
-        15
+        15,
+        26
       ],
       "id": 848,
       "involved_companies": [
@@ -21328,6 +21325,7 @@
         4
       ],
       "genres": [
+        26,
         35
       ],
       "id": 2327,
@@ -26231,7 +26229,7 @@
       "url": "https://www.igdb.com/games/sonic-the-hedgehog-2"
     },
     {
-      "category": 11,
+      "category": 8,
       "collection": -1,
       "franchise": -1,
       "franchises": [
@@ -26569,8 +26567,7 @@
         1
       ],
       "genres": [
-        12,
-        26
+        12
       ],
       "id": 4816,
       "involved_companies": [
@@ -30309,6 +30306,7 @@
         4
       ],
       "genres": [
+        26,
         35
       ],
       "id": 7340,
@@ -32199,20 +32197,13 @@
       ],
       "id": 8536,
       "involved_companies": [
-        230092,
-        230093,
-        230094,
-        230095,
-        230096,
-        230097,
-        230098,
-        230100,
-        230101,
-        230102,
-        230103,
-        230104,
-        230105,
-        230106
+        231214,
+        231215,
+        231216,
+        231217,
+        231218,
+        231219,
+        231220
       ],
       "name": "Shaq-Fu",
       "player_perspectives": [
@@ -35175,7 +35166,6 @@
       ],
       "genres": [
         15,
-        26,
         31,
         32
       ],
@@ -40620,7 +40610,8 @@
       ],
       "id": 20039,
       "involved_companies": [
-        59172
+        59172,
+        230994
       ],
       "name": "Pokémon Picross",
       "player_perspectives": [
@@ -45141,7 +45132,8 @@
       ],
       "id": 58782,
       "involved_companies": [
-        61260
+        230995,
+        230996
       ],
       "name": "My Nintendo Picross: The Legend of Zelda Twilight Princess",
       "player_perspectives": [],
@@ -48758,9 +48750,9 @@
       ],
       "id": 132097,
       "involved_companies": [
-        95977,
         95978,
-        95979
+        95979,
+        231047
       ],
       "name": "Saints Row: The Third Remastered",
       "player_perspectives": [
@@ -49545,8 +49537,8 @@
       ],
       "id": 165346,
       "involved_companies": [
-        146285,
-        146286
+        146286,
+        231048
       ],
       "name": "Saints Row",
       "name_glogOverride": "Saints Row (2022)",
@@ -56500,10 +56492,6 @@
       "company": 70
     },
     {
-      "id": 61260,
-      "company": 70
-    },
-    {
       "id": 61566,
       "company": 26
     },
@@ -58042,10 +58030,6 @@
     {
       "id": 95841,
       "company": 907
-    },
-    {
-      "id": 95977,
-      "company": 24943
     },
     {
       "id": 95978,
@@ -60542,10 +60526,6 @@
     {
       "id": 145902,
       "company": 431
-    },
-    {
-      "id": 146285,
-      "company": 24943
     },
     {
       "id": 146286,
@@ -63824,68 +63804,60 @@
       "company": 591
     },
     {
-      "id": 230092,
-      "company": 1
-    },
-    {
-      "id": 230093,
-      "company": 512
-    },
-    {
-      "id": 230094,
-      "company": 4513
-    },
-    {
-      "id": 230095,
-      "company": 4512
-    },
-    {
-      "id": 230096,
-      "company": 285
-    },
-    {
-      "id": 230097,
-      "company": 678
-    },
-    {
-      "id": 230098,
-      "company": 501
-    },
-    {
-      "id": 230100,
-      "company": 1
-    },
-    {
-      "id": 230101,
-      "company": 512
-    },
-    {
-      "id": 230102,
-      "company": 4513
-    },
-    {
-      "id": 230103,
-      "company": 4512
-    },
-    {
-      "id": 230104,
-      "company": 285
-    },
-    {
-      "id": 230105,
-      "company": 678
-    },
-    {
-      "id": 230106,
-      "company": 501
-    },
-    {
       "id": 230368,
       "company": 762
     },
     {
       "id": 230369,
       "company": 70
+    },
+    {
+      "id": 230994,
+      "company": 800
+    },
+    {
+      "id": 230995,
+      "company": 70
+    },
+    {
+      "id": 230996,
+      "company": 800
+    },
+    {
+      "id": 231047,
+      "company": 7462
+    },
+    {
+      "id": 231048,
+      "company": 7462
+    },
+    {
+      "id": 231214,
+      "company": 1
+    },
+    {
+      "id": 231215,
+      "company": 512
+    },
+    {
+      "id": 231216,
+      "company": 4513
+    },
+    {
+      "id": 231217,
+      "company": 4512
+    },
+    {
+      "id": 231218,
+      "company": 285
+    },
+    {
+      "id": 231219,
+      "company": 678
+    },
+    {
+      "id": 231220,
+      "company": 501
     }
   ],
   "playerPerspectives": [
