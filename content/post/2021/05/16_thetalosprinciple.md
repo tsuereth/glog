@@ -17,9 +17,9 @@ And like the best puzzle games, The Talos Principle isn't "just" a series of puz
 
 There is a beautiful sense of cohesion, or even <i>harmony</i>, to how The Talos Principle weaves its level designs and objectives together with scattered text files and occasional voice-overs.  The "subtle" and "intriguing" story hints I saw in the demo gradually grow into a compelling, thought-provoking plot that's both a brilliant companion to the puzzle gameplay, and impressively well-paced in revealing its various mysteries.
 
-{{% spoiler %}}While ultimately it would be easy to summarize the story as "humans build AI to replace themselves post-extinction," it is awe-inspiring how <i>thoroughly detailed</i> that story gets.  The early game piques interest with analyses of ancient civilizations and philosophy; and as those develop into thought experiments about the meaning of "life" as a society or as a species, other bits of info start to clarify the fate of the humans, and the reason for this virtual world's existence.  It's an enthralling tale from top to bottom, despite being made up by only a few dozen text documents and audio diaries.{{% /spoiler %}}
+>!While ultimately it would be easy to summarize the story as "humans build AI to replace themselves post-extinction," it is awe-inspiring how <i>thoroughly detailed</i> that story gets.  The early game piques interest with analyses of ancient civilizations and philosophy; and as those develop into thought experiments about the meaning of "life" as a society or as a species, other bits of info start to clarify the fate of the humans, and the reason for this virtual world's existence.  It's an enthralling tale from top to bottom, despite being made up by only a few dozen text documents and audio diaries.!<
 
-{{% spoiler %}}And I love that the in-game narrative makes a point of mentioning that their AI training world was built in ... <a href="http://www.croteam.com/technology/">the Serious Engine</a>.  Now <i>that</i> is some commitment to <i>veritas</i>.{{% /spoiler %}}
+>!And I love that the in-game narrative makes a point of mentioning that their AI training world was built in ... <a href="http://www.croteam.com/technology/">the Serious Engine</a>.  Now <i>that</i> is some commitment to <i>veritas</i>.!<
 
 Sadly, I wouldn't have made it all the way through that plot if not for some internet guidance.  And here's where I complain about the "walls" I hit in The Talos Principle's puzzles.
 
@@ -31,7 +31,7 @@ And while there are, technically, in-game hints, there is a very limited quantit
 
 But by the time I really needed help, The Talos Principle already had its hooks deep in me.  I don't feel bad at all about having to "cheat" through the last few puzzles, and I'm still plenty satisfied with the narrative payoff.
 
-The last level, especially (the one {{% spoiler %}}at the top of the tower{{% /spoiler %}}), was an incredibly fun and rewarding capstone to the whole game.  I'm kinda hoping that there's more content like this in [Road to Gehenna](game:The Talos Principle: Road to Gehenna).
+The last level, especially (the one >!at the top of the tower!<), was an incredibly fun and rewarding capstone to the whole game.  I'm kinda hoping that there's more content like this in [Road to Gehenna](game:The Talos Principle: Road to Gehenna).
 
 <b>Better than</b>: <game:The Turing Test>  
 <b>Not as good as</b>: <game:The Witness (2016)>  

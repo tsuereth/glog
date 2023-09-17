@@ -27,11 +27,11 @@ But this hardly makes a difference for most of the bosses, as whaling away on th
 
 By the end of the middle segment's challenges and shrines and boss re-fights, I was feeling amicable about The Champions' Ballad - its shrines and other trials were more entertaining than not - but it still seemed a lot like recycled content.  So, I was pleasantly surprised by the DLC's third and final segment.
 
-{{% spoiler %}}A dungeon!  That is, the same kind of large-scale puzzle-space as the Divine Beasts.  Still smaller than a typical Zelda dungeon, but I found it really enjoyable in how it orchestrated multiple puzzle mechanics together in a visually-big way.
+>!A dungeon!  That is, the same kind of large-scale puzzle-space as the Divine Beasts.  Still smaller than a typical Zelda dungeon, but I found it really enjoyable in how it orchestrated multiple puzzle mechanics together in a visually-big way.!<
 
-And the boss of this dungeon, a fuckin' magic zombie monk, was a thrill as well.  Not just because of the shock of seeing the monk come to life, but also because of all the new (and remixed) attack patterns in his fight.
+>!And the boss of this dungeon, a fuckin' magic zombie monk, was a thrill as well.  Not just because of the shock of seeing the monk come to life, but also because of all the new (and remixed) attack patterns in his fight.!<
 
-It did feel kinda silly how many times the monk kept saying that "this" trial was the "final" one, and I was <i>almost</i> a "true" hero!  But by this late in the game, I wasn't holding out any hope for narrative quality.{{% /spoiler %}}
+>!It did feel kinda silly how many times the monk kept saying that "this" trial was the "final" one, and I was <i>almost</i> a "true" hero!  But by this late in the game, I wasn't holding out any hope for narrative quality.!<
 
 If only Breath of the Wild's DLC had added <i>more</i> distinctive and substantial content like that.
 

@@ -25,7 +25,7 @@ Even if you still die, the info you gather might let you try something new in th
 
 There are some parts of the game that feel a little under-polished: like the bland "Try Again" screen at the end of a loop, and the lack of a Skip button for conversations you've had before (so you need to furiously click through each dialog box again), and the timeline's fairly inaccurate timestamp values.
 
-The ending situation is also a bit unsatisfying, although that seems somewhat intentional and very "on brand" for Shakespearean drama.  {{% spoiler %}}After going through a few of the fate options in the Book of Dionysus, they start to feel tedious and checkbox-ey, which certainly reinforces Quince's ranting about the futility and boredom of mortal existence.{{% /spoiler %}}
+The ending situation is also a bit unsatisfying, although that seems somewhat intentional and very "on brand" for Shakespearean drama.  >!After going through a few of the fate options in the Book of Dionysus, they start to feel tedious and checkbox-ey, which certainly reinforces Quince's ranting about the futility and boredom of mortal existence.!<
 
 But ultimately those are pretty minor defects in Elsinore's expertly-written story and compelling detective mechanics.  And there's so <i>much</i> written content to explore, here, that I was still peeling away and finding fresh layers more than a dozen hours later.
 
