@@ -21,7 +21,7 @@ The story is unforgettable, filling in more of the Horizon mythos while adding p
 
 The world is sprawling, filled with diverse environments and well-integrated events that make it fun to explore for its own sake; I don't have <i>square footage</i> numbers on me, but Forbidden West's map sure seems bigger and diverse-r than Zero Dawn's was.
 
-(Forbidden West also includes a larger number of memorable destinations and landmarks, though none are as awe-inspiring as {{% spoiler %}}the ruins of Las Vegas, and Aloy's quest to restore its neon holographic lights{{% /spoiler %}} -- seeing that for the first time was a real [descending-to-Rapture](game:BioShock) moment.)
+(Forbidden West also includes a larger number of memorable destinations and landmarks, though none are as awe-inspiring as >!the ruins of Las Vegas, and Aloy's quest to restore its neon holographic lights!< -- seeing that for the first time was a real [descending-to-Rapture](game:BioShock) moment.)
 
 The combat is heart-poundingly exciting, even if sometimes it's <i>too</i> much; I mostly avoided the [fucking fire wolves](game:Horizon Zero Dawn: The Frozen Wilds), but now there are some <i>real asshole</i> ice turtles.  And setting aside a glut of weapon types and elemental ammo that feel unnecessary, dodging enemy attacks and targeting their weak points is still plenty satisfying.
 

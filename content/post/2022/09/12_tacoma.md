@@ -15,7 +15,7 @@ Its core mechanic, replaying recordings of a space station crew's movements and 
 
 (Tacoma also has a subtle, but elegantly-done, "puzzle" mechanic of cracking keypad codes by ... well, I won't give it away.)
 
-It's not a surprise that Tacoma's story is well-written and well-acted, but it is impressive how poignant that story feels in today's pre-cyberpunk (or... early-cyberpunk?) landscape.  The {{% spoiler %}}greedy corporations treating workers like garbage{{% /spoiler %}} trope may be well-worn, but, Tacoma does the hell out of it.
+It's not a surprise that Tacoma's story is well-written and well-acted, but it is impressive how poignant that story feels in today's pre-cyberpunk (or... early-cyberpunk?) landscape.  The >!greedy corporations treating workers like garbage!< trope may be well-worn, but, Tacoma does the hell out of it.
 
 Despite being a brief experience (2-3 hours), one could argue that Tacoma's real-time events and interactivity elevate it beyond a mere "walking simulator."  I, for example, would argue that.
 

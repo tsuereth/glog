@@ -15,11 +15,11 @@ rating = ["Good"]
 
 Narratively, and here be spoilers:
 
-{{% spoiler %}}Bandersnatch isn't just about selecting a path through the story -- the choice-making mechanic is intrinsically part of the story, itself.  The point at which Stefan starts to believe he's being "controlled" by an outside force felt like a <game:BioShock> twist moment to me; I'm absolutely tickled by how my agency was integrated <i>into</i> the story itself.
+>!Bandersnatch isn't just about selecting a path through the story -- the choice-making mechanic is intrinsically part of the story, itself.  The point at which Stefan starts to believe he's being "controlled" by an outside force felt like a <game:BioShock> twist moment to me; I'm absolutely tickled by how my agency was integrated <i>into</i> the story itself.!<
 
-And like the best <i>Black Mirror</i> episodes, Bandersnatch revels in its misleads.  Early choices set the story up as though your choices are trivial, or meaningless; and Stefan's realization supports the idea that you, the player, are "being played" by Bandersnatch's writers.  This set-up makes the effects of later choices feel all-the-more <i>dramatic</i>.
+>!And like the best <i>Black Mirror</i> episodes, Bandersnatch revels in its misleads.  Early choices set the story up as though your choices are trivial, or meaningless; and Stefan's realization supports the idea that you, the player, are "being played" by Bandersnatch's writers.  This set-up makes the effects of later choices feel all-the-more <i>dramatic</i>.!<
 
-The pair of "Netflix choice" endings felt a little overly silly, but I can't really disparage them for having some fun with themselves.{{% /spoiler %}}
+>!The pair of "Netflix choice" endings felt a little overly silly, but I can't really disparage them for having some fun with themselves.!<
 
 Mechanically, Bandersnatch has some room for improvement, but also gets some things surprisingly <i>right</i>.  Specifically, regarding how you can find and view alternate paths/endings.
 

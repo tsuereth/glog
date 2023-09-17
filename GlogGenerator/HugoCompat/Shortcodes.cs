@@ -65,10 +65,6 @@ namespace GlogGenerator.HugoCompat
                 {
                     switch (shortcode.ToLowerInvariant())
                     {
-                        case "spoiler":
-                            shortcodeRequiresClose = true;
-                            break;
-
                         case "absimg":
                         case "absvideo":
                             namedArgs = EnsureIncludesNamedArgs(argsString, "src");
@@ -242,10 +238,6 @@ function drawChart_{pageHash}_{chartHash}() {{
 </script>
 <noscript><i>A Google Chart would go here, but JavaScript is disabled.</i></noscript>
 <div class=""center""><chart id=""chart_{pageHash}_{chartHash}"" callback=""drawChart_{pageHash}_{chartHash}""></chart></div>";
-                        break;
-
-                    case "spoiler":
-                        replacementText = $"<noscript><i>JavaScript is disabled, and this concealed spoiler may not appear as expected.</i></noscript><spoiler class=\"spoiler_hidden\" onClick=\"spoiler_toggle(this);\">{innerText}</spoiler>";
                         break;
 
                     default:

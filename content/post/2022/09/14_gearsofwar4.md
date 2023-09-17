@@ -27,7 +27,7 @@ Even Gears 4's lowlights, super-annoying <a href="https://gearsofwar.fandom.com/
 
 I know I'm sounding pretty <i>down</i> on Gears 4, and its seeming contentment to exist in its predecessors' shadow, but it's worth keeping in mind that <b>a different development studio made this</b>.  From a technical and production perspective, it's pretty impressive that <tag:The Coalition> was able to replicate [Epic](tag:Epic Games)'s trilogy so competently.
 
-Still, as a player, I would've been "meh" on Gears 4 if not for its genuinely fresh and awesomely satisfying final act where {{% spoiler %}}you pilot a g-damn giant mecha, and literally stomp on enemies like they're ants.{{% /spoiler %}}
+Still, as a player, I would've been "meh" on Gears 4 if not for its genuinely fresh and awesomely satisfying final act where >!you pilot a g-damn giant mecha, and literally stomp on enemies like they're ants.!<
 
 Gears 4 shows that the new crew can do what the old one did.  Now I'm looking forward to seeing what <i>else</i> they can do.
 

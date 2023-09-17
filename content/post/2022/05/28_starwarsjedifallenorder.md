@@ -41,7 +41,7 @@ What I mean is, the game's collision detection and the level design's precision 
 
 Of all the different things that Fallen Order <i>tried</i> to do, I think this is where it came closest to greatness: Uncharted Star Wars, traipsing through exotic environments while hopping across the galaxy on a hunt for ancient treasure.  Throw in some Nate-and-Sully-esque banter, and that formula could really work.
 
-Oh yeah, I didn't mention Fallen Order's characters or story -- there's a reason for that.  Though it ends on a high note (where {{% spoiler %}}Darth Vader chases you through a fucking undersea fortress{{% /spoiler %}}), the game's story overall is 30 minutes of interesting content in a 12 hour bag.
+Oh yeah, I didn't mention Fallen Order's characters or story -- there's a reason for that.  Though it ends on a high note (where >!Darth Vader chases you through a fucking undersea fortress!<), the game's story overall is 30 minutes of interesting content in a 12 hour bag.
 
 The core problem is that its characters just have no personality: I never cared about Cere, or Greez, or even Cal, because they so rarely displayed any compelling motivation or passion.  (Honestly, <a href="https://starwars.fandom.com/wiki/BD-1">BD-1</a> - who is a robot - showed more charisma than the lot of them.)
 
