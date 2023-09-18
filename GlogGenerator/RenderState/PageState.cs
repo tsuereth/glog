@@ -135,7 +135,7 @@ namespace GlogGenerator.RenderState
 
             var mdPipeline = new MarkdownPipelineBuilder()
                 .Use<ListExtraExtension>()
-                .Use(new GlogMarkdownExtension(this.siteState))
+                .Use(new GlogMarkdownExtension(this.siteState, this))
                 .Use<MarkdownQuirksMarkdigExtension>()
                 .Build();
             rendered = "\t" + Markdown.ToHtml(rendered, mdPipeline);
