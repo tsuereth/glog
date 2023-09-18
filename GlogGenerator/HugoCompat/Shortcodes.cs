@@ -75,10 +75,6 @@ namespace GlogGenerator.HugoCompat
                             namedArgs = EnsureIncludesNamedArgs(argsString, "href");
                             break;
 
-                        case "chart":
-                            namedArgs = EnsureIncludesNamedArgs(argsString, "datafile");
-                            break;
-
                         default:
                             throw new ArgumentException($"Unknown shortcode {shortcode}");
                     }
@@ -170,74 +166,6 @@ namespace GlogGenerator.HugoCompat
 
                         var absvideoUrl = $"{site.BaseURL}{namedArgs["src"]}";
                         replacementText = $"<a href=\"{absvideoUrl}\"><video{absvideoParamsBuilder.ToString()}><source src=\"{absvideoUrl}\" /></video></a>";
-                        break;
-
-                    case "chart":
-                        var chartDatafilePath = filePathResolver.Resolve(namedArgs["datafile"]);
-                        var chartDatafileContent = File.ReadAllText(chartDatafilePath);
-
-                        // We need to escape the JSON data, to make it safe for JavaScript to load as a string.
-                        var chartDatafileJson = JObject.Parse(chartDatafileContent);
-                        var chartDatafileJsonString = JsonConvert.SerializeObject(chartDatafileJson, Formatting.None);
-                        var chartDataString = HttpUtility.JavaScriptStringEncode(chartDatafileJsonString);
-
-                        string chartType;
-                        if (namedArgs.TryGetValue("type", out var chartTypeArg))
-                        {
-                            chartType = chartTypeArg;
-                        }
-                        else
-                        {
-                            chartType = "BarChart";
-                        }
-
-                        var chartOptionsPairs = namedArgs.Where(kv => !kv.Key.Equals("datafile", StringComparison.OrdinalIgnoreCase) && !kv.Key.Equals("type", StringComparison.OrdinalIgnoreCase));
-                        var chartOptionsTextBuilder = new StringBuilder();
-                        foreach (var chartOptionsPair in chartOptionsPairs.ToImmutableSortedDictionary())
-                        {
-                            var valueIsJson = chartOptionsPair.Value.StartsWith('{') || chartOptionsPair.Value.StartsWith('[');
-                            var optionKey = chartOptionsPair.Key;
-                            string optionValue;
-                            if (valueIsJson)
-                            {
-                                // The raw value has escaped quotation marks, we need to un-escape them.
-                                optionValue = chartOptionsPair.Value.Replace("\\\"", "\"");
-                            }
-                            else
-                            {
-                                // The raw value needs to be quoted.
-                                optionValue = $"'{chartOptionsPair.Value}'";
-                            }
-
-                            chartOptionsTextBuilder.AppendLine();
-                            chartOptionsTextBuilder.AppendLine();
-                            chartOptionsTextBuilder.AppendLine(CultureInfo.InvariantCulture, $"\toptions['{optionKey}'] = {optionValue};");
-                            chartOptionsTextBuilder.AppendLine();
-                        }
-
-                        #pragma warning disable CA5351 // Yeah MD5 is cryptographically insecure; this isn't security!
-                        var pageHashInBytes = Encoding.UTF8.GetBytes(page.Permalink);
-                        var pageHashOutBytes = MD5.HashData(pageHashInBytes);
-                        var pageHash = Convert.ToHexString(pageHashOutBytes);
-
-                        var chartHashInString = JsonConvert.SerializeObject(namedArgs);
-                        var chartHashInBytes = Encoding.UTF8.GetBytes(chartHashInString);
-                        var chartHashOutBytes = MD5.HashData(chartHashInBytes);
-                        var chartHash = Convert.ToHexString(chartHashOutBytes);
-                        #pragma warning restore CA5351
-
-                        replacementText = $@"<script type=""text/javascript"">
-function drawChart_{pageHash}_{chartHash}() {{
-	var data = new google.visualization.DataTable(""{chartDataString}"");
-	var options = {{}};
-{chartOptionsTextBuilder.ToString()}
-	var element = document.getElementById(""chart_{pageHash}_{chartHash}"");
-	var chart = new google.visualization.{chartType}(element);
-	chart.draw(data, options);
-}}
-</script>
-<noscript><i>A Google Chart would go here, but JavaScript is disabled.</i></noscript>
-<div class=""center""><chart id=""chart_{pageHash}_{chartHash}"" callback=""drawChart_{pageHash}_{chartHash}""></chart></div>";
                         break;
 
                     default:

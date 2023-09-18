@@ -9,11 +9,14 @@ namespace GlogGenerator.MarkdownExtensions
     public class GlogMarkdownExtension : IMarkdownExtension
     {
         private readonly SiteState siteState;
+        private readonly PageState pageState;
 
         public GlogMarkdownExtension(
-            SiteState siteState)
+            SiteState siteState,
+            PageState pageState)
         {
             this.siteState = siteState;
+            this.pageState = pageState;
         }
 
         public void Setup(MarkdownPipelineBuilder pipeline)
@@ -25,6 +28,8 @@ namespace GlogGenerator.MarkdownExtensions
             pipeline.InlineParsers.TryRemove<LinkInlineParser>();
             pipeline.InlineParsers.AddIfNotAlready(new GlogLinkInlineParser(this.siteState));
 
+            pipeline.BlockParsers.AddIfNotAlready<FencedDataBlockParser>();
+
             // The built-in quote block parser will steal '>' at the beginning of a line.
             // We need a customization to not-steal it when followed by '!' for spoilers.
             pipeline.BlockParsers.TryRemove<QuoteBlockParser>();
@@ -35,6 +40,7 @@ namespace GlogGenerator.MarkdownExtensions
 
         public void Setup(MarkdownPipeline pipeline, IMarkdownRenderer renderer)
         {
+            renderer.ObjectRenderers.AddIfNotAlready(new FencedDataBlockRenderer(this.siteState, this.pageState));
             renderer.ObjectRenderers.AddIfNotAlready<SpoilerRenderer>();
         }
     }
