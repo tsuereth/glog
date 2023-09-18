@@ -6749,6 +6749,10 @@
     {
       "id": 47472,
       "name": "Tomi Maarela"
+    },
+    {
+      "id": 48042,
+      "name": "snekflat"
     }
   ],
   "franchises": [
@@ -48532,7 +48536,9 @@
       ],
       "id": 124120,
       "involved_companies": [
-        96210
+        96210,
+        231522,
+        231523
       ],
       "name": "Wuppo: Definitive Edition",
       "player_perspectives": [
@@ -63858,6 +63864,14 @@
     {
       "id": 231220,
       "company": 501
+    },
+    {
+      "id": 231522,
+      "company": 6999
+    },
+    {
+      "id": 231523,
+      "company": 48042
     }
   ],
   "playerPerspectives": [
