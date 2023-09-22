@@ -148,19 +148,6 @@ namespace GlogGenerator.RenderState
 
             rendered = rendered.Replace("</li>\n\n</ul>", "</li>\n</ul>");
 
-            // BUG: Markdown.ToHtml is escaping the '&' part of HTML escape sequences.
-            // MarkdownQuirksMarkdigExtension should be disabling this behavior, but...
-            // *some* HTML escaping is needed to match Hugo's/Blackfriday's &quot; proliferation.
-            rendered = Regex.Replace(rendered, @"&amp;(\w+);", "&$1;");
-
-            rendered = rendered.Replace("é", "&eacute;");
-            rendered = rendered.Replace("∀", "&forall;");
-            rendered = rendered.Replace("¡", "&iexcl;");
-            rendered = rendered.Replace("ó", "&oacute;");
-            rendered = rendered.Replace("ú", "&uacute;");
-            rendered = rendered.Replace("ü", "&uuml;");
-            rendered = rendered.Replace("👍", "&#x1F44D;");
-
             return rendered;
         }
 
