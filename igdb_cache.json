@@ -8297,7 +8297,9 @@
       "category": 0,
       "collection": 25,
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1048
+      ],
       "game_modes": [
         1
       ],
@@ -8329,7 +8331,9 @@
       "category": 0,
       "collection": 25,
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1048
+      ],
       "game_modes": [
         1
       ],
@@ -8359,7 +8363,9 @@
       "category": 0,
       "collection": 25,
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1048
+      ],
       "game_modes": [
         1,
         2
@@ -30983,7 +30989,8 @@
       ],
       "themes": [
         1,
-        18
+        18,
+        35
       ],
       "url": "https://www.igdb.com/games/teslagrad"
     },
@@ -35870,7 +35877,8 @@
         1467
       ],
       "game_modes": [
-        1
+        1,
+        2
       ],
       "genres": [
         12,
