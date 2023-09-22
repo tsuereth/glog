@@ -133,20 +133,7 @@ namespace GlogGenerator.RenderState
                 .Use(new GlogMarkdownExtension(this.siteState, this))
                 .Use<MarkdownQuirksMarkdigExtension>()
                 .Build();
-            rendered = "\t" + Markdown.ToHtml(rendered, mdPipeline);
-
-            rendered = rendered.Replace("</blockquote>", "</blockquote>\n");
-            rendered = rendered.Replace("<br />", "<br />\n");
-            rendered = rendered.Replace("</div>", "</div>\n");
-            rendered = rendered.Replace("</ol>", "</ol>\n");
-            rendered = rendered.Replace("</table>", "</table>\n");
-            rendered = rendered.Replace("</ul>\n<p>", "</ul>\n\n<p>");
-
-            rendered = rendered.Replace("</p>", "</p>\n");
-            rendered = rendered.Replace("<script", "\n<script");
-            rendered = rendered.Replace("</p>\n\n</li>", "</p></li>\n");
-
-            rendered = rendered.Replace("</li>\n\n</ul>", "</li>\n</ul>");
+            rendered = Markdown.ToHtml(rendered, mdPipeline);
 
             return rendered;
         }
