@@ -17,6 +17,6 @@ There were things I liked about Cave Story, punctuated by things I didn't like. 
 
 <b>Better than</b>: <game:Momodora: Reverie Under the Moonlight>, <game:Ori and the Blind Forest: Definitive Edition>  
 <b>Not as good as</b>: <game:Hollow Knight>, <game:Ittle Dew 2+>  
-<b>I appreciate the <a href="https://cavestory.fandom.com/wiki/Cave_Story%2B#Seasonal_graphics">temporary holiday theme</a></b>: even if Santa hats do distract a bit from the story drama.
+<b>I appreciate the <a href="https://cavestory.fandom.com/wiki/Cave_Story\%2B#Seasonal_graphics">temporary holiday theme</a></b>: even if Santa hats do distract a bit from the story drama.
 
 <i>Progress: Gave up on the <a href="https://cavestory.fandom.com/wiki/Balcony#Black_Space">last boss phase</a> ... in Easy difficulty.</i>

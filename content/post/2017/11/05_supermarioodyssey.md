@@ -19,7 +19,7 @@ And aside from an annoyingly-lengthy final boss fight (i.e. having to re-do the 
 
 Dozens of hours later, I'm still enjoying running around in Odyssey's big, imaginative worlds; following scavenger hunt-style hints, or keeping my eyes peeled for anything shiny or purple.  Even with a minority of collectibles left to collect, I haven't yet resorted to looking up all the answers online (though I probably will soon), because the aimless exploration is still enthralling me.
 
-{{% absimg src="marioodyssey_heykids.jpg" width="400" height="300" %}}
+![](%site.BaseURL%marioodyssey_heykids.jpg){width=400 height=300}
 
 Also, playing dress-up with Mario continues to be hilarious.
 

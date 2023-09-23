@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-<game:Diablo III> <i>has</i> changed since {{% abslink href="2014/04/26/hell-its-about-time/" %}}2014{{% /abslink %}}.  It's not just me!  On a lark, I searched for "what happened to diablo 3" and found <a href="https://www.reddit.com/r/Diablo/comments/79kk42/what_happened_to_the_base_game_diablo_3_without/">this Reddit thread</a>:
+<game:Diablo III> <i>has</i> changed since [2014](%site.BaseURL%2014/04/26/hell-its-about-time/).  It's not just me!  On a lark, I searched for "what happened to diablo 3" and found <a href="https://www.reddit.com/r/Diablo/comments/79kk42/what_happened_to_the_base_game_diablo_3_without/">this Reddit thread</a>:
 
 > I one-shot everything. So I bump the difficulty up, not much seems to change.  [...]
 >
@@ -28,5 +28,5 @@ To put it more poignantly: replaying the game from the beginning <i>is pointless
 Has this same ethos bled into [Act V](game:Diablo III: Reaper of Souls)?  We'll find out, but... I'm not getting my hopes up.
 
 <b>Better than</b>: ... man, I don't even know.  
-<b>Not as good as</b>: {{% abslink href="2014/04/26/hell-its-about-time/" %}}"Loot 2.0"{{% /abslink %}}, or even {{% abslink href="2012/05/28/diablo-iii-10/" %}}the game at launch{{% /abslink %}}.  
+<b>Not as good as</b>: ["Loot 2.0"](%site.BaseURL%2014/04/26/hell-its-about-time/), or even [the game at launch](%site.BaseURL%2012/05/28/diablo-iii-10/).  
 <b>Really stretching</b>: the lower bounds of "<rating:Meh>" on this one.

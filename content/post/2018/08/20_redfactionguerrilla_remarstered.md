@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-Back when I replayed Guerrilla's "Steam Edition," {{% abslink href="2015/12/20/the-red-faction-is-dead-long-live-the-red-faction/" %}}I said{{% /abslink %}} that <i>"I don't need a new open-world destruction game, at least not yet.  This one is still good."</i>
+Back when I replayed Guerrilla's "Steam Edition," [I said](%site.BaseURL%2015/12/20/the-red-faction-is-dead-long-live-the-red-faction/) that <i>"I don't need a new open-world destruction game, at least not yet.  This one is still good."</i>
 
 Well, three years on, it's still good.  But my desire for a successor is growing.
 

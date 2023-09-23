@@ -27,7 +27,7 @@ As for the main story, calling it "better than the last game" may not mean much,
 
 And it lends real weight to the events of the final battle, which is pretty cool, too.  Ganon's final form is definitely one of Zelda's more memorable end-bosses.
 
-Tears of the Kingdom isn't without flaws, and if I'm being honest, didn't resolve as many of BotW's {{% abslink href="2019/02/10/a-familiar-legend/" %}}quality-of-life issues{{% /abslink %}} as I wanted.  They added a portable cooking pot! but it's ... single-use, so not super practical.  Two-handed weapons still kinda suck compared to one-handers and shields.  Climbing in the rain is still a slippery annoyance, even with the new <a href="https://zeldawiki.wiki/wiki/Froggy_Sleeve">Froggy suit</a> -- it just isn't completely effective.
+Tears of the Kingdom isn't without flaws, and if I'm being honest, didn't resolve as many of BotW's [quality-of-life issues](%site.BaseURL%2019/02/10/a-familiar-legend/) as I wanted.  They added a portable cooking pot! but it's ... single-use, so not super practical.  Two-handed weapons still kinda suck compared to one-handers and shields.  Climbing in the rain is still a slippery annoyance, even with the new <a href="https://zeldawiki.wiki/wiki/Froggy_Sleeve">Froggy suit</a> -- it just isn't completely effective.
 
 But!  Like last time, those issues melt away in light of Tears of the Kingdom's awe-inspiring new environments, its refreshing twists on the old, and the incredible <i>amount</i> of stuff you can do in its even-more-massive world.
 

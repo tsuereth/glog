@@ -29,4 +29,4 @@ Nevertheless, it's a really cool experience that unravels a uniquely interesting
 <b>Not as good as</b>: <game:The Witness (2016)>  
 <b>Maybe this needs comparison to</b>: <game:Return of the Obra Dinn>?
 
-<i>Progress: 100%</i>
+<i>Progress: 100\%</i>

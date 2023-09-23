@@ -6,7 +6,7 @@ game = ["Midnight Protocol"]
 platform = ["PC"]
 +++
 
-As seen in {{% abslink href="2020/06/21/its-a-unix-system-i-know-this/" %}}2020's demo{{% /abslink %}}, I really like <game:Midnight Protocol>'s slick aesthetics, engrossing technobabble, and immersive keyboard-only interface.
+As seen in [2020's demo](%site.BaseURL%2020/06/21/its-a-unix-system-i-know-this/), I really like <game:Midnight Protocol>'s slick aesthetics, engrossing technobabble, and immersive keyboard-only interface.
 
 I <i>do not</i> like its dice-roll intrusion traces, its <a href="https://store.steampowered.com/news/app/1162700/view/4625752147823635355">anti-save-scum randomizations</a>, and other chance-based twists.
 

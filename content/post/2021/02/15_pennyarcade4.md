@@ -13,15 +13,15 @@ The most immediately-apparent change is that <i>we're <tag:Pokémon>, now</i>.  
 
 There are more than a dozen of these monsters in Rain-Slick 4, so the total spread of unique abilities is rather large; and while it's great to see comic references like <a href="https://www.penny-arcade.com/comic/2004/03/24/the-adventures-of-twisp-and-catsby">Twisp and Catsby</a> in this format, many of the monsters feel significantly less creative.
 
-{{% absimg src="pennyarcade-rspd-4_goomez.jpg" width="640" height="360" %}}
+![](%site.BaseURL%pennyarcade-rspd-4_goomez.jpg){width=640 height=360}
 
 Despite an embarrassment of options for active monsters, assigned Trainers, and equipped weapon types, most of those options don't feel powerful or poignant.  Rain-Slick 3 already had quite a few "dud" classes and abilities, and it definitely feels like the fourth game's monster inventory has tipped that quantity-over-quality balance even farther.
 
-However!  On the other side of combat, the <i>enemy</i> monster side, Rain-Slick 4 re-balances in a much more positive direction.  I don't have any numbers in front of me, but compared to last time - when I complained about "{{% abslink href="2021/01/27/still-on-that-precipice/" %}}too much combat{{% /abslink %}}" - I felt like these encounters were generally fewer, and more distinctively varied.  Fights shifted frequently between small and large numbers, slow and fast opponents, healers and debuffers and one-hit-killers ... (With the notable exception of Chapter 9, which had me fight the same handful of robots way, way too many times.)
+However!  On the other side of combat, the <i>enemy</i> monster side, Rain-Slick 4 re-balances in a much more positive direction.  I don't have any numbers in front of me, but compared to last time - when I complained about "[too much combat](%site.BaseURL%2021/01/27/still-on-that-precipice/)" - I felt like these encounters were generally fewer, and more distinctively varied.  Fights shifted frequently between small and large numbers, slow and fast opponents, healers and debuffers and one-hit-killers ... (With the notable exception of Chapter 9, which had me fight the same handful of robots way, way too many times.)
 
 Even though I still followed a basic buff-and-summon routine when starting up most battles, this installment's variety of encounters had me thinking on my toes much more than the last one did.  This time around, combat is finally satisying for more than just flavor text.
 
-{{% absimg src="pennyarcade-rspd-4_gryphmeratrice.jpg" width="640" height="360" %}}
+![](%site.BaseURL%pennyarcade-rspd-4_gryphmeratrice.jpg){width=640 height=360}
 
 Unfortunately there is another aspect of Rain-Slick 4's "variety" that felt much less satisfying: <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/NeverSplitTheParty">it split the party</a>, and for almost all of the game's running length, story progression swaps you between one half and the other.
 

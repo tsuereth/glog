@@ -17,4 +17,4 @@ That aside, Burial at Sea's first episode remains a short, sloppy, and mediocre 
 
 <b>Better than</b>: <game:BioShock 2: Minerva's Den Remastered> ... though that's still a maybe.  
 <b>Not as good as</b>: <game:BioShock Infinite>  
-<b>I'm still quite proud</b>: of my "dog of a DLC" quip from {{% abslink href="2013/11/13/mr-bubbles-noooooo/" %}}my first playthrough{{% /abslink %}}.
+<b>I'm still quite proud</b>: of my "dog of a DLC" quip from [my first playthrough](%site.BaseURL%2013/11/13/mr-bubbles-noooooo/).

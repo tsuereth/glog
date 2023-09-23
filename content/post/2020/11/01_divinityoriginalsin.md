@@ -15,7 +15,7 @@ The turn-based combat was ... fine, for starters, and I kinda liked being able t
 
 What I mean is that combat became rife with abrupt and often deadly turns which couldn't really be recovered from -- I'd need to have approached from a certain direction, or brought certain specialized equipment, before the fight started.  And the game didn't exactly warn when one or another of these situations was coming up; it seemed to assume that I'd <b>die and retry</b>, fleeing or reloading before preparing for another attempt.
 
-(Also, before I turned down the difficulty setting, the game's chance-to-hit calculations felt like a cruel lie.  I swear that I missed more than half of my "80%" shots.  What kind of <a href="https://knowyourmeme.com/photos/1078995-x-com">XCOM shit</a> is that?)
+(Also, before I turned down the difficulty setting, the game's chance-to-hit calculations felt like a cruel lie.  I swear that I missed more than half of my "80\%" shots.  What kind of <a href="https://knowyourmeme.com/photos/1078995-x-com">XCOM shit</a> is that?)
 
 Out-of-combat gameplay wasn't exactly a walk in the park, either.  Character prep in this game is <i>work</i>.  There were so many ability types to research, so many situational pros or cons to each weapon, so many magic scrolls and grenades and other items to stock up on; oh, and of course, each party member has their own separate inventory so I needed to manage each character's items one by one.
 

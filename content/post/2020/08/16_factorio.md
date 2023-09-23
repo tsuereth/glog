@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-A lot has changed since {{% abslink href="2014/11/09/transforming-the-useless-pristine-land-into-a-marvel-of-smoggy-industry/" %}}I last tried{{% /abslink %}} (and subsequently purchased) <game:Factorio>: my career, my lifestyle, the state of the world in general, and - critically - my expectations of modern video games.  So it's something of a relief that, six years later, Factorio <a href="https://factorio.com/blog/post/fff-360">1.0</a> still satisfies the same <i>industrial urges</i> as the demo.
+A lot has changed since [I last tried](%site.BaseURL%2014/11/09/transforming-the-useless-pristine-land-into-a-marvel-of-smoggy-industry/) (and subsequently purchased) <game:Factorio>: my career, my lifestyle, the state of the world in general, and - critically - my expectations of modern video games.  So it's something of a relief that, six years later, Factorio <a href="https://factorio.com/blog/post/fff-360">1.0</a> still satisfies the same <i>industrial urges</i> as the demo.
 
 I will say that I'm a little disappointed at the lack of narrative complexity; Factorio's setup is more like a [Civ](tag:Civilization) "campaign" than a story-driven one.  But hoping for anything more was a long shot.
 

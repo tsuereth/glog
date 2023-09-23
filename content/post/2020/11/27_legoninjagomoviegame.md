@@ -18,6 +18,6 @@ I do have to give the game credit for getting me interested in <i>The Lego Ninja
 
 It's rather telling that <a href="https://steamcommunity.com/stats/640590/achievements">Steam achievement records</a> show a sharp drop-off between players who finished the tutorial/prologue (Training Dojo) and those who made it through the first major story beat (completing Chapter 3 / Location 1).
 
-{{% absimg src="legoninjago_achievements.png" width="400" height="300" %}}
+![](%site.BaseURL%legoninjago_achievements.png){width=400 height=300}
 
 <i>Progress: Got to Chapter 4 / the beach.</i>

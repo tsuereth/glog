@@ -15,7 +15,7 @@ The game has an introductory problem, with an overload of mytho-babble about mas
 
 Through a handy <tag:Mass Effect>-style in-game codex, lore-nerds like myself can spend a large chunk of playtime reading background exposition and well-written, in-character anecdotes.
 
-{{% absimg src="masquerada_science.jpg" width="400" height="300" %}}
+![](%site.BaseURL%masquerada_science.jpg){width=400 height=300}
 
 Something Masquerada does really well - and which I'd call hit-or-miss in Square Enix's games - is <i>humanizing</i> its characters, creating compelling bridges between the player and this unfamiliar world.  It doesn't just use class struggle as a narrative theme, it moulds character <i>personalities</i> around their troubled upbringings; while there are political events that drive the story, those events and their consequences are rooted in <i>personal</i> motives and emotions.
 

@@ -19,4 +19,4 @@ And sure, it still has the original game's pacing issues, and frustrating depth-
 <b>Not as good as</b>: <game:Dust: An Elysian Tail>  
 <b>And again, uh</b>: Free.  Well, free with an Epic Games account, and via their Epic Games Launcher, which exists for some fucking reason.
 
-<i>Progress: Finished the story, 89% map completion, 60% item collection.</i>
+<i>Progress: Finished the story, 89\% map completion, 60\% item collection.</i>

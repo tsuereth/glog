@@ -9,7 +9,10 @@ rating = ["Good"]
 
 <game:Pepper's Puzzles> sometimes feels like it's testing the boundaries of "<a href="https://www.copyright.gov/fair-use/">fair use</a>."
 
-<p style="text-align: left;">{{% absimg src="pepperspuzzles_pacman.jpg" width="200" height="150" %}}{{% absimg src="pepperspuzzles_koopa.jpg" width="200" height="150" %}}{{% absimg src="pepperspuzzles_masterchief.jpg" width="200" height="150" %}}{{% absimg src="pepperspuzzles_phoenixwright.jpg" width="200" height="150" %}}{{% absimg src="pepperspuzzles_sauron.jpg" width="200" height="150" %}}{{% absimg src="pepperspuzzles_yoda.jpg" width="200" height="150" %}}{{% absimg src="pepperspuzzles_doctorwho.jpg" width="200" height="150" %}}{{% absimg src="pepperspuzzles_deadpool.jpg" width="200" height="150" %}}{{% absimg src="pepperspuzzles_americanpsycho.jpg" width="200" height="150" %}}</p>
+| ![](%site.BaseURL%pepperspuzzles_pacman.jpg){width=200 height=150} | ![](%site.BaseURL%pepperspuzzles_koopa.jpg){width=200 height=150} | ![](%site.BaseURL%pepperspuzzles_masterchief.jpg){width=200 height=150} |
+| - | - | - |
+| ![](%site.BaseURL%pepperspuzzles_phoenixwright.jpg){width=200 height=150} | ![](%site.BaseURL%pepperspuzzles_sauron.jpg){width=200 height=150} | ![](%site.BaseURL%pepperspuzzles_yoda.jpg){width=200 height=150} |
+| ![](%site.BaseURL%pepperspuzzles_doctorwho.jpg){width=200 height=150} | ![](%site.BaseURL%pepperspuzzles_deadpool.jpg){width=200 height=150} | ![](%site.BaseURL%pepperspuzzles_americanpsycho.jpg){width=200 height=150} |
 
 ... that aside, it's a <i>hefty</i> picross game.  At 240 regular picture puzzles, and 184 more puzzles that form the larger "mosaics," it easily has more pre-baked puzzles than any picross game I've played before.
 
@@ -17,7 +20,7 @@ In terms of puzzle <i>size</i>, it falls a bit short of <game:Paint it Back>'s 4
 
 It hurts a tiny bit that Pepper's Puzzles is Windows-only; I really would have liked to churn out some pictures on the couch, with my Powerbook.
 
-Pepper has some cool things going for her: the time trials are a neat (though short-lived) feature, and a puzzle creator plus Steam Workshop integration is something I've {{% abslink href="2015/12/30/i-painted-it-all-back/" %}}previously referred to as "pretty dope."{{% /abslink %}}  ... but it still feels slightly inferior, to me, largely because of its maximum puzzle bounds.
+Pepper has some cool things going for her: the time trials are a neat (though short-lived) feature, and a puzzle creator plus Steam Workshop integration is something I've [previously referred to as "pretty dope."](%site.BaseURL%2015/12/30/i-painted-it-all-back/)  ... but it still feels slightly inferior, to me, largely because of its maximum puzzle bounds.
 
 As impressed as I was by how <i>many</i> puzzles Pepper threw at me, only one or two of its puzzles ever felt individually challenging (like Paint it Back's did).  And as <i>neat</i> as its new features are, they didn't have much of an impact on my gameplay experience (compared with [Picrozelda](game:My Nintendo Picross: The Legend of Zelda Twilight Princess)'s number-grouping mechanic).
 

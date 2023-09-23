@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-One of my biggest complaints about <game:Hacknet> - just {{% abslink href="2019/06/15/save-the-planet-by-hacking-it/" %}}yesterday{{% /abslink %}} - was how crowded the network node-map became.  So you may imagine my delight when, a few missions into the [Labyrinths](game:Hacknet: Labyrinths) DLC, I was given a new utility to auto-organize the map.  Praise Dijkstra!
+One of my biggest complaints about <game:Hacknet> - just [yesterday](%site.BaseURL%2019/06/15/save-the-planet-by-hacking-it/) - was how crowded the network node-map became.  So you may imagine my delight when, a few missions into the [Labyrinths](game:Hacknet: Labyrinths) DLC, I was given a new utility to auto-organize the map.  Praise Dijkstra!
 
 This critical UI enhancement is only one of a few ways that Labyrinths improves upon the original game.  There are some new tools that make network exploration more interesting (recovering data from memory snapshots!), there are new security mechanics to puzzle around (connection whitelists!), and even the storytelling feels more immersive and thrilling than before.
 

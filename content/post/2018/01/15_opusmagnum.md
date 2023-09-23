@@ -9,7 +9,7 @@ rating = ["Meh"]
 
 Well, the ending is pretty terrible.  <game:Opus Magnum>'s story is generally awkward - the first chapter is stiff and wooden, then the remaining four are just <i>meandering</i> - but nowhere moreso than in the final story scene, in which >!the villain (who hadn't even been clearly identified, up to this point) claims to have outsmarted you, threatens to kill you, and then offers for you to join him, only to finally discover that <i>he was talking to a mannequin!</i>  And the fates of the protagonists are left to your imagination.!<
 
-Of course, I don't play these games for the story; I play them for the logical coordination challenge.  And in that respect, Opus Magnum never really changed {{% abslink href="2017/12/10/opus-pretty-okay/" %}}my first impression of it{{% /abslink %}} -- of being overall simpler and less satisfying than <game:SpaceChem>.  Like <game:Shenzhen I/O>, it feels like Opus Magnum has focused too much on style, and not enough on substance.
+Of course, I don't play these games for the story; I play them for the logical coordination challenge.  And in that respect, Opus Magnum never really changed [my first impression of it](%site.BaseURL%2017/12/10/opus-pretty-okay/) -- of being overall simpler and less satisfying than <game:SpaceChem>.  Like <game:Shenzhen I/O>, it feels like Opus Magnum has focused too much on style, and not enough on substance.
 
 And as with Shenzhen, I'm just not interested enough to keep going into the extra post-campaign puzzles.
 

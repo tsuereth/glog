@@ -13,7 +13,7 @@ title = "Paid Fanfiction"
 
 It's terribly stupid.  It's of a subpar quality even by fan-fiction standards.  It's short -- 30 minutes, tops.  It isn't even funny.
 
-{{% absimg src="phoenix_wright_spirit_of_justice_pwaa.jpg" width="400" height="300" %}}
+![](%site.BaseURL%phoenix_wright_spirit_of_justice_pwaa.jpg){width=400 height=300}
 
 You can find much better, and more substantive!, additional cases <a href="http://aceattorney.sparklin.org/">for free, online</a>.
 

@@ -17,11 +17,11 @@ It's not so much the short walls, requiring a jump; or the resilient barriers, r
 
 It's also an unfortunate example of user-unfriendly PC porting, between the obviously unhelpful tutorial prompts for my Xbox gamepad:
 
-{{% absimg src="tembo_joystickbutton0.jpg" width="640" height="360" %}}
+![](%site.BaseURL%tembo_joystickbutton0.jpg){width=640 height=360}
 
 ... and some surprising crash diagnostics when I alt-tabbed away:
 
-{{% absimg src="tembo_alttabcrash.png" width="386" height="224" %}}
+![](%site.BaseURL%tembo_alttabcrash.png){width=386 height=224}
 
 It's not like Tembo is bad - I mean, the PC port ain't great - it's just, well, it recognizes that "fast sidescrolling" can be improved upon but doesn't execute on many of those improvements.
 

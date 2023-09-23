@@ -15,7 +15,7 @@ And, more importantly, because Stick of Truth isn't really <i>about</i> refined 
 
 At its best, when you can freely explore South Park and meet its wacky cast members, running their errands is like watching multiple self-directed episodes of the TV show.  Stick of Truth's absurd quest objectives and flippant writing are exactly in line with what South Park fans know and love.  (Not to mention its boatloads of fanservice references, from collectable <a href="https://southpark.fandom.com/wiki/Chinpokomon_(Brand)">Chinpokomon</a> to a <a href="https://southpark.fandom.com/wiki/ManBearPig_(Character)">ManBearPig</a> hunt.)
 
-{{% absimg src="southparkstickoftruth_morganfreeman.jpg" width="640" height="360" %}}
+![](%site.BaseURL%southparkstickoftruth_morganfreeman.jpg){width=640 height=360}
 
 It's unfortunate that the game's back half has fewer opportunities for self-directed activity (favoring an on-rails series of story missions), and especially that a bunch of optional events and items <a href="https://www.ign.com/wikis/south-park-the-stick-of-truth/Easy_to_Miss_Collectibles,_Items_and_Quests">are permanently missable</a>.  That puts a bit of a damper on post-game sidequesting.
 

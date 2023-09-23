@@ -9,7 +9,7 @@ rating = ["Good"]
 
 > But I'm paying a hell of a lot more attention to [Transistor] now than I was.
 
-<i>- Me, {{% abslink href="2014/05/17/keeping-my-eyes-peeled-for-bruce-boxleitner/" %}}c. 2014{{% /abslink %}}</i>
+<i>- Me, [c. 2014](%site.BaseURL%2014/05/17/keeping-my-eyes-peeled-for-bruce-boxleitner/)</i>
 
 ... well, anyway.
 

@@ -7,13 +7,13 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-Well, did [Witcher 3](game:The Witcher 3: Wild Hunt)'s new-gen patch resolve its {{% abslink href="2022/12/16/oh-valley-of-plenty-ah-ah-aaaaah/" %}}clunky controls{{% /abslink %}}?  <i>Is</i> its slight amount of new content worthwhile?  Does it breathe new life into the gradually-aging masterpiece?
+Well, did [Witcher 3](game:The Witcher 3: Wild Hunt)'s new-gen patch resolve its [clunky controls](%site.BaseURL%2022/12/16/oh-valley-of-plenty-ah-ah-aaaaah/)?  <i>Is</i> its slight amount of new content worthwhile?  Does it breathe new life into the gradually-aging masterpiece?
 
 ... not really, I guess, and it didn't exactly need to.
 
 Some minor quality-of-life improvements like <a href="https://www.ign.com/wikis/the-witcher-3-wild-hunt/Quick_Sign_Casting">quick-cast</a> and <a href="https://www.theloadout.com/witcher-3-ps5-update-gameplay-changes">herb auto-looting</a> are nice, but Geralt still maneuvers like a sword-wielding RV.
 
-The new "<a href="https://witcher.fandom.com/wiki/Forgotten_Wolf_School_Gear">Netflix armor</a>" quest, <i><a href="https://witcher.fandom.com/wiki/In_the_Eternal_Fire%27s_Shadow">In the Eternal Fire's Shadow</a></i>, is a meaty side-story and includes some solid writing -- but it's still just one sidequest.
+The new "<a href="https://witcher.fandom.com/wiki/Forgotten_Wolf_School_Gear">Netflix armor</a>" quest, <i><a href="https://witcher.fandom.com/wiki/In_the_Eternal_Fire\%27s_Shadow">In the Eternal Fire's Shadow</a></i>, is a meaty side-story and includes some solid writing -- but it's still just one sidequest.
 
 And Witcher 3 on <platform:PC> already looked great, at least to me, despite its apparent lack of <a href="https://witcher.fandom.com/wiki/Patch_4.0_(The_Witcher_3)#PC_and_Next-Gen_Exclusives">ray-tracing and 4K faces and <i>et cetera</i></a>.
 

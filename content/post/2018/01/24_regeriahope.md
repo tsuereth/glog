@@ -13,7 +13,7 @@ The first is testimony selection: You, as the defense attorney, can help script 
 
 The other is that you can intentionally <b>throw the case</b>.  Which is, ehh, <i>not great</i> in terms of a defense attorney's story.  But I suppose that part of the game author's grand plan is a Telltale-style branching story?  Maybe it would be more significant in a multi-chapter career mode, ... but this feature is hard to appraise in only a single episode.
 
-{{% absimg src="regeriahope_barf.jpg" width="400" height="300" %}}
+![](%site.BaseURL%regeriahope_barf.jpg){width=400 height=300}
 
 And aside from those new ideas, this first episode of Regeria Hope is mostly what you'd expect of Phoenix Wright fan-fiction.  The plot is pretty-well telegraphed, the dialog has its fair share of typos, the Unity-default GUI is just-a-bit shameful, and the narrative isn't as much "branching" as it is <i>a branch</i> of what the author thought seemed interesting.
 

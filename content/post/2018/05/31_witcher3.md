@@ -7,9 +7,9 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-I briefly mentioned, {{% abslink href="2018/05/27/fookin-skelligers/" %}}last time{{% /abslink %}}, that [Witcher 3](game:The Witcher 3: Wild Hunt) still has a few kinks in it.  Take this scene, in which some unfortunate Nilfgaardian soldiers find themselves trapped in a pathfinding black hole:
+I briefly mentioned, [last time](%site.BaseURL%2018/05/27/fookin-skelligers/), that [Witcher 3](game:The Witcher 3: Wild Hunt) still has a few kinks in it.  Take this scene, in which some unfortunate Nilfgaardian soldiers find themselves trapped in a pathfinding black hole:
 
-{{% absvideo src="witcher3_blackhole.mp4" type="video/mp4" width="960" height="540" autoplay="true" %}}
+![static mp4](%site.BaseURL%witcher3_blackhole.mp4){width=960 height=540 controls playsinline autoplay muted loop}
 
 The last few story missions were definitely a bit <i>weird</i>, but ultimately everything resolved in a really satisfying and fun-to-watch way.  And yet, as much as I could go on about the fulfilling send-off, and the pathos of seeing my choices impact Geralt's story, and the intrigue of how things might have turned out differently...
 

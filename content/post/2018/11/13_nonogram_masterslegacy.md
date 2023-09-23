@@ -12,6 +12,6 @@ On the one hand, <game:Nonogram: Master's Legacy> presents a neat puzzle-deliver
 
 On the other hand: the free Starter Pack only has 15 puzzles, and the largest one is only 9x9; most are 5x5 or smaller.  Hell, it starts with a few <b>2x2</b> puzzles!  This is a pretty lacking introduction to picross for a new user.  And for someone who's already played The Greatest Painter... well, as far as I can tell, the DLC for this game is just the same puzzles.  Why would I buy them again?
 
-Meanwhile, from browsing both games' update histories, the developer doesn't appear to have addressed the {{% abslink href="2018/07/23/fall-from-greatest/"%}}technical issues I ran into{{% /abslink %}} with large, meaty puzzles.
+Meanwhile, from browsing both games' update histories, the developer doesn't appear to have addressed the [technical issues I ran into](%site.BaseURL%2018/07/23/fall-from-greatest/) with large, meaty puzzles.
 
 Master's Legacy is a cool idea for building Nonograms As A Service, but this execution of it is unconvincing.  Engine technology aside, they simply need <i>more puzzles</i> - both in the free base game, and in additional DLC packs - to prove that they're capable of more than re-releasing the same game over again.

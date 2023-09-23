@@ -19,4 +19,4 @@ Pitfall Planet is satisfying and fun, and while it may be a bit on the "mild" si
 <b>Not as good as</b>: <game:Captain Toad: Treasure Tracker> (not co-op, but otherwise thematically similar)  
 <b>And the soundtrack is cool</b>: <a href="https://diasell.bandcamp.com/album/pitfall-planet-ost">stay a while, and listen</a>.
 
-<i>Progress: fixed the spaceship, 89% item collection, got the cat-ears hat</i>
+<i>Progress: fixed the spaceship, 89\% item collection, got the cat-ears hat</i>

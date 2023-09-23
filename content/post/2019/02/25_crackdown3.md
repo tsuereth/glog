@@ -13,7 +13,7 @@ Okay, maybe that's a little too reductive.  But it's really not difficult to sum
 
 No, I mean, that's really all you need to know.
 
-Let me quote {{% abslink href="2009/04/17/crackdown-6/" %}}some{{% /abslink %}} of my {{% abslink href="2009/04/28/crackdown-7/" %}}previously{{% /abslink %}}-posted {{% abslink href="2009/04/28/crackdown-8/" %}}thoughts{{% /abslink %}} on Crackdown, written <b>ten years ago</b>:
+Let me quote [some](%site.BaseURL%2009/04/17/crackdown-6/) of my [previously](%site.BaseURL%2009/04/28/crackdown-7/)-posted [thoughts](%site.BaseURL%2009/04/28/crackdown-8/) on Crackdown, written <b>ten years ago</b>:
 
 * "This is a sandbox game where you can become a supercop that leaps over buildings, and tosses SUVs at gang members."
 * "... there's (almost) never a dull moment."

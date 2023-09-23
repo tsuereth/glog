@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-I tried revisiting <game:Tomb Raider (2013)> a few months back, and didn't get awfully far: while my {{% abslink href="2013/04/03/tomb-raider-2013-6/" %}}first playthrough{{% /abslink %}} ended in very high praise, coming back felt ... <i>dull</i>.  I was no longer shocked by the brutality of Lara's plights, nor intrigued by the openness of its explorable areas.  Knowing what to expect from it, the game's "leisurely" beginning was too boring to keep my interest.
+I tried revisiting <game:Tomb Raider (2013)> a few months back, and didn't get awfully far: while my [first playthrough](%site.BaseURL%2013/04/03/tomb-raider-2013-6/) ended in very high praise, coming back felt ... <i>dull</i>.  I was no longer shocked by the brutality of Lara's plights, nor intrigued by the openness of its explorable areas.  Knowing what to expect from it, the game's "leisurely" beginning was too boring to keep my interest.
 
 Unfortunately, now that I'm finally starting <game:Rise of the Tomb Raider>, I'm bordering on that same disinterest.  The game's pacing and environmental themes feel overfamiliar with the 2013 reboot -- seriously, can Lara try visiting someplace <i>other</i> than a secret Soviet military installation?
 

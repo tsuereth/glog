@@ -19,4 +19,4 @@ That said, there have been a couple levels that stumped me and my companion for 
 
 Pitfall Planet really excels at encouraging teamwork in solving puzzles, helped by an engaging soundtrack and a slightly-mysterious world design.  (I hope, before the game ends, we discover what happened to this planet's previous inhabitants.)
 
-<i>Progress: 72%, 28 ore, 389 gems</i>
+<i>Progress: 72\%, 28 ore, 389 gems</i>

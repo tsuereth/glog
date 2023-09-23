@@ -13,7 +13,7 @@ The premise is simple: teleport around to avoid getting shot, while punching hen
 
 Why are you beating all these people up?  Well you see, this uh, nefarious businessman ... stole some ... Mega Plutonium.  And then he took your blood?  You know what, nevermind!  Just keep climbing the tower so you can confront the cartoonishly evil boss.  In terms of story, character depth, and world complexity, Mr. Shifty is pretty dumb; but it's exactly as smart as it needs to be.
 
-{{% absimg src="mrshifty_makeamess.jpg" width="640" height="360" %}}
+![](%site.BaseURL%mrshifty_makeamess.jpg){width=640 height=360}
 
 Most of Mr. Shifty's 18 stages are only 5-10 minutes long (depending on how much you die), giving the campaign that addictive "just one more level" quality.  And for the most part, it does great in checkpointing each stage so that death doesn't feel like a penalty.
 

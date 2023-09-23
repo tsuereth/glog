@@ -13,7 +13,7 @@ title = "Yo-ho-ho and a bottle of badass"
 
 My only real point against it is that there isn't all that much content.  Not that it's "short," but in the shadow of the main game's overflowing glut of side-missions, it's just "not long."
 
-{{% abslink href="2013/01/26/borderlands-2-captain-scarlett-and-her-pirates-booty-6/" %}}Back in 2013{{% /abslink %}}, I wrote:
+[Back in 2013](%site.BaseURL%2013/01/26/borderlands-2-captain-scarlett-and-her-pirates-booty-6/), I wrote:
 
 <blockquote>In an industry filled with cop-out DLCs that do nothing but grift more money from loyal customers, this pack makes the case for meaningfully extending the game experience, with both an amusing story and a solid collection of additional quests.</blockquote>
 

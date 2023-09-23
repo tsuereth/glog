@@ -17,4 +17,4 @@ Compared to the thrilling action-adventure jaunts of today, Portal 2 is a little
 
 <b>Better than</b>: <game:Portal>  
 <b>Not as good as</b>: [The Witness](game:The Witness (2016))'s first-person puzzles, and <game:Borderlands 2>'s humor, both somewhat debatably.  
-<b>{{% abslink href="2011/04/23/portal-2-4/" %}}Last time{{% /abslink %}}, I wrote</b>: "I look forward to even more from the Portal franchise."  I still do, I guess, though we may not live to see it.
+<b>[Last time](%site.BaseURL%2011/04/23/portal-2-4/), I wrote</b>: "I look forward to even more from the Portal franchise."  I still do, I guess, though we may not live to see it.

@@ -9,7 +9,7 @@ rating = ["Good"]
 
 [Overlord](game:Mass Effect 2: Overlord) tried to tell an original side-story in Mass Effect's universe, but didn't ... try hard enough; really, none of <game:Mass Effect 2>'s DLCs felt like they "put in the effort."  [Omega](game:Mass Effect 3: Omega) shows what happens when DLC <i>does</i> put in the effort.  (It's good!)
 
-Omega introduces a new supporting character, a new villain, and a couple new enemies, but the <i>real</i> star of this chapter is certified badass <a href="https://masseffect.fandom.com/wiki/Aria_T%27Loak">Aria</a>.  Throughout the multi-phased mission to retake the Omega station from a <a href="https://en.wikipedia.org/wiki/Grand_Admiral_Thrawn">Thrawn</a>-like Cerberus mastermind, Shepard and Aria get <i>plenty</i> of one-on-one time, and Carrie-Anne Moss delivers her character's cutthroat personality <i>so well</i>.
+Omega introduces a new supporting character, a new villain, and a couple new enemies, but the <i>real</i> star of this chapter is certified badass <a href="https://masseffect.fandom.com/wiki/Aria_T\%27Loak">Aria</a>.  Throughout the multi-phased mission to retake the Omega station from a <a href="https://en.wikipedia.org/wiki/Grand_Admiral_Thrawn">Thrawn</a>-like Cerberus mastermind, Shepard and Aria get <i>plenty</i> of one-on-one time, and Carrie-Anne Moss delivers her character's cutthroat personality <i>so well</i>.
 
 Aria was already a great "bad girl" archetype, but this DLC gives her a chance to really shine, like an animal backed into a corner; left with no choice but to claw her way out.
 

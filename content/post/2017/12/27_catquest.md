@@ -6,4 +6,4 @@ game = ["Cat Quest"]
 platform = ["Android"]
 +++
 
-{{% absimg src="catquest-5.png" width="400" height="300" %}}
+![](%site.BaseURL%catquest-5.png){width=400 height=300}

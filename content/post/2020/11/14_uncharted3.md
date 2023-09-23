@@ -9,7 +9,7 @@ rating = ["Good"]
 
 My previous writings on [Uncharted 3](game:Uncharted 3: Drake's Deception) ranked it just below [its predecessor](game:Uncharted 2: Among Thieves), but this most-recent playthrough has me reconsidering.
 
-Particularly, I'm re-thinking takes like <i>{{% abslink href="2011/11/05/uncharted-3-drakes-deception-6/" %}}there aren't as many standout "Uncharted" moments{{% /abslink %}}</i> and <i>{{% abslink href="2012/11/17/uncharted-3-drakes-deception-4/" %}}pacing is kind of wacky{{% /abslink %}}</i>.  Yes, this round of adventuring sees Nate and his crew racking up a crazy amount of air-miles, and none of their destinations have quite the <i>gravitas</i> of Nepal or Shambhala...
+Particularly, I'm re-thinking takes like <i>[there aren't as many standout "Uncharted" moments](%site.BaseURL%2011/11/05/uncharted-3-drakes-deception-6/)</i> and <i>[pacing is kind of wacky](%site.BaseURL%2012/11/17/uncharted-3-drakes-deception-4/)</i>.  Yes, this round of adventuring sees Nate and his crew racking up a crazy amount of air-miles, and none of their destinations have quite the <i>gravitas</i> of Nepal or Shambhala...
 
 But the other side of that coin is a considerable accumulation of "postcard moments."  The burning chateau, the night-time fortress incursion, escaping a sinking ship, air-dropping into the desert, a horseback convoy chase; sure, Ubar itself isn't all that impressive, but the journey there has plenty of vivid set-pieces that make this adventure a memorable one.
 

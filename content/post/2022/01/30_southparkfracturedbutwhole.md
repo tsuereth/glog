@@ -19,7 +19,7 @@ Combat becomes more interesting as you get more characters and more moves to exp
 
 And, most importantly: this is still <i>South Park</i>.
 
-{{% absimg src="southparkfracturedbutwhole_drunkrandy1.jpg" width="640" height="360" %}}
+![](%site.BaseURL%southparkfracturedbutwhole_drunkrandy1.jpg){width=640 height=360}
 
 It's got the kids playing pretend and swearing at each other, it's got adults acting negligent and irresponsible, it's even got <a href="https://southpark.fandom.com/wiki/Towelie_(Character)">Towelie</a> giving you in-game hints (like "don't trust the government").  The game is a perfect conduit for South Park's flavors of irreverence, creativity, and commentary.
 
@@ -29,7 +29,7 @@ In fact, while Stick of Truth kinda felt like fanservice-y (but fun) sidequests 
 
 South Park: The Fractured But Whole takes some time to warm up, but it eventually meets - and exceeds - the narrative and gameplay bars of Stick of Truth.  It's still not perfect, but even when its shitty Flappy Bird parody is going on too long -- it's <i>fun</i>, and a meaningful step forward for comedic RPGs.
 
-{{% absimg src="southparkfracturedbutwhole_drunkrandy2.jpg" width="640" height="360" %}}
+![](%site.BaseURL%southparkfracturedbutwhole_drunkrandy2.jpg){width=640 height=360}
 
 And most importantly: no missable collectibles!  So you can actually complete those sidequests in the post-game.  <i>About time</i>.
 

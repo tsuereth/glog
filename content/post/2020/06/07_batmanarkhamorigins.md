@@ -21,6 +21,6 @@ Batman has been portrayed in many different ways over the past 80 years, and a f
 
 <b>Better than</b>: <game:Marvel's Spider-Man> (though, admittedly, it's close)  
 <b>Not as good as</b>: <game:Batman: Arkham Asylum> (as I remember it -- a memory I'll be testing soon)  
-<b>I learned my lesson from {{% abslink href="2013/12/22/edward-nigma-may-have-the-most-industrious-case-of-ocd-ever/" %}}last time{{% /abslink %}}</b>: and won't be bothering with the Riddler's collectible bullshit again.
+<b>I learned my lesson from [last time](%site.BaseURL%2013/12/22/edward-nigma-may-have-the-most-industrious-case-of-ocd-ever/)</b>: and won't be bothering with the Riddler's collectible bullshit again.
 
-<i>Progress: Finished on Normal, 32% completion.</i>
+<i>Progress: Finished on Normal, 32\% completion.</i>

@@ -13,7 +13,7 @@ Let me set the stage a bit.  Bloodstained is a spiritual sucessor to Koji Igaras
 
 There's no Dracula in this game, but there is an ostentatious villain who dresses a lot like a vampire.  And he's summoned a sprawling, magical, maze-like castle from hell that serves as a headquarters for his army of demon invaders.  ... It's <a href="https://www.youtube.com/watch?v=wmy9CTn6xMs">not subtle</a>.
 
-{{% absimg src="bloodstainedritualofthenight_od.jpg" width="960" height="540" %}}
+![](%site.BaseURL%bloodstainedritualofthenight_od.jpg){width=960 height=540}
 
 (That isn't the villain.  That's some other vampire.)
 
@@ -31,7 +31,7 @@ But Bloodstained does, after a few hours, get over these humps of lackluster gam
 
 It almost always feels like you're accomplishing something, even if only in small increments, toward the ultimate goal of overpowering evil.  Bloodstained is at its best when it's giving you plenty of opportunities for continuous improvement.  (And when it sets the story aside for some Castlevania references or other light-hearted fun.)
 
-{{% absimg src="bloodstainedritualofthenight_benjamin.jpg" width="960" height="540" %}}
+![](%site.BaseURL%bloodstainedritualofthenight_benjamin.jpg){width=960 height=540}
 
 ... and then there are a few points where Bloodstained stumbles along its critical path.  Like, I totally admire when bonus content is unlocked by using a random-seeming ability in a special area.  But it feels obnoxious when such a secret is smack in the middle of the main storyline.  Needing a random-drop shard ability to dive underwater, or needing a hidden piece of equipment to get past an environmental hazard, before the next story beat shows itself; these moments feel pretty archaic.
 

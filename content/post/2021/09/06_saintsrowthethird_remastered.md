@@ -25,4 +25,4 @@ So, sure, time hasn't left Saints Row: The Third in <i>quite</i> the shape I rec
 <b>Not as good as</b>: <game:Saints Row IV>, I just honestly miss running up buildings like a superhero.  
 <b>I don't care if they drop Shaundi, and Johnny Gat, et al</b>: in the [upcoming reboot](game:Saints Row (2022)) -- Volition just needs to recapture this sense of zany fun, and fill the new map with hectic, destructive activities.
 
-<i>Progress: 98%, conquered Steelport.</i>
+<i>Progress: 98\%, conquered Steelport.</i>

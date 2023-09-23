@@ -23,4 +23,4 @@ My last play session culminated in a minutes-long chase scene, which I had to re
 
 I'm still enjoying progressing through Ori's world, but by modern standards, this deliberate exclusion of automatic checkpoints is a <b>dick move</b> and I'm not impressed by it.
 
-<i>Progress: 32%</i>
+<i>Progress: 32\%</i>
