@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using GlogGenerator.HugoCompat;
 using GlogGenerator.RenderState;
 using Markdig.Helpers;
 using Markdig.Parsers;

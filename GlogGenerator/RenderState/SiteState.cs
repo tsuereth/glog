@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using GlogGenerator.Data;
-using GlogGenerator.HugoCompat;
 using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.RenderState

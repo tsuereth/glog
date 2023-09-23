@@ -6,7 +6,6 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
-using GlogGenerator.HugoCompat;
 using GlogGenerator.RenderState;
 using Markdig.Renderers;
 using Markdig.Renderers.Html;

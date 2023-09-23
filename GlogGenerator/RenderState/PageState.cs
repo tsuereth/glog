@@ -7,7 +7,6 @@ using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using GlogGenerator.Data;
-using GlogGenerator.HugoCompat;
 using GlogGenerator.MarkdownExtensions;
 using Markdig;
 using Markdig.Extensions.ListExtras;

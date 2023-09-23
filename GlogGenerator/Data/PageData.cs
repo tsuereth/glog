@@ -1,5 +1,4 @@
-using System.IO;
-using GlogGenerator.HugoCompat;
+using GlogGenerator.MarkdownExtensions;
 
 namespace GlogGenerator.Data
 {
@@ -15,14 +14,13 @@ namespace GlogGenerator.Data
 
         public static PageData FromFilePath(string filePath)
         {
-            var pageLines = File.ReadAllLines(filePath);
-            var data = FrontMatterToml.FromLines(pageLines);
+            var data = ContentWithFrontMatterData.FromFilePath(filePath);
 
             var page = new PageData();
             page.SourceFilePath = filePath;
 
             page.PermalinkRelative = data.GetValue<string>("permalink") ?? string.Empty;
-            
+
             if (page.PermalinkRelative.StartsWith('/'))
             {
                 page.PermalinkRelative = page.PermalinkRelative.Substring(1);
@@ -32,8 +30,8 @@ namespace GlogGenerator.Data
             {
                 page.PermalinkRelative += '/';
             }
-            
-            page.Content = data.GetText();
+
+            page.Content = data.Content;
 
             return page;
         }

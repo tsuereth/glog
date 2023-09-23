@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.IO;
-using GlogGenerator.HugoCompat;
+using GlogGenerator.MarkdownExtensions;
 using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.Data
@@ -35,8 +34,7 @@ namespace GlogGenerator.Data
 
         public static PostData FromFilePath(string filePath)
         {
-            var postLines = File.ReadAllLines(filePath);
-            var data = FrontMatterToml.FromLines(postLines);
+            var data = ContentWithFrontMatterData.FromFilePath(filePath);
 
             var post = new PostData();
             post.SourceFilePath = filePath;
@@ -55,7 +53,7 @@ namespace GlogGenerator.Data
             post.Ratings = data.GetValue<List<string>>("rating") ?? new List<string>();
             post.Slug = data.GetValue<string>("slug") ?? string.Empty;
 
-            post.Content = data.GetText();
+            post.Content = data.Content;
 
             var permalinkPathParts = new List<string>(4)
             {
