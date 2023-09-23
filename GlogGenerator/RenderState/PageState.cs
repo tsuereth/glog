@@ -124,57 +124,15 @@ namespace GlogGenerator.RenderState
 
             var rendered = this.SourceContent;
 
-            rendered = Regex.Replace(rendered, @"<ul>  +", "<ul>");
-            rendered = Regex.Replace(rendered, @">\n<", ">__mdquirk_linebreak<", RegexOptions.Singleline);
-            rendered = Regex.Replace(rendered, @"(\S)\n<ul>", "$1__mdquirk_linebreak<ul>", RegexOptions.Singleline);
             rendered = Regex.Replace(rendered, @"  +\n", "<br />");
-            rendered = Regex.Replace(rendered, @"(<li>.+?)(?!</li><br />)", "$1"); // OMG FIXME PLZ
-            rendered = Regex.Replace(rendered, @"(<li>.+?)(</li><br />)", "$1$2\n"); // OMG FIXME PLZ
 
             rendered = Shortcodes.TranslateToHtml(this.siteState.PathResolver, this.siteState, this, rendered);
 
             var mdPipeline = new MarkdownPipelineBuilder()
                 .Use<ListExtraExtension>()
                 .Use(new GlogMarkdownExtension(this.siteState, this))
-                .Use<MarkdownQuirksMarkdigExtension>()
                 .Build();
-            rendered = "\t" + Markdown.ToHtml(rendered, mdPipeline);
-
-            rendered = rendered.Replace("__mdquirk_linebreak", "\n");
-
-            rendered = Regex.Replace(rendered, @"<p><p(.+?)</p></p>", "<p$1</p>");
-
-            rendered = rendered.Replace("</blockquote>", "</blockquote>\n");
-            rendered = rendered.Replace("<br />", "<br />\n");
-            rendered = rendered.Replace("</div>", "</div>\n");
-            rendered = rendered.Replace("</ol>", "</ol>\n");
-            rendered = rendered.Replace("</table>", "</table>\n");
-            rendered = rendered.Replace("</ul>\n<p>", "</ul>\n\n<p>");
-
-            rendered = rendered.Replace("</p>", "</p>\n");
-            rendered = rendered.Replace("<script", "\n<script");
-            rendered = rendered.Replace("</p>\n\n</li>", "</p></li>\n");
-
-            rendered = rendered.Replace("</li>\n\n</ul>", "</li>\n</ul>");
-            rendered = rendered.Replace("</noscript>\n\n<div", "</noscript>\n<div");
-            rendered = rendered.Replace("</ol>\n<br />", "</ol><br />");
-
-            // BUG: Markdown.ToHtml is escaping the '&' part of HTML escape sequences.
-            // MarkdownQuirksMarkdigExtension should be disabling this behavior, but...
-            // *some* HTML escaping is needed to match Hugo's/Blackfriday's &quot; proliferation.
-            rendered = Regex.Replace(rendered, @"&amp;(\w+);", "&$1;");
-
-            rendered = rendered.Replace("é", "&eacute;");
-            rendered = rendered.Replace("∀", "&forall;");
-            rendered = rendered.Replace("¡", "&iexcl;");
-            rendered = rendered.Replace("ó", "&oacute;");
-            rendered = rendered.Replace("ú", "&uacute;");
-            rendered = rendered.Replace("ü", "&uuml;");
-            rendered = rendered.Replace("👍", "&#x1F44D;");
-
-            rendered = rendered.Replace(
-                "<p><noscript><i>A Google Chart would go here, but JavaScript is disabled.</i></noscript></p>\n",
-                "<noscript><i>A Google Chart would go here, but JavaScript is disabled.</i></noscript>");
+            rendered = Markdown.ToHtml(rendered, mdPipeline);
 
             return rendered;
         }
