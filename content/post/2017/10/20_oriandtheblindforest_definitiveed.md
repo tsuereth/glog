@@ -42,4 +42,4 @@ Ultimately, I'm not sure if I'd call it worthwhile.
 <b>Not as good as</b>: <game:Dust: An Elysian Tail>  
 <b>Hey they're making [a sequel](game:Ori and the Will of the Wisps)!</b>: call me when there's a "Very Easy" mode.
 
-<i>Progress: Finished on Easy, 85% completion.</i>
+<i>Progress: Finished on Easy, 85\% completion.</i>

@@ -9,7 +9,7 @@ title = "Sometimes, dead is better"
 
 +++
 
-Sorry to say, I was right when I guessed that <game:Red Dead Redemption> would be "{{% abslink href="2014/05/07/rose-colored-redemption/" %}}better remembered than played{{% /abslink %}}."  I got an itch to revisit it recently, and I don't know that I'll be following through on John Marston's story a second time.
+Sorry to say, I was right when I guessed that <game:Red Dead Redemption> would be "[better remembered than played](%site.BaseURL%2014/05/07/rose-colored-redemption/)."  I got an itch to revisit it recently, and I don't know that I'll be following through on John Marston's story a second time.
 
 Some parts of the game have aged well enough, like the beautiful environment and overall "feel" of the world.  (Granted, up-scaling the game on current hardware helps this a bit.)  Most of it just feels a little old: movement controls, cinematic direction, and voice acting aren't quite up to par with [Rockstar's latest](game:Grand Theft Auto V).
 

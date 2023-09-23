@@ -15,7 +15,7 @@ It doesn't reach the "highs" of its predecessor: the story doesn't evolve much f
 
 But, this is still like an episode of South Park in videogame form, which is pretty good.
 
-{{% absimg src="southparkfracturedbutwhole_justsleeping.jpg" width="640" height="360" %}}
+![](%site.BaseURL%southparkfracturedbutwhole_justsleeping.jpg){width=640 height=360}
 
 It does make some strides in micro-sized open-world design, with a map!, and an optional collectibles quest where you take <i>selfies with ghosts</i>.
 

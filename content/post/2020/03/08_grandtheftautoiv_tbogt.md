@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-Niko's story starts cinematically and moves very slowly; Luis's doesn't hesitate to throw you into firefights (or off of a building).  Niko has difficulty accessing high-powered cars and guns; Luis has no problem picking up a supercar, or explosive shotgun shells.  Niko's missions {{% abslink href="2020/03/04/hey-cousin-lets-restart-the-mission/" %}}pissed me off{{% /abslink %}} with their infrequent and unforgiving checkpoints; Luis's missions have plenty of checkpoints and are a trivial inconvenience to retry.
+Niko's story starts cinematically and moves very slowly; Luis's doesn't hesitate to throw you into firefights (or off of a building).  Niko has difficulty accessing high-powered cars and guns; Luis has no problem picking up a supercar, or explosive shotgun shells.  Niko's missions [pissed me off](%site.BaseURL%2020/03/04/hey-cousin-lets-restart-the-mission/) with their infrequent and unforgiving checkpoints; Luis's missions have plenty of checkpoints and are a trivial inconvenience to retry.
 
 (I still hate the shit out of losing my weapons when I'm arrested, but, whatevs.  Being able to call up a Gun Van helps, too.)
 

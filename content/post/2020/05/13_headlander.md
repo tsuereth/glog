@@ -25,4 +25,4 @@ You're a floating head who possesses robots with laser guns, and everything else
 <b>Not as good as</b>: <game:Indivisible>  
 <b>Roughly on par with</b>: <game:Timespinner>, plus-or-minus that game's seriousness vs. this game's lack thereof.
 
-<i>Progress: 100% map and upgrade completion.</i>
+<i>Progress: 100\% map and upgrade completion.</i>

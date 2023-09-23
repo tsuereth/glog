@@ -122,12 +122,17 @@ namespace GlogGenerator.RenderState
                 return string.Empty;
             }
 
-            var rendered = this.SourceContent;
-
-            rendered = Shortcodes.TranslateToHtml(this.siteState.PathResolver, this.siteState, this, rendered);
+            // Render the page's templated content, first.
+            var contentAsTemplate = new Antlr4.StringTemplate.Template(this.SourceContent, '%', '%');
+            contentAsTemplate.Add("site", this.siteState);
+            contentAsTemplate.Add("page", this);
+            var rendered = contentAsTemplate.Render(CultureInfo.InvariantCulture);
 
             var mdPipeline = new MarkdownPipelineBuilder()
                 .Use<ListExtraExtension>()
+                .UseGenericAttributes()
+                .UseMediaLinks()
+                .UsePipeTables()
                 .UseSoftlineBreakAsHardlineBreak()
                 .Use(new GlogMarkdownExtension(this.siteState, this))
                 .Build();

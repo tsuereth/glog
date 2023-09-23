@@ -19,7 +19,7 @@ Going back to what I [wrote about it on PS2](game:Ōkami):
 > 
 > This seems like an intentional choice on the part of the game's director to give the player a godlike feeling: you've got to take care of the little things, too.
 
-{{% absimg src="okami_hd_sleepycat.jpg" width="400" height="300" %}}
+![](%site.BaseURL%okami_hd_sleepycat.jpg){width=400 height=300}
 
 > [...] while combat and dungeon play isn't nearly as good as an actual Zelda, there is a lot of fun to be had in Ōkami.
 
@@ -27,6 +27,6 @@ A decade later, this is still how I'd sum the game up: the narrative and aesthet
 
 And most of the time, the strengths more than make up for the shortcomings.  It's all just so <i>charming</i>, from the beautiful art style to Issun's irreverent attitude.
 
-{{% absimg src="okami_hd_bustybabe.jpg" width="400" height="300" %}}
+![](%site.BaseURL%okami_hd_bustybabe.jpg){width=400 height=300}
 
 <i>Progress: Just finished the sunken ship.</i>

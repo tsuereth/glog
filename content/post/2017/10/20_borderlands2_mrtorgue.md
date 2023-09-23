@@ -16,7 +16,7 @@ Gameplay-wise, the only thing that Mr. Torgue really excels at is churning-out h
 
 What makes this DLC remarkable is purely down to the character of Mr. Torgue.  He is the best.
 
-{{% absimg src="mrtorgue.png" width="400" height="206" %}}
+![](%site.BaseURL%mrtorgue.png){width=400 height=206}
 
 And his running commentary throughout the campaign makes it worth playing.
 

@@ -17,11 +17,11 @@ The combat mechanics aren't really special: your HP is "battery charge," you att
 
 And that'd be fine if the game's <i>writing</i> was more distinctive, but... too many opportunities for immersive flavor text get squandered (pro tip: computer code doesn't use literal wires):
 
-{{% absimg src="dangercrew_codewithwires.png" width="640" height="360" %}}
+![](%site.BaseURL%dangercrew_codewithwires.png){width=640 height=360}
 
 And mission dialogs just read like an excuse to make you walk the map and do battles (another pro tip: don't put an ongoing meeting "on hold" while waiting for the new guy to finish his office tour):
 
-{{% absimg src="dangercrew_meetingexperience.png" width="640" height="360" %}}
+![](%site.BaseURL%dangercrew_meetingexperience.png){width=640 height=360}
 
 ... granted, poorly-planned meetings are actually kinda realistic.
 

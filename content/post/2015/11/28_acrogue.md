@@ -21,4 +21,4 @@ Of course, this is really just more of the same for the Creed.  And that sentime
 
 And I mean, come on.  The network television-caliber modern-day plot is so, goddamned, convoluted and stupid.  What makes it worse is that Ubisoft continues to waste text and voice acting on skippable backstory bits, for dozens of utterly disposable characters.  I wouldn't be put out in the least if a future Assassin's Creed tells you that it was all a dream, or some matrix-within-a-matrix inception shit.
 
-<i>Progress: 45%</i>
+<i>Progress: 45\%</i>

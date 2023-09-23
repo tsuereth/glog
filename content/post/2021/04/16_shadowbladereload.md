@@ -8,7 +8,7 @@ platform = ["PC"]
 
 My Steam backlog can feel <i>indomitable</i>, at times.  So when I find an opportunity to rapidly discard a game by reveling in its technical shortcomings...
 
-{{% absimg src="shadowbladereload_installcodecs.jpg" width="640" height="360" %}}
+![](%site.BaseURL%shadowbladereload_installcodecs.jpg){width=640 height=360}
 
 ... I do so.
 

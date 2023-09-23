@@ -7,17 +7,17 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-In {{% abslink href="2020/01/01/2019-in-review-less-isnt-more/" %}}my 2019 review{{% /abslink %}}, I made a promise - to myself, I suppose - that I would attempt <game:Hollow Knight> again.
+In [my 2019 review](%site.BaseURL%2020/01/01/2019-in-review-less-isnt-more/), I made a promise - to myself, I suppose - that I would attempt <game:Hollow Knight> again.
 
 That's why it's been sitting in my "Playing" section for the last 11 months.
 
-{{% absimg src="hollowknight_lastplayed.png" width="124" height="54" %}}
+![](%site.BaseURL%hollowknight_lastplayed.png){width=124 height=54}
 
 The good news is that, when I finally <i>did</i> jump back into Hallownest, it didn't feel like I'd missed much.  For all its ability unlocks and upgrades and technical nuance... for all the <i>progression</i> in Hollow Knight, its fundamentals stay pretty simple.  Attack, jump, dodge.  I fully expected my return trip to end in a quick death -- but I actually made progress, uncovered some new territory, and it wasn't long before I'd knocked off the Dreamers that'd been haunting my world map since last year.
 
-Hollow Knight's <i>literally-dark</i> aesthetics and <i>eldritch</i> lore can make the thought of delving its depths <b>intimidating</b>.  (Especially in Deepnest.  With the low visibility and the crawling noises and the surprise spiders.)  Hell, {{% abslink href="2019/10/06/anything-but-hollow/" %}}last time I said{{% /abslink %}} that I "lacked the courage" to keep going.  So it was really ... comforting, I guess, that a little bravery was enough to get me back in the game.
+Hollow Knight's <i>literally-dark</i> aesthetics and <i>eldritch</i> lore can make the thought of delving its depths <b>intimidating</b>.  (Especially in Deepnest.  With the low visibility and the crawling noises and the surprise spiders.)  Hell, [last time I said](%site.BaseURL%2019/10/06/anything-but-hollow/) that I "lacked the courage" to keep going.  So it was really ... comforting, I guess, that a little bravery was enough to get me back in the game.
 
-{{% absimg src="hollowknight_fear.jpg" width="400" height="300" %}}
+![](%site.BaseURL%hollowknight_fear.jpg){width=400 height=300}
 
 And "when it works," which is most of the time, Hollow Knight delivers a sharply-focused take on the Metroidvania subgenre.  The joy of discovering a new room, or of finally unlocking a door you've passed by, is even more poignant in the face of Hallownest's dark and mysterious hostility.
 
@@ -31,7 +31,7 @@ Also, the sometimes-evil challenges are ... evil, sometimes.  Many hazards or en
 
 Ultimately I would say that my successes in Hollow Knight had less to do with my timing or reflexes, and more to do with my studious investments in health and damage upgrades.
 
-{{% absimg src="hollowknight_strength.jpg" width="400" height="300" %}}
+![](%site.BaseURL%hollowknight_strength.jpg){width=400 height=300}
 
 Which isn't a bad thing, is it?  I mean, I wanna be clear, that while I can complain about some frustrating encounters and not enough fast-travel nodes -- I had a <i>lot</i> of fun poking around the map, unlocking new abilities, and increasing the Knight's mastery over this dark fantasy world.
 
@@ -43,4 +43,4 @@ Also, the story just didn't make sense.  Even after reading a synopsis online, I
 <b>Not as good as</b>: [Bloodstained: Ritual of the Knight](game:Bloodstained: Ritual of the Night), <game:Indivisible>  
 <b>Anxiously optimistic for</b>: <game:Hollow Knight: Silksong>
 
-<i>Progress: Defeated the Radiance, 101%</i>
+<i>Progress: Defeated the Radiance, 101\%</i>

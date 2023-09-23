@@ -11,7 +11,7 @@ rating = ["Meh"]
 
 And then it's over.  In <b>ten minutes</b>.
 
-This free game is over two years old, and I guess it was supposed to serve as a demo for a fuller release?  But the "Episode 1" DLC still has a {{% abslink href="2018/01/21/early-access-late-release/" %}}release date{{% /abslink %}} of "2017 Q1" -- and the creator seems to have abandoned this idea in favor of an <a href="http://steamcommunity.com/games/739540/announcements/detail/1458464431500823759">ARG</a> that will lead up to <a href="http://store.steampowered.com/app/739540/Break_the_Game/">a sequel</a>... maybe.
+This free game is over two years old, and I guess it was supposed to serve as a demo for a fuller release?  But the "Episode 1" DLC still has a [release date](%site.BaseURL%2018/01/21/early-access-late-release/) of "2017 Q1" -- and the creator seems to have abandoned this idea in favor of an <a href="http://steamcommunity.com/games/739540/announcements/detail/1458464431500823759">ARG</a> that will lead up to <a href="http://store.steampowered.com/app/739540/Break_the_Game/">a sequel</a>... maybe.
 
 Well, good luck with all that!
 

@@ -13,7 +13,7 @@ title = "Return to the Revenge of Beneath the Planet of the Splicers: Remastered
 
 The first of its three levels feels like an experiment in non-linear design, which mostly failed.  The new laser weapon is underwhelming, and the focus on flying robot buddies fails to address their annoyances (when they block your path, or block your bullets).  The pacing is obviously and somewhat deliberately broken, in its attempt to accelerate the delivery of the same arsenal that <game:BioShock 2> accumulated over a much longer game.
 
-Oh-- I've {{% abslink href="2011/06/12/bioshock-2-minervas-den-4/" %}}already written all this{{% /abslink %}}, haven't I.
+Oh-- I've [already written all this](%site.BaseURL%2011/06/12/bioshock-2-minervas-den-4/), haven't I.
 
 Well, yeah.  It's like I said in 2011, then.  Pretty "meh."
 

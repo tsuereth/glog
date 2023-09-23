@@ -19,4 +19,4 @@ Unfortunately, one unintended side-effect of my explore-and-collect strategy is 
 
 Anyway, aside from said crash, Mankind Divided does considerably better than Human Revolution did in terms of performance and reliability.  Yeah, the menus are still sometimes wonkier than they should be with a mouse.  But otherwise pretty good.
 
-And while I'm not 100% convinced of it, I strongly believe that I've already passed some "boss fight" points in the game, where I would have had to fight a big-bad if not for my formidable hacking reconnaissance.  Winning with my own strategy, instead of being forced to use one I'm not interested in; Mankind Divided delivers more strongly on that than ever.
+And while I'm not 100\% convinced of it, I strongly believe that I've already passed some "boss fight" points in the game, where I would have had to fight a big-bad if not for my formidable hacking reconnaissance.  Winning with my own strategy, instead of being forced to use one I'm not interested in; Mankind Divided delivers more strongly on that than ever.

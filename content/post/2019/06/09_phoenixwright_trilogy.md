@@ -9,15 +9,15 @@ rating = ["Awesome"]
 
 The now-archaic map navigation, the sometimes-confounding evidence solutions, the frustrating penalty/reload-savefile system, and the typos ... are no match for the intrigue, excitement, and charm of <game:Phoenix Wright: Ace Attorney Trilogy>'s later cases.
 
-{{% absimg src="phoenix_wright_trilogy_godot.jpg" width="960" height="540" %}}
+![](%site.BaseURL%phoenix_wright_trilogy_godot.jpg){width=960 height=540}
 
 The [Trials and Tribulations](game:Phoenix Wright: Ace Attorney - Trials and Tribulations) cases come out swinging with backstory-establishing flashbacks, building up to a final case that ties everything together in a bombastic and incredibly satisfying conclusion.  The hours flew by as I was unable to tear myself away from reading, and clicking, through Phoenix's most thrilling case yet.
 
-{{% absimg src="phoenix_wright_trilogy_grossberg.jpg" width="960" height="540" %}}
+![](%site.BaseURL%phoenix_wright_trilogy_grossberg.jpg){width=960 height=540}
 
 But even the Ace Attorney gang's most dire moments are punctuated by a certain light-heartedness.  Man, the localization staff sure did have fun with these games.
 
-{{% absimg src="phoenix_wright_trilogy_spoonybard.jpg" width="960" height="540" %}}
+![](%site.BaseURL%phoenix_wright_trilogy_spoonybard.jpg){width=960 height=540}
 
 Though I've only just closed the final case, and already <i>miss</i> Phoenix and the Feys; replaying Wright's early years is definitely more "sweet" than "bitter."  I'm so happy that I got the chance to reacquaint myself with these long-past characters and cases.
 

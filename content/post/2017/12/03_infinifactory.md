@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-I've been telling myself since {{% abslink href="2017/08/06/working-overtime/" %}}August{{% /abslink %}} that I would, eventually, come back and wrap up <game:Infinifactory>.  But every time I actually think about it, I <i>just can't even</i> imagine myself enjoying the hours of work it'll take to do the five puzzles I have remaining.
+I've been telling myself since [August](%site.BaseURL%2017/08/06/working-overtime/) that I would, eventually, come back and wrap up <game:Infinifactory>.  But every time I actually think about it, I <i>just can't even</i> imagine myself enjoying the hours of work it'll take to do the five puzzles I have remaining.
 
 At least of the puzzles currently available to me, they all require assembly from such a low level - like making a LEGO set out of only two-stud bricks - that the excitement of pulling off ingenious engineering becomes overshadowed by grueling tedium.
 

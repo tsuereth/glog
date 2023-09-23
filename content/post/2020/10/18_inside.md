@@ -17,7 +17,7 @@ Inside's chase sequences are tempered by requirements for well-timed interaction
 
 And while I admire the game's commitment against a visually-intrusive user interface, I would have appreciated some tutorial prompts -- the early game forces you to <i>guess</i> that an object can be pushed, and that the X button is how pushing works.  Frankly, I think this strict anti-UI stance makes the game hostile to newcomers, in spite of its mechanical simplicity.
 
-I don't regret the three hours I spent with Inside, since it did show off some cool environments, and its puzzles were just enough to keep me engaged.  But it's a little disappointing that, narratively and mechanically, it feels so {{% abslink href="2011/02/02/limbo-3/" %}}"simple"{{% /abslink %}} and similar to its predecessor.  (Are <i>all</i> of <tag:Playdead>'s games going to be about brain-control slugs?)
+I don't regret the three hours I spent with Inside, since it did show off some cool environments, and its puzzles were just enough to keep me engaged.  But it's a little disappointing that, narratively and mechanically, it feels so ["simple"](%site.BaseURL%2011/02/02/limbo-3/) and similar to its predecessor.  (Are <i>all</i> of <tag:Playdead>'s games going to be about brain-control slugs?)
 
 <b>Better than</b>: <game:Limbo>, I guess.  
 <b>Not as good as</b>: <game:Headlander>  

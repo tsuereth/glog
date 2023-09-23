@@ -15,7 +15,7 @@ In this level, the search text has gendered pronouns that need to be gender-swap
 
 Copy Editor teaches you to look for specific instances, instead of general patterns, which is <b>the wrong way</b> to use regular expressions.
 
-{{% absimg src="copy-editor_hint.png" width="640" height="360" %}}
+![](%site.BaseURL%copy-editor_hint.png){width=640 height=360}
 
 Like, at this point, why not re-type the text?
 

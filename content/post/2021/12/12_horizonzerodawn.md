@@ -25,4 +25,4 @@ But I digress.  Horizon Zero Dawn is still a triumph of game-making, and, not li
 <b>Not as good as</b>: <game:The Witcher 3: Wild Hunt> (agh, <a href="https://www.pcgamer.com/the-witcher-3s-free-next-gen-upgrade-has-been-delayed-until-2022/">still waiting</a> for that new-gen update)  
 <b>The PC version</b>: has, unfortunately, set my visual and performance expectations for [Forbidden West](game:Horizon Forbidden West) <i>pretty</i> high.
 
-<i>Progress: 100% completion</i>
+<i>Progress: 100\% completion</i>

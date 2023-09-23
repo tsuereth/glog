@@ -9,7 +9,7 @@ rating = ["Awesome"]
 
 "AWE" is <game:Control>'s <a href="https://en.wikipedia.org/wiki/Three-letter_acronym">TLA</a> for Altered World Event, but in <game:Control: AWE>, it might just mean <game:Alan Wake> Expansion.
 
-That's my gripe with this expansion: it's not only tied into Alan Wake's story, its cutscenes are in Alan Wake's storytelling <i>style</i>.  The author-narrating-himself, verbose-stream-of-consciousness style that {{% abslink href="2013/05/16/in-which-the-writer-writes-a-story-about-a-writer-writing-a-story-about-the-writer/" %}}I didn't care for{{% /abslink %}} in that game.
+That's my gripe with this expansion: it's not only tied into Alan Wake's story, its cutscenes are in Alan Wake's storytelling <i>style</i>.  The author-narrating-himself, verbose-stream-of-consciousness style that [I didn't care for](%site.BaseURL%2013/05/16/in-which-the-writer-writes-a-story-about-a-writer-writing-a-story-about-the-writer/) in that game.
 
 Otherwise, it's the same Control stuff - weird environments, creepy conspiracies, paranormal combat action, that stuff - I'd already fallen in love with.  And like [The Foundation](game:Control: The Foundation), this expansion has a satisfying amount of that content to play around in.
 

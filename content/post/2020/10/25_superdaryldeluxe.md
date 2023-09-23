@@ -15,7 +15,7 @@ Then comes a minutes-long, excruciatingly-slow, cringe-filled expository cutscen
 
 Finally the "real" game is introduced, wandering the halls of a high school and doing wacky quests to further along the (admittedly, genuinely mysterious) plot.  And as it lacks those pre-upgraded abilities from the intro, this mostly takes the form of a side-scrolling point-and-click adventure: go to this room, talk to this person, go to that room, pick up that thing, go back to the first room...
 
-{{% absimg src="superdaryldeluxe_slaysixflasks.jpg" width="400" height="300" %}}
+![](%site.BaseURL%superdaryldeluxe_slaysixflasks.jpg){width=400 height=300}
 
 Mixed into this room-wandering are some platforming controls that are really quite bad.  When you hold the jump button, after landing on the ground, Daryl jumps again.  And the distance between platforms requires more precision than the game's art style can accurately convey.
 

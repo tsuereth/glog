@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-<game:Silicon Zeroes> started out pretty simple, as I saw in {{% abslink href="2017/09/24/visual-programming/" %}}the demo{{% /abslink %}}; and these humble beginnings had me looking forward to more complex algorithmic puzzles in the later game.
+<game:Silicon Zeroes> started out pretty simple, as I saw in [the demo](%site.BaseURL%2017/09/24/visual-programming/); and these humble beginnings had me looking forward to more complex algorithmic puzzles in the later game.
 
 Unfortunately, the later puzzles tend to feel more like <i>riddles</i>: solving an otherwise-straightforward problem without using a crucial component, or in a time limit that requires otherwise-counterproductive pipelining.  It's even worse than <game:TIS-100>, whose limitations were at least consistent within the world of the game; in Silicon Zeroes, a component will be given to you in one puzzle, then taken away in another.
 

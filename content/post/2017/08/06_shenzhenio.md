@@ -11,7 +11,7 @@ title = "Churning out low-quality electronics"
 
 Compared to <game:Infinifactory> and <game:TIS-100>, I am <i>blazing</i> through <game:Shenzhen I/O>.  Less because I'm compelled by the fun, and more because I'm already familiar with its challenges.
 
-Since I {{% abslink href="2017/07/24/made-in-china/" %}}last wrote{{% /abslink %}} about Shenzhen, the puzzles have become more nuanced and elaborate; the premise of each one is intriguing, as are the narratively-appropriate components and peripherals.  Thematically, these puzzles do a great job of building on TIS's image-plotting puzzles, by making the output values feel meaningful and <i>cool</i>.
+Since I [last wrote](%site.BaseURL%2017/07/24/made-in-china/) about Shenzhen, the puzzles have become more nuanced and elaborate; the premise of each one is intriguing, as are the narratively-appropriate components and peripherals.  Thematically, these puzzles do a great job of building on TIS's image-plotting puzzles, by making the output values feel meaningful and <i>cool</i>.
 
 However, these unique twists almost never factor into what makes the puzzles difficult.  And what <i>does</i> make them difficult is disappointingly familiar: limited instruction space, and occasionally, limited input/output ports.
 

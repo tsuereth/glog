@@ -21,7 +21,7 @@ Ironically, given Kratos's story arc, his struggle in this game is much more <b>
 
 But the genius of God of War's storytelling is that it's <i>more</i> than just that.  Emotional moments are punctuated, and tempered, by light-hearted comic relief; jokesters Brok, Sindri, and Mimir all jumped quickly up my list of memorable video game characters.  (Mimir's "what really happened" stories about Odin and Thor are easily some of my favorite moments from any game.)
 
-And, building on one of the stronger points of the first <game:God of War>, this one really delivers on the <b>epic</b> feeling of coming face-to-face with mythological entities and artifacts.  I mean, you meet <i><a href="https://en.wikipedia.org/wiki/J%C3%B6rmungandr">the world serpent</a></i> pretty early on, and it only gets more awe-inspiring in the dozens of hours that follow.
+And, building on one of the stronger points of the first <game:God of War>, this one really delivers on the <b>epic</b> feeling of coming face-to-face with mythological entities and artifacts.  I mean, you meet <i><a href="https://en.wikipedia.org/wiki/J\%C3\%B6rmungandr">the world serpent</a></i> pretty early on, and it only gets more awe-inspiring in the dozens of hours that follow.
 
 Meanwhile, the fact that Kratos <i>isn't from 'round here</i> is a convenient excuse for other characters to teach him - and thus teach you, the player - about the nine realms, the history of the Vanir, and so on.  And it's kinda adorable seeing Atreus beam at the chance to explain to his father what runes mean.
 

@@ -6,7 +6,7 @@ game = ["A.N.N.E."]
 platform = ["PC"]
 +++
 
-<game:A.N.N.E.> is one of <i>only two!</i> remaining crowdfunded/early-access games that I've bought but am still waiting for.  <i>(Ref.: {{% abslink href="2018/01/21/early-access-late-release/" %}}Early Access, Late Release{{% /abslink %}})</i>
+<game:A.N.N.E.> is one of <i>only two!</i> remaining crowdfunded/early-access games that I've bought but am still waiting for.  <i>(Ref.: [Early Access, Late Release](%site.BaseURL%2018/01/21/early-access-late-release/))</i>
 
 And <a href="https://steamcommunity.com/games/262370/announcements/detail/2117196326623902205">as of last month</a>, the developer's plan was to hit feature-complete on May 20th.  So it should come as no surprise that on May 20th the release plan was <a href="https://steamcommunity.com/games/262370/announcements/detail/1696100248032793314">updated to "maybe never"</a> (paraphrasing).
 

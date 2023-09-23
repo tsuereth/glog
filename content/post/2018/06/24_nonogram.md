@@ -13,7 +13,7 @@ In fact, Nonogram has features that meet or <i>exceed</i> any other picross game
 
 The main mode is a cool-looking "Gallery" of 126 puzzles: starting from the center image, completing each puzzle unlocks the adjacent images.  It almost feels like a choose-your-own-adventure campaign, albeit a short-lived one.  These puzzles go up to 25x25, which is pretty respectable, although a lot of them are only 5x5 or 10x10.
 
-{{% absimg src="nonogram-thegreatestpainter_gallery.jpg" width="640" height="360" %}}
+![](%site.BaseURL%nonogram-thegreatestpainter_gallery.jpg){width=640 height=360}
 
 In addition to that mode, there's a menu of "Classic" puzzles, the <i>first</i> of which is <b>50x35</b>.  I am really excited to dig deeper into that mode.  And there's a Speed Drawing mode! like the Time Trials in <game:Pepper's Puzzles>, but <i>more</i> of them.  Plus a Steam Workshop mode that I probably won't bother with, but hey, well done guys.
 
@@ -23,11 +23,11 @@ Not only does it gray-out its numeric hints as you complete segments (take that,
 
 And there's even a little <i>wit</i> in here, in the puzzle titles: some oblique pop-culture references, even some puns.  Whereas Pepper's Puzzles sometimes felt like they were just ripping off fan-art, Nonogram's titles make its references feel more like <i>knowing homages</i>.
 
-{{% absimg src="nonogram-thegreatestpainter_skyrim1.jpg" width="640" height="360" %}}
+![](%site.BaseURL%nonogram-thegreatestpainter_skyrim1.jpg){width=640 height=360}
 
 ... granted, the final images take some extreme artistic license, compared to the actual puzzles.  But I've got no problem with that.
 
-{{% absimg src="nonogram-thegreatestpainter_skyrim2.jpg" width="640" height="360" %}}
+![](%site.BaseURL%nonogram-thegreatestpainter_skyrim2.jpg){width=640 height=360}
 
 Throw in a peaceful ambient soundtrack, and there's almost nothing wrong with Nonogram.  (The hint highlighting is occasionally inaccurate, thankfully on the side of under-helping rather than wrongly-hinting.)
 

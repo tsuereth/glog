@@ -7,11 +7,11 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-I've {{% abslink href="2012/05/20/diablo-iii-12/" %}}remarked before{{% /abslink %}} on <game:Diablo III>'s uninteresting environments:
+I've [remarked before](%site.BaseURL%2012/05/20/diablo-iii-12/) on <game:Diablo III>'s uninteresting environments:
 
 <blockquote>... all of these design themes and elements work fine, but they seem lifted from Diablo II as a template, rather than originally designed from its inspiration.</blockquote>
 
-... and its {{% abslink href="2014/04/26/hell-its-about-time/" %}}piss-poor storytelling{{% /abslink %}}:
+... and its [piss-poor storytelling](%site.BaseURL%2014/04/26/hell-its-about-time/):
 
 <blockquote>And the fact that the plot is totally fucking stupid is still impossible to ignore. Even when skipping cinematics and story scenes, the game's dumb characters are irritatingly aggressive at showing off how silly the story is.</blockquote>
 

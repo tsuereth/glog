@@ -19,7 +19,7 @@ The gameplay, though, is uniquely fascinating and compelling.  Both in the sides
 
 Probably the most defining characteristic of its battle system is the timeline, and how it can lead to interruptions.  Each character has a speed stat, which defines how quickly it progresses through the "wait" part of the battle timeline; and each action you select has a speed, which is how long it spends in the "cast" part of the timeline.  While a character is in the "cast" part, it can be interrupted by an enemy attack.
 
-{{% absimg src="childoflight_timeline.gif" width="400" height="300" %}}
+![](%site.BaseURL%childoflight_timeline.gif){width=400 height=300}
 
 So while you're trying to time your attacks to interrupt foes, you're simultaneously trying to avoid being interrupted yourself -- using Defend to defer your action until later, or choosing a high-speed action to beat your enemies to the punch.  The timeline pauses when you're making selections, giving you plenty of time to think your tactics over.
 

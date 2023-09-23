@@ -53,4 +53,4 @@ I hope that Volition's next game gets the creative budget (and time) it needs to
 <b>Not as good as</b>: <game:Saints Row 2>, [The Third](game:Saints Row: The Third), [IV](game:Saints Row IV), or even [Gat Out of Hell](game:Saints Row: Gat Out of Hell).  
 <b>I failed to care about most of the agents</b>: but I <i>might</i> spring for a spinoff game about <a href="https://www.youtube.com/watch?v=InlFd4_AsTA">Daisy</a>.
 
-<i>Progress: 73% -- Campaign: 60%, Agency: 94%, Assets: 65%</i>
+<i>Progress: 73\% -- Campaign: 60\%, Agency: 94\%, Assets: 65\%</i>

@@ -9,7 +9,7 @@ rating = ["Bad"]
 
 <game:Cthulhu Saves the World> is not without charm.  It wastes no time breaking - really, <i>demolishing</i> - its own fourth wall, and its writing and art shows how much fun the game must've been to make.
 
-{{% absimg src="cthulhusavestheworld.jpg" width="400" height="300" %}}
+![](%site.BaseURL%cthulhusavestheworld.jpg){width=400 height=300}
 
 But inbetween its silly dialogs is an RPG that's not only basic, but <b>archaic</b>.  "Basic" isn't necessarily bad, especially since it means combat flows fairly quickly, but it also means lots of throwaway random encounters with low-effort monsters, and barren, bland environments between points of interest.
 
