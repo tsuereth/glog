@@ -44,16 +44,16 @@ namespace GlogGenerator.RenderState
 
         public IgdbCache IgdbCache { get; set; }
 
-        public FilePathResolver PathResolver { get; private set; }
+        public string InputFilesBasePath { get; set; } = string.Empty;
 
-        public string TemplatesBasePath { get; private set; } = "templates";
+        public string TemplateFilesBasePath { get; private set; } = "templates";
 
         private Antlr4.StringTemplate.TemplateGroupDirectory templateGroup;
 
-        public SiteState(string basePath, string templatesBasePath)
+        public SiteState(string inputFilesBasePath, string templateFilesBasePath)
         {
-            this.PathResolver = new FilePathResolver(basePath);
-            this.TemplatesBasePath = templatesBasePath;
+            this.InputFilesBasePath = inputFilesBasePath;
+            this.TemplateFilesBasePath = templateFilesBasePath;
         }
 
         public Antlr4.StringTemplate.TemplateGroupDirectory GetTemplateGroup()
@@ -61,14 +61,14 @@ namespace GlogGenerator.RenderState
             if (this.templateGroup == null)
             {
                 // StringTemplate requires an absolute filepath.
-                var templatesBasePath = this.TemplatesBasePath;
-                if (!Path.IsPathRooted(templatesBasePath))
+                var templateFilesBasePath = this.TemplateFilesBasePath;
+                if (!Path.IsPathRooted(templateFilesBasePath))
                 {
-                    templatesBasePath = Path.GetFullPath(templatesBasePath);
+                    templateFilesBasePath = Path.GetFullPath(templateFilesBasePath);
                 }
 
                 this.templateGroup = new Antlr4.StringTemplate.TemplateGroupDirectory(
-                    templatesBasePath,
+                    templateFilesBasePath,
                     delimiterStartChar: '%',
                     delimiterStopChar: '%');
 
@@ -218,7 +218,7 @@ namespace GlogGenerator.RenderState
             }
 
             // List static content.
-            var staticBasePath = Path.Combine(this.PathResolver.BasePath, StaticFileData.StaticContentBaseDir);
+            var staticBasePath = Path.Combine(this.InputFilesBasePath, StaticFileData.StaticContentBaseDir);
             var staticFilePaths = Directory.EnumerateFiles(staticBasePath, "*.*", SearchOption.AllDirectories).ToList();
             foreach (var staticFilePath in staticFilePaths)
             {
@@ -230,7 +230,7 @@ namespace GlogGenerator.RenderState
             var templateGroup = this.GetTemplateGroup();
 
             // Parse content to collect data.
-            var postContentBasePath = Path.Combine(this.PathResolver.BasePath, PostData.PostContentBaseDir);
+            var postContentBasePath = Path.Combine(this.InputFilesBasePath, PostData.PostContentBaseDir);
             var postPaths = Directory.EnumerateFiles(postContentBasePath, "*.md", SearchOption.AllDirectories).ToList();
 
             var allPosts = new List<PostData>();
@@ -475,8 +475,8 @@ namespace GlogGenerator.RenderState
 
             var additionalPageFilePaths = new List<string>()
             {
-                Path.Combine(this.PathResolver.BasePath, "content", "backlog.md"),
-                Path.Combine(this.PathResolver.BasePath, "content", "upcoming.md"),
+                Path.Combine(this.InputFilesBasePath, "content", "backlog.md"),
+                Path.Combine(this.InputFilesBasePath, "content", "upcoming.md"),
             };
             foreach (var pageFilePath in additionalPageFilePaths)
             {
@@ -486,14 +486,14 @@ namespace GlogGenerator.RenderState
             }
         }
 
-        public static SiteState FromInputFilesBasePath(string inputFilesBasePath, string templatesBasePath)
+        public static SiteState FromInputFilesBasePath(string inputFilesBasePath, string templateFilesBasePath)
         {
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
             var config = ConfigData.FromFilePath(configFilePath);
 
             var igdbCache = IgdbCache.FromJsonFile(inputFilesBasePath);
 
-            var site = new SiteState(config.DataBasePath, templatesBasePath)
+            var site = new SiteState(config.DataBasePath, templateFilesBasePath)
             {
                 Author = config.Author,
                 BaseURL = config.BaseURL,

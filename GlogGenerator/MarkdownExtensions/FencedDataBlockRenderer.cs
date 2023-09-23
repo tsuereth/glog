@@ -37,7 +37,14 @@ namespace GlogGenerator.MarkdownExtensions
                 var namedArgs = obj.Data.ToDictionary(kv => kv.Key, kv => kv.Value.ToString().Trim('"'));
 
                 var datafileArg = namedArgs["datafile"].ToString();
-                var chartDatafilePath = this.siteState.PathResolver.Resolve(datafileArg);
+                // If this filepath "looks" absolute, it ... isn't!
+                // It's relative to the site's input base path, so, un-absolute it.
+                if (datafileArg[0] == '/')
+                {
+                    datafileArg = datafileArg.Remove(0, 1);
+                }
+
+                var chartDatafilePath = Path.Combine(this.siteState.InputFilesBasePath, datafileArg);
                 var chartDatafileContent = File.ReadAllText(chartDatafilePath);
 
                 // We need to escape the JSON data, to make it safe for JavaScript to load as a string.
