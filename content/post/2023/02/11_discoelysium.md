@@ -14,7 +14,6 @@ And as you learn more about the game world's mildly-retro dystopian <i>motif</i>
 
 Throw in the (from what little I've played) heavy emphasis on non-combat challenges, like persuasion or investigation, influenced by a number of point-based mental skills like <a href="https://discoelysium.fandom.com/wiki/Rhetoric">Rhetoric</a> and <a href="https://discoelysium.fandom.com/wiki/Shivers">Shivers</a> ... yeah.  I want more of this.
 
-I'll just need to remember to dote on <a href="https://old.reddit.com/r/DiscoElysium/comments/e4umiz/i_just_died_completely_randomly_to_losing_my_only/">the F5 
-key</a> from now on.
+I'll just need to remember to dote on <a href="https://old.reddit.com/r/DiscoElysium/comments/e4umiz/i_just_died_completely_randomly_to_losing_my_only/">the F5 key</a> from now on.
 
 <i>Progress: Just leaving the hotel.</i>

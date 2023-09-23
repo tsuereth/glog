@@ -124,12 +124,11 @@ namespace GlogGenerator.RenderState
 
             var rendered = this.SourceContent;
 
-            rendered = Regex.Replace(rendered, @"  +\n", "<br />");
-
             rendered = Shortcodes.TranslateToHtml(this.siteState.PathResolver, this.siteState, this, rendered);
 
             var mdPipeline = new MarkdownPipelineBuilder()
                 .Use<ListExtraExtension>()
+                .UseSoftlineBreakAsHardlineBreak()
                 .Use(new GlogMarkdownExtension(this.siteState, this))
                 .Build();
             rendered = Markdown.ToHtml(rendered, mdPipeline);
