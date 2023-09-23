@@ -37,11 +37,6 @@ namespace GlogGenerator.TemplateRenderers
                 return str;
             }
 
-            if (formatString.Equals("escapeslashes", StringComparison.OrdinalIgnoreCase))
-            {
-                return str.Replace("/", "\\/");
-            }
-
             if (formatString.Equals("urlize", StringComparison.OrdinalIgnoreCase))
             {
                 return Urlize(str);

@@ -34,7 +34,7 @@ footer(site,page) ::= <<
 	
 	if(numImages > 0) {
 		var js = document.createElement("script");
-		js.src = "%site.BaseURL;format="escapeslashes"%js/jquery.fancybox.min.js";
+		js.src = "%site.BaseURL%js/jquery.fancybox.min.js";
 		js.type = "text/javascript";
 		docHead.appendChild(js);
 	}
