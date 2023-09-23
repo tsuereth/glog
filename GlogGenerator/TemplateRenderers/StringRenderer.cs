@@ -3,9 +3,9 @@ using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace GlogGenerator.HugoCompat
+namespace GlogGenerator.TemplateRenderers
 {
-    public class TemplateFunctionsStringRenderer : Antlr4.StringTemplate.StringRenderer
+    public class StringRenderer : Antlr4.StringTemplate.StringRenderer
     {
         public static string Urlize(string str)
         {

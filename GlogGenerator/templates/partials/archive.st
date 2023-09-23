@@ -5,7 +5,7 @@ archive(site,page) ::= <<
 	<section class="archives">
 		<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 			<div class="meta">
-				<span class="date"><time datetime='%linkedPost.Date;format="gloghugo"%' data-updated="true" itemprop="datePublished">%linkedPost.Date;format="gloghugo"%</time>
+				<span class="date"><time datetime='%linkedPost.Date;format="justdate"%' data-updated="true" itemprop="datePublished">%linkedPost.Date;format="justdate"%</time>
 </span>
 				
 				

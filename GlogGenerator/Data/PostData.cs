@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using GlogGenerator.HugoCompat;
+using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.Data
 {
@@ -69,7 +70,7 @@ namespace GlogGenerator.Data
             }
             else
             {
-                permalinkPathParts.Add(TemplateFunctionsStringRenderer.Urlize(post.Title));
+                permalinkPathParts.Add(StringRenderer.Urlize(post.Title));
             }
 
             var permalinkPath = string.Join('/', permalinkPathParts) + '/';

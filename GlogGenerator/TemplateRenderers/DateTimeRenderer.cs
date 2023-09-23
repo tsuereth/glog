@@ -1,9 +1,9 @@
 using System;
 using System.Globalization;
 
-namespace GlogGenerator.HugoCompat
+namespace GlogGenerator.TemplateRenderers
 {
-    public class TemplateFunctionsDateTimeRenderer : Antlr4.StringTemplate.DateRenderer
+    public class DateTimeRenderer : Antlr4.StringTemplate.DateRenderer
     {
         public override string ToString(object o, string formatString, CultureInfo locale)
         {
@@ -14,7 +14,7 @@ namespace GlogGenerator.HugoCompat
 
             var time = (DateTimeOffset)o;
 
-            if (formatString.Equals("gloghugo", StringComparison.OrdinalIgnoreCase))
+            if (formatString.Equals("justdate", StringComparison.OrdinalIgnoreCase))
             {
                 // Mon, Jan 2, 2006
                 var dayOfWeekAbbrev = time.ToString("ddd", CultureInfo.InvariantCulture);

@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using GlogGenerator.HugoCompat;
 using GlogGenerator.IgdbApi;
+using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.Data
 {
@@ -13,7 +13,7 @@ namespace GlogGenerator.Data
         {
             get
             {
-                var urlized = TemplateFunctionsStringRenderer.Urlize(this.Title);
+                var urlized = StringRenderer.Urlize(this.Title);
                 return $"game/{urlized}/";
             }
         }

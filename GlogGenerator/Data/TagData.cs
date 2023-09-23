@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using GlogGenerator.HugoCompat;
+using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.Data
 {
@@ -9,7 +9,7 @@ namespace GlogGenerator.Data
         {
             get
             {
-                var urlized = TemplateFunctionsStringRenderer.Urlize(this.Name);
+                var urlized = StringRenderer.Urlize(this.Name);
                 return $"tag/{urlized}/";
             }
         }

@@ -1,4 +1,4 @@
 date(page) ::= <<
-<time datetime='%page.Date;format="gloghugo"%' data-updated="true" itemprop="datePublished">%page.Date;format="gloghugo"%</time>
+<time datetime='%page.Date;format="justdate"%' data-updated="true" itemprop="datePublished">%page.Date;format="justdate"%</time>
 
 >>

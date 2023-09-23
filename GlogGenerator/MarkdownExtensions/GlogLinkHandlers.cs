@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using GlogGenerator.HugoCompat;
 using GlogGenerator.RenderState;
+using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.MarkdownExtensions
 {
@@ -19,7 +19,7 @@ namespace GlogGenerator.MarkdownExtensions
         public static string GetPermalinkForCategoryName(SiteState site, string categoryName)
         {
             // TODO: validate the name!
-            var referenceUrlized = TemplateFunctionsStringRenderer.Urlize(categoryName);
+            var referenceUrlized = StringRenderer.Urlize(categoryName);
             var referenceLink = $"{site.BaseURL}category/{referenceUrlized}";
 
             return referenceLink;
@@ -30,7 +30,7 @@ namespace GlogGenerator.MarkdownExtensions
             _ = site.ValidateMatchingGameName(gameName);
 
             // TODO: grab this from the validation step!
-            var referenceUrlized = TemplateFunctionsStringRenderer.Urlize(gameName);
+            var referenceUrlized = StringRenderer.Urlize(gameName);
             var referenceLink = $"{site.BaseURL}game/{referenceUrlized}";
 
             return referenceLink;
@@ -39,7 +39,7 @@ namespace GlogGenerator.MarkdownExtensions
         public static string GetPermalinkForPlatformName(SiteState site, string platformName)
         {
             // TODO: validate the name!
-            var referenceUrlized = TemplateFunctionsStringRenderer.Urlize(platformName);
+            var referenceUrlized = StringRenderer.Urlize(platformName);
             var referenceLink = $"{site.BaseURL}platform/{referenceUrlized}";
 
             return referenceLink;
@@ -48,7 +48,7 @@ namespace GlogGenerator.MarkdownExtensions
         public static string GetPermalinkForRatingName(SiteState site, string ratingName)
         {
             // TODO: validate the name!
-            var referenceUrlized = TemplateFunctionsStringRenderer.Urlize(ratingName);
+            var referenceUrlized = StringRenderer.Urlize(ratingName);
             var referenceLink = $"{site.BaseURL}rating/{referenceUrlized}";
 
             return referenceLink;
@@ -59,7 +59,7 @@ namespace GlogGenerator.MarkdownExtensions
             _ = site.ValidateMatchingTagName(tagName);
 
             // TODO: grab this from the validation step!
-            var referenceUrlized = TemplateFunctionsStringRenderer.Urlize(tagName);
+            var referenceUrlized = StringRenderer.Urlize(tagName);
             var referenceLink = $"{site.BaseURL}tag/{referenceUrlized}";
 
             return referenceLink;

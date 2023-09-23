@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using GlogGenerator.Data;
 using GlogGenerator.HugoCompat;
+using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.RenderState
 {
@@ -71,8 +72,8 @@ namespace GlogGenerator.RenderState
                     delimiterStartChar: '%',
                     delimiterStopChar: '%');
 
-                this.templateGroup.RegisterRenderer(typeof(DateTimeOffset), new TemplateFunctionsDateTimeRenderer());
-                this.templateGroup.RegisterRenderer(typeof(string), new TemplateFunctionsStringRenderer());
+                this.templateGroup.RegisterRenderer(typeof(DateTimeOffset), new DateTimeRenderer());
+                this.templateGroup.RegisterRenderer(typeof(string), new StringRenderer());
             }
 
             return this.templateGroup;
@@ -80,7 +81,7 @@ namespace GlogGenerator.RenderState
 
         public CategoryData AddCategoryIfMissing(string categoryName, bool overwriteData = false)
         {
-            var categoryKey = TemplateFunctionsStringRenderer.Urlize(categoryName);
+            var categoryKey = StringRenderer.Urlize(categoryName);
 
             if (!this.Categories.ContainsKey(categoryKey))
             {
@@ -101,7 +102,7 @@ namespace GlogGenerator.RenderState
 
         public PlatformData AddPlatformIfMissing(string platformName, bool overwriteData = false)
         {
-            var platformKey = TemplateFunctionsStringRenderer.Urlize(platformName);
+            var platformKey = StringRenderer.Urlize(platformName);
 
             if (!this.Platforms.ContainsKey(platformKey))
             {
@@ -122,7 +123,7 @@ namespace GlogGenerator.RenderState
 
         public RatingData AddRatingIfMissing(string ratingName, bool overwriteData = false)
         {
-            var ratingKey = TemplateFunctionsStringRenderer.Urlize(ratingName);
+            var ratingKey = StringRenderer.Urlize(ratingName);
 
             if (!this.Ratings.ContainsKey(ratingKey))
             {
@@ -143,7 +144,7 @@ namespace GlogGenerator.RenderState
 
         public TagData AddTagIfMissing(string tagName, bool overwriteData = false)
         {
-            var tagKey = TemplateFunctionsStringRenderer.Urlize(tagName);
+            var tagKey = StringRenderer.Urlize(tagName);
 
             if (!this.Tags.ContainsKey(tagKey))
             {
@@ -164,7 +165,7 @@ namespace GlogGenerator.RenderState
 
         public GameData ValidateMatchingGameName(string gameName)
         {
-            var gameNameUrlized = TemplateFunctionsStringRenderer.Urlize(gameName);
+            var gameNameUrlized = StringRenderer.Urlize(gameName);
             if (!this.Games.TryGetValue(gameNameUrlized, out var gameData))
             {
                 throw new ArgumentException($"Game name \"{gameName}\" doesn't appear to exist in site state");
@@ -180,7 +181,7 @@ namespace GlogGenerator.RenderState
 
         public TagData ValidateMatchingTagName(string tagName)
         {
-            var tagNameUrlized = TemplateFunctionsStringRenderer.Urlize(tagName);
+            var tagNameUrlized = StringRenderer.Urlize(tagName);
             if (!this.Tags.TryGetValue(tagNameUrlized, out var tagData))
             {
                 throw new ArgumentException($"Tag name \"{tagName}\" doesn't appear to exist in site state");
@@ -203,7 +204,7 @@ namespace GlogGenerator.RenderState
             {
                 var gameData = GameData.FromIgdbGame(this.IgdbCache, igdbGame);
 
-                var gameKey = TemplateFunctionsStringRenderer.Urlize(gameData.Title);
+                var gameKey = StringRenderer.Urlize(gameData.Title);
                 this.Games[gameKey] = gameData;
             }
 
@@ -253,13 +254,13 @@ namespace GlogGenerator.RenderState
                 var gameTagsByUrlized = new Dictionary<string, TagData>();
                 foreach (var game in postData.Games)
                 {
-                    var gameUrlized = TemplateFunctionsStringRenderer.Urlize(game);
+                    var gameUrlized = StringRenderer.Urlize(game);
                     var gameData = this.Games[gameUrlized];
                     gameData.LinkedPosts.Add(postData);
 
                     foreach (var tag in gameData.Tags)
                     {
-                        var tagUrlized = TemplateFunctionsStringRenderer.Urlize(tag);
+                        var tagUrlized = StringRenderer.Urlize(tag);
                         var tagData = this.AddTagIfMissing(tag, overwriteData: false);
                         gameTagsByUrlized[tagUrlized] = tagData;
                     }
