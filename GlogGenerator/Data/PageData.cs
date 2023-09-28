@@ -1,25 +1,22 @@
+using System.Runtime.Serialization;
 using GlogGenerator.MarkdownExtensions;
 
 namespace GlogGenerator.Data
 {
-    public class PageData
+    public class PageData : ContentWithFrontMatterData
     {
         public static readonly string PageContentBaseDir = "content";
 
+        [IgnoreDataMember]
         public string SourceFilePath { get; private set; } = string.Empty;
 
+        [DataMember(Name = "permalink")]
         public string PermalinkRelative { get; private set; } = string.Empty;
-
-        public string Content { get; private set; } = string.Empty;
 
         public static PageData FromFilePath(string filePath)
         {
-            var data = ContentWithFrontMatterData.FromFilePath(filePath);
-
-            var page = new PageData();
+            var page = ContentWithFrontMatterData.FromFilePath<PageData>(filePath);
             page.SourceFilePath = filePath;
-
-            page.PermalinkRelative = data.GetValue<string>("permalink") ?? string.Empty;
 
             if (page.PermalinkRelative.StartsWith('/'))
             {
@@ -30,8 +27,6 @@ namespace GlogGenerator.Data
             {
                 page.PermalinkRelative += '/';
             }
-
-            page.Content = data.Content;
 
             return page;
         }

@@ -1,6 +1,5 @@
 +++
 permalink = "/upcoming"
-hide_date = true
 +++
 
 # Upcoming Releases of Interest

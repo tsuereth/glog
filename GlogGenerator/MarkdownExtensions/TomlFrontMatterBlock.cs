@@ -33,5 +33,12 @@ namespace GlogGenerator.MarkdownExtensions
         public TomlFrontMatterBlock(BlockParser parser) : base(parser)
         {
         }
+
+        public string Content {
+            get
+            {
+                return string.Join('\n', this.Lines.Lines);
+            }
+        }
     }
 }

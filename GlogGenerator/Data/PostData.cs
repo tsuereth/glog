@@ -1,59 +1,59 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Runtime.Serialization;
 using GlogGenerator.MarkdownExtensions;
 using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.Data
 {
-    public class PostData
+    public class PostData : ContentWithFrontMatterData
     {
         public static readonly string PostContentBaseDir = "content/post";
 
+        [IgnoreDataMember]
         public string SourceFilePath { get; private set; } = string.Empty;
 
+        [IgnoreDataMember]
         public string PermalinkRelative { get; private set; } = string.Empty;
 
-        public bool Draft { get; private set; }
+        [DataMember(Name = "draft")]
+        public bool Draft { get; private set; } = false;
 
+        // Parsing hack alert!
+        // Tomlyn's ToModel conversion uses Convert.ChangeType() which requires
+        // the target type to implement IConvertible; but DateTimeOffset doesn't.
+        // So instead of attempting to implement custom DateTimeOffset converters...
+        // we'll just keep the raw data as a string, and Parse() it later.
+        [DataMember(Name = "date")]
+        public string DateString { get; private set; } = string.Empty;
+
+        [IgnoreDataMember]
         public DateTimeOffset Date { get; private set; } = DateTimeOffset.MinValue;
 
+        [DataMember(Name = "title")]
         public string Title { get; private set; } = string.Empty;
 
+        [DataMember(Name = "category")]
         public List<string> Categories { get; private set; } = new List<string>();
 
+        [DataMember(Name = "game")]
         public List<string> Games { get; private set; } = new List<string>();
 
+        [DataMember(Name = "platform")]
         public List<string> Platforms { get; private set; } = new List<string>();
 
+        [DataMember(Name = "rating")]
         public List<string> Ratings { get; private set; } = new List<string>();
 
+        [DataMember(Name = "slug")]
         public string Slug { get; private set; } = string.Empty;
-
-        public string Content { get; private set; } = string.Empty;
 
         public static PostData FromFilePath(string filePath)
         {
-            var data = ContentWithFrontMatterData.FromFilePath(filePath);
-
-            var post = new PostData();
+            var post = ContentWithFrontMatterData.FromFilePath<PostData>(filePath);
             post.SourceFilePath = filePath;
-
-            var dateString = data.GetValue<string>("date");
-            if (dateString != null)
-            {
-                post.Date = DateTimeOffset.Parse(dateString, CultureInfo.InvariantCulture);
-            }
-
-            post.Draft = data.GetValue<bool>("draft");
-            post.Title = data.GetValue<string>("title") ?? string.Empty;
-            post.Categories = data.GetValue<List<string>>("category") ?? new List<string>();
-            post.Games = data.GetValue<List<string>>("game") ?? new List<string>();
-            post.Platforms = data.GetValue<List<string>>("platform") ?? new List<string>();
-            post.Ratings = data.GetValue<List<string>>("rating") ?? new List<string>();
-            post.Slug = data.GetValue<string>("slug") ?? string.Empty;
-
-            post.Content = data.Content;
+            post.Date = DateTimeOffset.Parse(post.DateString, CultureInfo.InvariantCulture);
 
             var permalinkPathParts = new List<string>(4)
             {
