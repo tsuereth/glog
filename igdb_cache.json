@@ -1293,10 +1293,6 @@
       "name": "Forza Horizon"
     },
     {
-      "id": 2815,
-      "name": "Fabula Nova Crystallis Final Fantasy"
-    },
-    {
       "id": 2824,
       "name": "The Wolf Among Us"
     },
@@ -1683,10 +1679,6 @@
     {
       "id": 6461,
       "name": "Ico"
-    },
-    {
-      "id": 6463,
-      "name": "Hyrule Warriors"
     },
     {
       "id": 6522,
@@ -10126,7 +10118,7 @@
     },
     {
       "category": 0,
-      "collection": 2815,
+      "collection": -1,
       "franchise": 4,
       "franchises": [
         4
@@ -26187,9 +26179,7 @@
         4
       ],
       "genres": [
-        8,
-        9,
-        15
+        9
       ],
       "id": 4239,
       "involved_companies": [
@@ -27137,7 +27127,7 @@
     },
     {
       "category": 0,
-      "collection": 6463,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         596,
@@ -42237,7 +42227,6 @@
         1
       ],
       "genres": [
-        4,
         12,
         25,
         31
