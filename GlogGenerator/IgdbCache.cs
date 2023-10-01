@@ -78,6 +78,23 @@ namespace GlogGenerator
             return null;
         }
 
+        public IgdbGame GetGameByName(string name)
+        {
+            var result = this.gamesById.Values.Where(g => g.NameForGlog.Equals(name, StringComparison.Ordinal));
+            if (result.Count() > 0)
+            {
+                return result.First();
+            }
+
+            result = this.gamesUnidentified.Where(g => g.NameForGlog.Equals(name, StringComparison.Ordinal));
+            if (result.Count() > 0)
+            {
+                return result.First();
+            }
+
+            throw new ArgumentException($"No game matches name {name}");
+        }
+
         public List<IgdbGame> GetAllGames()
         {
             var results = this.gamesById.Values.ToList();

@@ -1,12 +1,16 @@
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using GlogGenerator.IgdbApi;
 using GlogGenerator.RenderState;
+using GlogGenerator.Stats;
 using Microsoft.Extensions.Logging;
 using Mono.Options;
 
@@ -29,6 +33,9 @@ namespace GlogGenerator
             var hostOrigin = "http://localhost:1313";
             var newPostPath = string.Empty;
             var pathPrefix = "/glog/";
+            var reportPath = string.Empty;
+            var reportEndDateString = DateTimeOffset.Now.ToString("yyyy-MM-ddTHH:mm:ss", null);
+            var reportStartDateString = DateTimeOffset.Now.ToString("yyyy-01-01T00:00:00", null);
             var staticSiteOutputBasePath = Path.Combine(Directory.GetCurrentDirectory(), "public");
             var updateIgdbCache = false;
 
@@ -41,7 +48,10 @@ namespace GlogGenerator
                 { "h|host-origin=", $"Host origin (scheme + name + port) for the site, default: {hostOrigin}", o => hostOrigin = o },
                 { "n|new-post=", $"NEW|UNDRAFT: local path to a new/draft post file", o => newPostPath = o },
                 { "p|path-prefix=", $"Path prefix, default: {pathPrefix}", o => pathPrefix = o },
-                { "o|output-path=", $"BUILD: Static site output base path, default: {staticSiteOutputBasePath}", o => staticSiteOutputBasePath = o },
+                { "r|report-path=", "REPORTSTATS: local path to output a report", o => reportPath = o },
+                { "e|end-date=", $"REPORTSTATS: end date for generating a report, default: {reportEndDateString}", o => reportEndDateString = o },
+                { "s|start-date=", $"REPORTSTATS: start date for generating a report, default: {reportStartDateString}", o => reportStartDateString = o },
+                { "o|output-path=", $"BUILD: static site output base path, default: {staticSiteOutputBasePath}", o => staticSiteOutputBasePath = o },
                 { "u|update-igdb-cache=", $"Update the IGDB data cache (requires IGDB API credentials), default: {updateIgdbCache}", o => updateIgdbCache = bool.Parse(o) },
             };
             var verbs = options.Parse(args);
@@ -110,6 +120,10 @@ namespace GlogGenerator
                         buildTimer.ElapsedMilliseconds);
                     break;
 
+                case "help":
+                    options.WriteOptionDescriptions(Console.Out);
+                    break;
+
                 case "host":
                     LoadSiteContent(logger, site);
 
@@ -150,6 +164,95 @@ rating = []
                     logger.LogInformation(
                         "Created a new post file at {NewPostPath}",
                         newPostPath);
+                    break;
+
+                case "reportstats":
+                    if (string.IsNullOrEmpty(reportPath))
+                    {
+                        throw new ArgumentException("Missing or empty --report-path");
+                    }
+
+                    var reportStartDate = DateTimeOffset.Parse(reportStartDateString, CultureInfo.InvariantCulture);
+                    var reportEndDate = DateTimeOffset.Parse(reportEndDateString, CultureInfo.InvariantCulture);
+
+                    LoadSiteContent(logger, site);
+
+                    // TODO: Move this into an encapsulated class/file for reporting code.
+                    var statsByGameAndPlatform = new Dictionary<string, GameStats>();
+                    var reportPosts = site.Posts.Where(p => p.Date >= reportStartDate && p.Date <= reportEndDate).ToList();
+                    foreach (var reportPost in reportPosts)
+                    {
+                        foreach (var postGame in reportPost.Games)
+                        {
+                            foreach (var postPlatform in reportPost.Platforms)
+                            {
+                                var gameAndPlatformKey = $"{postGame}__{postPlatform}";
+
+                                if (!statsByGameAndPlatform.ContainsKey(gameAndPlatformKey))
+                                {
+                                    var igdbGame = site.IgdbCache.GetGameByName(postGame);
+
+                                    statsByGameAndPlatform[gameAndPlatformKey] = new GameStats()
+                                    {
+                                        Title = postGame,
+                                        Platform = postPlatform,
+                                        Type = igdbGame.Category.Description(),
+                                        FirstPosted = reportPost.Date,
+                                        LastPosted = reportPost.Date,
+                                    };
+                                }
+
+                                if (reportPost.Date < statsByGameAndPlatform[gameAndPlatformKey].FirstPosted)
+                                {
+                                    statsByGameAndPlatform[gameAndPlatformKey].FirstPosted = reportPost.Date;
+                                }
+
+                                if (reportPost.Date > statsByGameAndPlatform[gameAndPlatformKey].LastPosted)
+                                {
+                                    statsByGameAndPlatform[gameAndPlatformKey].LastPosted = reportPost.Date;
+                                }
+
+                                if (reportPost.Ratings.Count > 0)
+                                {
+                                    statsByGameAndPlatform[gameAndPlatformKey].Rating = reportPost.Ratings[0];
+                                }
+
+                                ++statsByGameAndPlatform[gameAndPlatformKey].NumPosts;
+                            }
+                        }
+                    }
+
+                    var reportStats = statsByGameAndPlatform.Values.OrderBy(s => s.FirstPosted).ToList();
+
+                    // TODO: encapsulated CSV serializer!
+                    var reportTextBuilder = new StringBuilder();
+                    reportTextBuilder.AppendLine("Title,Platform,Type,Firstposted,Lastposted,Rating,Numposts");
+                    foreach (var reportStat in reportStats)
+                    {
+                        reportTextBuilder.Append("\"");
+                        reportTextBuilder.Append(reportStat.Title);
+                        reportTextBuilder.Append("\",");
+                        reportTextBuilder.Append(reportStat.Platform);
+                        reportTextBuilder.Append(",");
+                        reportTextBuilder.Append(reportStat.Type);
+                        reportTextBuilder.Append(",");
+                        reportTextBuilder.Append(reportStat.FirstPosted?.ToString("o"));
+                        reportTextBuilder.Append(",");
+                        reportTextBuilder.Append(reportStat.LastPosted?.ToString("o"));
+                        reportTextBuilder.Append(",");
+                        reportTextBuilder.Append(string.IsNullOrEmpty(reportStat.Rating) ? "N/A" : reportStat.Rating);
+                        reportTextBuilder.Append(",");
+                        reportTextBuilder.Append(reportStat.NumPosts.ToString(CultureInfo.InvariantCulture));
+
+                        reportTextBuilder.AppendLine();
+                    }
+
+                    File.WriteAllText(reportPath, reportTextBuilder.ToString(), outputEncoding);
+                    logger.LogInformation(
+                        "Generated report from {ReportStartDate} to {ReportEndDate} at {ReportPath}",
+                        reportStartDate,
+                        reportEndDate,
+                        reportPath);
                     break;
 
                 case "undraft":

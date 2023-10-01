@@ -33,6 +33,8 @@ namespace GlogGenerator.RenderState
 
         public Dictionary<string, PlatformData> Platforms { get; set; } = new Dictionary<string, PlatformData>();
 
+        public List<PostData> Posts { get; set; } = new List<PostData>();
+
         public Dictionary<string, RatingData> Ratings { get; set; } = new Dictionary<string, RatingData>();
 
         public Dictionary<string, TagData> Tags { get; set; } = new Dictionary<string, TagData>();
@@ -296,16 +298,16 @@ namespace GlogGenerator.RenderState
                     throw new InvalidDataException($"Failed to load post from {postPath}", ex);
                 }
             }
+            this.Posts = allPosts.OrderByDescending(p => p.Date).ToList();
 
             // Now, we can render content.
-            allPosts = allPosts.OrderByDescending(p => p.Date).ToList();
-            var allPostPages = new List<PageState>(allPosts.Count);
-            foreach (var postData in allPosts)
+            var postPages = new List<PageState>(this.Posts.Count);
+            foreach (var postData in this.Posts)
             {
                 try
                 {
                     var page = PageState.FromPostData(this, postData);
-                    allPostPages.Add(page);
+                    postPages.Add(page);
                     this.ContentRoutes.Add(page.OutputPathRelative, page);
                 }
                 catch (Exception ex)
@@ -322,12 +324,12 @@ namespace GlogGenerator.RenderState
                 Permalink = $"{this.BaseURL}post/",
                 OutputPathRelative = "post/index.html",
                 RenderTemplateName = "list",
-                LinkedPosts = allPosts,
+                LinkedPosts = this.Posts,
             };
             this.ContentRoutes.Add(postsListPage.OutputPathRelative, postsListPage);
 
             const int pagesPerHistoryPage = 10;
-            for (var historyPageNum = 0; (historyPageNum * pagesPerHistoryPage) < allPostPages.Count; ++historyPageNum)
+            for (var historyPageNum = 0; (historyPageNum * pagesPerHistoryPage) < postPages.Count; ++historyPageNum)
             {
                 var historyPage = new PageState(this)
                 {
@@ -341,12 +343,12 @@ namespace GlogGenerator.RenderState
 
                 var firstPostNum = historyPageNum * pagesPerHistoryPage;
                 var postsCount = pagesPerHistoryPage;
-                if (firstPostNum + postsCount >= allPostPages.Count)
+                if (firstPostNum + postsCount >= postPages.Count)
                 {
-                    postsCount = allPostPages.Count - firstPostNum;
+                    postsCount = postPages.Count - firstPostNum;
                 }
 
-                historyPage.HistoryPosts = allPostPages.GetRange(firstPostNum, postsCount);
+                historyPage.HistoryPosts = postPages.GetRange(firstPostNum, postsCount);
 
                 if (historyPageNum == 0)
                 {
@@ -364,7 +366,7 @@ namespace GlogGenerator.RenderState
                     historyPage.PrevLinkRelative = $"page/{prevPageOneBased}/";
                 }
 
-                if (((historyPageNum + 1) * pagesPerHistoryPage) >= allPostPages.Count)
+                if (((historyPageNum + 1) * pagesPerHistoryPage) >= postPages.Count)
                 {
                     historyPage.HideNextLink = true;
                 }
@@ -387,14 +389,14 @@ namespace GlogGenerator.RenderState
                 this.ContentRoutes.Add(historyPage.OutputPathRelative, historyPage);
             }
 
-            var rssFeedItems = Math.Min(allPostPages.Count, 15);
+            var rssFeedItems = Math.Min(postPages.Count, 15);
             var rssFeedPage = new PageState(this)
             {
-                Date = allPosts[0].Date,
+                Date = this.Posts[0].Date,
                 OutputPathRelative = "index.xml",
                 Permalink = this.BaseURL,
                 RenderTemplateName = "rss",
-                HistoryPosts = allPostPages.GetRange(0, rssFeedItems),
+                HistoryPosts = postPages.GetRange(0, rssFeedItems),
             };
             this.ContentRoutes.Add(rssFeedPage.OutputPathRelative, rssFeedPage);
 
