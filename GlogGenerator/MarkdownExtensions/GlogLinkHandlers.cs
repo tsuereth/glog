@@ -11,7 +11,7 @@ namespace GlogGenerator.MarkdownExtensions
         {
             { "category", GetPermalinkForCategoryName },
             { "game", GetPermalinkForGameName },
-            { "platform", GetPermalinkForPlatformName },
+            { "platform", GetPermalinkForPlatformAbbreviation },
             { "rating", GetPermalinkForRatingName },
             { "tag", GetPermalinkForTagName },
         };
@@ -46,15 +46,12 @@ namespace GlogGenerator.MarkdownExtensions
             return $"{site.BaseURL}game/{referenceUrlized}";
         }
 
-        public static string GetPermalinkForPlatformName(SiteState site, string platformName)
+        public static string GetPermalinkForPlatformAbbreviation(SiteState site, string platformAbbreviation)
         {
-            // TODO: Match platform references against SiteState (and its IGDB cache).
+            _ = site.ValidateMatchingPlatformAbbreviation(platformAbbreviation);
 
-            var referenceUrlized = StringRenderer.Urlize(platformName);
-
-            // TODO: Re-enable this content route validation once we're sure that
-            // every platform reference has valid data from IGDB.
-            //_ = ValidateSiteHasContentForLink(site, "platform", referenceUrlized);
+            var referenceUrlized = StringRenderer.Urlize(platformAbbreviation);
+            _ = ValidateSiteHasContentForLink(site, "platform", referenceUrlized);
 
             return $"{site.BaseURL}platform/{referenceUrlized}";
         }

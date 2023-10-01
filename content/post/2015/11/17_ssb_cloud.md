@@ -3,7 +3,7 @@ category = ["Looking Forward To It"]
 date = "2015-11-17T23:04:15-08:00"
 draft = false
 game = ["Super Smash Bros. for Wii U"]
-platform = ["Wii U"]
+platform = ["WiiU"]
 title = "God damn you, Uematsu!"
 
 +++

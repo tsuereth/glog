@@ -28,7 +28,7 @@ Game development is hard; it is known.  And scheduling things is also pretty har
 
 It feels weird to praise <game:Yooka-Laylee> for anything, but at least those industry vets knew how to schedule themselves; they only had 2 years from Kickstarter (May, 2015) to release (April, 2017).  And to be fair, Bloodstained and Indivisible aren't doing all that bad, either -- projects which are similarly staffed by game development veterans.
 
-I hope that these Kickstarter indies, and anyone looking to follow in their footsteps, have come to understand the precarious position of <b>years-long</b> hype periods.  Games like Chasm and Timespinner looked fresh and exciting when they were announced, but now their community interest is all but gone.  Factorio's mechanics were brilliant, when it was new; now its competitors have had years to copy and iterate on its ideas.  Several of these games have even had to change their targeted platforms, the <platform:Wii U> having come and gone.
+I hope that these Kickstarter indies, and anyone looking to follow in their footsteps, have come to understand the precarious position of <b>years-long</b> hype periods.  Games like Chasm and Timespinner looked fresh and exciting when they were announced, but now their community interest is all but gone.  Factorio's mechanics were brilliant, when it was new; now its competitors have had years to copy and iterate on its ideas.  Several of these games have even had to change their targeted platforms, the [Wii U](platform:WiiU) having come and gone.
 
 And if a game in development for three, four, or even <i>five</i> years is even slightly underwhelming, well... may Gunpei have mercy on the developers' Twitter accounts.
 

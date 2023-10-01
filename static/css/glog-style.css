@@ -132,12 +132,12 @@ strong {
 .entry-content blockquote p:first-child {
 	margin-top: 0;
 }
-.gameinfo {
+.gameinfo, .platforminfo {
 	margin-top: 40px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ddd;
 }
-.gameinfo .link {
+.gameinfo .link, .platforminfo .link {
 	margin-top: 20px;
 	font-size: 1.4em;
 	font-style: italic;
@@ -147,13 +147,18 @@ strong {
 	line-height: 2;
 	color: #999;
 }
-.gameinfo .title {
+.gameinfo .title, .platforminfo .title {
 	font-size: 4.0em;
 	font-weight: 500;
 }
 .gameinfo .title:before {
 	font-family: FontAwesome;
 	content: "\f11b";
+	margin-right: 20px;
+}
+.platforminfo .title:before {
+	font-family: FontAwesome;
+	content: "\f108";
 	margin-right: 20px;
 }
 .games:before {

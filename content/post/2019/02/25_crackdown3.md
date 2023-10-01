@@ -3,7 +3,7 @@ date = "2019-02-25T22:08:04-08:00"
 title = "A sequel to Crackdown"
 category = ["Playing A Game"]
 game = ["Crackdown 3"]
-platform = ["Xbox One"]
+platform = ["XONE"]
 rating = ["Good"]
 +++
 

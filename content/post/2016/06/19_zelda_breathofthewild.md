@@ -3,7 +3,7 @@ category = ["Looking Forward To It"]
 date = "2016-06-19T22:35:45-07:00"
 draft = false
 game = ["The Legend of Zelda: Breath of the Wild"]
-platform = ["Wii U"]
+platform = ["WiiU"]
 rating = []
 title = "A Breath of Fresh Wild"
 

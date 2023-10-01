@@ -183,7 +183,7 @@ namespace GlogGenerator.RenderState
 
             page.Permalink = $"{site.BaseURL}{postData.PermalinkRelative}";
 
-            page.Platforms = postData.Platforms.Select(c => new PlatformData() { Name = c }).ToList();
+            page.Platforms = postData.Platforms.Select(c => new PlatformData() { Abbreviation = c }).ToList();
 
             page.Ratings = postData.Ratings.Select(c => new RatingData() { Name = c }).ToList();
 
@@ -267,9 +267,25 @@ namespace GlogGenerator.RenderState
 
             page.Permalink = $"{site.BaseURL}{platformData.PermalinkRelative}";
 
-            page.Title = platformData.Name;
+            if (!string.IsNullOrEmpty(platformData.Name))
+            {
+                if (platformData.Name.Contains(platformData.Abbreviation, StringComparison.Ordinal))
+                {
+                    page.Title = platformData.Name;
+                }
+                else
+                {
+                    page.Title = $"{platformData.Name} ({platformData.Abbreviation})";
+                }
+            }
+            else
+            {
+                page.Title = platformData.Abbreviation;
+            }
 
             page.PageType = "platforms";
+
+            page.IgdbUrl = platformData.IgdbUrl;
 
             page.LinkedPosts = platformData.LinkedPosts.OrderByDescending(p => p.Date).ToList();
 
@@ -283,7 +299,7 @@ namespace GlogGenerator.RenderState
             }
 
             page.OutputPathRelative = $"{platformData.PermalinkRelative}index.html";
-            page.RenderTemplateName = "list";
+            page.RenderTemplateName = "list_platform";
 
             return page;
         }

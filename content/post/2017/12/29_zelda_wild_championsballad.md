@@ -6,7 +6,7 @@ game = ["The Legend of Zelda: Breath of the Wild - The Champions' Ballad"]
 platform = ["Switch"]
 +++
 
-When [Champions' Ballad](game:The Legend of Zelda: Breath of the Wild - The Champions' Ballad) was released earlier this month, I downloaded and tried it (on <platform:Wii U>) almost immediately.  And abruptly ran into a small, but critical flaw in this DLC: it came out about six months too late.
+When [Champions' Ballad](game:The Legend of Zelda: Breath of the Wild - The Champions' Ballad) was released earlier this month, I downloaded and tried it (on [Wii U](platform:WiiU)) almost immediately.  And abruptly ran into a small, but critical flaw in this DLC: it came out about six months too late.
 
 [Breath of the Wild](game:The Legend of Zelda: Breath of the Wild) was a dense, complicated game with lots of mastery to build.  And I hadn't played it since <i>March</i>.  So to call my aptitude "rusty" would be an understatement.
 

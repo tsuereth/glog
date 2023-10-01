@@ -3,7 +3,7 @@ date = "2017-12-10T22:24:53-08:00"
 title = "Bowser's Indigestion Story"
 category = ["Playing A Game"]
 game = ["Mario & Luigi: Bowser's Inside Story"]
-platform = ["DS"]
+platform = ["NDS"]
 rating = ["Meh"]
 +++
 

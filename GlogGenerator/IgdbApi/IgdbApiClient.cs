@@ -110,8 +110,8 @@ namespace GlogGenerator.IgdbApi
                     throw new ArgumentException($"{typeof(T).FullName}.{typeProperty.Name} has an empty JsonProperty name");
                 }
 
-                // SPECIAL CASE: "name_glogOverride" isn't an IGDB field.
-                if (jsonPropertyAttr.PropertyName.Equals("name_glogOverride", StringComparison.Ordinal))
+                // SPECIAL CASE: "*_glogOverride" properties aren't IGDB fields.
+                if (jsonPropertyAttr.PropertyName.EndsWith("_glogOverride", StringComparison.Ordinal))
                 {
                     continue;
                 }
@@ -224,6 +224,11 @@ namespace GlogGenerator.IgdbApi
         public async Task<List<IgdbInvolvedCompany>> GetInvolvedCompaniesAsync(List<int> ids)
         {
             return await this.GetItemsAsync<IgdbInvolvedCompany>("involved_companies", ids);
+        }
+
+        public async Task<List<IgdbPlatform>> GetPlatformsAsync(List<int> ids)
+        {
+            return await this.GetItemsAsync<IgdbPlatform>("platforms", ids);
         }
 
         public async Task<List<IgdbPlayerPerspective>> GetPlayerPerspectivesAsync(List<int> ids)

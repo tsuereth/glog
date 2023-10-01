@@ -101,22 +101,22 @@ namespace GlogGenerator.RenderState
             return this.Categories[categoryKey];
         }
 
-        public PlatformData AddPlatformIfMissing(string platformName, bool overwriteData = false)
+        public PlatformData AddPlatformIfMissing(string platformAbbreviation, bool overwriteData = false)
         {
-            var platformKey = StringRenderer.Urlize(platformName);
+            var platformKey = StringRenderer.Urlize(platformAbbreviation);
 
             if (!this.Platforms.ContainsKey(platformKey))
             {
                 var newPlatform = new PlatformData()
                 {
-                    Name = platformName,
+                    Abbreviation = platformAbbreviation,
                 };
 
                 this.Platforms[platformKey] = newPlatform;
             }
             else if (overwriteData)
             {
-                this.Platforms[platformKey].Name = platformName;
+                this.Platforms[platformKey].Abbreviation = platformAbbreviation;
             }
 
             return this.Platforms[platformKey];
@@ -180,6 +180,22 @@ namespace GlogGenerator.RenderState
             return gameData;
         }
 
+        public PlatformData ValidateMatchingPlatformAbbreviation(string platformAbbreviation)
+        {
+            var platformAbbreviationUrlized = StringRenderer.Urlize(platformAbbreviation);
+            if (!this.Platforms.TryGetValue(platformAbbreviationUrlized, out var platformData))
+            {
+                throw new ArgumentException($"Platform abbreviation \"{platformAbbreviation}\" doesn't appear to exist in site state");
+            }
+
+            if (!platformData.Abbreviation.Equals(platformAbbreviation, StringComparison.Ordinal))
+            {
+                throw new ArgumentException($"Platform abbreviation \"{platformAbbreviation}\" doesn't exactly match platform in site state \"{platformData.Abbreviation}\"");
+            }
+
+            return platformData;
+        }
+
         public TagData ValidateMatchingTagName(string tagName)
         {
             var tagNameUrlized = StringRenderer.Urlize(tagName);
@@ -207,6 +223,15 @@ namespace GlogGenerator.RenderState
 
                 var gameKey = StringRenderer.Urlize(gameData.Title);
                 this.Games[gameKey] = gameData;
+            }
+
+            // And platform data!
+            foreach (var igdbPlatform in this.IgdbCache.GetAllPlatforms())
+            {
+                var platformData = PlatformData.FromIgdbPlatform(this.IgdbCache, igdbPlatform);
+
+                var platformKey = StringRenderer.Urlize(platformData.Abbreviation);
+                this.Platforms[platformKey] = platformData;
             }
 
             // Prepare tags from game metadata.
@@ -283,7 +308,7 @@ namespace GlogGenerator.RenderState
 
                     foreach (var platform in postData.Platforms)
                     {
-                        var platformData = this.AddPlatformIfMissing(platform, overwriteData: true);
+                        var platformData = this.AddPlatformIfMissing(platform, overwriteData: false);
                         platformData.LinkedPosts.Add(postData);
                     }
 
@@ -446,7 +471,7 @@ namespace GlogGenerator.RenderState
                 RenderTemplateName = "termslist",
                 Title = "Platforms",
                 PageType = "platforms",
-                Terms = this.Platforms.Values.Select(p => p.Name).OrderBy(n => n, StringComparer.Ordinal).ToList(),
+                Terms = this.Platforms.Values.Select(p => p.Abbreviation).OrderBy(n => n, StringComparer.Ordinal).ToList(),
                 TermsType = "platform",
             };
             this.ContentRoutes.Add(platformsIndex.OutputPathRelative, platformsIndex);

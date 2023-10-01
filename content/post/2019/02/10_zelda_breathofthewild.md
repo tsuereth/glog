@@ -23,7 +23,7 @@ Holding a shield is a huge defensive advantage, both passively (lowering enemy d
 
 And there needs to be some anti-rain ability.  Rain takes away too many valuable gameplay tools - climbing, lighting a fire, <i>seeing clearly</i> - with no mitigation except to teleport away from it.  Here's hoping for some kind of magic umbrella, or maybe even a reverse <a href="https://zelda.gamepedia.com/Song_of_Storms">Song of Storms</a>.
 
-As for the Switch game's advantages over its <platform:Wii U> version, without putting them side by side, it's hard for me to say if the display resolution, or level of detail, or frame rate are any better.  Far-off objects are still indistinct; long gliding sessions still show plenty of pop-in; and busy areas like Kakariko Village or the Great Deku Tree still drop frames prodigiously.
+As for the Switch game's advantages over its [Wii U](platform:WiiU) version, without putting them side by side, it's hard for me to say if the display resolution, or level of detail, or frame rate are any better.  Far-off objects are still indistinct; long gliding sessions still show plenty of pop-in; and busy areas like Kakariko Village or the Great Deku Tree still drop frames prodigiously.
 
 But as before, the game experience is compelling enough that these shortcomings are easy to ignore.
 
