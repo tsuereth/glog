@@ -177,6 +177,20 @@
       "company": 12832
     }
   ],
+  "platforms": [
+    {
+      "abbreviation": "PC",
+      "id": 6,
+      "name": "PC (Microsoft Windows)",
+      "url": "https://www.igdb.com/platforms/win"
+    },
+    {
+      "abbreviation": "Android",
+      "id": 34,
+      "name": "Android",
+      "url": "https://www.igdb.com/platforms/android"
+    }
+  ],
   "playerPerspectives": [
     {
       "id": 1,

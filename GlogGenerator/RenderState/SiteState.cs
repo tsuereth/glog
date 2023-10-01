@@ -180,6 +180,22 @@ namespace GlogGenerator.RenderState
             return gameData;
         }
 
+        public PlatformData ValidateMatchingPlatformAbbreviation(string platformAbbreviation)
+        {
+            var platformAbbreviationUrlized = StringRenderer.Urlize(platformAbbreviation);
+            if (!this.Platforms.TryGetValue(platformAbbreviationUrlized, out var platformData))
+            {
+                throw new ArgumentException($"Platform abbreviation \"{platformAbbreviation}\" doesn't appear to exist in site state");
+            }
+
+            if (!platformData.Name.Equals(platformAbbreviation, StringComparison.Ordinal))
+            {
+                throw new ArgumentException($"Platform abbreviation \"{platformAbbreviation}\" doesn't exactly match platform in site state \"{platformData.Name}\"");
+            }
+
+            return platformData;
+        }
+
         public TagData ValidateMatchingTagName(string tagName)
         {
             var tagNameUrlized = StringRenderer.Urlize(tagName);
@@ -207,6 +223,15 @@ namespace GlogGenerator.RenderState
 
                 var gameKey = StringRenderer.Urlize(gameData.Title);
                 this.Games[gameKey] = gameData;
+            }
+
+            // And platform data!
+            foreach (var igdbPlatform in this.IgdbCache.GetAllPlatforms())
+            {
+                var platformData = PlatformData.FromIgdbPlatform(this.IgdbCache, igdbPlatform);
+
+                var platformKey = StringRenderer.Urlize(platformData.Name);
+                this.Platforms[platformKey] = platformData;
             }
 
             // Prepare tags from game metadata.
@@ -283,7 +308,7 @@ namespace GlogGenerator.RenderState
 
                     foreach (var platform in postData.Platforms)
                     {
-                        var platformData = this.AddPlatformIfMissing(platform, overwriteData: true);
+                        var platformData = this.AddPlatformIfMissing(platform, overwriteData: false);
                         platformData.LinkedPosts.Add(postData);
                     }
 
