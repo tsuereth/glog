@@ -8,6 +8,8 @@
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <AnalysisLevel>7.0</AnalysisLevel>
     <AnalysisMode>Recommended</AnalysisMode>
+    <AnalysisModePerformance>None</AnalysisModePerformance>
+    <AnalysisModeStyle>None</AnalysisModeStyle>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
