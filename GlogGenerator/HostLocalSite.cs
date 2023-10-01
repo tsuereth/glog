@@ -1,12 +1,15 @@
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net;
 using GlogGenerator.RenderState;
+using Microsoft.Extensions.Logging;
 
 namespace GlogGenerator
 {
-    public static class HostLocalSite
+    public class HostLocalSite
     {
         public static void Host(
+            ILogger logger,
             SiteState site,
             string hostOrigin,
             string pathPrefix)
@@ -62,7 +65,12 @@ namespace GlogGenerator
                             if (site.ContentRoutes.TryGetValue(pathCheck, out var content))
                             {
                                 pathFound = true;
+                                var responseTimer = Stopwatch.StartNew();
                                 content.WriteHttpListenerResponse(site, ref response);
+                                responseTimer.Stop();
+                                logger.LogInformation("Wrote {ContentPath} in {ResponseTimeMs} ms",
+                                    pathCheck,
+                                    responseTimer.ElapsedMilliseconds);
                                 break;
                             }
                         }
@@ -70,11 +78,16 @@ namespace GlogGenerator
                         if (!pathFound)
                         {
                             response.StatusCode = (int)HttpStatusCode.NotFound;
+                            logger.LogWarning("Didn't find content matching {RequestPath}",
+                                requestPath);
                         }
                     }
                     else
                     {
                         response.StatusCode = (int)HttpStatusCode.NotFound;
+                        logger.LogWarning("Request path {RequestPath} didn't start with expected prefix {PathPrefix}",
+                            requestPath,
+                            pathPrefix);
                     }
 
                     response.Close();

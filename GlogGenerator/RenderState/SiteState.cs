@@ -221,9 +221,16 @@ namespace GlogGenerator.RenderState
             var staticFilePaths = Directory.EnumerateFiles(staticBasePath, "*.*", SearchOption.AllDirectories).ToList();
             foreach (var staticFilePath in staticFilePaths)
             {
-                var staticFile = StaticFileData.FromFilePath(staticFilePath);
-                var outputFile = StaticFileState.FromStaticFileData(this, staticFile);
-                this.ContentRoutes.Add(outputFile.OutputPathRelative, outputFile);
+                try
+                {
+                    var staticFile = StaticFileData.FromFilePath(staticFilePath);
+                    var outputFile = StaticFileState.FromStaticFileData(this, staticFile);
+                    this.ContentRoutes.Add(outputFile.OutputPathRelative, outputFile);
+                }
+                catch (Exception ex)
+                {
+                    throw new InvalidDataException($"Failed to load static content from {staticFilePath}", ex);
+                }
             }
 
             var templateGroup = this.GetTemplateGroup();
@@ -235,51 +242,58 @@ namespace GlogGenerator.RenderState
             var allPosts = new List<PostData>();
             foreach (var postPath in postPaths)
             {
-                var postData = PostData.FromFilePath(postPath);
-
-                if (postData.Draft)
+                try
                 {
-                    continue;
-                }
+                    var postData = PostData.FromFilePath(postPath);
 
-                allPosts.Add(postData);
-
-                foreach (var category in postData.Categories)
-                {
-                    var categoryData = this.AddCategoryIfMissing(category, overwriteData: true);
-                    categoryData.LinkedPosts.Add(postData);
-                }
-
-                var gameTagsByUrlized = new Dictionary<string, TagData>();
-                foreach (var game in postData.Games)
-                {
-                    var gameUrlized = StringRenderer.Urlize(game);
-                    var gameData = this.Games[gameUrlized];
-                    gameData.LinkedPosts.Add(postData);
-
-                    foreach (var tag in gameData.Tags)
+                    if (postData.Draft)
                     {
-                        var tagUrlized = StringRenderer.Urlize(tag);
-                        var tagData = this.AddTagIfMissing(tag, overwriteData: false);
-                        gameTagsByUrlized[tagUrlized] = tagData;
+                        continue;
+                    }
+
+                    allPosts.Add(postData);
+
+                    foreach (var category in postData.Categories)
+                    {
+                        var categoryData = this.AddCategoryIfMissing(category, overwriteData: true);
+                        categoryData.LinkedPosts.Add(postData);
+                    }
+
+                    var gameTagsByUrlized = new Dictionary<string, TagData>();
+                    foreach (var game in postData.Games)
+                    {
+                        var gameUrlized = StringRenderer.Urlize(game);
+                        var gameData = this.Games[gameUrlized];
+                        gameData.LinkedPosts.Add(postData);
+
+                        foreach (var tag in gameData.Tags)
+                        {
+                            var tagUrlized = StringRenderer.Urlize(tag);
+                            var tagData = this.AddTagIfMissing(tag, overwriteData: false);
+                            gameTagsByUrlized[tagUrlized] = tagData;
+                        }
+                    }
+
+                    foreach (var tagData in gameTagsByUrlized.Values)
+                    {
+                        tagData.LinkedPosts.Add(postData);
+                    }
+
+                    foreach (var platform in postData.Platforms)
+                    {
+                        var platformData = this.AddPlatformIfMissing(platform, overwriteData: true);
+                        platformData.LinkedPosts.Add(postData);
+                    }
+
+                    foreach (var rating in postData.Ratings)
+                    {
+                        var ratingData = this.AddRatingIfMissing(rating, overwriteData: true);
+                        ratingData.LinkedPosts.Add(postData);
                     }
                 }
-
-                foreach (var tagData in gameTagsByUrlized.Values)
+                catch (Exception ex)
                 {
-                    tagData.LinkedPosts.Add(postData);
-                }
-
-                foreach (var platform in postData.Platforms)
-                {
-                    var platformData = this.AddPlatformIfMissing(platform, overwriteData: true);
-                    platformData.LinkedPosts.Add(postData);
-                }
-
-                foreach (var rating in postData.Ratings)
-                {
-                    var ratingData = this.AddRatingIfMissing(rating, overwriteData: true);
-                    ratingData.LinkedPosts.Add(postData);
+                    throw new InvalidDataException($"Failed to load post from {postPath}", ex);
                 }
             }
 
@@ -288,9 +302,16 @@ namespace GlogGenerator.RenderState
             var allPostPages = new List<PageState>(allPosts.Count);
             foreach (var postData in allPosts)
             {
-                var page = PageState.FromPostData(this, postData);
-                allPostPages.Add(page);
-                this.ContentRoutes.Add(page.OutputPathRelative, page);
+                try
+                {
+                    var page = PageState.FromPostData(this, postData);
+                    allPostPages.Add(page);
+                    this.ContentRoutes.Add(page.OutputPathRelative, page);
+                }
+                catch (Exception ex)
+                {
+                    throw new InvalidDataException($"Failed to generate page from post {postData.SourceFilePath}", ex);
+                }
             }
 
             var postsListPage = new PageState(this)

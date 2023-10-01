@@ -5,14 +5,19 @@ using System.Reflection;
 using System.Threading.Tasks;
 using GlogGenerator.IgdbApi;
 using GlogGenerator.RenderState;
+using Microsoft.Extensions.Logging;
 using Mono.Options;
 
 namespace GlogGenerator
 {
-    public static class Program
+    public class Program
     {
         static async Task<int> Main(string[] args)
         {
+            using var loggerFactory = LoggerFactory.Create(c => c.AddConsole());
+
+            var logger = loggerFactory.CreateLogger<Program>();
+
             var projectProperties = Assembly.GetEntryAssembly().GetCustomAttribute<ProjectPropertiesAttribute>();
 
             var igdbClientId = string.Empty;
@@ -40,7 +45,7 @@ namespace GlogGenerator
             var activeVerb = string.Empty;
             if (verbs.Count == 0)
             {
-                Console.WriteLine("No verbs provided, defaulting to `host`");
+                logger.LogWarning("No verbs provided, defaulting to `host`");
                 activeVerb = "host";
             }
             else
@@ -48,7 +53,10 @@ namespace GlogGenerator
                 activeVerb = verbs[0];
                 if (verbs.Count > 1)
                 {
-                    Console.WriteLine($"More than one verb was provided, using `{activeVerb}` and ignoring the following: {string.Join(", ", verbs.GetRange(1, verbs.Count - 1))}");
+                    logger.LogInformation(
+                        "More than one verb was provided, using `{ActiveVerb}` and ignoring the following: {IgnoredVerbs}",
+                        activeVerb,
+                        string.Join(", ", verbs.GetRange(1, verbs.Count - 1)));
                 }
             }
 
@@ -69,31 +77,46 @@ namespace GlogGenerator
 
                 using (var igdbApiClient = new IgdbApiClient(igdbClientId, igdbClientSecret))
                 {
+                    logger.LogInformation("Updating IGDB cache...");
+                    var cacheUpdateTimer = Stopwatch.StartNew();
                     await site.IgdbCache.UpdateFromApiClient(igdbApiClient);
+                    cacheUpdateTimer.Stop();
+                    logger.LogInformation(
+                        "Finished updating in {CacheUpdateTimeMs} ms",
+                        cacheUpdateTimer.ElapsedMilliseconds);
                 }
 
                 site.IgdbCache.WriteToJsonFile(inputFilesBasePath);
             }
 
-            Console.WriteLine("Loading content...");
+            logger.LogInformation("Loading content...");
             var loadTimer = Stopwatch.StartNew();
             site.LoadContent();
             loadTimer.Stop();
-            Console.WriteLine($"Finished loading in {loadTimer.ElapsedMilliseconds} ms");
+            logger.LogInformation(
+                "Finished loading {ContentCount} content routes in {LoadTimeMs} ms",
+                site.ContentRoutes.Count,
+                loadTimer.ElapsedMilliseconds);
 
             switch (activeVerb.ToLowerInvariant())
             {
                 case "build":
-                    Console.WriteLine("Building content...");
+                    logger.LogInformation("Building content...");
                     var buildTimer = Stopwatch.StartNew();
                     BuildStaticSite.Build(site, staticSiteOutputBasePath);
                     buildTimer.Stop();
-                    Console.WriteLine($"Finished building in {buildTimer.ElapsedMilliseconds} ms");
+                    logger.LogInformation(
+                        "Finished building {ContentCount} content routes in {BuildTimeMs} ms",
+                        site.ContentRoutes.Count,
+                        buildTimer.ElapsedMilliseconds);
                     break;
 
                 case "host":
-                    Console.WriteLine($"Hosting site at {hostOrigin}{pathPrefix}");
-                    HostLocalSite.Host(site, hostOrigin, pathPrefix);
+                    logger.LogInformation(
+                        "Hosting site at {HostOriginAndPath}",
+                        hostOrigin + pathPrefix);
+                    var hostLogger = loggerFactory.CreateLogger<HostLocalSite>();
+                    HostLocalSite.Host(hostLogger, site, hostOrigin, pathPrefix);
                     break;
 
                 default:
