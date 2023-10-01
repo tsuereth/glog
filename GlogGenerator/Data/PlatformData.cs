@@ -10,12 +10,16 @@ namespace GlogGenerator.Data
         {
             get
             {
-                var urlized = StringRenderer.Urlize(this.Name);
+                var urlized = StringRenderer.Urlize(this.Abbreviation);
                 return $"platform/{urlized}/";
             }
         }
 
+        public string Abbreviation { get; set; } = string.Empty;
+
         public string Name { get; set; } = string.Empty;
+
+        public string IgdbUrl { get; set; }
 
         public List<PostData> LinkedPosts { get; set; } = new List<PostData>();
 
@@ -23,10 +27,13 @@ namespace GlogGenerator.Data
         {
             var platform = new PlatformData();
 
-            // FIXME: Distinguish 'Name' from 'Abbreviation'!
-            platform.Name = igdbPlatform.AbbreviationForGlog;
+            platform.Abbreviation = igdbPlatform.AbbreviationForGlog;
+            platform.Name = igdbPlatform.Name;
 
-            // FIXME: Set an IgdbUrl property!
+            if (!string.IsNullOrEmpty(igdbPlatform.Url))
+            {
+                platform.IgdbUrl = igdbPlatform.Url;
+            }
 
             return platform;
         }

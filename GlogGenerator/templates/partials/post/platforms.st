@@ -8,7 +8,7 @@ platforms(site,page) ::= <<
 
 	
 	
-		<a href="%site.BaseURL%platform/%platform.Name;format="urlize"%">%platform.Name%</a>};separator=",\n\n"%
+		<a href="%site.BaseURL%platform/%platform.Abbreviation;format="urlize"%">%platform.Abbreviation%</a>};separator=",\n\n"%
 
 
 </span>

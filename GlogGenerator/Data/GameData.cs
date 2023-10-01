@@ -20,8 +20,6 @@ namespace GlogGenerator.Data
 
         public string Title { get; set; } = string.Empty;
 
-        public int? IgdbId { get; set; }
-
         public string IgdbUrl { get; set; }
 
         public List<string> Tags { get; set; } = new List<string>();
@@ -33,11 +31,6 @@ namespace GlogGenerator.Data
             var game = new GameData();
 
             game.Title = igdbGame.NameForGlog;
-
-            if (igdbGame.Id != IgdbGame.IdNotFound)
-            {
-                game.IgdbId = igdbGame.Id;
-            }
 
             if (!string.IsNullOrEmpty(igdbGame.Url))
             {
