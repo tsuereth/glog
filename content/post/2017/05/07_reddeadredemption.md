@@ -3,7 +3,7 @@ category = ["Playing A Game"]
 date = "2017-05-07T22:37:59-07:00"
 draft = false
 game = ["Red Dead Redemption"]
-platform = ["Xbox One"]
+platform = ["XONE"]
 rating = ["Meh"]
 title = "Sometimes, dead is better"
 

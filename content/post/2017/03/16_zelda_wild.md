@@ -3,7 +3,7 @@ category = ["Playing A Game"]
 date = "2017-03-16T01:42:53-07:00"
 draft = false
 game = ["The Legend of Zelda: Breath of the Wild"]
-platform = ["Wii U"]
+platform = ["WiiU"]
 rating = ["Awesome"]
 title = "The endgame smells a little, uh ... wild"
 
@@ -24,7 +24,7 @@ From now on, Breath of the Wild is the bar that other action-adventure games sho
 
 It's just a shame that the final dungeon, the final boss, and the final cutscene are all so ... <i>drab</i>.  And that there's never really any sense of narrative payoff -- almost all the characters you meet are lifelessly flat, and tales of the ancient past never fully develop.
 
-I also need to call out the game's graphical performance (on <platform:Wii U>, although as far as I know it isn't dramatically different on <platform:Switch>).  The resolution is noticeably low, and the frame rate can get <i>abysmal</i>, particularly in populated towns.  The game is at its worst when a moblin starts to ragdoll, and the screen can freeze for a full, excruciating second.  ... it's bad.
+I also need to call out the game's graphical performance (on [Wii U](platform:WiiU), although as far as I know it isn't dramatically different on <platform:Switch>).  The resolution is noticeably low, and the frame rate can get <i>abysmal</i>, particularly in populated towns.  The game is at its worst when a moblin starts to ragdoll, and the screen can freeze for a full, excruciating second.  ... it's bad.
 
 Then again, it occurs to me that [Ocarina of Time](game:The Legend of Zelda: Ocarina of Time) and [Majora's Mask](game:The Legend of Zelda: Majora's Mask) also ran like total shit on <platform:N64>.  And they're still remembered pretty fondly.  So there's that.  (At least Breath of the Wild has a pretty great draw distance.)
 

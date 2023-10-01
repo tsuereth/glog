@@ -13,7 +13,7 @@ title = "Weathering the Sands of Time"
 
 Starting the game on my PC, the first issue I encountered was that everything looked like one big <i>blur</i>.  I guess that sometime in the past decade or so, the GPU technique that these guys used for fog has become deprecated or broken; with fog turned on in graphics options, it is impossible to see a goddamn thing.  Turned it off.  I can see!
 
-Second issue: my Xbox 360 controller doesn't work.  Sands of Time has "Gamepad" options, but here is where I remember: it was released well before the <platform:Xbox 360> existed.  Had to map all of the buttons manually.  Slightly annoying, but now we're off!
+Second issue: my Xbox 360 controller doesn't work.  Sands of Time has "Gamepad" options, but here is where I remember: it was released well before the [Xbox 360](platform:X360) existed.  Had to map all of the buttons manually.  Slightly annoying, but now we're off!
 
 The Prince starts telling his tale, and ... oh, there are no subtitles.  There is no <i>option</i> for subtitles.  That's unfortunate.
 

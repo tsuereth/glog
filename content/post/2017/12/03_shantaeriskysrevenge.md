@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = []
 +++
 
-Immediately, the most jarring thing about <game:Shantae: Risky's Revenge - Director's Cut> is the high-definition UI art that it's putting on top of [Nintendo DS](platform:DS)-era gameplay graphics.  (Honestly, they look even more like <platform:GBA> graphics.)  The modern-ish HD veneer fades away pretty quickly.
+Immediately, the most jarring thing about <game:Shantae: Risky's Revenge - Director's Cut> is the high-definition UI art that it's putting on top of [Nintendo DS](platform:NDS)-era gameplay graphics.  (Honestly, they look even more like <platform:GBA> graphics.)  The modern-ish HD veneer fades away pretty quickly.
 
 And beneath that veneer is a game that feels just a bit too antiquated for today.  The controls aren't quite responsive enough; the hitboxes are never exactly what I expect; the menu sucks (where's my Map button); the UI's visual language is unclear; combat isn't interesting at all; the logic on enemy respawning is all over the place.
 

@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awful"]
 +++
 
-<i>Technically</i>, I've played a bit of <game:Deadly Premonition> before; back on the <platform:Xbox 360>, the game was both "too weird" and "too boring" to keep me interested for long.
+<i>Technically</i>, I've played a bit of <game:Deadly Premonition> before; back on the [Xbox 360](platform:X360), the game was both "too weird" and "too boring" to keep me interested for long.
 
 Since then, the game's weirdness has become more well-known, cultivating a status like ... <a href="https://www.imdb.com/title/tt0368226/">The Room</a> of video games.  One I looked forward to trying again, in its enhanced PC release.  (Despite the utter idiocy of follow-up [D4: Dark Dreams Don't Die](game:D4: Dark Dreams Don't Die - Season 1).)
 

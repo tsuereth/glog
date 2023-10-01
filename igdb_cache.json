@@ -63885,7 +63885,7 @@
   ],
   "platforms": [
     {
-      "abbreviation_glogOverride": "Netflix",
+      "abbreviation": "Netflix",
       "id": -1
     },
     {
@@ -63926,7 +63926,6 @@
     },
     {
       "abbreviation": "X360",
-      "abbreviation_glogOverride": "Xbox 360",
       "id": 12,
       "name": "Xbox 360",
       "url": "https://www.igdb.com/platforms/xbox360"
@@ -63951,14 +63950,12 @@
     },
     {
       "abbreviation": "NDS",
-      "abbreviation_glogOverride": "DS",
       "id": 20,
       "name": "Nintendo DS",
       "url": "https://www.igdb.com/platforms/nds"
     },
     {
       "abbreviation": "NGC",
-      "abbreviation_glogOverride": "Gamecube",
       "id": 21,
       "name": "Nintendo GameCube",
       "url": "https://www.igdb.com/platforms/ngc"
@@ -63983,7 +63980,6 @@
     },
     {
       "abbreviation": "WiiU",
-      "abbreviation_glogOverride": "Wii U",
       "id": 41,
       "name": "Wii U",
       "url": "https://www.igdb.com/platforms/wiiu"
@@ -64002,7 +63998,6 @@
     },
     {
       "abbreviation": "XONE",
-      "abbreviation_glogOverride": "Xbox One",
       "id": 49,
       "name": "Xbox One",
       "url": "https://www.igdb.com/platforms/xboxone"
