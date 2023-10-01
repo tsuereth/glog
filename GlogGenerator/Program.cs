@@ -2,6 +2,8 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
+using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using GlogGenerator.IgdbApi;
 using GlogGenerator.RenderState;
@@ -25,6 +27,7 @@ namespace GlogGenerator
             var inputFilesBasePath = projectProperties.DefaultInputFilesBasePath;
             var templateFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "templates");
             var hostOrigin = "http://localhost:1313";
+            var newPostPath = string.Empty;
             var pathPrefix = "/glog/";
             var staticSiteOutputBasePath = Path.Combine(Directory.GetCurrentDirectory(), "public");
             var updateIgdbCache = false;
@@ -36,6 +39,7 @@ namespace GlogGenerator
                 { "i|input-path=", $"Input files base path, default: {inputFilesBasePath}", o => inputFilesBasePath = o },
                 { "t|templates-path=", $"Template files base path, default: {templateFilesBasePath}", o => templateFilesBasePath = o },
                 { "h|host-origin=", $"Host origin (scheme + name + port) for the site, default: {hostOrigin}", o => hostOrigin = o },
+                { "n|new-post=", $"NEW|UNDRAFT: local path to a new/draft post file", o => newPostPath = o },
                 { "p|path-prefix=", $"Path prefix, default: {pathPrefix}", o => pathPrefix = o },
                 { "o|output-path=", $"BUILD: Static site output base path, default: {staticSiteOutputBasePath}", o => staticSiteOutputBasePath = o },
                 { "u|update-igdb-cache=", $"Update the IGDB data cache (requires IGDB API credentials), default: {updateIgdbCache}", o => updateIgdbCache = bool.Parse(o) },
@@ -89,18 +93,13 @@ namespace GlogGenerator
                 site.IgdbCache.WriteToJsonFile(inputFilesBasePath);
             }
 
-            logger.LogInformation("Loading content...");
-            var loadTimer = Stopwatch.StartNew();
-            site.LoadContent();
-            loadTimer.Stop();
-            logger.LogInformation(
-                "Finished loading {ContentCount} content routes in {LoadTimeMs} ms",
-                site.ContentRoutes.Count,
-                loadTimer.ElapsedMilliseconds);
+            var outputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
 
             switch (activeVerb.ToLowerInvariant())
             {
                 case "build":
+                    LoadSiteContent(logger, site);
+
                     logger.LogInformation("Building content...");
                     var buildTimer = Stopwatch.StartNew();
                     BuildStaticSite.Build(site, staticSiteOutputBasePath);
@@ -112,6 +111,8 @@ namespace GlogGenerator
                     break;
 
                 case "host":
+                    LoadSiteContent(logger, site);
+
                     logger.LogInformation(
                         "Hosting site at {HostOriginAndPath}",
                         hostOrigin + pathPrefix);
@@ -119,11 +120,78 @@ namespace GlogGenerator
                     HostLocalSite.Host(hostLogger, site, hostOrigin, pathPrefix);
                     break;
 
+                case "new":
+                    if (string.IsNullOrEmpty(newPostPath))
+                    {
+                        throw new ArgumentException("Missing or empty --new-post");
+                    }
+
+                    var newPostParentDir = Path.GetDirectoryName(newPostPath);
+                    if (!Directory.Exists(newPostParentDir))
+                    {
+                        Directory.CreateDirectory(newPostParentDir);
+                    }
+
+                    var newPostDate = DateTimeOffset.Now.ToString("o");
+
+                    File.WriteAllText(
+                        newPostPath,
+                        @$"+++
+date = ""{newPostDate}""
+draft = true
+title = """"
+category = [""Playing A Game""]
+game = []
+platform = []
+rating = []
++++
+",
+                        outputEncoding);
+                    logger.LogInformation(
+                        "Created a new post file at {NewPostPath}",
+                        newPostPath);
+                    break;
+
+                case "undraft":
+                    if (string.IsNullOrEmpty(newPostPath))
+                    {
+                        throw new ArgumentException("Missing or empty --new-post");
+                    }
+
+                    if (!File.Exists(newPostPath))
+                    {
+                        throw new ArgumentException($"Post path doesn't exist: {newPostPath}");
+                    }
+
+                    var undraftDate = DateTimeOffset.Now.ToString("o");
+
+                    var postText = File.ReadAllText(newPostPath);
+                    postText = Regex.Replace(postText, @"draft = true\s*", string.Empty);
+                    postText = Regex.Replace(postText, @"date = ""[^""]*""", $"date = \"{undraftDate}\"");
+
+                    File.WriteAllText(newPostPath, postText, outputEncoding);
+                    logger.LogInformation(
+                        "Undrafted post file at {NewPostPath}",
+                        newPostPath);
+                    break;
+
                 default:
                     throw new ArgumentException($"Unknown verb `{activeVerb}`");
             }
 
             return 0;
+        }
+
+        private static void LoadSiteContent(ILogger logger, SiteState site)
+        {
+            logger.LogInformation("Loading content...");
+            var loadTimer = Stopwatch.StartNew();
+            site.LoadContent();
+            loadTimer.Stop();
+            logger.LogInformation(
+                "Finished loading {ContentCount} content routes in {LoadTimeMs} ms",
+                site.ContentRoutes.Count,
+                loadTimer.ElapsedMilliseconds);
         }
     }
 }
