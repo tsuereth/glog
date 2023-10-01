@@ -16,53 +16,65 @@ namespace GlogGenerator.MarkdownExtensions
             { "tag", GetPermalinkForTagName },
         };
 
+        private static bool ValidateSiteHasContentForLink(SiteState site, string linkType, string linkNameUrlized)
+        {
+            var linkRelativePath = $"{linkType}/{linkNameUrlized}/index.html";
+
+            if (!site.ContentRoutes.ContainsKey(linkRelativePath))
+            {
+                throw new ArgumentException($"No content route appears to exist at {linkRelativePath}");
+            }
+
+            return true;
+        }
+
         public static string GetPermalinkForCategoryName(SiteState site, string categoryName)
         {
-            // TODO: validate the name!
             var referenceUrlized = StringRenderer.Urlize(categoryName);
-            var referenceLink = $"{site.BaseURL}category/{referenceUrlized}";
+            _ = ValidateSiteHasContentForLink(site, "category", referenceUrlized);
 
-            return referenceLink;
+            return $"{site.BaseURL}category/{referenceUrlized}";
         }
 
         public static string GetPermalinkForGameName(SiteState site, string gameName)
         {
             _ = site.ValidateMatchingGameName(gameName);
 
-            // TODO: grab this from the validation step!
             var referenceUrlized = StringRenderer.Urlize(gameName);
-            var referenceLink = $"{site.BaseURL}game/{referenceUrlized}";
+            _ = ValidateSiteHasContentForLink(site, "game", referenceUrlized);
 
-            return referenceLink;
+            return $"{site.BaseURL}game/{referenceUrlized}";
         }
 
         public static string GetPermalinkForPlatformName(SiteState site, string platformName)
         {
-            // TODO: validate the name!
-            var referenceUrlized = StringRenderer.Urlize(platformName);
-            var referenceLink = $"{site.BaseURL}platform/{referenceUrlized}";
+            // TODO: Match platform references against SiteState (and its IGDB cache).
 
-            return referenceLink;
+            var referenceUrlized = StringRenderer.Urlize(platformName);
+
+            // TODO: Re-enable this content route validation once we're sure that
+            // every platform reference has valid data from IGDB.
+            //_ = ValidateSiteHasContentForLink(site, "platform", referenceUrlized);
+
+            return $"{site.BaseURL}platform/{referenceUrlized}";
         }
 
         public static string GetPermalinkForRatingName(SiteState site, string ratingName)
         {
-            // TODO: validate the name!
             var referenceUrlized = StringRenderer.Urlize(ratingName);
-            var referenceLink = $"{site.BaseURL}rating/{referenceUrlized}";
+            _ = ValidateSiteHasContentForLink(site, "rating", referenceUrlized);
 
-            return referenceLink;
+            return $"{site.BaseURL}rating/{referenceUrlized}";
         }
 
         public static string GetPermalinkForTagName(SiteState site, string tagName)
         {
             _ = site.ValidateMatchingTagName(tagName);
 
-            // TODO: grab this from the validation step!
             var referenceUrlized = StringRenderer.Urlize(tagName);
-            var referenceLink = $"{site.BaseURL}tag/{referenceUrlized}";
+            _ = ValidateSiteHasContentForLink(site, "tag", referenceUrlized);
 
-            return referenceLink;
+            return $"{site.BaseURL}tag/{referenceUrlized}";
         }
     }
 }
