@@ -95,8 +95,7 @@ strong {
 }
 
 .categories:before {
-	font-family: FontAwesome;
-	content: "\f02c";
+	content: "📇";
 	margin-right: 10px;
 }
 .center {
@@ -105,8 +104,7 @@ strong {
 	text-align: center;
 }
 .date:before {
-	font-family: FontAwesome;
-	content: "\f073";
+	content: "📅";
 	margin-right: 10px;
 }
 .disclaimer {
@@ -152,18 +150,15 @@ strong {
 	font-weight: 500;
 }
 .gameinfo .title:before {
-	font-family: FontAwesome;
-	content: "\f11b";
+	content: "🎮";
 	margin-right: 20px;
 }
 .platforminfo .title:before {
-	font-family: FontAwesome;
-	content: "\f108";
+	content: "💻";
 	margin-right: 20px;
 }
 .games:before {
-	font-family: FontAwesome;
-	content: "\f11b";
+	content: "🎮";
 	margin-right: 10px;
 }
 .inner {
@@ -245,12 +240,10 @@ strong {
 .next:before {
 	position: absolute;
 	right: 0px;
-	font-family: FontAwesome;
-	content: "\f061";
+	content: "→";
 }
 .platforms:before {
-	font-family: FontAwesome;
-	content: "\f108";
+	content: "💻";
 	margin-right: 10px;
 }
 .prev {
@@ -261,8 +254,7 @@ strong {
 .prev:before {
 	position: absolute;
 	left: 0px;
-	font-family: FontAwesome;
-	content: "\f060";
+	content: "←";
 }
 .rating {
 	margin-top: 30px;
@@ -277,8 +269,7 @@ strong {
 	background-color: #000;
 }
 .tags:before {
-	font-family: FontAwesome;
-	content: "\f02c";
+	content: "📇";
 	margin-right: 10px;
 }
 .title {
