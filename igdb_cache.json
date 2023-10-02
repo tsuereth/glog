@@ -7389,6 +7389,10 @@
       "name": "Wars"
     },
     {
+      "id": 3134,
+      "name": "Dance Dance Revolution"
+    },
+    {
       "id": 3390,
       "name": "Kunio-kun"
     },
@@ -12877,7 +12881,6 @@
       ],
       "genres": [
         5,
-        9,
         31
       ],
       "id": 847,
@@ -25077,7 +25080,8 @@
       "collection": 602,
       "franchise": -1,
       "franchises": [
-        1651
+        1651,
+        3134
       ],
       "game_modes": [
         1,
@@ -28325,8 +28329,8 @@
       ],
       "id": 6080,
       "involved_companies": [
-        14620,
-        206520
+        233275,
+        233276
       ],
       "name": "PaRappa the Rapper",
       "player_perspectives": [
@@ -52327,10 +52331,6 @@
       "company": 420
     },
     {
-      "id": 14620,
-      "company": 2225
-    },
-    {
       "id": 14632,
       "company": 2686
     },
@@ -62927,10 +62927,6 @@
       "company": 536
     },
     {
-      "id": 206520,
-      "company": 13634
-    },
-    {
       "id": 207120,
       "company": 104
     },
@@ -63881,6 +63877,14 @@
     {
       "id": 232868,
       "company": 25341
+    },
+    {
+      "id": 233275,
+      "company": 2225
+    },
+    {
+      "id": 233276,
+      "company": 13634
     }
   ],
   "platforms": [
