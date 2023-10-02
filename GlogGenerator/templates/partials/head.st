@@ -26,7 +26,20 @@ head(site,page) ::= <<
 	<link rel="stylesheet" href="%site.BaseURL%css/jquery.fancybox.min.css" type="text/css">
 
 	<script src="%site.BaseURL%js/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
-	<script src="%site.BaseURL%js/spoiler.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+function spoiler_toggle(element) {
+	var oldClasses = element.className;
+	if((" " + oldClasses + " ").indexOf(" spoiler_hidden ") > -1)
+	{
+		element.className = oldClasses.replace("spoiler_hidden", "spoiler_revealed");
+	}
+	else
+	{
+		element.className = oldClasses.replace("spoiler_revealed", "spoiler_hidden");
+	}
+}
+	</script>
 
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito:400,300,700" type="text/css">
 </head>
