@@ -17,9 +17,10 @@
 	<link rel="canonical" href="http://fakeorigin.com/glog/upcoming/">
 
 	<link rel="stylesheet" href="http://fakeorigin.com/glog/css/glog-style.css" type="text/css">
-	<link rel="stylesheet" href="http://fakeorigin.com/glog/css/jquery.fancybox.min.css" type="text/css">
 
-	<script src="http://fakeorigin.com/glog/js/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
+	<script src="http://fakeorigin.com/glog/js/photoswipe.umd.min.js" type="text/javascript"></script>
+	<script src="http://fakeorigin.com/glog/js/photoswipe-lightbox.umd.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://fakeorigin.com/glog/css/photoswipe.css" type="text/css">
 
 	<script type="text/javascript">
 function spoiler_toggle(element) {
@@ -36,6 +37,8 @@ function spoiler_toggle(element) {
 	</script>
 
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito:400,300,700" type="text/css">
+	<script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script>
+	<script type="text/javascript">google.charts.load('current', {'packages':['corechart']});</script>
 </head>
 
 
@@ -106,7 +109,7 @@ function spoiler_toggle(element) {
 
 </div>
 <h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/upcoming/" itemprop="url"></a></h1>
-<div class="entry-content" itemprop="articleBody">
+<div class="entry-content" id="page_FD80A89CD02A55F4C835BC893C80480C" itemprop="articleBody">
 <h1>Upcoming Releases of Interest</h1>
 <ul>
 <li>12/31/9999 - <a href="http://fakeorigin.com/glog/game/cat-quest-iii">Cat Quest III</a> (<a href="http://fakeorigin.com/glog/platform/pc">PC</a>)</li>
@@ -114,6 +117,42 @@ function spoiler_toggle(element) {
 
 
 </div>
+<script type="text/javascript">
+var body_width = (document.body.innerWidth || document.body.clientWidth) * 0.8;
+var body_height = (document.body.innerHeight || document.body.clientHeight) * 0.8;
+var body_sizeratio = body_width / body_height;
+
+var page_el = document.getElementById("page_FD80A89CD02A55F4C835BC893C80480C");
+var page_images = page_el.querySelectorAll("img");
+for (var page_image of page_images) {
+	var img_width = page_image.getAttribute("width");
+	var img_height = page_image.getAttribute("height");
+	var img_sizeratio = img_width / img_height;
+	if (img_sizeratio > body_sizeratio) {
+		img_width = body_width;
+		img_height = img_width / img_sizeratio;
+	}
+	else {
+		img_height = body_height;
+		img_width = img_height * img_sizeratio;
+	}
+
+	var img_anchor = document.createElement("a");
+	img_anchor.setAttribute("href", page_image.getAttribute("src"));
+	img_anchor.classList.add("imgwrap");
+	img_anchor.setAttribute("data-pswp-width", img_width);
+	img_anchor.setAttribute("data-pswp-height", img_height);
+	page_image.parentNode.insertBefore(img_anchor, page_image);
+	img_anchor.appendChild(page_image);
+}
+
+var page_FD80A89CD02A55F4C835BC893C80480C_lightbox = new PhotoSwipeLightbox({
+	gallery: "#page_FD80A89CD02A55F4C835BC893C80480C",
+	children: "a.imgwrap",
+	pswpModule: PhotoSwipe
+});
+page_FD80A89CD02A55F4C835BC893C80480C_lightbox.init();
+</script>
 </article>
 				    </div>
 				</div>
@@ -123,59 +162,7 @@ function spoiler_toggle(element) {
 
     TS
 
-</p>
-
-<script type="text/javascript">
-(function($){
-	var docHead = document.getElementsByTagName("head")[0];
-
-	var numImages = 0;
-	var numCharts = 0;
-	var drawChartCallbacks = [];
-	$('.entry-content').each(function(i){
-		var _i = i;
-
-
-		$(this).find('img').each(function(){
-			++numImages;
-			var alt = this.alt;
-
-			$(this).wrap('<a href="'+this.src+'" title="'+alt+'" class="fancybox" data-fancybox="gallery'+_i+'" />');
-		});
-
-
-		$(this).find('chart').each(function(){
-			++numCharts;
-			drawChartCallbacks.push($(this).attr("callback"));
-		});
-	});
-
-
-	if(numImages > 0) {
-		var js = document.createElement("script");
-		js.src = "http://fakeorigin.com/glog/js/jquery.fancybox.min.js";
-		js.type = "text/javascript";
-		docHead.appendChild(js);
-	}
-
-
-	if(numCharts > 0) {
-		var js = document.createElement("script");
-		js.src = "https://www.gstatic.com/charts/loader.js";
-		js.type = "text/javascript";
-		js.onload = function() {
-			google.charts.load('current', {'packages':['corechart']});
-
-			for(var i in drawChartCallbacks) {
-				google.charts.setOnLoadCallback(window[drawChartCallbacks[i]]);
-			}
-		};
-		docHead.appendChild(js);
-	}
-
-})(jQuery);
-</script>
-</footer>
+</p></footer>
 		</div>
 	</div>
 </body>

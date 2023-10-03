@@ -23,9 +23,10 @@ head(site,page) ::= <<
 	<link rel="canonical" href="%page.Permalink%">
 
 	<link rel="stylesheet" href="%site.BaseURL%css/glog-style.css" type="text/css">
-	<link rel="stylesheet" href="%site.BaseURL%css/jquery.fancybox.min.css" type="text/css">
 
-	<script src="%site.BaseURL%js/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
+	<script src="%site.BaseURL%js/photoswipe.umd.min.js" type="text/javascript"></script>
+	<script src="%site.BaseURL%js/photoswipe-lightbox.umd.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="%site.BaseURL%css/photoswipe.css" type="text/css">
 
 	<script type="text/javascript">
 function spoiler_toggle(element) {
@@ -42,6 +43,8 @@ function spoiler_toggle(element) {
 	</script>
 
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito:400,300,700" type="text/css">
+	<script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script>
+	<script type="text/javascript">google.charts.load('current', {'packages':['corechart']});</script>
 </head>
 
 >>

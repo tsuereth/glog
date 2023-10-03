@@ -17,9 +17,10 @@
 	<link rel="canonical" href="http://fakeorigin.com/glog/platform/">
 
 	<link rel="stylesheet" href="http://fakeorigin.com/glog/css/glog-style.css" type="text/css">
-	<link rel="stylesheet" href="http://fakeorigin.com/glog/css/jquery.fancybox.min.css" type="text/css">
 
-	<script src="http://fakeorigin.com/glog/js/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
+	<script src="http://fakeorigin.com/glog/js/photoswipe.umd.min.js" type="text/javascript"></script>
+	<script src="http://fakeorigin.com/glog/js/photoswipe-lightbox.umd.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://fakeorigin.com/glog/css/photoswipe.css" type="text/css">
 
 	<script type="text/javascript">
 function spoiler_toggle(element) {
@@ -36,6 +37,8 @@ function spoiler_toggle(element) {
 	</script>
 
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito:400,300,700" type="text/css">
+	<script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script>
+	<script type="text/javascript">google.charts.load('current', {'packages':['corechart']});</script>
 </head>
 
 
@@ -113,59 +116,7 @@ function spoiler_toggle(element) {
 
     TS
 
-</p>
-
-<script type="text/javascript">
-(function($){
-	var docHead = document.getElementsByTagName("head")[0];
-
-	var numImages = 0;
-	var numCharts = 0;
-	var drawChartCallbacks = [];
-	$('.entry-content').each(function(i){
-		var _i = i;
-
-
-		$(this).find('img').each(function(){
-			++numImages;
-			var alt = this.alt;
-
-			$(this).wrap('<a href="'+this.src+'" title="'+alt+'" class="fancybox" data-fancybox="gallery'+_i+'" />');
-		});
-
-
-		$(this).find('chart').each(function(){
-			++numCharts;
-			drawChartCallbacks.push($(this).attr("callback"));
-		});
-	});
-
-
-	if(numImages > 0) {
-		var js = document.createElement("script");
-		js.src = "http://fakeorigin.com/glog/js/jquery.fancybox.min.js";
-		js.type = "text/javascript";
-		docHead.appendChild(js);
-	}
-
-
-	if(numCharts > 0) {
-		var js = document.createElement("script");
-		js.src = "https://www.gstatic.com/charts/loader.js";
-		js.type = "text/javascript";
-		js.onload = function() {
-			google.charts.load('current', {'packages':['corechart']});
-
-			for(var i in drawChartCallbacks) {
-				google.charts.setOnLoadCallback(window[drawChartCallbacks[i]]);
-			}
-		};
-		docHead.appendChild(js);
-	}
-
-})(jQuery);
-</script>
-</footer>
+</p></footer>
 		</div>
 	</div>
 </body>

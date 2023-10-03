@@ -97,7 +97,8 @@ namespace GlogGenerator.MarkdownExtensions
                 var chartHash = Convert.ToHexString(chartHashOutBytes);
 #pragma warning restore CA5351
 
-                var chartMarkup = $@"<script type=""text/javascript"">
+                var chartMarkup = $@"<div class=""center""><chart id=""chart_{pageHash}_{chartHash}"" callback=""drawChart_{pageHash}_{chartHash}""></chart></div>
+<script type=""text/javascript"">
 function drawChart_{pageHash}_{chartHash}() {{
 	var data = new google.visualization.DataTable(""{chartDataString}"");
 	var options = {{}};
@@ -106,9 +107,10 @@ function drawChart_{pageHash}_{chartHash}() {{
 	var chart = new google.visualization.{chartType}(element);
 	chart.draw(data, options);
 }}
+google.charts.setOnLoadCallback(drawChart_{pageHash}_{chartHash});
 </script>
 <noscript><i>A Google Chart would go here, but JavaScript is disabled.</i></noscript>
-<div class=""center""><chart id=""chart_{pageHash}_{chartHash}"" callback=""drawChart_{pageHash}_{chartHash}""></chart></div>";
+";
 
                 renderer.Write(chartMarkup);
             }

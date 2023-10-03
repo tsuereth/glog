@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using GlogGenerator.Data;
@@ -16,6 +17,20 @@ namespace GlogGenerator.RenderState
 {
     public class PageState : IOutputContent
     {
+        public string HashCode
+        {
+            get
+            {
+#pragma warning disable CA5351 // Yeah MD5 is cryptographically insecure; this isn't security!
+                var pageHashInBytes = Encoding.UTF8.GetBytes(this.Permalink);
+                var pageHashOutBytes = MD5.HashData(pageHashInBytes);
+                var pageHash = Convert.ToHexString(pageHashOutBytes);
+
+                return pageHash;
+#pragma warning restore CA5351
+            }
+        }
+
         public List<CategoryData> Categories { get; set; } = new List<CategoryData>();
 
         public DateTimeOffset Date { get; set; } = DateTimeOffset.MinValue;
