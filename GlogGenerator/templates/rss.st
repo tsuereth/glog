@@ -1,10 +1,10 @@
 rss(site,page) ::= <<
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>%site.Title%</title>
+    <title>Glog</title>
     <link>%page.Permalink%</link>
-    <language>%site.LanguageCode%</language>
-    <author>%site.Author%</author>
+    <language>en-us</language>
+    <author>TS</author>
     
     <updated>%page.Date;format="iso8601"%</updated>
     
@@ -13,7 +13,7 @@ rss(site,page) ::= <<
       <title>%postPage.Title;format="escapepunctuation"%</title>
       <link>%postPage.Permalink%</link>
       <pubDate>%postPage.Date;format="iso8601"%</pubDate>
-      <author>%site.Author%</author>
+      <author>TS</author>
       <guid isPermalink="true">%postPage.Permalink%</guid>
 %postPage.Categories :{category |
       <category>%category.Name%</category>}%

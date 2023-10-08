@@ -9,8 +9,6 @@ namespace GlogGenerator.RenderState
 {
     public class SiteState
     {
-        public string Author { get; set; } = string.Empty;
-
         public string BaseURL { get; set; } = string.Empty;
 
         public DateTimeOffset BuildDate { get; set; } = DateTimeOffset.MinValue;
@@ -27,8 +25,6 @@ namespace GlogGenerator.RenderState
 
         public Dictionary<string, GameData> Games { get; set; } = new Dictionary<string, GameData>();
 
-        public string LanguageCode { get; set; } = string.Empty;
-
         public List<string> NowPlaying { get; set; } = new List<string>();
 
         public Dictionary<string, PlatformData> Platforms { get; set; } = new Dictionary<string, PlatformData>();
@@ -38,8 +34,6 @@ namespace GlogGenerator.RenderState
         public Dictionary<string, RatingData> Ratings { get; set; } = new Dictionary<string, RatingData>();
 
         public Dictionary<string, TagData> Tags { get; set; } = new Dictionary<string, TagData>();
-
-        public string Title { get; set; } = string.Empty;
 
         public Dictionary<string, IOutputContent> ContentRoutes { get; set; } = new Dictionary<string, IOutputContent>();
 
@@ -542,12 +536,9 @@ namespace GlogGenerator.RenderState
 
             var site = new SiteState(config.DataBasePath, templateFilesBasePath)
             {
-                Author = config.Author,
                 BaseURL = config.BaseURL,
                 BuildDate = DateTimeOffset.Now,
-                LanguageCode = config.LanguageCode,
                 NowPlaying = config.NowPlaying,
-                Title = config.Title,
 
                 IgdbCache = igdbCache,
             };
