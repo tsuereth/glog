@@ -581,10 +581,6 @@
       "name": "The House of The Dead"
     },
     {
-      "id": 490,
-      "name": "Luigi's Mansion"
-    },
-    {
       "id": 506,
       "name": "Star Fox"
     },
@@ -641,10 +637,6 @@
       "name": "Evil Genius"
     },
     {
-      "id": 562,
-      "name": "Mafia"
-    },
-    {
       "id": 564,
       "name": "The Walking Dead - A Telltale Games Series"
     },
@@ -659,10 +651,6 @@
     {
       "id": 579,
       "name": "Dead Rising"
-    },
-    {
-      "id": 593,
-      "name": "Paper Mario"
     },
     {
       "id": 595,
@@ -763,10 +751,6 @@
     {
       "id": 847,
       "name": "Grand Theft Auto"
-    },
-    {
-      "id": 864,
-      "name": "The Last of Us"
     },
     {
       "id": 868,
@@ -879,10 +863,6 @@
     {
       "id": 1130,
       "name": "Minecraft"
-    },
-    {
-      "id": 1140,
-      "name": "Shantae"
     },
     {
       "id": 1167,
@@ -1067,10 +1047,6 @@
     {
       "id": 2022,
       "name": "Analogue: A Hate Story"
-    },
-    {
-      "id": 2045,
-      "name": "Titanfall"
     },
     {
       "id": 2070,
@@ -7229,10 +7205,6 @@
       "name": "League of Legends"
     },
     {
-      "id": 1635,
-      "name": "Titanfall"
-    },
-    {
       "id": 1644,
       "name": "Watch_Dogs"
     },
@@ -7756,7 +7728,7 @@
     },
     {
       "category": 0,
-      "collection": 1,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         1686
@@ -7793,7 +7765,7 @@
     },
     {
       "category": 0,
-      "collection": 1,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         1686
@@ -7862,7 +7834,7 @@
     },
     {
       "category": 0,
-      "collection": 562,
+      "collection": -1,
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -9633,11 +9605,11 @@
       ],
       "id": 236,
       "involved_companies": [
-        118998,
         118999,
         119000,
         126028,
-        128058
+        234846,
+        234847
       ],
       "name": "Myst",
       "player_perspectives": [
@@ -10615,8 +10587,8 @@
       "involved_companies": [
         159793,
         164524,
-        165884,
-        180322
+        180322,
+        234850
       ],
       "name": "Final Fantasy VI",
       "player_perspectives": [
@@ -10953,7 +10925,7 @@
     },
     {
       "category": 0,
-      "collection": 62,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         452
@@ -11623,7 +11595,7 @@
     },
     {
       "category": 0,
-      "collection": 1,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         1686
@@ -13636,7 +13608,7 @@
     },
     {
       "category": 0,
-      "collection": 864,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         2675
@@ -16122,7 +16094,6 @@
         2
       ],
       "genres": [
-        15,
         31
       ],
       "id": 1266,
@@ -19314,7 +19285,7 @@
     },
     {
       "category": 0,
-      "collection": 62,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         452
@@ -20087,11 +20058,9 @@
     },
     {
       "category": 0,
-      "collection": 2045,
+      "collection": -1,
       "franchise": -1,
-      "franchises": [
-        1635
-      ],
+      "franchises": [],
       "game_modes": [
         2
       ],
@@ -20773,7 +20742,7 @@
     },
     {
       "category": 0,
-      "collection": 593,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         845
@@ -21877,7 +21846,7 @@
     },
     {
       "category": 0,
-      "collection": 490,
+      "collection": -1,
       "franchise": 24,
       "franchises": [
         24,
@@ -24481,7 +24450,7 @@
     },
     {
       "category": 0,
-      "collection": 593,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         845
@@ -24515,7 +24484,7 @@
     },
     {
       "category": 0,
-      "collection": 593,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         845
@@ -24548,7 +24517,7 @@
     },
     {
       "category": 0,
-      "collection": 593,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         845
@@ -28139,7 +28108,7 @@
     },
     {
       "category": 9,
-      "collection": 864,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         2675
@@ -32080,7 +32049,7 @@
     },
     {
       "category": 0,
-      "collection": 1140,
+      "collection": -1,
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -36277,7 +36246,7 @@
     },
     {
       "category": 2,
-      "collection": 62,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         452
@@ -36603,9 +36572,11 @@
     },
     {
       "category": 2,
-      "collection": 62,
+      "collection": -1,
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        452
+      ],
       "game_modes": [
         1
       ],
@@ -37353,7 +37324,7 @@
     },
     {
       "category": 1,
-      "collection": 1,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         1686
@@ -39243,11 +39214,9 @@
     },
     {
       "category": 0,
-      "collection": 2045,
+      "collection": -1,
       "franchise": -1,
-      "franchises": [
-        1635
-      ],
+      "franchises": [],
       "game_modes": [
         1,
         2,
@@ -40721,7 +40690,7 @@
     },
     {
       "category": 10,
-      "collection": 62,
+      "collection": -1,
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -41585,8 +41554,7 @@
         1
       ],
       "genres": [
-        9,
-        15
+        9
       ],
       "id": 22277,
       "involved_companies": [
@@ -43718,7 +43686,7 @@
     },
     {
       "category": 9,
-      "collection": 1,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         1686
@@ -43753,7 +43721,7 @@
     },
     {
       "category": 9,
-      "collection": 1,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         1686
@@ -45307,8 +45275,7 @@
         1
       ],
       "genres": [
-        9,
-        15
+        9
       ],
       "id": 65211,
       "involved_companies": [
@@ -45855,7 +45822,7 @@
     },
     {
       "category": 1,
-      "collection": 1,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         1686
@@ -49622,7 +49589,7 @@
     },
     {
       "category": 8,
-      "collection": 864,
+      "collection": -1,
       "franchise": -1,
       "franchises": [
         2675
@@ -59394,10 +59361,6 @@
       "company": 14002
     },
     {
-      "id": 118998,
-      "company": 327
-    },
-    {
       "id": 118999,
       "company": 195
     },
@@ -59696,10 +59659,6 @@
     {
       "id": 127328,
       "company": 37
-    },
-    {
-      "id": 128058,
-      "company": 326
     },
     {
       "id": 128247,
@@ -61072,10 +61031,6 @@
     {
       "id": 165807,
       "company": 33479
-    },
-    {
-      "id": 165884,
-      "company": 250
     },
     {
       "id": 165885,
@@ -63888,6 +63843,18 @@
     {
       "id": 234086,
       "company": 5154
+    },
+    {
+      "id": 234846,
+      "company": 327
+    },
+    {
+      "id": 234847,
+      "company": 326
+    },
+    {
+      "id": 234850,
+      "company": 250
     }
   ],
   "platforms": [
