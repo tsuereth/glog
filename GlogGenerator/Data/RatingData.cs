@@ -3,15 +3,12 @@ using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.Data
 {
-    public class RatingData
+    public class RatingData : IGlogReferenceable
     {
-        public string PermalinkRelative
+        public string GetPermalinkRelative()
         {
-            get
-            {
-                var urlized = StringRenderer.Urlize(this.Name);
-                return $"rating/{urlized}/";
-            }
+            var urlized = StringRenderer.Urlize(this.Name);
+            return $"rating/{urlized}/";
         }
 
         public string Name { get; set; } = string.Empty;

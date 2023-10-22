@@ -9,6 +9,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using GlogGenerator.Data;
 using GlogGenerator.MarkdownExtensions;
+using GlogGenerator.TemplateRenderers;
 using Markdig;
 using Markdig.Extensions.ListExtras;
 using Microsoft.AspNetCore.StaticFiles;
@@ -140,7 +141,7 @@ namespace GlogGenerator.RenderState
             var contentAsTemplate = new Antlr4.StringTemplate.Template(this.SourceContent, '%', '%');
             contentAsTemplate.Add("site", this.siteState);
             contentAsTemplate.Add("page", this);
-            var rendered = contentAsTemplate.Render(CultureInfo.InvariantCulture);
+            var rendered = contentAsTemplate.RenderWithErrorsThrown(CultureInfo.InvariantCulture);
 
             var mdPipeline = new MarkdownPipelineBuilder()
                 .Use<ListExtraExtension>()
@@ -223,7 +224,7 @@ namespace GlogGenerator.RenderState
         {
             var page = new PageState(site);
 
-            page.Permalink = $"{site.BaseURL}{categoryData.PermalinkRelative}";
+            page.Permalink = $"{site.BaseURL}{categoryData.GetPermalinkRelative()}";
 
             page.Title = categoryData.Name;
 
@@ -240,7 +241,7 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputPathRelative = $"{categoryData.PermalinkRelative}index.html";
+            page.OutputPathRelative = $"{categoryData.GetPermalinkRelative()}index.html";
             page.RenderTemplateName = "list";
 
             return page;
@@ -250,7 +251,7 @@ namespace GlogGenerator.RenderState
         {
             var page = new PageState(site);
 
-            page.Permalink = $"{site.BaseURL}{gameData.PermalinkRelative}";
+            page.Permalink = $"{site.BaseURL}{gameData.GetPermalinkRelative()}";
 
             page.Title = gameData.Title;
 
@@ -270,7 +271,7 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputPathRelative = $"{gameData.PermalinkRelative}index.html";
+            page.OutputPathRelative = $"{gameData.GetPermalinkRelative()}index.html";
             page.RenderTemplateName = "list_game";
 
             return page;
@@ -280,7 +281,7 @@ namespace GlogGenerator.RenderState
         {
             var page = new PageState(site);
 
-            page.Permalink = $"{site.BaseURL}{platformData.PermalinkRelative}";
+            page.Permalink = $"{site.BaseURL}{platformData.GetPermalinkRelative()}";
 
             if (!string.IsNullOrEmpty(platformData.Name))
             {
@@ -313,7 +314,7 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputPathRelative = $"{platformData.PermalinkRelative}index.html";
+            page.OutputPathRelative = $"{platformData.GetPermalinkRelative()}index.html";
             page.RenderTemplateName = "list_platform";
 
             return page;
@@ -323,7 +324,7 @@ namespace GlogGenerator.RenderState
         {
             var page = new PageState(site);
 
-            page.Permalink = $"{site.BaseURL}{ratingData.PermalinkRelative}";
+            page.Permalink = $"{site.BaseURL}{ratingData.GetPermalinkRelative()}";
 
             page.Title = ratingData.Name;
 
@@ -340,7 +341,7 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputPathRelative = $"{ratingData.PermalinkRelative}index.html";
+            page.OutputPathRelative = $"{ratingData.GetPermalinkRelative()}index.html";
             page.RenderTemplateName = "list";
 
             return page;
@@ -350,7 +351,7 @@ namespace GlogGenerator.RenderState
         {
             var page = new PageState(site);
 
-            page.Permalink = $"{site.BaseURL}{tagData.PermalinkRelative}";
+            page.Permalink = $"{site.BaseURL}{tagData.GetPermalinkRelative()}";
 
             page.Title = tagData.Name;
 
@@ -367,7 +368,7 @@ namespace GlogGenerator.RenderState
                 page.HideDate = true;
             }
 
-            page.OutputPathRelative = $"{tagData.PermalinkRelative}index.html";
+            page.OutputPathRelative = $"{tagData.GetPermalinkRelative()}index.html";
             page.RenderTemplateName = "list_tag";
 
             return page;
@@ -379,7 +380,7 @@ namespace GlogGenerator.RenderState
             template.Add("site", site);
             template.Add("page", this);
 
-            var rendered = template.Render(CultureInfo.InvariantCulture);
+            var rendered = template.RenderWithErrorsThrown(CultureInfo.InvariantCulture);
             rendered = rendered.ReplaceLineEndings("\n");
 
             var outputDir = Path.GetDirectoryName(filePath);
@@ -414,7 +415,7 @@ namespace GlogGenerator.RenderState
             template.Add("site", site);
             template.Add("page", this);
 
-            var rendered = template.Render(CultureInfo.InvariantCulture);
+            var rendered = template.RenderWithErrorsThrown(CultureInfo.InvariantCulture);
             var renderedBytes = Encoding.UTF8.GetBytes(rendered);
 
             response.ContentLength64 = renderedBytes.LongLength;

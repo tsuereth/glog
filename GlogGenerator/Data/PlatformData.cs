@@ -4,15 +4,12 @@ using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.Data
 {
-    public class PlatformData
+    public class PlatformData : IGlogReferenceable
     {
-        public string PermalinkRelative
+        public string GetPermalinkRelative()
         {
-            get
-            {
-                var urlized = StringRenderer.Urlize(this.Abbreviation);
-                return $"platform/{urlized}/";
-            }
+            var urlized = StringRenderer.Urlize(this.Abbreviation);
+            return $"platform/{urlized}/";
         }
 
         public string Abbreviation { get; set; } = string.Empty;
