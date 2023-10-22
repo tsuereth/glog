@@ -12,13 +12,16 @@ namespace GlogGenerator.IgdbApi
         public IgdbGameCategory Category { get; set; } = IgdbGameCategory.None;
 
         [JsonProperty("collection")]
-        public int CollectionId { get; set; } = IgdbCollection.IdNotFound;
+        public int MainCollectionId { get; set; } = IgdbCollection.IdNotFound;
+
+        [JsonProperty("collections")]
+        public List<int> CollectionIds { get; set; } = new List<int>();
 
         [JsonProperty("franchise")]
         public int MainFranchiseId { get; set; } = IgdbFranchise.IdNotFound;
 
         [JsonProperty("franchises")]
-        public List<int> OtherFranchiseIds { get; set; } = new List<int>();
+        public List<int> FranchiseIds { get; set; } = new List<int>();
 
         [JsonProperty("game_modes")]
         public List<int> GameModeIds { get; set; } = new List<int>();

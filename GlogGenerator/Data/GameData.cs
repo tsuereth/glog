@@ -39,9 +39,18 @@ namespace GlogGenerator.Data
                 game.Tags.Add(igdbGame.Category.Description());
             }
 
-            if (igdbGame.CollectionId != IgdbCollection.IdNotFound)
+            if (igdbGame.MainCollectionId != IgdbCollection.IdNotFound)
             {
-                var collection = igdbCache.GetCollection(igdbGame.CollectionId);
+                var collection = igdbCache.GetCollection(igdbGame.MainCollectionId);
+                if (collection != null && !game.Tags.Contains(collection.GetReferenceableKey(), StringComparer.OrdinalIgnoreCase))
+                {
+                    game.Tags.Add(collection.Name);
+                }
+            }
+
+            foreach (var collectionId in igdbGame.CollectionIds)
+            {
+                var collection = igdbCache.GetCollection(collectionId);
                 if (collection != null && !game.Tags.Contains(collection.GetReferenceableKey(), StringComparer.OrdinalIgnoreCase))
                 {
                     game.Tags.Add(collection.GetReferenceableKey());
@@ -57,7 +66,7 @@ namespace GlogGenerator.Data
                 }
             }
 
-            foreach (var franchiseId in igdbGame.OtherFranchiseIds)
+            foreach (var franchiseId in igdbGame.FranchiseIds)
             {
                 var franchise = igdbCache.GetFranchise(franchiseId);
                 if (franchise != null && !game.Tags.Contains(franchise.GetReferenceableKey(), StringComparer.OrdinalIgnoreCase))
