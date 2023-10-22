@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-It's one thing when <game:Hell Yeah! Wrath of the Dead Rabbit>'s protagonist mocks his own game over having a [spindash move](tag:Sonic the Hedgehog).  It's another when the level is filled with pinball bumpers and self-propelling cannons.
+It's one thing when <game:Hell Yeah! Wrath of the Dead Rabbit>'s protagonist mocks his own game over having a [spindash move](tag:Sonic The Hedgehog).  It's another when the level is filled with pinball bumpers and self-propelling cannons.
 
 <i>(Spoiler alert: watch me revisit the "borrows from others, with questionable results" theme once I finally write-up <game:Darksiders II>.)</i>
 
