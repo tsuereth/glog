@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Net.Http;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 namespace GlogGenerator.IgdbApi
@@ -20,6 +22,7 @@ namespace GlogGenerator.IgdbApi
         // https://api-docs.igdb.com/#rate-limits
         private static readonly TimeSpan RequestDelayTimeMin = TimeSpan.FromSeconds(0.25);
 
+        private readonly ILogger logger;
         private readonly string clientId;
         private readonly string clientSecret;
 
@@ -31,8 +34,11 @@ namespace GlogGenerator.IgdbApi
         private DateTimeOffset lastRequestTime = DateTimeOffset.MinValue;
 
         public IgdbApiClient(
-            string clientId, string clientSecret)
+            ILogger logger,
+            string clientId,
+            string clientSecret)
         {
+            this.logger = logger;
             this.clientId = clientId;
             this.clientSecret = clientSecret;
 
@@ -123,7 +129,7 @@ namespace GlogGenerator.IgdbApi
         }
 
         private async Task<List<T>> GetItemsAsync<T>(string itemsEndpointPath, List<int> itemIds)
-            where T : class
+            where T : IgdbEntity
         {
             var requestUri = BaseUrl + itemsEndpointPath;
             var requestFields = GetFieldNames<T>();
@@ -186,6 +192,15 @@ namespace GlogGenerator.IgdbApi
                 }
 
                 itemIdsStart += requestIdsCount;
+            }
+
+            var itemIdsFound = items.Select(e => e.GetEntityId()).ToList();
+            var itemIdsNotFound = itemIds.Where(i => !itemIdsFound.Contains(i)).ToList();
+            foreach (var itemIdNotFound in itemIdsNotFound)
+            {
+                this.logger.LogWarning("{EntityType} id {ItemIdNotFound} wasn't found",
+                    typeof(T).Name,
+                    itemIdNotFound);
             }
 
             return items;

@@ -5,13 +5,13 @@ namespace GlogGenerator.IgdbApi
     // https://api-docs.igdb.com/#collection
     // This class is NOT a complete representation, it only includes properties as-needed.
 #pragma warning disable CA1711 // Identifiers should not have incorrect suffix
-    public class IgdbCollection
+    public class IgdbCollection : IgdbEntity
     {
-        public const int IdNotFound = -1;
-
+        [IgdbEntityId]
         [JsonProperty("id")]
         public int Id { get; set; }
 
+        [IgdbEntityReferenceableKey]
         [JsonProperty("name")]
         public string Name { get; set; }
     }

@@ -89,7 +89,7 @@ namespace GlogGenerator
                     throw new ArgumentException("Missing or empty --igdb-client-secret");
                 }
 
-                using (var igdbApiClient = new IgdbApiClient(igdbClientId, igdbClientSecret))
+                using (var igdbApiClient = new IgdbApiClient(logger, igdbClientId, igdbClientSecret))
                 {
                     logger.LogInformation("Updating IGDB cache...");
                     var cacheUpdateTimer = Stopwatch.StartNew();
