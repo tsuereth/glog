@@ -220,13 +220,14 @@ namespace GlogGenerator
 
             // Now, update the rest of the ID-driven metadata.
 
-            var collectionIds = gamesCurrent.Where(g => g.CollectionId != IgdbCollection.IdNotFound).Select(g => g.CollectionId).Distinct().ToList();
-            var collectionsCurrent = await client.GetCollectionsAsync(collectionIds);
+            var collectionIds = gamesCurrent.Where(g => g.MainCollectionId != IgdbCollection.IdNotFound).Select(g => g.MainCollectionId).Distinct().ToList();
+            collectionIds.AddRange(gamesCurrent.SelectMany(g => g.CollectionIds).Distinct());
+            var collectionsCurrent = await client.GetCollectionsAsync(collectionIds.Distinct().ToList());
             this.collectionsById = collectionsCurrent.ToDictionary(o => o.Id, o => o);
 
             var franchiseIds = gamesCurrent.Where(g => g.MainFranchiseId != IgdbFranchise.IdNotFound).Select(g => g.MainFranchiseId).Distinct().ToList();
-            franchiseIds.AddRange(gamesCurrent.SelectMany(g => g.OtherFranchiseIds).Distinct());
-            var franchisesCurrent = await client.GetFranchisesAsync(franchiseIds);
+            franchiseIds.AddRange(gamesCurrent.SelectMany(g => g.FranchiseIds).Distinct());
+            var franchisesCurrent = await client.GetFranchisesAsync(franchiseIds.Distinct().ToList());
             this.franchisesById = franchisesCurrent.ToDictionary(o => o.Id, o => o);
 
             var gameModeIds = gamesCurrent.SelectMany(g => g.GameModeIds).Distinct().ToList();
