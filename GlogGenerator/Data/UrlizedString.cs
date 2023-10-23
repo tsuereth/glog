@@ -31,7 +31,7 @@ namespace GlogGenerator.Data
 
         public override bool Equals(object obj)
         {
-            return this.urlized.Equals(obj as UrlizedString);
+            return this.Equals(obj as UrlizedString);
         }
 
         public bool Equals(UrlizedString other)
