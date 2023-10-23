@@ -33,16 +33,12 @@ namespace GlogGenerator.Data
             if (igdbGame.Category != IgdbGameCategory.None)
             {
                 game.IgdbCategory = igdbGame.Category;
+                game.Tags.Add(igdbGame.Category.Description());
             }
 
             if (!string.IsNullOrEmpty(igdbGame.Url))
             {
                 game.IgdbUrl = igdbGame.Url;
-            }
-
-            if (igdbGame.Category != IgdbGameCategory.None)
-            {
-                game.Tags.Add(igdbGame.Category.Description());
             }
 
             if (igdbGame.MainCollectionId != IgdbCollection.IdNotFound)

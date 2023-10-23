@@ -160,6 +160,21 @@ namespace GlogGenerator
             return null;
         }
 
+        public List<IgdbEntity> GetAllGameMetadata()
+        {
+            var allMetadata = new List<IgdbEntity>();
+
+            allMetadata.AddRange(this.collectionsById.Values);
+            allMetadata.AddRange(this.companiesById.Values);
+            allMetadata.AddRange(this.franchisesById.Values);
+            allMetadata.AddRange(this.gameModesById.Values);
+            allMetadata.AddRange(this.genresById.Values);
+            allMetadata.AddRange(this.playerPerspectivesById.Values);
+            allMetadata.AddRange(this.themesById.Values);
+
+            return allMetadata;
+        }
+
         public async Task UpdateFromApiClient(IgdbApiClient client)
         {
             // Update games first, to get current IDs for metadata references.

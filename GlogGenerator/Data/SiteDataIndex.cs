@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using GlogGenerator.IgdbApi;
 using GlogGenerator.RenderState;
 using Microsoft.Extensions.Logging;
 
@@ -13,15 +14,15 @@ namespace GlogGenerator.Data
         private readonly string inputFilesBasePath;
         private readonly IgdbCache igdbCache;
 
-        private Dictionary<string, CategoryData> categories = new Dictionary<string, CategoryData>();
-        private Dictionary<string, GameData> games = new Dictionary<string, GameData>();
+        private Dictionary<UrlizedString, CategoryData> categories = new Dictionary<UrlizedString, CategoryData>();
+        private Dictionary<UrlizedString, GameData> games = new Dictionary<UrlizedString, GameData>();
         private List<PageData> pages = new List<PageData>();
-        private Dictionary<string, PlatformData> platforms = new Dictionary<string, PlatformData>();
+        private Dictionary<UrlizedString, PlatformData> platforms = new Dictionary<UrlizedString, PlatformData>();
         private List<PostData> posts = new List<PostData>();
-        private Dictionary<string, RatingData> ratings = new Dictionary<string, RatingData>();
+        private Dictionary<UrlizedString, RatingData> ratings = new Dictionary<UrlizedString, RatingData>();
         private Dictionary<string, string> rawDataFiles = new Dictionary<string, string>();
         private List<StaticFileData> staticFiles = new List<StaticFileData>();
-        private Dictionary<string, TagData> tags = new Dictionary<string, TagData>();
+        private Dictionary<UrlizedString, TagData> tags = new Dictionary<UrlizedString, TagData>();
 
         public SiteDataIndex(
             ILogger logger,
@@ -33,88 +34,36 @@ namespace GlogGenerator.Data
             this.igdbCache = igdbCache;
         }
 
-        public CategoryData AddCategoryIfMissing(string categoryName, bool overwriteData = false)
+        public CategoryData AddCategoryIfMissing(string categoryName)
         {
-            var categoryKey = UrlizedString.Urlize(categoryName);
-
-            if (!this.categories.ContainsKey(categoryKey))
+            var categoryNameUrlized = new UrlizedString(categoryName);
+            if (!this.categories.TryGetValue(categoryNameUrlized, out var categoryData))
             {
-                var newCategory = new CategoryData()
+                categoryData = new CategoryData()
                 {
                     Name = categoryName,
                 };
 
-                this.categories[categoryKey] = newCategory;
-            }
-            else if (overwriteData)
-            {
-                this.categories[categoryKey].Name = categoryName;
+                this.categories[categoryNameUrlized] = categoryData;
             }
 
-            return this.categories[categoryKey];
+            return categoryData;
         }
 
-        public PlatformData AddPlatformIfMissing(string platformAbbreviation, bool overwriteData = false)
+        public RatingData AddRatingIfMissing(string ratingName)
         {
-            var platformKey = UrlizedString.Urlize(platformAbbreviation);
-
-            if (!this.platforms.ContainsKey(platformKey))
+            var ratingNameUrlized = new UrlizedString(ratingName);
+            if (!this.ratings.TryGetValue(ratingNameUrlized, out var ratingData))
             {
-                var newPlatform = new PlatformData()
-                {
-                    Abbreviation = platformAbbreviation,
-                };
-
-                this.platforms[platformKey] = newPlatform;
-            }
-            else if (overwriteData)
-            {
-                this.platforms[platformKey].Abbreviation = platformAbbreviation;
-            }
-
-            return this.platforms[platformKey];
-        }
-
-        public RatingData AddRatingIfMissing(string ratingName, bool overwriteData = false)
-        {
-            var ratingKey = UrlizedString.Urlize(ratingName);
-
-            if (!this.ratings.ContainsKey(ratingKey))
-            {
-                var newRating = new RatingData()
+                ratingData = new RatingData()
                 {
                     Name = ratingName,
                 };
 
-                this.ratings[ratingKey] = newRating;
-            }
-            else if (overwriteData)
-            {
-                this.ratings[ratingKey].Name = ratingName;
+                this.ratings[ratingNameUrlized] = ratingData;
             }
 
-            return this.ratings[ratingKey];
-        }
-
-        public TagData AddTagIfMissing(string tagName, bool overwriteData = false)
-        {
-            var tagKey = UrlizedString.Urlize(tagName);
-
-            if (!this.tags.ContainsKey(tagKey))
-            {
-                var newTag = new TagData()
-                {
-                    Name = tagName,
-                };
-
-                this.tags[tagKey] = newTag;
-            }
-            else if (overwriteData)
-            {
-                this.tags[tagKey].Name = tagName;
-            }
-
-            return this.tags[tagKey];
+            return ratingData;
         }
 
         public List<CategoryData> GetCategories()
@@ -124,7 +73,8 @@ namespace GlogGenerator.Data
 
         public GameData GetGame(string gameTitle)
         {
-            if (this.games.TryGetValue(gameTitle, out var gameData))
+            var gameTitleUrlized = new UrlizedString(gameTitle);
+            if (this.games.TryGetValue(gameTitleUrlized, out var gameData))
             {
                 return gameData;
             }
@@ -140,6 +90,17 @@ namespace GlogGenerator.Data
         public List<PageData> GetPages()
         {
             return this.pages;
+        }
+
+        public PlatformData GetPlatform(string platformAbbreviation)
+        {
+            var platformAbbreviationUrlized = new UrlizedString(platformAbbreviation);
+            if (this.platforms.TryGetValue(platformAbbreviationUrlized, out var platformData))
+            {
+                return platformData;
+            }
+
+            return null;
         }
 
         public List<PlatformData> GetPlatforms()
@@ -172,6 +133,17 @@ namespace GlogGenerator.Data
             return this.staticFiles;
         }
 
+        public TagData GetTag(string tagName)
+        {
+            var tagNameUrlized = new UrlizedString(tagName);
+            if (this.tags.TryGetValue(tagNameUrlized, out var tagData))
+            {
+                return tagData;
+            }
+
+            return null;
+        }
+
         public List<TagData> GetTags()
         {
             return this.tags.Values.ToList();
@@ -179,15 +151,10 @@ namespace GlogGenerator.Data
 
         public GameData ValidateMatchingGameName(string gameName)
         {
-            var gameNameUrlized = UrlizedString.Urlize(gameName);
+            var gameNameUrlized = new UrlizedString(gameName);
             if (!this.games.TryGetValue(gameNameUrlized, out var gameData))
             {
                 throw new ArgumentException($"Game name \"{gameName}\" doesn't appear to exist in site data");
-            }
-
-            if (!gameData.Title.Equals(gameName, StringComparison.Ordinal))
-            {
-                throw new ArgumentException($"Game name \"{gameName}\" doesn't exactly match game in site data \"{gameData.Title}\"");
             }
 
             return gameData;
@@ -195,15 +162,10 @@ namespace GlogGenerator.Data
 
         public PlatformData ValidateMatchingPlatformAbbreviation(string platformAbbreviation)
         {
-            var platformAbbreviationUrlized = UrlizedString.Urlize(platformAbbreviation);
+            var platformAbbreviationUrlized = new UrlizedString(platformAbbreviation);
             if (!this.platforms.TryGetValue(platformAbbreviationUrlized, out var platformData))
             {
                 throw new ArgumentException($"Platform abbreviation \"{platformAbbreviation}\" doesn't appear to exist in site data");
-            }
-
-            if (!platformData.Abbreviation.Equals(platformAbbreviation, StringComparison.Ordinal))
-            {
-                throw new ArgumentException($"Platform abbreviation \"{platformAbbreviation}\" doesn't exactly match platform in site data \"{platformData.Abbreviation}\"");
             }
 
             return platformData;
@@ -211,15 +173,10 @@ namespace GlogGenerator.Data
 
         public TagData ValidateMatchingTagName(string tagName)
         {
-            var tagNameUrlized = UrlizedString.Urlize(tagName);
+            var tagNameUrlized = new UrlizedString(tagName);
             if (!this.tags.TryGetValue(tagNameUrlized, out var tagData))
             {
                 throw new ArgumentException($"Tag name \"{tagName}\" doesn't appear to exist in site data");
-            }
-
-            if (!tagData.Name.Equals(tagName, StringComparison.Ordinal))
-            {
-                throw new ArgumentException($"Tag name \"{tagName}\" doesn't exactly match tag in site data \"{tagData.Name}\"");
             }
 
             return tagData;
@@ -242,8 +199,8 @@ namespace GlogGenerator.Data
             {
                 var gameData = GameData.FromIgdbGame(this.igdbCache, igdbGame);
 
-                var gameKey = UrlizedString.Urlize(gameData.Title);
-                this.games[gameKey] = gameData;
+                var gameTitleUrlized = new UrlizedString(gameData.Title);
+                this.games.Add(gameTitleUrlized, gameData);
             }
 
             // And platform data!
@@ -251,17 +208,48 @@ namespace GlogGenerator.Data
             {
                 var platformData = PlatformData.FromIgdbPlatform(this.igdbCache, igdbPlatform);
 
-                var platformKey = UrlizedString.Urlize(platformData.Abbreviation);
-                this.platforms[platformKey] = platformData;
+                var platformAbbreviationUrlized = new UrlizedString(platformData.Abbreviation);
+                this.platforms.Add(platformAbbreviationUrlized, platformData);
             }
 
             // Prepare tags from game metadata.
-            foreach (var gameData in this.games.Values)
+            foreach (var igdbGameCategory in (IgdbGameCategory[])Enum.GetValues(typeof(IgdbGameCategory)))
             {
-                foreach (var tag in gameData.Tags)
+                if (igdbGameCategory == IgdbGameCategory.None)
                 {
-                    this.AddTagIfMissing(tag);
+                    continue;
                 }
+
+                var tagName = igdbGameCategory.Description();
+
+                var tagData = new TagData()
+                {
+                    Name = tagName,
+                };
+
+                var tagNameUrlized = new UrlizedString(tagName);
+                this.tags.Add(tagNameUrlized, tagData);
+            }
+
+            foreach (var igdbGameMetadata in this.igdbCache.GetAllGameMetadata())
+            {
+                var tagName = igdbGameMetadata.GetReferenceableKey();
+                var tagNameUrlized = new UrlizedString(tagName);
+                if (this.tags.TryGetValue(tagNameUrlized, out var tagData))
+                {
+                    this.logger.LogError("Metadata conflict! existing tag {ExistingTagName} would conflict with additional tag {NewTagName}",
+                        tagData.Name,
+                        tagName);
+
+                    continue;
+                }
+
+                tagData = new TagData()
+                {
+                    Name = tagName,
+                };
+
+                this.tags.Add(tagNameUrlized, tagData);
             }
 
             // List raw data files.
@@ -319,39 +307,36 @@ namespace GlogGenerator.Data
 
                     foreach (var category in postData.Categories)
                     {
-                        var categoryData = this.AddCategoryIfMissing(category, overwriteData: true);
+                        var categoryData = this.AddCategoryIfMissing(category);
                         categoryData.LinkedPosts.Add(postData);
                     }
 
-                    var gameTagsByUrlized = new Dictionary<string, TagData>();
+                    var postGameTags = new Dictionary<string, TagData>();
                     foreach (var game in postData.Games)
                     {
-                        var gameUrlized = UrlizedString.Urlize(game);
-                        var gameData = this.games[gameUrlized];
+                        var gameData = this.GetGame(game);
                         gameData.LinkedPosts.Add(postData);
 
                         foreach (var tag in gameData.Tags)
                         {
-                            var tagUrlized = UrlizedString.Urlize(tag);
-                            var tagData = this.AddTagIfMissing(tag, overwriteData: false);
-                            gameTagsByUrlized[tagUrlized] = tagData;
+                            postGameTags[tag] = this.GetTag(tag);
                         }
                     }
 
-                    foreach (var tagData in gameTagsByUrlized.Values)
+                    foreach (var tagData in postGameTags.Values)
                     {
                         tagData.LinkedPosts.Add(postData);
                     }
 
                     foreach (var platform in postData.Platforms)
                     {
-                        var platformData = this.AddPlatformIfMissing(platform, overwriteData: false);
+                        var platformData = this.GetPlatform(platform);
                         platformData.LinkedPosts.Add(postData);
                     }
 
                     foreach (var rating in postData.Ratings)
                     {
-                        var ratingData = this.AddRatingIfMissing(rating, overwriteData: true);
+                        var ratingData = this.AddRatingIfMissing(rating);
                         ratingData.LinkedPosts.Add(postData);
                     }
                 }
