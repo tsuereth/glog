@@ -11,8 +11,8 @@ namespace GlogGenerator.TemplateRenderers
         {
             str = str.Normalize(NormalizationForm.FormD);
             str = str.Trim().ToLowerInvariant();
-            str = Regex.Replace(str, "[^0-9a-z -]", string.Empty);
-            str = Regex.Replace(str, "[ -]+", "-");
+            str = Regex.Replace(str, @"[^0-9a-z \-\+]", string.Empty);
+            str = Regex.Replace(str, @"[ \-]+", "-");
             str = str.Trim('-');
 
             return str;
