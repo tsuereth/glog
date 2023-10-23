@@ -8,6 +8,7 @@ using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using GlogGenerator.Data;
 using GlogGenerator.IgdbApi;
 using GlogGenerator.RenderState;
 using GlogGenerator.Stats;
@@ -74,9 +75,11 @@ namespace GlogGenerator
                 }
             }
 
-            var site = SiteState.FromInputFilesBasePath(inputFilesBasePath, templateFilesBasePath);
+            var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
+            var config = ConfigData.FromFilePath(configFilePath);
+            config.BaseURL = $"{hostOrigin}{pathPrefix}"; // TODO: ensure proper slash-usage between origin and path
 
-            site.BaseURL = $"{hostOrigin}{pathPrefix}"; // TODO: ensure proper slash-usage between origin and path
+            var igdbCache = IgdbCache.FromJsonFile(inputFilesBasePath);
 
             if (updateIgdbCache)
             {
@@ -93,22 +96,28 @@ namespace GlogGenerator
                 {
                     logger.LogInformation("Updating IGDB cache...");
                     var cacheUpdateTimer = Stopwatch.StartNew();
-                    await site.IgdbCache.UpdateFromApiClient(igdbApiClient);
+                    await igdbCache.UpdateFromApiClient(igdbApiClient);
                     cacheUpdateTimer.Stop();
                     logger.LogInformation(
                         "Finished updating in {CacheUpdateTimeMs} ms",
                         cacheUpdateTimer.ElapsedMilliseconds);
                 }
 
-                site.IgdbCache.WriteToJsonFile(inputFilesBasePath);
+                igdbCache.WriteToJsonFile(inputFilesBasePath);
             }
 
+            var siteData = new SiteDataIndex(logger, inputFilesBasePath, igdbCache);
+
             var outputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
+            SiteState site;
 
             switch (activeVerb.ToLowerInvariant())
             {
                 case "build":
-                    LoadSiteContent(logger, site);
+                    LoadSiteData(logger, siteData);
+
+                    site = new SiteState(logger, config, siteData, templateFilesBasePath);
+                    LoadSiteRoutes(logger, site);
 
                     logger.LogInformation("Building content...");
                     var buildTimer = Stopwatch.StartNew();
@@ -125,7 +134,10 @@ namespace GlogGenerator
                     break;
 
                 case "host":
-                    LoadSiteContent(logger, site);
+                    LoadSiteData(logger, siteData);
+
+                    site = new SiteState(logger, config, siteData, templateFilesBasePath);
+                    LoadSiteRoutes(logger, site);
 
                     logger.LogInformation(
                         "Hosting site at {HostOriginAndPath}",
@@ -175,11 +187,11 @@ rating = []
                     var reportStartDate = DateTimeOffset.Parse(reportStartDateString, CultureInfo.InvariantCulture);
                     var reportEndDate = DateTimeOffset.Parse(reportEndDateString, CultureInfo.InvariantCulture);
 
-                    LoadSiteContent(logger, site);
+                    LoadSiteData(logger, siteData);
 
                     // TODO: Move this into an encapsulated class/file for reporting code.
                     var statsByGameAndPlatform = new Dictionary<string, GameStats>();
-                    var reportPosts = site.Posts.Where(p => p.Date >= reportStartDate && p.Date <= reportEndDate).ToList();
+                    var reportPosts = siteData.GetPosts().Where(p => p.Date >= reportStartDate && p.Date <= reportEndDate).ToList();
                     foreach (var reportPost in reportPosts)
                     {
                         foreach (var postGame in reportPost.Games)
@@ -190,13 +202,13 @@ rating = []
 
                                 if (!statsByGameAndPlatform.ContainsKey(gameAndPlatformKey))
                                 {
-                                    var igdbGame = site.IgdbCache.GetGameByName(postGame);
+                                    var gameData = siteData.GetGame(postGame);
 
                                     statsByGameAndPlatform[gameAndPlatformKey] = new GameStats()
                                     {
                                         Title = postGame,
                                         Platform = postPlatform,
-                                        Type = igdbGame.Category.Description(),
+                                        Type = gameData.IgdbCategory.Description(),
                                         FirstPosted = reportPost.Date,
                                         LastPosted = reportPost.Date,
                                     };
@@ -285,11 +297,22 @@ rating = []
             return 0;
         }
 
-        private static void LoadSiteContent(ILogger logger, SiteState site)
+        private static void LoadSiteData(ILogger logger, SiteDataIndex siteData)
         {
-            logger.LogInformation("Loading content...");
+            logger.LogInformation("Loading data...");
             var loadTimer = Stopwatch.StartNew();
-            site.LoadContent();
+            siteData.LoadContent();
+            loadTimer.Stop();
+            logger.LogInformation(
+                "Finished loading site data in {LoadTimeMs} ms",
+                loadTimer.ElapsedMilliseconds);
+        }
+
+        private static void LoadSiteRoutes(ILogger logger, SiteState site)
+        {
+            logger.LogInformation("Loading routes...");
+            var loadTimer = Stopwatch.StartNew();
+            site.LoadSiteRoutes();
             loadTimer.Stop();
             logger.LogInformation(
                 "Finished loading {ContentCount} content routes in {LoadTimeMs} ms",

@@ -82,23 +82,6 @@ namespace GlogGenerator
             return null;
         }
 
-        public IgdbGame GetGameByName(string name)
-        {
-            var result = this.gamesById.Values.Where(g => g.NameForGlog.Equals(name, StringComparison.Ordinal));
-            if (result.Count() > 0)
-            {
-                return result.First();
-            }
-
-            result = this.gamesUnidentified.Where(g => g.NameForGlog.Equals(name, StringComparison.Ordinal));
-            if (result.Count() > 0)
-            {
-                return result.First();
-            }
-
-            throw new ArgumentException($"No game matches name {name}");
-        }
-
         public List<IgdbGame> GetAllGames()
         {
             var results = this.gamesById.Values.ToList();
@@ -146,23 +129,6 @@ namespace GlogGenerator
             }
 
             return null;
-        }
-
-        public IgdbPlatform GetPlatformByAbbreviation(string abbreviation)
-        {
-            var result = this.platformsById.Values.Where(p => p.AbbreviationForGlog.Equals(abbreviation, StringComparison.Ordinal));
-            if (result.Count() > 0)
-            {
-                return result.First();
-            }
-
-            result = this.platformsUnidentified.Where(p => p.AbbreviationForGlog.Equals(abbreviation, StringComparison.Ordinal));
-            if (result.Count() > 0)
-            {
-                return result.First();
-            }
-
-            throw new ArgumentException($"No platform matches abbreviation {abbreviation}");
         }
 
         public List<IgdbPlatform> GetAllPlatforms()

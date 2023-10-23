@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Common;
 using System.IO;
+using GlogGenerator.Data;
 using GlogGenerator.RenderState;
 using Markdig.Helpers;
 using Markdig.Parsers;
@@ -13,17 +14,20 @@ namespace GlogGenerator.MarkdownExtensions
 {
     public class GlogAutoLinkInlineParser : AutolinkInlineParser
     {
+        private readonly SiteDataIndex siteDataIndex;
         private readonly SiteState siteState;
 
-        private Dictionary<string, Func<SiteState, string, string>> linkMatchHandlers;
+        private Dictionary<string, Func<SiteDataIndex, SiteState, string, string>> linkMatchHandlers;
 
         public GlogAutoLinkInlineParser(
+            SiteDataIndex siteDataIndex,
             SiteState siteState)
             : base()
         {
+            this.siteDataIndex = siteDataIndex;
             this.siteState = siteState;
 
-            this.linkMatchHandlers = new Dictionary<string, Func<SiteState, string, string>>();
+            this.linkMatchHandlers = new Dictionary<string, Func<SiteDataIndex, SiteState, string, string>>();
             foreach (var linkHandler in GlogLinkHandlers.LinkMatchHandlers)
             {
                 var linkMatchString = $"<{linkHandler.Key}:";
@@ -77,7 +81,7 @@ namespace GlogGenerator.MarkdownExtensions
 
                         var referenceName = slice.Text.Substring(slice.Start, referenceEndPos - slice.Start);
 
-                        var referenceLink = linkMatchHandler.Value(this.siteState, referenceName);
+                        var referenceLink = linkMatchHandler.Value(this.siteDataIndex, this.siteState, referenceName);
 
                         var linkInline = new LinkInline()
                         {

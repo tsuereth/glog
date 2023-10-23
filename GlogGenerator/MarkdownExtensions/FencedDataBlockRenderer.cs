@@ -6,6 +6,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
+using GlogGenerator.Data;
 using GlogGenerator.RenderState;
 using Markdig.Renderers;
 using Markdig.Renderers.Html;
@@ -18,13 +19,16 @@ namespace GlogGenerator.MarkdownExtensions
 {
     public class FencedDataBlockRenderer : HtmlObjectRenderer<FencedDataBlock>
     {
+        private readonly SiteDataIndex siteDataIndex;
         private readonly SiteState siteState;
         private readonly PageState pageState;
 
         public FencedDataBlockRenderer(
+            SiteDataIndex siteDataIndex,
             SiteState siteState,
             PageState pageState)
         {
+            this.siteDataIndex = siteDataIndex;
             this.siteState = siteState;
             this.pageState = pageState;
         }
@@ -43,8 +47,11 @@ namespace GlogGenerator.MarkdownExtensions
                     datafileArg = datafileArg.Remove(0, 1);
                 }
 
-                var chartDatafilePath = Path.Combine(this.siteState.InputFilesBasePath, datafileArg);
-                var chartDatafileContent = File.ReadAllText(chartDatafilePath);
+                var chartDatafileContent = this.siteDataIndex.GetRawDataFile(datafileArg);
+                if (string.IsNullOrEmpty(chartDatafileContent))
+                {
+                    throw new InvalidDataException($"Failed to read datafile path {datafileArg}");
+                }
 
                 // We need to escape the JSON data, to make it safe for JavaScript to load as a string.
                 var chartDatafileJson = JObject.Parse(chartDatafileContent);

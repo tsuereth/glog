@@ -1,4 +1,5 @@
-﻿using GlogGenerator.RenderState;
+﻿using GlogGenerator.Data;
+using GlogGenerator.RenderState;
 using Markdig;
 using Markdig.Parsers;
 using Markdig.Parsers.Inlines;
@@ -8,13 +9,16 @@ namespace GlogGenerator.MarkdownExtensions
 {
     public class GlogMarkdownExtension : IMarkdownExtension
     {
+        private readonly SiteDataIndex siteDataIndex;
         private readonly SiteState siteState;
         private readonly PageState pageState;
 
         public GlogMarkdownExtension(
+            SiteDataIndex siteDataIndex,
             SiteState siteState,
             PageState pageState)
         {
+            this.siteDataIndex = siteDataIndex;
             this.siteState = siteState;
             this.pageState = pageState;
         }
@@ -24,9 +28,9 @@ namespace GlogGenerator.MarkdownExtensions
             // Our custom-links parser can't coexist with the built-in parsers;
             // We need to replace them, and re-use the base parsers as appropriate.
             pipeline.InlineParsers.TryRemove<AutolinkInlineParser>();
-            pipeline.InlineParsers.AddIfNotAlready(new GlogAutoLinkInlineParser(this.siteState));
+            pipeline.InlineParsers.AddIfNotAlready(new GlogAutoLinkInlineParser(this.siteDataIndex, this.siteState));
             pipeline.InlineParsers.TryRemove<LinkInlineParser>();
-            pipeline.InlineParsers.AddIfNotAlready(new GlogLinkInlineParser(this.siteState));
+            pipeline.InlineParsers.AddIfNotAlready(new GlogLinkInlineParser(this.siteDataIndex, this.siteState));
 
             pipeline.BlockParsers.AddIfNotAlready<FencedDataBlockParser>();
 
@@ -40,7 +44,7 @@ namespace GlogGenerator.MarkdownExtensions
 
         public void Setup(MarkdownPipeline pipeline, IMarkdownRenderer renderer)
         {
-            renderer.ObjectRenderers.AddIfNotAlready(new FencedDataBlockRenderer(this.siteState, this.pageState));
+            renderer.ObjectRenderers.AddIfNotAlready(new FencedDataBlockRenderer(this.siteDataIndex, this.siteState, this.pageState));
             renderer.ObjectRenderers.AddIfNotAlready<SpoilerRenderer>();
         }
     }

@@ -9,8 +9,6 @@ namespace GlogGenerator.Data
 {
     public class ConfigData
     {
-        public string DataBasePath { get; set; } = string.Empty;
-        
         public string BaseURL { get; set; } = "https://localhost:1313/glog/";
 
         public List<string> NowPlaying { get; set; } = new List<string>();
@@ -28,7 +26,6 @@ namespace GlogGenerator.Data
             var tomlData = Toml.ToModel(fileText);
 
             var config = new ConfigData();
-            config.DataBasePath = filePathDir;
 
             if (tomlData.TryGetValue("now_playing", out var nowPlayingObj))
             {

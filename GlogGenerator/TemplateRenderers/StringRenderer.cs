@@ -1,23 +1,11 @@
 using System;
 using System.Globalization;
-using System.Text;
-using System.Text.RegularExpressions;
+using GlogGenerator.Data;
 
 namespace GlogGenerator.TemplateRenderers
 {
     public class StringRenderer : Antlr4.StringTemplate.StringRenderer
     {
-        public static string Urlize(string str)
-        {
-            str = str.Normalize(NormalizationForm.FormD);
-            str = str.Trim().ToLowerInvariant();
-            str = Regex.Replace(str, "[^0-9a-z -]", string.Empty);
-            str = Regex.Replace(str, "[ -]+", "-");
-            str = str.Trim('-');
-
-            return str;
-        }
-
         public override string ToString(object o, string formatString, CultureInfo culture)
         {
             if (string.IsNullOrEmpty(formatString))
@@ -39,7 +27,7 @@ namespace GlogGenerator.TemplateRenderers
 
             if (formatString.Equals("urlize", StringComparison.OrdinalIgnoreCase))
             {
-                return Urlize(str);
+                return UrlizedString.Urlize(str);
             }
 
             return base.ToString(o, formatString, culture);

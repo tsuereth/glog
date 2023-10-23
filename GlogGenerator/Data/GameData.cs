@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using GlogGenerator.IgdbApi;
-using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.Data
 {
     public class GameData : IGlogReferenceable
     {
         public string Title { get; set; } = string.Empty;
+
+        public IgdbGameCategory IgdbCategory { get; set; } = IgdbGameCategory.None;
 
         public string IgdbUrl { get; set; }
 
@@ -19,7 +20,7 @@ namespace GlogGenerator.Data
 
         public string GetPermalinkRelative()
         {
-            var urlized = StringRenderer.Urlize(this.Title);
+            var urlized = UrlizedString.Urlize(this.Title);
             return $"game/{urlized}/";
         }
 
@@ -28,6 +29,11 @@ namespace GlogGenerator.Data
             var game = new GameData();
 
             game.Title = igdbGame.NameForGlog;
+
+            if (igdbGame.Category != IgdbGameCategory.None)
+            {
+                game.IgdbCategory = igdbGame.Category;
+            }
 
             if (!string.IsNullOrEmpty(igdbGame.Url))
             {

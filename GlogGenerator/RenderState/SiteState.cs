@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using GlogGenerator.Data;
 using GlogGenerator.TemplateRenderers;
+using Microsoft.Extensions.Logging;
 
 namespace GlogGenerator.RenderState
 {
@@ -13,42 +14,39 @@ namespace GlogGenerator.RenderState
 
         public DateTimeOffset BuildDate { get; set; } = DateTimeOffset.MinValue;
 
-        public Dictionary<string, CategoryData> Categories { get; set; } = new Dictionary<string, CategoryData>();
-
         public List<string> CategoriesSorted
         {
             get
             {
-                return this.Categories.Values.Select(c => c.Name).OrderBy(c => c).ToList();
+                return this.dataIndex.GetCategories().Select(c => c.Name).OrderBy(c => c).ToList();
             }
         }
 
-        public Dictionary<string, GameData> Games { get; set; } = new Dictionary<string, GameData>();
-
         public List<string> NowPlaying { get; set; } = new List<string>();
-
-        public Dictionary<string, PlatformData> Platforms { get; set; } = new Dictionary<string, PlatformData>();
-
-        public List<PostData> Posts { get; set; } = new List<PostData>();
-
-        public Dictionary<string, RatingData> Ratings { get; set; } = new Dictionary<string, RatingData>();
-
-        public Dictionary<string, TagData> Tags { get; set; } = new Dictionary<string, TagData>();
 
         public Dictionary<string, IOutputContent> ContentRoutes { get; set; } = new Dictionary<string, IOutputContent>();
 
-        public IgdbCache IgdbCache { get; set; }
-
-        public string InputFilesBasePath { get; set; } = string.Empty;
-
-        public string TemplateFilesBasePath { get; private set; } = "templates";
+        private readonly ILogger logger;
+        private readonly ConfigData config;
+        private readonly SiteDataIndex dataIndex;
+        private readonly string templateFilesBasePath;
 
         private Antlr4.StringTemplate.TemplateGroupDirectory templateGroup;
 
-        public SiteState(string inputFilesBasePath, string templateFilesBasePath)
+        public SiteState(
+            ILogger logger,
+            ConfigData config,
+            SiteDataIndex dataIndex,
+            string templateFilesBasePath)
         {
-            this.InputFilesBasePath = inputFilesBasePath;
-            this.TemplateFilesBasePath = templateFilesBasePath;
+            this.logger = logger;
+            this.config = config;
+            this.dataIndex = dataIndex;
+            this.templateFilesBasePath = templateFilesBasePath;
+
+            this.BaseURL = config.BaseURL;
+            this.BuildDate = DateTimeOffset.Now;
+            this.NowPlaying = config.NowPlaying;
         }
 
         public Antlr4.StringTemplate.TemplateGroupDirectory GetTemplateGroup()
@@ -56,7 +54,7 @@ namespace GlogGenerator.RenderState
             if (this.templateGroup == null)
             {
                 // StringTemplate requires an absolute filepath.
-                var templateFilesBasePath = this.TemplateFilesBasePath;
+                var templateFilesBasePath = this.templateFilesBasePath;
                 if (!Path.IsPathRooted(templateFilesBasePath))
                 {
                     templateFilesBasePath = Path.GetFullPath(templateFilesBasePath);
@@ -74,258 +72,31 @@ namespace GlogGenerator.RenderState
             return this.templateGroup;
         }
 
-        public CategoryData AddCategoryIfMissing(string categoryName, bool overwriteData = false)
+        public void LoadSiteRoutes()
         {
-            var categoryKey = StringRenderer.Urlize(categoryName);
+            this.ContentRoutes.Clear();
 
-            if (!this.Categories.ContainsKey(categoryKey))
-            {
-                var newCategory = new CategoryData()
-                {
-                    Name = categoryName,
-                };
-
-                this.Categories[categoryKey] = newCategory;
-            }
-            else if (overwriteData)
-            {
-                this.Categories[categoryKey].Name = categoryName;
-            }
-
-            return this.Categories[categoryKey];
-        }
-
-        public PlatformData AddPlatformIfMissing(string platformAbbreviation, bool overwriteData = false)
-        {
-            var platformKey = StringRenderer.Urlize(platformAbbreviation);
-
-            if (!this.Platforms.ContainsKey(platformKey))
-            {
-                var newPlatform = new PlatformData()
-                {
-                    Abbreviation = platformAbbreviation,
-                };
-
-                this.Platforms[platformKey] = newPlatform;
-            }
-            else if (overwriteData)
-            {
-                this.Platforms[platformKey].Abbreviation = platformAbbreviation;
-            }
-
-            return this.Platforms[platformKey];
-        }
-
-        public RatingData AddRatingIfMissing(string ratingName, bool overwriteData = false)
-        {
-            var ratingKey = StringRenderer.Urlize(ratingName);
-
-            if (!this.Ratings.ContainsKey(ratingKey))
-            {
-                var newRating = new RatingData()
-                {
-                    Name = ratingName,
-                };
-
-                this.Ratings[ratingKey] = newRating;
-            }
-            else if (overwriteData)
-            {
-                this.Ratings[ratingKey].Name = ratingName;
-            }
-
-            return this.Ratings[ratingKey];
-        }
-
-        public TagData AddTagIfMissing(string tagName, bool overwriteData = false)
-        {
-            var tagKey = StringRenderer.Urlize(tagName);
-
-            if (!this.Tags.ContainsKey(tagKey))
-            {
-                var newTag = new TagData()
-                {
-                    Name = tagName,
-                };
-
-                this.Tags[tagKey] = newTag;
-            }
-            else if (overwriteData)
-            {
-                this.Tags[tagKey].Name = tagName;
-            }
-
-            return this.Tags[tagKey];
-        }
-
-        public GameData ValidateMatchingGameName(string gameName)
-        {
-            var gameNameUrlized = StringRenderer.Urlize(gameName);
-            if (!this.Games.TryGetValue(gameNameUrlized, out var gameData))
-            {
-                throw new ArgumentException($"Game name \"{gameName}\" doesn't appear to exist in site state");
-            }
-
-            if (!gameData.Title.Equals(gameName, StringComparison.Ordinal))
-            {
-                throw new ArgumentException($"Game name \"{gameName}\" doesn't exactly match game in site state \"{gameData.Title}\"");
-            }
-
-            return gameData;
-        }
-
-        public PlatformData ValidateMatchingPlatformAbbreviation(string platformAbbreviation)
-        {
-            var platformAbbreviationUrlized = StringRenderer.Urlize(platformAbbreviation);
-            if (!this.Platforms.TryGetValue(platformAbbreviationUrlized, out var platformData))
-            {
-                throw new ArgumentException($"Platform abbreviation \"{platformAbbreviation}\" doesn't appear to exist in site state");
-            }
-
-            if (!platformData.Abbreviation.Equals(platformAbbreviation, StringComparison.Ordinal))
-            {
-                throw new ArgumentException($"Platform abbreviation \"{platformAbbreviation}\" doesn't exactly match platform in site state \"{platformData.Abbreviation}\"");
-            }
-
-            return platformData;
-        }
-
-        public TagData ValidateMatchingTagName(string tagName)
-        {
-            var tagNameUrlized = StringRenderer.Urlize(tagName);
-            if (!this.Tags.TryGetValue(tagNameUrlized, out var tagData))
-            {
-                throw new ArgumentException($"Tag name \"{tagName}\" doesn't appear to exist in site state");
-            }
-
-            if (!tagData.Name.Equals(tagName, StringComparison.Ordinal))
-            {
-                throw new ArgumentException($"Tag name \"{tagName}\" doesn't exactly match tag in site state \"{tagData.Name}\"");
-            }
-
-            return tagData;
-        }
-
-        public void LoadContent()
-        {
-            // TODO: clear/reset page lists, route lists, et al.
-
-            // Load game data from the IGDB cache.
-            foreach (var igdbGame in this.IgdbCache.GetAllGames())
-            {
-                var gameData = GameData.FromIgdbGame(this.IgdbCache, igdbGame);
-
-                var gameKey = StringRenderer.Urlize(gameData.Title);
-                this.Games[gameKey] = gameData;
-            }
-
-            // And platform data!
-            foreach (var igdbPlatform in this.IgdbCache.GetAllPlatforms())
-            {
-                var platformData = PlatformData.FromIgdbPlatform(this.IgdbCache, igdbPlatform);
-
-                var platformKey = StringRenderer.Urlize(platformData.Abbreviation);
-                this.Platforms[platformKey] = platformData;
-            }
-
-            // Prepare tags from game metadata.
-            foreach (var gameData in this.Games.Values)
-            {
-                foreach (var tag in gameData.Tags)
-                {
-                    this.AddTagIfMissing(tag);
-                }
-            }
-
-            // List static content.
-            var staticBasePath = Path.Combine(this.InputFilesBasePath, StaticFileData.StaticContentBaseDir);
-            var staticFilePaths = Directory.EnumerateFiles(staticBasePath, "*.*", SearchOption.AllDirectories).ToList();
-            foreach (var staticFilePath in staticFilePaths)
+            var staticFiles = this.dataIndex.GetStaticFiles();
+            foreach (var staticFile in staticFiles)
             {
                 try
                 {
-                    var staticFile = StaticFileData.FromFilePath(staticFilePath);
                     var outputFile = StaticFileState.FromStaticFileData(this, staticFile);
                     this.ContentRoutes.Add(outputFile.OutputPathRelative, outputFile);
                 }
                 catch (Exception ex)
                 {
-                    throw new InvalidDataException($"Failed to load static content from {staticFilePath}", ex);
+                    throw new InvalidDataException($"Failed to generate static content from file {staticFile.SourceFilePath}", ex);
                 }
             }
 
-            var templateGroup = this.GetTemplateGroup();
-
-            // Parse content to collect data.
-            var postContentBasePath = Path.Combine(this.InputFilesBasePath, PostData.PostContentBaseDir);
-            var postPaths = Directory.EnumerateFiles(postContentBasePath, "*.md", SearchOption.AllDirectories).ToList();
-
-            var allPosts = new List<PostData>();
-            foreach (var postPath in postPaths)
+            var posts = this.dataIndex.GetPosts();
+            var postPages = new List<PageState>(posts.Count);
+            foreach (var postData in posts)
             {
                 try
                 {
-                    var postData = PostData.FromFilePath(postPath);
-
-                    if (postData.Draft)
-                    {
-                        continue;
-                    }
-
-                    allPosts.Add(postData);
-
-                    foreach (var category in postData.Categories)
-                    {
-                        var categoryData = this.AddCategoryIfMissing(category, overwriteData: true);
-                        categoryData.LinkedPosts.Add(postData);
-                    }
-
-                    var gameTagsByUrlized = new Dictionary<string, TagData>();
-                    foreach (var game in postData.Games)
-                    {
-                        var gameUrlized = StringRenderer.Urlize(game);
-                        var gameData = this.Games[gameUrlized];
-                        gameData.LinkedPosts.Add(postData);
-
-                        foreach (var tag in gameData.Tags)
-                        {
-                            var tagUrlized = StringRenderer.Urlize(tag);
-                            var tagData = this.AddTagIfMissing(tag, overwriteData: false);
-                            gameTagsByUrlized[tagUrlized] = tagData;
-                        }
-                    }
-
-                    foreach (var tagData in gameTagsByUrlized.Values)
-                    {
-                        tagData.LinkedPosts.Add(postData);
-                    }
-
-                    foreach (var platform in postData.Platforms)
-                    {
-                        var platformData = this.AddPlatformIfMissing(platform, overwriteData: false);
-                        platformData.LinkedPosts.Add(postData);
-                    }
-
-                    foreach (var rating in postData.Ratings)
-                    {
-                        var ratingData = this.AddRatingIfMissing(rating, overwriteData: true);
-                        ratingData.LinkedPosts.Add(postData);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    throw new InvalidDataException($"Failed to load post from {postPath}", ex);
-                }
-            }
-            this.Posts = allPosts.OrderByDescending(p => p.Date).ToList();
-
-            // Now, we can render content.
-            var postPages = new List<PageState>(this.Posts.Count);
-            foreach (var postData in this.Posts)
-            {
-                try
-                {
-                    var page = PageState.FromPostData(this, postData);
+                    var page = PageState.FromPostData(this.dataIndex, this, postData);
                     postPages.Add(page);
                     this.ContentRoutes.Add(page.OutputPathRelative, page);
                 }
@@ -335,7 +106,7 @@ namespace GlogGenerator.RenderState
                 }
             }
 
-            var postsListPage = new PageState(this)
+            var postsListPage = new PageState(this.dataIndex, this)
             {
                 HideDate = true,
                 Title = "Posts",
@@ -343,14 +114,14 @@ namespace GlogGenerator.RenderState
                 Permalink = $"{this.BaseURL}post/",
                 OutputPathRelative = "post/index.html",
                 RenderTemplateName = "list",
-                LinkedPosts = this.Posts,
+                LinkedPosts = posts,
             };
             this.ContentRoutes.Add(postsListPage.OutputPathRelative, postsListPage);
 
             const int pagesPerHistoryPage = 10;
             for (var historyPageNum = 0; (historyPageNum * pagesPerHistoryPage) < postPages.Count; ++historyPageNum)
             {
-                var historyPage = new PageState(this)
+                var historyPage = new PageState(this.dataIndex, this)
                 {
                     HideDate = true,
                     HideTitle = true,
@@ -409,9 +180,9 @@ namespace GlogGenerator.RenderState
             }
 
             var rssFeedItems = Math.Min(postPages.Count, 15);
-            var rssFeedPage = new PageState(this)
+            var rssFeedPage = new PageState(this.dataIndex, this)
             {
-                Date = this.Posts[0].Date,
+                Date = posts[0].Date,
                 OutputPathRelative = "index.xml",
                 Permalink = this.BaseURL,
                 RenderTemplateName = "rss",
@@ -419,7 +190,7 @@ namespace GlogGenerator.RenderState
             };
             this.ContentRoutes.Add(rssFeedPage.OutputPathRelative, rssFeedPage);
 
-            var categoriesIndex = new PageState(this)
+            var categoriesIndex = new PageState(this.dataIndex, this)
             {
                 HideDate = true,
                 OutputPathRelative = "category/index.html",
@@ -432,13 +203,15 @@ namespace GlogGenerator.RenderState
             };
             this.ContentRoutes.Add(categoriesIndex.OutputPathRelative, categoriesIndex);
 
-            foreach (var categoryData in this.Categories.Values)
+            var categories = this.dataIndex.GetCategories();
+            foreach (var categoryData in categories)
             {
-                var page = PageState.FromCategoryData(this, categoryData);
+                var page = PageState.FromCategoryData(this.dataIndex, this, categoryData);
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
-            var gamesIndex = new PageState(this)
+            var games = this.dataIndex.GetGames();
+            var gamesIndex = new PageState(this.dataIndex, this)
             {
                 HideDate = true,
                 OutputPathRelative = "game/index.html",
@@ -446,18 +219,19 @@ namespace GlogGenerator.RenderState
                 RenderTemplateName = "termslist",
                 Title = "Games",
                 PageType = "games",
-                Terms = this.Games.Values.Select(g => g.Title).OrderBy(t => t, StringComparer.Ordinal).ToList(),
+                Terms = games.Select(g => g.Title).OrderBy(t => t, StringComparer.Ordinal).ToList(),
                 TermsType = "game",
             };
             this.ContentRoutes.Add(gamesIndex.OutputPathRelative, gamesIndex);
 
-            foreach (var gameData in this.Games.Values)
+            foreach (var gameData in games)
             {
-                var page = PageState.FromGameData(this, gameData);
+                var page = PageState.FromGameData(this.dataIndex, this, gameData);
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
-            var platformsIndex = new PageState(this)
+            var platforms = this.dataIndex.GetPlatforms();
+            var platformsIndex = new PageState(this.dataIndex, this)
             {
                 HideDate = true,
                 OutputPathRelative = "platform/index.html",
@@ -465,18 +239,19 @@ namespace GlogGenerator.RenderState
                 RenderTemplateName = "termslist",
                 Title = "Platforms",
                 PageType = "platforms",
-                Terms = this.Platforms.Values.Select(p => p.Abbreviation).OrderBy(n => n, StringComparer.Ordinal).ToList(),
+                Terms = platforms.Select(p => p.Abbreviation).OrderBy(n => n, StringComparer.Ordinal).ToList(),
                 TermsType = "platform",
             };
             this.ContentRoutes.Add(platformsIndex.OutputPathRelative, platformsIndex);
 
-            foreach (var platformData in this.Platforms.Values)
+            foreach (var platformData in platforms)
             {
-                var page = PageState.FromPlatformData(this, platformData);
+                var page = PageState.FromPlatformData(this.dataIndex, this, platformData);
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
-            var ratingsIndex = new PageState(this)
+            var ratings = this.dataIndex.GetRatings();
+            var ratingsIndex = new PageState(this.dataIndex, this)
             {
                 HideDate = true,
                 OutputPathRelative = "rating/index.html",
@@ -484,18 +259,19 @@ namespace GlogGenerator.RenderState
                 RenderTemplateName = "termslist",
                 Title = "Ratings",
                 PageType = "ratings",
-                Terms = this.Ratings.Values.Select(r => r.Name).OrderBy(n => n).ToList(),
+                Terms = ratings.Select(r => r.Name).OrderBy(n => n).ToList(),
                 TermsType = "rating",
             };
             this.ContentRoutes.Add(ratingsIndex.OutputPathRelative, ratingsIndex);
 
-            foreach (var ratingData in this.Ratings.Values)
+            foreach (var ratingData in ratings)
             {
-                var page = PageState.FromRatingData(this, ratingData);
+                var page = PageState.FromRatingData(this.dataIndex, this, ratingData);
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
-            var tagsIndex = new PageState(this)
+            var tags = this.dataIndex.GetTags();
+            var tagsIndex = new PageState(this.dataIndex, this)
             {
                 HideDate = true,
                 OutputPathRelative = "tag/index.html",
@@ -503,47 +279,23 @@ namespace GlogGenerator.RenderState
                 RenderTemplateName = "termslist",
                 Title = "Tags",
                 PageType = "tags",
-                Terms = this.Tags.Values.Select(t => t.Name).OrderBy(n => n, StringComparer.Ordinal).ToList(),
+                Terms = tags.Select(t => t.Name).OrderBy(n => n, StringComparer.Ordinal).ToList(),
                 TermsType = "tag",
             };
             this.ContentRoutes.Add(tagsIndex.OutputPathRelative, tagsIndex);
 
-            foreach (var tagData in this.Tags.Values)
+            foreach (var tagData in tags)
             {
-                var page = PageState.FromTagData(this, tagData);
+                var page = PageState.FromTagData(this.dataIndex, this, tagData);
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
-            var additionalPageFilePaths = new List<string>()
+            var pages = this.dataIndex.GetPages();
+            foreach (var pageData in pages)
             {
-                Path.Combine(this.InputFilesBasePath, "content", "backlog.md"),
-                Path.Combine(this.InputFilesBasePath, "content", "upcoming.md"),
-            };
-            foreach (var pageFilePath in additionalPageFilePaths)
-            {
-                var pageData = PageData.FromFilePath(pageFilePath);
-                var page = PageState.FromPageData(this, pageData);
+                var page = PageState.FromPageData(this.dataIndex, this, pageData);
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
-        }
-
-        public static SiteState FromInputFilesBasePath(string inputFilesBasePath, string templateFilesBasePath)
-        {
-            var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
-            var config = ConfigData.FromFilePath(configFilePath);
-
-            var igdbCache = IgdbCache.FromJsonFile(inputFilesBasePath);
-
-            var site = new SiteState(config.DataBasePath, templateFilesBasePath)
-            {
-                BaseURL = config.BaseURL,
-                BuildDate = DateTimeOffset.Now,
-                NowPlaying = config.NowPlaying,
-
-                IgdbCache = igdbCache,
-            };
-
-            return site;
         }
     }
 }

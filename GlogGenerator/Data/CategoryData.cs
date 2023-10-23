@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.Data
 {
@@ -11,7 +10,7 @@ namespace GlogGenerator.Data
 
         public string GetPermalinkRelative()
         {
-            var urlized = StringRenderer.Urlize(this.Name);
+            var urlized = UrlizedString.Urlize(this.Name);
             return $"category/{urlized}/";
         }
     }

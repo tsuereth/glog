@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Runtime.Serialization;
 using GlogGenerator.MarkdownExtensions;
-using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.Data
 {
@@ -68,7 +67,7 @@ namespace GlogGenerator.Data
             }
             else
             {
-                permalinkPathParts.Add(StringRenderer.Urlize(post.Title));
+                permalinkPathParts.Add(UrlizedString.Urlize(post.Title));
             }
 
             var permalinkPath = string.Join('/', permalinkPathParts) + '/';

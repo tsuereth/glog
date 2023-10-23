@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using GlogGenerator.IgdbApi;
-using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.Data
 {
@@ -8,7 +7,7 @@ namespace GlogGenerator.Data
     {
         public string GetPermalinkRelative()
         {
-            var urlized = StringRenderer.Urlize(this.Abbreviation);
+            var urlized = UrlizedString.Urlize(this.Abbreviation);
             return $"platform/{urlized}/";
         }
 
