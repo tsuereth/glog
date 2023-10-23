@@ -13261,7 +13261,9 @@
     {
       "category": 0,
       "collection": 89,
-      "collections": [],
+      "collections": [
+        89
+      ],
       "franchise": 10,
       "franchises": [
         10
