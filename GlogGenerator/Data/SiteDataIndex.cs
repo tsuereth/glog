@@ -182,6 +182,21 @@ namespace GlogGenerator.Data
             return tagData;
         }
 
+        private static void CreateOrMergeMultiKeyReferenceableData<T>(Dictionary<UrlizedString, T> index, string dataKey)
+            where T : GlogDataFromIgdbGameMetadata, IGlogMultiKeyReferenceable
+        {
+            var dataKeyUrlized = new UrlizedString(dataKey);
+            if (index.TryGetValue(dataKeyUrlized, out var existingData))
+            {
+                existingData.MergeReferenceableKey(dataKey);
+            }
+            else
+            {
+                var createdData = Activator.CreateInstance(typeof(T), new object[] { dataKey} ) as T;
+                index.Add(dataKeyUrlized, createdData);
+            }
+        }
+
         public void LoadContent()
         {
             this.categories.Clear();
@@ -222,34 +237,15 @@ namespace GlogGenerator.Data
 
                 var tagName = igdbGameCategory.Description();
 
-                var tagData = new TagData()
-                {
-                    Name = tagName,
-                };
-
-                var tagNameUrlized = new UrlizedString(tagName);
-                this.tags.Add(tagNameUrlized, tagData);
+                var tagData = new TagData(tagName);
+                this.tags.Add(new UrlizedString(tagName), tagData);
             }
 
             foreach (var igdbGameMetadata in this.igdbCache.GetAllGameMetadata())
             {
                 var tagName = igdbGameMetadata.GetReferenceableKey();
-                var tagNameUrlized = new UrlizedString(tagName);
-                if (this.tags.TryGetValue(tagNameUrlized, out var tagData))
-                {
-                    this.logger.LogError("Metadata conflict! existing tag {ExistingTagName} would conflict with additional tag {NewTagName}",
-                        tagData.Name,
-                        tagName);
 
-                    continue;
-                }
-
-                tagData = new TagData()
-                {
-                    Name = tagName,
-                };
-
-                this.tags.Add(tagNameUrlized, tagData);
+                CreateOrMergeMultiKeyReferenceableData(this.tags, tagName);
             }
 
             // List raw data files.
@@ -311,7 +307,7 @@ namespace GlogGenerator.Data
                         categoryData.LinkedPosts.Add(postData);
                     }
 
-                    var postGameTags = new Dictionary<string, TagData>();
+                    var postGameTags = new Dictionary<UrlizedString, TagData>();
                     foreach (var game in postData.Games)
                     {
                         var gameData = this.GetGame(game);
@@ -319,7 +315,8 @@ namespace GlogGenerator.Data
 
                         foreach (var tag in gameData.Tags)
                         {
-                            postGameTags[tag] = this.GetTag(tag);
+                            var tagNameUrlized = new UrlizedString(tag);
+                            postGameTags[tagNameUrlized] = this.GetTag(tag);
                         }
                     }
 
