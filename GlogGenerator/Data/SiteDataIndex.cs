@@ -12,7 +12,7 @@ namespace GlogGenerator.Data
     {
         private readonly ILogger logger;
         private readonly string inputFilesBasePath;
-        private readonly IgdbCache igdbCache;
+        private readonly IIgdbCache igdbCache;
 
         private Dictionary<UrlizedString, CategoryData> categories = new Dictionary<UrlizedString, CategoryData>();
         private Dictionary<UrlizedString, GameData> games = new Dictionary<UrlizedString, GameData>();
@@ -27,7 +27,7 @@ namespace GlogGenerator.Data
         public SiteDataIndex(
             ILogger logger,
             string inputFilesBasePath,
-            IgdbCache igdbCache)
+            IIgdbCache igdbCache)
         {
             this.logger = logger;
             this.inputFilesBasePath = inputFilesBasePath;
@@ -248,111 +248,114 @@ namespace GlogGenerator.Data
                 CreateOrMergeMultiKeyReferenceableData(this.tags, tagName);
             }
 
-            // List raw data files.
-            var rawDataBasePath = Path.Combine(this.inputFilesBasePath, "data");
-            var rawDataFilePaths = Directory.EnumerateFiles(rawDataBasePath, "*.*", SearchOption.AllDirectories).ToList();
-            foreach (var rawDataFilePath in rawDataFilePaths)
+            if (!string.IsNullOrEmpty(this.inputFilesBasePath))
             {
-                try
+                // List raw data files.
+                var rawDataBasePath = Path.Combine(this.inputFilesBasePath, "data");
+                var rawDataFilePaths = Directory.EnumerateFiles(rawDataBasePath, "*.*", SearchOption.AllDirectories).ToList();
+                foreach (var rawDataFilePath in rawDataFilePaths)
                 {
-                    var rawDataFile = File.ReadAllText(rawDataFilePath);
-
-                    var relativePathParts = rawDataFilePath.GetPathPartsWithStartingDirName("data");
-                    var relativePath = string.Join('/', relativePathParts);
-                    this.rawDataFiles[relativePath] = rawDataFile;
-                }
-                catch (Exception ex)
-                {
-                    throw new InvalidDataException($"Failed to load raw data from {rawDataFilePath}", ex);
-                }
-            }
-
-            // List static content.
-            var staticBasePath = Path.Combine(this.inputFilesBasePath, StaticFileData.StaticContentBaseDir);
-            var staticFilePaths = Directory.EnumerateFiles(staticBasePath, "*.*", SearchOption.AllDirectories).ToList();
-            foreach (var staticFilePath in staticFilePaths)
-            {
-                try
-                {
-                    var staticFile = StaticFileData.FromFilePath(staticFilePath);
-                    this.staticFiles.Add(staticFile);
-                }
-                catch (Exception ex)
-                {
-                    throw new InvalidDataException($"Failed to load static content from {staticFilePath}", ex);
-                }
-            }
-
-            // Parse content to collect data.
-            var postContentBasePath = Path.Combine(this.inputFilesBasePath, PostData.PostContentBaseDir);
-            var postPaths = Directory.EnumerateFiles(postContentBasePath, "*.md", SearchOption.AllDirectories).ToList();
-
-            var allPosts = new List<PostData>();
-            foreach (var postPath in postPaths)
-            {
-                try
-                {
-                    var postData = PostData.FromFilePath(postPath);
-
-                    if (postData.Draft)
+                    try
                     {
-                        continue;
+                        var rawDataFile = File.ReadAllText(rawDataFilePath);
+
+                        var relativePathParts = rawDataFilePath.GetPathPartsWithStartingDirName("data");
+                        var relativePath = string.Join('/', relativePathParts);
+                        this.rawDataFiles[relativePath] = rawDataFile;
                     }
-
-                    allPosts.Add(postData);
-
-                    foreach (var category in postData.Categories)
+                    catch (Exception ex)
                     {
-                        var categoryData = this.AddCategoryIfMissing(category);
-                        categoryData.LinkedPosts.Add(postData);
+                        throw new InvalidDataException($"Failed to load raw data from {rawDataFilePath}", ex);
                     }
+                }
 
-                    var postGameTags = new Dictionary<UrlizedString, TagData>();
-                    foreach (var game in postData.Games)
+                // List static content.
+                var staticBasePath = Path.Combine(this.inputFilesBasePath, StaticFileData.StaticContentBaseDir);
+                var staticFilePaths = Directory.EnumerateFiles(staticBasePath, "*.*", SearchOption.AllDirectories).ToList();
+                foreach (var staticFilePath in staticFilePaths)
+                {
+                    try
                     {
-                        var gameData = this.GetGame(game);
-                        gameData.LinkedPosts.Add(postData);
+                        var staticFile = StaticFileData.FromFilePath(staticFilePath);
+                        this.staticFiles.Add(staticFile);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new InvalidDataException($"Failed to load static content from {staticFilePath}", ex);
+                    }
+                }
 
-                        foreach (var tag in gameData.Tags)
+                // Parse content to collect data.
+                var postContentBasePath = Path.Combine(this.inputFilesBasePath, PostData.PostContentBaseDir);
+                var postPaths = Directory.EnumerateFiles(postContentBasePath, "*.md", SearchOption.AllDirectories).ToList();
+
+                var allPosts = new List<PostData>();
+                foreach (var postPath in postPaths)
+                {
+                    try
+                    {
+                        var postData = PostData.FromFilePath(postPath);
+
+                        if (postData.Draft)
                         {
-                            var tagNameUrlized = new UrlizedString(tag);
-                            postGameTags[tagNameUrlized] = this.GetTag(tag);
+                            continue;
+                        }
+
+                        allPosts.Add(postData);
+
+                        foreach (var category in postData.Categories)
+                        {
+                            var categoryData = this.AddCategoryIfMissing(category);
+                            categoryData.LinkedPosts.Add(postData);
+                        }
+
+                        var postGameTags = new Dictionary<UrlizedString, TagData>();
+                        foreach (var game in postData.Games)
+                        {
+                            var gameData = this.GetGame(game);
+                            gameData.LinkedPosts.Add(postData);
+
+                            foreach (var tag in gameData.Tags)
+                            {
+                                var tagNameUrlized = new UrlizedString(tag);
+                                postGameTags[tagNameUrlized] = this.GetTag(tag);
+                            }
+                        }
+
+                        foreach (var tagData in postGameTags.Values)
+                        {
+                            tagData.LinkedPosts.Add(postData);
+                        }
+
+                        foreach (var platform in postData.Platforms)
+                        {
+                            var platformData = this.GetPlatform(platform);
+                            platformData.LinkedPosts.Add(postData);
+                        }
+
+                        foreach (var rating in postData.Ratings)
+                        {
+                            var ratingData = this.AddRatingIfMissing(rating);
+                            ratingData.LinkedPosts.Add(postData);
                         }
                     }
-
-                    foreach (var tagData in postGameTags.Values)
+                    catch (Exception ex)
                     {
-                        tagData.LinkedPosts.Add(postData);
-                    }
-
-                    foreach (var platform in postData.Platforms)
-                    {
-                        var platformData = this.GetPlatform(platform);
-                        platformData.LinkedPosts.Add(postData);
-                    }
-
-                    foreach (var rating in postData.Ratings)
-                    {
-                        var ratingData = this.AddRatingIfMissing(rating);
-                        ratingData.LinkedPosts.Add(postData);
+                        throw new InvalidDataException($"Failed to load post from {postPath}", ex);
                     }
                 }
-                catch (Exception ex)
+                this.posts = allPosts.OrderByDescending(p => p.Date).ToList();
+
+                var additionalPageFilePaths = new List<string>()
                 {
-                    throw new InvalidDataException($"Failed to load post from {postPath}", ex);
+                    Path.Combine(this.inputFilesBasePath, "content", "backlog.md"),
+                    Path.Combine(this.inputFilesBasePath, "content", "upcoming.md"),
+                };
+                foreach (var pageFilePath in additionalPageFilePaths)
+                {
+                    var pageData = PageData.FromFilePath(pageFilePath);
+                    this.pages.Add(pageData);
                 }
-            }
-            this.posts = allPosts.OrderByDescending(p => p.Date).ToList();
-
-            var additionalPageFilePaths = new List<string>()
-            {
-                Path.Combine(this.inputFilesBasePath, "content", "backlog.md"),
-                Path.Combine(this.inputFilesBasePath, "content", "upcoming.md"),
-            };
-            foreach (var pageFilePath in additionalPageFilePaths)
-            {
-                var pageData = PageData.FromFilePath(pageFilePath);
-                this.pages.Add(pageData);
             }
         }
     }

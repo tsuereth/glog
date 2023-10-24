@@ -24,7 +24,7 @@ namespace GlogGenerator.Data
             return $"game/{urlized}/";
         }
 
-        public static GameData FromIgdbGame(IgdbCache igdbCache, IgdbGame igdbGame)
+        public static GameData FromIgdbGame(IIgdbCache igdbCache, IgdbGame igdbGame)
         {
             var game = new GameData();
 

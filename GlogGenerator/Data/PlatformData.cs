@@ -19,7 +19,7 @@ namespace GlogGenerator.Data
 
         public List<PostData> LinkedPosts { get; set; } = new List<PostData>();
 
-        public static PlatformData FromIgdbPlatform(IgdbCache igdbCache, IgdbPlatform igdbPlatform)
+        public static PlatformData FromIgdbPlatform(IIgdbCache igdbCache, IgdbPlatform igdbPlatform)
         {
             var platform = new PlatformData();
 

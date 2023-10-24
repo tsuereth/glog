@@ -9,7 +9,7 @@ using Newtonsoft.Json.Linq;
 
 namespace GlogGenerator
 {
-    public class IgdbCache
+    public class IgdbCache : IIgdbCache
     {
         public static readonly string JsonFileName = "igdb_cache.json";
 
