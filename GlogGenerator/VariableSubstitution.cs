@@ -44,9 +44,12 @@ namespace GlogGenerator
                     str = str.Remove(variableRefStart, variableRefLen).Insert(variableRefStart, variableValue);
 
                     variableRefEnd = variableRefStart + variableValue.Length;
+                    variableRefStart = str.IndexOf('$', variableRefEnd);
                 }
-
-                variableRefStart = str.IndexOf('$', variableRefEnd);
+                else
+                {
+                    variableRefStart = variableRefEnd - 1;
+                }
             }
 
             return str;

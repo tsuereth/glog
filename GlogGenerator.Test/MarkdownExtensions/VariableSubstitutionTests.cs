@@ -25,7 +25,6 @@ namespace GlogGenerator.Test.MarkdownExtensions
         }
 
         [TestMethod]
-        [ExpectedException(typeof(InvalidDataException))]
         public void TestInlineVariableNotFound()
         {
             var vs = new VariableSubstitution();
@@ -37,6 +36,24 @@ namespace GlogGenerator.Test.MarkdownExtensions
                 .Use(new GlogMarkdownExtension(null, null, null, vs))
                 .Build();
             var result = Markdown.ToHtml(testText, mdPipeline);
+
+            Assert.AreEqual("<p>Test of $TestVart$ substitution</p>\n", result);
+        }
+
+        [TestMethod]
+        public void TestInlineVariableAfterStrayToken()
+        {
+            var vs = new VariableSubstitution();
+            vs.SetSubstitution("TestVar", "replacement text");
+
+            var testText = "Test $of $TestVar$ substitution";
+
+            var mdPipeline = new MarkdownPipelineBuilder()
+                .Use(new GlogMarkdownExtension(null, null, null, vs))
+                .Build();
+            var result = Markdown.ToHtml(testText, mdPipeline);
+
+            Assert.AreEqual("<p>Test $of replacement text substitution</p>\n", result);
         }
 
         [TestMethod]
@@ -69,6 +86,24 @@ namespace GlogGenerator.Test.MarkdownExtensions
             var result = Markdown.ToHtml(testText, mdPipeline);
 
             Assert.AreEqual("<p>Test of <a href=\"https://replacement.text\">link text</a> substitution</p>\n", result);
+        }
+
+        [TestMethod]
+        public void TestMediaLinkSubstitution()
+        {
+            var vs = new VariableSubstitution();
+            vs.SetSubstitution("TestVar", "replacement.text");
+
+            var testText = "Test of ![static mp4](https://$TestVar$/video.mp4){width=960 height=540 controls} substitution";
+
+            var mdPipeline = new MarkdownPipelineBuilder()
+                .UseGenericAttributes()
+                .UseMediaLinks()
+                .Use(new GlogMarkdownExtension(null, null, null, vs))
+                .Build();
+            var result = Markdown.ToHtml(testText, mdPipeline);
+
+            Assert.AreEqual("<p>Test of <video width=\"960\" height=\"540\" controls=\"\"><source type=\"video/mp4\" src=\"https://replacement.text/video.mp4\"></source></video> substitution</p>\n", result);
         }
     }
 }

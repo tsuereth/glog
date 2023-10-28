@@ -45,6 +45,19 @@ namespace GlogGenerator.Test
         }
 
         [TestMethod]
+        public void TestMatchingVariableAfterStrayToken()
+        {
+            var vs = new VariableSubstitution();
+            vs.SetSubstitution("TestVar", "new value");
+
+            var testString = "ignore$me $TestVar$ substitution";
+
+            var result = vs.TryMakeSubstitutions(testString);
+
+            Assert.AreEqual("ignore$me new value substitution", result);
+        }
+
+        [TestMethod]
         public void TestMultpleMatchingVariables()
         {
             var vs = new VariableSubstitution();
