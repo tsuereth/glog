@@ -4,15 +4,13 @@ using System.IO;
 using System.Linq;
 using GlogGenerator.IgdbApi;
 using GlogGenerator.RenderState;
-using Microsoft.Extensions.Logging;
 
 namespace GlogGenerator.Data
 {
     public class SiteDataIndex
     {
-        private readonly ILogger logger;
+        private readonly ISiteBuilder siteBuilder;
         private readonly string inputFilesBasePath;
-        private readonly IIgdbCache igdbCache;
 
         private Dictionary<UrlizedString, CategoryData> categories = new Dictionary<UrlizedString, CategoryData>();
         private Dictionary<UrlizedString, GameData> games = new Dictionary<UrlizedString, GameData>();
@@ -25,13 +23,11 @@ namespace GlogGenerator.Data
         private Dictionary<UrlizedString, TagData> tags = new Dictionary<UrlizedString, TagData>();
 
         public SiteDataIndex(
-            ILogger logger,
-            string inputFilesBasePath,
-            IIgdbCache igdbCache)
+            ISiteBuilder siteBuilder,
+            string inputFilesBasePath)
         {
-            this.logger = logger;
+            this.siteBuilder = siteBuilder;
             this.inputFilesBasePath = inputFilesBasePath;
-            this.igdbCache = igdbCache;
         }
 
         public CategoryData AddCategoryIfMissing(string categoryName)
@@ -209,19 +205,21 @@ namespace GlogGenerator.Data
             this.staticFiles.Clear();
             this.tags.Clear();
 
+            var igdbCache = this.siteBuilder.GetIgdbCache();
+
             // Load game data from the IGDB cache.
-            foreach (var igdbGame in this.igdbCache.GetAllGames())
+            foreach (var igdbGame in igdbCache.GetAllGames())
             {
-                var gameData = GameData.FromIgdbGame(this.igdbCache, igdbGame);
+                var gameData = GameData.FromIgdbGame(igdbCache, igdbGame);
 
                 var gameTitleUrlized = new UrlizedString(gameData.Title);
                 this.games.Add(gameTitleUrlized, gameData);
             }
 
             // And platform data!
-            foreach (var igdbPlatform in this.igdbCache.GetAllPlatforms())
+            foreach (var igdbPlatform in igdbCache.GetAllPlatforms())
             {
-                var platformData = PlatformData.FromIgdbPlatform(this.igdbCache, igdbPlatform);
+                var platformData = PlatformData.FromIgdbPlatform(igdbCache, igdbPlatform);
 
                 var platformAbbreviationUrlized = new UrlizedString(platformData.Abbreviation);
                 this.platforms.Add(platformAbbreviationUrlized, platformData);
@@ -241,7 +239,7 @@ namespace GlogGenerator.Data
                 this.tags.Add(new UrlizedString(tagName), tagData);
             }
 
-            foreach (var igdbGameMetadata in this.igdbCache.GetAllGameMetadata())
+            foreach (var igdbGameMetadata in igdbCache.GetAllGameMetadata())
             {
                 var tagName = igdbGameMetadata.GetReferenceableKey();
 

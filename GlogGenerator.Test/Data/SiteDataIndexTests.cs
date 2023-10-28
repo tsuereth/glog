@@ -28,7 +28,10 @@ namespace GlogGenerator.Test.Data
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
             mockIgdbCache.GetAllGameMetadata().Returns(testGameMetadata);
 
-            var testIndex = new SiteDataIndex(logger, string.Empty, mockIgdbCache);
+            var mockSiteBuilder = Substitute.For<ISiteBuilder>();
+            mockSiteBuilder.GetIgdbCache().Returns(mockIgdbCache);
+
+            var testIndex = new SiteDataIndex(mockSiteBuilder, string.Empty);
 
             testIndex.LoadContent();
 

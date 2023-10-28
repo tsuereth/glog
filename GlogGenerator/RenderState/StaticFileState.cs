@@ -12,7 +12,7 @@ namespace GlogGenerator.RenderState
 
         public string OutputPathRelative { get; set; } = string.Empty;
 
-        public static StaticFileState FromStaticFileData(SiteState site, StaticFileData fileData)
+        public static StaticFileState FromStaticFileData(StaticFileData fileData)
         {
             var file = new StaticFileState();
             file.StaticFile = fileData;

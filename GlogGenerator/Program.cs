@@ -76,11 +76,9 @@ namespace GlogGenerator
             }
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
-            var configData = ConfigData.FromFilePath(configFilePath);
+            var configData = ConfigData.FromFilePaths(configFilePath, inputFilesBasePath, templateFilesBasePath);
             var builder = new SiteBuilder(configData);
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
-
-            var igdbCache = IgdbCache.FromJsonFile(inputFilesBasePath);
 
             if (updateIgdbCache)
             {
@@ -97,36 +95,31 @@ namespace GlogGenerator
                 {
                     logger.LogInformation("Updating IGDB cache...");
                     var cacheUpdateTimer = Stopwatch.StartNew();
-                    await igdbCache.UpdateFromApiClient(igdbApiClient);
+                    await builder.GetIgdbCache().UpdateFromApiClient(igdbApiClient);
                     cacheUpdateTimer.Stop();
                     logger.LogInformation(
                         "Finished updating in {CacheUpdateTimeMs} ms",
                         cacheUpdateTimer.ElapsedMilliseconds);
                 }
 
-                igdbCache.WriteToJsonFile(inputFilesBasePath);
+                builder.GetIgdbCache().WriteToJsonFile(inputFilesBasePath);
             }
 
-            var siteData = new SiteDataIndex(logger, inputFilesBasePath, igdbCache);
-
             var outputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
-            SiteState site;
 
             switch (activeVerb.ToLowerInvariant())
             {
                 case "build":
-                    LoadSiteData(logger, siteData);
-
-                    site = new SiteState(logger, builder, siteData, templateFilesBasePath);
-                    LoadSiteRoutes(logger, site);
+                    LoadSiteData(logger, builder);
+                    LoadSiteRoutes(logger, builder);
 
                     logger.LogInformation("Building content...");
                     var buildTimer = Stopwatch.StartNew();
-                    BuildStaticSite.Build(site, staticSiteOutputBasePath);
+                    BuildStaticSite.Build(builder.GetSiteState(), staticSiteOutputBasePath);
                     buildTimer.Stop();
                     logger.LogInformation(
                         "Finished building {ContentCount} content routes in {BuildTimeMs} ms",
-                        site.ContentRoutes.Count,
+                        builder.GetSiteState().ContentRoutes.Count,
                         buildTimer.ElapsedMilliseconds);
                     break;
 
@@ -135,16 +128,14 @@ namespace GlogGenerator
                     break;
 
                 case "host":
-                    LoadSiteData(logger, siteData);
-
-                    site = new SiteState(logger, builder, siteData, templateFilesBasePath);
-                    LoadSiteRoutes(logger, site);
+                    LoadSiteData(logger, builder);
+                    LoadSiteRoutes(logger, builder);
 
                     logger.LogInformation(
                         "Hosting site at {HostOriginAndPath}",
                         hostOrigin + pathPrefix);
                     var hostLogger = loggerFactory.CreateLogger<HostLocalSite>();
-                    HostLocalSite.Host(hostLogger, site, hostOrigin, pathPrefix);
+                    HostLocalSite.Host(hostLogger, builder.GetSiteState(), hostOrigin, pathPrefix);
                     break;
 
                 case "new":
@@ -188,11 +179,11 @@ rating = []
                     var reportStartDate = DateTimeOffset.Parse(reportStartDateString, CultureInfo.InvariantCulture);
                     var reportEndDate = DateTimeOffset.Parse(reportEndDateString, CultureInfo.InvariantCulture);
 
-                    LoadSiteData(logger, siteData);
+                    LoadSiteData(logger, builder);
 
                     // TODO: Move this into an encapsulated class/file for reporting code.
                     var statsByGameAndPlatform = new Dictionary<string, GameStats>();
-                    var reportPosts = siteData.GetPosts().Where(p => p.Date >= reportStartDate && p.Date <= reportEndDate).ToList();
+                    var reportPosts = builder.GetSiteDataIndex().GetPosts().Where(p => p.Date >= reportStartDate && p.Date <= reportEndDate).ToList();
                     foreach (var reportPost in reportPosts)
                     {
                         foreach (var postGame in reportPost.Games)
@@ -203,7 +194,7 @@ rating = []
 
                                 if (!statsByGameAndPlatform.ContainsKey(gameAndPlatformKey))
                                 {
-                                    var gameData = siteData.GetGame(postGame);
+                                    var gameData = builder.GetSiteDataIndex().GetGame(postGame);
 
                                     statsByGameAndPlatform[gameAndPlatformKey] = new GameStats()
                                     {
@@ -298,26 +289,26 @@ rating = []
             return 0;
         }
 
-        private static void LoadSiteData(ILogger logger, SiteDataIndex siteData)
+        private static void LoadSiteData(ILogger logger, SiteBuilder builder)
         {
             logger.LogInformation("Loading data...");
             var loadTimer = Stopwatch.StartNew();
-            siteData.LoadContent();
+            builder.GetSiteDataIndex().LoadContent();
             loadTimer.Stop();
             logger.LogInformation(
                 "Finished loading site data in {LoadTimeMs} ms",
                 loadTimer.ElapsedMilliseconds);
         }
 
-        private static void LoadSiteRoutes(ILogger logger, SiteState site)
+        private static void LoadSiteRoutes(ILogger logger, SiteBuilder builder)
         {
             logger.LogInformation("Loading routes...");
             var loadTimer = Stopwatch.StartNew();
-            site.LoadSiteRoutes();
+            builder.GetSiteState().LoadContentRoutes();
             loadTimer.Stop();
             logger.LogInformation(
                 "Finished loading {ContentCount} content routes in {LoadTimeMs} ms",
-                site.ContentRoutes.Count,
+                builder.GetSiteState().ContentRoutes.Count,
                 loadTimer.ElapsedMilliseconds);
         }
     }

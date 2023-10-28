@@ -123,14 +123,12 @@ namespace GlogGenerator.RenderState
         public string TermsType { get; set; } = string.Empty;
 
         private readonly SiteBuilder siteBuilder;
-        private readonly SiteState siteState;
 
         private string renderedContent;
 
-        public PageState(SiteBuilder siteBuilder, SiteState siteState)
+        public PageState(SiteBuilder siteBuilder)
         {
             this.siteBuilder = siteBuilder;
-            this.siteState = siteState;
         }
 
         private string RenderContentFromSourceMarkdown()
@@ -140,22 +138,25 @@ namespace GlogGenerator.RenderState
                 return string.Empty;
             }
 
-            var parsed = this.siteState.ParseMarkdown(this.SourceContent);
+            var parsed = this.siteBuilder.ParseMarkdown(this.SourceContent);
 
-            var rendered = this.siteState.RenderHtml(parsed, this.HashCode);
+            var rendererContext = this.siteBuilder.GetRendererContext();
+            rendererContext.SetPageHashCode(this.HashCode);
+            var rendered = this.siteBuilder.RenderHtml(parsed);
+            rendererContext.Clear();
 
             return rendered;
         }
 
-        public static PageState FromPageData(SiteBuilder siteBuilder, SiteState site, PageData pageData)
+        public static PageState FromPageData(SiteBuilder siteBuilder, PageData pageData)
         {
-            var page = new PageState(siteBuilder, site);
+            var page = new PageState(siteBuilder);
             page.HideDate = true;
             page.HideTitle = true;
 
             page.SourceContent = pageData.Content;
 
-            page.Permalink = $"{site.BaseURL}{pageData.PermalinkRelative}";
+            page.Permalink = $"{siteBuilder.GetBaseURL()}{pageData.PermalinkRelative}";
 
             var outputPathRelative = pageData.PermalinkRelative;
             if (!outputPathRelative.EndsWith('/'))
@@ -170,9 +171,9 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromPostData(SiteBuilder siteBuilder, SiteState site, PostData postData)
+        public static PageState FromPostData(SiteBuilder siteBuilder, PostData postData)
         {
-            var page = new PageState(siteBuilder, site);
+            var page = new PageState(siteBuilder);
 
             page.Categories = postData.Categories.Select(c => new CategoryData() { Name = c }).ToList();
 
@@ -182,7 +183,7 @@ namespace GlogGenerator.RenderState
 
             page.HideDate = (postData.Date == DateTimeOffset.MinValue);
 
-            page.Permalink = $"{site.BaseURL}{postData.PermalinkRelative}";
+            page.Permalink = $"{siteBuilder.GetBaseURL()}{postData.PermalinkRelative}";
 
             page.Platforms = postData.Platforms.Select(c => new PlatformData() { Abbreviation = c }).ToList();
 
@@ -205,11 +206,11 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromCategoryData(SiteBuilder siteBuilder, SiteState site, CategoryData categoryData)
+        public static PageState FromCategoryData(SiteBuilder siteBuilder, CategoryData categoryData)
         {
-            var page = new PageState(siteBuilder, site);
+            var page = new PageState(siteBuilder);
 
-            page.Permalink = $"{site.BaseURL}{categoryData.GetPermalinkRelative()}";
+            page.Permalink = $"{siteBuilder.GetBaseURL()}{categoryData.GetPermalinkRelative()}";
 
             page.Title = categoryData.Name;
 
@@ -232,11 +233,11 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromGameData(SiteBuilder siteBuilder, SiteState site, GameData gameData)
+        public static PageState FromGameData(SiteBuilder siteBuilder, GameData gameData)
         {
-            var page = new PageState(siteBuilder, site);
+            var page = new PageState(siteBuilder);
 
-            page.Permalink = $"{site.BaseURL}{gameData.GetPermalinkRelative()}";
+            page.Permalink = $"{siteBuilder.GetBaseURL()}{gameData.GetPermalinkRelative()}";
 
             page.Title = gameData.Title;
 
@@ -262,11 +263,11 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromPlatformData(SiteBuilder siteBuilder, SiteState site, PlatformData platformData)
+        public static PageState FromPlatformData(SiteBuilder siteBuilder, PlatformData platformData)
         {
-            var page = new PageState(siteBuilder, site);
+            var page = new PageState(siteBuilder);
 
-            page.Permalink = $"{site.BaseURL}{platformData.GetPermalinkRelative()}";
+            page.Permalink = $"{siteBuilder.GetBaseURL()}{platformData.GetPermalinkRelative()}";
 
             if (!string.IsNullOrEmpty(platformData.Name))
             {
@@ -305,11 +306,11 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromRatingData(SiteBuilder siteBuilder, SiteState site, RatingData ratingData)
+        public static PageState FromRatingData(SiteBuilder siteBuilder, RatingData ratingData)
         {
-            var page = new PageState(siteBuilder, site);
+            var page = new PageState(siteBuilder);
 
-            page.Permalink = $"{site.BaseURL}{ratingData.GetPermalinkRelative()}";
+            page.Permalink = $"{siteBuilder.GetBaseURL()}{ratingData.GetPermalinkRelative()}";
 
             page.Title = ratingData.Name;
 
@@ -332,11 +333,11 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromTagData(SiteBuilder siteBuilder, SiteState site, TagData tagData)
+        public static PageState FromTagData(SiteBuilder siteBuilder, TagData tagData)
         {
-            var page = new PageState(siteBuilder, site);
+            var page = new PageState(siteBuilder);
 
-            page.Permalink = $"{site.BaseURL}{tagData.GetPermalinkRelative()}";
+            page.Permalink = $"{siteBuilder.GetBaseURL()}{tagData.GetPermalinkRelative()}";
 
             page.Title = tagData.Name;
 

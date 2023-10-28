@@ -26,28 +26,23 @@ namespace GlogGenerator.Test
             var staticSiteOutputBasePath = Path.Combine(Directory.GetCurrentDirectory(), "public");
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
-            var configData = ConfigData.FromFilePath(configFilePath);
+            var configData = ConfigData.FromFilePaths(configFilePath, inputFilesBasePath, templateFilesBasePath);
             var builder = new SiteBuilder(configData);
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
-            var igdbCache = IgdbCache.FromJsonFile(inputFilesBasePath);
-
-            var siteData = new SiteDataIndex(logger, inputFilesBasePath, igdbCache);
-            siteData.LoadContent();
-
-            var site = new SiteState(logger, builder, siteData, templateFilesBasePath);
-
             // For testing, pretend that our "build date" is some constant date.
-            site.BuildDate = DateTimeOffset.Parse("2023-09-04T17:00:00.0+00:00", CultureInfo.InvariantCulture);
+            builder.SetBuildDate(DateTimeOffset.Parse("2023-09-04T17:00:00.0+00:00", CultureInfo.InvariantCulture));
 
-            site.LoadSiteRoutes();
+            builder.GetSiteDataIndex().LoadContent();;
+
+            builder.GetSiteState().LoadContentRoutes();
 
             // Ensure the output directory is clean, first.
             if (Directory.Exists(staticSiteOutputBasePath))
             {
                 Directory.Delete(staticSiteOutputBasePath, recursive: true);
             }
-            BuildStaticSite.Build(site, staticSiteOutputBasePath);
+            BuildStaticSite.Build(builder.GetSiteState(), staticSiteOutputBasePath);
 
             var actualFilePaths = Directory.EnumerateFiles(staticSiteOutputBasePath, "*.*", SearchOption.AllDirectories).ToList();
             Assert.IsTrue(actualFilePaths.Count > 0);
