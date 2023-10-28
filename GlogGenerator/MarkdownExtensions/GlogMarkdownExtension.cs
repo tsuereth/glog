@@ -12,15 +12,18 @@ namespace GlogGenerator.MarkdownExtensions
         private readonly SiteDataIndex siteDataIndex;
         private readonly SiteState siteState;
         private readonly PageState pageState;
+        private readonly VariableSubstitution variableSubstitution;
 
         public GlogMarkdownExtension(
             SiteDataIndex siteDataIndex,
             SiteState siteState,
-            PageState pageState)
+            PageState pageState,
+            VariableSubstitution variableSubstitution)
         {
             this.siteDataIndex = siteDataIndex;
             this.siteState = siteState;
             this.pageState = pageState;
+            this.variableSubstitution = variableSubstitution;
         }
 
         public void Setup(MarkdownPipelineBuilder pipeline)
@@ -40,12 +43,15 @@ namespace GlogGenerator.MarkdownExtensions
             pipeline.BlockParsers.AddIfNotAlready<QuoteNotSpoilerBlockParser>();
 
             pipeline.InlineParsers.AddIfNotAlready<SpoilerParser>();
+
+            pipeline.InlineParsers.AddIfNotAlready<VariableSubstitutionParser>();
         }
 
         public void Setup(MarkdownPipeline pipeline, IMarkdownRenderer renderer)
         {
             renderer.ObjectRenderers.AddIfNotAlready(new FencedDataBlockRenderer(this.siteDataIndex, this.siteState, this.pageState));
             renderer.ObjectRenderers.AddIfNotAlready<SpoilerRenderer>();
+            renderer.ObjectRenderers.AddIfNotAlready(new VariableSubstitutionRenderer(this.variableSubstitution));
         }
     }
 }

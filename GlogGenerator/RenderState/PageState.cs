@@ -146,13 +146,16 @@ namespace GlogGenerator.RenderState
             contentAsTemplate.Add("page", this);
             var rendered = contentAsTemplate.RenderWithErrorsThrown(CultureInfo.InvariantCulture);
 
+            var mdVariableSubstitution = new VariableSubstitution();
+            mdVariableSubstitution.SetSubstitution("SiteBaseURL", this.siteState.BaseURL);
+
             var mdPipeline = new MarkdownPipelineBuilder()
                 .Use<ListExtraExtension>()
                 .UseGenericAttributes()
                 .UseMediaLinks()
                 .UsePipeTables()
                 .UseSoftlineBreakAsHardlineBreak()
-                .Use(new GlogMarkdownExtension(this.siteDataIndex, this.siteState, this))
+                .Use(new GlogMarkdownExtension(this.siteDataIndex, this.siteState, this, mdVariableSubstitution))
                 .Build();
             rendered = Markdown.ToHtml(rendered, mdPipeline);
 
