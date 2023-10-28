@@ -4,6 +4,7 @@ using Markdig;
 using Markdig.Parsers;
 using Markdig.Parsers.Inlines;
 using Markdig.Renderers;
+using Markdig.Renderers.Html.Inlines;
 
 namespace GlogGenerator.MarkdownExtensions
 {
@@ -49,6 +50,12 @@ namespace GlogGenerator.MarkdownExtensions
 
         public void Setup(MarkdownPipeline pipeline, IMarkdownRenderer renderer)
         {
+            // We need to replace link renderers, so they can include variable substitutions.
+            renderer.ObjectRenderers.TryRemove<AutolinkInlineRenderer>();
+            renderer.ObjectRenderers.AddIfNotAlready(new AutolinkInlineWithVariableSubstitutionRenderer(this.variableSubstitution));
+            renderer.ObjectRenderers.TryRemove<LinkInlineRenderer>();
+            renderer.ObjectRenderers.AddIfNotAlready(new LinkInlineWithVariableSubstitutionRenderer(this.variableSubstitution));
+
             renderer.ObjectRenderers.AddIfNotAlready(new FencedDataBlockRenderer(this.siteDataIndex, this.siteState, this.pageState));
             renderer.ObjectRenderers.AddIfNotAlready<SpoilerRenderer>();
             renderer.ObjectRenderers.AddIfNotAlready(new VariableSubstitutionRenderer(this.variableSubstitution));
