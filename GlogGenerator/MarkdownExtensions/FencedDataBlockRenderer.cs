@@ -11,7 +11,6 @@ using GlogGenerator.RenderState;
 using Markdig.Renderers;
 using Markdig.Renderers.Html;
 using Markdig.Syntax;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -20,17 +19,14 @@ namespace GlogGenerator.MarkdownExtensions
     public class FencedDataBlockRenderer : HtmlObjectRenderer<FencedDataBlock>
     {
         private readonly SiteDataIndex siteDataIndex;
-        private readonly SiteState siteState;
-        private readonly PageState pageState;
+        private readonly HtmlRendererContext htmlRendererContext;
 
         public FencedDataBlockRenderer(
             SiteDataIndex siteDataIndex,
-            SiteState siteState,
-            PageState pageState)
+            HtmlRendererContext htmlRendererContext)
         {
             this.siteDataIndex = siteDataIndex;
-            this.siteState = siteState;
-            this.pageState = pageState;
+            this.htmlRendererContext = htmlRendererContext;
         }
 
         protected override void Write(HtmlRenderer renderer, FencedDataBlock obj)
@@ -93,11 +89,9 @@ namespace GlogGenerator.MarkdownExtensions
                     chartOptionsTextBuilder.AppendLine();
                 }
 
-#pragma warning disable CA5351 // Yeah MD5 is cryptographically insecure; this isn't security!
-                var pageHashInBytes = Encoding.UTF8.GetBytes(this.pageState.Permalink);
-                var pageHashOutBytes = MD5.HashData(pageHashInBytes);
-                var pageHash = Convert.ToHexString(pageHashOutBytes);
+                var pageHash = this.htmlRendererContext.GetPageHashCode();
 
+#pragma warning disable CA5351 // Yeah MD5 is cryptographically insecure; this isn't security!
                 var chartHashInString = JsonConvert.SerializeObject(namedArgs);
                 var chartHashInBytes = Encoding.UTF8.GetBytes(chartHashInString);
                 var chartHashOutBytes = MD5.HashData(chartHashInBytes);

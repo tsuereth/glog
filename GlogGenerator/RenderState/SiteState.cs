@@ -3,14 +3,24 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using GlogGenerator.Data;
+using GlogGenerator.MarkdownExtensions;
 using GlogGenerator.TemplateRenderers;
+using Markdig;
+using Markdig.Extensions.ListExtras;
+using Markdig.Syntax;
 using Microsoft.Extensions.Logging;
 
 namespace GlogGenerator.RenderState
 {
     public class SiteState
     {
-        public string BaseURL { get; set; } = string.Empty;
+        public string BaseURL
+        {
+            get
+            {
+                return this.config.GetBaseURL();
+            }
+        }
 
         public DateTimeOffset BuildDate { get; set; } = DateTimeOffset.MinValue;
 
@@ -22,20 +32,28 @@ namespace GlogGenerator.RenderState
             }
         }
 
-        public List<string> NowPlaying { get; set; } = new List<string>();
+        public List<string> NowPlaying
+        {
+            get
+            {
+                return this.config.GetNowPlaying();
+            }
+        }
 
         public Dictionary<string, IOutputContent> ContentRoutes { get; set; } = new Dictionary<string, IOutputContent>();
 
         private readonly ILogger logger;
-        private readonly ConfigData config;
+        private readonly SiteConfig config;
         private readonly SiteDataIndex dataIndex;
         private readonly string templateFilesBasePath;
 
+        private GlogMarkdownExtension glogMarkdownExtension;
+        private MarkdownPipeline markdownPipeline;
         private Antlr4.StringTemplate.TemplateGroupDirectory templateGroup;
 
         public SiteState(
             ILogger logger,
-            ConfigData config,
+            SiteConfig config,
             SiteDataIndex dataIndex,
             string templateFilesBasePath)
         {
@@ -44,9 +62,34 @@ namespace GlogGenerator.RenderState
             this.dataIndex = dataIndex;
             this.templateFilesBasePath = templateFilesBasePath;
 
-            this.BaseURL = config.BaseURL;
             this.BuildDate = DateTimeOffset.Now;
-            this.NowPlaying = config.NowPlaying;
+
+            this.glogMarkdownExtension = new GlogMarkdownExtension(this.config, this.dataIndex, this);
+            this.markdownPipeline = new MarkdownPipelineBuilder()
+                .Use<ListExtraExtension>()
+                .UseGenericAttributes()
+                .UseMediaLinks()
+                .UsePipeTables()
+                .UseSoftlineBreakAsHardlineBreak()
+                .Use(this.glogMarkdownExtension)
+                .Build();
+        }
+
+        public MarkdownDocument ParseMarkdown(string markdown)
+        {
+            return Markdown.Parse(markdown, this.markdownPipeline);
+        }
+
+        public string RenderHtml(MarkdownDocument parsedDocument, string pageHashCode)
+        {
+            var rendererContext = this.glogMarkdownExtension.GetRendererContext();
+            rendererContext.SetPageHashCode(pageHashCode);
+
+            var html = parsedDocument.ToHtml(this.markdownPipeline);
+
+            rendererContext.Clear();
+
+            return html;
         }
 
         public Antlr4.StringTemplate.TemplateGroupDirectory GetTemplateGroup()
@@ -96,7 +139,13 @@ namespace GlogGenerator.RenderState
             {
                 try
                 {
-                    var page = PageState.FromPostData(this.dataIndex, this, postData);
+                    // Verify that the post's games are found in our metadata cache.
+                    foreach (var game in postData.Games)
+                    {
+                        _ = this.dataIndex.ValidateMatchingGameName(game);
+                    }
+
+                    var page = PageState.FromPostData(this.config, this, postData);
                     postPages.Add(page);
                     this.ContentRoutes.Add(page.OutputPathRelative, page);
                 }
@@ -106,7 +155,7 @@ namespace GlogGenerator.RenderState
                 }
             }
 
-            var postsListPage = new PageState(this.dataIndex, this)
+            var postsListPage = new PageState(this.config, this)
             {
                 HideDate = true,
                 Title = "Posts",
@@ -121,7 +170,7 @@ namespace GlogGenerator.RenderState
             const int pagesPerHistoryPage = 10;
             for (var historyPageNum = 0; (historyPageNum * pagesPerHistoryPage) < postPages.Count; ++historyPageNum)
             {
-                var historyPage = new PageState(this.dataIndex, this)
+                var historyPage = new PageState(this.config, this)
                 {
                     HideDate = true,
                     HideTitle = true,
@@ -180,7 +229,7 @@ namespace GlogGenerator.RenderState
             }
 
             var rssFeedItems = Math.Min(postPages.Count, 15);
-            var rssFeedPage = new PageState(this.dataIndex, this)
+            var rssFeedPage = new PageState(this.config, this)
             {
                 Date = posts[0].Date,
                 OutputPathRelative = "index.xml",
@@ -190,7 +239,7 @@ namespace GlogGenerator.RenderState
             };
             this.ContentRoutes.Add(rssFeedPage.OutputPathRelative, rssFeedPage);
 
-            var categoriesIndex = new PageState(this.dataIndex, this)
+            var categoriesIndex = new PageState(this.config, this)
             {
                 HideDate = true,
                 OutputPathRelative = "category/index.html",
@@ -206,12 +255,12 @@ namespace GlogGenerator.RenderState
             var categories = this.dataIndex.GetCategories();
             foreach (var categoryData in categories)
             {
-                var page = PageState.FromCategoryData(this.dataIndex, this, categoryData);
+                var page = PageState.FromCategoryData(this.config, this, categoryData);
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
             var games = this.dataIndex.GetGames();
-            var gamesIndex = new PageState(this.dataIndex, this)
+            var gamesIndex = new PageState(this.config, this)
             {
                 HideDate = true,
                 OutputPathRelative = "game/index.html",
@@ -226,12 +275,12 @@ namespace GlogGenerator.RenderState
 
             foreach (var gameData in games)
             {
-                var page = PageState.FromGameData(this.dataIndex, this, gameData);
+                var page = PageState.FromGameData(this.config, this, gameData);
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
             var platforms = this.dataIndex.GetPlatforms();
-            var platformsIndex = new PageState(this.dataIndex, this)
+            var platformsIndex = new PageState(this.config, this)
             {
                 HideDate = true,
                 OutputPathRelative = "platform/index.html",
@@ -246,12 +295,12 @@ namespace GlogGenerator.RenderState
 
             foreach (var platformData in platforms)
             {
-                var page = PageState.FromPlatformData(this.dataIndex, this, platformData);
+                var page = PageState.FromPlatformData(this.config, this, platformData);
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
             var ratings = this.dataIndex.GetRatings();
-            var ratingsIndex = new PageState(this.dataIndex, this)
+            var ratingsIndex = new PageState(this.config, this)
             {
                 HideDate = true,
                 OutputPathRelative = "rating/index.html",
@@ -266,12 +315,12 @@ namespace GlogGenerator.RenderState
 
             foreach (var ratingData in ratings)
             {
-                var page = PageState.FromRatingData(this.dataIndex, this, ratingData);
+                var page = PageState.FromRatingData(this.config, this, ratingData);
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
             var tags = this.dataIndex.GetTags();
-            var tagsIndex = new PageState(this.dataIndex, this)
+            var tagsIndex = new PageState(this.config, this)
             {
                 HideDate = true,
                 OutputPathRelative = "tag/index.html",
@@ -286,14 +335,14 @@ namespace GlogGenerator.RenderState
 
             foreach (var tagData in tags)
             {
-                var page = PageState.FromTagData(this.dataIndex, this, tagData);
+                var page = PageState.FromTagData(this.config, this, tagData);
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
 
             var pages = this.dataIndex.GetPages();
             foreach (var pageData in pages)
             {
-                var page = PageState.FromPageData(this.dataIndex, this, pageData);
+                var page = PageState.FromPageData(this.config, this, pageData);
                 this.ContentRoutes.Add(page.OutputPathRelative, page);
             }
         }

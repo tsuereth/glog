@@ -13,21 +13,27 @@ namespace GlogGenerator.MarkdownExtensions
 {
     public class GlogMarkdownExtension : IMarkdownExtension
     {
+        private readonly SiteConfig siteConfig;
         private readonly SiteDataIndex siteDataIndex;
         private readonly SiteState siteState;
-        private readonly PageState pageState;
-        private readonly VariableSubstitution variableSubstitution;
+
+        private HtmlRendererContext htmlRendererContext;
 
         public GlogMarkdownExtension(
+            SiteConfig siteConfig,
             SiteDataIndex siteDataIndex,
-            SiteState siteState,
-            PageState pageState,
-            VariableSubstitution variableSubstitution)
+            SiteState siteState)
         {
+            this.siteConfig = siteConfig;
             this.siteDataIndex = siteDataIndex;
             this.siteState = siteState;
-            this.pageState = pageState;
-            this.variableSubstitution = variableSubstitution;
+
+            this.htmlRendererContext = new HtmlRendererContext();
+        }
+
+        public HtmlRendererContext GetRendererContext()
+        {
+            return this.htmlRendererContext;
         }
 
         public void Setup(MarkdownPipelineBuilder pipeline)
@@ -57,24 +63,26 @@ namespace GlogGenerator.MarkdownExtensions
                 renderer.ObjectWriteBefore += new Action<IMarkdownRenderer, MarkdownObject>(
                     (IMarkdownRenderer r, MarkdownObject o) =>
                     {
+                        var vs = this.siteConfig.GetVariableSubstitution();
+
                         if (o is AutolinkInline)
                         {
-                            (o as AutolinkInline).Url = this.variableSubstitution.TryMakeSubstitutions((o as AutolinkInline).Url);
+                            (o as AutolinkInline).Url = vs.TryMakeSubstitutions((o as AutolinkInline).Url);
                         }
                         else if (o is LinkInline)
                         {
-                            (o as LinkInline).Url = this.variableSubstitution.TryMakeSubstitutions((o as LinkInline).Url);
+                            (o as LinkInline).Url = vs.TryMakeSubstitutions((o as LinkInline).Url);
                         }
                         else if (o is LiteralInline)
                         {
                             // FIXME?: Can (or must) the substitution check preserve un-changed StringSlices?
-                            var substitutedString = this.variableSubstitution.TryMakeSubstitutions((o as LiteralInline).Content.ToString());
+                            var substitutedString = vs.TryMakeSubstitutions((o as LiteralInline).Content.ToString());
                             (o as LiteralInline).Content = new StringSlice(substitutedString);
                         }
                     });
             }
 
-            renderer.ObjectRenderers.AddIfNotAlready(new FencedDataBlockRenderer(this.siteDataIndex, this.siteState, this.pageState));
+            renderer.ObjectRenderers.AddIfNotAlready(new FencedDataBlockRenderer(this.siteDataIndex, this.htmlRendererContext));
             renderer.ObjectRenderers.AddIfNotAlready<SpoilerRenderer>();
         }
     }

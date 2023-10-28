@@ -76,8 +76,9 @@ namespace GlogGenerator
             }
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
-            var config = ConfigData.FromFilePath(configFilePath);
-            config.BaseURL = $"{hostOrigin}{pathPrefix}"; // TODO: ensure proper slash-usage between origin and path
+            var configData = ConfigData.FromFilePath(configFilePath);
+            var config = new SiteConfig(configData);
+            config.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
             var igdbCache = IgdbCache.FromJsonFile(inputFilesBasePath);
 
