@@ -11,7 +11,7 @@ I know that I've impulse-purchased [some](game:Super Daryl Deluxe) [questionable
 
 Enter <game:Onikira: Demon Killer>.  Why did I buy this?  Maybe because its screenshots look shiny and colorful, like <game:Muramasa: The Demon Blade>?  Evidently I didn't pay enough attention to the <a href="https://store.steampowered.com/app/310850/">Steam reviews</a>, or I would have considered that Onikira might have quality control issues.
 
-![](%site.BaseURL%onikira_question.jpg){width=400 height=300}
+![]($SiteBaseURL$onikira_question.jpg){width=400 height=300}
 
 <i>The context in the previous screen doesn't turn that subtitle into a question.  That's just a typo.</i>
 

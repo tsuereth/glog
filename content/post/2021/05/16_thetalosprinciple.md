@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Awesome"]
 +++
 
-I loved the demo [back in 2014](%site.BaseURL%2014/11/06/praise-talos/), and I specifically name-checked it [again in 2016](%site.BaseURL%2016/02/06/much-more-fun-than-the-harrison-ford-movie/); but all this time, I've been sleeping on <game:The Talos Principle> -- assuming (or hoping) that it would remain playable, and fun, years later.
+I loved the demo [back in 2014]($SiteBaseURL$2014/11/06/praise-talos/), and I specifically name-checked it [again in 2016]($SiteBaseURL$2016/02/06/much-more-fun-than-the-harrison-ford-movie/); but all this time, I've been sleeping on <game:The Talos Principle> -- assuming (or hoping) that it would remain playable, and fun, years later.
 
 It did!  <i>Phew.</i>
 

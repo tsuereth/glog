@@ -17,10 +17,10 @@ What makes LEGO The Hobbit compelling, then, is - again, like LEGO LotR - an <b>
 
 Its gameplay mechanics and core loops are familiar if you've played a <tag:LEGO> game before: collect studs to unlock items to collect more studs to unlock characters to ... <i>collect everything</i>.  And aside from character-specific abilities, these mechanics don't have a hell of a lot to do with Tolkien's world -- the dwarves have axes, Legolas has a bow, and Gandalf can fire magic missiles, so you'll need to switch to the proper character to take out particular obstacles.  It's not exactly rocket science.
 
-But like I wrote [not long ago](%site.BaseURL%2020/11/27/go-go-power-ninja/) about another LEGO title, my enjoyment of these games has a lot to do with my attachment to the source material.  And even if this game doesn't add much to what worked about LEGO LotR, ... well, as with <i>The Hobbit</i> movies, I'll take any excuse to get lost in Middle-earth again.
+But like I wrote [not long ago]($SiteBaseURL$2020/11/27/go-go-power-ninja/) about another LEGO title, my enjoyment of these games has a lot to do with my attachment to the source material.  And even if this game doesn't add much to what worked about LEGO LotR, ... well, as with <i>The Hobbit</i> movies, I'll take any excuse to get lost in Middle-earth again.
 
 <b>Better than</b>: <game:The LEGO Movie Videogame>  
 <b>Not as good as</b>: <game:LEGO The Lord of the Rings>, <game:Middle-earth: Shadow of Mordor>  
 <b>Unusually, includes original voice acting</b>: by the late <a href="https://www.imdb.com/name/nm0000489/">Christopher Lee</a>, who narrates the introduction of each story mission.  RIP, white wizard.
 
-<i>Progress: 100\%</i>
+<i>Progress: 100%</i>

@@ -9,7 +9,7 @@ rating = ["Meh"]
 
 You could say that I didn't learn my lesson.
 
-On <game:Super Smash Bros. for Wii U>, back in 2014, I [glogged](%site.BaseURL%2014/12/18/sm4sh-super-smoursh-brothers/):
+On <game:Super Smash Bros. for Wii U>, back in 2014, I [glogged]($SiteBaseURL$2014/12/18/sm4sh-super-smoursh-brothers/):
 
 > I'm disappointed in Smash for Wii U, but not for good reasons. It isn't my kind of game -- but I don't think it was ever supposed to be.
 >

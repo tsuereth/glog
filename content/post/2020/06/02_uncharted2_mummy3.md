@@ -11,26 +11,26 @@ For the record, <i>Mummy: Jet Li</i> was <a href="https://www.rottentomatoes.com
 
 <b>Exhibit A</b>: The Mummy crew and Team Drake both visit an ancient Himalayan village.
 
-![](%site.BaseURL%mummy3_himalayanvillage.png){width=640 height=360}  
+![]($SiteBaseURL$mummy3_himalayanvillage.png){width=640 height=360}  
 <i>The Mummy: Tomb of the Dragon Emperor</i>
 
-![](%site.BaseURL%uncharted2_himalayanvillage.png){width=640 height=360}  
+![]($SiteBaseURL$uncharted2_himalayanvillage.png){width=640 height=360}  
 <i>Uncharted 2: Among Thieves (image credit: <a href="https://www.playstationtrophies.org/forum/uncharted-2-among-thieves/280513-uncharted-2-among-thieves-ps3-treasure-location-guide-3.html">playstationtrophies.org</a>)</i>
 
 <b>Exhibit B</b>: Yetis, who crash both of the aforementioned parties.
 
-![](%site.BaseURL%mummy3_yeti.png){width=640 height=360}  
+![]($SiteBaseURL$mummy3_yeti.png){width=640 height=360}  
 <i>The Mummy: Tomb of the Dragon Emperor</i>
 
-![](%site.BaseURL%uncharted2_yeti.jpg){width=640 height=360}  
+![]($SiteBaseURL$uncharted2_yeti.jpg){width=640 height=360}  
 <i>Uncharted 2: Among Thieves (image credit: <a href="http://ilovetheyeti.blogspot.com/2011/11/yeti-arcade-uncharted-2-among-thieves.html">ilovetheyeti.blogspot.com</a>)</i>
 
 <b>Exhibit C</b>: Both the Dragon Emperor and Lazarevic seek eternal life in Shangri-La (which Nathan Drake calls "Shambhala").
 
-![](%site.BaseURL%mummy3_shangrila.png){width=640 height=360}  
+![]($SiteBaseURL$mummy3_shangrila.png){width=640 height=360}  
 <i>The Mummy: Tomb of the Dragon Emperor</i>
 
-![](%site.BaseURL%uncharted2_shangrila.jpg){width=640 height=360}  
+![]($SiteBaseURL$uncharted2_shangrila.jpg){width=640 height=360}  
 <i>Uncharted 2: Among Thieves (image credit: <a href="https://www.gamesradar.com/concept-art-appreciation-uncharted/">gamesradar.com</a>)</i>
 
 Although its commercial failure suggests that not many people actually saw <i>The Mummy: Tomb of the Dragon Emperor</i>, I'm <a href="https://gamefaqs.gamespot.com/boards/955125-uncharted-2-among-thieves/57530897">not the only one</a> to note some resemblance between these two productions.  Did Naughty Dog draw inspiration from Mummy 3 for some of its late-game environment art?

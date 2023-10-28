@@ -11,7 +11,7 @@ rating = ["Good"]
 
 Open World Game is a 2D map with quest markers that you can complete by pressing a button.  That's all it is.  ... Well, that and text descriptions for those quests, which also take jabs at RPG tropes.
 
-![](%site.BaseURL%openworldgame_hideout.jpg){width=640 height=360}
+![]($SiteBaseURL$openworldgame_hideout.jpg){width=640 height=360}
 
 The surprising thing about Open World Game is that it's actually kinda good.  Not just good for a free game, but also good by the standards of other satirical games like <game:DLC Quest> and <game:Evoland>.
 
@@ -21,7 +21,7 @@ But my point is that there is more and better world-building in Open World Game 
 
 The writing's sense of humor helps, too.
 
-![](%site.BaseURL%openworldgame_messenger.jpg){width=640 height=360}
+![]($SiteBaseURL$openworldgame_messenger.jpg){width=640 height=360}
 
 I don't want to blow too much smoke up this free game's skirt, and if it wasn't free I almost certainly wouldn't be willing to buy it.  But I really admire the amount of effort that went into creating this world, even if it is ultimately just a 90-minute-long joke.
 
@@ -29,4 +29,4 @@ I don't want to blow too much smoke up this free game's skirt, and if it wasn't 
 <b>Not as good as</b>: well, [Skyrim](game:The Elder Scrolls V: Skyrim - Special Edition), I guess.  
 <b>Higher-quality writing than</b>: a depressing amount of paid, even triple-A, games.
 
-<i>Progress: 100\%</i>
+<i>Progress: 100%</i>

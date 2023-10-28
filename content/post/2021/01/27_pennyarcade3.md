@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-It's been [almost ten years](%site.BaseURL%2011/02/08/penny-arcade-adventures-on-the-rain-slick-precipice-of-darkness-episode-2-2/) since I played [Episode Two](game:Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness - Episode Two).  Let's see if I can remember the plot... oh, steampunk-ey <a href="https://www.penny-arcade.com/">Gabe and Tycho</a> are fighting eldritch gods.  Yeah, got it.
+It's been [almost ten years]($SiteBaseURL$2011/02/08/penny-arcade-adventures-on-the-rain-slick-precipice-of-darkness-episode-2-2/) since I played [Episode Two](game:Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness - Episode Two).  Let's see if I can remember the plot... oh, steampunk-ey <a href="https://www.penny-arcade.com/">Gabe and Tycho</a> are fighting eldritch gods.  Yeah, got it.
 
 <i>(Deep breath)</i> <game:Penny Arcade's On the Rain-Slick Precipice of Darkness 3> <i>looks</i> like a significant departure from its predecessors, and not only because the words "Adventures" and "Episode" were dropped from the title -- part 3 is from a totally different developer, has a much lower-fidelity presentation, and is mechanically quite distinct.
 
@@ -17,7 +17,7 @@ And while its basic <b>playability</b> is better than that of Zeboyd's prior gam
 
 What makes this game fun, that is, what motivated me to keep playing even after the combat became tedious and dull, is the same thing that made the previous games fun: Penny Arcade writing.  Every narrative moment is punctuated with irreverent wit, every in-game concept has an entertaining etymology (like the "Crabomancer" class), and every bit of flavor text is worth reading for its delightful flippancy.
 
-![](%site.BaseURL%pennyarcade-rspd-3_donttouch.jpg){width=640 height=360}
+![]($SiteBaseURL$pennyarcade-rspd-3_donttouch.jpg){width=640 height=360}
 
 So I tolerated Rain-Slick 3's unpolished edges, and its gradually-tiresome combat, for the sake of the writing.  Not because of an enthrallingly dramatic plot, mind you - I have no particular interest in Dr. Blood's motives - but because its prose is pure fun.  And I look forward to more of that in [the final chapter](game:Penny Arcade's On the Rain-Slick Precipice of Darkness 4).
 

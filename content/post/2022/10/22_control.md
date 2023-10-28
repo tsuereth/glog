@@ -21,7 +21,7 @@ At the end of the day, though, it's the <b>thematic integration</b> of Control's
 
 And as dark and ominous as Control can be, it's also not afraid to have fun with itself.
 
-![](%site.BaseURL%control_lostinthemail.png){width=640 height=360}
+![]($SiteBaseURL$control_lostinthemail.png){width=640 height=360}
 
 Control is unapologetically strange, it's often oppressively creepy, and it's overall ... well, weird.  But in a good way, that's <i>enticing</i> and kept me engaged for its duration.
 

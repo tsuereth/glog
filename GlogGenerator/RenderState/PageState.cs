@@ -140,12 +140,6 @@ namespace GlogGenerator.RenderState
                 return string.Empty;
             }
 
-            // Render the page's templated content, first.
-            var contentAsTemplate = new Antlr4.StringTemplate.Template(this.SourceContent, '%', '%');
-            contentAsTemplate.Add("site", this.siteState);
-            contentAsTemplate.Add("page", this);
-            var rendered = contentAsTemplate.RenderWithErrorsThrown(CultureInfo.InvariantCulture);
-
             var mdVariableSubstitution = new VariableSubstitution();
             mdVariableSubstitution.SetSubstitution("SiteBaseURL", this.siteState.BaseURL);
 
@@ -157,7 +151,7 @@ namespace GlogGenerator.RenderState
                 .UseSoftlineBreakAsHardlineBreak()
                 .Use(new GlogMarkdownExtension(this.siteDataIndex, this.siteState, this, mdVariableSubstitution))
                 .Build();
-            rendered = Markdown.ToHtml(rendered, mdPipeline);
+            var rendered = Markdown.ToHtml(this.SourceContent, mdPipeline);
 
             return rendered;
         }

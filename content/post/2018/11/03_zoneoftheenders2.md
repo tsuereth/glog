@@ -12,7 +12,7 @@ At first, I'd mistakenly believed that this sequel was brand new -- but, no, it'
 
 To be fair: the remaster looks great, with crisp models and silky-smooth effects.  And, admirably, the control scheme still holds up fairly well.
 
-But in the limited demo for 2nd Runner, I could already tell that it re-checks all the bad boxes [I wrote about the original](%site.BaseURL%2007/06/28/zone-of-the-enders-4/):
+But in the limited demo for 2nd Runner, I could already tell that it re-checks all the bad boxes [I wrote about the original]($SiteBaseURL$2007/06/28/zone-of-the-enders-4/):
 
 * "Camera movement is basically impossible?"  Check.
 * "Pretty much [only] two enemies?"  Check.

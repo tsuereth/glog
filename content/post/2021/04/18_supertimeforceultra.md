@@ -9,7 +9,7 @@ rating = ["Meh"]
 
 <game:Super Time Force Ultra> - as its tongue-barely-in-cheek name suggests - takes a fun and flippant approach to sci-fi storytelling.  Not unlike <game:No Time to Explain>, its absurdist attitude toward time-travel-induced chaos is a great hook.
 
-![](%site.BaseURL%supertimeforceultra_atrip.jpg){width=640 height=360}
+![]($SiteBaseURL$supertimeforceultra_atrip.jpg){width=640 height=360}
 
 The problem with STFU is that ... well, while I admire its unique twists on time-rewinding mechanics, the resulting gameplay tends to be more confusing and frustrating than it is fun.
 

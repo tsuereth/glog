@@ -9,7 +9,7 @@ rating = ["Good"]
 
 Every time <game:Ōkami HD> misread my restoration circle as a wind-swoosh, or the camera went nuts as I was trying to land a tricky jump ...
 
-![](%site.BaseURL%okami_hd_relax.jpg){width=400 height=300}
+![]($SiteBaseURL$okami_hd_relax.jpg){width=400 height=300}
 
 ... Issun was always there to soften the blow.  It's hard to stay mad at Ōkami, because it's just so gosh-darned <i>charming</i>.
 

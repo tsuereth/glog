@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-"Isn't good enough" is how I [most recently](%site.BaseURL%2013/06/17/no-just-cause-isnt-a-good-enough-reason/) summarized <game:Just Cause 2>, and I really can't come up with a better overview for <game:Just Cause 3>.
+"Isn't good enough" is how I [most recently]($SiteBaseURL$2013/06/17/no-just-cause-isnt-a-good-enough-reason/) summarized <game:Just Cause 2>, and I really can't come up with a better overview for <game:Just Cause 3>.
 
 The traversal mechanics are kind-of neat, grapple-pulling and parachuting around; but neutered, in comparison to similar grappling concepts from <game:Batman: Arkham City> or <game:Marvel's Spider-Man> -- due to this game's lack of tall buildings.  Its proclivity for explosiveness is <i>cool</i>, but not as dense, or strategic, as <game:The Saboteur>'s.  The variety of guns is somewhat impressive, but well short of the armory in <game:Red Faction: Guerrilla> (and the controls still aren't responsive or intuitive enough).  The story is flippantly nonsense, but not in the <i>fun</i> way that <tag:Saints Row> embraces so well.
 

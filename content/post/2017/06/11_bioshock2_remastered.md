@@ -17,7 +17,7 @@ And - frustratingly - also like the 2010 version, BioShock 2 Remastered suffers 
 
 While the core gameplay is still engaging enough, and the remaster does add some appreciated graphical polish, there's nothing to really do about BioShock 2's biggest problem: Andrew Ryan's story was better.
 
-To lazily quote myself from [about seven years ago](%site.BaseURL%2010/07/24/bioshock-2-7/):
+To lazily quote myself from [about seven years ago]($SiteBaseURL$2010/07/24/bioshock-2-7/):
 
 <blockquote>Once it gets going, BioShock 2's combat is <i>fun</i> -- but as in the first game, it isn't really enough to make the game great. What made the first game great was the freshness and mystique of its atmosphere, which simply can't be bottled up and re-released.</blockquote>
 

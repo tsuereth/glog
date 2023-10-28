@@ -29,10 +29,10 @@ But for several NPCs, the game's only attempt at characterization is by talking 
 
 Thankfully, that awkward dialog isn't an important-enough part of the game to drag it down.  I wasn't as concerned about that as I was about the slightly-broken weapon upgrading system.  (I never even tried half the weapons, because the one I was using had gained so much experience already!)
 
-Ultimately, Timespinner is a success at replicating the best parts of a 2D map-based Castlevania game.  Its combat is simple and fun, and its map and collectibles were interesting enough to drive me to 100\%.  It's a little shorter than its forebears, but I enjoyed my time with it just the same.
+Ultimately, Timespinner is a success at replicating the best parts of a 2D map-based Castlevania game.  Its combat is simple and fun, and its map and collectibles were interesting enough to drive me to 100%.  It's a little shorter than its forebears, but I enjoyed my time with it just the same.
 
 <b>Better than</b>: <game:Castlevania: Order of Ecclesia>, <game:Metroid: Zero Mission>, <game:Momodora: Reverie Under the Moonlight>  
 <b>Not as good as</b>: <game:Castlevania: Dawn of Sorrow>, <game:Dust: An Elysian Tail>  
 <b>For the record, my mostly-disappointing crowdfunding history so far</b>: <platform:Ouya>, <game:Bear Simulator>, <game:Hyper Light Drifter> (which I dropped but should revisit), <game:Yooka-Laylee>, <game:Shaq Fu: A Legend Reborn>, <game:Chasm>, and finally... this!
 
-<i>Progress: Beat the Nightmare on Normal, 100\% map completion.</i>
+<i>Progress: Beat the Nightmare on Normal, 100% map completion.</i>

@@ -6,7 +6,7 @@ game = ["Final Fantasy XV: Windows Edition"]
 platform = ["PC"]
 +++
 
-It's been about eight-and-a-half <i>years</i> since [my last go](%site.BaseURL%2009/11/17/final-fantasy-xii-9/) at a <tag:Final Fantasy>, and some parts of [FF XV](game:Final Fantasy XV: Windows Edition) looked kind-of appealing to me: like driving a car around an open world, and fully real-time action combat.
+It's been about eight-and-a-half <i>years</i> since [my last go]($SiteBaseURL$2009/11/17/final-fantasy-xii-9/) at a <tag:Final Fantasy>, and some parts of [FF XV](game:Final Fantasy XV: Windows Edition) looked kind-of appealing to me: like driving a car around an open world, and fully real-time action combat.
 
 The demo makes a pretty poor case for it, though.  What passing interest I might have had is dead and buried, now.
 

@@ -11,7 +11,7 @@ I never expected to be <i>more critical</i> of a game than both <a href="https:/
 
 Maybe they have a pre-existing attachment to the <tag:Yakuza> franchise that I don't?  At any rate, where they found <game:Yakuza 0> charming in spite of its flaws, all I found was a bunch of slow, dull bullshit.
 
-It's not <i>quite</i> the same situation that I [recently lamented](%site.BaseURL%2020/03/04/hey-cousin-lets-restart-the-mission/) regarding <game:Grand Theft Auto IV> -- although Yakuza does have more than its fair share of uninteresting bowling-style minigames.  Yakuza's dullness is more an artifact of its agonizing dialog pacing and verbosity.
+It's not <i>quite</i> the same situation that I [recently lamented]($SiteBaseURL$2020/03/04/hey-cousin-lets-restart-the-mission/) regarding <game:Grand Theft Auto IV> -- although Yakuza does have more than its fair share of uninteresting bowling-style minigames.  Yakuza's dullness is more an artifact of its agonizing dialog pacing and verbosity.
 
 Characters reiterate themselves in dialog, often multiple times, for seemingly no reason.  They digress into unrelated tangential backstories way more often than is appropriate.  And their speech is melodramatically slow and halting, which just compounds the issue of dialog scenes <i>taking forever</i>.
 

@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Bad"]
 +++
 
-Like I said [back in 2013](%site.BaseURL%2013/01/30/borderlands-2-sir-hammerlocks-big-game-hunt-2/):
+Like I said [back in 2013]($SiteBaseURL$2013/01/30/borderlands-2-sir-hammerlocks-big-game-hunt-2/):
 
 <blockquote>... following Sir Hammerlock into the untamed wilds to track and kill fantastic beasts, should be a blast. But this only happens in optional quests, and only a couple of times. [...] Dr. Nakayama [is] a truly (and self-admittedly) pathetic villain who, at the end, is actually terrified to fight you.</blockquote>
 

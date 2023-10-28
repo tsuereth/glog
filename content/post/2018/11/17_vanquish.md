@@ -11,7 +11,7 @@ Nearly a decade later, the PC re-release of <game:Vanquish> is a little more und
 
 I remembered the story being throwaway and stupid, and that memory was spot-on.  Although it's a surprise how recent geopolitical players are reflected in the plot -- kudos to the <a href="https://www.platinumgames.com/official-blog/article/2699">writer who said</a> <i>"Vanquish is based on an extension of our current world into the future."</i>  Surprisingly insightful!  At any rate, the story wasn't a good reason to play Vanquish in 2010, and it's even less of one now.
 
-The action holds up okay, but doesn't feel as fresh or exciting as it used to.  That's pretty much what I expected; a victory, in a way, that the controls hold up as well as they do.  The <i>speed</i> of Vanquish, the "hectic rocket-sliding" that [I remember](%site.BaseURL%2010/10/24/vanquish-4/), is no longer impressive in the current era of high-framerate action games.
+The action holds up okay, but doesn't feel as fresh or exciting as it used to.  That's pretty much what I expected; a victory, in a way, that the controls hold up as well as they do.  The <i>speed</i> of Vanquish, the "hectic rocket-sliding" that [I remember]($SiteBaseURL$2010/10/24/vanquish-4/), is no longer impressive in the current era of high-framerate action games.
 
 The level design hasn't held up well, as it ping-pongs between rote shoot-outs, recycled boss encounters, and low-action sections of just walking down a corridor.  Excluding the final boss fight, the end of the game feels like they really ran out of ideas for enemies.
 

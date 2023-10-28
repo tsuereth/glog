@@ -11,11 +11,11 @@ Most of [Witcher 3](game:The Witcher 3: Wild Hunt)'s environmental influences ha
 
 Toussaint, the setting of [Blood and Wine](game:The Witcher 3: Wild Hunt - Blood and Wine), is France.
 
-This association is made loud and clear from the outset of the expansion: in how Toussaint's knights speak and act, in the layout of the beautiful, vineyard-dotted landscape, in how the people of Beauclair are always talking about wines and cheeses, and happily, in French puns like the <a href="http://witcher.wikia.com/wiki/M\%C3\%A8re-Lachaiselongue_Cemetery">Mere-Lachaiselongue Cemetery</a>.
+This association is made loud and clear from the outset of the expansion: in how Toussaint's knights speak and act, in the layout of the beautiful, vineyard-dotted landscape, in how the people of Beauclair are always talking about wines and cheeses, and happily, in French puns like the <a href="http://witcher.wikia.com/wiki/M%C3%A8re-Lachaiselongue_Cemetery">Mere-Lachaiselongue Cemetery</a>.
 
 Wild Hunt and [Hearts of Stone](game:The Witcher 3: Wild Hunt - Hearts of Stone) had their fair shares of humor, but it really feels like CD Projekt let loose and enjoyed themselves this time.
 
-![static mp4](%site.BaseURL%witcher3_roach.mp4){width=960 height=540 controls playsinline}
+![static mp4]($SiteBaseURL$witcher3_roach.mp4){width=960 height=540 controls playsinline}
 
 Which is not to say that Toussaint is all fun and games.  Geralt is brought there to investigate a string of beastly murders, and the main questline is a thrilling, action-packed adventure about chivalry, secrets, betrayal, revenge, and <i>vampires</i>.  The plot's intrigue, the characters' dialog, and the detail and care shown throughout the world is just as good as I've come to expect of The Witcher.
 
@@ -29,7 +29,7 @@ But a small handful of frustrating moments are hardly enough to bring down the o
 
 And I've still got plenty of adventuring left to do.
 
-![](%site.BaseURL%witcher3_thepath.jpg){width=960 height=540}
+![]($SiteBaseURL$witcher3_thepath.jpg){width=960 height=540}
 
 <b>Better than</b>: <game:The Witcher 3: Wild Hunt - Hearts of Stone>  
 <b>Not as good as</b>: the sheer volume and gravitas of <game:The Witcher 3: Wild Hunt>'s main campaign.  

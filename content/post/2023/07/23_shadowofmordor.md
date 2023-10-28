@@ -9,7 +9,7 @@ rating = ["Good"]
 
 <i>Oh yeah</i>, there's a new [Lord of the Rings game](game:The Lord of the Rings: Gollum) out!, and ... <a href="https://opencritic.com/game/13215/the-lord-of-the-rings-gollum">hmm, you know what</a>.  Maybe I'll replay [Shadow of Mordor](game:Middle-earth: Shadow of Mordor) instead.
 
-Nearly a decade on, Talion's quest plays mostly [as I remember it](%site.BaseURL%2014/10/07/hes-not-human-hes-like-a-piece-of-mithril/), for better and for worse:
+Nearly a decade on, Talion's quest plays mostly [as I remember it]($SiteBaseURL$2014/10/07/hes-not-human-hes-like-a-piece-of-mithril/), for better and for worse:
 
 * Narratively explaining, and <i>justifying</i>, how Talion returns after death is still a cool ludonarrative trick.
 * The story overall isn't very impressive, with Talion and Celebrimbor experiencing little growth from beginning to end, and quest NPCs feeling entirely disposable.

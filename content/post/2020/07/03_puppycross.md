@@ -15,7 +15,7 @@ Unfortunately, Puppy Cross's strengths are dulled by some unpolished fundamental
 
 Even though there's barely any text in the game, it suffers from a clear and <i>frequent</i> localization/grammar error.  Every completed puzzle unlocks a new item, but they <a href="https://knowyourmeme.com/memes/i-accidentally">accidentally</a> a word in this messaging:
 
-![](%site.BaseURL%puppycross_stump.jpg){width=400 height=300}
+![]($SiteBaseURL$puppycross_stump.jpg){width=400 height=300}
 
 ... and then there are the <b>input problems</b>.
 
@@ -29,4 +29,4 @@ Much as I appreciate the game's amount of content and its thorough hinting syste
 <b>Not as good as</b>: <game:Nonogram - The Greatest Painter>  
 <b>Dog and cat puns not as good as</b>: <game:Cat Quest>
 
-<i>Progress: 100\%</i>
+<i>Progress: 100%</i>

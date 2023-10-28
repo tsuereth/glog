@@ -6,7 +6,7 @@ game = ["Metal Gear Rising: Revengeance"]
 platform = ["PC"]
 +++
 
-Not much to say, here; I tried <game:Metal Gear Rising: Revengeance> again and stopped even sooner than [the last time](%site.BaseURL%2014/01/12/reeeeeeevengeance/) I played it.
+Not much to say, here; I tried <game:Metal Gear Rising: Revengeance> again and stopped even sooner than [the last time]($SiteBaseURL$2014/01/12/reeeeeeevengeance/) I played it.
 
 As I was six years ago, I'm annoyed that the game doesn't do a very good job of explaining what it wants me to do.  The difference this time around is that I have less patience to learn how to <s>git gud</s> properly exploit this combat system.  How many die-and-retry loops, how many online references, will it take?  More than I'm up for.
 

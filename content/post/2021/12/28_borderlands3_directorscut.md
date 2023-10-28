@@ -11,7 +11,7 @@ Let's get an important warning out of the way, first: <b>don't buy</b> the <game
 
 If you bother <a href="https://borderlands.com/en-US/seasonpass2/">reading into it</a> before purchasing - which I, admittedly, didn't - it should be obvious why: this <i>isn't</i> a collection of extended story chapters, like the <a href="https://borderlands.com/en-US/shop/borderlands-3-season-pass/">first season pass</a> was (and like <game:Borderlands 2>'s season pass was!).  The majority of Season Pass 2's content is new skills, new cosmetics, new arena challenges, and new raid bosses; <i>superfan</i> stuff, which a superfan would already have via an Ultimate Edition or some similar bullshit.
 
-The only new narrative content is a <a href="https://borderlands.fandom.com/wiki/Director\%27s_Cut#Missions">quartet of missions</a> in the [Director's Cut](game:Borderlands 3: Director's Cut) add-on, which sure doesn't seem like a "season" worth of content to me.
+The only new narrative content is a <a href="https://borderlands.fandom.com/wiki/Director%27s_Cut#Missions">quartet of missions</a> in the [Director's Cut](game:Borderlands 3: Director's Cut) add-on, which sure doesn't seem like a "season" worth of content to me.
 
 Alright, so, here's the good news: those Director's Cut missions are actually pretty fun!  Moreso than the morose and melodramatic [Bounty of Blood](game:Borderlands 3: Bounty of Blood - A Fistful of Redemption) and [Fantastic Fustercluck](game:Borderlands 3: Psycho Krieg and the Fantastic Fustercluck), these investigations on behalf of Ava's "Mysteriouslier" podcast demonstrate the kinds of irreverent humor and thrilling pacing that are <i>peak</i> Borderlands.
 

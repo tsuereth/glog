@@ -9,7 +9,7 @@ rating = ["Awesome"]
 
 [Disco Elysium](game:Disco Elysium: The Final Cut) is a game about <b>failure</b>.  Society, infrastructure, the ambitions of almost every NPC, and - most of all - the protagonist.  <i>Oh boy</i>, talk about a failure!  The theme is common through all of the game's choices and narrative routes: this world is full of failure, and no matter how hard you try to "fix" things, there'll be plenty more failure left over.
 
-Even you, the player, will face failure from random dice rolls and ... [unforeseeable consequences](%site.BaseURL%2023/02/11/somewhere-between-disco-inferno-and-dantes-inferno/).  Unless you <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/SaveScumming">save scum</a> and <a href="https://discoelysium.fandom.com/">research beforehand</a>, which is exactly what I did.  I'm here for the story, <i>game</i>, not for you to <i>withhold</i> story from me.  Anyway!
+Even you, the player, will face failure from random dice rolls and ... [unforeseeable consequences]($SiteBaseURL$2023/02/11/somewhere-between-disco-inferno-and-dantes-inferno/).  Unless you <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/SaveScumming">save scum</a> and <a href="https://discoelysium.fandom.com/">research beforehand</a>, which is exactly what I did.  I'm here for the story, <i>game</i>, not for you to <i>withhold</i> story from me.  Anyway!
 
 Points of interest in Martinaise, and its population's personalities, are all rich with fine, meticulous, <i>artisinal</i> details to unravel.  There's <i>so much</i> fascinating history, and colorful commentary!, to read through.  It's like <tag:Mass Effect>'s Codex but with dialog choices.
 

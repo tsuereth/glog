@@ -19,7 +19,7 @@ Rise's open-ish hub areas have lots "to do," in the form of vapid collectibles a
 
 After I got bored of the first hub area, the only extras I continued to seek out were the Challenge Tombs.  It's the name of the game, after all!  <i>Lara raids tombs.</i>  And while the upgrades from these tombs <i>did</i> feel meaningful, the tombs themselves were still very underwhelming: each one consists of a single puzzle.  They're over in a few minutes.
 
-Overall, the non-linear aspects of Rise simply aren't very fun.  The game got more enjoyable once I focused on its linear campaign.  And while - like I [whined about last time](%site.BaseURL%2018/07/27/melancholy-of-the-tomb-raider/) - Ms. Croft never feels like she has a good <i>reason</i> to be in this adventure, it is still an adventure.
+Overall, the non-linear aspects of Rise simply aren't very fun.  The game got more enjoyable once I focused on its linear campaign.  And while - like I [whined about last time]($SiteBaseURL$2018/07/27/melancholy-of-the-tomb-raider/) - Ms. Croft never feels like she has a good <i>reason</i> to be in this adventure, it is still an adventure.
 
 The main storyline provides plenty of exhilirating action sequences, like climbing up a crumbling tower, or running through a burning building, or evading pursuers by diving underwater.  Unfortunately, it also has its fair share of disappointments -- like a few action scenes (and even one puzzle) that play out in cinematics instead of being interactive.  And then there's the final boss fight, which ... well, when <b>the final boss is a helicopter</b>, you know you've run out of ideas.
 

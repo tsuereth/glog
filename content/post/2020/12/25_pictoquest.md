@@ -9,7 +9,7 @@ rating = ["Meh"]
 
 "Moonface" is a not-in-polite-company term, right?  Like, I could've sworn it was an outright slur.  At any rate, it doesn't sound <i>quite right</i>.
 
-![](%site.BaseURL%pictoquest_moonface.jpg){width=400 height=300}
+![]($SiteBaseURL$pictoquest_moonface.jpg){width=400 height=300}
 
 [PictoQuest](game:PictoQuest: The Cursed Grids) doesn't seem like it's trying to offend, though; its translation just has a few rough spots.  And other than that, the game is well-polished and mechanically solid: input handling works great (so much better than <game:Puppy Cross>'s), puzzles get up to a reasonable size (20x20), and it doesn't screw around with nonsense like making you re-play a puzzle if you make a mistake.
 
@@ -29,4 +29,4 @@ PictoQuest isn't a bad nonogram game, but there are plenty of better ones.  And 
 <b>Not as good as</b>: <game:Murder by Numbers>, <game:Paint it Back>, <game:Pepper's Puzzles>  
 <b>Lackluster quest-ing on par with</b>: <game:Puzzle Quest: Challenge of the Warlords>
 
-<i>Progress: 100\%</i>
+<i>Progress: 100%</i>

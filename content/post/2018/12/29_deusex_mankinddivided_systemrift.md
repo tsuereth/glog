@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-Two years after I said that resetting talent points was ["an instant turn-off"](%site.BaseURL%2016/09/25/the-doldrums-of-deus-ex/) for DXMD's [System Rift](game:Deus Ex: Mankind Divided - System Rift) DLC, I've gotten over it.  ... Well, I've also forgotten what most of those talents <i>were</i>, anyway.
+Two years after I said that resetting talent points was ["an instant turn-off"]($SiteBaseURL$2016/09/25/the-doldrums-of-deus-ex/) for DXMD's [System Rift](game:Deus Ex: Mankind Divided - System Rift) DLC, I've gotten over it.  ... Well, I've also forgotten what most of those talents <i>were</i>, anyway.
 
 Unlike the previous game's [The Missing Link](game:Deus Ex: Human Revolution - The Missing Link) DLC, though, this one gives you a bunch of initial Praxis Points; so instead of starting out as a hobbled newbie, you get to build a moderately-powerful Adam Jenson from the beginning.  I definitely appreciate how this streamlined the introduction.
 

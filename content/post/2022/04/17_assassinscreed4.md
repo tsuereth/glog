@@ -13,11 +13,11 @@ rating = ["Good"]
 
 The question is: has Assassin's Creed IV aged well?  And the answer is, well, kinda.
 
-In terms of technology -- yes, surprisingly, AC4's engine and features feel <i>competitive</i> with modern open-world games.  The graphical fidelity of the open sea is pretty phenomenal, [dynamic navmesh](%site.BaseURL%2013/09/12/assassins-creed-iv-dynamic-navmesh/) during ship-to-ship combat is still an impressive feat, and while there are frequent annoyances with clambering (Edward climbs the wrong thing) or melee combat (Edward attacks the wrong guy) ... it's not <i>that</i> much worse than recent titles like [Red Dead](game:Red Dead Redemption 2), [Tsushima](game:Ghost of Tsushima), and [Horizon](game:Horizon Forbidden West).
+In terms of technology -- yes, surprisingly, AC4's engine and features feel <i>competitive</i> with modern open-world games.  The graphical fidelity of the open sea is pretty phenomenal, [dynamic navmesh]($SiteBaseURL$2013/09/12/assassins-creed-iv-dynamic-navmesh/) during ship-to-ship combat is still an impressive feat, and while there are frequent annoyances with clambering (Edward climbs the wrong thing) or melee combat (Edward attacks the wrong guy) ... it's not <i>that</i> much worse than recent titles like [Red Dead](game:Red Dead Redemption 2), [Tsushima](game:Ghost of Tsushima), and [Horizon](game:Horizon Forbidden West).
 
 There are a couple notable quirks: a "security measure" requires your Ubisoft password <a href="https://discussions.ubisoft.com/topic/126028/black-flag-asking-to-log-in-everytime">every damn time you start the game</a>, and <a href="https://www.ubisoft.com/en-us/help/article/cloud-save-support-for-games-available-on-ubisoft/000064409">there's no cloud saving</a>, as it apparently launched with bugs and was "fixed" by <a href="https://steamcommunity.com/app/242050/discussions/0/350544272221779150/">turning it off</a>.
 
-Anyway.  The in-game tech holds up, and while the story is garbage, it was just as much garbage "in its time."  [Checking my notes](%site.BaseURL%2014/06/04/whiskey-for-my-johnny-o/): Edward is shallow, Assassins are silly, the Juno cult... whatever.  At least the narrative isn't a let-down, because I already knew it was dumb.
+Anyway.  The in-game tech holds up, and while the story is garbage, it was just as much garbage "in its time."  [Checking my notes]($SiteBaseURL$2014/06/04/whiskey-for-my-johnny-o/): Edward is shallow, Assassins are silly, the Juno cult... whatever.  At least the narrative isn't a let-down, because I already knew it was dumb.
 
 The part of Black Flag that's aged the most is its mission design: there just aren't that many good ideas in here.  Sneaking between cover to infiltrate an enemy camp?  Dodging cannon-fire and unleashing broadsides on a man-o-war?  These templates work great.  Others, like chasing a runner, slowly tailing a mark, <i>boat stealth</i>, or flat-out brawling; these missions just aren't very well-crafted.
 
@@ -31,4 +31,4 @@ Black Flag doesn't need a remaster -- it needs a true successor, an open-world p
 <b>Not as good as</b>: <game:Horizon Zero Dawn>  
 <b>In retrospect, not better than</b>: <game:Ghost of Tsushima>; while Black Flag's core gameplay loop is more fun, exploring this slice of the Caribbean isn't as rewarding as Tsushima.
 
-<i>Progress: finished the story, ~60\% completion.</i>
+<i>Progress: finished the story, ~60% completion.</i>

@@ -23,4 +23,4 @@ Momodora: Reverie Under the Moonlight is competent enough in its fundamentals, b
 <b>Not as good as</b>: <game:Guacamelee! Super Turbo Championship Edition>, which wasn't really my favorite, either.  
 <b>Hard to say if better or worse than</b>: <game:Ori and the Blind Forest: Definitive Edition>; at least that was memorable, albeit frustrating as shit.
 
-<i>Progress: Got the True Ending, 98\% map completion.</i>
+<i>Progress: Got the True Ending, 98% map completion.</i>

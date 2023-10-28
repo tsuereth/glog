@@ -19,4 +19,4 @@ LaserCat is simple, but has enough substance to more than justify its 90-minute 
 <b>Not as good as</b>: <game:VVVVVV>  
 <b>Better trivia questions than</b>: <game:Yooka-Laylee>
 
-<i>Progress: 100\%</i>
+<i>Progress: 100%</i>

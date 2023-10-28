@@ -17,7 +17,7 @@ The scripted events of each mission are as engaging as ever, and alternate route
 
 There is also a somewhat dramatic balance issue in Hong Kong's open-ended missions: while the difficulty of a mission scales with your progress, the <i>rewards don't</i>, and it's definitely not obvious when a mission might give you <i>no money</i>.  I had to retry a lot of difficult fights (even on Easy mode!) early in Act 2 because I hadn't earned enough money to upgrade my main character's equipment.
 
-That aside, Hong Kong's combat gameplay is still good <i>enough</i> to be generally satisfying.  Despite that scaling hurdle, and despite the <a href="https://knowyourmeme.com/memes/you-keep-using-that-word-i-do-not-think-it-means-what-you-think-it-means">inconceivable</a> number of times I missed an 80\%-to-hit shot, combat is just as fun (or at least tolerable) as before.
+That aside, Hong Kong's combat gameplay is still good <i>enough</i> to be generally satisfying.  Despite that scaling hurdle, and despite the <a href="https://knowyourmeme.com/memes/you-keep-using-that-word-i-do-not-think-it-means-what-you-think-it-means">inconceivable</a> number of times I missed an 80%-to-hit shot, combat is just as fun (or at least tolerable) as before.
 
 That being said -- while Hong Kong's real-world combat is familiar, its virtual-world Decking has been significantly remodeled.  And much as I admire that The Matrix is now more lively, and includes some brand-new puzzle mechanics... in practice, the overabundance of "Watcher" enemies turns virtual-world traversal into an annoying stealth game, and the hacking minigame becomes repetitive almost immediately.  Bit of a swing and a miss.
 

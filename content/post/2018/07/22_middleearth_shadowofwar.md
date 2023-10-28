@@ -25,4 +25,4 @@ By electing <i>not</i> to continue this tiring routine, I'm departing Shadow of 
 <b>Not as good as</b>: <game:The Legend of Zelda: Breath of the Wild>, <game:The Witcher 3: Wild Hunt>  
 <b>Boy, if they try to sequelize this <i>again</i></b>: Monolith will really have their lore-work cut out for them.
 
-<i>Progress: 95\%, level 48</i>
+<i>Progress: 95%, level 48</i>

@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-[Back in 2013](%site.BaseURL%2013/08/06/death-is-kind-of-a-downer-you-know/) I struggled to follow through on <game:Darksiders II>: <i>"I've yet to encounter an item, dungeon puzzle, or narrative element that really </i>wows<i> me,</i>" I wrote.  This time around, I saw more in the game - and played through more <i>of</i> the game - but still lost interest well before the finish line.
+[Back in 2013]($SiteBaseURL$2013/08/06/death-is-kind-of-a-downer-you-know/) I struggled to follow through on <game:Darksiders II>: <i>"I've yet to encounter an item, dungeon puzzle, or narrative element that really </i>wows<i> me,</i>" I wrote.  This time around, I saw more in the game - and played through more <i>of</i> the game - but still lost interest well before the finish line.
 
 [The first installment](game:Darksiders) felt a lot like an amalgam of <tag:God of War> and <tag:The Legend of Zelda>, and the sequel builds on that concept in some insightful, promising directions.  The map is more open and expansive than it used to be; there's optional content to explore at your own pace; you can even upgrade your character with equipment and a skill tree.
 
@@ -27,7 +27,7 @@ Side-quests don't advertise their expected experience level, making some of them
 
 All of these issues are small by themselves, but they chip away at the gameplay experience bit by bit.  To wit: there is a boss fight in the first third of the game, an <a href="https://guides.gamepressure.com/darksidersii/guide.asp?ID=16148">epic-scale battle</a> against a building-sized "Guardian," which involves step-by-step moves to counterattack and dismantle the big lug.  It's an awesome and enthralling idea that's <i>ruined</i> by the camera leaving you unaware of impending fireballs and ground-pounds; by contextual controls not co-operating as you climb up the beast; and finally by the encounter design admitting its own shortcomings and turning the killing blow into a cutscene.
 
-(At least I finally got to see the "[Shadow of the Colossus with a chaingun](%site.BaseURL%2010/03/06/darksiders-4/)" concept that Vigil first teased back in 2008.)
+(At least I finally got to see the "[Shadow of the Colossus with a chaingun]($SiteBaseURL$2010/03/06/darksiders-4/)" concept that Vigil first teased back in 2008.)
 
 That huge disappointment of an encounter exemplified the whole game, to me.  It could have been pretty good!  It certainly had some great ideas, and adequate mechanics for executing on those ideas, <i>despite</i> a frequent sense of blandness.  But those "highs" were weighed down by cascading failures in technical and usability design.
 

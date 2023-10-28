@@ -15,4 +15,4 @@ Other than that, there isn't much to this DLC.  A fidgety puzzle, a frustrating 
 
 <b>Better than</b>: <game:Red Faction: Guerrilla - Demons of the Badlands>  
 <b>Not as good as</b>: [BioShock 2: Minerva's Den](game:BioShock 2: Minerva's Den Remastered)  
-<b>At least it's better than</b>: [that Harley Quinn mini-fight DLC, in Arkham Knight](%site.BaseURL%2015/06/30/almost-the-game-gotham-deserves/).
+<b>At least it's better than</b>: [that Harley Quinn mini-fight DLC, in Arkham Knight]($SiteBaseURL$2015/06/30/almost-the-game-gotham-deserves/).

@@ -12,6 +12,6 @@ Except... it doesn't.  In truth, Clockwork God is <b>still an adventure game</b>
 
 It's a shame, because the writing is still, just, incredibly charming; especially when it's mocking the games that inspired it, which is <i>often</i>.  But if I need to look up puzzle solutions every 30 seconds - like Use Battery Acid to Melt Vines, or Push Airplane Propeller to Cut Down Tree - I'd rather not play it at all.
 
-![](%site.BaseURL%lairoftheclockworkgod_quit.jpg){width=640 height=360}
+![]($SiteBaseURL$lairoftheclockworkgod_quit.jpg){width=640 height=360}
 
 <i>Progress: Left Peru.</i>

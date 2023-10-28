@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-Back in, <i>wow, January?</i>, I had already resolved to skip over a lot of [Witcher 2](game:The Witcher 2: Assassins of Kings - Enhanced Edition)'s gameplay - the combat, basically - in order to enjoy the story.  So, after my [last post](%site.BaseURL%2018/01/22/i-am-the-one-who-witches/), I strolled around the town of Flotsam looking for sidequests and colorful NPC chatter.
+Back in, <i>wow, January?</i>, I had already resolved to skip over a lot of [Witcher 2](game:The Witcher 2: Assassins of Kings - Enhanced Edition)'s gameplay - the combat, basically - in order to enjoy the story.  So, after my [last post]($SiteBaseURL$2018/01/22/i-am-the-one-who-witches/), I strolled around the town of Flotsam looking for sidequests and colorful NPC chatter.
 
 Then the game crashed.  And when I brought it back up, almost an hour of my progress was lost.  There were no autosaves from when I'd crafted and equipped items, entered and left buildings, or acquired and made progress in quests.  <i>Ugh.</i>
 

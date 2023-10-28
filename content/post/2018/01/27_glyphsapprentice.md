@@ -8,7 +8,7 @@ platform = ["PC"]
 
 While the most striking thing about <game:Glyphs Apprentice> is how terrible its user interface is, the <i>second-most</i> striking thing is how <i>uncannily</i> it resembles <game:Opus Magnum>.  Not only are there programmable arms that can grab alchemical elements, rotate, and extend or retract; the elements can also bind to others, and transform into ... familiar variations.
 
-![](%site.BaseURL%glyphsapprentice_transmuter.jpg){width=400 height=300}
+![]($SiteBaseURL$glyphsapprentice_transmuter.jpg){width=400 height=300}
 
 Today I learned: both games are based closely on some of <tag:Zachtronics>' <a href="http://www.zachtronics.com/the-codex-of-alchemical-engineering/">pre-Steam work</a>.  Huh.
 
@@ -16,7 +16,7 @@ From my limited time with it, Glyphs looks like it has a couple of advantages ov
 
 It's the kind that gets lost in that terrible UI, for one thing.  There are so many permutations of tool type and of elemental variety, and they are all <b>blue</b>.  The only visual distinction between one thing and another is a few low-detail lines.
 
-![](%site.BaseURL%glyphsapprentice_shaper.jpg){width=400 height=300}
+![]($SiteBaseURL$glyphsapprentice_shaper.jpg){width=400 height=300}
 
 There are a number of tutorial-level puzzles with extensive help text, but these are so prescriptive - click this button, now click these buttons, now confirm that it looks like this example - that it only teaches how to <i>use</i> the game, not how to <i>understand</i> it.
 

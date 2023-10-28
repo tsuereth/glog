@@ -11,12 +11,12 @@ rating = ["Good"]
 
 It's also got a very-slightly quirky sense of humor, which is neat.
 
-![](%site.BaseURL%pepperspuzzles_beerbear.jpg){width=400 height=300}
+![]($SiteBaseURL$pepperspuzzles_beerbear.jpg){width=400 height=300}
 
 But what really attracted to me to Pepper's Puzzles, over some other picross games currently on Super-Steam-Sale, is its "200+" puzzles.
 
 The Mosaic mode (like other picross games' assemble-a-bigger-picture puzzles), and the surprisingly-stressful Time Trial challenges, are nifty distractions.  But I've bet on Pepper to give me plenty of hours of picture-puzzle solving, and it's looking pretty good so far.
 
-![](%site.BaseURL%pepperspuzzles_potatoesinlove.jpg){width=400 height=300}
+![]($SiteBaseURL$pepperspuzzles_potatoesinlove.jpg){width=400 height=300}
 
 <i>Progress: 135/720 Classic stars, 13/184 Mosaic stars, 18/18 Time Trials stars.</i>
