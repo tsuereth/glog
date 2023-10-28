@@ -25,6 +25,11 @@ namespace GlogGenerator
 
         public string TryMakeSubstitutions(string str)
         {
+            if (string.IsNullOrEmpty(str))
+            {
+                return str;
+            }
+
             var variableRefStart = str.IndexOf('$');
             while (variableRefStart != -1)
             {

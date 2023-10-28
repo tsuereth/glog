@@ -6,6 +6,7 @@ using Markdig.Helpers;
 using Markdig.Parsers;
 using Markdig.Parsers.Inlines;
 using Markdig.Renderers;
+using Markdig.Renderers.Html.Inlines;
 using Markdig.Syntax;
 using Markdig.Syntax.Inlines;
 
@@ -41,9 +42,9 @@ namespace GlogGenerator.MarkdownExtensions
             // Our custom-links parser can't coexist with the built-in parsers;
             // We need to replace them, and re-use the base parsers as appropriate.
             pipeline.InlineParsers.TryRemove<AutolinkInlineParser>();
-            pipeline.InlineParsers.AddIfNotAlready(new GlogAutoLinkInlineParser(this.siteDataIndex, this.siteState));
+            pipeline.InlineParsers.AddIfNotAlready<GlogAutoLinkInlineParser>();
             pipeline.InlineParsers.TryRemove<LinkInlineParser>();
-            pipeline.InlineParsers.AddIfNotAlready(new GlogLinkInlineParser(this.siteDataIndex, this.siteState));
+            pipeline.InlineParsers.AddIfNotAlready<GlogLinkInlineParser>();
 
             pipeline.BlockParsers.AddIfNotAlready<FencedDataBlockParser>();
 
@@ -81,6 +82,12 @@ namespace GlogGenerator.MarkdownExtensions
                         }
                     });
             }
+
+            renderer.ObjectRenderers.InsertBefore<LinkInlineRenderer>(
+                new GlogLinkInlineRenderer(
+                    renderer.ObjectRenderers.Find<LinkInlineRenderer>(),
+                    this.siteDataIndex,
+                    this.siteState));
 
             renderer.ObjectRenderers.AddIfNotAlready(new FencedDataBlockRenderer(this.siteDataIndex, this.htmlRendererContext));
             renderer.ObjectRenderers.AddIfNotAlready<SpoilerRenderer>();
