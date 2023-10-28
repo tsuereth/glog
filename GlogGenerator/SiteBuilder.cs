@@ -4,7 +4,7 @@ using GlogGenerator.Data;
 
 namespace GlogGenerator
 {
-    public class SiteConfig
+    public class SiteBuilder
     {
         private const string VariableNameSiteBaseURL = "SiteBaseURL";
 
@@ -12,9 +12,9 @@ namespace GlogGenerator
 
         private VariableSubstitution variableSubstitution;
 
-        public SiteConfig() : this(new ConfigData()) { }
+        public SiteBuilder() : this(new ConfigData()) { }
 
-        public SiteConfig(ConfigData configData)
+        public SiteBuilder(ConfigData configData)
         {
             this.configData = configData;
 

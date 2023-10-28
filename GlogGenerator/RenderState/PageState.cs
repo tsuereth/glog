@@ -122,14 +122,14 @@ namespace GlogGenerator.RenderState
 
         public string TermsType { get; set; } = string.Empty;
 
-        private readonly SiteConfig siteConfig;
+        private readonly SiteBuilder siteBuilder;
         private readonly SiteState siteState;
 
         private string renderedContent;
 
-        public PageState(SiteConfig siteConfig, SiteState siteState)
+        public PageState(SiteBuilder siteBuilder, SiteState siteState)
         {
-            this.siteConfig = siteConfig;
+            this.siteBuilder = siteBuilder;
             this.siteState = siteState;
         }
 
@@ -147,9 +147,9 @@ namespace GlogGenerator.RenderState
             return rendered;
         }
 
-        public static PageState FromPageData(SiteConfig siteConfig, SiteState site, PageData pageData)
+        public static PageState FromPageData(SiteBuilder siteBuilder, SiteState site, PageData pageData)
         {
-            var page = new PageState(siteConfig, site);
+            var page = new PageState(siteBuilder, site);
             page.HideDate = true;
             page.HideTitle = true;
 
@@ -170,9 +170,9 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromPostData(SiteConfig siteConfig, SiteState site, PostData postData)
+        public static PageState FromPostData(SiteBuilder siteBuilder, SiteState site, PostData postData)
         {
-            var page = new PageState(siteConfig, site);
+            var page = new PageState(siteBuilder, site);
 
             page.Categories = postData.Categories.Select(c => new CategoryData() { Name = c }).ToList();
 
@@ -205,9 +205,9 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromCategoryData(SiteConfig siteConfig, SiteState site, CategoryData categoryData)
+        public static PageState FromCategoryData(SiteBuilder siteBuilder, SiteState site, CategoryData categoryData)
         {
-            var page = new PageState(siteConfig, site);
+            var page = new PageState(siteBuilder, site);
 
             page.Permalink = $"{site.BaseURL}{categoryData.GetPermalinkRelative()}";
 
@@ -232,9 +232,9 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromGameData(SiteConfig siteConfig, SiteState site, GameData gameData)
+        public static PageState FromGameData(SiteBuilder siteBuilder, SiteState site, GameData gameData)
         {
-            var page = new PageState(siteConfig, site);
+            var page = new PageState(siteBuilder, site);
 
             page.Permalink = $"{site.BaseURL}{gameData.GetPermalinkRelative()}";
 
@@ -262,9 +262,9 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromPlatformData(SiteConfig siteConfig, SiteState site, PlatformData platformData)
+        public static PageState FromPlatformData(SiteBuilder siteBuilder, SiteState site, PlatformData platformData)
         {
-            var page = new PageState(siteConfig, site);
+            var page = new PageState(siteBuilder, site);
 
             page.Permalink = $"{site.BaseURL}{platformData.GetPermalinkRelative()}";
 
@@ -305,9 +305,9 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromRatingData(SiteConfig siteConfig, SiteState site, RatingData ratingData)
+        public static PageState FromRatingData(SiteBuilder siteBuilder, SiteState site, RatingData ratingData)
         {
-            var page = new PageState(siteConfig, site);
+            var page = new PageState(siteBuilder, site);
 
             page.Permalink = $"{site.BaseURL}{ratingData.GetPermalinkRelative()}";
 
@@ -332,9 +332,9 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromTagData(SiteConfig siteConfig, SiteState site, TagData tagData)
+        public static PageState FromTagData(SiteBuilder siteBuilder, SiteState site, TagData tagData)
         {
-            var page = new PageState(siteConfig, site);
+            var page = new PageState(siteBuilder, site);
 
             page.Permalink = $"{site.BaseURL}{tagData.GetPermalinkRelative()}";
 

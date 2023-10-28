@@ -77,8 +77,8 @@ namespace GlogGenerator
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
             var configData = ConfigData.FromFilePath(configFilePath);
-            var config = new SiteConfig(configData);
-            config.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
+            var builder = new SiteBuilder(configData);
+            builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
             var igdbCache = IgdbCache.FromJsonFile(inputFilesBasePath);
 
@@ -117,7 +117,7 @@ namespace GlogGenerator
                 case "build":
                     LoadSiteData(logger, siteData);
 
-                    site = new SiteState(logger, config, siteData, templateFilesBasePath);
+                    site = new SiteState(logger, builder, siteData, templateFilesBasePath);
                     LoadSiteRoutes(logger, site);
 
                     logger.LogInformation("Building content...");
@@ -137,7 +137,7 @@ namespace GlogGenerator
                 case "host":
                     LoadSiteData(logger, siteData);
 
-                    site = new SiteState(logger, config, siteData, templateFilesBasePath);
+                    site = new SiteState(logger, builder, siteData, templateFilesBasePath);
                     LoadSiteRoutes(logger, site);
 
                     logger.LogInformation(

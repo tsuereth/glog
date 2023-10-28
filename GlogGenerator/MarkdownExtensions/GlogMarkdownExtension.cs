@@ -14,18 +14,18 @@ namespace GlogGenerator.MarkdownExtensions
 {
     public class GlogMarkdownExtension : IMarkdownExtension
     {
-        private readonly SiteConfig siteConfig;
+        private readonly SiteBuilder siteBuilder;
         private readonly SiteDataIndex siteDataIndex;
         private readonly SiteState siteState;
 
         private HtmlRendererContext htmlRendererContext;
 
         public GlogMarkdownExtension(
-            SiteConfig siteConfig,
+            SiteBuilder siteBuilder,
             SiteDataIndex siteDataIndex,
             SiteState siteState)
         {
-            this.siteConfig = siteConfig;
+            this.siteBuilder = siteBuilder;
             this.siteDataIndex = siteDataIndex;
             this.siteState = siteState;
 
@@ -64,7 +64,7 @@ namespace GlogGenerator.MarkdownExtensions
                 renderer.ObjectWriteBefore += new Action<IMarkdownRenderer, MarkdownObject>(
                     (IMarkdownRenderer r, MarkdownObject o) =>
                     {
-                        var vs = this.siteConfig.GetVariableSubstitution();
+                        var vs = this.siteBuilder.GetVariableSubstitution();
 
                         if (o is AutolinkInline)
                         {
