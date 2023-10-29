@@ -2,13 +2,13 @@
 date = "2019-03-03T13:23:53-08:00"
 title = "The Power of Typography Compels You"
 category = ["Playing A Game"]
-game = ["The Textorcist"]
+game = ["The Textorcist: The Story of Ray Bibbia"]
 platform = ["PC"]
 +++
 
 First off: great name.  A+ there.
 
-Second: <game:The Textorcist> has a really slick presentation, with crisp art and a pulse-pounding soundtrack.  The quality of the game's English is - ironically - a bit lacking, and the dialog scenes feel a little extravagant and unnecessary, but they look and sound good enough to put up with.
+Second: [The Textorcist](game:The Textorcist: The Story of Ray Bibbia) has a really slick presentation, with crisp art and a pulse-pounding soundtrack.  The quality of the game's English is - ironically - a bit lacking, and the dialog scenes feel a little extravagant and unnecessary, but they look and sound good enough to put up with.
 
 The real "meat" of the game, though, is the combat -- a bullet-hell game crossed with a typing game.  Think <game:Sine Mora> meets [Epistory](game:Epistory: Typing Chronicles), or something like [Time Crisis](game:Time Crisis 5) plus [Typing of the Dead](game:The Typing of the Dead: Overkill).  It's certainly not a genre mash-up I've seen before, and the way that it feeds back into the game's theme (reading prayers to exorcise demons!) is very thematically satisfying.
 
