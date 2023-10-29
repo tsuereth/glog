@@ -70,12 +70,12 @@ namespace GlogGenerator.Data
         public GameData GetGame(string gameTitle)
         {
             var gameTitleUrlized = new UrlizedString(gameTitle);
-            if (this.games.TryGetValue(gameTitleUrlized, out var gameData))
+            if (!this.games.TryGetValue(gameTitleUrlized, out var gameData))
             {
-                return gameData;
+                throw new ArgumentException($"No game found for title {gameTitle}");
             }
 
-            return null;
+            return gameData;
         }
 
         public List<GameData> GetGames()
@@ -91,12 +91,12 @@ namespace GlogGenerator.Data
         public PlatformData GetPlatform(string platformAbbreviation)
         {
             var platformAbbreviationUrlized = new UrlizedString(platformAbbreviation);
-            if (this.platforms.TryGetValue(platformAbbreviationUrlized, out var platformData))
+            if (!this.platforms.TryGetValue(platformAbbreviationUrlized, out var platformData))
             {
-                return platformData;
+                throw new ArgumentException($"No platform found for abbreviation {platformAbbreviation}");
             }
 
-            return null;
+            return platformData;
         }
 
         public List<PlatformData> GetPlatforms()
@@ -116,12 +116,12 @@ namespace GlogGenerator.Data
 
         public string GetRawDataFile(string filePath)
         {
-            if (this.rawDataFiles.TryGetValue(filePath, out var rawDataFile))
+            if (!this.rawDataFiles.TryGetValue(filePath, out var rawDataFile))
             {
-                return rawDataFile;
+                throw new ArgumentException($"No raw data found for file path {filePath}");
             }
 
-            return null;
+            return rawDataFile;
         }
 
         public List<StaticFileData> GetStaticFiles()
@@ -132,12 +132,12 @@ namespace GlogGenerator.Data
         public TagData GetTag(string tagName)
         {
             var tagNameUrlized = new UrlizedString(tagName);
-            if (this.tags.TryGetValue(tagNameUrlized, out var tagData))
+            if (!this.tags.TryGetValue(tagNameUrlized, out var tagData))
             {
-                return tagData;
+                throw new ArgumentException($"No tag found for name {tagName}");
             }
 
-            return null;
+            return tagData;
         }
 
         public List<TagData> GetTags()
