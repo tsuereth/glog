@@ -14387,7 +14387,9 @@
     {
       "category": 0,
       "collection": 106,
-      "collections": [],
+      "collections": [
+        106
+      ],
       "franchise": -1,
       "franchises": [
         596
@@ -14452,7 +14454,9 @@
     {
       "category": 0,
       "collection": 106,
-      "collections": [],
+      "collections": [
+        106
+      ],
       "franchise": -1,
       "franchises": [
         596
@@ -14938,7 +14942,9 @@
     {
       "category": 0,
       "collection": 240,
-      "collections": [],
+      "collections": [
+        240
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -18840,7 +18846,9 @@
     {
       "category": 0,
       "collection": 337,
-      "collections": [],
+      "collections": [
+        337
+      ],
       "franchise": 38,
       "franchises": [
         38
@@ -21922,7 +21930,10 @@
     {
       "category": 0,
       "collection": 453,
-      "collections": [],
+      "collections": [
+        453,
+        6118
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -22603,9 +22614,9 @@
       ],
       "id": 2552,
       "involved_companies": [
-        8384,
-        40429,
-        42368
+        42368,
+        236062,
+        236063
       ],
       "name": "Mad Max",
       "name_glogOverride": "Mad Max (2015)",
@@ -25819,7 +25830,9 @@
     {
       "category": 0,
       "collection": 602,
-      "collections": [],
+      "collections": [
+        602
+      ],
       "franchise": -1,
       "franchises": [
         1651,
@@ -27148,7 +27161,7 @@
       "url": "https://www.igdb.com/games/a-boy-and-his-blob--1"
     },
     {
-      "category": 0,
+      "category": 8,
       "collection": 705,
       "collections": [],
       "franchise": -1,
@@ -48860,14 +48873,14 @@
         68802,
         74503
       ],
-      "name": "The Textorcist",
+      "name": "The Textorcist: The Story of Ray Bibbia",
       "player_perspectives": [
         3
       ],
       "themes": [
         1
       ],
-      "url": "https://www.igdb.com/games/the-textorcist"
+      "url": "https://www.igdb.com/games/the-textorcist-the-story-of-ray-bibbia"
     },
     {
       "category": 4,
@@ -53234,10 +53247,6 @@
       "company": 70
     },
     {
-      "id": 8384,
-      "company": 437
-    },
-    {
       "id": 8389,
       "company": 1
     },
@@ -56636,10 +56645,6 @@
     {
       "id": 40149,
       "company": 11161
-    },
-    {
-      "id": 40429,
-      "company": 50
     },
     {
       "id": 40494,
@@ -65556,6 +65561,14 @@
     {
       "id": 234850,
       "company": 250
+    },
+    {
+      "id": 236062,
+      "company": 437
+    },
+    {
+      "id": 236063,
+      "company": 50
     }
   ],
   "platforms": [
