@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
+using System.Text;
 using Markdig;
+using Markdig.Renderers.Normalize;
 using Markdig.Syntax;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -39,6 +41,37 @@ namespace GlogGenerator.MarkdownExtensions
             contentAndData.Content = mdDoc;
 
             return contentAndData;
+        }
+
+        public override string ToString()
+        {
+            var stringBuilder = new StringBuilder();
+
+            var tomlOutOptions = new Tomlyn.TomlModelOptions()
+            {
+                IgnoreMissingProperties = true,
+            };
+            var frontMatterText = Tomlyn.Toml.FromModel(this, tomlOutOptions);
+
+            if (!string.IsNullOrEmpty(frontMatterText))
+            {
+                stringBuilder.AppendLine("+++");
+                stringBuilder.Append(frontMatterText);
+                stringBuilder.AppendLine("+++");
+            }
+
+            using (var mdTextWriter = new StringWriter())
+            {
+                var mdRenderer = new NormalizeRenderer(mdTextWriter);
+                mdRenderer.Render(this.Content);
+
+                stringBuilder.Append(mdTextWriter.ToString());
+            }
+
+            // Always end the file with a line break.
+            stringBuilder.AppendLine();
+
+            return stringBuilder.ToString();
         }
     }
 }

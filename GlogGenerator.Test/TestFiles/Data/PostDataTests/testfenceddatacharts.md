@@ -1,0 +1,89 @@
++++
+draft = false
+date = "2023-01-01T08:37:47-08:00"
+title = "2022 in Review: More From Less, More-or-Less"
+slug = ""
+category = ["Site News"]
+game = []
+platform = []
++++
+Steam launched a year-in-review feature called <a href="https://store.steampowered.com/replay">Replay</a> -- it's pretty cool!  And its gray "other games" bars highlight a certain pattern in my 2022 gaming:
+
+| ![]($SiteBaseURL$2022_steamreplay-count.png){width=200 height=127} | ![]($SiteBaseURL$2022_steamreplay-timeline.png){width=586 height=251} |
+| - | - |
+
+As does comparing Steam's counters with Glog statistics:
+
+:::chart
+type: "ColumnChart"
+datafile: "/data/postsandgames_2022.json"
+title: "Posts and Games"
+legend: "{\"position\": \"bottom\"}"
+:::
+
+:::chart
+type: "AreaChart"
+datafile: "/data/demosandreplays_2022.json"
+title: "Games Demoed and Replayed"
+legend: "{\"position\": \"bottom\"}"
+isStacked: "percent"
+pointSize: 5
+focusTarget: "category"
+:::
+
+<i>Where did all those Steam games and demos go?</i>  Well, <b>nowhere</b>.
+
+Building on my "[less writing, more playing]($SiteBaseURL$2022/01/01/2021-in-review-not-dead-yet/)" agenda from 2021, I <i>culled</i> a considerable amount of my backlog last year, focusing my playtime and my Glog posts on fewer and more-remarkable games (as the Steam timeline's colored-in segments show).
+
+As for those replays: I dug up [Assassin's Creed IV](game:Assassin's Creed IV Black Flag) after watching <a href="https://www.imdb.com/title/tt11000902/">Our Flag Means Death</a>, and <tag:The Witcher>'s <a href="https://www.imdb.com/title/tt5180504/">TV series</a> has had me jonesing to revisit [Wild Hunt](game:The Witcher 3: Wild Hunt) (plus [Hearts of Stone](game:The Witcher 3: Wild Hunt - Hearts of Stone)) since my [2019 recap]($SiteBaseURL$2020/01/01/2019-in-review-less-isnt-more/).  <i>Media consumption!</i>  Am I right?
+
+... anyway.  My DLC and expansion activity in 2022 tells a similar story:
+
+:::chart
+type: "AreaChart"
+datafile: "/data/gametypes_2022.json"
+title: "Games by Type"
+legend: "{\"position\": \"bottom\"}"
+isStacked: "percent"
+pointSize: 5
+focusTarget: "category"
+:::
+
+While it'd be hard to beat the <i>quantity</i> of DLCs (especially <tag:Mass Effect>'s) I played in 2021, last year's <i>quality</i> of add-ons was surprisingly solid.
+
+* <game:South Park: The Fractured But Whole>'s extra chapters [From Dusk Till Casa Bonita](game:South Park: The Fractured But Whole - From Dusk Till Casa Bonita) and [Bring the Crunch](game:South Park: The Fractured But Whole - Bring the Crunch) both did great at channeling that classic <i>South Park</i> sense of humor, while experimenting with some passably-fun gameplay twists.
+* <game:Control>'s comprehensive, unsettling yet entertaining tone (and its tense shooting-supernatural-monsters action) carried through into very substantial side-stories in [The Foundation](game:Control: The Foundation) and [AWE](game:Control: AWE).
+* And of course, it cannot be overstated how essential [Hearts of Stone](game:The Witcher 3: Wild Hunt - Hearts of Stone) is to the whole Geralt experience.
+
+These add-ons were <i>good</i>, just like the main games I played last year.  I mean, check out these rating values:
+
+:::chart
+type: "AreaChart"
+datafile: "/data/ratings_2022.json"
+title: "Ratings"
+colors: "[\"gray\", \"red\", \"orange\", \"gold\", \"green\", \"blue\"]"
+legend: "{\"position\": \"bottom\"}"
+isStacked: "percent"
+pointSize: 5
+focusTarget: "category"
+:::
+
+Here, summarily, is the glorious result of my ruthless backlog management.  A <i>majority</i> - more than half! - of my post ratings were positive, for the first time since 2015 (which was itself a [statistical aberration]($SiteBaseURL$2016/01/01/2015-a-shameful-embarrassment-of-statistical-failure/)).
+
+I played a satisfying amount of <rating:Awesome> games, with the expectedly-impressive <game:Horizon Forbidden West>, the unexpectedly endearing <game:Marvel's Guardians of the Galaxy>, the shockingly compelling <game:Control> + [The Foundation](game:Control: The Foundation) + [AWE](game:Control: AWE), and a comfortably enthralling return to <game:The Witcher 3: Wild Hunt> + [Hearts of Stone](game:The Witcher 3: Wild Hunt - Hearts of Stone).
+
+And I got a healthy serving of <rating:Good>, highlights including the fun and funny [South Park games](tag:South Park), the action-packed time-hopping <game:Deathloop>, the science-fantasy time-bopping <game:Outer Wilds>, and the ... Shakespearean time-skipping <game:Elsinore>.
+
+<i>(Plus [Omensight](game:Omensight: Definitive Edition) and <game:The Forgotten City>; I hadn't planned on getting stuck in so many time loops!  Call that another of my niches, I guess, along with [nonograms](game:Piczle Cross Adventure) and [programming puzzles](tag:Zachtronics).)</i>
+
+2022 only held a few, mild disappointments, like the over-extended <game:Star Wars Jedi: Fallen Order> (<rating:Meh>), the genre-confused <game:Batbarian: Testament of the Primordials> (Meh), and the terminally dull <game:Evoland 2> (<rating:Bad>).
+
+So what's next?
+
+Some pretty exciting franchise entries and sequels are targeting 2023, like <game:Hollow Knight: Silksong>, <game:The Legend of Zelda: Tears of the Kingdom>, and <game:Suicide Squad: Kill the Justice League>.  But <i>all</i> of these games have histories with release dates that ... well, I'm not holding my breath.
+
+<game:God of War Ragnarök> will almost certainly be the swan song of my <platform:PS4>, since the [upcoming Horizon Forbidden West DLC](game:Horizon Forbidden West: Burning Shores) is apparently <a href="https://www.ign.com/articles/horizon-forbidden-west-burning-shores-dlc-announced-exclusive-to-ps5">skipping it</a>.
+
+Although my backlog has thinned out, I've got positive expectations for its remainders, especially <game:Cyberpunk 2077>, <game:Disco Elysium>, and <game:The Outer Worlds>.
+
+But for now, I'm already in the thick of <game:The Witcher 3: Wild Hunt - Blood and Wine>.  And I still need to finish investigating <game:Outer Wilds: Echoes of the Eye> -- more on that, uh, eventually.
