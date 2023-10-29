@@ -6,10 +6,8 @@ namespace GlogGenerator.IgdbApi
 {
     // https://api-docs.igdb.com/#platform
     // This class is NOT a complete representation, it only includes properties as-needed.
-    public class IgdbPlatform
+    public class IgdbPlatform : IgdbEntity
     {
-        public const int IdNotFound = -1;
-
         [JsonProperty("abbreviation")]
         public string Abbreviation { get; set; }
 
@@ -25,9 +23,11 @@ namespace GlogGenerator.IgdbApi
             }
         }
 
+        [IgdbEntityId]
         [JsonProperty("id")]
         public int Id { get; set; } = IdNotFound;
 
+        [IgdbEntityReferenceableKey]
         [JsonProperty("name")]
         public string Name { get; set; }
 

@@ -21,9 +21,9 @@ So it's disappointing that Thronebreaker's character building isn't as strong as
 
 The presentation of Thronebreaker's story is pretty consistently great, except for a handful of shortcomings in text editing (mostly toward the end).
 
-![](%site.BaseURL%thronebreaker_editing.png){width=960 height=540}
+![]($SiteBaseURL$thronebreaker_editing.png){width=960 height=540}
 
-But the game's <i>story</i> is only half of the game's "story."  When it isn't a text adventure with light resource management, Thronebreaker is Gwent, the card game!  And like [I wrote before](%site.BaseURL%2018/11/03/not-your-granddads-gwent/), that game is further subdivided into "regular" matches, and puzzles.
+But the game's <i>story</i> is only half of the game's "story."  When it isn't a text adventure with light resource management, Thronebreaker is Gwent, the card game!  And like [I wrote before]($SiteBaseURL$2018/11/03/not-your-granddads-gwent/), that game is further subdivided into "regular" matches, and puzzles.
 
 Contrary to my earlier assumption, the puzzles aren't generally about trying to teach you "how to Gwent."  Some of them are brain-teasing, often <i>hard</i> challenges that ask you to exploit the intricacies of card rules against one another.  And some of them use custom rules to be clever and inventive, like a <game:Hearthstone> parody, or a card-based stealth maze (avoid patrolling guard cards!).  They all feel pretty novel, and I was consistently impressed with the puzzles' creativity.
 

@@ -8,6 +8,7 @@ using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using GlogGenerator.Data;
 using GlogGenerator.IgdbApi;
 using GlogGenerator.RenderState;
 using GlogGenerator.Stats;
@@ -74,9 +75,10 @@ namespace GlogGenerator
                 }
             }
 
-            var site = SiteState.FromInputFilesBasePath(inputFilesBasePath, templateFilesBasePath);
-
-            site.BaseURL = $"{hostOrigin}{pathPrefix}"; // TODO: ensure proper slash-usage between origin and path
+            var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
+            var configData = ConfigData.FromFilePaths(configFilePath, inputFilesBasePath, templateFilesBasePath);
+            var builder = new SiteBuilder(configData);
+            builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
             if (updateIgdbCache)
             {
@@ -89,18 +91,18 @@ namespace GlogGenerator
                     throw new ArgumentException("Missing or empty --igdb-client-secret");
                 }
 
-                using (var igdbApiClient = new IgdbApiClient(igdbClientId, igdbClientSecret))
+                using (var igdbApiClient = new IgdbApiClient(logger, igdbClientId, igdbClientSecret))
                 {
                     logger.LogInformation("Updating IGDB cache...");
                     var cacheUpdateTimer = Stopwatch.StartNew();
-                    await site.IgdbCache.UpdateFromApiClient(igdbApiClient);
+                    await builder.GetIgdbCache().UpdateFromApiClient(igdbApiClient);
                     cacheUpdateTimer.Stop();
                     logger.LogInformation(
                         "Finished updating in {CacheUpdateTimeMs} ms",
                         cacheUpdateTimer.ElapsedMilliseconds);
                 }
 
-                site.IgdbCache.WriteToJsonFile(inputFilesBasePath);
+                builder.GetIgdbCache().WriteToJsonFile(inputFilesBasePath);
             }
 
             var outputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
@@ -108,15 +110,16 @@ namespace GlogGenerator
             switch (activeVerb.ToLowerInvariant())
             {
                 case "build":
-                    LoadSiteContent(logger, site);
+                    LoadSiteData(logger, builder);
+                    LoadSiteRoutes(logger, builder);
 
                     logger.LogInformation("Building content...");
                     var buildTimer = Stopwatch.StartNew();
-                    BuildStaticSite.Build(site, staticSiteOutputBasePath);
+                    BuildStaticSite.Build(builder.GetSiteState(), staticSiteOutputBasePath);
                     buildTimer.Stop();
                     logger.LogInformation(
                         "Finished building {ContentCount} content routes in {BuildTimeMs} ms",
-                        site.ContentRoutes.Count,
+                        builder.GetSiteState().ContentRoutes.Count,
                         buildTimer.ElapsedMilliseconds);
                     break;
 
@@ -125,13 +128,14 @@ namespace GlogGenerator
                     break;
 
                 case "host":
-                    LoadSiteContent(logger, site);
+                    LoadSiteData(logger, builder);
+                    LoadSiteRoutes(logger, builder);
 
                     logger.LogInformation(
                         "Hosting site at {HostOriginAndPath}",
                         hostOrigin + pathPrefix);
                     var hostLogger = loggerFactory.CreateLogger<HostLocalSite>();
-                    HostLocalSite.Host(hostLogger, site, hostOrigin, pathPrefix);
+                    HostLocalSite.Host(hostLogger, builder.GetSiteState(), hostOrigin, pathPrefix);
                     break;
 
                 case "new":
@@ -175,11 +179,11 @@ rating = []
                     var reportStartDate = DateTimeOffset.Parse(reportStartDateString, CultureInfo.InvariantCulture);
                     var reportEndDate = DateTimeOffset.Parse(reportEndDateString, CultureInfo.InvariantCulture);
 
-                    LoadSiteContent(logger, site);
+                    LoadSiteData(logger, builder);
 
                     // TODO: Move this into an encapsulated class/file for reporting code.
                     var statsByGameAndPlatform = new Dictionary<string, GameStats>();
-                    var reportPosts = site.Posts.Where(p => p.Date >= reportStartDate && p.Date <= reportEndDate).ToList();
+                    var reportPosts = builder.GetSiteDataIndex().GetPosts().Where(p => p.Date >= reportStartDate && p.Date <= reportEndDate).ToList();
                     foreach (var reportPost in reportPosts)
                     {
                         foreach (var postGame in reportPost.Games)
@@ -190,13 +194,13 @@ rating = []
 
                                 if (!statsByGameAndPlatform.ContainsKey(gameAndPlatformKey))
                                 {
-                                    var igdbGame = site.IgdbCache.GetGameByName(postGame);
+                                    var gameData = builder.GetSiteDataIndex().GetGame(postGame);
 
                                     statsByGameAndPlatform[gameAndPlatformKey] = new GameStats()
                                     {
                                         Title = postGame,
                                         Platform = postPlatform,
-                                        Type = igdbGame.Category.Description(),
+                                        Type = gameData.IgdbCategory.Description(),
                                         FirstPosted = reportPost.Date,
                                         LastPosted = reportPost.Date,
                                     };
@@ -285,15 +289,26 @@ rating = []
             return 0;
         }
 
-        private static void LoadSiteContent(ILogger logger, SiteState site)
+        private static void LoadSiteData(ILogger logger, SiteBuilder builder)
         {
-            logger.LogInformation("Loading content...");
+            logger.LogInformation("Loading data...");
             var loadTimer = Stopwatch.StartNew();
-            site.LoadContent();
+            builder.GetSiteDataIndex().LoadContent();
+            loadTimer.Stop();
+            logger.LogInformation(
+                "Finished loading site data in {LoadTimeMs} ms",
+                loadTimer.ElapsedMilliseconds);
+        }
+
+        private static void LoadSiteRoutes(ILogger logger, SiteBuilder builder)
+        {
+            logger.LogInformation("Loading routes...");
+            var loadTimer = Stopwatch.StartNew();
+            builder.GetSiteState().LoadContentRoutes();
             loadTimer.Stop();
             logger.LogInformation(
                 "Finished loading {ContentCount} content routes in {LoadTimeMs} ms",
-                site.ContentRoutes.Count,
+                builder.GetSiteState().ContentRoutes.Count,
                 loadTimer.ElapsedMilliseconds);
         }
     }

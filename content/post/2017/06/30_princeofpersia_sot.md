@@ -25,4 +25,4 @@ And, okay, fights are a bit dull.  Generally speaking, the game uses a quantity-
 
 What I'm finding really incredible about re-treading Azad is that I still recognize practically all of the game's levels when I see them; this game made a strong impression on me, circa 2003-2004, and that impression is holding up.
 
-<i>Progress: 62\%</i>
+<i>Progress: 62%</i>

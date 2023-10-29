@@ -5,7 +5,7 @@ category = ["Video Game Theory"]
 game = ["Red Dead Redemption"]
 +++
 
-When I [tried replaying it](%site.BaseURL%2017/05/07/sometimes-dead-is-better/) last year, I neglected to consider - or maybe just forgot about - the impact that HBO's <i>Westworld</i> series has on revisiting <game:Red Dead Redemption>.
+When I [tried replaying it]($SiteBaseURL$2017/05/07/sometimes-dead-is-better/) last year, I neglected to consider - or maybe just forgot about - the impact that HBO's <i>Westworld</i> series has on revisiting <game:Red Dead Redemption>.
 
 It's oddly reciprocal, since the show is so up-front with its videogame inspirations -- when the incoming guests talk matter-of-factly about the freedom of Westworld's sandbox, and the fun of playing it "straight evil."
 

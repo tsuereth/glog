@@ -13,4 +13,4 @@ Maybe I'm the only person on Earth who played <game:Beyond Good & Evil> and didn
 
 So it's doubly mystifying to me how the no-gameplay <a href="https://www.youtube.com/watch?v=EAYN08YoaV8">prequel trailer</a> is driving so much hype.  Is it because the monkey says "motherfucker?"  It certainly can't be because of the hackneyed and Michael Bay-esque police chase.
 
-Maybe if I could borrow [Playtonic's time machine](%site.BaseURL%2017/04/13/banjo-timewarpey/), I could go back to 2004, play BG&E again, and try to understand why the game became so beloved.  For now, I don't remember the game as anything but wholly unremarkable.
+Maybe if I could borrow [Playtonic's time machine]($SiteBaseURL$2017/04/13/banjo-timewarpey/), I could go back to 2004, play BG&E again, and try to understand why the game became so beloved.  For now, I don't remember the game as anything but wholly unremarkable.

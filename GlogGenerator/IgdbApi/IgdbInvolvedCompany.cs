@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 
 namespace GlogGenerator.IgdbApi
 {
     // https://api-docs.igdb.com/#involved-company
     // This class is NOT a complete representation, it only includes properties as-needed.
-    public class IgdbInvolvedCompany
+    public class IgdbInvolvedCompany : IgdbEntity
     {
-        public const int IdNotFound = -1;
-
+        [IgdbEntityId]
         [JsonProperty("id")]
         public int Id { get; set; }
 

@@ -27,6 +27,6 @@ Not to mention, Kait's character growth is <i>once again</i> drip-fed and left d
 
 <b>Better than</b>: <game:Wolfenstein II: The New Colossus>  
 <b>Not as good as</b>: <game:Borderlands 3>, <game:Gears of War 4>  
-<b>About as good as</b>: <game:Rise of the Tomb Raider> and <game:Tomb Raider (2013)>, granted my praise for the latter [<i>did not</i> age well](%site.BaseURL%2018/07/27/melancholy-of-the-tomb-raider/).
+<b>About as good as</b>: <game:Rise of the Tomb Raider> and <game:Tomb Raider (2013)>, granted my praise for the latter [<i>did not</i> age well]($SiteBaseURL$2018/07/27/melancholy-of-the-tomb-raider/).
 
 <i>Progress: Finished the campaign on Intermediate.</i>

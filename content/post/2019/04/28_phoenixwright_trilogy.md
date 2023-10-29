@@ -15,7 +15,7 @@ So far, the answer is... mostly.  I remembered there were some frustrating insta
 
 Most importantly, though, the writing of Ace Attorney's characters and plots feels like it's aged just fine.  At least to me, the balance between "mystery-solving realism" and "bizarre cartoon humor" still seems good.  (Granted, I may still be biased by nostalgia.)
 
-![](%site.BaseURL%phoenix_wright_trilogy_parrot.jpg){width=960 height=540}
+![]($SiteBaseURL$phoenix_wright_trilogy_parrot.jpg){width=960 height=540}
 
 As for the trilogy collection's visual facelift, it's a bit mixed.  At its best, the new high-resolution art is a solid match for my rose-tinted memory of what the DS games "might have" looked like.  Occasionally, though, a character will have awkward shading on their face or a weird mouth shape, and watching them talk doesn't ... totally look right.
 

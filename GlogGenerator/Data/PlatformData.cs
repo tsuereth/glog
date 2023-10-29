@@ -1,18 +1,14 @@
 using System.Collections.Generic;
 using GlogGenerator.IgdbApi;
-using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.Data
 {
-    public class PlatformData
+    public class PlatformData : IGlogReferenceable
     {
-        public string PermalinkRelative
+        public string GetPermalinkRelative()
         {
-            get
-            {
-                var urlized = StringRenderer.Urlize(this.Abbreviation);
-                return $"platform/{urlized}/";
-            }
+            var urlized = UrlizedString.Urlize(this.Abbreviation);
+            return $"platform/{urlized}/";
         }
 
         public string Abbreviation { get; set; } = string.Empty;
@@ -23,7 +19,7 @@ namespace GlogGenerator.Data
 
         public List<PostData> LinkedPosts { get; set; } = new List<PostData>();
 
-        public static PlatformData FromIgdbPlatform(IgdbCache igdbCache, IgdbPlatform igdbPlatform)
+        public static PlatformData FromIgdbPlatform(IIgdbCache igdbCache, IgdbPlatform igdbPlatform)
         {
             var platform = new PlatformData();
 

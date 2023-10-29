@@ -4,7 +4,7 @@ title = "Manifest Glogstiny"
 category = ["Site News"]
 +++
 
-[Eight years ago](%site.BaseURL%2015/10/24/glog-now-with-100-less-server-execution/), I turned the Glog into a static site, using Hugo to generate webpages from post text and metadata.  And while this was a big improvement on what came before, that Glog still ... wasn't ... <i>quite</i> everything I wanted it to be.
+[Eight years ago]($SiteBaseURL$2015/10/24/glog-now-with-100-less-server-execution/), I turned the Glog into a static site, using Hugo to generate webpages from post text and metadata.  And while this was a big improvement on what came before, that Glog still ... wasn't ... <i>quite</i> everything I wanted it to be.
 
 Though if I'm being honest with myself, finally pulling the trigger on <a href="https://knowyourmeme.com/memes/im-going-to-build-my-own-theme-park-with-blackjack-and-hookers">my own</a> static site generator had less to do with <a href="https://gohugo.io/templates/introduction/">Hugo's (and golang's)</a> awkward extensibility limitations, and more to do with my hunger for weekend software development.
 

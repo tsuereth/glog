@@ -19,7 +19,7 @@ The storytelling in Opus Magnum is a mechanical step forward for Zachtronics, if
 
 ... That said, all the characters' dialog (including this protagonist's) is stiffly robotic, and their personalities are all pretty flat.  The quality of the writing seems about on-par with SpaceChem's.
 
-I will give some props to the built-in minigame, Sigmar's Garden, which is way less frustratingly obtuse than Shenzhen's solitaire game.  It's still not all that engaging, but at least I don't [actively hate it](%site.BaseURL%2017/07/24/made-in-china/).
+I will give some props to the built-in minigame, Sigmar's Garden, which is way less frustratingly obtuse than Shenzhen's solitaire game.  It's still not all that engaging, but at least I don't [actively hate it]($SiteBaseURL$2017/07/24/made-in-china/).
 
 I'm definitely having fun with Opus Magnum, but I hope that later puzzles will find some more interesting high-level challenges for me.
 

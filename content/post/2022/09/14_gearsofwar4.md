@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-My [recorded memory](%site.BaseURL%2011/10/09/gears-of-war-3-2/) of <game:Gears of War 3> was surprisingly positive, especially about the quality of its writing.  What happened in that game again?  I think... a grizzled old military scientist, the presumed-dead father of the franchise's protagonist, committed chemical-weapon genocide against the under-dwelling "Locust" bug-mutant people...?
+My [recorded memory]($SiteBaseURL$2011/10/09/gears-of-war-3-2/) of <game:Gears of War 3> was surprisingly positive, especially about the quality of its writing.  What happened in that game again?  I think... a grizzled old military scientist, the presumed-dead father of the franchise's protagonist, committed chemical-weapon genocide against the under-dwelling "Locust" bug-mutant people...?
 
 Well, whether or not that memory is reliable, I know it's <i>possible</i> for an action-oriented shoot-bad-dudes game to also have great writing and showcase compelling characters (like [Nate and Sully](tag:Uncharted)).  And I know that <game:Gears of War 4> doesn't come anywhere close.
 

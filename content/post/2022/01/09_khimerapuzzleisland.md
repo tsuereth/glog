@@ -19,7 +19,7 @@ There are some definite shortcomings in Puzzle Island, like the fact that most o
 
 But the quirky charm of these awkward monster girls really <i>makes</i> the game, and made me more than happy to click through even the most tedious of their puzzles.
 
-![](%site.BaseURL%khimerapuzzleisland_100percentshirt.jpg){width=580 height=360}
+![]($SiteBaseURL$khimerapuzzleisland_100percentshirt.jpg){width=580 height=360}
 
 ... oh, and there <i>is</i> one pretty neat mechanic in the final boss battle, using rapid-fire timed puzzles to implement attacking and defending.  I kinda hope that a sequel explores this idea some more.
 

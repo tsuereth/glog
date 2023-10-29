@@ -9,7 +9,7 @@ rating = ["Good"]
 
 <game:Murder by Numbers> is a murder-mystery visual novel with investigation elements inspired by [Phoenix Wright](tag:Ace Attorney), and punctuated by nonogram puzzles.  It even shares some of Ace Attorney's <a href="https://aceattorney.fandom.com/wiki/Masakazu_Sugimori">musical pedigree</a>.  This... should really be a slam dunk for me.  And while I ultimately still <i>liked</i> this detective-story-and-puzzles game, I can't help but obsess over how I might have liked it even more.
 
-![](%site.BaseURL%murderbynumbers_nerd.jpg){width=400 height=300}
+![]($SiteBaseURL$murderbynumbers_nerd.jpg){width=400 height=300}
 
 Let's start with the good.  Murder by Numbers has a slightly-absurd premise - protagonist Honor is an actress <i>playing</i> a detective, assistant SCOUT is a floating robot who really shouldn't exist in the game's 1990s setting - and yet, not unlike the Fey family's insane spiritual powers, strong characterization and scene-setting make it all totally believable.  Detective-story tropes are both honored and subverted, Honor's friends have some genuinely interesting qualities, and characters react to each case's tragedies in poignant but believable and sympathetic dialog.
 
@@ -17,7 +17,7 @@ The case stories are engaging and well-structured, for the most part -- a notabl
 
 And like some of the best Ace Attorney tales, Murder by Numbers does a good job of blending humor into its narrative.
 
-![](%site.BaseURL%murderbynumbers_rs232.jpg){width=400 height=300}
+![]($SiteBaseURL$murderbynumbers_rs232.jpg){width=400 height=300}
 
 Unfortunately, the way in which <i>puzzles</i> are blended in leaves something to be desired.  What could have been a gameplay mechanic which <i>supports</i> narrative immersion is instead a distraction from the story, and ultimately detracts from it.
 

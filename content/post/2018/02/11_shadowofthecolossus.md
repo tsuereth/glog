@@ -7,7 +7,7 @@ platform = ["PS4"]
 rating = ["Good"]
 +++
 
-I'll walk back some of my [previous sentiment](%site.BaseURL%2018/02/07/colossus-sees-shadow-predicts-six-more-weeks-of-winter/) about [Shadow of the Colossus](game:Shadow of the Colossus (2018)) "recapturing" the original game's charms and quirks.  That is to say, not all of this game has aged well -- the open world really wore on me.
+I'll walk back some of my [previous sentiment]($SiteBaseURL$2018/02/07/colossus-sees-shadow-predicts-six-more-weeks-of-winter/) about [Shadow of the Colossus](game:Shadow of the Colossus (2018)) "recapturing" the original game's charms and quirks.  That is to say, not all of this game has aged well -- the open world really wore on me.
 
 It's pretty, for sure.  The environment's beauty is very impressive ... for a few seconds.  Then what?  I have to ride this dumb horse all the way around the map, occasionally re-plotting my route to get around a mountain or a ravine, and there's <i>nothing else to do</i>\* except continue trying to find that next colossus.  This world feels too big, for how little is in it.
 

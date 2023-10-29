@@ -33,4 +33,4 @@ It's a shame that the story is so messy, but overall Iconoclasts is fun <i>enoug
 <b>Not as good as</b>: <game:Indivisible>  
 <b>More exciting, but less puzzling, than</b>: <game:Toki Tori 2+>
 
-<i>Progress: 100\% on Standard mode.</i>
+<i>Progress: 100% on Standard mode.</i>

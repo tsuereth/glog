@@ -7,27 +7,27 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-For the most part, <game:The Great Ace Attorney Chronicles> - the localized collection of two games, [Adventures](game:The Great Ace Attorney: Adventures) and [Resolve](game:The Great Ace Attorney 2: Resolve), which I [thought would never leave Japan](%site.BaseURL%2014/04/26/oh-great/) - is exactly what an <tag:Ace Attorney> veteran expects.
+For the most part, <game:The Great Ace Attorney Chronicles> - the localized collection of two games, [Adventures](game:The Great Ace Attorney: Adventures) and [Resolve](game:The Great Ace Attorney 2: Resolve), which I [thought would never leave Japan]($SiteBaseURL$2014/04/26/oh-great/) - is exactly what an <tag:Ace Attorney> veteran expects.
 
 From its outlandish, boisterous characters...
 
-![](%site.BaseURL%greataceattorney_swanhat.jpg){width=640 height=360}
+![]($SiteBaseURL$greataceattorney_swanhat.jpg){width=640 height=360}
 
 To the protagonist's fish-out-of-water attitude and haphazard trial technique.
 
-![](%site.BaseURL%greataceattorney_lookofterror.jpg){width=640 height=360}
+![]($SiteBaseURL$greataceattorney_lookofterror.jpg){width=640 height=360}
 
 Even the awkwardness in its PC port, like nonsense keybindings, and this baffling dependency/codec error:
 
-![](%site.BaseURL%greataceattorney_whatcodec.png){width=243 height=141}
+![]($SiteBaseURL$greataceattorney_whatcodec.png){width=243 height=141}
 
-... is, well, [within expectations for Capcom](%site.BaseURL%2020/05/16/stride-off/).
+... is, well, [within expectations for Capcom]($SiteBaseURL$2020/05/16/stride-off/).
 
 Great Ace Attorney may take place in a different era, and a different hemisphere, but friends of Phoenix and Maya will get along with Ryunosuke and Susato just fine.
 
-Like [Phoenix's](game:Phoenix Wright: Ace Attorney Trilogy) (and [Apollo's](game:Apollo Justice: Ace Attorney)) stories, this one is both fun and dramatic -- building up an enchanting cast of characters, like the absent-minded Sherl- er, <a href="https://en.wikipedia.org/wiki/Popular_culture_references_to_Sherlock_Holmes">Herlock Sholmes</a> and the panicky <a href="https://en.wikipedia.org/wiki/Natsume_S\%C5\%8Dseki">Soseki Natsume</a>; while simultaneously uncovering a deep backstory riddled with intrigue and <i>pathos</i>.
+Like [Phoenix's](game:Phoenix Wright: Ace Attorney Trilogy) (and [Apollo's](game:Apollo Justice: Ace Attorney)) stories, this one is both fun and dramatic -- building up an enchanting cast of characters, like the absent-minded Sherl- er, <a href="https://en.wikipedia.org/wiki/Popular_culture_references_to_Sherlock_Holmes">Herlock Sholmes</a> and the panicky <a href="https://en.wikipedia.org/wiki/Natsume_S%C5%8Dseki">Soseki Natsume</a>; while simultaneously uncovering a deep backstory riddled with intrigue and <i>pathos</i>.
 
-![](%site.BaseURL%greataceattorney_hallowedchalice.jpg){width=640 height=360}
+![]($SiteBaseURL$greataceattorney_hallowedchalice.jpg){width=640 height=360}
 
 The pacing of some cases is a bit "off," especially when the first game ends with major plot questions unanswered, and the second game then <i>flashes back</i> to add <i>more</i> questions on top.  And, some earlier cases can feel quite slow -- <i>lots</i> of dialog to click through.
 
@@ -41,7 +41,7 @@ And while Great Ace Attorney also adds a "Dance of Deduction" mechanic (logicall
 
 (The first game also includes some content that's suggestive of a <platform:3DS>-specific stereoscopy feature; in this 2021 re-release, the game asks you to cross your eyes while looking at two images.)
 
-![](%site.BaseURL%greataceattorney_stereoscope.jpg){width=640 height=360}
+![]($SiteBaseURL$greataceattorney_stereoscope.jpg){width=640 height=360}
 
 So, at its worst, the Great Ace Attorney duology doesn't innovate on its franchise's "visual novel with detective elements" foundation.  And can move a bit slowly.
 

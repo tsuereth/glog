@@ -25,7 +25,7 @@ And that would be fine, if the "real" game of CrossCode would continue developin
 
 CrossCode does include a lot of well-written dialog, from convincing characterization of its fake players to some videogame-reference humor.  But the world it built within CrossWorlds <i>wasn't interesting</i> -- just mundane filler inbetween the "real" story.
 
-![](%site.BaseURL%crosscode_umbrella.jpg){width=960 height=540}
+![]($SiteBaseURL$crosscode_umbrella.jpg){width=960 height=540}
 
 The first half of CrossCode could have been cut down substantially, and the absence of its main story is the biggest reason.  But not the only reason.
 
@@ -77,7 +77,7 @@ So when the game's ending wrapped up some plot threads, but not all of them; and
 
 All I could do was <b>sigh</b>, at this game I enjoyed a <i>playable</i> demo of <i>three years ago</i>, this game that rivals AAA productions with its <i>amount</i> of content - and often, the quality of its content - but somehow <i>still didn't finish its story</i>.
 
-![](%site.BaseURL%crosscode_incomplete.jpg){width=960 height=540}
+![]($SiteBaseURL$crosscode_incomplete.jpg){width=960 height=540}
 
 I fell in love with CrossCode's provocative introduction, but fell out of love with the MMO <i>milieu</i> that substituted for its story, and with its seemingly <i>endless</i> "practice makes perfect" approach to combat and puzzles.
 

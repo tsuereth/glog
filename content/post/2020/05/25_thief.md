@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-[Six years later](%site.BaseURL%2014/02/15/seventeen-minutes-and-no-explosions/), thanks to that same <a href="https://www.techradar.com/news/get-54-square-enix-pc-games-for-under-dollar40-in-this-amazing-steam-charity-bundle">charity bundle</a> that's been getting me in such trouble recently, I finally bit the bullet on the <game:Thief> reboot.  And it's roughly what I expected, more-or-less.
+[Six years later]($SiteBaseURL$2014/02/15/seventeen-minutes-and-no-explosions/), thanks to that same <a href="https://www.techradar.com/news/get-54-square-enix-pc-games-for-under-dollar40-in-this-amazing-steam-charity-bundle">charity bundle</a> that's been getting me in such trouble recently, I finally bit the bullet on the <game:Thief> reboot.  And it's roughly what I expected, more-or-less.
 
 The "more" is Thief's overall aesthetic, which is satisfyingly moody and foreboding.  I'll just assume that this team took extensive notes from <game:Dishonored> because Thief's art style nails that same "feel" of quasi-Victorian English <i>malaise</i>.  (No small thanks to its embrace of literal darkness and shadows.)  This does an admirable job of visually reinforcing the game's downtrodden-peasants and privileged-elite setting.
 

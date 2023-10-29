@@ -19,4 +19,4 @@ The framework of the game would be perfect for ambient storytelling, but it does
 <b>Not as good as</b>: <game:Insanely Twisted Shadow Planet>, <game:Unmechanical>  
 <b>Reminds me a bit of</b>: <game:Luminesca>, but even that unfinished proto-game was more interesting and less frustrating.
 
-<i>Progress: 19.6\%</i>
+<i>Progress: 19.6%</i>

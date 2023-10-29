@@ -9,7 +9,7 @@ using Newtonsoft.Json.Linq;
 
 namespace GlogGenerator
 {
-    public class IgdbCache
+    public class IgdbCache : IIgdbCache
     {
         public static readonly string JsonFileName = "igdb_cache.json";
 
@@ -82,23 +82,6 @@ namespace GlogGenerator
             return null;
         }
 
-        public IgdbGame GetGameByName(string name)
-        {
-            var result = this.gamesById.Values.Where(g => g.NameForGlog.Equals(name, StringComparison.Ordinal));
-            if (result.Count() > 0)
-            {
-                return result.First();
-            }
-
-            result = this.gamesUnidentified.Where(g => g.NameForGlog.Equals(name, StringComparison.Ordinal));
-            if (result.Count() > 0)
-            {
-                return result.First();
-            }
-
-            throw new ArgumentException($"No game matches name {name}");
-        }
-
         public List<IgdbGame> GetAllGames()
         {
             var results = this.gamesById.Values.ToList();
@@ -148,23 +131,6 @@ namespace GlogGenerator
             return null;
         }
 
-        public IgdbPlatform GetPlatformByAbbreviation(string abbreviation)
-        {
-            var result = this.platformsById.Values.Where(p => p.AbbreviationForGlog.Equals(abbreviation, StringComparison.Ordinal));
-            if (result.Count() > 0)
-            {
-                return result.First();
-            }
-
-            result = this.platformsUnidentified.Where(p => p.AbbreviationForGlog.Equals(abbreviation, StringComparison.Ordinal));
-            if (result.Count() > 0)
-            {
-                return result.First();
-            }
-
-            throw new ArgumentException($"No platform matches abbreviation {abbreviation}");
-        }
-
         public List<IgdbPlatform> GetAllPlatforms()
         {
             var results = this.platformsById.Values.ToList();
@@ -192,6 +158,21 @@ namespace GlogGenerator
             }
 
             return null;
+        }
+
+        public List<IgdbEntity> GetAllGameMetadata()
+        {
+            var allMetadata = new List<IgdbEntity>();
+
+            allMetadata.AddRange(this.collectionsById.Values);
+            allMetadata.AddRange(this.companiesById.Values);
+            allMetadata.AddRange(this.franchisesById.Values);
+            allMetadata.AddRange(this.gameModesById.Values);
+            allMetadata.AddRange(this.genresById.Values);
+            allMetadata.AddRange(this.playerPerspectivesById.Values);
+            allMetadata.AddRange(this.themesById.Values);
+
+            return allMetadata;
         }
 
         public async Task UpdateFromApiClient(IgdbApiClient client)

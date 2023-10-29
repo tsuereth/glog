@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Good"]
 +++
 
-<tag:CD Projekt> has a good track record for fixing up the "good old games" it sells on GOG, so when I saw <game:The Saboteur> released there, I got excited that maybe they'd fixed the mixed-resolution map issue I [whined about back in 2012](%site.BaseURL%2012/09/17/the-saboteur-9/).  As it turns out, they ... kind-of fixed it ... by locking the setting at 720p.
+<tag:CD Projekt> has a good track record for fixing up the "good old games" it sells on GOG, so when I saw <game:The Saboteur> released there, I got excited that maybe they'd fixed the mixed-resolution map issue I [whined about back in 2012]($SiteBaseURL$2012/09/17/the-saboteur-9/).  As it turns out, they ... kind-of fixed it ... by locking the setting at 720p.
 
 The game's overall technical (in-)fidelity is pretty much how I remember it, cutscene-warping and crashing and all.  To be fair, I've played plenty worse - and to The Saboteur's credit, it performs pretty smoothly in <i>highly explosive</i> scenarios - it's just a little disappointing that no one's yet been able to polish this rough gem of a game.
 

@@ -13,7 +13,7 @@ I could go on, and on, <i>and on</i>, about how <i>slowly</i> RDR2 tends to move
 
 He <i>does</i> need to ride his horse from point A to B, for minutes at a time, in and between practically every mission.  Sometimes the narrative scripting skips this ride, and sometimes it doesn't.  Sometimes a riding companion will provide dialog, and sometimes they won't.  Sometimes there's a "fast travel" option at A to go directly to B, and <i>usually there isn't</i>.
 
-![](%site.BaseURL%reddeadredemption2_notrains.jpg){width=640 height=360}
+![]($SiteBaseURL$reddeadredemption2_notrains.jpg){width=640 height=360}
 
 And I could similarly go on and on <i>and on</i> about the absurd <i>number</i> of gameplay mechanics in RDR2 - <b>20 hours</b> in, the game was still tutorializing new activities (like fishing!) - as well as how <i>player-hostile</i> the controls for those mechanics are.
 
@@ -21,7 +21,7 @@ Letters and books share inventory space with animal meat ... except when they do
 
 And don't get me started on how fidgety and fiddly position-sensitive button prompts can be.
 
-![static mp4](%site.BaseURL%reddeadredemption2_cantsleep.mp4){width=960 height=540 controls playsinline autoplay muted loop}
+![static mp4]($SiteBaseURL$reddeadredemption2_cantsleep.mp4){width=960 height=540 controls playsinline autoplay muted loop}
 
 And, I could continue going on!, about how these and other problems interfere with RDR2's storytelling -- from attempts at re-watching cinematics getting stuck on <a href="https://forum.psnprofiles.com/topic/89832-infinite-loading-screen-while-replaying-missions-via-ingame-menu/#comment-2065599">infinite loading screens</a>, to the (spoilers) <a href="https://www.ign.com/wikis/red-dead-redemption-2/American_Venom">final story mission</a> actively <i>punishing</i> attempted gameplay.  ("Stay behind cover. You aren't meant to shoot [the guy] here.")
 

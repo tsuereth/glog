@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using GlogGenerator.RenderState;
 using Markdig.Helpers;
 using Markdig.Parsers;
 using Markdig.Parsers.Inlines;
@@ -11,21 +10,15 @@ namespace GlogGenerator.MarkdownExtensions
 {
     public class GlogLinkInlineParser : LinkInlineParser
     {
-        private readonly SiteState siteState;
+        private Dictionary<string, string> linkMatchTypes;
 
-        private Dictionary<string, Func<SiteState, string, string>> linkMatchHandlers;
-
-        public GlogLinkInlineParser(
-            SiteState siteState)
-            : base()
+        public GlogLinkInlineParser() : base()
         {
-            this.siteState = siteState;
-
-            this.linkMatchHandlers = new Dictionary<string, Func<SiteState, string, string>>();
+            this.linkMatchTypes = new Dictionary<string, string>();
             foreach (var linkHandler in GlogLinkHandlers.LinkMatchHandlers)
             {
                 var linkMatchString = $"]({linkHandler.Key}:";
-                this.linkMatchHandlers.Add(linkMatchString, linkHandler.Value);
+                this.linkMatchTypes.Add(linkMatchString, linkHandler.Key);
             }
         }
 
@@ -35,7 +28,7 @@ namespace GlogGenerator.MarkdownExtensions
 
             if (slice.CurrentChar == ']')
             {
-                foreach (var linkMatchHandler in this.linkMatchHandlers)
+                foreach (var linkMatchHandler in this.linkMatchTypes)
                 {
                     var linkMatchString = linkMatchHandler.Key;
                     if (slice.Length > linkMatchString.Length && slice.Text.Substring(slice.Start, linkMatchString.Length).Equals(linkMatchString, StringComparison.OrdinalIgnoreCase))
@@ -77,23 +70,23 @@ namespace GlogGenerator.MarkdownExtensions
                             }
                         }
 
-                        var referenceName = slice.Text.Substring(slice.Start, referenceEndPos - slice.Start);
+                        var referenceType = linkMatchHandler.Value;
+                        var referenceKey = slice.Text.Substring(slice.Start, referenceEndPos - slice.Start);
 
-                        var referenceLink = linkMatchHandler.Value(this.siteState, referenceName);
-
-                        var linkInline = new LinkInline()
+                        var glogLinkInline = new GlogLinkInline()
                         {
-                            Url = referenceLink,
+                            ReferenceType = referenceType,
+                            ReferenceKey = referenceKey,
                             // TODO?: would filling in Span, Row, and Column accomplish anything?
                         };
 
                         // Processing state management, adapted from `LinkInlineParser.TryProcessLinkOrImage`
                         // https://github.com/xoofx/markdig/blob/master/src/Markdig/Parsers/Inlines/LinkInlineParser.cs
-                        openParent.ReplaceBy(linkInline);
-                        processor.Inline = linkInline;
-                        processor.PostProcessInlines(0, linkInline, null, false);
+                        openParent.ReplaceBy(glogLinkInline);
+                        processor.Inline = glogLinkInline;
+                        processor.PostProcessInlines(0, glogLinkInline, null, false);
                         openParent.IsActive = false;
-                        linkInline.IsClosed = true;
+                        glogLinkInline.IsClosed = true;
 
                         slice.Start = referenceEndPos + 1;
                         matchResult = true;

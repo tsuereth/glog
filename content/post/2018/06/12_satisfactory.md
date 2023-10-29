@@ -12,6 +12,6 @@ I am surprised it took <i>this</i> long for someone to take advantage of <game:F
 
 > Are there multiple procedurally generated planets?
 >
-> No, there are no procedurally generated planets. Just one beautifully crafted, hand-made, 100\% organic, vegan, GMO-free planet. Actually, it’s not even a whole planet. It’s just a small bit. But it’s still pretty big.
+> No, there are no procedurally generated planets. Just one beautifully crafted, hand-made, 100% organic, vegan, GMO-free planet. Actually, it’s not even a whole planet. It’s just a small bit. But it’s still pretty big.
 
-So, if the game can manage to be <i>stable</i> on release, maybe I'll finally get something like that factory-building game I've been looking forward to for [almost four years](%site.BaseURL%2014/11/09/transforming-the-useless-pristine-land-into-a-marvel-of-smoggy-industry/).
+So, if the game can manage to be <i>stable</i> on release, maybe I'll finally get something like that factory-building game I've been looking forward to for [almost four years]($SiteBaseURL$2014/11/09/transforming-the-useless-pristine-land-into-a-marvel-of-smoggy-industry/).

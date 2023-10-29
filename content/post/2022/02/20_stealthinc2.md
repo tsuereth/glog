@@ -7,7 +7,7 @@ platform = ["PC"]
 rating = ["Meh"]
 +++
 
-I'm less persistent than I was [back in 2013](%site.BaseURL%2013/06/20/stealth-maybe-bastard-definitely/) -- that's one reason why I'm not sticking with [Stealth <s>Bastard</s> Inc 2](game:Stealth Inc 2: A Game of Clones).  I've got less patience for <i>SURPRISE DEATHTRAP!</i> than I once did.
+I'm less persistent than I was [back in 2013]($SiteBaseURL$2013/06/20/stealth-maybe-bastard-definitely/) -- that's one reason why I'm not sticking with [Stealth <s>Bastard</s> Inc 2](game:Stealth Inc 2: A Game of Clones).  I've got less patience for <i>SURPRISE DEATHTRAP!</i> than I once did.
 
 But regardless, I'm ... not sure if this sequel's improvements really "improve" upon <game:Stealth Bastard Deluxe>.
 

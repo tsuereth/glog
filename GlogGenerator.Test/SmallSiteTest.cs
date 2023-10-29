@@ -2,7 +2,9 @@ using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using GlogGenerator.Data;
 using GlogGenerator.RenderState;
+using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace GlogGenerator.Test
@@ -13,27 +15,34 @@ namespace GlogGenerator.Test
         [TestMethod]
         public void TestBuildStaticSite()
         {
+            using var loggerFactory = LoggerFactory.Create(c => c.AddConsole());
+
+            var logger = loggerFactory.CreateLogger<Program>();
+
             var inputFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest");
             var templateFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "templates");
             var hostOrigin = "http://fakeorigin.com";
             var pathPrefix = "/glog/";
             var staticSiteOutputBasePath = Path.Combine(Directory.GetCurrentDirectory(), "public");
 
-            var site = SiteState.FromInputFilesBasePath(inputFilesBasePath, templateFilesBasePath);
-
-            site.BaseURL = $"{hostOrigin}{pathPrefix}"; // TODO: ensure proper slash-usage between origin and path
+            var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
+            var configData = ConfigData.FromFilePaths(configFilePath, inputFilesBasePath, templateFilesBasePath);
+            var builder = new SiteBuilder(configData);
+            builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
             // For testing, pretend that our "build date" is some constant date.
-            site.BuildDate = DateTimeOffset.Parse("2023-09-04T17:00:00.0+00:00", CultureInfo.InvariantCulture);
+            builder.SetBuildDate(DateTimeOffset.Parse("2023-09-04T17:00:00.0+00:00", CultureInfo.InvariantCulture));
 
-            site.LoadContent();
+            builder.GetSiteDataIndex().LoadContent();;
+
+            builder.GetSiteState().LoadContentRoutes();
 
             // Ensure the output directory is clean, first.
             if (Directory.Exists(staticSiteOutputBasePath))
             {
                 Directory.Delete(staticSiteOutputBasePath, recursive: true);
             }
-            BuildStaticSite.Build(site, staticSiteOutputBasePath);
+            BuildStaticSite.Build(builder.GetSiteState(), staticSiteOutputBasePath);
 
             var actualFilePaths = Directory.EnumerateFiles(staticSiteOutputBasePath, "*.*", SearchOption.AllDirectories).ToList();
             Assert.IsTrue(actualFilePaths.Count > 0);

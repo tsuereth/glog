@@ -3,22 +3,14 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using GlogGenerator.IgdbApi;
-using GlogGenerator.TemplateRenderers;
 
 namespace GlogGenerator.Data
 {
-    public class GameData
+    public class GameData : IGlogReferenceable
     {
-        public string PermalinkRelative
-        {
-            get
-            {
-                var urlized = StringRenderer.Urlize(this.Title);
-                return $"game/{urlized}/";
-            }
-        }
-
         public string Title { get; set; } = string.Empty;
+
+        public IgdbGameCategory IgdbCategory { get; set; } = IgdbGameCategory.None;
 
         public string IgdbUrl { get; set; }
 
@@ -26,26 +18,33 @@ namespace GlogGenerator.Data
 
         public List<PostData> LinkedPosts { get; set; } = new List<PostData>();
 
-        public static GameData FromIgdbGame(IgdbCache igdbCache, IgdbGame igdbGame)
+        public string GetPermalinkRelative()
+        {
+            var urlized = UrlizedString.Urlize(this.Title);
+            return $"game/{urlized}/";
+        }
+
+        public static GameData FromIgdbGame(IIgdbCache igdbCache, IgdbGame igdbGame)
         {
             var game = new GameData();
 
             game.Title = igdbGame.NameForGlog;
+
+            if (igdbGame.Category != IgdbGameCategory.None)
+            {
+                game.IgdbCategory = igdbGame.Category;
+                game.Tags.Add(igdbGame.Category.Description());
+            }
 
             if (!string.IsNullOrEmpty(igdbGame.Url))
             {
                 game.IgdbUrl = igdbGame.Url;
             }
 
-            if (igdbGame.Category != IgdbGameCategory.None)
-            {
-                game.Tags.Add(igdbGame.Category.Description());
-            }
-
             if (igdbGame.MainCollectionId != IgdbCollection.IdNotFound)
             {
                 var collection = igdbCache.GetCollection(igdbGame.MainCollectionId);
-                if (collection != null && !game.Tags.Contains(collection.Name, StringComparer.OrdinalIgnoreCase))
+                if (collection != null && !game.Tags.Contains(collection.GetReferenceableKey(), StringComparer.OrdinalIgnoreCase))
                 {
                     game.Tags.Add(collection.Name);
                 }
@@ -54,27 +53,27 @@ namespace GlogGenerator.Data
             foreach (var collectionId in igdbGame.CollectionIds)
             {
                 var collection = igdbCache.GetCollection(collectionId);
-                if (collection != null && !game.Tags.Contains(collection.Name, StringComparer.OrdinalIgnoreCase))
+                if (collection != null && !game.Tags.Contains(collection.GetReferenceableKey(), StringComparer.OrdinalIgnoreCase))
                 {
-                    game.Tags.Add(collection.Name);
+                    game.Tags.Add(collection.GetReferenceableKey());
                 }
             }
 
             if (igdbGame.MainFranchiseId != IgdbFranchise.IdNotFound)
             {
                 var franchise = igdbCache.GetFranchise(igdbGame.MainFranchiseId);
-                if (franchise != null && !game.Tags.Contains(franchise.Name, StringComparer.OrdinalIgnoreCase))
+                if (franchise != null && !game.Tags.Contains(franchise.GetReferenceableKey(), StringComparer.OrdinalIgnoreCase))
                 {
-                    game.Tags.Add(franchise.Name);
+                    game.Tags.Add(franchise.GetReferenceableKey());
                 }
             }
 
             foreach (var franchiseId in igdbGame.FranchiseIds)
             {
                 var franchise = igdbCache.GetFranchise(franchiseId);
-                if (franchise != null && !game.Tags.Contains(franchise.Name, StringComparer.OrdinalIgnoreCase))
+                if (franchise != null && !game.Tags.Contains(franchise.GetReferenceableKey(), StringComparer.OrdinalIgnoreCase))
                 {
-                    game.Tags.Add(franchise.Name);
+                    game.Tags.Add(franchise.GetReferenceableKey());
                 }
             }
 
@@ -94,45 +93,45 @@ namespace GlogGenerator.Data
             foreach (var companyId in companyIds)
             {
                 var company = igdbCache.GetCompany(companyId);
-                if (company != null && !game.Tags.Contains(company.Name, StringComparer.OrdinalIgnoreCase))
+                if (company != null && !game.Tags.Contains(company.GetReferenceableKey(), StringComparer.OrdinalIgnoreCase))
                 {
-                    game.Tags.Add(company.Name);
+                    game.Tags.Add(company.GetReferenceableKey());
                 }
             }
 
             foreach (var genreId in igdbGame.GenreIds)
             {
                 var genre = igdbCache.GetGenre(genreId);
-                if (genre != null && !game.Tags.Contains(genre.Name, StringComparer.OrdinalIgnoreCase))
+                if (genre != null && !game.Tags.Contains(genre.GetReferenceableKey(), StringComparer.OrdinalIgnoreCase))
                 {
-                    game.Tags.Add(genre.Name);
+                    game.Tags.Add(genre.GetReferenceableKey());
                 }
             }
 
             foreach (var gameModeId in igdbGame.GameModeIds)
             {
                 var gameMode = igdbCache.GetGameMode(gameModeId);
-                if (gameMode != null && !game.Tags.Contains(gameMode.Name, StringComparer.OrdinalIgnoreCase))
+                if (gameMode != null && !game.Tags.Contains(gameMode.GetReferenceableKey(), StringComparer.OrdinalIgnoreCase))
                 {
-                    game.Tags.Add(gameMode.Name);
+                    game.Tags.Add(gameMode.GetReferenceableKey());
                 }
             }
 
             foreach (var playerPerspectiveId in igdbGame.PlayerPerspectiveIds)
             {
                 var playerPerspective = igdbCache.GetPlayerPerspective(playerPerspectiveId);
-                if (playerPerspective != null && !game.Tags.Contains(playerPerspective.Name, StringComparer.OrdinalIgnoreCase))
+                if (playerPerspective != null && !game.Tags.Contains(playerPerspective.GetReferenceableKey(), StringComparer.OrdinalIgnoreCase))
                 {
-                    game.Tags.Add(playerPerspective.Name);
+                    game.Tags.Add(playerPerspective.GetReferenceableKey());
                 }
             }
 
             foreach (var themeId in igdbGame.ThemeIds)
             {
                 var theme = igdbCache.GetTheme(themeId);
-                if (theme != null && !game.Tags.Contains(theme.Name, StringComparer.OrdinalIgnoreCase))
+                if (theme != null && !game.Tags.Contains(theme.GetReferenceableKey(), StringComparer.OrdinalIgnoreCase))
                 {
-                    game.Tags.Add(theme.Name);
+                    game.Tags.Add(theme.GetReferenceableKey());
                 }
             }
 

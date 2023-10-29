@@ -9,7 +9,7 @@ rating = ["Awesome"]
 
 Despite fumbling attempts to <i>improve</i> upon [Zero Dawn](game:Horizon Zero Dawn), <game:Horizon Forbidden West> plays fabulously well to the same strengths as its predecessor: telling a thrilling story in a richly fascinating world full of exhilirating action.
 
-Which makes it kinda awkward for me to review -- after all, I don't want to dwell on the bad parts of this overall amazing game.  Like how an inventory system I previously called a ["train-wreck"](%site.BaseURL%2018/10/25/breath-of-the-robotic-wild/) has been enhanced with automatic sending-to-stash, and that's great, but makes it even more unpleasant when you <i>run out</i> of arrow-crafting resources mid-battle (because your stockpile is still in that stash!).
+Which makes it kinda awkward for me to review -- after all, I don't want to dwell on the bad parts of this overall amazing game.  Like how an inventory system I previously called a ["train-wreck"]($SiteBaseURL$2018/10/25/breath-of-the-robotic-wild/) has been enhanced with automatic sending-to-stash, and that's great, but makes it even more unpleasant when you <i>run out</i> of arrow-crafting resources mid-battle (because your stockpile is still in that stash!).
 
 Or how all its new activity types feel under-done: Machine Strike is bewilderingly counter-intuitive and disappointingly boils down to Who Has Bigger Numbers (it's no [Gwent](game:Thronebreaker: The Witcher Tales)); Arena challenges are an awful lot like Hunter Trials but <i>without</i> the option to sneak, plus sometimes replacing your own hard-earned equipment with a challenge-specific loadout (demanding you learn unfamiliar weapons with a tight time limit!); and <tag:Mario Kart>-esque Gauntlet races can be ruined by the same bullshit last-moment overtakes as real Mario Kart.
 
@@ -31,4 +31,4 @@ So... what Zero Dawn excelled at, Forbidden West excels even more.  And while it
 <b>Not as good as</b>: <game:The Witcher 3: Wild Hunt> (<i>come on</i>, <a href="https://screenrant.com/witcher-3-next-gen-update-release-delay-ps5/">new-gen update</a>!)  
 <b>Wherever the third game goes from here</b>: I'm stoked for it.
 
-<i>Progress: finished on Normal, 86.25\% completion.</i>
+<i>Progress: finished on Normal, 86.25% completion.</i>

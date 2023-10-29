@@ -27,7 +27,7 @@ It's kind of a shame that, as a result, walking the "open" world feels like re-t
 
 This whole time, it's hard to care about the over-arching plot.  Fawful is a boring villain, with a clich&eacute;d plot.  The narrative never feels surprising or engaging, and the only sense of variety it seems to have is non-sequitur out-of-left-field directives.  Suddenly we need to climb this tower? or talk to a doctor? or collect three macguffins?  The whole thing has roughly the attention span of a preschool kids' cartoon.
 
-That undirected-ness finally ends when, after Mario and Luigi finish their open-ish tasks, you prepare to assault the villain's castle.  And here's where the story's pace irked me the most: this, which feels like the end of the game, is roughly its 75\% mark.  There are quite a few hours of dungeon-crawling and boss-fighting left to go, here -- and the remaining dungeons and encounters aren't varied enough to support this running length.
+That undirected-ness finally ends when, after Mario and Luigi finish their open-ish tasks, you prepare to assault the villain's castle.  And here's where the story's pace irked me the most: this, which feels like the end of the game, is roughly its 75% mark.  There are quite a few hours of dungeon-crawling and boss-fighting left to go, here -- and the remaining dungeons and encounters aren't varied enough to support this running length.
 
 It's in these moments, when it feels like an endless series of similar-looking rooms and already-learned enemies, that the combat system's problems feel most poignant.
 

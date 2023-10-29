@@ -17,4 +17,4 @@ And it's a step up in production quality, too.  Strangely it still uses the defa
 
 [Zach Barth](tag:Zachtronics) and [Jonathan Blow](game:The Witness (2016)) have a new peer in my esteem of puzzle-creators.
 
-<i>Progress: 039\%</i>
+<i>Progress: 039%</i>

@@ -6,10 +6,8 @@ namespace GlogGenerator.IgdbApi
 {
     // https://api-docs.igdb.com/#game
     // This class is NOT a complete representation, it only includes properties as-needed.
-    public class IgdbGame
+    public class IgdbGame : IgdbEntity
     {
-        public const int IdNotFound = -1;
-
         [JsonProperty("category")]
         public IgdbGameCategory Category { get; set; } = IgdbGameCategory.None;
 
@@ -31,6 +29,7 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("genres")]
         public List<int> GenreIds { get; set; } = new List<int>();
 
+        [IgdbEntityId]
         [JsonProperty("id")]
         public int Id { get; set; } = IdNotFound;
 
@@ -43,6 +42,7 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("name_glogOverride")]
         public string NameGlogOverride { get; set; }
 
+        [IgdbEntityReferenceableKey]
         [JsonIgnore]
         public string NameForGlog
         {
