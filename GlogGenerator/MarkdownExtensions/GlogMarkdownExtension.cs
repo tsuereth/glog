@@ -47,6 +47,7 @@ namespace GlogGenerator.MarkdownExtensions
             pipeline.InlineParsers.AddIfNotAlready<GlogLinkInlineParser>();
 
             pipeline.BlockParsers.AddIfNotAlready<FencedDataBlockParser>();
+            pipeline.BlockParsers.AddIfNotAlready<TomlFrontMatterBlockParser>();
 
             // The built-in quote block parser will steal '>' at the beginning of a line.
             // We need a customization to not-steal it when followed by '!' for spoilers.

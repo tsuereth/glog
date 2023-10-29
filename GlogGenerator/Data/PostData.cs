@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Runtime.Serialization;
 using GlogGenerator.MarkdownExtensions;
+using Markdig;
 
 namespace GlogGenerator.Data
 {
@@ -48,9 +49,9 @@ namespace GlogGenerator.Data
         [DataMember(Name = "slug")]
         public string Slug { get; private set; } = string.Empty;
 
-        public static PostData FromFilePath(string filePath)
+        public static PostData MarkdownFromFilePath(MarkdownPipeline mdPipeline, string filePath)
         {
-            var post = ContentWithFrontMatterData.FromFilePath<PostData>(filePath);
+            var post = ContentWithFrontMatterData.FromFilePath<PostData>(mdPipeline, filePath);
             post.SourceFilePath = filePath;
             post.Date = DateTimeOffset.Parse(post.DateString, CultureInfo.InvariantCulture);
 

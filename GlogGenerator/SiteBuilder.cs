@@ -63,6 +63,11 @@ namespace GlogGenerator
             this.buildDate = buildDate;
         }
 
+        public MarkdownPipeline GetMarkdownPipeline()
+        {
+            return this.markdownPipeline;
+        }
+
         public IIgdbCache GetIgdbCache()
         {
             if (this.igdbCache == null)

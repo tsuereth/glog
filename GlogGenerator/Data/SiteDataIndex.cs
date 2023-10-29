@@ -287,12 +287,14 @@ namespace GlogGenerator.Data
                 var postContentBasePath = Path.Combine(this.inputFilesBasePath, PostData.PostContentBaseDir);
                 var postPaths = Directory.EnumerateFiles(postContentBasePath, "*.md", SearchOption.AllDirectories).ToList();
 
+                var mdPipeline = this.siteBuilder.GetMarkdownPipeline();
+
                 var allPosts = new List<PostData>();
                 foreach (var postPath in postPaths)
                 {
                     try
                     {
-                        var postData = PostData.FromFilePath(postPath);
+                        var postData = PostData.MarkdownFromFilePath(mdPipeline, postPath);
 
                         if (postData.Draft)
                         {
@@ -351,7 +353,7 @@ namespace GlogGenerator.Data
                 };
                 foreach (var pageFilePath in additionalPageFilePaths)
                 {
-                    var pageData = PageData.FromFilePath(pageFilePath);
+                    var pageData = PageData.MarkdownFromFilePath(mdPipeline, pageFilePath);
                     this.pages.Add(pageData);
                 }
             }

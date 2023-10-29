@@ -12,6 +12,7 @@ using GlogGenerator.MarkdownExtensions;
 using GlogGenerator.TemplateRenderers;
 using Markdig;
 using Markdig.Extensions.ListExtras;
+using Markdig.Syntax;
 using Microsoft.AspNetCore.StaticFiles;
 
 namespace GlogGenerator.RenderState
@@ -59,7 +60,7 @@ namespace GlogGenerator.RenderState
 
         public string IgdbUrl { get; set; }
 
-        public string SourceContent { get; set; } = string.Empty;
+        public MarkdownDocument SourceContent { get; set; }
 
         public string RenderedContent
         {
@@ -133,16 +134,14 @@ namespace GlogGenerator.RenderState
 
         private string RenderContentFromSourceMarkdown()
         {
-            if (string.IsNullOrEmpty(this.SourceContent))
+            if (this.SourceContent.Count == 0)
             {
                 return string.Empty;
             }
 
-            var parsed = this.siteBuilder.ParseMarkdown(this.SourceContent);
-
             var rendererContext = this.siteBuilder.GetRendererContext();
             rendererContext.SetPageHashCode(this.HashCode);
-            var rendered = this.siteBuilder.RenderHtml(parsed);
+            var rendered = this.siteBuilder.RenderHtml(this.SourceContent);
             rendererContext.Clear();
 
             return rendered;
