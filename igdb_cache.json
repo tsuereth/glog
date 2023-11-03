@@ -2263,6 +2263,10 @@
       "name": "Kojima Productions"
     },
     {
+      "id": 173,
+      "name": "The Omni Group"
+    },
+    {
       "id": 179,
       "name": "Activision Blizzard"
     },
@@ -2277,6 +2281,10 @@
     {
       "id": 184,
       "name": "id Software"
+    },
+    {
+      "id": 190,
+      "name": "Atari Corporation"
     },
     {
       "id": 191,
@@ -2308,7 +2316,7 @@
     },
     {
       "id": 205,
-      "name": "GT Interactive"
+      "name": "GT Interactive Software"
     },
     {
       "id": 208,
@@ -2537,6 +2545,10 @@
     {
       "id": 338,
       "name": "Encore"
+    },
+    {
+      "id": 340,
+      "name": "Empire Interactive"
     },
     {
       "id": 346,
@@ -2932,7 +2944,7 @@
     },
     {
       "id": 716,
-      "name": "Natsume"
+      "name": "Natsume Inc."
     },
     {
       "id": 722,
@@ -3501,10 +3513,6 @@
     {
       "id": 1119,
       "name": "Monolith Soft"
-    },
-    {
-      "id": 1121,
-      "name": "Atarisoft"
     },
     {
       "id": 1125,
@@ -4165,6 +4173,10 @@
     {
       "id": 2390,
       "name": "Engine Software"
+    },
+    {
+      "id": 2406,
+      "name": "Atari, Inc."
     },
     {
       "id": 2410,
@@ -5987,10 +5999,6 @@
       "name": "Thekla, Inc"
     },
     {
-      "id": 12303,
-      "name": "Wholesale Algorithms["
-    },
-    {
       "id": 12346,
       "name": "Cold Beam Games"
     },
@@ -6101,6 +6109,10 @@
     {
       "id": 13848,
       "name": "Outright Games"
+    },
+    {
+      "id": 13979,
+      "name": "Natsume Co., Ltd."
     },
     {
       "id": 14001,
@@ -6801,6 +6813,10 @@
     {
       "id": 48042,
       "name": "snekflat"
+    },
+    {
+      "id": 50620,
+      "name": "Jaleco USA"
     }
   ],
   "franchises": [
@@ -7247,10 +7263,6 @@
     {
       "id": 1228,
       "name": "Splatoon"
-    },
-    {
-      "id": 1276,
-      "name": "Gears of War"
     },
     {
       "id": 1277,
@@ -7732,9 +7744,11 @@
       ],
       "id": 13,
       "involved_companies": [
-        7806,
-        7807,
-        7808
+        237622,
+        237623,
+        237624,
+        237625,
+        237626
       ],
       "name": "Fallout",
       "player_perspectives": [
@@ -8384,8 +8398,10 @@
     },
     {
       "category": 0,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
       "franchises": [
         1048
@@ -8419,8 +8435,10 @@
     },
     {
       "category": 0,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
       "franchises": [
         1048
@@ -8452,8 +8470,10 @@
     },
     {
       "category": 0,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
       "franchises": [
         1048
@@ -9356,9 +9376,9 @@
       ],
       "id": 192,
       "involved_companies": [
-        5495,
         26029,
-        49291
+        49291,
+        237170
       ],
       "name": "Maniac Mansion",
       "player_perspectives": [
@@ -11166,12 +11186,12 @@
       ],
       "id": 478,
       "involved_companies": [
-        341,
         17773,
         17774,
         17775,
         17776,
-        17777
+        17777,
+        237425
       ],
       "name": "The Witcher 2: Assassins of Kings",
       "player_perspectives": [
@@ -11254,8 +11274,10 @@
     },
     {
       "category": 0,
-      "collection": 66,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        66
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -11435,9 +11457,8 @@
       ],
       "id": 499,
       "involved_companies": [
-        45114,
         185862,
-        185863
+        236734
       ],
       "name": "God of War III",
       "player_perspectives": [
@@ -11946,8 +11967,10 @@
     },
     {
       "category": 0,
-      "collection": 66,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        66
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -11978,8 +12001,10 @@
     },
     {
       "category": 0,
-      "collection": 66,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        66
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -12301,8 +12326,8 @@
       "involved_companies": [
         34065,
         34066,
-        34068,
-        185855
+        185855,
+        237442
       ],
       "name": "Ghostbusters: The Video Game",
       "player_perspectives": [
@@ -12884,10 +12909,14 @@
     },
     {
       "category": 1,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1048
+      ],
       "game_modes": [
         1
       ],
@@ -12912,8 +12941,10 @@
     },
     {
       "category": 1,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
       "franchises": [
         1048
@@ -16142,9 +16173,9 @@
       "id": 1178,
       "involved_companies": [
         2871,
-        2872,
         2873,
-        2874
+        2874,
+        238023
       ],
       "name": "Lufia II: Rise of the Sinistrals",
       "player_perspectives": [
@@ -16298,8 +16329,8 @@
       "id": 1209,
       "involved_companies": [
         190396,
-        190397,
-        190398
+        190398,
+        237464
       ],
       "name": "Tales of Vesperia",
       "player_perspectives": [
@@ -18246,8 +18277,10 @@
     },
     {
       "category": 0,
-      "collection": 316,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        316
+      ],
       "franchise": -1,
       "franchises": [
         2052
@@ -19549,8 +19582,8 @@
       "id": 1880,
       "involved_companies": [
         64513,
-        64514,
-        64515
+        64515,
+        237416
       ],
       "name": "Baldur's Gate: Enhanced Edition",
       "player_perspectives": [
@@ -19743,7 +19776,7 @@
       "id": 1928,
       "involved_companies": [
         4181,
-        4182
+        237543
       ],
       "name": "Indigo Prophecy",
       "player_perspectives": [
@@ -19903,8 +19936,8 @@
       "involved_companies": [
         19326,
         172350,
-        172351,
-        172352
+        172352,
+        237466
       ],
       "name": "Alone in the Dark",
       "name_glogOverride": "Alone in the Dark (2008)",
@@ -20801,8 +20834,10 @@
     },
     {
       "category": 0,
-      "collection": 543,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        543
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -20920,8 +20955,8 @@
         8,
         9,
         10,
-        14,
-        31
+        31,
+        33
       ],
       "id": 2172,
       "involved_companies": [
@@ -20938,6 +20973,7 @@
       ],
       "themes": [
         1,
+        17,
         18,
         40
       ],
@@ -25779,11 +25815,12 @@
       "id": 3592,
       "involved_companies": [
         9290,
-        40148,
         40149,
         56932,
-        56933,
-        56934
+        56934,
+        237238,
+        237772,
+        237773
       ],
       "name": "Robotron: 2084",
       "player_perspectives": [
@@ -25946,8 +25983,8 @@
       "involved_companies": [
         59290,
         59291,
-        59292,
-        171306
+        171306,
+        238250
       ],
       "name": "Kirby: Squeak Squad",
       "player_perspectives": [
@@ -26173,7 +26210,9 @@
     {
       "category": 0,
       "collection": 2301,
-      "collections": [],
+      "collections": [
+        2301
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -28234,7 +28273,7 @@
       "id": 5478,
       "involved_companies": [
         13269,
-        13270
+        237071
       ],
       "name": "Afro Samurai",
       "player_perspectives": [
@@ -29893,7 +29932,8 @@
         15558,
         15559,
         149076,
-        149077
+        149077,
+        237171
       ],
       "name": "R-Type III: The Third Lightning",
       "player_perspectives": [
@@ -30661,8 +30701,8 @@
       "involved_companies": [
         16666,
         16667,
-        16668,
-        16669
+        16669,
+        237454
       ],
       "name": "Legendary",
       "player_perspectives": [
@@ -31398,8 +31438,10 @@
     },
     {
       "category": 0,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
       "franchises": [
         1048
@@ -32637,8 +32679,10 @@
     },
     {
       "category": 9,
-      "collection": 543,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        543
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -35347,8 +35391,7 @@
         1,
         2,
         3,
-        4,
-        5
+        4
       ],
       "genres": [
         12,
@@ -36691,8 +36734,10 @@
     },
     {
       "category": 0,
-      "collection": 66,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        66
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -37918,10 +37963,14 @@
     },
     {
       "category": 1,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1048
+      ],
       "game_modes": [
         1
       ],
@@ -37945,8 +37994,10 @@
     },
     {
       "category": 1,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
       "franchises": [
         1048
@@ -37976,8 +38027,10 @@
     },
     {
       "category": 1,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
       "franchises": [
         1048
@@ -38006,10 +38059,14 @@
     },
     {
       "category": 1,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1048
+      ],
       "game_modes": [
         1
       ],
@@ -38035,8 +38092,10 @@
     },
     {
       "category": 1,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
       "franchises": [
         1048
@@ -38065,10 +38124,14 @@
     },
     {
       "category": 1,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1048
+      ],
       "game_modes": [
         1
       ],
@@ -38134,10 +38197,14 @@
     },
     {
       "category": 1,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1048
+      ],
       "game_modes": [
         1
       ],
@@ -38161,10 +38228,14 @@
     },
     {
       "category": 1,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1048
+      ],
       "game_modes": [
         1
       ],
@@ -38188,10 +38259,14 @@
     },
     {
       "category": 1,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1048
+      ],
       "game_modes": [
         1
       ],
@@ -39820,7 +39895,9 @@
     {
       "category": 0,
       "collection": 2156,
-      "collections": [],
+      "collections": [
+        2156
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -41190,9 +41267,10 @@
       ],
       "id": 19073,
       "involved_companies": [
-        35143,
         35144,
-        35145
+        35145,
+        238246,
+        238247
       ],
       "name": "Fullmetal Alchemist: Dual Sympathy",
       "player_perspectives": [
@@ -42058,9 +42136,9 @@
       "id": 20275,
       "involved_companies": [
         38435,
-        38436,
         38437,
-        184931
+        184931,
+        237461
       ],
       "name": "The Witcher: Enhanced Edition",
       "player_perspectives": [
@@ -47621,10 +47699,14 @@
     },
     {
       "category": 1,
-      "collection": 25,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        25
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1048
+      ],
       "game_modes": [
         1
       ],
@@ -48605,12 +48687,12 @@
     },
     {
       "category": 0,
-      "collection": 66,
-      "collections": [],
-      "franchise": -1,
-      "franchises": [
-        1276
+      "collection": -1,
+      "collections": [
+        66
       ],
+      "franchise": -1,
+      "franchises": [],
       "game_modes": [
         1,
         2,
@@ -50580,7 +50662,9 @@
         5
       ],
       "themes": [
-        1
+        1,
+        18,
+        31
       ],
       "url": "https://www.igdb.com/games/black-mirror-bandersnatch"
     },
@@ -50743,7 +50827,7 @@
     },
     {
       "category": 3,
-      "collection": 25,
+      "collection": -1,
       "collections": [],
       "franchise": -1,
       "franchises": [
@@ -51691,10 +51775,6 @@
       "company": 113
     },
     {
-      "id": 341,
-      "company": 82
-    },
-    {
       "id": 375,
       "company": 8
     },
@@ -52195,10 +52275,6 @@
       "company": 819
     },
     {
-      "id": 2872,
-      "company": 817
-    },
-    {
       "id": 2873,
       "company": 716
     },
@@ -52425,10 +52501,6 @@
     {
       "id": 4181,
       "company": 261
-    },
-    {
-      "id": 4182,
-      "company": 82
     },
     {
       "id": 4188,
@@ -52717,10 +52789,6 @@
     {
       "id": 5468,
       "company": 449
-    },
-    {
-      "id": 5495,
-      "company": 303
     },
     {
       "id": 5526,
@@ -53101,18 +53169,6 @@
     {
       "id": 7775,
       "company": 1241
-    },
-    {
-      "id": 7806,
-      "company": 244
-    },
-    {
-      "id": 7807,
-      "company": 5
-    },
-    {
-      "id": 7808,
-      "company": 12
     },
     {
       "id": 7817,
@@ -53855,10 +53911,6 @@
       "company": 2432
     },
     {
-      "id": 13270,
-      "company": 248
-    },
-    {
       "id": 13491,
       "company": 26
     },
@@ -54277,10 +54329,6 @@
     {
       "id": 16667,
       "company": 1327
-    },
-    {
-      "id": 16668,
-      "company": 82
     },
     {
       "id": 16669,
@@ -56195,10 +56243,6 @@
       "company": 452
     },
     {
-      "id": 34068,
-      "company": 82
-    },
-    {
       "id": 34613,
       "company": 3213
     },
@@ -56269,10 +56313,6 @@
     {
       "id": 35138,
       "company": 8630
-    },
-    {
-      "id": 35143,
-      "company": 716
     },
     {
       "id": 35144,
@@ -56555,10 +56595,6 @@
       "company": 908
     },
     {
-      "id": 38436,
-      "company": 82
-    },
-    {
       "id": 38437,
       "company": 4291
     },
@@ -56637,10 +56673,6 @@
     {
       "id": 39929,
       "company": 2542
-    },
-    {
-      "id": 40148,
-      "company": 82
     },
     {
       "id": 40149,
@@ -57077,10 +57109,6 @@
     {
       "id": 45103,
       "company": 208
-    },
-    {
-      "id": 45114,
-      "company": 12303
     },
     {
       "id": 45418,
@@ -57915,10 +57943,6 @@
       "company": 1840
     },
     {
-      "id": 56933,
-      "company": 1121
-    },
-    {
       "id": 56934,
       "company": 13722
     },
@@ -58089,10 +58113,6 @@
     {
       "id": 59291,
       "company": 762
-    },
-    {
-      "id": 59292,
-      "company": 716
     },
     {
       "id": 59320,
@@ -58401,10 +58421,6 @@
     {
       "id": 64513,
       "company": 5071
-    },
-    {
-      "id": 64514,
-      "company": 82
     },
     {
       "id": 64515,
@@ -62919,10 +62935,6 @@
       "company": 1
     },
     {
-      "id": 172351,
-      "company": 82
-    },
-    {
       "id": 172352,
       "company": 2053
     },
@@ -63735,10 +63747,6 @@
       "company": 15512
     },
     {
-      "id": 185863,
-      "company": 13634
-    },
-    {
       "id": 185865,
       "company": 13634
     },
@@ -63997,10 +64005,6 @@
     {
       "id": 190396,
       "company": 826
-    },
-    {
-      "id": 190397,
-      "company": 82
     },
     {
       "id": 190398,
@@ -65569,6 +65573,102 @@
     {
       "id": 236063,
       "company": 50
+    },
+    {
+      "id": 236734,
+      "company": 13634
+    },
+    {
+      "id": 237071,
+      "company": 6330
+    },
+    {
+      "id": 237170,
+      "company": 50620
+    },
+    {
+      "id": 237171,
+      "company": 50620
+    },
+    {
+      "id": 237238,
+      "company": 82
+    },
+    {
+      "id": 237416,
+      "company": 2406
+    },
+    {
+      "id": 237425,
+      "company": 2406
+    },
+    {
+      "id": 237442,
+      "company": 2406
+    },
+    {
+      "id": 237454,
+      "company": 2406
+    },
+    {
+      "id": 237461,
+      "company": 2406
+    },
+    {
+      "id": 237464,
+      "company": 2406
+    },
+    {
+      "id": 237466,
+      "company": 2406
+    },
+    {
+      "id": 237543,
+      "company": 2406
+    },
+    {
+      "id": 237622,
+      "company": 12
+    },
+    {
+      "id": 237623,
+      "company": 5
+    },
+    {
+      "id": 237624,
+      "company": 244
+    },
+    {
+      "id": 237625,
+      "company": 120
+    },
+    {
+      "id": 237626,
+      "company": 173
+    },
+    {
+      "id": 237772,
+      "company": 190
+    },
+    {
+      "id": 237773,
+      "company": 82
+    },
+    {
+      "id": 238023,
+      "company": 817
+    },
+    {
+      "id": 238246,
+      "company": 13979
+    },
+    {
+      "id": 238247,
+      "company": 340
+    },
+    {
+      "id": 238250,
+      "company": 13979
     }
   ],
   "platforms": [
