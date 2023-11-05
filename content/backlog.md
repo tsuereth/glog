@@ -18,4 +18,5 @@ permalink = "/backlog"
 * <game:Spiritfarer> (<platform:PC>)
 * <game:Star Wars Jedi: Survivor> (<platform:PC>)
 * <game:Starfield> (<platform:PC>)
+* <game:The Talos Principle II> (<platform:PC>)
 * <game:Tiny Tina's Wonderlands> (<platform:PC>)
