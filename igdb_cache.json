@@ -13,6 +13,10 @@
       "name": "Fallout"
     },
     {
+      "id": 4,
+      "name": "Dead Space"
+    },
+    {
       "id": 5,
       "name": "Monkey Island"
     },
@@ -13690,7 +13694,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        4
+      ],
       "franchise": -1,
       "franchises": [
         1386
@@ -27811,7 +27817,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        106
+      ],
       "franchise": -1,
       "franchises": [
         596
