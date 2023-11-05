@@ -38,5 +38,10 @@ namespace GlogGenerator.Data
         {
             return this.urlized.Equals(other.urlized, StringComparison.Ordinal);
         }
+
+        public override string ToString()
+        {
+            return this.urlized;
+        }
     }
 }

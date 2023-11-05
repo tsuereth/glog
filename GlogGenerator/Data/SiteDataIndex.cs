@@ -385,19 +385,7 @@ namespace GlogGenerator.Data
             foreach (var oldPair in oldData)
             {
                 var oldKey = oldPair.Key;
-                if (newData.TryGetValue(oldKey, out var newValue))
-                {
-                    var oldValue = oldPair.Value;
-                    if (!oldValue.GetPermalinkRelative().Equals(newValue.GetPermalinkRelative(), StringComparison.Ordinal))
-                    {
-                        this.logger.LogWarning("Updated data index changed {DataType} key {Key} from permalink {OldValue} to permalink {NewValue}",
-                        typeof(T).Name,
-                        oldKey,
-                        oldValue.GetPermalinkRelative(),
-                        newValue.GetPermalinkRelative());
-                    }
-                }
-                else
+                if (!newData.TryGetValue(oldKey, out var newValue))
                 {
                     this.logger.LogError("Updated data index is missing old {DataType} key {OldKey} permalink {OldValue}",
                         typeof(T).Name,
