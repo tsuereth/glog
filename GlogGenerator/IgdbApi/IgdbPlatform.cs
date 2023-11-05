@@ -14,6 +14,7 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("abbreviation_glogOverride")]
         public string AbbreviationGlogOverride { get; set; }
 
+        [IgdbEntityReferenceableValue]
         [JsonIgnore]
         public string AbbreviationForGlog
         {
@@ -27,7 +28,6 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("id")]
         public int Id { get; set; } = IdNotFound;
 
-        [IgdbEntityReferenceableKey]
         [JsonProperty("name")]
         public string Name { get; set; }
 

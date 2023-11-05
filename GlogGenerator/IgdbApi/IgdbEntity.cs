@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
+using System.Security.Cryptography;
+using System.Text;
+using GlogGenerator.Data;
 
 namespace GlogGenerator.IgdbApi
 {
@@ -9,7 +12,7 @@ namespace GlogGenerator.IgdbApi
         public const int IdNotFound = -1;
 
         private readonly PropertyInfo idProperty;
-        private readonly PropertyInfo referenceableKeyProperty;
+        private readonly PropertyInfo referenceableValueProperty;
 
         public IgdbEntity()
         {
@@ -31,23 +34,23 @@ namespace GlogGenerator.IgdbApi
                 throw new InvalidCastException($"The {entityType} type {nameof(IgdbEntityIdAttribute)} {this.idProperty.Name} is not of the correct `int` type");
             }
 
-            var referenceableKeyProperties = entityType.GetProperties().Where(p => Attribute.IsDefined(p, typeof(IgdbEntityReferenceableKeyAttribute)));
-            if (referenceableKeyProperties.Any())
+            var referenceableValueProperties = entityType.GetProperties().Where(p => Attribute.IsDefined(p, typeof(IgdbEntityReferenceableValueAttribute)));
+            if (referenceableValueProperties.Any())
             {
-                if (referenceableKeyProperties.Count() > 1)
+                if (referenceableValueProperties.Count() > 1)
                 {
-                    throw new AmbiguousMatchException($"The {entityType} type has too many properties with {nameof(IgdbEntityReferenceableKeyAttribute)}");
+                    throw new AmbiguousMatchException($"The {entityType} type has too many properties with {nameof(IgdbEntityReferenceableValueAttribute)}");
                 }
 
-                this.referenceableKeyProperty = referenceableKeyProperties.First();
-                if (this.referenceableKeyProperty.PropertyType != typeof(string))
+                this.referenceableValueProperty = referenceableValueProperties.First();
+                if (this.referenceableValueProperty.PropertyType != typeof(string))
                 {
-                    throw new InvalidCastException($"The {entityType} type {nameof(IgdbEntityReferenceableKeyAttribute)} {this.referenceableKeyProperty.Name} is not of the correct `string` type");
+                    throw new InvalidCastException($"The {entityType} type {nameof(IgdbEntityReferenceableValueAttribute)} {this.referenceableValueProperty.Name} is not of the correct `string` type");
                 }
             }
             else
             {
-                this.referenceableKeyProperty = null;
+                this.referenceableValueProperty = null;
             }
         }
 
@@ -57,11 +60,35 @@ namespace GlogGenerator.IgdbApi
             return (int)idObject;
         }
 
-        public string GetReferenceableKey()
+        public string GetUniqueIdString()
         {
-            if (this.referenceableKeyProperty != null)
+            using (var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
             {
-                var referenceableKeyObject = this.referenceableKeyProperty.GetValue(this);
+                var typeBytes = Encoding.UTF8.GetBytes(nameof(GameData));
+                hash.AppendData(typeBytes);
+
+                var entityId = this.GetEntityId();
+                if (entityId != IdNotFound)
+                {
+                    var entityIdBytes = BitConverter.GetBytes(entityId);
+                    hash.AppendData(entityIdBytes);
+                }
+                else
+                {
+                    var keyBytes = Encoding.UTF8.GetBytes(this.GetReferenceableValue());
+                    hash.AppendData(keyBytes);
+                }
+
+                var idStringBytes = hash.GetCurrentHash();
+                return Convert.ToHexString(idStringBytes);
+            }
+        }
+
+        public string GetReferenceableValue()
+        {
+            if (this.referenceableValueProperty != null)
+            {
+                var referenceableKeyObject = this.referenceableValueProperty.GetValue(this);
                 return (string)referenceableKeyObject;
             }
             else
@@ -69,11 +96,16 @@ namespace GlogGenerator.IgdbApi
                 return null;
             }
         }
+
+        public string GetReferenceableKey()
+        {
+            return UrlizedString.Urlize(this.GetReferenceableValue());
+        }
     }
 
     [AttributeUsage(AttributeTargets.Property, Inherited = true)]
     public class IgdbEntityIdAttribute : Attribute { }
 
     [AttributeUsage(AttributeTargets.Property, Inherited = true)]
-    public class IgdbEntityReferenceableKeyAttribute : Attribute { }
+    public class IgdbEntityReferenceableValueAttribute : Attribute { }
 }

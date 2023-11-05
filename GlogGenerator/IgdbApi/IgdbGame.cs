@@ -42,7 +42,7 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("name_glogOverride")]
         public string NameGlogOverride { get; set; }
 
-        [IgdbEntityReferenceableKey]
+        [IgdbEntityReferenceableValue]
         [JsonIgnore]
         public string NameForGlog
         {

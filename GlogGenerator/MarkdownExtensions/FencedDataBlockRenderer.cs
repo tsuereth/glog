@@ -91,12 +91,10 @@ namespace GlogGenerator.MarkdownExtensions
 
                 var pageHash = this.htmlRendererContext.GetPageHashCode();
 
-#pragma warning disable CA5351 // Yeah MD5 is cryptographically insecure; this isn't security!
                 var chartHashInString = JsonConvert.SerializeObject(namedArgs);
                 var chartHashInBytes = Encoding.UTF8.GetBytes(chartHashInString);
-                var chartHashOutBytes = MD5.HashData(chartHashInBytes);
+                var chartHashOutBytes = SHA256.HashData(chartHashInBytes);
                 var chartHash = Convert.ToHexString(chartHashOutBytes);
-#pragma warning restore CA5351
 
                 var chartMarkup = $@"<div class=""center""><chart id=""chart_{pageHash}_{chartHash}"" callback=""drawChart_{pageHash}_{chartHash}""></chart></div>
 <script type=""text/javascript"">

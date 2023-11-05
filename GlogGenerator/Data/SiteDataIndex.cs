@@ -254,7 +254,7 @@ namespace GlogGenerator.Data
 
             foreach (var igdbGameMetadata in igdbCache.GetAllGameMetadata())
             {
-                var tagName = igdbGameMetadata.GetReferenceableKey();
+                var tagName = igdbGameMetadata.GetReferenceableValue();
 
                 CreateOrMergeMultiKeyReferenceableData(this.tags, tagName);
             }
@@ -385,12 +385,40 @@ namespace GlogGenerator.Data
             foreach (var oldPair in oldData)
             {
                 var oldKey = oldPair.Key;
+                var oldDataId = oldPair.Value.GetDataId();
+
                 if (!newData.TryGetValue(oldKey, out var newValue))
                 {
-                    this.logger.LogError("Updated data index is missing old {DataType} key {OldKey} permalink {OldValue}",
-                        typeof(T).Name,
-                        oldKey,
-                        oldPair.Value.GetPermalinkRelative());
+                    // Is the data still around, but under a different key?
+                    var newDataWithId = newData.Values.Where(v => v.GetDataId().Equals(oldDataId, StringComparison.Ordinal)).FirstOrDefault();
+
+                    if (newDataWithId != null)
+                    {
+                        this.logger.LogError("Updated data index has a different key for {DataType} with data ID {DataId}: old key {OldKey} new key {NewKey}",
+                            typeof(T).Name,
+                            oldDataId,
+                            oldKey,
+                            newDataWithId.GetReferenceableKey());
+                    }
+                    else
+                    {
+                        this.logger.LogError("Updated data index is missing old {DataType} with data ID {DataId} and key {OldKey}",
+                            typeof(T).Name,
+                            oldDataId,
+                            oldKey);
+                    }
+                }
+                else
+                {
+                    var newDataId = newValue.GetDataId();
+                    if (!newDataId.Equals(oldDataId, StringComparison.Ordinal))
+                    {
+                        this.logger.LogWarning("Updated data index has a different data ID for {DataType} with key {DataKey}: old data ID {OldDataId} new data ID {NewDataId}",
+                            typeof(T).Name,
+                            oldKey,
+                            oldDataId,
+                            newDataId);
+                    }
                 }
             }
         }

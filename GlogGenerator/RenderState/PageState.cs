@@ -23,13 +23,11 @@ namespace GlogGenerator.RenderState
         {
             get
             {
-#pragma warning disable CA5351 // Yeah MD5 is cryptographically insecure; this isn't security!
                 var pageHashInBytes = Encoding.UTF8.GetBytes(this.Permalink);
-                var pageHashOutBytes = MD5.HashData(pageHashInBytes);
+                var pageHashOutBytes = SHA256.HashData(pageHashInBytes);
                 var pageHash = Convert.ToHexString(pageHashOutBytes);
 
                 return pageHash;
-#pragma warning restore CA5351
             }
         }
 
