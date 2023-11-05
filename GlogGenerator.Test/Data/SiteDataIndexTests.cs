@@ -29,11 +29,9 @@ namespace GlogGenerator.Test.Data
             mockIgdbCache.GetAllGameMetadata().Returns(testGameMetadata);
 
             var mockSiteBuilder = Substitute.For<ISiteBuilder>();
-            mockSiteBuilder.GetIgdbCache().Returns(mockIgdbCache);
+            var testIndex = new SiteDataIndex(logger, mockSiteBuilder, string.Empty);
 
-            var testIndex = new SiteDataIndex(mockSiteBuilder, string.Empty);
-
-            testIndex.LoadContent();
+            testIndex.LoadContent(mockIgdbCache);
 
             var testTag = testIndex.GetTag("Sonic the Hedgehog");
             Assert.AreEqual("Sonic The Hedgehog", testTag.Name);

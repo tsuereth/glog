@@ -2,12 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using GlogGenerator.Data;
+using GlogGenerator.IgdbApi;
 using GlogGenerator.MarkdownExtensions;
 using GlogGenerator.RenderState;
+using GlogGenerator.Stats;
 using Markdig;
 using Markdig.Extensions.ListExtras;
 using Markdig.Syntax;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 
 namespace GlogGenerator
 {
@@ -15,6 +20,7 @@ namespace GlogGenerator
     {
         private const string VariableNameSiteBaseURL = "SiteBaseURL";
 
+        private readonly ILogger logger;
         private readonly ConfigData configData;
 
         private DateTimeOffset buildDate;
@@ -26,10 +32,15 @@ namespace GlogGenerator
 
         private IgdbCache igdbCache = null;
 
-        public SiteBuilder() : this(new ConfigData()) { }
+        public SiteBuilder() : this(
+            NullLogger.Instance,
+            new ConfigData()) { }
 
-        public SiteBuilder(ConfigData configData)
+        public SiteBuilder(
+            ILogger logger,
+            ConfigData configData)
         {
+            this.logger = logger;
             this.configData = configData;
 
             this.buildDate = DateTimeOffset.Now;
@@ -37,7 +48,7 @@ namespace GlogGenerator
             this.variableSubstitution = new VariableSubstitution();
             this.variableSubstitution.SetSubstitution(VariableNameSiteBaseURL, this.configData.BaseURL);
 
-            this.siteDataIndex = new SiteDataIndex(this, this.configData.InputFilesBasePath);
+            this.siteDataIndex = new SiteDataIndex(this.logger, this, this.configData.InputFilesBasePath);
 
             this.siteState = new SiteState(this, this.configData.TemplateFilesBasePath);
 
@@ -51,6 +62,16 @@ namespace GlogGenerator
                 .UseSoftlineBreakAsHardlineBreak()
                 .Use(this.glogMarkdownExtension)
                 .Build();
+        }
+
+        private IIgdbCache GetIgdbCache()
+        {
+            if (this.igdbCache == null)
+            {
+                this.igdbCache = IgdbCache.FromJsonFile(this.configData.InputFilesBasePath);
+            }
+
+            return this.igdbCache;
         }
 
         public DateTimeOffset GetBuildDate()
@@ -68,19 +89,73 @@ namespace GlogGenerator
             return this.markdownPipeline;
         }
 
-        public IIgdbCache GetIgdbCache()
+        public async Task UpdateIgdbCacheFromApiAsync(IgdbApiClient apiClient)
         {
-            if (this.igdbCache == null)
-            {
-                this.igdbCache = IgdbCache.FromJsonFile(this.configData.InputFilesBasePath);
-            }
+            var igdbCache = this.GetIgdbCache();
+            await igdbCache.UpdateFromApiClient(apiClient);
 
-            return this.igdbCache;
+            igdbCache.WriteToJsonFile(this.configData.InputFilesBasePath);
         }
 
-        public SiteDataIndex GetSiteDataIndex()
+        public void UpdateDataIndex()
         {
-            return this.siteDataIndex;
+            var igdbCache = this.GetIgdbCache();
+            this.siteDataIndex.LoadContent(igdbCache);
+        }
+
+        public List<GameStats> GetGameStatsForDateRange(DateTimeOffset startDate, DateTimeOffset endDate)
+        {
+            var statsByGameAndPlatform = new Dictionary<string, GameStats>();
+            var reportPosts = this.siteDataIndex.GetPosts().Where(p => p.Date >= startDate && p.Date <= endDate).ToList();
+            foreach (var reportPost in reportPosts)
+            {
+                foreach (var postGame in reportPost.Games)
+                {
+                    foreach (var postPlatform in reportPost.Platforms)
+                    {
+                        var gameAndPlatformKey = $"{postGame}__{postPlatform}";
+
+                        if (!statsByGameAndPlatform.ContainsKey(gameAndPlatformKey))
+                        {
+                            var gameData = this.siteDataIndex.GetGame(postGame);
+
+                            statsByGameAndPlatform[gameAndPlatformKey] = new GameStats()
+                            {
+                                Title = postGame,
+                                Platform = postPlatform,
+                                Type = gameData.IgdbCategory.Description(),
+                                FirstPosted = reportPost.Date,
+                                LastPosted = reportPost.Date,
+                            };
+                        }
+
+                        if (reportPost.Date < statsByGameAndPlatform[gameAndPlatformKey].FirstPosted)
+                        {
+                            statsByGameAndPlatform[gameAndPlatformKey].FirstPosted = reportPost.Date;
+                        }
+
+                        if (reportPost.Date > statsByGameAndPlatform[gameAndPlatformKey].LastPosted)
+                        {
+                            statsByGameAndPlatform[gameAndPlatformKey].LastPosted = reportPost.Date;
+                        }
+
+                        if (reportPost.Ratings.Count > 0)
+                        {
+                            statsByGameAndPlatform[gameAndPlatformKey].Rating = reportPost.Ratings[0];
+                        }
+
+                        ++statsByGameAndPlatform[gameAndPlatformKey].NumPosts;
+                    }
+                }
+            }
+
+            var stats = statsByGameAndPlatform.Values.OrderBy(s => s.FirstPosted).ToList();
+            return stats;
+        }
+
+        public void UpdateContentRoutes()
+        {
+            this.siteState.LoadContentRoutes();
         }
 
         public SiteState GetSiteState()

@@ -77,7 +77,7 @@ namespace GlogGenerator
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
             var configData = ConfigData.FromFilePaths(configFilePath, inputFilesBasePath, templateFilesBasePath);
-            var builder = new SiteBuilder(configData);
+            var builder = new SiteBuilder(logger, configData);
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
             if (updateIgdbCache)
@@ -95,14 +95,12 @@ namespace GlogGenerator
                 {
                     logger.LogInformation("Updating IGDB cache...");
                     var cacheUpdateTimer = Stopwatch.StartNew();
-                    await builder.GetIgdbCache().UpdateFromApiClient(igdbApiClient);
+                    await builder.UpdateIgdbCacheFromApiAsync(igdbApiClient);
                     cacheUpdateTimer.Stop();
                     logger.LogInformation(
                         "Finished updating in {CacheUpdateTimeMs} ms",
                         cacheUpdateTimer.ElapsedMilliseconds);
                 }
-
-                builder.GetIgdbCache().WriteToJsonFile(inputFilesBasePath);
             }
 
             var outputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
@@ -181,52 +179,7 @@ rating = []
 
                     LoadSiteData(logger, builder);
 
-                    // TODO: Move this into an encapsulated class/file for reporting code.
-                    var statsByGameAndPlatform = new Dictionary<string, GameStats>();
-                    var reportPosts = builder.GetSiteDataIndex().GetPosts().Where(p => p.Date >= reportStartDate && p.Date <= reportEndDate).ToList();
-                    foreach (var reportPost in reportPosts)
-                    {
-                        foreach (var postGame in reportPost.Games)
-                        {
-                            foreach (var postPlatform in reportPost.Platforms)
-                            {
-                                var gameAndPlatformKey = $"{postGame}__{postPlatform}";
-
-                                if (!statsByGameAndPlatform.ContainsKey(gameAndPlatformKey))
-                                {
-                                    var gameData = builder.GetSiteDataIndex().GetGame(postGame);
-
-                                    statsByGameAndPlatform[gameAndPlatformKey] = new GameStats()
-                                    {
-                                        Title = postGame,
-                                        Platform = postPlatform,
-                                        Type = gameData.IgdbCategory.Description(),
-                                        FirstPosted = reportPost.Date,
-                                        LastPosted = reportPost.Date,
-                                    };
-                                }
-
-                                if (reportPost.Date < statsByGameAndPlatform[gameAndPlatformKey].FirstPosted)
-                                {
-                                    statsByGameAndPlatform[gameAndPlatformKey].FirstPosted = reportPost.Date;
-                                }
-
-                                if (reportPost.Date > statsByGameAndPlatform[gameAndPlatformKey].LastPosted)
-                                {
-                                    statsByGameAndPlatform[gameAndPlatformKey].LastPosted = reportPost.Date;
-                                }
-
-                                if (reportPost.Ratings.Count > 0)
-                                {
-                                    statsByGameAndPlatform[gameAndPlatformKey].Rating = reportPost.Ratings[0];
-                                }
-
-                                ++statsByGameAndPlatform[gameAndPlatformKey].NumPosts;
-                            }
-                        }
-                    }
-
-                    var reportStats = statsByGameAndPlatform.Values.OrderBy(s => s.FirstPosted).ToList();
+                    var reportStats = builder.GetGameStatsForDateRange(reportStartDate, reportEndDate);
 
                     // TODO: encapsulated CSV serializer!
                     var reportTextBuilder = new StringBuilder();
@@ -293,7 +246,7 @@ rating = []
         {
             logger.LogInformation("Loading data...");
             var loadTimer = Stopwatch.StartNew();
-            builder.GetSiteDataIndex().LoadContent();
+            builder.UpdateDataIndex();
             loadTimer.Stop();
             logger.LogInformation(
                 "Finished loading site data in {LoadTimeMs} ms",
@@ -304,7 +257,7 @@ rating = []
         {
             logger.LogInformation("Loading routes...");
             var loadTimer = Stopwatch.StartNew();
-            builder.GetSiteState().LoadContentRoutes();
+            builder.UpdateContentRoutes();
             loadTimer.Stop();
             logger.LogInformation(
                 "Finished loading {ContentCount} content routes in {LoadTimeMs} ms",

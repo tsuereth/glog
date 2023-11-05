@@ -27,15 +27,15 @@ namespace GlogGenerator.Test
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
             var configData = ConfigData.FromFilePaths(configFilePath, inputFilesBasePath, templateFilesBasePath);
-            var builder = new SiteBuilder(configData);
+            var builder = new SiteBuilder(logger, configData);
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
             // For testing, pretend that our "build date" is some constant date.
             builder.SetBuildDate(DateTimeOffset.Parse("2023-09-04T17:00:00.0+00:00", CultureInfo.InvariantCulture));
 
-            builder.GetSiteDataIndex().LoadContent();;
+            builder.UpdateDataIndex();
 
-            builder.GetSiteState().LoadContentRoutes();
+            builder.UpdateContentRoutes();
 
             // Ensure the output directory is clean, first.
             if (Directory.Exists(staticSiteOutputBasePath))

@@ -4,11 +4,13 @@ using System.IO;
 using System.Linq;
 using GlogGenerator.IgdbApi;
 using GlogGenerator.RenderState;
+using Microsoft.Extensions.Logging;
 
 namespace GlogGenerator.Data
 {
     public class SiteDataIndex
     {
+        private readonly ILogger logger;
         private readonly ISiteBuilder siteBuilder;
         private readonly string inputFilesBasePath;
 
@@ -23,9 +25,11 @@ namespace GlogGenerator.Data
         private Dictionary<UrlizedString, TagData> tags = new Dictionary<UrlizedString, TagData>();
 
         public SiteDataIndex(
+            ILogger logger,
             ISiteBuilder siteBuilder,
             string inputFilesBasePath)
         {
+            this.logger = logger;
             this.siteBuilder = siteBuilder;
             this.inputFilesBasePath = inputFilesBasePath;
         }
@@ -193,19 +197,28 @@ namespace GlogGenerator.Data
             }
         }
 
-        public void LoadContent()
+        public void LoadContent(IIgdbCache igdbCache)
         {
-            this.categories.Clear();
-            this.games.Clear();
+            // Reset the current index, while tracking some "old" data to detect update conflicts.
             this.pages.Clear();
-            this.platforms.Clear();
             this.posts.Clear();
-            this.ratings.Clear();
             this.rawDataFiles.Clear();
             this.staticFiles.Clear();
-            this.tags.Clear();
 
-            var igdbCache = this.siteBuilder.GetIgdbCache();
+            var oldCategories = this.categories;
+            this.categories = new Dictionary<UrlizedString, CategoryData>();
+
+            var oldGames = this.games;
+            this.games = new Dictionary<UrlizedString, GameData>();
+
+            var oldPlatforms = this.platforms;
+            this.platforms = new Dictionary<UrlizedString, PlatformData>();
+
+            var oldRatings = this.ratings;
+            this.ratings = new Dictionary<UrlizedString, RatingData>();
+
+            var oldTags = this.tags;
+            this.tags = new Dictionary<UrlizedString, TagData>();
 
             // Load game data from the IGDB cache.
             foreach (var igdbGame in igdbCache.GetAllGames())
@@ -355,6 +368,41 @@ namespace GlogGenerator.Data
                 {
                     var pageData = PageData.MarkdownFromFilePath(mdPipeline, pageFilePath);
                     this.pages.Add(pageData);
+                }
+            }
+
+            // Detect conflicts between old and updated data.
+            this.CheckUpdatedReferenceableDataForConflict(oldCategories, this.categories);
+            this.CheckUpdatedReferenceableDataForConflict(oldGames, this.games);
+            this.CheckUpdatedReferenceableDataForConflict(oldPlatforms, this.platforms);
+            this.CheckUpdatedReferenceableDataForConflict(oldRatings, this.ratings);
+            this.CheckUpdatedReferenceableDataForConflict(oldTags, this.tags);
+        }
+
+        private void CheckUpdatedReferenceableDataForConflict<T>(Dictionary<UrlizedString, T> oldData, Dictionary<UrlizedString, T> newData)
+            where T : IGlogReferenceable
+        {
+            foreach (var oldPair in oldData)
+            {
+                var oldKey = oldPair.Key;
+                if (newData.TryGetValue(oldKey, out var newValue))
+                {
+                    var oldValue = oldPair.Value;
+                    if (!oldValue.GetPermalinkRelative().Equals(newValue.GetPermalinkRelative(), StringComparison.Ordinal))
+                    {
+                        this.logger.LogWarning("Updated data index changed {DataType} key {Key} from permalink {OldValue} to permalink {NewValue}",
+                        typeof(T).Name,
+                        oldKey,
+                        oldValue.GetPermalinkRelative(),
+                        newValue.GetPermalinkRelative());
+                    }
+                }
+                else
+                {
+                    this.logger.LogError("Updated data index is missing old {DataType} key {OldKey} permalink {OldValue}",
+                        typeof(T).Name,
+                        oldKey,
+                        oldPair.Value.GetPermalinkRelative());
                 }
             }
         }

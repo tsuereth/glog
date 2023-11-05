@@ -1,4 +1,9 @@
-﻿using Markdig;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using GlogGenerator.IgdbApi;
+using GlogGenerator.Stats;
+using Markdig;
 
 namespace GlogGenerator
 {
@@ -6,6 +11,12 @@ namespace GlogGenerator
     {
         public MarkdownPipeline GetMarkdownPipeline();
 
-        public IIgdbCache GetIgdbCache();
+        public Task UpdateIgdbCacheFromApiAsync(IgdbApiClient apiClient);
+
+        public void UpdateDataIndex();
+
+        public List<GameStats> GetGameStatsForDateRange(DateTimeOffset startDate, DateTimeOffset endDate);
+
+        public void UpdateContentRoutes();
     }
 }
