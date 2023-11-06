@@ -2356,7 +2356,7 @@
     },
     {
       "id": 229,
-      "name": "SEGA of America"
+      "name": "Sega of America"
     },
     {
       "id": 232,
@@ -50709,7 +50709,9 @@
     {
       "category": 0,
       "collection": 68,
-      "collections": [],
+      "collections": [
+        68
+      ],
       "franchise": -1,
       "franchises": [
         528,
