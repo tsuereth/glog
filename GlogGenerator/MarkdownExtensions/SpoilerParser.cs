@@ -34,15 +34,30 @@ namespace GlogGenerator.MarkdownExtensions
                 // an exciting sentence is followed by a closing tag:
                 // Like a spoiler about >!some <b>really cool thing!</b>!<
                 // So we bail out of this parser condition if:
+                // - There's some non-space character after this (maybe an HTML tag), and
                 // - There's another "!<" after this one, and
                 // - No additional ">!" inbetween here and there.
-                var lookaheadEndTokenPos = slice.IndexOf("!<", 2);
-                if (lookaheadEndTokenPos >= 0)
+                var charAfterEndToken = slice.PeekChar(2);
+                if (!charAfterEndToken.IsWhiteSpaceOrZero())
                 {
-                    var lookaheadStartTokenPos = slice.IndexOf(">!", 2);
-                    if (lookaheadStartTokenPos < 0 || lookaheadStartTokenPos > lookaheadEndTokenPos)
+                    var lookaheadEndTokenPos = slice.IndexOf("!<", 2);
+                    if (lookaheadEndTokenPos >= 0)
                     {
-                        return false;
+                        var lookaheadStartTokenPos = slice.IndexOf(">!", 2);
+                        if (lookaheadStartTokenPos < 0 || lookaheadStartTokenPos > lookaheadEndTokenPos)
+                        {
+                            return false;
+                        }
+
+                        // Extra-edgy case:
+                        // If ">!" is at N, and "!<" is at N+1, then...
+                        // they're actually sharing the same '!' character.
+                        // We'll assume this means the lookahead "!<" is an end token.
+                        // (Which means the current "!<" is still a false-positive.)
+                        if (lookaheadEndTokenPos == lookaheadStartTokenPos + 1)
+                        {
+                            return false;
+                        }
                     }
                 }
 
