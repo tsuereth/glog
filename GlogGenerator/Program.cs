@@ -91,6 +91,15 @@ namespace GlogGenerator
                     throw new ArgumentException("Missing or empty --igdb-client-secret");
                 }
 
+                // Perform an initial data-load so that we can tell if the IGDB update changed anything.
+                logger.LogInformation("Loading pre-update data...");
+                var preUpdateLoadTimer = Stopwatch.StartNew();
+                builder.UpdateDataIndex();
+                preUpdateLoadTimer.Stop();
+                logger.LogInformation(
+                    "Finished loading pre-update site data in {LoadTimeMs} ms",
+                    preUpdateLoadTimer.ElapsedMilliseconds);
+
                 using (var igdbApiClient = new IgdbApiClient(logger, igdbClientId, igdbClientSecret))
                 {
                     logger.LogInformation("Updating IGDB cache...");
