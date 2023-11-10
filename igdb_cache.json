@@ -514,7 +514,7 @@
     },
     {
       "id": 380,
-      "name": "Yakuza"
+      "name": "Yakuza: Like a Dragon"
     },
     {
       "id": 423,
@@ -1867,6 +1867,10 @@
     {
       "id": 9042,
       "name": "Deep Rock Galactic"
+    },
+    {
+      "id": 9142,
+      "name": "Vampire: The Masquerade – Bloodlines"
     }
   ],
   "companies": [
@@ -4940,7 +4944,7 @@
     },
     {
       "id": 4981,
-      "name": "Sega Enterprises"
+      "name": "Sega Enterprises, Ltd."
     },
     {
       "id": 4998,
@@ -6135,6 +6139,10 @@
       "name": "Warner Bros. Interactive Entertainment"
     },
     {
+      "id": 14087,
+      "name": "Sega Corporation"
+    },
+    {
       "id": 14094,
       "name": "Rayark"
     },
@@ -6245,6 +6253,10 @@
     {
       "id": 15832,
       "name": "Nyamakop"
+    },
+    {
+      "id": 15878,
+      "name": "Sega Games"
     },
     {
       "id": 15937,
@@ -7269,6 +7281,10 @@
       "name": "Splatoon"
     },
     {
+      "id": 1273,
+      "name": "Hitman"
+    },
+    {
       "id": 1277,
       "name": "Wolfenstein"
     },
@@ -7405,6 +7421,10 @@
       "name": "Sly Cooper"
     },
     {
+      "id": 2251,
+      "name": "Danganronpa"
+    },
+    {
       "id": 2253,
       "name": "Penny Arcade"
     },
@@ -7508,10 +7528,6 @@
     }
   ],
   "games": [
-    {
-      "id": 164812,
-      "name": "Middle-earth: Shadow of War - Desolation of Mordor"
-    },
     {
       "category": -1,
       "collection": -1,
@@ -7671,8 +7687,10 @@
     },
     {
       "category": 0,
-      "collection": 7,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        7
+      ],
       "franchise": -1,
       "franchises": [
         43
@@ -7703,7 +7721,10 @@
     {
       "category": 0,
       "collection": 15,
-      "collections": [],
+      "collections": [
+        15,
+        9142
+      ],
       "franchise": -1,
       "franchises": [
         784,
@@ -7737,8 +7758,10 @@
     },
     {
       "category": 0,
-      "collection": 3,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        3
+      ],
       "franchise": -1,
       "franchises": [
         1034
@@ -7772,8 +7795,10 @@
     },
     {
       "category": 0,
-      "collection": 3,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        3
+      ],
       "franchise": -1,
       "franchises": [
         1034
@@ -7807,8 +7832,10 @@
     },
     {
       "category": 0,
-      "collection": 3,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        3
+      ],
       "franchise": -1,
       "franchises": [
         1034
@@ -8513,8 +8540,10 @@
     },
     {
       "category": 0,
-      "collection": 10,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        10
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -8811,8 +8840,10 @@
     },
     {
       "category": 0,
-      "collection": 24,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        24
+      ],
       "franchise": -1,
       "franchises": [
         2417
@@ -8914,8 +8945,10 @@
     },
     {
       "category": 0,
-      "collection": 24,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        24
+      ],
       "franchise": -1,
       "franchises": [
         2417
@@ -8952,8 +8985,10 @@
     },
     {
       "category": 0,
-      "collection": 24,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        24
+      ],
       "franchise": -1,
       "franchises": [
         2417
@@ -9087,8 +9122,10 @@
     },
     {
       "category": 0,
-      "collection": 17,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        17
+      ],
       "franchise": -1,
       "franchises": [
         834
@@ -9116,8 +9153,10 @@
     },
     {
       "category": 0,
-      "collection": 17,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        17
+      ],
       "franchise": -1,
       "franchises": [
         834
@@ -9146,8 +9185,10 @@
     },
     {
       "category": 0,
-      "collection": 17,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        17
+      ],
       "franchise": -1,
       "franchises": [
         834
@@ -9710,8 +9751,10 @@
     },
     {
       "category": 0,
-      "collection": 35,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        35
+      ],
       "franchise": -1,
       "franchises": [
         425
@@ -9746,8 +9789,10 @@
     },
     {
       "category": 0,
-      "collection": 35,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        35
+      ],
       "franchise": -1,
       "franchises": [
         425
@@ -9935,8 +9980,10 @@
     },
     {
       "category": 2,
-      "collection": 24,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        24
+      ],
       "franchise": -1,
       "franchises": [
         2417
@@ -10741,8 +10788,10 @@
     },
     {
       "category": 0,
-      "collection": 83,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        83
+      ],
       "franchise": -1,
       "franchises": [
         29
@@ -11381,7 +11430,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        83
+      ],
       "franchise": -1,
       "franchises": [
         29
@@ -11411,8 +11462,10 @@
     },
     {
       "category": 0,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
       "franchises": [
         808
@@ -11450,8 +11503,10 @@
     },
     {
       "category": 0,
-      "collection": 70,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        70
+      ],
       "franchise": -1,
       "franchises": [
         2098
@@ -11645,8 +11700,10 @@
     },
     {
       "category": 0,
-      "collection": 103,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        103
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -11680,10 +11737,14 @@
     },
     {
       "category": 0,
-      "collection": 105,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        105
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1273
+      ],
       "game_modes": [
         1
       ],
@@ -12042,8 +12103,10 @@
     },
     {
       "category": 0,
-      "collection": 70,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        70
+      ],
       "franchise": -1,
       "franchises": [
         2098
@@ -12076,8 +12139,10 @@
     },
     {
       "category": 0,
-      "collection": 70,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        70
+      ],
       "franchise": -1,
       "franchises": [
         2098
@@ -12578,8 +12643,10 @@
     },
     {
       "category": 0,
-      "collection": 296,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        296
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -12609,8 +12676,10 @@
     },
     {
       "category": 0,
-      "collection": 847,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        847
+      ],
       "franchise": -1,
       "franchises": [
         493
@@ -12646,8 +12715,10 @@
     },
     {
       "category": 0,
-      "collection": 847,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        847
+      ],
       "franchise": -1,
       "franchises": [
         493
@@ -12680,8 +12751,10 @@
     },
     {
       "category": 0,
-      "collection": 847,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        847
+      ],
       "franchise": -1,
       "franchises": [
         493
@@ -12716,8 +12789,10 @@
     },
     {
       "category": 0,
-      "collection": 847,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        847
+      ],
       "franchise": -1,
       "franchises": [
         493
@@ -12789,10 +12864,14 @@
     },
     {
       "category": 0,
-      "collection": 105,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        105
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1273
+      ],
       "game_modes": [
         1
       ],
@@ -13169,8 +13248,10 @@
     },
     {
       "category": 0,
-      "collection": 83,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        83
+      ],
       "franchise": 29,
       "franchises": [
         29
@@ -13299,7 +13380,7 @@
     },
     {
       "category": 0,
-      "collection": 89,
+      "collection": -1,
       "collections": [
         89
       ],
@@ -13375,8 +13456,10 @@
     },
     {
       "category": 0,
-      "collection": 83,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        83
+      ],
       "franchise": -1,
       "franchises": [
         29
@@ -13599,8 +13682,10 @@
     },
     {
       "category": 0,
-      "collection": 83,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        83
+      ],
       "franchise": -1,
       "franchises": [
         29
@@ -13637,7 +13722,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        83
+      ],
       "franchise": -1,
       "franchises": [
         29
@@ -13999,8 +14086,10 @@
     },
     {
       "category": 0,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
       "franchises": [
         808
@@ -14096,8 +14185,10 @@
     },
     {
       "category": 0,
-      "collection": 847,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        847
+      ],
       "franchise": -1,
       "franchises": [
         493
@@ -14658,10 +14749,14 @@
     },
     {
       "category": 0,
-      "collection": 105,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        105
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1273
+      ],
       "game_modes": [
         1
       ],
@@ -14686,10 +14781,14 @@
     },
     {
       "category": 0,
-      "collection": 105,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        105
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1273
+      ],
       "game_modes": [
         1
       ],
@@ -14880,7 +14979,8 @@
       ],
       "game_modes": [
         1,
-        2
+        2,
+        3
       ],
       "genres": [
         8,
@@ -15192,8 +15292,10 @@
     },
     {
       "category": 0,
-      "collection": 83,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        83
+      ],
       "franchise": -1,
       "franchises": [
         29
@@ -15264,7 +15366,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        6066
+      ],
       "franchise": -1,
       "franchises": [
         763
@@ -15455,8 +15559,10 @@
     },
     {
       "category": 0,
-      "collection": 6240,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6240
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -15521,8 +15627,10 @@
     },
     {
       "category": 0,
-      "collection": 6240,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6240
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -15555,7 +15663,9 @@
     {
       "category": 0,
       "collection": 6240,
-      "collections": [],
+      "collections": [
+        6240
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -15618,8 +15728,10 @@
     },
     {
       "category": 0,
-      "collection": 6240,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6240
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -15649,7 +15761,7 @@
     },
     {
       "category": 3,
-      "collection": 6240,
+      "collection": -1,
       "collections": [],
       "franchise": -1,
       "franchises": [
@@ -16482,8 +16594,10 @@
     },
     {
       "category": 0,
-      "collection": 274,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        274
+      ],
       "franchise": -1,
       "franchises": [
         801
@@ -16496,8 +16610,9 @@
       ],
       "id": 1233,
       "involved_companies": [
-        150522,
-        199851
+        199851,
+        239020,
+        239021
       ],
       "name": "Phantasy Star",
       "player_perspectives": [
@@ -17807,8 +17922,10 @@
     },
     {
       "category": 10,
-      "collection": 302,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        302
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -17843,8 +17960,10 @@
     },
     {
       "category": 10,
-      "collection": 302,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        302
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -17875,8 +17994,10 @@
     },
     {
       "category": 10,
-      "collection": 302,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        302
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -17906,8 +18027,10 @@
     },
     {
       "category": 0,
-      "collection": 302,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        302
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -17939,8 +18062,11 @@
     },
     {
       "category": 0,
-      "collection": 6522,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        302,
+        6522
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -17972,8 +18098,10 @@
     },
     {
       "category": 0,
-      "collection": 302,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        302
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -18649,7 +18777,9 @@
         36031,
         227635,
         227636,
-        227637
+        239646,
+        239647,
+        239648
       ],
       "name": "Streets of Rage",
       "player_perspectives": [
@@ -19573,8 +19703,10 @@
     },
     {
       "category": 9,
-      "collection": 7,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        7
+      ],
       "franchise": -1,
       "franchises": [
         43
@@ -20311,8 +20443,10 @@
     },
     {
       "category": 4,
-      "collection": 103,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        103
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -20691,7 +20825,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        2045
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -21505,8 +21641,10 @@
     },
     {
       "category": 0,
-      "collection": 454,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        454
+      ],
       "franchise": -1,
       "franchises": [
         1518
@@ -21536,8 +21674,10 @@
     },
     {
       "category": 0,
-      "collection": 454,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        454
+      ],
       "franchise": -1,
       "franchises": [
         1518
@@ -21568,8 +21708,10 @@
     },
     {
       "category": 0,
-      "collection": 454,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        454
+      ],
       "franchise": -1,
       "franchises": [
         1518
@@ -22729,11 +22871,10 @@
       ],
       "id": 2604,
       "involved_companies": [
-        54751,
         54756,
         172585,
-        172599,
-        181866
+        239029,
+        239030
       ],
       "name": "Altered Beast",
       "player_perspectives": [
@@ -24646,8 +24787,10 @@
     },
     {
       "category": 4,
-      "collection": 847,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        847
+      ],
       "franchise": -1,
       "franchises": [
         493
@@ -24682,8 +24825,10 @@
     },
     {
       "category": 2,
-      "collection": 24,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        24
+      ],
       "franchise": -1,
       "franchises": [
         2417
@@ -25034,8 +25179,10 @@
     },
     {
       "category": 0,
-      "collection": 847,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        847
+      ],
       "franchise": -1,
       "franchises": [
         493
@@ -25068,8 +25215,10 @@
     },
     {
       "category": 0,
-      "collection": 847,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        847
+      ],
       "franchise": -1,
       "franchises": [
         493
@@ -25103,8 +25252,10 @@
     },
     {
       "category": 4,
-      "collection": 847,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        847
+      ],
       "franchise": -1,
       "franchises": [
         493
@@ -25138,8 +25289,10 @@
     },
     {
       "category": 0,
-      "collection": 847,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        847
+      ],
       "franchise": -1,
       "franchises": [
         493
@@ -25172,8 +25325,10 @@
     },
     {
       "category": 2,
-      "collection": 89,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        89
+      ],
       "franchise": 10,
       "franchises": [
         10
@@ -25207,8 +25362,10 @@
     },
     {
       "category": 2,
-      "collection": 89,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        89
+      ],
       "franchise": 10,
       "franchises": [
         10
@@ -26690,9 +26847,9 @@
       ],
       "id": 4157,
       "involved_companies": [
-        10797,
         10798,
-        101048
+        101048,
+        240043
       ],
       "name": "Sonic Mega Collection",
       "player_perspectives": [
@@ -29018,8 +29175,10 @@
     },
     {
       "category": 0,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
       "franchises": [
         808
@@ -29089,8 +29248,10 @@
     },
     {
       "category": 0,
-      "collection": 89,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        89
+      ],
       "franchise": -1,
       "franchises": [
         10
@@ -29279,8 +29440,7 @@
       ],
       "id": 6105,
       "involved_companies": [
-        227645,
-        227646
+        240174
       ],
       "name": "Flicky",
       "player_perspectives": [
@@ -30122,7 +30282,9 @@
     {
       "category": 0,
       "collection": 7814,
-      "collections": [],
+      "collections": [
+        225
+      ],
       "franchise": -1,
       "franchises": [
         808
@@ -31646,8 +31808,11 @@
       ],
       "id": 7431,
       "involved_companies": [
-        149456,
-        228421
+        228421,
+        239722,
+        239723,
+        239724,
+        239725
       ],
       "name": "Ristar",
       "player_perspectives": [
@@ -34299,8 +34464,8 @@
       ],
       "id": 9244,
       "involved_companies": [
-        22476,
-        37644
+        37644,
+        239474
       ],
       "name": "Tembo the Badass Elephant",
       "player_perspectives": [
@@ -34562,7 +34727,7 @@
       "url": "https://www.igdb.com/games/strike-suit-zero-directors-cut"
     },
     {
-      "category": 0,
+      "category": 4,
       "collection": 2156,
       "collections": [],
       "franchise": -1,
@@ -34579,9 +34744,10 @@
       ],
       "id": 9475,
       "involved_companies": [
-        177046,
         177047,
-        228434
+        228434,
+        239959,
+        239960
       ],
       "name": "Sonic & Knuckles",
       "player_perspectives": [
@@ -34610,9 +34776,10 @@
       "id": 9476,
       "involved_companies": [
         172677,
-        184746,
-        184747,
-        228498
+        228498,
+        239805,
+        239806,
+        239807
       ],
       "name": "Sonic 3D Blast",
       "player_perspectives": [
@@ -34996,8 +35163,10 @@
     },
     {
       "category": 0,
-      "collection": 3,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        3
+      ],
       "franchise": -1,
       "franchises": [
         1034
@@ -36243,7 +36412,10 @@
         31
       ],
       "id": 10872,
-      "involved_companies": [],
+      "involved_companies": [
+        239665,
+        239666
+      ],
       "name": "Sleeping Dogs: Nightmare in North Point",
       "player_perspectives": [],
       "themes": [
@@ -36585,10 +36757,14 @@
     },
     {
       "category": 0,
-      "collection": 105,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        105
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1273
+      ],
       "game_modes": [
         1
       ],
@@ -37070,8 +37246,10 @@
     },
     {
       "category": 0,
-      "collection": 380,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        380
+      ],
       "franchise": -1,
       "franchises": [
         1467
@@ -37090,8 +37268,10 @@
       "involved_companies": [
         78775,
         78776,
-        93704,
-        93705
+        239243,
+        239244,
+        239245,
+        239246
       ],
       "name": "Yakuza 0",
       "player_perspectives": [
@@ -37454,8 +37634,10 @@
     },
     {
       "category": 0,
-      "collection": 302,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        302
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -37653,10 +37835,14 @@
     },
     {
       "category": 0,
-      "collection": 1301,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        1301
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        2251
+      ],
       "game_modes": [
         1
       ],
@@ -38302,10 +38488,14 @@
     },
     {
       "category": 1,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         2,
@@ -38332,10 +38522,14 @@
     },
     {
       "category": 1,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         2,
@@ -38362,10 +38556,14 @@
     },
     {
       "category": 1,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         2,
@@ -38394,10 +38592,14 @@
     },
     {
       "category": 1,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         2,
@@ -38424,10 +38626,14 @@
     },
     {
       "category": 1,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         2,
@@ -38455,10 +38661,14 @@
     },
     {
       "category": 1,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         2,
@@ -38486,10 +38696,14 @@
     },
     {
       "category": 1,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         2,
@@ -38516,10 +38730,14 @@
     },
     {
       "category": 1,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         2,
@@ -38546,10 +38764,14 @@
     },
     {
       "category": 1,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         2,
@@ -38575,10 +38797,14 @@
     },
     {
       "category": 1,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         2,
@@ -40846,10 +41072,12 @@
     },
     {
       "category": 1,
-      "collection": 3,
+      "collection": -1,
       "collections": [],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1034
+      ],
       "game_modes": [
         1
       ],
@@ -40877,10 +41105,14 @@
     },
     {
       "category": 1,
-      "collection": 3,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        3
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1034
+      ],
       "game_modes": [
         1
       ],
@@ -41362,7 +41594,7 @@
     },
     {
       "category": 0,
-      "collection": 89,
+      "collection": -1,
       "collections": [
         89
       ],
@@ -41431,8 +41663,10 @@
     },
     {
       "category": 0,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
       "franchises": [
         808
@@ -41711,10 +41945,14 @@
     },
     {
       "category": 1,
-      "collection": 3,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        3
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1034
+      ],
       "game_modes": [
         1
       ],
@@ -41740,10 +41978,14 @@
     },
     {
       "category": 1,
-      "collection": 3,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        3
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1034
+      ],
       "game_modes": [
         1
       ],
@@ -41802,8 +42044,10 @@
     },
     {
       "category": 0,
-      "collection": 70,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        70
+      ],
       "franchise": -1,
       "franchises": [
         2098
@@ -41836,8 +42080,10 @@
     },
     {
       "category": 0,
-      "collection": 7292,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        7292
+      ],
       "franchise": -1,
       "franchises": [
         124,
@@ -42804,8 +43050,10 @@
     },
     {
       "category": 11,
-      "collection": 83,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        83
+      ],
       "franchise": 29,
       "franchises": [
         29
@@ -42868,7 +43116,7 @@
     },
     {
       "category": 3,
-      "collection": 302,
+      "collection": -1,
       "collections": [],
       "franchise": -1,
       "franchises": [
@@ -43331,7 +43579,10 @@
     {
       "category": 0,
       "collection": 2723,
-      "collections": [],
+      "collections": [
+        2723,
+        8332
+      ],
       "franchise": -1,
       "franchises": [
         1814
@@ -43637,8 +43888,10 @@
     },
     {
       "category": 1,
-      "collection": 302,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        302
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -45957,8 +46210,10 @@
     },
     {
       "category": 0,
-      "collection": 6240,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6240
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -46282,34 +46537,6 @@
         17
       ],
       "url": "https://www.igdb.com/games/middle-earth-shadow-of-war-the-blade-of-galadriel"
-    },
-    {
-      "category": 2,
-      "collection": -1,
-      "collections": [],
-      "franchise": -1,
-      "franchises": [],
-      "game_modes": [
-        1
-      ],
-      "genres": [
-        25,
-        31
-      ],
-      "id": 46451,
-      "involved_companies": [
-        51837,
-        51838
-      ],
-      "name": "Middle-earth: Shadow of War - The Desolation of Mordor",
-      "player_perspectives": [
-        1,
-        2
-      ],
-      "themes": [
-        17
-      ],
-      "url": "https://www.igdb.com/games/middle-earth-shadow-of-war-the-desolation-of-mordor"
     },
     {
       "category": 0,
@@ -47269,8 +47496,11 @@
     },
     {
       "category": 0,
-      "collection": 6968,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        302,
+        6968
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -47744,8 +47974,10 @@
     },
     {
       "category": 1,
-      "collection": 302,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        302
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -47777,8 +48009,10 @@
     },
     {
       "category": 1,
-      "collection": 302,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        302
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -47808,8 +48042,10 @@
     },
     {
       "category": 1,
-      "collection": 302,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        302
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -49186,8 +49422,10 @@
     },
     {
       "category": 0,
-      "collection": 70,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        70
+      ],
       "franchise": -1,
       "franchises": [
         2098
@@ -49521,8 +49759,10 @@
     },
     {
       "category": 0,
-      "collection": 15,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        9142
+      ],
       "franchise": -1,
       "franchises": [
         784,
@@ -49731,8 +49971,10 @@
     },
     {
       "category": 0,
-      "collection": 7,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        7
+      ],
       "franchise": -1,
       "franchises": [
         43
@@ -49767,9 +50009,13 @@
     {
       "category": 1,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         2,
@@ -50314,9 +50560,13 @@
     {
       "category": 2,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         2,
@@ -50427,9 +50677,13 @@
     {
       "category": 2,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         3
@@ -50545,9 +50799,13 @@
     {
       "category": 2,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        225
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [],
       "genres": [
         5
@@ -50778,8 +51036,10 @@
     },
     {
       "category": 2,
-      "collection": 225,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        225
+      ],
       "franchise": -1,
       "franchises": [
         808
@@ -50875,10 +51135,12 @@
     },
     {
       "category": 0,
-      "collection": 225,
+      "collection": -1,
       "collections": [],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        808
+      ],
       "game_modes": [
         1,
         2,
@@ -51054,7 +51316,7 @@
     },
     {
       "category": 3,
-      "collection": 302,
+      "collection": -1,
       "collections": [],
       "franchise": -1,
       "franchises": [
@@ -51085,8 +51347,10 @@
     },
     {
       "category": 0,
-      "collection": 6968,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6968
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -51301,6 +51565,33 @@
         17
       ],
       "url": "https://www.igdb.com/games/the-legend-of-zelda-four-swords"
+    },
+    {
+      "category": 2,
+      "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        31
+      ],
+      "id": 164812,
+      "involved_companies": [
+        239663,
+        239664
+      ],
+      "name": "Middle-earth: Shadow of War - Desolation of Mordor",
+      "player_perspectives": [
+        1,
+        2
+      ],
+      "themes": [
+        1
+      ],
+      "url": "https://www.igdb.com/games/middle-earth-shadow-of-war-desolation-of-mordor"
     },
     {
       "category": 0,
@@ -53657,10 +53948,6 @@
       "company": 112
     },
     {
-      "id": 10797,
-      "company": 112
-    },
-    {
       "id": 10798,
       "company": 395
     },
@@ -55407,10 +55694,6 @@
     {
       "id": 22420,
       "company": 1242
-    },
-    {
-      "id": 22476,
-      "company": 112
     },
     {
       "id": 22478,
@@ -57625,14 +57908,6 @@
       "company": 407
     },
     {
-      "id": 51837,
-      "company": 407
-    },
-    {
-      "id": 51838,
-      "company": 50
-    },
-    {
       "id": 51839,
       "company": 50
     },
@@ -57831,10 +58106,6 @@
     {
       "id": 54610,
       "company": 13492
-    },
-    {
-      "id": 54751,
-      "company": 66
     },
     {
       "id": 54756,
@@ -59591,14 +59862,6 @@
     {
       "id": 93393,
       "company": 845
-    },
-    {
-      "id": 93704,
-      "company": 112
-    },
-    {
-      "id": 93705,
-      "company": 112
     },
     {
       "id": 93799,
@@ -62381,10 +62644,6 @@
       "company": 1809
     },
     {
-      "id": 149456,
-      "company": 112
-    },
-    {
       "id": 149775,
       "company": 10100
     },
@@ -62407,10 +62666,6 @@
     {
       "id": 150492,
       "company": 25077
-    },
-    {
-      "id": 150522,
-      "company": 112
     },
     {
       "id": 151004,
@@ -62957,10 +63212,6 @@
       "company": 10180
     },
     {
-      "id": 172599,
-      "company": 4981
-    },
-    {
       "id": 172644,
       "company": 38
     },
@@ -63059,10 +63310,6 @@
     {
       "id": 176516,
       "company": 421
-    },
-    {
-      "id": 177046,
-      "company": 112
     },
     {
       "id": 177047,
@@ -63317,10 +63564,6 @@
       "company": 832
     },
     {
-      "id": 181866,
-      "company": 112
-    },
-    {
       "id": 181905,
       "company": 13634
     },
@@ -63523,14 +63766,6 @@
     {
       "id": 184722,
       "company": 73
-    },
-    {
-      "id": 184746,
-      "company": 112
-    },
-    {
-      "id": 184747,
-      "company": 112
     },
     {
       "id": 184888,
@@ -65357,18 +65592,6 @@
       "company": 4981
     },
     {
-      "id": 227637,
-      "company": 4981
-    },
-    {
-      "id": 227645,
-      "company": 112
-    },
-    {
-      "id": 227646,
-      "company": 23993
-    },
-    {
       "id": 227754,
       "company": 23993
     },
@@ -65683,6 +65906,114 @@
     {
       "id": 238250,
       "company": 13979
+    },
+    {
+      "id": 239020,
+      "company": 4981
+    },
+    {
+      "id": 239021,
+      "company": 14087
+    },
+    {
+      "id": 239029,
+      "company": 4981
+    },
+    {
+      "id": 239030,
+      "company": 14087
+    },
+    {
+      "id": 239243,
+      "company": 15878
+    },
+    {
+      "id": 239244,
+      "company": 15878
+    },
+    {
+      "id": 239245,
+      "company": 112
+    },
+    {
+      "id": 239246,
+      "company": 14087
+    },
+    {
+      "id": 239474,
+      "company": 15878
+    },
+    {
+      "id": 239646,
+      "company": 4981
+    },
+    {
+      "id": 239647,
+      "company": 14087
+    },
+    {
+      "id": 239648,
+      "company": 15878
+    },
+    {
+      "id": 239663,
+      "company": 407
+    },
+    {
+      "id": 239664,
+      "company": 50
+    },
+    {
+      "id": 239665,
+      "company": 823
+    },
+    {
+      "id": 239666,
+      "company": 26
+    },
+    {
+      "id": 239722,
+      "company": 4981
+    },
+    {
+      "id": 239723,
+      "company": 14087
+    },
+    {
+      "id": 239724,
+      "company": 15878
+    },
+    {
+      "id": 239725,
+      "company": 112
+    },
+    {
+      "id": 239805,
+      "company": 4981
+    },
+    {
+      "id": 239806,
+      "company": 14087
+    },
+    {
+      "id": 239807,
+      "company": 14087
+    },
+    {
+      "id": 239959,
+      "company": 14087
+    },
+    {
+      "id": 239960,
+      "company": 4981
+    },
+    {
+      "id": 240043,
+      "company": 14087
+    },
+    {
+      "id": 240174,
+      "company": 4981
     }
   ],
   "platforms": [
