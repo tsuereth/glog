@@ -7,6 +7,8 @@ using Markdig.Parsers;
 using Markdig.Parsers.Inlines;
 using Markdig.Renderers;
 using Markdig.Renderers.Html.Inlines;
+using Markdig.Renderers.Normalize;
+using Markdig.Renderers.Roundtrip;
 using Markdig.Syntax;
 using Markdig.Syntax.Inlines;
 
@@ -82,16 +84,24 @@ namespace GlogGenerator.MarkdownExtensions
                             (o as LiteralInline).Content = new StringSlice(substitutedString);
                         }
                     });
+
+                renderer.ObjectRenderers.InsertBefore<LinkInlineRenderer>(
+                    new GlogLinkInlineRenderer(
+                        renderer.ObjectRenderers.Find<LinkInlineRenderer>(),
+                        this.siteDataIndex,
+                        this.siteState));
+
+                renderer.ObjectRenderers.AddIfNotAlready(new FencedDataBlockRenderer(this.siteDataIndex, this.htmlRendererContext));
+                renderer.ObjectRenderers.AddIfNotAlready<SpoilerHtmlRenderer>();
             }
-
-            renderer.ObjectRenderers.InsertBefore<LinkInlineRenderer>(
-                new GlogLinkInlineRenderer(
-                    renderer.ObjectRenderers.Find<LinkInlineRenderer>(),
-                    this.siteDataIndex,
-                    this.siteState));
-
-            renderer.ObjectRenderers.AddIfNotAlready(new FencedDataBlockRenderer(this.siteDataIndex, this.htmlRendererContext));
-            renderer.ObjectRenderers.AddIfNotAlready<SpoilerRenderer>();
+            else if (renderer is NormalizeRenderer)
+            {
+                renderer.ObjectRenderers.AddIfNotAlready<SpoilerNormalizeRenderer>();
+            }
+            else if (renderer is RoundtripRenderer)
+            {
+                renderer.ObjectRenderers.AddIfNotAlready<SpoilerRoundtripRenderer>();
+            }
         }
     }
 }

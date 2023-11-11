@@ -2,7 +2,6 @@ using System.IO;
 using System.Text;
 using GlogGenerator.MarkdownExtensions;
 using Markdig;
-using Markdig.Renderers.Normalize;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace GlogGenerator.Test.MarkdownExtensions
@@ -50,7 +49,20 @@ namespace GlogGenerator.Test.MarkdownExtensions
         }
 
         [TestMethod]
-        public void TestInlineSubstitutionNormalized()
+        public void TestInlineSubstitutionNormalize()
+        {
+            var builder = new SiteBuilder();
+            builder.GetVariableSubstitution().SetSubstitution("TestVar", "replacement text");
+
+            var testText = "Test of $TestVar$ substitution";
+
+            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownPipeline());
+
+            Assert.AreEqual(testText, result);
+        }
+
+        [TestMethod]
+        public void TestInlineSubstitutionRoundtrip()
         {
             var builder = new SiteBuilder();
             builder.GetVariableSubstitution().SetSubstitution("TestVar", "replacement text");
@@ -59,16 +71,9 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
 
-            string normalized;
-            using (var mdTextWriter = new StringWriter())
-            {
-                var mdRenderer = new NormalizeRenderer(mdTextWriter);
-                mdRenderer.Render(mdDoc);
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
 
-                normalized = mdTextWriter.ToString();
-            }
-
-            Assert.AreEqual(testText, normalized);
+            Assert.AreEqual(testText, result);
         }
 
         [TestMethod]
@@ -85,7 +90,20 @@ namespace GlogGenerator.Test.MarkdownExtensions
         }
 
         [TestMethod]
-        public void TestAutolinkInlineSubstitutionNormalized()
+        public void TestAutolinkInlineSubstitutionNormalize()
+        {
+            var builder = new SiteBuilder();
+            builder.GetVariableSubstitution().SetSubstitution("TestVar", "replacement.text");
+
+            var testText = "Test of <https://$TestVar$> substitution";
+
+            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownPipeline());
+
+            Assert.AreEqual(testText, result);
+        }
+
+        [TestMethod]
+        public void TestAutolinkInlineSubstitutionRoundtrip()
         {
             var builder = new SiteBuilder();
             builder.GetVariableSubstitution().SetSubstitution("TestVar", "replacement.text");
@@ -94,16 +112,9 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
 
-            string normalized;
-            using (var mdTextWriter = new StringWriter())
-            {
-                var mdRenderer = new NormalizeRenderer(mdTextWriter);
-                mdRenderer.Render(mdDoc);
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
 
-                normalized = mdTextWriter.ToString();
-            }
-
-            Assert.AreEqual(testText, normalized);
+            Assert.AreEqual(testText, result);
         }
 
         [TestMethod]
@@ -120,7 +131,20 @@ namespace GlogGenerator.Test.MarkdownExtensions
         }
 
         [TestMethod]
-        public void TestLinkInlineSubstitutionNormalized()
+        public void TestLinkInlineSubstitutionNormalize()
+        {
+            var builder = new SiteBuilder();
+            builder.GetVariableSubstitution().SetSubstitution("TestVar", "replacement.text");
+
+            var testText = "Test of [link text](https://$TestVar$) substitution";
+
+            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownPipeline());
+
+            Assert.AreEqual(testText, result);
+        }
+
+        [TestMethod]
+        public void TestLinkInlineSubstitutionRoundtrip()
         {
             var builder = new SiteBuilder();
             builder.GetVariableSubstitution().SetSubstitution("TestVar", "replacement.text");
@@ -129,16 +153,9 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
 
-            string normalized;
-            using (var mdTextWriter = new StringWriter())
-            {
-                var mdRenderer = new NormalizeRenderer(mdTextWriter);
-                mdRenderer.Render(mdDoc);
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
 
-                normalized = mdTextWriter.ToString();
-            }
-
-            Assert.AreEqual(testText, normalized);
+            Assert.AreEqual(testText, result);
         }
 
         [TestMethod]
@@ -156,7 +173,21 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
         [Ignore]
         [TestMethod]
-        public void TestMediaLinkSubstitutionNormalized()
+        public void TestMediaLinkSubstitutionNormalize()
+        {
+            var builder = new SiteBuilder();
+            builder.GetVariableSubstitution().SetSubstitution("TestVar", "replacement.text");
+
+            var testText = "Test of ![static mp4](https://$TestVar$/video.mp4){width=960 height=540 controls} substitution";
+
+            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownPipeline());
+
+            Assert.AreEqual(testText, result);
+        }
+
+        [Ignore]
+        [TestMethod]
+        public void TestMediaLinkSubstitutionRoundtrip()
         {
             var builder = new SiteBuilder();
             builder.GetVariableSubstitution().SetSubstitution("TestVar", "replacement.text");
@@ -165,16 +196,9 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
 
-            string normalized;
-            using (var mdTextWriter = new StringWriter())
-            {
-                var mdRenderer = new NormalizeRenderer(mdTextWriter);
-                mdRenderer.Render(mdDoc);
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
 
-                normalized = mdTextWriter.ToString();
-            }
-
-            Assert.AreEqual(testText, normalized);
+            Assert.AreEqual(testText, result);
         }
     }
 }

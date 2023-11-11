@@ -20,14 +20,14 @@ namespace GlogGenerator.Test.Data
 
         [Ignore]
         [TestMethod]
-        public void TestToString()
+        public void TestToMarkdownString()
         {
             var testPostFilePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "Data", "PostDataTests", "testfenceddatacharts.md");
             var testPostFileText = File.ReadAllText(testPostFilePath);
 
             var builder = new SiteBuilder();
             var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownPipeline(), testPostFilePath);
-            var testPostToString = testPostData.ToString();
+            var testPostToString = testPostData.ToMarkdownString(builder.GetMarkdownPipeline());
 
             Assert.AreEqual(testPostFileText, testPostToString);
         }

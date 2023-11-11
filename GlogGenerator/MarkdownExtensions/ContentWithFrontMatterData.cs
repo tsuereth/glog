@@ -5,7 +5,6 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using Markdig;
-using Markdig.Renderers.Normalize;
 using Markdig.Syntax;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -43,7 +42,7 @@ namespace GlogGenerator.MarkdownExtensions
             return contentAndData;
         }
 
-        public override string ToString()
+        public string ToMarkdownString(MarkdownPipeline mdPipeline)
         {
             var stringBuilder = new StringBuilder();
 
@@ -60,13 +59,7 @@ namespace GlogGenerator.MarkdownExtensions
                 stringBuilder.AppendLine("+++");
             }
 
-            using (var mdTextWriter = new StringWriter())
-            {
-                var mdRenderer = new NormalizeRenderer(mdTextWriter);
-                mdRenderer.Render(this.Content);
-
-                stringBuilder.Append(mdTextWriter.ToString());
-            }
+            stringBuilder.Append(this.Content.ToMarkdownString(mdPipeline));
 
             // Always end the file with a line break.
             stringBuilder.AppendLine();

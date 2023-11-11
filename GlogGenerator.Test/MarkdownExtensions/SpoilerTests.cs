@@ -2,7 +2,6 @@ using System.IO;
 using System.Text;
 using GlogGenerator.MarkdownExtensions;
 using Markdig;
-using Markdig.Renderers.Normalize;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace GlogGenerator.Test.MarkdownExtensions
@@ -58,9 +57,20 @@ namespace GlogGenerator.Test.MarkdownExtensions
             Assert.AreEqual("<p>Incoming spoiler: <noscript><i>JavaScript is disabled, and this concealed spoiler may not appear as expected.</i></noscript><spoiler class=\"spoiler_hidden\" onClick=\"spoiler_toggle(this);\">ohno <noscript><i>JavaScript is disabled, and this concealed spoiler may not appear as expected.</i></noscript><spoiler class=\"spoiler_hidden\" onClick=\"spoiler_toggle(this);\">spoiler within a</spoiler> spoiler</spoiler></p>\n", result);
         }
 
-        [Ignore]
         [TestMethod]
-        public void TestSpoilerNormalized()
+        public void TestSpoilerNormalize()
+        {
+            var builder = new SiteBuilder();
+
+            var testText = "Incoming spoiler: >!ohno spoiler!<";
+
+            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownPipeline());
+
+            Assert.AreEqual(testText, result);
+        }
+
+        [TestMethod]
+        public void TestSpoilerRoundtrip()
         {
             var builder = new SiteBuilder();
 
@@ -68,16 +78,9 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
 
-            string normalized;
-            using (var mdTextWriter = new StringWriter())
-            {
-                var mdRenderer = new NormalizeRenderer(mdTextWriter);
-                mdRenderer.Render(mdDoc);
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
 
-                normalized = mdTextWriter.ToString();
-            }
-
-            Assert.AreEqual(testText, normalized);
+            Assert.AreEqual(testText, result);
         }
     }
 }

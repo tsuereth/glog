@@ -4,7 +4,7 @@ using Markdig.Renderers.Html;
 
 namespace GlogGenerator.MarkdownExtensions
 {
-    public class SpoilerRenderer : HtmlObjectRenderer<SpoilerInline>
+    public class SpoilerHtmlRenderer : HtmlObjectRenderer<SpoilerInline>
     {
         protected override void Write(HtmlRenderer renderer, SpoilerInline obj)
         {
