@@ -24,12 +24,17 @@ namespace GlogGenerator.Data
 
         public string GetReferenceableKey()
         {
-            return this.referenceableKey;
+            if (!string.IsNullOrEmpty(this.referenceableKey))
+            {
+                return this.referenceableKey;
+            }
+
+            return UrlizedString.Urlize(this.Abbreviation);
         }
 
         public string GetPermalinkRelative()
         {
-            return $"platform/{this.referenceableKey}/";
+            return $"platform/{this.GetReferenceableKey()}/";
         }
 
         public static PlatformData FromIgdbPlatform(IIgdbCache igdbCache, IgdbPlatform igdbPlatform)

@@ -27,12 +27,17 @@ namespace GlogGenerator.Data
 
         public string GetReferenceableKey()
         {
-            return this.referenceableKey;
+            if (!string.IsNullOrEmpty(this.referenceableKey))
+            {
+                return this.referenceableKey;
+            }
+
+            return UrlizedString.Urlize(this.Title);
         }
 
         public string GetPermalinkRelative()
         {
-            return $"game/{this.referenceableKey}/";
+            return $"game/{this.GetReferenceableKey()}/";
         }
 
         public static GameData FromIgdbGame(IIgdbCache igdbCache, IgdbGame igdbGame)

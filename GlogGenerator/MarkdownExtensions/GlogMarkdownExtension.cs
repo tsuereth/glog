@@ -17,14 +17,14 @@ namespace GlogGenerator.MarkdownExtensions
     public class GlogMarkdownExtension : IMarkdownExtension
     {
         private readonly SiteBuilder siteBuilder;
-        private readonly SiteDataIndex siteDataIndex;
+        private readonly ISiteDataIndex siteDataIndex;
         private readonly SiteState siteState;
 
         private HtmlRendererContext htmlRendererContext;
 
         public GlogMarkdownExtension(
             SiteBuilder siteBuilder,
-            SiteDataIndex siteDataIndex,
+            ISiteDataIndex siteDataIndex,
             SiteState siteState)
         {
             this.siteBuilder = siteBuilder;

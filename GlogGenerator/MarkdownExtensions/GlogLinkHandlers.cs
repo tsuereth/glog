@@ -7,7 +7,7 @@ namespace GlogGenerator.MarkdownExtensions
 {
     public static class GlogLinkHandlers
     {
-        public static readonly Dictionary<string, Func<SiteDataIndex, SiteState, string, string>> LinkMatchHandlers = new Dictionary<string, Func<SiteDataIndex, SiteState, string, string>>()
+        public static readonly Dictionary<string, Func<ISiteDataIndex, SiteState, string, string>> LinkMatchHandlers = new Dictionary<string, Func<ISiteDataIndex, SiteState, string, string>>()
         {
             { "category", GetPermalinkForCategoryName },
             { "game", GetPermalinkForGameName },
@@ -28,7 +28,7 @@ namespace GlogGenerator.MarkdownExtensions
             return true;
         }
 
-        public static string GetPermalinkForCategoryName(SiteDataIndex siteDataIndex, SiteState site, string categoryName)
+        public static string GetPermalinkForCategoryName(ISiteDataIndex siteDataIndex, SiteState site, string categoryName)
         {
             var referenceUrlized = UrlizedString.Urlize(categoryName);
             _ = ValidateSiteHasContentForLink(site, "category", referenceUrlized);
@@ -36,9 +36,9 @@ namespace GlogGenerator.MarkdownExtensions
             return $"{site.BaseURL}category/{referenceUrlized}";
         }
 
-        public static string GetPermalinkForGameName(SiteDataIndex siteDataIndex, SiteState site, string gameName)
+        public static string GetPermalinkForGameName(ISiteDataIndex siteDataIndex, SiteState site, string gameName)
         {
-            _ = siteDataIndex.ValidateMatchingGameName(gameName);
+            _ = siteDataIndex.GetGame(gameName);
 
             var referenceUrlized = UrlizedString.Urlize(gameName);
             _ = ValidateSiteHasContentForLink(site, "game", referenceUrlized);
@@ -46,9 +46,9 @@ namespace GlogGenerator.MarkdownExtensions
             return $"{site.BaseURL}game/{referenceUrlized}";
         }
 
-        public static string GetPermalinkForPlatformAbbreviation(SiteDataIndex siteDataIndex, SiteState site, string platformAbbreviation)
+        public static string GetPermalinkForPlatformAbbreviation(ISiteDataIndex siteDataIndex, SiteState site, string platformAbbreviation)
         {
-            _ = siteDataIndex.ValidateMatchingPlatformAbbreviation(platformAbbreviation);
+            _ = siteDataIndex.GetPlatform(platformAbbreviation);
 
             var referenceUrlized = UrlizedString.Urlize(platformAbbreviation);
             _ = ValidateSiteHasContentForLink(site, "platform", referenceUrlized);
@@ -56,7 +56,7 @@ namespace GlogGenerator.MarkdownExtensions
             return $"{site.BaseURL}platform/{referenceUrlized}";
         }
 
-        public static string GetPermalinkForRatingName(SiteDataIndex siteDataIndex, SiteState site, string ratingName)
+        public static string GetPermalinkForRatingName(ISiteDataIndex siteDataIndex, SiteState site, string ratingName)
         {
             var referenceUrlized = UrlizedString.Urlize(ratingName);
             _ = ValidateSiteHasContentForLink(site, "rating", referenceUrlized);
@@ -64,9 +64,9 @@ namespace GlogGenerator.MarkdownExtensions
             return $"{site.BaseURL}rating/{referenceUrlized}";
         }
 
-        public static string GetPermalinkForTagName(SiteDataIndex siteDataIndex, SiteState site, string tagName)
+        public static string GetPermalinkForTagName(ISiteDataIndex siteDataIndex, SiteState site, string tagName)
         {
-            _ = siteDataIndex.ValidateMatchingTagName(tagName);
+            _ = siteDataIndex.GetTag(tagName);
 
             var referenceUrlized = UrlizedString.Urlize(tagName);
             _ = ValidateSiteHasContentForLink(site, "tag", referenceUrlized);

@@ -18,11 +18,11 @@ namespace GlogGenerator.MarkdownExtensions
 {
     public class FencedDataBlockRenderer : HtmlObjectRenderer<FencedDataBlock>
     {
-        private readonly SiteDataIndex siteDataIndex;
+        private readonly ISiteDataIndex siteDataIndex;
         private readonly HtmlRendererContext htmlRendererContext;
 
         public FencedDataBlockRenderer(
-            SiteDataIndex siteDataIndex,
+            ISiteDataIndex siteDataIndex,
             HtmlRendererContext htmlRendererContext)
         {
             this.siteDataIndex = siteDataIndex;

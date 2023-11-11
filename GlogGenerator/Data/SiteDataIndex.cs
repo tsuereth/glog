@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace GlogGenerator.Data
 {
-    public class SiteDataIndex
+    public class SiteDataIndex: ISiteDataIndex
     {
         private readonly ILogger logger;
         private readonly ISiteBuilder siteBuilder;
@@ -34,7 +34,7 @@ namespace GlogGenerator.Data
             this.inputFilesBasePath = inputFilesBasePath;
         }
 
-        public CategoryData AddCategoryIfMissing(string categoryName)
+        private CategoryData AddCategoryIfMissing(string categoryName)
         {
             var categoryNameUrlized = new UrlizedString(categoryName);
             if (!this.categories.TryGetValue(categoryNameUrlized, out var categoryData))
@@ -50,7 +50,7 @@ namespace GlogGenerator.Data
             return categoryData;
         }
 
-        public RatingData AddRatingIfMissing(string ratingName)
+        private RatingData AddRatingIfMissing(string ratingName)
         {
             var ratingNameUrlized = new UrlizedString(ratingName);
             if (!this.ratings.TryGetValue(ratingNameUrlized, out var ratingData))
@@ -147,39 +147,6 @@ namespace GlogGenerator.Data
         public List<TagData> GetTags()
         {
             return this.tags.Values.ToList();
-        }
-
-        public GameData ValidateMatchingGameName(string gameName)
-        {
-            var gameNameUrlized = new UrlizedString(gameName);
-            if (!this.games.TryGetValue(gameNameUrlized, out var gameData))
-            {
-                throw new ArgumentException($"Game name \"{gameName}\" doesn't appear to exist in site data");
-            }
-
-            return gameData;
-        }
-
-        public PlatformData ValidateMatchingPlatformAbbreviation(string platformAbbreviation)
-        {
-            var platformAbbreviationUrlized = new UrlizedString(platformAbbreviation);
-            if (!this.platforms.TryGetValue(platformAbbreviationUrlized, out var platformData))
-            {
-                throw new ArgumentException($"Platform abbreviation \"{platformAbbreviation}\" doesn't appear to exist in site data");
-            }
-
-            return platformData;
-        }
-
-        public TagData ValidateMatchingTagName(string tagName)
-        {
-            var tagNameUrlized = new UrlizedString(tagName);
-            if (!this.tags.TryGetValue(tagNameUrlized, out var tagData))
-            {
-                throw new ArgumentException($"Tag name \"{tagName}\" doesn't appear to exist in site data");
-            }
-
-            return tagData;
         }
 
         private static void CreateOrMergeMultiKeyReferenceableData<T>(Dictionary<UrlizedString, T> index, string dataKey)

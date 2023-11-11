@@ -10,12 +10,12 @@ namespace GlogGenerator.MarkdownExtensions
     public class GlogLinkInlineRenderer : HtmlObjectRenderer<GlogLinkInline>
     {
         private readonly LinkInlineRenderer linkInlineRenderer;
-        private readonly SiteDataIndex siteDataIndex;
+        private readonly ISiteDataIndex siteDataIndex;
         private readonly SiteState siteState;
 
         public GlogLinkInlineRenderer(
             LinkInlineRenderer linkInlineRenderer,
-            SiteDataIndex siteDataIndex,
+            ISiteDataIndex siteDataIndex,
             SiteState siteState)
         {
             this.linkInlineRenderer = linkInlineRenderer;

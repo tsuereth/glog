@@ -25,7 +25,7 @@ namespace GlogGenerator
 
         private DateTimeOffset buildDate;
         private VariableSubstitution variableSubstitution;
-        private SiteDataIndex siteDataIndex;
+        private ISiteDataIndex siteDataIndex;
         private SiteState siteState;
         private GlogMarkdownExtension glogMarkdownExtension;
         private MarkdownPipeline markdownPipeline;
@@ -38,7 +38,8 @@ namespace GlogGenerator
 
         public SiteBuilder(
             ILogger logger,
-            ConfigData configData)
+            ConfigData configData,
+            ISiteDataIndex siteDataIndex = null)
         {
             this.logger = logger;
             this.configData = configData;
@@ -48,7 +49,14 @@ namespace GlogGenerator
             this.variableSubstitution = new VariableSubstitution();
             this.variableSubstitution.SetSubstitution(VariableNameSiteBaseURL, this.configData.BaseURL);
 
-            this.siteDataIndex = new SiteDataIndex(this.logger, this, this.configData.InputFilesBasePath);
+            if (siteDataIndex != null)
+            {
+                this.siteDataIndex = siteDataIndex;
+            }
+            else
+            {
+                this.siteDataIndex = new SiteDataIndex(this.logger, this, this.configData.InputFilesBasePath);
+            }
 
             this.siteState = new SiteState(this, this.configData.TemplateFilesBasePath);
 
@@ -181,7 +189,7 @@ namespace GlogGenerator
 
         public List<string> GetCategories()
         {
-            return this.siteDataIndex.GetCategories().Select(c => c.Name).OrderBy(c => c).ToList();
+            return this.siteDataIndex.GetCategories()?.Select(c => c.Name).OrderBy(c => c).ToList();
         }
 
         public List<string> GetNowPlaying()
@@ -214,124 +222,130 @@ namespace GlogGenerator
             var contentRoutes = new Dictionary<string, IOutputContent>();
 
             var staticFiles = this.siteDataIndex.GetStaticFiles();
-            foreach (var staticFile in staticFiles)
+            if (staticFiles != null)
             {
-                try
+                foreach (var staticFile in staticFiles)
                 {
-                    var outputFile = StaticFileState.FromStaticFileData(staticFile);
-                    contentRoutes.Add(outputFile.OutputPathRelative, outputFile);
-                }
-                catch (Exception ex)
-                {
-                    throw new InvalidDataException($"Failed to generate static content from file {staticFile.SourceFilePath}", ex);
+                    try
+                    {
+                        var outputFile = StaticFileState.FromStaticFileData(staticFile);
+                        contentRoutes.Add(outputFile.OutputPathRelative, outputFile);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new InvalidDataException($"Failed to generate static content from file {staticFile.SourceFilePath}", ex);
+                    }
                 }
             }
 
             var posts = this.siteDataIndex.GetPosts();
-            var postPages = new List<PageState>(posts.Count);
-            foreach (var postData in posts)
+            var postPages = new List<PageState>(posts?.Count ?? 0);
+            if (posts != null)
             {
-                try
+                foreach (var postData in posts)
                 {
-                    // Verify that the post's games are found in our metadata cache.
-                    foreach (var game in postData.Games)
+                    try
                     {
-                        _ = this.siteDataIndex.ValidateMatchingGameName(game);
+                        // Verify that the post's games are found in our metadata cache.
+                        foreach (var game in postData.Games)
+                        {
+                            _ = this.siteDataIndex.GetGame(game);
+                        }
+
+                        var page = PageState.FromPostData(this, postData);
+                        postPages.Add(page);
+                        contentRoutes.Add(page.OutputPathRelative, page);
                     }
-
-                    var page = PageState.FromPostData(this, postData);
-                    postPages.Add(page);
-                    contentRoutes.Add(page.OutputPathRelative, page);
+                    catch (Exception ex)
+                    {
+                        throw new InvalidDataException($"Failed to generate page from post {postData.SourceFilePath}", ex);
+                    }
                 }
-                catch (Exception ex)
-                {
-                    throw new InvalidDataException($"Failed to generate page from post {postData.SourceFilePath}", ex);
-                }
-            }
 
-            var postsListPage = new PageState(this)
-            {
-                HideDate = true,
-                Title = "Posts",
-                PageType = "posts",
-                Permalink = $"{this.GetBaseURL()}post/",
-                OutputPathRelative = "post/index.html",
-                RenderTemplateName = "list",
-                LinkedPosts = posts,
-            };
-            contentRoutes.Add(postsListPage.OutputPathRelative, postsListPage);
-
-            const int pagesPerHistoryPage = 10;
-            for (var historyPageNum = 0; (historyPageNum * pagesPerHistoryPage) < postPages.Count; ++historyPageNum)
-            {
-                var historyPage = new PageState(this)
+                var postsListPage = new PageState(this)
                 {
                     HideDate = true,
-                    HideTitle = true,
-                    Permalink = this.GetBaseURL(), // BUG?: every history page has the BaseURL permalink!
-                    RenderTemplateName = "history",
+                    Title = "Posts",
+                    PageType = "posts",
+                    Permalink = $"{this.GetBaseURL()}post/",
+                    OutputPathRelative = "post/index.html",
+                    RenderTemplateName = "list",
+                    LinkedPosts = posts,
                 };
+                contentRoutes.Add(postsListPage.OutputPathRelative, postsListPage);
 
-                var pageOneBased = historyPageNum + 1;
+                const int pagesPerHistoryPage = 10;
+                for (var historyPageNum = 0; (historyPageNum * pagesPerHistoryPage) < postPages.Count; ++historyPageNum)
+                {
+                    var historyPage = new PageState(this)
+                    {
+                        HideDate = true,
+                        HideTitle = true,
+                        Permalink = this.GetBaseURL(), // BUG?: every history page has the BaseURL permalink!
+                        RenderTemplateName = "history",
+                    };
 
-                var firstPostNum = historyPageNum * pagesPerHistoryPage;
-                var postsCount = pagesPerHistoryPage;
-                if (firstPostNum + postsCount >= postPages.Count)
-                {
-                    postsCount = postPages.Count - firstPostNum;
+                    var pageOneBased = historyPageNum + 1;
+
+                    var firstPostNum = historyPageNum * pagesPerHistoryPage;
+                    var postsCount = pagesPerHistoryPage;
+                    if (firstPostNum + postsCount >= postPages.Count)
+                    {
+                        postsCount = postPages.Count - firstPostNum;
+                    }
+
+                    historyPage.HistoryPosts = postPages.GetRange(firstPostNum, postsCount);
+
+                    if (historyPageNum == 0)
+                    {
+                        historyPage.HidePrevLink = true;
+                    }
+                    else if (historyPageNum == 1)
+                    {
+                        historyPage.HidePrevLink = false;
+                        historyPage.PrevLinkRelative = string.Empty; // special case! link to BaseURL.
+                    }
+                    else
+                    {
+                        historyPage.HidePrevLink = false;
+                        var prevPageOneBased = pageOneBased - 1;
+                        historyPage.PrevLinkRelative = $"page/{prevPageOneBased}/";
+                    }
+
+                    if (((historyPageNum + 1) * pagesPerHistoryPage) >= postPages.Count)
+                    {
+                        historyPage.HideNextLink = true;
+                    }
+                    else
+                    {
+                        historyPage.HideNextLink = false;
+                        var nextPageOneBased = pageOneBased + 1;
+                        historyPage.NextLinkRelative = $"page/{nextPageOneBased}/";
+                    }
+
+                    if (historyPageNum == 0)
+                    {
+                        historyPage.OutputPathRelative = "index.html";
+                    }
+                    else
+                    {
+                        historyPage.OutputPathRelative = $"page/{pageOneBased}/index.html";
+                    }
+
+                    contentRoutes.Add(historyPage.OutputPathRelative, historyPage);
                 }
 
-                historyPage.HistoryPosts = postPages.GetRange(firstPostNum, postsCount);
-
-                if (historyPageNum == 0)
+                var rssFeedItems = Math.Min(postPages.Count, 15);
+                var rssFeedPage = new PageState(this)
                 {
-                    historyPage.HidePrevLink = true;
-                }
-                else if (historyPageNum == 1)
-                {
-                    historyPage.HidePrevLink = false;
-                    historyPage.PrevLinkRelative = string.Empty; // special case! link to BaseURL.
-                }
-                else
-                {
-                    historyPage.HidePrevLink = false;
-                    var prevPageOneBased = pageOneBased - 1;
-                    historyPage.PrevLinkRelative = $"page/{prevPageOneBased}/";
-                }
-
-                if (((historyPageNum + 1) * pagesPerHistoryPage) >= postPages.Count)
-                {
-                    historyPage.HideNextLink = true;
-                }
-                else
-                {
-                    historyPage.HideNextLink = false;
-                    var nextPageOneBased = pageOneBased + 1;
-                    historyPage.NextLinkRelative = $"page/{nextPageOneBased}/";
-                }
-
-                if (historyPageNum == 0)
-                {
-                    historyPage.OutputPathRelative = "index.html";
-                }
-                else
-                {
-                    historyPage.OutputPathRelative = $"page/{pageOneBased}/index.html";
-                }
-
-                contentRoutes.Add(historyPage.OutputPathRelative, historyPage);
+                    Date = posts[0].Date,
+                    OutputPathRelative = "index.xml",
+                    Permalink = this.GetBaseURL(),
+                    RenderTemplateName = "rss",
+                    HistoryPosts = postPages.GetRange(0, rssFeedItems),
+                };
+                contentRoutes.Add(rssFeedPage.OutputPathRelative, rssFeedPage);
             }
-
-            var rssFeedItems = Math.Min(postPages.Count, 15);
-            var rssFeedPage = new PageState(this)
-            {
-                Date = posts[0].Date,
-                OutputPathRelative = "index.xml",
-                Permalink = this.GetBaseURL(),
-                RenderTemplateName = "rss",
-                HistoryPosts = postPages.GetRange(0, rssFeedItems),
-            };
-            contentRoutes.Add(rssFeedPage.OutputPathRelative, rssFeedPage);
 
             var categoriesIndex = new PageState(this)
             {
@@ -347,97 +361,115 @@ namespace GlogGenerator
             contentRoutes.Add(categoriesIndex.OutputPathRelative, categoriesIndex);
 
             var categories = this.siteDataIndex.GetCategories();
-            foreach (var categoryData in categories)
+            if (categories != null)
             {
-                var page = PageState.FromCategoryData(this, categoryData);
-                contentRoutes.Add(page.OutputPathRelative, page);
+                foreach (var categoryData in categories)
+                {
+                    var page = PageState.FromCategoryData(this, categoryData);
+                    contentRoutes.Add(page.OutputPathRelative, page);
+                }
             }
 
             var games = this.siteDataIndex.GetGames();
-            var gamesIndex = new PageState(this)
+            if (games != null)
             {
-                HideDate = true,
-                OutputPathRelative = "game/index.html",
-                Permalink = $"{this.GetBaseURL()}game/",
-                RenderTemplateName = "termslist",
-                Title = "Games",
-                PageType = "games",
-                Terms = games.Select(g => g.Title).OrderBy(t => t, StringComparer.Ordinal).ToList(),
-                TermsType = "game",
-            };
-            contentRoutes.Add(gamesIndex.OutputPathRelative, gamesIndex);
+                var gamesIndex = new PageState(this)
+                {
+                    HideDate = true,
+                    OutputPathRelative = "game/index.html",
+                    Permalink = $"{this.GetBaseURL()}game/",
+                    RenderTemplateName = "termslist",
+                    Title = "Games",
+                    PageType = "games",
+                    Terms = games.Select(g => g.Title).OrderBy(t => t, StringComparer.Ordinal).ToList(),
+                    TermsType = "game",
+                };
+                contentRoutes.Add(gamesIndex.OutputPathRelative, gamesIndex);
 
-            foreach (var gameData in games)
-            {
-                var page = PageState.FromGameData(this, gameData);
-                contentRoutes.Add(page.OutputPathRelative, page);
+                foreach (var gameData in games)
+                {
+                    var page = PageState.FromGameData(this, gameData);
+                    contentRoutes.Add(page.OutputPathRelative, page);
+                }
             }
 
             var platforms = this.siteDataIndex.GetPlatforms();
-            var platformsIndex = new PageState(this)
+            if (platforms != null)
             {
-                HideDate = true,
-                OutputPathRelative = "platform/index.html",
-                Permalink = $"{this.GetBaseURL()}platform/",
-                RenderTemplateName = "termslist",
-                Title = "Platforms",
-                PageType = "platforms",
-                Terms = platforms.Select(p => p.Abbreviation).OrderBy(n => n, StringComparer.Ordinal).ToList(),
-                TermsType = "platform",
-            };
-            contentRoutes.Add(platformsIndex.OutputPathRelative, platformsIndex);
+                var platformsIndex = new PageState(this)
+                {
+                    HideDate = true,
+                    OutputPathRelative = "platform/index.html",
+                    Permalink = $"{this.GetBaseURL()}platform/",
+                    RenderTemplateName = "termslist",
+                    Title = "Platforms",
+                    PageType = "platforms",
+                    Terms = platforms.Select(p => p.Abbreviation).OrderBy(n => n, StringComparer.Ordinal).ToList(),
+                    TermsType = "platform",
+                };
+                contentRoutes.Add(platformsIndex.OutputPathRelative, platformsIndex);
 
-            foreach (var platformData in platforms)
-            {
-                var page = PageState.FromPlatformData(this, platformData);
-                contentRoutes.Add(page.OutputPathRelative, page);
+                foreach (var platformData in platforms)
+                {
+                    var page = PageState.FromPlatformData(this, platformData);
+                    contentRoutes.Add(page.OutputPathRelative, page);
+                }
             }
 
             var ratings = this.siteDataIndex.GetRatings();
-            var ratingsIndex = new PageState(this)
+            if (ratings != null)
             {
-                HideDate = true,
-                OutputPathRelative = "rating/index.html",
-                Permalink = $"{this.GetBaseURL()}rating/",
-                RenderTemplateName = "termslist",
-                Title = "Ratings",
-                PageType = "ratings",
-                Terms = ratings.Select(r => r.Name).OrderBy(n => n).ToList(),
-                TermsType = "rating",
-            };
-            contentRoutes.Add(ratingsIndex.OutputPathRelative, ratingsIndex);
+                var ratingsIndex = new PageState(this)
+                {
+                    HideDate = true,
+                    OutputPathRelative = "rating/index.html",
+                    Permalink = $"{this.GetBaseURL()}rating/",
+                    RenderTemplateName = "termslist",
+                    Title = "Ratings",
+                    PageType = "ratings",
+                    Terms = ratings.Select(r => r.Name).OrderBy(n => n).ToList(),
+                    TermsType = "rating",
+                };
+                contentRoutes.Add(ratingsIndex.OutputPathRelative, ratingsIndex);
 
-            foreach (var ratingData in ratings)
-            {
-                var page = PageState.FromRatingData(this, ratingData);
-                contentRoutes.Add(page.OutputPathRelative, page);
+                foreach (var ratingData in ratings)
+                {
+                    var page = PageState.FromRatingData(this, ratingData);
+                    contentRoutes.Add(page.OutputPathRelative, page);
+                }
             }
 
             var tags = this.siteDataIndex.GetTags();
-            var tagsIndex = new PageState(this)
+            if (tags != null)
             {
-                HideDate = true,
-                OutputPathRelative = "tag/index.html",
-                Permalink = $"{this.GetBaseURL()}tag/",
-                RenderTemplateName = "termslist",
-                Title = "Tags",
-                PageType = "tags",
-                Terms = tags.Select(t => t.Name).OrderBy(n => n, StringComparer.Ordinal).ToList(),
-                TermsType = "tag",
-            };
-            contentRoutes.Add(tagsIndex.OutputPathRelative, tagsIndex);
+                var tagsIndex = new PageState(this)
+                {
+                    HideDate = true,
+                    OutputPathRelative = "tag/index.html",
+                    Permalink = $"{this.GetBaseURL()}tag/",
+                    RenderTemplateName = "termslist",
+                    Title = "Tags",
+                    PageType = "tags",
+                    Terms = tags.Select(t => t.Name).OrderBy(n => n, StringComparer.Ordinal).ToList(),
+                    TermsType = "tag",
+                };
+                contentRoutes.Add(tagsIndex.OutputPathRelative, tagsIndex);
 
-            foreach (var tagData in tags)
-            {
-                var page = PageState.FromTagData(this, tagData);
-                contentRoutes.Add(page.OutputPathRelative, page);
+                foreach (var tagData in tags)
+                {
+                    var page = PageState.FromTagData(this, tagData);
+                    contentRoutes.Add(page.OutputPathRelative, page);
+                }
             }
 
             var pages = this.siteDataIndex.GetPages();
-            foreach (var pageData in pages)
+            if (pages != null)
             {
-                var page = PageState.FromPageData(this, pageData);
-                contentRoutes.Add(page.OutputPathRelative, page);
+                foreach (var pageData in pages)
+                {
+                    var page = PageState.FromPageData(this, pageData);
+                    contentRoutes.Add(page.OutputPathRelative, page);
+                }
             }
 
             return contentRoutes;
