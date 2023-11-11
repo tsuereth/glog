@@ -7,13 +7,13 @@ using Markdig.Syntax.Inlines;
 
 namespace GlogGenerator.MarkdownExtensions
 {
-    public class GlogLinkInlineRenderer : HtmlObjectRenderer<GlogLinkInline>
+    public class GlogLinkHtmlRenderer : HtmlObjectRenderer<GlogLinkInline>
     {
         private readonly LinkInlineRenderer linkInlineRenderer;
         private readonly ISiteDataIndex siteDataIndex;
         private readonly SiteState siteState;
 
-        public GlogLinkInlineRenderer(
+        public GlogLinkHtmlRenderer(
             LinkInlineRenderer linkInlineRenderer,
             ISiteDataIndex siteDataIndex,
             SiteState siteState)

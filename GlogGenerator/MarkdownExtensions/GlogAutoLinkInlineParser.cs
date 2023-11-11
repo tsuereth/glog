@@ -70,6 +70,7 @@ namespace GlogGenerator.MarkdownExtensions
 
                         var glogLinkInline = new GlogLinkInline()
                         {
+                            IsAutoLink = true,
                             ReferenceType = referenceType,
                             ReferenceKey = referenceKey,
                             // TODO?: would filling in Span, Row, and Column accomplish anything?

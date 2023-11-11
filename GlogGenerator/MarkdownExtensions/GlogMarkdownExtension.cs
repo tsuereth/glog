@@ -8,6 +8,7 @@ using Markdig.Parsers.Inlines;
 using Markdig.Renderers;
 using Markdig.Renderers.Html.Inlines;
 using Markdig.Renderers.Normalize;
+using Markdig.Renderers.Normalize.Inlines;
 using Markdig.Renderers.Roundtrip;
 using Markdig.Syntax;
 using Markdig.Syntax.Inlines;
@@ -81,9 +82,9 @@ namespace GlogGenerator.MarkdownExtensions
                         }
                     });
 
-                renderer.ObjectRenderers.InsertBefore<LinkInlineRenderer>(
-                    new GlogLinkInlineRenderer(
-                        renderer.ObjectRenderers.Find<LinkInlineRenderer>(),
+                renderer.ObjectRenderers.InsertBefore<Markdig.Renderers.Html.Inlines.LinkInlineRenderer>(
+                    new GlogLinkHtmlRenderer(
+                        renderer.ObjectRenderers.Find<Markdig.Renderers.Html.Inlines.LinkInlineRenderer>(),
                         this.siteDataIndex,
                         this.siteState));
 
@@ -92,10 +93,12 @@ namespace GlogGenerator.MarkdownExtensions
             }
             else if (renderer is NormalizeRenderer)
             {
+                renderer.ObjectRenderers.InsertBefore<Markdig.Renderers.Normalize.Inlines.AutolinkInlineRenderer>(new GlogLinkNormalizeRenderer());
                 renderer.ObjectRenderers.AddIfNotAlready<SpoilerNormalizeRenderer>();
             }
             else if (renderer is RoundtripRenderer)
             {
+                renderer.ObjectRenderers.InsertBefore<Markdig.Renderers.Roundtrip.Inlines.AutolinkInlineRenderer>(new GlogLinkRoundtripRenderer());
                 renderer.ObjectRenderers.AddIfNotAlready<SpoilerRoundtripRenderer>();
             }
         }
