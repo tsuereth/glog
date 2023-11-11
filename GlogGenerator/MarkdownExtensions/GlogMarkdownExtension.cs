@@ -41,12 +41,8 @@ namespace GlogGenerator.MarkdownExtensions
 
         public void Setup(MarkdownPipelineBuilder pipeline)
         {
-            // Our custom-links parser can't coexist with the built-in parsers;
-            // We need to replace them, and re-use the base parsers as appropriate.
-            pipeline.InlineParsers.TryRemove<AutolinkInlineParser>();
-            pipeline.InlineParsers.AddIfNotAlready<GlogAutoLinkInlineParser>();
-            pipeline.InlineParsers.TryRemove<LinkInlineParser>();
-            pipeline.InlineParsers.AddIfNotAlready<GlogLinkInlineParser>();
+            pipeline.InlineParsers.InsertBefore<AutolinkInlineParser>(new GlogAutoLinkInlineParser());
+            pipeline.InlineParsers.InsertBefore<LinkInlineParser>(new GlogLinkInlineParser());
 
             pipeline.BlockParsers.AddIfNotAlready<FencedDataBlockParser>();
             pipeline.BlockParsers.AddIfNotAlready<TomlFrontMatterBlockParser>();

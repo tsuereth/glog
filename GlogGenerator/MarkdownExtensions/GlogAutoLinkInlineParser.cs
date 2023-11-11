@@ -25,8 +25,6 @@ namespace GlogGenerator.MarkdownExtensions
 
         public override bool Match(InlineProcessor processor, ref StringSlice slice)
         {
-            var matchResult = false;
-
             if (slice.CurrentChar == '<')
             {
                 foreach (var linkMatchHandler in this.linkMatchTypes)
@@ -82,19 +80,12 @@ namespace GlogGenerator.MarkdownExtensions
                         processor.Inline = glogLinkInline;
 
                         slice.Start = referenceEndPos + 1;
-                        matchResult = true;
-                        break;
+                        return true;
                     }
                 }
             }
 
-            // If this parser didn't detect a special link, fall-back to the builtin parser.
-            if (!matchResult)
-            {
-                matchResult = base.Match(processor, ref slice);
-            }
-
-            return matchResult;
+            return false;
         }
     }
 }
