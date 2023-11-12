@@ -2,15 +2,13 @@
 using GlogGenerator.Data;
 using GlogGenerator.RenderState;
 using Markdig;
+using Markdig.Extensions.Tables;
 using Markdig.Helpers;
 using Markdig.Parsers;
 using Markdig.Parsers.Inlines;
 using Markdig.Renderers;
-using Markdig.Renderers.Html.Inlines;
 using Markdig.Renderers.Normalize;
-using Markdig.Renderers.Normalize.Inlines;
 using Markdig.Renderers.Roundtrip;
-using Markdig.Renderers.Roundtrip.Inlines;
 using Markdig.Syntax;
 using Markdig.Syntax.Inlines;
 
@@ -55,6 +53,12 @@ namespace GlogGenerator.MarkdownExtensions
             // We need a customization to not-steal it when followed by '!' for spoilers.
             pipeline.BlockParsers.TryRemove<QuoteBlockParser>();
             pipeline.BlockParsers.AddIfNotAlready<QuoteNotSpoilerBlockParser>();
+
+            // Replace (wrap) the built-in table parser, so we can preserve its original source for roundtrip rendering.
+            pipeline.InlineParsers.Replace<PipeTableParser>(
+                new ReversiblePipeTableParser(
+                    pipeline.InlineParsers.FindExact<LineBreakInlineParser>(),
+                    new PipeTableOptions()));
 
             pipeline.InlineParsers.AddIfNotAlready<SpoilerParser>();
 
@@ -120,6 +124,9 @@ namespace GlogGenerator.MarkdownExtensions
 
                 // The built-in roundtrip renderer for LinkInline doesn't work! so, replace it.
                 renderer.ObjectRenderers.Replace<Markdig.Renderers.Roundtrip.Inlines.LinkInlineRenderer>(new LinkInlineRoundtripRenderer());
+
+                // Built-in table handling doesn't have a roundtrip renderer.
+                renderer.ObjectRenderers.AddIfNotAlready<ReversibleTableRoundtripRenderer>();
 
                 renderer.ObjectRenderers.AddIfNotAlready<TomlFronMatterBlockRoundtripeRenderer>();
             }
