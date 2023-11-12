@@ -1,4 +1,5 @@
-﻿using Markdig.Renderers.Normalize;
+﻿using Markdig.Helpers;
+using Markdig.Renderers.Normalize;
 
 namespace GlogGenerator.MarkdownExtensions
 {
@@ -20,6 +21,11 @@ namespace GlogGenerator.MarkdownExtensions
             renderer.Write(":::");
 
             renderer.Write(obj.TriviaAfter);
+
+            if (obj.NewLine != NewLine.None)
+            {
+                renderer.Write(obj.NewLine.AsString());
+            }
         }
     }
 }

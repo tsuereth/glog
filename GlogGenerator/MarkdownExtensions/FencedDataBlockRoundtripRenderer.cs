@@ -1,4 +1,5 @@
-﻿using Markdig.Renderers.Roundtrip;
+﻿using Markdig.Helpers;
+using Markdig.Renderers.Roundtrip;
 
 namespace GlogGenerator.MarkdownExtensions
 {
@@ -6,6 +7,8 @@ namespace GlogGenerator.MarkdownExtensions
     {
         protected override void Write(RoundtripRenderer renderer, FencedDataBlock obj)
         {
+            renderer.RenderLinesBefore(obj);
+
             renderer.Write(obj.TriviaBefore);
 
             renderer.Write(":::");
@@ -20,6 +23,13 @@ namespace GlogGenerator.MarkdownExtensions
             renderer.Write(":::");
 
             renderer.Write(obj.TriviaAfter);
+
+            if (obj.NewLine != NewLine.None)
+            {
+                renderer.Write(obj.NewLine.AsString());
+            }
+
+            renderer.RenderLinesAfter(obj);
         }
     }
 }

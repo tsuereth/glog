@@ -35,6 +35,13 @@ namespace GlogGenerator.MarkdownExtensions
             {
                 var originalSource = state.Block?.TryGetRoundtripOriginalSource();
                 table.SetRoundtripOriginalSource(originalSource);
+
+                // Bugfix: the built-in postprocessing drops newlines after the original markup.
+                if (state.Block != null)
+                {
+                    state.BlockNew.NewLine = state.Block.NewLine;
+                    state.BlockNew.LinesAfter = state.Block.LinesAfter;
+                }
             }
 
             return shouldContinue;
