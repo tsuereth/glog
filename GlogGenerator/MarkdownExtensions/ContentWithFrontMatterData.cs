@@ -14,7 +14,7 @@ namespace GlogGenerator.MarkdownExtensions
     public class ContentWithFrontMatterData
     {
         [IgnoreDataMember]
-        public MarkdownDocument Content { get; private set; }
+        public MarkdownDocument MdDoc { get; private set; }
 
         public static T FromFilePath<T>(MarkdownPipeline mdPipeline, string filePath)
             where T : ContentWithFrontMatterData, new()
@@ -29,41 +29,20 @@ namespace GlogGenerator.MarkdownExtensions
             {
                 var tomlString = tomlBlock.Content;
                 contentAndData = Tomlyn.Toml.ToModel<T>(tomlString);
-
-                mdDoc.Remove(tomlBlock);
             }
             else
             {
                 contentAndData = new T();
             }
 
-            contentAndData.Content = mdDoc;
+            contentAndData.MdDoc = mdDoc;
 
             return contentAndData;
         }
 
         public string ToMarkdownString(MarkdownPipeline mdPipeline)
         {
-            var stringBuilder = new StringBuilder();
-
-            var tomlOutOptions = new Tomlyn.TomlModelOptions()
-            {
-                IgnoreMissingProperties = true,
-            };
-            var frontMatterText = Tomlyn.Toml.FromModel(this, tomlOutOptions);
-
-            if (!string.IsNullOrEmpty(frontMatterText))
-            {
-                frontMatterText = frontMatterText.ReplaceLineEndings("\n");
-
-                stringBuilder.Append("+++\n");
-                stringBuilder.Append(frontMatterText);
-                stringBuilder.Append("+++\n");
-            }
-
-            stringBuilder.Append(this.Content.ToMarkdownString(mdPipeline));
-
-            return stringBuilder.ToString();
+            return this.MdDoc.ToMarkdownString(mdPipeline);
         }
     }
 }

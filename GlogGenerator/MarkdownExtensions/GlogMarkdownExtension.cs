@@ -120,6 +120,8 @@ namespace GlogGenerator.MarkdownExtensions
 
                 // The built-in roundtrip renderer for LinkInline doesn't work! so, replace it.
                 renderer.ObjectRenderers.Replace<Markdig.Renderers.Roundtrip.Inlines.LinkInlineRenderer>(new LinkInlineRoundtripRenderer());
+
+                renderer.ObjectRenderers.AddIfNotAlready<TomlFronMatterBlockRoundtripeRenderer>();
             }
         }
     }

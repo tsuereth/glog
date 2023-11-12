@@ -151,7 +151,7 @@ namespace GlogGenerator.RenderState
             page.HideDate = true;
             page.HideTitle = true;
 
-            page.SourceContent = pageData.Content;
+            page.SourceContent = pageData.MdDoc;
 
             page.Permalink = $"{siteBuilder.GetBaseURL()}{pageData.PermalinkRelative}";
 
@@ -188,7 +188,7 @@ namespace GlogGenerator.RenderState
 
             page.Title = postData.Title;
 
-            page.SourceContent = postData.Content;
+            page.SourceContent = postData.MdDoc;
 
             var outputPathRelative = postData.PermalinkRelative;
             if (!outputPathRelative.EndsWith('/'))
