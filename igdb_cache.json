@@ -46451,7 +46451,10 @@
     {
       "category": 4,
       "collection": 106,
-      "collections": [],
+      "collections": [
+        8993,
+        8994
+      ],
       "franchise": -1,
       "franchises": [
         596

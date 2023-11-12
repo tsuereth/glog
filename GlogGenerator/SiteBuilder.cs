@@ -63,6 +63,7 @@ namespace GlogGenerator
             this.glogMarkdownExtension = new GlogMarkdownExtension(this, this.siteDataIndex, this.siteState);
 
             this.markdownPipeline = new MarkdownPipelineBuilder()
+                .EnableTrackTrivia()
                 .Use<ListExtraExtension>()
                 .UseMediaLinks()
                 .UsePipeTables()

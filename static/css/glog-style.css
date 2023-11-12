@@ -124,7 +124,7 @@ strong {
 .entry-content li {
 	margin-bottom: 10px;
 }
-.entry-content img, .entry-content p, .entry-content spoiler, .entry-content video {
+.entry-content img, .entry-content li, .entry-content p, .entry-content spoiler, .entry-content video {
 	margin-top: 20px;
 }
 .entry-content blockquote p:first-child {
