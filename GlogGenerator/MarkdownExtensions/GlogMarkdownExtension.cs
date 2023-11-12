@@ -100,12 +100,13 @@ namespace GlogGenerator.MarkdownExtensions
                         this.siteDataIndex,
                         this.siteState));
 
-                renderer.ObjectRenderers.AddIfNotAlready(new FencedDataBlockRenderer(this.siteDataIndex, this.htmlRendererContext));
+                renderer.ObjectRenderers.AddIfNotAlready(new FencedDataBlockHtmlRenderer(this.siteDataIndex, this.htmlRendererContext));
                 renderer.ObjectRenderers.AddIfNotAlready<SpoilerHtmlRenderer>();
             }
             else if (renderer is NormalizeRenderer)
             {
                 renderer.ObjectRenderers.InsertBefore<Markdig.Renderers.Normalize.Inlines.AutolinkInlineRenderer>(new GlogLinkNormalizeRenderer());
+                renderer.ObjectRenderers.AddIfNotAlready<FencedDataBlockNormalizeRenderer>();
                 renderer.ObjectRenderers.AddIfNotAlready<SpoilerNormalizeRenderer>();
 
                 // The built-in normalize renderer is missing generic attributes, so, replace it.
@@ -114,6 +115,7 @@ namespace GlogGenerator.MarkdownExtensions
             else if (renderer is RoundtripRenderer)
             {
                 renderer.ObjectRenderers.InsertBefore<Markdig.Renderers.Roundtrip.Inlines.AutolinkInlineRenderer>(new GlogLinkRoundtripRenderer());
+                renderer.ObjectRenderers.AddIfNotAlready<FencedDataBlockRoundtripeRenderer>();
                 renderer.ObjectRenderers.AddIfNotAlready<SpoilerRoundtripRenderer>();
 
                 // The built-in roundtrip renderer for LinkInline doesn't work! so, replace it.
