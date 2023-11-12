@@ -66,5 +66,27 @@ key2: ""value2""
 
             Assert.AreEqual(testText, result);
         }
+
+        [TestMethod]
+        public void TestFencedDataBlockTwoInARowRoundtrip()
+        {
+            var builder = new SiteBuilder();
+
+            var testText = @":::testitem
+key1: ""value1""
+key2: ""value2""
+:::
+
+:::testitem
+key1: ""value1""
+key2: ""value2""
+:::";
+
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+
+            Assert.AreEqual(testText, result);
+        }
     }
 }
