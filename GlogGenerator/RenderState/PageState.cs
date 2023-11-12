@@ -176,15 +176,15 @@ namespace GlogGenerator.RenderState
 
             page.Date = postData.Date;
 
-            page.Games = postData.Games.Select(c => new GameData() { Title = c }).ToList();
+            page.Games = postData.Games?.Select(c => new GameData() { Title = c }).ToList();
 
             page.HideDate = (postData.Date == DateTimeOffset.MinValue);
 
             page.Permalink = $"{siteBuilder.GetBaseURL()}{postData.PermalinkRelative}";
 
-            page.Platforms = postData.Platforms.Select(c => new PlatformData() { Abbreviation = c }).ToList();
+            page.Platforms = postData.Platforms?.Select(c => new PlatformData() { Abbreviation = c }).ToList();
 
-            page.Ratings = postData.Ratings.Select(c => new RatingData() { Name = c }).ToList();
+            page.Ratings = postData.Ratings?.Select(c => new RatingData() { Name = c }).ToList();
 
             page.Title = postData.Title;
 

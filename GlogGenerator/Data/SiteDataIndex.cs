@@ -276,7 +276,7 @@ namespace GlogGenerator.Data
                     {
                         var postData = PostData.MarkdownFromFilePath(mdPipeline, postPath);
 
-                        if (postData.Draft)
+                        if (postData.Draft == true)
                         {
                             continue;
                         }
@@ -290,15 +290,18 @@ namespace GlogGenerator.Data
                         }
 
                         var postGameTags = new Dictionary<UrlizedString, TagData>();
-                        foreach (var game in postData.Games)
+                        if (postData.Games != null)
                         {
-                            var gameData = this.GetGame(game);
-                            gameData.LinkedPosts.Add(postData);
-
-                            foreach (var tag in gameData.Tags)
+                            foreach (var game in postData.Games)
                             {
-                                var tagNameUrlized = new UrlizedString(tag);
-                                postGameTags[tagNameUrlized] = this.GetTag(tag);
+                                var gameData = this.GetGame(game);
+                                gameData.LinkedPosts.Add(postData);
+
+                                foreach (var tag in gameData.Tags)
+                                {
+                                    var tagNameUrlized = new UrlizedString(tag);
+                                    postGameTags[tagNameUrlized] = this.GetTag(tag);
+                                }
                             }
                         }
 
@@ -307,16 +310,22 @@ namespace GlogGenerator.Data
                             tagData.LinkedPosts.Add(postData);
                         }
 
-                        foreach (var platform in postData.Platforms)
+                        if (postData.Platforms != null)
                         {
-                            var platformData = this.GetPlatform(platform);
-                            platformData.LinkedPosts.Add(postData);
+                            foreach (var platform in postData.Platforms)
+                            {
+                                var platformData = this.GetPlatform(platform);
+                                platformData.LinkedPosts.Add(postData);
+                            }
                         }
 
-                        foreach (var rating in postData.Ratings)
+                        if (postData.Ratings != null)
                         {
-                            var ratingData = this.AddRatingIfMissing(rating);
-                            ratingData.LinkedPosts.Add(postData);
+                            foreach (var rating in postData.Ratings)
+                            {
+                                var ratingData = this.AddRatingIfMissing(rating);
+                                ratingData.LinkedPosts.Add(postData);
+                            }
                         }
                     }
                     catch (Exception ex)

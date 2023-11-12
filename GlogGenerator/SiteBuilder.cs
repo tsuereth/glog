@@ -117,42 +117,48 @@ namespace GlogGenerator
             var reportPosts = this.siteDataIndex.GetPosts().Where(p => p.Date >= startDate && p.Date <= endDate).ToList();
             foreach (var reportPost in reportPosts)
             {
-                foreach (var postGame in reportPost.Games)
+                if (reportPost.Games != null)
                 {
-                    foreach (var postPlatform in reportPost.Platforms)
+                    foreach (var postGame in reportPost.Games)
                     {
-                        var gameAndPlatformKey = $"{postGame}__{postPlatform}";
-
-                        if (!statsByGameAndPlatform.ContainsKey(gameAndPlatformKey))
+                        if (reportPost.Platforms != null)
                         {
-                            var gameData = this.siteDataIndex.GetGame(postGame);
-
-                            statsByGameAndPlatform[gameAndPlatformKey] = new GameStats()
+                            foreach (var postPlatform in reportPost.Platforms)
                             {
-                                Title = postGame,
-                                Platform = postPlatform,
-                                Type = gameData.IgdbCategory.Description(),
-                                FirstPosted = reportPost.Date,
-                                LastPosted = reportPost.Date,
-                            };
-                        }
+                                var gameAndPlatformKey = $"{postGame}__{postPlatform}";
 
-                        if (reportPost.Date < statsByGameAndPlatform[gameAndPlatformKey].FirstPosted)
-                        {
-                            statsByGameAndPlatform[gameAndPlatformKey].FirstPosted = reportPost.Date;
-                        }
+                                if (!statsByGameAndPlatform.ContainsKey(gameAndPlatformKey))
+                                {
+                                    var gameData = this.siteDataIndex.GetGame(postGame);
 
-                        if (reportPost.Date > statsByGameAndPlatform[gameAndPlatformKey].LastPosted)
-                        {
-                            statsByGameAndPlatform[gameAndPlatformKey].LastPosted = reportPost.Date;
-                        }
+                                    statsByGameAndPlatform[gameAndPlatformKey] = new GameStats()
+                                    {
+                                        Title = postGame,
+                                        Platform = postPlatform,
+                                        Type = gameData.IgdbCategory.Description(),
+                                        FirstPosted = reportPost.Date,
+                                        LastPosted = reportPost.Date,
+                                    };
+                                }
 
-                        if (reportPost.Ratings.Count > 0)
-                        {
-                            statsByGameAndPlatform[gameAndPlatformKey].Rating = reportPost.Ratings[0];
-                        }
+                                if (reportPost.Date < statsByGameAndPlatform[gameAndPlatformKey].FirstPosted)
+                                {
+                                    statsByGameAndPlatform[gameAndPlatformKey].FirstPosted = reportPost.Date;
+                                }
 
-                        ++statsByGameAndPlatform[gameAndPlatformKey].NumPosts;
+                                if (reportPost.Date > statsByGameAndPlatform[gameAndPlatformKey].LastPosted)
+                                {
+                                    statsByGameAndPlatform[gameAndPlatformKey].LastPosted = reportPost.Date;
+                                }
+
+                                if (reportPost.Ratings != null && reportPost.Ratings.Count > 0)
+                                {
+                                    statsByGameAndPlatform[gameAndPlatformKey].Rating = reportPost.Ratings[0];
+                                }
+
+                                ++statsByGameAndPlatform[gameAndPlatformKey].NumPosts;
+                            }
+                        }
                     }
                 }
             }
@@ -246,10 +252,13 @@ namespace GlogGenerator
                 {
                     try
                     {
-                        // Verify that the post's games are found in our metadata cache.
-                        foreach (var game in postData.Games)
+                        if (postData.Games != null)
                         {
-                            _ = this.siteDataIndex.GetGame(game);
+                            // Verify that the post's games are found in our metadata cache.
+                            foreach (var game in postData.Games)
+                            {
+                                _ = this.siteDataIndex.GetGame(game);
+                            }
                         }
 
                         var page = PageState.FromPostData(this, postData);

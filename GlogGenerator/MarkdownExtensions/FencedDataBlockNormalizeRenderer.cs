@@ -6,6 +6,8 @@ namespace GlogGenerator.MarkdownExtensions
     {
         protected override void Write(NormalizeRenderer renderer, FencedDataBlock obj)
         {
+            renderer.Write(obj.TriviaBefore);
+
             renderer.Write(":::");
             renderer.WriteLine(obj.Info);
             foreach (var kv in obj.Data)
@@ -16,6 +18,8 @@ namespace GlogGenerator.MarkdownExtensions
                 renderer.WriteLine();
             }
             renderer.Write(":::");
+
+            renderer.Write(obj.TriviaAfter);
         }
     }
 }

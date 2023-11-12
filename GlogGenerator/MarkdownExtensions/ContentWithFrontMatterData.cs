@@ -61,9 +61,6 @@ namespace GlogGenerator.MarkdownExtensions
 
             stringBuilder.Append(this.Content.ToMarkdownString(mdPipeline));
 
-            // Always end the file with a line break.
-            stringBuilder.AppendLine();
-
             return stringBuilder.ToString();
         }
     }
