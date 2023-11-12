@@ -54,9 +54,11 @@ namespace GlogGenerator.MarkdownExtensions
 
             if (!string.IsNullOrEmpty(frontMatterText))
             {
-                stringBuilder.AppendLine("+++");
+                frontMatterText = frontMatterText.ReplaceLineEndings("\n");
+
+                stringBuilder.Append("+++\n");
                 stringBuilder.Append(frontMatterText);
-                stringBuilder.AppendLine("+++");
+                stringBuilder.Append("+++\n");
             }
 
             stringBuilder.Append(this.Content.ToMarkdownString(mdPipeline));
