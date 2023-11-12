@@ -10,6 +10,7 @@ using Markdig.Renderers.Html.Inlines;
 using Markdig.Renderers.Normalize;
 using Markdig.Renderers.Normalize.Inlines;
 using Markdig.Renderers.Roundtrip;
+using Markdig.Renderers.Roundtrip.Inlines;
 using Markdig.Syntax;
 using Markdig.Syntax.Inlines;
 
@@ -100,6 +101,9 @@ namespace GlogGenerator.MarkdownExtensions
             {
                 renderer.ObjectRenderers.InsertBefore<Markdig.Renderers.Roundtrip.Inlines.AutolinkInlineRenderer>(new GlogLinkRoundtripRenderer());
                 renderer.ObjectRenderers.AddIfNotAlready<SpoilerRoundtripRenderer>();
+
+                // The built-in roundtrip renderer for LinkInline doesn't work! so, replace it.
+                renderer.ObjectRenderers.Replace<Markdig.Renderers.Roundtrip.Inlines.LinkInlineRenderer>(new LinkInlineRoundtripRenderer());
             }
         }
     }
