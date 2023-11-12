@@ -1,40 +1,47 @@
-using Markdig.Renderers.Roundtrip;
+using Markdig.Renderers.Normalize;
 using Markdig.Syntax.Inlines;
 
 namespace GlogGenerator.MarkdownExtensions
 {
     // Adapted from Markdig
-    public class LinkInlineRoundtripRenderer : RoundtripObjectRenderer<LinkInline>
+    public class LinkInlineNormalizeRenderer : NormalizeObjectRenderer<LinkInline>
     {
-        protected override void Write(RoundtripRenderer renderer, LinkInline obj)
+        protected override void Write(NormalizeRenderer renderer, LinkInline obj)
         {
+            if (obj.IsAutoLink && !renderer.Options.ExpandAutoLinks)
+            {
+                renderer.Write(obj.Url);
+                return;
+            }
+
             if (obj.IsImage)
             {
                 renderer.Write('!');
             }
-            // link text
             renderer.Write('[');
             renderer.WriteChildren(obj);
             renderer.Write(']');
 
             if (obj.Label != null)
             {
-                if (obj.LocalLabel == LocalLabel.Local || obj.LocalLabel == LocalLabel.Empty)
+                if (obj.FirstChild is LiteralInline literal && literal.Content.Length == obj.Label.Length && literal.Content.Match(obj.Label))
                 {
-                    renderer.Write('[');
-                    if (obj.LocalLabel == LocalLabel.Local)
+                    // collapsed reference and shortcut links
+                    if (!obj.IsShortcut)
                     {
-                        renderer.Write(obj.LabelWithTrivia);
+                        renderer.Write("[]");
                     }
-                    renderer.Write(']');
+                }
+                else
+                {
+                    // full link
+                    renderer.Write('[').Write(obj.Label).Write(']');
                 }
             }
             else
             {
-                if (obj.Url != null)
+                if (!string.IsNullOrEmpty(obj.Url))
                 {
-                    // Bugfix: the built-in roundtrip renderer for LinkInline never actually writes the URL.
-                    // This corrected rendering behavior is adapted from the normalize renderer, instead.
                     renderer.Write('(').Write(obj.Url);
 
                     if (obj.Title is { Length: > 0 })

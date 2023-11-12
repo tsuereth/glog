@@ -43,6 +43,8 @@ namespace GlogGenerator.MarkdownExtensions
 
         public void Setup(MarkdownPipelineBuilder pipeline)
         {
+            pipeline.InlineParsers.Insert(0, new ReversibleGenericAttributesParser());
+
             pipeline.InlineParsers.InsertBefore<AutolinkInlineParser>(new GlogAutoLinkInlineParser());
             pipeline.InlineParsers.InsertBefore<LinkInlineParser>(new GlogLinkInlineParser());
 
@@ -55,6 +57,15 @@ namespace GlogGenerator.MarkdownExtensions
             pipeline.BlockParsers.AddIfNotAlready<QuoteNotSpoilerBlockParser>();
 
             pipeline.InlineParsers.AddIfNotAlready<SpoilerParser>();
+
+            // Plug the generic attribute parser into all IAttributesParseables
+            foreach (var parser in pipeline.BlockParsers)
+            {
+                if (parser is IAttributesParseable attributesParseable)
+                {
+                    attributesParseable.TryParseAttributes = ReversibleGenericAttributesParser.TryProcessAttributesForHeading;
+                }
+            }
         }
 
         public void Setup(MarkdownPipeline pipeline, IMarkdownRenderer renderer)
@@ -96,6 +107,9 @@ namespace GlogGenerator.MarkdownExtensions
             {
                 renderer.ObjectRenderers.InsertBefore<Markdig.Renderers.Normalize.Inlines.AutolinkInlineRenderer>(new GlogLinkNormalizeRenderer());
                 renderer.ObjectRenderers.AddIfNotAlready<SpoilerNormalizeRenderer>();
+
+                // The built-in normalize renderer is missing generic attributes, so, replace it.
+                renderer.ObjectRenderers.Replace<Markdig.Renderers.Normalize.Inlines.LinkInlineRenderer>(new LinkInlineNormalizeRenderer());
             }
             else if (renderer is RoundtripRenderer)
             {

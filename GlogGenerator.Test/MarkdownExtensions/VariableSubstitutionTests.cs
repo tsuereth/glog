@@ -171,7 +171,6 @@ namespace GlogGenerator.Test.MarkdownExtensions
             Assert.AreEqual("<p>Test of <video width=\"960\" height=\"540\" controls=\"\"><source type=\"video/mp4\" src=\"https://replacement.text/video.mp4\"></source></video> substitution</p>\n", result);
         }
 
-        [Ignore]
         [TestMethod]
         public void TestMediaLinkSubstitutionNormalize()
         {
@@ -185,7 +184,6 @@ namespace GlogGenerator.Test.MarkdownExtensions
             Assert.AreEqual(testText, result);
         }
 
-        [Ignore]
         [TestMethod]
         public void TestMediaLinkSubstitutionRoundtrip()
         {
