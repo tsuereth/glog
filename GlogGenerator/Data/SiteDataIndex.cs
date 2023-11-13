@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace GlogGenerator.Data
 {
-    public class SiteDataIndex
+    public class SiteDataIndex: ISiteDataIndex
     {
         private readonly ILogger logger;
         private readonly ISiteBuilder siteBuilder;
@@ -34,7 +34,7 @@ namespace GlogGenerator.Data
             this.inputFilesBasePath = inputFilesBasePath;
         }
 
-        public CategoryData AddCategoryIfMissing(string categoryName)
+        private CategoryData AddCategoryIfMissing(string categoryName)
         {
             var categoryNameUrlized = new UrlizedString(categoryName);
             if (!this.categories.TryGetValue(categoryNameUrlized, out var categoryData))
@@ -50,7 +50,7 @@ namespace GlogGenerator.Data
             return categoryData;
         }
 
-        public RatingData AddRatingIfMissing(string ratingName)
+        private RatingData AddRatingIfMissing(string ratingName)
         {
             var ratingNameUrlized = new UrlizedString(ratingName);
             if (!this.ratings.TryGetValue(ratingNameUrlized, out var ratingData))
@@ -147,39 +147,6 @@ namespace GlogGenerator.Data
         public List<TagData> GetTags()
         {
             return this.tags.Values.ToList();
-        }
-
-        public GameData ValidateMatchingGameName(string gameName)
-        {
-            var gameNameUrlized = new UrlizedString(gameName);
-            if (!this.games.TryGetValue(gameNameUrlized, out var gameData))
-            {
-                throw new ArgumentException($"Game name \"{gameName}\" doesn't appear to exist in site data");
-            }
-
-            return gameData;
-        }
-
-        public PlatformData ValidateMatchingPlatformAbbreviation(string platformAbbreviation)
-        {
-            var platformAbbreviationUrlized = new UrlizedString(platformAbbreviation);
-            if (!this.platforms.TryGetValue(platformAbbreviationUrlized, out var platformData))
-            {
-                throw new ArgumentException($"Platform abbreviation \"{platformAbbreviation}\" doesn't appear to exist in site data");
-            }
-
-            return platformData;
-        }
-
-        public TagData ValidateMatchingTagName(string tagName)
-        {
-            var tagNameUrlized = new UrlizedString(tagName);
-            if (!this.tags.TryGetValue(tagNameUrlized, out var tagData))
-            {
-                throw new ArgumentException($"Tag name \"{tagName}\" doesn't appear to exist in site data");
-            }
-
-            return tagData;
         }
 
         private static void CreateOrMergeMultiKeyReferenceableData<T>(Dictionary<UrlizedString, T> index, string dataKey)
@@ -309,7 +276,7 @@ namespace GlogGenerator.Data
                     {
                         var postData = PostData.MarkdownFromFilePath(mdPipeline, postPath);
 
-                        if (postData.Draft)
+                        if (postData.Draft == true)
                         {
                             continue;
                         }
@@ -323,15 +290,18 @@ namespace GlogGenerator.Data
                         }
 
                         var postGameTags = new Dictionary<UrlizedString, TagData>();
-                        foreach (var game in postData.Games)
+                        if (postData.Games != null)
                         {
-                            var gameData = this.GetGame(game);
-                            gameData.LinkedPosts.Add(postData);
-
-                            foreach (var tag in gameData.Tags)
+                            foreach (var game in postData.Games)
                             {
-                                var tagNameUrlized = new UrlizedString(tag);
-                                postGameTags[tagNameUrlized] = this.GetTag(tag);
+                                var gameData = this.GetGame(game);
+                                gameData.LinkedPosts.Add(postData);
+
+                                foreach (var tag in gameData.Tags)
+                                {
+                                    var tagNameUrlized = new UrlizedString(tag);
+                                    postGameTags[tagNameUrlized] = this.GetTag(tag);
+                                }
                             }
                         }
 
@@ -340,16 +310,22 @@ namespace GlogGenerator.Data
                             tagData.LinkedPosts.Add(postData);
                         }
 
-                        foreach (var platform in postData.Platforms)
+                        if (postData.Platforms != null)
                         {
-                            var platformData = this.GetPlatform(platform);
-                            platformData.LinkedPosts.Add(postData);
+                            foreach (var platform in postData.Platforms)
+                            {
+                                var platformData = this.GetPlatform(platform);
+                                platformData.LinkedPosts.Add(postData);
+                            }
                         }
 
-                        foreach (var rating in postData.Ratings)
+                        if (postData.Ratings != null)
                         {
-                            var ratingData = this.AddRatingIfMissing(rating);
-                            ratingData.LinkedPosts.Add(postData);
+                            foreach (var rating in postData.Ratings)
+                            {
+                                var ratingData = this.AddRatingIfMissing(rating);
+                                ratingData.LinkedPosts.Add(postData);
+                            }
                         }
                     }
                     catch (Exception ex)
@@ -377,6 +353,19 @@ namespace GlogGenerator.Data
             this.CheckUpdatedReferenceableDataForConflict(oldPlatforms, this.platforms);
             this.CheckUpdatedReferenceableDataForConflict(oldRatings, this.ratings);
             this.CheckUpdatedReferenceableDataForConflict(oldTags, this.tags);
+        }
+
+        public void RewriteSourceContent()
+        {
+            foreach (var page in this.pages)
+            {
+                page.RewriteSourceFile(this.siteBuilder.GetMarkdownPipeline());
+            }
+
+            foreach (var post in this.posts)
+            {
+                post.RewriteSourceFile(this.siteBuilder.GetMarkdownPipeline());
+            }
         }
 
         private void CheckUpdatedReferenceableDataForConflict<T>(Dictionary<UrlizedString, T> oldData, Dictionary<UrlizedString, T> newData)

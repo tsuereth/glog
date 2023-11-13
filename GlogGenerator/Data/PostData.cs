@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Runtime.Serialization;
+using System.Text;
 using GlogGenerator.MarkdownExtensions;
 using Markdig;
 
@@ -17,9 +19,6 @@ namespace GlogGenerator.Data
         [IgnoreDataMember]
         public string PermalinkRelative { get; private set; } = string.Empty;
 
-        [DataMember(Name = "draft")]
-        public bool Draft { get; private set; } = false;
-
         // Parsing hack alert!
         // Tomlyn's ToModel conversion uses Convert.ChangeType() which requires
         // the target type to implement IConvertible; but DateTimeOffset doesn't.
@@ -31,6 +30,9 @@ namespace GlogGenerator.Data
         [IgnoreDataMember]
         public DateTimeOffset Date { get; private set; } = DateTimeOffset.MinValue;
 
+        [DataMember(Name = "draft")]
+        public bool? Draft { get; private set; } = null;
+
         [DataMember(Name = "title")]
         public string Title { get; private set; } = string.Empty;
 
@@ -38,16 +40,29 @@ namespace GlogGenerator.Data
         public List<string> Categories { get; private set; } = new List<string>();
 
         [DataMember(Name = "game")]
-        public List<string> Games { get; private set; } = new List<string>();
+        public List<string> Games { get; private set; } = null;
 
         [DataMember(Name = "platform")]
-        public List<string> Platforms { get; private set; } = new List<string>();
+        public List<string> Platforms { get; private set; } = null;
 
         [DataMember(Name = "rating")]
-        public List<string> Ratings { get; private set; } = new List<string>();
+        public List<string> Ratings { get; private set; } = null;
 
         [DataMember(Name = "slug")]
-        public string Slug { get; private set; } = string.Empty;
+        public string Slug { get; private set; } = null;
+
+        public void RewriteSourceFile(MarkdownPipeline mdPipeline)
+        {
+            if (string.IsNullOrEmpty(SourceFilePath))
+            {
+                throw new InvalidDataException("SourceFilePath is empty");
+            }
+
+            var fileContent = this.ToMarkdownString(mdPipeline);
+
+            var utf8WithoutBom = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
+            File.WriteAllText(this.SourceFilePath, fileContent, utf8WithoutBom);
+        }
 
         public static PostData MarkdownFromFilePath(MarkdownPipeline mdPipeline, string filePath)
         {

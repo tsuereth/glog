@@ -151,7 +151,7 @@ namespace GlogGenerator.RenderState
             page.HideDate = true;
             page.HideTitle = true;
 
-            page.SourceContent = pageData.Content;
+            page.SourceContent = pageData.MdDoc;
 
             page.Permalink = $"{siteBuilder.GetBaseURL()}{pageData.PermalinkRelative}";
 
@@ -176,19 +176,19 @@ namespace GlogGenerator.RenderState
 
             page.Date = postData.Date;
 
-            page.Games = postData.Games.Select(c => new GameData() { Title = c }).ToList();
+            page.Games = postData.Games?.Select(c => new GameData() { Title = c }).ToList();
 
             page.HideDate = (postData.Date == DateTimeOffset.MinValue);
 
             page.Permalink = $"{siteBuilder.GetBaseURL()}{postData.PermalinkRelative}";
 
-            page.Platforms = postData.Platforms.Select(c => new PlatformData() { Abbreviation = c }).ToList();
+            page.Platforms = postData.Platforms?.Select(c => new PlatformData() { Abbreviation = c }).ToList();
 
-            page.Ratings = postData.Ratings.Select(c => new RatingData() { Name = c }).ToList();
+            page.Ratings = postData.Ratings?.Select(c => new RatingData() { Name = c }).ToList();
 
             page.Title = postData.Title;
 
-            page.SourceContent = postData.Content;
+            page.SourceContent = postData.MdDoc;
 
             var outputPathRelative = postData.PermalinkRelative;
             if (!outputPathRelative.EndsWith('/'))

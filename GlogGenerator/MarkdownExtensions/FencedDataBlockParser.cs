@@ -14,7 +14,17 @@ namespace GlogGenerator.MarkdownExtensions
 
         protected override FencedDataBlock CreateFencedBlock(BlockProcessor processor)
         {
-            return new FencedDataBlock(this);
+            var dataBlock = new FencedDataBlock(this);
+
+            if (processor.TrackTrivia)
+            {
+                dataBlock.LinesBefore = processor.LinesBefore;
+                processor.LinesBefore = null;
+                dataBlock.TriviaBefore = processor.UseTrivia(processor.Start - 1);
+                dataBlock.NewLine = processor.Line.NewLine;
+            }
+
+            return dataBlock;
         }
 
         public override BlockState TryContinue(BlockProcessor processor, Block block)

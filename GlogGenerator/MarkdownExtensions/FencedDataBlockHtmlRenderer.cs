@@ -16,13 +16,13 @@ using Newtonsoft.Json.Linq;
 
 namespace GlogGenerator.MarkdownExtensions
 {
-    public class FencedDataBlockRenderer : HtmlObjectRenderer<FencedDataBlock>
+    public class FencedDataBlockHtmlRenderer : HtmlObjectRenderer<FencedDataBlock>
     {
-        private readonly SiteDataIndex siteDataIndex;
+        private readonly ISiteDataIndex siteDataIndex;
         private readonly HtmlRendererContext htmlRendererContext;
 
-        public FencedDataBlockRenderer(
-            SiteDataIndex siteDataIndex,
+        public FencedDataBlockHtmlRenderer(
+            ISiteDataIndex siteDataIndex,
             HtmlRendererContext htmlRendererContext)
         {
             this.siteDataIndex = siteDataIndex;
