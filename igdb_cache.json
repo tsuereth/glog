@@ -29440,7 +29440,8 @@
       ],
       "id": 6105,
       "involved_companies": [
-        240174
+        240174,
+        240400
       ],
       "name": "Flicky",
       "player_perspectives": [
@@ -33058,8 +33059,9 @@
       "involved_companies": [
         106525,
         106526,
-        229678,
-        229679
+        229679,
+        240561,
+        240562
       ],
       "name": "Bejeweled",
       "player_perspectives": [],
@@ -65687,10 +65689,6 @@
       "company": 421
     },
     {
-      "id": 229678,
-      "company": 1893
-    },
-    {
       "id": 229679,
       "company": 700
     },
@@ -66017,6 +66015,18 @@
     {
       "id": 240174,
       "company": 4981
+    },
+    {
+      "id": 240400,
+      "company": 1436
+    },
+    {
+      "id": 240561,
+      "company": 1893
+    },
+    {
+      "id": 240562,
+      "company": 1893
     }
   ],
   "platforms": [
