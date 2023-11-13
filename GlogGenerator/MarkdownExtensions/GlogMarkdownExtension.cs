@@ -49,6 +49,11 @@ namespace GlogGenerator.MarkdownExtensions
             pipeline.BlockParsers.AddIfNotAlready<FencedDataBlockParser>();
             pipeline.BlockParsers.AddIfNotAlready<TomlFrontMatterBlockParser>();
 
+            // Markdig offers an extension for "extra" list item bullet-type parsing,
+            // but it doesn't work totally right for roundtrip rendering, so use a custom parser.
+            var listParser = pipeline.BlockParsers.FindExact<ListBlockParser>();
+            listParser.ItemParsers.AddIfNotAlready<ListExtraItemBulletParser>();
+
             // The built-in quote block parser will steal '>' at the beginning of a line.
             // We need a customization to not-steal it when followed by '!' for spoilers.
             pipeline.BlockParsers.TryRemove<QuoteBlockParser>();

@@ -8,7 +8,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
     public class PipeTableTests
     {
         [TestMethod]
-        public void TestTableOneRow()
+        public void TestTableOneRowRoundtrip()
         {
             var builder = new SiteBuilder();
 
@@ -23,7 +23,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
         }
 
         [TestMethod]
-        public void TestTableManyRows()
+        public void TestTableManyRowsRoundtrip()
         {
             var builder = new SiteBuilder();
 

@@ -64,7 +64,6 @@ namespace GlogGenerator
 
             this.markdownPipeline = new MarkdownPipelineBuilder()
                 .EnableTrackTrivia()
-                .Use<ListExtraExtension>()
                 .UseMediaLinks()
                 .UsePipeTables()
                 .UseSoftlineBreakAsHardlineBreak()
