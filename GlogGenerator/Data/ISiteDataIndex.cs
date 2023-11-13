@@ -29,5 +29,7 @@ namespace GlogGenerator.Data
         public List<TagData> GetTags();
 
         public void LoadContent(IIgdbCache igdbCache);
+
+        public void RewriteSourceContent();
     }
 }

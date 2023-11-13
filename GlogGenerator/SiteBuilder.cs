@@ -111,6 +111,11 @@ namespace GlogGenerator
             this.siteDataIndex.LoadContent(igdbCache);
         }
 
+        public void RewriteData()
+        {
+            this.siteDataIndex.RewriteSourceContent();
+        }
+
         public List<GameStats> GetGameStatsForDateRange(DateTimeOffset startDate, DateTimeOffset endDate)
         {
             var statsByGameAndPlatform = new Dictionary<string, GameStats>();
@@ -206,11 +211,6 @@ namespace GlogGenerator
         public VariableSubstitution GetVariableSubstitution()
         {
             return this.variableSubstitution;
-        }
-
-        public MarkdownDocument ParseMarkdown(string markdown)
-        {
-            return Markdown.Parse(markdown, this.markdownPipeline);
         }
 
         public HtmlRendererContext GetRendererContext()

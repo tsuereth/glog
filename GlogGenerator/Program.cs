@@ -39,6 +39,7 @@ namespace GlogGenerator
             var reportStartDateString = DateTimeOffset.Now.ToString("yyyy-01-01T00:00:00", null);
             var staticSiteOutputBasePath = Path.Combine(Directory.GetCurrentDirectory(), "public");
             var updateIgdbCache = false;
+            var rewriteInputFiles = false;
 
             var options = new OptionSet()
             {
@@ -54,6 +55,7 @@ namespace GlogGenerator
                 { "s|start-date=", $"REPORTSTATS: start date for generating a report, default: {reportStartDateString}", o => reportStartDateString = o },
                 { "o|output-path=", $"BUILD: static site output base path, default: {staticSiteOutputBasePath}", o => staticSiteOutputBasePath = o },
                 { "u|update-igdb-cache=", $"Update the IGDB data cache (requires IGDB API credentials), default: {updateIgdbCache}", o => updateIgdbCache = bool.Parse(o) },
+                { "w|rewrite-input-files=", $"Rewrite input files after loading site data, default: {rewriteInputFiles}", o => rewriteInputFiles = bool.Parse(o) },
             };
             var verbs = options.Parse(args);
 
@@ -75,10 +77,21 @@ namespace GlogGenerator
                 }
             }
 
+            var activeVerbLowercase = activeVerb.ToLowerInvariant();
+
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
             var configData = ConfigData.FromFilePaths(configFilePath, inputFilesBasePath, templateFilesBasePath);
             var builder = new SiteBuilder(logger, configData);
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
+
+            var activeVerbMustLoadSiteData = (
+                activeVerbLowercase.Equals("build", StringComparison.Ordinal) ||
+                activeVerbLowercase.Equals("host", StringComparison.Ordinal) ||
+                activeVerbLowercase.Equals("reportstats", StringComparison.Ordinal));
+            if (activeVerbMustLoadSiteData || updateIgdbCache || rewriteInputFiles)
+            {
+                LoadSiteData(logger, builder);
+            }
 
             if (updateIgdbCache)
             {
@@ -91,15 +104,6 @@ namespace GlogGenerator
                     throw new ArgumentException("Missing or empty --igdb-client-secret");
                 }
 
-                // Perform an initial data-load so that we can tell if the IGDB update changed anything.
-                logger.LogInformation("Loading pre-update data...");
-                var preUpdateLoadTimer = Stopwatch.StartNew();
-                builder.UpdateDataIndex();
-                preUpdateLoadTimer.Stop();
-                logger.LogInformation(
-                    "Finished loading pre-update site data in {LoadTimeMs} ms",
-                    preUpdateLoadTimer.ElapsedMilliseconds);
-
                 using (var igdbApiClient = new IgdbApiClient(logger, igdbClientId, igdbClientSecret))
                 {
                     logger.LogInformation("Updating IGDB cache...");
@@ -110,14 +114,21 @@ namespace GlogGenerator
                         "Finished updating in {CacheUpdateTimeMs} ms",
                         cacheUpdateTimer.ElapsedMilliseconds);
                 }
+
+                // Metadata may have changed, so we need to reload the index.
+                LoadSiteData(logger, builder);
+            }
+
+            if (rewriteInputFiles)
+            {
+                builder.RewriteData();
             }
 
             var outputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
 
-            switch (activeVerb.ToLowerInvariant())
+            switch (activeVerbLowercase)
             {
                 case "build":
-                    LoadSiteData(logger, builder);
                     LoadSiteRoutes(logger, builder);
 
                     logger.LogInformation("Building content...");
@@ -135,7 +146,6 @@ namespace GlogGenerator
                     break;
 
                 case "host":
-                    LoadSiteData(logger, builder);
                     LoadSiteRoutes(logger, builder);
 
                     logger.LogInformation(
@@ -185,8 +195,6 @@ rating = []
 
                     var reportStartDate = DateTimeOffset.Parse(reportStartDateString, CultureInfo.InvariantCulture);
                     var reportEndDate = DateTimeOffset.Parse(reportEndDateString, CultureInfo.InvariantCulture);
-
-                    LoadSiteData(logger, builder);
 
                     var reportStats = builder.GetGameStatsForDateRange(reportStartDate, reportEndDate);
 

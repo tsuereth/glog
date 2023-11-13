@@ -355,6 +355,19 @@ namespace GlogGenerator.Data
             this.CheckUpdatedReferenceableDataForConflict(oldTags, this.tags);
         }
 
+        public void RewriteSourceContent()
+        {
+            foreach (var page in this.pages)
+            {
+                page.RewriteSourceFile(this.siteBuilder.GetMarkdownPipeline());
+            }
+
+            foreach (var post in this.posts)
+            {
+                post.RewriteSourceFile(this.siteBuilder.GetMarkdownPipeline());
+            }
+        }
+
         private void CheckUpdatedReferenceableDataForConflict<T>(Dictionary<UrlizedString, T> oldData, Dictionary<UrlizedString, T> newData)
             where T : IGlogReferenceable
         {
