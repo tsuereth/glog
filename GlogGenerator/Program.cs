@@ -121,7 +121,13 @@ namespace GlogGenerator
 
             if (rewriteInputFiles)
             {
+                logger.LogInformation("Rewriting input files...");
+                var rewriteTimer = Stopwatch.StartNew();
                 builder.RewriteData();
+                rewriteTimer.Stop();
+                logger.LogInformation(
+                    "Finished rewriting input files in {RewriteTimeMs} ms",
+                    rewriteTimer.ElapsedMilliseconds);
             }
 
             var outputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);

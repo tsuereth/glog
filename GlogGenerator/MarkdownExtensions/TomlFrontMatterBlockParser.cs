@@ -1,4 +1,5 @@
 using Markdig.Parsers;
+using Markdig.Syntax;
 
 namespace GlogGenerator.MarkdownExtensions
 {
@@ -11,7 +12,31 @@ namespace GlogGenerator.MarkdownExtensions
 
         protected override TomlFrontMatterBlock CreateFencedBlock(BlockProcessor processor)
         {
-            return new TomlFrontMatterBlock(this);
+            var tomlBlock = new TomlFrontMatterBlock(this);
+
+            if (processor.TrackTrivia)
+            {
+                tomlBlock.LinesBefore = processor.LinesBefore;
+                processor.LinesBefore = null;
+                tomlBlock.TriviaBefore = processor.UseTrivia(processor.Start - 1);
+                tomlBlock.NewLine = processor.Line.NewLine;
+            }
+
+            return tomlBlock;
+        }
+
+        public override BlockState TryContinue(BlockProcessor processor, Block block)
+        {
+            var state = base.TryContinue(processor, block);
+
+            if (state == BlockState.Break || state == BlockState.BreakDiscard)
+            {
+                var tomlBlock = block as TomlFrontMatterBlock;
+
+                tomlBlock.ParseTomlModel();
+            }
+
+            return state;
         }
     }
 }

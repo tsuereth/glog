@@ -1,6 +1,8 @@
 using Markdig.Helpers;
 using Markdig.Parsers;
 using Markdig.Syntax;
+using Tomlyn;
+using Tomlyn.Model;
 
 namespace GlogGenerator.MarkdownExtensions
 {
@@ -34,11 +36,20 @@ namespace GlogGenerator.MarkdownExtensions
         {
         }
 
+        public TomlTable Model { get; private set; } = null;
+
         public string Content {
             get
             {
                 return string.Join('\n', this.Lines.Lines);
             }
+        }
+
+        public void ParseTomlModel()
+        {
+            var tomlText = string.Join('\n', this.Lines.Lines);
+
+            this.Model = Toml.ToModel(tomlText);
         }
     }
 }
