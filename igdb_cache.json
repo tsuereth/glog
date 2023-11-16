@@ -18598,7 +18598,9 @@
     {
       "category": 0,
       "collection": 325,
-      "collections": [],
+      "collections": [
+        325
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -18644,7 +18646,9 @@
     {
       "category": 0,
       "collection": 325,
-      "collections": [],
+      "collections": [
+        325
+      ],
       "franchise": -1,
       "franchises": [
         60,
@@ -18687,7 +18691,9 @@
     {
       "category": 0,
       "collection": 325,
-      "collections": [],
+      "collections": [
+        325
+      ],
       "franchise": -1,
       "franchises": [
         60,
@@ -35070,7 +35076,9 @@
     {
       "category": 0,
       "collection": 325,
-      "collections": [],
+      "collections": [
+        325
+      ],
       "franchise": -1,
       "franchises": [
         38,
@@ -35147,9 +35155,11 @@
       "url": "https://www.igdb.com/games/hexcells"
     },
     {
-      "category": 10,
+      "category": 0,
       "collection": 325,
-      "collections": [],
+      "collections": [
+        325
+      ],
       "franchise": -1,
       "franchises": [
         38,
@@ -48506,7 +48516,9 @@
     {
       "category": 0,
       "collection": 325,
-      "collections": [],
+      "collections": [
+        325
+      ],
       "franchise": -1,
       "franchises": [
         4,
