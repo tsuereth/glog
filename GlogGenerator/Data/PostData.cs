@@ -2,54 +2,157 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using System.Runtime.Serialization;
+using System.Linq;
 using System.Text;
 using GlogGenerator.MarkdownExtensions;
 using Markdig;
+using Markdig.Syntax;
 
 namespace GlogGenerator.Data
 {
-    public class PostData : ContentWithFrontMatterData
+    public class PostData
     {
         public static readonly string PostContentBaseDir = "content/post";
 
-        [IgnoreDataMember]
         public string SourceFilePath { get; private set; } = string.Empty;
 
-        [IgnoreDataMember]
-        public string PermalinkRelative { get; private set; } = string.Empty;
+        public string PermalinkRelative
+        {
+            get
+            {
+                var permalinkPathParts = new List<string>(4)
+                {
+                    this.Date.Year.ToString("D4", CultureInfo.InvariantCulture),
+                    this.Date.Month.ToString("D2", CultureInfo.InvariantCulture),
+                    this.Date.Day.ToString("D2", CultureInfo.InvariantCulture),
+                };
 
-        // Parsing hack alert!
-        // Tomlyn's ToModel conversion uses Convert.ChangeType() which requires
-        // the target type to implement IConvertible; but DateTimeOffset doesn't.
-        // So instead of attempting to implement custom DateTimeOffset converters...
-        // we'll just keep the raw data as a string, and Parse() it later.
-        [DataMember(Name = "date")]
-        public string DateString { get; private set; } = string.Empty;
+                var specifiedSlug = false;
+                var frontMatter = this.GetFrontMatter();
+                if (frontMatter != null && frontMatter.ContainsKey("slug"))
+                {
+                    var slug = (string)frontMatter["slug"];
+                    if (!string.IsNullOrEmpty(slug))
+                    {
+                        specifiedSlug = true;
+                        permalinkPathParts.Add(slug);
+                    }
+                }
 
-        [IgnoreDataMember]
-        public DateTimeOffset Date { get; private set; } = DateTimeOffset.MinValue;
+                if (!specifiedSlug)
+                {
+                    permalinkPathParts.Add(UrlizedString.Urlize(this.Title));
+                }
 
-        [DataMember(Name = "draft")]
-        public bool? Draft { get; private set; } = null;
+                return string.Join('/', permalinkPathParts) + '/';
+            }
+        }
 
-        [DataMember(Name = "title")]
-        public string Title { get; private set; } = string.Empty;
+        public DateTimeOffset Date
+        {
+            get
+            {
+                var frontMatter = this.GetFrontMatter();
+                if (frontMatter != null && frontMatter.ContainsKey("date"))
+                {
+                    var dateString = (string)frontMatter["date"];
+                    if (!string.IsNullOrEmpty(dateString))
+                    {
+                        return DateTimeOffset.Parse(dateString, CultureInfo.InvariantCulture);
+                    }
+                }
 
-        [DataMember(Name = "category")]
-        public List<string> Categories { get; private set; } = new List<string>();
+                return DateTimeOffset.MinValue;
+            }
+        }
 
-        [DataMember(Name = "game")]
-        public List<string> Games { get; private set; } = null;
+        public bool? Draft
+        {
+            get
+            {
+                var frontMatter = this.GetFrontMatter();
+                if (frontMatter != null && frontMatter.ContainsKey("draft"))
+                {
+                    return (bool?)frontMatter["draft"];
+                }
 
-        [DataMember(Name = "platform")]
-        public List<string> Platforms { get; private set; } = null;
+                return null;
+            }
+        }
 
-        [DataMember(Name = "rating")]
-        public List<string> Ratings { get; private set; } = null;
+        public string Title
+        {
+            get
+            {
+                var frontMatter = this.GetFrontMatter();
+                if (frontMatter != null && frontMatter.ContainsKey("title"))
+                {
+                    return (string)frontMatter["title"];
+                }
 
-        [DataMember(Name = "slug")]
-        public string Slug { get; private set; } = null;
+                return null;
+            }
+        }
+
+        public List<string> Categories
+        {
+            get
+            {
+                var frontMatter = this.GetFrontMatter();
+                if (frontMatter != null && frontMatter.ContainsKey("category"))
+                {
+                    var categories = (Tomlyn.Model.TomlArray)frontMatter["category"];
+                    return categories.Select(i => (string)i).ToList();
+                }
+
+                return new List<string>();
+            }
+        }
+
+        public List<string> Games
+        {
+            get
+            {
+                var frontMatter = this.GetFrontMatter();
+                if (frontMatter != null && frontMatter.ContainsKey("game"))
+                {
+                    var games = (Tomlyn.Model.TomlArray)frontMatter["game"];
+                    return games.Select(i => (string)i).ToList();
+                }
+
+                return null;
+            }
+        }
+
+        public List<string> Platforms
+        {
+            get
+            {
+                var frontMatter = this.GetFrontMatter();
+                if (frontMatter != null && frontMatter.ContainsKey("platform"))
+                {
+                    var platforms = (Tomlyn.Model.TomlArray)frontMatter["platform"];
+                    return platforms.Select(i => (string)i).ToList();
+                }
+
+                return null;
+            }
+        }
+
+        public List<string> Ratings
+        {
+            get
+            {
+                var frontMatter = this.GetFrontMatter();
+                if (frontMatter != null && frontMatter.ContainsKey("rating"))
+                {
+                    var ratings = (Tomlyn.Model.TomlArray)frontMatter["rating"];
+                    return ratings.Select(i => (string)i).ToList();
+                }
+
+                return null;
+            }
+        }
 
         public void RewriteSourceFile(MarkdownPipeline mdPipeline)
         {
@@ -58,37 +161,33 @@ namespace GlogGenerator.Data
                 throw new InvalidDataException("SourceFilePath is empty");
             }
 
-            var fileContent = this.ToMarkdownString(mdPipeline);
+            var fileContent = this.MdDoc.ToMarkdownString(mdPipeline);
 
             var utf8WithoutBom = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
             File.WriteAllText(this.SourceFilePath, fileContent, utf8WithoutBom);
         }
 
+        public MarkdownDocument MdDoc { get; private set; }
+
+        private Tomlyn.Model.TomlTable GetFrontMatter()
+        {
+            var frontMatterBlock = this.MdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
+            if (frontMatterBlock != null)
+            {
+                return frontMatterBlock.Model;
+            }
+
+            return null;
+        }
+
         public static PostData MarkdownFromFilePath(MarkdownPipeline mdPipeline, string filePath)
         {
-            var post = ContentWithFrontMatterData.FromFilePath<PostData>(mdPipeline, filePath);
+            var text = File.ReadAllText(filePath);
+
+            var post = new PostData();
             post.SourceFilePath = filePath;
-            post.Date = DateTimeOffset.Parse(post.DateString, CultureInfo.InvariantCulture);
 
-            var permalinkPathParts = new List<string>(4)
-            {
-                post.Date.Year.ToString("D4", CultureInfo.InvariantCulture),
-                post.Date.Month.ToString("D2", CultureInfo.InvariantCulture),
-                post.Date.Day.ToString("D2", CultureInfo.InvariantCulture),
-            };
-
-            if (!string.IsNullOrEmpty(post.Slug))
-            {
-                permalinkPathParts.Add(post.Slug);
-            }
-            else
-            {
-                permalinkPathParts.Add(UrlizedString.Urlize(post.Title));
-            }
-
-            var permalinkPath = string.Join('/', permalinkPathParts) + '/';
-
-            post.PermalinkRelative = permalinkPath;
+            post.MdDoc = Markdown.Parse(text, mdPipeline);
 
             return post;
         }

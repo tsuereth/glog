@@ -38,13 +38,6 @@ namespace GlogGenerator.MarkdownExtensions
 
         public TomlTable Model { get; private set; } = null;
 
-        public string Content {
-            get
-            {
-                return string.Join('\n', this.Lines.Lines);
-            }
-        }
-
         public void ParseTomlModel()
         {
             var tomlText = string.Join('\n', this.Lines.Lines);

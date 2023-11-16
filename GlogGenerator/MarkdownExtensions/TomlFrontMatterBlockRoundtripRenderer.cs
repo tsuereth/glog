@@ -10,6 +10,7 @@ namespace GlogGenerator.MarkdownExtensions
             renderer.Write(obj.TriviaBefore);
 
             renderer.Write("+++\n");
+#if true
             foreach (var line in obj.Lines.Lines)
             {
                 if (line.Slice.Length > 0)
@@ -21,6 +22,9 @@ namespace GlogGenerator.MarkdownExtensions
                     renderer.Write(line.NewLine.AsString());
                 }
             }
+#else
+            renderer.Write(Tomlyn.Toml.FromModel(obj.Model));
+#endif
             renderer.Write("+++\n");
 
             renderer.Write(obj.TriviaAfter);

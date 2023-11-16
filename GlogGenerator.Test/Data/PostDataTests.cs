@@ -28,7 +28,7 @@ namespace GlogGenerator.Test.Data
 
             var builder = new SiteBuilder();
             var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownPipeline(), testPostFilePath);
-            var testPostToString = testPostData.ToMarkdownString(builder.GetMarkdownPipeline());
+            var testPostToString = testPostData.MdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
 
             Assert.AreEqual(testPostFileText, testPostToString);
         }
@@ -41,7 +41,7 @@ namespace GlogGenerator.Test.Data
 
             var builder = new SiteBuilder();
             var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownPipeline(), testPostFilePath);
-            var testPostToString = testPostData.ToMarkdownString(builder.GetMarkdownPipeline());
+            var testPostToString = testPostData.MdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
 
             Assert.AreEqual(testPostFileText, testPostToString);
         }
