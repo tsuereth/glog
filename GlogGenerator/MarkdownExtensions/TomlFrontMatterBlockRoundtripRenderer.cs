@@ -23,7 +23,9 @@ namespace GlogGenerator.MarkdownExtensions
                 }
             }
 #else
-            renderer.Write(Tomlyn.Toml.FromModel(obj.Model));
+            var tomlModel = obj.GetModel();
+            var tomlString = Tomlyn.Toml.FromModel(tomlModel);
+            renderer.Write(tomlString);
 #endif
             renderer.Write("+++\n");
 

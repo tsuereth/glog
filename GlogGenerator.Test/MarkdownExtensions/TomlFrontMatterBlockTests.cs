@@ -28,7 +28,7 @@ hello, world";
 
             Assert.IsNotNull(tomlFrontMatter);
 
-            var tomlModel = tomlFrontMatter.Model;
+            var tomlModel = tomlFrontMatter.GetModel();
             Assert.IsTrue(tomlModel.ContainsKey("someString"));
             Assert.AreEqual("a string value", (string)tomlModel["someString"]);
             Assert.IsTrue(tomlModel.ContainsKey("someArray"));

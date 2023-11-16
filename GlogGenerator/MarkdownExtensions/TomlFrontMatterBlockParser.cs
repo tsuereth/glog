@@ -27,16 +27,15 @@ namespace GlogGenerator.MarkdownExtensions
 
         public override BlockState TryContinue(BlockProcessor processor, Block block)
         {
-            var state = base.TryContinue(processor, block);
-
-            if (state == BlockState.Break || state == BlockState.BreakDiscard)
+            var result = base.TryContinue(processor, block);
+            if (result == BlockState.Continue)
             {
                 var tomlBlock = block as TomlFrontMatterBlock;
 
-                tomlBlock.ParseTomlModel();
+                tomlBlock.AccumulateParsedLine(processor.Line);
             }
 
-            return state;
+            return result;
         }
     }
 }

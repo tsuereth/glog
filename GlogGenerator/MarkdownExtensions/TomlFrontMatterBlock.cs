@@ -1,3 +1,4 @@
+using System.Text;
 using Markdig.Helpers;
 using Markdig.Parsers;
 using Markdig.Syntax;
@@ -32,17 +33,35 @@ namespace GlogGenerator.MarkdownExtensions
 
         public int ClosingFencedCharCount { get; set; }
 
+        private StringBuilder tomlSourceLines = new StringBuilder();
+
+        private TomlTable tomlModel = null;
+
         public TomlFrontMatterBlock(BlockParser parser) : base(parser)
         {
         }
 
-        public TomlTable Model { get; private set; } = null;
-
-        public void ParseTomlModel()
+        public void AccumulateParsedLine(StringSlice parsedLine)
         {
-            var tomlText = string.Join('\n', this.Lines.Lines);
+            // QUIRK NOTE: If a Model was previously built, wipe it out.
+            if (tomlModel != null)
+            {
+                tomlModel = null;
+            }
 
-            this.Model = Toml.ToModel(tomlText);
+            var lineText = parsedLine.Text.Substring(parsedLine.Start, parsedLine.Length);
+            this.tomlSourceLines.AppendLine(lineText);
+        }
+
+        public TomlTable GetModel()
+        {
+            if (this.tomlModel == null)
+            {
+                var tomlSourceString = this.tomlSourceLines.ToString();
+                this.tomlModel = Toml.ToModel(tomlSourceString);
+            }
+
+            return this.tomlModel;
         }
     }
 }

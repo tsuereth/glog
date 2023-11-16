@@ -174,7 +174,7 @@ namespace GlogGenerator.Data
             var frontMatterBlock = this.MdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
             if (frontMatterBlock != null)
             {
-                return frontMatterBlock.Model;
+                return frontMatterBlock.GetModel();
             }
 
             return null;
