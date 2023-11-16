@@ -18177,8 +18177,10 @@
     },
     {
       "category": 0,
-      "collection": 303,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        303
+      ],
       "franchise": -1,
       "franchises": [
         769
@@ -18211,8 +18213,10 @@
     },
     {
       "category": 0,
-      "collection": 303,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        303
+      ],
       "franchise": -1,
       "franchises": [
         769
