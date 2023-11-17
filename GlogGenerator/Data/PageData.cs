@@ -18,22 +18,22 @@ namespace GlogGenerator.Data
             get
             {
                 var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.ContainsKey("permalink"))
+                if (frontMatter != null && frontMatter.TryGetNode("permalink", out var frontMatterPermalink))
                 {
-                    var frontMatterPermalink = (string)frontMatter["permalink"];
-                    if (!string.IsNullOrEmpty(frontMatterPermalink))
+                    var permalinkString = frontMatterPermalink.ToString();
+                    if (!string.IsNullOrEmpty(permalinkString))
                     {
-                        if (frontMatterPermalink.StartsWith('/'))
+                        if (permalinkString.StartsWith('/'))
                         {
-                            frontMatterPermalink = frontMatterPermalink.Substring(1);
+                            permalinkString = permalinkString.Substring(1);
                         }
 
-                        if (!frontMatterPermalink.EndsWith('/'))
+                        if (!permalinkString.EndsWith('/'))
                         {
-                            frontMatterPermalink += '/';
+                            permalinkString += '/';
                         }
 
-                        return frontMatterPermalink;
+                        return permalinkString;
                     }
                 }
 
@@ -56,7 +56,7 @@ namespace GlogGenerator.Data
 
         public MarkdownDocument MdDoc { get; private set; }
 
-        private Tomlyn.Model.TomlTable GetFrontMatter()
+        private Tommy.TomlTable GetFrontMatter()
         {
             var frontMatterBlock = this.MdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
             if (frontMatterBlock != null)

@@ -29,13 +29,13 @@ namespace GlogGenerator.Data
 
                 var specifiedSlug = false;
                 var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.ContainsKey("slug"))
+                if (frontMatter != null && frontMatter.TryGetNode("slug", out var frontMatterSlug))
                 {
-                    var slug = (string)frontMatter["slug"];
-                    if (!string.IsNullOrEmpty(slug))
+                    var slugString = frontMatterSlug.ToString();
+                    if (!string.IsNullOrEmpty(slugString))
                     {
                         specifiedSlug = true;
-                        permalinkPathParts.Add(slug);
+                        permalinkPathParts.Add(slugString);
                     }
                 }
 
@@ -53,9 +53,9 @@ namespace GlogGenerator.Data
             get
             {
                 var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.ContainsKey("date"))
+                if (frontMatter != null && frontMatter.TryGetNode("date", out var frontMatterDate))
                 {
-                    var dateString = (string)frontMatter["date"];
+                    var dateString = frontMatterDate.ToString();
                     if (!string.IsNullOrEmpty(dateString))
                     {
                         return DateTimeOffset.Parse(dateString, CultureInfo.InvariantCulture);
@@ -71,9 +71,9 @@ namespace GlogGenerator.Data
             get
             {
                 var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.ContainsKey("draft"))
+                if (frontMatter != null && frontMatter.TryGetNode("draft", out var frontMatterDraft))
                 {
-                    return (bool?)frontMatter["draft"];
+                    return frontMatterDraft.AsBoolean;
                 }
 
                 return null;
@@ -85,9 +85,9 @@ namespace GlogGenerator.Data
             get
             {
                 var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.ContainsKey("title"))
+                if (frontMatter != null && frontMatter.TryGetNode("title", out var frontMatterTitle))
                 {
-                    return (string)frontMatter["title"];
+                    return frontMatterTitle.ToString();
                 }
 
                 return null;
@@ -99,10 +99,14 @@ namespace GlogGenerator.Data
             get
             {
                 var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.ContainsKey("category"))
+                if (frontMatter != null && frontMatter.TryGetNode("category", out var frontMatterCategories))
                 {
-                    var categories = (Tomlyn.Model.TomlArray)frontMatter["category"];
-                    return categories.Select(i => (string)i).ToList();
+                    var categories = new List<string>();
+                    foreach (var categoryName in frontMatterCategories)
+                    {
+                        categories.Add(categoryName.ToString());
+                    }
+                    return categories;
                 }
 
                 return new List<string>();
@@ -114,10 +118,14 @@ namespace GlogGenerator.Data
             get
             {
                 var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.ContainsKey("game"))
+                if (frontMatter != null && frontMatter.TryGetNode("game", out var frontMatterGames))
                 {
-                    var games = (Tomlyn.Model.TomlArray)frontMatter["game"];
-                    return games.Select(i => (string)i).ToList();
+                    var games = new List<string>();
+                    foreach (var gameName in frontMatterGames)
+                    {
+                        games.Add(gameName.ToString());
+                    }
+                    return games;
                 }
 
                 return null;
@@ -129,10 +137,14 @@ namespace GlogGenerator.Data
             get
             {
                 var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.ContainsKey("platform"))
+                if (frontMatter != null && frontMatter.TryGetNode("platform", out var frontMatterPlatforms))
                 {
-                    var platforms = (Tomlyn.Model.TomlArray)frontMatter["platform"];
-                    return platforms.Select(i => (string)i).ToList();
+                    var platforms = new List<string>();
+                    foreach (var platformName in frontMatterPlatforms)
+                    {
+                        platforms.Add(platformName.ToString());
+                    }
+                    return platforms;
                 }
 
                 return null;
@@ -144,10 +156,14 @@ namespace GlogGenerator.Data
             get
             {
                 var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.ContainsKey("rating"))
+                if (frontMatter != null && frontMatter.TryGetNode("rating", out var frontMatterRatings))
                 {
-                    var ratings = (Tomlyn.Model.TomlArray)frontMatter["rating"];
-                    return ratings.Select(i => (string)i).ToList();
+                    var ratings = new List<string>();
+                    foreach (var ratingName in frontMatterRatings)
+                    {
+                        ratings.Add(ratingName.ToString());
+                    }
+                    return ratings;
                 }
 
                 return null;
@@ -169,7 +185,7 @@ namespace GlogGenerator.Data
 
         public MarkdownDocument MdDoc { get; private set; }
 
-        private Tomlyn.Model.TomlTable GetFrontMatter()
+        private Tommy.TomlTable GetFrontMatter()
         {
             var frontMatterBlock = this.MdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
             if (frontMatterBlock != null)

@@ -1,9 +1,8 @@
+using System.IO;
 using System.Text;
 using Markdig.Helpers;
 using Markdig.Parsers;
 using Markdig.Syntax;
-using Tomlyn;
-using Tomlyn.Model;
 
 namespace GlogGenerator.MarkdownExtensions
 {
@@ -35,7 +34,7 @@ namespace GlogGenerator.MarkdownExtensions
 
         private StringBuilder tomlSourceLines = new StringBuilder();
 
-        private TomlTable tomlModel = null;
+        private Tommy.TomlTable tomlModel = null;
 
         public TomlFrontMatterBlock(BlockParser parser) : base(parser)
         {
@@ -43,7 +42,7 @@ namespace GlogGenerator.MarkdownExtensions
 
         public void AccumulateParsedLine(StringSlice parsedLine)
         {
-            // QUIRK NOTE: If a Model was previously built, wipe it out.
+            // QUIRK NOTE: If the source was previously parsed, wipe out that result.
             if (tomlModel != null)
             {
                 tomlModel = null;
@@ -53,12 +52,15 @@ namespace GlogGenerator.MarkdownExtensions
             this.tomlSourceLines.AppendLine(lineText);
         }
 
-        public TomlTable GetModel()
+        public Tommy.TomlTable GetModel()
         {
             if (this.tomlModel == null)
             {
                 var tomlSourceString = this.tomlSourceLines.ToString();
-                this.tomlModel = Toml.ToModel(tomlSourceString);
+                using (var tomlReader = new StringReader(tomlSourceString))
+                {
+                    this.tomlModel = Tommy.TOML.Parse(tomlReader);
+                }
             }
 
             return this.tomlModel;
