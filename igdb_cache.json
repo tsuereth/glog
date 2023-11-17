@@ -1853,6 +1853,10 @@
       "name": "Super Mario 64"
     },
     {
+      "id": 9006,
+      "name": "Final Fantasy XIII"
+    },
+    {
       "id": 9008,
       "name": "Final Fantasy X"
     },
@@ -4121,6 +4125,10 @@
     {
       "id": 2251,
       "name": "Hydravision Entertainment"
+    },
+    {
+      "id": 2254,
+      "name": "ArtePiazza"
     },
     {
       "id": 2255,
@@ -10370,7 +10378,8 @@
       "collection": -1,
       "collections": [
         39,
-        2815
+        2815,
+        9006
       ],
       "franchise": 4,
       "franchises": [
@@ -10439,7 +10448,8 @@
       "collection": -1,
       "collections": [
         39,
-        2815
+        2815,
+        9006
       ],
       "franchise": 4,
       "franchises": [
@@ -21472,7 +21482,9 @@
     {
       "category": 0,
       "collection": 449,
-      "collections": [],
+      "collections": [
+        449
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -22285,7 +22297,9 @@
     {
       "category": 0,
       "collection": 449,
-      "collections": [],
+      "collections": [
+        449
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -22319,7 +22333,9 @@
     {
       "category": 0,
       "collection": 449,
-      "collections": [],
+      "collections": [
+        449
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -22352,7 +22368,9 @@
     {
       "category": 0,
       "collection": 449,
-      "collections": [],
+      "collections": [
+        449
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -22385,7 +22403,9 @@
     {
       "category": 0,
       "collection": 449,
-      "collections": [],
+      "collections": [
+        449
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -22417,7 +22437,9 @@
     {
       "category": 0,
       "collection": 449,
-      "collections": [],
+      "collections": [
+        449
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -22449,7 +22471,9 @@
     {
       "category": 0,
       "collection": 449,
-      "collections": [],
+      "collections": [
+        449
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -51991,7 +52015,8 @@
       ],
       "id": 254327,
       "involved_companies": [
-        220350
+        220350,
+        241217
       ],
       "name": "Super Mario RPG",
       "name_glogOverride": "Super Mario RPG (2023)",
@@ -66123,6 +66148,10 @@
     {
       "id": 240562,
       "company": 1893
+    },
+    {
+      "id": 241217,
+      "company": 2254
     }
   ],
   "platforms": [
