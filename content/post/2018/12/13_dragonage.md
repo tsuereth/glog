@@ -1,9 +1,9 @@
 +++
 date = "2018-12-13T21:37:28-08:00"
 title = "Aged Dragon"
-category = ["Playing A Game"]
-game = ["Dragon Age: Origins"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Dragon Age: Origins" ]
+platform = [ "PC" ]
 +++
 
 I waited too long to try <game:Dragon Age: Origins>.

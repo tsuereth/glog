@@ -1,10 +1,10 @@
 +++
 date = "2021-12-12T13:00:46-08:00"
 title = "Yeah, I still hate these fucking fire wolves"
-category = ["Playing A Game"]
-game = ["Horizon Zero Dawn: The Frozen Wilds"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Horizon Zero Dawn: The Frozen Wilds" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 At least I was prepared for them, this time, and knew to focus hard on weak spots -- or just run the hell away.

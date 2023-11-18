@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-01-04T23:17:04-08:00"
 draft = false
-game = ["Prelogate"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Prelogate" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Where the fuck is the NAND gate!?"
-
 +++
 
 Like <game:TIS-100>, <game:Prelogate> was frequently infuriating to me because of how it's <i>almost</i> like real computer programming.  Unlike TIS - and several other contemporaries - Prelogate suffered worse for this due to some unfortunate design flaws.

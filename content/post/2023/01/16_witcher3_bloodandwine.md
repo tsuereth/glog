@@ -1,10 +1,10 @@
 +++
 date = "2023-01-16T16:26:46-08:00"
 title = "Vallee d'abondance, hon hon hon"
-category = ["Playing A Game"]
-game = ["The Witcher 3: Wild Hunt - Blood and Wine"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "The Witcher 3: Wild Hunt - Blood and Wine" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 Well, did [Witcher 3](game:The Witcher 3: Wild Hunt)'s new-gen patch resolve its [clunky controls]($SiteBaseURL$2022/12/16/oh-valley-of-plenty-ah-ah-aaaaah/)?  <i>Is</i> its slight amount of new content worthwhile?  Does it breathe new life into the gradually-aging masterpiece?

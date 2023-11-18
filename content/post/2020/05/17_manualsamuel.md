@@ -1,10 +1,10 @@
 +++
 date = "2020-05-17T10:30:29-07:00"
 title = "Don't forget to breathe"
-category = ["Playing A Game"]
-game = ["Manual Samuel"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Manual Samuel" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 <game:Manual Samuel> isn't <i>completely</i> awful, but it sure tries its hardest.

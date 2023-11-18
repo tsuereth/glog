@@ -1,10 +1,10 @@
 +++
 date = "2020-09-19T08:08:38-07:00"
 title = "When in doubt, hit it with a wrench"
-category = ["Playing A Game"]
-game = ["Iconoclasts"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Iconoclasts" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Iconoclasts> feels like a significant leap forward from the developer's previous game, [Noitu Love 2](game:Noitu Love 2: Devolution).  This is way more than a <tag:Mega Man> homage -- Iconoclasts tells an epic story using multiple protagonists as they explore an interconnected, Metroidvania-style world.

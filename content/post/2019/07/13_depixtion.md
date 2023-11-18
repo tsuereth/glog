@@ -1,9 +1,9 @@
 +++
 date = "2019-07-13T12:01:28-07:00"
 title = "Picross++"
-category = ["Playing A Game"]
-game = ["Depixtion"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Depixtion" ]
+platform = [ "PC" ]
 +++
 
 <game:Depixtion> <i>looks</i> like it's just doing three nonograms to blend red, green, and blue tiles together -- but it's actually more than that.  It changes the fundamental rules of picross-style puzzles, in a way that I'm not sure I really like.

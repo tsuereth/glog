@@ -1,9 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using Tomlyn;
-using Tomlyn.Model;
 
 namespace GlogGenerator.Data
 {
@@ -24,10 +21,6 @@ namespace GlogGenerator.Data
             {
                 throw new ArgumentException($"Config filePath {configFilePath} has empty dirname");
             }
-            
-            var fileText = File.ReadAllText(configFilePath);
-
-            var tomlData = Toml.ToModel(fileText);
 
             var config = new ConfigData()
             {
@@ -35,14 +28,17 @@ namespace GlogGenerator.Data
                 TemplateFilesBasePath = templateFilesBasePath,
             };
 
-            if (tomlData.TryGetValue("now_playing", out var nowPlayingObj))
+            using (var fileReader = File.OpenText(configFilePath))
             {
-                var nowPlayingArray = (TomlArray)nowPlayingObj;
+                var tomlTable = Tommy.TOML.Parse(fileReader);
 
-                config.NowPlaying = nowPlayingArray
-                    .Select(o => o?.ToString() ?? string.Empty)
-                    .Where(s => !string.IsNullOrWhiteSpace(s))
-                    .ToList();
+                if (tomlTable.TryGetNode("now_playing", out var nowPlayingArray))
+                {
+                    foreach (var nowPlayingEntry in nowPlayingArray)
+                    {
+                        config.NowPlaying.Add(nowPlayingEntry.ToString());
+                    }
+                }
             }
 
             return config;

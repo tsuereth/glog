@@ -1,10 +1,10 @@
 +++
 date = "2018-03-11T11:17:36-07:00"
 title = "One Small Step Backward"
-category = ["Playing A Game"]
-game = ["Borderlands: The Pre-Sequel"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands: The Pre-Sequel" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Judged on its own, <game:Borderlands: The Pre-Sequel> is a good-enough game.  It's zany and flippant, it's got a healthy variety of enemies and weapons, and the RPG-lite random-guns formula works well ... just like it has since the first <game:Borderlands>.

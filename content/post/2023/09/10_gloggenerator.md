@@ -1,7 +1,7 @@
 +++
 date = "2023-09-10T10:24:42-07:00"
 title = "Manifest Glogstiny"
-category = ["Site News"]
+category = [ "Site News" ]
 +++
 
 [Eight years ago]($SiteBaseURL$2015/10/24/glog-now-with-100-less-server-execution/), I turned the Glog into a static site, using Hugo to generate webpages from post text and metadata.  And while this was a big improvement on what came before, that Glog still ... wasn't ... <i>quite</i> everything I wanted it to be.

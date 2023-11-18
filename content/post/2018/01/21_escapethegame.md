@@ -1,10 +1,10 @@
 +++
 date = "2018-01-21T18:02:22-08:00"
 title = "Es-cah-pay"
-category = ["Playing A Game"]
-game = ["Escape the Game"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Escape the Game" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Escape the Game>'s fourth-wall-breaking self-awareness isn't great, but not as bad as [some](game:The Magic Circle) [others](game:Eat Lead: The Return of Matt Hazard) I've played.  And the gameplay is rote at first, but quickly adds a grappling-hook power that makes the game feel fast, and interesting.

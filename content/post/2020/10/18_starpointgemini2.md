@@ -1,9 +1,9 @@
 +++
 date = "2020-10-18T15:17:33-07:00"
 title = "In desparate need of fast-travel"
-category = ["Playing A Game"]
-game = ["Starpoint Gemini 2"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Starpoint Gemini 2" ]
+platform = [ "PC" ]
 +++
 
 I should be clear that, when I complimented <game:3030 Deathwar Redux> for having a good start, that wasn't faint praise; it's sadly typical for the opening minutes of a space simulator to turn players away with impenetrable complexity and a stark lack of direction.  Like <game:Starpoint Gemini 2>, for example.

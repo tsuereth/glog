@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-12-06T11:03:42-08:00"
 draft = false
-game = ["Shadow Complex Remastered"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Shadow Complex Remastered" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Now With Slightly More Master"
-
 +++
 
 <game:Shadow Complex Remastered> is not an exceptional example of <i>remastering</i>: While this iteration does have high-quality textures, and can run at modern resolutions, other technical aspects of the game are unmistakably from a six-year-old downloadable title.  Cutscene close-ups show a dearth of model polygons.  Movement animations lack the smooth sophistication of current-day motion capture.  Even the voice samples audibly suffer when a character yells too loudly.

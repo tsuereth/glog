@@ -1,10 +1,10 @@
 +++
 date = "2018-05-14T07:29:27-07:00"
 title = "Huntin' for Wild"
-category = ["Playing A Game"]
-game = ["The Witcher 3: Wild Hunt"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "The Witcher 3: Wild Hunt" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 In its first few hours, [Witcher 3](game:The Witcher 3: Wild Hunt) felt "good," but not spectacular.  Not a revelatory experience that overtook my expectations, like [Breath of the Wild](game:The Legend of Zelda: Breath of the Wild); more like a better-written (and better-voiced) iteration on [Skyrim](game:The Elder Scrolls V: Skyrim - Special Edition).

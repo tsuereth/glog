@@ -1,10 +1,10 @@
 +++
 date = "2018-01-11T17:58:10-08:00"
 title = "Demon Clicker"
-category = ["Playing A Game"]
-game = ["Diablo III"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Diablo III" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Diablo III> <i>has</i> changed since [2014]($SiteBaseURL$2014/04/26/hell-its-about-time/).  It's not just me!  On a lark, I searched for "what happened to diablo 3" and found <a href="https://www.reddit.com/r/Diablo/comments/79kk42/what_happened_to_the_base_game_diablo_3_without/">this Reddit thread</a>:

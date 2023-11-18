@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-09-25T09:46:28-07:00"
 draft = false
-game = ["Deus Ex: Mankind Divided"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Deus Ex: Mankind Divided" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "The Doldrums of Deus Ex"
-
 +++
 
 I would say that there are really two games in [Mankind Divided](game:Deus Ex: Mankind Divided): A city-sized cyberpunk [Skyrim](game:The Elder Scrolls V: Skyrim) with apartments to break into, e-books to read, and trinkets to collect; and a conspiracy thriller story that's unfortunately and inertly squeezed between the stage-setting of [Human Revolution](game:Deus Ex: Human Revolution) and an inevitable threequel.

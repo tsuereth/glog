@@ -1,9 +1,9 @@
 +++
 date = "2020-03-01T12:14:10-08:00"
 title = "I dream of gearboxes"
-category = ["Playing A Game"]
-game = ["Dreamo"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Dreamo" ]
+platform = [ "PC" ]
 +++
 
 [The Witness](game:The Witness (2016)) did a really fantastic job of building a [myst](game:Myst)erious world around its seemingly-incongruous puzzles.  <game:Dreamo> appears to have the same goal -- unfortunately its demo doesn't show much of that world; instead, it focuses on the puzzle mechanics.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-09-19T07:16:45-07:00"
 draft = false
-game = ["Cat Quest"]
-platform = ["Android"]
-rating = ["Good"]
+game = [ "Cat Quest" ]
+platform = [ "Android" ]
+rating = [ "Good" ]
 title = "A furry good time"
-
 +++
 
 <i>Considering</i> that <game:Cat Quest> is a mobile game, it offers quite a lot of content: multiple hours of simplified hack-and-slash gameplay, treasure chests with adorable loot, dozens of quests, and a metric buttload of cat puns.

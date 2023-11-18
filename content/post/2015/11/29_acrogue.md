@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-11-29T00:16:01-08:00"
 draft = false
-game = ["Assassin's Creed Rogue"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Assassin's Creed Rogue" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Still significantly better than Rogue Warrior"
-
 +++
 
 Well, that was quicker than I expected.  Rogue's story turns out to be on the short side, about two x [Freedom Cry](game:Assassin's Creed: Freedom Cry).  And as should be expected from a Creed, the ending is distinctly rushed and unsatisfying.

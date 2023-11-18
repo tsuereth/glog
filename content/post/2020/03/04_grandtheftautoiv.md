@@ -1,9 +1,9 @@
 +++
 date = "2020-03-04T22:33:50-08:00"
 title = "Hey, cousin! Let's restart the mission!"
-category = ["Playing A Game"]
-game = ["Grand Theft Auto IV"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Grand Theft Auto IV" ]
+platform = [ "PC" ]
 +++
 
 My interest in replaying <game:Grand Theft Auto IV> piqued even before the news that it would be <a href="https://www.pcgamer.com/gta-4-returns-to-steam-on-march-19-without-multiplayer/">re-launched on Steam</a> in a few weeks.  (That said, the fact that this re-launch will likely be missing big chunks of the radio soundtrack was a strong motivation to get going.)

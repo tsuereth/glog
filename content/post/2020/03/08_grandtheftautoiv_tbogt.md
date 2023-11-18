@@ -1,10 +1,10 @@
 +++
 date = "2020-03-08T22:08:14-07:00"
 title = "Still Fabulous"
-category = ["Playing A Game"]
-game = ["Grand Theft Auto IV: The Ballad of Gay Tony"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Grand Theft Auto IV: The Ballad of Gay Tony" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 Niko's story starts cinematically and moves very slowly; Luis's doesn't hesitate to throw you into firefights (or off of a building).  Niko has difficulty accessing high-powered cars and guns; Luis has no problem picking up a supercar, or explosive shotgun shells.  Niko's missions [pissed me off]($SiteBaseURL$2020/03/04/hey-cousin-lets-restart-the-mission/) with their infrequent and unforgiving checkpoints; Luis's missions have plenty of checkpoints and are a trivial inconvenience to retry.

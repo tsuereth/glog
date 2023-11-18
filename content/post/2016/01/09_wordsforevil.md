@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-01-09T16:11:52-08:00"
 draft = false
-game = ["Words for Evil"]
-platform = ["PC"]
-rating = ["Bad"]
+game = [ "Words for Evil" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 title = "I swear, I'm a very good speller"
-
 +++
 
 I had high hopes for <game:Words for Evil>, but ended up hating it even more than <game:Letter Quest: Grimm's Journey>.

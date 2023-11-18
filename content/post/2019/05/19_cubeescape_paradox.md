@@ -1,10 +1,10 @@
 +++
 date = "2019-05-19T10:34:12-07:00"
 title = "David Lynchian Escape Room"
-category = ["Playing A Game"]
-game = ["Cube Escape: Paradox"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Cube Escape: Paradox" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Cube Escape: Paradox> is a weird, spooky, inventive, and <i>mostly</i> satisfying convergence of point-and-click adventure games and an escape-room puzzle.

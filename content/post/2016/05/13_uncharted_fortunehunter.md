@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-05-13T15:03:36-07:00"
 draft = false
-game = ["Uncharted: Fortune Hunter"]
-platform = ["Android"]
-rating = ["Meh"]
+game = [ "Uncharted: Fortune Hunter" ]
+platform = [ "Android" ]
+rating = [ "Meh" ]
 title = "Toad found more fortune than this"
-
 +++
 
 <game:Uncharted: Fortune Hunter> is a pretty great-looking mobile game, and even includes some <i>fun</i>, if you can believe it.  Block and movement puzzles, you know?

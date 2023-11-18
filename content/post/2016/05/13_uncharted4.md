@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-05-13T15:03:40-07:00"
 draft = false
-game = ["Uncharted 4: A Thief's End"]
-platform = ["PS4"]
-rating = ["Awesome"]
+game = [ "Uncharted 4: A Thief's End" ]
+platform = [ "PS4" ]
+rating = [ "Awesome" ]
 title = "More charting than ever before"
-
 +++
 
 There is a high-level misstep in [Uncharted 4](game:Uncharted 4: A Thief's End)'s early hours, haphazardly combining the flash-forward technique of [Uncharted 2](game:Uncharted 2: Among Thieves)'s opener with the flash-back technique of [Uncharted 3](game:Uncharted 3: Drake's Deception)'s.  So it's a big credit to the game's narrative implementation that this misstep is <i>almost unnoticeable</i>.

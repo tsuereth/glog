@@ -1,10 +1,10 @@
 +++
 date = "2020-08-08T11:44:00-07:00"
 title = "Mo astray, mo problems"
-category = ["Playing A Game"]
-game = ["MO:Astray"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "MO:Astray" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 First thing's first: <game:MO:Astray>'s <a href="https://store.steampowered.com/app/1104660/MOAstray/">Steam tags</a> call it a Metroidvania.  It isn't.  At least as far as I saw, there's no backtracking, no world map, and not a lot in the way of ability upgrades.

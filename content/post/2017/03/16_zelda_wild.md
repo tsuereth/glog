@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-03-16T01:42:53-07:00"
 draft = false
-game = ["The Legend of Zelda: Breath of the Wild"]
-platform = ["WiiU"]
-rating = ["Awesome"]
+game = [ "The Legend of Zelda: Breath of the Wild" ]
+platform = [ "WiiU" ]
+rating = [ "Awesome" ]
 title = "The endgame smells a little, uh ... wild"
-
 +++
 
 When I started this quest, it was intimidating in every dimension: the enormous map, full of surprising terrain and weather effects; the ferocious monsters, demanding thoughtful combat preparation and reflexes; the breadth of activities to do, from townsfolk's quests to secrets hidden throughout the landscape; and the mysterious story, blending a post-apocalyptic world with Zelda-flavored myths.

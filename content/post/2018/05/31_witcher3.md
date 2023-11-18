@@ -1,10 +1,10 @@
 +++
 date = "2018-05-31T06:52:14-07:00"
 title = "Wild: Hunted"
-category = ["Playing A Game"]
-game = ["The Witcher 3: Wild Hunt"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "The Witcher 3: Wild Hunt" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 I briefly mentioned, [last time]($SiteBaseURL$2018/05/27/fookin-skelligers/), that [Witcher 3](game:The Witcher 3: Wild Hunt) still has a few kinks in it.  Take this scene, in which some unfortunate Nilfgaardian soldiers find themselves trapped in a pathfinding black hole:

@@ -1,10 +1,10 @@
 +++
 date = "2021-12-12T12:40:37-08:00"
 title = "Dawn Harder"
-category = ["Playing A Game"]
-game = ["Horizon Zero Dawn"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Horizon Zero Dawn" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 Replaying <game:Horizon Zero Dawn> does suffer a bit from, for lack of a better term, the [BioShock](game:BioShock Remastered) effect: its story is so memorable that you just can't be shocked and amazed by it a second time.

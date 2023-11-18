@@ -1,10 +1,10 @@
 +++
 date = "2018-12-25T20:20:21-08:00"
 title = "I'm going to cut off your head now."
-category = ["Playing A Game"]
-game = ["God of War (2018)"]
-platform = ["PS4"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "God of War (2018)" ]
+platform = [ "PS4" ]
+rating = [ "Awesome" ]
 +++
 
 <game:God of War (2018)> is a triumph of modern game design, while remaining faithful to its decade-old tenets.  It's a lively and rip-roaring adventure, while also telling a somber and sometimes <i>touching</i> story.  It fills a huge, beautiful world with a wealth of compelling content.  And it lets you beat the absolute shit out of Norse gods.

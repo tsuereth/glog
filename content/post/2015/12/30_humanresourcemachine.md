@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-12-30T22:34:37-08:00"
 draft = false
-game = ["Human Resource Machine"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Human Resource Machine" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Insufficient Human Resources"
-
 +++
 
 Prime factorization really took it out of me.  I admit it!  <i>I need high-level programming.</i>  Ugh.  That was painful.

@@ -1,10 +1,10 @@
 +++
 date = "2020-05-03T12:51:02-07:00"
 title = "Buy a big hole in the ground"
-category = ["Playing A Game"]
-game = ["Fallout 4: Vault-Tec Workshop"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Fallout 4: Vault-Tec Workshop" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 The [Vault-Tec Workshop](game:Fallout 4: Vault-Tec Workshop) DLC is structurally simple: it adds an incomplete vault, which you can build out like any other workshop/settlement.

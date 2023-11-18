@@ -1,10 +1,10 @@
 +++
 date = "2021-04-15T08:29:33-07:00"
 title = "Should've seen this one coming"
-category = ["Playing A Game"]
-game = ["Deadly Premonition: Director's Cut"]
-platform = ["PC"]
-rating = ["Awful"]
+category = [ "Playing A Game" ]
+game = [ "Deadly Premonition: Director's Cut" ]
+platform = [ "PC" ]
+rating = [ "Awful" ]
 +++
 
 <i>Technically</i>, I've played a bit of <game:Deadly Premonition> before; back on the [Xbox 360](platform:X360), the game was both "too weird" and "too boring" to keep me interested for long.

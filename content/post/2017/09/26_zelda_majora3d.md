@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-09-26T07:40:27-07:00"
 draft = false
-game = ["The Legend of Zelda: Majora's Mask 3D"]
-platform = ["3DS"]
-rating = ["Good"]
+game = [ "The Legend of Zelda: Majora's Mask 3D" ]
+platform = [ "3DS" ]
+rating = [ "Good" ]
 title = "Breath of the Bizarre"
-
 +++
 
 I've tried, and failed, to really sink into [Majora's Mask 3D](game:The Legend of Zelda: Majora's Mask 3D) multiple times over the past two and a half years.  I think it's fair to say that the game's opening hasn't aged very well:

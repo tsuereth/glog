@@ -1,10 +1,10 @@
 +++
 date = "2022-09-04T13:02:55-07:00"
 title = "Alas, poor Yorick, here we go again"
-category = ["Playing A Game"]
-game = ["Elsinore"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Elsinore" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 So... this time, it's <i><a href="https://www.imdb.com/title/tt0107048/">Groundhog Day</a></i> with Shakespeare.

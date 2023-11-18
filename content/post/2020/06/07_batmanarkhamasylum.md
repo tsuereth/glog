@@ -1,10 +1,10 @@
 +++
 date = "2020-06-07T23:43:20-07:00"
 title = "I am still the night"
-category = ["Playing A Game"]
-game = ["Batman: Arkham Asylum"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Batman: Arkham Asylum" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 <game:Batman: Arkham Asylum> is still good enough to start on a Sunday afternoon and finish later that same evening.

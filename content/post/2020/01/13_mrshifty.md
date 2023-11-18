@@ -1,10 +1,10 @@
 +++
 date = "2020-01-13T07:41:03-08:00"
 title = "Get Shifty"
-category = ["Playing A Game"]
-game = ["Mr. Shifty"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Mr. Shifty" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Take <game:Hotline Miami>, remove the acid trip, then add a "blink"-style teleport and you might end up with something like <game:Mr. Shifty>.

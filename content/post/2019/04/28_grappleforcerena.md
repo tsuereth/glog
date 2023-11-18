@@ -1,9 +1,9 @@
 +++
 date = "2019-04-28T13:20:34-07:00"
 title = "Non-bionic commando"
-category = ["Playing A Game"]
-game = ["Grapple Force Rena"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Grapple Force Rena" ]
+platform = [ "PC" ]
 +++
 
 <game:Grapple Force Rena> is an odd combination of old and new.  Its core grappling-hook mechanic is pretty cool in action, while also feeling "simple" in a way that may actually have worked in a Sega Genesis game.  Its flavor text is fun and irreverent, without dominating the flow of the game.

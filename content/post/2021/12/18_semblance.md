@@ -1,10 +1,10 @@
 +++
 date = "2021-12-18T11:29:05-08:00"
 title = "These puzzles are too squishy."
-category = ["Playing A Game"]
-game = ["Semblance"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Semblance" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Semblance> does an impressive job of explaining its mechanics <i>without</i> explaining them -- like the <a href="https://en.wikipedia.org/wiki/World_1-1#Design_philosophy">infamous opening</a> of <game:Super Mario Bros.>, it places elements in such a way that you'll learn how the game works practically by accident.

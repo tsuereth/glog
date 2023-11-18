@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-13T10:59:48-07:00"
 draft = false
-game = ["Shiftlings"]
-platform = ["PC"]
-rating = ["Bad"]
+game = [ "Shiftlings" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 title = "Has issues playing with others"
-
 +++
 
 The minutes-long, excruciatingly-boring intro movie is <i>not</i> my biggest concern about <game:Shiftlings> so far.  That honor goes to the fact that my second player and I completely failed to get local co-op to work.

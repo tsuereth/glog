@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-13T21:02:07-07:00"
 draft = false
-game = ["Tiny Brains"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Tiny Brains" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Tiny game"
-
 +++
 
 Well, we're done with <game:Tiny Brains>.  Total running time was about two hours.

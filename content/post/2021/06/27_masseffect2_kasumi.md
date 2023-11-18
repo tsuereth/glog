@@ -1,10 +1,10 @@
 +++
 date = "2021-06-27T21:39:01-07:00"
 title = "A small side-hustle"
-category = ["Playing A Game"]
-game = ["Mass Effect 2: Kasumi - Stolen Memory"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Mass Effect 2: Kasumi - Stolen Memory" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Like [Zaeed](game:Mass Effect 2: Zaeed - The Price of Revenge), DLC character [Kasumi](game:Mass Effect 2: Kasumi - Stolen Memory) really doesn't measure up to <game:Mass Effect 2>'s other party members.

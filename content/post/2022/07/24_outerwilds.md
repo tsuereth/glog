@@ -1,10 +1,10 @@
 +++
 date = "2022-07-24T14:06:21-07:00"
 title = "SPACELOOP"
-category = ["Playing A Game"]
-game = ["Outer Wilds"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Outer Wilds" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Outer Wilds> has a strangely bland opening, with lifeless NPCs spewing control tutorials at you and sending you on errands to talk to <i>other</i> lifeless NPCS, but after exhausting those errands (or, when you finally get tired of them) and climbing into a ramshackle spaceship -- you sloppily blast off, gaze in awe at a weird, mystifying solar system, and (if you're as bad a [Kerbal](game:Kerbal Space Program) as I am) <i>crash into the moon</i> at fatal speed.  And <i>then</i> you <b>wake up</b> ready to do it again.

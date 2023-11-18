@@ -1,10 +1,10 @@
 +++
 date = "2020-12-19T14:11:38-08:00"
 title = "Stack Overflow"
-category = ["Playing A Game"]
-game = ["Recursed"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Recursed" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Recursed> is a pretty great brain-twister, with a strong central theme - resembling the idea of stack-based <a href="https://en.wikipedia.org/wiki/Scope_(computer_science)">scope</a>, plus occasional recursion into that stack, hence the game's title - and a surprising variety of mechanics layered on top.

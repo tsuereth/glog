@@ -1,10 +1,10 @@
 +++
 date = "2020-05-23T08:17:43-07:00"
 title = "Just 'cause it was in a charity bundle"
-category = ["Playing A Game"]
-game = ["Just Cause 3"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Just Cause 3" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 "Isn't good enough" is how I [most recently]($SiteBaseURL$2013/06/17/no-just-cause-isnt-a-good-enough-reason/) summarized <game:Just Cause 2>, and I really can't come up with a better overview for <game:Just Cause 3>.

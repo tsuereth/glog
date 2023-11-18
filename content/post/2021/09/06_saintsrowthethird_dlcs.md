@@ -1,10 +1,10 @@
 +++
 date = "2021-09-06T17:46:49-07:00"
 title = "Dismissable Content"
-category = ["Playing A Game"]
-game = ["Saints Row: The Third - Genkibowl VII", "Saints Row: The Third - Gangstas in Space", "Saints Row: The Third - The Trouble with Clones"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Saints Row: The Third - Genkibowl VII", "Saints Row: The Third - Gangstas in Space", "Saints Row: The Third - The Trouble with Clones" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 While <game:Saints Row: The Third Remastered> was a pleasant reminder of Volition's madcap sandbox formula, replaying its DLCs was a more sobering trip back in time; the DLC standards of yester-decade were pretty insubstantial.

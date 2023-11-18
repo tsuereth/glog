@@ -1,9 +1,9 @@
 +++
 date = "2019-05-18T15:52:41-07:00"
 title = "Self-imposed exile"
-category = ["Playing A Game"]
-game = ["Red Spider 2: Exiled"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Red Spider 2: Exiled" ]
+platform = [ "PC" ]
 +++
 
 Back in 2018 I said that I was "really not interested in replaying" <game:Red Spider: Vengeance>, and that leaves me in an awkward, confusing spot with its prequel <game:Red Spider 2: Exiled>.  Because the opening minutes of this game are filled with character names and relationship references that I don't remember anymore.

@@ -1,10 +1,10 @@
 +++
 date = "2019-02-10T18:26:25-08:00"
 title = "A familiar legend"
-category = ["Playing A Game"]
-game = ["The Legend of Zelda: Breath of the Wild"]
-platform = ["Switch"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "The Legend of Zelda: Breath of the Wild" ]
+platform = [ "Switch" ]
+rating = [ "Awesome" ]
 +++
 
 Two years later, many parts of [Breath of the Wild](game:The Legend of Zelda: Breath of the Wild) still ring familiar to me.  It's a trade-off for how awe-inspiring and memorable my first playthrough was; a replay doesn't feel quite as "special."

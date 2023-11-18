@@ -1,10 +1,10 @@
 +++
 date = "2018-01-28T13:01:35-08:00"
 title = "Hard Boiled Text Adventure"
-category = ["Playing A Game"]
-game = ["Red Spider: Vengeance"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Red Spider: Vengeance" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Considering it's a completely-free visual novel, a lot of things about <game:Red Spider: Vengeance> didn't surprise me -- like the typos, the simple art, the unpolished UI, and the laughably bad sound effects.  But there were two big things that really <i>did</i> surprise me.

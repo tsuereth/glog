@@ -1,10 +1,10 @@
 +++
 date = "2019-12-08T19:08:42-08:00"
 title = "Like Valkyrie Profile, but with Buddha instead of Odin"
-category = ["Playing A Game"]
-game = ["Indivisible"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Indivisible" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Every time I tell someone that "<game:Indivisible> is kinda like <game:Valkyrie Profile>," they respond with a shrug -- which is more than fair, since I've barely played Valkyrie Profile myself.  And like I said [back in 2011]($SiteBaseURL$2011/06/19/valkyrie-profile-3/) - about a game released in <i>1999</i> - surprisingly, not many titles have tried to imitate it.

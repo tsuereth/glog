@@ -1,9 +1,9 @@
 +++
 date = "2020-06-19T11:49:00-07:00"
 title = "Why bleep out 'fuck' when there's so much 'shit' going on?"
-category = ["Playing A Game"]
-game = ["The Dungeon of Naheulbeuk: The Amulet of Chaos"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "The Dungeon of Naheulbeuk: The Amulet of Chaos" ]
+platform = [ "PC" ]
 +++
 
 On the one hand, I'm impressed by how well <game:The Dungeon of Naheulbeuk: The Amulet of Chaos> (what a mouthful) adapts <a href="https://en.wikipedia.org/wiki/Editions_of_Dungeons_%26_Dragons#Dungeons_&_Dragons_5th_edition">Dungeons & Dragons</a> rules into a <i>fun</i> turn-based game.  Its complexities aren't tutorialized very well - if you aren't already familiar with how "sprint" works, or "attacks of opportunity," the in-game explanations are little help - but I like the balance it strikes between simplification and versatility.  This combat engine lets me worry about line-of-sight and backstab positioning, while keeping me from worrying about the minutiae of inventory management or spell preparation.

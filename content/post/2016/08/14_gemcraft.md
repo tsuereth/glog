@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-08-14T16:31:07-07:00"
 draft = false
-game = ["GemCraft - Chasing Shadows"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "GemCraft - Chasing Shadows" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "I found the shadow, it's like, right there guys"
-
 +++
 
 [GemCraft](game:GemCraft - Chasing Shadows) is, mechanically, an excellently well-crafted tower defense game.  And basically nothing else.

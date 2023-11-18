@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-02-06T16:28:08-08:00"
 draft = false
-game = ["The Witness (2016)"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "The Witness (2016)" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "Much more fun than the Harrison Ford movie"
-
 +++
 
 [The Witness](game:The Witness (2016)) starts slow, but ultimately has no problem matching <game:Braid> in terms of mental challenge and intellectual intrigue.

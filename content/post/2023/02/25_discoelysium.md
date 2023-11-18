@@ -1,10 +1,10 @@
 +++
 date = "2023-02-25T15:51:50-08:00"
 title = "Life sucks, let's solve a murder"
-category = ["Playing A Game"]
-game = ["Disco Elysium: The Final Cut"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Disco Elysium: The Final Cut" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 [Disco Elysium](game:Disco Elysium: The Final Cut) is a game about <b>failure</b>.  Society, infrastructure, the ambitions of almost every NPC, and - most of all - the protagonist.  <i>Oh boy</i>, talk about a failure!  The theme is common through all of the game's choices and narrative routes: this world is full of failure, and no matter how hard you try to "fix" things, there'll be plenty more failure left over.

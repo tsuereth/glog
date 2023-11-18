@@ -1,10 +1,10 @@
 +++
 date = "2021-07-04T11:47:15-07:00"
 title = "Tonight we're gonna party like it's 2099"
-category = ["Playing A Game"]
-game = ["Mass Effect 3: Citadel"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Mass Effect 3: Citadel" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Here we are at last, the end of my <game:Mass Effect Legendary Edition> journey.  And the [Citadel](game:Mass Effect 3: Citadel) DLC, even more than <game:Mass Effect 3>'s actual ending, wraps that journey up with a very satisfying bow.

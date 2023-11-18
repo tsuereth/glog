@@ -1,10 +1,10 @@
 +++
 date = "2021-01-03T22:28:20-08:00"
 title = "Ah, the old story of the cave and the machine-gun robots."
-category = ["Playing A Game"]
-game = ["Cave Story+"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Cave Story+" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 For a one-person indie game (ignoring the "+" for the moment), <game:Cave Story+> is pretty impressive.  It's got a healthy amount of content, its environments and abilities show some well-tuned variety, even the story feels unique, albeit simple.  But - even with a studio's worth of "+" polish on top - it <i>is</i> still a one-person indie game.

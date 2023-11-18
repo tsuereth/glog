@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-26T08:55:07-07:00"
 draft = false
-game = ["Uncharted: The Lost Legacy"]
-platform = ["PS4"]
-rating = ["Awesome"]
+game = [ "Uncharted: The Lost Legacy" ]
+platform = [ "PS4" ]
+rating = [ "Awesome" ]
 title = "Uncharted 5: Drake Takes a Break"
-
 +++
 
 In its second half, <game:Uncharted: The Lost Legacy> felt <i>much</i> more like other Uncharted games -- with thrilling action set-pieces punctuated by narrative-driving, character-building cutscenes (and a few puzzles).  The characters of Chloe and Nadine actually became interesting once they stopped reciting flat lines about their backstories, and started dynamically reacting to the bombastic events around them.  Not to mention, said set-pieces were of a scale and grandeur that put them among the best in the series.

@@ -1,9 +1,9 @@
 +++
 date = "2020-08-22T13:51:14-07:00"
 title = "'Ice' to see you again"
-category = ["Looking Forward To It"]
-game = ["Gotham Knights"]
-platform = ["PC"]
+category = [ "Looking Forward To It" ]
+game = [ "Gotham Knights" ]
+platform = [ "PC" ]
 +++
 
 I appreciate that <game:Gotham Knights> is being up-front about how it <i>isn't</i> a ["Batman" game](tag:Batman: Arkham).  Bruce is gone, Bats isn't even part of the title -- and whether or not Knights incorporates any stealth, the <a href="https://www.youtube.com/watch?v=hJjRRErYdO4">footage so far</a> is clearly more focused on combat.

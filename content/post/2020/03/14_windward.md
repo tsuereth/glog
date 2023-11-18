@@ -1,9 +1,9 @@
 +++
 date = "2020-03-14T18:17:23-07:00"
 title = "Yo ho, yo ho, an accountant's life for me"
-category = ["Playing A Game"]
-game = ["Windward"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Windward" ]
+platform = [ "PC" ]
 +++
 
 <game:Windward> is one of those long-since-backlogged titles where I can't even remember when I got it.  I can imagine <i>why</i>, though: sailing the open seas, completing sidequests, and trading up for bigger and more powerful <b>pirate ships</b> should scratch the same itches as <game:Rebel Galaxy> or <game:Assassin's Creed IV Black Flag> did.  What could go wrong?

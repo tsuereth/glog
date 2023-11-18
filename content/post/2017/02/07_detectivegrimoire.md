@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-02-07T18:06:09-08:00"
 draft = false
-game = ["Detective Grimoire: Secret of the Swamp"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Detective Grimoire: Secret of the Swamp" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "No match for Inspector Spacetime"
-
 +++
 
 [Detective Grimoire](game:Detective Grimoire: Secret of the Swamp) has:

@@ -1,10 +1,10 @@
 +++
 date = "2022-07-04T11:33:59-07:00"
 title = "Katana, one; me, zero"
-category = ["Playing A Game"]
-game = ["Katana Zero"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Katana Zero" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Dystopian future sci-fi.  Neon vaporwave art and music.  Sword-slinging bullet-deflection and dismemberment.  Tactical slow-mo.  What's not to like about <game:Katana Zero>?

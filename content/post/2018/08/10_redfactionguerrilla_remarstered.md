@@ -1,10 +1,10 @@
 +++
 date = "2018-08-10T08:02:09-07:00"
 title = "Mars... Mars never changes."
-category = ["Playing A Game"]
-game = ["Red Faction: Guerrilla Re-Mars-tered"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Red Faction: Guerrilla Re-Mars-tered" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Red Faction: Guerrilla and I are <i>well-acquainted</i>; nothing in its [Re-Mars-tered edition](game:Red Faction: Guerrilla Re-Mars-tered) will be a surprise to me.  Nevertheless, <a href="https://www.youtube.com/watch?v=6tgAJtvRP70">three minutes of Dunkey</a> was enough to make me yearn once more for the joy of demolition and some screwball physics.

@@ -1,4 +1,6 @@
-﻿using Markdig.Helpers;
+﻿using System.IO;
+using System.Text;
+using Markdig.Helpers;
 using Markdig.Renderers.Roundtrip;
 
 namespace GlogGenerator.MarkdownExtensions
@@ -9,25 +11,22 @@ namespace GlogGenerator.MarkdownExtensions
         {
             renderer.Write(obj.TriviaBefore);
 
-            renderer.Write("+++\n");
-#if true
-            foreach (var line in obj.Lines.Lines)
-            {
-                if (line.Slice.Length > 0)
-                {
-                    renderer.Write(line);
-                }
-                if (line.NewLine != NewLine.None)
-                {
-                    renderer.Write(line.NewLine.AsString());
-                }
-            }
-#else
+            renderer.WriteLine("+++");
+
             var tomlModel = obj.GetModel();
-            var tomlString = Tomlyn.Toml.FromModel(tomlModel);
-            renderer.Write(tomlString);
-#endif
-            renderer.Write("+++\n");
+
+            var stringBuilder = new StringBuilder();
+            using (var stringWriter = new StringWriter(stringBuilder))
+            {
+                stringWriter.NewLine = "\n";
+
+                tomlModel.WriteTo(stringWriter);
+                stringWriter.Flush();
+            }
+
+            renderer.Write(stringBuilder.ToString());
+
+            renderer.WriteLine("+++");
 
             renderer.Write(obj.TriviaAfter);
         }

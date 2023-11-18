@@ -1,9 +1,9 @@
 +++
 date = "2019-04-28T13:00:10-07:00"
 title = "A different take on Metroid Prime Pinball"
-category = ["Playing A Game"]
-game = ["Yoku's Island Express"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Yoku's Island Express" ]
+platform = [ "PC" ]
 +++
 
 <game:Yoku's Island Express> is a charming, pretty, and mechanically-solid spin on the Metroidvania concept.  Actually, a more direct comparison would be <game:Toki Tori 2+>, as this is a similarly open and interconnected map of puzzles to solve.

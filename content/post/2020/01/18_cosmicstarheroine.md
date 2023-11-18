@@ -1,10 +1,10 @@
 +++
 date = "2020-01-18T12:59:18-08:00"
 title = "A little too grounded"
-category = ["Playing A Game"]
-game = ["Cosmic Star Heroine"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Cosmic Star Heroine" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Cosmic Star Heroine> starts out promisingly enough, with an opening that gets straight to the action (reminiscent of <game:Final Fantasy VII>'s reactor raid) and a practical sci-fi aesthetic that feels like a comfortable resurrection of <game:Phantasy Star> or <game:Star Ocean>.

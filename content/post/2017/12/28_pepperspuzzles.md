@@ -1,10 +1,10 @@
 +++
 date = "2017-12-28T17:32:57-08:00"
 title = "Pepper's, Please"
-category = ["Playing A Game"]
-game = ["Pepper's Puzzles"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Pepper's Puzzles" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Pepper's Puzzles> is a humble little picross game, perhaps even humbler than <game:Paint it Back>.  It pays some welcome attention toward subtle quality-of-life features, like a randomized soundtrack and a "dynamic background" to prevent the brain equivalent of <a href="https://en.wikipedia.org/wiki/Screen_burn-in">burn-in</a>.

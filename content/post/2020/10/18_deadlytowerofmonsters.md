@@ -1,10 +1,10 @@
 +++
 date = "2020-10-18T21:06:17-07:00"
 title = "It stinks!"
-category = ["Playing A Game"]
-game = ["The Deadly Tower of Monsters"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "The Deadly Tower of Monsters" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 <game:The Deadly Tower of Monsters> isn't a parody of schlocky low-budget games, at least it's not <i>only</i> that.  It's more a parody of schlocky low-budget films, reveling in poorly-written dialog, lazy scene-setting, and low-quality special effects.

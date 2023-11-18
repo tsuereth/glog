@@ -1,10 +1,10 @@
 +++
 date = "2018-11-03T13:48:16-07:00"
 title = "Not Your Granddad's Gwent"
-category = ["Playing A Game"]
-game = ["Thronebreaker: The Witcher Tales"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Thronebreaker: The Witcher Tales" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 There are a lot of things that surprised me about [Thronebreaker](game:Thronebreaker: The Witcher Tales).  Overall, I think those surprises were positive.

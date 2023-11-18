@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-07-02T09:41:27-07:00"
 draft = false
-game = ["Prince of Persia: The Sands of Time"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Prince of Persia: The Sands of Time" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Time is like a storm ... time's pretty rad."
-
 +++
 
 Toward the end, [Sands of Time](game:Prince of Persia: The Sands of Time)'s gameplay and scenario design shows its age poorly:

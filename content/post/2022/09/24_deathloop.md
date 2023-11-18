@@ -1,10 +1,10 @@
 +++
 date = "2022-09-24T16:02:14-07:00"
 title = "Fine, one more loop"
-category = ["Playing A Game"]
-game = ["Deathloop"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Deathloop" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Game design question.

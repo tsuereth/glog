@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-05-07T22:36:03-07:00"
 draft = false
-game = ["Epistory: Typing Chronicles"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Epistory: Typing Chronicles" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "A story about a story about writing a story"
-
 +++
 
 [Epistory](game:Epistory: Typing Chronicles) <i>has</i> a story, told gradually as you explore the world, initally mysterious and progressively steeped in metaphors.  This didn't really do anything for me.

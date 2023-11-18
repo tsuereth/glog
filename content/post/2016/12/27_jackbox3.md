@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-12-27T23:36:04-08:00"
 draft = false
-game = ["The Jackbox Party Pack 3"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "The Jackbox Party Pack 3" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "Three Times the Jack, Three Times the Box"
-
 +++
 
 The Jackbox party packs are always good at having <i>some</i> minigames that parties can giddily revisit, again and again.  [Jackbox 3](game:The Jackbox Party Pack 3) is remarkable for having, if I dare say so, <i>no</i> weak entries; all of these games are a hoot.

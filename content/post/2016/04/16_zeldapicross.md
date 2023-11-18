@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-04-16T16:24:23-07:00"
 draft = false
-game = ["My Nintendo Picross: The Legend of Zelda Twilight Princess"]
-platform = ["3DS"]
-rating = ["Awesome"]
+game = [ "My Nintendo Picross: The Legend of Zelda Twilight Princess" ]
+platform = [ "3DS" ]
+rating = [ "Awesome" ]
 title = "I always thought Zelda could use more picture puzzles"
-
 +++
 
 Aside from the fact that you have to sit through Miitomo to gain enough internet-points to unlock it - and aside from the excruciatingly slow introductory tutorial - <game:My Nintendo Picross: The Legend of Zelda Twilight Princess> (or henceforth, "Picrozelda") is an astoundingly solid entry in Picross.

@@ -1,9 +1,9 @@
 +++
 date = "2020-11-21T17:03:26-08:00"
 title = "Not Sid Meier's Civilization"
-category = ["Playing A Game"]
-game = ["Rise of Nations: Extended Edition"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Rise of Nations: Extended Edition" ]
+platform = [ "PC" ]
 +++
 
 A high school friend of mine was <i>way</i> into real-time strategy games, and <game:Rise of Nations> was one of the few I actually enjoyed myself (along with <game:StarCraft>).

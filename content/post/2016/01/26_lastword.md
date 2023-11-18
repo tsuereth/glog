@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-01-26T22:43:27-08:00"
 draft = false
-game = ["Last Word"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Last Word" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "He knows most who speaks last"
-
 +++
 
 <game:Last Word> is an RPG about verbal discourse.  No, not that kind of-- not with [dialog trees](game:Mass Effect) or shit like that.  Last Word is a combat-based game where the fighting is done with character attacks and tactful submission.  You gain experience by winning arguments.  If that isn't one of the coolest game ideas you've ever heard, then, you're wrong.

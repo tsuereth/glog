@@ -1,9 +1,9 @@
 +++
 date = "2021-04-17T19:35:14-07:00"
 title = "We need to tighten up the graphics a bit."
-category = ["Playing A Game"]
-game = ["Trine 3: The Artifacts of Power"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Trine 3: The Artifacts of Power" ]
+platform = [ "PC" ]
 +++
 
 I never outright <i>said</i> that <game:Trine 2> demonstrated an ignorance of [the original game](game:Trine)'s design shortcomings, and an inordinate focus on shiny graphical effects; I just <i>thought</i> it, very loudly.  Catching up to [Trine 3](game:Trine 3: The Artifacts of Power), though, I don't think it even needs to be said -- the game gives itself away.

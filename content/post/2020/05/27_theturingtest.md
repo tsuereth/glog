@@ -1,10 +1,10 @@
 +++
 date = "2020-05-27T17:13:56-07:00"
 title = "I passed!"
-category = ["Playing A Game"]
-game = ["The Turing Test"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "The Turing Test" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Finally, a game from <a href="https://www.techradar.com/news/get-54-square-enix-pc-games-for-under-dollar40-in-this-amazing-steam-charity-bundle">that charity bundle</a> which I don't have to dismiss as "for a good cause."

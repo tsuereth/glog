@@ -1,10 +1,10 @@
 +++
 date = "2019-11-16T10:05:05-08:00"
 title = "Welcome back, Zach"
-category = ["Playing A Game"]
-game = ["Exapunks"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Exapunks" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 <game:Exapunks> has me falling in love with <tag:Zachtronics> all over again.

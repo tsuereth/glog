@@ -1,10 +1,10 @@
 +++
 date = "2017-12-02T17:38:10-08:00"
 title = "I have (most of) the power"
-category = ["Playing A Game"]
-game = ["Super Mario Odyssey"]
-platform = ["Switch"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Super Mario Odyssey" ]
+platform = [ "Switch" ]
+rating = [ "Awesome" ]
 +++
 
 Counting <game:Super Mario Odyssey>'s power moons is a little complicated.  For one thing, some of the collectible moons are actually <i>triple moons</i> that increment the counter on your spaceship by 3; but they still only count as one in the list of collectibles.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-05-21T16:40:33-07:00"
 draft = false
-game = ["Crashlands"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Crashlands" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Your assistant's name is JuiceBox"
-
 +++
 
 Sitting somewhere between <game:Minecraft> and <game:Don't Starve>, crafting-and-adventuring-survival-game <game:Crashlands> is impressive in many respects.  The premise is immediately engaging thanks to some humorous writing; the early game strikes a comfortable balance between tutorials and discovered gameplay; it has cross-platform cloud saves, so you can play it on <a href="https://www.bscotch.net/game/crashlands/">damn near anything</a>; and the game itself is pretty fun, or at least it starts out that way.

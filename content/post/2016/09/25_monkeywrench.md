@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-09-25T09:46:25-07:00"
 draft = false
-game = ["Monkey Wrench"]
-platform = ["Android"]
-rating = ["Good"]
+game = [ "Monkey Wrench" ]
+platform = [ "Android" ]
+rating = [ "Good" ]
 title = "Monkeying Around"
-
 +++
 
 <game:Monkey Wrench> is a mobile puzzle game.  I have no problem calling it "little" and "dumb."  The fact that it's occupied dozens of hours of my time over the past several months, I've spent more money on it than any other Android app (buying new puzzles), and I'm still not done with it, is ancillary to its little-ness and dumb-ness.

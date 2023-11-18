@@ -1,10 +1,10 @@
 +++
 date = "2018-01-28T10:46:12-08:00"
 title = "There are worse ways to spend 30-60 minutes"
-category = ["Playing A Game"]
-game = ["Mandagon"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Mandagon" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Mandagon> is a brief experience -- I played through it in 36 minutes, and even got all the "hidden" achivements without trying.  And it's not a complicated game; nor is it thrilling, nor very thought-provoking.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-06-25T12:26:50-07:00"
 draft = false
-game = ["Infinifactory"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Infinifactory" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Don't know why I assumed it would be so finite"
-
 +++
 
 I solved enough of the puzzles in <game:Infinifactory>'s last level to look ahead to the game's ending -- or, what I thought was the ending.  Apparently it really just unlocked <i>the second half of the game</i>.

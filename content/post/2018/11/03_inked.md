@@ -1,9 +1,9 @@
 +++
 date = "2018-11-03T10:53:42-07:00"
 title = "The Penis Mightier"
-category = ["Playing A Game"]
-game = ["Inked"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Inked" ]
+platform = [ "PC" ]
 +++
 
 These days, I think the phrase "art game" could mean one of two things.  You could use it to describe games that focus on visual spectacle, like <game:Journey> or [Epistory](game:Epistory: Typing Chronicles); you could also, snidely, use it to describe <i>avant-garde</i> "games" like <game:Dear Esther> that slog their way through a story about The Human Condition.

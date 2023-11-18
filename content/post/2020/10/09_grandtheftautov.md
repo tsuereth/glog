@@ -1,10 +1,10 @@
 +++
 date = "2020-10-09T08:48:58-07:00"
 title = "G-L-A-M-O-R-O-U-S"
-category = ["Playing A Game"]
-game = ["Grand Theft Auto V"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Grand Theft Auto V" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 I recently plugged in a new graphics card (no, <a href="https://www.pcgamer.com/nvidia-rtx-3080-stock-check-october/">not this one</a>) and needed some way to try out a few extra GBs of VRAM.  A little ironic that the 2015 version of a 2013 game was the best I could do to exercise some 2019 hardware; but what started as a simple benchmark led me to a more-or-less full replay of <game:Grand Theft Auto V>.

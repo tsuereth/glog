@@ -1,10 +1,10 @@
 +++
 date = "2017-11-06T21:23:21-08:00"
 title = "Have fun storming the tower!"
-category = ["Playing A Game"]
-game = ["Borderlands 2: Tiny Tina's Assault on Dragon Keep"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 2: Tiny Tina's Assault on Dragon Keep" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 [Tiny Tina's Assault on Dragon Keep](game:Borderlands 2: Tiny Tina's Assault on Dragon Keep) - between its irreverent Dungeons & Dragons parody, reunion of favorite characters, and really, actually well-crafted questing content - is a thankful return to form for <game:Borderlands 2>, after [Sir Hammerlock](game:Borderlands 2: Sir Hammerlock's Big Game Hunt)'s disappointing DLC.

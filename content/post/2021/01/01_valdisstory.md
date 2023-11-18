@@ -1,10 +1,10 @@
 +++
 date = "2021-01-01T09:25:44-08:00"
 title = "Abysmal City"
-category = ["Playing A Game"]
-game = ["Valdis Story: Abyssal City"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Valdis Story: Abyssal City" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Hollow Knight> recently left me itching for "more Metroidvania," and <game:Valdis Story: Abyssal City> ... did not help.

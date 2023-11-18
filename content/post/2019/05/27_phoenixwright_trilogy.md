@@ -1,10 +1,10 @@
 +++
 date = "2019-05-27T09:16:08-07:00"
 title = "Holding it..."
-category = ["Playing A Game"]
-game = ["Phoenix Wright: Ace Attorney Trilogy"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Phoenix Wright: Ace Attorney Trilogy" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Moving forward in the <game:Phoenix Wright: Ace Attorney Trilogy> collection shows incremental mechanical improvements (the psyche-locks in investigation phases), and highlights lingering mechanical shortcomings (navigating a map with more than four destinations) -- but mostly reinforces that the strength of these games <i>isn't</i> mechanical.

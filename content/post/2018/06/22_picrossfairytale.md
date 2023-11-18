@@ -1,10 +1,10 @@
 +++
 date = "2018-06-22T22:04:23-07:00"
 title = "Not by the hair on my chinny-chin-chin."
-category = ["Playing A Game"]
-game = ["Picross Fairytale"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Picross Fairytale" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 I don't know if I'm getting this title right.  Steam calls it "<game:Picross Fairytale> - nonogram: Red Riding Hood Secret" which sounds like a poor translation from ... something.  And that fits with the general production value of the game.

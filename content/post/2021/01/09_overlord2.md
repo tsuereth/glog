@@ -1,9 +1,9 @@
 +++
 date = "2021-01-09T11:22:36-08:00"
 title = "Over the hill"
-category = ["Playing A Game"]
-game = ["Overlord II"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Overlord II" ]
+platform = [ "PC" ]
 +++
 
 I was a fan of <game:Overlord>'s and [Raising Hell](game:Overlord: Raising Hell)'s sense of humor, in spite of some underwhelming gameplay.  Coming back to <game:Overlord II> a decade later is a stark reminder of those ["in spite of" problems]($SiteBaseURL$2009/09/09/overlord-6/): uninspired level design, uneven objective clarity, and confounding controls -- multiplexing minion direction with camera movement is a clear design flaw.

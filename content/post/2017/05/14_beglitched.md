@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-05-14T18:12:22-07:00"
 draft = false
-game = ["Beglitched"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Beglitched" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "No amount of nose-twitching can fix this"
-
 +++
 
 <game:Beglitched> makes a pretty good, if confusing, first impression.  I liked its fish-out-of-water introduction, which explains some, but not all, of the in-game mechanics; figuring out how the game really works is part of the puzzle.

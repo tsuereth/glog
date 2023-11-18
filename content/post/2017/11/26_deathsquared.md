@@ -1,9 +1,9 @@
 +++
 date = "2017-11-26T15:55:12-08:00"
 title = "Exponential Bullshit"
-category = ["Playing A Game"]
-game = ["Death Squared"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Death Squared" ]
+platform = [ "PC" ]
 +++
 
 I'd been looking forward to <game:Death Squared>, thinking that it looked like a fun co-op puzzler in the vein of <game:Pitfall Planet>.  Good thing I tried the demo, first.

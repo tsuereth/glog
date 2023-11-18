@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-07-12T07:20:23-07:00"
 draft = false
-game = ["Kalimba"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Kalimba" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Take a hike, Hoebear"
-
 +++
 
 Flying solo, <game:Kalimba> feels totally different.  I think that's for two reasons, one being the single-player campaign's "unique" mechanics -- like color-swapping, ice platforms, and anti-gravity.  I'm fake-quoting "unique" because, since I didn't make it very far in the co-op campaign, it's possible that these features would have popped up eventually.

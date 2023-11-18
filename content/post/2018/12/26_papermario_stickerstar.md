@@ -1,9 +1,9 @@
 +++
 date = "2018-12-26T18:07:12-08:00"
 title = "Flat."
-category = ["Playing A Game"]
-game = ["Paper Mario: Sticker Star"]
-platform = ["3DS"]
+category = [ "Playing A Game" ]
+game = [ "Paper Mario: Sticker Star" ]
+platform = [ "3DS" ]
 +++
 
 I'll confess that I didn't come into <game:Paper Mario: Sticker Star> with a very open mind.  It's the last <platform:3DS> game in my backlog, and I really wanted to pack the system up before the end of the year.

@@ -1,10 +1,10 @@
 +++
 date = "2021-07-03T19:58:38-07:00"
 title = "The cycle continues"
-category = ["Playing A Game"]
-game = ["Mass Effect 3"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Mass Effect 3" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Mass Effect 2> was <i>better</i> the second time around, because I knew what to expect and what I should focus on.  <game:Mass Effect 3>, in my [Legendary Edition](game:Mass Effect Legendary Edition) revisit, ... was not.  But it's still a fun adventure and ([now more than ever](game:Mass Effect 3: Extended Cut)) a satisfying conclusion to Shepard's story.

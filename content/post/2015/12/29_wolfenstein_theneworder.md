@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-12-29T20:08:52-08:00"
 draft = false
-game = ["Wolfenstein: The New Order"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "Wolfenstein: The New Order" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "A New Wolf for a New Era"
-
 +++
 
 I never got into the "pure" FPS sub-genre -- your Dooms, your Serious Sams, what have you.  So it's a good thing that <game:Wolfenstein: The New Order> actually has a lot more than mere "purism" going for it.  Sure, yeah, it has assault rifles and linear levels and you fight a bunch of Nazis.  And the gameplay extras don't really add up to much -- some health upgrades, some skippable weapon enhancements and perks.  But to me, the real story in New Order is ... uh.  The story.

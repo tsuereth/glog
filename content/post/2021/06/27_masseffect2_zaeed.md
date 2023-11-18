@@ -1,10 +1,10 @@
 +++
 date = "2021-06-27T21:05:51-07:00"
 title = "A dish best served cold ... or, not at all"
-category = ["Playing A Game"]
-game = ["Mass Effect 2: Zaeed - The Price of Revenge"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Mass Effect 2: Zaeed - The Price of Revenge" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 When, mere minutes ago, I effused about the quality of <game:Mass Effect 2>'s character-centric storytelling, there was an <i>implied asterisk</i>.  The [Legendary Edition](game:Mass Effect Legendary Edition) package was my first run with DLC character [Zaeed](game:Mass Effect 2: Zaeed - The Price of Revenge), and he <b>sucks</b>.

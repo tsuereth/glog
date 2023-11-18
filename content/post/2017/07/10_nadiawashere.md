@@ -1,11 +1,10 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-07-10T21:00:59-07:00"
 draft = false
-game = ["Nadia Was Here"]
-platform = ["PC"]
+game = [ "Nadia Was Here" ]
+platform = [ "PC" ]
 title = "Go Home, Nadia"
-
 +++
 
 The combat-oriented demo of <game:Nadia Was Here> managed to both impress me with its unique gameplay, and scare me away from the full version.

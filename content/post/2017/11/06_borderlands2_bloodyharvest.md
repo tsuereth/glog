@@ -1,10 +1,10 @@
 +++
 date = "2017-11-06T21:46:57-08:00"
 title = "An undead nightmare"
-category = ["Playing A Game"]
-game = ["Borderlands 2: T.K. Baha's Bloody Harvest"]
-platform = ["PC"]
-rating = ["Awful"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 2: T.K. Baha's Bloody Harvest" ]
+platform = [ "PC" ]
+rating = [ "Awful" ]
 +++
 
 Well, I can take back what I might have said about [Sir Hammerlock](game:Borderlands 2: Sir Hammerlock's Big Game Hunt) having the worst <game:Borderlands 2> DLC.  [T.K. Baha's Bloody Harvest](game:Borderlands 2: T.K. Baha's Bloody Harvest) is the new low point.

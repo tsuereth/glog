@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-12-06T20:48:04-08:00"
 draft = false
-game = ["Broken Age"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Broken Age" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Maybe not broken, but certainly aged."
-
 +++
 
 The cardinal sin of <game:Broken Age>'s second half isn't that it took so unreasonably long to release; even with more than a year since I played the first act, I still had a pretty solid memory of its important characters and story beats (a testament to the strength of the game so far).  Nor is its biggest problem in the gameplay, <i>per se</i>, although the second act does incorporate a couple of puzzles with an infuriating amount of backtracking-and-forthtracking, and one or two face-palmy "adventure game logic" scenarios.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-17T08:29:47-07:00"
 draft = false
-game = ["Shenzhen I/O"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Shenzhen I/O" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Work complete"
-
 +++
 
 I'm only "done" with <game:Shenzhen I/O> in the same sense that I'm "done" with <game:TIS-100>.  I've finished the main series of levels, which has unlocked <i>even more</i>, but I don't have the energy or interest to continue on.

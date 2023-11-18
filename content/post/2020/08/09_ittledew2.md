@@ -1,10 +1,10 @@
 +++
 date = "2020-08-09T09:54:54-07:00"
 title = "It mostly did"
-category = ["Playing A Game"]
-game = ["Ittle Dew 2+"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Ittle Dew 2+" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Ittle Dew 2+> is overall a competent and worthwhile iteration on [its predecessor](game:Ittle Dew).  It's an unabashed [Zelda](tag:The Legend of Zelda)-like with a silly and fun story, and a keen focus on gameplay fundamentals: block puzzles, varied enemies, magic items hidden in dungeons, secret caves with optional upgrades scattered around the world map.

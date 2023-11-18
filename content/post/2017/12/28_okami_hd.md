@@ -1,10 +1,10 @@
 +++
 date = "2017-12-28T22:38:13-08:00"
 title = "Long have I awaited your coming, O descendant of Nagi."
-category = ["Playing A Game"]
-game = ["Ōkami HD"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Ōkami HD" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 It's <i>kind-of</i> amazing just how up-to-date <game:Ōkami HD> feels, despite the original game's age.  It still has some flaws, but is nevertheless distinctly refreshing.

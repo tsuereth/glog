@@ -1,10 +1,10 @@
 +++
 date = "2022-04-09T12:38:42-07:00"
 title = "Horizon 2: More Horizons"
-category = ["Playing A Game"]
-game = ["Horizon Forbidden West"]
-platform = ["PS4"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Horizon Forbidden West" ]
+platform = [ "PS4" ]
+rating = [ "Awesome" ]
 +++
 
 Despite fumbling attempts to <i>improve</i> upon [Zero Dawn](game:Horizon Zero Dawn), <game:Horizon Forbidden West> plays fabulously well to the same strengths as its predecessor: telling a thrilling story in a richly fascinating world full of exhilirating action.

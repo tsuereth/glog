@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-12-27T23:36:06-08:00"
 draft = false
-game = ["LEGO Marvel's Avengers"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "LEGO Marvel's Avengers" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Okay, okay, we're avenged"
-
 +++
 
 One might wonder why there's <i>another</i> LEGO Marvel game after <game:LEGO Marvel Super Heroes>, other than "for more money."  I, for example, still wonder this.

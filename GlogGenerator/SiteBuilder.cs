@@ -110,6 +110,16 @@ namespace GlogGenerator
             this.siteDataIndex.LoadContent(igdbCache);
         }
 
+        public List<PageData> GetPages()
+        {
+            return this.siteDataIndex.GetPages();
+        }
+
+        public List<PostData> GetPosts()
+        {
+            return this.siteDataIndex.GetPosts();
+        }
+
         public void RewriteData()
         {
             this.siteDataIndex.RewriteSourceContent();

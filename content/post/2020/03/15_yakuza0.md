@@ -1,10 +1,10 @@
 +++
 date = "2020-03-15T20:07:40-07:00"
 title = "Asleep Dogs"
-category = ["Playing A Game"]
-game = ["Yakuza 0"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Yakuza 0" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 I never expected to be <i>more critical</i> of a game than both <a href="https://www.youtube.com/watch?v=FBtgI8lJ9r4">Dunkey</a> and <a href="https://www.youtube.com/watch?v=tK5iAzRWR_k">Yahtzee</a>, but, here we are.

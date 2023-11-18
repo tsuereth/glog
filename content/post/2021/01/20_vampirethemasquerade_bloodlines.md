@@ -1,10 +1,10 @@
 +++
 date = "2021-01-20T20:38:22-08:00"
 title = "What is a man? A miserable little pile of ... oh, god, your face, oh fuck you're ugly!"
-category = ["Playing A Game"]
-game = ["Vampire: The Masquerade - Bloodlines"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Vampire: The Masquerade - Bloodlines" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 It's got top-tier writing and voice acting in an immersive sandbox, filled with intriguing characters and world-building sidequests, which are all unfortunately marred by game-breaking physics, scripting, and even design bugs.  Yes, of course I'm talking about 2004's <game:Vampire: The Masquerade - Bloodlines>.

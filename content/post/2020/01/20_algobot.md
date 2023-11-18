@@ -1,10 +1,10 @@
 +++
 date = "2020-01-20T09:06:41-08:00"
 title = "Return To Manufacturer"
-category = ["Playing A Game"]
-game = ["Algo Bot"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Algo Bot" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 As far as programming-puzzle games go, <game:Algo Bot> is over-polished tripe.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-01-14T12:18:55-08:00"
 draft = false
-game = ["Hexcells Plus"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Hexcells Plus" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Plus More Good"
-
 +++
 
 <game:Hexcells> was a brief, amateurish, promising collection of puzzles.  <game:Hexcells Plus> "pluses" it.

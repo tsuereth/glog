@@ -1,10 +1,10 @@
 +++
 date = "2020-10-17T10:00:47-07:00"
 title = "Yippie kayak, other buckets!"
-category = ["Playing A Game"]
-game = ["SteamWorld Heist"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "SteamWorld Heist" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 It's definitely a more-enjoyable <i>game</i> than [Dig](game:SteamWorld Dig), but <game:SteamWorld Heist> likewise comes across as though most of its polish was applied in the wrong places.

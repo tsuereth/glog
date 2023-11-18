@@ -1,9 +1,9 @@
 +++
 date = "2018-04-10T07:44:26-07:00"
 title = "The madmen, they're actually doing it"
-category = ["Looking Forward To It"]
-game = ["Shaq Fu: A Legend Reborn"]
-platform = ["PC"]
+category = [ "Looking Forward To It" ]
+game = [ "Shaq Fu: A Legend Reborn" ]
+platform = [ "PC" ]
 +++
 
 Only a month or two after saying they would <i>have</i> a release date - and, you know, a couple years after their initial estimate - [Shaq Fu 2](game:Shaq Fu: A Legend Reborn) is <a href="https://www.youtube.com/watch?v=sRZFqQFuaGg">finally dated</a>.  I guess I can appreciate that, after this project's tumultuous history, they really wanted to be sure of the date before announcing it.

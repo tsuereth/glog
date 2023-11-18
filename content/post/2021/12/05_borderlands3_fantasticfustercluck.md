@@ -1,10 +1,10 @@
 +++
 date = "2021-12-05T21:38:34-08:00"
 title = "Wait, didn't we already do a Fantastic Voyage parody?"
-category = ["Playing A Game"]
-game = ["Borderlands 3: Psycho Krieg and the Fantastic Fustercluck"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 3: Psycho Krieg and the Fantastic Fustercluck" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Yeah -- it was [Claptastic Voyage](game:Borderlands: The Pre-Sequel - Claptastic Voyage), when Borderlands last took us inside a party member's "mindscape."  Surprisingly, [Psycho Krieg and the Fantastic Fustercluck](game:Borderlands 3: Psycho Krieg and the Fantastic Fustercluck) makes several of the same mistakes.

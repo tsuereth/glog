@@ -1,10 +1,10 @@
 +++
 date = "2019-08-24T17:28:06-07:00"
 title = "Does Whatever a Bat-Man Can"
-category = ["Playing A Game"]
-game = ["Marvel's Spider-Man"]
-platform = ["PS4"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Marvel's Spider-Man" ]
+platform = [ "PS4" ]
+rating = [ "Good" ]
 +++
 
 It would be easy to dismiss <game:Marvel's Spider-Man> as the Marvel version of <game:Batman: Arkham City>, but that's a little reductive.  After all: Spider-Man has more costumes.

@@ -1,10 +1,10 @@
 +++
 date = "2019-02-25T22:08:04-08:00"
 title = "A sequel to Crackdown"
-category = ["Playing A Game"]
-game = ["Crackdown 3"]
-platform = ["XONE"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Crackdown 3" ]
+platform = [ "XONE" ]
+rating = [ "Good" ]
 +++
 
 <game:Crackdown 3> isn't terrible.

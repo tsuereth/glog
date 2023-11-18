@@ -1,10 +1,10 @@
 +++
 date = "2021-06-29T21:07:27-07:00"
 title = "Jack of many trades, Overlord of none"
-category = ["Playing A Game"]
-game = ["Mass Effect 2: Overlord"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Mass Effect 2: Overlord" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Mass Effect 2: Overlord> is a strangely ambitious DLC pack, and while it makes admirable attempts at several mold-breaking innovations, I wouldn't really say that they paid off.

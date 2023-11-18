@@ -1,8 +1,8 @@
 +++
 date = "2018-03-11T11:17:40-07:00"
 title = "These Violent Delights"
-category = ["Video Game Theory"]
-game = ["Red Dead Redemption"]
+category = [ "Video Game Theory" ]
+game = [ "Red Dead Redemption" ]
 +++
 
 When I [tried replaying it]($SiteBaseURL$2017/05/07/sometimes-dead-is-better/) last year, I neglected to consider - or maybe just forgot about - the impact that HBO's <i>Westworld</i> series has on revisiting <game:Red Dead Redemption>.

@@ -1,9 +1,9 @@
 +++
 date = "2023-10-29T15:02:17.3041163-07:00"
 title = "Well-principled"
-category = ["Playing A Game"]
-game = ["The Talos Principle II"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "The Talos Principle II" ]
+platform = [ "PC" ]
 rating = []
 +++
 It was hard for me to imagine how a sequel to <game:The Talos Principle> would work, but <game:The Talos Principle II>'s demo did a great job of clarifying its intent.

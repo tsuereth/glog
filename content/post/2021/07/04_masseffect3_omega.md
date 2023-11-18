@@ -1,10 +1,10 @@
 +++
 date = "2021-07-04T10:34:10-07:00"
 title = "Aria T'Loak is back... for revenge!"
-category = ["Playing A Game"]
-game = ["Mass Effect 3: Omega"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Mass Effect 3: Omega" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 [Overlord](game:Mass Effect 2: Overlord) tried to tell an original side-story in Mass Effect's universe, but didn't ... try hard enough; really, none of <game:Mass Effect 2>'s DLCs felt like they "put in the effort."  [Omega](game:Mass Effect 3: Omega) shows what happens when DLC <i>does</i> put in the effort.  (It's good!)

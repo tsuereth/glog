@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-12-26T23:08:04-08:00"
 draft = false
-game = ["Paint it Back"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "Paint it Back" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "Not to be confused with the similarly-named Rolling Stones song"
-
 +++
 
 I fucking love picross!  Nonograms!  Shit is tight.  And apparently I'm <a href="http://www.penny-arcade.com/news/post/2015/12/20/all-through-the-house">not the only one</a> -- yes, we are a cult in very high esteem/notoriety/infamy.

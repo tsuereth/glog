@@ -1,10 +1,10 @@
 +++
 date = "2020-11-11T07:15:42-08:00"
 title = "Romancing the Cintamani Stone"
-category = ["Playing A Game"]
-game = ["Uncharted 2: Among Thieves"]
-platform = ["PS4"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Uncharted 2: Among Thieves" ]
+platform = [ "PS4" ]
+rating = [ "Good" ]
 +++
 
 My recent backlog-burning has been going pretty "<rating:Meh>", so I'd been looking forward to playing a <i>good</i> game again.  And [Uncharted 2](game:Uncharted 2: Among Thieves) delivers well-enough.

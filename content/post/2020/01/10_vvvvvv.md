@@ -1,10 +1,10 @@
 +++
 date = "2020-01-10T23:35:39-08:00"
 title = "VVVVVV + X"
-category = ["Playing A Game", "Video Game Theory"]
-game = ["VVVVVV"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game", "Video Game Theory" ]
+game = [ "VVVVVV" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 There is a certain amount of... I guess, <i>existential angst</i> which comes from knowing that an excellent game like <game:VVVVVV> is powered by <a href="http://distractionware.com/blog/2020/01/vvvvvv-is-now-open-source/">a switch statement with <tt>case 4099</tt></a>.

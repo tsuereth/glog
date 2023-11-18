@@ -1,10 +1,10 @@
 +++
 date = "2019-08-23T19:56:49-07:00"
 title = "Not to be confused with the bizarrely-pretentious question-and-answer site."
-category = ["Playing A Game"]
-game = ["Qora"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Qora" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 <game:Qora> is a side-scroller entry in the "Walking Simulator" genre.  Which I guess makes it a "Go Left or Right Simulator."

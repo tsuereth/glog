@@ -1,10 +1,10 @@
 +++
 date = "2020-10-25T15:51:28-07:00"
 title = "Slow Times at Ridgemont High"
-category = ["Playing A Game"]
-game = ["Super Daryl Deluxe"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Super Daryl Deluxe" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 <game:Super Daryl Deluxe> is ambitious in its attempt to combine action-platforming adventure, action-RPG combat, and cynical-teenager fantasy storytelling.  It's <i>too</i> ambitious.  It doesn't pull off any of these things.

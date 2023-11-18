@@ -1,10 +1,10 @@
 +++
 date = "2018-04-27T20:17:23-07:00"
 title = "Witched"
-category = ["Playing A Game"]
-game = ["The Witcher 2: Assassins of Kings - Enhanced Edition"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "The Witcher 2: Assassins of Kings - Enhanced Edition" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Back in, <i>wow, January?</i>, I had already resolved to skip over a lot of [Witcher 2](game:The Witcher 2: Assassins of Kings - Enhanced Edition)'s gameplay - the combat, basically - in order to enjoy the story.  So, after my [last post]($SiteBaseURL$2018/01/22/i-am-the-one-who-witches/), I strolled around the town of Flotsam looking for sidequests and colorful NPC chatter.

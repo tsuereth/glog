@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-04-07T14:49:41-07:00"
 draft = false
-game = ["Phoenix Wright: Ace Attorney - Spirit of Justice: Phoenix Wright - Asinine Attorney"]
-platform = ["3DS"]
-rating = ["Awful"]
+game = [ "Phoenix Wright: Ace Attorney - Spirit of Justice: Phoenix Wright - Asinine Attorney" ]
+platform = [ "3DS" ]
+rating = [ "Awful" ]
 title = "Paid Fanfiction"
-
 +++
 
 [Phoenix Wright: Asinine Attorney](game:Phoenix Wright: Ace Attorney - Spirit of Justice: Phoenix Wright - Asinine Attorney) is <i>not</i> the real "Special Episode" DLC for [Spirit of Justice](game:Phoenix Wright: Ace Attorney - Spirit of Justice).  But it <i>does</i> cost $3.99 (and is bundled with a 3DS home menu theme).

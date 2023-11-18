@@ -1,10 +1,10 @@
 +++
 date = "2020-05-25T17:21:40-07:00"
 title = "Still no explosions!"
-category = ["Playing A Game"]
-game = ["Thief"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Thief" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 [Six years later]($SiteBaseURL$2014/02/15/seventeen-minutes-and-no-explosions/), thanks to that same <a href="https://www.techradar.com/news/get-54-square-enix-pc-games-for-under-dollar40-in-this-amazing-steam-charity-bundle">charity bundle</a> that's been getting me in such trouble recently, I finally bit the bullet on the <game:Thief> reboot.  And it's roughly what I expected, more-or-less.

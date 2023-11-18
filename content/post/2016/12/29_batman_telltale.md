@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-12-29T17:37:49-08:00"
 draft = false
-game = ["Batman: The Telltale Series"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Batman: The Telltale Series" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "The Wayne Among Us"
-
 +++
 
 In its first episode, <game:Batman: The Telltale Series> does a fair job of living up to the standard Telltale set in <game:The Wolf Among Us>.  But I wouldn't really call that a good thing -- this is a Batman game, and like it or not, the standards are different.

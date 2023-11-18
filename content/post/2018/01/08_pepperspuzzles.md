@@ -1,10 +1,10 @@
 +++
 date = "2018-01-08T07:18:20-08:00"
 title = "Sincere flattery"
-category = ["Playing A Game"]
-game = ["Pepper's Puzzles"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Pepper's Puzzles" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Pepper's Puzzles> sometimes feels like it's testing the boundaries of "<a href="https://www.copyright.gov/fair-use/">fair use</a>."

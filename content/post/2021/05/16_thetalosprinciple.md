@@ -1,10 +1,10 @@
 +++
 date = "2021-05-16T14:35:30-07:00"
 title = "The Talos Practice"
-category = ["Playing A Game"]
-game = ["The Talos Principle"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "The Talos Principle" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 I loved the demo [back in 2014]($SiteBaseURL$2014/11/06/praise-talos/), and I specifically name-checked it [again in 2016]($SiteBaseURL$2016/02/06/much-more-fun-than-the-harrison-ford-movie/); but all this time, I've been sleeping on <game:The Talos Principle> -- assuming (or hoping) that it would remain playable, and fun, years later.

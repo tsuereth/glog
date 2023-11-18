@@ -1,10 +1,10 @@
 +++
 date = "2019-03-03T13:49:11-08:00"
 title = "Edward Snowden Simulator"
-category = ["Playing A Game"]
-game = ["NITE Team 4"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "NITE Team 4" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:NITE Team 4> scores points on its "hacking game" contemporaries for being, as far as I've seen, the most <i>realistic</i> simulator of practical cyber offense.

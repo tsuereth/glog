@@ -1,10 +1,10 @@
 +++
 date = "2023-07-23T13:27:13-07:00"
 title = "Re-climbing the Orc Chart"
-category = ["Playing A Game"]
-game = ["Middle-earth: Shadow of Mordor", "Middle-earth: Shadow of Mordor - Lord of the Hunt", "Middle-earth: Shadow of Mordor - The Bright Lord"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Middle-earth: Shadow of Mordor", "Middle-earth: Shadow of Mordor - Lord of the Hunt", "Middle-earth: Shadow of Mordor - The Bright Lord" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <i>Oh yeah</i>, there's a new [Lord of the Rings game](game:The Lord of the Rings: Gollum) out!, and ... <a href="https://opencritic.com/game/13215/the-lord-of-the-rings-gollum">hmm, you know what</a>.  Maybe I'll replay [Shadow of Mordor](game:Middle-earth: Shadow of Mordor) instead.

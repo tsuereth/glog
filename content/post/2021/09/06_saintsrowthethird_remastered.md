@@ -1,10 +1,10 @@
 +++
 date = "2021-09-06T16:53:49-07:00"
 title = "The Boss Is Back In Town"
-category = ["Playing A Game"]
-game = ["Saints Row: The Third Remastered"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Saints Row: The Third Remastered" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 A decade later, <game:Saints Row: The Third Remastered> still feels <b>pretty good</b>.

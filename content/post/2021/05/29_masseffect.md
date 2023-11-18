@@ -1,10 +1,10 @@
 +++
 date = "2021-05-29T13:35:18-07:00"
 title = "Jane Shepard Rides Again"
-category = ["Playing A Game"]
-game = ["Mass Effect"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Mass Effect" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Even in its time, the first <game:Mass Effect> was a mixed bag.  The [Legendary Edition](game:Mass Effect Legendary Edition) remaster shows that its good qualities still hold up; despite its bad qualities, which the remaster has ... also preserved.

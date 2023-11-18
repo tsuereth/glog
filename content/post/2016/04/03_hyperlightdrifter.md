@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-04-03T12:26:58-07:00"
 draft = false
-game = ["Hyper Light Drifter"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Hyper Light Drifter" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Hyperspace!"
-
 +++
 
 [Hyper Light Drifer](game:Hyper Light Drifter) is pretty challenging.  Part of that challenge is from some good old-fashioned action game design: Learning enemy attack patterns, dodging and striking judiciously, and being paranoid about your surroundings.  With a few exceptions so far, I haven't been terribly inconvenienced by death, so I'm feeling encouraged to try failed encounters again (and again, and again) to truly figure them out.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-12-27T23:36:07-08:00"
 draft = false
-game = ["Monkey Wrench"]
-platform = ["Android"]
-rating = ["Good"]
+game = [ "Monkey Wrench" ]
+platform = [ "Android" ]
+rating = [ "Good" ]
 title = "Monkey See, Monkey Do"
-
 +++
 
 Other than [Skyrim](game:The Elder Scrolls V: Skyrim - Special Edition), this is the game I've been dumping the most hours into.

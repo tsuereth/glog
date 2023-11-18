@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-02-04T15:31:22-08:00"
 draft = false
-game = ["Sethian"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Sethian" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Sethian, motherfucker, do you speak it!"
-
 +++
 
 <game:Sethian> has a really fascinating premise and a very impressive design, but wastes itself on an incomplete plot and a disappointing narrative.

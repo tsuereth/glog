@@ -1,10 +1,10 @@
 +++
 date = "2021-08-08T12:49:55-07:00"
 title = "Two left feet"
-category = ["Playing A Game"]
-game = ["Biped"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Biped" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Biped> seemed like a neat little co-op adventure when I started it back in January, but one frustrating level turned into a "break" that, six months later, it seems safe to assume won't get un-broken.

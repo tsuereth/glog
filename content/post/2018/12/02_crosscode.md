@@ -1,10 +1,10 @@
 +++
 date = "2018-12-02T16:56:26-08:00"
 title = "A 'Spruce Goose' of an indie JRPG"
-category = ["Playing A Game"]
-game = ["CrossCode"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "CrossCode" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:CrossCode> gets a lot "right," and achieves a lot in terms of mechanical and world design.  But I <i>hated</i> playing it, just as much as I enjoyed it.

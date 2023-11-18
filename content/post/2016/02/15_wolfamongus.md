@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-02-15T21:16:35-08:00"
 draft = false
-game = ["The Wolf Among Us"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "The Wolf Among Us" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Who's Afraid of the Big, Bad Dialog Tree"
-
 +++
 
 <game:The Wolf Among Us> succeeds due to the strength of its overall story, and especially of its titular character -- despite the specter of Telltale's continual [writing blunders](game:The Walking Dead: Season One).

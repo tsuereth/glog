@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-12-28T17:40:58-08:00"
 draft = false
-game = ["The Elder Scrolls V: Skyrim - Special Edition"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "The Elder Scrolls V: Skyrim - Special Edition" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "Now With 50% More Special"
-
 +++
 
 So the [Special Edition](game:The Elder Scrolls V: Skyrim - Special Edition) of Skyrim has updated graphics, and unfortunately reintroduces ages-old bugs ([gee, where have I heard that before](game:BioShock Remastered)).  Sure thing -- whatever.

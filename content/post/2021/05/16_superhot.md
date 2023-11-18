@@ -1,10 +1,10 @@
 +++
 date = "2021-05-16T21:46:43-07:00"
 title = "SUPERHOT is the most innov-- I mean, it's a fun game."
-category = ["Playing A Game"]
-game = ["SuperHot"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "SuperHot" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:SuperHot> certainly doesn't wear out its welcome.

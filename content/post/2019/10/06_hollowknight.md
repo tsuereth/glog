@@ -1,10 +1,10 @@
 +++
 date = "2019-10-06T11:16:27-07:00"
 title = "Anything but Hollow"
-category = ["Playing A Game"]
-game = ["Hollow Knight"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Hollow Knight" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 I've been "playing" <game:Hollow Knight> for about three months now.  In truth I was only <i>actively</i> playing it for a few weeks back in July -- and while those few weeks were quite good, since then I've <i>lacked the courage</i> to come back to it.

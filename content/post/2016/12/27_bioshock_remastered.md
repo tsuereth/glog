@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-12-27T23:36:05-08:00"
 draft = false
-game = ["BioShock Remastered"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "BioShock Remastered" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Re-loaded, Re-spliced, and Re-harvested"
-
 +++
 
 Technologically, <game:BioShock Remastered> holds up pretty good -- the textures are a little fuzzy, and the geometry is a little sharp, but it's a solid update to a ... yikes, really? <b>nine year old</b> game.  (Setting aside the depressing return of the game's original launch bugs, like crazy FOV and mouse acceleration, and random crashes in the middle of Hephaestus.)

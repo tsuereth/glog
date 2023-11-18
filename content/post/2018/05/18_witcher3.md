@@ -1,10 +1,10 @@
 +++
 date = "2018-05-18T07:49:20-07:00"
 title = "I'm Geralt of Rivia and this is my favorite brothel in Novigrad."
-category = ["Playing A Game"]
-game = ["The Witcher 3: Wild Hunt"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "The Witcher 3: Wild Hunt" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 Geralt, being a man of considerable influence, has many decisions to make throughout his journey.  And as I've progressed in that journey, these decisions have come to resemble some of my least favorite parts of [BioWare's games](tag:BioWare), [Telltale's games](tag:Telltale Games), <i>et al.</i>  More and more, I'm finding that the choice descriptions aren't really what I expected.

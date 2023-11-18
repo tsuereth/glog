@@ -1,10 +1,10 @@
 +++
 date = "2017-11-09T21:30:55-08:00"
 title = "Thank you, ma'am"
-category = ["Playing A Game"]
-game = ["Borderlands 2: Sir Hammerlock vs. the Son of Crawmerax"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 2: Sir Hammerlock vs. the Son of Crawmerax" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 The previous Headhunter packs were holiday-themed.  [Sir Hammerlock vs. the Son of Crawmerax](game:Borderlands 2: Sir Hammerlock vs. the Son of Crawmerax) looks like it <i>was</i> going to be for Easter - there's a "fertility event" and there are a bunch of pastel-colored eggs - but then they lost interest, and dropped the holiday connection altogether.

@@ -1,10 +1,10 @@
 +++
 date = "2018-01-24T22:53:25-08:00"
 title = "Don't hold it!"
-category = ["Playing A Game"]
-game = ["Regeria Hope Episode 1"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Regeria Hope Episode 1" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 Considering it's a fan-game that's clearly ... <i>inspired by</i> <tag:Ace Attorney>, [Regeria Hope](game:Regeria Hope Episode 1) brings a couple of surprisingly-fresh ideas to the table.

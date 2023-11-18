@@ -1,10 +1,10 @@
 +++
 date = "2022-09-11T13:49:55-07:00"
 title = "Forget the Titan, watch me surf this sheer wall"
-category = ["Playing A Game"]
-game = ["Titanfall 2"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Titanfall 2" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 It's been a while since my last fully linear, rollercoaster-ride shooter campaign.  (I checked! it was [Wolfenstein II](game:Wolfenstein II: The New Colossus).)  Your everyday <tag:Call of Duty> or <tag:Battlefield> entry just doesn't catch my eye; but <game:Titanfall 2> did, with its generally positive <a href="https://opencritic.com/game/2834/titanfall-2">internet reputation</a> and its - well - <i>big ol' robots</i>.

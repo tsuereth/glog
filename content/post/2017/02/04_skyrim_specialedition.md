@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-02-04T11:33:18-08:00"
 draft = false
-game = ["The Elder Scrolls V: Skyrim - Special Edition"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "The Elder Scrolls V: Skyrim - Special Edition" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "I used to be an adventurer, like you..."
-
 +++
 
 I got 100% of the Steam achievements for [Skyrim](game:The Elder Scrolls V: Skyrim - Special Edition), and I barely cheated at all!

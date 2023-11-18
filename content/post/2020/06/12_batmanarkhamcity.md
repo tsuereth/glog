@@ -1,10 +1,10 @@
 +++
 date = "2020-06-12T10:56:52-07:00"
 title = "Escape from Arkham City"
-category = ["Playing A Game"]
-game = ["Batman: Arkham City"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Batman: Arkham City" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 <game:Batman: Arkham City> is still a super-fun implementation of Batman's rogues gallery in an atmospheric open-world sandbox.  <i>But...</i> revisiting the game does shine more light on its shortcomings than I saw in 2011.

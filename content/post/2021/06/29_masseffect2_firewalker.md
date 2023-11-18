@@ -1,10 +1,10 @@
 +++
 date = "2021-06-29T18:26:49-07:00"
 title = "What a piece of junk!"
-category = ["Playing A Game"]
-game = ["Mass Effect 2: Firewalker Pack"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Mass Effect 2: Firewalker Pack" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 <game:Mass Effect>'s Mako tank sections were <i>so bad</i>, that <game:Mass Effect 2>'s launch-day content didn't have <i>any</i> driving sections.  I'd argue that it should have stayed that way.  Alas...

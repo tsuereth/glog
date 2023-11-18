@@ -1,10 +1,10 @@
 +++
 date = "2021-12-18T21:36:45-08:00"
 title = "Gotta Go At A Moderate Speed"
-category = ["Playing A Game"]
-game = ["Tembo the Badass Elephant"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Tembo the Badass Elephant" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 [Tembo](game:Tembo the Badass Elephant) is a better [Sonic](tag:Sonic The Hedgehog), but not by enough.

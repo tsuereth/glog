@@ -1,10 +1,10 @@
 +++
 date = "2023-04-11T21:55:53-07:00"
 title = "Falloutfly Borderfect"
-category = ["Playing A Game"]
-game = ["The Outer Worlds"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "The Outer Worlds" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:The Outer Worlds> builds squarely on top of [Bethesda](tag:Bethesda Game Studios)'s wildly successful first-person RPG formula, and takes unabashed inspiration from some of science fiction's most thrilling and memorable stories; and yet, I couldn't help feeling <b>bored</b> through much of my time with it.

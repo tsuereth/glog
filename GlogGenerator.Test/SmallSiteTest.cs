@@ -2,7 +2,9 @@ using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Text;
 using GlogGenerator.Data;
+using GlogGenerator.MarkdownExtensions;
 using GlogGenerator.RenderState;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -61,6 +63,42 @@ namespace GlogGenerator.Test
                 var expectedFileBytes = File.ReadAllBytes(expectedFilePath);
                 var actualFileBytes = File.ReadAllBytes(actualFilePath);
                 CollectionAssert.AreEqual(expectedFileBytes, actualFileBytes, $"Output file {relativeFilePath} contents differed from expected");
+            }
+        }
+
+        [TestMethod]
+        public void TestRewriteInputFiles()
+        {
+            using var loggerFactory = LoggerFactory.Create(c => c.AddConsole());
+
+            var logger = loggerFactory.CreateLogger<Program>();
+
+            var inputFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest");
+            var templateFilesBasePath = string.Empty;
+            var staticSiteOutputBasePath = string.Empty;
+
+            var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
+            var configData = ConfigData.FromFilePaths(configFilePath, inputFilesBasePath, templateFilesBasePath);
+            var builder = new SiteBuilder(logger, configData);
+
+            builder.UpdateDataIndex();
+
+            foreach (var page in builder.GetPages())
+            {
+                var rewrittenFileText = page.MdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+
+                var expectedFileBytes = File.ReadAllBytes(page.SourceFilePath);
+                var actualFileBytes = Encoding.UTF8.GetBytes(rewrittenFileText);
+                CollectionAssert.AreEqual(expectedFileBytes, actualFileBytes, $"Output file {page.SourceFilePath} contents differed from expected");
+            }
+
+            foreach (var post in builder.GetPosts())
+            {
+                var rewrittenFileText = post.MdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+
+                var expectedFileBytes = File.ReadAllBytes(post.SourceFilePath);
+                var actualFileBytes = Encoding.UTF8.GetBytes(rewrittenFileText);
+                CollectionAssert.AreEqual(expectedFileBytes, actualFileBytes, $"Output file {post.SourceFilePath} contents differed from expected");
             }
         }
     }

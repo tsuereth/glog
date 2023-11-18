@@ -1,10 +1,10 @@
 +++
 date = "2018-11-17T12:14:44-08:00"
 title = "The origin, and demise"
-category = ["Playing A Game"]
-game = ["Cubots: The Origins"]
-platform = ["PC"]
-rating = ["Awful"]
+category = [ "Playing A Game" ]
+game = [ "Cubots: The Origins" ]
+platform = [ "PC" ]
+rating = [ "Awful" ]
 +++
 
 The trailer for [Cubots](game:Cubots: The Origins) looked so clean and polished, I was kinda surprised at how inexpensive the game is.  Well... you get what you pay for.

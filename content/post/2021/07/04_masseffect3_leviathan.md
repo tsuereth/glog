@@ -1,10 +1,10 @@
 +++
 date = "2021-07-04T11:16:36-07:00"
 title = "An ancient, unfathomable evil is back... for revenge!"
-category = ["Playing A Game"]
-game = ["Mass Effect 3: Leviathan"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Mass Effect 3: Leviathan" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 [Leviathan](game:Mass Effect 3: Leviathan) taps into a theme that [Arrival](game:Mass Effect 2: Arrival) just hinted at: Reaper research leading to a <i>dark place</i>.  Leviathan takes that ball and runs with it all the way into cosmic horror, shades of <a href="https://www.imdb.com/title/tt0119081/">Event Horizon</a> territory.

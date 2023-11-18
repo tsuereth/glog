@@ -1,10 +1,10 @@
 +++
 date = "2020-06-21T22:17:56-07:00"
 title = "A ... small matter."
-category = ["Playing A Game"]
-game = ["Batman: Arkham Knight - A Matter of Family"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Batman: Arkham Knight - A Matter of Family" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 My understanding of the [Arkham Knight](game:Batman: Arkham Knight) DLC situation had been that, while most of its "story" packs were in the same neighborhood as the [Harley Quinn pre-order bonus](game:Batman: Arkham Knight - Harley Quinn Story Pack) - which I previously described as a ["pretty baffling disappointment"]($SiteBaseURL$2015/06/30/almost-the-game-gotham-deserves/) - the Batgirl-centered [A Matter of Family](game:Batman: Arkham Knight - A Matter of Family) was much more substantial and worthwhile.

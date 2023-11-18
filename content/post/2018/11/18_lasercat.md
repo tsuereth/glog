@@ -1,10 +1,10 @@
 +++
 date = "2018-11-18T19:59:14-08:00"
 title = "A cute little fuzzball of a game"
-category = ["Playing A Game"]
-game = ["LaserCat"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "LaserCat" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:LaserCat> is a fairly basic, fairly short platform-based Metroidvania-ish with a fun sense of humor, and a surprising amount of <i>Mystery Science Theater 3000</i> references.

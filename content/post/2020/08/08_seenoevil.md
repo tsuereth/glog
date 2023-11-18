@@ -1,10 +1,10 @@
 +++
 date = "2020-08-08T13:20:25-07:00"
 title = "No witnesses"
-category = ["Playing A Game"]
-game = ["See No Evil"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "See No Evil" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:See No Evil> does a respectable job of twisting and augmenting familiar puzzle mechanics.  Sure, you push blocks to hold down buttons, and reflect <s>lasers</s> <i>sound waves</i> using <s>angled mirrors</s> <i>bent pipes</i> -- but you also use these tricks to manipulate enemies into hitting unreachable switches, or to distract them away from catching you.

@@ -1,10 +1,10 @@
 +++
 date = "2020-02-01T11:01:26-08:00"
 title = "Infuriating"
-category = ["Playing A Game"]
-game = ["Furi"]
-platform = ["PC"]
-rating = ["Awful"]
+category = [ "Playing A Game" ]
+game = [ "Furi" ]
+platform = [ "PC" ]
+rating = [ "Awful" ]
 +++
 
 <game:Furi> is a bastard of a game.

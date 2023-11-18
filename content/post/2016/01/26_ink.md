@@ -1,11 +1,10 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-01-26T23:51:06-08:00"
 draft = false
-game = ["Ink"]
-platform = ["PC"]
+game = [ "Ink" ]
+platform = [ "PC" ]
 title = "Splat"
-
 +++
 
 At first, <game:Ink> reminded me a lot of <game:VVVVVV>, for its lack of hesitation in killing you rapidly and frequently.  Actually, that's kind of the point; Ink reveals the level layout with paint splatter when you die.  Pretty fun!

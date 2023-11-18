@@ -1,10 +1,10 @@
 +++
 date = "2018-10-28T13:15:04-07:00"
 title = "I hate these fucking fire wolves"
-category = ["Playing A Game"]
-game = ["Horizon Zero Dawn: The Frozen Wilds"]
-platform = ["PS4"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Horizon Zero Dawn: The Frozen Wilds" ]
+platform = [ "PS4" ]
+rating = [ "Good" ]
 +++
 
 No, [The Frozen Wilds](game:Horizon Zero Dawn: The Frozen Wilds) didn't wrap up [Horizon](game:Horizon Zero Dawn)'s cliffhanger ending.  I guess they're saving that for a sequel.

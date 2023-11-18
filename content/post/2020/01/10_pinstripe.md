@@ -1,10 +1,10 @@
 +++
 date = "2020-01-10T19:38:01-08:00"
 title = "More British-accented insults than a Golden Globe Awards show"
-category = ["Playing A Game"]
-game = ["Pinstripe"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Pinstripe" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 <game:Pinstripe> is more tedious and boring than you'd expect for a game that's only two or three hours long.

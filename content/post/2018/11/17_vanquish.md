@@ -1,10 +1,10 @@
 +++
 date = "2018-11-17T12:50:09-08:00"
 title = "I liked you better when I thought you were dead."
-category = ["Playing A Game"]
-game = ["Vanquish"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Vanquish" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Nearly a decade later, the PC re-release of <game:Vanquish> is a little more underwhelming (less whelming?) than I expected.

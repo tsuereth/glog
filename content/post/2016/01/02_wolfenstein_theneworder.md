@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-01-02T15:10:55-08:00"
 draft = false
-game = ["Wolfenstein: The New Order"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "Wolfenstein: The New Order" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "Business is a-boomin"
-
 +++
 
 There is a very short list of complaints I have against [The New Order](game:Wolfenstein: The New Order): The two-timelines mechanic is not compelling enough to make me start a second playthrough; collectibles and upgrades in previous chapters can be missed forever (which, again, not quite compelling enough for a replay); and two or three encounters felt unfair, requiring a specific set of tactics and maneuvers to survive.

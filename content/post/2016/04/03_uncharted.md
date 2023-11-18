@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-04-03T12:27:02-07:00"
 draft = false
-game = ["Uncharted: Drake's Fortune"]
-platform = ["PS4"]
-rating = ["Bad"]
+game = [ "Uncharted: Drake's Fortune" ]
+platform = [ "PS4" ]
+rating = [ "Bad" ]
 title = "Unpolished: Drake's Misfortune"
-
 +++
 
 Playing [the first Uncharted](game:Uncharted: Drake's Fortune) again on <platform:PS4> - more poignantly, playing it again after Drake's [second](game:Uncharted 2: Among Thieves) and [third](game:Uncharted 3: Drake's Deception) outings - it's really hard to ignore its flaws.  The sloppy gunplay, and that there's <i>so much</i> of it, with wave after wave of faceless militia inconveniently interrupting the storytelling--

@@ -1,11 +1,10 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-07-02T23:28:06-07:00"
 draft = false
-game = ["Stories Untold"]
-platform = ["PC"]
+game = [ "Stories Untold" ]
+platform = [ "PC" ]
 title = "...shall remain untold."
-
 +++
 
 The <a href="http://store.steampowered.com/app/558420/">free demo</a> for <game:Stories Untold> conveys a few messages very powerfully:

@@ -1,10 +1,10 @@
 +++
 date = "2021-03-03T13:50:35-08:00"
 title = "I'm going on two-thirds of an adventure!"
-category = ["Playing A Game"]
-game = ["LEGO The Hobbit"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "LEGO The Hobbit" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Let's pull this band-aid off quickly: <game:LEGO The Hobbit> doesn't tell the entire <i>The Hobbit</i> story.  After the dwarves re-invade Erebor, and Smaug prepares to attack Lake-town, <a href="https://en.wikipedia.org/wiki/Lego_The_Hobbit_(video_game)#Cancelled_The_Battle_of_the_Five_Armies_DLC">the game just sort of... ends.</a>

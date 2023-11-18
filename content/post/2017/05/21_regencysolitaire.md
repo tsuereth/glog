@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-05-21T12:10:37-07:00"
 draft = false
-game = ["Regency Solitaire"]
-platform = ["PC"]
-rating = ["Bad"]
+game = [ "Regency Solitaire" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 title = "How Droll"
-
 +++
 
 <game:Regency Solitaire> isn't what I expected, in a few different ways.

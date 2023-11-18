@@ -1,10 +1,10 @@
 +++
 date = "2020-09-20T11:41:45-07:00"
 title = "This Deathwar is no good, we need a new one"
-category = ["Playing A Game"]
-game = ["3030 Deathwar Redux"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "3030 Deathwar Redux" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 There are [specific tastes](game:Exapunks), there are [guilty pleasures](game:The Saboteur), and then there are games like <game:3030 Deathwar Redux> that - despite tapping into some of my most primal video game interests - I just can't recommend.

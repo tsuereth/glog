@@ -1,9 +1,9 @@
 +++
 date = "2019-10-12T23:20:51-07:00"
 title = "Still waiting for Factorio 1.0"
-category = ["Playing A Game"]
-game = ["Mindustry"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Mindustry" ]
+platform = [ "PC" ]
 +++
 
 It looks like something in the vein of <game:Factorio> or <game:Infinifactory>, but my experience with <game:Mindustry> wasn't as engaging as either of those games.

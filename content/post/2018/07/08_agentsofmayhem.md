@@ -1,10 +1,10 @@
 +++
 date = "2018-07-08T18:07:57-07:00"
 title = "Agents of Meh"
-category = ["Playing A Game"]
-game = ["Agents of Mayhem"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Agents of Mayhem" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 I spent a week with <game:Agents of Mayhem>, and I ... really <i>wanted</i> to like it.  Its fundamental mechanics are fun enough, and it has a bunch of cool ideas for expanding <tag:Volition>'s typical comfort zone.  But all of that ambition is brought low by major missteps -- often, <i>confusing</i> missteps, given what <game:Saints Row IV> achieved.

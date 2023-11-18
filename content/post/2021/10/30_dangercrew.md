@@ -1,10 +1,10 @@
 +++
 date = "2021-10-30T17:41:45-07:00"
 title = "Still incubating"
-category = ["Playing A Game"]
-game = ["Danger Crew"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Danger Crew" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Danger Crew>, a turn-based RPG themed around computer programming and tech culture, is a cute idea -- and not much more.

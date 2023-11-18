@@ -1,9 +1,9 @@
 +++
 date = "2020-02-09T14:41:56-08:00"
 title = "Now you're thinking with voxels"
-category = ["Playing A Game"]
-game = ["Voxelgram"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Voxelgram" ]
+platform = [ "PC" ]
 +++
 
 I went into the <game:Voxelgram> demo expecting it to be exactly like <game:Picross 3D>, and it <i>is</i> extremely similar.  But, thanks to PCs generally having larger displays than a Nintendo DS, Voxelgram is able to pull off some much larger puzzles.  Just in its first 10 or 20 puzzles, I think they've already exceeded Picross 3D's peak size and complexity.

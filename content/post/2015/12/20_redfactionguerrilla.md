@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-12-20T13:15:47-08:00"
 draft = false
-game = ["Red Faction: Guerrilla"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "Red Faction: Guerrilla" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "The Red Faction is dead; Long live the Red Faction"
-
 +++
 
 Six years later, <game:Red Faction: Guerrilla> still has no problem absolutely entrancing me.  Of course it helps that the "Steam Edition" released last year included a nice renderer upgrade; Guerrilla looks better than a six-year-old game has any right to.

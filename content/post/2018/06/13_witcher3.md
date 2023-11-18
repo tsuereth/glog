@@ -1,10 +1,10 @@
 +++
 date = "2018-06-13T07:07:10-07:00"
 title = "Good luck on the Path"
-category = ["Playing A Game"]
-game = ["The Witcher 3: Wild Hunt"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "The Witcher 3: Wild Hunt" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 One more aspect of [Witcher 3](game:The Witcher 3: Wild Hunt) - actually, of the whole series - that I've been saving up praise for is <a href="https://www.imdb.com/name/nm0168339/">Geralt's voice actor</a>.

@@ -1,10 +1,10 @@
 +++
 date = "2021-03-06T16:38:25-08:00"
 title = "Dungeons and Dragons and Dystopian Cyberpunk"
-category = ["Playing A Game"]
-game = ["Shadowrun Returns"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Shadowrun Returns" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 An earnest attempt at [Divinity: Original Sin](game:Divinity: Original Sin - Enhanced Edition) last year <i>finally</i> convinced me that I'm not "into" traditional CRPGs.  Surprisingly, and thankfully, my experience with <game:Shadowrun Returns> felt less like a deeply-technical party-management and -tactics game than it did like a sci-fi visual novel punctuated with simple turn-based combat.

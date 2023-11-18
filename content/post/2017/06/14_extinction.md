@@ -1,11 +1,10 @@
 +++
-category = ["Looking Forward To It"]
+category = [ "Looking Forward To It" ]
 date = "2017-06-14T06:31:47-07:00"
 draft = false
-game = ["Extinction"]
-platform = ["PC"]
+game = [ "Extinction" ]
+platform = [ "PC" ]
 title = "Hopefully less angsty than Attack on Titan"
-
 +++
 
 There are already some big things I'm worried about from the <game:Extinction> <a href="https://www.youtube.com/watch?v=xBJw7I-CrXQ">gameplay presentation</a>: like the balance of grinding through trash mobs versus "real" combat with ogres, and how important checkpoints will be if the ogres can kill you in one hit.

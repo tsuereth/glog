@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-04-04T23:12:22-07:00"
 draft = false
-game = ["Crashmo"]
-platform = ["3DS"]
-rating = ["Meh"]
+game = [ "Crashmo" ]
+platform = [ "3DS" ]
+rating = [ "Meh" ]
 title = "Mehmo"
-
 +++
 
 I love puzzle games.  I swear, I do!  But I just can't love <game:Crashmo>.

@@ -1,10 +1,10 @@
 +++
 date = "2022-01-22T13:21:26-08:00"
 title = "Eat Cheesy Poofs to restore HP, mmkay"
-category = ["Playing A Game"]
-game = ["South Park: The Stick of Truth"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "South Park: The Stick of Truth" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 As an RPG, <game:South Park: The Stick of Truth> could use work: some combat features are wildly unbalanced (like <a href="https://spgame.fandom.com/wiki/Status_Effects#Negative_Status_Effects">the Screwed debuff</a>), inventory management is a chore, skills and perks don't feel very significant, and - while I love that it has real-time combat prompts, like <tag:Mario & Luigi> and <tag:Paper Mario> - the timing windows of those prompts are staggeringly inconsistent.

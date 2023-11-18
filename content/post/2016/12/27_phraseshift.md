@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-12-27T23:36:09-08:00"
 draft = false
-game = ["Phrase Shift"]
-platform = ["Android"]
-rating = ["Meh"]
+game = [ "Phrase Shift" ]
+platform = [ "Android" ]
+rating = [ "Meh" ]
 title = "A Shift of Phrase"
-
 +++
 
 I first saw <game:Phrase Shift> pop up on the <a href="http://store.steampowered.com/app/535980/">Steam store</a>, and I thought -- you know, this looks like it would work better as a mobile game.  Lo and behold, it had already been out on <a href="https://play.google.com/store/apps/details?id=ca.hyperhippo.phraseshift">Google Play</a> for some time; and yeah, it did work really well with a touchscreen.

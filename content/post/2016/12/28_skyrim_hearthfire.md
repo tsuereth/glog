@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-12-28T17:41:06-08:00"
 draft = false
-game = ["The Elder Scrolls V: Skyrim - Hearthfire"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "The Elder Scrolls V: Skyrim - Hearthfire" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Home is where the annoying bard is"
-
 +++
 
 [Hearthfire](game:The Elder Scrolls V: Skyrim - Hearthfire) doesn't add quests or maps to [Skyrim](game:The Elder Scrolls V: Skyrim); it just adds the ability to build houses.  (And to marry an NPC, and adopt NPC children, but ugh, who cares.)

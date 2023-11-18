@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-07-05T22:25:46-07:00"
 draft = false
-game = ["Linelight"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Linelight" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Blinded by the Linelight"
-
 +++
 
 <i>"<game:Linelight> is a refreshingly inventive, minimalist puzzle-adventure game."</i> ... it's not as pretentious <a href="http://store.steampowered.com/app/469790/">as it sounds</a>, I promise.

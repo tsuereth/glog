@@ -1,10 +1,10 @@
 +++
 date = "2019-06-16T13:05:58-07:00"
 title = "A pleasure to get lost in"
-category = ["Playing A Game"]
-game = ["Hacknet: Labyrinths"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Hacknet: Labyrinths" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 One of my biggest complaints about <game:Hacknet> - just [yesterday]($SiteBaseURL$2019/06/15/save-the-planet-by-hacking-it/) - was how crowded the network node-map became.  So you may imagine my delight when, a few missions into the [Labyrinths](game:Hacknet: Labyrinths) DLC, I was given a new utility to auto-organize the map.  Praise Dijkstra!

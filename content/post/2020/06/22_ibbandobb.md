@@ -1,10 +1,10 @@
 +++
 date = "2020-06-22T23:06:50-07:00"
 title = "I think Ibb is the short one"
-category = ["Playing A Game"]
-game = ["Ibb & Obb"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Ibb & Obb" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Ibb & Obb> is an adorable co-op puzzle-platformer with cute little characters who will be taunting you in your nightmares before you reach the end.

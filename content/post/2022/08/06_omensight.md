@@ -1,10 +1,10 @@
 +++
 date = "2022-08-06T11:19:46-07:00"
 title = "You ever get the feeling... that you've done this before?"
-category = ["Playing A Game"]
-game = ["Omensight: Definitive Edition"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Omensight: Definitive Edition" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Am I in a time-loop of playing games that are, themselves, time-loops?  <i>Maybe</i>.  But [Omensight](game:Omensight: Definitive Edition) isn't another <game:Deathloop> or <game:Katana Zero> or <game:Outer Wilds> so much as it's another <game:Stories: The Path of Destinies>.

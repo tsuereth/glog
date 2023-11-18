@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-02-04T22:09:35-08:00"
 draft = false
-game = ["Another Perspective"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Another Perspective" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "A brief, ineffectual perspective"
-
 +++
 
 What I like about <game:Another Perspective> is that it's challenging.  It did a pretty good job of pacing its levels such that each mechanic was introduced casually, and their combined complexity ramped up gradually, to the point where I <i>really</i> had to understand how it all worked together to finish a level.

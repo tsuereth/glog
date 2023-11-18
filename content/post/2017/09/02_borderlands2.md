@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-09-02T17:16:45-07:00"
 draft = false
-game = ["Borderlands 2"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Borderlands 2" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Jack is still pretty handsome"
-
 +++
 
 Five years later, <game:Borderlands 2> still works pretty well.  It's a bit slow to start - with Claptrap leading you around by the nose, weapons that feel relatively <i>sane</i>, and not many sidequests - but Pandora's bizarre, deadly personality is enough to keep things interesting until all of that starts to pick up.

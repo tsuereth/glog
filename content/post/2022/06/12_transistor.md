@@ -1,10 +1,10 @@
 +++
 date = "2022-06-12T12:59:00-07:00"
 title = "200 OK"
-category = ["Playing A Game"]
-game = ["Transistor"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Transistor" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 > But I'm paying a hell of a lot more attention to [Transistor] now than I was.

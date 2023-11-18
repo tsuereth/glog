@@ -1,9 +1,9 @@
 +++
 date = "2020-03-28T10:19:13-07:00"
 title = "Forgettable Realms"
-category = ["Playing A Game"]
-game = ["Baldur's Gate: Enhanced Edition"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Baldur's Gate: Enhanced Edition" ]
+platform = [ "PC" ]
 +++
 
 I waited too long to try [Baldur's Gate](game:Baldur's Gate: Enhanced Edition).

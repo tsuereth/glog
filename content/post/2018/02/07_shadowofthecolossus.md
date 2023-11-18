@@ -1,10 +1,10 @@
 +++
 date = "2018-02-07T07:32:07-08:00"
 title = "Colossus sees shadow, predicts six more weeks of winter"
-category = ["Playing A Game"]
-game = ["Shadow of the Colossus (2018)"]
-platform = ["PS4"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Shadow of the Colossus (2018)" ]
+platform = [ "PS4" ]
+rating = [ "Good" ]
 +++
 
 Like <game:Ōkami HD> before it, the new [Shadow of the Colossus](game:Shadow of the Colossus (2018)) excellently recaptures both the magical highs and the irritating lows of the [2005 original](game:Shadow of the Colossus).

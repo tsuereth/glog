@@ -1,9 +1,9 @@
 +++
 date = "2019-11-17T10:18:02-08:00"
 title = "Now he's trapped in a book I wrote, a crummy world of plot holes and spelling errors"
-category = ["Playing A Game"]
-game = ["Tales of Lazo"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Tales of Lazo" ]
+platform = [ "PC" ]
 +++
 
 In <game:Tales of Lazo>, you write prose descriptions of how the hero (er, Lazo) overcomes platforming and combat challenges.  Explain how to beat the level, and then watch him do it!  Like the English version of a programming-puzzle game.  What a premise, right?

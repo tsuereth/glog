@@ -1,9 +1,9 @@
 +++
 date = "2020-01-25T17:16:46-08:00"
 title = "A wonderful world full of deadly monsters"
-category = ["Playing A Game"]
-game = ["Age of Wonders III"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Age of Wonders III" ]
+platform = [ "PC" ]
 +++
 
 <game:Age of Wonders III> is a feature-rich and fairly sophisticated take on fantasy-themed 4X, but it just didn't quite "do it" for me.

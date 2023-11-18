@@ -1,9 +1,9 @@
 +++
 date = "2018-02-27T07:17:39-08:00"
 title = "A Legend Rebirthing?"
-category = ["Looking Forward To It"]
-game = ["Shaq Fu: A Legend Reborn"]
-platform = ["PC"]
+category = [ "Looking Forward To It" ]
+game = [ "Shaq Fu: A Legend Reborn" ]
+platform = [ "PC" ]
 +++
 
 [Last month]($SiteBaseURL$2018/01/21/early-access-late-release/), I lamented the protracted development period of - among other Kickstarter and Indiegogo projects - <game:Shaq Fu: A Legend Reborn>.  As if the [original game](game:Shaq-Fu) wasn't enough of a joke, this sequel project had claimed to be "99% there" <b>over a year ago</b>, before going silent.

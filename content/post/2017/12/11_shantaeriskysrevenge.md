@@ -1,10 +1,10 @@
 +++
 date = "2017-12-11T22:40:23-08:00"
 title = "I'd rather walk the plank"
-category = ["Playing A Game"]
-game = ["Shantae: Risky's Revenge - Director's Cut"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Shantae: Risky's Revenge - Director's Cut" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 I just wasn't having any fun playing [Shantae: Risky's Revenge](game:Shantae: Risky's Revenge - Director's Cut).

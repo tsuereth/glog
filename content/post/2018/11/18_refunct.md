@@ -1,10 +1,10 @@
 +++
 date = "2018-11-18T15:44:26-08:00"
 title = "Funct it"
-category = ["Playing A Game"]
-game = ["Refunct"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Refunct" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Refunct> is a neat little experiment in first-person parkour gaming.  It does a cool job of organically introducing core mechanics - <i>how do I climb this tower? better jump around randomly until I discover the wall-jump</i> - and it has a clean, simple aesthetic.

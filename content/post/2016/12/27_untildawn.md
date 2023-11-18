@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-12-27T23:36:11-08:00"
 draft = false
-game = ["Until Dawn"]
-platform = ["PS4"]
-rating = ["Meh"]
+game = [ "Until Dawn" ]
+platform = [ "PS4" ]
+rating = [ "Meh" ]
 title = "From Dusk till I Got Bored"
-
 +++
 
 <game:Until Dawn> started slowly, but promisingly; the game is basically a teenager-slaying horror film in videogame form.  Occasionally cheesy, occasionally jump-scary, and occasionally ominous, Until Dawn excels at building a creepy, anxious atmosphere.  In this game, you actually get to tell the bitchy cheerleader whether or not she should open the door to investigate a noise outside.  (She may do it anyway, but it's still pretty immersive.)

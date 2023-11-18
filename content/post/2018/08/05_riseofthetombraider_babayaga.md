@@ -1,10 +1,10 @@
 +++
 date = "2018-08-05T14:09:49-07:00"
 title = "Not as dangerous as John Wick"
-category = ["Playing A Game"]
-game = ["Rise of the Tomb Raider: Baba Yaga - The Temple of the Witch"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Rise of the Tomb Raider: Baba Yaga - The Temple of the Witch" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Mid-game DLC is an interesting experiment, and to its credit, [Baba Yaga](game:Rise of the Tomb Raider: Baba Yaga - The Temple of the Witch) integrates well into <game:Rise of the Tomb Raider>'s first non-linear hub area.  ... as well as anything else works in that hub, anyway.

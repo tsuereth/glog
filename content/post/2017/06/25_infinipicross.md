@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-06-25T12:26:55-07:00"
 draft = false
-game = ["InfiniPicross"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "InfiniPicross" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "One of three Infini-games I'm playing right now"
-
 +++
 
 <game:InfiniPicross>'s puzzles don't "look like" anything; they're randomly generated.  To me, this isn't a weakness at all.  The puzzles could look like Rorschach tests or traffic accidents for all I care; I just want to fill them out.

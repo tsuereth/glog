@@ -1,10 +1,10 @@
 +++
 date = "2022-03-13T16:56:21-07:00"
 title = "Such a good boi"
-category = ["Playing A Game"]
-game = ["Cat Quest II"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Cat Quest II" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Like the first <game:Cat Quest>, <game:Cat Quest II> is, well, not exactly a genre-redefining masterpiece.  (Unless that genre is <i>cat puns</i>.)  It's a competent, adorable, and straightforward action RPG; with experience points and gold pieces, upgrade-able weapons and armor, and a whole lot of "go here" or "kill that" quests serving an unremarkable narrative.

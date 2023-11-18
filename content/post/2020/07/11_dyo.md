@@ -1,10 +1,10 @@
 +++
 date = "2020-07-11T07:22:52-07:00"
 title = "Labyrinthine"
-category = ["Playing A Game"]
-game = ["Dyo"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Dyo" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Dyo> is a take on the two-player-puzzle genre that I haven't seen before: with one minotaur on the left half of the screen, and the other on the right, you can lock the viewports and <i>walk into the other half</i>.  So, for example:

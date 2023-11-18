@@ -1,10 +1,10 @@
 +++
 date = "2018-01-20T11:51:34-08:00"
 title = "No Silicon Hero"
-category = ["Playing A Game"]
-game = ["Silicon Zeroes"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Silicon Zeroes" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Silicon Zeroes> started out pretty simple, as I saw in [the demo]($SiteBaseURL$2017/09/24/visual-programming/); and these humble beginnings had me looking forward to more complex algorithmic puzzles in the later game.

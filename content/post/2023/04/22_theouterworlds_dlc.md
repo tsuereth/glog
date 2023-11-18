@@ -1,10 +1,10 @@
 +++
 date = "2023-04-22T10:14:08-07:00"
 title = "Same shit, different worlds"
-category = ["Playing A Game"]
-game = ["The Outer Worlds: Peril on Gorgon", "The Outer Worlds: Murder on Eridanos"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "The Outer Worlds: Peril on Gorgon", "The Outer Worlds: Murder on Eridanos" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 [Peril on Gorgon](game:The Outer Worlds: Peril on Gorgon) presents an interesting change of pace from <game:The Outer Worlds>: a self-contained <i>noir</i>-infused mystery, investigating a dead bounty hunter and an industrial accident cover-up.  ... until it turns into a re-hash of the main game's "evil corporation did evil thing" schtick.

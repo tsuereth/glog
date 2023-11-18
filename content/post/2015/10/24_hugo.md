@@ -1,5 +1,5 @@
 +++
-category = ["Site News"]
+category = [ "Site News" ]
 date = "2015-10-24T14:02:50-07:00"
 title = "Glog: Now With 100% Less Server Execution"
 draft = false

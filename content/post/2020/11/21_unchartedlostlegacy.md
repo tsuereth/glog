@@ -1,10 +1,10 @@
 +++
 date = "2020-11-21T09:48:02-08:00"
 title = "Girls' Day Out"
-category = ["Playing A Game"]
-game = ["Uncharted: The Lost Legacy"]
-platform = ["PS4"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Uncharted: The Lost Legacy" ]
+platform = [ "PS4" ]
+rating = [ "Good" ]
 +++
 
 It'd be reductive to call <game:Uncharted: The Lost Legacy> the "girl version" of a Nathan Drake game, just as it'd be reductive to call it a bite-sized Uncharted.  Chloe and Nadine are strongly-written characters with engrossing personalities; their adventure's parkour-ing and puzzle-solving easily measure up to Drake's best; and this installment's experiments (chiefly the free-roam Western Ghats chapter) are overall successful.

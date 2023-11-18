@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-01-20T21:48:08-08:00"
 draft = false
-game = ["Galacide"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Galacide" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "It's when you kill a galaxy, I guess, or maybe when you kill a fancy, elaborate party"
-
 +++
 
 <game:Galacide> can seem like a complex combination of mechanics, and in some ways, it is.  But to me, the culminations of its eclectic parts form very simple praises and complaints.

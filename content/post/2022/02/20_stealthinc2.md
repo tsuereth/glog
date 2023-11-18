@@ -1,10 +1,10 @@
 +++
 date = "2022-02-20T19:56:36-08:00"
 title = "Son of a bastard"
-category = ["Playing A Game"]
-game = ["Stealth Inc 2: A Game of Clones"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Stealth Inc 2: A Game of Clones" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 I'm less persistent than I was [back in 2013]($SiteBaseURL$2013/06/20/stealth-maybe-bastard-definitely/) -- that's one reason why I'm not sticking with [Stealth <s>Bastard</s> Inc 2](game:Stealth Inc 2: A Game of Clones).  I've got less patience for <i>SURPRISE DEATHTRAP!</i> than I once did.

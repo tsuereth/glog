@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-07-10T21:01:08-07:00"
 draft = false
-game = ["Pitfall Planet"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Pitfall Planet" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Unrelated to Pitfall Harry's alligator adventure"
-
 +++
 
 <game:Pitfall Planet> is the endearing story of two simple robots trying to repair their spaceship, by harvesting ore from co-operative puzzle-platform levels.

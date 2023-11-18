@@ -1,10 +1,10 @@
 +++
 date = "2020-10-18T13:43:50-07:00"
 title = "Limbo 2: Mind Control Boogaloo"
-category = ["Playing A Game"]
-game = ["Inside (2016)"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Inside (2016)" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Granted, it's been nearly a decade since I played <game:Limbo>, but I've got no reservations against saying that [Inside](game:Inside (2016)) is basically the same game.

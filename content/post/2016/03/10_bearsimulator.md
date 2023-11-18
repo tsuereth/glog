@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-03-10T20:50:10-08:00"
 draft = false
-game = ["Bear Simulator"]
-platform = ["PC"]
-rating = ["Bad"]
+game = [ "Bear Simulator" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 title = "I don't know what I expected"
-
 +++
 
 <a href="http://i.imgur.com/jDTGT.jpg">Well</a>-- actually, what I expected based on the <a href="https://www.kickstarter.com/projects/1330754003/bear-simulator">campaign</a> was a little joke game with some satirical nods to sandboxes like [Skyrim](game:The Elder Scrolls V: Skyrim) and [GTA 5](game:Grand Theft Auto V).  But that expectation faded once <game:Bear Simulator>'s campaign updates indicated that the developer was trying to ... make a real game, I guess.

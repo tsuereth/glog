@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-02-09T22:03:40-08:00"
 draft = false
-game = ["Murdered: Soul Suspect"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Murdered: Soul Suspect" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "One titular pun does not a murder-mystery make"
-
 +++
 
 For the first 20 minutes or so, all I wanted to do was ignore <game:Murdered: Soul Suspect>'s incredibly ham-fisted narration.  But I couldn't!  The game's introduction, at least, is painfully cutscene-heavy, and written with all the elegance and subtlety of an <a href="http://adventuretime.wikia.com/wiki/Ancient_Psychic_Tandem_War_Elephant">Ancient Psychic Tandem War Elephant</a>.  Yes, let's jump-cut between a bunch of three-second flashbacks in the protagonist's life that happen to directly establish his personality and his relevant relationships to other characters.  And then add some more non-interactive bits that literally reiterate the game's plot, and mandatory dialog sessions that serve as nothing more than a dressed-up text tutorial.

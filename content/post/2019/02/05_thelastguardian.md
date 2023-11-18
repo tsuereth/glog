@@ -1,10 +1,10 @@
 +++
 date = "2019-02-05T21:26:46-08:00"
 title = "Shadow of the Decades-old Game"
-category = ["Playing A Game"]
-game = ["The Last Guardian"]
-platform = ["PS4"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "The Last Guardian" ]
+platform = [ "PS4" ]
+rating = [ "Meh" ]
 +++
 
 <game:The Last Guardian> doesn't feel like a game that took <i>ten damn years to make</i>.  At least, not in the typical sense.

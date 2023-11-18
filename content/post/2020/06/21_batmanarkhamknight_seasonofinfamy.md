@@ -1,10 +1,10 @@
 +++
 date = "2020-06-21T22:47:46-07:00"
 title = "Maybe not 'most' wanted, but 'more' wanted?"
-category = ["Playing A Game"]
-game = ["Batman: Arkham Knight - Season of Infamy: Most Wanted Expansion"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Batman: Arkham Knight - Season of Infamy: Most Wanted Expansion" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Unlike previous Bat-DLCs, <i>(deep breath)</i> <game:Batman: Arkham Knight - Season of Infamy: Most Wanted Expansion> doesn't just throw you into a series of arenas and ignore everything you've done in the main game.  Instead, it <b>adds optional missions to [Arkham Knight](game:Batman: Arkham Knight)'s campaign</b>.

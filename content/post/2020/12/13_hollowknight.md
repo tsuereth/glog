@@ -1,10 +1,10 @@
 +++
 date = "2020-12-13T23:51:17-08:00"
 title = "The Hollow Knight Rises"
-category = ["Playing A Game"]
-game = ["Hollow Knight"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Hollow Knight" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 In [my 2019 review]($SiteBaseURL$2020/01/01/2019-in-review-less-isnt-more/), I made a promise - to myself, I suppose - that I would attempt <game:Hollow Knight> again.

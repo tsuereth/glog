@@ -1,10 +1,10 @@
 +++
 date = "2021-01-06T21:07:01-08:00"
 title = "Rusty Battalion"
-category = ["Playing A Game"]
-game = ["Iron Brigade"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Iron Brigade" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Iron Brigade> (<i>n&eacute;e</i> Trenched) isn't a bad game, exactly, for its time.  It combines the simplest and most visceral part of a mech-piloting game (putting huge gun turrets on metal legs) with a Tower Defense turret-placement game, picking up a "commander in-combat" feeling along the way.  The thin-but-flashy presentation and light-but-thrilling gameplay makes it reasonably competitive with contemporaries like <game:Toy Soldiers>.

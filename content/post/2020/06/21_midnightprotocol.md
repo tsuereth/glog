@@ -1,9 +1,9 @@
 +++
 date = "2020-06-21T09:37:18-07:00"
 title = "It's a UNIX system! I know this!"
-category = ["Playing A Game"]
-game = ["Midnight Protocol"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Midnight Protocol" ]
+platform = [ "PC" ]
 +++
 
 <game:Midnight Protocol> appears to sit somewhere between <game:Hacknet> and <game:NITE Team 4>, in terms of both realism and aesthetics.  Its hacking mechanisms are less artificial than Hacknet's, though still abstracted from reality to be more "game-y."  And while it revolves around a flashy node-based network visualization (similar to hacking in the newer <tag:Deus Ex>es), you still control everything with a command-line interface.

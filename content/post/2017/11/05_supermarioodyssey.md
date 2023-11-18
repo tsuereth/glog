@@ -1,10 +1,10 @@
 +++
 date = "2017-11-05T09:46:14-08:00"
 title = "Homer's forgotten butt-stomping epic"
-category = ["Playing A Game"]
-game = ["Super Mario Odyssey"]
-platform = ["Switch"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Super Mario Odyssey" ]
+platform = [ "Switch" ]
+rating = [ "Awesome" ]
 +++
 
 Okay, I found something to actually complain about: the controls.  Foremost, that - despite the game's insistence on mapping some moves to motion-only - the gestures for things like throwing Cappy in a circle, or in particular directions, don't work well at all.  Yes, even when using two detached Joy-Con controllers, as the loading screen continues to annoyingly recommend.

@@ -1,10 +1,10 @@
 +++
 date = "2018-06-17T15:01:23-07:00"
 title = "A dull, repetitive legend"
-category = ["Playing A Game"]
-game = ["Shaq Fu: A Legend Reborn"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Shaq Fu: A Legend Reborn" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 <game:Shaq Fu: A Legend Reborn> ends up feeling most like a parody game.  And it <i>isn't the worst</i> parody-game I've played.

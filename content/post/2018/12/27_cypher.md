@@ -1,10 +1,10 @@
 +++
 date = "2018-12-27T11:58:37-08:00"
 title = "Decyphered"
-category = ["Playing A Game"]
-game = ["Cypher (2018)"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Cypher (2018)" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 [Last time]($SiteBaseURL$2018/06/24/hidden-in-plain-sight/), I praised [Cypher](game:Cypher (2018))'s ability to make me feel like an idiot.  Now that I've looked up some of the solutions online, I feel like adding an important clarification.

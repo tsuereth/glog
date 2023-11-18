@@ -1,9 +1,9 @@
 +++
 date = "2020-05-30T08:55:09-07:00"
 title = "Just a little torment"
-category = ["Playing A Game"]
-game = ["Planescape: Torment - Enhanced Edition"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Planescape: Torment - Enhanced Edition" ]
+platform = [ "PC" ]
 +++
 
 Back in March, after bouncing off of [Baldur's Gate](game:Baldur's Gate: Enhanced Edition), I naturally gave a shot to its close friend [Planescape: Torment](game:Planescape: Torment - Enhanced Edition).  And I was pleasantly surprised -- while the former showed how far RPGs have come in the past two decades, the latter didn't feel nearly as dated.

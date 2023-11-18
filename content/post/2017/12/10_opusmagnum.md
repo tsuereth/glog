@@ -1,10 +1,10 @@
 +++
 date = "2017-12-10T10:15:34-08:00"
 title = "Opus Pretty-Okay"
-category = ["Playing A Game"]
-game = ["Opus Magnum"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Opus Magnum" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Opus Magnum> feels a bit like it carved a chunk out of <game:SpaceChem>, added one or two new ideas, and spent most of its development cycle trying to look pretty.  (Like <game:Shenzhen I/O> did to <game:TIS-100> before it.)

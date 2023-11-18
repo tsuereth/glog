@@ -1,9 +1,9 @@
 +++
 date = "2018-01-12T07:42:44-08:00"
 title = "Lost Souls"
-category = ["Playing A Game"]
-game = ["Dark Souls: Prepare to Die Edition"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Dark Souls: Prepare to Die Edition" ]
+platform = [ "PC" ]
 +++
 
 Just in time for the <a href="https://www.youtube.com/watch?v=1yVOMHz9luo">remaster announcement</a>, I've finally unearthed [Dark Souls](game:Dark Souls: Prepare to Die Edition) from my backlog.  And although I've already given up, it wasn't for the reasons I'd expected!

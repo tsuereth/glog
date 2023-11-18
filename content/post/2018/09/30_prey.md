@@ -1,10 +1,10 @@
 +++
 date = "2018-09-30T21:06:54-07:00"
 title = "Less than the sum of its parts"
-category = ["Playing A Game"]
-game = ["Prey (2017)"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Prey (2017)" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 [Prey](game:Prey (2017)) is a great free-roam action-RPG, in the vein of [Deus Ex](game:Deus Ex: Human Revolution).  It's a great story-driven adventure, a'la <game:BioShock>.  <i>And</i> it's a great pulse-pounding survival-action game, like [Resident Evil 4](game:Resident Evil 4: Wii Edition).  I loved it, and will never forget my experience on Talos I.  But how those aspects sometimes <i>conflict</i> with one another wasn't so great.

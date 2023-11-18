@@ -1,10 +1,10 @@
 +++
 date = "2019-05-25T15:23:32-07:00"
 title = "What Briefly Was, And Hopefully Will Be Again"
-category = ["Playing A Game"]
-game = ["What Never Was"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "What Never Was" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Not many 20-minute-long games impress me, but <game:What Never Was> did.

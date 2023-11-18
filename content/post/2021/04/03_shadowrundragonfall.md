@@ -1,10 +1,10 @@
 +++
 date = "2021-04-03T14:42:46-07:00"
 title = "Gotta keep running"
-category = ["Playing A Game"]
-game = ["Shadowrun: Dragonfall - Director's Cut"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Shadowrun: Dragonfall - Director's Cut" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Apparently, I wasn't the only one who thought that <game:Shadowrun Returns> could have used some player agency in its mission schedule.  The next campaign, [Dragonfall](game:Shadowrun: Dragonfall - Director's Cut), makes moves toward non-linear and optional content ... with mixed results.

@@ -1,10 +1,10 @@
 +++
 date = "2020-01-18T17:13:49-08:00"
 title = "Unfactorable"
-category = ["Playing A Game"]
-game = ["Prime Mover"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Prime Mover" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 For a while, <game:Prime Mover> seemed <i>too easy</i>.  Wire this to that, put this piece over here... its first 13 puzzles were very straightforward.  It turns out, that was the tutorial.

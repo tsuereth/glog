@@ -1,10 +1,10 @@
 +++
 date = "2020-03-01T11:59:34-08:00"
 title = "Puzzles and puzzles and puzzles and puzzles"
-category = ["Playing A Game"]
-game = ["Pictopix"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Pictopix" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 I've put significantly more time - 75 hours - into <game:Pictopix> than any other nonogram game.  So, yeah, it's pretty good.

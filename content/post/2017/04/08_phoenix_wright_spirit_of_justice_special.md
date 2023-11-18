@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-04-08T13:02:28-07:00"
 draft = false
-game = ["Phoenix Wright: Ace Attorney - Spirit of Justice: Special Episode - Turnabout Time Traveler"]
-platform = ["3DS"]
-rating = ["Good"]
+game = [ "Phoenix Wright: Ace Attorney - Spirit of Justice: Special Episode - Turnabout Time Traveler" ]
+platform = [ "3DS" ]
+rating = [ "Good" ]
 title = "The Time Traveler's Husband"
-
 +++
 
 I guess my prediction about Capcom embracing [an episodic delivery format](game:Phoenix Wright: Ace Attorney - Dual Destinies: Special Episode - Turnabout Reclaimed) was overly optimistic.  Still, it's nice that they're making more content for me.

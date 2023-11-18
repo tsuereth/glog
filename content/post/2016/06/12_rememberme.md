@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-06-12T15:16:14-07:00"
 draft = false
-game = ["Remember Me"]
-platform = ["PC"]
-rating = ["Bad"]
+game = [ "Remember Me" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 title = "Remember you later -- or, not"
-
 +++
 
 It was an unclear button prompt that pushed me to finally give up on <game:Remember Me>, but this habit is far from the game's biggest problem.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-12-29T20:08:35-08:00"
 draft = false
-game = ["Human Resource Machine"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Human Resource Machine" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "If only real humans would obey my instructions like this"
-
 +++
 
 More so than <game:TIS-100>, <game:Human Resource Machine> makes me appreciate the fact that C is a high-level language.  Because while TIS-100 (as with <game:SpaceChem> and <game:Infinifactory> before it) upturns programming fundamentals to build a game about concurrency/parallelism, HRM is actually more like a real, tiny but fully-functional computer.  And it will remind any computer science student of what it's like to take <i>conditional statements</i> and <i>variables</i> for granted.

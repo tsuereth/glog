@@ -1,9 +1,9 @@
 +++
 date = "2020-03-21T10:17:58-07:00"
 title = "Cave-vania"
-category = ["Playing A Game"]
-game = ["Batbarian: Testament of the Primordials"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Batbarian: Testament of the Primordials" ]
+platform = [ "PC" ]
 +++
 
 I normally shy away from demos for unfinished games - <game:CrossCode> left me hanging for <i>years</i> - but who would say no to an <a href="https://store.steampowered.com/sale/steamgamefestival-spring">online-only festival</a>?  Or to a Metroidvania-styled sidescroller, at that?

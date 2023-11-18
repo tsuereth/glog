@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-07-03T18:27:19-07:00"
 draft = false
-game = ["Dyadic"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Dyadic" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "100% in 90 minutes"
-
 +++
 
 On its face, <game:Dyadic> is a simple and clever puzzle-platformer for two players (or for one player, a'la [Brothers](game:Brothers: A Tale of Two Sons)).  What sells it - or what sold it to me - is how accessible the controls are, and how easy the game is to jump into.

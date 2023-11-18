@@ -1,10 +1,10 @@
 +++
 date = "2020-05-23T17:58:52-07:00"
 title = "Go back to bed"
-category = ["Playing A Game"]
-game = ["Rise & Shine"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Rise & Shine" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 <game:Rise & Shine> makes its purpose, arcade action, clear from the beginning: its throwaway, self-parodying story about video game tropes is dumb and meaningless filler between shooting (and ... some puzzling).

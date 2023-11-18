@@ -1,10 +1,10 @@
 +++
 date = "2020-01-02T21:29:51-08:00"
 title = "Snake? Snake! Snaaaake!"
-category = ["Playing A Game"]
-game = ["Snake Pass"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Snake Pass" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 There are games that have bad controls, and then there are games that <i>are about</i> hard controls, like <game:QWOP> or ... <game:Drunken Fist>.

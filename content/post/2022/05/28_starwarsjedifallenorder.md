@@ -1,10 +1,10 @@
 +++
 date = "2022-05-28T11:48:00-07:00"
 title = "Is this where the fun begins?"
-category = ["Playing A Game"]
-game = ["Star Wars Jedi: Fallen Order"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Star Wars Jedi: Fallen Order" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Star Wars Jedi: Fallen Order> is a mess of ambition -- kinda like its own title.

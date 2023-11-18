@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-12-20T13:15:52-08:00"
 draft = false
-game = ["StarCraft II: Legacy of the Void"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "StarCraft II: Legacy of the Void" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Embrace the Void"
-
 +++
 
 It isn't even fair to say that [Legacy of the Void](game:StarCraft II: Legacy of the Void)'s terrible storytelling is handicapped by the fact that the protoss, as a race, are designed explicitly for us mere humans to have difficulty empathizing with.  That they don't have mouths, tend to speak in a businesslike way, and walk around adorned with wacky-looking ornate bullshit -- none of this stopped the campaign's most interesting character, a Tal'darim protoss named Alarak, from stealing the show every time he appeared in it.

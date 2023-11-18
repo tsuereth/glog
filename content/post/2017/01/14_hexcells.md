@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-01-14T12:18:51-08:00"
 draft = false
-game = ["Hexcells"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Hexcells" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "I Put A Hex On You"
-
 +++
 
 I had a much easier time accepting <game:Hexcells>'s puzzle conceits than <game:SquareCells>'s -- probably because it didn't look like [picross](game:Picross DS).  (Yeah, not a great reason, but here we are.)

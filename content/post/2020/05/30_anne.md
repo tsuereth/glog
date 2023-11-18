@@ -1,9 +1,9 @@
 +++
 date = "2020-05-30T09:24:05-07:00"
 title = "Six years late, and counting"
-category = ["Industry Lamentations"]
-game = ["A.N.N.E."]
-platform = ["PC"]
+category = [ "Industry Lamentations" ]
+game = [ "A.N.N.E." ]
+platform = [ "PC" ]
 +++
 
 <game:A.N.N.E.> is one of <i>only two!</i> remaining crowdfunded/early-access games that I've bought but am still waiting for.  <i>(Ref.: [Early Access, Late Release]($SiteBaseURL$2018/01/21/early-access-late-release/))</i>

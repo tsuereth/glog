@@ -1,10 +1,10 @@
 +++
 date = "2018-05-27T20:35:59-07:00"
 title = "Fookin' Skelligers"
-category = ["Playing A Game"]
-game = ["The Witcher 3: Wild Hunt"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "The Witcher 3: Wild Hunt" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 Though it's considerably more playable than its predecessors, [Witcher 3](game:The Witcher 3: Wild Hunt) still has its share of oddities and frustrations.  Like the dramatic disparity between how many skills you can invest points into (80) and how many can be activated at once (12).  And how the Alchemy menu doesn't allow you to buy materials directly from its crafting screen, even though armor and weapon crafting does, and the menus are identical.

@@ -1,10 +1,10 @@
 +++
 date = "2021-01-23T17:11:48-08:00"
 title = "Space Debris"
-category = ["Playing A Game"]
-game = ["Space Pirates and Zombies"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Space Pirates and Zombies" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Space Pirates and Zombies> is an unambiguous attempt to rekindle the system-hopping, Newtonian-physics, do-missions-to-earn-cash-to-upgrade-ships charm of older games like <tag:Escape Velocity>.  More so than modern reinterpretations like <game:Rebel Galaxy>, this is essentially the <i>same game</i>, hewing even closer to decades-old interfaces and mechanics than <game:3030 Deathwar Redux> did.

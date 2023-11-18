@@ -1,10 +1,10 @@
 +++
 date = "2023-06-04T22:56:36-07:00"
 title = "It's still a bit punky"
-category = ["Playing A Game"]
-game = ["Cyberpunk 2077"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Cyberpunk 2077" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 I can only really recommend <game:Cyberpunk 2077> with a significant qualification -- even if you're addicted to open-world RPGs, even if you're a huge fan of the dystopian sci-fi theme, and even if you absolutely loved [Witcher 3](game:The Witcher 3: Wild Hunt).  You need to be feeling <i>charitable</i> toward <tag:CD Projekt RED>; you need to be willing to tolerate some boredom, some befuddlement, and some bugs (yes, still!), inbetween the "good parts."
