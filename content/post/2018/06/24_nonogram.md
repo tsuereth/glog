@@ -1,10 +1,10 @@
 +++
 date = "2018-06-24T17:40:37-07:00"
 title = "The Greatest Puzzler?"
-category = ["Playing A Game"]
-game = ["Nonogram - The Greatest Painter"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Nonogram - The Greatest Painter" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Nonogram - The Greatest Painter> has an uninspired title, is inexpensive, has "Mixed" reviews on Steam, and is from a publisher that seems to churn out puzzle games.  So, if it wasn't for the fact that I am a total sucker for picross, I never would have even bothered with it.

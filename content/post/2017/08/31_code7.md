@@ -1,11 +1,10 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-31T08:21:02-07:00"
 draft = false
-game = ["Code 7"]
-platform = ["PC"]
+game = [ "Code 7" ]
+platform = [ "PC" ]
 title = "It's no Order 66"
-
 +++
 
 <game:Code 7> has some interesting ideas going for it: an intriguing sci-fi story, a straightforward-yet-satisfying text interface, and little real-time minigames for puzzles.

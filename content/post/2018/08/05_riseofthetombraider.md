@@ -1,10 +1,10 @@
 +++
 date = "2018-08-05T14:09:45-07:00"
 title = "Rising and Falling"
-category = ["Playing A Game"]
-game = ["Rise of the Tomb Raider"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Rise of the Tomb Raider" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Rise of the Tomb Raider> just doesn't feel like a positive iteration on [its predecessor](game:Tomb Raider (2013)).

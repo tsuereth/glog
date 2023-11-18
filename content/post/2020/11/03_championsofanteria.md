@@ -1,10 +1,10 @@
 +++
 date = "2020-11-03T08:29:53-08:00"
 title = "League of Champions, Defense of the Anteria"
-category = ["Playing A Game"]
-game = ["Champions of Anteria"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Champions of Anteria" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 I played a demo of <game:Champions of Anteria>, what feels like forever ago, and remembered it as a simple tactical RPG with a light base-building touch.  I don't know how I managed to avoid seeing the [Warcraft III](game:Warcraft III: Reign of Chaos) influences.  Just imagine a custom map with only hero units (you know... like [Dota](game:Dota 2)), and which restricts base-building to turns inbetween hero missions.

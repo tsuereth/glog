@@ -1,10 +1,10 @@
 +++
 date = "2020-02-19T08:03:34-08:00"
 title = "Time to mix drinks and click through pages and pages of dialog"
-category = ["Playing A Game"]
-game = ["VA-11 Hall-A: Cyberpunk Bartender Action"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "VA-11 Hall-A: Cyberpunk Bartender Action" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Maybe the <i>worst</i> thing about <game:VA-11 Hall-A: Cyberpunk Bartender Action> is its title.  I really don't want to type out that whole mess again.  ... that's my glib way of saying that Valhalla is <i>not</i> a bad game, though I did find it extremely tepid.

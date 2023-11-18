@@ -1,11 +1,10 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-07-10T21:01:04-07:00"
 draft = false
-game = ["Kalimba"]
-platform = ["PC"]
+game = [ "Kalimba" ]
+platform = [ "PC" ]
 title = "Eerily reminiscent of Tingle's catchphrase"
-
 +++
 
 In the first few moments of <game:Kalimba>'s co-op, one player has one totem piece, and the other player has another piece.  They need to be moved in tandem, stacked in a particular order, and jumped with coordinated timing.  Simple, cool, fun.

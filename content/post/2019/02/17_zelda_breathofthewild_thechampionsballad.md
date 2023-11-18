@@ -1,10 +1,10 @@
 +++
 date = "2019-02-17T21:11:56-08:00"
 title = "Now, as one last, LAST trial..."
-category = ["Playing A Game"]
-game = ["The Legend of Zelda: Breath of the Wild - The Champions' Ballad"]
-platform = ["Switch"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "The Legend of Zelda: Breath of the Wild - The Champions' Ballad" ]
+platform = [ "Switch" ]
+rating = [ "Good" ]
 +++
 
 [The Champions' Ballad](game:The Legend of Zelda: Breath of the Wild - The Champions' Ballad) is a fun addition to [Breath of the Wild](game:The Legend of Zelda: Breath of the Wild), although its quality is somewhat uneven.  The DLC's quest is essentially split into three segments, starting out pretty rough; then graduating to somewhere above mediocre; before finally finishing on a satisfying high note.

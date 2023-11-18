@@ -1,10 +1,10 @@
 +++
 date = "2021-05-11T21:27:33-07:00"
 title = "From Zero to ... uh.  Hmm."
-category = ["Playing A Game"]
-game = ["Kentucky Route Zero"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Kentucky Route Zero" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 <game:Anodyne> is <i>creepy</i>.  <game:Magrunner: Dark Pulse> is <i>horrific</i>.  <game:Oxenfree> is <i>surreal</i>.  <game:Jazzpunk> is <i>absurd</i>.  <game:Killer Is Dead> is <i>eccentric</i>.  [Wuppo](game:Wuppo: Definitive Edition) is <i>inscrutable</i>.

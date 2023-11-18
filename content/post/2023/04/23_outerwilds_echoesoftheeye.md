@@ -1,10 +1,10 @@
 +++
 date = "2023-04-23T12:02:32-07:00"
 title = "Blind spot"
-category = ["Playing A Game"]
-game = ["Outer Wilds: Echoes of the Eye"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Outer Wilds: Echoes of the Eye" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 So yeah, I've been putting off revisiting - let alone posting about - <game:Outer Wilds> DLC [Echoes of the Eye](game:Outer Wilds: Echoes of the Eye) for quite a while.

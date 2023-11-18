@@ -1,10 +1,10 @@
 +++
 date = "2020-05-13T21:38:32-07:00"
 title = "In the land of headless robots, the one-headed bot is king."
-category = ["Playing A Game"]
-game = ["Headlander"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Headlander" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Headlander> is an imperfect game with some strong core mechanics and a fun gameplay loop -- which is about as much praise as I've given any game in the last 2-3 months.

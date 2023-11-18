@@ -1,10 +1,10 @@
 +++
 date = "2020-07-12T11:43:21-07:00"
 title = "To a de-luxe moving truck in the sky"
-category = ["Playing A Game"]
-game = ["Moving Out"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Moving Out" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 The past several months of quarantine have seen my local nerd gang turn to online multiplayer (largely, <a href="https://store.steampowered.com/remoteplay">Steam Remote Play Together</a>) as a substitute for in-person banter.  And though we've tried a <i>ton</i> of different co-op and counter-op games, I think the one that's impressed me most is <game:Moving Out>.

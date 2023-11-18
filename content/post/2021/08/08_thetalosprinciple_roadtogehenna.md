@@ -1,10 +1,10 @@
 +++
 date = "2021-08-08T12:20:35-07:00"
 title = "Paved with good intentions"
-category = ["Playing A Game"]
-game = ["The Talos Principle: Road to Gehenna"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "The Talos Principle: Road to Gehenna" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Toward the end of <game:The Talos Principle>, and <i>especially</i> when hunting for secret stars, Croteam's puzzles crossed the line from "difficult" into "exhausting" -- I enjoyed the game but felt no shame using online walkthroughs to complete it.  [Road to Gehenna](game:The Talos Principle: Road to Gehenna) picks right back up where the main game left off: with elaborate, lengthy, error-prone puzzles that saw me frequently throwing up my hands and reading a guide.

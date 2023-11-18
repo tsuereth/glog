@@ -1,10 +1,10 @@
 +++
 date = "2021-12-31T01:19:13-08:00"
 title = "Whoa there, partner"
-category = ["Playing A Game"]
-game = ["Red Dead Redemption 2"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Red Dead Redemption 2" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Thesis statement: <game:Red Dead Redemption 2> is a $450 million (<a href="https://en.wikipedia.org/wiki/Red_Dead_Redemption_2">source</a>) <b>wildlife simulator</b>.

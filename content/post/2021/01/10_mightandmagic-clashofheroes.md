@@ -1,10 +1,10 @@
 +++
 date = "2021-01-10T00:45:40-08:00"
 title = "Match-three of Heroes"
-category = ["Playing A Game"]
-game = ["Might & Magic: Clash of Heroes"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Might & Magic: Clash of Heroes" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Might & Magic: Clash of Heroes> is a solid attempt at combining a story-driven campaign, RPG progression, and puzzle gameplay.  Certainly better than the likes of [Puzzle Quest](game:Puzzle Quest: Challenge of the Warlords) or [PictoQuest](game:PictoQuest: The Cursed Grids).

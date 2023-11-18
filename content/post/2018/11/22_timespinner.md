@@ -1,10 +1,10 @@
 +++
 date = "2018-11-22T12:03:57-08:00"
 title = "Metroidvania meets Chrono Trigger"
-category = ["Playing A Game"]
-game = ["Timespinner"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Timespinner" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Of the games I've crowdfunded - and which actually got released - <game:Timespinner> holds the honor of being the best so far.  (Granted, that bar is pretty low.)

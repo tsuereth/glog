@@ -1,10 +1,10 @@
 +++
 date = "2018-12-31T10:52:18-08:00"
 title = "I had to come to prison to be a crook."
-category = ["Playing A Game"]
-game = ["Deus Ex: Mankind Divided - A Criminal Past"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Deus Ex: Mankind Divided - A Criminal Past" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 [A Criminal Past](game:Deus Ex: Mankind Divided - A Criminal Past) is both longer and more story-driven than [System Rift](game:Deus Ex: Mankind Divided - System Rift) was.  But the execution of this DLC turns those could-be-positives into some slightly-negatives.

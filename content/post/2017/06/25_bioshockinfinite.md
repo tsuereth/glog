@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-06-25T12:26:43-07:00"
 draft = false
-game = ["BioShock Infinite"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "BioShock Infinite" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Constants and decaying variables"
-
 +++
 
 <game:BioShock Infinite> still managed to feel good, in the end.  But not as good as it felt the first time.

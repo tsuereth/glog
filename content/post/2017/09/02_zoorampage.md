@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-09-02T17:16:49-07:00"
 draft = false
-game = ["Zoo Rampage"]
-platform = ["PC"]
-rating = ["Bad"]
+game = [ "Zoo Rampage" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 title = "Twenty more minutes of fun than I expected"
-
 +++
 
 I can't even remember how I ended up with <game:Zoo Rampage>.  It must have been part of a bundle I bought months, or maybe years ago.  But as long as I was going to boot it up for Steam trading cards, I figured I'd see what the game was actually like.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-11-16T21:57:16-08:00"
 draft = false
-game = ["Infinifactory"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "Infinifactory" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "Who do I look like, Ransom E Olds? Inventor of the assembly line?"
-
 +++
 
 <game:Infinifactory> is more than just <game:SpaceChem> in 3D -- it also has <i>gravity</i>.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-02-01T22:21:00-08:00"
 draft = false
-game = ["The Witness (2016)"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "The Witness (2016)" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "WITNESS ME"
-
 +++
 
 Imagine the island from <game:Myst>.  Not the esoteric book-worlds, not the mechanical puzzles, not the grainy FMV animations -- just the mysterious island that you were dropped on, with no introduction, and no directive but to explore, discover, and "solve."  [The Witness](game:The Witness (2016)) brings back that lonely exhiliration, that feeling of an alien land begging to be figured out.

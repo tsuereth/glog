@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-06-19T21:24:09-07:00"
 draft = false
-game = ["BioShock Infinite"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "BioShock Infinite" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Thank fuck it isn't actually infinite"
-
 +++
 
 Talk about rose-colored glasses; even moreso than my recent attempt to replay <game:Red Dead Redemption>, embarking upon Booker's journey through <game:BioShock Infinite> a second time is <i>humbling</i>.

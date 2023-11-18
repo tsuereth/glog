@@ -1,10 +1,10 @@
 +++
 date = "2019-08-23T21:51:40-07:00"
 title = "A game about controlling teams of battling robots from a tablet computer."
-category = ["Playing A Game"]
-game = ["Prismata"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Prismata" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Prismata> is half visual-novel, and half turn-based strategy game -- except the strategy game is really a card game, and the card game feels a lot like a puzzle ... well, let's slow down a bit.

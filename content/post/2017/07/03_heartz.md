@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-07-03T18:27:16-07:00"
 draft = false
-game = ["HeartZ: Co-Hope Puzzles"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "HeartZ: Co-Hope Puzzles" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "They're like hearts, but more x-treme"
-
 +++
 
 <game:HeartZ: Co-Hope Puzzles> is a lot like <game:Trine> (or, maybe even more like <game:The Lost Vikings>).  There are three characters, each with distinct abilities that allow them to - <i>using teamwork</i> - solve puzzles and traverse levels.  But HeartZ makes some simple mistakes that leave it firmly behind its progenitors.

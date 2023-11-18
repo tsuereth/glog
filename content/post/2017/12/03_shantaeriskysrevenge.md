@@ -1,9 +1,9 @@
 +++
 date = "2017-12-03T10:10:48-08:00"
 title = "Pixelated Booty"
-category = ["Playing A Game"]
-game = ["Shantae: Risky's Revenge - Director's Cut"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Shantae: Risky's Revenge - Director's Cut" ]
+platform = [ "PC" ]
 rating = []
 +++
 

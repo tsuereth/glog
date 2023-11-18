@@ -1,10 +1,10 @@
 +++
 date = "2021-08-16T22:39:37-07:00"
 title = "Should've kept the receipt."
-category = ["Playing A Game"]
-game = ["Borderlands 3: Bounty of Blood - A Fistful of Redemption"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 3: Bounty of Blood - A Fistful of Redemption" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Borderlands 3: Bounty of Blood - A Fistful of Redemption> commits what might be a cardinal sin, for <tag:Borderlands>: it tries to tell a serious story.

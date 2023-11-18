@@ -1,10 +1,10 @@
 +++
 date = "2021-01-20T20:59:25-08:00"
 title = "Taking nonograms to the next dimension"
-category = ["Playing A Game"]
-game = ["Voxelgram"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Voxelgram" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 [The demo]($SiteBaseURL$2020/02/09/now-youre-thinking-with-voxels/) sold me, and <game:Voxelgram>'s full game did not disappoint.

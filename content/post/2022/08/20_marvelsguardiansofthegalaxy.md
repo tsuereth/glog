@@ -1,10 +1,10 @@
 +++
 date = "2022-08-20T14:27:19-07:00"
 title = "There goes the flarkin' galaxy"
-category = ["Playing A Game"]
-game = ["Marvel's Guardians of the Galaxy"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Marvel's Guardians of the Galaxy" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 These misfits may not look <i>quite</i> like their <a href="https://www.imdb.com/title/tt2015381/">big-screen counterparts</a>, and their backstories may diverge from the movies', but make no mistake: <game:Marvel's Guardians of the Galaxy> <b>thrives</b> on the same rogueish quips, silly humor, and 1980s rock music that's made the MCU Guardians so compelling.

@@ -1,10 +1,10 @@
 +++
 date = "2018-06-05T07:57:27-07:00"
 title = "Stone Cold Stunner"
-category = ["Playing A Game"]
-game = ["The Witcher 3: Wild Hunt - Hearts of Stone"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "The Witcher 3: Wild Hunt - Hearts of Stone" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 [Hearts of Stone](game:The Witcher 3: Wild Hunt - Hearts of Stone) doesn't change a whole lot about [Witcher 3](game:The Witcher 3: Wild Hunt).  The Runewright is cool in theory, but I never bothered actually using it (since I'm still replacing my equipment every few levels).  There are just a few side-quests, one or two new monsters?, and only a small handful of new Gwent cards.

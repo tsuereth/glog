@@ -1,10 +1,10 @@
 +++
 date = "2020-05-11T22:43:51-07:00"
 title = "Goodnight, sweet prince"
-category = ["Playing A Game"]
-game = ["Prince of Persia (2008)"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Prince of Persia (2008)" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 After finally limping through <game:Fallout 4> (and especially [Nuka World](game:Fallout 4: Nuka World)), I felt like playing something <i>completely different</i>.  Something with a gripping adventure story, simple mechanics, pleasant visuals, a short running-length; and to be safe, something I'd played before.  My memory of <game:Prince of Persia (2008)> fit that bill perfectly -- but unfortunately, my memory didn't age very well.

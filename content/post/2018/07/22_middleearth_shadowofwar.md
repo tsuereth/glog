@@ -1,10 +1,10 @@
 +++
 date = "2018-07-22T16:37:45-07:00"
 title = "War Never Changes"
-category = ["Playing A Game"]
-game = ["Middle-earth: Shadow of War"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Middle-earth: Shadow of War" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 The ending is ... okay.  Like the rest of [Shadow of War](game:Middle-earth: Shadow of War)'s story, it somehow manages to simultaneously feel <i>cool</i> and <i>bizarre</i>.  The final act is pretty impressive, but more for its visual flair and its new gameplay than for any narrative payoff.

@@ -1,10 +1,10 @@
 +++
 date = "2019-12-31T10:39:08-08:00"
 title = "Murder is sexy"
-category = ["Playing A Game"]
-game = ["The Sexy Brutale"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "The Sexy Brutale" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 After my somewhat-disappointing trip through <game:RiME>, I glanced at <tag:Tequila Works>'s resume and was like... oh, yeah, <game:The Sexy Brutale>!  Yet another game that looked good, I bought, then got lost in my backlog.

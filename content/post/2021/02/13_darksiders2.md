@@ -1,10 +1,10 @@
 +++
 date = "2021-02-13T13:52:39-08:00"
 title = "Yeah yeah, pale horses and scythes and a revolver, we get it"
-category = ["Playing A Game"]
-game = ["Darksiders II"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Darksiders II" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 [Back in 2013]($SiteBaseURL$2013/08/06/death-is-kind-of-a-downer-you-know/) I struggled to follow through on <game:Darksiders II>: <i>"I've yet to encounter an item, dungeon puzzle, or narrative element that really </i>wows<i> me,</i>" I wrote.  This time around, I saw more in the game - and played through more <i>of</i> the game - but still lost interest well before the finish line.

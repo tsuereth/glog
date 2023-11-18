@@ -1,10 +1,10 @@
 +++
 date = "2021-07-03T10:40:41-07:00"
 title = "Be it ever so humble, there's no place like a secret impenetrable lair"
-category = ["Playing A Game"]
-game = ["Mass Effect 2: Lair of the Shadow Broker"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Mass Effect 2: Lair of the Shadow Broker" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Unlike [Overlord](game:Mass Effect 2: Overlord), the [Lair of the Shadow Broker](game:Mass Effect 2: Lair of the Shadow Broker) DLC story sticks closely to existing Mass Effect lore.

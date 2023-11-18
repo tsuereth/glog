@@ -1,9 +1,9 @@
 +++
 date = "2020-11-27T15:00:13-08:00"
 title = "Hitman: Guns Blazing"
-category = ["Playing A Game"]
-game = ["Hitman: Absolution"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Hitman: Absolution" ]
+platform = [ "PC" ]
 +++
 
 Given my recent positive impressions of <game:Hitman (2016)>, is it possible that I missed some fun assassination-puzzle gameplay in 2012's <game:Hitman: Absolution>?

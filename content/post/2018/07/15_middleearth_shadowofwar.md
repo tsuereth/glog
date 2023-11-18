@@ -1,10 +1,10 @@
 +++
 date = "2018-07-15T10:04:08-07:00"
 title = "What is dead may never die."
-category = ["Playing A Game"]
-game = ["Middle-earth: Shadow of War"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Middle-earth: Shadow of War" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Middle-earth: Shadow of War> is a lot like [its predecessor](game:Middle-earth: Shadow of Mordor) -- like, <i>a lot</i> like it.

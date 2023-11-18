@@ -1,10 +1,10 @@
 +++
 date = "2023-03-19T20:44:40-07:00"
 title = "Return of the mind-numbing note-taking"
-category = ["Playing A Game"]
-game = ["Return of the Obra Dinn"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Return of the Obra Dinn" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 Given my <i>inexhaustible disdain</i> for the simulated data-entry tedium of <game:Papers, Please>, I was relieved to see <game:Return of the Obra Dinn> de-emphasizing those pointless-feeling points and clicks in favor of a <b>mystery</b>, and an overt objective to collect clues and solve that mystery.

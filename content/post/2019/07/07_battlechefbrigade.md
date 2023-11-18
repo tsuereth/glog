@@ -1,10 +1,10 @@
 +++
 date = "2019-07-07T09:43:13-07:00"
 title = "Cook for your life"
-category = ["Playing A Game"]
-game = ["Battle Chef Brigade"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Battle Chef Brigade" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Battle Chef Brigade> is a peculiar mix: part side-scrolling action/combat game, part puzzle game, and part fantasy adventure where fates are decided by <i>Iron Chef</i> style cooking competitions.  Fight monsters, cook their parts into a meal, and win chef battles to earn your way into the noble Brigade!

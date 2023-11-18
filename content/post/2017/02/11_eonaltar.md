@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-02-11T17:17:48-08:00"
 draft = false
-game = ["Eon Altar"]
-platform = ["PC"]
-rating = ["Bad"]
+game = [ "Eon Altar" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 title = "Dungeons and Bullshit"
-
 +++
 
 <game:Eon Altar> swings hard at establishing a next generation of digital RPGs; by putting your character sheet and controls on your smartphone, [Jackbox](game:The Jackbox Party Pack 3)-style, it <i>could</i> deliver on a true multiplayer approach to CRPGs like <game:Baldur's Gate>.  Unfortunately, it strikes out due to numerous implementation issues.

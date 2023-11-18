@@ -1,10 +1,10 @@
 +++
 date = "2020-07-25T12:13:45-07:00"
 title = "Dishonored 2: Less Honored"
-category = ["Playing A Game"]
-game = ["Dishonored 2"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Dishonored 2" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 The first <game:Dishonored> impressed me with its ambitious variety of gameplay options, in spite of an awkwardly-linear world and unsatisfying narrative "choice."  [Arkane](tag:Arkane Studios) Austin followed this up with <game:Prey (2017)>, which felt like a great (if still-imperfect) evolution of gameplay freedom and narrative integration.  So it's funny that, in parallel, Arkane Lyon's attempt to iterate in <game:Dishonored 2> ignored those evolutionary opportunities and instead made the existing formula a little more bland.

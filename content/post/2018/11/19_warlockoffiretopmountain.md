@@ -1,9 +1,9 @@
 +++
 date = "2018-11-19T20:33:04-08:00"
 title = "I'll just make my own mountain, with Gwent, and hookers"
-category = ["Playing A Game"]
-game = ["The Warlock of Firetop Mountain"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "The Warlock of Firetop Mountain" ]
+platform = [ "PC" ]
 +++
 
 I was really hoping that <game:The Warlock of Firetop Mountain> would be a more dragon-flavored [Thronebreaker](game:Thronebreaker: The Witcher Tales).  Not really.

@@ -1,10 +1,10 @@
 +++
 date = "2017-11-09T21:30:54-08:00"
 title = "Of all the words I'd expect to describe Mad Moxxi, 'flat' wasn't one of them"
-category = ["Playing A Game"]
-game = ["Borderlands 2: Mad Moxxi and the Wedding Day Massacre"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 2: Mad Moxxi and the Wedding Day Massacre" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 And now the Headhunter packs are up to Valentine's Day, with [Mad Moxxi and the Wedding Day Massacre](game:Borderlands 2: Mad Moxxi and the Wedding Day Massacre).

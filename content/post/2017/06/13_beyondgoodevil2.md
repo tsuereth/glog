@@ -1,10 +1,9 @@
 +++
-category = ["Industry Lamentations"]
+category = [ "Industry Lamentations" ]
 date = "2017-06-13T07:37:27-07:00"
 draft = false
-game = ["Beyond Good & Evil 2"]
+game = [ "Beyond Good & Evil 2" ]
 title = "Beyond Harder"
-
 +++
 
 Maybe I'm the only person on Earth who played <game:Beyond Good & Evil> and didn't like it.  Over a decade later, all I can say is that it was profoundly un-memorable; the story wasn't noteworthy and the gameplay was very routine.

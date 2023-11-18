@@ -1,9 +1,9 @@
 +++
 date = "2020-08-23T14:51:49-07:00"
 title = "Un-re-avenged"
-category = ["Playing A Game"]
-game = ["Metal Gear Rising: Revengeance"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Metal Gear Rising: Revengeance" ]
+platform = [ "PC" ]
 +++
 
 Not much to say, here; I tried <game:Metal Gear Rising: Revengeance> again and stopped even sooner than [the last time]($SiteBaseURL$2014/01/12/reeeeeeevengeance/) I played it.

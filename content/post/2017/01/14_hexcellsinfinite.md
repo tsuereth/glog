@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-01-14T12:18:58-08:00"
 draft = false
-game = ["Hexcells Infinite"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Hexcells Infinite" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "To Infinity, And Then Stop"
-
 +++
 
 <game:Hexcells Infinite> is the final form of <game:Hexcells>.  It still doesn't <i>look</i> all that great, but it has puzzles just as challenging as those in <game:Hexcells Plus>, as well as an "infinite" mode (randomly generated puzzles that, well, aren't all that hard, but provide even more puzzles if you should feel the need for those).

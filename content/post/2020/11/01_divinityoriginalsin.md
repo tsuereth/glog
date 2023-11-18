@@ -1,10 +1,10 @@
 +++
 date = "2020-11-01T22:16:52-08:00"
 title = "Original Recipe"
-category = ["Playing A Game"]
-game = ["Divinity: Original Sin - Enhanced Edition"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Divinity: Original Sin - Enhanced Edition" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 I really wanted to like [Divinity: Original Sin](game:Divinity: Original Sin - Enhanced Edition).  I really did.  But this relatively-recent, highly-rated CRPG ended up losing my interest for qualities it <i>shares</i> with decades-old genre ancestors like [Baldur's Gate](game:Baldur's Gate: Enhanced Edition) and [Planescape: Torment](game:Planescape: Torment - Enhanced Edition).

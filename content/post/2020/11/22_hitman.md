@@ -1,9 +1,9 @@
 +++
 date = "2020-11-22T16:02:17-08:00"
 title = "Part-time assassin, full-time cosplayer"
-category = ["Playing A Game"]
-game = ["Hitman (2016)"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Hitman (2016)" ]
+platform = [ "PC" ]
 +++
 
 Ages ago, I bounced off of the older <tag:Hitman> games due to sheer difficulty.  So it's great that <game:Hitman (2016)> has added user interface conveniences that help you stay hidden; mostly-generous autosaves to simplify recovering from a mistake; and plentiful hints (eavesdropping and otherwise) which reveal potential assassination solutions.

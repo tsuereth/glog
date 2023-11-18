@@ -1,11 +1,10 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-10-07T18:07:00-07:00"
 draft = false
-game = ["Splasher"]
-platform = ["PC"]
+game = [ "Splasher" ]
+platform = [ "PC" ]
 title = "Splish, splash, I died in an acid bath"
-
 +++
 
 <game:Splasher> has been on my radar for a while, but only recently got a demo.

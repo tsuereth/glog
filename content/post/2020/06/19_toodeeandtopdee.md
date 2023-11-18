@@ -1,9 +1,9 @@
 +++
 date = "2020-06-19T10:36:01-07:00"
 title = "I mean, semicolons are important."
-category = ["Playing A Game"]
-game = ["Toodee and Topdee"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Toodee and Topdee" ]
+platform = [ "PC" ]
 +++
 
 <game:Toodee and Topdee> starts with a really fascinating premise: mashing up side-scrolling and top-down paradigms.  Switch between a Mario-style character who can jump between platforms, and a Link-style character who can <i>move those platforms</i>.  Toodee's initial levels feel like a call-out to games like <game:Fez> or <game:Super Paper Mario> -- "perspective changes are <i>old news</i>."

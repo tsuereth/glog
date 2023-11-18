@@ -1,9 +1,9 @@
 +++
 date = "2022-07-10T13:39:20-07:00"
 title = "In space, no one can hear your nostalgic sighs"
-category = ["Video Game Theory"]
-game = ["Rebel Galaxy Outlaw"]
-platform = ["PC"]
+category = [ "Video Game Theory" ]
+game = [ "Rebel Galaxy Outlaw" ]
+platform = [ "PC" ]
 +++
 
 I didn't play enough of <game:Rebel Galaxy Outlaw> to give it a fair shake; just enough to recognize what I miss - or to realize what I don't miss - from space-life simulators like <tag:Escape Velocity>.

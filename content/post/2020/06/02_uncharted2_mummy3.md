@@ -1,8 +1,8 @@
 +++
 date = "2020-06-02T22:27:27-07:00"
 title = "Good artists copy, great artists steal."
-category = ["Video Game Theory"]
-game = ["Uncharted 2: Among Thieves"]
+category = [ "Video Game Theory" ]
+game = [ "Uncharted 2: Among Thieves" ]
 +++
 
 I recently watched <a href="https://www.imdb.com/title/tt0859163/">The Mummy: Tomb of the Dragon Emperor</a> (December, 2008) and was shocked at some of the visual similarities to [Uncharted 2](game:Uncharted 2: Among Thieves) (October, 2009).

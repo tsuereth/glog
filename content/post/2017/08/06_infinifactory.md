@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-06T22:32:37-07:00"
 draft = false
-game = ["Infinifactory"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Infinifactory" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Working overtime"
-
 +++
 
 Although the level-select screen makes me appear within striking distance of <game:Infinifactory>'s end (for real, [this time]($SiteBaseURL$2017/06/25/dont-know-why-i-assumed-it-would-be-so-finite/)), the levels themselves paint a different picture.  Like the puzzles that closed the game's first half, these final levels are <i>work</i>.

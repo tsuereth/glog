@@ -1,10 +1,10 @@
 +++
 date = "2020-11-15T02:55:20-08:00"
 title = "Delving greedily, but perhaps not deeply enough"
-category = ["Playing A Game"]
-game = ["Dungeons 2"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Dungeons 2" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 The evil-base-defense-building genre isn't <i>exactly</i> novel, but it <i>is</i> rare, and <game:Dungeons 2> is an encouraging example of what this kind of game can offer.  If only it was less of a pain to play.

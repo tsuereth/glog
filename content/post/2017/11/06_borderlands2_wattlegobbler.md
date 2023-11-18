@@ -1,10 +1,10 @@
 +++
 date = "2017-11-06T22:03:21-08:00"
 title = "WHY BE A HERO WHEN YOU COULD EAT ONE?"
-category = ["Playing A Game"]
-game = ["Borderlands 2: The Horrible Hunger of the Ravenous Wattle Gobbler"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 2: The Horrible Hunger of the Ravenous Wattle Gobbler" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Mr. Torgue is here again to save the day!

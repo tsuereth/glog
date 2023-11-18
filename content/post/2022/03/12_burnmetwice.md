@@ -1,10 +1,10 @@
 +++
 date = "2022-03-12T13:57:50-08:00"
 title = "Can't Get Burned Again"
-category = ["Playing A Game"]
-game = ["Burn Me Twice"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Burn Me Twice" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Burn Me Twice> is obviously <i>inspired</i> by <tag:Ace Attorney>, its opening moments showing a judge, in a courtroom, who asks you to present evidence and witness testimony to prove a case.

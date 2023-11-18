@@ -1,10 +1,10 @@
 +++
 date = "2019-04-28T12:48:20-07:00"
 title = "Sustained!"
-category = ["Playing A Game"]
-game = ["Phoenix Wright: Ace Attorney Trilogy"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Phoenix Wright: Ace Attorney Trilogy" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Hold it!  Has it really been <i>almost fifteen years</i> since <game:Phoenix Wright: Ace Attorney> first showed me how fun the law could be?

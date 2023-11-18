@@ -1,10 +1,9 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-11-08T12:07:50-08:00"
-game = ["StarCraft II: Legacy of the Void"]
-platform = ["PC"]
+game = [ "StarCraft II: Legacy of the Void" ]
+platform = [ "PC" ]
 title = "Whispers of Familiarity"
-
 +++
 
 > Back in the <game:StarCraft> and [Brood War](game:StarCraft: Brood War) days, the backstory barely intruded into the game at all, and it's hard not to miss that here. The narrative between missions in [Heart of the Swarm], more often than not, feels like wasteful filler.

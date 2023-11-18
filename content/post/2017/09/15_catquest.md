@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-09-15T19:29:15-07:00"
 draft = false
-game = ["Cat Quest"]
-platform = ["Android"]
-rating = ["Good"]
+game = [ "Cat Quest" ]
+platform = [ "Android" ]
+rating = [ "Good" ]
 title = "A purrfect fit"
-
 +++
 
 <game:Cat Quest> finally came out on Android, and now my phone's battery is dead.

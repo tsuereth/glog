@@ -1,10 +1,10 @@
 +++
 date = "2022-06-26T12:02:38-07:00"
 title = "If at first you don't succeed, you'll need to shoot everyone all over again"
-category = ["Playing A Game"]
-game = ["Deathloop"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Deathloop" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 In a way, <game:Deathloop> feels like a retort to my <a href="https://en.wikipedia.org/wiki/Fear_of_missing_out">FOMO</a> on [Prey](game:Prey (2017))'s story choices: if you "miss" something, you can try it again tomorrow!  It's a great wrapper around [Arkane](tag:Arkane Studios)'s dense and intricate levels, even though some flawed progression and poor storytelling keep it from reaching "masterpiece" status.

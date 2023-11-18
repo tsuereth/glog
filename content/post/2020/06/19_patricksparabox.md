@@ -1,9 +1,9 @@
 +++
 date = "2020-06-19T13:49:53-07:00"
 title = "Much more than a pair o' boxes"
-category = ["Playing A Game"]
-game = ["Patrick's Parabox"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Patrick's Parabox" ]
+platform = [ "PC" ]
 +++
 
 My initial concern in <game:Patrick's Parabox> was that the mechanical distinction between "push this block" and "enter the maze inside this block" is too ambiguous.  I.e., you can't enter the side of a block until its opposite side is against a wall, and pushing an un-pushable block may have unexpected consequences if you're not paying attention.  As more blocks and more pushing come into play, this gotcha could become frustrating.

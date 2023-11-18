@@ -18,7 +18,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = @"+++
 someString = ""a string value""
-someArray = [""an"", ""array""]
+someArray = [ ""an"", ""array"" ]
 +++
 hello, world";
 
@@ -43,7 +43,7 @@ hello, world";
 
             var testText = @"+++
 someString = ""a string value""
-someArray = [""an"", ""array""]
+someArray = [ ""an"", ""array"" ]
 +++
 hello, world";
 
@@ -59,7 +59,7 @@ hello, world";
 
             var testText = @"+++
 someString = ""a string value""
-someArray = [""an"", ""array""]
+someArray = [ ""an"", ""array"" ]
 +++
 hello, world";
 
@@ -77,7 +77,7 @@ hello, world";
 
             var testText = @"+++
 someString = ""a string value""
-someArray = [""an"", ""array""]
+someArray = [ ""an"", ""array"" ]
 +++
 hello, world";
 
@@ -95,7 +95,7 @@ hello, world";
 
             var expectedText = @"+++
 someString = ""another string value""
-someArray = [""an"", ""other"", ""array""]
+someArray = [ ""an"", ""other"", ""array"" ]
 +++
 hello, world";
             Assert.AreEqual(expectedText, result);

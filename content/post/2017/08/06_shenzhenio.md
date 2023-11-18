@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-06T22:32:41-07:00"
 draft = false
-game = ["Shenzhen I/O"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Shenzhen I/O" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Churning out low-quality electronics"
-
 +++
 
 Compared to <game:Infinifactory> and <game:TIS-100>, I am <i>blazing</i> through <game:Shenzhen I/O>.  Less because I'm compelled by the fun, and more because I'm already familiar with its challenges.

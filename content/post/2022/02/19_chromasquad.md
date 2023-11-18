@@ -1,10 +1,10 @@
 +++
 date = "2022-02-19T21:55:01-08:00"
 title = "Henshin-a-go-go, baby"
-category = ["Playing A Game"]
-game = ["Chroma Squad"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Chroma Squad" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Chroma Squad> is a bit of a paradox.  A good one, though.

@@ -1,10 +1,10 @@
 +++
 date = "2020-06-07T22:17:02-07:00"
 title = "I thought we were gonna COOL his HOT heart with a COOL island song."
-category = ["Playing A Game"]
-game = ["Batman: Arkham Origins - Cold, Cold Heart"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Batman: Arkham Origins - Cold, Cold Heart" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 [Cold, Cold Heart](game:Batman: Arkham Origins - Cold, Cold Heart) is like <game:Batman: Arkham Origins> in that, even if we could have done <i>just fine</i> without it, it's a good enough excuse to go Batman-ing around town for a few hours.

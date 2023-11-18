@@ -1,9 +1,9 @@
 +++
 date = "2020-01-20T12:28:00-08:00"
 title = "Let him who is without sin collect the first loot"
-category = ["Playing A Game"]
-game = ["Five: Guardians of David"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Five: Guardians of David" ]
+platform = [ "PC" ]
 +++
 
 <game:Five: Guardians of David> is a <tag:Diablo>-alike.  It's an action RPG from an overhead view, it's got a skill-bar and ability cooldowns, you collect equipment and money from fallen enemies -- and, like Diablo, it tells a story about the Bible.

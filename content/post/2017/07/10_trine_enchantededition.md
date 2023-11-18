@@ -1,11 +1,10 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-07-10T21:00:53-07:00"
 draft = false
-game = ["Trine Enchanted Edition"]
-platform = ["PC"]
+game = [ "Trine Enchanted Edition" ]
+platform = [ "PC" ]
 title = "Mildly Enchanting"
-
 +++
 
 [Eight years ago]($SiteBaseURL$2009/08/22/trine-4/), I pointed out a critical flaw in <game:Trine>'s co-op experience: the game isn't <i>really</i> designed for it -- and most obstacles don't accommodate multiple players.

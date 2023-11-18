@@ -1,10 +1,10 @@
 +++
 date = "2018-08-20T16:51:00-07:00"
 title = "Get your ass back to Mars."
-category = ["Playing A Game"]
-game = ["Red Faction: Guerrilla Re-Mars-tered"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Red Faction: Guerrilla Re-Mars-tered" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Back when I replayed Guerrilla's "Steam Edition," [I said]($SiteBaseURL$2015/12/20/the-red-faction-is-dead-long-live-the-red-faction/) that <i>"I don't need a new open-world destruction game, at least not yet.  This one is still good."</i>

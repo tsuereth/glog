@@ -1,9 +1,9 @@
 +++
 date = "2023-02-11T11:54:05-08:00"
 title = "Somewhere between Disco Inferno, and Dante's Inferno"
-category = ["Playing A Game"]
-game = ["Disco Elysium: The Final Cut"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Disco Elysium: The Final Cut" ]
+platform = [ "PC" ]
 +++
 
 Lengthy sections of text, random dice-roll checks, having to wait while you walk to an objective, overly-sporadic autosaves; [Disco Elysium](game:Disco Elysium: The Final Cut) checks quite a few of my "no, thanks" boxes.  So it's <i>especially</i> remarkable, thanks to its thoroughly engrossing writing and world-building, that I'm still interested in playing it.  (Even after I <a href="https://old.reddit.com/r/DiscoElysium/comments/rp67l4/talked_to_cuno_throwing_rocks_at_the_body_next">died abruptly from a mean kid damaging my morale</a>.)

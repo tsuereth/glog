@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-05-07T22:31:27-07:00"
 draft = false
-game = ["Yooka-Laylee"]
-platform = ["PC"]
-rating = ["Bad"]
+game = [ "Yooka-Laylee" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 title = "Yucky-Flaily"
-
 +++
 
 Controls that infuriatingly refuse precision.  Platforming gauntlets that demand perfection, and force repetitive retry after retry.  <i>Hidden</i> abilities that are necessary to proceed in the game (apparently the cloaking ability can also reflect light beams? what the fuck?).  <game:Yooka-Laylee> has all the hallmarks of a game that <b>doesn't respect your time</b>.

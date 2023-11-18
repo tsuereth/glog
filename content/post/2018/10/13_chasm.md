@@ -1,10 +1,10 @@
 +++
 date = "2018-10-13T11:24:01-07:00"
 title = "No more unto the breach"
-category = ["Playing A Game"]
-game = ["Chasm"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Chasm" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 More than <b>five years</b> later, <game:Chasm> finally got released.  It's technologically solid, and has a nice, clean art style.  That concludes the nice things I can say about it.

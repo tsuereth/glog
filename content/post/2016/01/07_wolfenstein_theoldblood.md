@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-01-07T00:27:58-08:00"
 draft = false
-game = ["Wolfenstein: The Old Blood"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Wolfenstein: The Old Blood" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "This Old Blood Could Use Some New, Uh, Order"
-
 +++
 
 <game:Wolfenstein: The Old Blood> makes short work of the goodwill built by [The New Order](game:Wolfenstein: The New Order).  The latter succeeded as a parcel of entertainment because it wrapped a technically-tight shooter with interesting characters, intriguing settings, and a thrill-a-minute rollercoaster ride of level design.  But the former lays said technically-tight shooter bare: This is a Nazi-killin' game, with little else to it.

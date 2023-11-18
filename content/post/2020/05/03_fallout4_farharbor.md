@@ -1,10 +1,10 @@
 +++
 date = "2020-05-03T22:38:35-07:00"
 title = "Lost in the fog"
-category = ["Playing A Game"]
-game = ["Fallout 4: Far Harbor"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Fallout 4: Far Harbor" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Fallout 4>'s [Far Harbor](game:Fallout 4: Far Harbor) expansion has some lofty ambitions, but poor execution ultimately reduces this DLC to "more of the same."  And considering the base game has plenty of same-ness already, that's not much of a sales pitch.

@@ -1,10 +1,10 @@
 +++
 date = "2019-11-10T10:42:26-08:00"
 title = "They drew first blood!"
-category = ["Playing A Game"]
-game = ["Roombo: First Blood"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Roombo: First Blood" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Based on its low price, you might guess that <game:Roombo: First Blood> <i>(great title, by the way)</i> is a one-note joke of a game.  And you'd be pretty much right.

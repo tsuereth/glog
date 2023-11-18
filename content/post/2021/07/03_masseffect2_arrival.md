@@ -1,10 +1,10 @@
 +++
 date = "2021-07-03T11:05:58-07:00"
 title = "Studying a Reaper artifact, what could go wrong?"
-category = ["Playing A Game"]
-game = ["Mass Effect 2: Arrival"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Mass Effect 2: Arrival" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 [Arrival](game:Mass Effect 2: Arrival) starts small, with an innocent-sounding mission to rescue a covert operative, and takes a little too long building toward its major reveal: a plot to slow down the Reaper invasion by <i>fucking exploding a mass relay</i>.

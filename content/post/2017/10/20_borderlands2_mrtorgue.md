@@ -1,11 +1,10 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-10-20T18:18:06-07:00"
-game = ["Borderlands 2: Mr. Torgue's Campaign of Carnage"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Borderlands 2: Mr. Torgue's Campaign of Carnage" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "KIDS THESE DAYS AND THEIR CRAZY LANGUAGE AM I RIGHT!?"
-
 +++
 
 In short, [Mr. Torgue's Campaign of Carnage](game:Borderlands 2: Mr. Torgue's Campaign of Carnage) would be a firm "meh" if not for Mr. Torgue himself.

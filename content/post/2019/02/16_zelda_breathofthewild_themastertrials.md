@@ -1,10 +1,10 @@
 +++
 date = "2019-02-16T14:25:35-08:00"
 title = "Ordeal of the Sword"
-category = ["Playing A Game"]
-game = ["The Legend of Zelda: Breath of the Wild - The Master Trials"]
-platform = ["Switch"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "The Legend of Zelda: Breath of the Wild - The Master Trials" ]
+platform = [ "Switch" ]
+rating = [ "Bad" ]
 +++
 
 [The Master Trials](game:The Legend of Zelda: Breath of the Wild - The Master Trials) DLC adds "more" content to [Breath of the Wild](game:The Legend of Zelda: Breath of the Wild), but <i>not good</i> content.

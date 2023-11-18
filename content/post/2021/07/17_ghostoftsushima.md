@@ -1,10 +1,10 @@
 +++
 date = "2021-07-17T15:05:28-07:00"
 title = "Breath of the Mild? more like, Ninja-Assassin's Creed"
-category = ["Playing A Game"]
-game = ["Ghost of Tsushima"]
-platform = ["PS4"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Ghost of Tsushima" ]
+platform = [ "PS4" ]
+rating = [ "Awesome" ]
 +++
 
 <game:Ghost of Tsushima>'s <i>beautiful</i> open world is inlaid with engaging action gameplay and touching character stories.  But not at first.

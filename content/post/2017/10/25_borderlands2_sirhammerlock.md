@@ -1,10 +1,10 @@
 +++
 date = "2017-10-25T22:47:54-07:00"
 title = "Not as fun as, and maybe even shorter than, Jumanji"
-category = ["Playing A Game"]
-game = ["Borderlands 2: Sir Hammerlock's Big Game Hunt"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 2: Sir Hammerlock's Big Game Hunt" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 Like I said [back in 2013]($SiteBaseURL$2013/01/30/borderlands-2-sir-hammerlocks-big-game-hunt-2/):

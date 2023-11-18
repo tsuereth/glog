@@ -1,10 +1,10 @@
 +++
 date = "2022-02-20T18:27:20-08:00"
 title = "It takes two people, and a generous number of drinks"
-category = ["Playing A Game"]
-game = ["It Takes Two"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "It Takes Two" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:It Takes Two> has a <i>lot</i> of ideas.  Some of them work pretty well!  Some of them don't.  On average, though, it's fun enough to keep two people entertained for a surprising number of hours.

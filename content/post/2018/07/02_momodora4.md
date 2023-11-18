@@ -1,10 +1,10 @@
 +++
 date = "2018-07-02T21:56:21-07:00"
 title = "Mankind ill needs a savior such as you!"
-category = ["Playing A Game"]
-game = ["Momodora: Reverie Under the Moonlight"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Momodora: Reverie Under the Moonlight" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Momodora: Reverie Under the Moonlight> does <i>some</i> things well.  The combat mechanics are easy to learn, and have a bit of satisfying depth; upgrades come at a good pace and feel meaningful; regions have distinctive visual and audio themes.  And the map is a good-enough example of non-linear Metroidvania layout, given how short the game is.

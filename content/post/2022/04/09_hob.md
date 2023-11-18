@@ -1,10 +1,10 @@
 +++
 date = "2022-04-09T18:39:50-07:00"
 title = "Not all those who wander are lost, but I sure am."
-category = ["Playing A Game"]
-game = ["Hob"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Hob" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Hob> looks nice.

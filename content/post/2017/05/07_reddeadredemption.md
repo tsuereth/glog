@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-05-07T22:37:59-07:00"
 draft = false
-game = ["Red Dead Redemption"]
-platform = ["XONE"]
-rating = ["Meh"]
+game = [ "Red Dead Redemption" ]
+platform = [ "XONE" ]
+rating = [ "Meh" ]
 title = "Sometimes, dead is better"
-
 +++
 
 Sorry to say, I was right when I guessed that <game:Red Dead Redemption> would be "[better remembered than played]($SiteBaseURL$2014/05/07/rose-colored-redemption/)."  I got an itch to revisit it recently, and I don't know that I'll be following through on John Marston's story a second time.

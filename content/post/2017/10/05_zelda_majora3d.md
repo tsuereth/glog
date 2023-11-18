@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-10-05T22:41:43-07:00"
 draft = false
-game = ["The Legend of Zelda: Majora's Mask 3D"]
-platform = ["3DS"]
-rating = ["Meh"]
+game = [ "The Legend of Zelda: Majora's Mask 3D" ]
+platform = [ "3DS" ]
+rating = [ "Meh" ]
 title = "Not-Quite-Open World"
-
 +++
 
 Toward the end, playing through [Majora's Mask 3D](game:The Legend of Zelda: Majora's Mask 3D) felt like I was just going through the motions.  And sure, I didn't <i>need</i> to check all the checkboxes and collect all the collectibles, but ... well, I'll get to that in a minute.

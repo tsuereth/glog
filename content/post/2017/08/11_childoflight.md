@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-11T08:40:06-07:00"
 draft = false
-game = ["Child of Light"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Child of Light" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "A light adventure"
-
 +++
 
 <game:Child of Light>'s story continued being obtuse, and obfuscated by unnecessary rhyming, for most of its running length.  The ending moments worked well enough, but it really feels like this story could have been told a lot better than it was.

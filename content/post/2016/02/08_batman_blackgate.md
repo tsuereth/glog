@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-02-08T20:53:22-08:00"
 draft = false
-game = ["Batman: Arkham Origins Blackgate"]
-platform = ["PC"]
-rating = ["Awful"]
+game = [ "Batman: Arkham Origins Blackgate" ]
+platform = [ "PC" ]
+rating = [ "Awful" ]
 title = "If Arkham Origins was a sour note in the franchise, then this is a harp set on fire"
-
 +++
 
 That <game:Batman: Arkham Origins Blackgate> (nevermind the ... <i>unbelievable</i> name) was given to [Arkham Knight](game:Batman: Arkham Knight) purchasers as an <a href="https://steamcommunity.com/games/208650/announcements/detail/128710596358664118">apology</a> for that game's technical troubles, is a Joker-caliber prank.  More than a poor Batman game, and more than a poor game in general, Blackgate is <i>confusingly</i> bad.

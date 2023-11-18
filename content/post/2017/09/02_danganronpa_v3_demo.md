@@ -1,11 +1,10 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-09-02T19:32:51-07:00"
 draft = false
-game = ["Danganronpa V3: Killing Harmony"]
-platform = ["PC"]
+game = [ "Danganronpa V3: Killing Harmony" ]
+platform = [ "PC" ]
 title = "Something something ultimate despair"
-
 +++
 
 I heard on the internet, somewhere, that the Danganronpa series was kind of like a pop-anime version of [Phoenix Wright](game:Phoenix Wright: Ace Attorney - Spirit of Justice).  At least based on my experience with the demo for <game:Danganronpa V3: Killing Harmony>, this ... seems like an artful comparison.

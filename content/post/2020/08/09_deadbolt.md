@@ -1,10 +1,10 @@
 +++
 date = "2020-08-09T09:07:27-07:00"
 title = "Lock yo' doors"
-category = ["Playing A Game"]
-game = ["Deadbolt"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Deadbolt" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Deadbolt> feels like a mildly-<game:Gunpoint> twist on <game:Hotline Miami>.  I love being able to see the level zoomed out, and plan my approach; I love the environmental opportunities to move through air ducts, or flip over a table for cover; I love the flexibility afforded by finding (or purchasing) additional weapons and varying my combat tactics accordingly.

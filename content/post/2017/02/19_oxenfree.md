@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-02-19T14:12:40-08:00"
 draft = false
-game = ["Oxenfree"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Oxenfree" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Name is accurate, no oxen here"
-
 +++
 
 In its opening scenes, <game:Oxenfree> seemed like a clever-but-flawed story-based adventure game.

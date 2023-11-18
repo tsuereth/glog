@@ -1,10 +1,10 @@
 +++
 date = "2021-10-30T11:01:24-07:00"
 title = "The game is afoot!"
-category = ["Playing A Game"]
-game = ["The Great Ace Attorney: Adventures", "The Great Ace Attorney 2: Resolve"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "The Great Ace Attorney: Adventures", "The Great Ace Attorney 2: Resolve" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 For the most part, <game:The Great Ace Attorney Chronicles> - the localized collection of two games, [Adventures](game:The Great Ace Attorney: Adventures) and [Resolve](game:The Great Ace Attorney 2: Resolve), which I [thought would never leave Japan]($SiteBaseURL$2014/04/26/oh-great/) - is exactly what an <tag:Ace Attorney> veteran expects.

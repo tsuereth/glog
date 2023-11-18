@@ -1,10 +1,10 @@
 +++
 date = "2020-06-13T09:31:48-07:00"
 title = "The best revenge is living well, that or building a deathtrap dungeon"
-category = ["Playing A Game"]
-game = ["Batman: Arkham City - Harley Quinn's Revenge"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Batman: Arkham City - Harley Quinn's Revenge" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 The two facts I could remember about <game:Batman: Arkham City - Harley Quinn's Revenge> were that it was (1) good, and (2) short.

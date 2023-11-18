@@ -1,10 +1,10 @@
 +++
 date = "2023-11-05T19:54:35.4798071-08:00"
 title = "More Murder in Mordor"
-category = ["Playing A Game"]
-game = ["Middle-earth: Shadow of War"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Middle-earth: Shadow of War" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 <game:Middle-earth: Shadow of War> is awesome for a good, long while -- after you unlock the domination ability, and before the endgame Shadow Wars combat becomes tiresome.
 

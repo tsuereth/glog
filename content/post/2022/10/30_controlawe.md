@@ -1,10 +1,10 @@
 +++
 date = "2022-10-30T15:14:05-07:00"
 title = "A story about a writer who wrote a story about a writer writing a story"
-category = ["Playing A Game"]
-game = ["Control: AWE"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Control: AWE" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 "AWE" is <game:Control>'s <a href="https://en.wikipedia.org/wiki/Three-letter_acronym">TLA</a> for Altered World Event, but in <game:Control: AWE>, it might just mean <game:Alan Wake> Expansion.

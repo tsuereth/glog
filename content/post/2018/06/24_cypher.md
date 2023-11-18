@@ -1,10 +1,10 @@
 +++
 date = "2018-06-24T18:02:03-07:00"
 title = "Hidden in plain sight"
-category = ["Playing A Game"]
-game = ["Cypher (2018)"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Cypher (2018)" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 I play different puzzle games for different reasons.  Some, like a [picross game](game:Pepper's Puzzles), are relaxing ways to unwind.  Some, like <game:Portal 2> or <game:Antichamber>, are fun to learn and explore -- as a journey of understanding the designers' ideas.  And some, like <game:SpaceChem> or <game:TIS-100>, humble me because they make me feel like a complete idiot.

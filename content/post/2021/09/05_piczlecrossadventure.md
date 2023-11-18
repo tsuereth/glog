@@ -1,10 +1,10 @@
 +++
 date = "2021-09-05T13:48:36-07:00"
 title = "I think I'm quite ready for another adventure."
-category = ["Playing A Game"]
-game = ["Piczle Cross Adventure"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Piczle Cross Adventure" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 Here's the headline: <game:Piczle Cross Adventure> is basically what I "wanted" [PictoQuest](game:PictoQuest: The Cursed Grids) to be.  It's an imperfect, but delightfully <i>satisfying</i>, hybrid of exploration-based adventuring and nonogram puzzle solving.

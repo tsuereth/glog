@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-08-15T23:29:10-07:00"
 draft = false
-game = ["Pony Island"]
-platform = ["PC"]
-rating = ["Bad"]
+game = [ "Pony Island" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 title = "Ponies are Evil"
-
 +++
 
 <game:Pony Island>'s premise is a clever twist on the kind of "hacking" adventure-slash-visual-novel game that has you investigating and uncovering secrets in a virtual computer environment.  The twist is that it's the devil's computer and that he wants you to play his videogame.  This actually leads to some interesting theming around both archdemons and cynical game developers.

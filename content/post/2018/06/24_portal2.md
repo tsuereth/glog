@@ -1,10 +1,10 @@
 +++
 date = "2018-06-24T15:55:01-07:00"
 title = "Still Alive"
-category = ["Playing A Game"]
-game = ["Portal 2"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Portal 2" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Seven years later, <game:Portal 2>'s campaign still holds up fairly well.

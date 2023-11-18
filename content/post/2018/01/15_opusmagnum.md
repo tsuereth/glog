@@ -1,10 +1,10 @@
 +++
 date = "2018-01-15T09:11:30-08:00"
 title = "Needs more opus"
-category = ["Playing A Game"]
-game = ["Opus Magnum"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Opus Magnum" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Well, the ending is pretty terrible.  <game:Opus Magnum>'s story is generally awkward - the first chapter is stiff and wooden, then the remaining four are just <i>meandering</i> - but nowhere moreso than in the final story scene, in which >!the villain (who hadn't even been clearly identified, up to this point) claims to have outsmarted you, threatens to kill you, and then offers for you to join him, only to finally discover that <i>he was talking to a mannequin!</i>  And the fates of the protagonists are left to your imagination.!<

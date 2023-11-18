@@ -1,10 +1,10 @@
 +++
 date = "2020-06-07T10:56:06-07:00"
 title = "Maybe not the hero we need right now"
-category = ["Playing A Game"]
-game = ["Batman: Arkham Origins"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Batman: Arkham Origins" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 I've been hankering for a <i>Batman</i> fix for a while, and figured I may as well start with "the <s>bad</s> less-good one."

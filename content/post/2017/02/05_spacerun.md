@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-02-05T13:21:48-08:00"
 draft = false
-game = ["Space Run: Fast and Safe Delivery"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Space Run: Fast and Safe Delivery" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Not as fun as a Beer Run"
-
 +++
 
 [Space Run](game:Space Run: Fast and Safe Delivery) isn't very shy about drawing influence from the board game <a href="https://boardgamegeek.com/boardgame/31481/galaxy-trucker">Galaxy Trucker</a>.  It has the same kinds of tiles (lasers, missiles, thrusters, shields, generators, cargo...) and the same basic mechanics of attack and defense (asteroids or enemies coming from specific angles).

@@ -1,10 +1,10 @@
 +++
 date = "2019-12-25T13:29:23-08:00"
 title = "Hacked the Planet"
-category = ["Playing A Game"]
-game = ["Exapunks"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Exapunks" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 The story took a bit of a weird turn near the end, but ultimately <game:Exapunks> left me feeling very satisfied.

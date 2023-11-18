@@ -1,9 +1,9 @@
 +++
 date = "2017-12-29T22:45:09-08:00"
 title = "Elegy for Wii U"
-category = ["Looking Forward To It"]
-game = ["The Legend of Zelda: Breath of the Wild - The Champions' Ballad"]
-platform = ["Switch"]
+category = [ "Looking Forward To It" ]
+game = [ "The Legend of Zelda: Breath of the Wild - The Champions' Ballad" ]
+platform = [ "Switch" ]
 +++
 
 When [Champions' Ballad](game:The Legend of Zelda: Breath of the Wild - The Champions' Ballad) was released earlier this month, I downloaded and tried it (on [Wii U](platform:WiiU)) almost immediately.  And abruptly ran into a small, but critical flaw in this DLC: it came out about six months too late.

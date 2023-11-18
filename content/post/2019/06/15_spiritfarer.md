@@ -1,9 +1,9 @@
 +++
 date = "2019-06-15T16:21:33-07:00"
 title = "Let's take this boat-town out to international waters"
-category = ["Looking Forward To It"]
-game = ["Spiritfarer"]
-platform = ["PC"]
+category = [ "Looking Forward To It" ]
+game = [ "Spiritfarer" ]
+platform = [ "PC" ]
 +++
 
 The [Breath of the Wild](game:The Legend of Zelda: Breath of the Wild) sequel <a href="https://www.youtube.com/watch?v=3fr1Z07AV00">looks exciting</a>, and the <game:No More Heroes III> reveal was <a href="https://www.youtube.com/watch?v=Td4YZG4B_yg">a pleasant shock</a> (please, <i>please</i> don't suck).

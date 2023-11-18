@@ -1,9 +1,9 @@
 +++
 date = "2017-12-03T09:50:04-08:00"
 title = "Come along and ride on a fantastic voyage"
-category = ["Playing A Game"]
-game = ["Mario & Luigi: Bowser's Inside Story"]
-platform = ["NDS"]
+category = [ "Playing A Game" ]
+game = [ "Mario & Luigi: Bowser's Inside Story" ]
+platform = [ "NDS" ]
 rating = []
 +++
 

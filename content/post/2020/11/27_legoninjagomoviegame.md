@@ -1,9 +1,9 @@
 +++
 date = "2020-11-27T17:03:13-08:00"
 title = "Go go power ... ninja?"
-category = ["Playing A Game"]
-game = ["The LEGO Ninjago Movie Video Game"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "The LEGO Ninjago Movie Video Game" ]
+platform = [ "PC" ]
 +++
 
 I've done quite a bit of [LEGO gaming](tag:LEGO) in the past, to say nothing of real-life LEGO-ing, and I'm well-aware that the "LEGO" part of these games' appeal is fairly shallow.

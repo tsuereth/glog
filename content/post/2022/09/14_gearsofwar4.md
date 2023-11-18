@@ -1,10 +1,10 @@
 +++
 date = "2022-09-14T11:52:05-07:00"
 title = "Keep on turnin'"
-category = ["Playing A Game"]
-game = ["Gears of War 4"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Gears of War 4" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 My [recorded memory]($SiteBaseURL$2011/10/09/gears-of-war-3-2/) of <game:Gears of War 3> was surprisingly positive, especially about the quality of its writing.  What happened in that game again?  I think... a grizzled old military scientist, the presumed-dead father of the franchise's protagonist, committed chemical-weapon genocide against the under-dwelling "Locust" bug-mutant people...?

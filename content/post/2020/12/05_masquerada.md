@@ -1,10 +1,10 @@
 +++
 date = "2020-12-05T13:35:54-08:00"
 title = "Molto bene"
-category = ["Playing A Game"]
-game = ["Masquerada: Songs and Shadows"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Masquerada: Songs and Shadows" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Masquerada: Songs and Shadows> feels spiritually similar to a <tag:Final Fantasy> game, in some key ways.

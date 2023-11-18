@@ -1,9 +1,9 @@
 +++
 date = "2021-11-11T08:13:19-08:00"
 title = "Ronout"
-category = ["Playing A Game"]
-game = ["Ronin"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Ronin" ]
+platform = [ "PC" ]
 +++
 
 <b>Years</b> after [trying the demo]($SiteBaseURL$2015/07/04/swordpoint/), my thoughts on <game:Ronin> are largely unchanged: it channels the same cool-factors as <game:Gunpoint> and <game:Mark of the Ninja>, but its attempts to be more tactical than the former suffer from <i>imprecision</i> relative to the latter.

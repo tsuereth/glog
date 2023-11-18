@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-12-30T00:52:58-08:00"
 draft = false
-game = ["Paint it Back"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "Paint it Back" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "I painted it all back"
-
 +++
 
 I spent... oh, wow.  Thirty hours?  On these puzzles.  That's a lot of puzzle.

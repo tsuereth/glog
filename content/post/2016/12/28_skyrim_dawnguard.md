@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-12-28T17:41:02-08:00"
 draft = false
-game = ["The Elder Scrolls V: Skyrim - Dawnguard"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "The Elder Scrolls V: Skyrim - Dawnguard" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "I am the night"
-
 +++
 
 [Dawnguard](game:The Elder Scrolls V: Skyrim - Dawnguard) gives you the choice of helping the Dawnguard hunt down the lord of the vampires, or joining said vampires and gaining the powers of evil blood-drinking magic.  Is that even really a choice?  Who wouldn't want to be a vampire, at least for a little while?

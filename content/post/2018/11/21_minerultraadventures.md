@@ -1,10 +1,10 @@
 +++
 date = "2018-11-21T07:51:52-08:00"
 title = "As I continue draining the bottom of my backlog..."
-category = ["Playing A Game"]
-game = ["Miner Ultra Adventures"]
-platform = ["PC"]
-rating = ["Awful"]
+category = [ "Playing A Game" ]
+game = [ "Miner Ultra Adventures" ]
+platform = [ "PC" ]
+rating = [ "Awful" ]
 +++
 
 I received <game:Miner Ultra Adventures> as a gift, from a friend.  At least I think we're friends.  This gift has made me wonder.

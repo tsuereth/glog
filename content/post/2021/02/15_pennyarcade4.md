@@ -1,10 +1,10 @@
 +++
 date = "2021-02-15T16:20:57-08:00"
 title = "Gotta transubstantiate 'em all"
-category = ["Playing A Game"]
-game = ["Penny Arcade's On the Rain-Slick Precipice of Darkness 4"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Penny Arcade's On the Rain-Slick Precipice of Darkness 4" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Penny Arcade's On the Rain-Slick Precipice of Darkness 4> takes some admirable risks in re-mixing the formula from [part 3](game:Penny Arcade's On the Rain-Slick Precipice of Darkness 3) -- with uneven, but undeniably <i>interesting</i>, results.

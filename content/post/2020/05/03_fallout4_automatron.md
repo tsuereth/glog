@@ -1,10 +1,10 @@
 +++
 date = "2020-05-03T12:26:38-07:00"
 title = "Maybe too many robots"
-category = ["Playing A Game"]
-game = ["Fallout 4: Automatron"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Fallout 4: Automatron" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 [Automatron](game:Fallout 4: Automatron) is about robots.  You fight robots, you get a new companion who's a robot, and you build an upgrade station for robots! Robots, robots, robots.

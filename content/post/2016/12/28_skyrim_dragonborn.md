@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-12-28T17:41:09-08:00"
 draft = false
-game = ["The Elder Scrolls V: Skyrim - Dragonborn"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "The Elder Scrolls V: Skyrim - Dragonborn" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "There ain't enough room in this continent for two dragonborn"
-
 +++
 
 Learning from [Dawnguard](game:The Elder Scrolls V: Skyrim - Dawnguard)'s map-placement problems, [Dragonborn](game:The Elder Scrolls V: Skyrim - Dragonborn) puts a whole new (miniature) content on a separate map.  You travel to the island of Solstheim from a dock in Windhelm, and can then fast-travel between brand new destinations on the island itself.

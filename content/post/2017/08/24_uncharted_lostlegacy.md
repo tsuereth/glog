@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-24T07:55:24-07:00"
 draft = false
-game = ["Uncharted: The Lost Legacy"]
-platform = ["PS4"]
-rating = ["Good"]
+game = [ "Uncharted: The Lost Legacy" ]
+platform = [ "PS4" ]
+rating = [ "Good" ]
 title = "Uncharted: Generic Subtitle"
-
 +++
 
 <game:Uncharted: The Lost Legacy> isn't all that good at telling its story.

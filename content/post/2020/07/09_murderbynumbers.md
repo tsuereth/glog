@@ -1,10 +1,10 @@
 +++
 date = "2020-07-09T17:30:21-07:00"
 title = "Elementary, my dear robot"
-category = ["Playing A Game"]
-game = ["Murder by Numbers"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Murder by Numbers" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Murder by Numbers> is a murder-mystery visual novel with investigation elements inspired by [Phoenix Wright](tag:Ace Attorney), and punctuated by nonogram puzzles.  It even shares some of Ace Attorney's <a href="https://aceattorney.fandom.com/wiki/Masakazu_Sugimori">musical pedigree</a>.  This... should really be a slam dunk for me.  And while I ultimately still <i>liked</i> this detective-story-and-puzzles game, I can't help but obsess over how I might have liked it even more.

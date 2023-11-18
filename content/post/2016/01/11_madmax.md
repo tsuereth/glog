@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-01-11T23:15:30-08:00"
 draft = false
-game = ["Mad Max (2015)"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Mad Max (2015)" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Belligerent Max, At Least"
-
 +++
 
 [Mad Max](game:Mad Max (2015)) <i>nails</i> the 'strayan wasteland aesthetic.  The rest of the game, ... well.  I'm having fun with it.

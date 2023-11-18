@@ -1,10 +1,10 @@
 +++
 date = "2022-09-18T14:36:24-07:00"
 title = "Those who cannot remember the past will just have to enter the time-looping portal"
-category = ["Playing A Game"]
-game = ["The Forgotten City"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "The Forgotten City" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Here I go, getting stuck in <i>yet another</i> time-looping mystery.  This time, it's <a href="https://www.imdb.com/title/tt0107048/">Groundhog Day</a> with ... ancient Romans?

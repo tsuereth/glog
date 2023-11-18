@@ -1,11 +1,10 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-02-11T17:17:45-08:00"
 draft = false
-game = ["Hackmud"]
-platform = ["PC"]
+game = [ "Hackmud" ]
+platform = [ "PC" ]
 title = "Multi-User Doldrums"
-
 +++
 
 Slight disclaimer: I went to college with the guy who made this game.

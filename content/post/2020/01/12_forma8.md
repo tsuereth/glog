@@ -1,10 +1,10 @@
 +++
 date = "2020-01-12T10:03:29-08:00"
 title = "It may not have a drill, but this sure is a boring robot"
-category = ["Playing A Game"]
-game = ["Forma.8"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Forma.8" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 A Metroidvania-style game doesn't need to be action-packed to be good; a chill, ponderous exploration game could do just fine.  Unfortunately, <game:Forma.8> doesn't pull it off.

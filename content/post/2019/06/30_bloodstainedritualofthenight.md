@@ -1,10 +1,10 @@
 +++
 date = "2019-06-30T10:43:56-07:00"
 title = "What is an Igavania? A joyful little pile of secrets."
-category = ["Playing A Game"]
-game = ["Bloodstained: Ritual of the Night"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Bloodstained: Ritual of the Night" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Bloodstained: Ritual of the Night> starts out rough.  Primarily, I would say, because you start the game with no combat or mobility techniques and it's quite a while before interesting abilities show up.

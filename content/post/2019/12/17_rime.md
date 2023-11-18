@@ -1,10 +1,10 @@
 +++
 date = "2019-12-17T21:16:13-08:00"
 title = "The Rime of the Ancient Art-Game Developer"
-category = ["Playing A Game"]
-game = ["RiME"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "RiME" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:RiME> is a very pretty - sincerely, a very aesthetically-pleasing - experience.  Its exotic environments are visually striking, and evocative of various narratively-engaging themes of awe, curiosity, anxiety, and isolation.

@@ -1,10 +1,10 @@
 +++
 date = "2018-01-21T20:20:03-08:00"
 title = "Don't fear the reaper"
-category = ["Playing A Game"]
-game = ["Diablo III: Reaper of Souls"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Diablo III: Reaper of Souls" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 [Reaper of Souls](game:Diablo III: Reaper of Souls)'s plot isn't as terrible as [the core game](game:Diablo III)'s - after all, what could be? - but it's still fairly dumb.  I mean, I know we're talking about somewhat-trashy gothic power fantasy here, but at least the events of <game:Diablo II> felt consistent within the established world.  Seven evils, Horadric staff, no one cared about Izual; pretty straightforward stuff.

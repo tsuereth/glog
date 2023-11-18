@@ -1,9 +1,9 @@
 +++
 date = "2018-03-21T21:05:25-07:00"
 title = "Beelzebub's Bar and Grill"
-category = ["Looking Forward To It"]
-game = ["Afterparty"]
-platform = ["PC"]
+category = [ "Looking Forward To It" ]
+game = [ "Afterparty" ]
+platform = [ "PC" ]
 +++
 
 <game:Oxenfree> wasn't perfect, but it was thrilling and exceptionally memorable.  More than a year later, I still fondly recall its endearingly-anxious characters and "creepy-shit" (my words) storytelling.

@@ -1,9 +1,9 @@
 +++
 date = "2019-03-03T12:54:38-08:00"
 title = "Super party, bro"
-category = ["Playing A Game"]
-game = ["Super Mario Party"]
-platform = ["Switch"]
+category = [ "Playing A Game" ]
+game = [ "Super Mario Party" ]
+platform = [ "Switch" ]
 +++
 
 After [the first one](game:Mario Party), Mario Party never really entered into my regular gaming activities.  I'd try one installment or another, here and there, and the formula seemed pretty consistent: a turn-based version of the random and rubber-band-ey bullshit from [Mario Kart](game:Mario Kart 8).

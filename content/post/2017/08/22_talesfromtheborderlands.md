@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-22T07:54:25-07:00"
 draft = false
-game = ["Tales from the Borderlands"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Tales from the Borderlands" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Until we meet again, Pandora"
-
 +++
 
 <game:Tales from the Borderlands> isn't perfect, but it's pretty damn good.  A couple plot threads didn't have very satisfying resolutions (although most of them did); one or two interactive sequences felt needlessly frustrating; and it's always a shame that Telltale's tech isn't better than it is.

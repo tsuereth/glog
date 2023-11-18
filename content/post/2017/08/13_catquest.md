@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-13T10:34:20-07:00"
 draft = false
-game = ["Cat Quest"]
-platform = ["PC"]
+game = [ "Cat Quest" ]
+platform = [ "PC" ]
 rating = []
 title = "An RPG for Kittens"
-
 +++
 
 <game:Cat Quest> is shallow, but adorable.

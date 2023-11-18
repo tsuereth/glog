@@ -1,10 +1,10 @@
 +++
 date = "2020-11-16T08:39:13-08:00"
 title = "Greatness from pretty-good-sized beginnings"
-category = ["Playing A Game"]
-game = ["Uncharted 4: A Thief's End"]
-platform = ["PS4"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Uncharted 4: A Thief's End" ]
+platform = [ "PS4" ]
+rating = [ "Awesome" ]
 +++
 
 Yeah, [Uncharted 4](game:Uncharted 4: A Thief's End) is a narrative tour-de-force, a showcase of gameplay innovations - even if some, like piton-climbing, were clearly cribbed from [Ms. Croft](game:Tomb Raider (2013)) - and an incredible visual treat.

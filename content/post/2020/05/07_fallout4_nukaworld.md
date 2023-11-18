@@ -1,10 +1,10 @@
 +++
 date = "2020-05-07T23:03:32-07:00"
 title = "It's a small world after all."
-category = ["Playing A Game"]
-game = ["Fallout 4: Nuka World"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Fallout 4: Nuka World" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 [Nuka World](game:Fallout 4: Nuka World) has some great level design: the theme park concept makes for some excellently-varied and borderline-fantastical environments.  That's the good news about this <game:Fallout 4> expansion -- the only good news.  (Unless you really like raiders, I guess.)

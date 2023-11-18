@@ -1,10 +1,10 @@
 +++
 date = "2022-07-03T11:54:02-07:00"
 title = "Cave, yes; vania, kind-of"
-category = ["Playing A Game"]
-game = ["Batbarian: Testament of the Primordials"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Batbarian: Testament of the Primordials" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 With a grid-based map, save-point safe rooms, hidden treasure chests, button-mashy combat, level-ups... I really thought that [Batbarian's demo]($SiteBaseURL$2020/03/21/cave-vania/) was teasing a full-blown [Bloodstained](game:Bloodstained: Ritual of the Night)-style Igavania.  But after soaking in the full game - now en-subtitled <game:Batbarian: Testament of the Primordials> - for a couple hours, I've come to realize that it's really more of a platforming beat-em-up adventure that's <i>borrowed</i> a 'vania framework.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-10-09T19:41:10-07:00"
 draft = false
-game = ["Ori and the Blind Forest: Definitive Edition"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Ori and the Blind Forest: Definitive Edition" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Ori and the Forest That Really Could Have Used More Save Points"
-
 +++
 
 [Ori and the Blind Forest](game:Ori and the Blind Forest: Definitive Edition) starts awkwardly, with several minutes of mildly-interactive cutscene -- holding "left" or "right" to walk through a cinematic introduction.  While I can appreciate the production value that Ori brings to its story, with awe-inspiring visuals and heartstring-pulling music, it left me wondering for some time <i>when can I start playing the game?</i>

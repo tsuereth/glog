@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-11-28T14:24:34-08:00"
 draft = false
-game = ["Assassin's Creed Rogue"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Assassin's Creed Rogue" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Make your own luck? How about those genetic superhuman abilities, dick?"
-
 +++
 
 A few hours in, [AC Rogue](game:Assassin's Creed Rogue)'s protagonist Shay picks up a saucy new catchphrase: "I make my own luck."  And he keeps.  On.  Saying it.  Dude won't shut up about how he's manifesting his own destiny, like he's a Saturday morning cartoon character or something.

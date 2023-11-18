@@ -1,10 +1,10 @@
 +++
 date = "2022-02-05T11:24:28-08:00"
 title = "Embrace the darkness, it comes with sopaipillas"
-category = ["Playing A Game"]
-game = ["South Park: The Fractured But Whole - From Dusk Till Casa Bonita"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "South Park: The Fractured But Whole - From Dusk Till Casa Bonita" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 If [The Fractured But Whole](game:South Park: The Fractured But Whole) was comparable to "some of the show's best multi-episode arcs," then [From Dusk Till Casa Bonita](game:South Park: The Fractured But Whole - From Dusk Till Casa Bonita) is like a great standalone episode.

@@ -1,10 +1,10 @@
 +++
 date = "2019-12-27T10:04:57-08:00"
 title = "MEOWtroid"
-category = ["Playing A Game"]
-game = ["Gato Roboto"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Gato Roboto" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Gato Roboto> is an adorable little <tag:Metroid> clone with a cat in a power suit.

@@ -1,10 +1,10 @@
 +++
 date = "2020-06-17T22:31:09-07:00"
 title = "Get out of my dreams and into my Batmobile"
-category = ["Playing A Game"]
-game = ["Batman: Arkham Knight"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Batman: Arkham Knight" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 I don't know if it was the launch's technical infidelity, or if critics just romanticized [Arkham City](game:Batman: Arkham City) more than I did, but <a href="https://opencritic.com/game/1383/batman-arkham-knight">consensus</a> still ranks <game:Batman: Arkham Knight> below its predecessor and I just <i>don't</i> agree.

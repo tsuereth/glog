@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-17T08:29:58-07:00"
 draft = false
-game = ["Tales from the Borderlands"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Tales from the Borderlands" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Now this is a shiny meat bicycle"
-
 +++
 
 Its sense of humor started out a little weak - more dead-fish than slap-stick - but within the first hour or so, <game:Tales from the Borderlands> had me convinced.  There may not be loot-based shooting, but this sure is a Borderlands game, with exploding psychos and everything.

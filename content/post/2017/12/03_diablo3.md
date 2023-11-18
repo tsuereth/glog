@@ -1,10 +1,10 @@
 +++
 date = "2017-12-03T09:23:08-08:00"
 title = "Lord of Tedium"
-category = ["Playing A Game"]
-game = ["Diablo III"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Diablo III" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 I've [remarked before]($SiteBaseURL$2012/05/20/diablo-iii-12/) on <game:Diablo III>'s uninteresting environments:

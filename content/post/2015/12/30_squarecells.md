@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-12-30T13:58:48-08:00"
 draft = false
-game = ["SquareCells"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "SquareCells" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Frustratingly Square"
-
 +++
 
 One "trick" in <game:SquareCells> was shifting from a fill-based to a clear-based system, i.e. whereas most picross games allow free marking of non-filled squares, SquareCells is the opposite.  Unfortunately, since SquareCells lacks a "try it out"-style system, it's difficult to distinguish between squares that are definitely filled and squares which are only hypothetically filled based on some deductive guess -- making it impractical to play such hypotheses, as opposed to just marking stuff and seeing if the game allows it.

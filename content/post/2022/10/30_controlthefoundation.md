@@ -1,10 +1,10 @@
 +++
 date = "2022-10-30T14:31:13-07:00"
 title = "We need to go deeper"
-category = ["Playing A Game"]
-game = ["Control: The Foundation"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Control: The Foundation" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 <game:Control: The Foundation> adds lore and mechanics to the base game, but they fit <game:Control>'s mold so well, that I'd really call The Foundation "more of the same."  In a good way!

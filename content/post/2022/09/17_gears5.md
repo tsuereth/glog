@@ -1,10 +1,10 @@
 +++
 date = "2022-09-17T14:25:26-07:00"
 title = "Ground to a halt"
-category = ["Playing A Game"]
-game = ["Gears 5"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Gears 5" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Gears 5>'s opening act is <i>peak [Gears](tag:Gears of War)</i>, a tutorial-ish opening mission followed by scope-setting exposition that quickly gives way to a <b>bombastic non-stop thrill-ride</b> through multiple set-piece moments overflowing with bullets and explosions.

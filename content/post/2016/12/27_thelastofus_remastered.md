@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-12-27T23:36:10-08:00"
 draft = false
-game = ["The Last of Us Remastered"]
-platform = ["PS4"]
-rating = ["Meh"]
+game = [ "The Last of Us Remastered" ]
+platform = [ "PS4" ]
+rating = [ "Meh" ]
 title = "So much for the human race"
-
 +++
 
 I could tell, in my relatively short time with <game:The Last of Us Remastered>, that it isn't a "bad" game; but it is bad for me.  Or, I'm bad for it.  Maybe both.

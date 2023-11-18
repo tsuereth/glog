@@ -1,10 +1,10 @@
 +++
 date = "2020-07-03T12:13:58-07:00"
 title = "Bork"
-category = ["Playing A Game"]
-game = ["Puppy Cross"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Puppy Cross" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Puppy Cross> has a cute premise - completing nonograms of dogs (and cats!) to let them frolic around a garden - and a hefty amount of puzzles backing it up.  Even if the customization aspect of the garden is kinda shallow, finishing all the puzzles feels like its own reward.

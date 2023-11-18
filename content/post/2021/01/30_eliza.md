@@ -1,10 +1,10 @@
 +++
 date = "2021-01-30T23:24:27-08:00"
 title = "Still no match for natural stupidity"
-category = ["Playing A Game"]
-game = ["Eliza (2019)"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Eliza (2019)" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 [Nerts](game:Nerts!: Online) reminded me that there was a recent Zachtronics game I hadn't caught up with yet; and while it may not have any programming puzzles, <game:Eliza (2019)> is still <i>definitely</i> a Zachtronics game.

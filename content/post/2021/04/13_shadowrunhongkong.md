@@ -1,10 +1,10 @@
 +++
 date = "2021-04-13T21:50:25-07:00"
 title = "Just one more run... one more run..."
-category = ["Playing A Game"]
-game = ["Shadowrun: Hong Kong - Extended Edition"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Shadowrun: Hong Kong - Extended Edition" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Narratively speaking, [Shadowrun: Hong Kong](game:Shadowrun: Hong Kong - Extended Edition) is a direct attack on my grievances toward [Dragonfall](game:Shadowrun: Dragonfall - Director's Cut), and it's a <i>critical hit</i>.

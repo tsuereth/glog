@@ -1,10 +1,10 @@
 +++
 date = "2019-06-09T09:25:50-07:00"
 title = "Closed, pending new evidence."
-category = ["Playing A Game"]
-game = ["Phoenix Wright: Ace Attorney Trilogy"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Phoenix Wright: Ace Attorney Trilogy" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 The now-archaic map navigation, the sometimes-confounding evidence solutions, the frustrating penalty/reload-savefile system, and the typos ... are no match for the intrigue, excitement, and charm of <game:Phoenix Wright: Ace Attorney Trilogy>'s later cases.

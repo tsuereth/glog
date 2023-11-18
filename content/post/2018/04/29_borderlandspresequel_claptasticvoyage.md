@@ -1,10 +1,10 @@
 +++
 date = "2018-04-29T20:14:22-07:00"
 title = "Just sail on"
-category = ["Playing A Game"]
-game = ["Borderlands: The Pre-Sequel - Claptastic Voyage"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands: The Pre-Sequel - Claptastic Voyage" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 My misgivings about <game:Borderlands: The Pre-Sequel> centered around its creative shortcomings and ineffectiveness: the new features weren't engaging, the new enemies weren't fun to fight, and the "new" story and characters weren't exciting or surprising.  [Claptastic Voyage](game:Borderlands: The Pre-Sequel - Claptastic Voyage) suffers in the same ways.  While it attempts to mix things up with a cool <i>TRON</i> aesthetic, it crumbles under the weight of nonsensical missions and grindy encounters.

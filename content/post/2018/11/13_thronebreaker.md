@@ -1,10 +1,10 @@
 +++
 date = "2018-11-13T21:39:23-08:00"
 title = "I'm here to kill elves and kick ass... and I'm all out of elves."
-category = ["Playing A Game"]
-game = ["Thronebreaker: The Witcher Tales"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Thronebreaker: The Witcher Tales" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 [Thronebreaker](game:Thronebreaker: The Witcher Tales) ends up feeling like a pretty impressive card-based adventure game, but a missed opportunity to teach advanced Gwent mechanics; and a well-told story on its own, but a failure to live up to [The Witcher](game:The Witcher 3: Wild Hunt)'s narrative pedigree.

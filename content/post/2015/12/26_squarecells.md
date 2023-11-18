@@ -1,11 +1,10 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2015-12-26T23:08:09-08:00"
 draft = false
-game = ["SquareCells"]
-platform = ["PC"]
+game = [ "SquareCells" ]
+platform = [ "PC" ]
 title = "Clever things make people feel stupid, and unexpected things make them feel scared"
-
 +++
 
 Did I mention that [I fucking love picross]($SiteBaseURL$2015/12/26/not-to-be-confused-with-the-similarly-named-rolling-stones-song/)?  Because I do.  And that's what makes <game:SquareCells> so confusing: It's <i>sort of</i> like picross.  But it's different in ways I'm not really sure about yet.

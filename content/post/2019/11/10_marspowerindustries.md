@@ -1,10 +1,10 @@
 +++
 date = "2019-11-10T10:20:51-08:00"
 title = "A Boring Company"
-category = ["Playing A Game"]
-game = ["Mars Power Industries Deluxe"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Mars Power Industries Deluxe" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Mars Power Industries Deluxe> doesn't really scale up from mobile to desktop very well.

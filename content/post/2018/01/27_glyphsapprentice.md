@@ -1,9 +1,9 @@
 +++
 date = "2018-01-27T23:12:54-08:00"
 title = "Opus Minutus"
-category = ["Playing A Game"]
-game = ["Glyphs Apprentice"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Glyphs Apprentice" ]
+platform = [ "PC" ]
 +++
 
 While the most striking thing about <game:Glyphs Apprentice> is how terrible its user interface is, the <i>second-most</i> striking thing is how <i>uncannily</i> it resembles <game:Opus Magnum>.  Not only are there programmable arms that can grab alchemical elements, rotate, and extend or retract; the elements can also bind to others, and transform into ... familiar variations.

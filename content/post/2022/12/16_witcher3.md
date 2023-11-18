@@ -1,10 +1,10 @@
 +++
 date = "2022-12-16T01:43:42-08:00"
 title = "Oh valley of plenty, ah-ah-aaaaah!"
-category = ["Playing A Game"]
-game = ["The Witcher 3: Wild Hunt", "The Witcher 3: Wild Hunt - Hearts of Stone"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "The Witcher 3: Wild Hunt", "The Witcher 3: Wild Hunt - Hearts of Stone" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 I've been hankering for [Witcher 3](game:The Witcher 3: Wild Hunt)'s "next-gen" (now well into current-gen) update since [last year]($SiteBaseURL$2021/12/12/dawn-harder/), so it's somewhat predictable that I had to <i>stop</i> waiting and just toss another coin at the existing Witcher before - literally <a href="https://www.reuters.com/technology/cd-projekt-release-witcher-3-next-gen-consoles-dec-14-2022-11-14/">the following week</a> - the update finally got a release date.

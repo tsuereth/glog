@@ -1,10 +1,10 @@
 +++
 date = "2022-10-22T21:41:11-07:00"
 title = "Office Job Simulator: Paranormal Action Edition"
-category = ["Playing A Game"]
-game = ["Control"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Control" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 <game:Control> is pretty weird.  Not in a bad way - like I complained <game:Kentucky Route Zero> was - but in a fascinatingly surreal, unsettling-yet-intriguing way.  Like the best episodes of <i><a href="https://www.imdb.com/title/tt0106179/">The X-Files</a></i> or <i><a href="https://www.imdb.com/title/tt0052520/">The Twilight Zone</a></i>.

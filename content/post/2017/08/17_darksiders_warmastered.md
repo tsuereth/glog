@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-17T08:29:52-07:00"
 draft = false
-game = ["Darksiders: Warmastered Edition"]
-platform = ["PC"]
+game = [ "Darksiders: Warmastered Edition" ]
+platform = [ "PC" ]
 rating = []
 title = "Wave after wave of brainless bags of demon blood"
-
 +++
 
 More than it did [back in 2010]($SiteBaseURL$2010/07/18/darksiders-6/), the combat in <game:Darksiders: Warmastered Edition> is really boring me.

@@ -1,10 +1,10 @@
 +++
 date = "2018-10-25T21:21:30-07:00"
 title = "Breath of the Robotic Wild"
-category = ["Playing A Game"]
-game = ["Horizon Zero Dawn"]
-platform = ["PS4"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Horizon Zero Dawn" ]
+platform = [ "PS4" ]
+rating = [ "Awesome" ]
 +++
 
 It's kind of a shame that <game:Horizon Zero Dawn> came out at, like, <i>the same time</i> as [Breath of the Wild](game:The Legend of Zelda: Breath of the Wild).  It's impossible to avoid comparing the two.  (In fairness, Horizon did beat Zelda to store shelves by ... uh, a week.)

@@ -1,9 +1,9 @@
 +++
 date = "2017-12-14T06:46:39-08:00"
 title = "God-Pupper HD"
-category = ["Playing A Game"]
-game = ["Ōkami HD"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Ōkami HD" ]
+platform = [ "PC" ]
 rating = []
 +++
 

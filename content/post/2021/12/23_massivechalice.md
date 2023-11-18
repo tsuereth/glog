@@ -1,10 +1,10 @@
 +++
 date = "2021-12-23T23:53:02-08:00"
 title = "Schmivilization"
-category = ["Playing A Game"]
-game = ["Massive Chalice"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Massive Chalice" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 I liked <game:Massive Chalice> a lot more than I expected to.

@@ -1,10 +1,10 @@
 +++
 date = "2018-11-03T13:17:08-07:00"
 title = "The Puzzler's Stone"
-category = ["Playing A Game"]
-game = ["Alchemia"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Alchemia" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 When I saw <game:Alchemia> pop up on Steam, I thought it might be a nice break from the brain-busting puzzles I was stuck on in [Cypher](game:Cypher (2018)).

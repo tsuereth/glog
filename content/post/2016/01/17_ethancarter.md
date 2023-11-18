@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-01-17T20:50:22-08:00"
 draft = false
-game = ["The Vanishing of Ethan Carter"]
-platform = ["PC"]
-rating = ["Bad"]
+game = [ "The Vanishing of Ethan Carter" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 title = "The Vanishing of Interesting Gameplay"
-
 +++
 
 <game:The Vanishing of Ethan Carter> (more precisely, the Unreal Engine 4 "Redux" release) is probably the most gorgeous game you've ever seen.  Unfortunately, it's also very shallow.

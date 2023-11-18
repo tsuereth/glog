@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-09-08T21:17:41-07:00"
 draft = false
-game = ["Deus Ex: Mankind Divided"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Deus Ex: Mankind Divided" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Divided Opinion"
-
 +++
 
 It took me until the 15 hour mark to actually get going on the next story mission.  That is to say, I spent about 14 hours just exploring Prague: breaking into people's apartments, reading their emails, stealing all their stuff.  There is <i>so, so much</i> to explore in this world's nooks and crannies.  It scratches that [Skyrim](game:The Elder Scrolls V: Skyrim) itch all over again, of scouring an open-world map and scrounging up all its garbage items.

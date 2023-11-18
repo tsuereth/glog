@@ -1,10 +1,10 @@
 +++
 date = "2020-07-13T23:47:17-07:00"
 title = "Meine Unannehmlichkeiten (my inconvenience)"
-category = ["Playing A Game"]
-game = ["Wolfenstein II: The New Colossus"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Wolfenstein II: The New Colossus" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 "That's it?"

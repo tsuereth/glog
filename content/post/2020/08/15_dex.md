@@ -1,10 +1,10 @@
 +++
 date = "2020-08-15T12:27:18-07:00"
 title = "It's literally Deus Ex with fewer letters"
-category = ["Playing A Game"]
-game = ["Dex"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Dex" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Architecturally and thematically, <game:Dex> is a 2D side-scrolling interpretation of <tag:Deus Ex>: an open-world cyberpunk dystopia that encourages varied playstyles.  It's an ambitious design to ape, and while Dex pulls off a surprisingly-good narrative, the execution of its gameplay leaves <i>much</i> to be desired.

@@ -1,10 +1,10 @@
 +++
 date = "2022-09-12T10:47:02-07:00"
 title = "Found in Space"
-category = ["Playing A Game"]
-game = ["Tacoma"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Tacoma" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 There's only a <i>little</i> bit of <b>time looping</b> in <game:Tacoma>.  But it's still weird how I keep running into it.

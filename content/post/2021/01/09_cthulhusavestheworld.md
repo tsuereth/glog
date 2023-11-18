@@ -1,10 +1,10 @@
 +++
 date = "2021-01-09T11:44:18-08:00"
 title = "I kinda doubt that he does."
-category = ["Playing A Game"]
-game = ["Cthulhu Saves the World"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Cthulhu Saves the World" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 <game:Cthulhu Saves the World> is not without charm.  It wastes no time breaking - really, <i>demolishing</i> - its own fourth wall, and its writing and art shows how much fun the game must've been to make.

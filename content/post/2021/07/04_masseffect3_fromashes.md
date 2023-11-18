@@ -1,10 +1,10 @@
 +++
 date = "2021-07-04T09:00:24-07:00"
 title = "Fifty thousand years later, a Prothean is back... for revenge!"
-category = ["Playing A Game"]
-game = ["Mass Effect 3: From Ashes"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Mass Effect 3: From Ashes" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Of <game:Mass Effect 3>'s two "new" squadmates, only one of them (the annoying one) was included in the main package.  The [From Ashes](game:Mass Effect 3: From Ashes) DLC introduces Javik, a revived Prothean!, whose unexpectedly harsh personality makes for highly entertaining conversation.

@@ -1,10 +1,10 @@
 +++
 date = "2020-05-24T11:06:42-07:00"
 title = "Faeces Ex"
-category = ["Playing A Game"]
-game = ["Deus Ex: The Fall"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Deus Ex: The Fall" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 <game:Deus Ex: The Fall> is exactly what I would expect from asking a mobile game studio to re-make <game:Deus Ex: Human Revolution> in the Unity engine with a minimal budget.

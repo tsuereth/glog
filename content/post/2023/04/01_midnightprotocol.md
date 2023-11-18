@@ -1,9 +1,9 @@
 +++
 date = "2023-04-01T13:51:55-07:00"
 title = "Sleep-Deprived Protocol"
-category = ["Playing A Game"]
-game = ["Midnight Protocol"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Midnight Protocol" ]
+platform = [ "PC" ]
 +++
 
 As seen in [2020's demo]($SiteBaseURL$2020/06/21/its-a-unix-system-i-know-this/), I really like <game:Midnight Protocol>'s slick aesthetics, engrossing technobabble, and immersive keyboard-only interface.

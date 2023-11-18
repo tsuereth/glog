@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-06-17T09:00:27-07:00"
 draft = false
-game = ["BioShock 2 Remastered"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "BioShock 2 Remastered" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Remastered rehash"
-
 +++
 
 Seven years later, [the remaster](game:BioShock 2 Remastered) doesn't really change my final thoughts on <game:BioShock 2>.  The early game - relying as it does on "Big Daddy" mechanics to pull you in - is perhaps weaker than before, since video games have moved on somewhat.  But ultimately, <game:BioShock>'s sequel both thrives and suffers for its narrative attachment to the original.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-06-19T20:59:01-07:00"
 draft = false
-game = ["BioShock 2: Minerva's Den Remastered"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "BioShock 2: Minerva's Den Remastered" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Return to the Revenge of Beneath the Planet of the Splicers: Remastered"
-
 +++
 
 [Minerva's Den Remastered](game:BioShock 2: Minerva's Den Remastered) is a ... nice freebie, I guess; but beneath its modernized appearance, the game itself is a bit scatterbrained, and overall unimpressive.

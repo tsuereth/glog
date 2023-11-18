@@ -1,10 +1,10 @@
 +++
 date = "2019-04-28T12:18:59-07:00"
 title = "All rolled out"
-category = ["Playing A Game"]
-game = ["Transformers: Devastation"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Transformers: Devastation" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Transformers: Devastation> starts strong, with a gorgeous cartoon aesthetic, flashy character introductions, and <a href="https://www.imdb.com/name/nm0191520">Peter Cullen</a>'s commanding voice.  The fighting action is tightly-crafted, but still approachable and easy to learn.  Its narrative points move quickly, from one fast and focused encounter to the next; and it even has some optional, non-linear objectives to encourage a little map exploration.

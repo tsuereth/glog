@@ -1,10 +1,10 @@
 +++
 date = "2018-01-08T07:45:10-08:00"
 title = "This remake's no dog"
-category = ["Playing A Game"]
-game = ["Ōkami HD"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Ōkami HD" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Every time <game:Ōkami HD> misread my restoration circle as a wind-swoosh, or the camera went nuts as I was trying to land a tricky jump ...

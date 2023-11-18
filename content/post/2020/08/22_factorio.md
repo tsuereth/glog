@@ -1,10 +1,10 @@
 +++
 date = "2020-08-22T15:05:44-07:00"
 title = "Burning the midnight oil"
-category = ["Playing A Game"]
-game = ["Factorio"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Factorio" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 <game:Factorio> isn't a perfect game -- not even "perfect for me," in the sense that some narrative elements and improvements to tech-tree pacing could make it "more perfect for me."  But, well, it's a good thing that I had this past week off of work and could spend multiple full days (and two all-nighters!) building a spaceship factory.

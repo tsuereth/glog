@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-10-14T09:34:17-07:00"
 draft = false
-game = ["Borderlands 2: Captain Scarlett and Her Pirate's Booty"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Borderlands 2: Captain Scarlett and Her Pirate's Booty" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Yo-ho-ho and a bottle of badass"
-
 +++
 
 [Captain Scarlett and Her Pirate's Booty](game:Borderlands 2: Captain Scarlett and Her Pirate's Booty) is essentially more-of-the-same for the <game:Borderlands 2> player, and that's pretty great.

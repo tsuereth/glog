@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-01-18T22:27:29-08:00"
 draft = false
-game = ["Grow Home"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Grow Home" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Groan Home"
-
 +++
 
 <game:Grow Home> reminds me of no other game more than <game:Shadow of the Colossus> -- because it's deliberately difficult to control, and this forms the basis of the game's challenge.  Climbing Grow Home's "star plant" and directing its buds into nourishing, uh, energy rocks?, is frustrating to do but satisfying to pull off.

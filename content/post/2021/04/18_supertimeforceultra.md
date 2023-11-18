@@ -1,10 +1,10 @@
 +++
 date = "2021-04-18T12:26:43-07:00"
 title = "Shut The Force Up"
-category = ["Playing A Game"]
-game = ["Super Time Force Ultra"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Super Time Force Ultra" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Super Time Force Ultra> - as its tongue-barely-in-cheek name suggests - takes a fun and flippant approach to sci-fi storytelling.  Not unlike <game:No Time to Explain>, its absurdist attitude toward time-travel-induced chaos is a great hook.

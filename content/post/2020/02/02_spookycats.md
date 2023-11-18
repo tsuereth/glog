@@ -1,10 +1,10 @@
 +++
 date = "2020-02-02T09:47:56-08:00"
 title = "Belongs in the litter box"
-category = ["Playing A Game"]
-game = ["Spooky Cats"]
-platform = ["PC"]
-rating = ["Awful"]
+category = [ "Playing A Game" ]
+game = [ "Spooky Cats" ]
+platform = [ "PC" ]
+rating = [ "Awful" ]
 +++
 
 I try not to throw around the "<rating:Awful>" rating lightly; hell, I got through 2019 without using it at all.  There are few games that I [outright hate enough]($SiteBaseURL$2020/02/01/infuriating/) to earn the label, and I tend to avoid games with obviously-shoddy production values.  But sometimes such a game sneaks into a bundle ... like <game:Spooky Cats> did.

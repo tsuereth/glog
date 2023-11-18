@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-05-29T14:10:10-07:00"
 draft = false
-game = ["Infinifactory"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "Infinifactory" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "Now you're thinking with factories"
-
 +++
 
 <game:Infinifactory>'s middle levels had me a little perplexed -- not just because of the puzzles themselves, but because I still hadn't identified the fundamental "thing" of the game.  In <game:SpaceChem>, puzzles became ruled by your ability to master concurrency and synchronization tools; in <game:TIS-100>, by your resourcefulness in storing and moving data.

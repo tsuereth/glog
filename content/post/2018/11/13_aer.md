@@ -1,10 +1,10 @@
 +++
 date = "2018-11-13T22:31:16-08:00"
 title = "Up in Smoke"
-category = ["Playing A Game"]
-game = ["AER: Memories of Old"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "AER: Memories of Old" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 For how ambitious it tries to be, [AER](game:AER: Memories of Old) sure is simple.

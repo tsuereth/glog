@@ -1,10 +1,10 @@
 +++
 date = "2020-05-31T23:11:14-07:00"
 title = "Dragon's Bullshit"
-category = ["Playing A Game"]
-game = ["Dragon's Dogma: Dark Arisen"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Dragon's Dogma: Dark Arisen" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 I just don't "get" <game:Dragon's Dogma: Dark Arisen>.

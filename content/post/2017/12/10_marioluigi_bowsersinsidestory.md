@@ -1,10 +1,10 @@
 +++
 date = "2017-12-10T22:24:53-08:00"
 title = "Bowser's Indigestion Story"
-category = ["Playing A Game"]
-game = ["Mario & Luigi: Bowser's Inside Story"]
-platform = ["NDS"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Mario & Luigi: Bowser's Inside Story" ]
+platform = [ "NDS" ]
+rating = [ "Meh" ]
 +++
 
 [Bowser's Inside Story](game:Mario & Luigi: Bowser's Inside Story) has some good fundamentals, but its pacing is a <i>mess</i>, and balancing problems can unexpectedly flip its combat from "fun" to "frustrating."

@@ -1,9 +1,9 @@
 +++
 date = "2020-02-09T12:58:39-08:00"
 title = "The Somnambulist"
-category = ["Playing A Game"]
-game = ["The Pedestrian"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "The Pedestrian" ]
+platform = [ "PC" ]
 +++
 
 <game:The Pedestrian> has a very cool aesthetic: its 3D backdrops make the simple platforming levels seem a lot more interesting than they actually are.

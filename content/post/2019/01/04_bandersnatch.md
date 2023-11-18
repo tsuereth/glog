@@ -1,10 +1,10 @@
 +++
 date = "2019-01-04T07:31:19-08:00"
 title = "Choose Your Own Misadventure"
-category = ["Playing A Game"]
-game = ["Black Mirror: Bandersnatch"]
-platform = ["Netflix"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Black Mirror: Bandersnatch" ]
+platform = [ "Netflix" ]
+rating = [ "Good" ]
 +++
 
 <platform:Netflix> is a game platform, now.  What a time to be alive.

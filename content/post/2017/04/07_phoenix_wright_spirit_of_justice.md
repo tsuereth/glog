@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-04-07T10:42:28-07:00"
 draft = false
-game = ["Phoenix Wright: Ace Attorney - Spirit of Justice"]
-platform = ["3DS"]
-rating = ["Good"]
+game = [ "Phoenix Wright: Ace Attorney - Spirit of Justice" ]
+platform = [ "3DS" ]
+rating = [ "Good" ]
 title = "Keeping Justice Alive"
-
 +++
 
 <i>Has it really been over <b>ten years</b> since I first joined [Phoenix Wright](game:Phoenix Wright: Ace Attorney)'s legal team?  Wow.  Here's to ten more, old friend.</i>

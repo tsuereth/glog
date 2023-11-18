@@ -1,10 +1,10 @@
 +++
 date = "2020-07-26T14:15:37-07:00"
 title = "What is dead may never die, unless you've got a really cool sword"
-category = ["Playing A Game"]
-game = ["Dishonored: Death of the Outsider"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Dishonored: Death of the Outsider" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Dishonored: Death of the Outsider> feels strangely like a direct response to some of my criticisms of <game:Dishonored 2>, even though those criticisms didn't exist until yesterday.

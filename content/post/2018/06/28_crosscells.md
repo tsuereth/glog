@@ -1,10 +1,10 @@
 +++
 date = "2018-06-28T20:33:42-07:00"
 title = "AcceptableCells"
-category = ["Playing A Game"]
-game = ["CrossCells"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "CrossCells" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 At its best, <game:CrossCells> feels like an inductive-reasoning "expansion pack" on puzzles like sudoku and picross.  Like the other 'Cells games, it incorporates multiple mathematical mechanics, and plays their hints off one another.  And as I worked through its later puzzles, I felt very satisfied with their logical <i>tightness</i>.

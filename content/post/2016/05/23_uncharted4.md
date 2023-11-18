@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-05-23T23:48:17-07:00"
 draft = false
-game = ["Uncharted 4: A Thief's End"]
-platform = ["PS4"]
-rating = ["Awesome"]
+game = [ "Uncharted 4: A Thief's End" ]
+platform = [ "PS4" ]
+rating = [ "Awesome" ]
 title = "Charting Complete"
-
 +++
 
 Maybe it's a <i>tad</i> overwrought, but [Uncharted 4](game:Uncharted 4: A Thief's End)'s ending hits all the right emotional notes, satisfyingly wrapping up Nathan Drake's stories with a pleasantly open-ended bow.

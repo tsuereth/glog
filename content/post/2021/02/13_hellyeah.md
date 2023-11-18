@@ -1,10 +1,10 @@
 +++
 date = "2021-02-13T09:07:42-08:00"
 title = "Hell meh"
-category = ["Playing A Game"]
-game = ["Hell Yeah! Wrath of the Dead Rabbit"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Hell Yeah! Wrath of the Dead Rabbit" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 It's one thing when <game:Hell Yeah! Wrath of the Dead Rabbit>'s protagonist mocks his own game over having a [spindash move](tag:Sonic The Hedgehog).  It's another when the level is filled with pinball bumpers and self-propelling cannons.

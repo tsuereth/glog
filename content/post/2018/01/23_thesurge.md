@@ -1,9 +1,9 @@
 +++
 date = "2018-01-23T21:48:15-08:00"
 title = "Robot Souls"
-category = ["Playing A Game"]
-game = ["The Surge"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "The Surge" ]
+platform = [ "PC" ]
 +++
 
 I may only have played [Dark Souls](game:Dark Souls: Prepare to Die Edition) for about two hours, and <game:The Surge>'s demo for less than an hour, but ... wow, yeah.  This sure looks like a modern sci-fi reskin of Dark Souls.

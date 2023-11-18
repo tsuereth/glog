@@ -18,6 +18,8 @@ namespace GlogGenerator.MarkdownExtensions
             var stringBuilder = new StringBuilder();
             using (var stringWriter = new StringWriter(stringBuilder))
             {
+                stringWriter.NewLine = "\n";
+
                 tomlModel.WriteTo(stringWriter);
                 stringWriter.Flush();
             }

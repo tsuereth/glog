@@ -1,9 +1,9 @@
 +++
 date = "2020-03-21T10:18:01-07:00"
 title = "Prince of India ... err, Princess"
-category = ["Playing A Game"]
-game = ["Raji: An Ancient Epic"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Raji: An Ancient Epic" ]
+platform = [ "PC" ]
 +++
 
 The demo of <game:Raji: An Ancient Epic> shows off some sloppy story cutscenes, mediocre level design (far too easy to get lost), frustrating combat design (groups of enemies stunlock you to death), and a few abilities that just don't seem to control correctly.

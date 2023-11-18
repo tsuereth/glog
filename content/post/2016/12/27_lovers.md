@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-12-27T23:36:08-08:00"
 draft = false
-game = ["Lovers in a Dangerous Spacetime"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Lovers in a Dangerous Spacetime" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "It's dangerous to go alone!"
-
 +++
 
 <game:Lovers in a Dangerous Spacetime> is a really great example of a game that could be played seriously, but is still fun in a haphazard party.  Like <game:New Super Mario Bros. Wii> or [3D World](game:Super Mario 3D World), in that sense.  Also there are space lasers.  <i>And space flails.</i>

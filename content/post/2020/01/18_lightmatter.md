@@ -1,9 +1,9 @@
 +++
 date = "2020-01-18T13:27:05-08:00"
 title = "Does it, though?"
-category = ["Playing A Game"]
-game = ["Lightmatter"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Lightmatter" ]
+platform = [ "PC" ]
 +++
 
 The controls are tight, and the graphics are crisp.  And early puzzles show that its "floor is lava with deadly shadows" premise is more nuanced than it sounds.

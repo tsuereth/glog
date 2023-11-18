@@ -1,10 +1,10 @@
 +++
 date = "2021-08-16T21:06:30-07:00"
 title = "We're gonna need a crew"
-category = ["Playing A Game"]
-game = ["Borderlands 3: Moxxi's Heist of the Handsome Jackpot"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 3: Moxxi's Heist of the Handsome Jackpot" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <i>Space casino robbery</i> is a strong pitch, and [Moxxi's Heist of the Handsome Jackpot](game:Borderlands 3: Moxxi's Heist of the Handsome Jackpot) ... <i>partially</i> lives up to it.

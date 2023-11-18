@@ -1,9 +1,9 @@
 +++
 date = "2018-06-11T06:57:05-07:00"
 title = "It's there, just around the corner"
-category = ["Looking Forward To It"]
-game = ["Cyberpunk 2077"]
-platform = ["PC"]
+category = [ "Looking Forward To It" ]
+game = [ "Cyberpunk 2077" ]
+platform = [ "PC" ]
 +++
 
 Moments in <a href="https://www.youtube.com/watch?v=8X2kIfS6fb8">this glorious trailer</a> remind me of <game:Watch Dogs> and of <game:Remember Me> -- of an alluring, and <i>specific</i> theme: the dirty, dingy side of humanity tethering itself to high technology.  Like [Deus Ex HR](game:Deus Ex: Human Revolution)/[MD](game:Deus Ex: Mankind Divided) but a little less clinical and clean.

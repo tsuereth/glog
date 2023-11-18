@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-09-24T13:51:17-07:00"
 draft = false
-game = ["Silicon Zeroes"]
-platform = ["PC"]
+game = [ "Silicon Zeroes" ]
+platform = [ "PC" ]
 rating = []
 title = "Visual Programming"
-
 +++
 
 <game:Silicon Zeroes>, in the same vein as <game:Human Resource Machine>, is like a Zachtronics programming metaphor that's pretty thin on the "metaphor."  It's set in 1960s Silicon Valley.  You use adders and memory to perform math and logic.  It's pretty straightforward.

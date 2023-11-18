@@ -1,9 +1,9 @@
 +++
 date = "2018-11-03T10:10:10-07:00"
 title = "Super Goomba RPG"
-category = ["Playing A Game"]
-game = ["Underhero"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Underhero" ]
+platform = [ "PC" ]
 +++
 
 <game:Underhero> has a pretty neat premise: you're trying to save the world, but you work for The Bad Guy.  The Good Guy died, so you loot his magical equipment, and go on a sabotage mission within the Bad Guy organization.

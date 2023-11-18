@@ -1,10 +1,10 @@
 +++
 date = "2020-08-16T15:17:46-07:00"
 title = "Hell, it's about time."
-category = ["Playing A Game"]
-game = ["Factorio"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Factorio" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 A lot has changed since [I last tried]($SiteBaseURL$2014/11/09/transforming-the-useless-pristine-land-into-a-marvel-of-smoggy-industry/) (and subsequently purchased) <game:Factorio>: my career, my lifestyle, the state of the world in general, and - critically - my expectations of modern video games.  So it's something of a relief that, six years later, Factorio <a href="https://factorio.com/blog/post/fff-360">1.0</a> still satisfies the same <i>industrial urges</i> as the demo.

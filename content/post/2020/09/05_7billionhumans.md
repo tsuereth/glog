@@ -1,10 +1,10 @@
 +++
 date = "2020-09-05T15:36:16-07:00"
 title = "PEBKAC"
-category = ["Playing A Game"]
-game = ["7 Billion Humans"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "7 Billion Humans" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:7 Billion Humans> isn't "just" a sequel to <game:Human Resource Machine>; it also expands the fake-programming domain to <i>multi-threading</i>.  Your program runs on multiple agents/workers at once!

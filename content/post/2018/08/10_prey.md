@@ -1,10 +1,10 @@
 +++
 date = "2018-08-10T08:02:15-07:00"
 title = "Cybershock"
-category = ["Playing A Game"]
-game = ["Prey (2017)"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Prey (2017)" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 I knew, going into [Prey](game:Prey (2017)), to expect some [BioShock](tag:Bioshock)-like immersive storytelling.  And it's delivering on that front, with a really intriguing plot that I'm anxious to unravel by reading notes and chasing down mysteries.

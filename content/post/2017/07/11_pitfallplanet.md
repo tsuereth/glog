@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-07-11T06:29:16-07:00"
 draft = false
-game = ["Pitfall Planet"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Pitfall Planet" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Small planet, big pits"
-
 +++
 
 At about five hours, and with more collectibles to go if we wanted (but we didn't), <game:Pitfall Planet> has a fairly substantial amount of content.  The game's simple controls are exercised really well throughout its run, and the stranded-little-robots premise never feels worn out.

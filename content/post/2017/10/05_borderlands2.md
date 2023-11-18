@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-10-05T22:41:48-07:00"
 draft = false
-game = ["Borderlands 2"]
-platform = ["PC"]
-rating = ["Awesome"]
+game = [ "Borderlands 2" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 title = "Electric Boogaloo"
-
 +++
 
 Despite missing a couple of modern creature-comforts, like selecting multiple objectives or fast-traveling from anywhere, <game:Borderlands 2> still holds up really, really well.

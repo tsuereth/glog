@@ -1,10 +1,10 @@
 +++
 date = "2022-02-05T11:29:44-08:00"
 title = "Zoinks, Timmy!"
-category = ["Playing A Game"]
-game = ["South Park: The Fractured But Whole - Bring the Crunch"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "South Park: The Fractured But Whole - Bring the Crunch" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Like [From Dusk Till Casa Bonita](game:South Park: The Fractured But Whole - From Dusk Till Casa Bonita), the [Bring the Crunch](game:South Park: The Fractured But Whole - Bring the Crunch) DLC tells a self-contained South Park story and shows off a handful of new gameplay ideas.

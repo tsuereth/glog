@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-04-13T19:32:21-07:00"
 draft = false
-game = ["Yooka-Laylee"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Yooka-Laylee" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Banjo-Timewarpey"
-
 +++
 
 <game:Yooka-Laylee> feels like a fifteen-year-old game with a very fresh coat of paint on it.  I don't really mean that as a compliment.

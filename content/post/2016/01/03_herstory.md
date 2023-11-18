@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-01-03T10:22:11-08:00"
 draft = false
-game = ["Her Story"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Her Story" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Cool story, bro-- uh, ladybro"
-
 +++
 
 <game:Her Story> is a short story told in a pleasantly unorthodox way.  Unlike <game:Gone Home>, which was touching but straightforward, Her Story is actually architected in a way that ties its mechanics to its premise.

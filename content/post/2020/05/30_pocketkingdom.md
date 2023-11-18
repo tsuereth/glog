@@ -1,10 +1,10 @@
 +++
 date = "2020-05-30T06:44:17-07:00"
 title = "I'm beginning to suspect that this pocket kingdom is enchanted"
-category = ["Playing A Game"]
-game = ["Pocket Kingdom"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Pocket Kingdom" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 On one hand, <game:Pocket Kingdom> is a welcome entry in the under-served "puzzlevania" sub-genre.  It combines exploration-based storytelling and platform-puzzle mechanics in a semi-open world -- a rare pairing which I'd love to see more of.

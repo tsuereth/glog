@@ -1,10 +1,10 @@
 +++
 date = "2018-06-10T15:42:41-07:00"
 title = "Sacrebleu!"
-category = ["Playing A Game"]
-game = ["The Witcher 3: Wild Hunt - Blood and Wine"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "The Witcher 3: Wild Hunt - Blood and Wine" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 Most of [Witcher 3](game:The Witcher 3: Wild Hunt)'s environmental influences have been "vaguely" European; aside from Skellige's nordic aesthetics (and Irish accents?), the lands of Velen and Novigrad generally felt, somehow, indistictly-but-obviously from somewhere between Central and Eastern Europe.  The spoken accents and mythological references certainly seemed like they were picked from that rough set of inspirations.

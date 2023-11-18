@@ -1,10 +1,10 @@
 +++
 date = "2021-08-16T22:00:23-07:00"
 title = "Guns? check; Love? check; Tentacles? check-a-rooney."
-category = ["Playing A Game"]
-game = ["Borderlands 3: Guns, Love and Tentacles - The Marriage of Wainwright & Hammerlock"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 3: Guns, Love and Tentacles - The Marriage of Wainwright & Hammerlock" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 [Guns, Love and Tentacles](game:Borderlands 3: Guns, Love and Tentacles - The Marriage of Wainwright & Hammerlock) is something of a love letter to Lovecraftian horror, and the summary of that letter is: wow, Lovecraftian horror means a lot of weirdly different things.

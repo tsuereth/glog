@@ -1,7 +1,7 @@
 +++
 date = "2018-01-21T11:32:01-08:00"
 title = "Early Access, Late Release"
-category = ["Industry Lamentations"]
+category = [ "Industry Lamentations" ]
 +++
 
 I was just doing a quick update on my [upcoming games]($SiteBaseURL$upcoming/) list (here's hoping the [Shadow of the Colossus remake](game:Shadow of the Colossus (2018)) doesn't suck), and ... well, there wasn't much to update.

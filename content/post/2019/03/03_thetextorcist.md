@@ -1,9 +1,9 @@
 +++
 date = "2019-03-03T13:23:53-08:00"
 title = "The Power of Typography Compels You"
-category = ["Playing A Game"]
-game = ["The Textorcist: The Story of Ray Bibbia"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "The Textorcist: The Story of Ray Bibbia" ]
+platform = [ "PC" ]
 +++
 
 First off: great name.  A+ there.

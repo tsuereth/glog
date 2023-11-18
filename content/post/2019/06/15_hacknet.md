@@ -1,10 +1,10 @@
 +++
 date = "2019-06-15T15:51:49-07:00"
 title = "Save the planet ... by hacking it!"
-category = ["Playing A Game"]
-game = ["Hacknet"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Hacknet" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 As a programmer, sysadmin, typist, and puzzle enthusiast, I have some vivid expectations for the ideal "hacking" game.  <game:Hacknet> isn't it; but it's the closest I've seen yet.

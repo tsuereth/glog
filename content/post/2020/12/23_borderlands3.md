@@ -1,10 +1,10 @@
 +++
 date = "2020-12-23T23:38:07-08:00"
 title = "Second time's the charm"
-category = ["Playing A Game"]
-game = ["Borderlands 3"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 3" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Borderlands 3> is a <i>technological</i> step forward, and it succeeds in <i>reiterating</i> the franchise's manic-weapons-and-zany-scenarios formula.  But it barely attempts to meaningfully distinguish itself from its predecessors, and those attempts don't generally work in the threequel's favor.

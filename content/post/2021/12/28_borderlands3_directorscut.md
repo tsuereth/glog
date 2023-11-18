@@ -1,10 +1,10 @@
 +++
 date = "2021-12-28T23:03:27-08:00"
 title = "Mysteriouslier, but, not THAT mysteriouslier"
-category = ["Playing A Game"]
-game = ["Borderlands 3: Director's Cut"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 3: Director's Cut" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Let's get an important warning out of the way, first: <b>don't buy</b> the <game:Borderlands 3> Season Pass 2.  It is <b>an absolute rip-off</b>.

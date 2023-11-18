@@ -1,9 +1,9 @@
 +++
 date = "2021-12-19T10:26:28-08:00"
 title = "Super Meat Boy Sunshine"
-category = ["Playing A Game"]
-game = ["Splasher"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Splasher" ]
+platform = [ "PC" ]
 +++
 
 I mean, yeah, <game:Splasher>'s paint-twisted platforming feels pretty fresh: bouncing between walls and running along ceilings to get through dangerous, sawblade-filled laboratories is exciting!  Fun, even!  And at least at first, <i>doesn't</i> feel punishing.

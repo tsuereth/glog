@@ -1,10 +1,10 @@
 +++
 date = "2022-04-17T14:05:35-07:00"
 title = "Our Flag Means Lots of Stabbing"
-category = ["Playing A Game"]
-game = ["Assassin's Creed IV Black Flag"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Assassin's Creed IV Black Flag" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 [Black Flag](game:Assassin's Creed IV Black Flag) has long been "the good <tag:Assassin's Creed> game*" as well as "the good pirates game" in my memory, so when <a href="https://www.imdb.com/title/tt11000902/">Our Flag Means Death</a> reignited my child-like (or Stede Bonnet-like, if you prefer) fascination with the pirate life, it only felt natural to dive back into Edward Kenway's misadventure.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-02-18T15:49:55-08:00"
 draft = false
-game = ["Rebel Galaxy"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Rebel Galaxy" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Now THIS is Space Trucking"
-
 +++
 
 <game:Rebel Galaxy> is a jack of many trades, and - thankfully - a master of one.  Maybe two.

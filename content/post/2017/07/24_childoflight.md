@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-07-24T07:47:53-07:00"
 draft = false
-game = ["Child of Light"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Child of Light" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "These rhymes should cease, oh look some geese"
-
 +++
 
 <game:Child of Light>'s fairytale narrative is diluted, significantly, by its insistence on rhyming dialog.  The writing is routinely stretched and twisted just for the sake of a barely-rhyming word, sucking the personality out of any given character's lines.

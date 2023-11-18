@@ -1,10 +1,10 @@
 +++
 date = "2018-06-17T13:22:07-07:00"
 title = "Cats don't know how to make puzzles"
-category = ["Playing A Game"]
-game = ["Hungry Cat Picross"]
-platform = ["Android"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Hungry Cat Picross" ]
+platform = [ "Android" ]
+rating = [ "Bad" ]
 +++
 
 I adapted to how <game:Hungry Cat Picross> has different rules than I'm used to -- a little reminiscent of <game:SquareCells>, but simpler.  And I could tolerate the fidgety UI, particularly how dragging to paint could also change the paint color, when dragging to the bottom of the screen.

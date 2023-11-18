@@ -1,10 +1,10 @@
 +++
 date = "2021-03-14T18:24:26-07:00"
 title = "Because regular crosswords aren't nerdy enough"
-category = ["Playing A Game"]
-game = ["Regex Crossword"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Regex Crossword" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Sure, a <a href="https://regexcrossword.com/">website with some form fields</a> is a bit of a loose fit for this video game blog.  But <game:Regex Crossword> is an interactive experience that entertained me for most of the weekend ... and it compares favorably to <game:Copy Editor>.

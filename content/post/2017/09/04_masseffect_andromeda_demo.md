@@ -1,11 +1,10 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-09-04T21:38:50-07:00"
 draft = false
-game = ["Mass Effect: Andromeda"]
-platform = ["PC"]
+game = [ "Mass Effect: Andromeda" ]
+platform = [ "PC" ]
 title = "Brave New Galaxy"
-
 +++
 
 I reached the end of Origin's ten-hour <game:Mass Effect: Andromeda> trial in about <i>five</i> hours -- including probably an hour or so of reading Codex entries.  And while it's hard to form a complete opinion of such an ambitious game in that time, what I've glimpsed is ... interesting.

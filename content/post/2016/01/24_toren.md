@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-01-24T22:44:02-08:00"
 draft = false
-game = ["Toren"]
-platform = ["PC"]
-rating = ["Bad"]
+game = [ "Toren" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 title = "Some towers aren't worth climbing"
-
 +++
 
 <game:Toren> is a two-hour game, and I was bored of it within 45 minutes.

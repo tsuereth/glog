@@ -1,10 +1,10 @@
 +++
 date = "2017-12-03T12:34:18-08:00"
 title = "Forcibly Finite"
-category = ["Playing A Game"]
-game = ["Infinifactory"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Infinifactory" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 I've been telling myself since [August]($SiteBaseURL$2017/08/06/working-overtime/) that I would, eventually, come back and wrap up <game:Infinifactory>.  But every time I actually think about it, I <i>just can't even</i> imagine myself enjoying the hours of work it'll take to do the five puzzles I have remaining.

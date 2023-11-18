@@ -1,10 +1,10 @@
 +++
 date = "2021-03-14T22:04:39-07:00"
 title = "Super Ikaruga Brothers"
-category = ["Playing A Game"]
-game = ["Outland"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Outland" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Outland>'s pitch of combining platform-action and bullet-hell mechanics - with color switching, <i>ala</i> <game:Ikaruga> - sounds pretty promising.  Until you remember that bullet-hell games necessarily enforce a specific <i>pace</i> to their action, and that waiting around for obstacles to move is one of the most boring parts of a platform game.

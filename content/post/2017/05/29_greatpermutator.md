@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-05-29T09:36:19-07:00"
 draft = false
-game = ["Great Permutator"]
-platform = ["PC"]
-rating = ["Bad"]
+game = [ "Great Permutator" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 title = "Not Really That Great Permutator"
-
 +++
 
 <game:Great Permutator> takes its titular descriptor seriously; more seriously than I'd expected it to.  While on its face, the game looks like a 2D version of assembly-line puzzler <game:Infinifactory>, Permutator's puzzle mechanics are actually quite different.

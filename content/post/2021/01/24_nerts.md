@@ -1,10 +1,10 @@
 +++
 date = "2021-01-24T09:25:30-08:00"
 title = "Revenge of the Nerts"
-category = ["Playing A Game"]
-game = ["Nerts!: Online"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Nerts!: Online" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 What surprised me the most about <game:Nerts!: Online> wasn't that Zachtronics made a new cards-only game, nor that they made a <i>multiplayer</i> game -- it's that, I didn't think anyone else knew about "multiplayer solitaire."  I always thought that was a weird thing my family did.

@@ -1,10 +1,10 @@
 +++
 date = "2021-05-29T13:49:40-07:00"
 title = "Minimal Effect"
-category = ["Playing A Game"]
-game = ["Mass Effect: Bring Down the Sky"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Mass Effect: Bring Down the Sky" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Like I said, <game:Mass Effect>'s side missions are lackluster and dull.  The [Bring Down the Sky](game:Mass Effect: Bring Down the Sky) DLC, included in the [Legendary Edition](game:Mass Effect Legendary Edition) package, is <i>better</i>... but not by much.

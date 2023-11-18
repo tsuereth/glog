@@ -1,9 +1,9 @@
 +++
 date = "2022-06-12T18:33:28-07:00"
 title = "Well, I don't know what I expected"
-category = ["Playing A Game"]
-game = ["Lair of the Clockwork God"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Lair of the Clockwork God" ]
+platform = [ "PC" ]
 +++
 
 I <i>loved</i> the comedy writing in both <game:Ben There, Dan That!> and <game:Time Gentlemen, Please!>, but the latter's <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/MoonLogicPuzzle">adventure game logic</a> more than wore out its welcome.  So I was excited about <game:Lair of the Clockwork God> <i>because</i> of its new gameplay formula, foregoing points and clicks in favor of runs and jumps.

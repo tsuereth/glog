@@ -1,10 +1,10 @@
 +++
 date = "2022-01-09T20:52:37-08:00"
 title = "It's a puzzle game, but with cutscenes!"
-category = ["Playing A Game"]
-game = ["Khimera: Puzzle Island"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Khimera: Puzzle Island" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Khimera: Puzzle Island> is a good example of how adding characters with strong personalities can spice up an otherwise-rote game design.

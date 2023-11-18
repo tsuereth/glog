@@ -1,10 +1,10 @@
 +++
 date = "2020-12-25T12:10:24-08:00"
 title = "The Legend of Picross"
-category = ["Playing A Game"]
-game = ["PictoQuest: The Cursed Grids"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "PictoQuest: The Cursed Grids" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 "Moonface" is a not-in-polite-company term, right?  Like, I could've sworn it was an outright slur.  At any rate, it doesn't sound <i>quite right</i>.

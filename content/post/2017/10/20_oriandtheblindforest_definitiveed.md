@@ -1,11 +1,10 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-10-20T18:18:19-07:00"
-game = ["Ori and the Blind Forest: Definitive Edition"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Ori and the Blind Forest: Definitive Edition" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Ori and the Terrible, Horrible, No Good, Very Bad Day"
-
 +++
 
 [Ori](game:Ori and the Blind Forest: Definitive Edition) has some strong segments, but they're buried underneath a few too many poor design decisions around difficulty and pacing.

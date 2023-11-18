@@ -1,10 +1,10 @@
 +++
 date = "2022-01-30T14:40:09-08:00"
 title = "That's my secret: I'm always gassy."
-category = ["Playing A Game"]
-game = ["South Park: The Fractured But Whole"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "South Park: The Fractured But Whole" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:South Park: The Fractured But Whole> is a slower "burn" than [Stick of Truth](game:South Park: The Stick of Truth) was, but I'd ultimately call Fractured But Whole (<a href="https://knowyourmeme.com/memes/laughing-lizard-hhhehehe">hhhehehe</a>) more fulfilling <i>and</i> more entertaining than its forebear.

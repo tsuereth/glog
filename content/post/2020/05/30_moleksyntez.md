@@ -1,10 +1,10 @@
 +++
 date = "2020-05-30T12:32:02-07:00"
 title = "Just makin' some drugs"
-category = ["Playing A Game"]
-game = ["Molek-Syntez"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Molek-Syntez" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Molek-Syntez> is to <game:SpaceChem> as <game:TIS-100> is to <game:Shenzhen I/O>.  If you've played <tag:Zachtronics> games before, this analogy should be a fairly complete description.

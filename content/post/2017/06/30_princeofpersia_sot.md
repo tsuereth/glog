@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-06-30T08:03:48-07:00"
 draft = false
-game = ["Prince of Persia: The Sands of Time"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Prince of Persia: The Sands of Time" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Weathering the Sands of Time"
-
 +++
 
 <game:Prince of Persia: The Sands of Time> is one of those games that sticks out prominently in my memory.  Although I've had a [rough](game:Red Dead Redemption) [time](game:BioShock Infinite) with some of those recently -- the Prince has weathered time fairly well, if not entirely unscathed.

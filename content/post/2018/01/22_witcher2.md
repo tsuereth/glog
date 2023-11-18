@@ -1,10 +1,10 @@
 +++
 date = "2018-01-22T20:54:26-08:00"
 title = "I am the one who witches"
-category = ["Playing A Game"]
-game = ["The Witcher 2: Assassins of Kings - Enhanced Edition"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "The Witcher 2: Assassins of Kings - Enhanced Edition" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 I should probably note that I <i>tried</i> playing [The Witcher](game:The Witcher: Enhanced Edition) some years back, but quickly bounced off of it.  The animation quality was distractingly bad - like that time I tried [New Vegas](game:Fallout: New Vegas) after having finished [Skyrim](game:The Elder Scrolls V: Skyrim) - and the controls were just a mess.

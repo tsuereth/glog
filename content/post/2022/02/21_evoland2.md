@@ -1,10 +1,10 @@
 +++
 date = "2022-02-21T12:46:33-08:00"
 title = "More like Evo-Bland, am I right?"
-category = ["Playing A Game"]
-game = ["Evoland 2"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Evoland 2" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 I didn't care much for <game:Evoland> -- looking back... wow I <i>[really disliked]($SiteBaseURL$2014/07/06/rpg-fan-fiction/)</i> Evoland.

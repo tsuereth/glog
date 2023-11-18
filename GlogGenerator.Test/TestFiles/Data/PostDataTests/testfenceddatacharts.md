@@ -3,7 +3,7 @@ draft = false
 date = "2023-01-01T08:37:47-08:00"
 title = "2022 in Review: More From Less, More-or-Less"
 slug = ""
-category = ["Site News"]
+category = [ "Site News" ]
 game = []
 platform = []
 +++

@@ -1,10 +1,10 @@
 +++
 date = "2018-07-23T22:11:54-07:00"
 title = "Fall from greatest"
-category = ["Playing A Game"]
-game = ["Nonogram - The Greatest Painter"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Nonogram - The Greatest Painter" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 I found <i>the problem</i> with [Nonogram](game:Nonogram - The Greatest Painter).

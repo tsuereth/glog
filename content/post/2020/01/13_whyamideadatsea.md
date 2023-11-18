@@ -1,10 +1,10 @@
 +++
 date = "2020-01-13T21:02:47-08:00"
 title = "Maybe I should've stayed dead"
-category = ["Playing A Game"]
-game = ["Why Am I Dead At Sea"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Why Am I Dead At Sea" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 I'm not <i>positive</i> that <game:Why Am I Dead At Sea> is an RPG Maker game - it's got some UI bits that I don't exactly recognize - but it certainly has the half-baked implementation quirks that I've come to associate with the engine.

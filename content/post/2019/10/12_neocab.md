@@ -1,9 +1,9 @@
 +++
 date = "2019-10-12T22:51:06-07:00"
 title = "Choices Don't Matter"
-category = ["Playing A Game"]
-game = ["Neo Cab"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Neo Cab" ]
+platform = [ "PC" ]
 +++
 
 Being a cab driver (well, rideshare driver) in a cyberpunk setting sounded like a really cool narrative hook -- listening to people describe the petty human problems endemic in a <i>Blade Runner</i>-esque world.  But <game:Neo Cab>'s demo lost me pretty quickly.

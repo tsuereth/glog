@@ -1,10 +1,10 @@
 +++
 date = "2020-12-20T10:23:41-08:00"
 title = "I'm Ron Burgundy?"
-category = ["Playing A Game"]
-game = ["Onikira: Demon Killer"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Onikira: Demon Killer" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 I know that I've impulse-purchased [some](game:Super Daryl Deluxe) [questionable](game:Mugsters) [games](game:Cubots: The Origins), but this year - as I've made a concerted effort to clean up my backlog - it's struck me just <i>how many</i> poor purchasing decisions are in there.

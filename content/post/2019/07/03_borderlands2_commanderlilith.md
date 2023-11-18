@@ -1,10 +1,10 @@
 +++
 date = "2019-07-03T07:37:07-07:00"
 title = "A prelude to a sequel, not a pre-sequel"
-category = ["Playing A Game"]
-game = ["Borderlands 2: Commander Lilith and the Fight for Sanctuary"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 2: Commander Lilith and the Fight for Sanctuary" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 As a promotional tool, <game:Borderlands 2: Commander Lilith and the Fight for Sanctuary> isn't bad; it's perfectly playable and has some fun moments.  As a game, though, it's fairly bland and feels unnecessary to the franchise.

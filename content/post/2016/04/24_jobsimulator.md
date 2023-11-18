@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-04-24T15:11:38-07:00"
 draft = false
-game = ["Job Simulator: The 2050 Archives"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "Job Simulator: The 2050 Archives" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "I jobbed"
-
 +++
 
 Sure, [Job Simulator](game:Job Simulator: The 2050 Archives) fits firmly in the realm of first-round, relatively-light VR games; years from now, when virtual experiences have become several iterations more complex, it's unlikely that anyone will remember it.

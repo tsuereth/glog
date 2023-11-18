@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-09-15T19:29:09-07:00"
 draft = false
-game = ["Darksiders: Warmastered Edition"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Darksiders: Warmastered Edition" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Blandsiders"
-
 +++
 
 When <game:Darksiders> was more recent, it compared fairly well to [Twilight Princess](game:The Legend of Zelda: Twilight Princess) -- and favorably, even, to [Skyward Sword](game:The Legend of Zelda: Skyward Sword).

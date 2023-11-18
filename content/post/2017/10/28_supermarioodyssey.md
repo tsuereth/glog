@@ -1,10 +1,10 @@
 +++
 date = "2017-10-28T09:30:16-07:00"
 title = "We're going on an odyssey!"
-category = ["Playing A Game"]
-game = ["Super Mario Odyssey"]
-platform = ["Switch"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Super Mario Odyssey" ]
+platform = [ "Switch" ]
+rating = [ "Awesome" ]
 +++
 
 Despite a bit of a learning curve with the controls - maybe due to how infrequently I've used the <platform:Switch> - <game:Super Mario Odyssey> has rapidly engrossed me.

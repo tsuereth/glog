@@ -1,10 +1,10 @@
 +++
 date = "2020-04-26T23:49:03-07:00"
 title = "War never changes, but will Bethesda?"
-category = ["Playing A Game"]
-game = ["Fallout 4"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Fallout 4" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 After a month, and 100+ hours, of <game:Fallout 4> ... well, it's okay, I guess.

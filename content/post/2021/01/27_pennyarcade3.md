@@ -1,10 +1,10 @@
 +++
 date = "2021-01-27T22:38:22-08:00"
 title = "Still on that precipice"
-category = ["Playing A Game"]
-game = ["Penny Arcade's On the Rain-Slick Precipice of Darkness 3"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Penny Arcade's On the Rain-Slick Precipice of Darkness 3" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 It's been [almost ten years]($SiteBaseURL$2011/02/08/penny-arcade-adventures-on-the-rain-slick-precipice-of-darkness-episode-2-2/) since I played [Episode Two](game:Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness - Episode Two).  Let's see if I can remember the plot... oh, steampunk-ey <a href="https://www.penny-arcade.com/">Gabe and Tycho</a> are fighting eldritch gods.  Yeah, got it.

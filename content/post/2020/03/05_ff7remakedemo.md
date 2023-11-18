@@ -1,9 +1,9 @@
 +++
 date = "2020-03-05T21:48:06-08:00"
 title = "What a bunch of spoony bards"
-category = ["Playing A Game"]
-game = ["Final Fantasy VII Remake"]
-platform = ["PS4"]
+category = [ "Playing A Game" ]
+game = [ "Final Fantasy VII Remake" ]
+platform = [ "PS4" ]
 +++
 
 The gameplay is ... okay.  But storytelling has been my biggest concern with <game:Final Fantasy VII Remake>, and the demo's take on FF7's seminal reactor mission offered no solace.

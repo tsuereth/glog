@@ -1,10 +1,10 @@
 +++
 date = "2021-02-06T10:04:41-08:00"
 title = "Editor's note: No, don't do this."
-category = ["Playing A Game"]
-game = ["Copy Editor"]
-platform = ["PC"]
-rating = ["Awful"]
+category = [ "Playing A Game" ]
+game = [ "Copy Editor" ]
+platform = [ "PC" ]
+rating = [ "Awful" ]
 +++
 
 <a href="https://en.wikipedia.org/wiki/Regular_expression">Regular expressions</a> get a <a href="https://thedailywtf.com/articles/and-now-you-have-two-problems">bad rap</a> -- a regex is a powerful tool, good for some jobs and terrible for others.

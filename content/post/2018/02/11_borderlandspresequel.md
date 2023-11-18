@@ -1,10 +1,10 @@
 +++
 date = "2018-02-11T23:19:31-08:00"
 title = "We're whalers on the moon!  We carry a harpoon!"
-category = ["Playing A Game"]
-game = ["Borderlands: The Pre-Sequel"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands: The Pre-Sequel" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Borderlands: The Pre-Sequel> is fun to play, but feels like a ... bit of a stretch, in a few ways.

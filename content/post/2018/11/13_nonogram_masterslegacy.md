@@ -1,9 +1,9 @@
 +++
 date = "2018-11-13T21:43:01-08:00"
 title = "An Even Greatester Painter"
-category = ["Playing A Game"]
-game = ["Nonogram: Master's Legacy"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Nonogram: Master's Legacy" ]
+platform = [ "PC" ]
 +++
 
 Hey look, it's a free-to-play picross game, yeah I'm up for th-- oh... this is <i>exactly the same game</i> as <game:Nonogram - The Greatest Painter>.

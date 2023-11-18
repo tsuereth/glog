@@ -1,10 +1,10 @@
 +++
 date = "2018-12-29T11:50:58-08:00"
 title = "AUGMENTED BANK HEIST"
-category = ["Playing A Game"]
-game = ["Deus Ex: Mankind Divided - System Rift"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Deus Ex: Mankind Divided - System Rift" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 Two years after I said that resetting talent points was ["an instant turn-off"]($SiteBaseURL$2016/09/25/the-doldrums-of-deus-ex/) for DXMD's [System Rift](game:Deus Ex: Mankind Divided - System Rift) DLC, I've gotten over it.  ... Well, I've also forgotten what most of those talents <i>were</i>, anyway.

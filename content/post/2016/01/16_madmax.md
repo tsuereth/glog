@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-01-16T15:09:56-08:00"
 draft = false
-game = ["Mad Max (2015)"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Mad Max (2015)" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Not Mad Max so much as Disappointed Max"
-
 +++
 
 When I was playing Mad Max, I felt continuously compelled to hunt down another objective -- to chase the scrap, to earn the next upgrade, to unlock the next mission.  But when I wasn't playing it, all I could think about were its flaws.  While the game delivers impeccably on the experience of driving through a desert wasteland, almost everything within and throughout its game world is underwhelming.

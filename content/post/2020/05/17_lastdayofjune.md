@@ -1,9 +1,9 @@
 +++
 date = "2020-05-17T10:56:28-07:00"
 title = "Dear Esther 2: Esther Harder"
-category = ["Playing A Game"]
-game = ["Last Day of June"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Last Day of June" ]
+platform = [ "PC" ]
 +++
 
 Making a "walking simulator" is an inherently risky proposition.  I mean, sure, you can save a lot of development time by forcing the player down a specific path and not having to design or implement <i>gameplay</i> -- but those savings can come back to bite you if the game's remaining components, its story and presentation, aren't strong enough on their own.

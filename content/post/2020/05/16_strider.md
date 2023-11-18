@@ -1,10 +1,10 @@
 +++
 date = "2020-05-16T13:45:23-07:00"
 title = "Stride off"
-category = ["Playing A Game"]
-game = ["Strider (2014)"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Strider (2014)" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 The core action gameplay of <game:Strider (2014)> is mostly solid, but a few fatal flaws make it more frustrating than its vacant story is worth.

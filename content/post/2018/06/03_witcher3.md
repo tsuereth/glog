@@ -1,10 +1,10 @@
 +++
 date = "2018-06-03T12:18:59-07:00"
 title = "Let's play cards.  Gwent wouldn't be bad."
-category = ["Playing A Game"]
-game = ["The Witcher 3: Wild Hunt"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "The Witcher 3: Wild Hunt" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 Back in White Orchard, I had no interest whatsoever in Gwent.  I don't really like digital card games in general; representing game concepts as cards feels bland, to me.  But in the doldrums of [Witcher 3](game:The Witcher 3: Wild Hunt)'s levels 5-10, when I was putting off some story quests and everything else was too high-level for me -- Gwent was something to do.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-08-13T11:22:51-07:00"
 draft = false
-game = ["Tiny Brains"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Tiny Brains" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Tiny brains, tiny dreams"
-
 +++
 
 <game:Tiny Brains> is another [Trine](game:Trine Enchanted Edition)-like, where one or more players can switch between characters with unique abilities.  Tiny Brains is more about puzzles than about action, although there are some combat stages as well.

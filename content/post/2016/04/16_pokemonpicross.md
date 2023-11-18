@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2016-04-16T16:24:28-07:00"
 draft = false
-game = ["Pokémon Picross"]
-platform = ["3DS"]
-rating = ["Awful"]
+game = [ "Pokémon Picross" ]
+platform = [ "3DS" ]
+rating = [ "Awful" ]
 title = "A puzzling partnership"
-
 +++
 
 <game:Pokémon Picross> allows you to assemble a party of pocket monsters and take them across a map made up of picross puzzles.  It's more than a little absurd.

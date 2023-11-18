@@ -1,10 +1,10 @@
 +++
 date = "2017-11-09T21:30:53-08:00"
 title = "Now I have a machine gun.  Ho, ho, ho."
-category = ["Playing A Game"]
-game = ["Borderlands 2: How Marcus Saved Mercenary Day"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Borderlands 2: How Marcus Saved Mercenary Day" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 Like the preceding [Thanksgiving story](game:Borderlands 2: The Horrible Hunger of the Ravenous Wattle Gobbler), the Christmas tale [How Marcus Saved Mercenary Day](game:Borderlands 2: How Marcus Saved Mercenary Day) is a short and sweet tidbit of <game:Borderlands 2> content.

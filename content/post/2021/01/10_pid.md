@@ -1,10 +1,10 @@
 +++
 date = "2021-01-10T11:42:28-08:00"
 title = "Forget stars, let's collect constellations"
-category = ["Playing A Game"]
-game = ["Pid"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Pid" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 <game:Pid> lives in a space between heavily-atmospheric walk-to-the-right games like <game:Inside (2016)> and tactical run-and-jump platform games like <tag:Mario> side-scrollers.  It's "more game-y" than the former category, as in, its imaginative environments are usually overshadowed by platforms to traverse and enemies to avoid or destroy.

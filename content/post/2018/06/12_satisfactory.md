@@ -1,9 +1,9 @@
 +++
 date = "2018-06-12T07:01:55-07:00"
 title = "I can't get no Factorio"
-category = ["Looking Forward To It"]
-game = ["Satisfactory"]
-platform = ["PC"]
+category = [ "Looking Forward To It" ]
+game = [ "Satisfactory" ]
+platform = [ "PC" ]
 +++
 
 I am surprised it took <i>this</i> long for someone to take advantage of <game:Factorio>'s extended development cycle.  But I suppose it's ... <game:Satisfactory>.

@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-06-11T13:52:32-07:00"
 draft = false
-game = ["Book of Demons"]
-platform = ["PC"]
-rating = ["Meh"]
+game = [ "Book of Demons" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 title = "Diablo: Lord of Papercraft"
-
 +++
 
 <game:Book of Demons> is immediately jarring, not just because of its slickly-animated high-definition papercraft presentation (like an amped-up [Epistory](game:Epistory: Typing Chronicles)), but also because it's a clear "homage" to <game:Diablo>.  And when I say "homage," I mean that there is an old man standing by the tiny, depressed village's well, and he asks you to delve under the haunted church, into the 3/4-isometric catacombs to fight evil.

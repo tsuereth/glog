@@ -1,10 +1,10 @@
 +++
 date = "2018-02-11T22:53:14-08:00"
 title = "A colossal game, but also a shade of gaming's past"
-category = ["Playing A Game"]
-game = ["Shadow of the Colossus (2018)"]
-platform = ["PS4"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Shadow of the Colossus (2018)" ]
+platform = [ "PS4" ]
+rating = [ "Good" ]
 +++
 
 I'll walk back some of my [previous sentiment]($SiteBaseURL$2018/02/07/colossus-sees-shadow-predicts-six-more-weeks-of-winter/) about [Shadow of the Colossus](game:Shadow of the Colossus (2018)) "recapturing" the original game's charms and quirks.  That is to say, not all of this game has aged well -- the open world really wore on me.

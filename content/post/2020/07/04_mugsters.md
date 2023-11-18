@@ -1,10 +1,10 @@
 +++
 date = "2020-07-04T08:39:59-07:00"
 title = "It's quiet... too quiet."
-category = ["Playing A Game"]
-game = ["Mugsters"]
-platform = ["PC"]
-rating = ["Bad"]
+category = [ "Playing A Game" ]
+game = [ "Mugsters" ]
+platform = [ "PC" ]
+rating = [ "Bad" ]
 +++
 
 <game:Mugsters> has some slick and action-packed trailers (as seen on its <a href="https://store.steampowered.com/app/712180/Mugsters/">Steam page</a>).  Sadly, the game itself is ... fairly different.

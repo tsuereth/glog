@@ -1,9 +1,9 @@
 +++
 date = "2018-11-03T09:12:29-07:00"
 title = "A blast from the poorly-localized past"
-category = ["Playing A Game"]
-game = ["Zone of The Enders: The 2nd Runner Mars"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Zone of The Enders: The 2nd Runner Mars" ]
+platform = [ "PC" ]
 +++
 
 Given it's been over a decade since I played <game:Zone of the Enders>, I was surprised at how <i>distinctly</i> the demo of <game:Zone of The Enders: The 2nd Runner Mars> reminded me of the original.

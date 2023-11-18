@@ -1,10 +1,10 @@
 +++
 date = "2020-11-14T11:37:35-08:00"
 title = "Another day, another lost city to discover and inadvertently destroy"
-category = ["Playing A Game"]
-game = ["Uncharted 3: Drake's Deception"]
-platform = ["PS4"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Uncharted 3: Drake's Deception" ]
+platform = [ "PS4" ]
+rating = [ "Good" ]
 +++
 
 My previous writings on [Uncharted 3](game:Uncharted 3: Drake's Deception) ranked it just below [its predecessor](game:Uncharted 2: Among Thieves), but this most-recent playthrough has me reconsidering.

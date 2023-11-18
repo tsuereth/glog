@@ -1,12 +1,11 @@
 +++
-category = ["Playing A Game"]
+category = [ "Playing A Game" ]
 date = "2017-06-11T13:52:27-07:00"
 draft = false
-game = ["BioShock 2 Remastered"]
-platform = ["PC"]
-rating = ["Good"]
+game = [ "BioShock 2 Remastered" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 title = "Return to Rapture ... again"
-
 +++
 
 As with [the un-remastered BioShock 2](game:BioShock 2), the worst thing about <game:BioShock 2 Remastered> is that it just isn't as interesting as the first game.  Especially in its opening levels, which lean very heavily on the implicit appeal of Rapture and the Big Daddy/Little Sister motif, offering very little intrigue of their own.

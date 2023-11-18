@@ -1,10 +1,10 @@
 +++
 date = "2018-07-27T08:07:38-07:00"
 title = "Melancholy of the Tomb Raider"
-category = ["Playing A Game"]
-game = ["Rise of the Tomb Raider"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Rise of the Tomb Raider" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 I tried revisiting <game:Tomb Raider (2013)> a few months back, and didn't get awfully far: while my [first playthrough]($SiteBaseURL$2013/04/03/tomb-raider-2013-6/) ended in very high praise, coming back felt ... <i>dull</i>.  I was no longer shocked by the brutality of Lara's plights, nor intrigued by the openness of its explorable areas.  Knowing what to expect from it, the game's "leisurely" beginning was too boring to keep my interest.

@@ -1,10 +1,10 @@
 +++
 date = "2019-02-08T18:45:38-08:00"
 title = "World of Overly-Complicated, Tedious and Unfulfilling Light"
-category = ["Playing A Game"]
-game = ["Super Smash Bros. Ultimate"]
-platform = ["Switch"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Super Smash Bros. Ultimate" ]
+platform = [ "Switch" ]
+rating = [ "Meh" ]
 +++
 
 You could say that I didn't learn my lesson.

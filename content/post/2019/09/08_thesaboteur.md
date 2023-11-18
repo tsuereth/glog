@@ -1,10 +1,10 @@
 +++
 date = "2019-09-08T14:47:56-07:00"
 title = "Some Fuckin' Master Race"
-category = ["Playing A Game"]
-game = ["The Saboteur"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "The Saboteur" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <tag:CD Projekt> has a good track record for fixing up the "good old games" it sells on GOG, so when I saw <game:The Saboteur> released there, I got excited that maybe they'd fixed the mixed-resolution map issue I [whined about back in 2012]($SiteBaseURL$2012/09/17/the-saboteur-9/).  As it turns out, they ... kind-of fixed it ... by locking the setting at 720p.

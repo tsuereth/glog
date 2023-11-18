@@ -1,10 +1,10 @@
 +++
 date = "2019-11-03T21:40:57-08:00"
 title = "Triggered"
-category = ["Playing A Game"]
-game = ["Chrono Trigger"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Chrono Trigger" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 Maybe <game:Chrono Trigger> is the reason I'm not big on "replay value."

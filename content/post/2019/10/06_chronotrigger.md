@@ -1,10 +1,10 @@
 +++
 date = "2019-10-06T11:45:12-07:00"
 title = "Blast to the Past"
-category = ["Playing A Game"]
-game = ["Chrono Trigger"]
-platform = ["PC"]
-rating = ["Awesome"]
+category = [ "Playing A Game" ]
+game = [ "Chrono Trigger" ]
+platform = [ "PC" ]
+rating = [ "Awesome" ]
 +++
 
 I've revisited many of my "old favorite" games, and sometimes observed age getting the better of them.  But I just can't look at <game:Chrono Trigger> through that same lens.  I may never be able to objectively measure it against contemporary games.

@@ -1,9 +1,9 @@
 +++
 date = "2018-10-14T13:02:47-07:00"
 title = "It's fucked, in a bad way"
-category = ["Playing A Game"]
-game = ["Brainfuck"]
-platform = ["PC"]
+category = [ "Playing A Game" ]
+game = [ "Brainfuck" ]
+platform = [ "PC" ]
 +++
 
 As a programming-puzzle game featuring an obtuse language, <game:Brainfuck> is <i>right</i> up my alley.  I bought this without a second thought.

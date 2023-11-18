@@ -1,10 +1,10 @@
 +++
 date = "2020-07-03T11:40:41-07:00"
 title = "What's-going-on-vania"
-category = ["Playing A Game"]
-game = ["Wuppo: Definitive Edition"]
-platform = ["PC"]
-rating = ["Meh"]
+category = [ "Playing A Game" ]
+game = [ "Wuppo: Definitive Edition" ]
+platform = [ "PC" ]
+rating = [ "Meh" ]
 +++
 
 [Wuppo](game:Wuppo: Definitive Edition) isn't a "bad" game, exactly, but it's <i>weird</i> in ways that I found more off-putting than charming.

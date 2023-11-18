@@ -1,10 +1,10 @@
 +++
 date = "2020-02-07T21:33:06-08:00"
 title = "Cool destiny, bro"
-category = ["Playing A Game"]
-game = ["Stories: The Path of Destinies"]
-platform = ["PC"]
-rating = ["Good"]
+category = [ "Playing A Game" ]
+game = [ "Stories: The Path of Destinies" ]
+platform = [ "PC" ]
+rating = [ "Good" ]
 +++
 
 <game:Stories: The Path of Destinies> is (aside from a shockingly bland title) a distinctive mixture of <tag:Diablo>-like hack-and-slash, and choice-based narrative adventure.  Stories isn't <i>perfect</i> at either of these things, but it is pretty good at one of them.  The second one.

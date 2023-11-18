@@ -1,9 +1,9 @@
 +++
 date = "2020-03-17T17:08:48-07:00"
 title = "Ori and the Lessons of the Hollow Knight"
-category = ["Looking Forward To It"]
-game = ["Ori and the Will of the Wisps"]
-platform = ["PC"]
+category = [ "Looking Forward To It" ]
+game = [ "Ori and the Will of the Wisps" ]
+platform = [ "PC" ]
 +++
 
 <a href="https://www.youtube.com/watch?v=6JxfuAl4KLM">Review 1</a> (paraphrased): <game:Ori and the Will of the Wisps> is <i>heavily inspired</i> by ideas and mechanics from <game:Hollow Knight>.  It has customizable "shard" (pin) slots, it has an upgradeable sword, it has informative NPCs, it has tactical combat against diverse enemies and bosses, it even has an undergound environment infested with bugs.
