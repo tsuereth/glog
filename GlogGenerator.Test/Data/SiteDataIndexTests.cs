@@ -46,6 +46,51 @@ namespace GlogGenerator.Test.Data
         }
 
         [TestMethod]
+        public void TestLoadContentReferenceConsistentAfterKeyChange()
+        {
+            var logger = new TestLogger();
+
+            var testDataItem = new IgdbGame() { Id = 1, Name = "Some Game Name" };
+
+            var mockIgdbCache = Substitute.For<IIgdbCache>();
+            mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>() { testDataItem });
+            mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
+            mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>());
+
+            var mockSiteBuilder = Substitute.For<ISiteBuilder>();
+            var testIndex = new SiteDataIndex(logger, mockSiteBuilder, string.Empty);
+
+            testIndex.LoadContent(mockIgdbCache);
+
+            Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
+            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+
+            var testReference = new SiteDataReference<GameData>("Some Game Name");
+            var testData = testIndex.GetData(testReference);
+
+            Assert.IsTrue(testReference.GetIsResolved());
+            Assert.AreEqual("Some Game Name", testData.Title);
+
+            testDataItem.Name = "Corrected Game Name";
+
+            testIndex.LoadContent(mockIgdbCache);
+
+            var errors = logger.GetLogs(LogLevel.Error);
+            Assert.AreEqual(1, errors.Count);
+
+            var expectedMessage = $"Updated data index has a different key for GameData with data ID {testDataItem.GetUniqueIdString()}: old key Some Game Name new key Corrected Game Name";
+            Assert.AreEqual(expectedMessage, errors[0].Message);
+
+            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+
+            Assert.IsTrue(testReference.GetIsResolved());
+
+            var testDataLater = testIndex.GetData(testReference);
+            Assert.AreEqual(testData.GetDataId(), testDataLater.GetDataId());
+            Assert.AreEqual("Corrected Game Name", testDataLater.Title);
+        }
+
+        [TestMethod]
         public void TestLoadContentUpdateKeyChanged()
         {
             var logger = new TestLogger();
