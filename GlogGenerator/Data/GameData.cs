@@ -15,7 +15,7 @@ namespace GlogGenerator.Data
 
         public List<string> Tags { get; set; } = new List<string>();
 
-        public List<PostData> LinkedPosts { get; set; } = new List<PostData>();
+        public List<string> LinkedPostIds { get; set; } = new List<string>();
 
         private string dataId;
         private string referenceableKey;

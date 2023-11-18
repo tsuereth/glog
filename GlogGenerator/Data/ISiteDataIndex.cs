@@ -19,6 +19,8 @@ namespace GlogGenerator.Data
 
         public List<PlatformData> GetPlatforms();
 
+        public PostData GetPostById(string postId);
+
         public List<PostData> GetPosts();
 
         public List<RatingData> GetRatings();

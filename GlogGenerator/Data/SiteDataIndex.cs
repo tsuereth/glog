@@ -18,7 +18,7 @@ namespace GlogGenerator.Data
         private Dictionary<string, GameData> games = new Dictionary<string, GameData>();
         private List<PageData> pages = new List<PageData>();
         private Dictionary<string, PlatformData> platforms = new Dictionary<string, PlatformData>();
-        private List<PostData> posts = new List<PostData>();
+        private Dictionary<string, PostData> posts = new Dictionary<string, PostData>();
         private Dictionary<string, RatingData> ratings = new Dictionary<string, RatingData>();
         private Dictionary<string, string> rawDataFiles = new Dictionary<string, string>();
         private List<StaticFileData> staticFiles = new List<StaticFileData>();
@@ -162,9 +162,14 @@ namespace GlogGenerator.Data
             return this.platforms.Values.ToList();
         }
 
+        public PostData GetPostById(string postId)
+        {
+            return this.posts[postId];
+        }
+
         public List<PostData> GetPosts()
         {
-            return this.posts;
+            return this.posts.Values.OrderByDescending(p => p.Date).ToList();
         }
 
         public List<RatingData> GetRatings()
@@ -320,7 +325,6 @@ namespace GlogGenerator.Data
 
                 var mdPipeline = this.siteBuilder.GetMarkdownPipeline();
 
-                var allPosts = new List<PostData>();
                 foreach (var postPath in postPaths)
                 {
                     try
@@ -332,7 +336,8 @@ namespace GlogGenerator.Data
                             continue;
                         }
 
-                        allPosts.Add(postData);
+                        var postId = postData.GetPostId();
+                        this.posts[postId] = postData;
 
                         foreach (var categoryReference in postData.Categories)
                         {
@@ -351,7 +356,7 @@ namespace GlogGenerator.Data
                                 this.categories[categoryData.GetDataId()] = categoryData;
                             }
 
-                            categoryData.LinkedPosts.Add(postData);
+                            categoryData.LinkedPostIds.Add(postId);
                         }
 
                         var postGameTags = new Dictionary<string, TagData>();
@@ -360,7 +365,7 @@ namespace GlogGenerator.Data
                             foreach (var gameReference in postData.Games)
                             {
                                 var gameData = this.GetData(gameReference);
-                                gameData.LinkedPosts.Add(postData);
+                                gameData.LinkedPostIds.Add(postId);
 
                                 foreach (var tagName in gameData.Tags)
                                 {
@@ -372,7 +377,7 @@ namespace GlogGenerator.Data
 
                         foreach (var tagData in postGameTags.Values)
                         {
-                            tagData.LinkedPosts.Add(postData);
+                            tagData.LinkedPostIds.Add(postId);
                         }
 
                         if (postData.Platforms != null)
@@ -380,7 +385,7 @@ namespace GlogGenerator.Data
                             foreach (var platformReference in postData.Platforms)
                             {
                                 var platformData = this.GetData(platformReference);
-                                platformData.LinkedPosts.Add(postData);
+                                platformData.LinkedPostIds.Add(postId);
                             }
                         }
 
@@ -403,7 +408,7 @@ namespace GlogGenerator.Data
                                     this.ratings[ratingData.GetDataId()] = ratingData;
                                 }
 
-                                ratingData.LinkedPosts.Add(postData);
+                                ratingData.LinkedPostIds.Add(postId);
                             }
                         }
                     }
@@ -412,7 +417,6 @@ namespace GlogGenerator.Data
                         throw new InvalidDataException($"Failed to load post from {postPath}", ex);
                     }
                 }
-                this.posts = allPosts.OrderByDescending(p => p.Date).ToList();
 
                 var additionalPageFilePaths = new List<string>()
                 {
@@ -441,7 +445,7 @@ namespace GlogGenerator.Data
                 page.RewriteSourceFile(this.siteBuilder.GetMarkdownPipeline());
             }
 
-            foreach (var post in this.posts)
+            foreach (var post in this.posts.Values)
             {
                 post.RewriteSourceFile(this.siteBuilder.GetMarkdownPipeline());
             }

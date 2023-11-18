@@ -107,7 +107,7 @@ namespace GlogGenerator.RenderState
             }
         }
 
-        public List<PostData> LinkedPosts { get; set; } = new List<PostData>();
+        public List<LinkedPostProperties> LinkedPosts { get; set; } = new List<LinkedPostProperties>();
 
         public int TermsCount
         {
@@ -203,7 +203,7 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromCategoryData(SiteBuilder siteBuilder, CategoryData categoryData)
+        public static PageState FromCategoryData(SiteBuilder siteBuilder, CategoryData categoryData, ISiteDataIndex siteDataIndex)
         {
             var page = new PageState(siteBuilder);
 
@@ -213,7 +213,9 @@ namespace GlogGenerator.RenderState
 
             page.PageType = "categories";
 
-            page.LinkedPosts = categoryData.LinkedPosts.OrderByDescending(p => p.Date).ToList();
+            page.LinkedPosts = categoryData.LinkedPostIds.Select(i => siteDataIndex.GetPostById(i))
+                .Select(p => LinkedPostProperties.FromPostData(p, siteDataIndex))
+                .OrderByDescending(p => p.Date).ToList();
 
             if (page.LinkedPostsCount > 0)
             {
@@ -230,7 +232,7 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromGameData(SiteBuilder siteBuilder, GameData gameData)
+        public static PageState FromGameData(SiteBuilder siteBuilder, GameData gameData, ISiteDataIndex siteDataIndex)
         {
             var page = new PageState(siteBuilder);
 
@@ -243,7 +245,9 @@ namespace GlogGenerator.RenderState
             page.IgdbUrl = gameData.IgdbUrl;
             page.Tags = gameData.Tags;
 
-            page.LinkedPosts = gameData.LinkedPosts.OrderByDescending(p => p.Date).ToList();
+            page.LinkedPosts = gameData.LinkedPostIds.Select(i => siteDataIndex.GetPostById(i))
+                .Select(p => LinkedPostProperties.FromPostData(p, siteDataIndex))
+                .OrderByDescending(p => p.Date).ToList();
 
             if (page.LinkedPostsCount > 0)
             {
@@ -260,7 +264,7 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromPlatformData(SiteBuilder siteBuilder, PlatformData platformData)
+        public static PageState FromPlatformData(SiteBuilder siteBuilder, PlatformData platformData, ISiteDataIndex siteDataIndex)
         {
             var page = new PageState(siteBuilder);
 
@@ -286,7 +290,9 @@ namespace GlogGenerator.RenderState
 
             page.IgdbUrl = platformData.IgdbUrl;
 
-            page.LinkedPosts = platformData.LinkedPosts.OrderByDescending(p => p.Date).ToList();
+            page.LinkedPosts = platformData.LinkedPostIds.Select(i => siteDataIndex.GetPostById(i))
+                .Select(p => LinkedPostProperties.FromPostData(p, siteDataIndex))
+                .OrderByDescending(p => p.Date).ToList();
 
             if (page.LinkedPostsCount > 0)
             {
@@ -303,7 +309,7 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromRatingData(SiteBuilder siteBuilder, RatingData ratingData)
+        public static PageState FromRatingData(SiteBuilder siteBuilder, RatingData ratingData, ISiteDataIndex siteDataIndex)
         {
             var page = new PageState(siteBuilder);
 
@@ -313,7 +319,9 @@ namespace GlogGenerator.RenderState
 
             page.PageType = "ratings";
 
-            page.LinkedPosts = ratingData.LinkedPosts.OrderByDescending(p => p.Date).ToList();
+            page.LinkedPosts = ratingData.LinkedPostIds.Select(i => siteDataIndex.GetPostById(i))
+                .Select(p => LinkedPostProperties.FromPostData(p, siteDataIndex))
+                .OrderByDescending(p => p.Date).ToList();
 
             if (page.LinkedPostsCount > 0)
             {
@@ -330,7 +338,7 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromTagData(SiteBuilder siteBuilder, TagData tagData)
+        public static PageState FromTagData(SiteBuilder siteBuilder, TagData tagData, ISiteDataIndex siteDataIndex)
         {
             var page = new PageState(siteBuilder);
 
@@ -340,7 +348,9 @@ namespace GlogGenerator.RenderState
 
             page.PageType = "tags";
 
-            page.LinkedPosts = tagData.LinkedPosts.OrderByDescending(p => p.Date).ToList();
+            page.LinkedPosts = tagData.LinkedPostIds.Select(i => siteDataIndex.GetPostById(i))
+                .Select(p => LinkedPostProperties.FromPostData(p, siteDataIndex))
+                .OrderByDescending(p => p.Date).ToList();
 
             if (page.LinkedPostsCount > 0)
             {

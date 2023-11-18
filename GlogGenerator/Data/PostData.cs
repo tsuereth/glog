@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using GlogGenerator.MarkdownExtensions;
 using Markdig;
@@ -53,6 +54,21 @@ namespace GlogGenerator.Data
         public List<SiteDataReference<PlatformData>> Platforms { get { return this.platforms; } }
 
         public List<SiteDataReference<RatingData>> Ratings { get { return this.ratings; } }
+
+        public string GetPostId()
+        {
+            using (var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
+            {
+                var typeBytes = Encoding.UTF8.GetBytes(nameof(PostData));
+                hash.AppendData(typeBytes);
+
+                var permalinkRelativeBytes = Encoding.UTF8.GetBytes(this.PermalinkRelative);
+                hash.AppendData(permalinkRelativeBytes);
+
+                var idBytes = hash.GetCurrentHash();
+                return Convert.ToHexString(idBytes);
+            }
+        }
 
         public void RewriteSourceFile(MarkdownPipeline mdPipeline)
         {

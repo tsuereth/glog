@@ -293,7 +293,7 @@ namespace GlogGenerator
                     Permalink = $"{this.GetBaseURL()}post/",
                     OutputPathRelative = "post/index.html",
                     RenderTemplateName = "list",
-                    LinkedPosts = posts,
+                    LinkedPosts = posts.Select(p => LinkedPostProperties.FromPostData(p, this.siteDataIndex)).ToList(),
                 };
                 contentRoutes.Add(postsListPage.OutputPathRelative, postsListPage);
 
@@ -388,7 +388,7 @@ namespace GlogGenerator
             {
                 foreach (var categoryData in categories)
                 {
-                    var page = PageState.FromCategoryData(this, categoryData);
+                    var page = PageState.FromCategoryData(this, categoryData, this.siteDataIndex);
                     contentRoutes.Add(page.OutputPathRelative, page);
                 }
             }
@@ -411,7 +411,7 @@ namespace GlogGenerator
 
                 foreach (var gameData in games)
                 {
-                    var page = PageState.FromGameData(this, gameData);
+                    var page = PageState.FromGameData(this, gameData, this.siteDataIndex);
                     contentRoutes.Add(page.OutputPathRelative, page);
                 }
             }
@@ -434,7 +434,7 @@ namespace GlogGenerator
 
                 foreach (var platformData in platforms)
                 {
-                    var page = PageState.FromPlatformData(this, platformData);
+                    var page = PageState.FromPlatformData(this, platformData, this.siteDataIndex);
                     contentRoutes.Add(page.OutputPathRelative, page);
                 }
             }
@@ -457,7 +457,7 @@ namespace GlogGenerator
 
                 foreach (var ratingData in ratings)
                 {
-                    var page = PageState.FromRatingData(this, ratingData);
+                    var page = PageState.FromRatingData(this, ratingData, this.siteDataIndex);
                     contentRoutes.Add(page.OutputPathRelative, page);
                 }
             }
@@ -480,7 +480,7 @@ namespace GlogGenerator
 
                 foreach (var tagData in tags)
                 {
-                    var page = PageState.FromTagData(this, tagData);
+                    var page = PageState.FromTagData(this, tagData, this.siteDataIndex);
                     contentRoutes.Add(page.OutputPathRelative, page);
                 }
             }
