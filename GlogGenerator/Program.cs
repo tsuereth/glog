@@ -181,7 +181,7 @@ namespace GlogGenerator
 date = ""{newPostDate}""
 draft = true
 title = """"
-category = [""Playing A Game""]
+category = [ ""Playing A Game"" ]
 game = []
 platform = []
 rating = []
