@@ -4,6 +4,9 @@ namespace GlogGenerator.Data
 {
     public interface ISiteDataIndex
     {
+        public T GetData<T>(SiteDataReference<T> dataReference)
+            where T : IGlogReferenceable;
+
         public List<CategoryData> GetCategories();
 
         public GameData GetGame(string gameTitle);

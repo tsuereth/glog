@@ -27,148 +27,32 @@ namespace GlogGenerator.Data
                     this.Date.Day.ToString("D2", CultureInfo.InvariantCulture),
                 };
 
-                var specifiedSlug = false;
-                var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.TryGetNode("slug", out var frontMatterSlug))
+                if (!string.IsNullOrEmpty(this.slug))
                 {
-                    var slugString = frontMatterSlug.ToString();
-                    if (!string.IsNullOrEmpty(slugString))
-                    {
-                        specifiedSlug = true;
-                        permalinkPathParts.Add(slugString);
-                    }
+                    permalinkPathParts.Add(this.slug);
                 }
-
-                if (!specifiedSlug)
+                else
                 {
                     permalinkPathParts.Add(UrlizedString.Urlize(this.Title));
-                }
+                }    
 
                 return string.Join('/', permalinkPathParts) + '/';
             }
         }
 
-        public DateTimeOffset Date
-        {
-            get
-            {
-                var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.TryGetNode("date", out var frontMatterDate))
-                {
-                    var dateString = frontMatterDate.ToString();
-                    if (!string.IsNullOrEmpty(dateString))
-                    {
-                        return DateTimeOffset.Parse(dateString, CultureInfo.InvariantCulture);
-                    }
-                }
+        public DateTimeOffset Date { get { return this.date; } }
 
-                return DateTimeOffset.MinValue;
-            }
-        }
+        public bool? Draft { get { return this.draft; } }
 
-        public bool? Draft
-        {
-            get
-            {
-                var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.TryGetNode("draft", out var frontMatterDraft))
-                {
-                    return frontMatterDraft.AsBoolean;
-                }
+        public string Title { get { return this.title; } }
 
-                return null;
-            }
-        }
+        public List<SiteDataReference<CategoryData>> Categories { get { return this.categories; } }
 
-        public string Title
-        {
-            get
-            {
-                var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.TryGetNode("title", out var frontMatterTitle))
-                {
-                    return frontMatterTitle.ToString();
-                }
+        public List<SiteDataReference<GameData>> Games { get { return this.games; } }
 
-                return null;
-            }
-        }
+        public List<SiteDataReference<PlatformData>> Platforms { get { return this.platforms; } }
 
-        public List<string> Categories
-        {
-            get
-            {
-                var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.TryGetNode("category", out var frontMatterCategories))
-                {
-                    var categories = new List<string>();
-                    foreach (var categoryName in frontMatterCategories)
-                    {
-                        categories.Add(categoryName.ToString());
-                    }
-                    return categories;
-                }
-
-                return new List<string>();
-            }
-        }
-
-        public List<string> Games
-        {
-            get
-            {
-                var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.TryGetNode("game", out var frontMatterGames))
-                {
-                    var games = new List<string>();
-                    foreach (var gameName in frontMatterGames)
-                    {
-                        games.Add(gameName.ToString());
-                    }
-                    return games;
-                }
-
-                return null;
-            }
-        }
-
-        public List<string> Platforms
-        {
-            get
-            {
-                var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.TryGetNode("platform", out var frontMatterPlatforms))
-                {
-                    var platforms = new List<string>();
-                    foreach (var platformName in frontMatterPlatforms)
-                    {
-                        platforms.Add(platformName.ToString());
-                    }
-                    return platforms;
-                }
-
-                return null;
-            }
-        }
-
-        public List<string> Ratings
-        {
-            get
-            {
-                var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.TryGetNode("rating", out var frontMatterRatings))
-                {
-                    var ratings = new List<string>();
-                    foreach (var ratingName in frontMatterRatings)
-                    {
-                        ratings.Add(ratingName.ToString());
-                    }
-                    return ratings;
-                }
-
-                return null;
-            }
-        }
+        public List<SiteDataReference<RatingData>> Ratings { get { return this.ratings; } }
 
         public void RewriteSourceFile(MarkdownPipeline mdPipeline)
         {
@@ -184,6 +68,15 @@ namespace GlogGenerator.Data
         }
 
         public MarkdownDocument MdDoc { get; private set; }
+
+        private DateTimeOffset date = DateTimeOffset.MinValue;
+        private bool? draft = null;
+        private string title = null;
+        private string slug = null;
+        private List<SiteDataReference<CategoryData>> categories = new List<SiteDataReference<CategoryData>>();
+        private List<SiteDataReference<GameData>> games = new List<SiteDataReference<GameData>>();
+        private List<SiteDataReference<PlatformData>> platforms = new List<SiteDataReference<PlatformData>>();
+        private List<SiteDataReference<RatingData>> ratings = new List<SiteDataReference<RatingData>>();
 
         private Tommy.TomlTable GetFrontMatter()
         {
@@ -204,6 +97,76 @@ namespace GlogGenerator.Data
             post.SourceFilePath = filePath;
 
             post.MdDoc = Markdown.Parse(text, mdPipeline);
+
+            var frontMatterBlock = post.MdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
+            if (frontMatterBlock != null)
+            {
+                var frontMatter = frontMatterBlock.GetModel();
+
+                if (frontMatter.TryGetNode("date", out var frontMatterDate))
+                {
+                    var dateString = frontMatterDate.ToString();
+                    if (!string.IsNullOrEmpty(dateString))
+                    {
+                        post.date = DateTimeOffset.Parse(dateString, CultureInfo.InvariantCulture);
+                    }
+                }
+
+                if (frontMatter.TryGetNode("draft", out var frontMatterDraft))
+                {
+                    post.draft = frontMatterDraft.AsBoolean;
+                }
+
+                if (frontMatter.TryGetNode("title", out var frontMatterTitle))
+                {
+                    post.title = frontMatterTitle.ToString();
+                }
+
+                if (frontMatter.TryGetNode("slug", out var frontMatterSlug))
+                {
+                    post.slug = frontMatterSlug.ToString();
+                }
+
+                if (frontMatter.TryGetNode("category", out var frontMatterCategories))
+                {
+                    foreach (var categoryName in frontMatterCategories)
+                    {
+                        var categoryReference = new SiteDataReference<CategoryData>(categoryName.ToString());
+
+                        post.categories.Add(categoryReference);
+                    }
+                }
+
+                if (frontMatter.TryGetNode("game", out var frontMatterGames))
+                {
+                    foreach (var gameTitle in frontMatterGames)
+                    {
+                        var gameReference = new SiteDataReference<GameData>(gameTitle.ToString());
+
+                        post.games.Add(gameReference);
+                    }
+                }
+
+                if (frontMatter.TryGetNode("platform", out var frontMatterPlatforms))
+                {
+                    foreach (var platformAbbreviation in frontMatterPlatforms)
+                    {
+                        var platformReference = new SiteDataReference<PlatformData>(platformAbbreviation.ToString());
+
+                        post.platforms.Add(platformReference);
+                    }
+                }
+
+                if (frontMatter.TryGetNode("rating", out var frontMatterRatings))
+                {
+                    foreach (var ratingName in frontMatterRatings)
+                    {
+                        var ratingReference = new SiteDataReference<RatingData>(ratingName.ToString());
+
+                        post.ratings.Add(ratingReference);
+                    }
+                }
+            }
 
             return post;
         }

@@ -168,23 +168,23 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
-        public static PageState FromPostData(SiteBuilder siteBuilder, PostData postData)
+        public static PageState FromPostData(SiteBuilder siteBuilder, PostData postData, ISiteDataIndex siteDataIndex)
         {
             var page = new PageState(siteBuilder);
 
-            page.Categories = postData.Categories.Select(c => new CategoryData() { Name = c }).ToList();
+            page.Categories = postData.Categories.Select(r => siteDataIndex.GetData(r)).ToList();
 
             page.Date = postData.Date;
 
-            page.Games = postData.Games?.Select(c => new GameData() { Title = c }).ToList();
+            page.Games = postData.Games?.Select(r => siteDataIndex.GetData(r)).ToList();
 
             page.HideDate = (postData.Date == DateTimeOffset.MinValue);
 
             page.Permalink = $"{siteBuilder.GetBaseURL()}{postData.PermalinkRelative}";
 
-            page.Platforms = postData.Platforms?.Select(c => new PlatformData() { Abbreviation = c }).ToList();
+            page.Platforms = postData.Platforms?.Select(r => siteDataIndex.GetData(r)).ToList();
 
-            page.Ratings = postData.Ratings?.Select(c => new RatingData() { Name = c }).ToList();
+            page.Ratings = postData.Ratings?.Select(r => siteDataIndex.GetData(r)).ToList();
 
             page.Title = postData.Title;
 

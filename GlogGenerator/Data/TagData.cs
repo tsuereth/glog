@@ -25,6 +25,19 @@ namespace GlogGenerator.Data
             this.referenceableKeys.Add(gameMetadataName);
         }
 
+        public bool MatchesReferenceableKey(string matchKey)
+        {
+            return this.referenceableKeys.Contains(matchKey);
+        }
+
+        public bool ShouldMergeWithReferenceableKey(string checkKey)
+        {
+            var thisKeyUrlized = new UrlizedString(this.Name);
+            var checkKeyUrlized = new UrlizedString(checkKey);
+
+            return thisKeyUrlized.Equals(checkKeyUrlized);
+        }
+
         public void MergeReferenceableKey(string mergeKey)
         {
             this.referenceableKeys.Add(mergeKey);
@@ -52,7 +65,7 @@ namespace GlogGenerator.Data
 
         public string GetPermalinkRelative()
         {
-            var urlized = UrlizedString.Urlize(this.Name);
+            var urlized = UrlizedString.Urlize(this.GetReferenceableKey());
             return $"tag/{urlized}/";
         }
     }

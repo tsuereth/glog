@@ -6,6 +6,8 @@
 
         public string GetReferenceableKey();
 
+        public bool MatchesReferenceableKey(string matchKey);
+
         public string GetPermalinkRelative();
     }
 }

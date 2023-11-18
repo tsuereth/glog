@@ -29,12 +29,19 @@ namespace GlogGenerator.Data
                 return this.referenceableKey;
             }
 
-            return UrlizedString.Urlize(this.Abbreviation);
+            return this.Abbreviation;
+        }
+
+        public bool MatchesReferenceableKey(string matchKey)
+        {
+            var thisKey = this.GetReferenceableKey();
+            return thisKey.Equals(matchKey, StringComparison.Ordinal);
         }
 
         public string GetPermalinkRelative()
         {
-            return $"platform/{this.GetReferenceableKey()}/";
+            var urlized = UrlizedString.Urlize(this.GetReferenceableKey());
+            return $"platform/{urlized}/";
         }
 
         public static PlatformData FromIgdbPlatform(IIgdbCache igdbCache, IgdbPlatform igdbPlatform)

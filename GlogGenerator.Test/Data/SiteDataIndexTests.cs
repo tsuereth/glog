@@ -36,6 +36,13 @@ namespace GlogGenerator.Test.Data
 
             var testTag = testIndex.GetTag("Sonic the Hedgehog");
             Assert.AreEqual("Sonic The Hedgehog", testTag.Name);
+
+            var testReference = new SiteDataReference<TagData>("Sonic the Hedgehog");
+            var testReferenceResolved = testIndex.GetData(testReference);
+
+            Assert.IsTrue(testReference.GetIsResolved());
+            Assert.AreEqual("Sonic The Hedgehog", testReferenceResolved.Name);
+            Assert.AreEqual(testTag.GetDataId(), testReferenceResolved.GetDataId());
         }
 
         [TestMethod]
