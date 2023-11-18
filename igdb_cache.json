@@ -6367,6 +6367,10 @@
       "name": "CD Projekt Red Wrocław"
     },
     {
+      "id": 19676,
+      "name": "24 Bit Games"
+    },
+    {
       "id": 19848,
       "name": "Peltast Design"
     },
@@ -19890,7 +19894,8 @@
       "involved_companies": [
         37609,
         69146,
-        69147
+        69147,
+        241327
       ],
       "name": "Gone Home",
       "player_perspectives": [
@@ -22264,7 +22269,9 @@
     {
       "category": 0,
       "collection": 453,
-      "collections": [],
+      "collections": [
+        453
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -29159,7 +29166,8 @@
       "involved_companies": [
         97073,
         97074,
-        124594
+        124594,
+        241310
       ],
       "name": "Broforce",
       "player_perspectives": [
@@ -31558,7 +31566,9 @@
     {
       "category": 0,
       "collection": 453,
-      "collections": [],
+      "collections": [
+        453
+      ],
       "franchise": -1,
       "franchises": [
         845
@@ -33061,7 +33071,8 @@
       ],
       "id": 8259,
       "involved_companies": [
-        96418
+        96418,
+        241328
       ],
       "name": "Tacoma",
       "player_perspectives": [
@@ -47199,8 +47210,10 @@
     },
     {
       "category": 0,
-      "collection": 89,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        89
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -66152,6 +66165,18 @@
     {
       "id": 241217,
       "company": 2254
+    },
+    {
+      "id": 241310,
+      "company": 19676
+    },
+    {
+      "id": 241327,
+      "company": 19676
+    },
+    {
+      "id": 241328,
+      "company": 19676
     }
   ],
   "platforms": [
