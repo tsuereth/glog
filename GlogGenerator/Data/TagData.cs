@@ -50,8 +50,9 @@ namespace GlogGenerator.Data
                 var typeBytes = Encoding.UTF8.GetBytes(nameof(TagData));
                 hash.AppendData(typeBytes);
 
-                var nameBytes = Encoding.UTF8.GetBytes(this.Name);
-                hash.AppendData(nameBytes);
+                var nameUrlized = UrlizedString.Urlize(this.Name);
+                var nameUrlizedBytes = Encoding.UTF8.GetBytes(nameUrlized);
+                hash.AppendData(nameUrlizedBytes);
 
                 var idBytes = hash.GetCurrentHash();
                 return Convert.ToHexString(idBytes);
