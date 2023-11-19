@@ -70,29 +70,6 @@ namespace GlogGenerator.Data
             }
         }
 
-        public void ResolveReferences(ISiteDataIndex siteDataIndex)
-        {
-            foreach (var categoryReference in this.categories.Select(t => t.Item2))
-            {
-                _ = siteDataIndex.GetData(categoryReference);
-            }
-
-            foreach (var gameReference in this.games.Select(t => t.Item2))
-            {
-                _ = siteDataIndex.GetData(gameReference);
-            }
-
-            foreach (var platformReference in this.platforms.Select(t => t.Item2))
-            {
-                _ = siteDataIndex.GetData(platformReference);
-            }
-
-            foreach (var ratingReference in this.ratings.Select(t => t.Item2))
-            {
-                _ = siteDataIndex.GetData(ratingReference);
-            }
-        }
-
         public string ToMarkdownString(MarkdownPipeline mdPipeline, ISiteDataIndex siteDataIndex)
         {
             // Rewrite all referenceable data keys in the TOML front matter,
@@ -153,16 +130,16 @@ namespace GlogGenerator.Data
         private List<Tuple<Tommy.TomlString, SiteDataReference<PlatformData>>> platforms = new List<Tuple<Tommy.TomlString, SiteDataReference<PlatformData>>>();
         private List<Tuple<Tommy.TomlString, SiteDataReference<RatingData>>> ratings = new List<Tuple<Tommy.TomlString, SiteDataReference<RatingData>>>();
 
-        public static PostData MarkdownFromFilePath(MarkdownPipeline mdPipeline, string filePath)
+        public static PostData MarkdownFromFilePath(MarkdownPipeline mdPipeline, string filePath, ISiteDataIndex siteDataIndex)
         {
             var fileContent = File.ReadAllText(filePath);
-            var post = MarkdownFromString(mdPipeline, fileContent);
+            var post = MarkdownFromString(mdPipeline, fileContent, siteDataIndex);
             post.SourceFilePath = filePath;
 
             return post;
         }
 
-        public static PostData MarkdownFromString(MarkdownPipeline mdPipeline, string fileContent)
+        public static PostData MarkdownFromString(MarkdownPipeline mdPipeline, string fileContent, ISiteDataIndex siteDataIndex)
         {
             var post = new PostData();
 
@@ -201,7 +178,7 @@ namespace GlogGenerator.Data
                 {
                     foreach (var categoryName in frontMatterCategories)
                     {
-                        var categoryReference = new SiteDataReference<CategoryData>(categoryName.ToString());
+                        var categoryReference = siteDataIndex.CreateReference<CategoryData>(categoryName.ToString());
 
                         var frontMatterReference = Tuple.Create(categoryName as Tommy.TomlString, categoryReference);
                         post.categories.Add(frontMatterReference);
@@ -212,7 +189,7 @@ namespace GlogGenerator.Data
                 {
                     foreach (var gameTitle in frontMatterGames)
                     {
-                        var gameReference = new SiteDataReference<GameData>(gameTitle.ToString());
+                        var gameReference = siteDataIndex.CreateReference<GameData>(gameTitle.ToString());
 
                         var frontMatterReference = Tuple.Create(gameTitle as Tommy.TomlString, gameReference);
                         post.games.Add(frontMatterReference);
@@ -223,7 +200,7 @@ namespace GlogGenerator.Data
                 {
                     foreach (var platformAbbreviation in frontMatterPlatforms)
                     {
-                        var platformReference = new SiteDataReference<PlatformData>(platformAbbreviation.ToString());
+                        var platformReference = siteDataIndex.CreateReference<PlatformData>(platformAbbreviation.ToString());
 
                         var frontMatterReference = Tuple.Create(platformAbbreviation as Tommy.TomlString, platformReference);
                         post.platforms.Add(frontMatterReference);
@@ -234,7 +211,7 @@ namespace GlogGenerator.Data
                 {
                     foreach (var ratingName in frontMatterRatings)
                     {
-                        var ratingReference = new SiteDataReference<RatingData>(ratingName.ToString());
+                        var ratingReference = siteDataIndex.CreateReference<RatingData>(ratingName.ToString());
 
                         var frontMatterReference = Tuple.Create(ratingName as Tommy.TomlString, ratingReference);
                         post.ratings.Add(frontMatterReference);

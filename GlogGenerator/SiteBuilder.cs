@@ -55,7 +55,7 @@ namespace GlogGenerator
             }
             else
             {
-                this.siteDataIndex = new SiteDataIndex(this.logger, this, this.configData.InputFilesBasePath);
+                this.siteDataIndex = new SiteDataIndex(this.logger, this.configData.InputFilesBasePath);
             }
 
             this.siteState = new SiteState(this, this.configData.TemplateFilesBasePath);
@@ -107,7 +107,12 @@ namespace GlogGenerator
         public void UpdateDataIndex()
         {
             var igdbCache = this.GetIgdbCache();
-            this.siteDataIndex.LoadContent(igdbCache);
+            this.siteDataIndex.LoadContent(igdbCache, this.GetMarkdownPipeline());
+        }
+
+        public void ResolveDataReferences()
+        {
+            this.siteDataIndex.ResolveReferences();
         }
 
         public List<PageData> GetPages()
@@ -122,7 +127,7 @@ namespace GlogGenerator
 
         public void RewriteData()
         {
-            this.siteDataIndex.RewriteSourceContent();
+            this.siteDataIndex.RewriteSourceContent(this.GetMarkdownPipeline());
         }
 
         public List<GameStats> GetGameStatsForDateRange(DateTimeOffset startDate, DateTimeOffset endDate)

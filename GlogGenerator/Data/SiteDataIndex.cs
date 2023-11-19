@@ -11,8 +11,13 @@ namespace GlogGenerator.Data
     public class SiteDataIndex: ISiteDataIndex
     {
         private readonly ILogger logger;
-        private readonly ISiteBuilder siteBuilder;
         private readonly string inputFilesBasePath;
+
+        private List<SiteDataReference<CategoryData>> categoryReferences = new List<SiteDataReference<CategoryData>>();
+        private List<SiteDataReference<GameData>> gameReferences = new List<SiteDataReference<GameData>>();
+        private List<SiteDataReference<PlatformData>> platformReferences = new List<SiteDataReference<PlatformData>>();
+        private List<SiteDataReference<RatingData>> ratingReferences = new List<SiteDataReference<RatingData>>();
+        private List<SiteDataReference<TagData>> tagReferences = new List<SiteDataReference<TagData>>();
 
         private Dictionary<string, CategoryData> categories = new Dictionary<string, CategoryData>();
         private Dictionary<string, GameData> games = new Dictionary<string, GameData>();
@@ -26,11 +31,9 @@ namespace GlogGenerator.Data
 
         public SiteDataIndex(
             ILogger logger,
-            ISiteBuilder siteBuilder,
             string inputFilesBasePath)
         {
             this.logger = logger;
-            this.siteBuilder = siteBuilder;
             this.inputFilesBasePath = inputFilesBasePath;
         }
 
@@ -64,6 +67,40 @@ namespace GlogGenerator.Data
             }
 
             return rating;
+        }
+
+        public SiteDataReference<T> CreateReference<T>(string referenceKey)
+            where T : IGlogReferenceable
+        {
+            var dataReference = new SiteDataReference<T>(referenceKey);
+
+            var dataType = typeof(T);
+            if (dataType == typeof(CategoryData))
+            {
+                this.categoryReferences.Add(dataReference as SiteDataReference<CategoryData>);
+            }
+            else if (dataType == typeof(GameData))
+            {
+                this.gameReferences.Add(dataReference as SiteDataReference<GameData>);
+            }
+            else if (dataType == typeof(PlatformData))
+            {
+                this.platformReferences.Add(dataReference as SiteDataReference<PlatformData>);
+            }
+            else if (dataType == typeof(RatingData))
+            {
+                this.ratingReferences.Add(dataReference as SiteDataReference<RatingData>);
+            }
+            else if (dataType == typeof(TagData))
+            {
+                this.tagReferences.Add(dataReference as SiteDataReference<TagData>);
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+
+            return dataReference;
         }
 
         public T GetData<T>(SiteDataReference<T> dataReference)
@@ -223,7 +260,7 @@ namespace GlogGenerator.Data
             }
         }
 
-        public void LoadContent(IIgdbCache igdbCache)
+        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline)
         {
             // Reset the current index, while tracking some "old" data to detect update conflicts.
             this.pages.Clear();
@@ -323,13 +360,11 @@ namespace GlogGenerator.Data
                 var postContentBasePath = Path.Combine(this.inputFilesBasePath, PostData.PostContentBaseDir);
                 var postPaths = Directory.EnumerateFiles(postContentBasePath, "*.md", SearchOption.AllDirectories).ToList();
 
-                var mdPipeline = this.siteBuilder.GetMarkdownPipeline();
-
                 foreach (var postPath in postPaths)
                 {
                     try
                     {
-                        var postData = PostData.MarkdownFromFilePath(mdPipeline, postPath);
+                        var postData = PostData.MarkdownFromFilePath(markdownPipeline, postPath, this);
 
                         if (postData.Draft == true)
                         {
@@ -425,7 +460,7 @@ namespace GlogGenerator.Data
                 };
                 foreach (var pageFilePath in additionalPageFilePaths)
                 {
-                    var pageData = PageData.MarkdownFromFilePath(mdPipeline, pageFilePath);
+                    var pageData = PageData.MarkdownFromFilePath(markdownPipeline, pageFilePath);
                     this.pages.Add(pageData);
                 }
             }
@@ -440,22 +475,42 @@ namespace GlogGenerator.Data
 
         public void ResolveReferences()
         {
-            foreach (var post in this.posts.Values)
+            foreach (var dataReference in this.categoryReferences)
             {
-                post.ResolveReferences(this);
+                _ = this.GetData(dataReference);
+            }
+
+            foreach (var dataReference in this.gameReferences)
+            {
+                _ = this.GetData(dataReference);
+            }
+
+            foreach (var dataReference in this.platformReferences)
+            {
+                _ = this.GetData(dataReference);
+            }
+
+            foreach (var dataReference in this.ratingReferences)
+            {
+                _ = this.GetData(dataReference);
+            }
+
+            foreach (var dataReference in this.tagReferences)
+            {
+                _ = this.GetData(dataReference);
             }
         }
 
-        public void RewriteSourceContent()
+        public void RewriteSourceContent(Markdig.MarkdownPipeline markdownPipeline)
         {
             foreach (var page in this.pages)
             {
-                page.RewriteSourceFile(this.siteBuilder.GetMarkdownPipeline());
+                page.RewriteSourceFile(markdownPipeline);
             }
 
             foreach (var post in this.posts.Values)
             {
-                post.RewriteSourceFile(this.siteBuilder.GetMarkdownPipeline(), this);
+                post.RewriteSourceFile(markdownPipeline, this);
             }
         }
 

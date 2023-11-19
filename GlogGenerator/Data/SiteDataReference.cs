@@ -2,7 +2,7 @@ using System;
 
 namespace GlogGenerator.Data
 {
-    public class SiteDataReference<T>
+    public class SiteDataReference<T> : ISiteDataReference
         where T : IGlogReferenceable
     {
         private string unresolvedReferenceKey = null;
@@ -11,11 +11,6 @@ namespace GlogGenerator.Data
         public SiteDataReference(string referenceKey)
         {
             this.unresolvedReferenceKey = referenceKey;
-        }
-
-        public SiteDataReference(T data)
-        {
-            this.resolvedReferenceId = data.GetDataId();
         }
 
         public bool GetIsResolved()
@@ -33,7 +28,7 @@ namespace GlogGenerator.Data
             return this.resolvedReferenceId;
         }
 
-        public void SetData(T data)
+        public void SetData(IGlogReferenceable data)
         {
             this.resolvedReferenceId = data.GetDataId();
             if (string.IsNullOrEmpty(this.resolvedReferenceId))

@@ -13,6 +13,12 @@ namespace GlogGenerator.Test
         private List<RatingData> ratings = new List<RatingData>();
         private List<TagData> tags = new List<TagData>();
 
+        public SiteDataReference<T> CreateReference<T>(string referenceKey)
+            where T : IGlogReferenceable
+        {
+            return new SiteDataReference<T>(referenceKey);
+        }
+
         public T GetData<T>(SiteDataReference<T> dataReference)
             where T : class, IGlogReferenceable
         {
@@ -180,7 +186,7 @@ namespace GlogGenerator.Test
             return this.tags.ToList();
         }
 
-        public void LoadContent(IIgdbCache igdbCache)
+        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline)
         {
             throw new NotImplementedException();
         }
@@ -190,7 +196,7 @@ namespace GlogGenerator.Test
             throw new NotImplementedException();
         }
 
-        public void RewriteSourceContent()
+        public void RewriteSourceContent(Markdig.MarkdownPipeline markdownPipeline)
         {
             throw new NotImplementedException();
         }

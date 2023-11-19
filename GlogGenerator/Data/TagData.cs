@@ -60,7 +60,7 @@ namespace GlogGenerator.Data
 
         public string GetReferenceableKey()
         {
-            return UrlizedString.Urlize(this.Name);
+            return this.Name;
         }
 
         public string GetPermalinkRelative()

@@ -16,10 +16,13 @@ namespace GlogGenerator.Test.Data
         [TestMethod]
         public void TestFromFilePath()
         {
+            var logger = new TestLogger();
+
             var testPostFilePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "Data", "PostDataTests", "testpostdata.md");
 
-            var builder = new SiteBuilder();
-            var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownPipeline(), testPostFilePath);
+            var siteDataIndex = new FakeSiteDataIndex();
+            var builder = new SiteBuilder(logger, new ConfigData(), siteDataIndex);
+            var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownPipeline(), testPostFilePath, siteDataIndex);
 
             Assert.AreEqual("2023/07/23/re-climbing-the-orc-chart/", testPostData.PermalinkRelative);
         }
@@ -27,12 +30,14 @@ namespace GlogGenerator.Test.Data
         [TestMethod]
         public void TestToMarkdownStringSimple()
         {
+            var logger = new TestLogger();
+
             var testPostFilePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "Data", "PostDataTests", "testpostdata.md");
             var testPostFileText = File.ReadAllText(testPostFilePath);
 
-            var builder = new SiteBuilder();
             var siteDataIndex = new FakeSiteDataIndex();
-            var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownPipeline(), testPostFilePath);
+            var builder = new SiteBuilder(logger, new ConfigData(), siteDataIndex);
+            var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownPipeline(), testPostFilePath, siteDataIndex);
             var testPostToString = testPostData.ToMarkdownString(builder.GetMarkdownPipeline(), siteDataIndex);
 
             Assert.AreEqual(testPostFileText, testPostToString);
@@ -41,12 +46,14 @@ namespace GlogGenerator.Test.Data
         [TestMethod]
         public void TestToMarkdownStringComplex()
         {
+            var logger = new TestLogger();
+
             var testPostFilePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "Data", "PostDataTests", "testfenceddatacharts.md");
             var testPostFileText = File.ReadAllText(testPostFilePath);
 
-            var builder = new SiteBuilder();
             var siteDataIndex = new FakeSiteDataIndex();
-            var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownPipeline(), testPostFilePath);
+            var builder = new SiteBuilder(logger, new ConfigData(), siteDataIndex);
+            var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownPipeline(), testPostFilePath, siteDataIndex);
             var testPostToString = testPostData.ToMarkdownString(builder.GetMarkdownPipeline(), siteDataIndex);
 
             Assert.AreEqual(testPostFileText, testPostToString);
@@ -70,35 +77,28 @@ game = [ ""Middle-earth: Shadow of Mordor"" ]
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>());
 
-            var builder = new SiteBuilder();
-            var testIndex = new SiteDataIndex(logger, builder, string.Empty);
+            var testIndex = new SiteDataIndex(logger, string.Empty);
+            var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline());
 
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
 
-            var testPostData = PostData.MarkdownFromString(builder.GetMarkdownPipeline(), testPostFileText);
-            testPostData.ResolveReferences(testIndex);
+            var testPostData = PostData.MarkdownFromString(builder.GetMarkdownPipeline(), testPostFileText, testIndex);
+            testIndex.ResolveReferences();
 
             testIgdbGameShadowOfMordor.Name = "Assassin's Creed Mordor";
             testIgdbGameGollum.Name = "Goblin Mode";
 
-            testIndex.LoadContent(mockIgdbCache);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline());
 
             var testPostToString = testPostData.ToMarkdownString(builder.GetMarkdownPipeline(), testIndex);
 
-#if false
             var expectedText = @"+++
 game = [ ""Assassin's Creed Mordor"" ]
 +++
 <i>Oh yeah</i>, there's a new [Lord of the Rings game](game:Goblin Mode) out!";
-#else
-            var expectedText = @"+++
-game = [ ""Assassin's Creed Mordor"" ]
-+++
-<i>Oh yeah</i>, there's a new [Lord of the Rings game](game:The Lord of the Rings: Gollum) out!";
-#endif
 
             Assert.AreEqual(expectedText, testPostToString);
         }

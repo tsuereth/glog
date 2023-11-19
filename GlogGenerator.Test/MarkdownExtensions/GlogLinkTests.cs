@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using GlogGenerator.Data;
 using GlogGenerator.MarkdownExtensions;
 using Markdig;
@@ -50,6 +51,48 @@ namespace GlogGenerator.Test.MarkdownExtensions
                     throw new NotImplementedException();
                 }
             }
+
+            mockSiteDataIndex.CreateReference<GameData>(Arg.Any<string>()).Returns(args =>
+            {
+                var referenceKey = args.ArgAt<string>(0);
+                return new SiteDataReference<GameData>(referenceKey);
+            });
+
+            mockSiteDataIndex.CreateReference<PlatformData>(Arg.Any<string>()).Returns(args =>
+            {
+                var referenceKey = args.ArgAt<string>(0);
+                return new SiteDataReference<PlatformData>(referenceKey);
+            });
+
+            mockSiteDataIndex.CreateReference<TagData>(Arg.Any<string>()).Returns(args =>
+            {
+                var referenceKey = args.ArgAt<string>(0);
+                return new SiteDataReference<TagData>(referenceKey);
+            });
+
+            mockSiteDataIndex.GetData<GameData>(Arg.Any<SiteDataReference<GameData>>()).Returns(args =>
+            {
+                var dataReference = args.ArgAt<SiteDataReference<GameData>>(0);
+                var key = dataReference.GetUnresolvedReferenceKey();
+                var data = testGames.Where(g => g.MatchesReferenceableKey(key)).FirstOrDefault();
+                return data;
+            });
+
+            mockSiteDataIndex.GetData<PlatformData>(Arg.Any<SiteDataReference<PlatformData>>()).Returns(args =>
+            {
+                var dataReference = args.ArgAt<SiteDataReference<PlatformData>>(0);
+                var key = dataReference.GetUnresolvedReferenceKey();
+                var data = testPlatforms.Where(g => g.MatchesReferenceableKey(key)).FirstOrDefault();
+                return data;
+            });
+
+            mockSiteDataIndex.GetData<TagData>(Arg.Any<SiteDataReference<TagData>>()).Returns(args =>
+            {
+                var dataReference = args.ArgAt<SiteDataReference<TagData>>(0);
+                var key = dataReference.GetUnresolvedReferenceKey();
+                var data = testTags.Where(g => g.MatchesReferenceableKey(key)).FirstOrDefault();
+                return data;
+            });
 
             mockSiteDataIndex.GetGames().Returns(testGames);
             mockSiteDataIndex.GetPlatforms().Returns(testPlatforms);

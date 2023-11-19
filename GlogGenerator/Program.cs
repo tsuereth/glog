@@ -104,6 +104,10 @@ namespace GlogGenerator
                     throw new ArgumentException("Missing or empty --igdb-client-secret");
                 }
 
+                // Ensure that data references are resolved to underlying IDs,
+                // before potentially modifying data keys with this update.
+                builder.ResolveDataReferences();
+
                 using (var igdbApiClient = new IgdbApiClient(logger, igdbClientId, igdbClientSecret))
                 {
                     logger.LogInformation("Updating IGDB cache...");

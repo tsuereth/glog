@@ -16,6 +16,8 @@ namespace GlogGenerator
 
         public void UpdateDataIndex();
 
+        public void ResolveDataReferences();
+
         public List<PageData> GetPages();
 
         public List<PostData> GetPosts();

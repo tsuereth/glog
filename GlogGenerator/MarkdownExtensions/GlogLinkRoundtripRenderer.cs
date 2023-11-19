@@ -1,21 +1,29 @@
-﻿using Markdig.Renderers;
+﻿using System.Text;
+using GlogGenerator.Data;
+using Markdig.Renderers;
 using Markdig.Renderers.Roundtrip;
 using Markdig.Syntax.Inlines;
-using System.Text;
 
 namespace GlogGenerator.MarkdownExtensions
 {
     public class GlogLinkRoundtripRenderer : RoundtripObjectRenderer<GlogLinkInline>
     {
+        private readonly ISiteDataIndex siteDataIndex;
+
+        public GlogLinkRoundtripRenderer(ISiteDataIndex siteDataIndex) : base()
+        {
+            this.siteDataIndex = siteDataIndex;
+        }
+
         protected override void Write(RoundtripRenderer renderer, GlogLinkInline obj)
         {
             var stringBuilder = new StringBuilder();
             if (obj.IsAutoLink)
             {
                 stringBuilder.Append('<');
-                stringBuilder.Append(obj.ReferenceType);
+                stringBuilder.Append(obj.ReferenceTypeName);
                 stringBuilder.Append(':');
-                stringBuilder.Append(obj.ReferenceKey);
+                stringBuilder.Append(obj.GetReferenceKey(this.siteDataIndex));
                 stringBuilder.Append('>');
             }
             else
@@ -24,9 +32,9 @@ namespace GlogGenerator.MarkdownExtensions
                 renderer.WriteChildren(obj);
 
                 stringBuilder.Append("](");
-                stringBuilder.Append(obj.ReferenceType);
+                stringBuilder.Append(obj.ReferenceTypeName);
                 stringBuilder.Append(':');
-                stringBuilder.Append(obj.ReferenceKey);
+                stringBuilder.Append(obj.GetReferenceKey(this.siteDataIndex));
                 stringBuilder.Append(')');
             }
 
