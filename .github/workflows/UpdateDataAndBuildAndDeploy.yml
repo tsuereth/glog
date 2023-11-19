@@ -46,6 +46,7 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          author: GitHub <noreply@github.com>
           commit-message: ${{ env.GLOG_PR_DESCRIPTION }}
           title: ${{ env.GLOG_PR_DESCRIPTION }}
           body: ${{ env.GLOG_PR_DESCRIPTION }}
