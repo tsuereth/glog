@@ -5,7 +5,7 @@ namespace GlogGenerator.Data
     public interface ISiteDataIndex
     {
         public T GetData<T>(SiteDataReference<T> dataReference)
-            where T : IGlogReferenceable;
+            where T : class, IGlogReferenceable;
 
         public List<CategoryData> GetCategories();
 
@@ -34,6 +34,8 @@ namespace GlogGenerator.Data
         public List<TagData> GetTags();
 
         public void LoadContent(IIgdbCache igdbCache);
+
+        public void ResolveReferences();
 
         public void RewriteSourceContent();
     }

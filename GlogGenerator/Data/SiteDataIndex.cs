@@ -67,7 +67,7 @@ namespace GlogGenerator.Data
         }
 
         public T GetData<T>(SiteDataReference<T> dataReference)
-            where T : IGlogReferenceable
+            where T : class, IGlogReferenceable
         {
             var dataType = typeof(T);
             T data;
@@ -438,6 +438,14 @@ namespace GlogGenerator.Data
             this.CheckUpdatedReferenceableDataForConflict(oldTags.Values, this.tags.Values);
         }
 
+        public void ResolveReferences()
+        {
+            foreach (var post in this.posts.Values)
+            {
+                post.ResolveReferences(this);
+            }
+        }
+
         public void RewriteSourceContent()
         {
             foreach (var page in this.pages)
@@ -447,7 +455,7 @@ namespace GlogGenerator.Data
 
             foreach (var post in this.posts.Values)
             {
-                post.RewriteSourceFile(this.siteBuilder.GetMarkdownPipeline());
+                post.RewriteSourceFile(this.siteBuilder.GetMarkdownPipeline(), this);
             }
         }
 

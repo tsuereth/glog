@@ -47,13 +47,13 @@ namespace GlogGenerator.Data
 
         public string Title { get { return this.title; } }
 
-        public List<SiteDataReference<CategoryData>> Categories { get { return this.categories; } }
+        public List<SiteDataReference<CategoryData>> Categories { get { return this.categories.Select(t => t.Item2).ToList(); } }
 
-        public List<SiteDataReference<GameData>> Games { get { return this.games; } }
+        public List<SiteDataReference<GameData>> Games { get { return this.games.Select(t => t.Item2).ToList(); } }
 
-        public List<SiteDataReference<PlatformData>> Platforms { get { return this.platforms; } }
+        public List<SiteDataReference<PlatformData>> Platforms { get { return this.platforms.Select(t => t.Item2).ToList(); } }
 
-        public List<SiteDataReference<RatingData>> Ratings { get { return this.ratings; } }
+        public List<SiteDataReference<RatingData>> Ratings { get { return this.ratings.Select(t => t.Item2).ToList(); } }
 
         public string GetPostId()
         {
@@ -70,14 +70,73 @@ namespace GlogGenerator.Data
             }
         }
 
-        public void RewriteSourceFile(MarkdownPipeline mdPipeline)
+        public void ResolveReferences(ISiteDataIndex siteDataIndex)
+        {
+            foreach (var categoryReference in this.categories.Select(t => t.Item2))
+            {
+                _ = siteDataIndex.GetData(categoryReference);
+            }
+
+            foreach (var gameReference in this.games.Select(t => t.Item2))
+            {
+                _ = siteDataIndex.GetData(gameReference);
+            }
+
+            foreach (var platformReference in this.platforms.Select(t => t.Item2))
+            {
+                _ = siteDataIndex.GetData(platformReference);
+            }
+
+            foreach (var ratingReference in this.ratings.Select(t => t.Item2))
+            {
+                _ = siteDataIndex.GetData(ratingReference);
+            }
+        }
+
+        public string ToMarkdownString(MarkdownPipeline mdPipeline, ISiteDataIndex siteDataIndex)
+        {
+            // Rewrite all referenceable data keys in the TOML front matter,
+            // just in case those reference keys have changed since we read them.
+
+            foreach (var frontMatterReference in this.categories)
+            {
+                var tomlString = frontMatterReference.Item1;
+                var data = siteDataIndex.GetData(frontMatterReference.Item2);
+                tomlString.Value = data.GetReferenceableKey();
+            }
+
+            foreach (var frontMatterReference in this.games)
+            {
+                var tomlString = frontMatterReference.Item1;
+                var data = siteDataIndex.GetData(frontMatterReference.Item2);
+                tomlString.Value = data.GetReferenceableKey();
+            }
+
+            foreach (var frontMatterReference in this.platforms)
+            {
+                var tomlString = frontMatterReference.Item1;
+                var data = siteDataIndex.GetData(frontMatterReference.Item2);
+                tomlString.Value = data.GetReferenceableKey();
+            }
+
+            foreach (var frontMatterReference in this.ratings)
+            {
+                var tomlString = frontMatterReference.Item1;
+                var data = siteDataIndex.GetData(frontMatterReference.Item2);
+                tomlString.Value = data.GetReferenceableKey();
+            }
+
+            return this.MdDoc.ToMarkdownString(mdPipeline);
+        }
+
+        public void RewriteSourceFile(MarkdownPipeline mdPipeline, ISiteDataIndex siteDataIndex)
         {
             if (string.IsNullOrEmpty(SourceFilePath))
             {
                 throw new InvalidDataException("SourceFilePath is empty");
             }
 
-            var fileContent = this.MdDoc.ToMarkdownString(mdPipeline);
+            var fileContent = this.ToMarkdownString(mdPipeline, siteDataIndex);
 
             var utf8WithoutBom = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
             File.WriteAllText(this.SourceFilePath, fileContent, utf8WithoutBom);
@@ -89,30 +148,25 @@ namespace GlogGenerator.Data
         private bool? draft = null;
         private string title = null;
         private string slug = null;
-        private List<SiteDataReference<CategoryData>> categories = new List<SiteDataReference<CategoryData>>();
-        private List<SiteDataReference<GameData>> games = new List<SiteDataReference<GameData>>();
-        private List<SiteDataReference<PlatformData>> platforms = new List<SiteDataReference<PlatformData>>();
-        private List<SiteDataReference<RatingData>> ratings = new List<SiteDataReference<RatingData>>();
-
-        private Tommy.TomlTable GetFrontMatter()
-        {
-            var frontMatterBlock = this.MdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
-            if (frontMatterBlock != null)
-            {
-                return frontMatterBlock.GetModel();
-            }
-
-            return null;
-        }
+        private List<Tuple<Tommy.TomlString, SiteDataReference<CategoryData>>> categories = new List<Tuple<Tommy.TomlString, SiteDataReference<CategoryData>>>();
+        private List<Tuple<Tommy.TomlString, SiteDataReference<GameData>>> games = new List<Tuple<Tommy.TomlString, SiteDataReference<GameData>>>();
+        private List<Tuple<Tommy.TomlString, SiteDataReference<PlatformData>>> platforms = new List<Tuple<Tommy.TomlString, SiteDataReference<PlatformData>>>();
+        private List<Tuple<Tommy.TomlString, SiteDataReference<RatingData>>> ratings = new List<Tuple<Tommy.TomlString, SiteDataReference<RatingData>>>();
 
         public static PostData MarkdownFromFilePath(MarkdownPipeline mdPipeline, string filePath)
         {
-            var text = File.ReadAllText(filePath);
-
-            var post = new PostData();
+            var fileContent = File.ReadAllText(filePath);
+            var post = MarkdownFromString(mdPipeline, fileContent);
             post.SourceFilePath = filePath;
 
-            post.MdDoc = Markdown.Parse(text, mdPipeline);
+            return post;
+        }
+
+        public static PostData MarkdownFromString(MarkdownPipeline mdPipeline, string fileContent)
+        {
+            var post = new PostData();
+
+            post.MdDoc = Markdown.Parse(fileContent, mdPipeline);
 
             var frontMatterBlock = post.MdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
             if (frontMatterBlock != null)
@@ -149,7 +203,8 @@ namespace GlogGenerator.Data
                     {
                         var categoryReference = new SiteDataReference<CategoryData>(categoryName.ToString());
 
-                        post.categories.Add(categoryReference);
+                        var frontMatterReference = Tuple.Create(categoryName as Tommy.TomlString, categoryReference);
+                        post.categories.Add(frontMatterReference);
                     }
                 }
 
@@ -159,7 +214,8 @@ namespace GlogGenerator.Data
                     {
                         var gameReference = new SiteDataReference<GameData>(gameTitle.ToString());
 
-                        post.games.Add(gameReference);
+                        var frontMatterReference = Tuple.Create(gameTitle as Tommy.TomlString, gameReference);
+                        post.games.Add(frontMatterReference);
                     }
                 }
 
@@ -169,7 +225,8 @@ namespace GlogGenerator.Data
                     {
                         var platformReference = new SiteDataReference<PlatformData>(platformAbbreviation.ToString());
 
-                        post.platforms.Add(platformReference);
+                        var frontMatterReference = Tuple.Create(platformAbbreviation as Tommy.TomlString, platformReference);
+                        post.platforms.Add(frontMatterReference);
                     }
                 }
 
@@ -179,7 +236,8 @@ namespace GlogGenerator.Data
                     {
                         var ratingReference = new SiteDataReference<RatingData>(ratingName.ToString());
 
-                        post.ratings.Add(ratingReference);
+                        var frontMatterReference = Tuple.Create(ratingName as Tommy.TomlString, ratingReference);
+                        post.ratings.Add(frontMatterReference);
                     }
                 }
             }
