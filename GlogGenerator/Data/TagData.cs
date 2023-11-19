@@ -16,13 +16,26 @@ namespace GlogGenerator.Data
             }
         }
 
-        public List<PostData> LinkedPosts { get; set; } = new List<PostData>();
+        public List<string> LinkedPostIds { get; set; } = new List<string>();
 
         private SortedSet<string> referenceableKeys = new SortedSet<string>(StringComparer.Ordinal);
 
         public TagData(string gameMetadataName) : base(gameMetadataName)
         {
             this.referenceableKeys.Add(gameMetadataName);
+        }
+
+        public bool MatchesReferenceableKey(string matchKey)
+        {
+            return this.referenceableKeys.Contains(matchKey);
+        }
+
+        public bool ShouldMergeWithReferenceableKey(string checkKey)
+        {
+            var thisKeyUrlized = new UrlizedString(this.Name);
+            var checkKeyUrlized = new UrlizedString(checkKey);
+
+            return thisKeyUrlized.Equals(checkKeyUrlized);
         }
 
         public void MergeReferenceableKey(string mergeKey)
@@ -37,8 +50,9 @@ namespace GlogGenerator.Data
                 var typeBytes = Encoding.UTF8.GetBytes(nameof(TagData));
                 hash.AppendData(typeBytes);
 
-                var nameBytes = Encoding.UTF8.GetBytes(this.Name);
-                hash.AppendData(nameBytes);
+                var nameUrlized = UrlizedString.Urlize(this.Name);
+                var nameUrlizedBytes = Encoding.UTF8.GetBytes(nameUrlized);
+                hash.AppendData(nameUrlizedBytes);
 
                 var idBytes = hash.GetCurrentHash();
                 return Convert.ToHexString(idBytes);
@@ -47,12 +61,12 @@ namespace GlogGenerator.Data
 
         public string GetReferenceableKey()
         {
-            return UrlizedString.Urlize(this.Name);
+            return this.Name;
         }
 
         public string GetPermalinkRelative()
         {
-            var urlized = UrlizedString.Urlize(this.Name);
+            var urlized = UrlizedString.Urlize(this.GetReferenceableKey());
             return $"tag/{urlized}/";
         }
     }

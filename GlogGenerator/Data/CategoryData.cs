@@ -9,7 +9,7 @@ namespace GlogGenerator.Data
     {
         public string Name { get; set; } = string.Empty;
 
-        public List<PostData> LinkedPosts { get; set; } = new List<PostData>();
+        public List<string> LinkedPostIds { get; set; } = new List<string>();
 
         public string GetDataId()
         {
@@ -28,12 +28,18 @@ namespace GlogGenerator.Data
 
         public string GetReferenceableKey()
         {
-            return UrlizedString.Urlize(this.Name);
+            return this.Name;
+        }
+
+        public bool MatchesReferenceableKey(string matchKey)
+        {
+            var thisKey = this.GetReferenceableKey();
+            return thisKey.Equals(matchKey, StringComparison.Ordinal);
         }
 
         public string GetPermalinkRelative()
         {
-            var urlized = UrlizedString.Urlize(this.Name);
+            var urlized = UrlizedString.Urlize(this.GetReferenceableKey());
             return $"category/{urlized}/";
         }
     }

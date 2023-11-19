@@ -15,7 +15,7 @@ namespace GlogGenerator.Data
 
         public List<string> Tags { get; set; } = new List<string>();
 
-        public List<PostData> LinkedPosts { get; set; } = new List<PostData>();
+        public List<string> LinkedPostIds { get; set; } = new List<string>();
 
         private string dataId;
         private string referenceableKey;
@@ -32,12 +32,19 @@ namespace GlogGenerator.Data
                 return this.referenceableKey;
             }
 
-            return UrlizedString.Urlize(this.Title);
+            return this.Title;
+        }
+
+        public bool MatchesReferenceableKey(string matchKey)
+        {
+            var thisKey = this.GetReferenceableKey();
+            return thisKey.Equals(matchKey, StringComparison.Ordinal);
         }
 
         public string GetPermalinkRelative()
         {
-            return $"game/{this.GetReferenceableKey()}/";
+            var urlized = UrlizedString.Urlize(this.GetReferenceableKey());
+            return $"game/{urlized}/";
         }
 
         public static GameData FromIgdbGame(IIgdbCache igdbCache, IgdbGame igdbGame)

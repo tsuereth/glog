@@ -13,33 +13,7 @@ namespace GlogGenerator.Data
 
         public string SourceFilePath { get; private set; } = string.Empty;
 
-        public string PermalinkRelative
-        {
-            get
-            {
-                var frontMatter = this.GetFrontMatter();
-                if (frontMatter != null && frontMatter.TryGetNode("permalink", out var frontMatterPermalink))
-                {
-                    var permalinkString = frontMatterPermalink.ToString();
-                    if (!string.IsNullOrEmpty(permalinkString))
-                    {
-                        if (permalinkString.StartsWith('/'))
-                        {
-                            permalinkString = permalinkString.Substring(1);
-                        }
-
-                        if (!permalinkString.EndsWith('/'))
-                        {
-                            permalinkString += '/';
-                        }
-
-                        return permalinkString;
-                    }
-                }
-
-                return string.Empty;
-            }
-        }
+        public string PermalinkRelative { get { return this.permalinkRelative; } }
 
         public void RewriteSourceFile(MarkdownPipeline mdPipeline)
         {
@@ -56,16 +30,7 @@ namespace GlogGenerator.Data
 
         public MarkdownDocument MdDoc { get; private set; }
 
-        private Tommy.TomlTable GetFrontMatter()
-        {
-            var frontMatterBlock = this.MdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
-            if (frontMatterBlock != null)
-            {
-                return frontMatterBlock.GetModel();
-            }
-
-            return null;
-        }
+        private string permalinkRelative = null;
 
         public static PageData MarkdownFromFilePath(MarkdownPipeline mdPipeline, string filePath)
         {
@@ -75,6 +40,31 @@ namespace GlogGenerator.Data
             page.SourceFilePath = filePath;
 
             page.MdDoc = Markdown.Parse(text, mdPipeline);
+
+            var frontMatterBlock = page.MdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
+            if (frontMatterBlock != null)
+            {
+                var frontMatter = frontMatterBlock.GetModel();
+            
+                if (frontMatter.TryGetNode("permalink", out var frontMatterPermalink))
+                {
+                    var permalinkString = frontMatterPermalink.ToString();
+                    if (!string.IsNullOrEmpty(permalinkString))
+                    {
+                        if (permalinkString.StartsWith('/'))
+                        {
+                            permalinkString = permalinkString.Substring(1);
+                        }
+
+                        if (!permalinkString.EndsWith('/'))
+                        {
+                            permalinkString += '/';
+                        }
+
+                        page.permalinkRelative = permalinkString;
+                    }
+                }
+            }
 
             return page;
         }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using GlogGenerator.Data;
 using Markdig.Helpers;
 using Markdig.Parsers;
 using Markdig.Parsers.Inlines;
@@ -10,10 +11,14 @@ namespace GlogGenerator.MarkdownExtensions
 {
     public class GlogLinkInlineParser : LinkInlineParser
     {
+        private readonly ISiteDataIndex siteDataIndex;
+
         private Dictionary<string, string> linkMatchTypes;
 
-        public GlogLinkInlineParser() : base()
+        public GlogLinkInlineParser(ISiteDataIndex siteDataIndex) : base()
         {
+            this.siteDataIndex = siteDataIndex;
+
             this.linkMatchTypes = new Dictionary<string, string>();
             foreach (var linkHandler in GlogLinkHandlers.LinkMatchHandlers)
             {
@@ -68,13 +73,11 @@ namespace GlogGenerator.MarkdownExtensions
                             }
                         }
 
-                        var referenceType = linkMatchHandler.Value;
+                        var referenceTypeName = linkMatchHandler.Value;
                         var referenceKey = slice.Text.Substring(slice.Start, referenceEndPos - slice.Start);
 
-                        var glogLinkInline = new GlogLinkInline()
+                        var glogLinkInline = new GlogLinkInline(referenceTypeName, referenceKey, this.siteDataIndex)
                         {
-                            ReferenceType = referenceType,
-                            ReferenceKey = referenceKey,
                             // TODO?: would filling in Span, Row, and Column accomplish anything?
                         };
 

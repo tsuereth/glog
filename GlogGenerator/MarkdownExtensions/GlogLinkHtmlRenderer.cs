@@ -25,10 +25,10 @@ namespace GlogGenerator.MarkdownExtensions
 
         protected override void Write(HtmlRenderer renderer, GlogLinkInline obj)
         {
-            var linkHandler = GlogLinkHandlers.LinkMatchHandlers[obj.ReferenceType];
+            var linkHandler = GlogLinkHandlers.LinkMatchHandlers[obj.ReferenceTypeName];
 
             var link = obj as LinkInline;
-            link.Url = linkHandler(this.siteDataIndex, this.siteState, obj.ReferenceKey);
+            link.Url = linkHandler(this.siteDataIndex, this.siteState, obj.GetReferenceKey(this.siteDataIndex));
 
             this.linkInlineRenderer.Write(renderer, link);
         }

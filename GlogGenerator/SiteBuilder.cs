@@ -55,7 +55,7 @@ namespace GlogGenerator
             }
             else
             {
-                this.siteDataIndex = new SiteDataIndex(this.logger, this, this.configData.InputFilesBasePath);
+                this.siteDataIndex = new SiteDataIndex(this.logger, this.configData.InputFilesBasePath);
             }
 
             this.siteState = new SiteState(this, this.configData.TemplateFilesBasePath);
@@ -107,7 +107,12 @@ namespace GlogGenerator
         public void UpdateDataIndex()
         {
             var igdbCache = this.GetIgdbCache();
-            this.siteDataIndex.LoadContent(igdbCache);
+            this.siteDataIndex.LoadContent(igdbCache, this.GetMarkdownPipeline());
+        }
+
+        public void ResolveDataReferences()
+        {
+            this.siteDataIndex.ResolveReferences();
         }
 
         public List<PageData> GetPages()
@@ -122,7 +127,7 @@ namespace GlogGenerator
 
         public void RewriteData()
         {
-            this.siteDataIndex.RewriteSourceContent();
+            this.siteDataIndex.RewriteSourceContent(this.GetMarkdownPipeline());
         }
 
         public List<GameStats> GetGameStatsForDateRange(DateTimeOffset startDate, DateTimeOffset endDate)
@@ -133,23 +138,25 @@ namespace GlogGenerator
             {
                 if (reportPost.Games != null)
                 {
-                    foreach (var postGame in reportPost.Games)
+                    foreach (var postGameReference in reportPost.Games)
                     {
+                        var postGameData = this.siteDataIndex.GetData(postGameReference);
+
                         if (reportPost.Platforms != null)
                         {
-                            foreach (var postPlatform in reportPost.Platforms)
+                            foreach (var postPlatformReference in reportPost.Platforms)
                             {
-                                var gameAndPlatformKey = $"{postGame}__{postPlatform}";
+                                var postPlatformData = this.siteDataIndex.GetData(postPlatformReference);
+
+                                var gameAndPlatformKey = $"{postGameData.GetDataId()}:{postPlatformData.GetDataId()}";
 
                                 if (!statsByGameAndPlatform.ContainsKey(gameAndPlatformKey))
                                 {
-                                    var gameData = this.siteDataIndex.GetGame(postGame);
-
                                     statsByGameAndPlatform[gameAndPlatformKey] = new GameStats()
                                     {
-                                        Title = postGame,
-                                        Platform = postPlatform,
-                                        Type = gameData.IgdbCategory.Description(),
+                                        Title = postGameData.Title,
+                                        Platform = postPlatformData.Abbreviation,
+                                        Type = postGameData.IgdbCategory.Description(),
                                         FirstPosted = reportPost.Date,
                                         LastPosted = reportPost.Date,
                                     };
@@ -167,7 +174,10 @@ namespace GlogGenerator
 
                                 if (reportPost.Ratings != null && reportPost.Ratings.Count > 0)
                                 {
-                                    statsByGameAndPlatform[gameAndPlatformKey].Rating = reportPost.Ratings[0];
+                                    var postRatingReference = reportPost.Ratings[0];
+                                    var postRatingData = this.siteDataIndex.GetData(postRatingReference);
+
+                                    statsByGameAndPlatform[gameAndPlatformKey].Rating = postRatingData.Name;
                                 }
 
                                 ++statsByGameAndPlatform[gameAndPlatformKey].NumPosts;
@@ -264,13 +274,13 @@ namespace GlogGenerator
                         if (postData.Games != null)
                         {
                             // Verify that the post's games are found in our metadata cache.
-                            foreach (var game in postData.Games)
+                            foreach (var gameReference in postData.Games)
                             {
-                                _ = this.siteDataIndex.GetGame(game);
+                                _ = this.siteDataIndex.GetData(gameReference);
                             }
                         }
 
-                        var page = PageState.FromPostData(this, postData);
+                        var page = PageState.FromPostData(this, postData, this.siteDataIndex);
                         postPages.Add(page);
                         contentRoutes.Add(page.OutputPathRelative, page);
                     }
@@ -288,7 +298,7 @@ namespace GlogGenerator
                     Permalink = $"{this.GetBaseURL()}post/",
                     OutputPathRelative = "post/index.html",
                     RenderTemplateName = "list",
-                    LinkedPosts = posts,
+                    LinkedPosts = posts.Select(p => LinkedPostProperties.FromPostData(p, this.siteDataIndex)).ToList(),
                 };
                 contentRoutes.Add(postsListPage.OutputPathRelative, postsListPage);
 
@@ -383,7 +393,7 @@ namespace GlogGenerator
             {
                 foreach (var categoryData in categories)
                 {
-                    var page = PageState.FromCategoryData(this, categoryData);
+                    var page = PageState.FromCategoryData(this, categoryData, this.siteDataIndex);
                     contentRoutes.Add(page.OutputPathRelative, page);
                 }
             }
@@ -406,7 +416,7 @@ namespace GlogGenerator
 
                 foreach (var gameData in games)
                 {
-                    var page = PageState.FromGameData(this, gameData);
+                    var page = PageState.FromGameData(this, gameData, this.siteDataIndex);
                     contentRoutes.Add(page.OutputPathRelative, page);
                 }
             }
@@ -429,7 +439,7 @@ namespace GlogGenerator
 
                 foreach (var platformData in platforms)
                 {
-                    var page = PageState.FromPlatformData(this, platformData);
+                    var page = PageState.FromPlatformData(this, platformData, this.siteDataIndex);
                     contentRoutes.Add(page.OutputPathRelative, page);
                 }
             }
@@ -452,7 +462,7 @@ namespace GlogGenerator
 
                 foreach (var ratingData in ratings)
                 {
-                    var page = PageState.FromRatingData(this, ratingData);
+                    var page = PageState.FromRatingData(this, ratingData, this.siteDataIndex);
                     contentRoutes.Add(page.OutputPathRelative, page);
                 }
             }
@@ -475,7 +485,7 @@ namespace GlogGenerator
 
                 foreach (var tagData in tags)
                 {
-                    var page = PageState.FromTagData(this, tagData);
+                    var page = PageState.FromTagData(this, tagData, this.siteDataIndex);
                     contentRoutes.Add(page.OutputPathRelative, page);
                 }
             }

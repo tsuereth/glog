@@ -12,7 +12,7 @@ namespace GlogGenerator.Data
 
         public string IgdbUrl { get; set; }
 
-        public List<PostData> LinkedPosts { get; set; } = new List<PostData>();
+        public List<string> LinkedPostIds { get; set; } = new List<string>();
 
         private string dataId;
         private string referenceableKey;
@@ -29,12 +29,19 @@ namespace GlogGenerator.Data
                 return this.referenceableKey;
             }
 
-            return UrlizedString.Urlize(this.Abbreviation);
+            return this.Abbreviation;
+        }
+
+        public bool MatchesReferenceableKey(string matchKey)
+        {
+            var thisKey = this.GetReferenceableKey();
+            return thisKey.Equals(matchKey, StringComparison.Ordinal);
         }
 
         public string GetPermalinkRelative()
         {
-            return $"platform/{this.GetReferenceableKey()}/";
+            var urlized = UrlizedString.Urlize(this.GetReferenceableKey());
+            return $"platform/{urlized}/";
         }
 
         public static PlatformData FromIgdbPlatform(IIgdbCache igdbCache, IgdbPlatform igdbPlatform)

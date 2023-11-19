@@ -43,8 +43,8 @@ namespace GlogGenerator.MarkdownExtensions
         {
             pipeline.InlineParsers.Insert(0, new ReversibleGenericAttributesParser());
 
-            pipeline.InlineParsers.InsertBefore<AutolinkInlineParser>(new GlogAutoLinkInlineParser());
-            pipeline.InlineParsers.InsertBefore<LinkInlineParser>(new GlogLinkInlineParser());
+            pipeline.InlineParsers.InsertBefore<AutolinkInlineParser>(new GlogAutoLinkInlineParser(this.siteDataIndex));
+            pipeline.InlineParsers.InsertBefore<LinkInlineParser>(new GlogLinkInlineParser(this.siteDataIndex));
 
             pipeline.BlockParsers.AddIfNotAlready<FencedDataBlockParser>();
             pipeline.BlockParsers.AddIfNotAlready<TomlFrontMatterBlockParser>();
@@ -114,7 +114,7 @@ namespace GlogGenerator.MarkdownExtensions
             }
             else if (renderer is NormalizeRenderer)
             {
-                renderer.ObjectRenderers.InsertBefore<Markdig.Renderers.Normalize.Inlines.AutolinkInlineRenderer>(new GlogLinkNormalizeRenderer());
+                renderer.ObjectRenderers.InsertBefore<Markdig.Renderers.Normalize.Inlines.AutolinkInlineRenderer>(new GlogLinkNormalizeRenderer(this.siteDataIndex));
                 renderer.ObjectRenderers.AddIfNotAlready<FencedDataBlockNormalizeRenderer>();
                 renderer.ObjectRenderers.AddIfNotAlready<SpoilerNormalizeRenderer>();
 
@@ -123,7 +123,7 @@ namespace GlogGenerator.MarkdownExtensions
             }
             else if (renderer is RoundtripRenderer)
             {
-                renderer.ObjectRenderers.InsertBefore<Markdig.Renderers.Roundtrip.Inlines.AutolinkInlineRenderer>(new GlogLinkRoundtripRenderer());
+                renderer.ObjectRenderers.InsertBefore<Markdig.Renderers.Roundtrip.Inlines.AutolinkInlineRenderer>(new GlogLinkRoundtripRenderer(this.siteDataIndex));
                 renderer.ObjectRenderers.AddIfNotAlready<FencedDataBlockRoundtripeRenderer>();
                 renderer.ObjectRenderers.AddIfNotAlready<SpoilerRoundtripRenderer>();
 

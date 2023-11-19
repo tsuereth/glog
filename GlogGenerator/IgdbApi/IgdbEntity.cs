@@ -99,7 +99,7 @@ namespace GlogGenerator.IgdbApi
 
         public string GetReferenceableKey()
         {
-            return UrlizedString.Urlize(this.GetReferenceableValue());
+            return this.GetReferenceableValue();
         }
     }
 

@@ -4,6 +4,12 @@ namespace GlogGenerator.Data
 {
     public interface ISiteDataIndex
     {
+        public SiteDataReference<T> CreateReference<T>(string referenceKey)
+            where T : IGlogReferenceable;
+
+        public T GetData<T>(SiteDataReference<T> dataReference)
+            where T : class, IGlogReferenceable;
+
         public List<CategoryData> GetCategories();
 
         public GameData GetGame(string gameTitle);
@@ -15,6 +21,8 @@ namespace GlogGenerator.Data
         public PlatformData GetPlatform(string platformAbbreviation);
 
         public List<PlatformData> GetPlatforms();
+
+        public PostData GetPostById(string postId);
 
         public List<PostData> GetPosts();
 
@@ -28,8 +36,10 @@ namespace GlogGenerator.Data
 
         public List<TagData> GetTags();
 
-        public void LoadContent(IIgdbCache igdbCache);
+        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline);
 
-        public void RewriteSourceContent();
+        public void ResolveReferences();
+
+        public void RewriteSourceContent(Markdig.MarkdownPipeline markdownPipeline);
     }
 }
