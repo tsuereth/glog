@@ -43056,7 +43056,9 @@
     {
       "category": 0,
       "collection": 2301,
-      "collections": [],
+      "collections": [
+        2301
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
