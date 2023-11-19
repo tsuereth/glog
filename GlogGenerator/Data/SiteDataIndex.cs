@@ -37,38 +37,6 @@ namespace GlogGenerator.Data
             this.inputFilesBasePath = inputFilesBasePath;
         }
 
-        private CategoryData AddCategoryIfMissing(string categoryName)
-        {
-            var category = this.categories.Values.Where(d => d.Name.Equals(categoryName, StringComparison.Ordinal)).FirstOrDefault();
-            if (category == null)
-            {
-                category = new CategoryData()
-                {
-                    Name = categoryName,
-                };
-
-                this.categories[category.GetDataId()] = category;
-            }
-
-            return category;
-        }
-
-        private RatingData AddRatingIfMissing(string ratingName)
-        {
-            var rating = this.ratings.Values.Where(d => d.Name.Equals(ratingName, StringComparison.Ordinal)).FirstOrDefault();
-            if (rating == null)
-            {
-                rating = new RatingData()
-                {
-                    Name = ratingName,
-                };
-
-                this.ratings[rating.GetDataId()] = rating;
-            }
-
-            return rating;
-        }
-
         public SiteDataReference<T> CreateReference<T>(string referenceKey)
             where T : IGlogReferenceable
         {
