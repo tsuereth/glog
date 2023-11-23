@@ -37,10 +37,6 @@
       "name": "Dragon Age"
     },
     {
-      "id": 14,
-      "name": "X-COM"
-    },
-    {
       "id": 17,
       "name": "Devil May Cry"
     },
@@ -1875,6 +1871,18 @@
     {
       "id": 9167,
       "name": "Lara Croft"
+    },
+    {
+      "id": 9208,
+      "name": "Tomb Raider: Legend"
+    },
+    {
+      "id": 9209,
+      "name": "Tomb Raider: Survivor"
+    },
+    {
+      "id": 9219,
+      "name": "XCOM"
     }
   ],
   "companies": [
@@ -9976,10 +9984,14 @@
     },
     {
       "category": 0,
-      "collection": 14,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        9219
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1064
+      ],
       "game_modes": [
         1
       ],
@@ -12268,8 +12280,11 @@
     },
     {
       "category": 0,
-      "collection": 1957,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        107,
+        1957
+      ],
       "franchise": -1,
       "franchises": [
         726
@@ -12448,7 +12463,9 @@
     {
       "category": 0,
       "collection": 47,
-      "collections": [],
+      "collections": [
+        47
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -12603,8 +12620,11 @@
     },
     {
       "category": 0,
-      "collection": 1957,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        107,
+        1957
+      ],
       "franchise": -1,
       "franchises": [
         726
@@ -16195,7 +16215,8 @@
       "category": 0,
       "collection": -1,
       "collections": [
-        183
+        183,
+        9208
       ],
       "franchise": -1,
       "franchises": [
@@ -16232,7 +16253,8 @@
       "category": 0,
       "collection": -1,
       "collections": [
-        183
+        183,
+        9209
       ],
       "franchise": 279,
       "franchises": [
@@ -16386,8 +16408,10 @@
     },
     {
       "category": 0,
-      "collection": 268,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        268
+      ],
       "franchise": -1,
       "franchises": [
         1351
@@ -17233,8 +17257,10 @@
     },
     {
       "category": 8,
-      "collection": 14,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        9219
+      ],
       "franchise": -1,
       "franchises": [
         1064
@@ -20650,7 +20676,9 @@
     {
       "category": 0,
       "collection": 47,
-      "collections": [],
+      "collections": [
+        47
+      ],
       "franchise": -1,
       "franchises": [
         1277
@@ -20684,8 +20712,10 @@
     },
     {
       "category": 0,
-      "collection": 107,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        107
+      ],
       "franchise": -1,
       "franchises": [
         726
@@ -29289,10 +29319,11 @@
       ],
       "id": 6032,
       "involved_companies": [
-        18659,
         18661,
         18662,
-        88966
+        241981,
+        241982,
+        241983
       ],
       "name": "Borderlands: The Pre-Sequel",
       "player_perspectives": [
@@ -31400,7 +31431,7 @@
       "category": 0,
       "collection": -1,
       "collections": [
-        183
+        9209
       ],
       "franchise": 279,
       "franchises": [
@@ -34493,7 +34524,9 @@
     {
       "category": 4,
       "collection": 47,
-      "collections": [],
+      "collections": [
+        47
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -39345,7 +39378,7 @@
       "category": 1,
       "collection": -1,
       "collections": [
-        183
+        9209
       ],
       "franchise": -1,
       "franchises": [
@@ -46182,7 +46215,9 @@
     {
       "category": 0,
       "collection": 47,
-      "collections": [],
+      "collections": [
+        47
+      ],
       "franchise": -1,
       "franchises": [
         1277
@@ -46404,7 +46439,7 @@
       "category": 0,
       "collection": -1,
       "collections": [
-        183
+        9209
       ],
       "franchise": -1,
       "franchises": [
@@ -55153,10 +55188,6 @@
       "company": 8
     },
     {
-      "id": 18659,
-      "company": 139
-    },
-    {
       "id": 18661,
       "company": 148
     },
@@ -59871,10 +59902,6 @@
     {
       "id": 88898,
       "company": 294
-    },
-    {
-      "id": 88966,
-      "company": 8
     },
     {
       "id": 88967,
@@ -66179,6 +66206,18 @@
     {
       "id": 241328,
       "company": 19676
+    },
+    {
+      "id": 241981,
+      "company": 139
+    },
+    {
+      "id": 241982,
+      "company": 8
+    },
+    {
+      "id": 241983,
+      "company": 73
     }
   ],
   "platforms": [
