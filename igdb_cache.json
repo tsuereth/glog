@@ -1685,10 +1685,6 @@
       "name": "Ico"
     },
     {
-      "id": 6463,
-      "name": "Hyrule Warriors"
-    },
-    {
       "id": 6522,
       "name": "Ace Attorney Investigations"
     },
@@ -1883,6 +1879,10 @@
     {
       "id": 9219,
       "name": "XCOM"
+    },
+    {
+      "id": 9263,
+      "name": "Tales of Symphonia"
     }
   ],
   "companies": [
@@ -4001,10 +4001,6 @@
     {
       "id": 2063,
       "name": "Arzest"
-    },
-    {
-      "id": 2064,
-      "name": "Data East USA"
     },
     {
       "id": 2088,
@@ -8945,8 +8941,10 @@
     },
     {
       "category": 0,
-      "collection": 27,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        27
+      ],
       "franchise": 135,
       "franchises": [
         135
@@ -9125,8 +9123,10 @@
     },
     {
       "category": 0,
-      "collection": 27,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        27
+      ],
       "franchise": 135,
       "franchises": [
         135
@@ -9677,8 +9677,10 @@
     },
     {
       "category": 2,
-      "collection": 27,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        27
+      ],
       "franchise": 135,
       "franchises": [
         135
@@ -9704,8 +9706,10 @@
     },
     {
       "category": 2,
-      "collection": 27,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        27
+      ],
       "franchise": 135,
       "franchises": [
         135
@@ -9731,8 +9735,10 @@
     },
     {
       "category": 2,
-      "collection": 27,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        27
+      ],
       "franchise": 135,
       "franchises": [
         135
@@ -10427,8 +10433,10 @@
     },
     {
       "category": 0,
-      "collection": 39,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        39
+      ],
       "franchise": 4,
       "franchises": [
         4
@@ -10495,8 +10503,10 @@
     },
     {
       "category": 0,
-      "collection": 39,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        39
+      ],
       "franchise": 4,
       "franchises": [
         4
@@ -10526,7 +10536,7 @@
     },
     {
       "category": 8,
-      "collection": 39,
+      "collection": -1,
       "collections": [],
       "franchise": 4,
       "franchises": [
@@ -10556,8 +10566,10 @@
     },
     {
       "category": 0,
-      "collection": 39,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        39
+      ],
       "franchise": 4,
       "franchises": [
         4
@@ -10588,7 +10600,7 @@
     },
     {
       "category": 0,
-      "collection": 67,
+      "collection": -1,
       "collections": [
         39,
         67
@@ -10626,8 +10638,10 @@
     },
     {
       "category": 0,
-      "collection": 2105,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        2105
+      ],
       "franchise": 4,
       "franchises": [
         4
@@ -10659,7 +10673,7 @@
     },
     {
       "category": 0,
-      "collection": 39,
+      "collection": -1,
       "collections": [
         39,
         9008
@@ -10696,8 +10710,10 @@
     },
     {
       "category": 0,
-      "collection": 39,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        39
+      ],
       "franchise": 4,
       "franchises": [
         4
@@ -10763,8 +10779,10 @@
     },
     {
       "category": 0,
-      "collection": 39,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        39
+      ],
       "franchise": 4,
       "franchises": [
         4
@@ -10796,7 +10814,7 @@
     },
     {
       "category": 3,
-      "collection": 39,
+      "collection": -1,
       "collections": [],
       "franchise": 4,
       "franchises": [
@@ -10866,8 +10884,10 @@
     },
     {
       "category": 0,
-      "collection": 39,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        39
+      ],
       "franchise": 4,
       "franchises": [
         4
@@ -10899,8 +10919,10 @@
     },
     {
       "category": 0,
-      "collection": 39,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        39
+      ],
       "franchise": 4,
       "franchises": [
         4
@@ -10917,7 +10939,7 @@
         159793,
         164524,
         180322,
-        234850
+        242248
       ],
       "name": "Final Fantasy VI",
       "player_perspectives": [
@@ -10933,7 +10955,7 @@
     },
     {
       "category": 0,
-      "collection": 39,
+      "collection": -1,
       "collections": [
         39,
         5134
@@ -10969,8 +10991,10 @@
     },
     {
       "category": 0,
-      "collection": 2105,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        2105
+      ],
       "franchise": 4,
       "franchises": [
         4
@@ -11340,8 +11364,10 @@
     },
     {
       "category": 0,
-      "collection": 2491,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        2491
+      ],
       "franchise": -1,
       "franchises": [
         895
@@ -12879,8 +12905,10 @@
     },
     {
       "category": 0,
-      "collection": 173,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        173
+      ],
       "franchise": 137,
       "franchises": [
         137
@@ -13872,8 +13900,10 @@
     },
     {
       "category": 0,
-      "collection": 173,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        173
+      ],
       "franchise": -1,
       "franchises": [
         137
@@ -13906,8 +13936,10 @@
     },
     {
       "category": 0,
-      "collection": 173,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        173
+      ],
       "franchise": -1,
       "franchises": [
         137
@@ -13940,8 +13972,10 @@
     },
     {
       "category": 0,
-      "collection": 173,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        173
+      ],
       "franchise": -1,
       "franchises": [
         137
@@ -13973,8 +14007,10 @@
     },
     {
       "category": 0,
-      "collection": 173,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        173
+      ],
       "franchise": -1,
       "franchises": [
         137
@@ -14008,8 +14044,10 @@
     },
     {
       "category": 0,
-      "collection": 173,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        173
+      ],
       "franchise": -1,
       "franchises": [
         137
@@ -15450,8 +15488,10 @@
     },
     {
       "category": 0,
-      "collection": 6066,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6066
+      ],
       "franchise": -1,
       "franchises": [
         763
@@ -15481,8 +15521,10 @@
     },
     {
       "category": 0,
-      "collection": 243,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        243
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -15513,8 +15555,10 @@
     },
     {
       "category": 0,
-      "collection": 243,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        243
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -15545,8 +15589,10 @@
     },
     {
       "category": 0,
-      "collection": 243,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        243
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -15580,8 +15626,10 @@
     },
     {
       "category": 0,
-      "collection": 243,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        243
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -15649,8 +15697,10 @@
     },
     {
       "category": 8,
-      "collection": 243,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        243
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -15718,7 +15768,7 @@
     },
     {
       "category": 0,
-      "collection": 6240,
+      "collection": -1,
       "collections": [
         6240
       ],
@@ -15749,7 +15799,7 @@
     },
     {
       "category": 0,
-      "collection": 6240,
+      "collection": -1,
       "collections": [
         243,
         6240
@@ -15852,8 +15902,10 @@
     },
     {
       "category": 0,
-      "collection": 243,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        243
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -16148,8 +16200,10 @@
     },
     {
       "category": 0,
-      "collection": 2491,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        2491
+      ],
       "franchise": -1,
       "franchises": [
         895
@@ -16376,8 +16430,10 @@
     },
     {
       "category": 0,
-      "collection": 2491,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        2491
+      ],
       "franchise": -1,
       "franchises": [
         895
@@ -16439,8 +16495,10 @@
     },
     {
       "category": 0,
-      "collection": 269,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        269
+      ],
       "franchise": -1,
       "franchises": [
         942
@@ -16468,8 +16526,11 @@
     },
     {
       "category": 0,
-      "collection": 269,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        269,
+        9263
+      ],
       "franchise": -1,
       "franchises": [
         942
@@ -16503,8 +16564,10 @@
     },
     {
       "category": 0,
-      "collection": 269,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        269
+      ],
       "franchise": -1,
       "franchises": [
         942
@@ -16534,8 +16597,10 @@
     },
     {
       "category": 0,
-      "collection": 269,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        269
+      ],
       "franchise": -1,
       "franchises": [
         942
@@ -17106,7 +17171,9 @@
     {
       "category": 0,
       "collection": 2342,
-      "collections": [],
+      "collections": [
+        27
+      ],
       "franchise": 135,
       "franchises": [
         135
@@ -17192,8 +17259,10 @@
     },
     {
       "category": 0,
-      "collection": 286,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        286
+      ],
       "franchise": -1,
       "franchises": [
         2416
@@ -19437,8 +19506,11 @@
     },
     {
       "category": 0,
-      "collection": 6731,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        286,
+        6731
+      ],
       "franchise": -1,
       "franchises": [
         2416
@@ -23170,8 +23242,10 @@
     },
     {
       "category": 9,
-      "collection": 173,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        173
+      ],
       "franchise": 137,
       "franchises": [
         137
@@ -23806,8 +23880,10 @@
     },
     {
       "category": 0,
-      "collection": 6066,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6066
+      ],
       "franchise": -1,
       "franchises": [
         763
@@ -24435,7 +24511,9 @@
     {
       "category": 0,
       "collection": 514,
-      "collections": [],
+      "collections": [
+        514
+      ],
       "franchise": -1,
       "franchises": [
         2258
@@ -24445,23 +24523,20 @@
         2
       ],
       "genres": [
-        8,
+        25,
         33
       ],
       "id": 3055,
       "involved_companies": [
-        50895,
-        50896,
-        50897,
-        50898,
-        199604
+        50895
       ],
       "name": "Rampage",
       "player_perspectives": [
         4
       ],
       "themes": [
-        1
+        1,
+        18
       ],
       "url": "https://www.igdb.com/games/rampage"
     },
@@ -24504,8 +24579,7 @@
       ],
       "genres": [
         10,
-        13,
-        32
+        13
       ],
       "id": 3070,
       "involved_companies": [
@@ -24520,6 +24594,7 @@
         7
       ],
       "themes": [
+        28,
         32,
         38
       ],
@@ -24838,8 +24913,10 @@
     },
     {
       "category": 2,
-      "collection": 27,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        27
+      ],
       "franchise": -1,
       "franchises": [
         135
@@ -27787,7 +27864,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        173
+      ],
       "franchise": -1,
       "franchises": [
         137
@@ -28290,7 +28369,6 @@
       "collection": -1,
       "collections": [
         550,
-        6463,
         8994
       ],
       "franchise": -1,
@@ -30536,8 +30614,10 @@
     },
     {
       "category": 0,
-      "collection": 173,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        173
+      ],
       "franchise": -1,
       "franchises": [
         137
@@ -30758,8 +30838,10 @@
     },
     {
       "category": 0,
-      "collection": 550,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        550
+      ],
       "franchise": -1,
       "franchises": [
         820,
@@ -31704,7 +31786,7 @@
     },
     {
       "category": 3,
-      "collection": 173,
+      "collection": -1,
       "collections": [],
       "franchise": -1,
       "franchises": [
@@ -36975,8 +37057,11 @@
     },
     {
       "category": 8,
-      "collection": 5134,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        39,
+        5134
+      ],
       "franchise": -1,
       "franchises": [
         4
@@ -37173,8 +37258,10 @@
     },
     {
       "category": 0,
-      "collection": 6085,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6085
+      ],
       "franchise": -1,
       "franchises": [
         2483
@@ -39968,8 +40055,10 @@
     },
     {
       "category": 0,
-      "collection": 243,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        243
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -41829,7 +41918,8 @@
       "game_modes": [
         1,
         2,
-        3
+        3,
+        4
       ],
       "genres": [
         5,
@@ -42888,8 +42978,10 @@
     },
     {
       "category": 0,
-      "collection": 67,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        67
+      ],
       "franchise": -1,
       "franchises": [
         4
@@ -46406,8 +46498,10 @@
     },
     {
       "category": 8,
-      "collection": 243,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        243
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -46881,7 +46975,8 @@
         4
       ],
       "themes": [
-        1
+        1,
+        17
       ],
       "url": "https://www.igdb.com/games/trine-enchanted-edition"
     },
@@ -47004,8 +47099,10 @@
     },
     {
       "category": 11,
-      "collection": 39,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        39
+      ],
       "franchise": 4,
       "franchises": [
         4
@@ -50159,7 +50256,8 @@
       "game_modes": [
         1,
         2,
-        3
+        3,
+        4
       ],
       "genres": [
         12,
@@ -57946,18 +58044,6 @@
       "company": 1436
     },
     {
-      "id": 50896,
-      "company": 66
-    },
-    {
-      "id": 50897,
-      "company": 1436
-    },
-    {
-      "id": 50898,
-      "company": 2064
-    },
-    {
       "id": 51108,
       "company": 10100
     },
@@ -64730,10 +64816,6 @@
       "company": 104
     },
     {
-      "id": 199604,
-      "company": 23993
-    },
-    {
       "id": 199652,
       "company": 23993
     },
@@ -65966,10 +66048,6 @@
       "company": 326
     },
     {
-      "id": 234850,
-      "company": 250
-    },
-    {
       "id": 236062,
       "company": 437
     },
@@ -66220,6 +66298,10 @@
     {
       "id": 241983,
       "company": 73
+    },
+    {
+      "id": 242248,
+      "company": 250
     }
   ],
   "platforms": [
