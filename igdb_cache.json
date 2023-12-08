@@ -1685,6 +1685,10 @@
       "name": "Ico"
     },
     {
+      "id": 6463,
+      "name": "Hyrule Warriors"
+    },
+    {
       "id": 6522,
       "name": "Ace Attorney Investigations"
     },
@@ -1801,6 +1805,10 @@
       "name": "Control"
     },
     {
+      "id": 8454,
+      "name": "Hades"
+    },
+    {
       "id": 8487,
       "name": "Elebits"
     },
@@ -1883,6 +1891,18 @@
     {
       "id": 9263,
       "name": "Tales of Symphonia"
+    },
+    {
+      "id": 9277,
+      "name": "Final Fantasy XII"
+    },
+    {
+      "id": 9293,
+      "name": "World of Goo"
+    },
+    {
+      "id": 9294,
+      "name": "Pony Island"
     }
   ],
   "companies": [
@@ -4637,10 +4657,6 @@
     {
       "id": 3701,
       "name": "Nicalis, Inc."
-    },
-    {
-      "id": 3775,
-      "name": "Bee Tribe"
     },
     {
       "id": 3788,
@@ -8265,8 +8281,10 @@
     },
     {
       "category": 0,
-      "collection": 6,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6
+      ],
       "franchise": -1,
       "franchises": [
         456
@@ -10092,8 +10110,11 @@
     },
     {
       "category": 0,
-      "collection": 138,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        38,
+        138
+      ],
       "franchise": 12,
       "franchises": [
         12
@@ -10505,7 +10526,8 @@
       "category": 0,
       "collection": -1,
       "collections": [
-        39
+        39,
+        9277
       ],
       "franchise": 4,
       "franchises": [
@@ -11027,8 +11049,10 @@
     },
     {
       "category": 0,
-      "collection": 97,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        97
+      ],
       "franchise": -1,
       "franchises": [
         2121
@@ -11060,8 +11084,10 @@
     },
     {
       "category": 0,
-      "collection": 2100,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        2100
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -11218,8 +11244,10 @@
     },
     {
       "category": 0,
-      "collection": 6,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6
+      ],
       "franchise": -1,
       "franchises": [
         456
@@ -11700,8 +11728,10 @@
     },
     {
       "category": 0,
-      "collection": 97,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        97
+      ],
       "franchise": -1,
       "franchises": [
         2121
@@ -12419,8 +12449,10 @@
     },
     {
       "category": 0,
-      "collection": 97,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        97
+      ],
       "franchise": -1,
       "franchises": [
         2121
@@ -12685,8 +12717,10 @@
     },
     {
       "category": 0,
-      "collection": 38,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        38
+      ],
       "franchise": 12,
       "franchises": [
         12
@@ -13636,7 +13670,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        9293
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -13668,8 +13704,11 @@
     },
     {
       "category": 0,
-      "collection": 138,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        38,
+        138
+      ],
       "franchise": 12,
       "franchises": [
         12
@@ -14992,8 +15031,10 @@
     },
     {
       "category": 0,
-      "collection": 511,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        511
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -15972,8 +16013,10 @@
     },
     {
       "category": 0,
-      "collection": 65,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        65
+      ],
       "franchise": -1,
       "franchises": [
         895
@@ -16006,8 +16049,10 @@
     },
     {
       "category": 0,
-      "collection": 65,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        65
+      ],
       "franchise": -1,
       "franchises": [
         895
@@ -16037,8 +16082,10 @@
     },
     {
       "category": 0,
-      "collection": 65,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        65
+      ],
       "franchise": -1,
       "franchises": [
         895
@@ -16068,8 +16115,10 @@
     },
     {
       "category": 0,
-      "collection": 65,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        65
+      ],
       "franchise": -1,
       "franchises": [
         895
@@ -16099,8 +16148,10 @@
     },
     {
       "category": 0,
-      "collection": 65,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        65
+      ],
       "franchise": -1,
       "franchises": [
         895
@@ -16133,8 +16184,10 @@
     },
     {
       "category": 0,
-      "collection": 65,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        65
+      ],
       "franchise": -1,
       "franchises": [
         895
@@ -16166,8 +16219,10 @@
     },
     {
       "category": 0,
-      "collection": 65,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        65
+      ],
       "franchise": -1,
       "franchises": [
         895
@@ -18538,8 +18593,10 @@
     },
     {
       "category": 0,
-      "collection": 314,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        314
+      ],
       "franchise": -1,
       "franchises": [
         60
@@ -18607,8 +18664,10 @@
     },
     {
       "category": 0,
-      "collection": 314,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        314
+      ],
       "franchise": -1,
       "franchises": [
         60
@@ -19061,8 +19120,10 @@
     },
     {
       "category": 0,
-      "collection": 337,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        337
+      ],
       "franchise": 38,
       "franchises": [
         38
@@ -19091,8 +19152,10 @@
     },
     {
       "category": 0,
-      "collection": 337,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        337
+      ],
       "franchise": 38,
       "franchises": [
         38
@@ -19121,8 +19184,10 @@
     },
     {
       "category": 0,
-      "collection": 337,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        337
+      ],
       "franchise": 38,
       "franchises": [
         38
@@ -19152,8 +19217,10 @@
     },
     {
       "category": 0,
-      "collection": 337,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        337
+      ],
       "franchise": 38,
       "franchises": [
         38
@@ -19182,7 +19249,7 @@
     },
     {
       "category": 0,
-      "collection": 337,
+      "collection": -1,
       "collections": [
         337
       ],
@@ -19214,7 +19281,7 @@
     },
     {
       "category": 0,
-      "collection": 338,
+      "collection": -1,
       "collections": [
         337,
         338
@@ -19251,8 +19318,10 @@
     },
     {
       "category": 0,
-      "collection": 338,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        338
+      ],
       "franchise": 38,
       "franchises": [
         38
@@ -19280,7 +19349,7 @@
     },
     {
       "category": 0,
-      "collection": 340,
+      "collection": -1,
       "collections": [
         337,
         340
@@ -19316,8 +19385,10 @@
     },
     {
       "category": 0,
-      "collection": 340,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        340
+      ],
       "franchise": 38,
       "franchises": [
         38
@@ -19344,7 +19415,7 @@
     },
     {
       "category": 0,
-      "collection": 341,
+      "collection": -1,
       "collections": [
         338,
         341
@@ -19379,8 +19450,10 @@
     },
     {
       "category": 0,
-      "collection": 341,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        341
+      ],
       "franchise": 38,
       "franchises": [
         38
@@ -19411,8 +19484,10 @@
     },
     {
       "category": 0,
-      "collection": 341,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        341
+      ],
       "franchise": 38,
       "franchises": [
         38
@@ -19444,8 +19519,11 @@
     },
     {
       "category": 0,
-      "collection": 342,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        341,
+        342
+      ],
       "franchise": 38,
       "franchises": [
         38
@@ -19474,8 +19552,10 @@
     },
     {
       "category": 0,
-      "collection": 342,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        342
+      ],
       "franchise": 38,
       "franchises": [
         38
@@ -20130,8 +20210,10 @@
     },
     {
       "category": 0,
-      "collection": 2406,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        2406
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -20265,7 +20347,7 @@
     },
     {
       "category": 0,
-      "collection": 2100,
+      "collection": -1,
       "collections": [],
       "franchise": -1,
       "franchises": [],
@@ -21104,10 +21186,8 @@
       "id": 2136,
       "involved_companies": [
         18341,
-        18342,
         45893,
-        58908,
-        58909
+        243645
       ],
       "name": "Bayonetta",
       "player_perspectives": [
@@ -21624,7 +21704,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        244
+      ],
       "franchise": -1,
       "franchises": [
         789
@@ -23161,9 +23243,9 @@
       ],
       "id": 2607,
       "involved_companies": [
-        8340,
-        26901,
-        26902
+        26902,
+        243620,
+        243621
       ],
       "name": "Sonic Lost World",
       "player_perspectives": [
@@ -23699,10 +23781,10 @@
       "id": 2853,
       "involved_companies": [
         59566,
-        59568,
         59569,
-        109399,
-        109400
+        109400,
+        243479,
+        243480
       ],
       "name": "Braid",
       "player_perspectives": [
@@ -23898,8 +23980,8 @@
       ],
       "id": 2923,
       "involved_companies": [
-        64569,
-        64570
+        243443,
+        243444
       ],
       "name": "Donkey Kong Country: Tropical Freeze",
       "player_perspectives": [
@@ -24217,8 +24299,10 @@
     },
     {
       "category": 1,
-      "collection": 6,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -26129,7 +26213,7 @@
     },
     {
       "category": 0,
-      "collection": 2723,
+      "collection": -1,
       "collections": [
         314,
         2723,
@@ -26263,8 +26347,10 @@
     },
     {
       "category": 0,
-      "collection": 244,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        244
+      ],
       "franchise": -1,
       "franchises": [
         789
@@ -26299,7 +26385,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        244
+      ],
       "franchise": -1,
       "franchises": [
         789
@@ -26328,8 +26416,10 @@
     },
     {
       "category": 0,
-      "collection": 244,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        244
+      ],
       "franchise": -1,
       "franchises": [
         789
@@ -26363,7 +26453,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        244
+      ],
       "franchise": -1,
       "franchises": [
         789
@@ -26393,8 +26485,10 @@
     },
     {
       "category": 4,
-      "collection": 2100,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        2100
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -27029,7 +27123,7 @@
     },
     {
       "category": 3,
-      "collection": 2156,
+      "collection": -1,
       "collections": [],
       "franchise": -1,
       "franchises": [
@@ -28369,6 +28463,7 @@
       "collection": -1,
       "collections": [
         550,
+        6463,
         8994
       ],
       "franchise": -1,
@@ -29551,8 +29646,10 @@
     },
     {
       "category": 1,
-      "collection": 6,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -29579,8 +29676,10 @@
     },
     {
       "category": 1,
-      "collection": 6,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -31579,8 +31678,10 @@
     },
     {
       "category": 0,
-      "collection": 97,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        97
+      ],
       "franchise": -1,
       "franchises": [
         2121
@@ -36709,7 +36810,7 @@
     },
     {
       "category": 3,
-      "collection": 97,
+      "collection": -1,
       "collections": [],
       "franchise": -1,
       "franchises": [
@@ -40116,7 +40217,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        9294
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -42093,8 +42196,10 @@
     },
     {
       "category": 9,
-      "collection": 6,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        6
+      ],
       "franchise": -1,
       "franchises": [
         456
@@ -42362,8 +42467,10 @@
     },
     {
       "category": 0,
-      "collection": 97,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        97
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -44172,8 +44279,10 @@
     },
     {
       "category": 0,
-      "collection": 2100,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        2100
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -44426,8 +44535,10 @@
     },
     {
       "category": 4,
-      "collection": 97,
-      "collections": [],
+      "collection": -1,
+      "collections": [
+        97
+      ],
       "franchise": -1,
       "franchises": [
         2121
@@ -49767,7 +49878,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        8454
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -53880,10 +53993,6 @@
       "company": 169
     },
     {
-      "id": 8340,
-      "company": 70
-    },
-    {
       "id": 8389,
       "company": 1
     },
@@ -55220,10 +55329,6 @@
       "company": 2675
     },
     {
-      "id": 18342,
-      "company": 3775
-    },
-    {
       "id": 18387,
       "company": 392
     },
@@ -56382,10 +56487,6 @@
     {
       "id": 26898,
       "company": 908
-    },
-    {
-      "id": 26901,
-      "company": 112
     },
     {
       "id": 26902,
@@ -58556,14 +58657,6 @@
       "company": 10678
     },
     {
-      "id": 58908,
-      "company": 852
-    },
-    {
-      "id": 58909,
-      "company": 70
-    },
-    {
       "id": 58944,
       "company": 37
     },
@@ -58674,10 +58767,6 @@
     {
       "id": 59566,
       "company": 1335
-    },
-    {
-      "id": 59568,
-      "company": 1051
     },
     {
       "id": 59569,
@@ -58978,14 +59067,6 @@
     {
       "id": 64546,
       "company": 1030
-    },
-    {
-      "id": 64569,
-      "company": 70
-    },
-    {
-      "id": 64570,
-      "company": 766
     },
     {
       "id": 64614,
@@ -61358,10 +61439,6 @@
     {
       "id": 109263,
       "company": 37
-    },
-    {
-      "id": 109399,
-      "company": 1335
     },
     {
       "id": 109400,
@@ -66302,6 +66379,34 @@
     {
       "id": 242248,
       "company": 250
+    },
+    {
+      "id": 243443,
+      "company": 766
+    },
+    {
+      "id": 243444,
+      "company": 70
+    },
+    {
+      "id": 243479,
+      "company": 1051
+    },
+    {
+      "id": 243480,
+      "company": 1335
+    },
+    {
+      "id": 243620,
+      "company": 70
+    },
+    {
+      "id": 243621,
+      "company": 112
+    },
+    {
+      "id": 243645,
+      "company": 852
     }
   ],
   "platforms": [
