@@ -1281,10 +1281,6 @@
       "name": "Forza Horizon"
     },
     {
-      "id": 2815,
-      "name": "Fabula Nova Crystallis Final Fantasy"
-    },
-    {
       "id": 2824,
       "name": "The Wolf Among Us"
     },
@@ -1845,10 +1841,6 @@
       "name": "The Legend of Zelda: Ocarina of Time"
     },
     {
-      "id": 8994,
-      "name": "The Legend of Zelda"
-    },
-    {
       "id": 9003,
       "name": "Super Mario 64"
     },
@@ -1903,6 +1895,14 @@
     {
       "id": 9294,
       "name": "Pony Island"
+    },
+    {
+      "id": 9320,
+      "name": "Final Fantasy IV"
+    },
+    {
+      "id": 9321,
+      "name": "Final Fantasy VII Remake"
     }
   ],
   "companies": [
@@ -10421,7 +10421,6 @@
       "collection": -1,
       "collections": [
         39,
-        2815,
         9006
       ],
       "franchise": 4,
@@ -10493,7 +10492,6 @@
       "collection": -1,
       "collections": [
         39,
-        2815,
         9006
       ],
       "franchise": 4,
@@ -10559,7 +10557,10 @@
     {
       "category": 8,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        39,
+        9320
+      ],
       "franchise": 4,
       "franchises": [
         4
@@ -11015,6 +11016,7 @@
       "category": 0,
       "collection": -1,
       "collections": [
+        39,
         2105
       ],
       "franchise": 4,
@@ -14442,7 +14444,9 @@
     {
       "category": 0,
       "collection": 106,
-      "collections": [],
+      "collections": [
+        106
+      ],
       "franchise": -1,
       "franchises": [
         596
@@ -14476,7 +14480,7 @@
       "category": 0,
       "collection": 106,
       "collections": [
-        8994
+        106
       ],
       "franchise": -1,
       "franchises": [
@@ -14617,7 +14621,7 @@
       "category": 0,
       "collection": 106,
       "collections": [
-        8994,
+        106,
         9026
       ],
       "franchise": -1,
@@ -14685,7 +14689,7 @@
       "category": 0,
       "collection": 106,
       "collections": [
-        8994
+        106
       ],
       "franchise": -1,
       "franchises": [
@@ -14753,7 +14757,7 @@
       "category": 0,
       "collection": 106,
       "collections": [
-        8994,
+        106,
         9026
       ],
       "franchise": -1,
@@ -17880,8 +17884,7 @@
       "franchise": -1,
       "franchises": [],
       "game_modes": [
-        1,
-        2
+        1
       ],
       "genres": [
         5,
@@ -22279,7 +22282,7 @@
       "category": 9,
       "collection": 106,
       "collections": [
-        8994,
+        106,
         9026
       ],
       "franchise": -1,
@@ -26694,7 +26697,8 @@
       ],
       "themes": [
         1,
-        33
+        27,
+        31
       ],
       "url": "https://www.igdb.com/games/chibi-robo"
     },
@@ -28462,9 +28466,9 @@
       "category": 0,
       "collection": -1,
       "collections": [
+        106,
         550,
-        6463,
-        8994
+        6463
       ],
       "franchise": -1,
       "franchises": [
@@ -29903,9 +29907,10 @@
       ],
       "id": 6217,
       "involved_companies": [
-        14805,
-        14806,
-        14807
+        244558,
+        244559,
+        244560,
+        244583
       ],
       "name": "Tron 2.0",
       "player_perspectives": [
@@ -33203,8 +33208,6 @@
       "themes": [
         1,
         17,
-        21,
-        22,
         38
       ],
       "url": "https://www.igdb.com/games/dark-souls-ii-scholar-of-the-first-sin"
@@ -37161,7 +37164,8 @@
       "collection": -1,
       "collections": [
         39,
-        5134
+        5134,
+        9321
       ],
       "franchise": -1,
       "franchises": [
@@ -37288,7 +37292,9 @@
     {
       "category": 0,
       "collection": 106,
-      "collections": [],
+      "collections": [
+        106
+      ],
       "franchise": -1,
       "franchises": [
         596
@@ -41212,6 +41218,7 @@
         1
       ],
       "genres": [
+        7,
         31,
         32
       ],
@@ -41223,7 +41230,9 @@
       ],
       "name": "Qora",
       "player_perspectives": [],
-      "themes": [],
+      "themes": [
+        17
+      ],
       "url": "https://www.igdb.com/games/qora"
     },
     {
@@ -42274,6 +42283,7 @@
       "genres": [
         5,
         9,
+        12,
         31
       ],
       "id": 19531,
@@ -46825,8 +46835,8 @@
       "category": 4,
       "collection": 106,
       "collections": [
-        8993,
-        8994
+        106,
+        8993
       ],
       "franchise": -1,
       "franchises": [
@@ -46860,7 +46870,9 @@
     {
       "category": 10,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        106
+      ],
       "franchise": -1,
       "franchises": [
         596
@@ -54763,18 +54775,6 @@
     {
       "id": 14635,
       "company": 2688
-    },
-    {
-      "id": 14805,
-      "company": 789
-    },
-    {
-      "id": 14806,
-      "company": 407
-    },
-    {
-      "id": 14807,
-      "company": 60
     },
     {
       "id": 14844,
@@ -66407,6 +66407,22 @@
     {
       "id": 243645,
       "company": 852
+    },
+    {
+      "id": 244558,
+      "company": 60
+    },
+    {
+      "id": 244559,
+      "company": 407
+    },
+    {
+      "id": 244560,
+      "company": 789
+    },
+    {
+      "id": 244583,
+      "company": 120
     }
   ],
   "platforms": [
