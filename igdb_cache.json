@@ -7565,14 +7565,6 @@
   ],
   "games": [
     {
-      "id": 36897,
-      "name": "A Way Out"
-    },
-    {
-      "id": 185245,
-      "name": "Wonder Woman"
-    },
-    {
       "category": -1,
       "collection": -1,
       "collections": [],
@@ -10222,6 +10214,7 @@
       "category": 0,
       "collection": 6118,
       "collections": [
+        240,
         6075,
         6118
       ],
@@ -15081,7 +15074,10 @@
     {
       "category": 0,
       "collection": 6118,
-      "collections": [],
+      "collections": [
+        240,
+        6118
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -15114,6 +15110,7 @@
       "category": 0,
       "collection": 6128,
       "collections": [
+        240,
         6118,
         6128
       ],
@@ -15153,7 +15150,7 @@
       "category": 0,
       "collection": 7158,
       "collections": [
-        6118,
+        240,
         6128,
         7158
       ],
@@ -15264,6 +15261,7 @@
       "category": 0,
       "collection": 6124,
       "collections": [
+        240,
         6118,
         6124
       ],
@@ -15405,7 +15403,11 @@
     {
       "category": 0,
       "collection": 6124,
-      "collections": [],
+      "collections": [
+        240,
+        6118,
+        6124
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -21309,7 +21311,11 @@
     {
       "category": 0,
       "collection": 6124,
-      "collections": [],
+      "collections": [
+        240,
+        6118,
+        6124
+      ],
       "franchise": -1,
       "franchises": [
         845
@@ -21526,7 +21532,11 @@
     {
       "category": 0,
       "collection": 6124,
-      "collections": [],
+      "collections": [
+        240,
+        6118,
+        6124
+      ],
       "franchise": -1,
       "franchises": [
         845
@@ -22388,8 +22398,8 @@
       "category": 0,
       "collection": 453,
       "collections": [
-        453,
-        6118
+        240,
+        453
       ],
       "franchise": 24,
       "franchises": [
@@ -22427,8 +22437,8 @@
       "category": 0,
       "collection": 449,
       "collections": [
-        449,
-        6118
+        240,
+        449
       ],
       "franchise": 24,
       "franchises": [
@@ -22979,8 +22989,8 @@
       "category": 0,
       "collection": -1,
       "collections": [
-        490,
-        6118
+        240,
+        490
       ],
       "franchise": 24,
       "franchises": [
@@ -25694,8 +25704,8 @@
       "category": 0,
       "collection": -1,
       "collections": [
-        593,
-        6118
+        240,
+        593
       ],
       "franchise": -1,
       "franchises": [
@@ -25803,8 +25813,8 @@
       "category": 0,
       "collection": 595,
       "collections": [
-        595,
-        6118
+        240,
+        595
       ],
       "franchise": -1,
       "franchises": [
@@ -28640,7 +28650,7 @@
       "category": 0,
       "collection": 8854,
       "collections": [
-        6118,
+        240,
         8854
       ],
       "franchise": 24,
@@ -46435,6 +46445,34 @@
     },
     {
       "category": 0,
+      "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        2,
+        3,
+        4
+      ],
+      "genres": [
+        31
+      ],
+      "id": 36897,
+      "involved_companies": [
+        58893,
+        58894
+      ],
+      "name": "A Way Out",
+      "player_perspectives": [
+        2
+      ],
+      "themes": [
+        1
+      ],
+      "url": "https://www.igdb.com/games/a-way-out"
+    },
+    {
+      "category": 0,
       "collection": 47,
       "collections": [
         47
@@ -52031,6 +52069,30 @@
         38
       ],
       "url": "https://www.igdb.com/games/saints-row--1"
+    },
+    {
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [],
+      "id": 185245,
+      "involved_companies": [
+        158608
+      ],
+      "name": "Wonder Woman",
+      "player_perspectives": [
+        2
+      ],
+      "themes": [
+        1,
+        38
+      ],
+      "url": "https://www.igdb.com/games/wonder-woman"
     },
     {
       "category": 0,
@@ -58665,6 +58727,14 @@
       "company": 10678
     },
     {
+      "id": 58893,
+      "company": 1
+    },
+    {
+      "id": 58894,
+      "company": 12901
+    },
+    {
       "id": 58944,
       "company": 37
     },
@@ -63203,6 +63273,10 @@
     {
       "id": 158607,
       "company": 164
+    },
+    {
+      "id": 158608,
+      "company": 407
     },
     {
       "id": 158835,
