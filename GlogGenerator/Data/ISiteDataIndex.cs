@@ -36,7 +36,7 @@ namespace GlogGenerator.Data
 
         public List<TagData> GetTags();
 
-        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline);
+        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline, bool includeDrafts);
 
         public void ResolveReferences();
 

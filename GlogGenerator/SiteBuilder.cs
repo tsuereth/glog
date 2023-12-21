@@ -23,6 +23,8 @@ namespace GlogGenerator
         private readonly ILogger logger;
         private readonly ConfigData configData;
 
+        private Mode mode;
+        private IncludeDrafts includeDrafts;
         private DateTimeOffset buildDate;
         private VariableSubstitution variableSubstitution;
         private ISiteDataIndex siteDataIndex;
@@ -44,6 +46,8 @@ namespace GlogGenerator
             this.logger = logger;
             this.configData = configData;
 
+            this.mode = Mode.Build;
+            this.includeDrafts = IncludeDrafts.Never;
             this.buildDate = DateTimeOffset.Now;
 
             this.variableSubstitution = new VariableSubstitution();
@@ -81,6 +85,12 @@ namespace GlogGenerator
             return this.igdbCache;
         }
 
+        public void SetMode(Mode mode, IncludeDrafts includeDrafts)
+        {
+            this.mode = mode;
+            this.includeDrafts = includeDrafts;
+        }
+
         public DateTimeOffset GetBuildDate()
         {
             return this.buildDate;
@@ -107,7 +117,12 @@ namespace GlogGenerator
         public void UpdateDataIndex()
         {
             var igdbCache = this.GetIgdbCache();
-            this.siteDataIndex.LoadContent(igdbCache, this.GetMarkdownPipeline());
+
+            var dataIncludesDrafts =
+                (this.includeDrafts == IncludeDrafts.Always) ||
+                (this.mode == Mode.Host && this.includeDrafts == IncludeDrafts.HostModeOnly);
+
+            this.siteDataIndex.LoadContent(igdbCache, this.GetMarkdownPipeline(), dataIncludesDrafts);
         }
 
         public void ResolveDataReferences()
@@ -501,6 +516,20 @@ namespace GlogGenerator
             }
 
             return contentRoutes;
+        }
+
+        public enum Mode
+        {
+            Build,
+            Host,
+            ReportStats,
+        }
+
+        public enum IncludeDrafts
+        {
+            Never,
+            Always,
+            HostModeOnly,
         }
     }
 }

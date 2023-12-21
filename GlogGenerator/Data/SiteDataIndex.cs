@@ -228,7 +228,7 @@ namespace GlogGenerator.Data
             }
         }
 
-        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline)
+        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline, bool includeDrafts)
         {
             // Reset the current index, while tracking some "old" data to detect update conflicts.
             this.pages.Clear();
@@ -334,7 +334,7 @@ namespace GlogGenerator.Data
                     {
                         var postData = PostData.MarkdownFromFilePath(markdownPipeline, postPath, this);
 
-                        if (postData.Draft == true)
+                        if (!includeDrafts && postData.Draft == true)
                         {
                             continue;
                         }

@@ -29,7 +29,7 @@ namespace GlogGenerator.Test.Data
             var testIndex = new SiteDataIndex(logger, string.Empty);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline());
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
@@ -60,7 +60,7 @@ namespace GlogGenerator.Test.Data
             var testIndex = new SiteDataIndex(logger, string.Empty);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline());
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
@@ -73,7 +73,7 @@ namespace GlogGenerator.Test.Data
 
             testDataItem.Name = "Corrected Game Name";
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline());
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.AreEqual(1, errors.Count);
@@ -105,7 +105,7 @@ namespace GlogGenerator.Test.Data
             var testIndex = new SiteDataIndex(logger, string.Empty);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline());
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
@@ -114,7 +114,7 @@ namespace GlogGenerator.Test.Data
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformNew });
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline());
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.AreEqual(1, errors.Count);
@@ -140,14 +140,14 @@ namespace GlogGenerator.Test.Data
             var testIndex = new SiteDataIndex(logger, string.Empty);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline());
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline());
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.AreEqual(1, errors.Count);
@@ -173,7 +173,7 @@ namespace GlogGenerator.Test.Data
             var testIndex = new SiteDataIndex(logger, string.Empty);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline());
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
@@ -182,7 +182,7 @@ namespace GlogGenerator.Test.Data
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformNew });
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline());
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
 

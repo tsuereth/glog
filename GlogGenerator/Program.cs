@@ -19,6 +19,13 @@ namespace GlogGenerator
 {
     public class Program
     {
+        public enum NonBuildVerbs
+        {
+            Help,
+            New,
+            Undraft,
+        };
+
         static async Task<int> Main(string[] args)
         {
             using var loggerFactory = LoggerFactory.Create(c => c.AddConsole());
@@ -30,6 +37,7 @@ namespace GlogGenerator
             var igdbClientId = string.Empty;
             var igdbClientSecret = string.Empty;
             var inputFilesBasePath = projectProperties.DefaultInputFilesBasePath;
+            var includeDraftsString = SiteBuilder.IncludeDrafts.HostModeOnly.ToString();
             var templateFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "templates");
             var hostOrigin = "http://localhost:1313";
             var newPostPath = string.Empty;
@@ -41,11 +49,20 @@ namespace GlogGenerator
             var updateIgdbCache = false;
             var rewriteInputFiles = false;
 
+            var verbOptions = new List<string>();
+            verbOptions.AddRange(Enum.GetNames<NonBuildVerbs>());
+            verbOptions.AddRange(Enum.GetNames<SiteBuilder.Mode>());
+            verbOptions.Sort();
+            var verbOptionsString = string.Join(',', verbOptions);
+
+            var includeDraftsOptionsString = string.Join(',', Enum.GetNames<SiteBuilder.IncludeDrafts>());
+
             var options = new OptionSet()
             {
                 { "igdb-client-id=", "IGDB API (Twitch Developers) Client ID", o => igdbClientId = o },
                 { "igdb-client-secret=", "IGDB API (Twitch Developers) Client Secret", o => igdbClientSecret = o },
                 { "i|input-path=", $"Input files base path, default: {inputFilesBasePath}", o => inputFilesBasePath = o },
+                { "d|include-drafts=", $"When to include draft content (one of {includeDraftsOptionsString}), default: {includeDraftsString}", o => includeDraftsString = o },
                 { "t|templates-path=", $"Template files base path, default: {templateFilesBasePath}", o => templateFilesBasePath = o },
                 { "h|host-origin=", $"Host origin (scheme + name + port) for the site, default: {hostOrigin}", o => hostOrigin = o },
                 { "n|new-post=", $"NEW|UNDRAFT: local path to a new/draft post file", o => newPostPath = o },
@@ -57,37 +74,57 @@ namespace GlogGenerator
                 { "u|update-igdb-cache=", $"Update the IGDB data cache (requires IGDB API credentials), default: {updateIgdbCache}", o => updateIgdbCache = bool.Parse(o) },
                 { "w|rewrite-input-files=", $"Rewrite input files after loading site data, default: {rewriteInputFiles}", o => rewriteInputFiles = bool.Parse(o) },
             };
-            var verbs = options.Parse(args);
+            var verbStrings = options.Parse(args);
 
-            var activeVerb = string.Empty;
-            if (verbs.Count == 0)
+            object activeVerb = SiteBuilder.Mode.Host;
+            if (verbStrings.Count == 0)
             {
-                logger.LogWarning("No verbs provided, defaulting to `host`");
-                activeVerb = "host";
+                logger.LogWarning(
+                    "No verbs provided, defaulting to `{ActiveVerb}`",
+                    activeVerb);
             }
             else
             {
-                activeVerb = verbs[0];
-                if (verbs.Count > 1)
+                var activeVerbString = verbStrings[0];
+                if (verbStrings.Count > 1)
                 {
                     logger.LogInformation(
-                        "More than one verb was provided, using `{ActiveVerb}` and ignoring the following: {IgnoredVerbs}",
-                        activeVerb,
-                        string.Join(", ", verbs.GetRange(1, verbs.Count - 1)));
+                        "More than one verb was provided, accepting `{ActiveVerbString}` and ignoring the following: {IgnoredVerbs}",
+                        activeVerbString,
+                        string.Join(", ", verbStrings.GetRange(1, verbStrings.Count - 1)));
+                }
+
+                if (Enum.TryParse<NonBuildVerbs>(activeVerbString, ignoreCase: true, out var nonBuildVerb))
+                {
+                    activeVerb = nonBuildVerb;
+                }
+                else if (Enum.TryParse<SiteBuilder.Mode>(activeVerbString, ignoreCase: true, out var siteBuilderModeVerb))
+                {
+                    activeVerb = siteBuilderModeVerb;
+                }
+                else
+                {
+                    throw new ArgumentException($"Unrecognized verb {activeVerbString}, must be one of {verbOptionsString}");
                 }
             }
 
-            var activeVerbLowercase = activeVerb.ToLowerInvariant();
+            if (!Enum.TryParse<SiteBuilder.IncludeDrafts>(includeDraftsString, ignoreCase: true, out var includeDrafts))
+            {
+                throw new ArgumentException($"Unrecognized --include-drafts argument {includeDraftsString}, must be one of {includeDraftsOptionsString}");
+            }
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
             var configData = ConfigData.FromFilePaths(configFilePath, inputFilesBasePath, templateFilesBasePath);
             var builder = new SiteBuilder(logger, configData);
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
-            var activeVerbMustLoadSiteData = (
-                activeVerbLowercase.Equals("build", StringComparison.Ordinal) ||
-                activeVerbLowercase.Equals("host", StringComparison.Ordinal) ||
-                activeVerbLowercase.Equals("reportstats", StringComparison.Ordinal));
+            var activeVerbMustLoadSiteData = false;
+            if (activeVerb is SiteBuilder.Mode siteBuilderMode)
+            {
+                builder.SetMode(siteBuilderMode, includeDrafts);
+                activeVerbMustLoadSiteData = true;
+            }
+
             if (activeVerbMustLoadSiteData || updateIgdbCache || rewriteInputFiles)
             {
                 LoadSiteData(logger, builder);
@@ -136,36 +173,13 @@ namespace GlogGenerator
 
             var outputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
 
-            switch (activeVerbLowercase)
+            switch (activeVerb)
             {
-                case "build":
-                    LoadSiteRoutes(logger, builder);
-
-                    logger.LogInformation("Building content...");
-                    var buildTimer = Stopwatch.StartNew();
-                    BuildStaticSite.Build(builder.GetSiteState(), staticSiteOutputBasePath);
-                    buildTimer.Stop();
-                    logger.LogInformation(
-                        "Finished building {ContentCount} content routes in {BuildTimeMs} ms",
-                        builder.GetSiteState().ContentRoutes.Count,
-                        buildTimer.ElapsedMilliseconds);
-                    break;
-
-                case "help":
+                case NonBuildVerbs.Help:
                     options.WriteOptionDescriptions(Console.Out);
                     break;
 
-                case "host":
-                    LoadSiteRoutes(logger, builder);
-
-                    logger.LogInformation(
-                        "Hosting site at {HostOriginAndPath}",
-                        hostOrigin + pathPrefix);
-                    var hostLogger = loggerFactory.CreateLogger<HostLocalSite>();
-                    HostLocalSite.Host(hostLogger, builder.GetSiteState(), hostOrigin, pathPrefix);
-                    break;
-
-                case "new":
+                case NonBuildVerbs.New:
                     if (string.IsNullOrEmpty(newPostPath))
                     {
                         throw new ArgumentException("Missing or empty --new-post");
@@ -197,7 +211,53 @@ rating = []
                         newPostPath);
                     break;
 
-                case "reportstats":
+                case NonBuildVerbs.Undraft:
+                    if (string.IsNullOrEmpty(newPostPath))
+                    {
+                        throw new ArgumentException("Missing or empty --new-post");
+                    }
+
+                    if (!File.Exists(newPostPath))
+                    {
+                        throw new ArgumentException($"Post path doesn't exist: {newPostPath}");
+                    }
+
+                    var undraftDate = DateTimeOffset.Now.ToString("o");
+
+                    var postText = File.ReadAllText(newPostPath);
+                    postText = Regex.Replace(postText, @"draft = true\s*", string.Empty);
+                    postText = Regex.Replace(postText, @"date = ""[^""]*""", $"date = \"{undraftDate}\"");
+
+                    File.WriteAllText(newPostPath, postText, outputEncoding);
+                    logger.LogInformation(
+                        "Undrafted post file at {NewPostPath}",
+                        newPostPath);
+                    break;
+
+                case SiteBuilder.Mode.Build:
+                    LoadSiteRoutes(logger, builder);
+
+                    logger.LogInformation("Building content...");
+                    var buildTimer = Stopwatch.StartNew();
+                    BuildStaticSite.Build(builder.GetSiteState(), staticSiteOutputBasePath);
+                    buildTimer.Stop();
+                    logger.LogInformation(
+                        "Finished building {ContentCount} content routes in {BuildTimeMs} ms",
+                        builder.GetSiteState().ContentRoutes.Count,
+                        buildTimer.ElapsedMilliseconds);
+                    break;
+
+                case SiteBuilder.Mode.Host:
+                    LoadSiteRoutes(logger, builder);
+
+                    logger.LogInformation(
+                        "Hosting site at {HostOriginAndPath}",
+                        hostOrigin + pathPrefix);
+                    var hostLogger = loggerFactory.CreateLogger<HostLocalSite>();
+                    HostLocalSite.Host(hostLogger, builder.GetSiteState(), hostOrigin, pathPrefix);
+                    break;
+
+                case SiteBuilder.Mode.ReportStats:
                     if (string.IsNullOrEmpty(reportPath))
                     {
                         throw new ArgumentException("Missing or empty --report-path");
@@ -239,31 +299,8 @@ rating = []
                         reportPath);
                     break;
 
-                case "undraft":
-                    if (string.IsNullOrEmpty(newPostPath))
-                    {
-                        throw new ArgumentException("Missing or empty --new-post");
-                    }
-
-                    if (!File.Exists(newPostPath))
-                    {
-                        throw new ArgumentException($"Post path doesn't exist: {newPostPath}");
-                    }
-
-                    var undraftDate = DateTimeOffset.Now.ToString("o");
-
-                    var postText = File.ReadAllText(newPostPath);
-                    postText = Regex.Replace(postText, @"draft = true\s*", string.Empty);
-                    postText = Regex.Replace(postText, @"date = ""[^""]*""", $"date = \"{undraftDate}\"");
-
-                    File.WriteAllText(newPostPath, postText, outputEncoding);
-                    logger.LogInformation(
-                        "Undrafted post file at {NewPostPath}",
-                        newPostPath);
-                    break;
-
                 default:
-                    throw new ArgumentException($"Unknown verb `{activeVerb}`");
+                    throw new ArgumentException($"Unhandled verb `{activeVerb}`");
             }
 
             return 0;

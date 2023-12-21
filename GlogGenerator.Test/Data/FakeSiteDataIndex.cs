@@ -186,7 +186,7 @@ namespace GlogGenerator.Test
             return this.tags.ToList();
         }
 
-        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline)
+        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline, bool includeDrafts)
         {
             throw new NotImplementedException();
         }
