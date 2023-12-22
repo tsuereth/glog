@@ -6375,6 +6375,10 @@
       "name": "Crunchy Leaf Games"
     },
     {
+      "id": 18606,
+      "name": "Cosmonaut Studios"
+    },
+    {
       "id": 18629,
       "name": "Fellow Traveller"
     },
@@ -6801,6 +6805,10 @@
     {
       "id": 36410,
       "name": "Diamondhenge Entertainment"
+    },
+    {
+      "id": 36610,
+      "name": "Secret Mode"
     },
     {
       "id": 38087,
@@ -7564,10 +7572,6 @@
     }
   ],
   "games": [
-    {
-      "id": 116400,
-      "name": "Eternal Threads"
-    },
     {
       "category": -1,
       "collection": -1,
@@ -50209,6 +50213,36 @@
     {
       "category": 0,
       "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        9,
+        31,
+        32,
+        33
+      ],
+      "id": 116400,
+      "involved_companies": [
+        152071,
+        152072
+      ],
+      "name": "Eternal Threads",
+      "player_perspectives": [
+        1
+      ],
+      "themes": [
+        1,
+        21
+      ],
+      "url": "https://www.igdb.com/games/eternal-threads"
+    },
+    {
+      "category": 0,
+      "collection": -1,
       "collections": [
         9142
       ],
@@ -63093,6 +63127,14 @@
     {
       "id": 151728,
       "company": 82
+    },
+    {
+      "id": 152071,
+      "company": 18606
+    },
+    {
+      "id": 152072,
+      "company": 36610
     },
     {
       "id": 152238,
