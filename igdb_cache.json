@@ -5499,6 +5499,10 @@
       "name": "Phosfiend Systems"
     },
     {
+      "id": 7919,
+      "name": "Missing Link Games"
+    },
+    {
       "id": 7923,
       "name": "Blue Byte"
     },
@@ -17941,10 +17945,11 @@
       ],
       "id": 1377,
       "involved_companies": [
-        19783,
-        19785,
-        20003,
-        83296
+        245262,
+        245263,
+        245264,
+        245265,
+        245266
       ],
       "name": "Spec Ops: The Line",
       "player_perspectives": [
@@ -55721,14 +55726,6 @@
       "company": 73
     },
     {
-      "id": 19783,
-      "company": 8
-    },
-    {
-      "id": 19785,
-      "company": 902
-    },
-    {
       "id": 19787,
       "company": 517
     },
@@ -55855,10 +55852,6 @@
     {
       "id": 19998,
       "company": 111
-    },
-    {
-      "id": 20003,
-      "company": 139
     },
     {
       "id": 20004,
@@ -59871,10 +59864,6 @@
     {
       "id": 83174,
       "company": 14755
-    },
-    {
-      "id": 83296,
-      "company": 20
     },
     {
       "id": 83363,
@@ -66551,6 +66540,26 @@
     {
       "id": 244583,
       "company": 120
+    },
+    {
+      "id": 245262,
+      "company": 8
+    },
+    {
+      "id": 245263,
+      "company": 20
+    },
+    {
+      "id": 245264,
+      "company": 902
+    },
+    {
+      "id": 245265,
+      "company": 139
+    },
+    {
+      "id": 245266,
+      "company": 7919
     }
   ],
   "platforms": [
