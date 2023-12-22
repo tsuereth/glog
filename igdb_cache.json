@@ -4407,10 +4407,6 @@
       "name": "Bay 12 Games"
     },
     {
-      "id": 2771,
-      "name": "Jay Watts"
-    },
-    {
       "id": 2772,
       "name": "Murudai"
     },
@@ -13566,11 +13562,11 @@
       ],
       "id": 873,
       "involved_companies": [
-        2259,
-        2260,
         19007,
-        19008,
-        184145
+        245272,
+        245273,
+        245274,
+        245275
       ],
       "name": "Saints Row: The Third",
       "player_perspectives": [
@@ -22773,7 +22769,9 @@
     {
       "category": 0,
       "collection": 479,
-      "collections": [],
+      "collections": [
+        479
+      ],
       "franchise": 66,
       "franchises": [
         66,
@@ -30218,8 +30216,7 @@
       ],
       "id": 6342,
       "involved_companies": [
-        15115,
-        15116
+        245267
       ],
       "name": "Solar 2",
       "player_perspectives": [
@@ -52910,14 +52907,6 @@
       "company": 120
     },
     {
-      "id": 2259,
-      "company": 197
-    },
-    {
-      "id": 2260,
-      "company": 74
-    },
-    {
       "id": 2263,
       "company": 197
     },
@@ -54922,14 +54911,6 @@
       "company": 312
     },
     {
-      "id": 15115,
-      "company": 2771
-    },
-    {
-      "id": 15116,
-      "company": 2772
-    },
-    {
       "id": 15132,
       "company": 782
     },
@@ -55608,10 +55589,6 @@
     {
       "id": 19007,
       "company": 26
-    },
-    {
-      "id": 19008,
-      "company": 423
     },
     {
       "id": 19023,
@@ -64186,10 +64163,6 @@
       "company": 7462
     },
     {
-      "id": 184145,
-      "company": 7462
-    },
-    {
       "id": 184146,
       "company": 7462
     },
@@ -66560,6 +66533,26 @@
     {
       "id": 245266,
       "company": 7919
+    },
+    {
+      "id": 245267,
+      "company": 2772
+    },
+    {
+      "id": 245272,
+      "company": 74
+    },
+    {
+      "id": 245273,
+      "company": 197
+    },
+    {
+      "id": 245274,
+      "company": 423
+    },
+    {
+      "id": 245275,
+      "company": 7462
     }
   ],
   "platforms": [
