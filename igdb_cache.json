@@ -493,6 +493,10 @@
       "name": "Alone in the Dark"
     },
     {
+      "id": 366,
+      "name": "Red Dead"
+    },
+    {
       "id": 368,
       "name": "Bejeweled"
     },
@@ -4879,6 +4883,10 @@
       "name": "VD-Dev"
     },
     {
+      "id": 4594,
+      "name": "Qubic Games"
+    },
+    {
       "id": 4602,
       "name": "BlitWorks"
     },
@@ -6831,6 +6839,10 @@
       "name": "Flagship"
     },
     {
+      "id": 41489,
+      "name": "MINTROCKET"
+    },
+    {
       "id": 42627,
       "name": "Capcom Planning Room 2"
     },
@@ -7573,10 +7585,6 @@
   ],
   "games": [
     {
-      "id": 203722,
-      "name": "Dave the Diver"
-    },
-    {
       "category": -1,
       "collection": -1,
       "collections": [],
@@ -8311,10 +8319,10 @@
       "id": 59,
       "involved_companies": [
         5197,
-        5198,
         18657,
-        18965,
-        95343
+        245606,
+        245607,
+        245608
       ],
       "name": "The Elder Scrolls IV: Oblivion",
       "player_perspectives": [
@@ -14978,7 +14986,7 @@
         8226,
         18943,
         18944,
-        18945
+        245513
       ],
       "name": "Mirror's Edge",
       "player_perspectives": [
@@ -17664,7 +17672,9 @@
     {
       "category": 0,
       "collection": 5503,
-      "collections": [],
+      "collections": [
+        5503
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -20374,7 +20384,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        366
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -41054,9 +41066,9 @@
       ],
       "id": 16925,
       "involved_companies": [
-        134679,
         158835,
-        158836
+        158836,
+        245449
       ],
       "name": "Dex",
       "player_perspectives": [
@@ -52194,6 +52206,36 @@
       "url": "https://www.igdb.com/games/star-wars-jedi-survivor"
     },
     {
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        13,
+        31
+      ],
+      "id": 203722,
+      "involved_companies": [
+        218743,
+        218744
+      ],
+      "name": "Dave the Diver",
+      "player_perspectives": [
+        4
+      ],
+      "themes": [
+        1,
+        17,
+        28
+      ],
+      "url": "https://www.igdb.com/games/dave-the-diver"
+    },
+    {
       "category": 8,
       "collection": -1,
       "collections": [
@@ -53477,10 +53519,6 @@
     {
       "id": 5197,
       "company": 126
-    },
-    {
-      "id": 5198,
-      "company": 279
     },
     {
       "id": 5206,
@@ -55547,10 +55585,6 @@
       "company": 3956
     },
     {
-      "id": 18945,
-      "company": 712
-    },
-    {
       "id": 18949,
       "company": 2
     },
@@ -55565,10 +55599,6 @@
     {
       "id": 18953,
       "company": 8
-    },
-    {
-      "id": 18965,
-      "company": 1053
     },
     {
       "id": 18983,
@@ -60403,10 +60433,6 @@
       "company": 16565
     },
     {
-      "id": 95343,
-      "company": 16565
-    },
-    {
       "id": 95347,
       "company": 16565
     },
@@ -62641,10 +62667,6 @@
     {
       "id": 134658,
       "company": 1054
-    },
-    {
-      "id": 134679,
-      "company": 20207
     },
     {
       "id": 134731,
@@ -65579,6 +65601,14 @@
       "company": 13634
     },
     {
+      "id": 218743,
+      "company": 41489
+    },
+    {
+      "id": 218744,
+      "company": 41489
+    },
+    {
       "id": 219076,
       "company": 23986
     },
@@ -66557,6 +66587,26 @@
     {
       "id": 245275,
       "company": 7462
+    },
+    {
+      "id": 245449,
+      "company": 4594
+    },
+    {
+      "id": 245513,
+      "company": 712
+    },
+    {
+      "id": 245606,
+      "company": 279
+    },
+    {
+      "id": 245607,
+      "company": 16565
+    },
+    {
+      "id": 245608,
+      "company": 104
     }
   ],
   "platforms": [
