@@ -1907,6 +1907,10 @@
     {
       "id": 9321,
       "name": "Final Fantasy VII Remake"
+    },
+    {
+      "id": 9371,
+      "name": "Dynasty Warriors: Gundam"
     }
   ],
   "companies": [
@@ -4737,10 +4741,6 @@
     {
       "id": 3991,
       "name": "Russel"
-    },
-    {
-      "id": 3996,
-      "name": "Experimental Gameplay"
     },
     {
       "id": 4014,
@@ -13710,10 +13710,10 @@
       ],
       "id": 942,
       "involved_companies": [
-        43906,
         43907,
         43908,
-        134241
+        134241,
+        245890
       ],
       "name": "World of Goo",
       "player_perspectives": [
@@ -14985,8 +14985,8 @@
       "involved_companies": [
         8226,
         18943,
-        18944,
-        245513
+        245513,
+        245771
       ],
       "name": "Mirror's Edge",
       "player_perspectives": [
@@ -17894,9 +17894,9 @@
       ],
       "id": 1363,
       "involved_companies": [
-        19004,
         43909,
-        43910
+        245900,
+        245901
       ],
       "name": "Little Inferno",
       "player_perspectives": [
@@ -30988,7 +30988,8 @@
       "category": 0,
       "collection": -1,
       "collections": [
-        550
+        550,
+        9371
       ],
       "franchise": -1,
       "franchises": [
@@ -31011,7 +31012,9 @@
         16499
       ],
       "name": "Dynasty Warriors: Gundam",
-      "player_perspectives": [],
+      "player_perspectives": [
+        2
+      ],
       "themes": [
         1,
         18
@@ -39299,7 +39302,7 @@
       "id": 14545,
       "involved_companies": [
         43904,
-        43905
+        245902
       ],
       "name": "Human Resource Machine",
       "player_perspectives": [
@@ -52255,7 +52258,8 @@
       "id": 204350,
       "involved_companies": [
         174439,
-        174440
+        174440,
+        245998
       ],
       "name": "The Last of Us Part I",
       "player_perspectives": [
@@ -55581,10 +55585,6 @@
       "company": 94
     },
     {
-      "id": 18944,
-      "company": 3956
-    },
-    {
       "id": 18949,
       "company": 2
     },
@@ -55611,10 +55611,6 @@
     {
       "id": 18997,
       "company": 3991
-    },
-    {
-      "id": 19004,
-      "company": 3996
     },
     {
       "id": 19006,
@@ -57761,14 +57757,6 @@
       "company": 2766
     },
     {
-      "id": 43905,
-      "company": 11984
-    },
-    {
-      "id": 43906,
-      "company": 612
-    },
-    {
       "id": 43907,
       "company": 613
     },
@@ -57778,10 +57766,6 @@
     },
     {
       "id": 43909,
-      "company": 2766
-    },
-    {
-      "id": 43910,
       "company": 2766
     },
     {
@@ -66607,6 +66591,30 @@
     {
       "id": 245608,
       "company": 104
+    },
+    {
+      "id": 245771,
+      "company": 3956
+    },
+    {
+      "id": 245890,
+      "company": 612
+    },
+    {
+      "id": 245900,
+      "company": 11984
+    },
+    {
+      "id": 245901,
+      "company": 2766
+    },
+    {
+      "id": 245902,
+      "company": 11984
+    },
+    {
+      "id": 245998,
+      "company": 2121
     }
   ],
   "platforms": [
