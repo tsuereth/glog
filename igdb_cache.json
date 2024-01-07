@@ -7589,10 +7589,6 @@
   ],
   "games": [
     {
-      "id": 413,
-      "name": "Final Fantasy X-2"
-    },
-    {
       "category": -1,
       "collection": -1,
       "collections": [],
@@ -10687,6 +10683,41 @@
         38
       ],
       "url": "https://www.igdb.com/games/final-fantasy-crystal-chronicles"
+    },
+    {
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        39,
+        9008
+      ],
+      "franchise": 4,
+      "franchises": [
+        4
+      ],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        31
+      ],
+      "id": 413,
+      "involved_companies": [
+        130170
+      ],
+      "name": "Final Fantasy X-2",
+      "player_perspectives": [
+        2,
+        4
+      ],
+      "themes": [
+        17,
+        18,
+        38,
+        44
+      ],
+      "url": "https://www.igdb.com/games/final-fantasy-x-2"
     },
     {
       "category": 0,
@@ -62310,6 +62341,10 @@
     {
       "id": 130035,
       "company": 8382
+    },
+    {
+      "id": 130170,
+      "company": 26
     },
     {
       "id": 130176,
