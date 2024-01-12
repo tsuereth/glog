@@ -22008,8 +22008,8 @@
       "id": 2239,
       "involved_companies": [
         224561,
-        229577,
-        229578
+        247116,
+        247117
       ],
       "name": "Pikmin",
       "player_perspectives": [
@@ -27699,6 +27699,7 @@
       "collections": [],
       "franchise": 238,
       "franchises": [
+        124,
         238
       ],
       "game_modes": [
@@ -33463,7 +33464,9 @@
     {
       "category": 0,
       "collection": 368,
-      "collections": [],
+      "collections": [
+        368
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -33476,9 +33479,7 @@
       "involved_companies": [
         106525,
         106526,
-        229679,
-        240561,
-        240562
+        240561
       ],
       "name": "Bejeweled",
       "player_perspectives": [],
@@ -33851,7 +33852,9 @@
     {
       "category": 0,
       "collection": 2766,
-      "collections": [],
+      "collections": [
+        2766
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -66163,18 +66166,6 @@
       "company": 70
     },
     {
-      "id": 229577,
-      "company": 70
-    },
-    {
-      "id": 229578,
-      "company": 421
-    },
-    {
-      "id": 229679,
-      "company": 700
-    },
-    {
       "id": 229776,
       "company": 1364
     },
@@ -66503,10 +66494,6 @@
       "company": 1893
     },
     {
-      "id": 240562,
-      "company": 1893
-    },
-    {
       "id": 241217,
       "company": 2254
     },
@@ -66685,6 +66672,14 @@
     {
       "id": 246595,
       "company": 4834
+    },
+    {
+      "id": 247116,
+      "company": 70
+    },
+    {
+      "id": 247117,
+      "company": 421
     }
   ],
   "platforms": [
