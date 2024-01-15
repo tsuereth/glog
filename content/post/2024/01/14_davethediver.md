@@ -16,7 +16,7 @@ And it continuously delivers those ideas with such *enthusiasm*, with such consi
 
 ![]($SiteBaseURL$dave-the-diver_enhancing.jpg){width=640 height=360}
 
-That promise of delightful novelty is what kept me going for <s>[one more round](tag:Civilization)</s> one more *dive*, despite various rough edges in one system or another, through Dave the Diver's impressively lengthy story -- easily 20 or 30 hours of fishing and sushi-preparing and mystery-solving and world-saving.  I can't stress this enough: *mermaids* are one of the less surprising parts of Dave's story.
+That promise of delightful novelty is what kept me going for ~~[one more round](tag:Civilization)~~ one more *dive*, despite various rough edges in one system or another, through Dave the Diver's impressively lengthy story -- easily 20 or 30 hours of fishing and sushi-preparing and mystery-solving and world-saving.  I can't stress this enough: *mermaids* are one of the less surprising parts of Dave's story.
 
 Unfortunately, once the main narrative is over, it's hard to stay motivated for any secondary objectives Dave might have left.  Collecting more [MarinCa](https://dave-the-diver.fandom.com/wiki/Marinca) and sourcing more picky customers' ingredients does start to feel samey after the story-driven gimmicks have dried up.
 
