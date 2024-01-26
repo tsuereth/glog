@@ -6,7 +6,7 @@ game = [ "Middle-earth: Shadow of War - Desolation of Mordor" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 +++
-Just as with [Blade of Galadriel](game:Middle-earth: Shadow of War - The Blade of Galadriel), I'd [previously]($SiteBaseURL$2018/07/22/war-never-changes/) dismissed [Desolation of Mordor](game:Middle-earth: Shadow of War - Desolation of Mordor) for neglecting some of [Shadow of War](game:Middle-earth: Shadow of War)'s fundamentals -- in particular, Talion's "gravewalking" through death with minimal penalty.  Baranor, unfortunately, is a *mere mortal* and his life uh ... resets, upon death.
+Just as with [Blade of Galadriel](game:Middle-earth: Shadow of War - Blade of Galadriel), I'd [previously]($SiteBaseURL$2018/07/22/war-never-changes/) dismissed [Desolation of Mordor](game:Middle-earth: Shadow of War - Desolation of Mordor) for neglecting some of [Shadow of War](game:Middle-earth: Shadow of War)'s fundamentals -- in particular, Talion's "gravewalking" through death with minimal penalty.  Baranor, unfortunately, is a *mere mortal* and his life uh ... resets, upon death.
 
 This DLC's rogue-like approach, where you can lose hired mercenaries and looted gear upgrades if a captain gets the better of you, made me put my gamepad down in annoyed frustration a couple times.  But I was lured back, and ultimately finished Baranor's story, thanks to Desolation of Mordor's other design ambition: [Batman](tag:Batman: Arkham) tech.
 
@@ -21,5 +21,5 @@ It's a shame that Desolation of Mordor didn't aim higher with its narrative: asi
 Which isn't really my cup of tea.  But!  I'm still glad that I gave Desolation of Mordor enough chances to enjoy deploying a deadly gadget arsenal on a hapless fortess of orcs.
 
 **Better than**: <game:Middle-earth: Shadow of Mordor - The Bright Lord>  
-**Not as good as**: <game:Middle-earth: Shadow of War - The Blade of Galadriel>  
+**Not as good as**: <game:Middle-earth: Shadow of War - Blade of Galadriel>  
 **I dunno if I should get my hopes up**: but this DLC suggests that [Monolith](tag:Monolith Productions) *could* pull off emulating [Rocksteady](tag:Rocksteady Studios)'s formula in their planned <game:Wonder Woman> game.

@@ -2,11 +2,11 @@
 date = "2023-11-19T14:16:09.9709292-08:00"
 title = "The Lady of Lite"
 category = [ "Playing A Game" ]
-game = [ "Middle-earth: Shadow of War - The Blade of Galadriel" ]
+game = [ "Middle-earth: Shadow of War - Blade of Galadriel" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 +++
-[Back in 2018]($SiteBaseURL$2018/07/22/war-never-changes/), I dismissed the [Blade of Galadriel add-on](game:Middle-earth: Shadow of War - The Blade of Galadriel) as presumably *diminished* by the absence of [Shadow of War](game:Middle-earth: Shadow of War)'s excellent Nemesis System.  But despite that, Blade of Galadriel does have merits of its own, separate from Talion's big orc-conquering adventure.
+[Back in 2018]($SiteBaseURL$2018/07/22/war-never-changes/), I dismissed the [Blade of Galadriel add-on](game:Middle-earth: Shadow of War - Blade of Galadriel) as presumably *diminished* by the absence of [Shadow of War](game:Middle-earth: Shadow of War)'s excellent Nemesis System.  But despite that, Blade of Galadriel does have merits of its own, separate from Talion's big orc-conquering adventure.
 
 Eltariel's light-element powers make for a couple interesting changes to combat: shining her elven flashlight into orcs' faces is a neat crowd-control trick, and wonderfully effective when bum-rushing an enemy party.  Stunning a group then **disintegrating** them one by one is a fun, satisfying time.
 

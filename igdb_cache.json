@@ -47181,32 +47181,8 @@
       "url": "https://www.igdb.com/games/the-legend-of-zelda-four-swords-anniversary-edition"
     },
     {
-      "category": 2,
-      "collection": -1,
-      "collections": [],
-      "franchise": -1,
-      "franchises": [],
-      "game_modes": [
-        1
-      ],
-      "genres": [
-        12,
-        31
-      ],
-      "id": 46450,
-      "involved_companies": [
-        51836,
-        51839
-      ],
-      "name": "Middle-earth: Shadow of War - The Blade of Galadriel",
-      "player_perspectives": [
-        2
-      ],
-      "themes": [
-        1,
-        17
-      ],
-      "url": "https://www.igdb.com/games/middle-earth-shadow-of-war-the-blade-of-galadriel"
+      "id": 164734,
+      "name": "Middle-earth: Shadow of War - Blade of Galadriel"
     },
     {
       "category": 0,

@@ -19,7 +19,7 @@ Evidently, Shadow Wars requires a hell of a lot more grinding through orcs, leve
 
 By electing <i>not</i> to continue this tiring routine, I'm departing Shadow of War with a high opinion of it.  Building my army and conquering Mordor was way fun.  After 40 hours of it, though, I've got no interest in the epilogue -- nor in its awkward-sounding DLCs.
 
-([Blade of Galadriel](game:Middle-earth: Shadow of War - The Blade of Galadriel) strips out the Nemesis system?  And [Desolation of Mordor](game:Middle-earth: Shadow of War - Desolation of Mordor) removes respawning?  Nah, thanks.)
+([Blade of Galadriel](game:Middle-earth: Shadow of War - Blade of Galadriel) strips out the Nemesis system?  And [Desolation of Mordor](game:Middle-earth: Shadow of War - Desolation of Mordor) removes respawning?  Nah, thanks.)
 
 <b>Better than</b>: <game:Middle-earth: Shadow of Mordor>, <game:Agents of Mayhem>  
 <b>Not as good as</b>: <game:The Legend of Zelda: Breath of the Wild>, <game:The Witcher 3: Wild Hunt>  
