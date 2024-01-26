@@ -1137,6 +1137,10 @@
       "name": "Muramasa"
     },
     {
+      "id": 2232,
+      "name": "Mighty Switch Force"
+    },
+    {
       "id": 2233,
       "name": "FTL: Faster Than Light"
     },
@@ -8367,7 +8371,9 @@
     {
       "category": 0,
       "collection": 5,
-      "collections": [],
+      "collections": [
+        5
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -8395,7 +8401,9 @@
     {
       "category": 8,
       "collection": 5,
-      "collections": [],
+      "collections": [
+        5
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -8425,7 +8433,9 @@
     {
       "category": 8,
       "collection": 5,
-      "collections": [],
+      "collections": [
+        5
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -8455,7 +8465,9 @@
     {
       "category": 0,
       "collection": 87,
-      "collections": [],
+      "collections": [
+        87
+      ],
       "franchise": -1,
       "franchises": [
         1724
@@ -8487,7 +8499,9 @@
     {
       "category": 0,
       "collection": 87,
-      "collections": [],
+      "collections": [
+        87
+      ],
       "franchise": -1,
       "franchises": [
         1724
@@ -8696,7 +8710,9 @@
     {
       "category": 0,
       "collection": 353,
-      "collections": [],
+      "collections": [
+        353
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -8767,7 +8783,9 @@
     {
       "category": 0,
       "collection": 23,
-      "collections": [],
+      "collections": [
+        23
+      ],
       "franchise": 1,
       "franchises": [
         1
@@ -8833,7 +8851,9 @@
     {
       "category": 0,
       "collection": 23,
-      "collections": [],
+      "collections": [
+        23
+      ],
       "franchise": 1,
       "franchises": [
         1
@@ -8897,7 +8917,9 @@
     {
       "category": 0,
       "collection": 23,
-      "collections": [],
+      "collections": [
+        23
+      ],
       "franchise": 1,
       "franchises": [
         1
@@ -8968,7 +8990,9 @@
     {
       "category": 0,
       "collection": 1130,
-      "collections": [],
+      "collections": [
+        1130
+      ],
       "franchise": -1,
       "franchises": [
         950
@@ -9352,7 +9376,9 @@
     {
       "category": 0,
       "collection": 4190,
-      "collections": [],
+      "collections": [
+        4190
+      ],
       "franchise": 1,
       "franchises": [
         1
@@ -9389,7 +9415,9 @@
     {
       "category": 0,
       "collection": 2565,
-      "collections": [],
+      "collections": [
+        2565
+      ],
       "franchise": 1,
       "franchises": [
         1
@@ -9420,7 +9448,9 @@
     {
       "category": 0,
       "collection": 2565,
-      "collections": [],
+      "collections": [
+        2565
+      ],
       "franchise": 1,
       "franchises": [
         1
@@ -9452,7 +9482,9 @@
     {
       "category": 0,
       "collection": 4188,
-      "collections": [],
+      "collections": [
+        4188
+      ],
       "franchise": 1,
       "franchises": [
         1
@@ -9482,7 +9514,9 @@
     {
       "category": 0,
       "collection": 4188,
-      "collections": [],
+      "collections": [
+        4188
+      ],
       "franchise": 1,
       "franchises": [
         1
@@ -9512,7 +9546,9 @@
     {
       "category": 0,
       "collection": 79,
-      "collections": [],
+      "collections": [
+        79
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -9612,7 +9648,9 @@
     {
       "category": 0,
       "collection": 30,
-      "collections": [],
+      "collections": [
+        30
+      ],
       "franchise": -1,
       "franchises": [
         509
@@ -9643,7 +9681,9 @@
     {
       "category": 0,
       "collection": 32,
-      "collections": [],
+      "collections": [
+        32
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -9675,7 +9715,9 @@
     {
       "category": 0,
       "collection": 32,
-      "collections": [],
+      "collections": [
+        32
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -9707,7 +9749,9 @@
     {
       "category": 0,
       "collection": 61,
-      "collections": [],
+      "collections": [
+        61
+      ],
       "franchise": -1,
       "franchises": [
         979
@@ -9830,7 +9874,9 @@
     {
       "category": 0,
       "collection": 52,
-      "collections": [],
+      "collections": [
+        52
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -9928,7 +9974,9 @@
     {
       "category": 0,
       "collection": 71,
-      "collections": [],
+      "collections": [
+        71
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -9962,7 +10010,9 @@
     {
       "category": 0,
       "collection": 52,
-      "collections": [],
+      "collections": [
+        52
+      ],
       "franchise": -1,
       "franchises": [
         589
@@ -9994,7 +10044,9 @@
     {
       "category": 0,
       "collection": 34,
-      "collections": [],
+      "collections": [
+        34
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -10025,7 +10077,9 @@
     {
       "category": 0,
       "collection": 58,
-      "collections": [],
+      "collections": [
+        58
+      ],
       "franchise": -1,
       "franchises": [
         425
@@ -10125,7 +10179,9 @@
     {
       "category": 0,
       "collection": 156,
-      "collections": [],
+      "collections": [
+        156
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -10227,7 +10283,9 @@
     {
       "category": 0,
       "collection": 34,
-      "collections": [],
+      "collections": [
+        34
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -11204,7 +11262,9 @@
     {
       "category": 0,
       "collection": 277,
-      "collections": [],
+      "collections": [
+        277
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -11238,7 +11298,9 @@
     {
       "category": 2,
       "collection": 52,
-      "collections": [],
+      "collections": [
+        52
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -11267,7 +11329,9 @@
     {
       "category": 4,
       "collection": 52,
-      "collections": [],
+      "collections": [
+        52
+      ],
       "franchise": -1,
       "franchises": [
         589
@@ -11298,7 +11362,9 @@
     {
       "category": 4,
       "collection": 52,
-      "collections": [],
+      "collections": [
+        52
+      ],
       "franchise": -1,
       "franchises": [
         589
@@ -11365,7 +11431,9 @@
     {
       "category": 0,
       "collection": 60,
-      "collections": [],
+      "collections": [
+        60
+      ],
       "franchise": 1,
       "franchises": [
         1
@@ -11440,7 +11508,9 @@
     {
       "category": 0,
       "collection": 64,
-      "collections": [],
+      "collections": [
+        64
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -11574,7 +11644,9 @@
     {
       "category": 0,
       "collection": 579,
-      "collections": [],
+      "collections": [
+        579
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -11716,7 +11788,9 @@
     {
       "category": 0,
       "collection": 68,
-      "collections": [],
+      "collections": [
+        68
+      ],
       "franchise": 5,
       "franchises": [
         5
@@ -11749,7 +11823,9 @@
     {
       "category": 0,
       "collection": 68,
-      "collections": [],
+      "collections": [
+        68
+      ],
       "franchise": 5,
       "franchises": [
         5
@@ -11781,7 +11857,9 @@
     {
       "category": 0,
       "collection": 2156,
-      "collections": [],
+      "collections": [
+        2156
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -11849,7 +11927,9 @@
     {
       "category": 0,
       "collection": 100,
-      "collections": [],
+      "collections": [
+        100
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -11952,7 +12032,9 @@
     {
       "category": 0,
       "collection": 1494,
-      "collections": [],
+      "collections": [
+        1494
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -12045,7 +12127,9 @@
     {
       "category": 0,
       "collection": 349,
-      "collections": [],
+      "collections": [
+        349
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -12161,7 +12245,9 @@
     {
       "category": 0,
       "collection": 46,
-      "collections": [],
+      "collections": [
+        46
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -12190,7 +12276,9 @@
     {
       "category": 0,
       "collection": 293,
-      "collections": [],
+      "collections": [
+        293
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -12358,7 +12446,9 @@
     {
       "category": 0,
       "collection": 8564,
-      "collections": [],
+      "collections": [
+        8564
+      ],
       "franchise": 7,
       "franchises": [
         7
@@ -12391,7 +12481,9 @@
     {
       "category": 0,
       "collection": 111,
-      "collections": [],
+      "collections": [
+        111
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -12470,7 +12562,9 @@
     {
       "category": 0,
       "collection": 114,
-      "collections": [],
+      "collections": [
+        114
+      ],
       "franchise": 9,
       "franchises": [
         9,
@@ -12639,7 +12733,9 @@
     {
       "category": 0,
       "collection": 116,
-      "collections": [],
+      "collections": [
+        116
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -12672,7 +12768,9 @@
     {
       "category": 0,
       "collection": 4640,
-      "collections": [],
+      "collections": [
+        4640
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -12701,7 +12799,9 @@
     {
       "category": 0,
       "collection": 7463,
-      "collections": [],
+      "collections": [
+        7463
+      ],
       "franchise": 6,
       "franchises": [
         6
@@ -12733,7 +12833,9 @@
     {
       "category": 0,
       "collection": 515,
-      "collections": [],
+      "collections": [
+        515
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -13095,7 +13197,9 @@
     {
       "category": 0,
       "collection": 177,
-      "collections": [],
+      "collections": [
+        177
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -13561,7 +13665,9 @@
     {
       "category": 0,
       "collection": 3579,
-      "collections": [],
+      "collections": [
+        3579
+      ],
       "franchise": 10,
       "franchises": [
         10
@@ -13634,7 +13740,9 @@
     {
       "category": 0,
       "collection": 197,
-      "collections": [],
+      "collections": [
+        197
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -13710,7 +13818,9 @@
     {
       "category": 0,
       "collection": 2897,
-      "collections": [],
+      "collections": [
+        2897
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -13740,7 +13850,9 @@
     {
       "category": 0,
       "collection": 218,
-      "collections": [],
+      "collections": [
+        218
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -13869,7 +13981,9 @@
     {
       "category": 0,
       "collection": 81,
-      "collections": [],
+      "collections": [
+        81
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -14218,7 +14332,9 @@
     {
       "category": 0,
       "collection": 5098,
-      "collections": [],
+      "collections": [
+        5098
+      ],
       "franchise": 19,
       "franchises": [
         19
@@ -14250,7 +14366,9 @@
     {
       "category": 0,
       "collection": 78,
-      "collections": [],
+      "collections": [
+        78
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -14357,7 +14475,9 @@
     {
       "category": 0,
       "collection": 227,
-      "collections": [],
+      "collections": [
+        227
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -14385,7 +14505,9 @@
     {
       "category": 0,
       "collection": 227,
-      "collections": [],
+      "collections": [
+        227
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -14488,7 +14610,9 @@
     {
       "category": 0,
       "collection": 229,
-      "collections": [],
+      "collections": [
+        229
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -14514,7 +14638,9 @@
     {
       "category": 0,
       "collection": 229,
-      "collections": [],
+      "collections": [
+        229
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -14920,7 +15046,9 @@
     {
       "category": 8,
       "collection": 106,
-      "collections": [],
+      "collections": [
+        106
+      ],
       "franchise": -1,
       "franchises": [
         596
@@ -15104,7 +15232,9 @@
     {
       "category": 0,
       "collection": 4808,
-      "collections": [],
+      "collections": [
+        4808
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -16089,7 +16219,9 @@
     {
       "category": 0,
       "collection": 2173,
-      "collections": [],
+      "collections": [
+        2173
+      ],
       "franchise": -1,
       "franchises": [
         1644
@@ -16932,7 +17064,9 @@
     {
       "category": 0,
       "collection": 277,
-      "collections": [],
+      "collections": [
+        277
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -16962,7 +17096,9 @@
     {
       "category": 0,
       "collection": 2950,
-      "collections": [],
+      "collections": [
+        2950
+      ],
       "franchise": 28,
       "franchises": [
         28
@@ -17038,7 +17174,9 @@
     {
       "category": 0,
       "collection": 1010,
-      "collections": [],
+      "collections": [
+        1010
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -17070,7 +17208,9 @@
     {
       "category": 0,
       "collection": 280,
-      "collections": [],
+      "collections": [
+        280
+      ],
       "franchise": -1,
       "franchises": [
         885
@@ -17103,7 +17243,9 @@
     {
       "category": 0,
       "collection": 280,
-      "collections": [],
+      "collections": [
+        280
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -17133,7 +17275,9 @@
     {
       "category": 0,
       "collection": 305,
-      "collections": [],
+      "collections": [
+        305
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -17166,7 +17310,9 @@
     {
       "category": 0,
       "collection": 4357,
-      "collections": [],
+      "collections": [
+        4357
+      ],
       "franchise": -1,
       "franchises": [
         1017,
@@ -17202,7 +17348,9 @@
     {
       "category": 0,
       "collection": 4357,
-      "collections": [],
+      "collections": [
+        4357
+      ],
       "franchise": -1,
       "franchises": [
         1017,
@@ -17235,7 +17383,9 @@
     {
       "category": 0,
       "collection": 1246,
-      "collections": [],
+      "collections": [
+        1246
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -17268,7 +17418,9 @@
     {
       "category": 0,
       "collection": 572,
-      "collections": [],
+      "collections": [
+        572
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -17301,7 +17453,9 @@
     {
       "category": 0,
       "collection": 281,
-      "collections": [],
+      "collections": [
+        281
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -17337,7 +17491,8 @@
       "category": 0,
       "collection": 2342,
       "collections": [
-        27
+        27,
+        2342
       ],
       "franchise": 135,
       "franchises": [
@@ -17397,7 +17552,9 @@
     {
       "category": 0,
       "collection": 284,
-      "collections": [],
+      "collections": [
+        284
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -17459,7 +17616,9 @@
     {
       "category": 0,
       "collection": 114,
-      "collections": [],
+      "collections": [
+        114
+      ],
       "franchise": -1,
       "franchises": [
         857
@@ -17562,7 +17721,9 @@
     {
       "category": 0,
       "collection": 3699,
-      "collections": [],
+      "collections": [
+        3699
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -17624,7 +17785,9 @@
     {
       "category": 0,
       "collection": 292,
-      "collections": [],
+      "collections": [
+        292
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -17656,7 +17819,9 @@
     {
       "category": 0,
       "collection": 1890,
-      "collections": [],
+      "collections": [
+        1890
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -17988,7 +18153,9 @@
     {
       "category": 0,
       "collection": 294,
-      "collections": [],
+      "collections": [
+        294
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -18018,7 +18185,9 @@
     {
       "category": 0,
       "collection": 1094,
-      "collections": [],
+      "collections": [
+        1094
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -18051,7 +18220,9 @@
     {
       "category": 0,
       "collection": 430,
-      "collections": [],
+      "collections": [
+        430
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -18212,7 +18383,9 @@
     {
       "category": 0,
       "collection": 298,
-      "collections": [],
+      "collections": [
+        298
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -18524,7 +18697,9 @@
     {
       "category": 0,
       "collection": 307,
-      "collections": [],
+      "collections": [
+        307
+      ],
       "franchise": -1,
       "franchises": [
         2687
@@ -18558,7 +18733,9 @@
     {
       "category": 0,
       "collection": 307,
-      "collections": [],
+      "collections": [
+        307
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -18587,7 +18764,9 @@
     {
       "category": 0,
       "collection": 308,
-      "collections": [],
+      "collections": [
+        308
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -18616,7 +18795,9 @@
     {
       "category": 0,
       "collection": 308,
-      "collections": [],
+      "collections": [
+        308
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -18646,7 +18827,9 @@
     {
       "category": 0,
       "collection": 310,
-      "collections": [],
+      "collections": [
+        310
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -18674,7 +18857,9 @@
     {
       "category": 0,
       "collection": 4357,
-      "collections": [],
+      "collections": [
+        4357
+      ],
       "franchise": -1,
       "franchises": [
         1017,
@@ -19098,7 +19283,9 @@
     {
       "category": 0,
       "collection": 327,
-      "collections": [],
+      "collections": [
+        327
+      ],
       "franchise": -1,
       "franchises": [
         833
@@ -19133,7 +19320,9 @@
     {
       "category": 0,
       "collection": 335,
-      "collections": [],
+      "collections": [
+        335
+      ],
       "franchise": -1,
       "franchises": [
         3106
@@ -19168,7 +19357,9 @@
     {
       "category": 0,
       "collection": 336,
-      "collections": [],
+      "collections": [
+        336
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -19200,7 +19391,9 @@
     {
       "category": 0,
       "collection": 1113,
-      "collections": [],
+      "collections": [
+        1113
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -19739,7 +19932,9 @@
     {
       "category": 0,
       "collection": 344,
-      "collections": [],
+      "collections": [
+        344
+      ],
       "franchise": -1,
       "franchises": [
         2239
@@ -19770,7 +19965,9 @@
     {
       "category": 0,
       "collection": 344,
-      "collections": [],
+      "collections": [
+        344
+      ],
       "franchise": -1,
       "franchises": [
         2239
@@ -19801,7 +19998,9 @@
     {
       "category": 0,
       "collection": 344,
-      "collections": [],
+      "collections": [
+        344
+      ],
       "franchise": -1,
       "franchises": [
         2239
@@ -19833,7 +20032,9 @@
     {
       "category": 0,
       "collection": 345,
-      "collections": [],
+      "collections": [
+        345
+      ],
       "franchise": -1,
       "franchises": [
         1844
@@ -19863,7 +20064,9 @@
     {
       "category": 0,
       "collection": 345,
-      "collections": [],
+      "collections": [
+        345
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -19918,7 +20121,9 @@
     {
       "category": 0,
       "collection": 564,
-      "collections": [],
+      "collections": [
+        564
+      ],
       "franchise": 39,
       "franchises": [
         39
@@ -19950,7 +20155,9 @@
     {
       "category": 0,
       "collection": 352,
-      "collections": [],
+      "collections": [
+        352
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -20022,7 +20229,9 @@
     {
       "category": 0,
       "collection": 555,
-      "collections": [],
+      "collections": [
+        555
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -20103,7 +20312,9 @@
     {
       "category": 0,
       "collection": 43,
-      "collections": [],
+      "collections": [
+        43
+      ],
       "franchise": -1,
       "franchises": [
         458
@@ -20364,7 +20575,9 @@
     {
       "category": 0,
       "collection": 1820,
-      "collections": [],
+      "collections": [
+        1820
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -21183,7 +21396,9 @@
     {
       "category": 0,
       "collection": 1268,
-      "collections": [],
+      "collections": [
+        1268
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -21302,7 +21517,9 @@
     {
       "category": 0,
       "collection": 434,
-      "collections": [],
+      "collections": [
+        434
+      ],
       "franchise": -1,
       "franchises": [
         3081
@@ -21333,7 +21550,9 @@
     {
       "category": 0,
       "collection": 440,
-      "collections": [],
+      "collections": [
+        440
+      ],
       "franchise": -1,
       "franchises": [
         1525
@@ -21517,7 +21736,9 @@
     {
       "category": 0,
       "collection": 2854,
-      "collections": [],
+      "collections": [
+        2854
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -21583,7 +21804,9 @@
     {
       "category": 9,
       "collection": 7151,
-      "collections": [],
+      "collections": [
+        2232
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -21614,7 +21837,9 @@
     {
       "category": 0,
       "collection": 3689,
-      "collections": [],
+      "collections": [
+        3689
+      ],
       "franchise": 51,
       "franchises": [
         51
@@ -21686,7 +21911,9 @@
     {
       "category": 0,
       "collection": 447,
-      "collections": [],
+      "collections": [
+        447
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -21748,7 +21975,9 @@
     {
       "category": 0,
       "collection": 681,
-      "collections": [],
+      "collections": [
+        681
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -21880,7 +22109,9 @@
     {
       "category": 0,
       "collection": 4422,
-      "collections": [],
+      "collections": [
+        4422
+      ],
       "franchise": -1,
       "franchises": [
         4751
@@ -21912,7 +22143,9 @@
     {
       "category": 0,
       "collection": 450,
-      "collections": [],
+      "collections": [
+        450
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -21976,7 +22209,9 @@
     {
       "category": 8,
       "collection": 452,
-      "collections": [],
+      "collections": [
+        452
+      ],
       "franchise": -1,
       "franchises": [
         1821
@@ -22010,7 +22245,9 @@
     {
       "category": 0,
       "collection": 6461,
-      "collections": [],
+      "collections": [
+        6461
+      ],
       "franchise": -1,
       "franchises": [
         2151
@@ -22143,7 +22380,9 @@
     {
       "category": 0,
       "collection": 1382,
-      "collections": [],
+      "collections": [
+        1382
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -22173,7 +22412,9 @@
     {
       "category": 0,
       "collection": 456,
-      "collections": [],
+      "collections": [
+        456
+      ],
       "franchise": 55,
       "franchises": [
         55
@@ -22207,7 +22448,9 @@
     {
       "category": 0,
       "collection": 461,
-      "collections": [],
+      "collections": [
+        461
+      ],
       "franchise": 24,
       "franchises": [
         24,
@@ -22238,7 +22481,9 @@
     {
       "category": 0,
       "collection": 447,
-      "collections": [],
+      "collections": [
+        447
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -22264,7 +22509,9 @@
     {
       "category": 0,
       "collection": 462,
-      "collections": [],
+      "collections": [
+        462
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -22323,7 +22570,9 @@
     {
       "category": 0,
       "collection": 2227,
-      "collections": [],
+      "collections": [
+        2227
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -22355,7 +22604,9 @@
     {
       "category": 0,
       "collection": 467,
-      "collections": [],
+      "collections": [
+        467
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -22388,7 +22639,9 @@
     {
       "category": 0,
       "collection": 467,
-      "collections": [],
+      "collections": [
+        467
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -22488,7 +22741,9 @@
     {
       "category": 8,
       "collection": 1557,
-      "collections": [],
+      "collections": [
+        1557
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -23051,7 +23306,9 @@
     {
       "category": 0,
       "collection": 187,
-      "collections": [],
+      "collections": [
+        187
+      ],
       "franchise": -1,
       "franchises": [
         495
@@ -23083,7 +23340,9 @@
     {
       "category": 0,
       "collection": 292,
-      "collections": [],
+      "collections": [
+        292
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -23208,7 +23467,9 @@
     {
       "category": 0,
       "collection": 3327,
-      "collections": [],
+      "collections": [
+        3327
+      ],
       "franchise": 74,
       "franchises": [
         74
@@ -23242,7 +23503,9 @@
     {
       "category": 0,
       "collection": 506,
-      "collections": [],
+      "collections": [
+        506
+      ],
       "franchise": -1,
       "franchises": [
         771
@@ -23276,7 +23539,9 @@
     {
       "category": 0,
       "collection": 2300,
-      "collections": [],
+      "collections": [
+        2300
+      ],
       "franchise": -1,
       "franchises": [
         1781
@@ -23345,7 +23610,9 @@
     {
       "category": 0,
       "collection": 227,
-      "collections": [],
+      "collections": [
+        227
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -23377,7 +23644,9 @@
     {
       "category": 0,
       "collection": 2156,
-      "collections": [],
+      "collections": [
+        2156
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -23409,7 +23678,9 @@
     {
       "category": 0,
       "collection": 7001,
-      "collections": [],
+      "collections": [
+        7001
+      ],
       "franchise": -1,
       "franchises": [
         1793
@@ -23509,7 +23780,9 @@
     {
       "category": 0,
       "collection": 521,
-      "collections": [],
+      "collections": [
+        521
+      ],
       "franchise": -1,
       "franchises": [
         1820
@@ -23540,7 +23813,9 @@
     {
       "category": 10,
       "collection": 521,
-      "collections": [],
+      "collections": [
+        521
+      ],
       "franchise": -1,
       "franchises": [
         1820
@@ -23569,7 +23844,9 @@
     {
       "category": 0,
       "collection": 284,
-      "collections": [],
+      "collections": [
+        284
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -23601,7 +23878,9 @@
     {
       "category": 0,
       "collection": 55,
-      "collections": [],
+      "collections": [
+        55
+      ],
       "franchise": 51,
       "franchises": [
         1,
@@ -23641,7 +23920,9 @@
     {
       "category": 0,
       "collection": 2264,
-      "collections": [],
+      "collections": [
+        2264
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -23670,7 +23951,9 @@
     {
       "category": 0,
       "collection": 518,
-      "collections": [],
+      "collections": [
+        518
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -23699,7 +23982,9 @@
     {
       "category": 8,
       "collection": 506,
-      "collections": [],
+      "collections": [
+        506
+      ],
       "franchise": -1,
       "franchises": [
         771
@@ -23733,7 +24018,9 @@
     {
       "category": 0,
       "collection": 4131,
-      "collections": [],
+      "collections": [
+        4131
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -23765,7 +24052,9 @@
     {
       "category": 0,
       "collection": 518,
-      "collections": [],
+      "collections": [
+        518
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -23795,7 +24084,9 @@
     {
       "category": 0,
       "collection": 882,
-      "collections": [],
+      "collections": [
+        882
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -23821,7 +24112,9 @@
     {
       "category": 11,
       "collection": 8332,
-      "collections": [],
+      "collections": [
+        8332
+      ],
       "franchise": -1,
       "franchises": [
         79,
@@ -23857,7 +24150,9 @@
     {
       "category": 0,
       "collection": 8487,
-      "collections": [],
+      "collections": [
+        8487
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -23947,7 +24242,9 @@
     {
       "category": 0,
       "collection": 995,
-      "collections": [],
+      "collections": [
+        995
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -23979,7 +24276,9 @@
     {
       "category": 0,
       "collection": 995,
-      "collections": [],
+      "collections": [
+        995
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -24010,7 +24309,9 @@
     {
       "category": 0,
       "collection": 7346,
-      "collections": [],
+      "collections": [
+        7346
+      ],
       "franchise": -1,
       "franchises": [
         123
@@ -24046,7 +24347,9 @@
     {
       "category": 0,
       "collection": 106,
-      "collections": [],
+      "collections": [
+        106
+      ],
       "franchise": -1,
       "franchises": [
         596
@@ -24082,7 +24385,9 @@
     {
       "category": 0,
       "collection": 540,
-      "collections": [],
+      "collections": [
+        540
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -24228,7 +24533,9 @@
     {
       "category": 0,
       "collection": 1300,
-      "collections": [],
+      "collections": [
+        1300
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -24257,7 +24564,9 @@
     {
       "category": 0,
       "collection": 2946,
-      "collections": [],
+      "collections": [
+        2946
+      ],
       "franchise": 366,
       "franchises": [
         366
@@ -24289,7 +24598,9 @@
     {
       "category": 0,
       "collection": 235,
-      "collections": [],
+      "collections": [
+        235
+      ],
       "franchise": 11,
       "franchises": [
         11
@@ -24321,7 +24632,9 @@
     {
       "category": 0,
       "collection": 235,
-      "collections": [],
+      "collections": [
+        235
+      ],
       "franchise": 11,
       "franchises": [
         11
@@ -24358,7 +24671,9 @@
     {
       "category": 0,
       "collection": 3502,
-      "collections": [],
+      "collections": [
+        3502
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -24479,7 +24794,9 @@
     {
       "category": 0,
       "collection": 2824,
-      "collections": [],
+      "collections": [
+        2824
+      ],
       "franchise": 134,
       "franchises": [
         134
@@ -24539,7 +24856,9 @@
     {
       "category": 0,
       "collection": 440,
-      "collections": [],
+      "collections": [
+        440
+      ],
       "franchise": -1,
       "franchises": [
         1525
@@ -24614,7 +24933,9 @@
     {
       "category": 0,
       "collection": 554,
-      "collections": [],
+      "collections": [
+        554
+      ],
       "franchise": 127,
       "franchises": [
         127
@@ -24679,7 +25000,9 @@
     {
       "category": 0,
       "collection": 2624,
-      "collections": [],
+      "collections": [
+        2624
+      ],
       "franchise": 11,
       "franchises": [
         11
@@ -24776,7 +25099,9 @@
     {
       "category": 0,
       "collection": 4466,
-      "collections": [],
+      "collections": [
+        4466
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -24802,7 +25127,9 @@
     {
       "category": 0,
       "collection": 769,
-      "collections": [],
+      "collections": [
+        769
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -24836,7 +25163,9 @@
     {
       "category": 0,
       "collection": 2233,
-      "collections": [],
+      "collections": [
+        2233
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -24892,7 +25221,9 @@
     {
       "category": 0,
       "collection": 561,
-      "collections": [],
+      "collections": [
+        561
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -25017,7 +25348,9 @@
     {
       "category": 0,
       "collection": 566,
-      "collections": [],
+      "collections": [
+        566
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -25083,7 +25416,9 @@
     {
       "category": 0,
       "collection": 2327,
-      "collections": [],
+      "collections": [
+        2327
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -25115,7 +25450,9 @@
     {
       "category": 0,
       "collection": 2278,
-      "collections": [],
+      "collections": [
+        2278
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -26076,7 +26413,9 @@
     {
       "category": 0,
       "collection": 440,
-      "collections": [],
+      "collections": [
+        440
+      ],
       "franchise": -1,
       "franchises": [
         1525
@@ -26137,7 +26476,9 @@
     {
       "category": 0,
       "collection": 6848,
-      "collections": [],
+      "collections": [
+        6848
+      ],
       "franchise": -1,
       "franchises": [
         799
@@ -26171,7 +26512,9 @@
     {
       "category": 0,
       "collection": 606,
-      "collections": [],
+      "collections": [
+        606
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -26203,7 +26546,9 @@
     {
       "category": 0,
       "collection": 605,
-      "collections": [],
+      "collections": [
+        605
+      ],
       "franchise": -1,
       "franchises": [
         1764
@@ -26237,7 +26582,9 @@
     {
       "category": 0,
       "collection": 605,
-      "collections": [],
+      "collections": [
+        605
+      ],
       "franchise": -1,
       "franchises": [
         1764
@@ -26270,7 +26617,9 @@
     {
       "category": 0,
       "collection": 605,
-      "collections": [],
+      "collections": [
+        605
+      ],
       "franchise": -1,
       "franchises": [
         1764
@@ -26301,7 +26650,9 @@
     {
       "category": 0,
       "collection": 607,
-      "collections": [],
+      "collections": [
+        607
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -26337,7 +26688,9 @@
     {
       "category": 0,
       "collection": 607,
-      "collections": [],
+      "collections": [
+        607
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -26745,7 +27098,9 @@
     {
       "category": 0,
       "collection": 626,
-      "collections": [],
+      "collections": [
+        626
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -26773,7 +27128,9 @@
     {
       "category": 0,
       "collection": 7427,
-      "collections": [],
+      "collections": [
+        7427
+      ],
       "franchise": -1,
       "franchises": [
         3106
@@ -26923,7 +27280,9 @@
     {
       "category": 0,
       "collection": 4099,
-      "collections": [],
+      "collections": [
+        4099
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -27162,7 +27521,9 @@
     {
       "category": 0,
       "collection": 4947,
-      "collections": [],
+      "collections": [
+        4947
+      ],
       "franchise": 233,
       "franchises": [
         233
@@ -27224,7 +27585,9 @@
     {
       "category": 10,
       "collection": 5003,
-      "collections": [],
+      "collections": [
+        5003
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -27254,7 +27617,9 @@
     {
       "category": 0,
       "collection": 2156,
-      "collections": [],
+      "collections": [
+        2156
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -27352,7 +27717,9 @@
     {
       "category": 0,
       "collection": 2172,
-      "collections": [],
+      "collections": [
+        2172
+      ],
       "franchise": 1,
       "franchises": [
         1
@@ -27384,7 +27751,9 @@
     {
       "category": 0,
       "collection": 2565,
-      "collections": [],
+      "collections": [
+        2565
+      ],
       "franchise": 1,
       "franchises": [
         1
@@ -27414,7 +27783,9 @@
     {
       "category": 0,
       "collection": 2565,
-      "collections": [],
+      "collections": [
+        2565
+      ],
       "franchise": 1,
       "franchises": [
         1
@@ -27447,7 +27818,9 @@
     {
       "category": 0,
       "collection": 4129,
-      "collections": [],
+      "collections": [
+        4129
+      ],
       "franchise": 248,
       "franchises": [
         248
@@ -27507,7 +27880,9 @@
     {
       "category": 0,
       "collection": 1362,
-      "collections": [],
+      "collections": [
+        1362
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -27568,7 +27943,9 @@
     {
       "category": 0,
       "collection": 689,
-      "collections": [],
+      "collections": [
+        689
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -27597,7 +27974,9 @@
     {
       "category": 0,
       "collection": 689,
-      "collections": [],
+      "collections": [
+        689
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -27626,7 +28005,9 @@
     {
       "category": 0,
       "collection": 1118,
-      "collections": [],
+      "collections": [
+        1118
+      ],
       "franchise": -1,
       "franchises": [
         2760
@@ -27734,7 +28115,9 @@
     {
       "category": 0,
       "collection": 1516,
-      "collections": [],
+      "collections": [
+        1516
+      ],
       "franchise": 103,
       "franchises": [
         103
@@ -27765,7 +28148,9 @@
     {
       "category": 0,
       "collection": 8709,
-      "collections": [],
+      "collections": [
+        8709
+      ],
       "franchise": 238,
       "franchises": [
         124,
@@ -27796,7 +28181,9 @@
     {
       "category": 8,
       "collection": 423,
-      "collections": [],
+      "collections": [
+        423
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -27828,7 +28215,9 @@
     {
       "category": 8,
       "collection": 705,
-      "collections": [],
+      "collections": [
+        705
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -27854,7 +28243,9 @@
     {
       "category": 0,
       "collection": 7427,
-      "collections": [],
+      "collections": [
+        7427
+      ],
       "franchise": -1,
       "franchises": [
         3106
@@ -28271,7 +28662,9 @@
     {
       "category": 0,
       "collection": 729,
-      "collections": [],
+      "collections": [
+        729
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -28297,7 +28690,9 @@
     {
       "category": 0,
       "collection": 4429,
-      "collections": [],
+      "collections": [
+        4429
+      ],
       "franchise": 311,
       "franchises": [
         311
@@ -28324,7 +28719,9 @@
     {
       "category": 0,
       "collection": 489,
-      "collections": [],
+      "collections": [
+        489
+      ],
       "franchise": -1,
       "franchises": [
         1069
@@ -28413,7 +28810,9 @@
     {
       "category": 0,
       "collection": 739,
-      "collections": [],
+      "collections": [
+        739
+      ],
       "franchise": 11,
       "franchises": [
         11,
@@ -28480,7 +28879,9 @@
     {
       "category": 3,
       "collection": 298,
-      "collections": [],
+      "collections": [
+        298
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -28511,7 +28912,9 @@
     {
       "category": 0,
       "collection": 2924,
-      "collections": [],
+      "collections": [
+        2924
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -28544,7 +28947,9 @@
     {
       "category": 0,
       "collection": 1024,
-      "collections": [],
+      "collections": [
+        1024
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -28675,7 +29080,9 @@
     {
       "category": 0,
       "collection": 6180,
-      "collections": [],
+      "collections": [
+        6180
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -28705,7 +29112,9 @@
     {
       "category": 4,
       "collection": 2128,
-      "collections": [],
+      "collections": [
+        2128
+      ],
       "franchise": -1,
       "franchises": [
         463,
@@ -28741,7 +29150,9 @@
     {
       "category": 0,
       "collection": 786,
-      "collections": [],
+      "collections": [
+        786
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -28843,7 +29254,9 @@
     {
       "category": 0,
       "collection": 4628,
-      "collections": [],
+      "collections": [
+        4628
+      ],
       "franchise": -1,
       "franchises": [
         1017
@@ -28869,7 +29282,9 @@
     {
       "category": 0,
       "collection": 1204,
-      "collections": [],
+      "collections": [
+        1204
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -28899,7 +29314,9 @@
     {
       "category": 0,
       "collection": 3878,
-      "collections": [],
+      "collections": [
+        3878
+      ],
       "franchise": 363,
       "franchises": [
         363
@@ -28927,7 +29344,9 @@
     {
       "category": 0,
       "collection": 68,
-      "collections": [],
+      "collections": [
+        68
+      ],
       "franchise": 5,
       "franchises": [
         5,
@@ -28961,7 +29380,9 @@
     {
       "category": 0,
       "collection": 1114,
-      "collections": [],
+      "collections": [
+        1114
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -29314,7 +29735,9 @@
     {
       "category": 0,
       "collection": 124,
-      "collections": [],
+      "collections": [
+        124
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -29346,7 +29769,9 @@
     {
       "category": 0,
       "collection": 1937,
-      "collections": [],
+      "collections": [
+        1937
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -29374,7 +29799,9 @@
     {
       "category": 0,
       "collection": 4408,
-      "collections": [],
+      "collections": [
+        4408
+      ],
       "franchise": -1,
       "franchises": [
         600
@@ -29796,7 +30223,9 @@
     {
       "category": 0,
       "collection": 868,
-      "collections": [],
+      "collections": [
+        868
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -29890,7 +30319,9 @@
     {
       "category": 0,
       "collection": 875,
-      "collections": [],
+      "collections": [
+        875
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -30069,7 +30500,9 @@
     {
       "category": 0,
       "collection": 779,
-      "collections": [],
+      "collections": [
+        779
+      ],
       "franchise": -1,
       "franchises": [
         351
@@ -30136,7 +30569,9 @@
     {
       "category": 0,
       "collection": 887,
-      "collections": [],
+      "collections": [
+        887
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -30168,7 +30603,9 @@
     {
       "category": 0,
       "collection": 887,
-      "collections": [],
+      "collections": [
+        887
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -30199,7 +30636,9 @@
     {
       "category": 0,
       "collection": 1299,
-      "collections": [],
+      "collections": [
+        1299
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -30227,7 +30666,9 @@
     {
       "category": 0,
       "collection": 100,
-      "collections": [],
+      "collections": [
+        100
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -30244,8 +30685,8 @@
         192543,
         192544,
         192545,
-        192546,
-        192547
+        192547,
+        249422
       ],
       "name": "Red Faction",
       "player_perspectives": [
@@ -30286,7 +30727,9 @@
     {
       "category": 0,
       "collection": 5028,
-      "collections": [],
+      "collections": [
+        5028
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -30316,7 +30759,9 @@
     {
       "category": 0,
       "collection": 3926,
-      "collections": [],
+      "collections": [
+        3926
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -30351,7 +30796,9 @@
     {
       "category": 0,
       "collection": 4417,
-      "collections": [],
+      "collections": [
+        4417
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -30411,7 +30858,9 @@
     {
       "category": 0,
       "collection": 717,
-      "collections": [],
+      "collections": [
+        717
+      ],
       "franchise": -1,
       "franchises": [
         1811
@@ -30515,7 +30964,9 @@
     {
       "category": 0,
       "collection": 913,
-      "collections": [],
+      "collections": [
+        913
+      ],
       "franchise": -1,
       "franchises": [
         763,
@@ -30577,7 +31028,9 @@
     {
       "category": 0,
       "collection": 1391,
-      "collections": [],
+      "collections": [
+        1391
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -30609,6 +31062,7 @@
       "category": 11,
       "collection": 2608,
       "collections": [
+        2608,
         7653,
         8991
       ],
@@ -30773,7 +31227,8 @@
       "category": 0,
       "collection": 7814,
       "collections": [
-        225
+        225,
+        7814
       ],
       "franchise": -1,
       "franchises": [
@@ -30865,7 +31320,9 @@
     {
       "category": 0,
       "collection": 2156,
-      "collections": [],
+      "collections": [
+        2156
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -31034,7 +31491,9 @@
     {
       "category": 0,
       "collection": 951,
-      "collections": [],
+      "collections": [
+        951
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -31245,7 +31704,9 @@
     {
       "category": 0,
       "collection": 956,
-      "collections": [],
+      "collections": [
+        956
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -31909,7 +32370,9 @@
     {
       "category": 0,
       "collection": 995,
-      "collections": [],
+      "collections": [
+        995
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -32280,7 +32743,9 @@
     {
       "category": 0,
       "collection": 2175,
-      "collections": [],
+      "collections": [
+        2175
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -32338,7 +32803,9 @@
     {
       "category": 0,
       "collection": 1284,
-      "collections": [],
+      "collections": [
+        1284
+      ],
       "franchise": -1,
       "franchises": [
         736
@@ -32374,7 +32841,9 @@
     {
       "category": 0,
       "collection": 1374,
-      "collections": [],
+      "collections": [
+        1374
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -32402,7 +32871,9 @@
     {
       "category": 0,
       "collection": 4628,
-      "collections": [],
+      "collections": [
+        4628
+      ],
       "franchise": -1,
       "franchises": [
         1017
@@ -32772,7 +33243,9 @@
     {
       "category": 0,
       "collection": 68,
-      "collections": [],
+      "collections": [
+        68
+      ],
       "franchise": -1,
       "franchises": [
         5
@@ -32804,7 +33277,9 @@
     {
       "category": 4,
       "collection": 197,
-      "collections": [],
+      "collections": [
+        197
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -32837,7 +33312,9 @@
     {
       "category": 0,
       "collection": 1206,
-      "collections": [],
+      "collections": [
+        1206
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -32900,7 +33377,9 @@
     {
       "category": 0,
       "collection": 6180,
-      "collections": [],
+      "collections": [
+        6180
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -32924,7 +33403,9 @@
     {
       "category": 10,
       "collection": 6172,
-      "collections": [],
+      "collections": [
+        6172
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -32984,7 +33465,9 @@
     {
       "category": 0,
       "collection": 1065,
-      "collections": [],
+      "collections": [
+        1065
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -33070,7 +33553,9 @@
     {
       "category": 0,
       "collection": 1883,
-      "collections": [],
+      "collections": [
+        1883
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -33165,7 +33650,9 @@
     {
       "category": 0,
       "collection": 1083,
-      "collections": [],
+      "collections": [
+        1083
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -33225,7 +33712,9 @@
     {
       "category": 0,
       "collection": 111,
-      "collections": [],
+      "collections": [
+        111
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -33253,7 +33742,9 @@
     {
       "category": 8,
       "collection": 516,
-      "collections": [],
+      "collections": [
+        516
+      ],
       "franchise": -1,
       "franchises": [
         79
@@ -33280,7 +33771,9 @@
     {
       "category": 8,
       "collection": 1576,
-      "collections": [],
+      "collections": [
+        1576
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -33411,7 +33904,9 @@
     {
       "category": 0,
       "collection": 2332,
-      "collections": [],
+      "collections": [
+        2332
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -33442,7 +33937,9 @@
     {
       "category": 0,
       "collection": 887,
-      "collections": [],
+      "collections": [
+        887
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -33532,7 +34029,9 @@
     {
       "category": 0,
       "collection": 2538,
-      "collections": [],
+      "collections": [
+        2538
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -33590,7 +34089,9 @@
     {
       "category": 0,
       "collection": 1939,
-      "collections": [],
+      "collections": [
+        1939
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -33894,7 +34395,9 @@
     {
       "category": 0,
       "collection": 2385,
-      "collections": [],
+      "collections": [
+        2385
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -33924,7 +34427,9 @@
     {
       "category": 0,
       "collection": 1260,
-      "collections": [],
+      "collections": [
+        1260
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -34130,7 +34635,9 @@
     {
       "category": 0,
       "collection": 7041,
-      "collections": [],
+      "collections": [
+        7041
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -34160,7 +34667,9 @@
     {
       "category": 9,
       "collection": 1167,
-      "collections": [],
+      "collections": [
+        1167
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -34216,7 +34725,9 @@
     {
       "category": 3,
       "collection": 3816,
-      "collections": [],
+      "collections": [
+        3816
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -34246,7 +34757,9 @@
     {
       "category": 0,
       "collection": 7703,
-      "collections": [],
+      "collections": [
+        7703
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -34280,7 +34793,9 @@
     {
       "category": 0,
       "collection": 1180,
-      "collections": [],
+      "collections": [
+        1180
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -34516,7 +35031,9 @@
     {
       "category": 10,
       "collection": 1201,
-      "collections": [],
+      "collections": [
+        1201
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -34550,7 +35067,9 @@
     {
       "category": 4,
       "collection": 554,
-      "collections": [],
+      "collections": [
+        554
+      ],
       "franchise": -1,
       "franchises": [
         127
@@ -34698,7 +35217,9 @@
     {
       "category": 0,
       "collection": 2413,
-      "collections": [],
+      "collections": [
+        2413
+      ],
       "franchise": -1,
       "franchises": [
         855
@@ -34731,7 +35252,9 @@
     {
       "category": 0,
       "collection": 3516,
-      "collections": [],
+      "collections": [
+        3516
+      ],
       "franchise": -1,
       "franchises": [
         3
@@ -34886,7 +35409,9 @@
     {
       "category": 4,
       "collection": 452,
-      "collections": [],
+      "collections": [
+        452
+      ],
       "franchise": -1,
       "franchises": [
         1821
@@ -35114,7 +35639,9 @@
     {
       "category": 0,
       "collection": 1260,
-      "collections": [],
+      "collections": [
+        1260
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -35143,7 +35670,9 @@
     {
       "category": 0,
       "collection": 6255,
-      "collections": [],
+      "collections": [
+        6255
+      ],
       "franchise": -1,
       "franchises": [
         1069
@@ -35178,7 +35707,9 @@
     {
       "category": 0,
       "collection": 1277,
-      "collections": [],
+      "collections": [
+        1277
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -35210,7 +35741,9 @@
     {
       "category": 0,
       "collection": 4592,
-      "collections": [],
+      "collections": [
+        4592
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -35239,7 +35772,9 @@
     {
       "category": 10,
       "collection": 1260,
-      "collections": [],
+      "collections": [
+        1260
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -35265,7 +35800,9 @@
     {
       "category": 4,
       "collection": 2156,
-      "collections": [],
+      "collections": [
+        2156
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -35298,7 +35835,9 @@
     {
       "category": 0,
       "collection": 2156,
-      "collections": [],
+      "collections": [
+        2156
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -35361,7 +35900,9 @@
     {
       "category": 0,
       "collection": 9,
-      "collections": [],
+      "collections": [
+        9
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -35393,7 +35934,9 @@
     {
       "category": 0,
       "collection": 4628,
-      "collections": [],
+      "collections": [
+        4628
+      ],
       "franchise": -1,
       "franchises": [
         1017
@@ -35422,7 +35965,9 @@
     {
       "category": 4,
       "collection": 9,
-      "collections": [],
+      "collections": [
+        9
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -35452,7 +35997,9 @@
     {
       "category": 0,
       "collection": 1299,
-      "collections": [],
+      "collections": [
+        1299
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -35479,7 +36026,9 @@
     {
       "category": 0,
       "collection": 1286,
-      "collections": [],
+      "collections": [
+        1286
+      ],
       "franchise": -1,
       "franchises": [
         881
@@ -35869,7 +36418,9 @@
     {
       "category": 0,
       "collection": 1373,
-      "collections": [],
+      "collections": [
+        1373
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -36080,7 +36631,9 @@
     {
       "category": 0,
       "collection": 5028,
-      "collections": [],
+      "collections": [
+        5028
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -36107,7 +36660,9 @@
     {
       "category": 10,
       "collection": 2145,
-      "collections": [],
+      "collections": [
+        2145
+      ],
       "franchise": -1,
       "franchises": [
         801
@@ -36142,7 +36697,9 @@
     {
       "category": 0,
       "collection": 1327,
-      "collections": [],
+      "collections": [
+        1327
+      ],
       "franchise": -1,
       "franchises": [
         2180
@@ -36557,7 +37114,9 @@
     {
       "category": 0,
       "collection": 1379,
-      "collections": [],
+      "collections": [
+        1379
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -36692,7 +37251,9 @@
     {
       "category": 0,
       "collection": 3431,
-      "collections": [],
+      "collections": [
+        3431
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -36716,7 +37277,9 @@
     {
       "category": 0,
       "collection": 3949,
-      "collections": [],
+      "collections": [
+        3949
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -36958,7 +37521,9 @@
     {
       "category": 1,
       "collection": 1010,
-      "collections": [],
+      "collections": [
+        1010
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [],
@@ -36980,7 +37545,9 @@
     {
       "category": 1,
       "collection": 1010,
-      "collections": [],
+      "collections": [
+        1010
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -37006,7 +37573,9 @@
     {
       "category": 10,
       "collection": 1458,
-      "collections": [],
+      "collections": [
+        1458
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -37102,7 +37671,9 @@
     {
       "category": 4,
       "collection": 1485,
-      "collections": [],
+      "collections": [
+        1485
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -37128,7 +37699,9 @@
     {
       "category": 0,
       "collection": 1485,
-      "collections": [],
+      "collections": [
+        1485
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -37153,7 +37726,9 @@
     {
       "category": 0,
       "collection": 3015,
-      "collections": [],
+      "collections": [
+        3015
+      ],
       "franchise": -1,
       "franchises": [
         51,
@@ -37188,7 +37763,9 @@
     {
       "category": 0,
       "collection": 5654,
-      "collections": [],
+      "collections": [
+        5654
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -37219,7 +37796,9 @@
     {
       "category": 0,
       "collection": 1494,
-      "collections": [],
+      "collections": [
+        1494
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -37278,7 +37857,9 @@
     {
       "category": 0,
       "collection": 6304,
-      "collections": [],
+      "collections": [
+        6304
+      ],
       "franchise": -1,
       "franchises": [
         2000
@@ -37692,7 +38273,9 @@
     {
       "category": 0,
       "collection": 717,
-      "collections": [],
+      "collections": [
+        717
+      ],
       "franchise": -1,
       "franchises": [
         1811
@@ -37726,7 +38309,9 @@
     {
       "category": 0,
       "collection": 2767,
-      "collections": [],
+      "collections": [
+        2767
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -38067,7 +38652,9 @@
     {
       "category": 0,
       "collection": 6448,
-      "collections": [],
+      "collections": [
+        6448
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -38100,7 +38687,9 @@
     {
       "category": 0,
       "collection": 6980,
-      "collections": [],
+      "collections": [
+        6980
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -38133,7 +38722,9 @@
     {
       "category": 0,
       "collection": 1579,
-      "collections": [],
+      "collections": [
+        1579
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -38174,7 +38765,9 @@
     {
       "category": 0,
       "collection": 1583,
-      "collections": [],
+      "collections": [
+        1583
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -38271,7 +38864,9 @@
     {
       "category": 0,
       "collection": 7321,
-      "collections": [],
+      "collections": [
+        7321
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -38370,7 +38965,9 @@
     {
       "category": 9,
       "collection": 1664,
-      "collections": [],
+      "collections": [
+        1664
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -38923,7 +39520,9 @@
     {
       "category": 0,
       "collection": 1006,
-      "collections": [],
+      "collections": [
+        1006
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [],
@@ -38940,7 +39539,9 @@
     {
       "category": 8,
       "collection": 796,
-      "collections": [],
+      "collections": [
+        796
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -39399,7 +40000,9 @@
     {
       "category": 0,
       "collection": 1024,
-      "collections": [],
+      "collections": [
+        1024
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -39497,7 +40100,9 @@
     {
       "category": 0,
       "collection": 2594,
-      "collections": [],
+      "collections": [
+        2594
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -39527,7 +40132,9 @@
     {
       "category": 1,
       "collection": 1494,
-      "collections": [],
+      "collections": [
+        1494
+      ],
       "franchise": -1,
       "franchises": [
         1063
@@ -39556,7 +40163,9 @@
     {
       "category": 1,
       "collection": 1494,
-      "collections": [],
+      "collections": [
+        1494
+      ],
       "franchise": -1,
       "franchises": [
         1063
@@ -39646,7 +40255,9 @@
     {
       "category": 0,
       "collection": 5702,
-      "collections": [],
+      "collections": [
+        5702
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -39736,7 +40347,9 @@
     {
       "category": 0,
       "collection": 2825,
-      "collections": [],
+      "collections": [
+        2825
+      ],
       "franchise": -1,
       "franchises": [
         5
@@ -39832,7 +40445,9 @@
     {
       "category": 0,
       "collection": 1914,
-      "collections": [],
+      "collections": [
+        1914
+      ],
       "franchise": -1,
       "franchises": [
         2253
@@ -39863,7 +40478,9 @@
     {
       "category": 0,
       "collection": 1915,
-      "collections": [],
+      "collections": [
+        1915
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -39939,7 +40556,9 @@
     {
       "category": 0,
       "collection": 1914,
-      "collections": [],
+      "collections": [
+        1914
+      ],
       "franchise": -1,
       "franchises": [
         2253
@@ -39970,7 +40589,9 @@
     {
       "category": 0,
       "collection": 1914,
-      "collections": [],
+      "collections": [
+        1914
+      ],
       "franchise": -1,
       "franchises": [
         2253
@@ -40005,7 +40626,9 @@
     {
       "category": 0,
       "collection": 1914,
-      "collections": [],
+      "collections": [
+        1914
+      ],
       "franchise": -1,
       "franchises": [
         2253
@@ -40096,7 +40719,9 @@
     {
       "category": 0,
       "collection": 3470,
-      "collections": [],
+      "collections": [
+        3470
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -40241,7 +40866,9 @@
     {
       "category": 0,
       "collection": 5501,
-      "collections": [],
+      "collections": [
+        5501
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -40270,7 +40897,9 @@
     {
       "category": 1,
       "collection": 68,
-      "collections": [],
+      "collections": [
+        68
+      ],
       "franchise": -1,
       "franchises": [
         5
@@ -40303,7 +40932,9 @@
     {
       "category": 2,
       "collection": 68,
-      "collections": [],
+      "collections": [
+        68
+      ],
       "franchise": -1,
       "franchises": [
         5
@@ -40749,7 +41380,9 @@
     {
       "category": 0,
       "collection": 3316,
-      "collections": [],
+      "collections": [
+        3316
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -40835,7 +41468,9 @@
     {
       "category": 10,
       "collection": 1557,
-      "collections": [],
+      "collections": [
+        1557
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -40869,7 +41504,9 @@
     {
       "category": 10,
       "collection": 2007,
-      "collections": [],
+      "collections": [
+        2007
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -40957,7 +41594,9 @@
     {
       "category": 0,
       "collection": 4871,
-      "collections": [],
+      "collections": [
+        4871
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -41097,7 +41736,9 @@
     {
       "category": 0,
       "collection": 2022,
-      "collections": [],
+      "collections": [
+        2022
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -41127,7 +41768,9 @@
     {
       "category": 0,
       "collection": 305,
-      "collections": [],
+      "collections": [
+        305
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -41239,7 +41882,9 @@
     {
       "category": 0,
       "collection": 2394,
-      "collections": [],
+      "collections": [
+        2394
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -41300,7 +41945,9 @@
     {
       "category": 0,
       "collection": 2280,
-      "collections": [],
+      "collections": [
+        2280
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -41755,7 +42402,9 @@
     {
       "category": 0,
       "collection": 4782,
-      "collections": [],
+      "collections": [
+        4782
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -41815,7 +42464,9 @@
     {
       "category": 0,
       "collection": 2078,
-      "collections": [],
+      "collections": [
+        2078
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -42031,7 +42682,9 @@
     {
       "category": 9,
       "collection": 2398,
-      "collections": [],
+      "collections": [
+        2398
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -42089,7 +42742,9 @@
     {
       "category": 0,
       "collection": 3825,
-      "collections": [],
+      "collections": [
+        3825
+      ],
       "franchise": -1,
       "franchises": [
         804
@@ -42120,7 +42775,9 @@
     {
       "category": 0,
       "collection": 3057,
-      "collections": [],
+      "collections": [
+        3057
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -42154,7 +42811,9 @@
     {
       "category": 0,
       "collection": 3057,
-      "collections": [],
+      "collections": [
+        3057
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -42222,7 +42881,9 @@
     {
       "category": 0,
       "collection": 2248,
-      "collections": [],
+      "collections": [
+        2248
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -42324,7 +42985,9 @@
     {
       "category": 0,
       "collection": 6179,
-      "collections": [],
+      "collections": [
+        6179
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -42382,7 +43045,9 @@
     {
       "category": 0,
       "collection": 2836,
-      "collections": [],
+      "collections": [
+        2836
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -42412,7 +43077,9 @@
     {
       "category": 10,
       "collection": 2177,
-      "collections": [],
+      "collections": [
+        2177
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -42509,7 +43176,9 @@
     {
       "category": 0,
       "collection": 102,
-      "collections": [],
+      "collections": [
+        102
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -42610,7 +43279,9 @@
     {
       "category": 0,
       "collection": 2810,
-      "collections": [],
+      "collections": [
+        2810
+      ],
       "franchise": -1,
       "franchises": [
         1043
@@ -42830,7 +43501,9 @@
     {
       "category": 0,
       "collection": 2589,
-      "collections": [],
+      "collections": [
+        2589
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -42958,7 +43631,9 @@
     {
       "category": 0,
       "collection": 3154,
-      "collections": [],
+      "collections": [
+        3154
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -43069,7 +43744,9 @@
     {
       "category": 0,
       "collection": 506,
-      "collections": [],
+      "collections": [
+        506
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -43102,7 +43779,9 @@
     {
       "category": 0,
       "collection": 950,
-      "collections": [],
+      "collections": [
+        950
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [],
@@ -43184,7 +43863,9 @@
     {
       "category": 0,
       "collection": 922,
-      "collections": [],
+      "collections": [
+        922
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -43238,7 +43919,9 @@
     {
       "category": 9,
       "collection": 305,
-      "collections": [],
+      "collections": [
+        305
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -43300,7 +43983,9 @@
     {
       "category": 3,
       "collection": 543,
-      "collections": [],
+      "collections": [
+        543
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -43386,7 +44071,9 @@
     {
       "category": 0,
       "collection": 913,
-      "collections": [],
+      "collections": [
+        913
+      ],
       "franchise": -1,
       "franchises": [
         763,
@@ -43487,7 +44174,9 @@
     {
       "category": 0,
       "collection": 187,
-      "collections": [],
+      "collections": [
+        187
+      ],
       "franchise": -1,
       "franchises": [
         495
@@ -43515,7 +44204,9 @@
     {
       "category": 0,
       "collection": 2623,
-      "collections": [],
+      "collections": [
+        2623
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -43594,7 +44285,9 @@
     {
       "category": 0,
       "collection": 783,
-      "collections": [],
+      "collections": [
+        783
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [],
@@ -43614,7 +44307,9 @@
     {
       "category": 11,
       "collection": 2721,
-      "collections": [],
+      "collections": [
+        2721
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [],
@@ -43637,7 +44332,9 @@
     {
       "category": 0,
       "collection": 4654,
-      "collections": [],
+      "collections": [
+        4654
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -43759,7 +44456,9 @@
     {
       "category": 2,
       "collection": 372,
-      "collections": [],
+      "collections": [
+        372
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [],
@@ -43798,7 +44497,9 @@
     {
       "category": 0,
       "collection": 3628,
-      "collections": [],
+      "collections": [
+        3628
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -43860,7 +44561,9 @@
     {
       "category": 1,
       "collection": 197,
-      "collections": [],
+      "collections": [
+        197
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -43887,7 +44590,9 @@
     {
       "category": 0,
       "collection": 5476,
-      "collections": [],
+      "collections": [
+        5476
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -43973,7 +44678,9 @@
     {
       "category": 0,
       "collection": 216,
-      "collections": [],
+      "collections": [
+        216
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -44002,7 +44709,9 @@
     {
       "category": 1,
       "collection": 372,
-      "collections": [],
+      "collections": [
+        372
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [],
@@ -44238,7 +44947,9 @@
     {
       "category": 1,
       "collection": 197,
-      "collections": [],
+      "collections": [
+        197
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [],
@@ -44293,7 +45004,9 @@
     {
       "category": 10,
       "collection": 6172,
-      "collections": [],
+      "collections": [
+        6172
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -44386,7 +45099,9 @@
     {
       "category": 1,
       "collection": 9,
-      "collections": [],
+      "collections": [
+        9
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -44445,7 +45160,9 @@
     {
       "category": 3,
       "collection": 2578,
-      "collections": [],
+      "collections": [
+        2578
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -44569,7 +45286,9 @@
     {
       "category": 9,
       "collection": 280,
-      "collections": [],
+      "collections": [
+        280
+      ],
       "franchise": -1,
       "franchises": [
         885
@@ -44826,7 +45545,9 @@
     {
       "category": 0,
       "collection": 3109,
-      "collections": [],
+      "collections": [
+        3109
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -44917,7 +45638,9 @@
     {
       "category": 0,
       "collection": 3187,
-      "collections": [],
+      "collections": [
+        3187
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -45061,7 +45784,9 @@
     {
       "category": 1,
       "collection": 9,
-      "collections": [],
+      "collections": [
+        9
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -45343,7 +46068,9 @@
     {
       "category": 0,
       "collection": 2624,
-      "collections": [],
+      "collections": [
+        2624
+      ],
       "franchise": -1,
       "franchises": [
         11
@@ -45691,7 +46418,9 @@
     {
       "category": 6,
       "collection": 8488,
-      "collections": [],
+      "collections": [
+        8488
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -46412,7 +47141,9 @@
     {
       "category": 10,
       "collection": 554,
-      "collections": [],
+      "collections": [
+        554
+      ],
       "franchise": -1,
       "franchises": [
         127
@@ -46592,7 +47323,9 @@
     {
       "category": 0,
       "collection": 5785,
-      "collections": [],
+      "collections": [
+        5785
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -46744,7 +47477,9 @@
     {
       "category": 0,
       "collection": 2782,
-      "collections": [],
+      "collections": [
+        2782
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -46773,7 +47508,9 @@
     {
       "category": 4,
       "collection": 1494,
-      "collections": [],
+      "collections": [
+        1494
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -46803,7 +47540,9 @@
     {
       "category": 2,
       "collection": 6304,
-      "collections": [],
+      "collections": [
+        6304
+      ],
       "franchise": -1,
       "franchises": [
         2000
@@ -46834,7 +47573,9 @@
     {
       "category": 8,
       "collection": 6461,
-      "collections": [],
+      "collections": [
+        6461
+      ],
       "franchise": -1,
       "franchises": [
         2151
@@ -46997,7 +47738,9 @@
     {
       "category": 1,
       "collection": 106,
-      "collections": [],
+      "collections": [
+        106
+      ],
       "franchise": -1,
       "franchises": [
         596
@@ -47026,7 +47769,9 @@
     {
       "category": 1,
       "collection": 106,
-      "collections": [],
+      "collections": [
+        106
+      ],
       "franchise": -1,
       "franchises": [
         596
@@ -47181,13 +47926,11 @@
       "url": "https://www.igdb.com/games/the-legend-of-zelda-four-swords-anniversary-edition"
     },
     {
-      "id": 164734,
-      "name": "Middle-earth: Shadow of War - Blade of Galadriel"
-    },
-    {
       "category": 0,
       "collection": 4560,
-      "collections": [],
+      "collections": [
+        4560
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -47278,7 +48021,9 @@
     {
       "category": 0,
       "collection": 4582,
-      "collections": [],
+      "collections": [
+        4582
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [],
@@ -47301,7 +48046,9 @@
     {
       "category": 0,
       "collection": 4041,
-      "collections": [],
+      "collections": [
+        2766
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -47333,7 +48080,9 @@
     {
       "category": 8,
       "collection": 887,
-      "collections": [],
+      "collections": [
+        887
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -47385,7 +48134,9 @@
     {
       "category": 0,
       "collection": 3015,
-      "collections": [],
+      "collections": [
+        3015
+      ],
       "franchise": -1,
       "franchises": [
         51
@@ -47433,7 +48184,9 @@
     {
       "category": 1,
       "collection": 2624,
-      "collections": [],
+      "collections": [
+        2624
+      ],
       "franchise": -1,
       "franchises": [
         11
@@ -47827,7 +48580,9 @@
     {
       "category": 8,
       "collection": 310,
-      "collections": [],
+      "collections": [
+        310
+      ],
       "franchise": -1,
       "franchises": [
         2135
@@ -47920,7 +48675,9 @@
     {
       "category": 0,
       "collection": 3068,
-      "collections": [],
+      "collections": [
+        3068
+      ],
       "franchise": -1,
       "franchises": [
         3106
@@ -48004,7 +48761,9 @@
     {
       "category": 0,
       "collection": 2957,
-      "collections": [],
+      "collections": [
+        2957
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -48058,7 +48817,9 @@
     {
       "category": 0,
       "collection": 7875,
-      "collections": [],
+      "collections": [
+        7875
+      ],
       "franchise": -1,
       "franchises": [
         1
@@ -48121,7 +48882,9 @@
     {
       "category": 10,
       "collection": 2384,
-      "collections": [],
+      "collections": [
+        2384
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -48217,7 +48980,9 @@
     {
       "category": 0,
       "collection": 1516,
-      "collections": [],
+      "collections": [
+        1516
+      ],
       "franchise": -1,
       "franchises": [
         103
@@ -48396,7 +49161,9 @@
     {
       "category": 1,
       "collection": 197,
-      "collections": [],
+      "collections": [
+        197
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -48424,7 +49191,9 @@
     {
       "category": 1,
       "collection": 197,
-      "collections": [],
+      "collections": [
+        197
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [],
@@ -48444,7 +49213,9 @@
     {
       "category": 1,
       "collection": 197,
-      "collections": [],
+      "collections": [
+        197
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [],
@@ -48464,7 +49235,9 @@
     {
       "category": 1,
       "collection": 100,
-      "collections": [],
+      "collections": [
+        100
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -48512,7 +49285,9 @@
     {
       "category": 1,
       "collection": 1268,
-      "collections": [],
+      "collections": [
+        1268
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -48541,7 +49316,9 @@
     {
       "category": 11,
       "collection": 2086,
-      "collections": [],
+      "collections": [
+        2086
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -48570,7 +49347,9 @@
     {
       "category": 0,
       "collection": 1024,
-      "collections": [],
+      "collections": [
+        1024
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -48876,7 +49655,9 @@
     {
       "category": 0,
       "collection": 2810,
-      "collections": [],
+      "collections": [
+        2810
+      ],
       "franchise": -1,
       "franchises": [
         1043
@@ -49001,7 +49782,9 @@
     {
       "category": 0,
       "collection": 8332,
-      "collections": [],
+      "collections": [
+        8332
+      ],
       "franchise": -1,
       "franchises": [
         1814
@@ -49226,7 +50009,9 @@
     {
       "category": 9,
       "collection": 5407,
-      "collections": [],
+      "collections": [
+        5407
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -49422,7 +50207,9 @@
     {
       "category": 0,
       "collection": 3207,
-      "collections": [],
+      "collections": [
+        3207
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -49636,7 +50423,9 @@
     {
       "category": 1,
       "collection": 102,
-      "collections": [],
+      "collections": [
+        102
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -49724,7 +50513,9 @@
     {
       "category": 0,
       "collection": 8415,
-      "collections": [],
+      "collections": [
+        8415
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -49884,7 +50675,9 @@
     {
       "category": 4,
       "collection": 5505,
-      "collections": [],
+      "collections": [
+        5505
+      ],
       "franchise": -1,
       "franchises": [
         452
@@ -49947,7 +50740,9 @@
     {
       "category": 0,
       "collection": 6448,
-      "collections": [],
+      "collections": [
+        6448
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -50063,7 +50858,9 @@
     {
       "category": 0,
       "collection": 6304,
-      "collections": [],
+      "collections": [
+        6304
+      ],
       "franchise": -1,
       "franchises": [
         2000
@@ -50197,7 +50994,9 @@
     {
       "category": 0,
       "collection": 7098,
-      "collections": [],
+      "collections": [
+        7098
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -50341,7 +51140,9 @@
     {
       "category": 0,
       "collection": 8178,
-      "collections": [],
+      "collections": [
+        8178
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -50405,7 +51206,9 @@
     {
       "category": 0,
       "collection": 5702,
-      "collections": [],
+      "collections": [
+        5702
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -50619,7 +51422,9 @@
     {
       "category": 6,
       "collection": 1,
-      "collections": [],
+      "collections": [
+        1
+      ],
       "franchise": -1,
       "franchises": [
         1686
@@ -50779,7 +51584,9 @@
     {
       "category": 0,
       "collection": 467,
-      "collections": [],
+      "collections": [
+        467
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -51413,7 +52220,9 @@
     {
       "category": 0,
       "collection": 6097,
-      "collections": [],
+      "collections": [
+        6097
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -51440,7 +52249,9 @@
     {
       "category": 9,
       "collection": 197,
-      "collections": [],
+      "collections": [
+        197
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -51875,7 +52686,9 @@
     {
       "category": 0,
       "collection": 2810,
-      "collections": [],
+      "collections": [
+        2810
+      ],
       "franchise": -1,
       "franchises": [
         1043
@@ -51992,7 +52805,9 @@
     {
       "category": 0,
       "collection": 7027,
-      "collections": [],
+      "collections": [
+        7027
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -52274,6 +53089,38 @@
     {
       "category": 2,
       "collection": -1,
+      "collections": [
+        2624
+      ],
+      "franchise": -1,
+      "franchises": [
+        11
+      ],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        31
+      ],
+      "id": 164734,
+      "involved_companies": [
+        249678,
+        249679
+      ],
+      "name": "Middle-earth: Shadow of War - Blade of Galadriel",
+      "player_perspectives": [
+        2
+      ],
+      "themes": [
+        1,
+        17
+      ],
+      "url": "https://www.igdb.com/games/middle-earth-shadow-of-war-blade-of-galadriel"
+    },
+    {
+      "category": 2,
+      "collection": -1,
       "collections": [],
       "franchise": -1,
       "franchises": [],
@@ -52301,7 +53148,9 @@
     {
       "category": 0,
       "collection": 197,
-      "collections": [],
+      "collections": [
+        197
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -52381,7 +53230,9 @@
     {
       "category": 0,
       "collection": 7875,
-      "collections": [],
+      "collections": [
+        7875
+      ],
       "franchise": -1,
       "franchises": [
         1
@@ -58555,14 +59406,6 @@
     {
       "id": 51835,
       "company": 407
-    },
-    {
-      "id": 51836,
-      "company": 407
-    },
-    {
-      "id": 51839,
-      "company": 50
     },
     {
       "id": 51840,
@@ -64993,10 +65836,6 @@
       "company": 10075
     },
     {
-      "id": 192546,
-      "company": 523
-    },
-    {
       "id": 192547,
       "company": 423
     },
@@ -66831,6 +67670,18 @@
     {
       "id": 248616,
       "company": 37893
+    },
+    {
+      "id": 249422,
+      "company": 523
+    },
+    {
+      "id": 249678,
+      "company": 407
+    },
+    {
+      "id": 249679,
+      "company": 50
     }
   ],
   "platforms": [
