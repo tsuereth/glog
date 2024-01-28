@@ -7597,10 +7597,6 @@
   ],
   "games": [
     {
-      "id": 168670,
-      "name": "Uncharted: Legacy of Thieves Collection"
-    },
-    {
       "category": -1,
       "collection": -1,
       "collections": [],
@@ -10357,7 +10353,9 @@
     {
       "category": 0,
       "collection": 194,
-      "collections": [],
+      "collections": [
+        194
+      ],
       "franchise": -1,
       "franchises": [
         458
@@ -10424,7 +10422,9 @@
     {
       "category": 0,
       "collection": 2128,
-      "collections": [],
+      "collections": [
+        2128
+      ],
       "franchise": -1,
       "franchises": [
         463
@@ -16648,7 +16648,9 @@
     {
       "category": 0,
       "collection": 248,
-      "collections": [],
+      "collections": [
+        248
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -16674,7 +16676,9 @@
     {
       "category": 0,
       "collection": 265,
-      "collections": [],
+      "collections": [
+        265
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -16703,7 +16707,9 @@
     {
       "category": 0,
       "collection": 267,
-      "collections": [],
+      "collections": [
+        267
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -20770,7 +20776,9 @@
     {
       "category": 0,
       "collection": 46,
-      "collections": [],
+      "collections": [
+        46
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -28346,7 +28354,9 @@
     {
       "category": 0,
       "collection": 2109,
-      "collections": [],
+      "collections": [
+        2109
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -28990,7 +29000,9 @@
     {
       "category": 0,
       "collection": 2156,
-      "collections": [],
+      "collections": [
+        2156
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -29422,7 +29434,9 @@
     {
       "category": 0,
       "collection": 956,
-      "collections": [],
+      "collections": [
+        956
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -31301,7 +31315,9 @@
     {
       "category": 0,
       "collection": 1268,
-      "collections": [],
+      "collections": [
+        1268
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -33503,7 +33519,9 @@
     {
       "category": 0,
       "collection": 2384,
-      "collections": [],
+      "collections": [
+        2384
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -34864,7 +34882,9 @@
     {
       "category": 0,
       "collection": 2190,
-      "collections": [],
+      "collections": [
+        2190
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -39079,7 +39099,9 @@
     {
       "category": 0,
       "collection": 4628,
-      "collections": [],
+      "collections": [
+        4628
+      ],
       "franchise": -1,
       "franchises": [
         1017
@@ -40817,7 +40839,9 @@
     {
       "category": 0,
       "collection": 1937,
-      "collections": [],
+      "collections": [
+        1937
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -50254,7 +50278,9 @@
     {
       "category": 0,
       "collection": 8320,
-      "collections": [],
+      "collections": [
+        8320
+      ],
       "franchise": -1,
       "franchises": [
         1755
@@ -53195,6 +53221,37 @@
         38
       ],
       "url": "https://www.igdb.com/games/saints-row--1"
+    },
+    {
+      "category": 3,
+      "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [
+        2121
+      ],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        5,
+        31
+      ],
+      "id": 168670,
+      "involved_companies": [
+        148121,
+        232961,
+        248714
+      ],
+      "name": "Uncharted: Legacy of Thieves Collection",
+      "player_perspectives": [
+        2
+      ],
+      "themes": [
+        1,
+        22
+      ],
+      "url": "https://www.igdb.com/games/uncharted-legacy-of-thieves-collection"
     },
     {
       "category": 0,
@@ -64002,6 +64059,10 @@
       "company": 4357
     },
     {
+      "id": 148121,
+      "company": 2121
+    },
+    {
       "id": 148205,
       "company": 70
     },
@@ -67246,6 +67307,10 @@
       "company": 25341
     },
     {
+      "id": 232961,
+      "company": 401
+    },
+    {
       "id": 233275,
       "company": 2225
     },
@@ -67688,6 +67753,10 @@
     {
       "id": 248616,
       "company": 37893
+    },
+    {
+      "id": 248714,
+      "company": 10100
     },
     {
       "id": 249422,
