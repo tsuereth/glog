@@ -7567,6 +7567,10 @@
     {
       "id": 5184,
       "name": "Kawasaki Jet Ski"
+    },
+    {
+      "id": 5238,
+      "name": "Plants vs. Zombies"
     }
   ],
   "gameModes": [
@@ -10491,7 +10495,9 @@
     {
       "category": 0,
       "collection": 2128,
-      "collections": [],
+      "collections": [
+        2128
+      ],
       "franchise": -1,
       "franchises": [
         463
@@ -13272,7 +13278,9 @@
     {
       "category": 0,
       "collection": 2152,
-      "collections": [],
+      "collections": [
+        2152
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -17432,7 +17440,9 @@
         572
       ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        5238
+      ],
       "game_modes": [
         1,
         3
@@ -17747,8 +17757,8 @@
       ],
       "id": 1333,
       "involved_companies": [
-        151713,
-        151728
+        251407,
+        251408
       ],
       "name": "Pong",
       "player_perspectives": [
@@ -19010,7 +19020,9 @@
     {
       "category": 0,
       "collection": 2599,
-      "collections": [],
+      "collections": [
+        2599
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -20808,7 +20820,9 @@
     {
       "category": 0,
       "collection": 34,
-      "collections": [],
+      "collections": [
+        34
+      ],
       "franchise": -1,
       "franchises": [
         1036
@@ -20839,7 +20853,9 @@
     {
       "category": 0,
       "collection": 197,
-      "collections": [],
+      "collections": [
+        197
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -20903,7 +20919,9 @@
     {
       "category": 0,
       "collection": 2128,
-      "collections": [],
+      "collections": [
+        2128
+      ],
       "franchise": -1,
       "franchises": [
         463
@@ -20955,10 +20973,11 @@
       ],
       "id": 1987,
       "involved_companies": [
-        59108,
         59109,
         59110,
-        197227
+        197227,
+        250808,
+        250809
       ],
       "name": "XIII",
       "player_perspectives": [
@@ -21009,7 +21028,9 @@
     {
       "category": 0,
       "collection": 3326,
-      "collections": [],
+      "collections": [
+        3326
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -24194,7 +24215,9 @@
     {
       "category": 0,
       "collection": 1516,
-      "collections": [],
+      "collections": [
+        1516
+      ],
       "franchise": 103,
       "franchises": [
         103
@@ -25672,7 +25695,9 @@
     {
       "category": 0,
       "collection": 2156,
-      "collections": [],
+      "collections": [
+        2156
+      ],
       "franchise": -1,
       "franchises": [
         457
@@ -26773,7 +26798,9 @@
     {
       "category": 0,
       "collection": 5070,
-      "collections": [],
+      "collections": [
+        5070
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -27421,7 +27448,9 @@
     {
       "category": 0,
       "collection": 925,
-      "collections": [],
+      "collections": [
+        925
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -28387,7 +28416,9 @@
     {
       "category": 0,
       "collection": 579,
-      "collections": [],
+      "collections": [
+        579
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -28420,7 +28451,9 @@
     {
       "category": 8,
       "collection": 579,
-      "collections": [],
+      "collections": [
+        579
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -28845,10 +28878,10 @@
       ],
       "id": 4969,
       "involved_companies": [
-        11981,
         11983,
         19866,
-        159880
+        250397,
+        250398
       ],
       "name": "LEGO The Lord of the Rings",
       "player_perspectives": [
@@ -29521,7 +29554,9 @@
     {
       "category": 0,
       "collection": 9,
-      "collections": [],
+      "collections": [
+        9
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -30015,7 +30050,9 @@
     {
       "category": 0,
       "collection": 689,
-      "collections": [],
+      "collections": [
+        689
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -33000,7 +33037,9 @@
     {
       "category": 10,
       "collection": 1025,
-      "collections": [],
+      "collections": [
+        1025
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -37457,7 +37496,9 @@
     {
       "category": 0,
       "collection": 4037,
-      "collections": [],
+      "collections": [
+        4037
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -37490,7 +37531,9 @@
     {
       "category": 0,
       "collection": 8324,
-      "collections": [],
+      "collections": [
+        8324
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -38169,7 +38212,9 @@
     {
       "category": 0,
       "collection": 506,
-      "collections": [],
+      "collections": [
+        506
+      ],
       "franchise": -1,
       "franchises": [
         771
@@ -38537,7 +38582,9 @@
     {
       "category": 0,
       "collection": 5357,
-      "collections": [],
+      "collections": [
+        5357
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -38565,7 +38612,9 @@
     {
       "category": 0,
       "collection": 2384,
-      "collections": [],
+      "collections": [
+        2384
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -41327,7 +41376,9 @@
     {
       "category": 0,
       "collection": 881,
-      "collections": [],
+      "collections": [
+        881
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -46228,7 +46279,9 @@
     {
       "category": 9,
       "collection": 1058,
-      "collections": [],
+      "collections": [
+        1058
+      ],
       "franchise": -1,
       "franchises": [
         43
@@ -46258,7 +46311,9 @@
     {
       "category": 0,
       "collection": 280,
-      "collections": [],
+      "collections": [
+        280
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -48746,7 +48801,9 @@
     {
       "category": 0,
       "collection": 4582,
-      "collections": [],
+      "collections": [
+        4582
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [],
@@ -50917,7 +50974,8 @@
       "id": 112874,
       "involved_companies": [
         166703,
-        166704
+        166704,
+        250220
       ],
       "name": "Horizon Forbidden West",
       "player_perspectives": [
@@ -52533,6 +52591,7 @@
       ],
       "franchise": -1,
       "franchises": [
+        44,
         528,
         2341
       ],
@@ -52551,7 +52610,9 @@
         158607
       ],
       "name": "Suicide Squad: Kill the Justice League",
-      "player_perspectives": [],
+      "player_perspectives": [
+        2
+      ],
       "themes": [
         1
       ],
@@ -55813,10 +55874,6 @@
     {
       "id": 11918,
       "company": 1487
-    },
-    {
-      "id": 11981,
-      "company": 50
     },
     {
       "id": 11983,
@@ -59885,10 +59942,6 @@
     {
       "id": 59020,
       "company": 163
-    },
-    {
-      "id": 59108,
-      "company": 23
     },
     {
       "id": 59109,
@@ -64211,14 +64264,6 @@
       "company": 1661
     },
     {
-      "id": 151713,
-      "company": 2519
-    },
-    {
-      "id": 151728,
-      "company": 82
-    },
-    {
       "id": 152071,
       "company": 18606
     },
@@ -64429,10 +64474,6 @@
     {
       "id": 159793,
       "company": 26
-    },
-    {
-      "id": 159880,
-      "company": 1290
     },
     {
       "id": 159890,
@@ -67769,6 +67810,34 @@
     {
       "id": 249679,
       "company": 50
+    },
+    {
+      "id": 250220,
+      "company": 291
+    },
+    {
+      "id": 250397,
+      "company": 50
+    },
+    {
+      "id": 250398,
+      "company": 1290
+    },
+    {
+      "id": 250808,
+      "company": 104
+    },
+    {
+      "id": 250809,
+      "company": 23
+    },
+    {
+      "id": 251407,
+      "company": 2519
+    },
+    {
+      "id": 251408,
+      "company": 82
     }
   ],
   "platforms": [
