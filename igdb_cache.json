@@ -6893,6 +6893,10 @@
     {
       "id": 50620,
       "name": "Jaleco USA"
+    },
+    {
+      "id": 52701,
+      "name": "UnEpic Games"
     }
   ],
   "franchises": [
@@ -7359,6 +7363,10 @@
     {
       "id": 1467,
       "name": "Yakuza"
+    },
+    {
+      "id": 1476,
+      "name": "Metal Slug"
     },
     {
       "id": 1518,
@@ -15399,7 +15407,8 @@
         1567
       ],
       "game_modes": [
-        1
+        1,
+        2
       ],
       "genres": [
         8
@@ -18407,7 +18416,9 @@
         298
       ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1476
+      ],
       "game_modes": [
         1,
         2,
@@ -23934,11 +23945,11 @@
       "id": 2681,
       "involved_companies": [
         51889,
-        192552,
-        198203,
         198204,
         198205,
-        198206
+        198206,
+        251616,
+        251617
       ],
       "name": "LEGO Star Wars: The Video Game",
       "player_perspectives": [
@@ -24954,7 +24965,8 @@
         68503,
         68504,
         132046,
-        134863
+        134863,
+        251878
       ],
       "name": "Unepic",
       "player_perspectives": [
@@ -33934,7 +33946,7 @@
       "url": "https://www.igdb.com/games/assassins-creed-iii-the-tyranny-of-king-washington"
     },
     {
-      "category": 9,
+      "category": 10,
       "collection": -1,
       "collections": [
         543
@@ -53319,7 +53331,9 @@
       "collection": -1,
       "collections": [],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        44
+      ],
       "game_modes": [
         1
       ],
@@ -65960,10 +65974,6 @@
       "company": 423
     },
     {
-      "id": 192552,
-      "company": 4288
-    },
-    {
       "id": 193388,
       "company": 33387
     },
@@ -66086,10 +66096,6 @@
     {
       "id": 197987,
       "company": 32471
-    },
-    {
-      "id": 198203,
-      "company": 292
     },
     {
       "id": 198204,
@@ -67838,6 +67844,18 @@
     {
       "id": 251408,
       "company": 82
+    },
+    {
+      "id": 251616,
+      "company": 4288
+    },
+    {
+      "id": 251617,
+      "company": 292
+    },
+    {
+      "id": 251878,
+      "company": 52701
     }
   ],
   "platforms": [
