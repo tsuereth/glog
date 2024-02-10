@@ -6807,6 +6807,10 @@
       "name": "Activision Italia"
     },
     {
+      "id": 34659,
+      "name": "PocketPair"
+    },
+    {
       "id": 35235,
       "name": "nuverse"
     },
@@ -7608,10 +7612,6 @@
     }
   ],
   "games": [
-    {
-      "name": "Palworld",
-      "id": 151665
-    },
     {
       "category": -1,
       "collection": -1,
@@ -14560,7 +14560,7 @@
     },
     {
       "category": 0,
-      "collection": -1,
+      "collection": 847,
       "collections": [
         847
       ],
@@ -53109,6 +53109,41 @@
     {
       "category": 0,
       "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "genres": [
+        5,
+        12,
+        25,
+        31,
+        32
+      ],
+      "id": 151665,
+      "involved_companies": [
+        218777
+      ],
+      "name": "Palworld",
+      "player_perspectives": [
+        2
+      ],
+      "themes": [
+        1,
+        21,
+        33,
+        38
+      ],
+      "url": "https://www.igdb.com/games/palworld"
+    },
+    {
+      "category": 0,
+      "collection": -1,
       "collections": [
         225
       ],
@@ -66752,6 +66787,10 @@
     {
       "id": 218744,
       "company": 41489
+    },
+    {
+      "id": 218777,
+      "company": 34659
     },
     {
       "id": 219076,
