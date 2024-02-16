@@ -2171,6 +2171,10 @@
       "name": "Playmates Interactive Entertainment"
     },
     {
+      "id": 93,
+      "name": "Square Enix 1st Production Department"
+    },
+    {
       "id": 94,
       "name": "EA Digital Illusions CE"
     },
@@ -6587,6 +6591,10 @@
       "name": "NVIDIA Lightspeed Studios"
     },
     {
+      "id": 23018,
+      "name": "Square Enix Business Division 2"
+    },
+    {
       "id": 23125,
       "name": "PLAYISM"
     },
@@ -6875,6 +6883,10 @@
       "name": "Nintendo EPD Production Group No. 3"
     },
     {
+      "id": 45304,
+      "name": "Square Enix Creative Business Unit I"
+    },
+    {
       "id": 47126,
       "name": "Shaun Spalding"
     },
@@ -6901,6 +6913,10 @@
     {
       "id": 52701,
       "name": "UnEpic Games"
+    },
+    {
+      "id": 52915,
+      "name": "Square Enix Business Division 1"
     }
   ],
   "franchises": [
@@ -10564,8 +10580,11 @@
       ],
       "id": 384,
       "involved_companies": [
-        19563,
-        19564
+        19564,
+        253236,
+        253237,
+        253354,
+        253355
       ],
       "name": "Final Fantasy XIII-2",
       "player_perspectives": [
@@ -10634,7 +10653,9 @@
       ],
       "id": 389,
       "involved_companies": [
-        19377
+        253348,
+        253349,
+        253350
       ],
       "name": "Final Fantasy XIII",
       "player_perspectives": [
@@ -26867,10 +26888,10 @@
       ],
       "id": 3629,
       "involved_companies": [
-        149247,
-        149248,
         224514,
-        225574
+        225574,
+        252949,
+        252950
       ],
       "name": "Wave Race 64",
       "player_perspectives": [
@@ -26878,7 +26899,8 @@
         2
       ],
       "themes": [
-        1
+        1,
+        32
       ],
       "url": "https://www.igdb.com/games/wave-race-64"
     },
@@ -38077,8 +38099,10 @@
       ],
       "id": 11169,
       "involved_companies": [
-        24331,
-        45640
+        45640,
+        253118,
+        253119,
+        253187
       ],
       "name": "Final Fantasy VII Remake",
       "player_perspectives": [
@@ -48366,7 +48390,8 @@
       ],
       "id": 55034,
       "involved_companies": [
-        53420
+        253335,
+        253336
       ],
       "name": "Final Fantasy XV: Windows Edition",
       "player_perspectives": [
@@ -51214,7 +51239,7 @@
       ],
       "id": 113512,
       "involved_companies": [
-        81115
+        253136
       ],
       "name": "What Never Was",
       "player_perspectives": [
@@ -56909,10 +56934,6 @@
       "company": 4065
     },
     {
-      "id": 19377,
-      "company": 26
-    },
-    {
       "id": 19390,
       "company": 4069
     },
@@ -56955,10 +56976,6 @@
     {
       "id": 19525,
       "company": 74
-    },
-    {
-      "id": 19563,
-      "company": 26
     },
     {
       "id": 19564,
@@ -57591,10 +57608,6 @@
     {
       "id": 24232,
       "company": 5888
-    },
-    {
-      "id": 24331,
-      "company": 26
     },
     {
       "id": 24359,
@@ -59729,10 +59742,6 @@
       "company": 129
     },
     {
-      "id": 53420,
-      "company": 26
-    },
-    {
       "id": 53508,
       "company": 70
     },
@@ -60995,10 +61004,6 @@
     {
       "id": 81027,
       "company": 20228
-    },
-    {
-      "id": 81115,
-      "company": 20899
     },
     {
       "id": 81254,
@@ -64263,14 +64268,6 @@
     {
       "id": 149179,
       "company": 2359
-    },
-    {
-      "id": 149247,
-      "company": 70
-    },
-    {
-      "id": 149248,
-      "company": 421
     },
     {
       "id": 149449,
@@ -67899,6 +67896,66 @@
     {
       "id": 251878,
       "company": 52701
+    },
+    {
+      "id": 252949,
+      "company": 70
+    },
+    {
+      "id": 252950,
+      "company": 421
+    },
+    {
+      "id": 253118,
+      "company": 26
+    },
+    {
+      "id": 253119,
+      "company": 45304
+    },
+    {
+      "id": 253136,
+      "company": 20899
+    },
+    {
+      "id": 253187,
+      "company": 52915
+    },
+    {
+      "id": 253236,
+      "company": 26
+    },
+    {
+      "id": 253237,
+      "company": 52915
+    },
+    {
+      "id": 253335,
+      "company": 26
+    },
+    {
+      "id": 253336,
+      "company": 23018
+    },
+    {
+      "id": 253348,
+      "company": 93
+    },
+    {
+      "id": 253349,
+      "company": 52915
+    },
+    {
+      "id": 253350,
+      "company": 26
+    },
+    {
+      "id": 253354,
+      "company": 26
+    },
+    {
+      "id": 253355,
+      "company": 93
     }
   ],
   "platforms": [
