@@ -2599,6 +2599,14 @@
       "name": "Sony Computer Entertainment Europe"
     },
     {
+      "id": 335,
+      "name": "Square Product Development Division 3"
+    },
+    {
+      "id": 337,
+      "name": "Square Enix Product Development Division 4"
+    },
+    {
       "id": 338,
       "name": "Encore"
     },
@@ -2947,10 +2955,6 @@
       "name": "Capcom Production Studio 3"
     },
     {
-      "id": 656,
-      "name": "Angel Studios"
-    },
-    {
       "id": 660,
       "name": "Capcom Production Studio 1"
     },
@@ -3137,6 +3141,10 @@
     {
       "id": 797,
       "name": "h.a.n.d., Inc."
+    },
+    {
+      "id": 799,
+      "name": "Square Enix Product Development Division 1"
     },
     {
       "id": 800,
@@ -4443,6 +4451,10 @@
       "name": "Nintendo of America"
     },
     {
+      "id": 2862,
+      "name": "Square Enix Product Development Division 8"
+    },
+    {
       "id": 2889,
       "name": "Mattel"
     },
@@ -4537,6 +4549,10 @@
     {
       "id": 3039,
       "name": "Indietopia Games"
+    },
+    {
+      "id": 3061,
+      "name": "Square USA"
     },
     {
       "id": 3064,
@@ -5137,6 +5153,10 @@
     {
       "id": 5542,
       "name": "Maddy Makes Games"
+    },
+    {
+      "id": 5544,
+      "name": "Square Product Development Division 4"
     },
     {
       "id": 5674,
@@ -5903,6 +5923,10 @@
       "name": "Trinket Studios"
     },
     {
+      "id": 10938,
+      "name": "Square Enix Product Development Division 2"
+    },
+    {
       "id": 11021,
       "name": "Drizzly Bear"
     },
@@ -6391,6 +6415,10 @@
       "name": "Crunchy Leaf Games"
     },
     {
+      "id": 18556,
+      "name": "h.a.n.d. Inc."
+    },
+    {
       "id": 18606,
       "name": "Cosmonaut Studios"
     },
@@ -6405,6 +6433,10 @@
     {
       "id": 19166,
       "name": "CD Projekt Red Wrocław"
+    },
+    {
+      "id": 19281,
+      "name": "Square Enix Business Division 3"
     },
     {
       "id": 19676,
@@ -6917,6 +6949,10 @@
     {
       "id": 52915,
       "name": "Square Enix Business Division 1"
+    },
+    {
+      "id": 52975,
+      "name": "Square Product Development Division 1"
     }
   ],
   "franchises": [
@@ -10459,7 +10495,8 @@
       ],
       "franchise": -1,
       "franchises": [
-        463
+        463,
+        551
       ],
       "game_modes": [
         1
@@ -10491,7 +10528,8 @@
       ],
       "franchise": -1,
       "franchises": [
-        463
+        463,
+        551
       ],
       "game_modes": [
         1
@@ -10528,7 +10566,8 @@
       ],
       "franchise": -1,
       "franchises": [
-        463
+        463,
+        551
       ],
       "game_modes": [
         1
@@ -10653,9 +10692,9 @@
       ],
       "id": 389,
       "involved_companies": [
-        253348,
         253349,
-        253350
+        253350,
+        254749
       ],
       "name": "Final Fantasy XIII",
       "player_perspectives": [
@@ -10688,7 +10727,8 @@
       ],
       "id": 398,
       "involved_companies": [
-        94323
+        253770,
+        253771
       ],
       "name": "Final Fantasy XII",
       "player_perspectives": [
@@ -10723,7 +10763,9 @@
       "id": 399,
       "involved_companies": [
         5731,
-        181280
+        253751,
+        253752,
+        253753
       ],
       "name": "Final Fantasy IV",
       "player_perspectives": [
@@ -10754,9 +10796,10 @@
       ],
       "id": 411,
       "involved_companies": [
-        94307,
-        94308,
-        218684
+        218684,
+        253759,
+        253760,
+        253761
       ],
       "name": "Final Fantasy XI Online",
       "player_perspectives": [
@@ -10827,7 +10870,9 @@
       ],
       "id": 413,
       "involved_companies": [
-        130170
+        253657,
+        253658,
+        253659
       ],
       "name": "Final Fantasy X-2",
       "player_perspectives": [
@@ -10865,7 +10910,9 @@
       "id": 414,
       "involved_companies": [
         5539,
-        148244
+        253763,
+        253764,
+        253765
       ],
       "name": "Final Fantasy Tactics Advance",
       "player_perspectives": [
@@ -10898,7 +10945,8 @@
       "id": 418,
       "involved_companies": [
         178030,
-        178031
+        253625,
+        253626
       ],
       "name": "Final Fantasy X",
       "player_perspectives": [
@@ -11002,9 +11050,11 @@
       ],
       "id": 421,
       "involved_companies": [
-        174430,
         174431,
-        174432
+        253619,
+        253620,
+        253621,
+        253948
       ],
       "name": "Final Fantasy IX",
       "player_perspectives": [
@@ -11107,9 +11157,10 @@
       ],
       "id": 425,
       "involved_companies": [
-        173889,
         173890,
-        173891
+        173891,
+        253618,
+        253622
       ],
       "name": "Final Fantasy VIII",
       "player_perspectives": [
@@ -11180,9 +11231,10 @@
       ],
       "id": 427,
       "involved_companies": [
-        177558,
         180880,
-        180881
+        253617,
+        253623,
+        253624
       ],
       "name": "Final Fantasy VII",
       "player_perspectives": [
@@ -11217,10 +11269,10 @@
       ],
       "id": 428,
       "involved_companies": [
-        34050,
-        34052,
         34053,
-        215736
+        215736,
+        253768,
+        253769
       ],
       "name": "Final Fantasy Tactics",
       "player_perspectives": [
@@ -13841,13 +13893,11 @@
       "id": 880,
       "involved_companies": [
         154503,
-        182293,
-        182294,
-        182295,
-        182296,
-        182297,
-        182481,
-        224716
+        254583,
+        254584,
+        254585,
+        254586,
+        254587
       ],
       "name": "Resident Evil 2",
       "player_perspectives": [
@@ -16998,9 +17048,10 @@
       "involved_companies": [
         14844,
         103411,
-        165895,
         191463,
-        199931
+        253627,
+        253628,
+        253629
       ],
       "name": "Kingdom Hearts",
       "player_perspectives": [
@@ -17033,9 +17084,9 @@
       "id": 1221,
       "involved_companies": [
         2765,
-        103437,
         103439,
-        107820
+        253635,
+        253636
       ],
       "name": "Kingdom Hearts II",
       "player_perspectives": [
@@ -17982,8 +18033,10 @@
       ],
       "id": 1343,
       "involved_companies": [
-        3070,
-        3071
+        3071,
+        253685,
+        253686,
+        254453
       ],
       "name": "The World Ends with You",
       "player_perspectives": [
@@ -18012,7 +18065,8 @@
       "id": 1346,
       "involved_companies": [
         21267,
-        165896
+        253927,
+        253928
       ],
       "name": "Xenogears",
       "player_perspectives": [
@@ -18159,7 +18213,8 @@
       ],
       "id": 1359,
       "involved_companies": [
-        165885
+        253943,
+        253944
       ],
       "name": "Secret of Evermore",
       "player_perspectives": [
@@ -19226,7 +19281,7 @@
         60,
         123,
         457,
-        463,
+        551,
         596,
         756,
         763,
@@ -20135,7 +20190,8 @@
       ],
       "id": 1804,
       "involved_companies": [
-        94303
+        253923,
+        253924
       ],
       "name": "Chrono Cross",
       "player_perspectives": [
@@ -26301,7 +26357,6 @@
       "genres": [
         12,
         16,
-        26,
         31
       ],
       "id": 3349,
@@ -28374,7 +28429,8 @@
       ],
       "id": 4756,
       "involved_companies": [
-        172644
+        172644,
+        253591
       ],
       "name": "Child of Light",
       "player_perspectives": [
@@ -31282,7 +31338,8 @@
       "involved_companies": [
         15768,
         15769,
-        94318
+        94318,
+        254068
       ],
       "name": "Sword of Mana",
       "player_perspectives": [],
@@ -31905,7 +31962,8 @@
       ],
       "id": 7047,
       "involved_companies": [
-        16664
+        254017,
+        254018
       ],
       "name": "The Last Remnant",
       "player_perspectives": [
@@ -40803,7 +40861,8 @@
       ],
       "id": 14988,
       "involved_companies": [
-        60431
+        254069,
+        254070
       ],
       "name": "Children of Mana",
       "player_perspectives": [
@@ -40832,7 +40891,8 @@
       ],
       "id": 14990,
       "involved_companies": [
-        61021
+        61021,
+        254081
       ],
       "name": "Heroes of Mana",
       "player_perspectives": [],
@@ -44168,7 +44228,8 @@
       ],
       "id": 21054,
       "involved_companies": [
-        89173
+        254029,
+        254030
       ],
       "name": "Final Fantasy: Crystal Chronicles - My Life as a King",
       "player_perspectives": [
@@ -53670,7 +53731,9 @@
       "collection": -1,
       "collections": [],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1163
+      ],
       "game_modes": [
         1
       ],
@@ -54428,10 +54491,6 @@
     {
       "id": 3069,
       "company": 10
-    },
-    {
-      "id": 3070,
-      "company": 26
     },
     {
       "id": 3071,
@@ -56406,10 +56465,6 @@
       "company": 290
     },
     {
-      "id": 16664,
-      "company": 26
-    },
-    {
       "id": 16666,
       "company": 2239
     },
@@ -58232,14 +58287,6 @@
     {
       "id": 33972,
       "company": 2742
-    },
-    {
-      "id": 34050,
-      "company": 250
-    },
-    {
-      "id": 34052,
-      "company": 250
     },
     {
       "id": 34053,
@@ -60114,10 +60161,6 @@
       "company": 2766
     },
     {
-      "id": 60431,
-      "company": 26
-    },
-    {
       "id": 60452,
       "company": 632
     },
@@ -61410,10 +61453,6 @@
       "company": 4147
     },
     {
-      "id": 89173,
-      "company": 26
-    },
-    {
       "id": 89418,
       "company": 2740
     },
@@ -61538,23 +61577,7 @@
       "company": 18344
     },
     {
-      "id": 94303,
-      "company": 250
-    },
-    {
-      "id": 94307,
-      "company": 250
-    },
-    {
-      "id": 94308,
-      "company": 26
-    },
-    {
       "id": 94318,
-      "company": 26
-    },
-    {
-      "id": 94323,
       "company": 26
     },
     {
@@ -62402,10 +62425,6 @@
       "company": 26
     },
     {
-      "id": 103437,
-      "company": 26
-    },
-    {
       "id": 103439,
       "company": 334
     },
@@ -62704,10 +62723,6 @@
     {
       "id": 107804,
       "company": 11662
-    },
-    {
-      "id": 107820,
-      "company": 26
     },
     {
       "id": 107850,
@@ -63510,10 +63525,6 @@
       "company": 8382
     },
     {
-      "id": 130170,
-      "company": 26
-    },
-    {
       "id": 130176,
       "company": 70
     },
@@ -64214,10 +64225,6 @@
       "company": 861
     },
     {
-      "id": 148244,
-      "company": 26
-    },
-    {
       "id": 148292,
       "company": 421
     },
@@ -64666,18 +64673,6 @@
       "company": 33479
     },
     {
-      "id": 165885,
-      "company": 250
-    },
-    {
-      "id": 165895,
-      "company": 250
-    },
-    {
-      "id": 165896,
-      "company": 250
-    },
-    {
       "id": 166011,
       "company": 817
     },
@@ -64870,10 +64865,6 @@
       "company": 112
     },
     {
-      "id": 173889,
-      "company": 250
-    },
-    {
       "id": 173890,
       "company": 252
     },
@@ -64902,16 +64893,8 @@
       "company": 861
     },
     {
-      "id": 174430,
-      "company": 250
-    },
-    {
       "id": 174431,
       "company": 252
-    },
-    {
-      "id": 174432,
-      "company": 26
     },
     {
       "id": 174439,
@@ -64958,10 +64941,6 @@
       "company": 395
     },
     {
-      "id": 177558,
-      "company": 250
-    },
-    {
       "id": 177974,
       "company": 26539
     },
@@ -64976,10 +64955,6 @@
     {
       "id": 178030,
       "company": 252
-    },
-    {
-      "id": 178031,
-      "company": 250
     },
     {
       "id": 178054,
@@ -65170,10 +65145,6 @@
       "company": 13634
     },
     {
-      "id": 180881,
-      "company": 26
-    },
-    {
       "id": 181075,
       "company": 5154
     },
@@ -65184,10 +65155,6 @@
     {
       "id": 181239,
       "company": 2230
-    },
-    {
-      "id": 181280,
-      "company": 250
     },
     {
       "id": 181346,
@@ -65230,26 +65197,6 @@
       "company": 323
     },
     {
-      "id": 182293,
-      "company": 37
-    },
-    {
-      "id": 182294,
-      "company": 655
-    },
-    {
-      "id": 182295,
-      "company": 70
-    },
-    {
-      "id": 182296,
-      "company": 656
-    },
-    {
-      "id": 182297,
-      "company": 17160
-    },
-    {
       "id": 182378,
       "company": 104
     },
@@ -65259,10 +65206,6 @@
     },
     {
       "id": 182480,
-      "company": 42627
-    },
-    {
-      "id": 182481,
       "company": 42627
     },
     {
@@ -66210,10 +66153,6 @@
       "company": 23993
     },
     {
-      "id": 199931,
-      "company": 26
-    },
-    {
       "id": 199932,
       "company": 70
     },
@@ -66959,10 +66898,6 @@
     },
     {
       "id": 224708,
-      "company": 812
-    },
-    {
-      "id": 224716,
       "company": 812
     },
     {
@@ -67938,10 +67873,6 @@
       "company": 23018
     },
     {
-      "id": 253348,
-      "company": 93
-    },
-    {
       "id": 253349,
       "company": 52915
     },
@@ -67956,6 +67887,230 @@
     {
       "id": 253355,
       "company": 93
+    },
+    {
+      "id": 253591,
+      "company": 104
+    },
+    {
+      "id": 253617,
+      "company": 52975
+    },
+    {
+      "id": 253618,
+      "company": 52975
+    },
+    {
+      "id": 253619,
+      "company": 52975
+    },
+    {
+      "id": 253620,
+      "company": 26
+    },
+    {
+      "id": 253621,
+      "company": 250
+    },
+    {
+      "id": 253622,
+      "company": 250
+    },
+    {
+      "id": 253623,
+      "company": 26
+    },
+    {
+      "id": 253624,
+      "company": 250
+    },
+    {
+      "id": 253625,
+      "company": 250
+    },
+    {
+      "id": 253626,
+      "company": 52975
+    },
+    {
+      "id": 253627,
+      "company": 250
+    },
+    {
+      "id": 253628,
+      "company": 26
+    },
+    {
+      "id": 253629,
+      "company": 52975
+    },
+    {
+      "id": 253635,
+      "company": 26
+    },
+    {
+      "id": 253636,
+      "company": 799
+    },
+    {
+      "id": 253657,
+      "company": 26
+    },
+    {
+      "id": 253658,
+      "company": 250
+    },
+    {
+      "id": 253659,
+      "company": 52975
+    },
+    {
+      "id": 253685,
+      "company": 26
+    },
+    {
+      "id": 253686,
+      "company": 18556
+    },
+    {
+      "id": 253751,
+      "company": 26
+    },
+    {
+      "id": 253752,
+      "company": 19281
+    },
+    {
+      "id": 253753,
+      "company": 4501
+    },
+    {
+      "id": 253759,
+      "company": 250
+    },
+    {
+      "id": 253760,
+      "company": 26
+    },
+    {
+      "id": 253761,
+      "company": 335
+    },
+    {
+      "id": 253763,
+      "company": 26
+    },
+    {
+      "id": 253764,
+      "company": 250
+    },
+    {
+      "id": 253765,
+      "company": 5544
+    },
+    {
+      "id": 253768,
+      "company": 250
+    },
+    {
+      "id": 253769,
+      "company": 5544
+    },
+    {
+      "id": 253770,
+      "company": 26
+    },
+    {
+      "id": 253771,
+      "company": 337
+    },
+    {
+      "id": 253923,
+      "company": 250
+    },
+    {
+      "id": 253924,
+      "company": 335
+    },
+    {
+      "id": 253927,
+      "company": 250
+    },
+    {
+      "id": 253928,
+      "company": 335
+    },
+    {
+      "id": 253943,
+      "company": 250
+    },
+    {
+      "id": 253944,
+      "company": 3061
+    },
+    {
+      "id": 253948,
+      "company": 3061
+    },
+    {
+      "id": 254017,
+      "company": 26
+    },
+    {
+      "id": 254018,
+      "company": 10938
+    },
+    {
+      "id": 254029,
+      "company": 26
+    },
+    {
+      "id": 254030,
+      "company": 10938
+    },
+    {
+      "id": 254068,
+      "company": 2862
+    },
+    {
+      "id": 254069,
+      "company": 26
+    },
+    {
+      "id": 254070,
+      "company": 2862
+    },
+    {
+      "id": 254081,
+      "company": 2862
+    },
+    {
+      "id": 254453,
+      "company": 799
+    },
+    {
+      "id": 254583,
+      "company": 655
+    },
+    {
+      "id": 254584,
+      "company": 70
+    },
+    {
+      "id": 254585,
+      "company": 17160
+    },
+    {
+      "id": 254586,
+      "company": 42627
+    },
+    {
+      "id": 254587,
+      "company": 37
+    },
+    {
+      "id": 254749,
+      "company": 799
     }
   ],
   "platforms": [
