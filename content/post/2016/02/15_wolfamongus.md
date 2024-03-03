@@ -8,7 +8,7 @@ rating = [ "Good" ]
 title = "Who's Afraid of the Big, Bad Dialog Tree"
 +++
 
-<game:The Wolf Among Us> succeeds due to the strength of its overall story, and especially of its titular character -- despite the specter of Telltale's continual [writing blunders](game:The Walking Dead: Season One).
+<game:The Wolf Among Us> succeeds due to the strength of its overall story, and especially of its titular character -- despite the specter of Telltale's continual [writing blunders](game:The Walking Dead).
 
 It's the same shit I'll complain about all day re: <game:Mass Effect>: dialog choices that don't say what they sounded like, choices that don't match the tone of the conversation (a'la <game:L.A. Noire>), and scenarios that just don't have the choice you really wanted to pick.  These issues cut deep in a game that's completely story-driven.
 
@@ -24,6 +24,6 @@ It feels <i>weird</i> saying this, but it's a shame that there weren't a couple 
 
 The Wolf Among Us is still not what I'd call a top-tier story-driven game, but it's easily better than most of its contemporaries.  The premise is legitimately interesting, the characterization is usually great, and it overall <i>fits</i> its interactive and scripted content together quite well.
 
-<b>Better than</b>: other [Telltale](game:The Walking Dead: Season One) games  
+<b>Better than</b>: other [Telltale](game:The Walking Dead) games  
 <b>Not as good as</b>: the [Ace Attorney](game:Phoenix Wright: Ace Attorney) games  
 <b>But as long as I'm listing minor gripes</b>: the "will remember this" prompts are just ... pointless distractions.  I could lose those.

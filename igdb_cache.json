@@ -20267,7 +20267,7 @@
         120224,
         184212
       ],
-      "name": "The Walking Dead: Season One",
+      "name": "The Walking Dead",
       "player_perspectives": [
         2
       ],
@@ -20277,7 +20277,7 @@
         21,
         31
       ],
-      "url": "https://www.igdb.com/games/the-walking-dead-season-one"
+      "url": "https://www.igdb.com/games/the-walking-dead"
     },
     {
       "category": 0,
@@ -44650,7 +44650,7 @@
       ],
       "id": 21610,
       "involved_companies": [
-        190537
+        255942
       ],
       "name": "Phoenix Wright: Ace Attorney Trilogy",
       "player_perspectives": [],
@@ -65845,10 +65845,6 @@
       "company": 5196
     },
     {
-      "id": 190537,
-      "company": 37
-    },
-    {
       "id": 190653,
       "company": 37
     },
@@ -68131,6 +68127,10 @@
     {
       "id": 255845,
       "company": 250
+    },
+    {
+      "id": 255942,
+      "company": 37
     }
   ],
   "platforms": [

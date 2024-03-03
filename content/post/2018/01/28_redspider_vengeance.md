@@ -21,4 +21,4 @@ As much as I admire this story, I'm really not interested in replaying the whole
 
 <b>Better than</b>: <game:Hate Plus>  
 <b>Not as good as</b>: <game:Analogue: A Hate Story>  
-<b>Debatably better than</b>: [The Walking Dead](game:The Walking Dead: Season One), in terms of narrative quality.
+<b>Debatably better than</b>: [The Walking Dead](game:The Walking Dead), in terms of narrative quality.
