@@ -231,8 +231,9 @@ namespace GlogGenerator.Data
         public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline, bool includeDrafts)
         {
             // Reset the current index, while tracking some "old" data to detect update conflicts.
+            // Note: DO NOT reset old `posts` data, or else already-parsed-then-updated data references
+            // may get replaced with old and stale reference keys.
             this.pages.Clear();
-            this.posts.Clear();
             this.rawDataFiles.Clear();
             this.staticFiles.Clear();
 
@@ -340,8 +341,8 @@ namespace GlogGenerator.Data
                         }
 
                         var postId = postData.GetPostId();
-                        this.posts[postId] = postData;
 
+                        // Always check-or-add post categories, because they only "exist" if posts try to use them.
                         foreach (var categoryReference in postData.Categories)
                         {
                             CategoryData categoryData;
@@ -361,6 +362,39 @@ namespace GlogGenerator.Data
 
                             categoryData.LinkedPostIds.Add(postId);
                         }
+
+                        // Always check-or-add post ratings, because they only "exist" if posts try to use them.
+                        if (postData.Ratings != null)
+                        {
+                            foreach (var ratingReference in postData.Ratings)
+                            {
+                                RatingData ratingData;
+                                try
+                                {
+                                    ratingData = this.GetData(ratingReference);
+                                }
+                                catch (ArgumentException)
+                                {
+                                    ratingData = new RatingData()
+                                    {
+                                        Name = ratingReference.GetUnresolvedReferenceKey(),
+                                    };
+
+                                    this.ratings[ratingData.GetDataId()] = ratingData;
+                                }
+
+                                ratingData.LinkedPostIds.Add(postId);
+                            }
+                        }
+
+                        // Subsequent post parsing - of linked games, of source text... - may be redundant.
+                        // In fact, old parse results' data references may have already changed, making the original source un-parseable.
+                        if (this.posts.ContainsKey(postId))
+                        {
+                            continue;
+                        }
+
+                        this.posts[postId] = postData;
 
                         var postGameTags = new Dictionary<string, TagData>();
                         if (postData.Games != null)
@@ -389,29 +423,6 @@ namespace GlogGenerator.Data
                             {
                                 var platformData = this.GetData(platformReference);
                                 platformData.LinkedPostIds.Add(postId);
-                            }
-                        }
-
-                        if (postData.Ratings != null)
-                        {
-                            foreach (var ratingReference in postData.Ratings)
-                            {
-                                RatingData ratingData;
-                                try
-                                {
-                                    ratingData = this.GetData(ratingReference);
-                                }
-                                catch (ArgumentException)
-                                {
-                                    ratingData = new RatingData()
-                                    {
-                                        Name = ratingReference.GetUnresolvedReferenceKey(),
-                                    };
-
-                                    this.ratings[ratingData.GetDataId()] = ratingData;
-                                }
-
-                                ratingData.LinkedPostIds.Add(postId);
                             }
                         }
                     }
