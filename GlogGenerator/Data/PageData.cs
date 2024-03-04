@@ -1,3 +1,5 @@
+using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -31,6 +33,41 @@ namespace GlogGenerator.Data
         public MarkdownDocument MdDoc { get; private set; }
 
         private string permalinkRelative = null;
+
+        public static string PageIdFromFilePath(MarkdownPipeline mdPipeline, string filePath)
+        {
+            // We need to parse the file to determine its permalink, based on front matter data.
+            var fileContent = File.ReadAllText(filePath);
+            var mdDoc = Markdown.Parse(fileContent, mdPipeline);
+
+            string permalinkRelative = null;
+            var frontMatterBlock = mdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
+            if (frontMatterBlock != null)
+            {
+                var frontMatter = frontMatterBlock.GetModel();
+
+                if (frontMatter.TryGetNode("permalink", out var frontMatterPermalink))
+                {
+                    var permalinkString = frontMatterPermalink.ToString();
+                    if (!string.IsNullOrEmpty(permalinkString))
+                    {
+                        if (permalinkString.StartsWith('/'))
+                        {
+                            permalinkString = permalinkString.Substring(1);
+                        }
+
+                        if (!permalinkString.EndsWith('/'))
+                        {
+                            permalinkString += '/';
+                        }
+
+                        permalinkRelative = permalinkString;
+                    }
+                }
+            }
+
+            return permalinkRelative;
+        }
 
         public static PageData MarkdownFromFilePath(MarkdownPipeline mdPipeline, string filePath)
         {
