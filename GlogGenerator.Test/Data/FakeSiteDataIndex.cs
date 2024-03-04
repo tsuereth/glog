@@ -103,6 +103,12 @@ namespace GlogGenerator.Test
             return data;
         }
 
+        public T GetDataWithOldLookup<T>(SiteDataReference<T> dataReference, Dictionary<string, T> oldDataLookup)
+            where T : class, IGlogReferenceable
+        {
+            throw new NotImplementedException();
+        }
+
         public List<CategoryData> GetCategories()
         {
             return this.categories.ToList();

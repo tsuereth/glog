@@ -21,7 +21,7 @@ namespace GlogGenerator.Data
 
         private Dictionary<string, CategoryData> categories = new Dictionary<string, CategoryData>();
         private Dictionary<string, GameData> games = new Dictionary<string, GameData>();
-        private List<PageData> pages = new List<PageData>();
+        private Dictionary<string, PageData> pages = new Dictionary<string, PageData>();
         private Dictionary<string, PlatformData> platforms = new Dictionary<string, PlatformData>();
         private Dictionary<string, PostData> posts = new Dictionary<string, PostData>();
         private Dictionary<string, RatingData> ratings = new Dictionary<string, RatingData>();
@@ -74,6 +74,12 @@ namespace GlogGenerator.Data
         public T GetData<T>(SiteDataReference<T> dataReference)
             where T : class, IGlogReferenceable
         {
+            return this.GetDataWithOldLookup<T>(dataReference, null);
+        }
+
+        public T GetDataWithOldLookup<T>(SiteDataReference<T> dataReference, Dictionary<string, T> oldDataLookup)
+            where T : class, IGlogReferenceable
+        {
             var dataType = typeof(T);
             T data;
 
@@ -107,6 +113,9 @@ namespace GlogGenerator.Data
             {
                 var referenceKey = dataReference.GetUnresolvedReferenceKey();
 
+                // Do not check `oldDataLookup` here!
+                // Unresolved references should never get tied to "old" data.
+
                 data = dataLookup.Values.Where(v => v.MatchesReferenceableKey(referenceKey)).FirstOrDefault();
                 if (data == null)
                 {
@@ -119,7 +128,32 @@ namespace GlogGenerator.Data
             {
                 var referenceId = dataReference.GetResolvedReferenceId();
 
-                data = dataLookup[referenceId];
+                if (dataLookup.ContainsKey(referenceId))
+                {
+                    data = dataLookup[referenceId];
+                }
+                else
+                {
+                    if (oldDataLookup == null)
+                    {
+                        throw new ArgumentException($"Reference ID {referenceId} is marked as resolved, but found no match in the current data index");
+                    }
+                    else
+                    {
+                        if (oldDataLookup.ContainsKey(referenceId))
+                        {
+                            data = oldDataLookup[referenceId];
+
+                            // Well, if the current lookup didn't have this reference, but the "old" one does,
+                            // then it'll need to get re-added to the current index.
+                            dataLookup[referenceId] = data;
+                        }
+                        else
+                        {
+                            throw new ArgumentException($"Reference ID {referenceId} is marked as resolved, but found no match in the current OR old data index");
+                        }
+                    }
+                }
             }
 
             return data;
@@ -148,7 +182,7 @@ namespace GlogGenerator.Data
 
         public List<PageData> GetPages()
         {
-            return this.pages;
+            return this.pages.Values.ToList();
         }
 
         public PlatformData GetPlatform(string platformAbbreviation)
@@ -230,11 +264,15 @@ namespace GlogGenerator.Data
 
         public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline, bool includeDrafts)
         {
-            // Reset the current index, while tracking some "old" data to detect update conflicts.
-            this.pages.Clear();
-            this.posts.Clear();
+            // Reset the current index, while tracking old data to detect update conflicts.
             this.rawDataFiles.Clear();
             this.staticFiles.Clear();
+
+            var oldPages = this.pages;
+            this.pages = new Dictionary<string, PageData>();
+
+            var oldPosts = this.posts;
+            this.posts = new Dictionary<string, PostData>();
 
             var oldCategories = this.categories;
             this.categories = new Dictionary<string, CategoryData>();
@@ -332,14 +370,27 @@ namespace GlogGenerator.Data
                 {
                     try
                     {
-                        var postData = PostData.MarkdownFromFilePath(markdownPipeline, postPath, this);
+                        var postId = PostData.PostIdFromFilePath(markdownPipeline, postPath);
+                        PostData postData;
+
+                        // Was this post loaded before?
+                        // A previously-loaded PostData, with previously-processed references, may be more up-to-date
+                        // than attempting to re-parse the post from its original source file!
+                        if (oldPosts.ContainsKey(postId))
+                        {
+                            // TODO?: Compare the old post's file mtime to the mtime of the local file?
+                            postData = oldPosts[postId];
+                        }
+                        else
+                        {
+                            postData = PostData.MarkdownFromFilePath(markdownPipeline, postPath, this);
+                        }
 
                         if (!includeDrafts && postData.Draft == true)
                         {
                             continue;
                         }
 
-                        var postId = postData.GetPostId();
                         this.posts[postId] = postData;
 
                         foreach (var categoryReference in postData.Categories)
@@ -347,7 +398,7 @@ namespace GlogGenerator.Data
                             CategoryData categoryData;
                             try
                             {
-                                categoryData = this.GetData(categoryReference);
+                                categoryData = this.GetDataWithOldLookup(categoryReference, oldCategories);
                             }
                             catch (ArgumentException)
                             {
@@ -367,7 +418,7 @@ namespace GlogGenerator.Data
                         {
                             foreach (var gameReference in postData.Games)
                             {
-                                var gameData = this.GetData(gameReference);
+                                var gameData = this.GetDataWithOldLookup(gameReference, oldGames);
                                 gameData.LinkedPostIds.Add(postId);
 
                                 foreach (var tagName in gameData.Tags)
@@ -387,7 +438,7 @@ namespace GlogGenerator.Data
                         {
                             foreach (var platformReference in postData.Platforms)
                             {
-                                var platformData = this.GetData(platformReference);
+                                var platformData = this.GetDataWithOldLookup(platformReference, oldPlatforms);
                                 platformData.LinkedPostIds.Add(postId);
                             }
                         }
@@ -399,7 +450,7 @@ namespace GlogGenerator.Data
                                 RatingData ratingData;
                                 try
                                 {
-                                    ratingData = this.GetData(ratingReference);
+                                    ratingData = this.GetDataWithOldLookup(ratingReference, oldRatings);
                                 }
                                 catch (ArgumentException)
                                 {
@@ -428,8 +479,23 @@ namespace GlogGenerator.Data
                 };
                 foreach (var pageFilePath in additionalPageFilePaths)
                 {
-                    var pageData = PageData.MarkdownFromFilePath(markdownPipeline, pageFilePath);
-                    this.pages.Add(pageData);
+                    var pageId = PageData.PageIdFromFilePath(markdownPipeline, pageFilePath);
+                    PageData pageData;
+
+                    // Was this page loaded before?
+                    // A previously-loaded PageData, with previously-processed references, may be more up-to-date
+                    // than attempting to re-parse the page from its original source file!
+                    if (oldPages.ContainsKey(pageId))
+                    {
+                        // TODO?: Compare the old page's file mtime to the mtime of the local file?
+                        pageData = oldPages[pageId];
+                    }
+                    else
+                    {
+                        pageData = PageData.MarkdownFromFilePath(markdownPipeline, pageFilePath);
+                    }
+
+                    this.pages[pageId] = pageData;
                 }
             }
 
@@ -471,7 +537,7 @@ namespace GlogGenerator.Data
 
         public void RewriteSourceContent(Markdig.MarkdownPipeline markdownPipeline)
         {
-            foreach (var page in this.pages)
+            foreach (var page in this.pages.Values)
             {
                 page.RewriteSourceFile(markdownPipeline);
             }

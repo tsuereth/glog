@@ -10,6 +10,9 @@ namespace GlogGenerator.Data
         public T GetData<T>(SiteDataReference<T> dataReference)
             where T : class, IGlogReferenceable;
 
+        public T GetDataWithOldLookup<T>(SiteDataReference<T> dataReference, Dictionary<string, T> oldDataLookup)
+            where T : class, IGlogReferenceable;
+
         public List<CategoryData> GetCategories();
 
         public GameData GetGame(string gameTitle);

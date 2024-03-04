@@ -21,23 +21,7 @@ namespace GlogGenerator.Data
         {
             get
             {
-                var permalinkPathParts = new List<string>(4)
-                {
-                    this.Date.Year.ToString("D4", CultureInfo.InvariantCulture),
-                    this.Date.Month.ToString("D2", CultureInfo.InvariantCulture),
-                    this.Date.Day.ToString("D2", CultureInfo.InvariantCulture),
-                };
-
-                if (!string.IsNullOrEmpty(this.slug))
-                {
-                    permalinkPathParts.Add(this.slug);
-                }
-                else
-                {
-                    permalinkPathParts.Add(UrlizedString.Urlize(this.Title));
-                }    
-
-                return string.Join('/', permalinkPathParts) + '/';
+                return GeneratePermalinkRelative(this.Date, this.slug, this.Title);
             }
         }
 
@@ -57,17 +41,7 @@ namespace GlogGenerator.Data
 
         public string GetPostId()
         {
-            using (var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
-            {
-                var typeBytes = Encoding.UTF8.GetBytes(nameof(PostData));
-                hash.AppendData(typeBytes);
-
-                var permalinkRelativeBytes = Encoding.UTF8.GetBytes(this.PermalinkRelative);
-                hash.AppendData(permalinkRelativeBytes);
-
-                var idBytes = hash.GetCurrentHash();
-                return Convert.ToHexString(idBytes);
-            }
+            return CalculatePostId(this.PermalinkRelative);
         }
 
         public string ToMarkdownString(MarkdownPipeline mdPipeline, ISiteDataIndex siteDataIndex)
@@ -129,6 +103,45 @@ namespace GlogGenerator.Data
         private List<Tuple<Tommy.TomlString, SiteDataReference<GameData>>> games = new List<Tuple<Tommy.TomlString, SiteDataReference<GameData>>>();
         private List<Tuple<Tommy.TomlString, SiteDataReference<PlatformData>>> platforms = new List<Tuple<Tommy.TomlString, SiteDataReference<PlatformData>>>();
         private List<Tuple<Tommy.TomlString, SiteDataReference<RatingData>>> ratings = new List<Tuple<Tommy.TomlString, SiteDataReference<RatingData>>>();
+
+        public static string PostIdFromFilePath(MarkdownPipeline mdPipeline, string filePath)
+        {
+            // We need to parse the file to determine its permalink, based on front matter data.
+            var fileContent = File.ReadAllText(filePath);
+            var mdDoc = Markdown.Parse(fileContent, mdPipeline);
+
+            DateTimeOffset postDate = DateTimeOffset.MinValue;
+            string postSlug = null;
+            string postTitle = null;
+            var frontMatterBlock = mdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
+            if (frontMatterBlock != null)
+            {
+                var frontMatter = frontMatterBlock.GetModel();
+
+                if (frontMatter.TryGetNode("date", out var frontMatterDate))
+                {
+                    var dateString = frontMatterDate.ToString();
+                    if (!string.IsNullOrEmpty(dateString))
+                    {
+                        postDate = DateTimeOffset.Parse(dateString, CultureInfo.InvariantCulture);
+                    }
+                }
+
+                if (frontMatter.TryGetNode("title", out var frontMatterTitle))
+                {
+                    postTitle = frontMatterTitle.ToString();
+                }
+
+                if (frontMatter.TryGetNode("slug", out var frontMatterSlug))
+                {
+                    postSlug = frontMatterSlug.ToString();
+                }
+            }
+
+            var permalinkRelative = GeneratePermalinkRelative(postDate, postSlug, postTitle);
+
+            return CalculatePostId(permalinkRelative);
+        }
 
         public static PostData MarkdownFromFilePath(MarkdownPipeline mdPipeline, string filePath, ISiteDataIndex siteDataIndex)
         {
@@ -220,6 +233,42 @@ namespace GlogGenerator.Data
             }
 
             return post;
+        }
+
+        private static string CalculatePostId(string permalinkRelative)
+        {
+            using (var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
+            {
+                var typeBytes = Encoding.UTF8.GetBytes(nameof(PostData));
+                hash.AppendData(typeBytes);
+
+                var permalinkRelativeBytes = Encoding.UTF8.GetBytes(permalinkRelative);
+                hash.AppendData(permalinkRelativeBytes);
+
+                var idBytes = hash.GetCurrentHash();
+                return Convert.ToHexString(idBytes);
+            }
+        }
+
+        private static string GeneratePermalinkRelative(DateTimeOffset postDate, string postSlug, string postTitle)
+        {
+            var permalinkPathParts = new List<string>(4)
+            {
+                postDate.Year.ToString("D4", CultureInfo.InvariantCulture),
+                postDate.Month.ToString("D2", CultureInfo.InvariantCulture),
+                postDate.Day.ToString("D2", CultureInfo.InvariantCulture),
+            };
+
+            if (!string.IsNullOrEmpty(postSlug))
+            {
+                permalinkPathParts.Add(postSlug);
+            }
+            else
+            {
+                permalinkPathParts.Add(UrlizedString.Urlize(postTitle));
+            }
+
+            return string.Join('/', permalinkPathParts) + '/';
         }
     }
 }
