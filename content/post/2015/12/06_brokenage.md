@@ -14,6 +14,6 @@ No, the way in which Broken Age's second act disappoints most is its lackadaisac
 
 So, not as good as act 1, in terms of both writing quality and taut puzzle design.  But it's still fair to good.  There are much worse adventure games to go pixel-hunting in.
 
-<b>Better than</b>: [The Walking Dead](game:The Walking Dead: Season One)  
+<b>Better than</b>: [The Walking Dead](game:The Walking Dead)  
 <b>Not as good as</b>: The first half of the game.  
 <b>I do have to wonder</b>: If Double Fine had trouble getting voice actors back into the booth for the second half, which would explain the lack of personality this time around.
