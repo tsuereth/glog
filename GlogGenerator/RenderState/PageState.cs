@@ -243,7 +243,7 @@ namespace GlogGenerator.RenderState
             page.PageType = "games";
 
             page.IgdbUrl = gameData.IgdbUrl;
-            page.Tags = gameData.Tags;
+            page.Tags = gameData.Tags.ToList();
 
             page.LinkedPosts = gameData.LinkedPostIds.Select(i => siteDataIndex.GetPostById(i))
                 .Select(p => LinkedPostProperties.FromPostData(p, siteDataIndex))

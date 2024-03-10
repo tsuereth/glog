@@ -16,7 +16,7 @@ namespace GlogGenerator.Data
             }
         }
 
-        public List<string> LinkedPostIds { get; set; } = new List<string>();
+        public HashSet<string> LinkedPostIds { get; set; } = new HashSet<string>();
 
         private SortedSet<string> referenceableKeys = new SortedSet<string>(StringComparer.Ordinal);
 

@@ -12,7 +12,7 @@ namespace GlogGenerator.Data
 
         public string IgdbUrl { get; set; }
 
-        public List<string> LinkedPostIds { get; set; } = new List<string>();
+        public HashSet<string> LinkedPostIds { get; set; } = new HashSet<string>();
 
         private string dataId;
         private string referenceableKey;
