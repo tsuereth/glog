@@ -7693,10 +7693,6 @@
   ],
   "games": [
     {
-      "id": 153700,
-      "name": "Ghost of Tsushima: Director's Cut"
-    },
-    {
       "category": -1,
       "collection": -1,
       "collections": [],
@@ -19378,11 +19374,8 @@
       ],
       "id": 1631,
       "involved_companies": [
-        10274,
         10275,
-        10276,
-        10278,
-        212824
+        257012
       ],
       "name": "James Bond 007: Nightfire",
       "player_perspectives": [
@@ -53342,6 +53335,41 @@
       "url": "https://www.igdb.com/games/marvels-guardians-of-the-galaxy"
     },
     {
+      "category": 10,
+      "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        12,
+        31
+      ],
+      "id": 153700,
+      "involved_companies": [
+        140386,
+        256731,
+        256732,
+        256944
+      ],
+      "name": "Ghost of Tsushima: Director's Cut",
+      "player_perspectives": [
+        2
+      ],
+      "themes": [
+        1,
+        22,
+        23,
+        31,
+        38
+      ],
+      "url": "https://www.igdb.com/games/ghost-of-tsushima-directors-cut"
+    },
+    {
       "category": 0,
       "collection": 106,
       "collections": [
@@ -55784,20 +55812,8 @@
       "company": 260
     },
     {
-      "id": 10274,
-      "company": 73
-    },
-    {
       "id": 10275,
       "company": 425
-    },
-    {
-      "id": 10276,
-      "company": 148
-    },
-    {
-      "id": 10278,
-      "company": 1967
     },
     {
       "id": 10293,
@@ -64104,6 +64120,10 @@
       "company": 7
     },
     {
+      "id": 140386,
+      "company": 10100
+    },
+    {
       "id": 141205,
       "company": 442
     },
@@ -66552,10 +66572,6 @@
       "company": 14776
     },
     {
-      "id": 212824,
-      "company": 1
-    },
-    {
       "id": 212828,
       "company": 1
     },
@@ -68164,6 +68180,14 @@
       "company": 26
     },
     {
+      "id": 256731,
+      "company": 403
+    },
+    {
+      "id": 256732,
+      "company": 291
+    },
+    {
       "id": 256833,
       "company": 70
     },
@@ -68186,6 +68210,14 @@
     {
       "id": 256940,
       "company": 32471
+    },
+    {
+      "id": 256944,
+      "company": 403
+    },
+    {
+      "id": 257012,
+      "company": 1
     }
   ],
   "platforms": [
