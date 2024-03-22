@@ -1389,6 +1389,10 @@
       "name": "Smurfs"
     },
     {
+      "id": 3471,
+      "name": "Piczle"
+    },
+    {
       "id": 3502,
       "name": "Space Pirates and Zombies"
     },
@@ -1919,6 +1923,10 @@
     {
       "id": 9600,
       "name": "Talos Principle"
+    },
+    {
+      "id": 9680,
+      "name": "Khimera"
     }
   ],
   "companies": [
@@ -6007,6 +6015,10 @@
       "name": "Annapurna Interactive"
     },
     {
+      "id": 11740,
+      "name": "Bird Studio"
+    },
+    {
       "id": 11756,
       "name": "Alice & Smith"
     },
@@ -6293,6 +6305,10 @@
     {
       "id": 15405,
       "name": "Catness Game Studios"
+    },
+    {
+      "id": 15416,
+      "name": "Mega Cat Studios"
     },
     {
       "id": 15476,
@@ -13007,10 +13023,8 @@
       ],
       "id": 623,
       "involved_companies": [
-        5691,
         19967,
-        19968,
-        19969
+        258010
       ],
       "name": "Call of Duty 4: Modern Warfare",
       "player_perspectives": [
@@ -20185,7 +20199,8 @@
       ],
       "id": 1802,
       "involved_companies": [
-        228787
+        228787,
+        258857
       ],
       "name": "Chrono Trigger",
       "player_perspectives": [
@@ -21330,7 +21345,8 @@
         1
       ],
       "genres": [
-        5
+        5,
+        31
       ],
       "id": 2031,
       "involved_companies": [
@@ -29890,8 +29906,8 @@
       ],
       "id": 5648,
       "involved_companies": [
-        24036,
-        24037
+        258479,
+        258480
       ],
       "name": "Too Human",
       "player_perspectives": [
@@ -50897,7 +50913,8 @@
       "id": 107178,
       "involved_companies": [
         68802,
-        74503
+        74503,
+        258507
       ],
       "name": "The Textorcist: The Story of Ray Bibbia",
       "player_perspectives": [
@@ -51214,7 +51231,8 @@
       ],
       "id": 113112,
       "involved_companies": [
-        108827
+        258983,
+        258984
       ],
       "name": "Hades",
       "name_glogOverride": "Hades (2020)",
@@ -52367,7 +52385,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        3471
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -52383,13 +52403,15 @@
       ],
       "id": 130088,
       "involved_companies": [
-        129051,
-        129052
+        258909,
+        258910
       ],
       "name": "Piczle Cross Adventure",
       "player_perspectives": [],
       "themes": [
-        1
+        1,
+        27,
+        38
       ],
       "url": "https://www.igdb.com/games/piczle-cross-adventure"
     },
@@ -53144,7 +53166,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        9680
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -53163,7 +53187,9 @@
       "player_perspectives": [
         4
       ],
-      "themes": [],
+      "themes": [
+        27
+      ],
       "url": "https://www.igdb.com/games/khimera-puzzle-island"
     },
     {
@@ -55050,10 +55076,6 @@
     {
       "id": 5653,
       "company": 4
-    },
-    {
-      "id": 5691,
-      "company": 66
     },
     {
       "id": 5693,
@@ -57188,14 +57210,6 @@
       "company": 438
     },
     {
-      "id": 19968,
-      "company": 319
-    },
-    {
-      "id": 19969,
-      "company": 428
-    },
-    {
       "id": 19982,
       "company": 90
     },
@@ -57678,14 +57692,6 @@
     {
       "id": 23830,
       "company": 762
-    },
-    {
-      "id": 24036,
-      "company": 1951
-    },
-    {
-      "id": 24037,
-      "company": 53
     },
     {
       "id": 24085,
@@ -62800,10 +62806,6 @@
       "company": 552
     },
     {
-      "id": 108827,
-      "company": 928
-    },
-    {
       "id": 108830,
       "company": 4673
     },
@@ -63442,14 +63444,6 @@
     {
       "id": 128887,
       "company": 4440
-    },
-    {
-      "id": 129051,
-      "company": 27356
-    },
-    {
-      "id": 129052,
-      "company": 1460
     },
     {
       "id": 129185,
@@ -68204,8 +68198,44 @@
       "company": 46613
     },
     {
+      "id": 258010,
+      "company": 66
+    },
+    {
       "id": 258037,
       "company": 66
+    },
+    {
+      "id": 258479,
+      "company": 1951
+    },
+    {
+      "id": 258480,
+      "company": 53
+    },
+    {
+      "id": 258507,
+      "company": 15416
+    },
+    {
+      "id": 258857,
+      "company": 11740
+    },
+    {
+      "id": 258909,
+      "company": 27356
+    },
+    {
+      "id": 258910,
+      "company": 1460
+    },
+    {
+      "id": 258983,
+      "company": 928
+    },
+    {
+      "id": 258984,
+      "company": 27224
     }
   ],
   "platforms": [
