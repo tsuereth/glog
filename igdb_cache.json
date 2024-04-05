@@ -29809,7 +29809,8 @@
       ],
       "id": 5614,
       "involved_companies": [
-        174746
+        174746,
+        261045
       ],
       "name": "Kentucky Route Zero",
       "player_perspectives": [
@@ -36325,6 +36326,7 @@
         1787,
         1820,
         1821,
+        4751,
         5396
       ],
       "game_modes": [
@@ -36408,6 +36410,7 @@
         1787,
         1820,
         1821,
+        4751,
         5396
       ],
       "game_modes": [
@@ -42078,7 +42081,9 @@
         31228
       ],
       "name": "Finding Teddy",
-      "player_perspectives": [],
+      "player_perspectives": [
+        4
+      ],
       "themes": [
         17
       ],
@@ -48905,7 +48910,8 @@
       "id": 70828,
       "involved_companies": [
         106874,
-        106875
+        106875,
+        261038
       ],
       "name": "Raji: An Ancient Epic",
       "player_perspectives": [
@@ -50146,6 +50152,7 @@
         1821,
         1932,
         3081,
+        4751,
         5396
       ],
       "game_modes": [
@@ -68238,6 +68245,14 @@
     {
       "id": 259911,
       "company": 2406
+    },
+    {
+      "id": 261038,
+      "company": 27224
+    },
+    {
+      "id": 261045,
+      "company": 27224
     }
   ],
   "platforms": [
