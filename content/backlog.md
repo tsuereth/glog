@@ -11,6 +11,7 @@ permalink = "/backlog"
 * <game:Horizon Forbidden West: Burning Shores> (<platform:PC>)
 * <game:The Last of Us Part I> (<platform:PC>)
 * <game:Metroid Dread> (<platform:Switch>)
+* <game:Metroid Prime Remastered> (<platform:Switch>)
 * <game:NieR: Automata> (<platform:PC>)
 * <game:No More Heroes III> (<platform:Switch>)
 * <game:Oxenfree II: Lost Signals> (<platform:PC>)
