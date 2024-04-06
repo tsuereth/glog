@@ -7665,10 +7665,6 @@
       "name": "Xeno"
     },
     {
-      "id": 4751,
-      "name": "Wii"
-    },
-    {
       "id": 5184,
       "name": "Kawasaki Jet Ski"
     },
@@ -7708,10 +7704,6 @@
     }
   ],
   "games": [
-    {
-      "id": 236663,
-      "name": "Metroid Prime Remastered"
-    },
     {
       "category": -1,
       "collection": -1,
@@ -22182,9 +22174,7 @@
         681
       ],
       "franchise": -1,
-      "franchises": [
-        4751
-      ],
+      "franchises": [],
       "game_modes": [
         1,
         2,
@@ -22283,9 +22273,7 @@
         4422
       ],
       "franchise": -1,
-      "franchises": [
-        4751
-      ],
+      "franchises": [],
       "game_modes": [
         1,
         2
@@ -36330,7 +36318,6 @@
         1787,
         1820,
         1821,
-        4751,
         5396
       ],
       "game_modes": [
@@ -36414,7 +36401,6 @@
         1787,
         1820,
         1821,
-        4751,
         5396
       ],
       "game_modes": [
@@ -50156,7 +50142,6 @@
         1821,
         1932,
         3081,
-        4751,
         5396
       ],
       "game_modes": [
@@ -53834,6 +53819,40 @@
         38
       ],
       "url": "https://www.igdb.com/games/horizon-forbidden-west-burning-shores"
+    },
+    {
+      "category": 9,
+      "collection": -1,
+      "collections": [
+        243,
+        6240
+      ],
+      "franchise": -1,
+      "franchises": [
+        756
+      ],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        5,
+        8,
+        31
+      ],
+      "id": 236663,
+      "involved_companies": [
+        203227,
+        203307
+      ],
+      "name": "Metroid Prime Remastered",
+      "player_perspectives": [
+        1
+      ],
+      "themes": [
+        1,
+        18
+      ],
+      "url": "https://www.igdb.com/games/metroid-prime-remastered"
     },
     {
       "category": 3,
@@ -66329,6 +66348,14 @@
     {
       "id": 202816,
       "company": 104
+    },
+    {
+      "id": 203227,
+      "company": 70
+    },
+    {
+      "id": 203307,
+      "company": 766
     },
     {
       "id": 203371,
