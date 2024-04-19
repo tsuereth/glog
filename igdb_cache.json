@@ -1927,6 +1927,14 @@
     {
       "id": 9680,
       "name": "Khimera"
+    },
+    {
+      "id": 9768,
+      "name": "Wolfenstein: The New Order"
+    },
+    {
+      "id": 9775,
+      "name": "SteamWorld Heist"
     }
   ],
   "companies": [
@@ -3173,6 +3181,10 @@
     {
       "id": 812,
       "name": "Gradiente"
+    },
+    {
+      "id": 813,
+      "name": "Universal Interactive Studios"
     },
     {
       "id": 814,
@@ -4692,7 +4704,7 @@
     },
     {
       "id": 3697,
-      "name": "Jackbox Games, Inc."
+      "name": "Jackbox Games"
     },
     {
       "id": 3701,
@@ -8114,13 +8126,13 @@
         25,
         20004,
         184993,
-        184994,
-        184995,
-        184996,
-        184997,
         184998,
         184999,
-        185001
+        185001,
+        262494,
+        262496,
+        262497,
+        262498
       ],
       "name": "BioShock 2",
       "player_perspectives": [
@@ -16914,7 +16926,8 @@
       "id": 1185,
       "involved_companies": [
         185347,
-        185348
+        262945,
+        262946
       ],
       "name": "Crash Bandicoot",
       "player_perspectives": [
@@ -17974,10 +17987,12 @@
       ],
       "id": 1339,
       "involved_companies": [
-        3057,
-        3059,
-        3060,
-        38514
+        262641,
+        262642,
+        262643,
+        262644,
+        262645,
+        262646
       ],
       "name": "Psychonauts",
       "player_perspectives": [
@@ -21332,7 +21347,8 @@
       "category": 0,
       "collection": 47,
       "collections": [
-        47
+        47,
+        9768
       ],
       "franchise": -1,
       "franchises": [
@@ -35644,10 +35660,13 @@
       "category": 4,
       "collection": 47,
       "collections": [
-        47
+        47,
+        9768
       ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1277
+      ],
       "game_modes": [
         1
       ],
@@ -41034,7 +41053,8 @@
       "category": 0,
       "collection": 1937,
       "collections": [
-        1937
+        1937,
+        9775
       ],
       "franchise": -1,
       "franchises": [],
@@ -45279,7 +45299,8 @@
       "category": 1,
       "collection": 1937,
       "collections": [
-        1937
+        1937,
+        9775
       ],
       "franchise": -1,
       "franchises": [],
@@ -47687,7 +47708,8 @@
       "category": 0,
       "collection": 47,
       "collections": [
-        47
+        47,
+        9768
       ],
       "franchise": -1,
       "franchises": [
@@ -50611,7 +50633,8 @@
       "involved_companies": [
         84850,
         84851,
-        84852
+        84852,
+        262895
       ],
       "name": "Cat Quest II",
       "player_perspectives": [
@@ -54612,18 +54635,6 @@
     {
       "id": 2995,
       "company": 844
-    },
-    {
-      "id": 3057,
-      "company": 85
-    },
-    {
-      "id": 3059,
-      "company": 700
-    },
-    {
-      "id": 3060,
-      "company": 197
     },
     {
       "id": 3069,
@@ -58776,10 +58787,6 @@
     {
       "id": 38507,
       "company": 10585
-    },
-    {
-      "id": 38514,
-      "company": 684
     },
     {
       "id": 38539,
@@ -65446,22 +65453,6 @@
       "company": 449
     },
     {
-      "id": 184994,
-      "company": 2492
-    },
-    {
-      "id": 184995,
-      "company": 18
-    },
-    {
-      "id": 184996,
-      "company": 17
-    },
-    {
-      "id": 184997,
-      "company": 649
-    },
-    {
       "id": 184998,
       "company": 19
     },
@@ -65612,10 +65603,6 @@
     {
       "id": 185347,
       "company": 13634
-    },
-    {
-      "id": 185348,
-      "company": 401
     },
     {
       "id": 185855,
@@ -68296,6 +68283,58 @@
     {
       "id": 261527,
       "company": 739
+    },
+    {
+      "id": 262494,
+      "company": 15
+    },
+    {
+      "id": 262496,
+      "company": 18
+    },
+    {
+      "id": 262497,
+      "company": 2492
+    },
+    {
+      "id": 262498,
+      "company": 17
+    },
+    {
+      "id": 262641,
+      "company": 197
+    },
+    {
+      "id": 262642,
+      "company": 85
+    },
+    {
+      "id": 262643,
+      "company": 684
+    },
+    {
+      "id": 262644,
+      "company": 700
+    },
+    {
+      "id": 262645,
+      "company": 85
+    },
+    {
+      "id": 262646,
+      "company": 17966
+    },
+    {
+      "id": 262895,
+      "company": 37893
+    },
+    {
+      "id": 262945,
+      "company": 401
+    },
+    {
+      "id": 262946,
+      "company": 813
     }
   ],
   "platforms": [
