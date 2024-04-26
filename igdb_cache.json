@@ -6743,6 +6743,10 @@
       "name": "Null Reference Studio"
     },
     {
+      "id": 24943,
+      "name": "Deep Silver Volition"
+    },
+    {
       "id": 25077,
       "name": "Intelligent Systems"
     },
@@ -7728,18 +7732,6 @@
     }
   ],
   "games": [
-    {
-      "id": 249476,
-      "name": "Saints Row: The Heist & The Hazardous"
-    },
-    {
-      "id": 257021,
-      "name": "Saints Row: Doc Ketchum's Murder Circus"
-    },
-    {
-      "id": 260935,
-      "name": "Saints Row: A Song of Ice & Dust"
-    },
     {
       "category": -1,
       "collection": -1,
@@ -38728,7 +38720,10 @@
     {
       "category": 0,
       "collection": 782,
-      "collections": [],
+      "collections": [
+        782,
+        3057
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -53934,6 +53929,29 @@
       "url": "https://www.igdb.com/games/metroid-prime-remastered"
     },
     {
+      "category": 1,
+      "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        5
+      ],
+      "id": 249476,
+      "involved_companies": [],
+      "name": "Saints Row: The Heist & The Hazardous",
+      "player_perspectives": [],
+      "themes": [
+        1
+      ],
+      "url": "https://www.igdb.com/games/saints-row-the-heist-and-the-hazardous"
+    },
+    {
       "category": 3,
       "collection": -1,
       "collections": [],
@@ -53999,6 +54017,54 @@
         17
       ],
       "url": "https://www.igdb.com/games/super-mario-rpg"
+    },
+    {
+      "category": 1,
+      "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        5
+      ],
+      "id": 257021,
+      "involved_companies": [
+        263453
+      ],
+      "name": "Saints Row: Doc Ketchum's Murder Circus",
+      "player_perspectives": [],
+      "themes": [
+        1
+      ],
+      "url": "https://www.igdb.com/games/saints-row-doc-ketchums-murder-circus"
+    },
+    {
+      "category": 2,
+      "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        5
+      ],
+      "id": 260935,
+      "involved_companies": [],
+      "name": "Saints Row: A Song of Ice & Dust",
+      "player_perspectives": [],
+      "themes": [
+        1
+      ],
+      "url": "https://www.igdb.com/games/saints-row-a-song-of-ice-and-dust"
     }
   ],
   "genres": [
@@ -68383,6 +68449,10 @@
     {
       "id": 262946,
       "company": 813
+    },
+    {
+      "id": 263453,
+      "company": 24943
     }
   ],
   "platforms": [
