@@ -625,6 +625,10 @@
       "name": "Dark Souls"
     },
     {
+      "id": 549,
+      "name": "Bomberman"
+    },
+    {
       "id": 550,
       "name": "Dynasty Warriors"
     },
@@ -1947,6 +1951,18 @@
     {
       "id": 9809,
       "name": "Job Simulator"
+    },
+    {
+      "id": 9821,
+      "name": "The Legend of Zelda: Four Swords"
+    },
+    {
+      "id": 9846,
+      "name": "Shadowrun Returns"
+    },
+    {
+      "id": 9849,
+      "name": "The Legend of Zelda: A Link to the Past"
     }
   ],
   "companies": [
@@ -2125,10 +2141,6 @@
     {
       "id": 61,
       "name": "Gameloft"
-    },
-    {
-      "id": 62,
-      "name": "Griptonite Games"
     },
     {
       "id": 63,
@@ -3101,10 +3113,6 @@
     {
       "id": 764,
       "name": "Psygnosis"
-    },
-    {
-      "id": 765,
-      "name": "Intelligent Systems Co., Ltd."
     },
     {
       "id": 766,
@@ -7441,12 +7449,24 @@
       "name": "Ecco the dolphin"
     },
     {
+      "id": 1060,
+      "name": "Nights into Dreams"
+    },
+    {
       "id": 1063,
       "name": "Dishonored"
     },
     {
       "id": 1064,
       "name": "X-COM"
+    },
+    {
+      "id": 1067,
+      "name": "Crazy Taxi"
+    },
+    {
+      "id": 1068,
+      "name": "Super Monkey Ball"
     },
     {
       "id": 1069,
@@ -7475,6 +7495,10 @@
     {
       "id": 1277,
       "name": "Wolfenstein"
+    },
+    {
+      "id": 1337,
+      "name": "Space Channel 5"
     },
     {
       "id": 1351,
@@ -7541,6 +7565,14 @@
       "name": "Raving Rabbids"
     },
     {
+      "id": 1777,
+      "name": "Golden Axe"
+    },
+    {
+      "id": 1778,
+      "name": "Shinobi"
+    },
+    {
       "id": 1781,
       "name": "Altered Beast"
     },
@@ -7567,6 +7599,10 @@
     {
       "id": 1821,
       "name": "Punch-Out!!"
+    },
+    {
+      "id": 1830,
+      "name": "Wreck-It Ralph"
     },
     {
       "id": 1844,
@@ -7663,6 +7699,10 @@
     {
       "id": 2775,
       "name": "Musou"
+    },
+    {
+      "id": 2891,
+      "name": "Team Fortress"
     },
     {
       "id": 3081,
@@ -14866,7 +14906,8 @@
       "category": 0,
       "collection": 106,
       "collections": [
-        106
+        106,
+        9849
       ],
       "franchise": -1,
       "franchises": [
@@ -15041,7 +15082,8 @@
       "category": 0,
       "collection": 106,
       "collections": [
-        106
+        106,
+        9821
       ],
       "franchise": -1,
       "franchises": [
@@ -15075,7 +15117,8 @@
       "category": 0,
       "collection": 106,
       "collections": [
-        106
+        106,
+        9821
       ],
       "franchise": -1,
       "franchises": [
@@ -17916,8 +17959,10 @@
       ],
       "id": 1333,
       "involved_companies": [
-        251407,
-        251408
+        251408,
+        263583,
+        263584,
+        264198
       ],
       "name": "Pong",
       "player_perspectives": [
@@ -18873,7 +18918,7 @@
       "involved_companies": [
         11686,
         11687,
-        11688
+        264426
       ],
       "name": "Fire Emblem: Radiant Dawn",
       "player_perspectives": [
@@ -19602,10 +19647,10 @@
       ],
       "id": 1706,
       "involved_companies": [
-        4802,
         51746,
         130386,
-        130389
+        130389,
+        264424
       ],
       "name": "WarioWare: Smooth Moves",
       "player_perspectives": [
@@ -20262,7 +20307,9 @@
         345
       ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1844
+      ],
       "game_modes": [
         1
       ],
@@ -21950,7 +21997,14 @@
       ],
       "franchise": -1,
       "franchises": [
-        457
+        457,
+        1060,
+        1067,
+        1068,
+        1337,
+        1777,
+        1778,
+        1830
       ],
       "game_modes": [
         1,
@@ -21963,8 +22017,8 @@
       ],
       "id": 2174,
       "involved_companies": [
-        180183,
-        180184
+        263983,
+        263984
       ],
       "name": "Sonic & All-Stars Racing Transformed",
       "player_perspectives": [
@@ -23145,9 +23199,9 @@
       "id": 2343,
       "involved_companies": [
         149122,
-        149123,
         224767,
-        226314
+        226314,
+        264442
       ],
       "name": "Mario Kart: Super Circuit",
       "player_perspectives": [
@@ -24338,10 +24392,10 @@
       ],
       "id": 2739,
       "involved_companies": [
-        189126,
         189127,
         189128,
-        225051
+        225051,
+        264427
       ],
       "name": "Tetris Attack",
       "player_perspectives": [
@@ -24556,7 +24610,8 @@
       "category": 0,
       "collection": 106,
       "collections": [
-        106
+        106,
+        9849
       ],
       "franchise": -1,
       "franchises": [
@@ -24859,12 +24914,11 @@
       "id": 2973,
       "involved_companies": [
         20061,
-        51992,
         51996,
         52000,
-        52001,
         52002,
-        184722
+        184722,
+        264398
       ],
       "name": "The Lord of the Rings: The Return of the King",
       "player_perspectives": [
@@ -25144,7 +25198,8 @@
       "category": 0,
       "collection": 554,
       "collections": [
-        554
+        554,
+        9846
       ],
       "franchise": 127,
       "franchises": [
@@ -26407,9 +26462,9 @@
       "id": 3340,
       "involved_companies": [
         148214,
-        148215,
         225578,
-        225579
+        225579,
+        264416
       ],
       "name": "Paper Mario",
       "player_perspectives": [
@@ -26444,7 +26499,7 @@
       "id": 3349,
       "involved_companies": [
         8751,
-        8752
+        264413
       ],
       "name": "Paper Mario: The Thousand-Year Door",
       "player_perspectives": [
@@ -26479,8 +26534,8 @@
       "id": 3350,
       "involved_companies": [
         8753,
-        8754,
-        8755
+        8755,
+        264454
       ],
       "name": "Paper Mario: Sticker Star",
       "player_perspectives": [
@@ -30310,7 +30365,7 @@
       "id": 6005,
       "involved_companies": [
         34942,
-        130795
+        264045
       ],
       "name": "Kingdom Rush",
       "player_perspectives": [
@@ -35326,7 +35381,8 @@
       "category": 4,
       "collection": 554,
       "collections": [
-        554
+        554,
+        9846
       ],
       "franchise": -1,
       "franchises": [
@@ -41290,12 +41346,16 @@
     },
     {
       "category": 0,
-      "collection": 655,
+      "collection": -1,
       "collections": [
         655
       ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        425,
+        1724,
+        2891
+      ],
       "game_modes": [
         1
       ],
@@ -42610,7 +42670,9 @@
     {
       "category": 1,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        3
+      ],
       "franchise": -1,
       "franchises": [
         1034
@@ -43819,9 +43881,8 @@
       ],
       "id": 19928,
       "involved_companies": [
-        43727,
         43728,
-        126056
+        264471
       ],
       "name": "Crashmo",
       "player_perspectives": [
@@ -44696,7 +44757,9 @@
     {
       "category": 1,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        2624
+      ],
       "franchise": -1,
       "franchises": [
         11
@@ -44917,7 +44980,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        549
+      ],
       "franchise": -1,
       "franchises": [
         799
@@ -45221,8 +45286,8 @@
       ],
       "id": 23093,
       "involved_companies": [
-        47095,
-        47096
+        47096,
+        264448
       ],
       "name": "Planet Puzzle League",
       "player_perspectives": [
@@ -48112,7 +48177,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        549
+      ],
       "franchise": -1,
       "franchises": [
         799
@@ -48210,7 +48277,8 @@
       "category": 10,
       "collection": -1,
       "collections": [
-        106
+        106,
+        9821
       ],
       "franchise": -1,
       "franchises": [
@@ -53467,7 +53535,8 @@
       "category": 0,
       "collection": 106,
       "collections": [
-        106
+        106,
+        9821
       ],
       "franchise": -1,
       "franchises": [
@@ -53866,7 +53935,9 @@
     {
       "category": 2,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        6304
+      ],
       "franchise": -1,
       "franchises": [
         2000
@@ -54044,7 +54115,7 @@
       "url": "https://www.igdb.com/games/saints-row-doc-ketchums-murder-circus"
     },
     {
-      "category": 2,
+      "category": 1,
       "collection": -1,
       "collections": [],
       "franchise": -1,
@@ -54058,7 +54129,9 @@
         5
       ],
       "id": 260935,
-      "involved_companies": [],
+      "involved_companies": [
+        263837
+      ],
       "name": "Saints Row: A Song of Ice & Dust",
       "player_perspectives": [],
       "themes": [
@@ -55023,10 +55096,6 @@
       "company": 1
     },
     {
-      "id": 4802,
-      "company": 765
-    },
-    {
       "id": 4854,
       "company": 7
     },
@@ -55819,16 +55888,8 @@
       "company": 70
     },
     {
-      "id": 8752,
-      "company": 765
-    },
-    {
       "id": 8753,
       "company": 70
-    },
-    {
-      "id": 8754,
-      "company": 765
     },
     {
       "id": 8755,
@@ -56217,10 +56278,6 @@
     {
       "id": 11687,
       "company": 866
-    },
-    {
-      "id": 11688,
-      "company": 765
     },
     {
       "id": 11768,
@@ -59231,10 +59288,6 @@
       "company": 3820
     },
     {
-      "id": 43727,
-      "company": 765
-    },
-    {
       "id": 43728,
       "company": 70
     },
@@ -59559,10 +59612,6 @@
       "company": 3039
     },
     {
-      "id": 47095,
-      "company": 765
-    },
-    {
       "id": 47096,
       "company": 70
     },
@@ -59879,20 +59928,12 @@
       "company": 73
     },
     {
-      "id": 51992,
-      "company": 1
-    },
-    {
       "id": 51996,
       "company": 432
     },
     {
       "id": 52000,
       "company": 683
-    },
-    {
-      "id": 52001,
-      "company": 62
     },
     {
       "id": 52002,
@@ -63483,10 +63524,6 @@
       "company": 28729
     },
     {
-      "id": 126056,
-      "company": 25077
-    },
-    {
       "id": 126161,
       "company": 800
     },
@@ -63769,10 +63806,6 @@
     {
       "id": 130737,
       "company": 2168
-    },
-    {
-      "id": 130795,
-      "company": 2761
     },
     {
       "id": 130894,
@@ -64399,10 +64432,6 @@
       "company": 70
     },
     {
-      "id": 148215,
-      "company": 765
-    },
-    {
       "id": 148225,
       "company": 70
     },
@@ -64469,10 +64498,6 @@
     {
       "id": 149122,
       "company": 70
-    },
-    {
-      "id": 149123,
-      "company": 765
     },
     {
       "id": 149156,
@@ -65259,14 +65284,6 @@
       "company": 10075
     },
     {
-      "id": 180183,
-      "company": 112
-    },
-    {
-      "id": 180184,
-      "company": 439
-    },
-    {
       "id": 180255,
       "company": 250
     },
@@ -65817,10 +65834,6 @@
     {
       "id": 189113,
       "company": 21605
-    },
-    {
-      "id": 189126,
-      "company": 765
     },
     {
       "id": 189127,
@@ -67939,10 +67952,6 @@
       "company": 23
     },
     {
-      "id": 251407,
-      "company": 2519
-    },
-    {
       "id": 251408,
       "company": 82
     },
@@ -68453,6 +68462,74 @@
     {
       "id": 263453,
       "company": 24943
+    },
+    {
+      "id": 263583,
+      "company": 2406
+    },
+    {
+      "id": 263584,
+      "company": 263
+    },
+    {
+      "id": 263837,
+      "company": 24943
+    },
+    {
+      "id": 263983,
+      "company": 112
+    },
+    {
+      "id": 263984,
+      "company": 439
+    },
+    {
+      "id": 264045,
+      "company": 2761
+    },
+    {
+      "id": 264198,
+      "company": 2519
+    },
+    {
+      "id": 264398,
+      "company": 1
+    },
+    {
+      "id": 264413,
+      "company": 25077
+    },
+    {
+      "id": 264416,
+      "company": 25077
+    },
+    {
+      "id": 264424,
+      "company": 25077
+    },
+    {
+      "id": 264426,
+      "company": 25077
+    },
+    {
+      "id": 264427,
+      "company": 25077
+    },
+    {
+      "id": 264442,
+      "company": 25077
+    },
+    {
+      "id": 264448,
+      "company": 25077
+    },
+    {
+      "id": 264454,
+      "company": 25077
+    },
+    {
+      "id": 264471,
+      "company": 25077
     }
   ],
   "platforms": [
