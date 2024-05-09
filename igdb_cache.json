@@ -2223,6 +2223,10 @@
       "name": "EA Digital Illusions CE"
     },
     {
+      "id": 95,
+      "name": "Disney Interactive"
+    },
+    {
       "id": 97,
       "name": "New World Computing"
     },
@@ -3191,10 +3195,6 @@
       "name": "Jupiter Corporation"
     },
     {
-      "id": 803,
-      "name": "Arika Co., Ltd."
-    },
-    {
       "id": 809,
       "name": "South Park Digital Studios"
     },
@@ -3867,6 +3867,10 @@
       "name": "Cauldron HQ"
     },
     {
+      "id": 1488,
+      "name": "Activision Value"
+    },
+    {
       "id": 1494,
       "name": "GOA Games Services Ltd."
     },
@@ -4213,10 +4217,6 @@
     {
       "id": 2248,
       "name": "Daedalic Entertainment"
-    },
-    {
-      "id": 2251,
-      "name": "Hydravision Entertainment"
     },
     {
       "id": 2254,
@@ -4645,6 +4645,10 @@
     {
       "id": 3157,
       "name": "SNK Games"
+    },
+    {
+      "id": 3174,
+      "name": "AMD"
     },
     {
       "id": 3191,
@@ -5279,6 +5283,10 @@
       "name": "SUPERHOT Team"
     },
     {
+      "id": 6103,
+      "name": "GRIP Entertainment"
+    },
+    {
       "id": 6120,
       "name": "DeNA Co., Ltd."
     },
@@ -5541,6 +5549,10 @@
     {
       "id": 7623,
       "name": "Penny Arcade, Inc."
+    },
+    {
+      "id": 7647,
+      "name": "Atari Interactive"
     },
     {
       "id": 7693,
@@ -5859,6 +5871,10 @@
       "name": "Beachhouse Films"
     },
     {
+      "id": 9691,
+      "name": "Secret 6"
+    },
+    {
       "id": 9791,
       "name": "DICO Co., Ltd."
     },
@@ -6172,7 +6188,7 @@
     },
     {
       "id": 12832,
-      "name": "The Gentlebros Pte. Ltd."
+      "name": "The Gentlebros"
     },
     {
       "id": 12839,
@@ -6916,7 +6932,7 @@
     },
     {
       "id": 35235,
-      "name": "nuverse"
+      "name": "Nuverse Games"
     },
     {
       "id": 35636,
@@ -6929,6 +6945,10 @@
     {
       "id": 36610,
       "name": "Secret Mode"
+    },
+    {
+      "id": 36897,
+      "name": "Arika"
     },
     {
       "id": 37893,
@@ -7733,6 +7753,10 @@
       "name": "Xeno"
     },
     {
+      "id": 4834,
+      "name": "Pong"
+    },
+    {
       "id": 5184,
       "name": "Kawasaki Jet Ski"
     },
@@ -7743,6 +7767,10 @@
     {
       "id": 5396,
       "name": "Kid Icarus"
+    },
+    {
+      "id": 5560,
+      "name": "Alone in the Dark"
     }
   ],
   "gameModes": [
@@ -7889,7 +7917,7 @@
       "involved_companies": [
         6,
         7,
-        21013
+        265431
       ],
       "name": "Thief: The Dark Project",
       "player_perspectives": [
@@ -7919,8 +7947,11 @@
       ],
       "id": 4,
       "involved_companies": [
-        6992,
-        6993
+        265439,
+        265440,
+        265441,
+        265442,
+        265443
       ],
       "name": "Thief",
       "player_perspectives": [
@@ -8023,11 +8054,11 @@
       ],
       "id": 13,
       "involved_companies": [
-        237622,
-        237623,
         237624,
         237625,
-        237626
+        264324,
+        264325,
+        265192
       ],
       "name": "Fallout",
       "player_perspectives": [
@@ -8292,8 +8323,10 @@
       "involved_companies": [
         19772,
         179660,
-        179661,
-        179662
+        179662,
+        265316,
+        265317,
+        265318
       ],
       "name": "Deus Ex",
       "player_perspectives": [
@@ -8327,8 +8360,10 @@
       "id": 43,
       "involved_companies": [
         53,
-        54,
-        46316
+        46316,
+        265322,
+        265323,
+        265324
       ],
       "name": "Deus Ex: Human Revolution",
       "player_perspectives": [
@@ -8697,8 +8732,10 @@
       ],
       "id": 72,
       "involved_companies": [
-        106733,
-        106734
+        265481,
+        265482,
+        265779,
+        265780
       ],
       "name": "Portal 2",
       "player_perspectives": [
@@ -13454,9 +13491,11 @@
       ],
       "id": 769,
       "involved_companies": [
-        1734,
-        1735,
-        2206
+        265387,
+        265388,
+        265389,
+        265390,
+        265391
       ],
       "name": "Lara Croft and the Guardian of Light",
       "player_perspectives": [
@@ -13686,6 +13725,7 @@
       ],
       "genres": [
         8,
+        9,
         31
       ],
       "id": 836,
@@ -13699,7 +13739,8 @@
         2
       ],
       "themes": [
-        1
+        1,
+        17
       ],
       "url": "https://www.igdb.com/games/prince-of-persia-the-sands-of-time"
     },
@@ -14067,8 +14108,10 @@
       ],
       "id": 891,
       "involved_companies": [
-        13513,
-        23634
+        265479,
+        265480,
+        265777,
+        265778
       ],
       "name": "Team Fortress 2",
       "player_perspectives": [
@@ -16834,11 +16877,13 @@
       ],
       "id": 1164,
       "involved_companies": [
-        111701,
-        111702,
-        111703,
         111704,
-        205388
+        265401,
+        265402,
+        265403,
+        265404,
+        265405,
+        265406
       ],
       "name": "Tomb Raider",
       "name_glogOverride": "Tomb Raider (2013)",
@@ -17658,7 +17703,9 @@
       ],
       "id": 1277,
       "involved_companies": [
-        91403
+        264640,
+        264641,
+        264642
       ],
       "name": "Plants vs. Zombies",
       "player_perspectives": [
@@ -17947,7 +17994,9 @@
         3699
       ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        4834
+      ],
       "game_modes": [
         1,
         2
@@ -19951,8 +20000,8 @@
       "id": 1766,
       "involved_companies": [
         10372,
-        10373,
-        101139
+        101139,
+        264921
       ],
       "name": "Mega Man Network Transmission",
       "player_perspectives": [],
@@ -20889,7 +20938,9 @@
         364
       ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        5560
+      ],
       "game_modes": [
         1
       ],
@@ -20900,10 +20951,8 @@
       ],
       "id": 1958,
       "involved_companies": [
-        19326,
-        172350,
         172352,
-        237466
+        265252
       ],
       "name": "Alone in the Dark",
       "name_glogOverride": "Alone in the Dark (2008)",
@@ -21554,7 +21603,8 @@
       "game_modes": [
         1,
         2,
-        3
+        3,
+        4
       ],
       "genres": [
         9,
@@ -21564,7 +21614,8 @@
       "id": 2050,
       "involved_companies": [
         190022,
-        190023
+        190023,
+        264382
       ],
       "name": "LEGO Marvel Super Heroes",
       "player_perspectives": [
@@ -28332,8 +28383,7 @@
         4
       ],
       "genres": [
-        8,
-        31
+        8
       ],
       "id": 4438,
       "involved_companies": [
@@ -30815,10 +30865,11 @@
       ],
       "id": 6217,
       "involved_companies": [
-        244558,
-        244559,
-        244560,
-        244583
+        244583,
+        264549,
+        264550,
+        264551,
+        264552
       ],
       "name": "Tron 2.0",
       "player_perspectives": [
@@ -34721,7 +34772,7 @@
       "involved_companies": [
         20995
       ],
-      "name": "Lisa",
+      "name": "Lisa: The Painful",
       "player_perspectives": [
         4
       ],
@@ -34731,7 +34782,7 @@
         27,
         31
       ],
-      "url": "https://www.igdb.com/games/lisa"
+      "url": "https://www.igdb.com/games/lisa-the-painful"
     },
     {
       "category": 0,
@@ -35430,10 +35481,12 @@
       ],
       "id": 8879,
       "involved_companies": [
-        34704
+        264385
       ],
       "name": "Super Time Force Ultra",
-      "player_perspectives": [],
+      "player_perspectives": [
+        4
+      ],
       "themes": [
         1
       ],
@@ -36233,8 +36286,12 @@
       ],
       "id": 9498,
       "involved_companies": [
-        22800,
-        22801
+        265330,
+        265331,
+        265332,
+        265333,
+        265334,
+        265335
       ],
       "name": "Deus Ex: Mankind Divided",
       "player_perspectives": [
@@ -51370,7 +51427,8 @@
       "id": 113112,
       "involved_companies": [
         258983,
-        258984
+        258984,
+        265600
       ],
       "name": "Hades",
       "name_glogOverride": "Hades (2020)",
@@ -53483,7 +53541,7 @@
       "id": 152249,
       "involved_companies": [
         139184,
-        152903
+        265315
       ],
       "name": "Marvel's Guardians of the Galaxy",
       "player_perspectives": [
@@ -54268,10 +54326,6 @@
       "company": 26
     },
     {
-      "id": 54,
-      "company": 27
-    },
-    {
       "id": 71,
       "company": 1
     },
@@ -54552,14 +54606,6 @@
       "company": 196
     },
     {
-      "id": 1734,
-      "company": 26
-    },
-    {
-      "id": 1735,
-      "company": 552
-    },
-    {
       "id": 1755,
       "company": 201
     },
@@ -54610,10 +54656,6 @@
     {
       "id": 2101,
       "company": 140
-    },
-    {
-      "id": 2206,
-      "company": 291
     },
     {
       "id": 2224,
@@ -55564,14 +55606,6 @@
       "company": 1359
     },
     {
-      "id": 6992,
-      "company": 27
-    },
-    {
-      "id": 6993,
-      "company": 26
-    },
-    {
       "id": 7041,
       "company": 4
     },
@@ -56076,10 +56110,6 @@
       "company": 37
     },
     {
-      "id": 10373,
-      "company": 803
-    },
-    {
       "id": 10390,
       "company": 129
     },
@@ -56386,10 +56416,6 @@
     {
       "id": 13512,
       "company": 2493
-    },
-    {
-      "id": 13513,
-      "company": 1
     },
     {
       "id": 13563,
@@ -57276,10 +57302,6 @@
       "company": 1103
     },
     {
-      "id": 19326,
-      "company": 2251
-    },
-    {
       "id": 19333,
       "company": 4064
     },
@@ -57592,10 +57614,6 @@
       "company": 4474
     },
     {
-      "id": 21013,
-      "company": 26
-    },
-    {
       "id": 21049,
       "company": 4497
     },
@@ -57828,14 +57846,6 @@
       "company": 1012
     },
     {
-      "id": 22800,
-      "company": 26
-    },
-    {
-      "id": 22801,
-      "company": 27
-    },
-    {
       "id": 22834,
       "company": 284
     },
@@ -57898,10 +57908,6 @@
     {
       "id": 23629,
       "company": 753
-    },
-    {
-      "id": 23634,
-      "company": 56
     },
     {
       "id": 23817,
@@ -58598,10 +58604,6 @@
     {
       "id": 34645,
       "company": 9548
-    },
-    {
-      "id": 34704,
-      "company": 1398
     },
     {
       "id": 34705,
@@ -61760,10 +61762,6 @@
       "company": 294
     },
     {
-      "id": 91403,
-      "company": 1893
-    },
-    {
       "id": 91420,
       "company": 3
     },
@@ -62876,14 +62874,6 @@
       "company": 2769
     },
     {
-      "id": 106733,
-      "company": 56
-    },
-    {
-      "id": 106734,
-      "company": 1
-    },
-    {
       "id": 106795,
       "company": 164
     },
@@ -63074,18 +63064,6 @@
     {
       "id": 110639,
       "company": 857
-    },
-    {
-      "id": 111701,
-      "company": 26
-    },
-    {
-      "id": 111702,
-      "company": 552
-    },
-    {
-      "id": 111703,
-      "company": 23
     },
     {
       "id": 111704,
@@ -64596,10 +64574,6 @@
       "company": 9175
     },
     {
-      "id": 152903,
-      "company": 27
-    },
-    {
       "id": 153685,
       "company": 766
     },
@@ -65052,10 +65026,6 @@
       "company": 2248
     },
     {
-      "id": 172350,
-      "company": 1
-    },
-    {
       "id": 172352,
       "company": 2053
     },
@@ -65218,10 +65188,6 @@
     {
       "id": 179660,
       "company": 378
-    },
-    {
-      "id": 179661,
-      "company": 25
     },
     {
       "id": 179662,
@@ -66512,10 +66478,6 @@
       "company": 421
     },
     {
-      "id": 205388,
-      "company": 23
-    },
-    {
       "id": 205401,
       "company": 73
     },
@@ -67544,20 +67506,8 @@
       "company": 2406
     },
     {
-      "id": 237466,
-      "company": 2406
-    },
-    {
       "id": 237543,
       "company": 2406
-    },
-    {
-      "id": 237622,
-      "company": 12
-    },
-    {
-      "id": 237623,
-      "company": 5
     },
     {
       "id": 237624,
@@ -67566,10 +67516,6 @@
     {
       "id": 237625,
       "company": 120
-    },
-    {
-      "id": 237626,
-      "company": 173
     },
     {
       "id": 237772,
@@ -67766,18 +67712,6 @@
     {
       "id": 243645,
       "company": 852
-    },
-    {
-      "id": 244558,
-      "company": 60
-    },
-    {
-      "id": 244559,
-      "company": 407
-    },
-    {
-      "id": 244560,
-      "company": 789
     },
     {
       "id": 244583,
@@ -68492,6 +68426,22 @@
       "company": 2519
     },
     {
+      "id": 264324,
+      "company": 173
+    },
+    {
+      "id": 264325,
+      "company": 12
+    },
+    {
+      "id": 264382,
+      "company": 23
+    },
+    {
+      "id": 264385,
+      "company": 1398
+    },
+    {
       "id": 264398,
       "company": 1
     },
@@ -68530,6 +68480,202 @@
     {
       "id": 264471,
       "company": 25077
+    },
+    {
+      "id": 264549,
+      "company": 60
+    },
+    {
+      "id": 264550,
+      "company": 407
+    },
+    {
+      "id": 264551,
+      "company": 789
+    },
+    {
+      "id": 264552,
+      "company": 95
+    },
+    {
+      "id": 264640,
+      "company": 1893
+    },
+    {
+      "id": 264641,
+      "company": 1893
+    },
+    {
+      "id": 264642,
+      "company": 1
+    },
+    {
+      "id": 264921,
+      "company": 36897
+    },
+    {
+      "id": 265192,
+      "company": 5
+    },
+    {
+      "id": 265252,
+      "company": 7647
+    },
+    {
+      "id": 265315,
+      "company": 27
+    },
+    {
+      "id": 265316,
+      "company": 25
+    },
+    {
+      "id": 265317,
+      "company": 26
+    },
+    {
+      "id": 265318,
+      "company": 27
+    },
+    {
+      "id": 265322,
+      "company": 27
+    },
+    {
+      "id": 265323,
+      "company": 6103
+    },
+    {
+      "id": 265324,
+      "company": 291
+    },
+    {
+      "id": 265330,
+      "company": 26
+    },
+    {
+      "id": 265331,
+      "company": 27
+    },
+    {
+      "id": 265332,
+      "company": 23
+    },
+    {
+      "id": 265333,
+      "company": 27
+    },
+    {
+      "id": 265334,
+      "company": 291
+    },
+    {
+      "id": 265335,
+      "company": 3174
+    },
+    {
+      "id": 265387,
+      "company": 552
+    },
+    {
+      "id": 265388,
+      "company": 291
+    },
+    {
+      "id": 265389,
+      "company": 26
+    },
+    {
+      "id": 265390,
+      "company": 23
+    },
+    {
+      "id": 265391,
+      "company": 552
+    },
+    {
+      "id": 265401,
+      "company": 23
+    },
+    {
+      "id": 265402,
+      "company": 26
+    },
+    {
+      "id": 265403,
+      "company": 552
+    },
+    {
+      "id": 265404,
+      "company": 23
+    },
+    {
+      "id": 265405,
+      "company": 27
+    },
+    {
+      "id": 265406,
+      "company": 552
+    },
+    {
+      "id": 265431,
+      "company": 1488
+    },
+    {
+      "id": 265439,
+      "company": 27
+    },
+    {
+      "id": 265440,
+      "company": 26
+    },
+    {
+      "id": 265441,
+      "company": 291
+    },
+    {
+      "id": 265442,
+      "company": 23
+    },
+    {
+      "id": 265443,
+      "company": 27
+    },
+    {
+      "id": 265479,
+      "company": 1
+    },
+    {
+      "id": 265480,
+      "company": 56
+    },
+    {
+      "id": 265481,
+      "company": 56
+    },
+    {
+      "id": 265482,
+      "company": 1
+    },
+    {
+      "id": 265600,
+      "company": 9691
+    },
+    {
+      "id": 265777,
+      "company": 56
+    },
+    {
+      "id": 265778,
+      "company": 56
+    },
+    {
+      "id": 265779,
+      "company": 56
+    },
+    {
+      "id": 265780,
+      "company": 56
     }
   ],
   "platforms": [
