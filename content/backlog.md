@@ -15,7 +15,6 @@ permalink = "/backlog"
 * <game:NieR: Automata> (<platform:PC>)
 * <game:No More Heroes III> (<platform:Switch>)
 * <game:Oxenfree II: Lost Signals> (<platform:PC>)
-* <game:Saints Row (2022)> (<platform:PC>)
 * <game:Spiritfarer> (<platform:PC>)
 * <game:Star Wars Jedi: Survivor> (<platform:PC>)
 * <game:Starfield> (<platform:PC>)
