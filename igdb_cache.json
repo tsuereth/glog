@@ -17039,9 +17039,10 @@
       ],
       "id": 1185,
       "involved_companies": [
-        185347,
         262945,
-        262946
+        262946,
+        265986,
+        265987
       ],
       "name": "Crash Bandicoot",
       "player_perspectives": [
@@ -65698,10 +65699,6 @@
       "company": 21449
     },
     {
-      "id": 185347,
-      "company": 13634
-    },
-    {
       "id": 185855,
       "company": 13634
     },
@@ -68676,6 +68673,14 @@
     {
       "id": 265780,
       "company": 56
+    },
+    {
+      "id": 265986,
+      "company": 13634
+    },
+    {
+      "id": 265987,
+      "company": 10100
     }
   ],
   "platforms": [
