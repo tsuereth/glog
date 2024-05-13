@@ -3879,6 +3879,10 @@
       "name": "Hopoo Games"
     },
     {
+      "id": 1541,
+      "name": "Metricminds"
+    },
+    {
       "id": 1584,
       "name": "EA Worldwide Motion Capture Studio"
     },
@@ -4671,6 +4675,10 @@
       "name": "Ubisoft North America"
     },
     {
+      "id": 3276,
+      "name": "Frame Machine"
+    },
+    {
       "id": 3301,
       "name": "Atari Europe"
     },
@@ -4721,6 +4729,10 @@
     {
       "id": 3676,
       "name": "Albion Localisations"
+    },
+    {
+      "id": 3681,
+      "name": "CGBot"
     },
     {
       "id": 3689,
@@ -6515,6 +6527,10 @@
       "name": "Square Enix Business Division 3"
     },
     {
+      "id": 19354,
+      "name": "Warner Bros. Game Audio"
+    },
+    {
       "id": 19676,
       "name": "24 Bit Games"
     },
@@ -6837,6 +6853,38 @@
     {
       "id": 27613,
       "name": "dietzribi"
+    },
+    {
+      "id": 27853,
+      "name": "Man of Action Entertainment"
+    },
+    {
+      "id": 27854,
+      "name": "The Capellen Orchestra and Choir"
+    },
+    {
+      "id": 27855,
+      "name": "Dagger Crown Studio"
+    },
+    {
+      "id": 27856,
+      "name": "Omnon! Workshop"
+    },
+    {
+      "id": 27857,
+      "name": "FXVILLE, Inc"
+    },
+    {
+      "id": 27858,
+      "name": "Krem Productions"
+    },
+    {
+      "id": 27859,
+      "name": "Quantic Lab"
+    },
+    {
+      "id": 27860,
+      "name": "Full Sail University User Experience Lab"
     },
     {
       "id": 27954,
@@ -8057,8 +8105,9 @@
         237624,
         237625,
         264324,
-        264325,
-        265192
+        265192,
+        265824,
+        265825
       ],
       "name": "Fallout",
       "player_perspectives": [
@@ -15609,11 +15658,11 @@
       ],
       "id": 1070,
       "involved_companies": [
-        224535,
-        224536,
-        226961,
-        229224,
-        229225
+        265989,
+        265990,
+        265991,
+        265992,
+        265993
       ],
       "name": "Super Mario World",
       "player_perspectives": [
@@ -16530,9 +16579,9 @@
       "id": 1128,
       "involved_companies": [
         183794,
-        183795,
         183796,
-        183797
+        183797,
+        266019
       ],
       "name": "Castlevania: Symphony of the Night",
       "player_perspectives": [
@@ -19515,6 +19564,7 @@
       ],
       "game_modes": [
         1,
+        2,
         4
       ],
       "genres": [
@@ -26056,7 +26106,7 @@
       "id": 3216,
       "involved_companies": [
         180255,
-        180256
+        266055
       ],
       "name": "Secret of Mana",
       "player_perspectives": [
@@ -27498,7 +27548,6 @@
       "genres": [
         8,
         9,
-        31,
         32
       ],
       "id": 3839,
@@ -27510,7 +27559,9 @@
       "player_perspectives": [
         2
       ],
-      "themes": [],
+      "themes": [
+        17
+      ],
       "url": "https://www.igdb.com/games/contrast"
     },
     {
@@ -29568,9 +29619,7 @@
         1
       ],
       "genres": [
-        8,
-        12,
-        31
+        12
       ],
       "id": 5418,
       "involved_companies": [
@@ -46664,7 +46713,19 @@
       "id": 28380,
       "involved_companies": [
         46406,
-        46407
+        46407,
+        265796,
+        265797,
+        265798,
+        265799,
+        265800,
+        265801,
+        265802,
+        265803,
+        265804,
+        265805,
+        265806,
+        265807
       ],
       "name": "Darksiders III",
       "player_perspectives": [
@@ -54128,8 +54189,7 @@
         1
       ],
       "genres": [
-        12,
-        31
+        12
       ],
       "id": 254327,
       "involved_companies": [
@@ -65255,10 +65315,6 @@
       "company": 250
     },
     {
-      "id": 180256,
-      "company": 26
-    },
-    {
       "id": 180279,
       "company": 1809
     },
@@ -65425,10 +65481,6 @@
     {
       "id": 183794,
       "company": 159
-    },
-    {
-      "id": 183795,
-      "company": 129
     },
     {
       "id": 183796,
@@ -66939,14 +66991,6 @@
       "company": 33804
     },
     {
-      "id": 224535,
-      "company": 33804
-    },
-    {
-      "id": 224536,
-      "company": 812
-    },
-    {
       "id": 224537,
       "company": 33804
     },
@@ -67235,10 +67279,6 @@
       "company": 32350
     },
     {
-      "id": 226961,
-      "company": 32350
-    },
-    {
       "id": 226962,
       "company": 32350
     },
@@ -67321,14 +67361,6 @@
     {
       "id": 229221,
       "company": 70
-    },
-    {
-      "id": 229224,
-      "company": 70
-    },
-    {
-      "id": 229225,
-      "company": 421
     },
     {
       "id": 229316,
@@ -68427,10 +68459,6 @@
       "company": 173
     },
     {
-      "id": 264325,
-      "company": 12
-    },
-    {
       "id": 264382,
       "company": 23
     },
@@ -68675,12 +68703,96 @@
       "company": 56
     },
     {
+      "id": 265796,
+      "company": 27853
+    },
+    {
+      "id": 265797,
+      "company": 19354
+    },
+    {
+      "id": 265798,
+      "company": 27854
+    },
+    {
+      "id": 265799,
+      "company": 27855
+    },
+    {
+      "id": 265800,
+      "company": 27856
+    },
+    {
+      "id": 265801,
+      "company": 27857
+    },
+    {
+      "id": 265802,
+      "company": 3681
+    },
+    {
+      "id": 265803,
+      "company": 1541
+    },
+    {
+      "id": 265804,
+      "company": 3276
+    },
+    {
+      "id": 265805,
+      "company": 27858
+    },
+    {
+      "id": 265806,
+      "company": 27859
+    },
+    {
+      "id": 265807,
+      "company": 27860
+    },
+    {
+      "id": 265824,
+      "company": 12
+    },
+    {
+      "id": 265825,
+      "company": 16565
+    },
+    {
       "id": 265986,
       "company": 13634
     },
     {
       "id": 265987,
       "company": 10100
+    },
+    {
+      "id": 265989,
+      "company": 421
+    },
+    {
+      "id": 265990,
+      "company": 70
+    },
+    {
+      "id": 265991,
+      "company": 33804
+    },
+    {
+      "id": 265992,
+      "company": 812
+    },
+    {
+      "id": 265993,
+      "company": 32350
+    },
+    {
+      "id": 266019,
+      "company": 129
+    },
+    {
+      "id": 266055,
+      "company": 26
     }
   ],
   "platforms": [
