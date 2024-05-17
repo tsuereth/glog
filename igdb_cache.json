@@ -6999,6 +6999,10 @@
       "name": "Arika"
     },
     {
+      "id": 37153,
+      "name": "I.T.L"
+    },
+    {
       "id": 37893,
       "name": "Kepler Interactive"
     },
@@ -21397,8 +21401,9 @@
       ],
       "id": 2001,
       "involved_companies": [
-        14349,
-        14350
+        266422,
+        266423,
+        266424
       ],
       "name": "Far Cry 3: Blood Dragon",
       "player_perspectives": [
@@ -29619,7 +29624,8 @@
         1
       ],
       "genres": [
-        12
+        12,
+        31
       ],
       "id": 5418,
       "involved_companies": [
@@ -31487,7 +31493,9 @@
         123261,
         164478,
         223604,
-        223820
+        223820,
+        266345,
+        266346
       ],
       "name": "River City Ransom",
       "player_perspectives": [
@@ -38700,7 +38708,6 @@
       ],
       "id": 11227,
       "involved_companies": [
-        155625,
         162327
       ],
       "name": "Trials of Mana",
@@ -56559,14 +56566,6 @@
       "company": 852
     },
     {
-      "id": 14349,
-      "company": 38
-    },
-    {
-      "id": 14350,
-      "company": 398
-    },
-    {
       "id": 14351,
       "company": 852
     },
@@ -64751,10 +64750,6 @@
       "company": 3262
     },
     {
-      "id": 155625,
-      "company": 25230
-    },
-    {
       "id": 155950,
       "company": 21290
     },
@@ -68793,6 +68788,26 @@
     {
       "id": 266055,
       "company": 26
+    },
+    {
+      "id": 266345,
+      "company": 37153
+    },
+    {
+      "id": 266346,
+      "company": 1218
+    },
+    {
+      "id": 266422,
+      "company": 398
+    },
+    {
+      "id": 266423,
+      "company": 38
+    },
+    {
+      "id": 266424,
+      "company": 104
     }
   ],
   "platforms": [
