@@ -5203,6 +5203,10 @@
       "name": "Lazy 8 Studios"
     },
     {
+      "id": 5369,
+      "name": "Playtonic"
+    },
+    {
       "id": 5442,
       "name": "iam8bit"
     },
@@ -5241,6 +5245,10 @@
     {
       "id": 5801,
       "name": "The Third Floor"
+    },
+    {
+      "id": 5880,
+      "name": "XAX Entertainment"
     },
     {
       "id": 5887,
@@ -5484,7 +5492,7 @@
     },
     {
       "id": 7097,
-      "name": "Thunder Lotus Games"
+      "name": "Thunder Lotus"
     },
     {
       "id": 7219,
@@ -7009,10 +7017,6 @@
     {
       "id": 38087,
       "name": "American Technos"
-    },
-    {
-      "id": 38271,
-      "name": "Playtonic Games"
     },
     {
       "id": 38798,
@@ -10748,7 +10752,8 @@
       "id": 378,
       "involved_companies": [
         14167,
-        14168
+        14168,
+        266765
       ],
       "name": "Metal Gear Rising: Revengeance",
       "player_perspectives": [
@@ -24095,7 +24100,8 @@
       "id": 2639,
       "involved_companies": [
         101740,
-        101741
+        101741,
+        266766
       ],
       "name": "The Wonderful 101",
       "player_perspectives": [
@@ -30409,7 +30415,8 @@
       "id": 5987,
       "involved_companies": [
         14392,
-        14393
+        14393,
+        266773
       ],
       "name": "Viewtiful Joe: Double Trouble!",
       "player_perspectives": [
@@ -37295,7 +37302,7 @@
       "id": 10031,
       "involved_companies": [
         229885,
-        229886
+        267315
       ],
       "name": "Yooka-Laylee",
       "player_perspectives": [
@@ -67382,10 +67389,6 @@
       "company": 16437
     },
     {
-      "id": 229886,
-      "company": 38271
-    },
-    {
       "id": 230019,
       "company": 591
     },
@@ -68808,6 +68811,22 @@
     {
       "id": 266424,
       "company": 104
+    },
+    {
+      "id": 266765,
+      "company": 5880
+    },
+    {
+      "id": 266766,
+      "company": 5880
+    },
+    {
+      "id": 266773,
+      "company": 5880
+    },
+    {
+      "id": 267315,
+      "company": 5369
     }
   ],
   "platforms": [
