@@ -4567,10 +4567,6 @@
       "name": "Headup Games"
     },
     {
-      "id": 3011,
-      "name": "Hit Box Team"
-    },
-    {
       "id": 3014,
       "name": "MOSS Co., Ltd."
     },
@@ -5549,6 +5545,10 @@
     {
       "id": 7520,
       "name": "Kreatoriet AB"
+    },
+    {
+      "id": 7527,
+      "name": "Hitbox Team"
     },
     {
       "id": 7562,
@@ -18201,7 +18201,7 @@
       "id": 1340,
       "involved_companies": [
         16889,
-        16890
+        267513
       ],
       "name": "Dustforce DX",
       "player_perspectives": [],
@@ -25931,7 +25931,7 @@
       "url": "https://www.igdb.com/games/the-saboteur"
     },
     {
-      "category": 4,
+      "category": 2,
       "collection": -1,
       "collections": [
         847
@@ -26406,7 +26406,7 @@
       "url": "https://www.igdb.com/games/grand-theft-auto-liberty-city-stories"
     },
     {
-      "category": 4,
+      "category": 2,
       "collection": -1,
       "collections": [
         847
@@ -32304,6 +32304,7 @@
         3
       ],
       "genres": [
+        8,
         9,
         32
       ],
@@ -56905,10 +56906,6 @@
       "company": 3010
     },
     {
-      "id": 16890,
-      "company": 3011
-    },
-    {
       "id": 16903,
       "company": 2273
     },
@@ -68827,6 +68824,10 @@
     {
       "id": 267315,
       "company": 5369
+    },
+    {
+      "id": 267513,
+      "company": 7527
     }
   ],
   "platforms": [
