@@ -1963,6 +1963,10 @@
     {
       "id": 9849,
       "name": "The Legend of Zelda: A Link to the Past"
+    },
+    {
+      "id": 10011,
+      "name": "Path of Exile"
     }
   ],
   "companies": [
@@ -2093,10 +2097,6 @@
     {
       "id": 44,
       "name": "Team Ico"
-    },
-    {
-      "id": 45,
-      "name": "Sony Computer Entertainment, Inc. (SCEI)"
     },
     {
       "id": 47,
@@ -7029,6 +7029,10 @@
     {
       "id": 41283,
       "name": "Flagship"
+    },
+    {
+      "id": 41465,
+      "name": "Ubisoft Mainz"
     },
     {
       "id": 41489,
@@ -19290,9 +19294,8 @@
       ],
       "id": 1528,
       "involved_companies": [
-        194390,
-        194391,
-        194392
+        267768,
+        267769
       ],
       "name": "Jak and Daxter: The Precursor Legacy",
       "player_perspectives": [
@@ -19300,6 +19303,7 @@
       ],
       "themes": [
         1,
+        18,
         27,
         38
       ],
@@ -20801,7 +20805,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        10011
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -20874,7 +20880,8 @@
       "id": 1936,
       "involved_companies": [
         72123,
-        202816
+        202816,
+        267691
       ],
       "name": "Beyond Good & Evil 2",
       "player_perspectives": [
@@ -27717,9 +27724,9 @@
       "id": 3951,
       "involved_companies": [
         10243,
-        10244,
         10245,
-        10246
+        10246,
+        267827
       ],
       "name": "I-Ninja",
       "player_perspectives": [
@@ -47337,7 +47344,9 @@
       "id": 33403,
       "involved_companies": [],
       "name": "Regeria Hope Episode 1",
-      "player_perspectives": [],
+      "player_perspectives": [
+        5
+      ],
       "themes": [
         27,
         43
@@ -51428,6 +51437,7 @@
         1
       ],
       "genres": [
+        12,
         25,
         31
       ],
@@ -56152,10 +56162,6 @@
     {
       "id": 10243,
       "company": 263
-    },
-    {
-      "id": 10244,
-      "company": 45
     },
     {
       "id": 10245,
@@ -66150,18 +66156,6 @@
       "company": 6938
     },
     {
-      "id": 194390,
-      "company": 13634
-    },
-    {
-      "id": 194391,
-      "company": 401
-    },
-    {
-      "id": 194392,
-      "company": 10100
-    },
-    {
       "id": 194927,
       "company": 15790
     },
@@ -68828,6 +68822,22 @@
     {
       "id": 267513,
       "company": 7527
+    },
+    {
+      "id": 267691,
+      "company": 41465
+    },
+    {
+      "id": 267768,
+      "company": 13634
+    },
+    {
+      "id": 267769,
+      "company": 401
+    },
+    {
+      "id": 267827,
+      "company": 13634
     }
   ],
   "platforms": [
