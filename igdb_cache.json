@@ -7059,6 +7059,10 @@
       "name": "Nintendo EPD Production Group No. 3"
     },
     {
+      "id": 45213,
+      "name": "Nintendo EPD Production Group No. 8"
+    },
+    {
       "id": 45304,
       "name": "Square Enix Creative Business Unit I"
     },
@@ -14396,7 +14400,9 @@
     {
       "category": 0,
       "collection": 221,
-      "collections": [],
+      "collections": [
+        221
+      ],
       "franchise": -1,
       "franchises": [
         857
@@ -46238,7 +46244,8 @@
       "id": 26758,
       "involved_companies": [
         69095,
-        131281
+        268535,
+        268536
       ],
       "name": "Super Mario Odyssey",
       "player_perspectives": [
@@ -63872,10 +63879,6 @@
       "company": 112
     },
     {
-      "id": 131281,
-      "company": 70
-    },
-    {
       "id": 131415,
       "company": 293
     },
@@ -68838,6 +68841,14 @@
     {
       "id": 267827,
       "company": 13634
+    },
+    {
+      "id": 268535,
+      "company": 70
+    },
+    {
+      "id": 268536,
+      "company": 45213
     }
   ],
   "platforms": [
