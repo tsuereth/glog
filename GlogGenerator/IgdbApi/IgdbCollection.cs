@@ -12,7 +12,7 @@ namespace GlogGenerator.IgdbApi
         public int Id { get; set; }
 
         [IgdbEntityReferenceableValue]
-        [JsonProperty("name")]
+        [JsonProperty("name", Required = Required.Always)]
         public string Name { get; set; }
     }
 #pragma warning restore CA1711 // Identifiers should not have incorrect suffix

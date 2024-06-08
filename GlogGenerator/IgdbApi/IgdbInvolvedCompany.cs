@@ -11,7 +11,7 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("id")]
         public int Id { get; set; }
 
-        [JsonProperty("company")]
+        [JsonProperty("company", Required = Required.Always)]
         public int CompanyId { get; set; }
     }
 }

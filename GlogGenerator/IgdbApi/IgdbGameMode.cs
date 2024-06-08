@@ -11,7 +11,7 @@ namespace GlogGenerator.IgdbApi
         public int Id { get; set; }
 
         [IgdbEntityReferenceableValue]
-        [JsonProperty("name")]
+        [JsonProperty("name", Required = Required.Always)]
         public string Name { get; set; }
     }
 }

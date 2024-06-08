@@ -8,7 +8,7 @@ namespace GlogGenerator.IgdbApi
     // This class is NOT a complete representation, it only includes properties as-needed.
     public class IgdbPlatform : IgdbEntity
     {
-        [JsonProperty("abbreviation")]
+        [JsonProperty("abbreviation", Required = Required.Always)]
         public string Abbreviation { get; set; }
 
         [JsonProperty("abbreviation_glogOverride")]

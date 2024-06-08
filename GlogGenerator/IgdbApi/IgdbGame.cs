@@ -36,7 +36,7 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("involved_companies")]
         public List<int> InvolvedCompanyIds { get; set; } = new List<int>();
 
-        [JsonProperty("name")]
+        [JsonProperty("name", Required = Required.Always)]
         public string Name { get; set; }
 
         [JsonProperty("name_glogOverride")]
