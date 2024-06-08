@@ -7865,10 +7865,6 @@
   ],
   "games": [
     {
-      "id": 305003,
-      "name": "LEGO Horizon Adventures"
-    },
-    {
       "category": -1,
       "collection": -1,
       "collections": [],
@@ -13420,7 +13416,7 @@
         63950,
         63951,
         210802,
-        210803
+        269553
       ],
       "name": "Grand Theft Auto: Vice City",
       "player_perspectives": [
@@ -54293,6 +54289,23 @@
         1
       ],
       "url": "https://www.igdb.com/games/saints-row-a-song-of-ice-and-dust"
+    },
+    {
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [
+        51
+      ],
+      "game_modes": [],
+      "genres": [],
+      "id": 305003,
+      "involved_companies": [],
+      "name": "LEGO Horizon Adventures",
+      "player_perspectives": [],
+      "themes": [],
+      "url": "https://www.igdb.com/games/lego-horizon-adventures"
     }
   ],
   "genres": [
@@ -66663,10 +66676,6 @@
       "company": 139
     },
     {
-      "id": 210803,
-      "company": 1967
-    },
-    {
       "id": 210804,
       "company": 139
     },
@@ -68853,6 +68862,10 @@
     {
       "id": 268536,
       "company": 45213
+    },
+    {
+      "id": 269553,
+      "company": 1967
     }
   ],
   "platforms": [
