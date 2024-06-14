@@ -1967,6 +1967,10 @@
     {
       "id": 10011,
       "name": "Path of Exile"
+    },
+    {
+      "id": 10021,
+      "name": "CrossCode"
     }
   ],
   "companies": [
@@ -4031,10 +4035,6 @@
       "name": "Silicon Knights"
     },
     {
-      "id": 1952,
-      "name": "Sting Entertainment"
-    },
-    {
       "id": 1953,
       "name": "Entertainment Software Publishings"
     },
@@ -4693,6 +4693,10 @@
     {
       "id": 3470,
       "name": "Vykarian"
+    },
+    {
+      "id": 3537,
+      "name": "Studio Gobo"
     },
     {
       "id": 3595,
@@ -6419,6 +6423,10 @@
       "name": "Nyamakop"
     },
     {
+      "id": 15842,
+      "name": "Sting"
+    },
+    {
       "id": 15878,
       "name": "Sega Games"
     },
@@ -6783,6 +6791,10 @@
       "name": "Bird in Sky"
     },
     {
+      "id": 24747,
+      "name": "Senpai Studios"
+    },
+    {
       "id": 24760,
       "name": "Nacon"
     },
@@ -7113,6 +7125,10 @@
     {
       "id": 53108,
       "name": "SquareSoft USA"
+    },
+    {
+      "id": 55091,
+      "name": "Inline Assembly"
     }
   ],
   "franchises": [
@@ -13797,8 +13813,7 @@
       "id": 836,
       "involved_companies": [
         117443,
-        117444,
-        185865
+        269494
       ],
       "name": "Prince of Persia: The Sands of Time",
       "player_perspectives": [
@@ -13830,7 +13845,8 @@
       ],
       "id": 837,
       "involved_companies": [
-        8153
+        269496,
+        269497
       ],
       "name": "Prince of Persia: Warrior Within",
       "player_perspectives": [
@@ -15614,7 +15630,8 @@
       "themes": [
         1,
         19,
-        20
+        20,
+        21
       ],
       "url": "https://www.igdb.com/games/alan-wake"
     },
@@ -18365,7 +18382,8 @@
         107802,
         107804,
         110636,
-        180654
+        180654,
+        269314
       ],
       "name": "Journey",
       "player_perspectives": [
@@ -23610,7 +23628,10 @@
       ],
       "id": 2437,
       "involved_companies": [
-        19803
+        269498,
+        269499,
+        269500,
+        269501
       ],
       "name": "Prince of Persia: The Two Thrones",
       "player_perspectives": [
@@ -23707,8 +23728,9 @@
       ],
       "id": 2468,
       "involved_companies": [
-        5768,
-        19809
+        269502,
+        269503,
+        269504
       ],
       "name": "Prince of Persia: The Forgotten Sands",
       "player_perspectives": [
@@ -23868,9 +23890,9 @@
       ],
       "id": 2552,
       "involved_companies": [
-        42368,
-        236062,
-        236063
+        236063,
+        269048,
+        269049
       ],
       "name": "Mad Max",
       "name_glogOverride": "Mad Max (2015)",
@@ -28859,8 +28881,8 @@
       ],
       "id": 4816,
       "involved_companies": [
-        11594,
-        11595
+        11595,
+        269515
       ],
       "name": "Dokapon Kingdom",
       "player_perspectives": [
@@ -37070,8 +37092,9 @@
       ],
       "id": 9878,
       "involved_companies": [
-        23435,
-        23436
+        23436,
+        268614,
+        268615
       ],
       "name": "Out There Somewhere",
       "player_perspectives": [
@@ -40480,7 +40503,7 @@
       "url": "https://www.igdb.com/games/borderlands-2-sir-hammerlock-vs-the-son-of-crawmerax"
     },
     {
-      "category": 0,
+      "category": 10,
       "collection": 1024,
       "collections": [
         1024
@@ -44378,7 +44401,7 @@
       "id": 20690,
       "involved_companies": [
         61115,
-        248462
+        269516
       ],
       "name": "Knights in the Nightmare",
       "player_perspectives": [],
@@ -47519,7 +47542,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        10021
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -54293,17 +54318,33 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        6304
+      ],
       "franchise": -1,
       "franchises": [
-        51
+        51,
+        2000
       ],
-      "game_modes": [],
-      "genres": [],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        9,
+        31
+      ],
       "id": 305003,
-      "involved_companies": [],
+      "involved_companies": [
+        269511,
+        269512,
+        269814
+      ],
       "name": "LEGO Horizon Adventures",
-      "player_perspectives": [],
+      "player_perspectives": [
+        2
+      ],
       "themes": [],
       "url": "https://www.igdb.com/games/lego-horizon-adventures"
     }
@@ -55492,10 +55533,6 @@
       "company": 26
     },
     {
-      "id": 5768,
-      "company": 822
-    },
-    {
       "id": 5813,
       "company": 917
     },
@@ -55882,10 +55919,6 @@
     {
       "id": 8128,
       "company": 1005
-    },
-    {
-      "id": 8153,
-      "company": 38
     },
     {
       "id": 8156,
@@ -56366,10 +56399,6 @@
     {
       "id": 11553,
       "company": 321
-    },
-    {
-      "id": 11594,
-      "company": 1952
     },
     {
       "id": 11595,
@@ -57464,15 +57493,7 @@
       "company": 517
     },
     {
-      "id": 19803,
-      "company": 38
-    },
-    {
       "id": 19806,
-      "company": 38
-    },
-    {
-      "id": 19809,
       "company": 38
     },
     {
@@ -57978,10 +57999,6 @@
     {
       "id": 23355,
       "company": 5289
-    },
-    {
-      "id": 23435,
-      "company": 5303
     },
     {
       "id": 23436,
@@ -59266,10 +59283,6 @@
     {
       "id": 42360,
       "company": 26
-    },
-    {
-      "id": 42368,
-      "company": 23
     },
     {
       "id": 42486,
@@ -63304,10 +63317,6 @@
       "company": 38
     },
     {
-      "id": 117444,
-      "company": 70
-    },
-    {
       "id": 117633,
       "company": 4534
     },
@@ -65788,10 +65797,6 @@
       "company": 15512
     },
     {
-      "id": 185865,
-      "company": 13634
-    },
-    {
       "id": 185895,
       "company": 13634
     },
@@ -67496,10 +67501,6 @@
       "company": 326
     },
     {
-      "id": 236062,
-      "company": 437
-    },
-    {
       "id": 236063,
       "company": 50
     },
@@ -67866,10 +67867,6 @@
     {
       "id": 248149,
       "company": 13722
-    },
-    {
-      "id": 248462,
-      "company": 1952
     },
     {
       "id": 248492,
@@ -68864,8 +68861,88 @@
       "company": 45213
     },
     {
+      "id": 268614,
+      "company": 5303
+    },
+    {
+      "id": 268615,
+      "company": 24747
+    },
+    {
+      "id": 269048,
+      "company": 23
+    },
+    {
+      "id": 269049,
+      "company": 437
+    },
+    {
+      "id": 269314,
+      "company": 55091
+    },
+    {
+      "id": 269494,
+      "company": 104
+    },
+    {
+      "id": 269496,
+      "company": 38
+    },
+    {
+      "id": 269497,
+      "company": 104
+    },
+    {
+      "id": 269498,
+      "company": 38
+    },
+    {
+      "id": 269499,
+      "company": 898
+    },
+    {
+      "id": 269500,
+      "company": 1967
+    },
+    {
+      "id": 269501,
+      "company": 104
+    },
+    {
+      "id": 269502,
+      "company": 38
+    },
+    {
+      "id": 269503,
+      "company": 822
+    },
+    {
+      "id": 269504,
+      "company": 104
+    },
+    {
+      "id": 269511,
+      "company": 1843
+    },
+    {
+      "id": 269512,
+      "company": 3537
+    },
+    {
+      "id": 269515,
+      "company": 15842
+    },
+    {
+      "id": 269516,
+      "company": 15842
+    },
+    {
       "id": 269553,
       "company": 1967
+    },
+    {
+      "id": 269814,
+      "company": 10100
     }
   ],
   "platforms": [
