@@ -7881,10 +7881,6 @@
   ],
   "games": [
     {
-      "id": 305040,
-      "name": "The Talos Principle II: Road to Elysium"
-    },
-    {
       "category": -1,
       "collection": -1,
       "collections": [],
@@ -54351,6 +54347,38 @@
       ],
       "themes": [],
       "url": "https://www.igdb.com/games/lego-horizon-adventures"
+    },
+    {
+      "category": 2,
+      "collection": -1,
+      "collections": [
+        9600
+      ],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        9,
+        31,
+        32
+      ],
+      "id": 305040,
+      "involved_companies": [
+        270368,
+        270369
+      ],
+      "name": "The Talos Principle II: Road to Elysium",
+      "player_perspectives": [
+        1,
+        2
+      ],
+      "themes": [
+        1,
+        18
+      ],
+      "url": "https://www.igdb.com/games/the-talos-principle-ii-road-to-elysium"
     }
   ],
   "genres": [
@@ -68947,6 +68975,14 @@
     {
       "id": 269814,
       "company": 10100
+    },
+    {
+      "id": 270368,
+      "company": 414
+    },
+    {
+      "id": 270369,
+      "company": 634
     }
   ],
   "platforms": [
