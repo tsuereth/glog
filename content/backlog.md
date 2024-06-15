@@ -19,4 +19,5 @@ permalink = "/backlog"
 * <game:Star Wars Jedi: Survivor> (<platform:PC>)
 * <game:Starfield> (<platform:PC>)
 * <game:Super Mario RPG (2023)> (<platform:Switch>)
+* <game:The Talos Principle II: Road to Elysium> (<platform:PC>)
 * <game:Tiny Tina's Wonderlands> (<platform:PC>)
