@@ -1971,6 +1971,10 @@
     {
       "id": 10021,
       "name": "CrossCode"
+    },
+    {
+      "id": 10065,
+      "name": "Super Mario Party"
     }
   ],
   "companies": [
@@ -7880,10 +7884,6 @@
     }
   ],
   "games": [
-    {
-      "id": 306152,
-      "name": "Ace Attorney Investigations Collection"
-    },
     {
       "category": -1,
       "collection": -1,
@@ -29874,9 +29874,9 @@
         56338,
         56339,
         56340,
-        203372,
-        203373,
-        227617
+        270799,
+        270800,
+        270802
       ],
       "name": "Golden Axe",
       "player_perspectives": [
@@ -35409,9 +35409,7 @@
     {
       "category": 0,
       "collection": 4494,
-      "collections": [
-        4494
-      ],
+      "collections": [],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -43606,7 +43604,7 @@
       "category": 10,
       "collection": 2177,
       "collections": [
-        2177
+        2782
       ],
       "franchise": -1,
       "franchises": [],
@@ -48183,14 +48181,14 @@
         153685,
         153686
       ],
-      "name": "Metroid Prime 4",
+      "name": "Metroid Prime 4: Beyond",
       "player_perspectives": [
         1
       ],
       "themes": [
         18
       ],
-      "url": "https://www.igdb.com/games/metroid-prime-4"
+      "url": "https://www.igdb.com/games/metroid-prime-4-beyond"
     },
     {
       "category": 8,
@@ -51113,7 +51111,8 @@
       "category": 0,
       "collection": 453,
       "collections": [
-        453
+        453,
+        10065
       ],
       "franchise": -1,
       "franchises": [
@@ -51125,8 +51124,6 @@
         3
       ],
       "genres": [
-        8,
-        9,
         35
       ],
       "id": 103339,
@@ -54383,6 +54380,27 @@
         18
       ],
       "url": "https://www.igdb.com/games/the-talos-principle-ii-road-to-elysium"
+    },
+    {
+      "category": 3,
+      "collection": 6522,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [],
+      "id": 306152,
+      "involved_companies": [],
+      "name": "Ace Attorney Investigations Collection",
+      "player_perspectives": [
+        4
+      ],
+      "themes": [
+        43
+      ],
+      "url": "https://www.igdb.com/games/ace-attorney-investigations-collection"
     }
   ],
   "genres": [
@@ -66553,14 +66571,6 @@
       "company": 112
     },
     {
-      "id": 203372,
-      "company": 112
-    },
-    {
-      "id": 203373,
-      "company": 10180
-    },
-    {
       "id": 203848,
       "company": 9150
     },
@@ -67339,10 +67349,6 @@
     {
       "id": 226969,
       "company": 32350
-    },
-    {
-      "id": 227617,
-      "company": 23993
     },
     {
       "id": 227635,
@@ -68987,6 +68993,18 @@
     {
       "id": 270369,
       "company": 634
+    },
+    {
+      "id": 270799,
+      "company": 112
+    },
+    {
+      "id": 270800,
+      "company": 10180
+    },
+    {
+      "id": 270802,
+      "company": 112
     }
   ],
   "platforms": [
