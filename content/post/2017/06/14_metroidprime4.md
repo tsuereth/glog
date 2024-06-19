@@ -2,7 +2,7 @@
 category = [ "Industry Lamentations" ]
 date = "2017-06-14T05:56:27-07:00"
 draft = false
-game = [ "Metroid Prime 4" ]
+game = [ "Metroid Prime 4: Beyond" ]
 title = "Teaser"
 +++
 
