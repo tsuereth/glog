@@ -44952,7 +44952,9 @@
     {
       "category": 3,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        302
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -54203,7 +54205,9 @@
     {
       "category": 3,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        302
+      ],
       "franchise": -1,
       "franchises": [
         1163
@@ -54384,13 +54388,21 @@
     {
       "category": 3,
       "collection": 6522,
-      "collections": [],
+      "collections": [
+        302,
+        6522
+      ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1163
+      ],
       "game_modes": [
         1
       ],
-      "genres": [],
+      "genres": [
+        9,
+        31
+      ],
       "id": 306152,
       "involved_companies": [],
       "name": "Ace Attorney Investigations Collection",
