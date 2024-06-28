@@ -1333,6 +1333,10 @@
       "name": "Fighting Fantasy"
     },
     {
+      "id": 2960,
+      "name": "Mario"
+    },
+    {
       "id": 3015,
       "name": "LEGO"
     },
@@ -9714,9 +9718,7 @@
     {
       "category": 0,
       "collection": 2565,
-      "collections": [
-        2565
-      ],
+      "collections": [],
       "franchise": 1,
       "franchises": [
         1
@@ -16496,7 +16498,10 @@
     {
       "category": 3,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        243,
+        6240
+      ],
       "franchise": -1,
       "franchises": [
         756
@@ -17130,8 +17135,7 @@
       "involved_companies": [
         262945,
         262946,
-        265986,
-        265987
+        271698
       ],
       "name": "Crash Bandicoot",
       "player_perspectives": [
@@ -26760,9 +26764,12 @@
       ],
       "name": "Mario & Luigi: Bowser's Inside Story",
       "player_perspectives": [
+        3,
         4
       ],
       "themes": [
+        1,
+        17,
         27
       ],
       "url": "https://www.igdb.com/games/mario-luigi-bowser-s-inside-story"
@@ -26805,7 +26812,8 @@
       "category": 0,
       "collection": 595,
       "collections": [
-        595
+        595,
+        2960
       ],
       "franchise": -1,
       "franchises": [
@@ -26815,6 +26823,7 @@
         1
       ],
       "genres": [
+        8,
         9,
         12,
         31
@@ -26832,6 +26841,7 @@
       ],
       "themes": [
         1,
+        17,
         27
       ],
       "url": "https://www.igdb.com/games/mario-luigi-dream-team"
@@ -30134,7 +30144,7 @@
       ],
       "name": "Costume Quest",
       "player_perspectives": [
-        2
+        3
       ],
       "themes": [
         1,
@@ -47169,7 +47179,9 @@
       "game_modes": [
         1
       ],
-      "genres": [],
+      "genres": [
+        9
+      ],
       "id": 31145,
       "involved_companies": [
         48351
@@ -68815,14 +68827,6 @@
       "company": 16565
     },
     {
-      "id": 265986,
-      "company": 13634
-    },
-    {
-      "id": 265987,
-      "company": 10100
-    },
-    {
       "id": 265989,
       "company": 421
     },
@@ -69017,6 +69021,10 @@
     {
       "id": 270802,
       "company": 112
+    },
+    {
+      "id": 271698,
+      "company": 13634
     }
   ],
   "platforms": [
