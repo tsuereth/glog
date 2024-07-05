@@ -2423,6 +2423,10 @@
       "name": "Iron Lore Entertainment"
     },
     {
+      "id": 200,
+      "name": "Electronic Arts Victor"
+    },
+    {
       "id": 201,
       "name": "Cyberlore Studios"
     },
@@ -6811,10 +6815,6 @@
       "name": "Null Reference Studio"
     },
     {
-      "id": 24943,
-      "name": "Deep Silver Volition"
-    },
-    {
       "id": 25077,
       "name": "Intelligent Systems"
     },
@@ -8340,7 +8340,8 @@
       "id": 23,
       "involved_companies": [
         754,
-        755
+        755,
+        273951
       ],
       "name": "System Shock",
       "player_perspectives": [
@@ -12551,15 +12552,12 @@
       ],
       "id": 538,
       "involved_companies": [
-        185007,
-        185008,
-        185009,
         185010,
         185011,
-        185015,
-        185016,
-        185017,
-        185018
+        273726,
+        273727,
+        273728,
+        273729
       ],
       "name": "BioShock Infinite",
       "player_perspectives": [
@@ -12594,7 +12592,8 @@
       ],
       "id": 543,
       "involved_companies": [
-        1310
+        1310,
+        273534
       ],
       "name": "Call of Juarez: The Cartel",
       "player_perspectives": [
@@ -13034,7 +13033,9 @@
         47
       ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1277
+      ],
       "game_modes": [
         1,
         2
@@ -21171,7 +21172,9 @@
       ],
       "id": 1976,
       "involved_companies": [
-        133339
+        273535,
+        273536,
+        273537
       ],
       "name": "Call of Juarez: Gunslinger",
       "player_perspectives": [
@@ -54206,11 +54209,17 @@
         5
       ],
       "id": 249476,
-      "involved_companies": [],
+      "involved_companies": [
+        273469,
+        273470
+      ],
       "name": "Saints Row: The Heist & The Hazardous",
-      "player_perspectives": [],
+      "player_perspectives": [
+        2
+      ],
       "themes": [
-        1
+        1,
+        38
       ],
       "url": "https://www.igdb.com/games/saints-row-the-heist-and-the-hazardous"
     },
@@ -54298,12 +54307,16 @@
       ],
       "id": 257021,
       "involved_companies": [
-        263453
+        273467,
+        273468
       ],
       "name": "Saints Row: Doc Ketchum's Murder Circus",
-      "player_perspectives": [],
+      "player_perspectives": [
+        2
+      ],
       "themes": [
-        1
+        1,
+        38
       ],
       "url": "https://www.igdb.com/games/saints-row-doc-ketchums-murder-circus"
     },
@@ -54323,12 +54336,17 @@
       ],
       "id": 260935,
       "involved_companies": [
-        263837
+        273462,
+        274507,
+        274508
       ],
       "name": "Saints Row: A Song of Ice & Dust",
-      "player_perspectives": [],
+      "player_perspectives": [
+        2
+      ],
       "themes": [
-        1
+        1,
+        38
       ],
       "url": "https://www.igdb.com/games/saints-row-a-song-of-ice-and-dust"
     },
@@ -64127,10 +64145,6 @@
       "company": 16565
     },
     {
-      "id": 133339,
-      "company": 108
-    },
-    {
       "id": 133453,
       "company": 5456
     },
@@ -65739,40 +65753,12 @@
       "company": 23
     },
     {
-      "id": 185007,
-      "company": 21
-    },
-    {
-      "id": 185008,
-      "company": 2492
-    },
-    {
-      "id": 185009,
-      "company": 413
-    },
-    {
       "id": 185010,
       "company": 3023
     },
     {
       "id": 185011,
       "company": 73
-    },
-    {
-      "id": 185015,
-      "company": 8
-    },
-    {
-      "id": 185016,
-      "company": 21
-    },
-    {
-      "id": 185017,
-      "company": 2492
-    },
-    {
-      "id": 185018,
-      "company": 413
     },
     {
       "id": 185032,
@@ -68491,20 +68477,12 @@
       "company": 813
     },
     {
-      "id": 263453,
-      "company": 24943
-    },
-    {
       "id": 263583,
       "company": 2406
     },
     {
       "id": 263584,
       "company": 263
-    },
-    {
-      "id": 263837,
-      "company": 24943
     },
     {
       "id": 263983,
@@ -69025,6 +69003,70 @@
     {
       "id": 271698,
       "company": 13634
+    },
+    {
+      "id": 273462,
+      "company": 7462
+    },
+    {
+      "id": 273467,
+      "company": 7462
+    },
+    {
+      "id": 273468,
+      "company": 423
+    },
+    {
+      "id": 273469,
+      "company": 7462
+    },
+    {
+      "id": 273470,
+      "company": 423
+    },
+    {
+      "id": 273534,
+      "company": 104
+    },
+    {
+      "id": 273535,
+      "company": 108
+    },
+    {
+      "id": 273536,
+      "company": 104
+    },
+    {
+      "id": 273537,
+      "company": 108
+    },
+    {
+      "id": 273726,
+      "company": 8
+    },
+    {
+      "id": 273727,
+      "company": 21
+    },
+    {
+      "id": 273728,
+      "company": 2492
+    },
+    {
+      "id": 273729,
+      "company": 413
+    },
+    {
+      "id": 273951,
+      "company": 200
+    },
+    {
+      "id": 274507,
+      "company": 7462
+    },
+    {
+      "id": 274508,
+      "company": 423
     }
   ],
   "platforms": [
