@@ -12920,7 +12920,8 @@
       ],
       "themes": [
         1,
-        23
+        23,
+        39
       ],
       "url": "https://www.igdb.com/games/tom-clancy-s-splinter-cell-conviction"
     },
@@ -38105,7 +38106,9 @@
     {
       "category": 3,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        97
+      ],
       "franchise": -1,
       "franchises": [
         2121
