@@ -1738,7 +1738,7 @@
     },
     {
       "id": 7027,
-      "name": "OxenFree"
+      "name": "Oxenfree"
     },
     {
       "id": 7041,
@@ -1979,6 +1979,10 @@
     {
       "id": 10065,
       "name": "Super Mario Party"
+    },
+    {
+      "id": 10111,
+      "name": "Valiant Hearts"
     }
   ],
   "companies": [
@@ -3209,6 +3213,10 @@
     {
       "id": 800,
       "name": "Jupiter Corporation"
+    },
+    {
+      "id": 805,
+      "name": "Other Ocean Interactive"
     },
     {
       "id": 809,
@@ -4707,6 +4715,10 @@
       "name": "Vykarian"
     },
     {
+      "id": 3491,
+      "name": "GOG.com"
+    },
+    {
       "id": 3537,
       "name": "Studio Gobo"
     },
@@ -5081,6 +5093,10 @@
     {
       "id": 4981,
       "name": "Sega Enterprises, Ltd."
+    },
+    {
+      "id": 4996,
+      "name": "Humble Bundle"
     },
     {
       "id": 4998,
@@ -5601,6 +5617,10 @@
     {
       "id": 7726,
       "name": "SUKEBAN"
+    },
+    {
+      "id": 7753,
+      "name": "Junglevision Software"
     },
     {
       "id": 7764,
@@ -6935,10 +6955,6 @@
       "name": "8-4"
     },
     {
-      "id": 29883,
-      "name": "Double Fine"
-    },
-    {
       "id": 30339,
       "name": "@unepic_fran"
     },
@@ -7651,6 +7667,10 @@
     {
       "id": 1686,
       "name": "Bioshock"
+    },
+    {
+      "id": 1688,
+      "name": "Homestar Runner"
     },
     {
       "id": 1724,
@@ -11363,7 +11383,8 @@
         182171,
         182287,
         255950,
-        255951
+        255951,
+        272594
       ],
       "name": "Resident Evil",
       "player_perspectives": [
@@ -11784,13 +11805,13 @@
       "id": 475,
       "involved_companies": [
         1186,
-        42073,
-        42075,
         42076,
         42077,
-        182973,
         182974,
-        182975
+        182975,
+        273139,
+        273141,
+        273142
       ],
       "name": "Star Wars: The Force Unleashed",
       "player_perspectives": [
@@ -18888,7 +18909,7 @@
       ],
       "id": 1428,
       "involved_companies": [
-        208619
+        275769
       ],
       "name": "Phoenix Wright: Ace Attorney - Trials and Tribulations",
       "player_perspectives": [
@@ -18897,7 +18918,8 @@
         5
       ],
       "themes": [
-        27
+        27,
+        43
       ],
       "url": "https://www.igdb.com/games/phoenix-wright-ace-attorney-trials-and-tribulations"
     },
@@ -25720,10 +25742,9 @@
       ],
       "id": 3087,
       "involved_companies": [
-        23629,
         69626,
-        133298,
-        133299
+        275691,
+        275694
       ],
       "name": "Broken Age",
       "player_perspectives": [
@@ -28163,9 +28184,7 @@
     {
       "category": 0,
       "collection": 2172,
-      "collections": [
-        2172
-      ],
+      "collections": [],
       "franchise": 1,
       "franchises": [
         1
@@ -30142,9 +30161,14 @@
       ],
       "id": 5637,
       "involved_companies": [
-        13601,
-        13602,
-        13603
+        13603,
+        272777,
+        272778,
+        272779,
+        272780,
+        272781,
+        272782,
+        272783
       ],
       "name": "Costume Quest",
       "player_perspectives": [
@@ -32778,7 +32802,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        10111
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -36228,11 +36254,11 @@
     {
       "category": 0,
       "collection": 4592,
-      "collections": [
-        4592
-      ],
+      "collections": [],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1688
+      ],
       "game_modes": [
         1
       ],
@@ -40748,7 +40774,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        7027
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -51083,7 +51111,7 @@
         160573,
         160574,
         205403,
-        205404
+        273163
       ],
       "name": "The Forgotten City",
       "player_perspectives": [
@@ -56656,14 +56684,6 @@
       "company": 112
     },
     {
-      "id": 13601,
-      "company": 85
-    },
-    {
-      "id": 13602,
-      "company": 197
-    },
-    {
       "id": 13603,
       "company": 753
     },
@@ -58116,10 +58136,6 @@
       "company": 129
     },
     {
-      "id": 23629,
-      "company": 753
-    },
-    {
       "id": 23817,
       "company": 70
     },
@@ -59298,14 +59314,6 @@
     {
       "id": 42060,
       "company": 73
-    },
-    {
-      "id": 42073,
-      "company": 319
-    },
-    {
-      "id": 42075,
-      "company": 385
     },
     {
       "id": 42076,
@@ -64132,14 +64140,6 @@
       "company": 4940
     },
     {
-      "id": 133298,
-      "company": 29883
-    },
-    {
-      "id": 133299,
-      "company": 85
-    },
-    {
       "id": 133305,
       "company": 1242
     },
@@ -65572,10 +65572,6 @@
       "company": 321
     },
     {
-      "id": 182973,
-      "company": 10
-    },
-    {
       "id": 182974,
       "company": 73
     },
@@ -66612,10 +66608,6 @@
       "company": 1460
     },
     {
-      "id": 205404,
-      "company": 3023
-    },
-    {
       "id": 205548,
       "company": 23
     },
@@ -66669,10 +66661,6 @@
     },
     {
       "id": 208618,
-      "company": 37
-    },
-    {
-      "id": 208619,
       "company": 37
     },
     {
@@ -69008,6 +68996,54 @@
       "company": 13634
     },
     {
+      "id": 272594,
+      "company": 3491
+    },
+    {
+      "id": 272777,
+      "company": 197
+    },
+    {
+      "id": 272778,
+      "company": 85
+    },
+    {
+      "id": 272779,
+      "company": 4996
+    },
+    {
+      "id": 272780,
+      "company": 593
+    },
+    {
+      "id": 272781,
+      "company": 4132
+    },
+    {
+      "id": 272782,
+      "company": 7753
+    },
+    {
+      "id": 272783,
+      "company": 805
+    },
+    {
+      "id": 273139,
+      "company": 10
+    },
+    {
+      "id": 273141,
+      "company": 385
+    },
+    {
+      "id": 273142,
+      "company": 10
+    },
+    {
+      "id": 273163,
+      "company": 3023
+    },
+    {
       "id": 273462,
       "company": 7462
     },
@@ -69070,6 +69106,18 @@
     {
       "id": 274508,
       "company": 423
+    },
+    {
+      "id": 275691,
+      "company": 85
+    },
+    {
+      "id": 275694,
+      "company": 753
+    },
+    {
+      "id": 275769,
+      "company": 37
     }
   ],
   "platforms": [
