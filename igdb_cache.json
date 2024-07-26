@@ -3763,10 +3763,6 @@
       "name": "SouthPeak Interactive"
     },
     {
-      "id": 1330,
-      "name": "Bits Studios"
-    },
-    {
       "id": 1335,
       "name": "Number None Inc."
     },
@@ -4313,6 +4309,10 @@
     {
       "id": 2412,
       "name": "Toxic Games"
+    },
+    {
+      "id": 2422,
+      "name": "Hertz"
     },
     {
       "id": 2432,
@@ -6229,10 +6229,6 @@
     {
       "id": 12736,
       "name": "Lunar Ray Games"
-    },
-    {
-      "id": 12755,
-      "name": "NEC Avenue, Ltd."
     },
     {
       "id": 12815,
@@ -21776,16 +21772,14 @@
       ],
       "id": 2051,
       "involved_companies": [
-        51318,
-        51320,
-        51321,
-        51322,
-        94559,
-        94566,
-        94568,
-        191863,
-        191864,
-        227761
+        275348,
+        275353,
+        275355,
+        275368,
+        275369,
+        275372,
+        275373,
+        275423
       ],
       "name": "OutRun",
       "player_perspectives": [
@@ -26458,10 +26452,10 @@
       ],
       "id": 3263,
       "involved_companies": [
-        8510,
-        8511,
-        20015,
-        88967
+        276941,
+        276942,
+        276943,
+        276944
       ],
       "name": "Grand Theft Auto: Liberty City Stories",
       "player_perspectives": [
@@ -35173,9 +35167,7 @@
     {
       "category": 9,
       "collection": 1167,
-      "collections": [
-        1167
-      ],
+      "collections": [],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -56147,14 +56139,6 @@
       "company": 365
     },
     {
-      "id": 8510,
-      "company": 308
-    },
-    {
-      "id": 8511,
-      "company": 365
-    },
-    {
       "id": 8515,
       "company": 29
     },
@@ -57716,10 +57700,6 @@
     },
     {
       "id": 20004,
-      "company": 139
-    },
-    {
-      "id": 20015,
       "company": 139
     },
     {
@@ -60027,22 +60007,6 @@
       "company": 10692
     },
     {
-      "id": 51318,
-      "company": 227
-    },
-    {
-      "id": 51320,
-      "company": 830
-    },
-    {
-      "id": 51321,
-      "company": 11247
-    },
-    {
-      "id": 51322,
-      "company": 12755
-    },
-    {
       "id": 51540,
       "company": 70
     },
@@ -61907,10 +61871,6 @@
       "company": 294
     },
     {
-      "id": 88967,
-      "company": 29
-    },
-    {
       "id": 88970,
       "company": 22994
     },
@@ -62045,18 +62005,6 @@
     {
       "id": 94318,
       "company": 26
-    },
-    {
-      "id": 94559,
-      "company": 4981
-    },
-    {
-      "id": 94566,
-      "company": 4981
-    },
-    {
-      "id": 94568,
-      "company": 4981
     },
     {
       "id": 95195,
@@ -66163,14 +66111,6 @@
       "company": 660
     },
     {
-      "id": 191863,
-      "company": 197
-    },
-    {
-      "id": 191864,
-      "company": 1330
-    },
-    {
       "id": 192232,
       "company": 395
     },
@@ -67344,10 +67284,6 @@
     },
     {
       "id": 227754,
-      "company": 23993
-    },
-    {
-      "id": 227761,
       "company": 23993
     },
     {
@@ -69103,6 +69039,38 @@
       "company": 58
     },
     {
+      "id": 275348,
+      "company": 4981
+    },
+    {
+      "id": 275353,
+      "company": 830
+    },
+    {
+      "id": 275355,
+      "company": 4981
+    },
+    {
+      "id": 275368,
+      "company": 830
+    },
+    {
+      "id": 275369,
+      "company": 4981
+    },
+    {
+      "id": 275372,
+      "company": 830
+    },
+    {
+      "id": 275373,
+      "company": 4981
+    },
+    {
+      "id": 275423,
+      "company": 2422
+    },
+    {
       "id": 275691,
       "company": 85
     },
@@ -69117,6 +69085,22 @@
     {
       "id": 276555,
       "company": 104
+    },
+    {
+      "id": 276941,
+      "company": 139
+    },
+    {
+      "id": 276942,
+      "company": 308
+    },
+    {
+      "id": 276943,
+      "company": 365
+    },
+    {
+      "id": 276944,
+      "company": 29
     }
   ],
   "platforms": [
