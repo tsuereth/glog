@@ -7905,24 +7905,6 @@
   ],
   "games": [
     {
-      "id": 306803,
-      "name": "Voxelgram: DLC #1"
-    },
-    {
-      "category": -1,
-      "collection": -1,
-      "collections": [],
-      "franchise": -1,
-      "franchises": [],
-      "game_modes": [],
-      "genres": [],
-      "id": 271818,
-      "involved_companies": [],
-      "name": "Borderlands 3: Director's Cut",
-      "player_perspectives": [],
-      "themes": []
-    },
-    {
       "category": -1,
       "collection": -1,
       "collections": [],
@@ -44183,7 +44165,9 @@
       "id": 20150,
       "involved_companies": [
         129659,
-        129661
+        129661,
+        276145,
+        276146
       ],
       "name": "Katana Zero",
       "player_perspectives": [
@@ -54381,6 +54365,21 @@
       "url": "https://www.igdb.com/games/saints-row-a-song-of-ice-and-dust"
     },
     {
+      "category": 13,
+      "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [],
+      "genres": [],
+      "id": 271818,
+      "involved_companies": [],
+      "name": "Borderlands 3: Director's Cut",
+      "player_perspectives": [],
+      "themes": [],
+      "url": "https://www.igdb.com/games/borderlands-3-directors-cut"
+    },
+    {
       "category": 0,
       "collection": -1,
       "collections": [
@@ -54473,6 +54472,31 @@
         43
       ],
       "url": "https://www.igdb.com/games/ace-attorney-investigations-collection"
+    },
+    {
+      "category": 1,
+      "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        9,
+        15,
+        32
+      ],
+      "id": 306803,
+      "involved_companies": [
+        272291
+      ],
+      "name": "Voxelgram: DLC #1",
+      "player_perspectives": [
+        3
+      ],
+      "themes": [],
+      "url": "https://www.igdb.com/games/voxelgram-dlc-number-1"
     }
   ],
   "genres": [
@@ -68915,6 +68939,10 @@
       "company": 13634
     },
     {
+      "id": 272291,
+      "company": 22407
+    },
+    {
       "id": 272594,
       "company": 3491
     },
@@ -69085,6 +69113,14 @@
     {
       "id": 275769,
       "company": 37
+    },
+    {
+      "id": 276145,
+      "company": 27224
+    },
+    {
+      "id": 276146,
+      "company": 10318
     },
     {
       "id": 276555,
