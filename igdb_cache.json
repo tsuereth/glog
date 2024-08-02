@@ -1681,6 +1681,10 @@
       "name": "Sonic Boom"
     },
     {
+      "id": 6238,
+      "name": "Ecco The Dolphin"
+    },
+    {
       "id": 6240,
       "name": "Metroid Prime"
     },
@@ -2940,7 +2944,7 @@
     },
     {
       "id": 555,
-      "name": "EA Tiburon"
+      "name": "EA Orlando"
     },
     {
       "id": 566,
@@ -6692,7 +6696,7 @@
     },
     {
       "id": 22234,
-      "name": "Dice Multi Media Europ"
+      "name": "Dice Multi Media Europe"
     },
     {
       "id": 22276,
@@ -7145,6 +7149,10 @@
     {
       "id": 55091,
       "name": "Inline Assembly"
+    },
+    {
+      "id": 56463,
+      "name": "Eidos Sherbrooke"
     }
   ],
   "franchises": [
@@ -10067,12 +10075,11 @@
       ],
       "id": 223,
       "involved_companies": [
-        143283,
-        143284,
-        143296,
         143297,
         143298,
-        143299
+        143299,
+        277163,
+        277164
       ],
       "name": "The Sims",
       "player_perspectives": [
@@ -14203,9 +14210,8 @@
       "id": 891,
       "involved_companies": [
         265479,
-        265480,
-        265777,
-        265778
+        279090,
+        279091
       ],
       "name": "Team Fortress 2",
       "player_perspectives": [
@@ -19694,8 +19700,8 @@
         227635,
         227636,
         239646,
-        239647,
-        239648
+        239648,
+        276398
       ],
       "name": "Streets of Rage",
       "player_perspectives": [
@@ -28542,9 +28548,11 @@
       ],
       "id": 4499,
       "involved_companies": [
-        30310,
-        126163,
-        199664
+        199664,
+        276438,
+        276439,
+        276440,
+        276441
       ],
       "name": "Dr. Robotnik's Mean Bean Machine",
       "player_perspectives": [
@@ -29639,7 +29647,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        6238
+      ],
       "franchise": -1,
       "franchises": [
         1058
@@ -29653,8 +29663,8 @@
       "id": 5378,
       "involved_companies": [
         149179,
-        203371,
-        227834
+        227834,
+        276372
       ],
       "name": "Ecco the Dolphin",
       "player_perspectives": [
@@ -31383,8 +31393,8 @@
       "id": 6405,
       "involved_companies": [
         148242,
-        213308,
-        228319
+        228319,
+        276405
       ],
       "name": "Gunstar Heroes",
       "player_perspectives": [
@@ -33268,9 +33278,9 @@
       "involved_companies": [
         228421,
         239722,
-        239723,
-        239724,
-        239725
+        276432,
+        276433,
+        276434
       ],
       "name": "Ristar",
       "player_perspectives": [
@@ -34698,7 +34708,9 @@
     {
       "category": 0,
       "collection": 884,
-      "collections": [],
+      "collections": [
+        884
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -34713,9 +34725,11 @@
       ],
       "id": 8389,
       "involved_companies": [
-        20681,
-        20686,
-        227754
+        227754,
+        276390,
+        276391,
+        276392,
+        276393
       ],
       "name": "ToeJam & Earl",
       "player_perspectives": [
@@ -41907,8 +41921,10 @@
       "id": 16036,
       "involved_companies": [
         207502,
-        207503,
-        228303
+        228303,
+        276429,
+        276430,
+        276431
       ],
       "name": "Sonic the Hedgehog: Spinball",
       "player_perspectives": [
@@ -44298,7 +44314,9 @@
         506
       ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        771
+      ],
       "game_modes": [
         1,
         2
@@ -45508,18 +45526,24 @@
       ],
       "franchise": -1,
       "franchises": [],
-      "game_modes": [],
+      "game_modes": [
+        1
+      ],
       "genres": [
+        5,
         31
       ],
       "id": 23420,
       "involved_companies": [
-        59320
+        277259
       ],
       "name": "Saints Row IV: How the Saints Save Christmas",
-      "player_perspectives": [],
+      "player_perspectives": [
+        2
+      ],
       "themes": [
-        1
+        1,
+        27
       ],
       "url": "https://www.igdb.com/games/saints-row-iv-how-the-saints-save-christmas"
     },
@@ -50535,7 +50559,8 @@
       ],
       "id": 90558,
       "involved_companies": [
-        62981
+        276675,
+        276676
       ],
       "name": "Satisfactory",
       "player_perspectives": [
@@ -53692,7 +53717,8 @@
       "id": 152249,
       "involved_companies": [
         139184,
-        265315
+        277136,
+        277138
       ],
       "name": "Marvel's Guardians of the Galaxy",
       "player_perspectives": [
@@ -57835,14 +57861,6 @@
       "company": 4373
     },
     {
-      "id": 20681,
-      "company": 4378
-    },
-    {
-      "id": 20686,
-      "company": 229
-    },
-    {
       "id": 20743,
       "company": 783
     },
@@ -58637,10 +58655,6 @@
     {
       "id": 30082,
       "company": 7931
-    },
-    {
-      "id": 30310,
-      "company": 1831
     },
     {
       "id": 30361,
@@ -60591,10 +60605,6 @@
       "company": 762
     },
     {
-      "id": 59320,
-      "company": 423
-    },
-    {
       "id": 59425,
       "company": 8460
     },
@@ -60713,10 +60723,6 @@
     {
       "id": 62911,
       "company": 832
-    },
-    {
-      "id": 62981,
-      "company": 999
     },
     {
       "id": 63011,
@@ -63683,10 +63689,6 @@
       "company": 800
     },
     {
-      "id": 126163,
-      "company": 112
-    },
-    {
       "id": 126174,
       "company": 112
     },
@@ -64445,18 +64447,6 @@
     {
       "id": 141490,
       "company": 7902
-    },
-    {
-      "id": 143283,
-      "company": 284
-    },
-    {
-      "id": 143284,
-      "company": 1
-    },
-    {
-      "id": 143296,
-      "company": 223
     },
     {
       "id": 143297,
@@ -66527,10 +66517,6 @@
       "company": 766
     },
     {
-      "id": 203371,
-      "company": 112
-    },
-    {
       "id": 203848,
       "company": 9150
     },
@@ -66601,10 +66587,6 @@
     {
       "id": 207502,
       "company": 1444
-    },
-    {
-      "id": 207503,
-      "company": 112
     },
     {
       "id": 207626,
@@ -66749,10 +66731,6 @@
     {
       "id": 213042,
       "company": 4
-    },
-    {
-      "id": 213308,
-      "company": 112
     },
     {
       "id": 213374,
@@ -67603,10 +67581,6 @@
       "company": 4981
     },
     {
-      "id": 239647,
-      "company": 14087
-    },
-    {
       "id": 239648,
       "company": 15878
     },
@@ -67629,18 +67603,6 @@
     {
       "id": 239722,
       "company": 4981
-    },
-    {
-      "id": 239723,
-      "company": 14087
-    },
-    {
-      "id": 239724,
-      "company": 15878
-    },
-    {
-      "id": 239725,
-      "company": 112
     },
     {
       "id": 239805,
@@ -68527,10 +68489,6 @@
       "company": 7647
     },
     {
-      "id": 265315,
-      "company": 27
-    },
-    {
       "id": 265316,
       "company": 25
     },
@@ -68651,10 +68609,6 @@
       "company": 1
     },
     {
-      "id": 265480,
-      "company": 56
-    },
-    {
       "id": 265481,
       "company": 56
     },
@@ -68665,14 +68619,6 @@
     {
       "id": 265600,
       "company": 9691
-    },
-    {
-      "id": 265777,
-      "company": 56
-    },
-    {
-      "id": 265778,
-      "company": 56
     },
     {
       "id": 265779,
@@ -69123,8 +69069,84 @@
       "company": 10318
     },
     {
+      "id": 276372,
+      "company": 112
+    },
+    {
+      "id": 276390,
+      "company": 4378
+    },
+    {
+      "id": 276391,
+      "company": 229
+    },
+    {
+      "id": 276392,
+      "company": 112
+    },
+    {
+      "id": 276393,
+      "company": 14087
+    },
+    {
+      "id": 276398,
+      "company": 14087
+    },
+    {
+      "id": 276405,
+      "company": 112
+    },
+    {
+      "id": 276429,
+      "company": 4981
+    },
+    {
+      "id": 276430,
+      "company": 112
+    },
+    {
+      "id": 276431,
+      "company": 14087
+    },
+    {
+      "id": 276432,
+      "company": 14087
+    },
+    {
+      "id": 276433,
+      "company": 15878
+    },
+    {
+      "id": 276434,
+      "company": 112
+    },
+    {
+      "id": 276438,
+      "company": 1831
+    },
+    {
+      "id": 276439,
+      "company": 4981
+    },
+    {
+      "id": 276440,
+      "company": 14087
+    },
+    {
+      "id": 276441,
+      "company": 112
+    },
+    {
       "id": 276555,
       "company": 104
+    },
+    {
+      "id": 276675,
+      "company": 999
+    },
+    {
+      "id": 276676,
+      "company": 12186
     },
     {
       "id": 276941,
@@ -69141,6 +69163,34 @@
     {
       "id": 276944,
       "company": 29
+    },
+    {
+      "id": 277136,
+      "company": 27
+    },
+    {
+      "id": 277138,
+      "company": 56463
+    },
+    {
+      "id": 277163,
+      "company": 284
+    },
+    {
+      "id": 277164,
+      "company": 1
+    },
+    {
+      "id": 277259,
+      "company": 423
+    },
+    {
+      "id": 279090,
+      "company": 56
+    },
+    {
+      "id": 279091,
+      "company": 56
     }
   ],
   "platforms": [
