@@ -3079,10 +3079,6 @@
       "name": "343 Industries"
     },
     {
-      "id": 725,
-      "name": "Buzz Monkey Software"
-    },
-    {
       "id": 733,
       "name": "Realtime Worlds"
     },
@@ -4691,6 +4687,10 @@
       "name": "Ubisoft North America"
     },
     {
+      "id": 3263,
+      "name": "(Archive) Ubisoft EMEA"
+    },
+    {
       "id": 3276,
       "name": "Frame Machine"
     },
@@ -5233,6 +5233,10 @@
     {
       "id": 5369,
       "name": "Playtonic"
+    },
+    {
+      "id": 5431,
+      "name": "Alice Studio"
     },
     {
       "id": 5442,
@@ -6361,6 +6365,10 @@
     {
       "id": 14549,
       "name": "Início Localization Services"
+    },
+    {
+      "id": 14706,
+      "name": "Helix"
     },
     {
       "id": 14736,
@@ -7563,6 +7571,10 @@
     {
       "id": 1043,
       "name": "Forza"
+    },
+    {
+      "id": 1047,
+      "name": "Dragon Age"
     },
     {
       "id": 1048,
@@ -8962,7 +8974,9 @@
         10
       ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1047
+      ],
       "game_modes": [
         1
       ],
@@ -10717,11 +10731,11 @@
       ],
       "genres": [
         5,
+        24,
         31
       ],
       "id": 374,
       "involved_companies": [
-        274332,
         274341
       ],
       "name": "Metal Gear",
@@ -14244,9 +14258,9 @@
       "id": 942,
       "involved_companies": [
         43907,
-        43908,
         134241,
-        245890
+        245890,
+        277275
       ],
       "name": "World of Goo",
       "player_perspectives": [
@@ -16945,11 +16959,10 @@
       ],
       "id": 1161,
       "involved_companies": [
-        145723,
         145724,
-        213040,
         213041,
-        213042
+        213042,
+        279431
       ],
       "name": "Tomb Raider: Legend",
       "player_perspectives": [
@@ -32263,7 +32276,7 @@
       ],
       "id": 7046,
       "involved_companies": [
-        62694
+        277298
       ],
       "name": "Factorio",
       "player_perspectives": [
@@ -33444,13 +33457,16 @@
       "id": 7570,
       "involved_companies": [
         17844,
-        22850,
-        35638,
-        35639,
-        35640,
-        35641,
-        35642,
-        79878
+        279707,
+        279708,
+        279709,
+        279710,
+        279711,
+        279712,
+        279713,
+        279714,
+        279715,
+        279716
       ],
       "name": "Assassin's Creed Rogue",
       "player_perspectives": [
@@ -58113,10 +58129,6 @@
       "company": 284
     },
     {
-      "id": 22850,
-      "company": 2921
-    },
-    {
       "id": 22864,
       "company": 27
     },
@@ -58949,26 +58961,6 @@
       "company": 23
     },
     {
-      "id": 35638,
-      "company": 822
-    },
-    {
-      "id": 35639,
-      "company": 38
-    },
-    {
-      "id": 35640,
-      "company": 3928
-    },
-    {
-      "id": 35641,
-      "company": 899
-    },
-    {
-      "id": 35642,
-      "company": 697
-    },
-    {
       "id": 35803,
       "company": 8066
     },
@@ -59563,10 +59555,6 @@
     {
       "id": 43907,
       "company": 613
-    },
-    {
-      "id": 43908,
-      "company": 1010
     },
     {
       "id": 43909,
@@ -60709,10 +60697,6 @@
       "company": 10075
     },
     {
-      "id": 62694,
-      "company": 14951
-    },
-    {
       "id": 62908,
       "company": 10490
     },
@@ -61495,10 +61479,6 @@
     {
       "id": 79449,
       "company": 9218
-    },
-    {
-      "id": 79878,
-      "company": 15790
     },
     {
       "id": 80927,
@@ -64509,10 +64489,6 @@
       "company": 722
     },
     {
-      "id": 145723,
-      "company": 552
-    },
-    {
       "id": 145724,
       "company": 26
     },
@@ -66719,10 +66695,6 @@
     {
       "id": 212828,
       "company": 1
-    },
-    {
-      "id": 213040,
-      "company": 725
     },
     {
       "id": 213041,
@@ -68993,10 +68965,6 @@
       "company": 200
     },
     {
-      "id": 274332,
-      "company": 129
-    },
-    {
       "id": 274341,
       "company": 129
     },
@@ -69185,12 +69153,64 @@
       "company": 423
     },
     {
+      "id": 277275,
+      "company": 53
+    },
+    {
+      "id": 277298,
+      "company": 14951
+    },
+    {
       "id": 279090,
       "company": 56
     },
     {
       "id": 279091,
       "company": 56
+    },
+    {
+      "id": 279431,
+      "company": 552
+    },
+    {
+      "id": 279707,
+      "company": 3928
+    },
+    {
+      "id": 279708,
+      "company": 38
+    },
+    {
+      "id": 279709,
+      "company": 822
+    },
+    {
+      "id": 279710,
+      "company": 15790
+    },
+    {
+      "id": 279711,
+      "company": 2921
+    },
+    {
+      "id": 279712,
+      "company": 697
+    },
+    {
+      "id": 279713,
+      "company": 899
+    },
+    {
+      "id": 279714,
+      "company": 5431
+    },
+    {
+      "id": 279715,
+      "company": 14706
+    },
+    {
+      "id": 279716,
+      "company": 3263
     }
   ],
   "platforms": [
