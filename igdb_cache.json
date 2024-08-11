@@ -7577,6 +7577,10 @@
       "name": "Black Mirror"
     },
     {
+      "id": 1124,
+      "name": "Dark Souls"
+    },
+    {
       "id": 1163,
       "name": "Ace Attorney"
     },
@@ -7888,10 +7892,6 @@
     }
   ],
   "games": [
-    {
-      "id": 250622,
-      "name": "Cat Quest III"
-    },
     {
       "category": -1,
       "collection": -1,
@@ -14695,7 +14695,7 @@
     },
     {
       "category": 0,
-      "collection": 78,
+      "collection": -1,
       "collections": [
         78
       ],
@@ -20540,7 +20540,7 @@
     },
     {
       "category": 0,
-      "collection": 352,
+      "collection": -1,
       "collections": [
         352
       ],
@@ -20854,7 +20854,7 @@
       ],
       "id": 1911,
       "involved_companies": [
-        197289
+        279203
       ],
       "name": "Path of Exile",
       "player_perspectives": [
@@ -22013,9 +22013,7 @@
       ],
       "themes": [
         1,
-        17,
-        33,
-        38
+        17
       ],
       "url": "https://www.igdb.com/games/dark-souls"
     },
@@ -22975,7 +22973,7 @@
     },
     {
       "category": 0,
-      "collection": 2227,
+      "collection": -1,
       "collections": [
         2227
       ],
@@ -24255,7 +24253,7 @@
     },
     {
       "category": 0,
-      "collection": 284,
+      "collection": -1,
       "collections": [
         284
       ],
@@ -24362,7 +24360,7 @@
     },
     {
       "category": 0,
-      "collection": 518,
+      "collection": -1,
       "collections": [
         518
       ],
@@ -24393,7 +24391,7 @@
     },
     {
       "category": 8,
-      "collection": 506,
+      "collection": -1,
       "collections": [
         506
       ],
@@ -24463,7 +24461,7 @@
     },
     {
       "category": 0,
-      "collection": 518,
+      "collection": -1,
       "collections": [
         518
       ],
@@ -27263,7 +27261,7 @@
     },
     {
       "category": 0,
-      "collection": 602,
+      "collection": -1,
       "collections": [
         602
       ],
@@ -28475,7 +28473,7 @@
     },
     {
       "category": 0,
-      "collection": 2156,
+      "collection": -1,
       "collections": [
         2156
       ],
@@ -30087,7 +30085,7 @@
     },
     {
       "category": 0,
-      "collection": 3314,
+      "collection": -1,
       "collections": [
         3314
       ],
@@ -31066,7 +31064,7 @@
     },
     {
       "category": 0,
-      "collection": 887,
+      "collection": -1,
       "collections": [
         887
       ],
@@ -34337,8 +34335,13 @@
       ],
       "id": 8218,
       "involved_companies": [
-        121768,
-        121769
+        121769,
+        280511,
+        280512,
+        280513,
+        280514,
+        280515,
+        280516
       ],
       "name": "Assassin's Creed III: The Tyranny of King Washington",
       "player_perspectives": [
@@ -34359,7 +34362,9 @@
         543
       ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1124
+      ],
       "game_modes": [
         1,
         2,
@@ -34380,8 +34385,7 @@
       ],
       "themes": [
         1,
-        17,
-        38
+        17
       ],
       "url": "https://www.igdb.com/games/dark-souls-ii-scholar-of-the-first-sin"
     },
@@ -36645,7 +36649,7 @@
     },
     {
       "category": 0,
-      "collection": 1485,
+      "collection": -1,
       "collections": [
         1485
       ],
@@ -38179,7 +38183,7 @@
     },
     {
       "category": 4,
-      "collection": 1485,
+      "collection": -1,
       "collections": [
         1485
       ],
@@ -38207,7 +38211,7 @@
     },
     {
       "category": 0,
-      "collection": 1485,
+      "collection": -1,
       "collections": [
         1485
       ],
@@ -44418,7 +44422,7 @@
     },
     {
       "category": 0,
-      "collection": 922,
+      "collection": -1,
       "collections": [
         922
       ],
@@ -44541,7 +44545,9 @@
       "collection": -1,
       "collections": [],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1124
+      ],
       "game_modes": [
         1,
         2,
@@ -44549,7 +44555,6 @@
       ],
       "genres": [
         12,
-        25,
         31
       ],
       "id": 21040,
@@ -44563,12 +44568,7 @@
       ],
       "themes": [
         1,
-        17,
-        19,
-        21,
-        22,
-        33,
-        38
+        17
       ],
       "url": "https://www.igdb.com/games/dark-souls-prepare-to-die-edition"
     },
@@ -45571,7 +45571,7 @@
     },
     {
       "category": 10,
-      "collection": 6172,
+      "collection": -1,
       "collections": [
         6172
       ],
@@ -49271,7 +49271,7 @@
     },
     {
       "category": 0,
-      "collection": 3068,
+      "collection": -1,
       "collections": [
         3068
       ],
@@ -50382,7 +50382,7 @@
     },
     {
       "category": 0,
-      "collection": 8332,
+      "collection": -1,
       "collections": [
         8332
       ],
@@ -54246,6 +54246,42 @@
         38
       ],
       "url": "https://www.igdb.com/games/saints-row-the-heist-and-the-hazardous"
+    },
+    {
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        5785
+      ],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "genres": [
+        12,
+        31,
+        32
+      ],
+      "id": 250622,
+      "involved_companies": [
+        216795,
+        216796
+      ],
+      "name": "Cat Quest III",
+      "player_perspectives": [
+        3
+      ],
+      "themes": [
+        1,
+        17,
+        35,
+        38
+      ],
+      "url": "https://www.igdb.com/games/cat-quest-iii"
     },
     {
       "category": 3,
@@ -63472,10 +63508,6 @@
       "company": 32563
     },
     {
-      "id": 121768,
-      "company": 15790
-    },
-    {
       "id": 121769,
       "company": 38
     },
@@ -66180,10 +66212,6 @@
       "company": 631
     },
     {
-      "id": 197289,
-      "company": 919
-    },
-    {
       "id": 197321,
       "company": 70
     },
@@ -66766,6 +66794,14 @@
     {
       "id": 216791,
       "company": 634
+    },
+    {
+      "id": 216795,
+      "company": 12832
+    },
+    {
+      "id": 216796,
+      "company": 37893
     },
     {
       "id": 218104,
@@ -69112,6 +69148,10 @@
       "company": 56
     },
     {
+      "id": 279203,
+      "company": 919
+    },
+    {
       "id": 279431,
       "company": 552
     },
@@ -69202,6 +69242,30 @@
     {
       "id": 280399,
       "company": 70
+    },
+    {
+      "id": 280511,
+      "company": 15790
+    },
+    {
+      "id": 280512,
+      "company": 39
+    },
+    {
+      "id": 280513,
+      "company": 822
+    },
+    {
+      "id": 280514,
+      "company": 697
+    },
+    {
+      "id": 280515,
+      "company": 2921
+    },
+    {
+      "id": 280516,
+      "company": 104
     }
   ],
   "platforms": [
