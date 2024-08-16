@@ -1473,10 +1473,6 @@
       "name": "WET"
     },
     {
-      "id": 4494,
-      "name": "Chopper"
-    },
-    {
       "id": 4560,
       "name": "Touch! Generations"
     },
@@ -2792,7 +2788,7 @@
     },
     {
       "id": 431,
-      "name": "Ready at Dawn"
+      "name": "Ready At Dawn"
     },
     {
       "id": 432,
@@ -3637,6 +3633,10 @@
     {
       "id": 1208,
       "name": "Bizarre Creations"
+    },
+    {
+      "id": 1210,
+      "name": "Gremlin Graphics"
     },
     {
       "id": 1213,
@@ -7125,6 +7125,10 @@
     {
       "id": 56463,
       "name": "Eidos Sherbrooke"
+    },
+    {
+      "id": 56924,
+      "name": "Valkyrie Studios"
     }
   ],
   "franchises": [
@@ -8314,7 +8318,7 @@
     },
     {
       "category": 0,
-      "collection": 77,
+      "collection": -1,
       "collections": [
         77
       ],
@@ -10267,7 +10271,7 @@
     },
     {
       "category": 0,
-      "collection": 71,
+      "collection": -1,
       "collections": [
         71
       ],
@@ -10337,7 +10341,7 @@
     },
     {
       "category": 0,
-      "collection": 34,
+      "collection": -1,
       "collections": [
         34
       ],
@@ -10652,7 +10656,7 @@
     },
     {
       "category": 0,
-      "collection": 194,
+      "collection": -1,
       "collections": [
         194
       ],
@@ -12183,7 +12187,7 @@
     },
     {
       "category": 0,
-      "collection": 2156,
+      "collection": -1,
       "collections": [
         2156
       ],
@@ -13022,7 +13026,7 @@
     },
     {
       "category": 0,
-      "collection": 47,
+      "collection": -1,
       "collections": [
         47
       ],
@@ -13593,7 +13597,7 @@
     },
     {
       "category": 0,
-      "collection": 2152,
+      "collection": -1,
       "collections": [
         2152
       ],
@@ -15068,7 +15072,7 @@
     },
     {
       "category": 0,
-      "collection": 106,
+      "collection": -1,
       "collections": [
         106
       ],
@@ -15712,7 +15716,7 @@
     },
     {
       "category": 0,
-      "collection": 7158,
+      "collection": -1,
       "collections": [
         240,
         6128,
@@ -18078,7 +18082,7 @@
     },
     {
       "category": 0,
-      "collection": 3699,
+      "collection": -1,
       "collections": [
         3699
       ],
@@ -18276,7 +18280,7 @@
     },
     {
       "category": 0,
-      "collection": 5503,
+      "collection": -1,
       "collections": [
         5503
       ],
@@ -19072,7 +19076,7 @@
     },
     {
       "category": 0,
-      "collection": 307,
+      "collection": -1,
       "collections": [
         307
       ],
@@ -20312,7 +20316,7 @@
     },
     {
       "category": 0,
-      "collection": 344,
+      "collection": -1,
       "collections": [
         344
       ],
@@ -20345,7 +20349,7 @@
     },
     {
       "category": 0,
-      "collection": 344,
+      "collection": -1,
       "collections": [
         344
       ],
@@ -20378,7 +20382,7 @@
     },
     {
       "category": 0,
-      "collection": 344,
+      "collection": -1,
       "collections": [
         344
       ],
@@ -20412,7 +20416,7 @@
     },
     {
       "category": 0,
-      "collection": 345,
+      "collection": -1,
       "collections": [
         345
       ],
@@ -20445,7 +20449,7 @@
     },
     {
       "category": 0,
-      "collection": 345,
+      "collection": -1,
       "collections": [
         345
       ],
@@ -21737,7 +21741,7 @@
     },
     {
       "category": 0,
-      "collection": 379,
+      "collection": -1,
       "collections": [
         379
       ],
@@ -21952,7 +21956,7 @@
     },
     {
       "category": 0,
-      "collection": 440,
+      "collection": -1,
       "collections": [
         440
       ],
@@ -22318,7 +22322,7 @@
     },
     {
       "category": 0,
-      "collection": 447,
+      "collection": -1,
       "collections": [
         447
       ],
@@ -22382,7 +22386,7 @@
     },
     {
       "category": 0,
-      "collection": 681,
+      "collection": -1,
       "collections": [
         681
       ],
@@ -22514,7 +22518,7 @@
     },
     {
       "category": 0,
-      "collection": 4422,
+      "collection": -1,
       "collections": [
         4422
       ],
@@ -22884,7 +22888,7 @@
     },
     {
       "category": 0,
-      "collection": 447,
+      "collection": -1,
       "collections": [
         447
       ],
@@ -23360,7 +23364,7 @@
     },
     {
       "category": 0,
-      "collection": 449,
+      "collection": -1,
       "collections": [
         449
       ],
@@ -23947,7 +23951,7 @@
     },
     {
       "category": 0,
-      "collection": 2300,
+      "collection": -1,
       "collections": [
         2300
       ],
@@ -24521,7 +24525,7 @@
     },
     {
       "category": 11,
-      "collection": 8332,
+      "collection": -1,
       "collections": [
         7158,
         8332
@@ -24560,7 +24564,7 @@
     },
     {
       "category": 0,
-      "collection": 8487,
+      "collection": -1,
       "collections": [
         8487
       ],
@@ -25483,7 +25487,7 @@
     },
     {
       "category": 0,
-      "collection": 514,
+      "collection": -1,
       "collections": [
         514
       ],
@@ -25543,7 +25547,7 @@
     },
     {
       "category": 0,
-      "collection": 769,
+      "collection": -1,
       "collections": [
         769
       ],
@@ -25867,7 +25871,7 @@
     },
     {
       "category": 0,
-      "collection": 2278,
+      "collection": -1,
       "collections": [
         2278
       ],
@@ -27118,7 +27122,7 @@
     },
     {
       "category": 0,
-      "collection": 607,
+      "collection": -1,
       "collections": [
         607
       ],
@@ -27134,10 +27138,14 @@
       ],
       "id": 3502,
       "involved_companies": [
-        9107,
         42917,
-        42918,
-        42919
+        42919,
+        278137,
+        278138,
+        278139,
+        278140,
+        278141,
+        278142
       ],
       "name": "Gauntlet",
       "player_perspectives": [
@@ -27531,7 +27539,7 @@
     },
     {
       "category": 0,
-      "collection": 626,
+      "collection": -1,
       "collections": [
         626
       ],
@@ -27561,7 +27569,7 @@
     },
     {
       "category": 0,
-      "collection": 7427,
+      "collection": -1,
       "collections": [
         7427
       ],
@@ -27621,7 +27629,7 @@
     },
     {
       "category": 0,
-      "collection": 2301,
+      "collection": -1,
       "collections": [
         2301
       ],
@@ -28678,7 +28686,7 @@
     },
     {
       "category": 0,
-      "collection": 7427,
+      "collection": -1,
       "collections": [
         7427
       ],
@@ -28776,7 +28784,7 @@
     },
     {
       "category": 0,
-      "collection": 2109,
+      "collection": -1,
       "collections": [
         2109
       ],
@@ -28844,7 +28852,7 @@
     },
     {
       "category": 8,
-      "collection": 579,
+      "collection": -1,
       "collections": [
         579
       ],
@@ -28876,7 +28884,7 @@
     },
     {
       "category": 0,
-      "collection": 722,
+      "collection": -1,
       "collections": [
         722
       ],
@@ -28904,7 +28912,7 @@
     },
     {
       "category": 0,
-      "collection": 724,
+      "collection": -1,
       "collections": [
         724
       ],
@@ -29861,7 +29869,7 @@
     },
     {
       "category": 0,
-      "collection": 956,
+      "collection": -1,
       "collections": [
         956
       ],
@@ -30256,7 +30264,7 @@
     },
     {
       "category": 0,
-      "collection": 4408,
+      "collection": -1,
       "collections": [
         4408
       ],
@@ -31757,7 +31765,7 @@
     },
     {
       "category": 0,
-      "collection": 1268,
+      "collection": -1,
       "collections": [
         1268
       ],
@@ -31786,7 +31794,7 @@
     },
     {
       "category": 0,
-      "collection": 2156,
+      "collection": -1,
       "collections": [
         2156
       ],
@@ -32645,7 +32653,7 @@
     },
     {
       "category": 0,
-      "collection": 3191,
+      "collection": -1,
       "collections": [
         3191
       ],
@@ -32739,6 +32747,7 @@
       "category": 0,
       "collection": -1,
       "collections": [
+        183,
         9209
       ],
       "franchise": 279,
@@ -32878,7 +32887,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        240
+      ],
       "franchise": -1,
       "franchises": [
         845
@@ -33839,9 +33850,9 @@
       ],
       "id": 7844,
       "involved_companies": [
-        18305,
         18306,
-        20419
+        20419,
+        279837
       ],
       "name": "Septerra Core: Legacy of the Creator",
       "player_perspectives": [
@@ -34223,7 +34234,7 @@
     },
     {
       "category": 8,
-      "collection": 516,
+      "collection": -1,
       "collections": [
         516
       ],
@@ -34699,7 +34710,7 @@
     },
     {
       "category": 0,
-      "collection": 884,
+      "collection": -1,
       "collections": [
         884
       ],
@@ -35214,7 +35225,7 @@
     },
     {
       "category": 3,
-      "collection": 3816,
+      "collection": -1,
       "collections": [
         3816
       ],
@@ -35246,7 +35257,7 @@
     },
     {
       "category": 0,
-      "collection": 7703,
+      "collection": -1,
       "collections": [
         7703
       ],
@@ -35402,7 +35413,7 @@
     },
     {
       "category": 0,
-      "collection": 745,
+      "collection": -1,
       "collections": [
         745
       ],
@@ -35433,7 +35444,7 @@
     },
     {
       "category": 0,
-      "collection": 4494,
+      "collection": -1,
       "collections": [],
       "franchise": -1,
       "franchises": [],
@@ -39293,7 +39304,7 @@
     },
     {
       "category": 0,
-      "collection": 1583,
+      "collection": -1,
       "collections": [
         1583
       ],
@@ -39596,7 +39607,7 @@
     },
     {
       "category": 0,
-      "collection": 4628,
+      "collection": -1,
       "collections": [
         4628
       ],
@@ -42402,7 +42413,7 @@
     },
     {
       "category": 0,
-      "collection": 2657,
+      "collection": -1,
       "collections": [
         2657
       ],
@@ -45015,7 +45026,7 @@
     },
     {
       "category": 2,
-      "collection": 372,
+      "collection": -1,
       "collections": [
         372
       ],
@@ -45056,7 +45067,7 @@
     },
     {
       "category": 0,
-      "collection": 3628,
+      "collection": -1,
       "collections": [
         3628
       ],
@@ -48270,6 +48281,7 @@
       "category": 0,
       "collection": -1,
       "collections": [
+        183,
         9209
       ],
       "franchise": -1,
@@ -48524,7 +48536,7 @@
     },
     {
       "category": 0,
-      "collection": 4560,
+      "collection": -1,
       "collections": [
         4560
       ],
@@ -49302,7 +49314,7 @@
     },
     {
       "category": 0,
-      "collection": 4582,
+      "collection": -1,
       "collections": [
         4582
       ],
@@ -56336,10 +56348,6 @@
       "company": 327
     },
     {
-      "id": 9107,
-      "company": 1746
-    },
-    {
       "id": 9290,
       "company": 1839
     },
@@ -57406,10 +57414,6 @@
     {
       "id": 18292,
       "company": 1213
-    },
-    {
-      "id": 18305,
-      "company": 3644
     },
     {
       "id": 18306,
@@ -59426,10 +59430,6 @@
     {
       "id": 42917,
       "company": 227
-    },
-    {
-      "id": 42918,
-      "company": 1746
     },
     {
       "id": 42919,
@@ -69140,6 +69140,30 @@
       "company": 19080
     },
     {
+      "id": 278137,
+      "company": 1746
+    },
+    {
+      "id": 278138,
+      "company": 1746
+    },
+    {
+      "id": 278139,
+      "company": 263
+    },
+    {
+      "id": 278140,
+      "company": 327
+    },
+    {
+      "id": 278141,
+      "company": 1267
+    },
+    {
+      "id": 278142,
+      "company": 1210
+    },
+    {
       "id": 279090,
       "company": 56
     },
@@ -69210,6 +69234,10 @@
     {
       "id": 279718,
       "company": 398
+    },
+    {
+      "id": 279837,
+      "company": 56924
     },
     {
       "id": 279878,
