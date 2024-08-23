@@ -7982,7 +7982,7 @@
     },
     {
       "category": 0,
-      "collection": 2,
+      "collection": -1,
       "collections": [
         2
       ],
@@ -10724,7 +10724,7 @@
     },
     {
       "category": 0,
-      "collection": 2128,
+      "collection": -1,
       "collections": [
         2128
       ],
@@ -10796,7 +10796,7 @@
     },
     {
       "category": 0,
-      "collection": 2128,
+      "collection": -1,
       "collections": [
         2128
       ],
@@ -12457,7 +12457,7 @@
     },
     {
       "category": 0,
-      "collection": 349,
+      "collection": -1,
       "collections": [
         349
       ],
@@ -14665,7 +14665,7 @@
     },
     {
       "category": 0,
-      "collection": 5098,
+      "collection": -1,
       "collections": [
         5098
       ],
@@ -15211,7 +15211,7 @@
     },
     {
       "category": 0,
-      "collection": 106,
+      "collection": -1,
       "collections": [
         106,
         9821
@@ -15572,7 +15572,7 @@
     },
     {
       "category": 0,
-      "collection": 4808,
+      "collection": -1,
       "collections": [
         4808
       ],
@@ -17911,7 +17911,7 @@
     },
     {
       "category": 0,
-      "collection": 284,
+      "collection": -1,
       "collections": [
         284
       ],
@@ -19208,7 +19208,7 @@
     },
     {
       "category": 0,
-      "collection": 310,
+      "collection": -1,
       "collections": [
         310
       ],
@@ -20901,7 +20901,7 @@
     },
     {
       "category": 0,
-      "collection": 361,
+      "collection": -1,
       "collections": [
         361
       ],
@@ -20969,7 +20969,7 @@
     },
     {
       "category": 0,
-      "collection": 1820,
+      "collection": -1,
       "collections": [
         1820
       ],
@@ -22419,7 +22419,7 @@
     },
     {
       "category": 0,
-      "collection": 681,
+      "collection": -1,
       "collections": [
         681
       ],
@@ -22622,6 +22622,7 @@
       ],
       "franchise": -1,
       "franchises": [
+        763,
         1821
       ],
       "game_modes": [
@@ -22819,7 +22820,7 @@
     },
     {
       "category": 0,
-      "collection": 456,
+      "collection": -1,
       "collections": [
         456
       ],
@@ -24950,7 +24951,7 @@
     },
     {
       "category": 0,
-      "collection": 1300,
+      "collection": -1,
       "collections": [
         1300
       ],
@@ -25583,7 +25584,7 @@
     },
     {
       "category": 0,
-      "collection": 2233,
+      "collection": -1,
       "collections": [
         2233
       ],
@@ -26342,7 +26343,7 @@
     },
     {
       "category": 0,
-      "collection": 506,
+      "collection": -1,
       "collections": [
         506
       ],
@@ -27051,7 +27052,7 @@
     },
     {
       "category": 0,
-      "collection": 605,
+      "collection": -1,
       "collections": [
         605
       ],
@@ -27722,7 +27723,7 @@
     },
     {
       "category": 0,
-      "collection": 4099,
+      "collection": -1,
       "collections": [
         4099
       ],
@@ -27849,7 +27850,7 @@
     },
     {
       "category": 0,
-      "collection": 925,
+      "collection": -1,
       "collections": [
         925
       ],
@@ -28029,7 +28030,7 @@
     },
     {
       "category": 10,
-      "collection": 5003,
+      "collection": -1,
       "collections": [
         5003
       ],
@@ -28260,7 +28261,7 @@
     },
     {
       "category": 0,
-      "collection": 4129,
+      "collection": -1,
       "collections": [
         4129
       ],
@@ -29114,7 +29115,7 @@
     },
     {
       "category": 0,
-      "collection": 729,
+      "collection": -1,
       "collections": [
         729
       ],
@@ -29142,7 +29143,7 @@
     },
     {
       "category": 0,
-      "collection": 4429,
+      "collection": -1,
       "collections": [
         4429
       ],
@@ -29171,7 +29172,7 @@
     },
     {
       "category": 0,
-      "collection": 489,
+      "collection": -1,
       "collections": [
         489
       ],
@@ -30458,7 +30459,7 @@
     },
     {
       "category": 0,
-      "collection": 689,
+      "collection": -1,
       "collections": [
         689
       ],
@@ -30787,7 +30788,7 @@
     },
     {
       "category": 0,
-      "collection": 875,
+      "collection": -1,
       "collections": [
         875
       ],
@@ -31038,7 +31039,7 @@
     },
     {
       "category": 0,
-      "collection": 887,
+      "collection": -1,
       "collections": [
         887
       ],
@@ -32179,7 +32180,7 @@
     },
     {
       "category": 0,
-      "collection": 956,
+      "collection": -1,
       "collections": [
         956
       ],
@@ -33326,7 +33327,7 @@
     },
     {
       "category": 0,
-      "collection": 1374,
+      "collection": -1,
       "collections": [
         1374
       ],
@@ -33893,7 +33894,7 @@
     },
     {
       "category": 10,
-      "collection": 6172,
+      "collection": -1,
       "collections": [
         6172
       ],
@@ -34142,7 +34143,7 @@
     },
     {
       "category": 0,
-      "collection": 1083,
+      "collection": -1,
       "collections": [
         1083
       ],
@@ -34562,7 +34563,7 @@
     },
     {
       "category": 0,
-      "collection": 368,
+      "collection": -1,
       "collections": [
         368
       ],
@@ -35914,7 +35915,7 @@
     },
     {
       "category": 4,
-      "collection": 452,
+      "collection": -1,
       "collections": [
         452
       ],
@@ -36308,7 +36309,7 @@
     },
     {
       "category": 4,
-      "collection": 2156,
+      "collection": -1,
       "collections": [
         2156
       ],
@@ -36343,7 +36344,7 @@
     },
     {
       "category": 0,
-      "collection": 2156,
+      "collection": -1,
       "collections": [
         2156
       ],
@@ -37146,7 +37147,7 @@
     },
     {
       "category": 0,
-      "collection": 5028,
+      "collection": -1,
       "collections": [
         5028
       ],
@@ -37175,7 +37176,7 @@
     },
     {
       "category": 10,
-      "collection": 2145,
+      "collection": -1,
       "collections": [
         2145
       ],
@@ -37629,7 +37630,7 @@
     },
     {
       "category": 0,
-      "collection": 1379,
+      "collection": -1,
       "collections": [
         1379
       ],
@@ -38042,7 +38043,7 @@
     },
     {
       "category": 1,
-      "collection": 1010,
+      "collection": -1,
       "collections": [
         1010
       ],
@@ -38066,7 +38067,7 @@
     },
     {
       "category": 1,
-      "collection": 1010,
+      "collection": -1,
       "collections": [
         1010
       ],
@@ -38094,7 +38095,7 @@
     },
     {
       "category": 10,
-      "collection": 1458,
+      "collection": -1,
       "collections": [
         1458
       ],
@@ -40064,7 +40065,7 @@
     },
     {
       "category": 0,
-      "collection": 1006,
+      "collection": -1,
       "collections": [
         1006
       ],
@@ -40083,7 +40084,7 @@
     },
     {
       "category": 8,
-      "collection": 796,
+      "collection": -1,
       "collections": [
         796
       ],
@@ -40991,7 +40992,7 @@
     },
     {
       "category": 0,
-      "collection": 1914,
+      "collection": -1,
       "collections": [
         1914
       ],
@@ -41024,7 +41025,7 @@
     },
     {
       "category": 0,
-      "collection": 1915,
+      "collection": -1,
       "collections": [
         1915
       ],
@@ -41102,7 +41103,7 @@
     },
     {
       "category": 0,
-      "collection": 1914,
+      "collection": -1,
       "collections": [
         1914
       ],
@@ -41267,7 +41268,7 @@
     },
     {
       "category": 0,
-      "collection": 3470,
+      "collection": -1,
       "collections": [
         3470
       ],
@@ -43844,7 +43845,7 @@
     },
     {
       "category": 0,
-      "collection": 2810,
+      "collection": -1,
       "collections": [
         2810
       ],
@@ -46364,7 +46365,7 @@
     },
     {
       "category": 1,
-      "collection": 9,
+      "collection": -1,
       "collections": [
         9
       ],
@@ -47014,7 +47015,7 @@
     },
     {
       "category": 6,
-      "collection": 8488,
+      "collection": -1,
       "collections": [
         8488
       ],
@@ -49371,7 +49372,7 @@
     },
     {
       "category": 0,
-      "collection": 2957,
+      "collection": -1,
       "collections": [
         2957
       ],
@@ -50156,7 +50157,7 @@
     },
     {
       "category": 3,
-      "collection": 4442,
+      "collection": -1,
       "collections": [
         4442
       ],
@@ -53764,7 +53765,7 @@
     },
     {
       "category": 0,
-      "collection": 106,
+      "collection": -1,
       "collections": [
         106,
         9821
@@ -53988,8 +53989,8 @@
       ],
       "id": 201156,
       "involved_companies": [
-        171121,
-        171122
+        280145,
+        280146
       ],
       "name": "Star Wars Jedi: Survivor",
       "player_perspectives": [
@@ -65060,14 +65061,6 @@
       "company": 25543
     },
     {
-      "id": 171121,
-      "company": 1002
-    },
-    {
-      "id": 171122,
-      "company": 1
-    },
-    {
       "id": 171293,
       "company": 5040
     },
@@ -69254,6 +69247,14 @@
     {
       "id": 279953,
       "company": 14055
+    },
+    {
+      "id": 280145,
+      "company": 1
+    },
+    {
+      "id": 280146,
+      "company": 1002
     },
     {
       "id": 280396,
