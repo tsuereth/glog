@@ -8462,7 +8462,7 @@
     },
     {
       "category": 0,
-      "collection": 84,
+      "collection": -1,
       "collections": [
         84
       ],
@@ -8498,7 +8498,7 @@
     },
     {
       "category": 2,
-      "collection": 84,
+      "collection": -1,
       "collections": [
         84
       ],
@@ -8567,7 +8567,7 @@
     },
     {
       "category": 0,
-      "collection": 84,
+      "collection": -1,
       "collections": [
         84
       ],
@@ -8597,7 +8597,7 @@
     },
     {
       "category": 0,
-      "collection": 84,
+      "collection": -1,
       "collections": [
         84
       ],
@@ -14943,7 +14943,7 @@
     },
     {
       "category": 0,
-      "collection": 229,
+      "collection": -1,
       "collections": [
         229
       ],
@@ -14971,7 +14971,7 @@
     },
     {
       "category": 0,
-      "collection": 229,
+      "collection": -1,
       "collections": [
         229
       ],
@@ -21656,7 +21656,7 @@
     },
     {
       "category": 0,
-      "collection": 372,
+      "collection": -1,
       "collections": [
         372
       ],
@@ -22622,7 +22622,6 @@
       ],
       "franchise": -1,
       "franchises": [
-        763,
         1821
       ],
       "game_modes": [
@@ -23182,7 +23181,7 @@
     },
     {
       "category": 0,
-      "collection": 453,
+      "collection": -1,
       "collections": [
         240,
         453
@@ -27085,7 +27084,7 @@
     },
     {
       "category": 0,
-      "collection": 607,
+      "collection": -1,
       "collections": [
         607
       ],
@@ -29875,7 +29874,9 @@
         956
       ],
       "franchise": -1,
-      "franchises": [],
+      "franchises": [
+        1777
+      ],
       "game_modes": [
         1,
         2,
@@ -41905,7 +41906,7 @@
     },
     {
       "category": 0,
-      "collection": 2156,
+      "collection": -1,
       "collections": [
         2156
       ],
@@ -48436,7 +48437,7 @@
     },
     {
       "category": 0,
-      "collection": 521,
+      "collection": -1,
       "collections": [
         521
       ],
@@ -48582,7 +48583,7 @@
     },
     {
       "category": 0,
-      "collection": 913,
+      "collection": -1,
       "collections": [
         913
       ],
