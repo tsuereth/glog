@@ -285,10 +285,6 @@
       "name": "Hacker Evolution"
     },
     {
-      "id": 230,
-      "name": "American McGee's Alice"
-    },
-    {
       "id": 235,
       "name": "The Lord of the Rings"
     },
@@ -1947,6 +1943,10 @@
     {
       "id": 10121,
       "name": "Unreal Tournament"
+    },
+    {
+      "id": 10432,
+      "name": "Subnautica"
     }
   ],
   "companies": [
@@ -7234,7 +7234,7 @@
     },
     {
       "id": 79,
-      "name": "tetris"
+      "name": "Tetris"
     },
     {
       "id": 103,
@@ -8817,9 +8817,7 @@
       "id": 72,
       "involved_companies": [
         265481,
-        265482,
-        265779,
-        265780
+        265482
       ],
       "name": "Portal 2",
       "player_perspectives": [
@@ -10045,7 +10043,7 @@
     },
     {
       "category": 0,
-      "collection": 61,
+      "collection": -1,
       "collections": [
         61
       ],
@@ -16990,7 +16988,7 @@
     },
     {
       "category": 0,
-      "collection": 248,
+      "collection": -1,
       "collections": [
         248
       ],
@@ -17049,7 +17047,7 @@
     },
     {
       "category": 0,
-      "collection": 267,
+      "collection": -1,
       "collections": [
         267
       ],
@@ -17703,7 +17701,7 @@
     },
     {
       "category": 0,
-      "collection": 4357,
+      "collection": -1,
       "collections": [
         4357
       ],
@@ -21801,7 +21799,7 @@
     },
     {
       "category": 0,
-      "collection": 1268,
+      "collection": -1,
       "collections": [
         1268
       ],
@@ -22550,7 +22548,7 @@
     },
     {
       "category": 0,
-      "collection": 450,
+      "collection": -1,
       "collections": [
         450
       ],
@@ -26742,7 +26740,7 @@
     },
     {
       "category": 0,
-      "collection": 595,
+      "collection": -1,
       "collections": [
         595
       ],
@@ -27965,7 +27963,7 @@
     },
     {
       "category": 0,
-      "collection": 4947,
+      "collection": -1,
       "collections": [
         4947
       ],
@@ -34047,7 +34045,7 @@
     },
     {
       "category": 0,
-      "collection": 1883,
+      "collection": -1,
       "collections": [
         1883
       ],
@@ -36118,7 +36116,9 @@
     {
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        10432
+      ],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -36448,7 +36448,7 @@
     },
     {
       "category": 0,
-      "collection": 4628,
+      "collection": -1,
       "collections": [
         4628
       ],
@@ -36824,10 +36824,9 @@
       ],
       "id": 9643,
       "involved_companies": [
-        126712,
         126713,
-        206053,
-        206054
+        206054,
+        284164
       ],
       "name": "Return of the Obra Dinn",
       "player_perspectives": [
@@ -39415,6 +39414,7 @@
         1
       ],
       "genres": [
+        9,
         12,
         16,
         31,
@@ -41942,7 +41942,7 @@
     },
     {
       "category": 0,
-      "collection": 3316,
+      "collection": -1,
       "collections": [
         3316
       ],
@@ -42970,7 +42970,7 @@
     },
     {
       "category": 0,
-      "collection": 4782,
+      "collection": -1,
       "collections": [
         4782
       ],
@@ -43310,7 +43310,7 @@
     },
     {
       "category": 0,
-      "collection": 3825,
+      "collection": -1,
       "collections": [
         3825
       ],
@@ -44638,7 +44638,7 @@
     },
     {
       "category": 0,
-      "collection": 913,
+      "collection": -1,
       "collections": [
         913
       ],
@@ -45133,7 +45133,7 @@
     },
     {
       "category": 1,
-      "collection": 197,
+      "collection": -1,
       "collections": [
         197
       ],
@@ -45474,7 +45474,7 @@
     },
     {
       "category": 0,
-      "collection": 2723,
+      "collection": -1,
       "collections": [
         2723,
         8332
@@ -45521,7 +45521,7 @@
     },
     {
       "category": 1,
-      "collection": 197,
+      "collection": -1,
       "collections": [
         197
       ],
@@ -46200,7 +46200,8 @@
       ],
       "genres": [
         12,
-        31
+        31,
+        32
       ],
       "id": 26472,
       "involved_companies": [
@@ -46208,7 +46209,8 @@
       ],
       "name": "Disco Elysium",
       "player_perspectives": [
-        3
+        3,
+        5
       ],
       "themes": [
         20,
@@ -48631,7 +48633,7 @@
     },
     {
       "category": 0,
-      "collection": 4582,
+      "collection": -1,
       "collections": [
         4582
       ],
@@ -49680,7 +49682,7 @@
     },
     {
       "category": 1,
-      "collection": 1010,
+      "collection": -1,
       "collections": [
         1010
       ],
@@ -49709,7 +49711,7 @@
     },
     {
       "category": 1,
-      "collection": 1010,
+      "collection": -1,
       "collections": [
         1010
       ],
@@ -49773,7 +49775,7 @@
     },
     {
       "category": 1,
-      "collection": 197,
+      "collection": -1,
       "collections": [
         197
       ],
@@ -49803,7 +49805,7 @@
     },
     {
       "category": 1,
-      "collection": 197,
+      "collection": -1,
       "collections": [
         197
       ],
@@ -49825,7 +49827,7 @@
     },
     {
       "category": 1,
-      "collection": 197,
+      "collection": -1,
       "collections": [
         197
       ],
@@ -51157,7 +51159,8 @@
       ],
       "themes": [
         1,
-        18
+        18,
+        20
       ],
       "url": "https://www.igdb.com/games/control"
     },
@@ -51908,8 +51911,8 @@
       ],
       "id": 116530,
       "involved_companies": [
-        76101,
-        229776
+        282843,
+        282844
       ],
       "name": "Vampire: The Masquerade - Bloodlines 2",
       "player_perspectives": [
@@ -53234,8 +53237,8 @@
       ],
       "id": 139177,
       "involved_companies": [
-        118954,
-        118955
+        284336,
+        284337
       ],
       "name": "Batbarian: Testament of the Primordials",
       "player_perspectives": [
@@ -54486,9 +54489,12 @@
       ],
       "name": "LEGO Horizon Adventures",
       "player_perspectives": [
-        2
+        3
       ],
-      "themes": [],
+      "themes": [
+        18,
+        27
+      ],
       "url": "https://www.igdb.com/games/lego-horizon-adventures"
     },
     {
@@ -54539,10 +54545,13 @@
       ],
       "genres": [
         9,
-        31
+        31,
+        34
       ],
       "id": 306152,
-      "involved_companies": [],
+      "involved_companies": [
+        283294
+      ],
       "name": "Ace Attorney Investigations Collection",
       "player_perspectives": [
         4
@@ -61438,10 +61447,6 @@
       "company": 7923
     },
     {
-      "id": 76101,
-      "company": 517
-    },
-    {
       "id": 76257,
       "company": 11662
     },
@@ -63398,14 +63403,6 @@
       "company": 7764
     },
     {
-      "id": 118954,
-      "company": 20413
-    },
-    {
-      "id": 118955,
-      "company": 14002
-    },
-    {
       "id": 118966,
       "company": 14002
     },
@@ -63672,10 +63669,6 @@
     {
       "id": 126466,
       "company": 8483
-    },
-    {
-      "id": 126712,
-      "company": 15527
     },
     {
       "id": 126713,
@@ -66498,10 +66491,6 @@
       "company": 23
     },
     {
-      "id": 206053,
-      "company": 15527
-    },
-    {
       "id": 206054,
       "company": 1365
     },
@@ -67308,10 +67297,6 @@
     {
       "id": 229341,
       "company": 70
-    },
-    {
-      "id": 229776,
-      "company": 1364
     },
     {
       "id": 229885,
@@ -68566,14 +68551,6 @@
       "company": 9691
     },
     {
-      "id": 265779,
-      "company": 56
-    },
-    {
-      "id": 265780,
-      "company": 56
-    },
-    {
       "id": 265796,
       "company": 27853
     },
@@ -69296,6 +69273,30 @@
     {
       "id": 280516,
       "company": 104
+    },
+    {
+      "id": 282843,
+      "company": 517
+    },
+    {
+      "id": 282844,
+      "company": 1364
+    },
+    {
+      "id": 283294,
+      "company": 37
+    },
+    {
+      "id": 284164,
+      "company": 15527
+    },
+    {
+      "id": 284336,
+      "company": 20413
+    },
+    {
+      "id": 284337,
+      "company": 14002
     }
   ],
   "platforms": [
