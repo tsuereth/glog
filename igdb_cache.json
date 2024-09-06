@@ -9942,7 +9942,7 @@
     },
     {
       "category": 0,
-      "collection": 30,
+      "collection": -1,
       "collections": [
         30
       ],
@@ -10549,7 +10549,7 @@
     },
     {
       "category": 0,
-      "collection": 230,
+      "collection": -1,
       "collections": [],
       "franchise": -1,
       "franchises": [],
@@ -10688,7 +10688,7 @@
     },
     {
       "category": 0,
-      "collection": 44,
+      "collection": -1,
       "collections": [
         44
       ],
@@ -11587,7 +11587,7 @@
     },
     {
       "category": 0,
-      "collection": 277,
+      "collection": -1,
       "collections": [
         277
       ],
@@ -12570,7 +12570,7 @@
     },
     {
       "category": 0,
-      "collection": 46,
+      "collection": -1,
       "collections": [
         46
       ],
@@ -13095,7 +13095,7 @@
     },
     {
       "category": 0,
-      "collection": 4640,
+      "collection": -1,
       "collections": [
         4640
       ],
@@ -17417,7 +17417,7 @@
     },
     {
       "category": 0,
-      "collection": 277,
+      "collection": -1,
       "collections": [
         277
       ],
@@ -17810,7 +17810,7 @@
     },
     {
       "category": 0,
-      "collection": 281,
+      "collection": -1,
       "collections": [
         281
       ],
@@ -22914,7 +22914,7 @@
     },
     {
       "category": 0,
-      "collection": 462,
+      "collection": -1,
       "collections": [
         462
       ],
@@ -23256,7 +23256,7 @@
     },
     {
       "category": 0,
-      "collection": 453,
+      "collection": -1,
       "collections": [
         453
       ],
@@ -27195,7 +27195,7 @@
     },
     {
       "category": 0,
-      "collection": 5070,
+      "collection": -1,
       "collections": [
         5070
       ],
@@ -28383,7 +28383,7 @@
     },
     {
       "category": 0,
-      "collection": 689,
+      "collection": -1,
       "collections": [
         689
       ],
@@ -28414,7 +28414,7 @@
     },
     {
       "category": 0,
-      "collection": 689,
+      "collection": -1,
       "collections": [
         689
       ],
@@ -28445,7 +28445,7 @@
     },
     {
       "category": 0,
-      "collection": 1118,
+      "collection": -1,
       "collections": [
         1118
       ],
@@ -29380,9 +29380,8 @@
       ],
       "id": 5025,
       "involved_companies": [
-        12131,
         190009,
-        190010
+        284190
       ],
       "name": "To the Moon",
       "player_perspectives": [
@@ -29465,7 +29464,7 @@
     },
     {
       "category": 0,
-      "collection": 153,
+      "collection": -1,
       "collections": [
         153
       ],
@@ -31196,7 +31195,7 @@
     },
     {
       "category": 0,
-      "collection": 5028,
+      "collection": -1,
       "collections": [
         5028
       ],
@@ -33288,7 +33287,7 @@
     },
     {
       "category": 0,
-      "collection": 1284,
+      "collection": -1,
       "collections": [
         1284
       ],
@@ -36081,7 +36080,7 @@
     },
     {
       "category": 0,
-      "collection": 5345,
+      "collection": -1,
       "collections": [
         5345
       ],
@@ -36149,7 +36148,7 @@
     },
     {
       "category": 0,
-      "collection": 1260,
+      "collection": -1,
       "collections": [
         1260
       ],
@@ -38743,7 +38742,7 @@
     },
     {
       "category": 0,
-      "collection": 973,
+      "collection": -1,
       "collections": [
         973
       ],
@@ -38808,7 +38807,7 @@
     },
     {
       "category": 0,
-      "collection": 717,
+      "collection": -1,
       "collections": [
         717
       ],
@@ -38844,7 +38843,7 @@
     },
     {
       "category": 0,
-      "collection": 2767,
+      "collection": -1,
       "collections": [
         2767
       ],
@@ -43470,7 +43469,6 @@
       "id": 19136,
       "involved_companies": [
         72673,
-        130351,
         134733
       ],
       "name": "CastleStorm",
@@ -43553,7 +43551,7 @@
     },
     {
       "category": 0,
-      "collection": 6179,
+      "collection": -1,
       "collections": [
         6179
       ],
@@ -43967,7 +43965,7 @@
       ],
       "id": 19609,
       "involved_companies": [
-        36508
+        285294
       ],
       "name": "Uncharted: Fortune Hunter",
       "player_perspectives": [
@@ -44201,7 +44199,7 @@
     },
     {
       "category": 0,
-      "collection": 3154,
+      "collection": -1,
       "collections": [
         3154
       ],
@@ -44716,7 +44714,7 @@
     },
     {
       "category": 0,
-      "collection": 4654,
+      "collection": -1,
       "collections": [
         4654
       ],
@@ -44741,7 +44739,7 @@
     },
     {
       "category": 0,
-      "collection": 187,
+      "collection": -1,
       "collections": [
         187
       ],
@@ -44771,7 +44769,7 @@
     },
     {
       "category": 0,
-      "collection": 2623,
+      "collection": -1,
       "collections": [
         2623
       ],
@@ -44798,7 +44796,7 @@
     },
     {
       "category": 0,
-      "collection": 2301,
+      "collection": -1,
       "collections": [
         2301
       ],
@@ -44899,7 +44897,7 @@
     },
     {
       "category": 0,
-      "collection": 4654,
+      "collection": -1,
       "collections": [
         4654
       ],
@@ -45680,7 +45678,7 @@
     },
     {
       "category": 1,
-      "collection": 9,
+      "collection": -1,
       "collections": [
         9
       ],
@@ -45741,7 +45739,7 @@
     },
     {
       "category": 3,
-      "collection": 2578,
+      "collection": -1,
       "collections": [
         2578
       ],
@@ -56735,10 +56733,6 @@
       "company": 2231
     },
     {
-      "id": 12131,
-      "company": 2236
-    },
-    {
       "id": 12617,
       "company": 454
     },
@@ -59069,10 +59063,6 @@
     {
       "id": 36507,
       "company": 5048
-    },
-    {
-      "id": 36508,
-      "company": 10126
     },
     {
       "id": 36510,
@@ -63891,10 +63881,6 @@
       "company": 70
     },
     {
-      "id": 130351,
-      "company": 453
-    },
-    {
       "id": 130386,
       "company": 70
     },
@@ -65921,10 +65907,6 @@
     {
       "id": 190009,
       "company": 11608
-    },
-    {
-      "id": 190010,
-      "company": 2236
     },
     {
       "id": 190022,
@@ -69291,12 +69273,20 @@
       "company": 15527
     },
     {
+      "id": 284190,
+      "company": 2236
+    },
+    {
       "id": 284336,
       "company": 20413
     },
     {
       "id": 284337,
       "company": 14002
+    },
+    {
+      "id": 285294,
+      "company": 10126
     }
   ],
   "platforms": [
