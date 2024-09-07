@@ -7897,6 +7897,14 @@
   ],
   "games": [
     {
+      "id": 10160,
+      "name": "Heat Signature"
+    },
+    {
+      "id": 86286,
+      "name": "Tactical Breach Wizards"
+    },
+    {
       "category": -1,
       "collection": -1,
       "collections": [],
