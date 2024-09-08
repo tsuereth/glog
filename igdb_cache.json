@@ -7043,6 +7043,10 @@
       "name": "MINTROCKET"
     },
     {
+      "id": 41665,
+      "name": "Frost Giant Studios"
+    },
+    {
       "id": 42627,
       "name": "Capcom Planning Room 2"
     },
@@ -7896,10 +7900,6 @@
     }
   ],
   "games": [
-    {
-      "id": 204358,
-      "name": "Stormgate"
-    },
     {
       "category": -1,
       "collection": -1,
@@ -54149,6 +54149,36 @@
       "game_modes": [
         1,
         2,
+        3
+      ],
+      "genres": [
+        11,
+        15
+      ],
+      "id": 204358,
+      "involved_companies": [
+        174564
+      ],
+      "name": "Stormgate",
+      "player_perspectives": [
+        3
+      ],
+      "themes": [
+        1,
+        17,
+        18
+      ],
+      "url": "https://www.igdb.com/games/stormgate"
+    },
+    {
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2,
         3,
         4
       ],
@@ -65237,6 +65267,10 @@
     {
       "id": 174440,
       "company": 401
+    },
+    {
+      "id": 174564,
+      "company": 41665
     },
     {
       "id": 174715,
