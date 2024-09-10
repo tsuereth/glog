@@ -4,6 +4,7 @@ permalink = "/backlog"
 
 # Games I Will Play One Day, Maybe
 
+* <game:Ace Attorney Investigations Collection> (<platform:PC>)
 * <game:Afterparty> (<platform:PC>)
 * <game:Cat Quest III> (<platform:PC>)
 * <game:Cyberpunk 2077: Phantom Liberty> (<platform:PC>)
@@ -14,6 +15,7 @@ permalink = "/backlog"
 * <game:No More Heroes III> (<platform:Switch>)
 * <game:Oxenfree II: Lost Signals> (<platform:PC>)
 * <game:Spiritfarer> (<platform:PC>)
+* <game:Satisfactory> (<platform:PC>)
 * <game:Star Wars Jedi: Survivor> (<platform:PC>)
 * <game:Starfield> (<platform:PC>)
 * <game:Super Mario RPG (2023)> (<platform:Switch>)
