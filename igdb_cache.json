@@ -12350,7 +12350,8 @@
       "id": 530,
       "involved_companies": [
         58635,
-        58636
+        58636,
+        280943
       ],
       "name": "Hitman: Absolution",
       "player_perspectives": [
@@ -19240,7 +19241,7 @@
     },
     {
       "category": 0,
-      "collection": 4357,
+      "collection": -1,
       "collections": [
         4357
       ],
@@ -26912,7 +26913,7 @@
     },
     {
       "category": 0,
-      "collection": 6848,
+      "collection": -1,
       "collections": [
         6848
       ],
@@ -26948,7 +26949,7 @@
     },
     {
       "category": 0,
-      "collection": 606,
+      "collection": -1,
       "collections": [
         606
       ],
@@ -29770,7 +29771,7 @@
     },
     {
       "category": 0,
-      "collection": 3878,
+      "collection": -1,
       "collections": [
         3878
       ],
@@ -34900,7 +34901,7 @@
     },
     {
       "category": 0,
-      "collection": 2385,
+      "collection": -1,
       "collections": [
         2385
       ],
@@ -36220,7 +36221,7 @@
     },
     {
       "category": 0,
-      "collection": 1277,
+      "collection": -1,
       "collections": [
         1277
       ],
@@ -44886,7 +44887,7 @@
     },
     {
       "category": 0,
-      "collection": 783,
+      "collection": -1,
       "collections": [
         783
       ],
@@ -44908,7 +44909,7 @@
     },
     {
       "category": 11,
-      "collection": 2721,
+      "collection": -1,
       "collections": [
         2721
       ],
@@ -49933,7 +49934,7 @@
     },
     {
       "category": 1,
-      "collection": 1268,
+      "collection": -1,
       "collections": [
         1268
       ],
@@ -49964,7 +49965,7 @@
     },
     {
       "category": 11,
-      "collection": 2086,
+      "collection": -1,
       "collections": [
         2086
       ],
@@ -69367,6 +69368,10 @@
     {
       "id": 280516,
       "company": 104
+    },
+    {
+      "id": 280943,
+      "company": 23
     },
     {
       "id": 282843,
