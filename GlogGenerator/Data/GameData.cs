@@ -142,6 +142,15 @@ namespace GlogGenerator.Data
                 }
             }
 
+            foreach (var keywordId in igdbGame.KeywordIds)
+            {
+                var keyword = igdbCache.GetKeyword(keywordId);
+                if (keyword != null && !game.Tags.Contains(keyword.GetReferenceableValue(), StringComparer.OrdinalIgnoreCase))
+                {
+                    game.Tags.Add(keyword.GetReferenceableValue());
+                }
+            }
+
             foreach (var playerPerspectiveId in igdbGame.PlayerPerspectiveIds)
             {
                 var playerPerspective = igdbCache.GetPlayerPerspective(playerPerspectiveId);

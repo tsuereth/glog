@@ -34,6 +34,8 @@ namespace GlogGenerator
 
         private Dictionary<int, IgdbInvolvedCompany> involvedCompaniesById = new Dictionary<int, IgdbInvolvedCompany>();
 
+        private Dictionary<int, IgdbKeyword> keywordsById = new Dictionary<int, IgdbKeyword>();
+
         private Dictionary<int, IgdbPlatform> platformsById = new Dictionary<int, IgdbPlatform>();
 
         private List<IgdbPlatform> platformsUnidentified = new List<IgdbPlatform>();
@@ -121,6 +123,16 @@ namespace GlogGenerator
             return null;
         }
 
+        public IgdbKeyword GetKeyword(int id)
+        {
+            if (this.keywordsById.TryGetValue(id, out var result))
+            {
+                return result;
+            }
+
+            return null;
+        }
+
         public IgdbPlatform GetPlatform(int id)
         {
             if (this.platformsById.TryGetValue(id, out var result))
@@ -169,6 +181,7 @@ namespace GlogGenerator
             allMetadata.AddRange(this.franchisesById.Values);
             allMetadata.AddRange(this.gameModesById.Values);
             allMetadata.AddRange(this.genresById.Values);
+            allMetadata.AddRange(this.keywordsById.Values);
             allMetadata.AddRange(this.playerPerspectivesById.Values);
             allMetadata.AddRange(this.themesById.Values);
 
@@ -219,6 +232,15 @@ namespace GlogGenerator
             var genresCurrent = await client.GetGenresAsync(genreIds);
             this.genresById = genresCurrent.ToDictionary(o => o.Id, o => o);
 
+            // NOTE: As of writing, "keywords" are way too abundant and vague to be useful; ignore 'em.
+#if false
+            var keywordIds = gamesCurrent.SelectMany(g => g.KeywordIds).Distinct().ToList();
+            var keywordsCurrent = await client.GetKeywordsAsync(keywordIds);
+#else
+            var keywordsCurrent = new List<IgdbKeyword>();
+#endif
+            this.keywordsById = keywordsCurrent.ToDictionary(o => o.Id, o => o);
+
             var platformIds = this.platformsById.Keys.ToList();
             var platformsCurrent = await client.GetPlatformsAsync(platformIds);
 
@@ -263,6 +285,7 @@ namespace GlogGenerator
             cacheJson["games"] = JArray.FromObject(allGames, jsonSerializer);
             cacheJson["genres"] = JArray.FromObject(this.genresById.Values.OrderBy(o => o.Id), jsonSerializer);
             cacheJson["involvedCompanies"] = JArray.FromObject(this.involvedCompaniesById.Values.OrderBy(o => o.Id), jsonSerializer);
+            cacheJson["keywords"] = JArray.FromObject(this.keywordsById.Values.OrderBy(o => o.Id), jsonSerializer);
             cacheJson["platforms"] = JArray.FromObject(allPlatforms, jsonSerializer);
             cacheJson["playerPerspectives"] = JArray.FromObject(this.playerPerspectivesById.Values.OrderBy(o => o.Id), jsonSerializer);
             cacheJson["themes"] = JArray.FromObject(this.themesById.Values.OrderBy(o => o.Id), jsonSerializer);
@@ -274,23 +297,24 @@ namespace GlogGenerator
         {
             var cacheJson = JObject.Parse(File.ReadAllText(Path.Combine(directoryPath, JsonFileName)));
 
-            var allGames = cacheJson["games"].ToObject<List<IgdbGame>>();
+            var allGames = cacheJson["games"]?.ToObject<List<IgdbGame>>() ?? new List<IgdbGame>();
 
-            var allPlatforms = cacheJson["platforms"].ToObject<List<IgdbPlatform>>();
+            var allPlatforms = cacheJson["platforms"]?.ToObject<List<IgdbPlatform>>() ?? new List<IgdbPlatform>();
 
             var cache = new IgdbCache();
-            cache.collectionsById = cacheJson["collections"].ToObject<List<IgdbCollection>>().ToDictionary(o => o.Id, o => o);
-            cache.companiesById = cacheJson["companies"].ToObject<List<IgdbCompany>>().ToDictionary(o => o.Id, o => o);
-            cache.franchisesById = cacheJson["franchises"].ToObject<List<IgdbFranchise>>().ToDictionary(o => o.Id, o => o);
-            cache.gameModesById = cacheJson["gameModes"].ToObject<List<IgdbGameMode>>().ToDictionary(o => o.Id, o => o);
+            cache.collectionsById = cacheJson["collections"]?.ToObject<List<IgdbCollection>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbCollection>();
+            cache.companiesById = cacheJson["companies"]?.ToObject<List<IgdbCompany>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbCompany>();
+            cache.franchisesById = cacheJson["franchises"]?.ToObject<List<IgdbFranchise>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbFranchise>();
+            cache.gameModesById = cacheJson["gameModes"]?.ToObject<List<IgdbGameMode>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGameMode>();
             cache.gamesById = allGames.Where(o => o.Id != IgdbGame.IdNotFound).ToDictionary(o => o.Id, o => o);
             cache.gamesUnidentified = allGames.Where(o => o.Id == IgdbGame.IdNotFound).ToList();
-            cache.genresById = cacheJson["genres"].ToObject<List<IgdbGenre>>().ToDictionary(o => o.Id, o => o);
-            cache.involvedCompaniesById = cacheJson["involvedCompanies"].ToObject<List<IgdbInvolvedCompany>>().ToDictionary(o => o.Id, o => o);
+            cache.genresById = cacheJson["genres"]?.ToObject<List<IgdbGenre>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGenre>();
+            cache.involvedCompaniesById = cacheJson["involvedCompanies"]?.ToObject<List<IgdbInvolvedCompany>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbInvolvedCompany>();
+            cache.keywordsById = cacheJson["keywords"]?.ToObject<List<IgdbKeyword>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbKeyword>();
             cache.platformsById = allPlatforms.Where(o => o.Id != IgdbPlatform.IdNotFound).ToDictionary(o => o.Id, o => o);
             cache.platformsUnidentified = allPlatforms.Where(o => o.Id == IgdbPlatform.IdNotFound).ToList();
-            cache.playerPerspectivesById = cacheJson["playerPerspectives"].ToObject<List<IgdbPlayerPerspective>>().ToDictionary(o => o.Id, o => o);
-            cache.themesById = cacheJson["themes"].ToObject<List<IgdbTheme>>().ToDictionary(o => o.Id, o => o);
+            cache.playerPerspectivesById = cacheJson["playerPerspectives"]?.ToObject<List<IgdbPlayerPerspective>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbPlayerPerspective>();
+            cache.themesById = cacheJson["themes"]?.ToObject<List<IgdbTheme>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbTheme>();
 
             return cache;
         }

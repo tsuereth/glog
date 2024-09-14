@@ -22,6 +22,8 @@ namespace GlogGenerator
 
         public IgdbInvolvedCompany GetInvolvedCompany(int id);
 
+        public IgdbKeyword GetKeyword(int id);
+
         public IgdbPlatform GetPlatform(int id);
 
         public List<IgdbPlatform> GetAllPlatforms();
