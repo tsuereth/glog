@@ -199,6 +199,12 @@ namespace GlogGenerator.Data
                 var bundledGameIds = igdbCache.GetBundledGameIds(relatedGameId);
                 foreach (var bundledGameId in bundledGameIds)
                 {
+                    // (But not the current game, as "related" to itself, that'd be silly!)
+                    if (bundledGameId == igdbGame.Id)
+                    {
+                        continue;
+                    }
+
                     game.TryAddRelatedGame(igdbCache, bundledGameId);
                 }
             }
