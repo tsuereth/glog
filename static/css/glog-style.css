@@ -145,6 +145,11 @@ strong {
 	line-height: 2;
 	color: #999;
 }
+.gameinfo .games {
+	font-size: 1.2em;
+	line-height: 2;
+	color: #999;
+}
 .gameinfo .title, .platforminfo .title {
 	font-size: 4.0em;
 	font-weight: 500;

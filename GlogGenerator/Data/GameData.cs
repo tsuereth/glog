@@ -15,6 +15,8 @@ namespace GlogGenerator.Data
 
         public HashSet<string> Tags { get; set; } = new HashSet<string>();
 
+        public HashSet<string> RelatedGames { get; set; } = new HashSet<string>();
+
         public HashSet<string> LinkedPostIds { get; set; } = new HashSet<string>();
 
         private string dataId;
@@ -169,7 +171,74 @@ namespace GlogGenerator.Data
                 }
             }
 
+            if (igdbGame.ParentGameId != IgdbEntity.IdNotFound)
+            {
+                game.TryAddRelatedGame(igdbCache, igdbGame.ParentGameId);
+            }
+
+            if (igdbGame.VersionParentGameId != IgdbEntity.IdNotFound)
+            {
+                game.TryAddRelatedGame(igdbCache, igdbGame.VersionParentGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.BundleGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.DlcGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.ExpandedGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.ExpansionGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.ForkGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.PortGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.RemakeGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.RemasterGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.StandaloneExpansionGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
             return game;
+        }
+
+        private void TryAddRelatedGame(IIgdbCache igdbCache, int gameId)
+        {
+            if (gameId != IgdbEntity.IdNotFound)
+            {
+                var relatedGame = igdbCache.GetGame(gameId);
+                if (relatedGame != null)
+                {
+                    this.RelatedGames.Add(relatedGame.NameForGlog);
+                }
+            }
         }
     }
 }

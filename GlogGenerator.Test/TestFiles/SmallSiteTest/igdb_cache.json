@@ -16,7 +16,11 @@
     },
     {
       "id": 12832,
-      "name": "The Gentlebros Pte. Ltd."
+      "name": "The Gentlebros"
+    },
+    {
+      "id": 37893,
+      "name": "Kepler Interactive"
     }
   ],
   "franchises": [],
@@ -32,42 +36,179 @@
     {
       "id": 3,
       "name": "Co-operative"
-    },
-    {
-      "id": 4,
-      "name": "Split screen"
-    },
-    {
-      "id": 5,
-      "name": "Massively Multiplayer Online (MMO)"
-    },
-    {
-      "id": 6,
-      "name": "Battle Royale"
     }
   ],
   "games": [
     {
-      "name": "Biped"
+      "bundles": [],
+      "category": -1,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [],
+      "genres": [],
+      "id": -1,
+      "involved_companies": [],
+      "keywords": [],
+      "name": "Biped",
+      "parent_game": -1,
+      "player_perspectives": [],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [],
+      "version_parent": -1
     },
     {
-      "name": "Cat Quest III"
+      "bundles": [],
+      "category": -1,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [],
+      "genres": [],
+      "id": -1,
+      "involved_companies": [],
+      "keywords": [],
+      "name": "Cat Quest III",
+      "parent_game": -1,
+      "player_perspectives": [],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [],
+      "version_parent": -1
     },
     {
-      "name": "Child of Light"
+      "bundles": [],
+      "category": -1,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [],
+      "genres": [],
+      "id": -1,
+      "involved_companies": [],
+      "keywords": [],
+      "name": "Child of Light",
+      "parent_game": -1,
+      "player_perspectives": [],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [],
+      "version_parent": -1
     },
     {
-      "name": "Ittle Dew"
+      "bundles": [],
+      "category": -1,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [],
+      "genres": [],
+      "id": -1,
+      "involved_companies": [],
+      "keywords": [],
+      "name": "Ittle Dew",
+      "parent_game": -1,
+      "player_perspectives": [],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [],
+      "version_parent": -1
     },
     {
-      "name": "Swords & Soldiers"
+      "bundles": [],
+      "category": -1,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [],
+      "genres": [],
+      "id": -1,
+      "involved_companies": [],
+      "keywords": [],
+      "name": "Swords & Soldiers",
+      "parent_game": -1,
+      "player_perspectives": [],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [],
+      "version_parent": -1
     },
     {
-      "name": "Uncharted: Fortune Hunter"
+      "bundles": [],
+      "category": -1,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [],
+      "genres": [],
+      "id": -1,
+      "involved_companies": [],
+      "keywords": [],
+      "name": "Uncharted: Fortune Hunter",
+      "parent_game": -1,
+      "player_perspectives": [],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [],
+      "version_parent": -1
     },
     {
+      "bundles": [
+        129999,
+        313223
+      ],
       "category": 0,
-      "collection": 5785,
+      "collection": -1,
+      "collections": [
+        5785
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -82,21 +223,40 @@
       "involved_companies": [
         57560,
         57561,
-        57562
+        57562,
+        248616
       ],
+      "keywords": [],
       "name": "Cat Quest",
+      "parent_game": -1,
       "player_perspectives": [
         2
       ],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
       "themes": [
         1,
         17
       ],
-      "url": "https://www.igdb.com/games/cat-quest"
+      "url": "https://www.igdb.com/games/cat-quest",
+      "version_parent": -1
     },
     {
+      "bundles": [
+        129999,
+        313223
+      ],
       "category": 0,
-      "collection": 5785,
+      "collection": -1,
+      "collections": [
+        5785
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
       "franchise": -1,
       "franchises": [],
       "game_modes": [
@@ -113,20 +273,100 @@
       "involved_companies": [
         84850,
         84851,
-        84852
+        84852,
+        262895
+      ],
+      "keywords": [
+        570
       ],
       "name": "Cat Quest II",
+      "parent_game": -1,
       "player_perspectives": [
         2,
         3
       ],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
       "themes": [
         1,
         17,
         35,
         38
       ],
-      "url": "https://www.igdb.com/games/cat-quest-ii"
+      "url": "https://www.igdb.com/games/cat-quest-ii",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 3,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        31,
+        32
+      ],
+      "id": 129999,
+      "involved_companies": [
+        98726,
+        98727
+      ],
+      "keywords": [],
+      "name": "Cat Quest + Cat Quest II: Pawsome Pack",
+      "parent_game": -1,
+      "player_perspectives": [
+        2
+      ],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17
+      ],
+      "url": "https://www.igdb.com/games/cat-quest-plus-cat-quest-ii-pawsome-pack",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 3,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [],
+      "genres": [
+        31
+      ],
+      "id": 313223,
+      "involved_companies": [],
+      "keywords": [],
+      "name": "Cat Quest: The Fur-tastic Trilogy",
+      "parent_game": -1,
+      "player_perspectives": [],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [],
+      "url": "https://www.igdb.com/games/cat-quest-the-fur-tastic-trilogy",
+      "version_parent": -1
     }
   ],
   "genres": [
@@ -145,20 +385,12 @@
   ],
   "involvedCompanies": [
     {
-      "id": 57561,
-      "company": 4091
-    },
-    {
-      "id": 56906,
-      "company": 6957
-    },
-    {
-      "id": 57653,
-      "company": 6957
-    },
-    {
       "id": 57560,
       "company": 12832
+    },
+    {
+      "id": 57561,
+      "company": 4091
     },
     {
       "id": 57562,
@@ -175,8 +407,25 @@
     {
       "id": 84852,
       "company": 12832
+    },
+    {
+      "id": 98726,
+      "company": 4091
+    },
+    {
+      "id": 98727,
+      "company": 12832
+    },
+    {
+      "id": 248616,
+      "company": 37893
+    },
+    {
+      "id": 262895,
+      "company": 37893
     }
   ],
+  "keywords": [],
   "platforms": [
     {
       "abbreviation": "PC",
@@ -193,32 +442,12 @@
   ],
   "playerPerspectives": [
     {
-      "id": 1,
-      "name": "First person"
-    },
-    {
       "id": 2,
       "name": "Third person"
     },
     {
       "id": 3,
       "name": "Bird view / Isometric"
-    },
-    {
-      "id": 4,
-      "name": "Side view"
-    },
-    {
-      "id": 5,
-      "name": "Text"
-    },
-    {
-      "id": 6,
-      "name": "Auditory"
-    },
-    {
-      "id": 7,
-      "name": "Virtual Reality"
     }
   ],
   "themes": [
