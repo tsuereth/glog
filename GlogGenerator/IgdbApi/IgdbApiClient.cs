@@ -241,6 +241,11 @@ namespace GlogGenerator.IgdbApi
             return await this.GetItemsAsync<IgdbInvolvedCompany>("involved_companies", ids);
         }
 
+        public async Task<List<IgdbKeyword>> GetKeywordsAsync(List<int> ids)
+        {
+            return await this.GetItemsAsync<IgdbKeyword>("keywords", ids);
+        }
+
         public async Task<List<IgdbPlatform>> GetPlatformsAsync(List<int> ids)
         {
             return await this.GetItemsAsync<IgdbPlatform>("platforms", ids);

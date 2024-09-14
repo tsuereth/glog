@@ -15,6 +15,8 @@ namespace GlogGenerator.Data
 
         public HashSet<string> Tags { get; set; } = new HashSet<string>();
 
+        public HashSet<string> RelatedGames { get; set; } = new HashSet<string>();
+
         public HashSet<string> LinkedPostIds { get; set; } = new HashSet<string>();
 
         private string dataId;
@@ -142,6 +144,15 @@ namespace GlogGenerator.Data
                 }
             }
 
+            foreach (var keywordId in igdbGame.KeywordIds)
+            {
+                var keyword = igdbCache.GetKeyword(keywordId);
+                if (keyword != null && !game.Tags.Contains(keyword.GetReferenceableValue(), StringComparer.OrdinalIgnoreCase))
+                {
+                    game.Tags.Add(keyword.GetReferenceableValue());
+                }
+            }
+
             foreach (var playerPerspectiveId in igdbGame.PlayerPerspectiveIds)
             {
                 var playerPerspective = igdbCache.GetPlayerPerspective(playerPerspectiveId);
@@ -160,7 +171,91 @@ namespace GlogGenerator.Data
                 }
             }
 
+            if (igdbGame.ParentGameId != IgdbEntity.IdNotFound)
+            {
+                game.TryAddRelatedGame(igdbCache, igdbGame.ParentGameId);
+            }
+
+            if (igdbGame.VersionParentGameId != IgdbEntity.IdNotFound)
+            {
+                game.TryAddRelatedGame(igdbCache, igdbGame.VersionParentGameId);
+            }
+
+            // If this game is a "bundle," then add its bundled games as related.
+            if (igdbGame.Category == IgdbGameCategory.bundle)
+            {
+                var bundledGameIds = igdbCache.GetBundledGameIds(igdbGame.Id);
+                foreach (var bundledGameId in bundledGameIds)
+                {
+                    game.TryAddRelatedGame(igdbCache, bundledGameId);
+                }
+            }
+
+            foreach (var relatedGameId in igdbGame.BundleGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+
+                // Add other games from the same bundle, too.
+                var bundledGameIds = igdbCache.GetBundledGameIds(relatedGameId);
+                foreach (var bundledGameId in bundledGameIds)
+                {
+                    game.TryAddRelatedGame(igdbCache, bundledGameId);
+                }
+            }
+
+            foreach (var relatedGameId in igdbGame.DlcGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.ExpandedGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.ExpansionGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.ForkGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.PortGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.RemakeGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.RemasterGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
+            foreach (var relatedGameId in igdbGame.StandaloneExpansionGameIds)
+            {
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
+            }
+
             return game;
+        }
+
+        private void TryAddRelatedGame(IIgdbCache igdbCache, int gameId)
+        {
+            if (gameId != IgdbEntity.IdNotFound)
+            {
+                var relatedGame = igdbCache.GetGame(gameId);
+                if (relatedGame != null && !this.RelatedGames.Contains(relatedGame.GetReferenceableValue(), StringComparer.OrdinalIgnoreCase))
+                {
+                    this.RelatedGames.Add(relatedGame.GetReferenceableValue());
+                }
+            }
         }
     }
 }

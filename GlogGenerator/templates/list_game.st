@@ -32,6 +32,19 @@ list_game(site,page) ::= <<
 					</div>
 %endif%
 					
+%if(page.RelatedGames)%
+					
+					<div class="games">Related games: 
+%page.RelatedGames :{game |
+						
+						
+						
+						<a href="%site.BaseURL%game/%game;format="urlize"%">%game%</a>};separator=",\n\n"%
+						
+						
+					</div>
+%endif%
+					
 				</div>
 
 				<div id="content" class="inner">

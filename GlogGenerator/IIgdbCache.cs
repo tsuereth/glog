@@ -22,6 +22,8 @@ namespace GlogGenerator
 
         public IgdbInvolvedCompany GetInvolvedCompany(int id);
 
+        public IgdbKeyword GetKeyword(int id);
+
         public IgdbPlatform GetPlatform(int id);
 
         public List<IgdbPlatform> GetAllPlatforms();
@@ -31,6 +33,8 @@ namespace GlogGenerator
         public IgdbTheme GetTheme(int id);
 
         public List<IgdbEntity> GetAllGameMetadata();
+
+        public List<int> GetBundledGameIds(int bundleGameId);
 
         public Task UpdateFromApiClient(IgdbApiClient client);
 

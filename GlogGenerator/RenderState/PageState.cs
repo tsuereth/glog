@@ -54,6 +54,8 @@ namespace GlogGenerator.RenderState
 
         public List<string> Tags { get; set; } = new List<string>();
 
+        public List<string> RelatedGames { get; set; } = new List<string>();
+
         public string Title { get; set; } = string.Empty;
 
         public string IgdbUrl { get; set; }
@@ -244,6 +246,7 @@ namespace GlogGenerator.RenderState
 
             page.IgdbUrl = gameData.IgdbUrl;
             page.Tags = gameData.Tags.ToList();
+            page.RelatedGames = gameData.RelatedGames.OrderBy(s => s).ToList();
 
             page.LinkedPosts = gameData.LinkedPostIds.Select(i => siteDataIndex.GetPostById(i))
                 .Select(p => LinkedPostProperties.FromPostData(p, siteDataIndex))

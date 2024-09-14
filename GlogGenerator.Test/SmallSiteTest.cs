@@ -33,7 +33,7 @@ namespace GlogGenerator.Test
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
             // For testing, pretend that our "build date" is some constant date.
-            builder.SetBuildDate(DateTimeOffset.Parse("2023-09-04T17:00:00.0+00:00", CultureInfo.InvariantCulture));
+            builder.SetBuildDate(DateTimeOffset.Parse("2024-09-14T17:00:00.0+00:00", CultureInfo.InvariantCulture));
 
             builder.UpdateDataIndex();
 
@@ -85,7 +85,7 @@ namespace GlogGenerator.Test
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
             // For testing, pretend that our "build date" is some constant date.
-            builder.SetBuildDate(DateTimeOffset.Parse("2023-09-04T17:00:00.0+00:00", CultureInfo.InvariantCulture));
+            builder.SetBuildDate(DateTimeOffset.Parse("2024-09-14T17:00:00.0+00:00", CultureInfo.InvariantCulture));
 
             builder.UpdateDataIndex();
 
