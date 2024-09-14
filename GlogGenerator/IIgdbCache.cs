@@ -34,6 +34,8 @@ namespace GlogGenerator
 
         public List<IgdbEntity> GetAllGameMetadata();
 
+        public List<int> GetBundledGameIds(int bundleGameId);
+
         public Task UpdateFromApiClient(IgdbApiClient client);
 
         public void WriteToJsonFile(string directoryPath);

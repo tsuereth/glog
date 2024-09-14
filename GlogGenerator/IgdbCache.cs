@@ -188,6 +188,11 @@ namespace GlogGenerator
             return allMetadata;
         }
 
+        public List<int> GetBundledGameIds(int bundleGameId)
+        {
+            return this.GetAllGames().Where(g => g.BundleGameIds.Contains(bundleGameId) && g.Id != IgdbEntity.IdNotFound).Select(g => g.Id).ToList();
+        }
+
         public async Task UpdateFromApiClient(IgdbApiClient client)
         {
             // Update games first, to get current IDs for metadata references.

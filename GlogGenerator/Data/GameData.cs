@@ -181,9 +181,26 @@ namespace GlogGenerator.Data
                 game.TryAddRelatedGame(igdbCache, igdbGame.VersionParentGameId);
             }
 
+            // If this game is a "bundle," then add its bundled games as related.
+            if (igdbGame.Category == IgdbGameCategory.bundle)
+            {
+                var bundledGameIds = igdbCache.GetBundledGameIds(igdbGame.Id);
+                foreach (var bundledGameId in bundledGameIds)
+                {
+                    game.TryAddRelatedGame(igdbCache, bundledGameId);
+                }
+            }
+
             foreach (var relatedGameId in igdbGame.BundleGameIds)
             {
                 game.TryAddRelatedGame(igdbCache, relatedGameId);
+
+                // Add other games from the same bundle, too.
+                var bundledGameIds = igdbCache.GetBundledGameIds(relatedGameId);
+                foreach (var bundledGameId in bundledGameIds)
+                {
+                    game.TryAddRelatedGame(igdbCache, bundledGameId);
+                }
             }
 
             foreach (var relatedGameId in igdbGame.DlcGameIds)
@@ -234,9 +251,9 @@ namespace GlogGenerator.Data
             if (gameId != IgdbEntity.IdNotFound)
             {
                 var relatedGame = igdbCache.GetGame(gameId);
-                if (relatedGame != null)
+                if (relatedGame != null && !this.RelatedGames.Contains(relatedGame.GetReferenceableValue(), StringComparer.OrdinalIgnoreCase))
                 {
-                    this.RelatedGames.Add(relatedGame.NameForGlog);
+                    this.RelatedGames.Add(relatedGame.GetReferenceableValue());
                 }
             }
         }
