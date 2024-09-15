@@ -6,7 +6,7 @@ game = [ "NieR: Automata" ]
 platform = [ "PC" ]
 rating = [ "Meh" ]
 +++
-<game:NieR: Automata> is unusual, quirky, and intriguing - [*weird*, in good ways]($SiteBaseURL$2021/05/11/from-zero-to-uh-hmm/) - but not consistently.  Its moments of riveting mystery and exciting surprise are sparse, with boredom drugery filling the space between.
+<game:NieR: Automata> is unusual, quirky, and intriguing - [*weird*, in good ways]($SiteBaseURL$2021/05/11/from-zero-to-uh-hmm/) - but not consistently.  Its moments of riveting mystery and exciting surprise are sparse, with boring drugery filling the space between.
 
 The hack-and-slash-plus-bullet-hell combat action is bewildering at first, but then once you've made some sense of the controls and complexity, ... it's *still* bewildering, due to wonky camera movement, unpredictable lock-on targeting, and outright **visual noise**.
 
