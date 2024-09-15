@@ -248,7 +248,8 @@ namespace GlogGenerator.RenderState
             page.Tags = gameData.Tags.ToList();
             page.RelatedGames = gameData.RelatedGames.OrderBy(s => s).ToList();
 
-            page.LinkedPosts = gameData.LinkedPostIds.Select(i => siteDataIndex.GetPostById(i))
+            page.LinkedPosts = gameData.LinkedPostIds.Distinct()
+                .Select(i => siteDataIndex.GetPostById(i))
                 .Select(p => LinkedPostProperties.FromPostData(p, siteDataIndex))
                 .OrderByDescending(p => p.Date).ToList();
 

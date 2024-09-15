@@ -19,6 +19,8 @@ namespace GlogGenerator.Data
 
         public HashSet<string> LinkedPostIds { get; set; } = new HashSet<string>();
 
+        public HashSet<string> LinkPostsToOtherGames { get; set; } = new HashSet<string>();
+
         private string dataId;
         private string referenceableKey;
 
@@ -206,6 +208,13 @@ namespace GlogGenerator.Data
                     }
 
                     game.TryAddRelatedGame(igdbCache, bundledGameId);
+                }
+
+                // The bundle should link to posts for this game.
+                var bundleGame = igdbCache.GetGame(relatedGameId);
+                if (bundleGame != null)
+                {
+                    game.LinkPostsToOtherGames.Add(bundleGame.GetReferenceableValue());
                 }
             }
 

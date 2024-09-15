@@ -421,6 +421,12 @@ namespace GlogGenerator.Data
                                 var gameData = this.GetDataWithOldLookup(gameReference, oldGames);
                                 gameData.LinkedPostIds.Add(postId);
 
+                                foreach (var linkToOtherGameName in gameData.LinkPostsToOtherGames)
+                                {
+                                    var otherGameData = this.GetGame(linkToOtherGameName);
+                                    otherGameData.LinkedPostIds.Add(postId);
+                                }
+
                                 foreach (var tagName in gameData.Tags)
                                 {
                                     var tagData = this.GetTag(tagName);
