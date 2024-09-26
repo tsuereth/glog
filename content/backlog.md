@@ -9,6 +9,7 @@ permalink = "/backlog"
 * <game:Cat Quest III> (<platform:PC>)
 * <game:Cyberpunk 2077: Phantom Liberty> (<platform:PC>)
 * <game:Ghost of Tsushima: Director's Cut> (<platform:PC>)
+* <game:God of War Ragnarök> (<platform:PC>)
 * <game:The Last of Us Part I> (<platform:PC>)
 * <game:Metroid Dread> (<platform:Switch>)
 * <game:Metroid Prime Remastered> (<platform:Switch>)
