@@ -1757,6 +1757,10 @@
       "name": "Moving Out"
     },
     {
+      "id": 8228,
+      "name": "Baba is You"
+    },
+    {
       "id": 8319,
       "name": "Bloodstained: Ritual of the Night"
     },
@@ -7905,10 +7909,6 @@
   ],
   "games": [
     {
-      "id": 152765,
-      "name": "Castlevania Advance Collection"
-    },
-    {
       "bundles": [],
       "category": -1,
       "collection": -1,
@@ -12907,7 +12907,6 @@
       ],
       "id": 121,
       "involved_companies": [
-        275103,
         275290
       ],
       "keywords": [
@@ -83490,8 +83489,8 @@
       "id": 8807,
       "involved_companies": [
         21669,
-        21671,
-        51840
+        51840,
+        289139
       ],
       "keywords": [
         87,
@@ -95578,6 +95577,7 @@
         1158,
         1375,
         1754,
+        2385,
         4134,
         4159,
         4160,
@@ -97470,7 +97470,7 @@
       ],
       "id": 16953,
       "involved_companies": [
-        134833
+        288094
       ],
       "keywords": [
         164
@@ -109646,7 +109646,9 @@
       "bundles": [],
       "category": 0,
       "collection": -1,
-      "collections": [],
+      "collections": [
+        8228
+      ],
       "dlcs": [],
       "expanded_games": [],
       "expansions": [],
@@ -116451,6 +116453,52 @@
     },
     {
       "bundles": [],
+      "category": 3,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
+      "franchise": -1,
+      "franchises": [
+        895
+      ],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        8,
+        12,
+        31
+      ],
+      "id": 152765,
+      "involved_companies": [
+        150358,
+        191508
+      ],
+      "keywords": [
+        3208
+      ],
+      "name": "Castlevania Advance Collection",
+      "parent_game": -1,
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17,
+        19
+      ],
+      "url": "https://www.igdb.com/games/castlevania-advance-collection",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
       "category": 10,
       "collection": -1,
       "collections": [
@@ -121273,10 +121321,6 @@
     {
       "id": 21669,
       "company": 2162
-    },
-    {
-      "id": 21671,
-      "company": 129
     },
     {
       "id": 21680,
@@ -127499,10 +127543,6 @@
       "company": 70
     },
     {
-      "id": 134833,
-      "company": 1718
-    },
-    {
       "id": 134860,
       "company": 29538
     },
@@ -127873,6 +127913,10 @@
     {
       "id": 150347,
       "company": 73
+    },
+    {
+      "id": 150358,
+      "company": 129
     },
     {
       "id": 150491,
@@ -129297,6 +129341,10 @@
     {
       "id": 191463,
       "company": 13634
+    },
+    {
+      "id": 191508,
+      "company": 781
     },
     {
       "id": 191691,
@@ -132151,10 +132199,6 @@
       "company": 423
     },
     {
-      "id": 275103,
-      "company": 58
-    },
-    {
       "id": 275290,
       "company": 58
     },
@@ -132583,6 +132627,10 @@
       "company": 112
     },
     {
+      "id": 288094,
+      "company": 1718
+    },
+    {
       "id": 288342,
       "company": 34659
     },
@@ -132605,6 +132653,10 @@
     {
       "id": 288629,
       "company": 15094
+    },
+    {
+      "id": 289139,
+      "company": 129
     }
   ],
   "keywords": [],
