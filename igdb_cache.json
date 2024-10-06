@@ -7913,6 +7913,19 @@
   ],
   "games": [
     {
+      "id": 254339,
+      "name": "Super Mario Bros. Wonder"
+    },
+    {
+      "id": 266690,
+      "name": "Paper Mario: The Thousand-Year Door",
+      "name_glogOverride": "Paper Mario: The Thousand-Year Door (2024)"
+    },
+    {
+      "id": 306149,
+      "name": "The Legend of Zelda: Echoes of Wisdom"
+    },
+    {
       "bundles": [],
       "category": -1,
       "collection": -1,
