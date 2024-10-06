@@ -5903,6 +5903,10 @@
       "name": "Secret 6"
     },
     {
+      "id": 9786,
+      "name": "22nd Century Toys LLC"
+    },
+    {
       "id": 9791,
       "name": "DICO Co., Ltd."
     },
@@ -7079,6 +7083,10 @@
       "name": "Nintendo EPD Production Group No. 8"
     },
     {
+      "id": 45215,
+      "name": "Nintendo EPD Production Group No. 10"
+    },
+    {
       "id": 45304,
       "name": "Square Enix Creative Business Unit I"
     },
@@ -7912,19 +7920,6 @@
     }
   ],
   "games": [
-    {
-      "id": 254339,
-      "name": "Super Mario Bros. Wonder"
-    },
-    {
-      "id": 266690,
-      "name": "Paper Mario: The Thousand-Year Door",
-      "name_glogOverride": "Paper Mario: The Thousand-Year Door (2024)"
-    },
-    {
-      "id": 306149,
-      "name": "The Legend of Zelda: Echoes of Wisdom"
-    },
     {
       "bundles": [],
       "category": -1,
@@ -23966,7 +23961,9 @@
         66
       ],
       "dlcs": [],
-      "expanded_games": [],
+      "expanded_games": [
+        318793
+      ],
       "expansions": [],
       "forks": [],
       "franchise": -1,
@@ -23982,9 +23979,8 @@
       ],
       "id": 547,
       "involved_companies": [
-        1328,
-        116445,
-        116446
+        290002,
+        290003
       ],
       "keywords": [
         3,
@@ -24052,9 +24048,7 @@
       ],
       "ports": [],
       "remakes": [],
-      "remasters": [
-        16605
-      ],
+      "remasters": [],
       "standalone_expansions": [],
       "themes": [
         1,
@@ -70031,6 +70025,7 @@
         41611,
         41640,
         52440,
+        112659,
         254329
       ],
       "category": 0,
@@ -73999,10 +73994,10 @@
         3,
         4
       ],
-      "ports": [
+      "ports": [],
+      "remakes": [
         27958
       ],
-      "remakes": [],
       "remasters": [],
       "standalone_expansions": [],
       "themes": [
@@ -86792,7 +86787,8 @@
       ],
       "id": 9649,
       "involved_companies": [
-        96940
+        290011,
+        290012
       ],
       "keywords": [
         948,
@@ -104430,7 +104426,8 @@
         120105,
         120106,
         120107,
-        120108
+        120108,
+        290024
       ],
       "keywords": [
         198,
@@ -109301,7 +109298,8 @@
       "id": 72813,
       "involved_companies": [
         190026,
-        190027
+        190027,
+        290029
       ],
       "keywords": [
         153,
@@ -117458,7 +117456,8 @@
       "dlcs": [],
       "expanded_games": [],
       "expansions": [
-        315804
+        315804,
+        315805
       ],
       "forks": [],
       "franchise": -1,
@@ -117592,6 +117591,69 @@
     },
     {
       "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        240,
+        6118
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
+      "franchise": -1,
+      "franchises": [
+        845
+      ],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        8
+      ],
+      "id": 254339,
+      "involved_companies": [
+        236165,
+        268554
+      ],
+      "keywords": [
+        101,
+        247,
+        1059,
+        1387,
+        1511,
+        1879,
+        2555,
+        2760,
+        3014,
+        3138,
+        3560,
+        25831,
+        26965,
+        39149,
+        42250,
+        43160
+      ],
+      "name": "Super Mario Bros. Wonder",
+      "parent_game": -1,
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17
+      ],
+      "url": "https://www.igdb.com/games/super-mario-bros-wonder",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
       "category": 1,
       "collection": -1,
       "collections": [],
@@ -117671,6 +117733,53 @@
         38
       ],
       "url": "https://www.igdb.com/games/saints-row-a-song-of-ice-and-dust",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 8,
+      "collection": -1,
+      "collections": [
+        593
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
+      "franchise": -1,
+      "franchises": [
+        845
+      ],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12
+      ],
+      "id": 266690,
+      "involved_companies": [
+        231293,
+        257534
+      ],
+      "keywords": [
+        26965,
+        42082
+      ],
+      "name": "Paper Mario: The Thousand-Year Door",
+      "name_glogOverride": "Paper Mario: The Thousand-Year Door (2024)",
+      "parent_game": 3349,
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17
+      ],
+      "url": "https://www.igdb.com/games/paper-mario-the-thousand-year-door--1",
       "version_parent": -1
     },
     {
@@ -117816,6 +117925,52 @@
         18
       ],
       "url": "https://www.igdb.com/games/the-talos-principle-ii-road-to-elysium",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        106
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "forks": [],
+      "franchise": -1,
+      "franchises": [
+        596
+      ],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        31
+      ],
+      "id": 306149,
+      "involved_companies": [
+        271143,
+        271144
+      ],
+      "keywords": [
+        962,
+        2750
+      ],
+      "name": "The Legend of Zelda: Echoes of Wisdom",
+      "parent_game": -1,
+      "player_perspectives": [
+        3
+      ],
+      "ports": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17
+      ],
+      "url": "https://www.igdb.com/games/the-legend-of-zelda-echoes-of-wisdom",
       "version_parent": -1
     },
     {
@@ -118321,10 +118476,6 @@
     {
       "id": 1310,
       "company": 108
-    },
-    {
-      "id": 1328,
-      "company": 53
     },
     {
       "id": 1345,
@@ -125663,10 +125814,6 @@
       "company": 14002
     },
     {
-      "id": 96940,
-      "company": 5154
-    },
-    {
       "id": 96941,
       "company": 13292
     },
@@ -126693,14 +126840,6 @@
     {
       "id": 116411,
       "company": 5154
-    },
-    {
-      "id": 116445,
-      "company": 167
-    },
-    {
-      "id": 116446,
-      "company": 17463
     },
     {
       "id": 116447,
@@ -130731,6 +130870,10 @@
       "company": 501
     },
     {
+      "id": 231293,
+      "company": 70
+    },
+    {
       "id": 231522,
       "company": 6999
     },
@@ -130769,6 +130912,10 @@
     {
       "id": 236063,
       "company": 50
+    },
+    {
+      "id": 236165,
+      "company": 70
     },
     {
       "id": 236734,
@@ -131547,6 +131694,10 @@
       "company": 46613
     },
     {
+      "id": 257534,
+      "company": 25077
+    },
+    {
       "id": 258010,
       "company": 66
     },
@@ -132043,6 +132194,10 @@
       "company": 45213
     },
     {
+      "id": 268554,
+      "company": 45215
+    },
+    {
       "id": 268614,
       "company": 5303
     },
@@ -132133,6 +132288,14 @@
     {
       "id": 270802,
       "company": 112
+    },
+    {
+      "id": 271143,
+      "company": 739
+    },
+    {
+      "id": 271144,
+      "company": 70
     },
     {
       "id": 271698,
@@ -132733,6 +132896,30 @@
     {
       "id": 289567,
       "company": 13979
+    },
+    {
+      "id": 290002,
+      "company": 53
+    },
+    {
+      "id": 290003,
+      "company": 17463
+    },
+    {
+      "id": 290011,
+      "company": 5154
+    },
+    {
+      "id": 290012,
+      "company": 9786
+    },
+    {
+      "id": 290024,
+      "company": 9786
+    },
+    {
+      "id": 290029,
+      "company": 9786
     }
   ],
   "keywords": [],
