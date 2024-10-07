@@ -9,7 +9,7 @@ header(site,page) ::= <<
 </nav>
 <hr>
 <nav id="main-nav">
-%navigation(site,page)%
+	%navigation(site,page)%
 </nav>
 <hr>
 <div class="disclaimer">
@@ -17,5 +17,4 @@ header(site,page) ::= <<
 		<i>The views and opinions expressed on this website are the author's alone. They are not endorsed by the author's employer, nor do they reflect the views and opinions of said employer or any other affiliated entity.</i>
 	</p>
 </div>
-
 >>

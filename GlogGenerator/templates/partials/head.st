@@ -1,14 +1,11 @@
 head(site,page) ::= <<
 <!DOCTYPE HTML>
-
 <html lang="en-us">
-
 <head>
 	<meta charset="utf-8">
 	<title>%if(!page.HideTitle)%%page.Title;format="escapepunctuation"% - %endif%Glog</title>
 	<meta name="description" content="Blog about games, mostly.">
 
-	
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,22 +21,21 @@ head(site,page) ::= <<
 	<link rel="stylesheet" href="%site.BaseURL%css/photoswipe.css" type="text/css">
 
 	<script type="text/javascript">
-function spoiler_toggle(element) {
-	var oldClasses = element.className;
-	if((" " + oldClasses + " ").indexOf(" spoiler_hidden ") > -1)
-	{
-		element.className = oldClasses.replace("spoiler_hidden", "spoiler_revealed");
+	function spoiler_toggle(element) {
+		var oldClasses = element.className;
+		if((" " + oldClasses + " ").indexOf(" spoiler_hidden ") > -1)
+		{
+			element.className = oldClasses.replace("spoiler_hidden", "spoiler_revealed");
+		}
+		else
+		{
+			element.className = oldClasses.replace("spoiler_revealed", "spoiler_hidden");
+		}
 	}
-	else
-	{
-		element.className = oldClasses.replace("spoiler_revealed", "spoiler_hidden");
-	}
-}
 	</script>
 
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito:400,300,700" type="text/css">
 	<script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script>
 	<script type="text/javascript">google.charts.load('current', {'packages':['corechart']});</script>
 </head>
-
 >>

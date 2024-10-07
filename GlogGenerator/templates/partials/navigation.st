@@ -3,8 +3,6 @@ navigation(site,page) ::= <<
 	<li><span class="nav-title">Playing:</span>
 		<ul>
 %site.NowPlaying :{title |
-
-
 			<li class="nav-item"><a href="%site.BaseURL%game/%title;format="urlize"%">%title%</a></li>
 }%
 		</ul>
@@ -19,8 +17,6 @@ navigation(site,page) ::= <<
 	<li><span class="nav-title">Categories:</span>
 		<ul>
 %site.CategoriesSorted :{category |
-
-
 			<li class="nav-item"><a href="%site.BaseURL%category/%category;format="urlize"%/">%category%</a></li>
 }%
 		</ul>
@@ -34,5 +30,4 @@ navigation(site,page) ::= <<
 		</ul>
 	</li>
 </ul>
-
 >>

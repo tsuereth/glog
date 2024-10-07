@@ -1,6 +1,5 @@
 list(site,page) ::= <<
 %partials/head(site,page)%
-
 <body>
 	<div class="container">
 		<div class="left-col">
@@ -12,7 +11,7 @@ list(site,page) ::= <<
 					<div class="title">%page.LinkedPostsCount% posts in <span class="%page.PageType%">%page.Title%</span></div>
 				</div>
 				<div id="content" class="inner">
-%partials/archive(site,page)%
+					%partials/archive(site,page)%
 				</div>
 			</div>
 			<footer id="footer" class="inner">%partials/footer(site,page)%</footer>
@@ -20,5 +19,4 @@ list(site,page) ::= <<
 	</div>
 </body>
 </html>
-
 >>

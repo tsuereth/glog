@@ -1,6 +1,5 @@
 single(site,page) ::= <<
 %partials/head(site,page)%
-
 <body>
 	<div class="container">
 		<div class="left-col">
@@ -10,7 +9,9 @@ single(site,page) ::= <<
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 					<div itemscope itemtype="http://schema.org/Blog">
-					<article class="post" itemscope itemtype="http://schema.org/BlogPosting">%partials/article(site,page)%</article>
+						<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+							%partials/article(site,page)%
+						</article>
 				    </div>
 				</div>
 			</div>
@@ -19,5 +20,4 @@ single(site,page) ::= <<
 	</div>
 </body>
 </html>
-
 >>

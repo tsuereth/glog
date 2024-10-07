@@ -1,6 +1,5 @@
 list_game(site,page) ::= <<
 %partials/head(site,page)%
-
 <body>
 	<div class="container">
 		<div class="left-col">
@@ -8,47 +7,20 @@ list_game(site,page) ::= <<
 		</div>
 		<div class="mid-col">
 			<div class="mid-col-container">
-
 				<div class="gameinfo">
-					
 					<div class="title">%page.Title%</div>
-					
 %if(page.IgdbUrl)%
-					
 					<p class="link">Metadata from <a href="%page.IgdbUrl%">IGDB</a></p>
-					
 %endif%
-					
 %if(page.Tags)%
-					
-					<div class="tags">
-%page.Tags :{tag |
-						
-						
-						
-						<a href="%site.BaseURL%tag/%tag;format="urlize"%">%tag%</a>};separator=",\n\n"%
-						
-						
-					</div>
+					<div class="tags">%page.Tags :{tag |<a href="%site.BaseURL%tag/%tag;format="urlize"%">%tag%</a>};separator=", "%</div>
 %endif%
-					
 %if(page.RelatedGames)%
-					
-					<div class="games">Related games: 
-%page.RelatedGames :{game |
-						
-						
-						
-						<a href="%site.BaseURL%game/%game;format="urlize"%">%game%</a>};separator=",\n\n"%
-						
-						
-					</div>
+					<div class="games">Related games: %page.RelatedGames :{game |<a href="%site.BaseURL%game/%game;format="urlize"%">%game%</a>};separator=", "%</div>
 %endif%
-					
 				</div>
-
 				<div id="content" class="inner">
-%partials/archive(site,page)%
+					%partials/archive(site,page)%
 				</div>
 			</div>
 			<footer id="footer" class="inner">%partials/footer(site,page)%</footer>
@@ -56,5 +28,4 @@ list_game(site,page) ::= <<
 	</div>
 </body>
 </html>
-
 >>

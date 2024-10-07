@@ -1,6 +1,5 @@
 termslist(site,page) ::= <<
 %partials/head(site,page)%
-
 <body>
 	<div class="container">
 		<div class="left-col">
@@ -14,7 +13,7 @@ termslist(site,page) ::= <<
 				<div id="content" class="inner">
 					<div itemscope itemtype="http://schema.org/Blog">
 %page.Terms :{term |
-                        
+
 						<div class="list-entry %page.PageType%" itemprop="name"><a href="%site.BaseURL%%page.TermsType%/%term;format="urlize"%/">%term%</a></div>
 }%
 					</div>
@@ -25,5 +24,4 @@ termslist(site,page) ::= <<
 	</div>
 </body>
 </html>
-
 >>
