@@ -199,14 +199,22 @@ namespace GlogGenerator
             var gameIds = this.gamesById.Keys.ToList();
             var gamesCurrent = await client.GetGamesAsync(gameIds);
 
-            // Preserve data for glog overrides to re-override the updated cache.
-            var gamesWithNameOverrides = this.gamesById.Where(kv => !string.IsNullOrEmpty(kv.Value.NameGlogOverride)).Select(kv => kv.Value).ToList();
+            var gamesCurrentById = gamesCurrent.ToDictionary(o => o.Id, o => o);
 
-            this.gamesById = gamesCurrent.ToDictionary(o => o.Id, o => o);
-            foreach (var game in gamesWithNameOverrides)
+            // Re-apply overriden properties from the old cache.
+            foreach (var gameId in gameIds)
             {
-                this.gamesById[game.Id].NameGlogOverride = game.NameGlogOverride;
+                if (gamesCurrentById.ContainsKey(gameId))
+                {
+                    var gameOverrides = this.gamesById[gameId].GetGlogOverrideValues();
+                    gamesCurrentById[gameId].SetGlogOverrideValues(gameOverrides);
+                }
             }
+
+            // Check current data for quirks to override.
+            // ... TODO! (if there are duplicate names, sort by release date + remove earliest + set `NameGlogAppendReleaseYear` on the rest)
+
+            this.gamesById = gamesCurrentById;
 
             // Update involvedCompanies to get most-current company IDs.
             var involvedCompanyIds = gamesCurrent.SelectMany(g => g.InvolvedCompanyIds).Distinct().ToList();
