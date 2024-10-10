@@ -30800,7 +30800,7 @@
         23933
       ],
       "name": "Syndicate",
-      "name_glogOverride": "Syndicate (2012)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         1
@@ -37821,7 +37821,7 @@
         9951
       ],
       "name": "Tomb Raider",
-      "name_glogOverride": "Tomb Raider (2013)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         2
@@ -39634,7 +39634,7 @@
         8784
       ],
       "name": "SimCity",
-      "name_glogOverride": "SimCity (2013)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         3
@@ -48026,7 +48026,7 @@
         23933
       ],
       "name": "Alone in the Dark",
-      "name_glogOverride": "Alone in the Dark (2008)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         1,
@@ -52870,7 +52870,7 @@
         23933
       ],
       "name": "Punch-Out!!",
-      "name_glogOverride": "Punch-Out!! (2009)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": 84799,
       "player_perspectives": [
         2
@@ -55389,7 +55389,7 @@
         7688
       ],
       "name": "Prince of Persia",
-      "name_glogOverride": "Prince of Persia (2008)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         2
@@ -56013,7 +56013,7 @@
         29055
       ],
       "name": "Mad Max",
-      "name_glogOverride": "Mad Max (2015)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         2
@@ -67939,7 +67939,7 @@
       ],
       "keywords": [],
       "name": "A Boy and His Blob",
-      "name_glogOverride": "A Boy and His Blob (2009)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": 2109,
       "player_perspectives": [
         4
@@ -70254,7 +70254,7 @@
         5844
       ],
       "name": "Strider",
-      "name_glogOverride": "Strider (2014)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         4
@@ -71259,7 +71259,7 @@
         39028
       ],
       "name": "The Witness",
-      "name_glogOverride": "The Witness (2016)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         1
@@ -73009,7 +73009,7 @@
         23933
       ],
       "name": "Shadow Warrior",
-      "name_glogOverride": "Shadow Warrior (2013)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         1
@@ -76054,7 +76054,7 @@
         23933
       ],
       "name": "Bionic Commando",
-      "name_glogOverride": "Bionic Commando (2009)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         2
@@ -76268,7 +76268,7 @@
         23933
       ],
       "name": "Dante's Inferno",
-      "name_glogOverride": "Dante's Inferno (2010)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         2
@@ -78519,7 +78519,7 @@
         39049
       ],
       "name": "Inside",
-      "name_glogOverride": "Inside (2016)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         4
@@ -85146,7 +85146,7 @@
         13083
       ],
       "name": "Conan",
-      "name_glogOverride": "Conan (2007)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         2
@@ -90851,7 +90851,7 @@
         39007
       ],
       "name": "Hitman",
-      "name_glogOverride": "Hitman (2016)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         2
@@ -92342,7 +92342,7 @@
         23560
       ],
       "name": "The Room",
-      "name_glogOverride": "The Room (2012)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         1
@@ -98497,7 +98497,7 @@
         4836
       ],
       "name": "Epoch",
-      "name_glogOverride": "Epoch (2014)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [],
       "ports": [],
@@ -100890,7 +100890,7 @@
         40744
       ],
       "name": "Prey",
-      "name_glogOverride": "Prey (2017)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         1
@@ -101148,7 +101148,7 @@
         41556
       ],
       "name": "God of War",
-      "name_glogOverride": "God of War (2018)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         2
@@ -103434,7 +103434,7 @@
       ],
       "keywords": [],
       "name": "Bomberman",
-      "name_glogOverride": "Bomberman (2005)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         3
@@ -108666,7 +108666,7 @@
         1060
       ],
       "name": "Shadow of the Colossus",
-      "name_glogOverride": "Shadow of the Colossus (2018)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": 2207,
       "player_perspectives": [
         2
@@ -112503,7 +112503,7 @@
         4784
       ],
       "name": "Cypher",
-      "name_glogOverride": "Cypher (2018)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         1
@@ -112734,7 +112734,7 @@
         274
       ],
       "name": "Eliza",
-      "name_glogOverride": "Eliza (2019)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         1
@@ -114455,7 +114455,7 @@
         41459
       ],
       "name": "Hades",
-      "name_glogOverride": "Hades (2020)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         3
@@ -118188,7 +118188,7 @@
         182
       ],
       "name": "Saints Row",
-      "name_glogOverride": "Saints Row (2022)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": -1,
       "player_perspectives": [
         2
@@ -119020,7 +119020,7 @@
       ],
       "keywords": [],
       "name": "Super Mario RPG",
-      "name_glogOverride": "Super Mario RPG (2023)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": 5418,
       "player_perspectives": [
         3
@@ -119217,7 +119217,7 @@
         42082
       ],
       "name": "Paper Mario: The Thousand-Year Door",
-      "name_glogOverride": "Paper Mario: The Thousand-Year Door (2024)",
+      "name_glogAppendReleaseYear": true,
       "parent_game": 3349,
       "player_perspectives": [
         4
