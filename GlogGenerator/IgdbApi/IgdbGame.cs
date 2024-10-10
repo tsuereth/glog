@@ -30,7 +30,7 @@ namespace GlogGenerator.IgdbApi
         public List<int> ExpansionGameIds { get; set; } = new List<int>();
 
         [JsonProperty("first_release_date")]
-        public long FirstReleaseDateTimestamp { get; set; } = DateTimeOffset.MinValue.ToUnixTimeSeconds();
+        public long FirstReleaseDateTimestamp { get; set; } = 0;
 
         [JsonIgnore]
         public DateTimeOffset FirstReleaseDate

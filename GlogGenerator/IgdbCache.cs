@@ -257,14 +257,19 @@ namespace GlogGenerator
             var platformIds = this.platformsById.Keys.ToList();
             var platformsCurrent = await client.GetPlatformsAsync(platformIds);
 
-            // Preserve data for glog overrides to re-override the updated cache.
-            var platformsWithAbbreviationOverrides = this.platformsById.Where(kv => !string.IsNullOrEmpty(kv.Value.AbbreviationGlogOverride)).Select(kv => kv.Value).ToList();
+            var platformsCurrentById = platformsCurrent.ToDictionary(o => o.Id, o => o);
 
-            this.platformsById = platformsCurrent.ToDictionary(o => o.Id, o => o);
-            foreach (var platform in platformsWithAbbreviationOverrides)
+            // Re-apply overridden properties from the old cache.
+            foreach (var platformId in platformIds)
             {
-                this.platformsById[platform.Id].AbbreviationGlogOverride = platform.AbbreviationGlogOverride;
+                if (platformsCurrentById.ContainsKey(platformId))
+                {
+                    var platformOverrides = this.platformsById[platformId].GetGlogOverrideValues();
+                    platformsCurrentById[platformId].SetGlogOverrideValues(platformOverrides);
+                }
             }
+
+            this.platformsById = platformsCurrentById;
 
             var playerPerspectiveIds = gamesCurrent.SelectMany(g => g.PlayerPerspectiveIds).Distinct().ToList();
             var playerPerspectivesCurrent = await client.GetPlayerPerspectivesAsync(playerPerspectiveIds);
@@ -303,7 +308,14 @@ namespace GlogGenerator
             cacheJson["playerPerspectives"] = JArray.FromObject(this.playerPerspectivesById.Values.OrderBy(o => o.Id), jsonSerializer);
             cacheJson["themes"] = JArray.FromObject(this.themesById.Values.OrderBy(o => o.Id), jsonSerializer);
 
-            File.WriteAllText(Path.Combine(directoryPath, JsonFileName), JsonConvert.SerializeObject(cacheJson, Formatting.Indented, jsonSerializerSettings));
+            var jsonFilePath = Path.Combine(directoryPath, JsonFileName);
+            using (var fileStream = new FileStream(jsonFilePath, FileMode.Create))
+            using (var streamWriter = new StreamWriter(fileStream) { NewLine = "\n" })
+            using (var jsonWriter = new JsonTextWriter(streamWriter) { Formatting = Formatting.Indented })
+            {
+                jsonSerializer.Serialize(jsonWriter, cacheJson);
+                streamWriter.Flush();
+            }
         }
 
         public static IgdbCache FromJsonFile(string directoryPath)
