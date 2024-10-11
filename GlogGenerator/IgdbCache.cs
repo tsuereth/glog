@@ -211,8 +211,29 @@ namespace GlogGenerator
                 }
             }
 
-            // Check current data for quirks to override.
-            // ... TODO! (if there are duplicate names, sort by release date + remove earliest + set `NameGlogAppendReleaseYear` on the rest)
+            // Check game data for quirks to override/fix.
+
+            var gamesDuplicatedNames = gamesCurrentById.Values.GroupBy(g => g.NameForGlog).Where(g => g.Count() > 1);
+            foreach (var gamesDuplicatedName in gamesDuplicatedNames)
+            {
+                var duplicatedName = gamesDuplicatedName.Key;
+
+                // Try to disambiguate the games' names by appending release years to later releases.
+                // (Unless the release dates aren't available!)
+                var gamesMissingReleaseDate = gamesDuplicatedName.Where(g => g.FirstReleaseDateTimestamp == 0);
+                if (gamesMissingReleaseDate.Any())
+                {
+                    throw new InvalidDataException($"Multiple games have the same display name \"{duplicatedName}\" and cannot be disambiguated because some are missing a release date.");
+                }
+
+                // For each game EXCEPT the earliest-released, set a flag to append their release year to the display name.
+                var gamesInReleaseDateOrder = gamesDuplicatedName.OrderBy(g => g.FirstReleaseDateTimestamp).ToList();
+                for (var gameIndex = 1; gameIndex < gamesInReleaseDateOrder.Count(); ++gameIndex)
+                {
+                    var gameId = gamesInReleaseDateOrder[gameIndex].Id;
+                    gamesCurrentById[gameId].NameGlogAppendReleaseYear = true;
+                }
+            }
 
             this.gamesById = gamesCurrentById;
 
