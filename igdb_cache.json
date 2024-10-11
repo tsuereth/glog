@@ -34996,7 +34996,7 @@
         29960
       ],
       "name": "Donkey Kong",
-      "name_glogOverride": "Donkey Kong '94",
+      "name_glogAppendReleaseYear": true,
       "parent_game": 1086,
       "player_perspectives": [
         4
