@@ -2,7 +2,7 @@
 date = "2024-05-08T19:14:19.3118799-07:00"
 title = "The Ghost of Ace Attorney Present"
 category = [ "Playing A Game" ]
-game = [ "Apollo Justice: Ace Attorney Trilogy" ]
+game = [ "Apollo Justice: Ace Attorney Trilogy", "Phoenix Wright: Ace Attorney - Spirit of Justice" ]
 platform = [ "PC" ]
 rating = [ "Awesome" ]
 +++
