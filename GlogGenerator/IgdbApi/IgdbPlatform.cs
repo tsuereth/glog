@@ -11,6 +11,7 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("abbreviation", Required = Required.Always)]
         public string Abbreviation { get; set; }
 
+        [IgdbEntityGlogOverrideValue]
         [JsonProperty("abbreviation_glogOverride")]
         public string AbbreviationGlogOverride { get; set; }
 

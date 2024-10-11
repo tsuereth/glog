@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Security.Cryptography;
@@ -13,6 +14,7 @@ namespace GlogGenerator.IgdbApi
 
         private readonly PropertyInfo idProperty;
         private readonly PropertyInfo referenceableValueProperty;
+        private readonly Dictionary<string, PropertyInfo> overrideValueProperties;
 
         public IgdbEntity()
         {
@@ -52,6 +54,8 @@ namespace GlogGenerator.IgdbApi
             {
                 this.referenceableValueProperty = null;
             }
+
+            this.overrideValueProperties = entityType.GetProperties().Where(p => Attribute.IsDefined(p, typeof(IgdbEntityGlogOverrideValueAttribute))).ToDictionary(p => p.Name, p => p);
         }
 
         public int GetEntityId()
@@ -101,6 +105,35 @@ namespace GlogGenerator.IgdbApi
         {
             return this.GetReferenceableValue();
         }
+
+        public Dictionary<string, object> GetGlogOverrideValues()
+        {
+            var overrideValues = new Dictionary<string, object>();
+            foreach (var propertyName in this.overrideValueProperties.Keys)
+            {
+                var property = this.overrideValueProperties[propertyName];
+                overrideValues[propertyName] = property.GetValue(this);
+            }
+
+            return overrideValues;
+        }
+
+        public void SetGlogOverrideValues(Dictionary<string, object> overrideValues)
+        {
+            var entityType = this.GetType();
+
+            foreach (var propertyName in overrideValues.Keys)
+            {
+                if (this.overrideValueProperties.TryGetValue(propertyName, out var overrideProperty))
+                {
+                    overrideProperty.SetValue(this, overrideValues[propertyName]);
+                }
+                else
+                {
+                    throw new AmbiguousMatchException($"The {entityType} type doesn't have an override property named {propertyName}");
+                }
+            }
+        }
     }
 
     [AttributeUsage(AttributeTargets.Property, Inherited = true)]
@@ -108,4 +141,7 @@ namespace GlogGenerator.IgdbApi
 
     [AttributeUsage(AttributeTargets.Property, Inherited = true)]
     public class IgdbEntityReferenceableValueAttribute : Attribute { }
+
+    [AttributeUsage(AttributeTargets.Property, Inherited = true)]
+    public class IgdbEntityGlogOverrideValueAttribute : Attribute { }
 }

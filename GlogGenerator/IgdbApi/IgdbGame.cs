@@ -29,6 +29,18 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("expansions")]
         public List<int> ExpansionGameIds { get; set; } = new List<int>();
 
+        [JsonProperty("first_release_date")]
+        public long FirstReleaseDateTimestamp { get; set; } = 0;
+
+        [JsonIgnore]
+        public DateTimeOffset FirstReleaseDate
+        {
+            get
+            {
+                return DateTimeOffset.FromUnixTimeSeconds(this.FirstReleaseDateTimestamp);
+            }
+        }
+
         [JsonProperty("forks")]
         public List<int> ForkGameIds { get; set; } = new List<int>();
 
@@ -57,8 +69,13 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("name", Required = Required.Always)]
         public string Name { get; set; }
 
+        [IgdbEntityGlogOverrideValue]
+        [JsonProperty("name_glogAppendReleaseYear")]
+        public bool? NameGlogAppendReleaseYear { get; set; } = null;
+
+        [IgdbEntityGlogOverrideValue]
         [JsonProperty("name_glogOverride")]
-        public string NameGlogOverride { get; set; }
+        public string NameGlogOverride { get; set; } = null;
 
         [IgdbEntityReferenceableValue]
         [JsonIgnore]
@@ -66,7 +83,17 @@ namespace GlogGenerator.IgdbApi
         {
             get
             {
-                return this.NameGlogOverride ?? this.Name;
+                if (!string.IsNullOrEmpty(this.NameGlogOverride))
+                {
+                    return this.NameGlogOverride;
+                }
+
+                if (this.NameGlogAppendReleaseYear == true)
+                {
+                    return $"{this.Name} ({this.FirstReleaseDate.Year})";
+                }
+
+                return this.Name;
             }
         }
 

@@ -199,14 +199,43 @@ namespace GlogGenerator
             var gameIds = this.gamesById.Keys.ToList();
             var gamesCurrent = await client.GetGamesAsync(gameIds);
 
-            // Preserve data for glog overrides to re-override the updated cache.
-            var gamesWithNameOverrides = this.gamesById.Where(kv => !string.IsNullOrEmpty(kv.Value.NameGlogOverride)).Select(kv => kv.Value).ToList();
+            var gamesCurrentById = gamesCurrent.ToDictionary(o => o.Id, o => o);
 
-            this.gamesById = gamesCurrent.ToDictionary(o => o.Id, o => o);
-            foreach (var game in gamesWithNameOverrides)
+            // Re-apply overriden properties from the old cache.
+            foreach (var gameId in gameIds)
             {
-                this.gamesById[game.Id].NameGlogOverride = game.NameGlogOverride;
+                if (gamesCurrentById.ContainsKey(gameId))
+                {
+                    var gameOverrides = this.gamesById[gameId].GetGlogOverrideValues();
+                    gamesCurrentById[gameId].SetGlogOverrideValues(gameOverrides);
+                }
             }
+
+            // Check game data for quirks to override/fix.
+
+            var gamesDuplicatedNames = gamesCurrentById.Values.GroupBy(g => g.NameForGlog).Where(g => g.Count() > 1);
+            foreach (var gamesDuplicatedName in gamesDuplicatedNames)
+            {
+                var duplicatedName = gamesDuplicatedName.Key;
+
+                // Try to disambiguate the games' names by appending release years to later releases.
+                // (Unless the release dates aren't available!)
+                var gamesMissingReleaseDate = gamesDuplicatedName.Where(g => g.FirstReleaseDateTimestamp == 0);
+                if (gamesMissingReleaseDate.Any())
+                {
+                    throw new InvalidDataException($"Multiple games have the same display name \"{duplicatedName}\" and cannot be disambiguated because some are missing a release date.");
+                }
+
+                // For each game EXCEPT the earliest-released, set a flag to append their release year to the display name.
+                var gamesInReleaseDateOrder = gamesDuplicatedName.OrderBy(g => g.FirstReleaseDateTimestamp).ToList();
+                for (var gameIndex = 1; gameIndex < gamesInReleaseDateOrder.Count(); ++gameIndex)
+                {
+                    var gameId = gamesInReleaseDateOrder[gameIndex].Id;
+                    gamesCurrentById[gameId].NameGlogAppendReleaseYear = true;
+                }
+            }
+
+            this.gamesById = gamesCurrentById;
 
             // Update involvedCompanies to get most-current company IDs.
             var involvedCompanyIds = gamesCurrent.SelectMany(g => g.InvolvedCompanyIds).Distinct().ToList();
@@ -249,14 +278,19 @@ namespace GlogGenerator
             var platformIds = this.platformsById.Keys.ToList();
             var platformsCurrent = await client.GetPlatformsAsync(platformIds);
 
-            // Preserve data for glog overrides to re-override the updated cache.
-            var platformsWithAbbreviationOverrides = this.platformsById.Where(kv => !string.IsNullOrEmpty(kv.Value.AbbreviationGlogOverride)).Select(kv => kv.Value).ToList();
+            var platformsCurrentById = platformsCurrent.ToDictionary(o => o.Id, o => o);
 
-            this.platformsById = platformsCurrent.ToDictionary(o => o.Id, o => o);
-            foreach (var platform in platformsWithAbbreviationOverrides)
+            // Re-apply overridden properties from the old cache.
+            foreach (var platformId in platformIds)
             {
-                this.platformsById[platform.Id].AbbreviationGlogOverride = platform.AbbreviationGlogOverride;
+                if (platformsCurrentById.ContainsKey(platformId))
+                {
+                    var platformOverrides = this.platformsById[platformId].GetGlogOverrideValues();
+                    platformsCurrentById[platformId].SetGlogOverrideValues(platformOverrides);
+                }
             }
+
+            this.platformsById = platformsCurrentById;
 
             var playerPerspectiveIds = gamesCurrent.SelectMany(g => g.PlayerPerspectiveIds).Distinct().ToList();
             var playerPerspectivesCurrent = await client.GetPlayerPerspectivesAsync(playerPerspectiveIds);
@@ -295,7 +329,14 @@ namespace GlogGenerator
             cacheJson["playerPerspectives"] = JArray.FromObject(this.playerPerspectivesById.Values.OrderBy(o => o.Id), jsonSerializer);
             cacheJson["themes"] = JArray.FromObject(this.themesById.Values.OrderBy(o => o.Id), jsonSerializer);
 
-            File.WriteAllText(Path.Combine(directoryPath, JsonFileName), JsonConvert.SerializeObject(cacheJson, Formatting.Indented, jsonSerializerSettings));
+            var jsonFilePath = Path.Combine(directoryPath, JsonFileName);
+            using (var fileStream = new FileStream(jsonFilePath, FileMode.Create))
+            using (var streamWriter = new StreamWriter(fileStream) { NewLine = "\n" })
+            using (var jsonWriter = new JsonTextWriter(streamWriter) { Formatting = Formatting.Indented })
+            {
+                jsonSerializer.Serialize(jsonWriter, cacheJson);
+                streamWriter.Flush();
+            }
         }
 
         public static IgdbCache FromJsonFile(string directoryPath)
