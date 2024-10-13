@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
 
@@ -32,20 +34,6 @@ namespace GlogGenerator.IgdbApi
 
         [JsonProperty("first_release_date")]
         public long FirstReleaseDateTimestamp { get; set; } = 0;
-
-        [JsonIgnore]
-        public DateTimeOffset FirstReleaseDate
-        {
-            get
-            {
-                if (this.FirstReleaseDateTimestamp != 0)
-                {
-                    return DateTimeOffset.FromUnixTimeSeconds(this.FirstReleaseDateTimestamp);
-                }
-
-                return DateTimeOffset.MinValue;
-            }
-        }
 
         [JsonProperty("forks")]
         public List<int> ForkGameIds { get; set; } = new List<int>();
@@ -83,31 +71,6 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("name_glogOverride")]
         public string NameGlogOverride { get; set; } = null;
 
-        [IgdbEntityReferenceableValue]
-        [JsonIgnore]
-        public string NameForGlog
-        {
-            get
-            {
-                if (!string.IsNullOrEmpty(this.NameGlogOverride))
-                {
-                    return this.NameGlogOverride;
-                }
-
-                var nameBuilder = new StringBuilder();
-                nameBuilder.Append(this.Name);
-
-                if (this.NameGlogAppendReleaseYear == true)
-                {
-                    nameBuilder.Append(" (");
-                    nameBuilder.Append(this.FirstReleaseDate.Year);
-                    nameBuilder.Append(")");
-                }
-
-                return nameBuilder.ToString();
-            }
-        }
-
         [JsonProperty("parent_game")]
         public int ParentGameId { get; set; } = IdNotFound;
 
@@ -137,5 +100,47 @@ namespace GlogGenerator.IgdbApi
 
         [JsonProperty("version_parent")]
         public int VersionParentGameId { get; set; } = IdNotFound;
+
+        public DateTimeOffset? GetFirstReleaseDate(IIgdbCache cache)
+        {
+            if (this.FirstReleaseDateTimestamp != 0)
+            {
+                return DateTimeOffset.FromUnixTimeSeconds(this.FirstReleaseDateTimestamp);
+            }
+
+            var releaseDates = this.ReleaseDateIds.Select(id => cache.GetReleaseDate(id)).Where(d => d != null && d.DateTimestamp != 0);
+            if (releaseDates.Any())
+            {
+                return releaseDates.OrderBy(d => d.DateTimestamp).First().Date;
+            }
+
+            return null;
+        }
+
+        public override string GetReferenceString(IIgdbCache cache)
+        {
+            if (!string.IsNullOrEmpty(this.NameGlogOverride))
+            {
+                return this.NameGlogOverride;
+            }
+
+            var nameBuilder = new StringBuilder();
+            nameBuilder.Append(this.Name);
+
+            if (this.NameGlogAppendReleaseYear == true)
+            {
+                var firstReleaseDate = this.GetFirstReleaseDate(cache);
+                if (firstReleaseDate == null)
+                {
+                    throw new InvalidDataException($"Game ID {this.Id} named \"{this.Name}\" is set to append a release year to its name, but has no valid release date.");
+                }
+
+                nameBuilder.Append(" (");
+                nameBuilder.Append(firstReleaseDate.Value.Year);
+                nameBuilder.Append(")");
+            }
+
+            return nameBuilder.ToString();
+        }
     }
 }

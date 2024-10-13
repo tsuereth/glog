@@ -30,6 +30,8 @@ namespace GlogGenerator
 
         public IgdbPlayerPerspective GetPlayerPerspective(int id);
 
+        public IgdbReleaseDate GetReleaseDate(int id);
+
         public IgdbTheme GetTheme(int id);
 
         public List<IgdbEntity> GetAllGameMetadata();

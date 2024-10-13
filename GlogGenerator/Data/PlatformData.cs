@@ -47,10 +47,10 @@ namespace GlogGenerator.Data
         public static PlatformData FromIgdbPlatform(IIgdbCache igdbCache, IgdbPlatform igdbPlatform)
         {
             var platform = new PlatformData();
-            platform.dataId = igdbPlatform.GetUniqueIdString();
-            platform.referenceableKey = igdbPlatform.GetReferenceableValue();
+            platform.dataId = igdbPlatform.GetUniqueIdString(igdbCache);
+            platform.referenceableKey = igdbPlatform.GetReferenceString(igdbCache);
 
-            platform.Abbreviation = igdbPlatform.AbbreviationForGlog;
+            platform.Abbreviation = igdbPlatform.GetReferenceString(igdbCache);
             platform.Name = igdbPlatform.Name;
 
             if (!string.IsNullOrEmpty(igdbPlatform.Url))

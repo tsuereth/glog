@@ -14,7 +14,6 @@ namespace GlogGenerator.IgdbApi
         public const int IdNotFound = -1;
 
         private readonly PropertyInfo idProperty;
-        private readonly PropertyInfo referenceableValueProperty;
         private readonly Dictionary<string, PropertyInfo> overrideValueProperties;
 
         public IgdbEntity()
@@ -37,25 +36,6 @@ namespace GlogGenerator.IgdbApi
                 throw new InvalidCastException($"The {entityType} type {nameof(IgdbEntityIdAttribute)} {this.idProperty.Name} is not of the correct `int` type");
             }
 
-            var referenceableValueProperties = entityType.GetProperties().Where(p => Attribute.IsDefined(p, typeof(IgdbEntityReferenceableValueAttribute)));
-            if (referenceableValueProperties.Any())
-            {
-                if (referenceableValueProperties.Count() > 1)
-                {
-                    throw new AmbiguousMatchException($"The {entityType} type has too many properties with {nameof(IgdbEntityReferenceableValueAttribute)}");
-                }
-
-                this.referenceableValueProperty = referenceableValueProperties.First();
-                if (this.referenceableValueProperty.PropertyType != typeof(string))
-                {
-                    throw new InvalidCastException($"The {entityType} type {nameof(IgdbEntityReferenceableValueAttribute)} {this.referenceableValueProperty.Name} is not of the correct `string` type");
-                }
-            }
-            else
-            {
-                this.referenceableValueProperty = null;
-            }
-
             this.overrideValueProperties = entityType.GetProperties().Where(p => Attribute.IsDefined(p, typeof(IgdbEntityGlogOverrideValueAttribute))).ToDictionary(p => p.Name, p => p);
         }
 
@@ -65,7 +45,7 @@ namespace GlogGenerator.IgdbApi
             return (int)idObject;
         }
 
-        public string GetUniqueIdString()
+        public string GetUniqueIdString(IIgdbCache cache)
         {
             var entityType = this.GetType();
 
@@ -82,13 +62,13 @@ namespace GlogGenerator.IgdbApi
                 }
                 else
                 {
-                    var referenceableValue = this.GetReferenceableValue();
-                    if (referenceableValue == null)
+                    var referenceString = this.GetReferenceString(cache);
+                    if (string.IsNullOrEmpty(referenceString))
                     {
-                        throw new InvalidDataException($"An {entityType} is unable to generate a unique ID string because it has no Entity ID and no Referenceable Value");
+                        throw new InvalidDataException($"An {entityType} is unable to generate a unique ID string because it has no Entity ID and no Reference String");
                     }
 
-                    var keyBytes = Encoding.UTF8.GetBytes(referenceableValue);
+                    var keyBytes = Encoding.UTF8.GetBytes(referenceString);
                     hash.AppendData(keyBytes);
                 }
 
@@ -97,17 +77,9 @@ namespace GlogGenerator.IgdbApi
             }
         }
 
-        public string GetReferenceableValue()
+        public virtual string GetReferenceString(IIgdbCache cache)
         {
-            if (this.referenceableValueProperty != null)
-            {
-                var referenceableKeyObject = this.referenceableValueProperty.GetValue(this);
-                return (string)referenceableKeyObject;
-            }
-            else
-            {
-                return null;
-            }
+            throw new NotImplementedException();
         }
 
         public Dictionary<string, object> GetGlogOverrideValues()
@@ -142,9 +114,6 @@ namespace GlogGenerator.IgdbApi
 
     [AttributeUsage(AttributeTargets.Property, Inherited = true)]
     public class IgdbEntityIdAttribute : Attribute { }
-
-    [AttributeUsage(AttributeTargets.Property, Inherited = true)]
-    public class IgdbEntityReferenceableValueAttribute : Attribute { }
 
     [AttributeUsage(AttributeTargets.Property, Inherited = true)]
     public class IgdbEntityGlogOverrideValueAttribute : Attribute { }
