@@ -64,6 +64,10 @@ namespace GlogGenerator.IgdbApi
         public string Name { get; set; }
 
         [IgdbEntityGlogOverrideValue]
+        [JsonProperty("name_glogAppendPlatforms")]
+        public bool? NameGlogAppendPlatforms { get; set; } = null;
+
+        [IgdbEntityGlogOverrideValue]
         [JsonProperty("name_glogAppendReleaseYear")]
         public bool? NameGlogAppendReleaseYear { get; set; } = null;
 
@@ -140,6 +144,21 @@ namespace GlogGenerator.IgdbApi
 
                 nameBuilder.Append(" (");
                 nameBuilder.Append(firstReleaseDate.Value.Year);
+                nameBuilder.Append(")");
+            }
+
+            if (this.NameGlogAppendPlatforms == true)
+            {
+                var platforms = this.PlatformIds.Select(id => cache.GetPlatform(id));
+                if (!platforms.Any())
+                {
+                    throw new InvalidDataException($"Game ID {this.Id} named \"{this.Name}\" is set to append platforms to its name, but has no valid platforms.");
+                }
+
+                var platformStringsOrdered = platforms.Select(p => p.GetReferenceString(cache)).OrderBy(s => s);
+
+                nameBuilder.Append(" (");
+                nameBuilder.Append(string.Join(", ", platformStringsOrdered));
                 nameBuilder.Append(")");
             }
 

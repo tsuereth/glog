@@ -311,13 +311,7 @@ namespace GlogGenerator
                 foreach (var releaseYear in gamesByReleaseYear.Keys)
                 {
                     var disambiguateByReleaseYear = false;
-
-                    // If multiple games with this name were released in the SAME year, then they need to be disambiguated by their release platforms.
-                    // TODO...!
-                    if (gamesByReleaseYear[releaseYear].Count() > 1)
-                    {
-                        throw new InvalidDataException($"Multiple games have the same display name \"{duplicatedName}\" as well as the same release year {releaseYear}.");
-                    }
+                    var disambiguateByPlatforms = false;
 
                     // If this release year isn't the earliest year for a game of this name, later-released games will be disambiguated by release year.
                     if (releaseYear != earliestReleaseYear)
@@ -325,9 +319,23 @@ namespace GlogGenerator
                         disambiguateByReleaseYear = true;
                     }
 
+                    // If multiple games with this name were released in the SAME year, then they need to be disambiguated by their release platforms.
+                    if (gamesByReleaseYear[releaseYear].Count() > 1)
+                    {
+                        disambiguateByPlatforms = true;
+                    }
+
                     foreach (var game in gamesByReleaseYear[releaseYear])
                     {
-                        gamesCurrentById[game.Id].NameGlogAppendReleaseYear = disambiguateByReleaseYear;
+                        if (disambiguateByPlatforms)
+                        {
+                            gamesCurrentById[game.Id].NameGlogAppendPlatforms = true;
+                        }
+
+                        if (disambiguateByReleaseYear)
+                        {
+                            gamesCurrentById[game.Id].NameGlogAppendReleaseYear = true;
+                        }
                     }
                 }
             }

@@ -1013,6 +1013,10 @@
       "name": "DriveClub"
     },
     {
+      "id": 1854,
+      "name": "Ghostbusters"
+    },
+    {
       "id": 1883,
       "name": "Retro City Rampage"
     },
@@ -2701,6 +2705,10 @@
     {
       "id": 390,
       "name": "THQ Wireless"
+    },
+    {
+      "id": 391,
+      "name": "Red Fly Studio"
     },
     {
       "id": 392,
@@ -27383,6 +27391,7 @@
         13076
       ],
       "name": "Ghostbusters: The Video Game",
+      "name_glogAppendPlatforms": true,
       "parent_game": -1,
       "platforms": [
         6,
@@ -128297,6 +128306,52 @@
     },
     {
       "bundles": [],
+      "category": 11,
+      "collection": -1,
+      "collections": [
+        1854
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1245110400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [],
+      "genres": [],
+      "id": 77275,
+      "involved_companies": [
+        78737
+      ],
+      "keywords": [
+        4142
+      ],
+      "name": "Ghostbusters: The Video Game",
+      "name_glogAppendPlatforms": true,
+      "parent_game": 566,
+      "platforms": [
+        20
+      ],
+      "player_perspectives": [],
+      "ports": [],
+      "release_dates": [
+        139828,
+        139829
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18,
+        27
+      ],
+      "url": "https://www.igdb.com/games/ghostbusters-the-video-game--1",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
       "category": 0,
       "collection": -1,
       "collections": [
@@ -137685,6 +137740,69 @@
       "version_parent": -1
     },
     {
+      "bundles": [],
+      "category": 11,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1245110400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [
+        8
+      ],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        5,
+        31
+      ],
+      "id": 210296,
+      "involved_companies": [
+        179864,
+        179865,
+        185856
+      ],
+      "keywords": [],
+      "name": "Ghostbusters: The Video Game",
+      "name_glogAppendPlatforms": true,
+      "parent_game": 566,
+      "platforms": [
+        5,
+        8,
+        38
+      ],
+      "player_perspectives": [
+        2
+      ],
+      "ports": [],
+      "release_dates": [
+        374972,
+        374973,
+        374974,
+        374975,
+        374976,
+        374977,
+        374978,
+        374979,
+        374980
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18,
+        19,
+        27
+      ],
+      "url": "https://www.igdb.com/games/ghostbusters-the-video-game--2",
+      "version_parent": -1
+    },
+    {
       "bundles": [
         277807
       ],
@@ -145687,6 +145805,10 @@
       "company": 16565
     },
     {
+      "id": 78737,
+      "company": 453
+    },
+    {
       "id": 78776,
       "company": 19967
     },
@@ -149475,6 +149597,14 @@
       "company": 835
     },
     {
+      "id": 179864,
+      "company": 2134
+    },
+    {
+      "id": 179865,
+      "company": 391
+    },
+    {
       "id": 179932,
       "company": 15527
     },
@@ -149928,6 +150058,10 @@
     },
     {
       "id": 185855,
+      "company": 13634
+    },
+    {
+      "id": 185856,
       "company": 13634
     },
     {
