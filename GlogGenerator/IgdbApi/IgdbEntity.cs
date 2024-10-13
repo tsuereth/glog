@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Security.Cryptography;
@@ -66,9 +67,11 @@ namespace GlogGenerator.IgdbApi
 
         public string GetUniqueIdString()
         {
+            var entityType = this.GetType();
+
             using (var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
             {
-                var typeBytes = Encoding.UTF8.GetBytes(nameof(GameData));
+                var typeBytes = Encoding.UTF8.GetBytes(entityType.Name);
                 hash.AppendData(typeBytes);
 
                 var entityId = this.GetEntityId();
@@ -79,7 +82,13 @@ namespace GlogGenerator.IgdbApi
                 }
                 else
                 {
-                    var keyBytes = Encoding.UTF8.GetBytes(this.GetReferenceableValue());
+                    var referenceableValue = this.GetReferenceableValue();
+                    if (referenceableValue == null)
+                    {
+                        throw new InvalidDataException($"An {entityType} is unable to generate a unique ID string because it has no Entity ID and no Referenceable Value");
+                    }
+
+                    var keyBytes = Encoding.UTF8.GetBytes(referenceableValue);
                     hash.AppendData(keyBytes);
                 }
 
@@ -99,11 +108,6 @@ namespace GlogGenerator.IgdbApi
             {
                 return null;
             }
-        }
-
-        public string GetReferenceableKey()
-        {
-            return this.GetReferenceableValue();
         }
 
         public Dictionary<string, object> GetGlogOverrideValues()

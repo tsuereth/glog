@@ -305,22 +305,37 @@ namespace GlogGenerator
             {
                 var duplicatedName = gamesDuplicatedName.Key;
 
-                // Try to disambiguate the games' names by appending release years to later releases.
-                var gameReleaseDatesByGameId = gamesDuplicatedName.ToDictionary(g => g.Id, g => this.GetGameFirstReleaseDate(g));
-
-                // (Unless the release dates aren't available!)
-                var gamesMissingReleaseDate = gameReleaseDatesByGameId.Values.Where(d => d == null);
+                // We can disambiguate games with the same name based on their release dates.
+                // Unless some release dates aren't available -- that'll be trouble.
+                var gamesMissingReleaseDate = gamesDuplicatedName.Where(g => this.GetGameFirstReleaseDate(g) == null);
                 if (gamesMissingReleaseDate.Any())
                 {
                     throw new InvalidDataException($"Multiple games have the same display name \"{duplicatedName}\" and cannot be disambiguated because some are missing a release date.");
                 }
 
-                // For each game EXCEPT the earliest-released, set a flag to append their release year to the display name.
-                var gamesInReleaseDateOrder = gamesDuplicatedName.OrderBy(g => gameReleaseDatesByGameId[g.Id]).ToList();
-                for (var gameIndex = 1; gameIndex < gamesInReleaseDateOrder.Count(); ++gameIndex)
+                var gamesByReleaseYear = gamesDuplicatedName.GroupBy(g => this.GetGameFirstReleaseDate(g).Value.Year).ToDictionary(g => g.Key, g => g);
+                var earliestReleaseYear = gamesByReleaseYear.Keys.OrderBy(y => y).First();
+                foreach (var releaseYear in gamesByReleaseYear.Keys)
                 {
-                    var gameId = gamesInReleaseDateOrder[gameIndex].Id;
-                    gamesCurrentById[gameId].NameGlogAppendReleaseYear = true;
+                    var disambiguateByReleaseYear = false;
+
+                    // If multiple games with this name were released in the SAME year, then they need to be disambiguated by their release platforms.
+                    // TODO...!
+                    if (gamesByReleaseYear[releaseYear].Count() > 1)
+                    {
+                        throw new InvalidDataException($"Multiple games have the same display name \"{duplicatedName}\" as well as the same release year {releaseYear}.");
+                    }
+
+                    // If this release year isn't the earliest year for a game of this name, later-released games will be disambiguated by release year.
+                    if (releaseYear != earliestReleaseYear)
+                    {
+                        disambiguateByReleaseYear = true;
+                    }
+
+                    foreach (var game in gamesByReleaseYear[releaseYear])
+                    {
+                        gamesCurrentById[game.Id].NameGlogAppendReleaseYear = disambiguateByReleaseYear;
+                    }
                 }
             }
 

@@ -119,7 +119,7 @@ namespace GlogGenerator.Test.Data
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.AreEqual(1, errors.Count);
 
-            var expectedMessage = $"Updated data index has a different key for PlatformData with data ID {testPlatformOld.GetUniqueIdString()}: old key {testPlatformOld.GetReferenceableKey()} new key {testPlatformNew.GetReferenceableKey()}";
+            var expectedMessage = $"Updated data index has a different key for PlatformData with data ID {testPlatformOld.GetUniqueIdString()}: old key {testPlatformOld.GetReferenceableValue()} new key {testPlatformNew.GetReferenceableValue()}";
             Assert.AreEqual(expectedMessage, errors[0].Message);
 
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
@@ -152,7 +152,7 @@ namespace GlogGenerator.Test.Data
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.AreEqual(1, errors.Count);
 
-            var expectedMessage = $"Updated data index is missing old PlatformData with data ID {testPlatformOld.GetUniqueIdString()} and key {testPlatformOld.GetReferenceableKey()}";
+            var expectedMessage = $"Updated data index is missing old PlatformData with data ID {testPlatformOld.GetUniqueIdString()} and key {testPlatformOld.GetReferenceableValue()}";
             Assert.AreEqual(expectedMessage, errors[0].Message);
 
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
@@ -189,7 +189,7 @@ namespace GlogGenerator.Test.Data
             var warnings = logger.GetLogs(LogLevel.Warning);
             Assert.AreEqual(1, warnings.Count);
 
-            var expectedMessage = $"Updated data index has a different data ID for PlatformData with key {testPlatformOld.GetReferenceableKey()}: old data ID {testPlatformOld.GetUniqueIdString()} new data ID {testPlatformNew.GetUniqueIdString()}";
+            var expectedMessage = $"Updated data index has a different data ID for PlatformData with key {testPlatformOld.GetReferenceableValue()}: old data ID {testPlatformOld.GetUniqueIdString()} new data ID {testPlatformNew.GetUniqueIdString()}";
             Assert.AreEqual(expectedMessage, warnings[0].Message);
         }
     }

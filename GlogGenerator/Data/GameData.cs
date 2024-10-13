@@ -55,7 +55,7 @@ namespace GlogGenerator.Data
         {
             var game = new GameData();
             game.dataId = igdbGame.GetUniqueIdString();
-            game.referenceableKey = igdbGame.GetReferenceableKey();
+            game.referenceableKey = igdbGame.GetReferenceableValue();
 
             game.Title = igdbGame.NameForGlog;
 

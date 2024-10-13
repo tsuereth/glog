@@ -48,7 +48,7 @@ namespace GlogGenerator.Data
         {
             var platform = new PlatformData();
             platform.dataId = igdbPlatform.GetUniqueIdString();
-            platform.referenceableKey = igdbPlatform.GetReferenceableKey();
+            platform.referenceableKey = igdbPlatform.GetReferenceableValue();
 
             platform.Abbreviation = igdbPlatform.AbbreviationForGlog;
             platform.Name = igdbPlatform.Name;

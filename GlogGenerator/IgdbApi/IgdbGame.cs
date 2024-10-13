@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using Newtonsoft.Json;
 
 namespace GlogGenerator.IgdbApi
@@ -37,7 +38,12 @@ namespace GlogGenerator.IgdbApi
         {
             get
             {
-                return DateTimeOffset.FromUnixTimeSeconds(this.FirstReleaseDateTimestamp);
+                if (this.FirstReleaseDateTimestamp != 0)
+                {
+                    return DateTimeOffset.FromUnixTimeSeconds(this.FirstReleaseDateTimestamp);
+                }
+
+                return DateTimeOffset.MinValue;
             }
         }
 
@@ -88,12 +94,17 @@ namespace GlogGenerator.IgdbApi
                     return this.NameGlogOverride;
                 }
 
+                var nameBuilder = new StringBuilder();
+                nameBuilder.Append(this.Name);
+
                 if (this.NameGlogAppendReleaseYear == true)
                 {
-                    return $"{this.Name} ({this.FirstReleaseDate.Year})";
+                    nameBuilder.Append(" (");
+                    nameBuilder.Append(this.FirstReleaseDate.Year);
+                    nameBuilder.Append(")");
                 }
 
-                return this.Name;
+                return nameBuilder.ToString();
             }
         }
 
