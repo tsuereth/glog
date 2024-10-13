@@ -206,11 +206,36 @@ namespace GlogGenerator
             return this.GetAllGames().Where(g => g.BundleGameIds.Contains(bundleGameId) && g.Id != IgdbEntity.IdNotFound).Select(g => g.Id).ToList();
         }
 
+        private static IEnumerable<int> IgdbGameRelatedGameIds(IgdbGame game)
+        {
+            return game.BundleGameIds
+                .Union(game.DlcGameIds)
+                .Union(game.ExpandedGameIds)
+                .Union(game.ExpansionGameIds)
+                .Union(game.ForkGameIds)
+                .Append(game.ParentGameId)
+                .Union(game.PortGameIds)
+                .Union(game.RemakeGameIds)
+                .Union(game.RemasterGameIds)
+                .Union(game.StandaloneExpansionGameIds)
+                .Append(game.VersionParentGameId)
+                .Where(i => i != IgdbEntity.IdNotFound);
+        }
+
         public async Task UpdateFromApiClient(IgdbApiClient client)
         {
             // Update games first, to get current IDs for metadata references.
             var gameIds = this.gamesById.Keys.ToList();
             var gamesCurrent = await client.GetGamesAsync(gameIds);
+
+            // Extract related game IDs (remasters, expansions, etc) and do one more update.
+            var relatedGameIds = gamesCurrent.SelectMany(g => IgdbGameRelatedGameIds(g)).Distinct();
+            var newRelatedGameIds = relatedGameIds.Except(gameIds).ToList();
+            var relatedGames = await client.GetGamesAsync(newRelatedGameIds);
+
+            // To avoid problems integrating this update, DON'T use games which are missing important metadata.
+            relatedGames = relatedGames.Where(g => g.GetFirstReleaseDate(this) != null).ToList();
+            gamesCurrent.AddRange(relatedGames);
 
             var gamesCurrentById = gamesCurrent.ToDictionary(o => o.Id, o => o);
 

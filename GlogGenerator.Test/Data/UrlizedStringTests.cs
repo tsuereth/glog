@@ -29,7 +29,7 @@ namespace GlogGenerator.Test.Data
         [TestMethod]
         public void TestUrlizeConsecutivePunctuation()
         {
-            var str = "remove: - those";
+            var str = "remove:., - those";
 
             var urlized = UrlizedString.Urlize(str);
 
@@ -51,6 +51,15 @@ namespace GlogGenerator.Test.Data
         {
             var urlized1 = new UrlizedString("Vampire: The Masquerade");
             var urlized2 = new UrlizedString("Vampire the Masquerade");
+
+            Assert.IsTrue(urlized1.Equals(urlized2));
+        }
+
+        [TestMethod]
+        public void TestUrlizedStringHyphenSpacEqual()
+        {
+            var urlized1 = new UrlizedString("Take-Two Interactive");
+            var urlized2 = new UrlizedString("Take Two Interactive");
 
             Assert.IsTrue(urlized1.Equals(urlized2));
         }
