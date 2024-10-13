@@ -261,13 +261,13 @@ namespace GlogGenerator
 #endif
             this.keywordsById = keywordsCurrent.ToDictionary(o => o.Id, o => o);
 
-            var platformIds = this.platformsById.Keys.ToList();
+            var platformIds = gamesCurrent.SelectMany(g => g.PlatformIds).Distinct().ToList();
             var platformsCurrent = await client.GetPlatformsAsync(platformIds);
 
             var platformsCurrentById = platformsCurrent.ToDictionary(o => o.Id, o => o);
 
             // Re-apply overridden properties from the old cache.
-            foreach (var platformId in platformIds)
+            foreach (var platformId in this.platformsById.Keys)
             {
                 if (platformsCurrentById.ContainsKey(platformId))
                 {

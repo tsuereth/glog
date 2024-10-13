@@ -74,6 +74,9 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("parent_game")]
         public int ParentGameId { get; set; } = IdNotFound;
 
+        [JsonProperty("platforms")]
+        public List<int> PlatformIds { get; set; } = new List<int>();
+
         [JsonProperty("player_perspectives")]
         public List<int> PlayerPerspectiveIds { get; set; } = new List<int>();
 
