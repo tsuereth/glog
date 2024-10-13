@@ -106,6 +106,9 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("ports")]
         public List<int> PortGameIds { get; set; } = new List<int>();
 
+        [JsonProperty("release_dates")]
+        public List<int> ReleaseDateIds { get; set; } = new List<int>();
+
         [JsonProperty("remakes")]
         public List<int> RemakeGameIds { get; set; } = new List<int>();
 

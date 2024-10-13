@@ -42,6 +42,8 @@ namespace GlogGenerator
 
         private Dictionary<int, IgdbPlayerPerspective> playerPerspectivesById = new Dictionary<int, IgdbPlayerPerspective>();
 
+        private Dictionary<int, IgdbReleaseDate> releaseDatesById = new Dictionary<int, IgdbReleaseDate>();
+
         private Dictionary<int, IgdbTheme> themesById = new Dictionary<int, IgdbTheme>();
 
         public IgdbCollection GetCollection(int id)
@@ -188,6 +190,23 @@ namespace GlogGenerator
             return allMetadata;
         }
 
+        public DateTimeOffset? GetGameFirstReleaseDate(IgdbGame game)
+        {
+            if (game.FirstReleaseDateTimestamp != 0)
+            {
+                return game.FirstReleaseDate;
+            }
+
+            var releaseDates = game.ReleaseDateIds.Select(i => this.releaseDatesById[i]);
+            var earliestReleaseDate = releaseDates.OrderBy(r => r.DateTimestamp).FirstOrDefault();
+            if (earliestReleaseDate != null)
+            {
+                return earliestReleaseDate.Date;
+            }
+
+            return null;
+        }
+
         public List<int> GetBundledGameIds(int bundleGameId)
         {
             return this.GetAllGames().Where(g => g.BundleGameIds.Contains(bundleGameId) && g.Id != IgdbEntity.IdNotFound).Select(g => g.Id).ToList();
@@ -210,32 +229,6 @@ namespace GlogGenerator
                     gamesCurrentById[gameId].SetGlogOverrideValues(gameOverrides);
                 }
             }
-
-            // Check game data for quirks to override/fix.
-
-            var gamesDuplicatedNames = gamesCurrentById.Values.GroupBy(g => g.NameForGlog).Where(g => g.Count() > 1);
-            foreach (var gamesDuplicatedName in gamesDuplicatedNames)
-            {
-                var duplicatedName = gamesDuplicatedName.Key;
-
-                // Try to disambiguate the games' names by appending release years to later releases.
-                // (Unless the release dates aren't available!)
-                var gamesMissingReleaseDate = gamesDuplicatedName.Where(g => g.FirstReleaseDateTimestamp == 0);
-                if (gamesMissingReleaseDate.Any())
-                {
-                    throw new InvalidDataException($"Multiple games have the same display name \"{duplicatedName}\" and cannot be disambiguated because some are missing a release date.");
-                }
-
-                // For each game EXCEPT the earliest-released, set a flag to append their release year to the display name.
-                var gamesInReleaseDateOrder = gamesDuplicatedName.OrderBy(g => g.FirstReleaseDateTimestamp).ToList();
-                for (var gameIndex = 1; gameIndex < gamesInReleaseDateOrder.Count(); ++gameIndex)
-                {
-                    var gameId = gamesInReleaseDateOrder[gameIndex].Id;
-                    gamesCurrentById[gameId].NameGlogAppendReleaseYear = true;
-                }
-            }
-
-            this.gamesById = gamesCurrentById;
 
             // Update involvedCompanies to get most-current company IDs.
             var involvedCompanyIds = gamesCurrent.SelectMany(g => g.InvolvedCompanyIds).Distinct().ToList();
@@ -296,9 +289,42 @@ namespace GlogGenerator
             var playerPerspectivesCurrent = await client.GetPlayerPerspectivesAsync(playerPerspectiveIds);
             this.playerPerspectivesById = playerPerspectivesCurrent.ToDictionary(o => o.Id, o => o);
 
+            // Note: we only care about IgdbReleaseDate data for games which are missing a direct FirstReleasedDate.
+            var releaseDateIds = gamesCurrent.Where(g => g.FirstReleaseDateTimestamp == 0).SelectMany(g => g.ReleaseDateIds).Distinct().ToList();
+            var releaseDatesCurrent = await client.GetReleaseDatesAsync(releaseDateIds);
+            this.releaseDatesById = releaseDatesCurrent.ToDictionary(o => o.Id, o => o);
+
             var themeIds = gamesCurrent.SelectMany(g => g.ThemeIds).Distinct().ToList();
             var themesCurrent = await client.GetThemesAsync(themeIds);
             this.themesById = themesCurrent.ToDictionary(o => o.Id, o => o);
+
+            // Check game data for quirks to override/fix.
+
+            var gamesDuplicatedNames = gamesCurrentById.Values.GroupBy(g => g.NameForGlog).Where(g => g.Count() > 1);
+            foreach (var gamesDuplicatedName in gamesDuplicatedNames)
+            {
+                var duplicatedName = gamesDuplicatedName.Key;
+
+                // Try to disambiguate the games' names by appending release years to later releases.
+                var gameReleaseDatesByGameId = gamesDuplicatedName.ToDictionary(g => g.Id, g => this.GetGameFirstReleaseDate(g));
+
+                // (Unless the release dates aren't available!)
+                var gamesMissingReleaseDate = gameReleaseDatesByGameId.Values.Where(d => d == null);
+                if (gamesMissingReleaseDate.Any())
+                {
+                    throw new InvalidDataException($"Multiple games have the same display name \"{duplicatedName}\" and cannot be disambiguated because some are missing a release date.");
+                }
+
+                // For each game EXCEPT the earliest-released, set a flag to append their release year to the display name.
+                var gamesInReleaseDateOrder = gamesDuplicatedName.OrderBy(g => gameReleaseDatesByGameId[g.Id]).ToList();
+                for (var gameIndex = 1; gameIndex < gamesInReleaseDateOrder.Count(); ++gameIndex)
+                {
+                    var gameId = gamesInReleaseDateOrder[gameIndex].Id;
+                    gamesCurrentById[gameId].NameGlogAppendReleaseYear = true;
+                }
+            }
+
+            this.gamesById = gamesCurrentById;
         }
 
         public void WriteToJsonFile(string directoryPath)
@@ -327,6 +353,7 @@ namespace GlogGenerator
             cacheJson["keywords"] = JArray.FromObject(this.keywordsById.Values.OrderBy(o => o.Id), jsonSerializer);
             cacheJson["platforms"] = JArray.FromObject(allPlatforms, jsonSerializer);
             cacheJson["playerPerspectives"] = JArray.FromObject(this.playerPerspectivesById.Values.OrderBy(o => o.Id), jsonSerializer);
+            cacheJson["releaseDates"] = JArray.FromObject(this.releaseDatesById.Values.OrderBy(o => o.Id), jsonSerializer);
             cacheJson["themes"] = JArray.FromObject(this.themesById.Values.OrderBy(o => o.Id), jsonSerializer);
 
             var jsonFilePath = Path.Combine(directoryPath, JsonFileName);
@@ -360,6 +387,7 @@ namespace GlogGenerator
             cache.platformsById = allPlatforms.Where(o => o.Id != IgdbPlatform.IdNotFound).ToDictionary(o => o.Id, o => o);
             cache.platformsUnidentified = allPlatforms.Where(o => o.Id == IgdbPlatform.IdNotFound).ToList();
             cache.playerPerspectivesById = cacheJson["playerPerspectives"]?.ToObject<List<IgdbPlayerPerspective>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbPlayerPerspective>();
+            cache.releaseDatesById = cacheJson["releaseDates"]?.ToObject<List<IgdbReleaseDate>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbReleaseDate>();
             cache.themesById = cacheJson["themes"]?.ToObject<List<IgdbTheme>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbTheme>();
 
             return cache;

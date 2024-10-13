@@ -257,6 +257,11 @@ namespace GlogGenerator.IgdbApi
             return await this.GetItemsAsync<IgdbPlayerPerspective>("player_perspectives", ids);
         }
 
+        public async Task<List<IgdbReleaseDate>> GetReleaseDatesAsync(List<int> ids)
+        {
+            return await this.GetItemsAsync<IgdbReleaseDate>("release_dates", ids);
+        }
+
         public async Task<List<IgdbTheme>> GetThemesAsync(List<int> ids)
         {
             return await this.GetItemsAsync<IgdbTheme>("themes", ids);
