@@ -164,6 +164,16 @@ namespace GlogGenerator
             return null;
         }
 
+        public IgdbReleaseDate GetReleaseDate(int id)
+        {
+            if (this.releaseDatesById.TryGetValue(id, out var result))
+            {
+                return result;
+            }
+
+            return null;
+        }
+
         public IgdbTheme GetTheme(int id)
         {
             if (this.themesById.TryGetValue(id, out var result))
@@ -188,23 +198,6 @@ namespace GlogGenerator
             allMetadata.AddRange(this.themesById.Values);
 
             return allMetadata;
-        }
-
-        public DateTimeOffset? GetGameFirstReleaseDate(IgdbGame game)
-        {
-            if (game.FirstReleaseDateTimestamp != 0)
-            {
-                return game.FirstReleaseDate;
-            }
-
-            var releaseDates = game.ReleaseDateIds.Select(i => this.releaseDatesById[i]);
-            var earliestReleaseDate = releaseDates.OrderBy(r => r.DateTimestamp).FirstOrDefault();
-            if (earliestReleaseDate != null)
-            {
-                return earliestReleaseDate.Date;
-            }
-
-            return null;
         }
 
         public List<int> GetBundledGameIds(int bundleGameId)
@@ -268,13 +261,13 @@ namespace GlogGenerator
 #endif
             this.keywordsById = keywordsCurrent.ToDictionary(o => o.Id, o => o);
 
-            var platformIds = this.platformsById.Keys.ToList();
+            var platformIds = gamesCurrent.SelectMany(g => g.PlatformIds).Distinct().ToList();
             var platformsCurrent = await client.GetPlatformsAsync(platformIds);
 
             var platformsCurrentById = platformsCurrent.ToDictionary(o => o.Id, o => o);
 
             // Re-apply overridden properties from the old cache.
-            foreach (var platformId in platformIds)
+            foreach (var platformId in this.platformsById.Keys)
             {
                 if (platformsCurrentById.ContainsKey(platformId))
                 {
@@ -300,27 +293,50 @@ namespace GlogGenerator
 
             // Check game data for quirks to override/fix.
 
-            var gamesDuplicatedNames = gamesCurrentById.Values.GroupBy(g => g.NameForGlog).Where(g => g.Count() > 1);
+            var gamesDuplicatedNames = gamesCurrentById.Values.GroupBy(g => g.GetReferenceString(this)).Where(g => g.Count() > 1);
             foreach (var gamesDuplicatedName in gamesDuplicatedNames)
             {
                 var duplicatedName = gamesDuplicatedName.Key;
 
-                // Try to disambiguate the games' names by appending release years to later releases.
-                var gameReleaseDatesByGameId = gamesDuplicatedName.ToDictionary(g => g.Id, g => this.GetGameFirstReleaseDate(g));
-
-                // (Unless the release dates aren't available!)
-                var gamesMissingReleaseDate = gameReleaseDatesByGameId.Values.Where(d => d == null);
+                // We can disambiguate games with the same name based on their release dates.
+                // Unless some release dates aren't available -- that'll be trouble.
+                var gamesMissingReleaseDate = gamesDuplicatedName.Where(g => g.GetFirstReleaseDate(this) == null);
                 if (gamesMissingReleaseDate.Any())
                 {
                     throw new InvalidDataException($"Multiple games have the same display name \"{duplicatedName}\" and cannot be disambiguated because some are missing a release date.");
                 }
 
-                // For each game EXCEPT the earliest-released, set a flag to append their release year to the display name.
-                var gamesInReleaseDateOrder = gamesDuplicatedName.OrderBy(g => gameReleaseDatesByGameId[g.Id]).ToList();
-                for (var gameIndex = 1; gameIndex < gamesInReleaseDateOrder.Count(); ++gameIndex)
+                var gamesByReleaseYear = gamesDuplicatedName.GroupBy(g => g.GetFirstReleaseDate(this).Value.Year).ToDictionary(g => g.Key, g => g);
+                var earliestReleaseYear = gamesByReleaseYear.Keys.OrderBy(y => y).First();
+                foreach (var releaseYear in gamesByReleaseYear.Keys)
                 {
-                    var gameId = gamesInReleaseDateOrder[gameIndex].Id;
-                    gamesCurrentById[gameId].NameGlogAppendReleaseYear = true;
+                    var disambiguateByReleaseYear = false;
+                    var disambiguateByPlatforms = false;
+
+                    // If this release year isn't the earliest year for a game of this name, later-released games will be disambiguated by release year.
+                    if (releaseYear != earliestReleaseYear)
+                    {
+                        disambiguateByReleaseYear = true;
+                    }
+
+                    // If multiple games with this name were released in the SAME year, then they need to be disambiguated by their release platforms.
+                    if (gamesByReleaseYear[releaseYear].Count() > 1)
+                    {
+                        disambiguateByPlatforms = true;
+                    }
+
+                    foreach (var game in gamesByReleaseYear[releaseYear])
+                    {
+                        if (disambiguateByPlatforms)
+                        {
+                            gamesCurrentById[game.Id].NameGlogAppendPlatforms = true;
+                        }
+
+                        if (disambiguateByReleaseYear)
+                        {
+                            gamesCurrentById[game.Id].NameGlogAppendReleaseYear = true;
+                        }
+                    }
                 }
             }
 
@@ -336,10 +352,10 @@ namespace GlogGenerator
                 Directory.CreateDirectory(directoryPath);
             }
 
-            var allGames = this.gamesUnidentified.OrderBy(o => o.NameForGlog).ToList();
+            var allGames = this.gamesUnidentified.OrderBy(o => o.GetReferenceString(this)).ToList();
             allGames.AddRange(this.gamesById.Values.OrderBy(o => o.Id));
 
-            var allPlatforms = this.platformsUnidentified.OrderBy(o => o.AbbreviationForGlog).ToList();
+            var allPlatforms = this.platformsUnidentified.OrderBy(o => o.GetReferenceString(this)).ToList();
             allPlatforms.AddRange(this.platformsById.Values.OrderBy(o => o.Id));
 
             var cacheJson = new JObject();

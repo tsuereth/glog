@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
 using Newtonsoft.Json;
 
 namespace GlogGenerator.IgdbApi
@@ -32,15 +35,6 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("first_release_date")]
         public long FirstReleaseDateTimestamp { get; set; } = 0;
 
-        [JsonIgnore]
-        public DateTimeOffset FirstReleaseDate
-        {
-            get
-            {
-                return DateTimeOffset.FromUnixTimeSeconds(this.FirstReleaseDateTimestamp);
-            }
-        }
-
         [JsonProperty("forks")]
         public List<int> ForkGameIds { get; set; } = new List<int>();
 
@@ -70,6 +64,10 @@ namespace GlogGenerator.IgdbApi
         public string Name { get; set; }
 
         [IgdbEntityGlogOverrideValue]
+        [JsonProperty("name_glogAppendPlatforms")]
+        public bool? NameGlogAppendPlatforms { get; set; } = null;
+
+        [IgdbEntityGlogOverrideValue]
         [JsonProperty("name_glogAppendReleaseYear")]
         public bool? NameGlogAppendReleaseYear { get; set; } = null;
 
@@ -77,28 +75,11 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("name_glogOverride")]
         public string NameGlogOverride { get; set; } = null;
 
-        [IgdbEntityReferenceableValue]
-        [JsonIgnore]
-        public string NameForGlog
-        {
-            get
-            {
-                if (!string.IsNullOrEmpty(this.NameGlogOverride))
-                {
-                    return this.NameGlogOverride;
-                }
-
-                if (this.NameGlogAppendReleaseYear == true)
-                {
-                    return $"{this.Name} ({this.FirstReleaseDate.Year})";
-                }
-
-                return this.Name;
-            }
-        }
-
         [JsonProperty("parent_game")]
         public int ParentGameId { get; set; } = IdNotFound;
+
+        [JsonProperty("platforms")]
+        public List<int> PlatformIds { get; set; } = new List<int>();
 
         [JsonProperty("player_perspectives")]
         public List<int> PlayerPerspectiveIds { get; set; } = new List<int>();
@@ -126,5 +107,62 @@ namespace GlogGenerator.IgdbApi
 
         [JsonProperty("version_parent")]
         public int VersionParentGameId { get; set; } = IdNotFound;
+
+        public DateTimeOffset? GetFirstReleaseDate(IIgdbCache cache)
+        {
+            if (this.FirstReleaseDateTimestamp != 0)
+            {
+                return DateTimeOffset.FromUnixTimeSeconds(this.FirstReleaseDateTimestamp);
+            }
+
+            var releaseDates = this.ReleaseDateIds.Select(id => cache.GetReleaseDate(id)).Where(d => d != null && d.DateTimestamp != 0);
+            if (releaseDates.Any())
+            {
+                return releaseDates.OrderBy(d => d.DateTimestamp).First().Date;
+            }
+
+            return null;
+        }
+
+        public override string GetReferenceString(IIgdbCache cache)
+        {
+            if (!string.IsNullOrEmpty(this.NameGlogOverride))
+            {
+                return this.NameGlogOverride;
+            }
+
+            var nameBuilder = new StringBuilder();
+            nameBuilder.Append(this.Name);
+
+            if (this.NameGlogAppendReleaseYear == true)
+            {
+                var firstReleaseDate = this.GetFirstReleaseDate(cache);
+                if (firstReleaseDate == null)
+                {
+                    throw new InvalidDataException($"Game ID {this.Id} named \"{this.Name}\" is set to append a release year to its name, but has no valid release date.");
+                }
+
+                nameBuilder.Append(" (");
+                nameBuilder.Append(firstReleaseDate.Value.Year);
+                nameBuilder.Append(")");
+            }
+
+            if (this.NameGlogAppendPlatforms == true)
+            {
+                var platforms = this.PlatformIds.Select(id => cache.GetPlatform(id));
+                if (!platforms.Any())
+                {
+                    throw new InvalidDataException($"Game ID {this.Id} named \"{this.Name}\" is set to append platforms to its name, but has no valid platforms.");
+                }
+
+                var platformStringsOrdered = platforms.Select(p => p.GetReferenceString(cache)).OrderBy(s => s);
+
+                nameBuilder.Append(" (");
+                nameBuilder.Append(string.Join(", ", platformStringsOrdered));
+                nameBuilder.Append(")");
+            }
+
+            return nameBuilder.ToString();
+        }
     }
 }

@@ -320,7 +320,7 @@ namespace GlogGenerator.Data
 
             foreach (var igdbGameMetadata in igdbCache.GetAllGameMetadata())
             {
-                var tagName = igdbGameMetadata.GetReferenceableValue();
+                var tagName = igdbGameMetadata.GetReferenceString(igdbCache);
 
                 CreateOrMergeMultiKeyReferenceableData(this.tags, tagName);
             }

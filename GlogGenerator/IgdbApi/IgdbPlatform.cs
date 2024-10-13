@@ -8,22 +8,15 @@ namespace GlogGenerator.IgdbApi
     // This class is NOT a complete representation, it only includes properties as-needed.
     public class IgdbPlatform : IgdbEntity
     {
-        [JsonProperty("abbreviation", Required = Required.Always)]
+        [JsonProperty("abbreviation")]
         public string Abbreviation { get; set; }
 
         [IgdbEntityGlogOverrideValue]
         [JsonProperty("abbreviation_glogOverride")]
         public string AbbreviationGlogOverride { get; set; }
 
-        [IgdbEntityReferenceableValue]
-        [JsonIgnore]
-        public string AbbreviationForGlog
-        {
-            get
-            {
-                return this.AbbreviationGlogOverride ?? this.Abbreviation;
-            }
-        }
+        [JsonProperty("alternative_name")]
+        public string AlternativeName { get; set; }
 
         [IgdbEntityId]
         [JsonProperty("id")]
@@ -34,5 +27,25 @@ namespace GlogGenerator.IgdbApi
 
         [JsonProperty("url")]
         public string Url { get; set; }
+
+        public override string GetReferenceString(IIgdbCache cache)
+        {
+            if (!string.IsNullOrEmpty(this.AbbreviationGlogOverride))
+            {
+                return this.AbbreviationGlogOverride;
+            }
+
+            if (!string.IsNullOrEmpty(this.Abbreviation))
+            {
+                return this.Abbreviation;
+            }
+
+            if (!string.IsNullOrEmpty(this.AlternativeName))
+            {
+                return this.AlternativeName;
+            }
+
+            return this.Name;
+        }
     }
 }
