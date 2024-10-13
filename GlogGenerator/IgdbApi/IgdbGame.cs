@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -66,6 +67,10 @@ namespace GlogGenerator.IgdbApi
         [IgdbEntityGlogOverrideValue]
         [JsonProperty("name_glogAppendPlatforms")]
         public bool? NameGlogAppendPlatforms { get; set; } = null;
+
+        [IgdbEntityGlogOverrideValue]
+        [JsonProperty("name_glogAppendReleaseNumber")]
+        public int? NameGlogAppendReleaseNumber { get; set; } = null;
 
         [IgdbEntityGlogOverrideValue]
         [JsonProperty("name_glogAppendReleaseYear")]
@@ -159,6 +164,13 @@ namespace GlogGenerator.IgdbApi
 
                 nameBuilder.Append(" (");
                 nameBuilder.Append(string.Join(", ", platformStringsOrdered));
+                nameBuilder.Append(")");
+            }
+
+            if (this.NameGlogAppendReleaseNumber.HasValue)
+            {
+                nameBuilder.Append(" (");
+                nameBuilder.Append(this.NameGlogAppendReleaseNumber.Value.ToString(CultureInfo.InvariantCulture));
                 nameBuilder.Append(")");
             }
 

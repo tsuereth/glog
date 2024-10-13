@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using GlogGenerator.Data;
 using GlogGenerator.IgdbApi;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -293,20 +294,22 @@ namespace GlogGenerator
 
             // Check game data for quirks to override/fix.
 
-            var gamesDuplicatedNames = gamesCurrentById.Values.GroupBy(g => g.GetReferenceString(this)).Where(g => g.Count() > 1);
-            foreach (var gamesDuplicatedName in gamesDuplicatedNames)
+            var gamesDuplicatedUrls = gamesCurrentById.Values
+                .GroupBy(g => UrlizedString.Urlize(g.GetReferenceString(this)))
+                .Where(g => g.Count() > 1);
+            foreach (var gamesDuplicatedUrl in gamesDuplicatedUrls)
             {
-                var duplicatedName = gamesDuplicatedName.Key;
+                var duplicatedUrl = gamesDuplicatedUrl.Key;
 
-                // We can disambiguate games with the same name based on their release dates.
+                // We can disambiguate games with the same name/URL based on their release dates.
                 // Unless some release dates aren't available -- that'll be trouble.
-                var gamesMissingReleaseDate = gamesDuplicatedName.Where(g => g.GetFirstReleaseDate(this) == null);
+                var gamesMissingReleaseDate = gamesDuplicatedUrl.Where(g => g.GetFirstReleaseDate(this) == null);
                 if (gamesMissingReleaseDate.Any())
                 {
-                    throw new InvalidDataException($"Multiple games have the same display name \"{duplicatedName}\" and cannot be disambiguated because some are missing a release date.");
+                    throw new InvalidDataException($"Multiple games have the same URL \"{duplicatedUrl}\" and cannot be disambiguated because some are missing a release date.");
                 }
 
-                var gamesByReleaseYear = gamesDuplicatedName.GroupBy(g => g.GetFirstReleaseDate(this).Value.Year).ToDictionary(g => g.Key, g => g);
+                var gamesByReleaseYear = gamesDuplicatedUrl.GroupBy(g => g.GetFirstReleaseDate(this).Value.Year).ToDictionary(g => g.Key, g => g);
                 var earliestReleaseYear = gamesByReleaseYear.Keys.OrderBy(y => y).First();
                 foreach (var releaseYear in gamesByReleaseYear.Keys)
                 {
@@ -337,6 +340,25 @@ namespace GlogGenerator
                             gamesCurrentById[game.Id].NameGlogAppendReleaseYear = true;
                         }
                     }
+                }
+            }
+
+            // Sometimes... disambiguating game names/URLs by release-year and platform STILL isn't enough!
+            // This is so rare and bizarre that we may as well just start slapping numbers on the games' names.
+            gamesDuplicatedUrls = gamesCurrentById.Values
+                .GroupBy(g => UrlizedString.Urlize(g.GetReferenceString(this)))
+                .Where(g => g.Count() > 1);
+            foreach (var gamesDuplicatedUrl in gamesDuplicatedUrls)
+            {
+                var duplicatedUrl = gamesDuplicatedUrl.Key;
+
+                var gamesInReleaseOrder = gamesDuplicatedUrl.OrderBy(g => g.GetFirstReleaseDate(this)).ToList();
+                for (var i = 1; i < gamesInReleaseOrder.Count; ++i)
+                {
+                    var gameId = gamesInReleaseOrder[i].Id;
+
+                    // Start with release number "2"
+                    gamesCurrentById[gameId].NameGlogAppendReleaseNumber = i + 1;
                 }
             }
 
