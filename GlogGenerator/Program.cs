@@ -160,6 +160,9 @@ namespace GlogGenerator
                 LoadSiteData(logger, builder);
             }
 
+            // Resolve all references to the most-current data.
+            builder.ResolveDataReferences();
+
             if (rewriteInputFiles)
             {
                 logger.LogInformation("Rewriting input files...");
