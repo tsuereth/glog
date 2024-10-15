@@ -365,6 +365,37 @@ namespace GlogGenerator
             this.gamesById = gamesCurrentById;
         }
 
+        public void RemoveEntityByUniqueIdString<T>(string uniqueIdString)
+            where T : IgdbEntity
+        {
+            Dictionary<int, T> entitiesById;
+            var entityType = typeof(T);
+            if (entityType == typeof(IgdbGame))
+            {
+                entitiesById = this.gamesById as Dictionary<int, T>;
+            }
+            else if (entityType == typeof(IgdbPlatform))
+            {
+                entitiesById = this.platformsById as Dictionary<int, T>;
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+
+            var cachedKeypair = entitiesById.Where(e => e.Value.GetUniqueIdString(this).Equals(uniqueIdString, StringComparison.Ordinal));
+            if (!cachedKeypair.Any())
+            {
+                throw new ArgumentException($"No {typeof(T).Name} found with unique ID string {uniqueIdString}");
+            }
+            else if (cachedKeypair.Count() > 1)
+            {
+                throw new InvalidDataException($"More than one {typeof(T).Name} found with unique ID string {uniqueIdString}");
+            }
+
+            entitiesById.Remove(cachedKeypair.First().Key);
+        }
+
         public void WriteToJsonFile(string directoryPath)
         {
             var jsonSerializer = JsonSerializer.Create(jsonSerializerSettings);

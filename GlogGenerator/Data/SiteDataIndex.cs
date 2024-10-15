@@ -541,6 +541,45 @@ namespace GlogGenerator.Data
             }
         }
 
+        public void RemoveUnreferencedData(IIgdbCache igdbCache)
+        {
+            var referencedCategoryIds = this.categoryReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
+            var unreferencedCategoryKeypairs = this.categories.Where(kv => !referencedCategoryIds.Contains(kv.Value.GetDataId()));
+            foreach (var unreferencedCategoryKeypair in unreferencedCategoryKeypairs)
+            {
+                this.games.Remove(unreferencedCategoryKeypair.Key);
+            }
+
+            var referencedGameIds = this.gameReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
+            var unreferencedGameKeypairs = this.games.Where(kv => !referencedGameIds.Contains(kv.Value.GetDataId()));
+            foreach (var unreferencedGameKeypair in unreferencedGameKeypairs)
+            {
+                this.games.Remove(unreferencedGameKeypair.Key);
+
+                var gameDataId = unreferencedGameKeypair.Value.GetDataId();
+                igdbCache.RemoveEntityByUniqueIdString<IgdbGame>(gameDataId);
+            }
+
+            var referencedPlatformIds = this.platformReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
+            var unreferencedPlatformKeypairs = this.platforms.Where(kv => !referencedPlatformIds.Contains(kv.Value.GetDataId()));
+            foreach (var unreferencedPlatformKeypair in unreferencedPlatformKeypairs)
+            {
+                this.platforms.Remove(unreferencedPlatformKeypair.Key);
+
+                var platformDataId = unreferencedPlatformKeypair.Value.GetDataId();
+                igdbCache.RemoveEntityByUniqueIdString<IgdbPlatform>(platformDataId);
+            }
+
+            var referencedRatingIds = this.ratingReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
+            var unreferencedRatingKeypairs = this.ratings.Where(kv => !referencedRatingIds.Contains(kv.Value.GetDataId()));
+            foreach (var unreferencedRatingKeypair in unreferencedRatingKeypairs)
+            {
+                this.games.Remove(unreferencedRatingKeypair.Key);
+            }
+
+            // TODO: tags! (what is the underlying IGDB entity type??)
+        }
+
         public void RewriteSourceContent(Markdig.MarkdownPipeline markdownPipeline)
         {
             foreach (var page in this.pages.Values)

@@ -40,6 +40,9 @@ namespace GlogGenerator
 
         public Task UpdateFromApiClient(IgdbApiClient client);
 
+        public void RemoveEntityByUniqueIdString<T>(string uniqueIdString)
+            where T : IgdbEntity;
+
         public void WriteToJsonFile(string directoryPath);
     }
 }
