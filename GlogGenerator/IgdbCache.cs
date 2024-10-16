@@ -206,6 +206,19 @@ namespace GlogGenerator
             return this.GetAllGames().Where(g => g.BundleGameIds.Contains(bundleGameId) && g.Id != IgdbEntity.IdNotFound).Select(g => g.Id).ToList();
         }
 
+        private void SetEntitiesForcePersistInCache()
+        {
+            var gamesRequiringPlatformsToPersist = this.GetAllGames().Where(g => g.NameGlogAppendPlatforms == true);
+            foreach (var game in gamesRequiringPlatformsToPersist)
+            {
+                var platformsToPersist = game.PlatformIds.Select(id => this.GetPlatform(id));
+                foreach (var platform in platformsToPersist)
+                {
+                    platform.SetForcePersistInCache();
+                }
+            }
+        }
+
         public async Task UpdateFromApiClient(IgdbApiClient client)
         {
             // Update games first, to get current IDs for metadata references.
@@ -363,6 +376,8 @@ namespace GlogGenerator
             }
 
             this.gamesById = gamesCurrentById;
+
+            this.SetEntitiesForcePersistInCache();
         }
 
         public void RemoveEntityByUniqueIdString<T>(string uniqueIdString)
@@ -383,17 +398,23 @@ namespace GlogGenerator
                 throw new NotImplementedException();
             }
 
-            var cachedKeypair = entitiesById.Where(e => e.Value.GetUniqueIdString(this).Equals(uniqueIdString, StringComparison.Ordinal));
-            if (!cachedKeypair.Any())
+            var cachedKeypairs = entitiesById.Where(e => e.Value.GetUniqueIdString(this).Equals(uniqueIdString, StringComparison.Ordinal));
+            if (!cachedKeypairs.Any())
             {
                 throw new ArgumentException($"No {typeof(T).Name} found with unique ID string {uniqueIdString}");
             }
-            else if (cachedKeypair.Count() > 1)
+            else if (cachedKeypairs.Count() > 1)
             {
                 throw new InvalidDataException($"More than one {typeof(T).Name} found with unique ID string {uniqueIdString}");
             }
 
-            entitiesById.Remove(cachedKeypair.First().Key);
+            var cachedKeypair = cachedKeypairs.First();
+            if (cachedKeypair.Value.ShouldForcePersistInCache())
+            {
+                return;
+            }
+
+            entitiesById.Remove(cachedKeypair.Key);
         }
 
         public void WriteToJsonFile(string directoryPath)
@@ -458,6 +479,8 @@ namespace GlogGenerator
             cache.playerPerspectivesById = cacheJson["playerPerspectives"]?.ToObject<List<IgdbPlayerPerspective>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbPlayerPerspective>();
             cache.releaseDatesById = cacheJson["releaseDates"]?.ToObject<List<IgdbReleaseDate>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbReleaseDate>();
             cache.themesById = cacheJson["themes"]?.ToObject<List<IgdbTheme>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbTheme>();
+
+            cache.SetEntitiesForcePersistInCache();
 
             return cache;
         }

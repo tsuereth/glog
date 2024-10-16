@@ -577,7 +577,9 @@ namespace GlogGenerator.Data
                 this.games.Remove(unreferencedRatingKeypair.Key);
             }
 
-            // TODO: tags! (what is the underlying IGDB entity type??)
+            // TODO: tags!
+            // (how to count references from game-page metadata lists?)
+            // (what is the underlying IGDB entity type??)
         }
 
         public void RewriteSourceContent(Markdig.MarkdownPipeline markdownPipeline)
