@@ -292,7 +292,7 @@ namespace GlogGenerator.Data
             // Load game data from the IGDB cache.
             foreach (var igdbGame in igdbCache.GetAllGames())
             {
-                var gameData = GameData.FromIgdbGame(igdbCache, igdbGame);
+                var gameData = GameData.FromIgdbGame(igdbCache, igdbGame, this);
 
                 this.games.Add(gameData.GetDataId(), gameData);
             }
