@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using GlogGenerator.Data;
+using GlogGenerator.IgdbApi;
 
 namespace GlogGenerator.Test
 {
@@ -90,7 +91,7 @@ namespace GlogGenerator.Test
                 }
                 else if (dataType == typeof(TagData))
                 {
-                    var tagData = new TagData(referenceKey);
+                    var tagData = new TagData(typeof(IgdbEntity), referenceKey);
                     this.tags.Add(tagData);
                     data = tagData as T;
                 }
@@ -198,6 +199,11 @@ namespace GlogGenerator.Test
         }
 
         public void ResolveReferences()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RemoveUnreferencedData(IIgdbCache igdbCache)
         {
             throw new NotImplementedException();
         }

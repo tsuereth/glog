@@ -557,8 +557,11 @@ namespace GlogGenerator.Data
             {
                 this.games.Remove(unreferencedGameKeypair.Key);
 
-                var gameDataId = unreferencedGameKeypair.Value.GetDataId();
-                igdbCache.RemoveEntityByUniqueIdString(typeof(IgdbGame), gameDataId);
+                if (igdbCache != null)
+                {
+                    var gameDataId = unreferencedGameKeypair.Value.GetDataId();
+                    igdbCache.RemoveEntityByUniqueIdString(typeof(IgdbGame), gameDataId);
+                }
             }
 
             var referencedPlatformIds = this.platformReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
@@ -567,8 +570,11 @@ namespace GlogGenerator.Data
             {
                 this.platforms.Remove(unreferencedPlatformKeypair.Key);
 
-                var platformDataId = unreferencedPlatformKeypair.Value.GetDataId();
-                igdbCache.RemoveEntityByUniqueIdString(typeof(IgdbPlatform), platformDataId);
+                if (igdbCache != null)
+                {
+                    var platformDataId = unreferencedPlatformKeypair.Value.GetDataId();
+                    igdbCache.RemoveEntityByUniqueIdString(typeof(IgdbPlatform), platformDataId);
+                }
             }
 
             var referencedRatingIds = this.ratingReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
@@ -584,12 +590,15 @@ namespace GlogGenerator.Data
             {
                 this.tags.Remove(unreferencedTagKeypair.Key);
 
-                foreach (var typedKey in unreferencedTagKeypair.Value.GetReferenceableTypedKeys())
+                if (igdbCache != null)
                 {
-                    var tagDataType = typedKey.Item1;
-                    var tagDataId = typedKey.Item2;
+                    foreach (var typedKey in unreferencedTagKeypair.Value.GetReferenceableTypedKeys())
+                    {
+                        var tagDataType = typedKey.Item1;
+                        var tagDataId = typedKey.Item2;
 
-                    igdbCache.RemoveEntityByReferenceString(tagDataType, tagDataId);
+                        igdbCache.RemoveEntityByReferenceString(tagDataType, tagDataId);
+                    }
                 }
             }
         }

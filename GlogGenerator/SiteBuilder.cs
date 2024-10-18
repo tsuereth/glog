@@ -398,8 +398,7 @@ namespace GlogGenerator
             }
 
             // After processing posts' references to games and other data, we can determine which data was un-referenced, and remove it.
-            var igdbCache = this.GetIgdbCache();
-            this.siteDataIndex.RemoveUnreferencedData(igdbCache);
+            this.siteDataIndex.RemoveUnreferencedData(this.igdbCache);
 
             var categoriesIndex = new PageState(this)
             {
