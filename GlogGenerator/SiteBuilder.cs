@@ -107,6 +107,12 @@ namespace GlogGenerator
             return this.markdownPipeline;
         }
 
+        public void RewriteIgdbCache()
+        {
+            var igdbCache = this.GetIgdbCache();
+            igdbCache.WriteToJsonFile(this.configData.InputFilesBasePath);
+        }
+
         public async Task UpdateIgdbCacheFromApiAsync(IgdbApiClient apiClient)
         {
             var igdbCache = this.GetIgdbCache();
@@ -390,6 +396,9 @@ namespace GlogGenerator
                 };
                 contentRoutes.Add(rssFeedPage.OutputPathRelative, rssFeedPage);
             }
+
+            // After processing posts' references to games and other data, we can determine which data was un-referenced, and remove it.
+            this.siteDataIndex.RemoveUnreferencedData(this.igdbCache);
 
             var categoriesIndex = new PageState(this)
             {

@@ -160,6 +160,12 @@ namespace GlogGenerator
                 LoadSiteData(logger, builder);
             }
 
+            if (activeVerbMustLoadSiteData || updateIgdbCache || rewriteInputFiles)
+            {
+                // Resolve all references to the most-current data.
+                builder.ResolveDataReferences();
+            }
+
             if (rewriteInputFiles)
             {
                 logger.LogInformation("Rewriting input files...");
@@ -301,6 +307,12 @@ rating = []
 
                 default:
                     throw new ArgumentException($"Unhandled verb `{activeVerb}`");
+            }
+
+            if (activeVerbMustLoadSiteData || updateIgdbCache || rewriteInputFiles)
+            {
+                // After the site's been built, an updated data cache (pruned of unused data) can be rewritten.
+                builder.RewriteIgdbCache();
             }
 
             return 0;

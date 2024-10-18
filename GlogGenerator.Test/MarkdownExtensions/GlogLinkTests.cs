@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using GlogGenerator.Data;
+using GlogGenerator.IgdbApi;
 using GlogGenerator.MarkdownExtensions;
 using Markdig;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -385,7 +386,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
         [TestMethod]
         public void TestGlogTagAutolink()
         {
-            var testTagData = new TagData("Gamedev Inc.");
+            var testTagData = new TagData(typeof(IgdbEntity), "Gamedev Inc.");
 
             var builder = PrepareTestSiteBuilder(
                 testTagData);
@@ -411,7 +412,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
         [TestMethod]
         public void TestGlogTagAutolinkNormalize()
         {
-            var testTagData = new TagData("Gamedev Inc.");
+            var testTagData = new TagData(typeof(IgdbEntity), "Gamedev Inc.");
 
             var builder = PrepareTestSiteBuilder(
                 testTagData);
@@ -426,7 +427,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
         [TestMethod]
         public void TestGlogTagAutolinkRoundtrip()
         {
-            var testTagData = new TagData("Gamedev Inc.");
+            var testTagData = new TagData(typeof(IgdbEntity), "Gamedev Inc.");
 
             var builder = PrepareTestSiteBuilder(
                 testTagData);
@@ -443,7 +444,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
         [TestMethod]
         public void TestGlogTagLink()
         {
-            var testTagData = new TagData("Gamedev Inc.");
+            var testTagData = new TagData(typeof(IgdbEntity), "Gamedev Inc.");
 
             var builder = PrepareTestSiteBuilder(
                 testTagData);
@@ -469,7 +470,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
         [TestMethod]
         public void TestGlogTagLinkNormalize()
         {
-            var testTagData = new TagData("Gamedev Inc.");
+            var testTagData = new TagData(typeof(IgdbEntity), "Gamedev Inc.");
 
             var builder = PrepareTestSiteBuilder(
                 testTagData);
@@ -484,7 +485,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
         [TestMethod]
         public void TestGlogTagLinkRoundtrip()
         {
-            var testTagData = new TagData("Gamedev Inc.");
+            var testTagData = new TagData(typeof(IgdbEntity), "Gamedev Inc.");
 
             var builder = PrepareTestSiteBuilder(
                 testTagData);

@@ -1,5 +1,6 @@
 using System;
 using GlogGenerator.Data;
+using GlogGenerator.IgdbApi;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
 
@@ -19,7 +20,7 @@ namespace GlogGenerator.Test.Data
         [TestMethod]
         public void TestResolvedReference()
         {
-            var testTag = new TagData("Test Tag");
+            var testTag = new TagData(typeof(IgdbEntity), "Test Tag");
 
             var testReference = new SiteDataReference<TagData>("Test Tag");
             testReference.SetData(testTag);
