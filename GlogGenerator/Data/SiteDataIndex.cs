@@ -247,17 +247,17 @@ namespace GlogGenerator.Data
             return this.tags.Values.ToList();
         }
 
-        private static void CreateOrMergeMultiKeyReferenceableData<T>(Dictionary<string, T> index, string dataKey)
+        private static void CreateOrMergeMultiKeyReferenceableData<T>(Dictionary<string, T> index, Type dataType, string dataKey)
             where T : GlogDataFromIgdbGameMetadata, IGlogMultiKeyReferenceable
         {
             var dataMatchingKey = index.Values.Where(v => v.ShouldMergeWithReferenceableKey(dataKey)).FirstOrDefault();
             if (dataMatchingKey != null)
             {
-                dataMatchingKey.MergeReferenceableKey(dataKey);
+                dataMatchingKey.MergeReferenceableKey(dataType, dataKey);
             }
             else
             {
-                var createdData = Activator.CreateInstance(typeof(T), new object[] { dataKey} ) as T;
+                var createdData = Activator.CreateInstance(typeof(T), new object[] { dataType, dataKey } ) as T;
                 index.Add(createdData.GetDataId(), createdData);
             }
         }
@@ -313,16 +313,17 @@ namespace GlogGenerator.Data
                     continue;
                 }
 
-                var tagData = new TagData(igdbGameCategory.Description());
+                var tagData = new TagData(typeof(IgdbGameCategory), igdbGameCategory.Description());
 
                 this.tags.Add(tagData.GetDataId(), tagData);
             }
 
             foreach (var igdbGameMetadata in igdbCache.GetAllGameMetadata())
             {
+                var tagType = igdbGameMetadata.GetType();
                 var tagName = igdbGameMetadata.GetReferenceString(igdbCache);
 
-                CreateOrMergeMultiKeyReferenceableData(this.tags, tagName);
+                CreateOrMergeMultiKeyReferenceableData(this.tags, tagType, tagName);
             }
 
             if (!string.IsNullOrEmpty(this.inputFilesBasePath))
@@ -557,7 +558,7 @@ namespace GlogGenerator.Data
                 this.games.Remove(unreferencedGameKeypair.Key);
 
                 var gameDataId = unreferencedGameKeypair.Value.GetDataId();
-                igdbCache.RemoveEntityByUniqueIdString<IgdbGame>(gameDataId);
+                igdbCache.RemoveEntityByUniqueIdString(typeof(IgdbGame), gameDataId);
             }
 
             var referencedPlatformIds = this.platformReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
@@ -567,7 +568,7 @@ namespace GlogGenerator.Data
                 this.platforms.Remove(unreferencedPlatformKeypair.Key);
 
                 var platformDataId = unreferencedPlatformKeypair.Value.GetDataId();
-                igdbCache.RemoveEntityByUniqueIdString<IgdbPlatform>(platformDataId);
+                igdbCache.RemoveEntityByUniqueIdString(typeof(IgdbPlatform), platformDataId);
             }
 
             var referencedRatingIds = this.ratingReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
@@ -577,9 +578,20 @@ namespace GlogGenerator.Data
                 this.games.Remove(unreferencedRatingKeypair.Key);
             }
 
-            // TODO: tags!
-            // (how to count references from game-page metadata lists?)
-            // (what is the underlying IGDB entity type??)
+            var referencedTagIds = this.tagReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
+            var unreferencedTagKeypairs = this.tags.Where(kv => !referencedTagIds.Contains(kv.Value.GetDataId()));
+            foreach (var unreferencedTagKeypair in unreferencedTagKeypairs)
+            {
+                this.tags.Remove(unreferencedTagKeypair.Key);
+
+                foreach (var typedKey in unreferencedTagKeypair.Value.GetReferenceableTypedKeys())
+                {
+                    var tagDataType = typedKey.Item1;
+                    var tagDataId = typedKey.Item2;
+
+                    igdbCache.RemoveEntityByReferenceString(tagDataType, tagDataId);
+                }
+            }
         }
 
         public void RewriteSourceContent(Markdig.MarkdownPipeline markdownPipeline)

@@ -829,10 +829,6 @@
       "name": "Divinity"
     },
     {
-      "id": 1025,
-      "name": "Space Rangers"
-    },
-    {
       "id": 1049,
       "name": "D4"
     },
@@ -855,10 +851,6 @@
     {
       "id": 1113,
       "name": "WarioWare"
-    },
-    {
-      "id": 1114,
-      "name": "The Banner Saga"
     },
     {
       "id": 1118,
@@ -889,10 +881,6 @@
       "name": "Q.U.B.E."
     },
     {
-      "id": 1206,
-      "name": "AI War"
-    },
-    {
       "id": 1246,
       "name": "Deadly Premonition"
     },
@@ -907,10 +895,6 @@
     {
       "id": 1277,
       "name": "Toy Soldiers"
-    },
-    {
-      "id": 1284,
-      "name": "Valkyria Chronicles"
     },
     {
       "id": 1286,
@@ -999,10 +983,6 @@
     {
       "id": 1583,
       "name": "Universe Sandbox"
-    },
-    {
-      "id": 1664,
-      "name": "Gravity Rush"
     },
     {
       "id": 1819,
@@ -1165,10 +1145,6 @@
       "name": "Ittle Dew"
     },
     {
-      "id": 2385,
-      "name": "LISA"
-    },
-    {
       "id": 2394,
       "name": "Dex"
     },
@@ -1181,10 +1157,6 @@
       "name": "Destiny"
     },
     {
-      "id": 2413,
-      "name": "The Legend of Heroes: Trails"
-    },
-    {
       "id": 2491,
       "name": "Castlevania: Lords of Shadow"
     },
@@ -1195,10 +1167,6 @@
     {
       "id": 2565,
       "name": "Star Wars: Rogue Squadron"
-    },
-    {
-      "id": 2578,
-      "name": "Steve Jackson’s Sorcery!"
     },
     {
       "id": 2589,
@@ -1265,10 +1233,6 @@
       "name": "Metal Gear Rising"
     },
     {
-      "id": 2810,
-      "name": "Forza Horizon"
-    },
-    {
       "id": 2824,
       "name": "The Wolf Among Us"
     },
@@ -1317,16 +1281,8 @@
       "name": "Famicom Wars"
     },
     {
-      "id": 3109,
-      "name": "Celeste"
-    },
-    {
       "id": 3154,
       "name": "FIVE Saga"
-    },
-    {
-      "id": 3187,
-      "name": "Frog Fractions"
     },
     {
       "id": 3191,
@@ -1585,10 +1541,6 @@
       "name": "Cat Quest"
     },
     {
-      "id": 5955,
-      "name": "Hellblade"
-    },
-    {
       "id": 6066,
       "name": "Donkey Kong Country"
     },
@@ -1699,10 +1651,6 @@
     {
       "id": 7027,
       "name": "Oxenfree"
-    },
-    {
-      "id": 7041,
-      "name": "Axiom Verge"
     },
     {
       "id": 7094,
@@ -1841,10 +1789,6 @@
       "name": "The Legend of Zelda: The Wind Waker"
     },
     {
-      "id": 9042,
-      "name": "Deep Rock Galactic"
-    },
-    {
       "id": 9142,
       "name": "Vampire: The Masquerade – Bloodlines"
     },
@@ -1947,10 +1891,6 @@
     {
       "id": 10121,
       "name": "Unreal Tournament"
-    },
-    {
-      "id": 10432,
-      "name": "Subnautica"
     },
     {
       "id": 10557,
@@ -2301,10 +2241,6 @@
     {
       "id": 141,
       "name": "Virgin Interactive Entertainment (Europe) Ltd."
-    },
-    {
-      "id": 146,
-      "name": "Strategy First"
     },
     {
       "id": 147,
@@ -2731,10 +2667,6 @@
       "name": "Ubisoft Shanghai"
     },
     {
-      "id": 400,
-      "name": "SCE Japan Studio"
-    },
-    {
       "id": 401,
       "name": "Naughty Dog"
     },
@@ -2745,10 +2677,6 @@
     {
       "id": 403,
       "name": "Sucker Punch Productions"
-    },
-    {
-      "id": 404,
-      "name": "Cyanide Studio"
     },
     {
       "id": 407,
@@ -2831,10 +2759,6 @@
       "name": "Sumo Digital"
     },
     {
-      "id": 442,
-      "name": "Asobo Studio"
-    },
-    {
       "id": 444,
       "name": "Radical Entertainment"
     },
@@ -2905,10 +2829,6 @@
     {
       "id": 537,
       "name": "Massive Entertainment"
-    },
-    {
-      "id": 543,
-      "name": "Rage Software"
     },
     {
       "id": 552,
@@ -3311,10 +3231,6 @@
       "name": "Playdead"
     },
     {
-      "id": 856,
-      "name": "Unknown Worlds Entertainment"
-    },
-    {
       "id": 857,
       "name": "ThatGameCompany"
     },
@@ -3451,10 +3367,6 @@
       "name": "1C:Ino-Co Plus"
     },
     {
-      "id": 966,
-      "name": "KillHouse Games"
-    },
-    {
       "id": 999,
       "name": "Coffee Stain Studios"
     },
@@ -3505,10 +3417,6 @@
     {
       "id": 1021,
       "name": "WayForward Technologies"
-    },
-    {
-      "id": 1022,
-      "name": "Turn 10 Studios"
     },
     {
       "id": 1025,
@@ -3783,20 +3691,8 @@
       "name": "Capybara Games"
     },
     {
-      "id": 1405,
-      "name": "Nippon Ichi Software"
-    },
-    {
       "id": 1406,
       "name": "Going Load Studios"
-    },
-    {
-      "id": 1416,
-      "name": "Francisco Téllez de Meneses"
-    },
-    {
-      "id": 1417,
-      "name": "Ninagamers Corp."
     },
     {
       "id": 1418,
@@ -3805,10 +3701,6 @@
     {
       "id": 1419,
       "name": "Harebrained Schemes"
-    },
-    {
-      "id": 1432,
-      "name": "Playground Games"
     },
     {
       "id": 1434,
@@ -3829,10 +3721,6 @@
     {
       "id": 1447,
       "name": "Subset Games"
-    },
-    {
-      "id": 1451,
-      "name": "Black Pants Game Studio"
     },
     {
       "id": 1455,
@@ -4005,10 +3893,6 @@
     {
       "id": 1913,
       "name": "tri-Crescendo"
-    },
-    {
-      "id": 1924,
-      "name": "Compulsion Games"
     },
     {
       "id": 1933,
@@ -4203,10 +4087,6 @@
       "name": "W!Games"
     },
     {
-      "id": 2244,
-      "name": "Katauri Interactive"
-    },
-    {
       "id": 2248,
       "name": "Daedalic Entertainment"
     },
@@ -4245,10 +4125,6 @@
     {
       "id": 2342,
       "name": "Nintendo EAD Software Development Group No.5"
-    },
-    {
-      "id": 2343,
-      "name": "Comcept"
     },
     {
       "id": 2344,
@@ -4297,10 +4173,6 @@
     {
       "id": 2438,
       "name": "CyberConnect2"
-    },
-    {
-      "id": 2449,
-      "name": "Stoic"
     },
     {
       "id": 2450,
@@ -4375,10 +4247,6 @@
       "name": "Free Lives Games"
     },
     {
-      "id": 2614,
-      "name": "Arcen Games"
-    },
-    {
       "id": 2655,
       "name": "SIDE UK Ltd"
     },
@@ -4435,10 +4303,6 @@
       "name": "Propaganda Games"
     },
     {
-      "id": 2723,
-      "name": "Streum On Studio"
-    },
-    {
       "id": 2729,
       "name": "Frozenbyte"
     },
@@ -4449,14 +4313,6 @@
     {
       "id": 2740,
       "name": "Brandon Brizzi"
-    },
-    {
-      "id": 2742,
-      "name": "ORiGO GAMES"
-    },
-    {
-      "id": 2751,
-      "name": "Nihon Falcom"
     },
     {
       "id": 2761,
@@ -4507,20 +4363,12 @@
       "name": "1-UP Studio"
     },
     {
-      "id": 2914,
-      "name": "Grip Games"
-    },
-    {
       "id": 2921,
       "name": "Ubisoft Kyiv"
     },
     {
       "id": 2923,
       "name": "Toybox Inc."
-    },
-    {
-      "id": 2932,
-      "name": "Ghostlight Ltd."
     },
     {
       "id": 2933,
@@ -4623,26 +4471,6 @@
       "name": "cdp.pl"
     },
     {
-      "id": 3121,
-      "name": "1C-SoftClub"
-    },
-    {
-      "id": 3145,
-      "name": "Panic Art Studios"
-    },
-    {
-      "id": 3154,
-      "name": "Elemental Games"
-    },
-    {
-      "id": 3155,
-      "name": "Excalibur Publishing"
-    },
-    {
-      "id": 3157,
-      "name": "SNK Games"
-    },
-    {
       "id": 3174,
       "name": "AMD"
     },
@@ -4739,10 +4567,6 @@
       "name": "CGBot"
     },
     {
-      "id": 3689,
-      "name": "Roll7"
-    },
-    {
       "id": 3697,
       "name": "Jackbox Games"
     },
@@ -4789,10 +4613,6 @@
     {
       "id": 3903,
       "name": "BioWare Montréal"
-    },
-    {
-      "id": 3913,
-      "name": "EnjoyUp Games"
     },
     {
       "id": 3923,
@@ -4845,10 +4665,6 @@
     {
       "id": 4059,
       "name": "Necrophone Games"
-    },
-    {
-      "id": 4064,
-      "name": "Superflat Games"
     },
     {
       "id": 4065,
@@ -4943,10 +4759,6 @@
       "name": "Square Product Development Division 6"
     },
     {
-      "id": 4474,
-      "name": "Dingaling"
-    },
-    {
       "id": 4483,
       "name": "MixedBag"
     },
@@ -4969,10 +4781,6 @@
     {
       "id": 4534,
       "name": "GalaxyTrail"
-    },
-    {
-      "id": 4542,
-      "name": "Eden Industries"
     },
     {
       "id": 4591,
@@ -5151,10 +4959,6 @@
       "name": "Little Green Men Games"
     },
     {
-      "id": 5210,
-      "name": "Triple.B.Titles"
-    },
-    {
       "id": 5213,
       "name": "Panic"
     },
@@ -5181,14 +4985,6 @@
     {
       "id": 5289,
       "name": "IndiePub"
-    },
-    {
-      "id": 5303,
-      "name": "Miniboss"
-    },
-    {
-      "id": 5304,
-      "name": "Moonshot Games"
     },
     {
       "id": 5312,
@@ -5233,10 +5029,6 @@
     {
       "id": 5534,
       "name": "SRD"
-    },
-    {
-      "id": 5542,
-      "name": "Maddy Makes Games"
     },
     {
       "id": 5544,
@@ -5291,20 +5083,12 @@
       "name": "ChAIR Entertainment Group"
     },
     {
-      "id": 6023,
-      "name": "Extend Interactive"
-    },
-    {
       "id": 6026,
       "name": "Sam Barlow"
     },
     {
       "id": 6034,
       "name": "MiST Land"
-    },
-    {
-      "id": 6056,
-      "name": "A Crowd of Monsters"
     },
     {
       "id": 6071,
@@ -5487,10 +5271,6 @@
       "name": "Dominique Grieshofer"
     },
     {
-      "id": 7052,
-      "name": "Sega WOW"
-    },
-    {
       "id": 7057,
       "name": "Ty Taylor & Mario Castañeda"
     },
@@ -5505,10 +5285,6 @@
     {
       "id": 7097,
       "name": "Thunder Lotus"
-    },
-    {
-      "id": 7219,
-      "name": "Project Siren"
     },
     {
       "id": 7231,
@@ -5611,10 +5387,6 @@
       "name": "Mayflower Entertainment"
     },
     {
-      "id": 7829,
-      "name": "Santa Ragione"
-    },
-    {
       "id": 7868,
       "name": "Sketchy Logic"
     },
@@ -5623,16 +5395,8 @@
       "name": "Daniel Mullins Games"
     },
     {
-      "id": 7872,
-      "name": "Movingblocks"
-    },
-    {
       "id": 7902,
       "name": "Nintendo EPD"
-    },
-    {
-      "id": 7904,
-      "name": "Phosfiend Systems"
     },
     {
       "id": 7919,
@@ -5693,10 +5457,6 @@
     {
       "id": 8143,
       "name": "Love Conquers All Games"
-    },
-    {
-      "id": 8207,
-      "name": "Marvelous USA, Inc."
     },
     {
       "id": 8250,
@@ -5765,10 +5525,6 @@
     {
       "id": 8630,
       "name": "Game in a Bottle"
-    },
-    {
-      "id": 8653,
-      "name": "Scottgames"
     },
     {
       "id": 8714,
@@ -5859,10 +5615,6 @@
       "name": "Farjay.com"
     },
     {
-      "id": 9312,
-      "name": "Clever Endeavour Games"
-    },
-    {
       "id": 9327,
       "name": "Bombservice"
     },
@@ -5889,10 +5641,6 @@
     {
       "id": 9435,
       "name": "Cape Guy"
-    },
-    {
-      "id": 9459,
-      "name": "Wild Factor"
     },
     {
       "id": 9507,
@@ -5925,10 +5673,6 @@
     {
       "id": 9945,
       "name": "Forgotten Key"
-    },
-    {
-      "id": 10023,
-      "name": "Thomas Happ Games"
     },
     {
       "id": 10075,
@@ -5995,14 +5739,6 @@
       "name": "Demruth"
     },
     {
-      "id": 10601,
-      "name": "Kitty Calis"
-    },
-    {
-      "id": 10602,
-      "name": "Jan Willem Nijman"
-    },
-    {
       "id": 10635,
       "name": "Thing Trunk"
     },
@@ -6067,10 +5803,6 @@
       "name": "Mindscape, Inc."
     },
     {
-      "id": 11262,
-      "name": "Gearbox Publishing"
-    },
-    {
       "id": 11327,
       "name": "Perfectly Paranormal"
     },
@@ -6115,10 +5847,6 @@
       "name": "Alice & Smith"
     },
     {
-      "id": 11848,
-      "name": "Mostly Tigerproof"
-    },
-    {
       "id": 11861,
       "name": "Twelve Tiles"
     },
@@ -6157,10 +5885,6 @@
     {
       "id": 12052,
       "name": "No Code"
-    },
-    {
-      "id": 12074,
-      "name": "Ghost Ship Games"
     },
     {
       "id": 12078,
@@ -6265,10 +5989,6 @@
     {
       "id": 13452,
       "name": "Golden Glitch Studios"
-    },
-    {
-      "id": 13492,
-      "name": "Guru Games"
     },
     {
       "id": 13634,
@@ -6583,10 +6303,6 @@
       "name": "The Knights of Unity"
     },
     {
-      "id": 20207,
-      "name": "QubicGames S.A."
-    },
-    {
       "id": 20228,
       "name": "2K"
     },
@@ -6649,10 +6365,6 @@
     {
       "id": 21435,
       "name": "Elecorn"
-    },
-    {
-      "id": 21449,
-      "name": "Sumo Nottingham"
     },
     {
       "id": 21480,
@@ -6815,10 +6527,6 @@
       "name": "Bird in Sky"
     },
     {
-      "id": 24747,
-      "name": "Senpai Studios"
-    },
-    {
       "id": 24760,
       "name": "Nacon"
     },
@@ -6947,24 +6655,12 @@
       "name": "8-4"
     },
     {
-      "id": 30339,
-      "name": "@unepic_fran"
-    },
-    {
       "id": 31592,
       "name": "Limited Run Games"
     },
     {
       "id": 32111,
       "name": "21st Street Games"
-    },
-    {
-      "id": 32185,
-      "name": "Jukio Kallio"
-    },
-    {
-      "id": 32186,
-      "name": "Dominik Johann"
     },
     {
       "id": 32350,
@@ -6981,10 +6677,6 @@
     {
       "id": 32976,
       "name": "Team Danger Crew"
-    },
-    {
-      "id": 33387,
-      "name": "Extremely OK Games"
     },
     {
       "id": 33479,
@@ -7021,10 +6713,6 @@
     {
       "id": 35636,
       "name": "Marvelous Entertainment Inc."
-    },
-    {
-      "id": 36410,
-      "name": "Diamondhenge Entertainment"
     },
     {
       "id": 36610,
@@ -7115,24 +6803,12 @@
       "name": "Wushu Studios"
     },
     {
-      "id": 47471,
-      "name": "Elias Viglione"
-    },
-    {
-      "id": 47472,
-      "name": "Tomi Maarela"
-    },
-    {
       "id": 48042,
       "name": "snekflat"
     },
     {
       "id": 50620,
       "name": "Jaleco USA"
-    },
-    {
-      "id": 52701,
-      "name": "UnEpic Games"
     },
     {
       "id": 52915,
@@ -7157,10 +6833,6 @@
     {
       "id": 56463,
       "name": "Eidos Sherbrooke"
-    },
-    {
-      "id": 56924,
-      "name": "Valkyrie Studios"
     }
   ],
   "franchises": [
@@ -7393,10 +7065,6 @@
       "name": "Might and Magic"
     },
     {
-      "id": 462,
-      "name": "Numenera"
-    },
-    {
       "id": 463,
       "name": "Metal Gear"
     },
@@ -7451,10 +7119,6 @@
     {
       "id": 726,
       "name": "Call of Duty"
-    },
-    {
-      "id": 736,
-      "name": "Valkyria"
     },
     {
       "id": 756,
@@ -7517,10 +7181,6 @@
       "name": "Mario"
     },
     {
-      "id": 855,
-      "name": "The Legend of Heroes"
-    },
-    {
       "id": 857,
       "name": "Tom Clancy’s"
     },
@@ -7567,10 +7227,6 @@
     {
       "id": 1036,
       "name": "Battlefield"
-    },
-    {
-      "id": 1043,
-      "name": "Forza"
     },
     {
       "id": 1047,
@@ -7925,10 +7581,6 @@
     {
       "id": 5,
       "name": "Massively Multiplayer Online (MMO)"
-    },
-    {
-      "id": 6,
-      "name": "Battle Royale"
     }
   ],
   "games": [

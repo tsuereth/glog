@@ -70,40 +70,18 @@ namespace GlogGenerator.Data
                 game.IgdbUrl = igdbGame.Url;
             }
 
-            if (igdbGame.MainCollectionId != IgdbCollection.IdNotFound)
-            {
-                var collection = igdbCache.GetCollection(igdbGame.MainCollectionId);
-                if (collection != null && !game.Tags.Contains(collection.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
-                {
-                    game.Tags.Add(collection.Name);
-                }
-            }
+            game.TryAddTag<IgdbCollection>(igdbCache, igdbGame.MainCollectionId, siteDataIndex);
 
             foreach (var collectionId in igdbGame.CollectionIds)
             {
-                var collection = igdbCache.GetCollection(collectionId);
-                if (collection != null && !game.Tags.Contains(collection.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
-                {
-                    game.Tags.Add(collection.GetReferenceString(igdbCache));
-                }
+                game.TryAddTag<IgdbCollection>(igdbCache, collectionId, siteDataIndex);
             }
 
-            if (igdbGame.MainFranchiseId != IgdbFranchise.IdNotFound)
-            {
-                var franchise = igdbCache.GetFranchise(igdbGame.MainFranchiseId);
-                if (franchise != null && !game.Tags.Contains(franchise.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
-                {
-                    game.Tags.Add(franchise.GetReferenceString(igdbCache));
-                }
-            }
+            game.TryAddTag<IgdbFranchise>(igdbCache, igdbGame.MainFranchiseId, siteDataIndex);
 
             foreach (var franchiseId in igdbGame.FranchiseIds)
             {
-                var franchise = igdbCache.GetFranchise(franchiseId);
-                if (franchise != null && !game.Tags.Contains(franchise.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
-                {
-                    game.Tags.Add(franchise.GetReferenceString(igdbCache));
-                }
+                game.TryAddTag<IgdbFranchise>(igdbCache, franchiseId, siteDataIndex);
             }
 
             var companyIds = new List<int>(igdbGame.InvolvedCompanyIds.Count);
@@ -121,67 +99,36 @@ namespace GlogGenerator.Data
 
             foreach (var companyId in companyIds)
             {
-                var company = igdbCache.GetCompany(companyId);
-                if (company != null && !game.Tags.Contains(company.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
-                {
-                    game.Tags.Add(company.GetReferenceString(igdbCache));
-                }
+                game.TryAddTag<IgdbCompany>(igdbCache, companyId, siteDataIndex);
             }
 
             foreach (var genreId in igdbGame.GenreIds)
             {
-                var genre = igdbCache.GetGenre(genreId);
-                if (genre != null && !game.Tags.Contains(genre.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
-                {
-                    game.Tags.Add(genre.GetReferenceString(igdbCache));
-                }
+                game.TryAddTag<IgdbGenre>(igdbCache, genreId, siteDataIndex);
             }
 
             foreach (var gameModeId in igdbGame.GameModeIds)
             {
-                var gameMode = igdbCache.GetGameMode(gameModeId);
-                if (gameMode != null && !game.Tags.Contains(gameMode.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
-                {
-                    game.Tags.Add(gameMode.GetReferenceString(igdbCache));
-                }
+                game.TryAddTag<IgdbGameMode>(igdbCache, gameModeId, siteDataIndex);
             }
 
             foreach (var keywordId in igdbGame.KeywordIds)
             {
-                var keyword = igdbCache.GetKeyword(keywordId);
-                if (keyword != null && !game.Tags.Contains(keyword.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
-                {
-                    game.Tags.Add(keyword.GetReferenceString(igdbCache));
-                }
+                game.TryAddTag<IgdbKeyword>(igdbCache, keywordId, siteDataIndex);
             }
 
             foreach (var playerPerspectiveId in igdbGame.PlayerPerspectiveIds)
             {
-                var playerPerspective = igdbCache.GetPlayerPerspective(playerPerspectiveId);
-                if (playerPerspective != null && !game.Tags.Contains(playerPerspective.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
-                {
-                    game.Tags.Add(playerPerspective.GetReferenceString(igdbCache));
-                }
+                game.TryAddTag<IgdbPlayerPerspective>(igdbCache, playerPerspectiveId, siteDataIndex);
             }
 
             foreach (var themeId in igdbGame.ThemeIds)
             {
-                var theme = igdbCache.GetTheme(themeId);
-                if (theme != null && !game.Tags.Contains(theme.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
-                {
-                    game.Tags.Add(theme.GetReferenceString(igdbCache));
-                }
+                game.TryAddTag<IgdbTheme>(igdbCache, themeId, siteDataIndex);
             }
 
-            if (igdbGame.ParentGameId != IgdbEntity.IdNotFound)
-            {
-                game.TryAddRelatedGame(igdbCache, igdbGame.ParentGameId, siteDataIndex);
-            }
-
-            if (igdbGame.VersionParentGameId != IgdbEntity.IdNotFound)
-            {
-                game.TryAddRelatedGame(igdbCache, igdbGame.VersionParentGameId, siteDataIndex);
-            }
+            game.TryAddRelatedGame(igdbCache, igdbGame.ParentGameId, siteDataIndex);
+            game.TryAddRelatedGame(igdbCache, igdbGame.VersionParentGameId, siteDataIndex);
 
             // If this game is a "bundle," then add its bundled games as related.
             if (igdbGame.Category == IgdbGameCategory.bundle)
@@ -259,6 +206,27 @@ namespace GlogGenerator.Data
             }
 
             return game;
+        }
+
+        private void TryAddTag<T>(IIgdbCache igdbCache, int tagId, ISiteDataIndex siteDataIndex)
+            where T : IgdbEntity
+        {
+            if (tagId != IgdbEntity.IdNotFound)
+            {
+                var tagEntity = igdbCache.GetEntity<T>(tagId);
+                if (tagEntity != null)
+                {
+                    var tagReferenceString = tagEntity.GetReferenceString(igdbCache);
+                    // FIXME: This should check existing tags by urlized comparison!
+                    if (!this.Tags.Contains(tagReferenceString, StringComparer.OrdinalIgnoreCase))
+                    {
+                        this.Tags.Add(tagReferenceString);
+
+                        // Register a data reference to the tag, so the data index knows it is in-use (and won't delete it).
+                        siteDataIndex.CreateReference<TagData>(tagReferenceString);
+                    }
+                }
+            }
         }
 
         private void TryAddRelatedGame(IIgdbCache igdbCache, int gameId, ISiteDataIndex siteDataIndex)

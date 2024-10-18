@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using GlogGenerator.IgdbApi;
 
@@ -6,6 +7,9 @@ namespace GlogGenerator
 {
     public interface IIgdbCache
     {
+        public T GetEntity<T>(int id)
+            where T : IgdbEntity;
+
         public IgdbCollection GetCollection(int id);
 
         public IgdbCompany GetCompany(int id);
@@ -40,8 +44,9 @@ namespace GlogGenerator
 
         public Task UpdateFromApiClient(IgdbApiClient client);
 
-        public void RemoveEntityByUniqueIdString<T>(string uniqueIdString)
-            where T : IgdbEntity;
+        public void RemoveEntityByUniqueIdString(Type entityType, string uniqueIdString);
+
+        public void RemoveEntityByReferenceString(Type entityType, string referenceString);
 
         public void WriteToJsonFile(string directoryPath);
     }

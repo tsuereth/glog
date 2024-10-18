@@ -47,6 +47,72 @@ namespace GlogGenerator
 
         private Dictionary<int, IgdbTheme> themesById = new Dictionary<int, IgdbTheme>();
 
+        public T GetEntity<T>(int id)
+            where T : IgdbEntity
+        {
+            Dictionary<int, T> entitiesById;
+            var entityType = typeof(T);
+            if (entityType == typeof(IgdbCollection))
+            {
+                entitiesById = this.collectionsById as Dictionary<int, T>;
+            }
+            else if (entityType == typeof(IgdbCompany))
+            {
+                entitiesById = this.companiesById as Dictionary<int, T>;
+            }
+            else if (entityType == typeof(IgdbFranchise))
+            {
+                entitiesById = this.franchisesById as Dictionary<int, T>;
+            }
+            else if (entityType == typeof(IgdbGame))
+            {
+                entitiesById = this.gamesById as Dictionary<int, T>;
+            }
+            else if (entityType == typeof(IgdbGameMode))
+            {
+                entitiesById = this.gameModesById as Dictionary<int, T>;
+            }
+            else if (entityType == typeof(IgdbGenre))
+            {
+                entitiesById = this.genresById as Dictionary<int, T>;
+            }
+            else if (entityType == typeof(IgdbInvolvedCompany))
+            {
+                entitiesById = this.involvedCompaniesById as Dictionary<int, T>;
+            }
+            else if (entityType == typeof(IgdbKeyword))
+            {
+                entitiesById = this.keywordsById as Dictionary<int, T>;
+            }
+            else if (entityType == typeof(IgdbPlatform))
+            {
+                entitiesById = this.platformsById as Dictionary<int, T>;
+            }
+            else if (entityType == typeof(IgdbPlayerPerspective))
+            {
+                entitiesById = this.playerPerspectivesById as Dictionary<int, T>;
+            }
+            else if (entityType == typeof(IgdbReleaseDate))
+            {
+                entitiesById = this.releaseDatesById as Dictionary<int, T>;
+            }
+            else if (entityType == typeof(IgdbTheme))
+            {
+                entitiesById = this.themesById as Dictionary<int, T>;
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+
+            if (entitiesById.TryGetValue(id, out var result))
+            {
+                return result;
+            }
+
+            return null;
+        }
+
         public IgdbCollection GetCollection(int id)
         {
             if (this.collectionsById.TryGetValue(id, out var result))
@@ -380,24 +446,9 @@ namespace GlogGenerator
             this.SetEntitiesForcePersistInCache();
         }
 
-        public void RemoveEntityByUniqueIdString<T>(string uniqueIdString)
+        private void RemoveEntityFromDictionaryByUniqueIdString<T>(Dictionary<int, T> entitiesById, string uniqueIdString)
             where T : IgdbEntity
         {
-            Dictionary<int, T> entitiesById;
-            var entityType = typeof(T);
-            if (entityType == typeof(IgdbGame))
-            {
-                entitiesById = this.gamesById as Dictionary<int, T>;
-            }
-            else if (entityType == typeof(IgdbPlatform))
-            {
-                entitiesById = this.platformsById as Dictionary<int, T>;
-            }
-            else
-            {
-                throw new NotImplementedException();
-            }
-
             var cachedKeypairs = entitiesById.Where(e => e.Value.GetUniqueIdString(this).Equals(uniqueIdString, StringComparison.Ordinal));
             if (!cachedKeypairs.Any())
             {
@@ -415,6 +466,106 @@ namespace GlogGenerator
             }
 
             entitiesById.Remove(cachedKeypair.Key);
+        }
+
+        public void RemoveEntityByUniqueIdString(Type entityType, string uniqueIdString)
+        {
+            if (entityType == typeof(IgdbGame))
+            {
+                this.RemoveEntityFromDictionaryByUniqueIdString(this.gamesById, uniqueIdString);
+            }
+            else if (entityType == typeof(IgdbPlatform))
+            {
+                this.RemoveEntityFromDictionaryByUniqueIdString(this.platformsById, uniqueIdString);
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        private void RemoveEntityFromDictionaryByReferenceString<T>(Dictionary<int, T> entitiesById, string referenceString)
+            where T : IgdbEntity
+        {
+            var cachedKeypairs = entitiesById.Where(e => e.Value.GetReferenceString(this).Equals(referenceString, StringComparison.Ordinal));
+            if (!cachedKeypairs.Any())
+            {
+                throw new ArgumentException($"No {typeof(T).Name} found with reference string {referenceString}");
+            }
+            else if (cachedKeypairs.Count() > 1)
+            {
+                throw new InvalidDataException($"More than one {typeof(T).Name} found with reference string {referenceString}");
+            }
+
+            var cachedKeypair = cachedKeypairs.First();
+            if (cachedKeypair.Value.ShouldForcePersistInCache())
+            {
+                return;
+            }
+
+            entitiesById.Remove(cachedKeypair.Key);
+        }
+
+        public void RemoveEntityByReferenceString(Type entityType, string referenceString)
+        {
+            if (entityType == typeof(IgdbGameCategory))
+            {
+                // IgdbGameCategory isn't a cache-entity, it's in code; it can't be removed and that's just fine.
+                return;
+            }
+
+            if (entityType == typeof(IgdbCollection))
+            {
+                this.RemoveEntityFromDictionaryByReferenceString(this.collectionsById, referenceString);
+            }
+            else if (entityType == typeof(IgdbCompany))
+            {
+                this.RemoveEntityFromDictionaryByReferenceString(this.companiesById, referenceString);
+            }
+            else if (entityType == typeof(IgdbFranchise))
+            {
+                this.RemoveEntityFromDictionaryByReferenceString(this.franchisesById, referenceString);
+            }
+            else if (entityType == typeof(IgdbGame))
+            {
+                this.RemoveEntityFromDictionaryByReferenceString(this.gamesById, referenceString);
+            }
+            else if (entityType == typeof(IgdbGameMode))
+            {
+                this.RemoveEntityFromDictionaryByReferenceString(this.gameModesById, referenceString);
+            }
+            else if (entityType == typeof(IgdbGenre))
+            {
+                this.RemoveEntityFromDictionaryByReferenceString(this.genresById, referenceString);
+            }
+            else if (entityType == typeof(IgdbInvolvedCompany))
+            {
+                this.RemoveEntityFromDictionaryByReferenceString(this.involvedCompaniesById, referenceString);
+            }
+            else if (entityType == typeof(IgdbKeyword))
+            {
+                this.RemoveEntityFromDictionaryByReferenceString(this.keywordsById, referenceString);
+            }
+            else if (entityType == typeof(IgdbPlatform))
+            {
+                this.RemoveEntityFromDictionaryByReferenceString(this.platformsById, referenceString);
+            }
+            else if (entityType == typeof(IgdbPlayerPerspective))
+            {
+                this.RemoveEntityFromDictionaryByReferenceString(this.playerPerspectivesById, referenceString);
+            }
+            else if (entityType == typeof(IgdbReleaseDate))
+            {
+                this.RemoveEntityFromDictionaryByReferenceString(this.releaseDatesById, referenceString);
+            }
+            else if (entityType == typeof(IgdbTheme))
+            {
+                this.RemoveEntityFromDictionaryByReferenceString(this.themesById, referenceString);
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public void WriteToJsonFile(string directoryPath)
