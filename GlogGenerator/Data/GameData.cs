@@ -62,7 +62,12 @@ namespace GlogGenerator.Data
             if (igdbGame.Category != IgdbGameCategory.None)
             {
                 game.IgdbCategory = igdbGame.Category;
-                game.Tags.Add(igdbGame.Category.Description());
+
+                var categoryString = igdbGame.Category.Description();
+                game.Tags.Add(categoryString);
+
+                // Register a data reference to the category, so the data index knows it is in-use (and won't delete it).
+                siteDataIndex.CreateReference<TagData>(categoryString);
             }
 
             if (!string.IsNullOrEmpty(igdbGame.Url))
