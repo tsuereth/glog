@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace GlogGenerator.Data
 {
@@ -6,6 +7,6 @@ namespace GlogGenerator.Data
     {
         public bool ShouldMergeWithReferenceableKey(string checkKey);
 
-        public void MergeReferenceableKey(string mergeKey);
+        public void MergeReferenceableKey(Type mergeKeyType, string mergeKey);
     }
 }

@@ -16,6 +16,8 @@ namespace GlogGenerator.IgdbApi
         private readonly PropertyInfo idProperty;
         private readonly Dictionary<string, PropertyInfo> overrideValueProperties;
 
+        private bool forcePersistInCache = false;
+
         public IgdbEntity()
         {
             var entityType = this.GetType();
@@ -37,6 +39,16 @@ namespace GlogGenerator.IgdbApi
             }
 
             this.overrideValueProperties = entityType.GetProperties().Where(p => Attribute.IsDefined(p, typeof(IgdbEntityGlogOverrideValueAttribute))).ToDictionary(p => p.Name, p => p);
+        }
+
+        public virtual bool ShouldForcePersistInCache()
+        {
+            return this.forcePersistInCache;
+        }
+
+        public void SetForcePersistInCache()
+        {
+            this.forcePersistInCache = true;
         }
 
         public int GetEntityId()

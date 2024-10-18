@@ -4,6 +4,6 @@ namespace GlogGenerator.Data
 {
     public abstract class GlogDataFromIgdbGameMetadata
     {
-        public GlogDataFromIgdbGameMetadata(string gameMetadataName) {}
+        public GlogDataFromIgdbGameMetadata(Type gameMetadataType, string gameMetadataName) {}
     }
 }

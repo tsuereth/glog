@@ -37,6 +37,8 @@ namespace GlogGenerator.Test
 
             builder.UpdateDataIndex();
 
+            builder.ResolveDataReferences();
+
             builder.UpdateContentRoutes();
 
             // Ensure the output directory is clean, first.
