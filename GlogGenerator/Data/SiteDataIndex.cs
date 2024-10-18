@@ -548,7 +548,7 @@ namespace GlogGenerator.Data
             var unreferencedCategoryKeypairs = this.categories.Where(kv => !referencedCategoryIds.Contains(kv.Value.GetDataId()));
             foreach (var unreferencedCategoryKeypair in unreferencedCategoryKeypairs)
             {
-                this.games.Remove(unreferencedCategoryKeypair.Key);
+                this.categories.Remove(unreferencedCategoryKeypair.Key);
             }
 
             var referencedGameIds = this.gameReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
@@ -581,7 +581,7 @@ namespace GlogGenerator.Data
             var unreferencedRatingKeypairs = this.ratings.Where(kv => !referencedRatingIds.Contains(kv.Value.GetDataId()));
             foreach (var unreferencedRatingKeypair in unreferencedRatingKeypairs)
             {
-                this.games.Remove(unreferencedRatingKeypair.Key);
+                this.ratings.Remove(unreferencedRatingKeypair.Key);
             }
 
             var referencedTagIds = this.tagReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
