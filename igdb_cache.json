@@ -829,6 +829,10 @@
       "name": "Divinity"
     },
     {
+      "id": 1025,
+      "name": "Space Rangers"
+    },
+    {
       "id": 1049,
       "name": "D4"
     },
@@ -851,6 +855,10 @@
     {
       "id": 1113,
       "name": "WarioWare"
+    },
+    {
+      "id": 1114,
+      "name": "The Banner Saga"
     },
     {
       "id": 1118,
@@ -881,6 +889,10 @@
       "name": "Q.U.B.E."
     },
     {
+      "id": 1206,
+      "name": "AI War"
+    },
+    {
       "id": 1246,
       "name": "Deadly Premonition"
     },
@@ -895,6 +907,10 @@
     {
       "id": 1277,
       "name": "Toy Soldiers"
+    },
+    {
+      "id": 1284,
+      "name": "Valkyria Chronicles"
     },
     {
       "id": 1286,
@@ -983,6 +999,10 @@
     {
       "id": 1583,
       "name": "Universe Sandbox"
+    },
+    {
+      "id": 1664,
+      "name": "Gravity Rush"
     },
     {
       "id": 1819,
@@ -1145,6 +1165,10 @@
       "name": "Ittle Dew"
     },
     {
+      "id": 2385,
+      "name": "LISA"
+    },
+    {
       "id": 2394,
       "name": "Dex"
     },
@@ -1157,6 +1181,10 @@
       "name": "Destiny"
     },
     {
+      "id": 2413,
+      "name": "The Legend of Heroes: Trails"
+    },
+    {
       "id": 2491,
       "name": "Castlevania: Lords of Shadow"
     },
@@ -1167,6 +1195,10 @@
     {
       "id": 2565,
       "name": "Star Wars: Rogue Squadron"
+    },
+    {
+      "id": 2578,
+      "name": "Steve Jackson’s Sorcery!"
     },
     {
       "id": 2589,
@@ -1233,6 +1265,10 @@
       "name": "Metal Gear Rising"
     },
     {
+      "id": 2810,
+      "name": "Forza Horizon"
+    },
+    {
       "id": 2824,
       "name": "The Wolf Among Us"
     },
@@ -1281,8 +1317,16 @@
       "name": "Famicom Wars"
     },
     {
+      "id": 3109,
+      "name": "Celeste"
+    },
+    {
       "id": 3154,
       "name": "FIVE Saga"
+    },
+    {
+      "id": 3187,
+      "name": "Frog Fractions"
     },
     {
       "id": 3191,
@@ -1541,6 +1585,10 @@
       "name": "Cat Quest"
     },
     {
+      "id": 5955,
+      "name": "Hellblade"
+    },
+    {
       "id": 6066,
       "name": "Donkey Kong Country"
     },
@@ -1651,6 +1699,10 @@
     {
       "id": 7027,
       "name": "Oxenfree"
+    },
+    {
+      "id": 7041,
+      "name": "Axiom Verge"
     },
     {
       "id": 7094,
@@ -1789,6 +1841,10 @@
       "name": "The Legend of Zelda: The Wind Waker"
     },
     {
+      "id": 9042,
+      "name": "Deep Rock Galactic"
+    },
+    {
       "id": 9142,
       "name": "Vampire: The Masquerade – Bloodlines"
     },
@@ -1891,6 +1947,10 @@
     {
       "id": 10121,
       "name": "Unreal Tournament"
+    },
+    {
+      "id": 10432,
+      "name": "Subnautica"
     },
     {
       "id": 10557,
@@ -2241,6 +2301,10 @@
     {
       "id": 141,
       "name": "Virgin Interactive Entertainment (Europe) Ltd."
+    },
+    {
+      "id": 146,
+      "name": "Strategy First"
     },
     {
       "id": 147,
@@ -2667,6 +2731,10 @@
       "name": "Ubisoft Shanghai"
     },
     {
+      "id": 400,
+      "name": "SCE Japan Studio"
+    },
+    {
       "id": 401,
       "name": "Naughty Dog"
     },
@@ -2677,6 +2745,10 @@
     {
       "id": 403,
       "name": "Sucker Punch Productions"
+    },
+    {
+      "id": 404,
+      "name": "Cyanide Studio"
     },
     {
       "id": 407,
@@ -2759,6 +2831,10 @@
       "name": "Sumo Digital"
     },
     {
+      "id": 442,
+      "name": "Asobo Studio"
+    },
+    {
       "id": 444,
       "name": "Radical Entertainment"
     },
@@ -2829,6 +2905,10 @@
     {
       "id": 537,
       "name": "Massive Entertainment"
+    },
+    {
+      "id": 543,
+      "name": "Rage Software"
     },
     {
       "id": 552,
@@ -3231,6 +3311,10 @@
       "name": "Playdead"
     },
     {
+      "id": 856,
+      "name": "Unknown Worlds Entertainment"
+    },
+    {
       "id": 857,
       "name": "ThatGameCompany"
     },
@@ -3367,6 +3451,10 @@
       "name": "1C:Ino-Co Plus"
     },
     {
+      "id": 966,
+      "name": "KillHouse Games"
+    },
+    {
       "id": 999,
       "name": "Coffee Stain Studios"
     },
@@ -3417,6 +3505,10 @@
     {
       "id": 1021,
       "name": "WayForward Technologies"
+    },
+    {
+      "id": 1022,
+      "name": "Turn 10 Studios"
     },
     {
       "id": 1025,
@@ -3691,8 +3783,20 @@
       "name": "Capybara Games"
     },
     {
+      "id": 1405,
+      "name": "Nippon Ichi Software"
+    },
+    {
       "id": 1406,
       "name": "Going Load Studios"
+    },
+    {
+      "id": 1416,
+      "name": "Francisco Téllez de Meneses"
+    },
+    {
+      "id": 1417,
+      "name": "Ninagamers Corp."
     },
     {
       "id": 1418,
@@ -3701,6 +3805,10 @@
     {
       "id": 1419,
       "name": "Harebrained Schemes"
+    },
+    {
+      "id": 1432,
+      "name": "Playground Games"
     },
     {
       "id": 1434,
@@ -3721,6 +3829,10 @@
     {
       "id": 1447,
       "name": "Subset Games"
+    },
+    {
+      "id": 1451,
+      "name": "Black Pants Game Studio"
     },
     {
       "id": 1455,
@@ -3893,6 +4005,10 @@
     {
       "id": 1913,
       "name": "tri-Crescendo"
+    },
+    {
+      "id": 1924,
+      "name": "Compulsion Games"
     },
     {
       "id": 1933,
@@ -4087,6 +4203,10 @@
       "name": "W!Games"
     },
     {
+      "id": 2244,
+      "name": "Katauri Interactive"
+    },
+    {
       "id": 2248,
       "name": "Daedalic Entertainment"
     },
@@ -4125,6 +4245,10 @@
     {
       "id": 2342,
       "name": "Nintendo EAD Software Development Group No.5"
+    },
+    {
+      "id": 2343,
+      "name": "Comcept"
     },
     {
       "id": 2344,
@@ -4173,6 +4297,10 @@
     {
       "id": 2438,
       "name": "CyberConnect2"
+    },
+    {
+      "id": 2449,
+      "name": "Stoic"
     },
     {
       "id": 2450,
@@ -4247,6 +4375,10 @@
       "name": "Free Lives Games"
     },
     {
+      "id": 2614,
+      "name": "Arcen Games"
+    },
+    {
       "id": 2655,
       "name": "SIDE UK Ltd"
     },
@@ -4303,6 +4435,10 @@
       "name": "Propaganda Games"
     },
     {
+      "id": 2723,
+      "name": "Streum On Studio"
+    },
+    {
       "id": 2729,
       "name": "Frozenbyte"
     },
@@ -4313,6 +4449,14 @@
     {
       "id": 2740,
       "name": "Brandon Brizzi"
+    },
+    {
+      "id": 2742,
+      "name": "ORiGO GAMES"
+    },
+    {
+      "id": 2751,
+      "name": "Nihon Falcom"
     },
     {
       "id": 2761,
@@ -4363,12 +4507,20 @@
       "name": "1-UP Studio"
     },
     {
+      "id": 2914,
+      "name": "Grip Games"
+    },
+    {
       "id": 2921,
       "name": "Ubisoft Kyiv"
     },
     {
       "id": 2923,
       "name": "Toybox Inc."
+    },
+    {
+      "id": 2932,
+      "name": "Ghostlight Ltd."
     },
     {
       "id": 2933,
@@ -4471,6 +4623,26 @@
       "name": "cdp.pl"
     },
     {
+      "id": 3121,
+      "name": "1C-SoftClub"
+    },
+    {
+      "id": 3145,
+      "name": "Panic Art Studios"
+    },
+    {
+      "id": 3154,
+      "name": "Elemental Games"
+    },
+    {
+      "id": 3155,
+      "name": "Excalibur Publishing"
+    },
+    {
+      "id": 3157,
+      "name": "SNK Games"
+    },
+    {
       "id": 3174,
       "name": "AMD"
     },
@@ -4567,6 +4739,10 @@
       "name": "CGBot"
     },
     {
+      "id": 3689,
+      "name": "Roll7"
+    },
+    {
       "id": 3697,
       "name": "Jackbox Games"
     },
@@ -4613,6 +4789,10 @@
     {
       "id": 3903,
       "name": "BioWare Montréal"
+    },
+    {
+      "id": 3913,
+      "name": "EnjoyUp Games"
     },
     {
       "id": 3923,
@@ -4665,6 +4845,10 @@
     {
       "id": 4059,
       "name": "Necrophone Games"
+    },
+    {
+      "id": 4064,
+      "name": "Superflat Games"
     },
     {
       "id": 4065,
@@ -4759,6 +4943,10 @@
       "name": "Square Product Development Division 6"
     },
     {
+      "id": 4474,
+      "name": "Dingaling"
+    },
+    {
       "id": 4483,
       "name": "MixedBag"
     },
@@ -4781,6 +4969,10 @@
     {
       "id": 4534,
       "name": "GalaxyTrail"
+    },
+    {
+      "id": 4542,
+      "name": "Eden Industries"
     },
     {
       "id": 4591,
@@ -4959,6 +5151,10 @@
       "name": "Little Green Men Games"
     },
     {
+      "id": 5210,
+      "name": "Triple.B.Titles"
+    },
+    {
       "id": 5213,
       "name": "Panic"
     },
@@ -4985,6 +5181,14 @@
     {
       "id": 5289,
       "name": "IndiePub"
+    },
+    {
+      "id": 5303,
+      "name": "Miniboss"
+    },
+    {
+      "id": 5304,
+      "name": "Moonshot Games"
     },
     {
       "id": 5312,
@@ -5029,6 +5233,10 @@
     {
       "id": 5534,
       "name": "SRD"
+    },
+    {
+      "id": 5542,
+      "name": "Maddy Makes Games"
     },
     {
       "id": 5544,
@@ -5083,12 +5291,20 @@
       "name": "ChAIR Entertainment Group"
     },
     {
+      "id": 6023,
+      "name": "Extend Interactive"
+    },
+    {
       "id": 6026,
       "name": "Sam Barlow"
     },
     {
       "id": 6034,
       "name": "MiST Land"
+    },
+    {
+      "id": 6056,
+      "name": "A Crowd of Monsters"
     },
     {
       "id": 6071,
@@ -5271,6 +5487,10 @@
       "name": "Dominique Grieshofer"
     },
     {
+      "id": 7052,
+      "name": "Sega WOW"
+    },
+    {
       "id": 7057,
       "name": "Ty Taylor & Mario Castañeda"
     },
@@ -5285,6 +5505,10 @@
     {
       "id": 7097,
       "name": "Thunder Lotus"
+    },
+    {
+      "id": 7219,
+      "name": "Project Siren"
     },
     {
       "id": 7231,
@@ -5387,6 +5611,10 @@
       "name": "Mayflower Entertainment"
     },
     {
+      "id": 7829,
+      "name": "Santa Ragione"
+    },
+    {
       "id": 7868,
       "name": "Sketchy Logic"
     },
@@ -5395,8 +5623,16 @@
       "name": "Daniel Mullins Games"
     },
     {
+      "id": 7872,
+      "name": "Movingblocks"
+    },
+    {
       "id": 7902,
       "name": "Nintendo EPD"
+    },
+    {
+      "id": 7904,
+      "name": "Phosfiend Systems"
     },
     {
       "id": 7919,
@@ -5457,6 +5693,10 @@
     {
       "id": 8143,
       "name": "Love Conquers All Games"
+    },
+    {
+      "id": 8207,
+      "name": "Marvelous USA, Inc."
     },
     {
       "id": 8250,
@@ -5525,6 +5765,10 @@
     {
       "id": 8630,
       "name": "Game in a Bottle"
+    },
+    {
+      "id": 8653,
+      "name": "Scottgames"
     },
     {
       "id": 8714,
@@ -5615,6 +5859,10 @@
       "name": "Farjay.com"
     },
     {
+      "id": 9312,
+      "name": "Clever Endeavour Games"
+    },
+    {
       "id": 9327,
       "name": "Bombservice"
     },
@@ -5641,6 +5889,10 @@
     {
       "id": 9435,
       "name": "Cape Guy"
+    },
+    {
+      "id": 9459,
+      "name": "Wild Factor"
     },
     {
       "id": 9507,
@@ -5673,6 +5925,10 @@
     {
       "id": 9945,
       "name": "Forgotten Key"
+    },
+    {
+      "id": 10023,
+      "name": "Thomas Happ Games"
     },
     {
       "id": 10075,
@@ -5739,6 +5995,14 @@
       "name": "Demruth"
     },
     {
+      "id": 10601,
+      "name": "Kitty Calis"
+    },
+    {
+      "id": 10602,
+      "name": "Jan Willem Nijman"
+    },
+    {
       "id": 10635,
       "name": "Thing Trunk"
     },
@@ -5803,6 +6067,10 @@
       "name": "Mindscape, Inc."
     },
     {
+      "id": 11262,
+      "name": "Gearbox Publishing"
+    },
+    {
       "id": 11327,
       "name": "Perfectly Paranormal"
     },
@@ -5847,6 +6115,10 @@
       "name": "Alice & Smith"
     },
     {
+      "id": 11848,
+      "name": "Mostly Tigerproof"
+    },
+    {
       "id": 11861,
       "name": "Twelve Tiles"
     },
@@ -5885,6 +6157,10 @@
     {
       "id": 12052,
       "name": "No Code"
+    },
+    {
+      "id": 12074,
+      "name": "Ghost Ship Games"
     },
     {
       "id": 12078,
@@ -5989,6 +6265,10 @@
     {
       "id": 13452,
       "name": "Golden Glitch Studios"
+    },
+    {
+      "id": 13492,
+      "name": "Guru Games"
     },
     {
       "id": 13634,
@@ -6303,6 +6583,10 @@
       "name": "The Knights of Unity"
     },
     {
+      "id": 20207,
+      "name": "QubicGames S.A."
+    },
+    {
       "id": 20228,
       "name": "2K"
     },
@@ -6365,6 +6649,10 @@
     {
       "id": 21435,
       "name": "Elecorn"
+    },
+    {
+      "id": 21449,
+      "name": "Sumo Nottingham"
     },
     {
       "id": 21480,
@@ -6527,6 +6815,10 @@
       "name": "Bird in Sky"
     },
     {
+      "id": 24747,
+      "name": "Senpai Studios"
+    },
+    {
       "id": 24760,
       "name": "Nacon"
     },
@@ -6655,12 +6947,24 @@
       "name": "8-4"
     },
     {
+      "id": 30339,
+      "name": "@unepic_fran"
+    },
+    {
       "id": 31592,
       "name": "Limited Run Games"
     },
     {
       "id": 32111,
       "name": "21st Street Games"
+    },
+    {
+      "id": 32185,
+      "name": "Jukio Kallio"
+    },
+    {
+      "id": 32186,
+      "name": "Dominik Johann"
     },
     {
       "id": 32350,
@@ -6677,6 +6981,10 @@
     {
       "id": 32976,
       "name": "Team Danger Crew"
+    },
+    {
+      "id": 33387,
+      "name": "Extremely OK Games"
     },
     {
       "id": 33479,
@@ -6713,6 +7021,10 @@
     {
       "id": 35636,
       "name": "Marvelous Entertainment Inc."
+    },
+    {
+      "id": 36410,
+      "name": "Diamondhenge Entertainment"
     },
     {
       "id": 36610,
@@ -6803,12 +7115,24 @@
       "name": "Wushu Studios"
     },
     {
+      "id": 47471,
+      "name": "Elias Viglione"
+    },
+    {
+      "id": 47472,
+      "name": "Tomi Maarela"
+    },
+    {
       "id": 48042,
       "name": "snekflat"
     },
     {
       "id": 50620,
       "name": "Jaleco USA"
+    },
+    {
+      "id": 52701,
+      "name": "UnEpic Games"
     },
     {
       "id": 52915,
@@ -6833,6 +7157,10 @@
     {
       "id": 56463,
       "name": "Eidos Sherbrooke"
+    },
+    {
+      "id": 56924,
+      "name": "Valkyrie Studios"
     }
   ],
   "franchises": [
@@ -7065,6 +7393,10 @@
       "name": "Might and Magic"
     },
     {
+      "id": 462,
+      "name": "Numenera"
+    },
+    {
       "id": 463,
       "name": "Metal Gear"
     },
@@ -7119,6 +7451,10 @@
     {
       "id": 726,
       "name": "Call of Duty"
+    },
+    {
+      "id": 736,
+      "name": "Valkyria"
     },
     {
       "id": 756,
@@ -7181,6 +7517,10 @@
       "name": "Mario"
     },
     {
+      "id": 855,
+      "name": "The Legend of Heroes"
+    },
+    {
       "id": 857,
       "name": "Tom Clancy’s"
     },
@@ -7227,6 +7567,10 @@
     {
       "id": 1036,
       "name": "Battlefield"
+    },
+    {
+      "id": 1043,
+      "name": "Forza"
     },
     {
       "id": 1047,
@@ -7581,6 +7925,10 @@
     {
       "id": 5,
       "name": "Massively Multiplayer Online (MMO)"
+    },
+    {
+      "id": 6,
+      "name": "Battle Royale"
     }
   ],
   "games": [
@@ -8080,7 +8428,6 @@
         222,
         226,
         284,
-        453,
         558,
         687,
         698,
@@ -8425,7 +8772,6 @@
         307,
         328,
         429,
-        453,
         558,
         563,
         575,
@@ -8773,7 +9119,6 @@
         129,
         222,
         328,
-        453,
         488,
         510,
         558,
@@ -9022,7 +9367,6 @@
         271,
         274,
         429,
-        453,
         488,
         510,
         558,
@@ -9332,7 +9676,6 @@
         274,
         403,
         429,
-        453,
         558,
         575,
         621,
@@ -9901,7 +10244,6 @@
         167,
         222,
         429,
-        453,
         545,
         575,
         879,
@@ -10086,7 +10428,6 @@
         274,
         283,
         429,
-        453,
         472,
         558,
         575,
@@ -11339,7 +11680,6 @@
         265482
       ],
       "keywords": [
-        453,
         575,
         592,
         962,
@@ -11820,9 +12160,9 @@
       ],
       "id": 75,
       "involved_companies": [
-        18486,
         46513,
-        46514
+        46514,
+        290218
       ],
       "keywords": [
         3,
@@ -11870,8 +12210,7 @@
       "platforms": [
         6,
         9,
-        12,
-        41
+        12
       ],
       "player_perspectives": [
         2
@@ -11882,8 +12221,6 @@
       "release_dates": [
         107958,
         107959,
-        146381,
-        146382,
         427916,
         427917
       ],
@@ -14465,7 +14802,6 @@
       "keywords": [
         3,
         129,
-        453,
         494,
         563,
         575,
@@ -14580,7 +14916,6 @@
       ],
       "keywords": [
         3,
-        453,
         575,
         705,
         896,
@@ -16427,7 +16762,6 @@
         22,
         129,
         137,
-        453,
         558,
         563,
         660,
@@ -16585,7 +16919,6 @@
         3,
         5,
         429,
-        453,
         605,
         660,
         1089,
@@ -16858,7 +17191,6 @@
       "keywords": [
         19,
         25,
-        453,
         558,
         563,
         660,
@@ -16985,7 +17317,6 @@
         129,
         137,
         286,
-        453,
         558,
         562,
         563,
@@ -17386,7 +17717,6 @@
       ],
       "keywords": [
         114,
-        453,
         575,
         5820
       ],
@@ -17665,7 +17995,6 @@
         25,
         129,
         307,
-        453,
         558,
         562,
         563,
@@ -23061,7 +23390,6 @@
         106,
         129,
         162,
-        453,
         575,
         923,
         1060,
@@ -23470,7 +23798,6 @@
       ],
       "keywords": [
         69,
-        453,
         563,
         4245,
         4298,
@@ -24330,7 +24657,6 @@
         222,
         271,
         403,
-        453,
         558,
         660,
         770,
@@ -24573,7 +24899,6 @@
         221,
         226,
         429,
-        453,
         497,
         558,
         826,
@@ -24964,7 +25289,6 @@
         5,
         69,
         129,
-        453,
         962,
         1158,
         1186,
@@ -25188,7 +25512,6 @@
         223,
         283,
         429,
-        453,
         488,
         558,
         575,
@@ -25432,7 +25755,6 @@
         9,
         129,
         222,
-        453,
         558,
         660,
         889,
@@ -25548,7 +25870,6 @@
         29,
         129,
         221,
-        453,
         497,
         558,
         1293,
@@ -26624,7 +26945,6 @@
         1,
         25,
         129,
-        453,
         524,
         562,
         563,
@@ -26644,7 +26964,8 @@
         7115,
         7485,
         23933,
-        24168
+        24168,
+        44753
       ],
       "name": "Call of Duty: Modern Warfare 2",
       "parent_game": -1,
@@ -26786,7 +27107,6 @@
         21,
         129,
         221,
-        453,
         558,
         563,
         1158,
@@ -27115,7 +27435,6 @@
         129,
         137,
         221,
-        453,
         558,
         660,
         923,
@@ -27801,7 +28120,6 @@
         1,
         21,
         129,
-        453,
         558,
         562,
         563,
@@ -27964,7 +28282,6 @@
         9455,
         9529,
         9530,
-        9550,
         9578,
         9805,
         9853,
@@ -28769,7 +29086,8 @@
         11696,
         12231,
         16716,
-        23933
+        23933,
+        44753
       ],
       "name": "Grand Theft Auto: Vice City",
       "parent_game": -1,
@@ -28848,7 +29166,6 @@
         3,
         25,
         129,
-        453,
         558,
         563,
         575,
@@ -31498,7 +31815,6 @@
       "keywords": [
         22,
         129,
-        453,
         988,
         1219,
         1352,
@@ -32398,7 +32714,6 @@
         3,
         25,
         129,
-        453,
         518,
         546,
         923,
@@ -32528,7 +32843,6 @@
         98,
         129,
         161,
-        453,
         518,
         546,
         562,
@@ -32640,7 +32954,6 @@
       "keywords": [
         3,
         25,
-        453,
         518,
         558,
         563,
@@ -32825,7 +33138,6 @@
         25,
         161,
         182,
-        453,
         518,
         546,
         974,
@@ -32944,7 +33256,6 @@
         5,
         25,
         167,
-        453,
         546,
         563,
         901,
@@ -33165,7 +33476,6 @@
         103,
         106,
         129,
-        453,
         558,
         660,
         1293,
@@ -33480,7 +33790,6 @@
         95841
       ],
       "keywords": [
-        453,
         923,
         1710,
         4245,
@@ -36292,7 +36601,6 @@
       "keywords": [
         103,
         390,
-        453,
         589,
         962,
         1033,
@@ -38730,7 +39038,6 @@
         72,
         129,
         137,
-        453,
         477,
         558,
         947,
@@ -38995,7 +39302,6 @@
         4,
         72,
         137,
-        453,
         477,
         558,
         947,
@@ -39180,7 +39486,6 @@
         3,
         4,
         137,
-        453,
         477,
         558,
         947,
@@ -39288,7 +39593,6 @@
         4,
         137,
         167,
-        453,
         477,
         558,
         575,
@@ -39424,7 +39728,6 @@
         3,
         4,
         137,
-        453,
         477,
         558,
         575,
@@ -43638,7 +43941,6 @@
         21,
         129,
         167,
-        453,
         563,
         1403,
         1821,
@@ -45888,7 +46190,6 @@
       "keywords": [
         1,
         21,
-        453,
         1107,
         1158,
         1293,
@@ -46318,8 +46619,8 @@
       "id": 1397,
       "involved_companies": [
         18129,
-        83117,
-        83118
+        291567,
+        291568
       ],
       "keywords": [
         215,
@@ -46354,7 +46655,8 @@
       "parent_game": -1,
       "platforms": [
         20,
-        55
+        34,
+        39
       ],
       "player_perspectives": [
         4,
@@ -46366,9 +46668,10 @@
         114093,
         114094,
         114095,
-        174530,
-        174531,
-        174532
+        654744,
+        654745,
+        654746,
+        654747
       ],
       "remakes": [],
       "remasters": [
@@ -47510,7 +47813,6 @@
         129,
         137,
         284,
-        453,
         558,
         575,
         732,
@@ -47663,7 +47965,6 @@
         3110
       ],
       "keywords": [
-        453,
         472,
         558,
         660,
@@ -48447,7 +48748,6 @@
         23,
         24,
         70,
-        453,
         563,
         947,
         1058,
@@ -49014,7 +49314,6 @@
         6,
         21,
         129,
-        453,
         1173,
         1286,
         1478,
@@ -49504,7 +49803,8 @@
         246090,
         256711,
         275242,
-        314758
+        314758,
+        317711
       ],
       "category": 0,
       "collection": -1,
@@ -51866,14 +52166,12 @@
       "id": 1879,
       "involved_companies": [
         16887,
-        188985,
         188989,
-        189038,
         189039,
-        189040,
         189041,
-        190256,
-        190257
+        289063,
+        289064,
+        289065
       ],
       "keywords": [
         72,
@@ -51984,29 +52282,24 @@
       ],
       "ports": [],
       "release_dates": [
-        66143,
-        66146,
-        66147,
-        66148,
-        66150,
-        66151,
-        66152,
-        66153,
-        66155,
-        66156,
-        66157,
-        136347,
-        144063,
-        144064,
-        146573,
-        171788,
-        239729,
-        297005,
-        297006,
-        363492,
-        417124,
-        466177,
-        466178
+        647543,
+        647544,
+        647545,
+        647546,
+        647547,
+        647548,
+        647549,
+        647550,
+        647551,
+        647552,
+        647553,
+        647554,
+        647555,
+        647556,
+        647557,
+        647558,
+        647559,
+        647560
       ],
       "remakes": [],
       "remasters": [],
@@ -52806,7 +53099,6 @@
         182,
         211,
         420,
-        453,
         563,
         575,
         592,
@@ -53510,7 +53802,6 @@
       "keywords": [
         9,
         129,
-        453,
         488,
         558,
         623,
@@ -53662,7 +53953,6 @@
         109,
         129,
         449,
-        453,
         524,
         562,
         563,
@@ -54425,7 +54715,6 @@
         21,
         129,
         221,
-        453,
         470,
         558,
         562,
@@ -54880,7 +55169,6 @@
         222,
         413,
         429,
-        453,
         843,
         923,
         1097,
@@ -55155,6 +55443,101 @@
       "version_parent": -1
     },
     {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        1058
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1488153600,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [
+        462
+      ],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        15,
+        16,
+        31,
+        32
+      ],
+      "id": 2004,
+      "involved_companies": [
+        96333,
+        96334
+      ],
+      "keywords": [
+        205,
+        415,
+        592,
+        1313,
+        1439,
+        1523,
+        1914,
+        2066,
+        2242,
+        2425,
+        2426,
+        2472,
+        2951,
+        3001,
+        3898,
+        4138,
+        4239,
+        4248,
+        4353,
+        4468,
+        4823,
+        4843,
+        4852,
+        4867,
+        4918,
+        4957,
+        5200,
+        5323,
+        6656,
+        6681
+      ],
+      "name": "Torment: Tides of Numenera",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14,
+        48,
+        49
+      ],
+      "player_perspectives": [
+        3
+      ],
+      "ports": [],
+      "release_dates": [
+        62870,
+        62871,
+        122246,
+        136404,
+        414908,
+        414909,
+        414910
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        17,
+        18
+      ],
+      "url": "https://www.igdb.com/games/torment-tides-of-numenera",
+      "version_parent": -1
+    },
+    {
       "bundles": [
         114910,
         270590
@@ -55273,7 +55656,6 @@
         221,
         276,
         307,
-        453,
         524,
         558,
         562,
@@ -55488,7 +55870,6 @@
         129,
         307,
         403,
-        453,
         524,
         562,
         563,
@@ -56240,7 +56621,6 @@
         70,
         167,
         390,
-        453,
         524,
         563,
         575,
@@ -57752,7 +58132,6 @@
       "keywords": [
         9,
         164,
-        453,
         558,
         2071,
         3486,
@@ -59308,7 +59687,6 @@
         61,
         164,
         221,
-        453,
         558,
         2141,
         2199,
@@ -59699,7 +60077,8 @@
         11738,
         13083,
         13156,
-        13211
+        13211,
+        44753
       ],
       "name": "No More Heroes",
       "parent_game": -1,
@@ -62653,6 +63032,97 @@
     },
     {
       "bundles": [
+        154184
+      ],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        227
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1315267200,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        8,
+        25
+      ],
+      "id": 2606,
+      "involved_companies": [
+        68730,
+        68731,
+        68732,
+        194981
+      ],
+      "keywords": [
+        129,
+        211,
+        669,
+        962,
+        1059,
+        1158,
+        1293,
+        1320,
+        1494,
+        2111,
+        2152,
+        2155,
+        3486,
+        3540,
+        4004,
+        4134,
+        4138,
+        4150,
+        4151,
+        4484,
+        4541,
+        4681,
+        4726,
+        5575,
+        5633,
+        6105,
+        7369,
+        11782
+      ],
+      "name": "BloodRayne: Betrayal",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        9,
+        12
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        101957,
+        101958,
+        204534,
+        407562
+      ],
+      "remakes": [],
+      "remasters": [
+        152323
+      ],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17,
+        19,
+        20
+      ],
+      "url": "https://www.igdb.com/games/bloodrayne-betrayal",
+      "version_parent": -1
+    },
+    {
+      "bundles": [
         192196
       ],
       "category": 0,
@@ -64149,7 +64619,6 @@
       "keywords": [
         58,
         167,
-        453,
         947,
         2069,
         2841,
@@ -66255,6 +66724,184 @@
       "version_parent": -1
     },
     {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1317340800,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        8,
+        9,
+        12,
+        31,
+        32,
+        33
+      ],
+      "id": 3018,
+      "involved_companies": [
+        68501,
+        68502,
+        68503,
+        68504,
+        132046,
+        134863,
+        251878
+      ],
+      "keywords": [
+        16,
+        96,
+        129,
+        151,
+        170,
+        226,
+        328,
+        477,
+        558,
+        575,
+        592,
+        816,
+        1068,
+        1158,
+        1186,
+        1289,
+        1299,
+        1345,
+        1422,
+        1494,
+        1705,
+        1756,
+        1931,
+        1935,
+        1961,
+        1986,
+        2115,
+        2415,
+        2493,
+        2951,
+        3002,
+        3203,
+        3486,
+        3831,
+        4004,
+        4134,
+        4162,
+        4179,
+        4213,
+        4284,
+        4287,
+        4388,
+        4390,
+        4397,
+        4398,
+        4403,
+        4404,
+        4410,
+        4465,
+        4536,
+        4578,
+        4613,
+        4615,
+        4622,
+        4776,
+        4787,
+        4852,
+        4878,
+        4891,
+        4960,
+        4984,
+        4991,
+        4993,
+        5029,
+        5100,
+        5106,
+        5114,
+        5124,
+        5151,
+        5164,
+        5183,
+        5210,
+        5214,
+        5358,
+        5359,
+        5494,
+        5518,
+        5591,
+        5703,
+        5967,
+        6062,
+        6541,
+        6619,
+        6736,
+        6813,
+        6848,
+        7152,
+        7226,
+        7305,
+        7314,
+        7417,
+        7467,
+        7473,
+        7643,
+        8818,
+        8979,
+        9395,
+        10516,
+        11623,
+        23933
+      ],
+      "name": "Unepic",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14,
+        41,
+        46,
+        48,
+        49,
+        130
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        128856,
+        128993,
+        128994,
+        128995,
+        128996,
+        136424,
+        156656,
+        156657,
+        156658,
+        156659,
+        156660,
+        156661
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17,
+        27
+      ],
+      "url": "https://www.igdb.com/games/unepic",
+      "version_parent": -1
+    },
+    {
       "bundles": [
         136925,
         154181
@@ -67122,6 +67769,61 @@
       "bundles": [],
       "category": 0,
       "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1350950400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        9,
+        31,
+        32
+      ],
+      "id": 3080,
+      "involved_companies": [
+        75805
+      ],
+      "keywords": [],
+      "name": "About Love, Hate and the other ones",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14,
+        34,
+        39
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        6793,
+        6794,
+        411185,
+        411186,
+        411187
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        17,
+        27
+      ],
+      "url": "https://www.igdb.com/games/about-love-hate-and-the-other-ones",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
       "collections": [
         561
       ],
@@ -67405,6 +68107,86 @@
         27
       ],
       "url": "https://www.igdb.com/games/broken-age",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1413763200,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        5,
+        9,
+        11,
+        13,
+        15,
+        24,
+        32
+      ],
+      "id": 3099,
+      "involved_companies": [
+        97183,
+        134460
+      ],
+      "keywords": [
+        1,
+        433,
+        683,
+        1158,
+        1373,
+        1494,
+        4134,
+        4259,
+        5212,
+        5836,
+        6057,
+        6692
+      ],
+      "name": "Door Kickers",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14,
+        34,
+        39,
+        130
+      ],
+      "player_perspectives": [
+        3
+      ],
+      "ports": [],
+      "release_dates": [
+        37945,
+        37946,
+        37947,
+        101239,
+        117967,
+        121988,
+        250584,
+        341078,
+        363477,
+        419866
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1
+      ],
+      "url": "https://www.igdb.com/games/door-kickers",
       "version_parent": -1
     },
     {
@@ -69284,7 +70066,6 @@
         23,
         24,
         72,
-        453,
         510,
         574,
         577,
@@ -71101,6 +71882,7 @@
       ],
       "genres": [
         8,
+        26,
         31
       ],
       "id": 3418,
@@ -72679,6 +73461,116 @@
       "version_parent": -1
     },
     {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1459814400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        5,
+        31
+      ],
+      "id": 3750,
+      "involved_companies": [
+        32249,
+        32250,
+        141205
+      ],
+      "keywords": [
+        21,
+        170,
+        826,
+        962,
+        977,
+        997,
+        1293,
+        1309,
+        1898,
+        1971,
+        2280,
+        2387,
+        2426,
+        3831,
+        4134,
+        4344,
+        4345,
+        4355,
+        4357,
+        4359,
+        4541,
+        4711,
+        4777,
+        4790,
+        4843,
+        4850,
+        4871,
+        4890,
+        4918,
+        4974,
+        5029,
+        5100,
+        5315,
+        5317,
+        5417,
+        5441,
+        5451,
+        5453,
+        5751,
+        5823,
+        5850,
+        5909,
+        6200,
+        6241,
+        6309,
+        6326,
+        6469,
+        6745,
+        6746,
+        6747,
+        6749,
+        6750,
+        6752,
+        15078,
+        23933,
+        39050
+      ],
+      "name": "Quantum Break",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        49
+      ],
+      "player_perspectives": [
+        2
+      ],
+      "ports": [],
+      "release_dates": [
+        54939,
+        54940,
+        54941,
+        117987,
+        122006
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18
+      ],
+      "url": "https://www.igdb.com/games/quantum-break",
+      "version_parent": -1
+    },
+    {
       "bundles": [
         219000,
         230702
@@ -72906,6 +73798,88 @@
         1
       ],
       "url": "https://www.igdb.com/games/battalion-wars",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1384473600,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        8,
+        9,
+        32
+      ],
+      "id": 3839,
+      "involved_companies": [
+        9963,
+        9964
+      ],
+      "keywords": [
+        589,
+        962,
+        1033,
+        1136,
+        1158,
+        1494,
+        2052,
+        2493,
+        4004,
+        4134,
+        4135,
+        4138,
+        4150,
+        4287,
+        4484,
+        4527,
+        4725,
+        4726,
+        5209,
+        5305,
+        5306,
+        5570,
+        5575,
+        7303
+      ],
+      "name": "Contrast",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        9,
+        12,
+        48,
+        49
+      ],
+      "player_perspectives": [
+        2
+      ],
+      "ports": [],
+      "release_dates": [
+        593274,
+        593275,
+        593276,
+        593277,
+        593278,
+        593279,
+        593280
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        17
+      ],
+      "url": "https://www.igdb.com/games/contrast",
       "version_parent": -1
     },
     {
@@ -73143,7 +74117,6 @@
         16,
         21,
         57,
-        453,
         994,
         1935,
         2141,
@@ -74536,7 +75509,6 @@
         69,
         167,
         429,
-        453,
         575,
         588,
         660,
@@ -74643,7 +75615,6 @@
         129,
         151,
         170,
-        453,
         623,
         923,
         1107,
@@ -76020,7 +76991,6 @@
       ],
       "keywords": [
         3,
-        453,
         923,
         1576,
         1638,
@@ -77096,7 +78066,6 @@
         129,
         274,
         413,
-        453,
         558,
         1158,
         1313,
@@ -77286,7 +78255,6 @@
         87,
         129,
         170,
-        453,
         1293,
         1370,
         1422,
@@ -77300,7 +78268,9 @@
         5989,
         6092,
         6137,
-        9798
+        9550,
+        9798,
+        29644
       ],
       "name": "Jurassic: The Hunted",
       "parent_game": -1,
@@ -78981,6 +79951,129 @@
     },
     {
       "bundles": [
+        51954,
+        96369,
+        109108
+      ],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        1114
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1389657600,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2
+      ],
+      "genres": [
+        12,
+        13,
+        15,
+        24,
+        32
+      ],
+      "id": 5508,
+      "involved_companies": [
+        65019,
+        65020
+      ],
+      "keywords": [
+        129,
+        151,
+        415,
+        487,
+        558,
+        953,
+        1095,
+        1228,
+        1293,
+        1313,
+        1494,
+        1523,
+        1710,
+        1923,
+        2425,
+        2488,
+        2921,
+        3001,
+        3486,
+        3831,
+        4134,
+        4245,
+        4248,
+        4284,
+        4287,
+        4352,
+        4392,
+        4520,
+        4537,
+        4541,
+        4613,
+        4622,
+        4637,
+        4850,
+        4851,
+        4862,
+        4957,
+        4997,
+        4998,
+        5000,
+        5305,
+        5594,
+        5736,
+        5967,
+        6620,
+        7062,
+        7396,
+        7423,
+        7460,
+        7688,
+        9329
+      ],
+      "name": "The Banner Saga",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14,
+        34,
+        39,
+        48,
+        49,
+        130
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        38235,
+        150199,
+        152926,
+        152927,
+        152928,
+        152930,
+        366821,
+        548201
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        17,
+        22
+      ],
+      "url": "https://www.igdb.com/games/the-banner-saga",
+      "version_parent": -1
+    },
+    {
+      "bundles": [
         80698,
         85931,
         245662
@@ -79269,7 +80362,6 @@
         106,
         222,
         429,
-        453,
         488,
         575,
         1097,
@@ -79397,7 +80489,6 @@
         1289,
         1299,
         1313,
-        1374,
         1881,
         2225,
         2335,
@@ -80313,6 +81404,63 @@
       "version_parent": -1
     },
     {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1038614400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        5
+      ],
+      "id": 5858,
+      "involved_companies": [
+        14068,
+        14069,
+        14070,
+        14071
+      ],
+      "keywords": [
+        56,
+        167,
+        575,
+        1158,
+        4134,
+        5673
+      ],
+      "name": "Gun Metal",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        11
+      ],
+      "player_perspectives": [
+        2
+      ],
+      "ports": [],
+      "release_dates": [
+        14340,
+        14341
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18
+      ],
+      "url": "https://www.igdb.com/games/gun-metal",
+      "version_parent": -1
+    },
+    {
       "bundles": [
         82543
       ],
@@ -80971,7 +82119,6 @@
         241983
       ],
       "keywords": [
-        453,
         563,
         962,
         1158,
@@ -81236,6 +82383,91 @@
       "version_parent": -1
     },
     {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [
+        140548
+      ],
+      "expanded_games": [
+        32038
+      ],
+      "expansions": [],
+      "first_release_date": 1431561600,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        5,
+        24,
+        31,
+        32,
+        33
+      ],
+      "id": 6045,
+      "involved_companies": [
+        31202,
+        31203
+      ],
+      "keywords": [
+        21,
+        129,
+        288,
+        1511,
+        1705,
+        1780,
+        3831,
+        4134,
+        4287,
+        4403,
+        4410,
+        4614,
+        4726,
+        4796,
+        5164,
+        5316,
+        5327,
+        5564,
+        6392,
+        9045
+      ],
+      "name": "Not a Hero",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14,
+        48,
+        49
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        38920,
+        38921,
+        38922,
+        44992,
+        119395,
+        121433,
+        130295
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        27
+      ],
+      "url": "https://www.igdb.com/games/not-a-hero",
+      "version_parent": -1
+    },
+    {
       "bundles": [
         25772,
         53591,
@@ -81272,7 +82504,6 @@
         61,
         129,
         164,
-        453,
         558,
         575,
         705,
@@ -81997,7 +83228,6 @@
       ],
       "keywords": [
         103,
-        453,
         660,
         1158,
         1286,
@@ -82034,6 +83264,84 @@
         18
       ],
       "url": "https://www.igdb.com/games/tron-2-0",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1311897600,
+      "forks": [],
+      "franchise": 395,
+      "franchises": [
+        395
+      ],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        5,
+        12,
+        32
+      ],
+      "id": 6230,
+      "involved_companies": [
+        14851
+      ],
+      "keywords": [
+        103,
+        106,
+        1032,
+        1033,
+        1158,
+        1313,
+        1423,
+        1494,
+        1523,
+        1669,
+        2167,
+        3002,
+        4004,
+        4134,
+        4135,
+        4239,
+        4349,
+        4359,
+        4541,
+        4580,
+        4613,
+        6716,
+        17092
+      ],
+      "name": "E.Y.E: Divine Cybermancy",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6
+      ],
+      "player_perspectives": [
+        1
+      ],
+      "ports": [],
+      "release_dates": [
+        15195,
+        190148
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18,
+        39
+      ],
+      "url": "https://www.igdb.com/games/e-y-e-divine-cybermancy",
       "version_parent": -1
     },
     {
@@ -82350,7 +83658,6 @@
       ],
       "keywords": [
         160,
-        453,
         923,
         1127,
         1158,
@@ -84229,7 +85536,6 @@
         25,
         129,
         167,
-        453,
         558,
         563,
         575,
@@ -84914,7 +86220,6 @@
       ],
       "keywords": [
         1,
-        453,
         558,
         562,
         1293,
@@ -85837,7 +87142,6 @@
         21,
         129,
         226,
-        453,
         953,
         1158,
         1181,
@@ -86302,7 +87606,6 @@
       ],
       "keywords": [
         103,
-        453,
         826,
         1204,
         1309,
@@ -87953,7 +89256,6 @@
         129,
         137,
         392,
-        453,
         558,
         562,
         563,
@@ -88815,6 +90117,184 @@
       "version_parent": -1
     },
     {
+      "bundles": [
+        38491,
+        42957
+      ],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        1284
+      ],
+      "dlcs": [
+        138834,
+        138835,
+        138837
+      ],
+      "expanded_games": [],
+      "expansions": [
+        138836
+      ],
+      "first_release_date": 1208995200,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [
+        736
+      ],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        15,
+        16,
+        24
+      ],
+      "id": 7477,
+      "involved_companies": [
+        107896,
+        107897
+      ],
+      "keywords": [
+        78,
+        236,
+        283,
+        415,
+        424,
+        558,
+        562,
+        578,
+        1075,
+        1107,
+        1158,
+        1228,
+        1293,
+        1373,
+        1381,
+        1437,
+        1440,
+        1821,
+        1834,
+        1887,
+        1971,
+        2052,
+        2109,
+        2242,
+        2543,
+        3182,
+        3486,
+        3831,
+        4004,
+        4150,
+        4239,
+        4248,
+        4250,
+        4284,
+        4285,
+        4287,
+        4290,
+        4333,
+        4347,
+        4353,
+        4359,
+        4392,
+        4397,
+        4410,
+        4468,
+        4477,
+        4541,
+        4544,
+        4578,
+        4613,
+        4618,
+        4622,
+        4730,
+        4770,
+        4850,
+        4852,
+        4856,
+        4869,
+        4918,
+        4956,
+        4984,
+        4992,
+        4997,
+        4998,
+        4999,
+        5029,
+        5105,
+        5183,
+        5210,
+        5329,
+        5422,
+        5453,
+        5455,
+        5518,
+        5563,
+        5591,
+        5594,
+        5599,
+        5601,
+        5626,
+        5675,
+        5801,
+        5963,
+        6244,
+        6295,
+        6304,
+        6385,
+        6461,
+        6648,
+        6828,
+        6832,
+        6846,
+        7166,
+        7221,
+        7387,
+        7396,
+        7423,
+        9156,
+        9283,
+        9349,
+        9529,
+        13076,
+        13477,
+        23856,
+        23933,
+        26532
+      ],
+      "name": "Valkyria Chronicles",
+      "parent_game": -1,
+      "platforms": [
+        9
+      ],
+      "player_perspectives": [
+        2
+      ],
+      "ports": [],
+      "release_dates": [
+        579601,
+        579602,
+        579603,
+        579604
+      ],
+      "remakes": [],
+      "remasters": [
+        18967
+      ],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17,
+        22,
+        23,
+        31,
+        39
+      ],
+      "url": "https://www.igdb.com/games/valkyria-chronicles",
+      "version_parent": -1
+    },
+    {
       "bundles": [],
       "category": 0,
       "collection": -1,
@@ -89167,6 +90647,188 @@
         38
       ],
       "url": "https://www.igdb.com/games/assassins-creed-rogue",
+      "version_parent": -1
+    },
+    {
+      "bundles": [
+        53647
+      ],
+      "category": 10,
+      "collection": -1,
+      "collections": [
+        1025
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1383868800,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        13,
+        15,
+        16,
+        31,
+        33
+      ],
+      "id": 7594,
+      "involved_companies": [
+        17879,
+        17880,
+        17881,
+        17882,
+        17883
+      ],
+      "keywords": [
+        3,
+        23,
+        24,
+        51,
+        70,
+        103,
+        165,
+        166,
+        167,
+        288,
+        307,
+        465,
+        574,
+        923,
+        947,
+        967,
+        974,
+        996,
+        1029,
+        1033,
+        1045,
+        1158,
+        1159,
+        1448,
+        1494,
+        3831,
+        4004,
+        4134,
+        4150,
+        4388,
+        4869,
+        5885
+      ],
+      "name": "Space Rangers HD: A War Apart",
+      "parent_game": 7593,
+      "platforms": [
+        6
+      ],
+      "player_perspectives": [
+        3,
+        5
+      ],
+      "ports": [],
+      "release_dates": [
+        19865
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18,
+        27,
+        33,
+        38,
+        39
+      ],
+      "url": "https://www.igdb.com/games/space-rangers-hd-a-war-apart",
+      "version_parent": -1
+    },
+    {
+      "bundles": [
+        317402
+      ],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        5955
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1502064000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        25,
+        31,
+        32
+      ],
+      "id": 7603,
+      "involved_companies": [
+        128332
+      ],
+      "keywords": [
+        962,
+        2472,
+        4134,
+        4287,
+        4345,
+        4473,
+        4514,
+        4918,
+        5019,
+        5317,
+        5850,
+        6752,
+        12087,
+        12105,
+        12556,
+        39011,
+        39012,
+        39028,
+        39034,
+        39038,
+        39039,
+        39045,
+        39048
+      ],
+      "name": "Hellblade: Senua's Sacrifice",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        48,
+        49,
+        130,
+        169
+      ],
+      "player_perspectives": [
+        2
+      ],
+      "ports": [
+        106107
+      ],
+      "release_dates": [
+        110615,
+        149684,
+        302863,
+        302864,
+        404669
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17,
+        22
+      ],
+      "url": "https://www.igdb.com/games/hellblade-senuas-sacrifice",
       "version_parent": -1
     },
     {
@@ -89844,6 +91506,250 @@
         38
       ],
       "url": "https://www.igdb.com/games/saints-row-gat-out-of-hell",
+      "version_parent": -1
+    },
+    {
+      "bundles": [
+        51695
+      ],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        1206
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [
+        8885,
+        8886,
+        8887,
+        8888,
+        8889
+      ],
+      "first_release_date": 1243900800,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        11,
+        13,
+        15,
+        32
+      ],
+      "id": 7720,
+      "involved_companies": [
+        18034
+      ],
+      "keywords": [
+        23,
+        24,
+        77,
+        465,
+        905,
+        967,
+        992,
+        1158,
+        1293,
+        1440,
+        1494,
+        2002,
+        3831,
+        4004,
+        4134,
+        4891,
+        5537,
+        6019
+      ],
+      "name": "AI War: Fleet Command",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14
+      ],
+      "player_perspectives": [
+        3
+      ],
+      "ports": [],
+      "release_dates": [
+        20217,
+        20218,
+        20219
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        18,
+        38,
+        39,
+        41
+      ],
+      "url": "https://www.igdb.com/games/ai-war-fleet-command",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 941328000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        9,
+        12
+      ],
+      "id": 7844,
+      "involved_companies": [
+        18306,
+        20419,
+        279837
+      ],
+      "keywords": [
+        3,
+        4,
+        16,
+        72,
+        103,
+        129,
+        211,
+        226,
+        415,
+        497,
+        575,
+        687,
+        906,
+        962,
+        1097,
+        1107,
+        1158,
+        1186,
+        1208,
+        1228,
+        1289,
+        1320,
+        1322,
+        1440,
+        1523,
+        1710,
+        1821,
+        1886,
+        2415,
+        2951,
+        3486,
+        3831,
+        4134,
+        4138,
+        4239,
+        4270,
+        4284,
+        4285,
+        4287,
+        4353,
+        4388,
+        4399,
+        4405,
+        4410,
+        4468,
+        4492,
+        4583,
+        4613,
+        4621,
+        4622,
+        4637,
+        4711,
+        4787,
+        4852,
+        4879,
+        4897,
+        4903,
+        4991,
+        4993,
+        4998,
+        5018,
+        5183,
+        5319,
+        5359,
+        5387,
+        5422,
+        5436,
+        5517,
+        5595,
+        5599,
+        5703,
+        5840,
+        5967,
+        5971,
+        5998,
+        6007,
+        6062,
+        6094,
+        6246,
+        6326,
+        6367,
+        6541,
+        6619,
+        6620,
+        6813,
+        6827,
+        6848,
+        7048,
+        7062,
+        7304,
+        7305,
+        7396,
+        7473,
+        7480,
+        7568,
+        7603,
+        7612,
+        7643,
+        8099,
+        8150,
+        8801,
+        8974,
+        9005,
+        9283,
+        9341,
+        9750,
+        10618,
+        23933
+      ],
+      "name": "Septerra Core: Legacy of the Creator",
+      "parent_game": -1,
+      "platforms": [
+        6
+      ],
+      "player_perspectives": [
+        3
+      ],
+      "ports": [],
+      "release_dates": [
+        24124,
+        24125
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        17,
+        18,
+        23
+      ],
+      "url": "https://www.igdb.com/games/septerra-core-legacy-of-the-creator",
       "version_parent": -1
     },
     {
@@ -90534,8 +92440,9 @@
       ],
       "id": 8114,
       "involved_companies": [
-        38892,
-        68403
+        291288,
+        291289,
+        291290
       ],
       "keywords": [
         58,
@@ -90545,7 +92452,6 @@
         220,
         274,
         403,
-        453,
         558,
         575,
         669,
@@ -90637,8 +92543,7 @@
       "platforms": [
         3,
         6,
-        14,
-        48
+        14
       ],
       "player_perspectives": [
         1
@@ -90646,7 +92551,6 @@
       "ports": [],
       "release_dates": [
         22382,
-        55634,
         211631,
         211632
       ],
@@ -90658,6 +92562,125 @@
         27
       ],
       "url": "https://www.igdb.com/games/jazzpunk",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [
+        21683
+      ],
+      "expansions": [],
+      "first_release_date": 1332806400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        9,
+        31
+      ],
+      "id": 8117,
+      "involved_companies": [
+        19333,
+        19334,
+        19335
+      ],
+      "keywords": [
+        69,
+        72,
+        129,
+        159,
+        558,
+        758,
+        816,
+        1032,
+        1033,
+        1059,
+        1140,
+        1158,
+        1313,
+        1317,
+        1437,
+        1523,
+        1705,
+        1836,
+        1898,
+        2170,
+        3203,
+        3486,
+        3540,
+        4134,
+        4256,
+        4329,
+        4403,
+        4410,
+        4412,
+        4541,
+        4609,
+        4637,
+        4718,
+        4726,
+        4984,
+        4997,
+        4999,
+        5164,
+        5260,
+        5262,
+        5305,
+        5314,
+        5328,
+        5408,
+        5425,
+        5474,
+        5659,
+        5661,
+        5675,
+        5697,
+        5735,
+        5963,
+        6620,
+        6863,
+        7112,
+        7215,
+        7348,
+        7653,
+        9246,
+        9329,
+        10336,
+        23933
+      ],
+      "name": "Lone Survivor",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        22385,
+        22386,
+        230372
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        19,
+        21,
+        23
+      ],
+      "url": "https://www.igdb.com/games/lone-survivor",
       "version_parent": -1
     },
     {
@@ -91493,7 +93516,6 @@
       "keywords": [
         103,
         129,
-        453,
         558,
         923,
         1033,
@@ -92573,6 +94595,73 @@
       "category": 0,
       "collection": -1,
       "collections": [
+        2385
+      ],
+      "dlcs": [
+        22711
+      ],
+      "expanded_games": [
+        252188
+      ],
+      "expansions": [],
+      "first_release_date": 1418601600,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        31,
+        32
+      ],
+      "id": 8492,
+      "involved_companies": [
+        20995
+      ],
+      "keywords": [
+        69,
+        1705,
+        1961,
+        4134,
+        23856,
+        23933
+      ],
+      "name": "Lisa: The Painful",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        25163,
+        25164,
+        25165,
+        119103
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        19,
+        21,
+        27,
+        31
+      ],
+      "url": "https://www.igdb.com/games/lisa-the-painful",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [
         1260
       ],
       "dlcs": [],
@@ -92835,6 +94924,104 @@
       "version_parent": -1
     },
     {
+      "bundles": [
+        139994
+      ],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1421712000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12
+      ],
+      "id": 8598,
+      "involved_companies": [
+        21240,
+        133206,
+        133207
+      ],
+      "keywords": [
+        126,
+        271,
+        274,
+        394,
+        415,
+        729,
+        758,
+        826,
+        976,
+        1368,
+        1834,
+        2170,
+        2957,
+        3228,
+        3486,
+        4134,
+        4249,
+        4284,
+        4468,
+        4510,
+        4613,
+        4842,
+        4852,
+        4862,
+        4940,
+        5152,
+        5422,
+        5563,
+        6860,
+        7080,
+        7112,
+        7423,
+        7424,
+        17436,
+        18722
+      ],
+      "name": "Citizens of Earth",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        37,
+        41,
+        46,
+        48
+      ],
+      "player_perspectives": [
+        3
+      ],
+      "ports": [],
+      "release_dates": [
+        25633,
+        25634,
+        25635,
+        25636,
+        138324,
+        146124,
+        190315,
+        190316,
+        248364,
+        248800
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        27
+      ],
+      "url": "https://www.igdb.com/games/citizens-of-earth",
+      "version_parent": -1
+    },
+    {
       "bundles": [],
       "category": 0,
       "collection": -1,
@@ -92946,6 +95133,172 @@
         18
       ],
       "url": "https://www.igdb.com/games/anne",
+      "version_parent": -1
+    },
+    {
+      "bundles": [
+        172714
+      ],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        7041
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1427760000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        8,
+        31,
+        32
+      ],
+      "id": 8652,
+      "involved_companies": [
+        69624,
+        69625,
+        97009
+      ],
+      "keywords": [
+        72,
+        103,
+        126,
+        166,
+        288,
+        477,
+        1033,
+        1059,
+        1068,
+        1705,
+        1986,
+        3486,
+        3831,
+        4134,
+        4154,
+        4276,
+        4397,
+        4465,
+        4583,
+        4709,
+        4871,
+        4882,
+        5158,
+        5315,
+        5316,
+        5962,
+        10101,
+        23933,
+        26969
+      ],
+      "name": "Axiom Verge",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14,
+        41,
+        46,
+        48,
+        49,
+        130
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        28394,
+        35910,
+        51456,
+        56735,
+        56736,
+        112896,
+        135866,
+        137578,
+        137579,
+        405538,
+        405539
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18
+      ],
+      "url": "https://www.igdb.com/games/axiom-verge",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 9,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1422230400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        2,
+        9,
+        31
+      ],
+      "id": 8682,
+      "involved_companies": [
+        73540
+      ],
+      "keywords": [
+        1136
+      ],
+      "name": "Grim Fandango Remastered",
+      "parent_game": 181,
+      "platforms": [
+        3,
+        6,
+        14,
+        34,
+        39,
+        46,
+        48,
+        49,
+        130
+      ],
+      "player_perspectives": [
+        3
+      ],
+      "ports": [],
+      "release_dates": [
+        25861,
+        25862,
+        160689,
+        214603,
+        329218,
+        329219,
+        406211,
+        406212,
+        406213,
+        456390
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        27,
+        31
+      ],
+      "url": "https://www.igdb.com/games/grim-fandango-remastered",
       "version_parent": -1
     },
     {
@@ -94285,6 +96638,142 @@
       "category": 0,
       "collection": -1,
       "collections": [
+        2413
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1088035200,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [
+        855
+      ],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        16
+      ],
+      "id": 8986,
+      "involved_companies": [
+        24085,
+        24086,
+        24087,
+        38959
+      ],
+      "keywords": [
+        4,
+        61,
+        78,
+        226,
+        415,
+        521,
+        962,
+        1127,
+        1158,
+        1186,
+        1209,
+        1228,
+        1381,
+        1494,
+        1923,
+        2153,
+        2426,
+        3486,
+        4004,
+        4134,
+        4138,
+        4150,
+        4340,
+        4352,
+        4353,
+        4388,
+        4396,
+        4405,
+        4484,
+        4541,
+        4622,
+        4852,
+        4856,
+        4878,
+        4998,
+        5018,
+        5105,
+        5175,
+        5287,
+        5329,
+        5594,
+        5840,
+        5963,
+        6062,
+        6225,
+        6304,
+        6326,
+        6383,
+        6391,
+        6608,
+        6813,
+        7048,
+        7154,
+        7166,
+        7221,
+        7593,
+        7643,
+        8109,
+        8299,
+        8311,
+        8801,
+        8844,
+        9156,
+        9328,
+        9329,
+        9331,
+        9404,
+        23933,
+        29745
+      ],
+      "name": "The Legend of Heroes: Trails in the Sky",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        38
+      ],
+      "player_perspectives": [
+        2,
+        3
+      ],
+      "ports": [],
+      "release_dates": [
+        30289,
+        30290,
+        30291,
+        30292,
+        30293,
+        30294,
+        518632
+      ],
+      "remakes": [
+        136287,
+        314936
+      ],
+      "remasters": [
+        136859
+      ],
+      "standalone_expansions": [],
+      "themes": [
+        17,
+        18
+      ],
+      "url": "https://www.igdb.com/games/the-legend-of-heroes-trails-in-the-sky",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [
         3516
       ],
       "dlcs": [],
@@ -94775,7 +97264,6 @@
         1,
         19,
         129,
-        453,
         472,
         558,
         562,
@@ -95150,6 +97638,91 @@
         43
       ],
       "url": "https://www.igdb.com/games/hotel-dusk-room-215",
+      "version_parent": -1
+    },
+    {
+      "bundles": [
+        143025
+      ],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        10432
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1516665600,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        31,
+        32
+      ],
+      "id": 9254,
+      "involved_companies": [
+        65382,
+        66501,
+        66502,
+        225432
+      ],
+      "keywords": [
+        72,
+        138,
+        2324,
+        4440,
+        4940,
+        5327,
+        5825
+      ],
+      "name": "Subnautica",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        14,
+        48,
+        49,
+        130,
+        163,
+        167,
+        169,
+        385
+      ],
+      "player_perspectives": [
+        1,
+        7
+      ],
+      "ports": [],
+      "release_dates": [
+        465111,
+        465278,
+        499659,
+        499660,
+        499661,
+        499662,
+        499664,
+        499665,
+        499666,
+        499667,
+        499669,
+        499670,
+        499758
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [
+        107315
+      ],
+      "themes": [
+        18,
+        21,
+        38
+      ],
+      "url": "https://www.igdb.com/games/subnautica",
       "version_parent": -1
     },
     {
@@ -95769,6 +98342,78 @@
       "version_parent": -1
     },
     {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1405555200,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        8,
+        9,
+        15,
+        32
+      ],
+      "id": 9478,
+      "involved_companies": [
+        33972,
+        49014,
+        49015
+      ],
+      "keywords": [
+        1158,
+        1387,
+        1494,
+        3559,
+        4004,
+        4134,
+        4150,
+        5025
+      ],
+      "name": "So Many Me",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14,
+        48,
+        49,
+        72
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        31380,
+        31672,
+        48560,
+        77333,
+        77334,
+        77335,
+        77336,
+        119269,
+        402490
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17
+      ],
+      "url": "https://www.igdb.com/games/so-many-me",
+      "version_parent": -1
+    },
+    {
       "bundles": [
         52883
       ],
@@ -95819,7 +98464,6 @@
         284,
         429,
         451,
-        453,
         465,
         488,
         510,
@@ -97246,6 +99890,66 @@
       "bundles": [],
       "category": 0,
       "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1373328000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "genres": [
+        5,
+        12,
+        24,
+        32,
+        33
+      ],
+      "id": 9724,
+      "involved_companies": [
+        23166
+      ],
+      "keywords": [
+        24,
+        166,
+        283,
+        1494,
+        5311
+      ],
+      "name": "Ring Runner: Flight of the Sages",
+      "parent_game": -1,
+      "platforms": [
+        6
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        28839
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18,
+        27,
+        31
+      ],
+      "url": "https://www.igdb.com/games/ring-runner-flight-of-the-sages",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
       "collections": [
         1373
       ],
@@ -97659,6 +100363,129 @@
       "bundles": [],
       "category": 0,
       "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1414022400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        8,
+        9,
+        31,
+        32
+      ],
+      "id": 9874,
+      "involved_companies": [
+        216204,
+        216205,
+        216206
+      ],
+      "keywords": [
+        153,
+        274,
+        1158,
+        1293,
+        1494,
+        1546,
+        1705,
+        4004,
+        4134,
+        4135,
+        4138,
+        5962
+      ],
+      "name": "Squishy the Suicidal Pig",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        14
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        29131,
+        401028
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        17
+      ],
+      "url": "https://www.igdb.com/games/squishy-the-suicidal-pig",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1400630400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        8,
+        9,
+        31,
+        32
+      ],
+      "id": 9878,
+      "involved_companies": [
+        23436,
+        268614,
+        268615
+      ],
+      "keywords": [
+        1494,
+        2493,
+        4004,
+        4240,
+        5817
+      ],
+      "name": "Out There Somewhere",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        14
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        29148,
+        194275,
+        599376
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18
+      ],
+      "url": "https://www.igdb.com/games/out-there-somewhere",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
       "collections": [
         5028
       ],
@@ -97889,6 +100716,75 @@
         18
       ],
       "url": "https://www.igdb.com/games/pixeljunk-shooter",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1378944000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        15,
+        24,
+        31
+      ],
+      "id": 9938,
+      "involved_companies": [
+        95569
+      ],
+      "keywords": [
+        96,
+        147,
+        1068,
+        1158,
+        1320,
+        1494,
+        2066,
+        3918,
+        4004,
+        4134,
+        4150,
+        4284,
+        4353,
+        4390,
+        4392,
+        4404,
+        5792,
+        6057,
+        6074,
+        8242
+      ],
+      "name": "Aarklash: Legacy",
+      "parent_game": -1,
+      "platforms": [
+        6
+      ],
+      "player_perspectives": [
+        3
+      ],
+      "ports": [],
+      "release_dates": [
+        52236
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17
+      ],
+      "url": "https://www.igdb.com/games/aarklash-legacy",
       "version_parent": -1
     },
     {
@@ -98529,6 +101425,78 @@
       "bundles": [],
       "category": 0,
       "collection": -1,
+      "collections": [
+        6699
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1505952000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        13,
+        15,
+        31,
+        32
+      ],
+      "id": 10160,
+      "involved_companies": [
+        23719
+      ],
+      "keywords": [
+        221,
+        416,
+        577,
+        578,
+        947,
+        1058,
+        1299,
+        1495,
+        1986,
+        4256,
+        4286,
+        4365,
+        4384,
+        5370,
+        5697,
+        6057,
+        9045,
+        9156,
+        9605,
+        17292
+      ],
+      "name": "Heat Signature",
+      "parent_game": -1,
+      "platforms": [
+        6
+      ],
+      "player_perspectives": [
+        3
+      ],
+      "ports": [],
+      "release_dates": [
+        112823
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18,
+        23
+      ],
+      "url": "https://www.igdb.com/games/heat-signature",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
       "collections": [],
       "dlcs": [],
       "expanded_games": [],
@@ -98734,6 +101702,65 @@
         1
       ],
       "url": "https://www.igdb.com/games/hamiltons-great-adventure",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1423008000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        5,
+        15,
+        32
+      ],
+      "id": 10334,
+      "involved_companies": [
+        96840,
+        96841
+      ],
+      "keywords": [
+        77,
+        575,
+        1158,
+        4134,
+        4135,
+        4138
+      ],
+      "name": "Freaking Meatbags",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14
+      ],
+      "player_perspectives": [
+        3
+      ],
+      "ports": [],
+      "release_dates": [
+        48782,
+        48783,
+        48784
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18
+      ],
+      "url": "https://www.igdb.com/games/freaking-meatbags",
       "version_parent": -1
     },
     {
@@ -100367,6 +103394,72 @@
         23
       ],
       "url": "https://www.igdb.com/games/dishonored-2",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1473724800,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        8,
+        31
+      ],
+      "id": 11131,
+      "involved_companies": [
+        36385,
+        36386,
+        36387,
+        180345
+      ],
+      "keywords": [
+        69,
+        72,
+        247,
+        575,
+        962,
+        1033,
+        4355,
+        4356,
+        4357,
+        4882,
+        4883,
+        4890,
+        16833
+      ],
+      "name": "ReCore",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        49
+      ],
+      "player_perspectives": [
+        2
+      ],
+      "ports": [],
+      "release_dates": [
+        52055,
+        52056,
+        120595
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18
+      ],
+      "url": "https://www.igdb.com/games/recore--1",
       "version_parent": -1
     },
     {
@@ -103209,6 +106302,65 @@
         28
       ],
       "url": "https://www.igdb.com/games/recettear-an-item-shops-tale",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 9,
+      "collection": -1,
+      "collections": [
+        1664
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1449705600,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        8,
+        12,
+        25,
+        31
+      ],
+      "id": 12529,
+      "involved_companies": [
+        26411,
+        58951,
+        58952,
+        180643
+      ],
+      "keywords": [
+        137
+      ],
+      "name": "Gravity Rush Remastered",
+      "parent_game": 11701,
+      "platforms": [
+        48
+      ],
+      "player_perspectives": [
+        2
+      ],
+      "ports": [],
+      "release_dates": [
+        103363,
+        103364,
+        103365
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17,
+        27,
+        38
+      ],
+      "url": "https://www.igdb.com/games/gravity-rush-remastered",
       "version_parent": -1
     },
     {
@@ -107391,6 +110543,80 @@
       "bundles": [],
       "category": 0,
       "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1378252800,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        3
+      ],
+      "genres": [
+        9,
+        31,
+        32
+      ],
+      "id": 15544,
+      "involved_companies": [
+        127127
+      ],
+      "keywords": [
+        72,
+        974,
+        1158,
+        1333,
+        1494,
+        1495,
+        3203,
+        3224,
+        4004,
+        4134,
+        4135,
+        4580,
+        4791,
+        4976,
+        5211,
+        5533,
+        5535,
+        5537,
+        5538,
+        5539
+      ],
+      "name": "MirrorMoon EP",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14,
+        72
+      ],
+      "player_perspectives": [
+        1
+      ],
+      "ports": [],
+      "release_dates": [
+        42879,
+        241575,
+        241576,
+        241577
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        18
+      ],
+      "url": "https://www.igdb.com/games/mirrormoon-ep",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
       "collections": [
         655
       ],
@@ -107661,6 +110887,59 @@
     },
     {
       "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1451520000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        32
+      ],
+      "id": 15737,
+      "involved_companies": [
+        29729
+      ],
+      "keywords": [
+        2385
+      ],
+      "name": "Destination Sol",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14,
+        34
+      ],
+      "player_perspectives": [],
+      "ports": [],
+      "release_dates": [
+        43318,
+        43319,
+        43320,
+        43321
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18,
+        38
+      ],
+      "url": "https://www.igdb.com/games/destination-sol",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
       "category": 2,
       "collection": -1,
       "collections": [],
@@ -107797,6 +111076,64 @@
         17
       ],
       "url": "https://www.igdb.com/games/bahamut-lagoon",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1398124800,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        7,
+        9,
+        31,
+        32
+      ],
+      "id": 15854,
+      "involved_companies": [
+        29935
+      ],
+      "keywords": [
+        72,
+        1495,
+        4134,
+        4137,
+        4963,
+        5327,
+        7327
+      ],
+      "name": "Fract Osc",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        14
+      ],
+      "player_perspectives": [
+        1
+      ],
+      "ports": [],
+      "release_dates": [
+        43566,
+        43567
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        18,
+        38
+      ],
+      "url": "https://www.igdb.com/games/fract-osc",
       "version_parent": -1
     },
     {
@@ -108049,7 +111386,6 @@
       ],
       "keywords": [
         21,
-        453,
         563,
         634,
         660,
@@ -108372,6 +111708,79 @@
         18
       ],
       "url": "https://www.igdb.com/games/steel-storm-burning-retribution",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1271894400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        32
+      ],
+      "id": 16259,
+      "involved_companies": [
+        30479
+      ],
+      "keywords": [
+        126,
+        211,
+        413,
+        415,
+        1208,
+        1317,
+        1320,
+        1511,
+        1705,
+        2415,
+        3222,
+        4135,
+        4158,
+        4284,
+        4398,
+        4407,
+        4410,
+        4465,
+        4787,
+        4879,
+        5308,
+        5792,
+        6642,
+        7417,
+        9283
+      ],
+      "name": "Breath of Death VII",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        12
+      ],
+      "player_perspectives": [
+        3
+      ],
+      "ports": [],
+      "release_dates": [
+        155085,
+        204541
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        27
+      ],
+      "url": "https://www.igdb.com/games/breath-of-death-vii",
       "version_parent": -1
     },
     {
@@ -108785,7 +112194,6 @@
         30630
       ],
       "keywords": [
-        453,
         575,
         1158,
         1494,
@@ -109711,6 +113119,60 @@
       "bundles": [],
       "category": 0,
       "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1335312000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        8,
+        12,
+        31,
+        32
+      ],
+      "id": 17351,
+      "involved_companies": [
+        32077
+      ],
+      "keywords": [
+        69,
+        575,
+        1495,
+        4836
+      ],
+      "name": "The Desolate Hope",
+      "parent_game": -1,
+      "platforms": [
+        6
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        568432,
+        569749
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18
+      ],
+      "url": "https://www.igdb.com/games/the-desolate-hope",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
       "collections": [
         2045
       ],
@@ -109742,7 +113204,6 @@
       "keywords": [
         167,
         170,
-        453,
         546,
         575,
         588,
@@ -110517,6 +113978,90 @@
       "bundles": [],
       "category": 0,
       "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1457049600,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "genres": [
+        8,
+        31,
+        32,
+        33
+      ],
+      "id": 18158,
+      "involved_companies": [
+        96408
+      ],
+      "keywords": [
+        101,
+        171,
+        390,
+        905,
+        1387,
+        1511,
+        1677,
+        2180,
+        2392,
+        2760,
+        3014,
+        3560,
+        4134,
+        4210,
+        4253,
+        4609,
+        4871,
+        5379,
+        16877,
+        18090,
+        25831
+      ],
+      "name": "Ultimate Chicken Horse",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14,
+        48,
+        49,
+        130
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        47628,
+        65401,
+        65402,
+        172801,
+        213292,
+        213293
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        27,
+        40
+      ],
+      "url": "https://www.igdb.com/games/ultimate-chicken-horse",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
       "collections": [
         2078
       ],
@@ -111025,7 +114570,7 @@
       "dlcs": [],
       "expanded_games": [],
       "expansions": [],
-      "first_release_date": 1426550400,
+      "first_release_date": 1384387200,
       "forks": [],
       "franchise": -1,
       "franchises": [],
@@ -111040,8 +114585,8 @@
       "id": 18975,
       "involved_companies": [
         43993,
-        44008,
-        44009
+        44009,
+        291859
       ],
       "keywords": [
         509,
@@ -111069,6 +114614,7 @@
         6,
         14,
         34,
+        39,
         46,
         48,
         49,
@@ -111079,15 +114625,14 @@
       ],
       "ports": [],
       "release_dates": [
-        55462,
-        55464,
-        55465,
-        100423,
-        100424,
-        136650,
-        247210,
-        420129,
-        456823
+        655744,
+        655745,
+        655746,
+        655747,
+        655748,
+        655749,
+        655750,
+        655751
       ],
       "remakes": [],
       "remasters": [],
@@ -112211,7 +115756,6 @@
         129,
         250,
         274,
-        453,
         488,
         510,
         962,
@@ -112449,6 +115993,87 @@
         38
       ],
       "url": "https://www.igdb.com/games/fallout-4-nuka-world",
+      "version_parent": -1
+    },
+    {
+      "bundles": [
+        83742,
+        201179
+      ],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        2810
+      ],
+      "dlcs": [
+        140366,
+        140367,
+        140368,
+        140380
+      ],
+      "expanded_games": [],
+      "expansions": [
+        26495,
+        28542
+      ],
+      "first_release_date": 1474934400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [
+        1043
+      ],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        10
+      ],
+      "id": 19539,
+      "involved_companies": [
+        51814,
+        51815,
+        51816
+      ],
+      "keywords": [
+        2448,
+        4205,
+        4221,
+        4345,
+        4355,
+        4356,
+        4357,
+        4882,
+        4883,
+        5254,
+        12556,
+        14051,
+        14092,
+        14093
+      ],
+      "name": "Forza Horizon 3",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        49
+      ],
+      "player_perspectives": [
+        1,
+        2
+      ],
+      "ports": [],
+      "release_dates": [
+        92594,
+        92595
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        38
+      ],
+      "url": "https://www.igdb.com/games/forza-horizon-3",
       "version_parent": -1
     },
     {
@@ -113882,6 +117507,71 @@
         27
       ],
       "url": "https://www.igdb.com/games/okami-hd",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1432598400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        8,
+        9,
+        31,
+        32
+      ],
+      "id": 20888,
+      "involved_companies": [
+        47457,
+        54610
+      ],
+      "keywords": [
+        1158,
+        1494,
+        4004,
+        4138,
+        4150,
+        4359,
+        4403,
+        4410,
+        5151,
+        5962,
+        7048
+      ],
+      "name": "Magnetic: Cage Closed",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        49
+      ],
+      "player_perspectives": [
+        1
+      ],
+      "ports": [],
+      "release_dates": [
+        71205,
+        113822,
+        120633
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18,
+        19
+      ],
+      "url": "https://www.igdb.com/games/magnetic-cage-closed",
       "version_parent": -1
     },
     {
@@ -115462,6 +119152,67 @@
       "version_parent": -1
     },
     {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1436400000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        8,
+        9,
+        31,
+        32
+      ],
+      "id": 22671,
+      "involved_companies": [
+        138824
+      ],
+      "keywords": [
+        1705,
+        4134,
+        4180,
+        7558
+      ],
+      "name": "Replay: VHS is not dead",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        14,
+        41,
+        48,
+        49
+      ],
+      "player_perspectives": [],
+      "ports": [],
+      "release_dates": [
+        71319,
+        71320,
+        120191,
+        142745,
+        142746,
+        289657,
+        289658,
+        289659
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1
+      ],
+      "url": "https://www.igdb.com/games/replay-vhs-is-not-dead",
+      "version_parent": -1
+    },
+    {
       "bundles": [
         263588
       ],
@@ -115987,10 +119738,10 @@
       ],
       "ports": [],
       "release_dates": [
-        127656,
-        127657,
-        394969,
-        394970
+        654033,
+        654034,
+        654035,
+        654036
       ],
       "remakes": [],
       "remasters": [],
@@ -116326,6 +120077,67 @@
         17
       ],
       "url": "https://www.igdb.com/games/masquerada-songs-and-shadows",
+      "version_parent": -1
+    },
+    {
+      "bundles": [
+        53672
+      ],
+      "category": 3,
+      "collection": -1,
+      "collections": [
+        2578
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1367452800,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        31,
+        32,
+        34
+      ],
+      "id": 24618,
+      "involved_companies": [
+        43432
+      ],
+      "keywords": [
+        4260,
+        4609
+      ],
+      "name": "Sorcery! Parts 1 & 2",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        14,
+        34,
+        39
+      ],
+      "player_perspectives": [
+        5
+      ],
+      "ports": [],
+      "release_dates": [
+        64001,
+        64002,
+        64003,
+        64004,
+        119170
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        17
+      ],
+      "url": "https://www.igdb.com/games/sorcery-parts-1-and-2",
       "version_parent": -1
     },
     {
@@ -117098,6 +120910,93 @@
       "bundles": [],
       "category": 0,
       "collection": -1,
+      "collections": [
+        3109
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1516838400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        8,
+        31,
+        32
+      ],
+      "id": 26226,
+      "involved_companies": [
+        193388,
+        193389,
+        246595
+      ],
+      "keywords": [
+        72,
+        126,
+        158,
+        288,
+        744,
+        905,
+        962,
+        1387,
+        1697,
+        1705,
+        1710,
+        1780,
+        1912,
+        2426,
+        3403,
+        3749,
+        4134,
+        4154,
+        4527,
+        5411,
+        23856,
+        24875,
+        25831
+      ],
+      "name": "Celeste",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14,
+        48,
+        49,
+        130,
+        170
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        134893,
+        134894,
+        134895,
+        134896,
+        134897,
+        147905,
+        239649
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17
+      ],
+      "url": "https://www.igdb.com/games/celeste",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
       "collections": [],
       "dlcs": [],
       "expanded_games": [],
@@ -117269,6 +121168,61 @@
         43
       ],
       "url": "https://www.igdb.com/games/disco-elysium",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        3187
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1481587200,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        13,
+        15
+      ],
+      "id": 26628,
+      "involved_companies": [
+        43179,
+        43180
+      ],
+      "keywords": [
+        288,
+        2807
+      ],
+      "name": "Glittermitten Grove",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14
+      ],
+      "player_perspectives": [
+        4
+      ],
+      "ports": [],
+      "release_dates": [
+        63245,
+        197879,
+        403527
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        17
+      ],
+      "url": "https://www.igdb.com/games/glittermitten-grove",
       "version_parent": -1
     },
     {
@@ -117592,6 +121546,91 @@
       "dlcs": [],
       "expanded_games": [],
       "expansions": [],
+      "first_release_date": 1522713600,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        9,
+        12,
+        31,
+        32
+      ],
+      "id": 26970,
+      "involved_companies": [
+        96773,
+        120105,
+        120106,
+        120107,
+        120108,
+        290024
+      ],
+      "keywords": [
+        198,
+        403,
+        687,
+        1033,
+        1203,
+        1299,
+        1494,
+        1756,
+        4004,
+        4134,
+        4245,
+        4466,
+        6648,
+        23866,
+        27015
+      ],
+      "name": "Minit",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14,
+        34,
+        39,
+        48,
+        49,
+        130
+      ],
+      "player_perspectives": [
+        3
+      ],
+      "ports": [],
+      "release_dates": [
+        149091,
+        149092,
+        149093,
+        152198,
+        152199,
+        156430,
+        220765,
+        305661
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17,
+        27,
+        43
+      ],
+      "url": "https://www.igdb.com/games/minit",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
       "first_release_date": 1489363200,
       "forks": [],
       "franchise": -1,
@@ -117799,6 +121838,73 @@
         19
       ],
       "url": "https://www.igdb.com/games/stories-untold",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        9042
+      ],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1589328000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        5,
+        31,
+        32
+      ],
+      "id": 27134,
+      "involved_companies": [
+        226553,
+        226554
+      ],
+      "keywords": [
+        2066,
+        3203,
+        4357
+      ],
+      "name": "Deep Rock Galactic",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        48,
+        49,
+        167,
+        169
+      ],
+      "player_perspectives": [
+        1
+      ],
+      "ports": [],
+      "release_dates": [
+        502374,
+        502375,
+        502376,
+        502377,
+        502378,
+        502379,
+        502380,
+        502381
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        18
+      ],
+      "url": "https://www.igdb.com/games/deep-rock-galactic",
       "version_parent": -1
     },
     {
@@ -118979,6 +123085,49 @@
         27
       ],
       "url": "https://www.igdb.com/games/miner-ultra-adventures",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1483574400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        13,
+        32
+      ],
+      "id": 29883,
+      "involved_companies": [],
+      "keywords": [],
+      "name": "MHRD",
+      "parent_game": -1,
+      "platforms": [
+        3,
+        6,
+        14
+      ],
+      "player_perspectives": [],
+      "ports": [],
+      "release_dates": [
+        72668,
+        72669,
+        72670
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [],
+      "url": "https://www.igdb.com/games/mhrd",
       "version_parent": -1
     },
     {
@@ -120328,6 +124477,48 @@
       "dlcs": [],
       "expanded_games": [],
       "expansions": [],
+      "first_release_date": 1419811200,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        12,
+        15,
+        32
+      ],
+      "id": 36067,
+      "involved_companies": [],
+      "keywords": [],
+      "name": "Star Nomad",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        14
+      ],
+      "player_perspectives": [],
+      "ports": [],
+      "release_dates": [
+        82637,
+        82638
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [],
+      "url": "https://www.igdb.com/games/star-nomad",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
       "first_release_date": 1418256000,
       "forks": [],
       "franchise": -1,
@@ -120888,7 +125079,6 @@
         133306
       ],
       "keywords": [
-        453,
         605,
         4154,
         4221,
@@ -125392,6 +129582,104 @@
       "version_parent": -1
     },
     {
+      "bundles": [
+        110392
+      ],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        2810
+      ],
+      "dlcs": [
+        140285,
+        140292,
+        140365,
+        144414,
+        144415,
+        153701,
+        153703,
+        153704,
+        153705,
+        153706,
+        153707,
+        153708,
+        153709,
+        153710,
+        153711,
+        153712,
+        153714,
+        153715,
+        153716,
+        153717,
+        153718,
+        153719,
+        153720,
+        153721,
+        153722,
+        153723,
+        153724,
+        153725,
+        153726,
+        153727
+      ],
+      "expanded_games": [],
+      "expansions": [
+        112024,
+        121517
+      ],
+      "first_release_date": 1538438400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [
+        1043
+      ],
+      "game_modes": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "genres": [
+        10
+      ],
+      "id": 82090,
+      "involved_companies": [
+        104695,
+        104696,
+        115288,
+        115289,
+        118653,
+        185315
+      ],
+      "keywords": [],
+      "name": "Forza Horizon 4",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        49,
+        169
+      ],
+      "player_perspectives": [
+        1,
+        2
+      ],
+      "ports": [],
+      "release_dates": [
+        159160,
+        159161,
+        219159
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        38
+      ],
+      "url": "https://www.igdb.com/games/forza-horizon-4",
+      "version_parent": -1
+    },
+    {
       "bundles": [],
       "category": 0,
       "collection": -1,
@@ -126466,6 +130754,42 @@
       "bundles": [],
       "category": 0,
       "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 0,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        32
+      ],
+      "id": 100528,
+      "involved_companies": [],
+      "keywords": [],
+      "name": "Mutants Must Die!",
+      "parent_game": -1,
+      "platforms": [],
+      "player_perspectives": [],
+      "ports": [],
+      "release_dates": [],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1
+      ],
+      "url": "https://www.igdb.com/games/mutants-must-die",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
       "collections": [
         3207
       ],
@@ -127486,7 +131810,6 @@
       ],
       "keywords": [
         1914,
-        1925,
         3534
       ],
       "name": "Thronebreaker: The Witcher Tales",
@@ -128173,7 +132496,6 @@
       "keywords": [
         3,
         182,
-        453,
         974,
         4272,
         4823,
@@ -128239,7 +132561,6 @@
       ],
       "keywords": [
         250,
-        1374,
         1697,
         24051
       ],
@@ -131489,6 +135810,141 @@
     },
     {
       "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1604880000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [
+        808
+      ],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        5,
+        12
+      ],
+      "id": 140899,
+      "involved_companies": [
+        179565,
+        179566
+      ],
+      "keywords": [],
+      "name": "Borderlands 3: Ultimate Edition",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        14,
+        48,
+        49,
+        130,
+        167,
+        169,
+        170
+      ],
+      "player_perspectives": [
+        1
+      ],
+      "ports": [],
+      "release_dates": [
+        217706,
+        217707,
+        217708,
+        320717,
+        519488,
+        534173,
+        575480
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        17,
+        27,
+        38
+      ],
+      "url": "https://www.igdb.com/games/borderlands-3-ultimate-edition",
+      "version_parent": -1
+    },
+    {
+      "bundles": [
+        171270
+      ],
+      "category": 0,
+      "collection": -1,
+      "collections": [
+        2810
+      ],
+      "dlcs": [
+        204679,
+        208448,
+        293918
+      ],
+      "expanded_games": [],
+      "expansions": [
+        195375
+      ],
+      "first_release_date": 1636416000,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [
+        1043
+      ],
+      "game_modes": [
+        1,
+        2,
+        3
+      ],
+      "genres": [
+        10
+      ],
+      "id": 141503,
+      "involved_companies": [
+        154821,
+        154822,
+        185312
+      ],
+      "keywords": [
+        5789,
+        26211
+      ],
+      "name": "Forza Horizon 5",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        49,
+        169
+      ],
+      "player_perspectives": [
+        1,
+        2
+      ],
+      "ports": [],
+      "release_dates": [
+        289642,
+        289660,
+        322301
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        1,
+        38
+      ],
+      "url": "https://www.igdb.com/games/forza-horizon-5",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
       "category": 10,
       "collection": -1,
       "collections": [],
@@ -132014,6 +136470,55 @@
         43
       ],
       "url": "https://www.igdb.com/games/outer-wilds-echoes-of-the-eye",
+      "version_parent": -1
+    },
+    {
+      "bundles": [],
+      "category": 0,
+      "collection": -1,
+      "collections": [],
+      "dlcs": [],
+      "expanded_games": [],
+      "expansions": [],
+      "first_release_date": 1687478400,
+      "forks": [],
+      "franchise": -1,
+      "franchises": [],
+      "game_modes": [
+        1
+      ],
+      "genres": [
+        9,
+        32,
+        34
+      ],
+      "id": 149149,
+      "involved_companies": [
+        211593
+      ],
+      "keywords": [
+        78
+      ],
+      "name": "Tyrion Cuthbert: Attorney of the Arcane",
+      "parent_game": -1,
+      "platforms": [
+        6,
+        14
+      ],
+      "player_perspectives": [],
+      "ports": [],
+      "release_dates": [
+        492692,
+        492693
+      ],
+      "remakes": [],
+      "remasters": [],
+      "standalone_expansions": [],
+      "themes": [
+        17,
+        43
+      ],
+      "url": "https://www.igdb.com/games/tyrion-cuthbert-attorney-of-the-arcane",
       "version_parent": -1
     },
     {
@@ -137229,10 +141734,6 @@
       "company": 222
     },
     {
-      "id": 18486,
-      "company": 222
-    },
-    {
       "id": 18530,
       "company": 139
     },
@@ -138993,10 +143494,6 @@
       "company": 6560
     },
     {
-      "id": 38892,
-      "company": 4059
-    },
-    {
       "id": 38959,
       "company": 8207
     },
@@ -139343,10 +143840,6 @@
     {
       "id": 43993,
       "company": 2390
-    },
-    {
-      "id": 44008,
-      "company": 10667
     },
     {
       "id": 44009,
@@ -140805,10 +145298,6 @@
       "company": 126
     },
     {
-      "id": 68403,
-      "company": 4440
-    },
-    {
       "id": 68471,
       "company": 439
     },
@@ -141295,14 +145784,6 @@
     {
       "id": 82916,
       "company": 21507
-    },
-    {
-      "id": 83117,
-      "company": 837
-    },
-    {
-      "id": 83118,
-      "company": 322
     },
     {
       "id": 83174,
@@ -145525,24 +150006,12 @@
       "company": 444
     },
     {
-      "id": 188985,
-      "company": 14238
-    },
-    {
       "id": 188989,
       "company": 910
     },
     {
-      "id": 189038,
-      "company": 2390
-    },
-    {
       "id": 189039,
       "company": 11034
-    },
-    {
-      "id": 189040,
-      "company": 445
     },
     {
       "id": 189041,
@@ -145683,14 +150152,6 @@
     {
       "id": 190252,
       "company": 29
-    },
-    {
-      "id": 190256,
-      "company": 8794
-    },
-    {
-      "id": 190257,
-      "company": 2390
     },
     {
       "id": 190284,
@@ -149101,6 +153562,18 @@
       "company": 15094
     },
     {
+      "id": 289063,
+      "company": 14238
+    },
+    {
+      "id": 289064,
+      "company": 445
+    },
+    {
+      "id": 289065,
+      "company": 2390
+    },
+    {
       "id": 289139,
       "company": 129
     },
@@ -149145,6 +153618,10 @@
       "company": 9786
     },
     {
+      "id": 290218,
+      "company": 222
+    },
+    {
       "id": 290288,
       "company": 2231
     },
@@ -149171,6 +153648,30 @@
     {
       "id": 291133,
       "company": 21410
+    },
+    {
+      "id": 291288,
+      "company": 4059
+    },
+    {
+      "id": 291289,
+      "company": 4440
+    },
+    {
+      "id": 291290,
+      "company": 4440
+    },
+    {
+      "id": 291567,
+      "company": 837
+    },
+    {
+      "id": 291568,
+      "company": 322
+    },
+    {
+      "id": 291859,
+      "company": 10667
     }
   ],
   "keywords": [],
@@ -149178,6 +153679,13 @@
     {
       "abbreviation": "Netflix",
       "id": -1
+    },
+    {
+      "abbreviation": "Linux",
+      "alternative_name": "GNU/Linux",
+      "id": 3,
+      "name": "Linux",
+      "url": "https://www.igdb.com/platforms/linux"
     },
     {
       "abbreviation": "N64",
@@ -149222,6 +153730,12 @@
       "url": "https://www.igdb.com/platforms/ps3"
     },
     {
+      "abbreviation": "XBOX",
+      "id": 11,
+      "name": "Xbox",
+      "url": "https://www.igdb.com/platforms/xbox"
+    },
+    {
       "abbreviation": "X360",
       "alternative_name": "X360",
       "id": 12,
@@ -149229,11 +153743,32 @@
       "url": "https://www.igdb.com/platforms/xbox360"
     },
     {
+      "abbreviation": "DOS",
+      "alternative_name": "PC DOS",
+      "id": 13,
+      "name": "DOS",
+      "url": "https://www.igdb.com/platforms/dos"
+    },
+    {
       "abbreviation": "Mac",
       "alternative_name": "Mac OS",
       "id": 14,
       "name": "Mac",
       "url": "https://www.igdb.com/platforms/mac"
+    },
+    {
+      "abbreviation": "C64",
+      "alternative_name": "C64/C128/MAX",
+      "id": 15,
+      "name": "Commodore C64/128/MAX",
+      "url": "https://www.igdb.com/platforms/c64"
+    },
+    {
+      "abbreviation": "Amiga",
+      "alternative_name": "Commodore Amiga",
+      "id": 16,
+      "name": "Amiga",
+      "url": "https://www.igdb.com/platforms/amiga"
     },
     {
       "abbreviation": "NES",
@@ -149264,11 +153799,58 @@
       "url": "https://www.igdb.com/platforms/ngc"
     },
     {
+      "abbreviation": "DC",
+      "alternative_name": "DC",
+      "id": 23,
+      "name": "Dreamcast",
+      "url": "https://www.igdb.com/platforms/dc"
+    },
+    {
       "abbreviation": "GBA",
       "alternative_name": "GBA",
       "id": 24,
       "name": "Game Boy Advance",
       "url": "https://www.igdb.com/platforms/gba"
+    },
+    {
+      "abbreviation": "ACPC",
+      "alternative_name": "Colour Personal Computer",
+      "id": 25,
+      "name": "Amstrad CPC",
+      "url": "https://www.igdb.com/platforms/acpc"
+    },
+    {
+      "abbreviation": "ZXS",
+      "id": 26,
+      "name": "ZX Spectrum",
+      "url": "https://www.igdb.com/platforms/zxs"
+    },
+    {
+      "abbreviation": "MSX",
+      "id": 27,
+      "name": "MSX",
+      "url": "https://www.igdb.com/platforms/msx"
+    },
+    {
+      "abbreviation": "Genesis/MegaDrive",
+      "alternative_name": "Sega Genesis",
+      "id": 29,
+      "name": "Sega Mega Drive/Genesis",
+      "url": "https://www.igdb.com/platforms/genesis-slash-megadrive"
+    },
+    {
+      "abbreviation": "Saturn",
+      "alternative_name": "JVC Saturn, Hi-Saturn, Samsung Saturn, V-Saturn",
+      "id": 32,
+      "name": "Sega Saturn",
+      "url": "https://www.igdb.com/platforms/saturn"
+    },
+    {
+      "abbreviation": "Game Boy",
+      "alternative_name": "GB",
+      "id": 33,
+      "name": "Game Boy",
+      "url": "https://www.igdb.com/platforms/gb"
     },
     {
       "abbreviation": "Android",
@@ -149292,11 +153874,24 @@
       "url": "https://www.igdb.com/platforms/psp"
     },
     {
+      "abbreviation": "iOS",
+      "id": 39,
+      "name": "iOS",
+      "url": "https://www.igdb.com/platforms/ios"
+    },
+    {
       "abbreviation": "WiiU",
       "alternative_name": "Project Cafe",
       "id": 41,
       "name": "Wii U",
       "url": "https://www.igdb.com/platforms/wiiu"
+    },
+    {
+      "abbreviation": "NGage",
+      "alternative_name": "NGage",
+      "id": 42,
+      "name": "N-Gage",
+      "url": "https://www.igdb.com/platforms/ngage"
     },
     {
       "abbreviation": "Vita",
@@ -149320,10 +153915,223 @@
       "url": "https://www.igdb.com/platforms/xboxone"
     },
     {
+      "abbreviation": "3DO",
+      "alternative_name": "3DO",
+      "id": 50,
+      "name": "3DO Interactive Multiplayer",
+      "url": "https://www.igdb.com/platforms/3do"
+    },
+    {
+      "abbreviation": "fds",
+      "alternative_name": "Famicom Disk System, FDS",
+      "id": 51,
+      "name": "Family Computer Disk System",
+      "url": "https://www.igdb.com/platforms/fds"
+    },
+    {
+      "abbreviation": "Arcade",
+      "id": 52,
+      "name": "Arcade",
+      "url": "https://www.igdb.com/platforms/arcade"
+    },
+    {
+      "abbreviation": "MSX2",
+      "id": 53,
+      "name": "MSX2",
+      "url": "https://www.igdb.com/platforms/msx2"
+    },
+    {
+      "abbreviation": "Mobile",
+      "alternative_name": "Legacy Cellphone",
+      "id": 55,
+      "name": "Legacy Mobile Device",
+      "url": "https://www.igdb.com/platforms/mobile"
+    },
+    {
+      "abbreviation": "SFAM",
+      "alternative_name": "SFC",
+      "id": 58,
+      "name": "Super Famicom",
+      "url": "https://www.igdb.com/platforms/sfam"
+    },
+    {
+      "abbreviation": "Atari7800",
+      "alternative_name": "Atari 7800 ProSystem",
+      "id": 60,
+      "name": "Atari 7800",
+      "url": "https://www.igdb.com/platforms/atari7800"
+    },
+    {
+      "abbreviation": "Lynx",
+      "id": 61,
+      "name": "Atari Lynx",
+      "url": "https://www.igdb.com/platforms/lynx"
+    },
+    {
+      "abbreviation": "Atari-ST",
+      "id": 63,
+      "name": "Atari ST/STE",
+      "url": "https://www.igdb.com/platforms/atari-st"
+    },
+    {
+      "abbreviation": "SMS",
+      "alternative_name": "SMS, Mark III",
+      "id": 64,
+      "name": "Sega Master System/Mark III",
+      "url": "https://www.igdb.com/platforms/sms"
+    },
+    {
+      "abbreviation": "Atari8bit",
+      "id": 65,
+      "name": "Atari 8-bit",
+      "url": "https://www.igdb.com/platforms/atari8bit"
+    },
+    {
+      "abbreviation": "Atari5200",
+      "alternative_name": "Atari 5200 SuperSystem",
+      "id": 66,
+      "name": "Atari 5200",
+      "url": "https://www.igdb.com/platforms/atari5200"
+    },
+    {
+      "abbreviation": "bbcmicro",
+      "alternative_name": "BBC Micro",
+      "id": 69,
+      "name": "BBC Microcomputer System",
+      "url": "https://www.igdb.com/platforms/bbcmicro"
+    },
+    {
+      "abbreviation": "vic-20",
+      "id": 71,
+      "name": "Commodore VIC-20",
+      "url": "https://www.igdb.com/platforms/vic-20"
+    },
+    {
       "abbreviation": "Ouya",
       "id": 72,
       "name": "Ouya",
       "url": "https://www.igdb.com/platforms/ouya"
+    },
+    {
+      "abbreviation": "blackberry",
+      "id": 73,
+      "name": "BlackBerry OS",
+      "url": "https://www.igdb.com/platforms/blackberry"
+    },
+    {
+      "abbreviation": "Win Phone",
+      "alternative_name": "WP",
+      "id": 74,
+      "name": "Windows Phone",
+      "url": "https://www.igdb.com/platforms/winphone"
+    },
+    {
+      "abbreviation": "Apple][",
+      "alternative_name": "apple ][",
+      "id": 75,
+      "name": "Apple II",
+      "url": "https://www.igdb.com/platforms/appleii"
+    },
+    {
+      "abbreviation": "x1",
+      "id": 77,
+      "name": "Sharp X1",
+      "url": "https://www.igdb.com/platforms/x1"
+    },
+    {
+      "abbreviation": "segacd",
+      "alternative_name": "Mega CD",
+      "id": 78,
+      "name": "Sega CD",
+      "url": "https://www.igdb.com/platforms/segacd"
+    },
+    {
+      "abbreviation": "neogeomvs",
+      "alternative_name": "Neo Geo Multi Video System",
+      "id": 79,
+      "name": "Neo Geo MVS",
+      "url": "https://www.igdb.com/platforms/neogeomvs"
+    },
+    {
+      "abbreviation": "neogeoaes",
+      "alternative_name": "AES",
+      "id": 80,
+      "name": "Neo Geo AES",
+      "url": "https://www.igdb.com/platforms/neogeoaes"
+    },
+    {
+      "abbreviation": "browser",
+      "alternative_name": "Internet",
+      "id": 82,
+      "name": "Web browser",
+      "url": "https://www.igdb.com/platforms/browser"
+    },
+    {
+      "abbreviation": "turbografx16",
+      "alternative_name": "TG16",
+      "id": 86,
+      "name": "TurboGrafx-16/PC Engine",
+      "url": "https://www.igdb.com/platforms/turbografx16--1"
+    },
+    {
+      "abbreviation": "famicom",
+      "alternative_name": "Famicom",
+      "id": 99,
+      "name": "Family Computer",
+      "url": "https://www.igdb.com/platforms/famicom"
+    },
+    {
+      "abbreviation": "hp2100",
+      "id": 104,
+      "name": "HP 2100",
+      "url": "https://www.igdb.com/platforms/hp2100"
+    },
+    {
+      "abbreviation": "cdccyber70",
+      "id": 109,
+      "name": "CDC Cyber 70",
+      "url": "https://www.igdb.com/platforms/cdccyber70"
+    },
+    {
+      "id": 113,
+      "name": "OnLive Game System",
+      "url": "https://www.igdb.com/platforms/onlive-game-system"
+    },
+    {
+      "id": 114,
+      "name": "Amiga CD32",
+      "url": "https://www.igdb.com/platforms/amiga-cd32"
+    },
+    {
+      "id": 115,
+      "name": "Apple IIGS",
+      "url": "https://www.igdb.com/platforms/apple-iigs"
+    },
+    {
+      "id": 116,
+      "name": "Acorn Archimedes",
+      "url": "https://www.igdb.com/platforms/acorn-archimedes"
+    },
+    {
+      "id": 117,
+      "name": "Philips CD-i",
+      "url": "https://www.igdb.com/platforms/philips-cd-i"
+    },
+    {
+      "id": 118,
+      "name": "FM Towns",
+      "url": "https://www.igdb.com/platforms/fm-towns"
+    },
+    {
+      "id": 121,
+      "name": "Sharp X68000",
+      "url": "https://www.igdb.com/platforms/sharp-x68000"
+    },
+    {
+      "alternative_name": "WSC",
+      "id": 123,
+      "name": "WonderSwan Color",
+      "url": "https://www.igdb.com/platforms/wonderswan-color"
     },
     {
       "abbreviation": "Switch",
@@ -149333,11 +154141,172 @@
       "url": "https://www.igdb.com/platforms/switch"
     },
     {
+      "alternative_name": "SNES-CD",
+      "id": 131,
+      "name": "Super NES CD-ROM System",
+      "url": "https://www.igdb.com/platforms/super-nes-cd-rom-system"
+    },
+    {
+      "id": 132,
+      "name": "Amazon Fire TV",
+      "url": "https://www.igdb.com/platforms/amazon-fire-tv"
+    },
+    {
+      "id": 134,
+      "name": "Acorn Electron",
+      "url": "https://www.igdb.com/platforms/acorn-electron"
+    },
+    {
+      "alternative_name": "NGCD",
+      "id": 136,
+      "name": "Neo Geo CD",
+      "url": "https://www.igdb.com/platforms/neo-geo-cd"
+    },
+    {
+      "alternative_name": "n3DS",
+      "id": 137,
+      "name": "New Nintendo 3DS",
+      "url": "https://www.igdb.com/platforms/new-nintendo-3ds"
+    },
+    {
+      "alternative_name": "PC-98",
+      "id": 149,
+      "name": "PC-9800 Series",
+      "url": "https://www.igdb.com/platforms/pc-9800-series"
+    },
+    {
+      "alternative_name": "Commodore Dynamic Total Vision",
+      "id": 158,
+      "name": "Commodore CDTV",
+      "url": "https://www.igdb.com/platforms/commodore-cdtv"
+    },
+    {
+      "id": 159,
+      "name": "Nintendo DSi",
+      "url": "https://www.igdb.com/platforms/nintendo-dsi"
+    },
+    {
+      "alternative_name": "WMR",
+      "id": 161,
+      "name": "Windows Mixed Reality",
+      "url": "https://www.igdb.com/platforms/windows-mixed-reality"
+    },
+    {
+      "abbreviation": "Oculus VR",
+      "id": 162,
+      "name": "Oculus VR",
+      "url": "https://www.igdb.com/platforms/oculus-vr"
+    },
+    {
+      "abbreviation": "Steam VR",
+      "id": 163,
+      "name": "SteamVR",
+      "url": "https://www.igdb.com/platforms/steam-vr"
+    },
+    {
+      "abbreviation": "PSVR",
+      "alternative_name": "PSVR",
+      "id": 165,
+      "name": "PlayStation VR",
+      "url": "https://www.igdb.com/platforms/psvr"
+    },
+    {
       "abbreviation": "PS5",
       "alternative_name": "PS5",
       "id": 167,
       "name": "PlayStation 5",
       "url": "https://www.igdb.com/platforms/ps5"
+    },
+    {
+      "abbreviation": "Series X|S",
+      "alternative_name": "XSX",
+      "id": 169,
+      "name": "Xbox Series X|S",
+      "url": "https://www.igdb.com/platforms/series-x-s"
+    },
+    {
+      "abbreviation": "Stadia",
+      "alternative_name": "Stadia",
+      "id": 170,
+      "name": "Google Stadia",
+      "url": "https://www.igdb.com/platforms/stadia"
+    },
+    {
+      "id": 306,
+      "name": "Satellaview",
+      "url": "https://www.igdb.com/platforms/satellaview"
+    },
+    {
+      "alternative_name": "TV Game",
+      "id": 377,
+      "name": "Plug & Play",
+      "url": "https://www.igdb.com/platforms/plug-and-play"
+    },
+    {
+      "alternative_name": "Quest",
+      "id": 384,
+      "name": "Oculus Quest",
+      "url": "https://www.igdb.com/platforms/oculus-quest"
+    },
+    {
+      "alternative_name": "Rift",
+      "id": 385,
+      "name": "Oculus Rift",
+      "url": "https://www.igdb.com/platforms/oculus-rift"
+    },
+    {
+      "abbreviation": "Meta Quest 2",
+      "alternative_name": "Quest 2",
+      "id": 386,
+      "name": "Meta Quest 2",
+      "url": "https://www.igdb.com/platforms/meta-quest-2"
+    },
+    {
+      "abbreviation": "PSVR2",
+      "alternative_name": "PSVR2",
+      "id": 390,
+      "name": "PlayStation VR2",
+      "url": "https://www.igdb.com/platforms/psvr2"
+    },
+    {
+      "alternative_name": "Pocket PC",
+      "id": 405,
+      "name": "Windows Mobile",
+      "url": "https://www.igdb.com/platforms/windows-mobile"
+    },
+    {
+      "alternative_name": "Jag CD",
+      "id": 410,
+      "name": "Atari Jaguar CD",
+      "url": "https://www.igdb.com/platforms/atari-jaguar-cd"
+    },
+    {
+      "alternative_name": "Nintendo 64DD",
+      "id": 416,
+      "name": "64DD",
+      "url": "https://www.igdb.com/platforms/64dd"
+    },
+    {
+      "alternative_name": "Garnet OS",
+      "id": 417,
+      "name": "Palm OS",
+      "url": "https://www.igdb.com/platforms/palm-os"
+    },
+    {
+      "id": 472,
+      "name": "visionOS",
+      "url": "https://www.igdb.com/platforms/visionos"
+    },
+    {
+      "alternative_name": "Gametraq",
+      "id": 474,
+      "name": "Gizmondo",
+      "url": "https://www.igdb.com/platforms/gizmondo"
+    },
+    {
+      "id": 487,
+      "name": "LaserActive",
+      "url": "https://www.igdb.com/platforms/laseractive"
     }
   ],
   "playerPerspectives": [
