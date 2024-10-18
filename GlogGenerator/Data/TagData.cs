@@ -12,7 +12,9 @@ namespace GlogGenerator.Data
         {
             get
             {
-                return this.GetAllReferenceableKeys().FirstOrDefault();
+                var nameVariations = this.GetAllReferenceableKeys();
+                nameVariations.Sort(StringComparer.Ordinal);
+                return nameVariations.FirstOrDefault();
             }
         }
 
@@ -74,7 +76,7 @@ namespace GlogGenerator.Data
 
         private List<string> GetAllReferenceableKeys()
         {
-            return this.referenceableTypedKeys.Select(t => t.Item2).Distinct().OrderBy(s => s).ToList();
+            return this.referenceableTypedKeys.Select(t => t.Item2).Distinct().ToList();
         }
 
         public List<Tuple<Type, string>> GetReferenceableTypedKeys()
