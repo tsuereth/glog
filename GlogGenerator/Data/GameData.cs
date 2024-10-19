@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using GlogGenerator.IgdbApi;
 
@@ -222,14 +223,38 @@ namespace GlogGenerator.Data
                 if (tagEntity != null)
                 {
                     var tagReferenceString = tagEntity.GetReferenceString(igdbCache);
-                    // FIXME: This should check existing tags by urlized comparison!
-                    if (!this.Tags.Contains(tagReferenceString, StringComparer.OrdinalIgnoreCase))
+                    var addTagString = false;
+
+                    var tagUrlized = UrlizedString.Urlize(tagReferenceString);
+                    var matchingTag = this.Tags.Where(s => UrlizedString.Urlize(s) == tagUrlized);
+                    if (!matchingTag.Any())
+                    {
+                        addTagString = true;
+                    }
+                    else
+                    {
+                        if (matchingTag.Count() > 1)
+                        {
+                            throw new InvalidDataException($"More than one game tag matches urlized string {tagUrlized}");
+                        }
+
+                        // Ensure the listed tag value is the "canonical" value.
+                        // (When a tag has multiple variant strings, use the alpha-sorted-higher string.)
+                        var existingTagReferenceString = matchingTag.First();
+                        if (string.CompareOrdinal(tagReferenceString, existingTagReferenceString) < 0)
+                        {
+                            this.Tags.Remove(existingTagReferenceString);
+                            addTagString = true;
+                        }
+                    }
+
+                    if (addTagString)
                     {
                         this.Tags.Add(tagReferenceString);
-
-                        // Register a data reference to the tag, so the data index knows it is in-use (and won't delete it).
-                        siteDataIndex.CreateReference<TagData>(tagReferenceString);
                     }
+
+                    // Register a data reference to the tag, so the data index knows it is in-use (and won't delete it).
+                    siteDataIndex.CreateReference<TagData>(tagReferenceString);
                 }
             }
         }
