@@ -75,20 +75,6 @@ namespace GlogGenerator.RenderState
             }
         }
 
-        public string ContentEscapedForRss
-        {
-            get
-            {
-                return this.RenderedContent
-                    .Trim()
-                    .Replace("&", "&amp;")
-                    .Replace("<", "&lt;")
-                    .Replace(">", "&gt;")
-                    .Replace("\"", "&#34;")
-                    .Replace("'", "&#39;");
-            }
-        }
-
         public string PageType { get; set; } = string.Empty;
 
         public List<PageState> HistoryPosts { get; set; } = new List<PageState>();
