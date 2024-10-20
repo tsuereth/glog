@@ -193,6 +193,11 @@ namespace GlogGenerator.Test
             return this.tags.ToList();
         }
 
+        public void SetNonContentGameNames(List<string> gameNames)
+        {
+            // no-op
+        }
+
         public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline, bool includeDrafts)
         {
             throw new NotImplementedException();
