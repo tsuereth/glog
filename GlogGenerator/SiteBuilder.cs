@@ -80,7 +80,7 @@ namespace GlogGenerator
         {
             if (this.igdbCache == null)
             {
-                this.igdbCache = IgdbCache.FromJsonFile(this.configData.InputFilesBasePath);
+                this.igdbCache = IgdbCache.FromJsonFiles(this.configData.InputFilesBasePath);
             }
 
             return this.igdbCache;
@@ -110,7 +110,7 @@ namespace GlogGenerator
         public void RewriteIgdbCache()
         {
             var igdbCache = this.GetIgdbCache();
-            igdbCache.WriteToJsonFile(this.configData.InputFilesBasePath);
+            igdbCache.WriteToJsonFiles(this.configData.InputFilesBasePath);
         }
 
         public async Task UpdateIgdbCacheFromApiAsync(IgdbApiClient apiClient)
@@ -118,7 +118,7 @@ namespace GlogGenerator
             var igdbCache = this.GetIgdbCache();
             await igdbCache.UpdateFromApiClient(apiClient);
 
-            igdbCache.WriteToJsonFile(this.configData.InputFilesBasePath);
+            igdbCache.WriteToJsonFiles(this.configData.InputFilesBasePath);
         }
 
         public void UpdateDataIndex()

@@ -1,0 +1,166 @@
+[
+  {
+    "abbreviation": "Netflix",
+    "id": -1
+  },
+  {
+    "abbreviation": "N64",
+    "alternative_name": "N64",
+    "id": 4,
+    "name": "Nintendo 64",
+    "url": "https://www.igdb.com/platforms/n64"
+  },
+  {
+    "abbreviation": "Wii",
+    "alternative_name": "Revolution",
+    "id": 5,
+    "name": "Wii",
+    "url": "https://www.igdb.com/platforms/wii"
+  },
+  {
+    "abbreviation": "PC",
+    "alternative_name": "mswin",
+    "id": 6,
+    "name": "PC (Microsoft Windows)",
+    "url": "https://www.igdb.com/platforms/win"
+  },
+  {
+    "abbreviation": "PS1",
+    "alternative_name": "PSX, PSOne, PS",
+    "id": 7,
+    "name": "PlayStation",
+    "url": "https://www.igdb.com/platforms/ps"
+  },
+  {
+    "abbreviation": "PS2",
+    "alternative_name": "PS2",
+    "id": 8,
+    "name": "PlayStation 2",
+    "url": "https://www.igdb.com/platforms/ps2"
+  },
+  {
+    "abbreviation": "PS3",
+    "alternative_name": "PS3",
+    "id": 9,
+    "name": "PlayStation 3",
+    "url": "https://www.igdb.com/platforms/ps3"
+  },
+  {
+    "abbreviation": "X360",
+    "alternative_name": "X360",
+    "id": 12,
+    "name": "Xbox 360",
+    "url": "https://www.igdb.com/platforms/xbox360"
+  },
+  {
+    "abbreviation": "Mac",
+    "alternative_name": "Mac OS",
+    "id": 14,
+    "name": "Mac",
+    "url": "https://www.igdb.com/platforms/mac"
+  },
+  {
+    "abbreviation": "NES",
+    "alternative_name": "NES",
+    "id": 18,
+    "name": "Nintendo Entertainment System",
+    "url": "https://www.igdb.com/platforms/nes"
+  },
+  {
+    "abbreviation": "SNES",
+    "alternative_name": "SNES, Super Nintendo",
+    "id": 19,
+    "name": "Super Nintendo Entertainment System",
+    "url": "https://www.igdb.com/platforms/snes"
+  },
+  {
+    "abbreviation": "NDS",
+    "alternative_name": "NDS",
+    "id": 20,
+    "name": "Nintendo DS",
+    "url": "https://www.igdb.com/platforms/nds"
+  },
+  {
+    "abbreviation": "NGC",
+    "alternative_name": "GCN",
+    "id": 21,
+    "name": "Nintendo GameCube",
+    "url": "https://www.igdb.com/platforms/ngc"
+  },
+  {
+    "abbreviation": "GBA",
+    "alternative_name": "GBA",
+    "id": 24,
+    "name": "Game Boy Advance",
+    "url": "https://www.igdb.com/platforms/gba"
+  },
+  {
+    "abbreviation": "Android",
+    "alternative_name": "Infocusa3",
+    "id": 34,
+    "name": "Android",
+    "url": "https://www.igdb.com/platforms/android"
+  },
+  {
+    "abbreviation": "3DS",
+    "alternative_name": "3DS",
+    "id": 37,
+    "name": "Nintendo 3DS",
+    "url": "https://www.igdb.com/platforms/3ds"
+  },
+  {
+    "abbreviation": "PSP",
+    "alternative_name": "PSP",
+    "id": 38,
+    "name": "PlayStation Portable",
+    "url": "https://www.igdb.com/platforms/psp"
+  },
+  {
+    "abbreviation": "WiiU",
+    "alternative_name": "Project Cafe",
+    "id": 41,
+    "name": "Wii U",
+    "url": "https://www.igdb.com/platforms/wiiu"
+  },
+  {
+    "abbreviation": "Vita",
+    "alternative_name": "PS Vita",
+    "id": 46,
+    "name": "PlayStation Vita",
+    "url": "https://www.igdb.com/platforms/psvita"
+  },
+  {
+    "abbreviation": "PS4",
+    "alternative_name": "PS4",
+    "id": 48,
+    "name": "PlayStation 4",
+    "url": "https://www.igdb.com/platforms/ps4--1"
+  },
+  {
+    "abbreviation": "XONE",
+    "alternative_name": "XONE",
+    "id": 49,
+    "name": "Xbox One",
+    "url": "https://www.igdb.com/platforms/xboxone"
+  },
+  {
+    "abbreviation": "Ouya",
+    "id": 72,
+    "name": "Ouya",
+    "url": "https://www.igdb.com/platforms/ouya"
+  },
+  {
+    "abbreviation": "Switch",
+    "alternative_name": "NX",
+    "id": 130,
+    "name": "Nintendo Switch",
+    "url": "https://www.igdb.com/platforms/switch"
+  },
+  {
+    "abbreviation": "PS5",
+    "alternative_name": "PS5",
+    "id": 167,
+    "name": "PlayStation 5",
+    "url": "https://www.igdb.com/platforms/ps5"
+  }
+]
