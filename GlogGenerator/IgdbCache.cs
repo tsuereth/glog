@@ -12,8 +12,6 @@ namespace GlogGenerator
 {
     public class IgdbCache : IIgdbCache
     {
-        public static readonly string JsonFileName = "igdb_cache.json";
-
         private static readonly JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings()
         {
             NullValueHandling = NullValueHandling.Ignore,
@@ -593,68 +591,83 @@ namespace GlogGenerator
             }
         }
 
-        public void WriteToJsonFile(string directoryPath)
+        private static string JsonFilePathForEntityType(string directoryPath, string typeName)
+        {
+            return Path.Combine(directoryPath, $"igdb_cache_{typeName}.json");
+        }
+
+        private static void WriteEntityTypeToJsonFile<T>(IEnumerable<T> entities, string directoryPath, string typeName)
+            where T : IgdbEntity
         {
             var jsonSerializer = JsonSerializer.Create(jsonSerializerSettings);
+            var entitiesArray = JArray.FromObject(entities, jsonSerializer);
 
             if (!Directory.Exists(directoryPath))
             {
                 Directory.CreateDirectory(directoryPath);
             }
 
+            var jsonFilePath = JsonFilePathForEntityType(directoryPath, typeName);
+            using (var fileStream = new FileStream(jsonFilePath, FileMode.Create))
+            using (var streamWriter = new StreamWriter(fileStream) { NewLine = "\n" })
+            using (var jsonWriter = new JsonTextWriter(streamWriter) { Formatting = Formatting.Indented })
+            {
+                jsonSerializer.Serialize(jsonWriter, entitiesArray);
+                streamWriter.Flush();
+            }
+        }
+
+        public void WriteToJsonFiles(string directoryPath)
+        {
             var allGames = this.gamesUnidentified.OrderBy(o => o.GetReferenceString(this)).ToList();
             allGames.AddRange(this.gamesById.Values.OrderBy(o => o.Id));
 
             var allPlatforms = this.platformsUnidentified.OrderBy(o => o.GetReferenceString(this)).ToList();
             allPlatforms.AddRange(this.platformsById.Values.OrderBy(o => o.Id));
 
-            var cacheJson = new JObject();
-            cacheJson["collections"] = JArray.FromObject(this.collectionsById.Values.OrderBy(o => o.Id), jsonSerializer);
-            cacheJson["companies"] = JArray.FromObject(this.companiesById.Values.OrderBy(o => o.Id), jsonSerializer);
-            cacheJson["franchises"] = JArray.FromObject(this.franchisesById.Values.OrderBy(o => o.Id), jsonSerializer);
-            cacheJson["gameModes"] = JArray.FromObject(this.gameModesById.Values.OrderBy(o => o.Id), jsonSerializer);
-            cacheJson["games"] = JArray.FromObject(allGames, jsonSerializer);
-            cacheJson["genres"] = JArray.FromObject(this.genresById.Values.OrderBy(o => o.Id), jsonSerializer);
-            cacheJson["involvedCompanies"] = JArray.FromObject(this.involvedCompaniesById.Values.OrderBy(o => o.Id), jsonSerializer);
-            cacheJson["keywords"] = JArray.FromObject(this.keywordsById.Values.OrderBy(o => o.Id), jsonSerializer);
-            cacheJson["platforms"] = JArray.FromObject(allPlatforms, jsonSerializer);
-            cacheJson["playerPerspectives"] = JArray.FromObject(this.playerPerspectivesById.Values.OrderBy(o => o.Id), jsonSerializer);
-            cacheJson["releaseDates"] = JArray.FromObject(this.releaseDatesById.Values.OrderBy(o => o.Id), jsonSerializer);
-            cacheJson["themes"] = JArray.FromObject(this.themesById.Values.OrderBy(o => o.Id), jsonSerializer);
-
-            var jsonFilePath = Path.Combine(directoryPath, JsonFileName);
-            using (var fileStream = new FileStream(jsonFilePath, FileMode.Create))
-            using (var streamWriter = new StreamWriter(fileStream) { NewLine = "\n" })
-            using (var jsonWriter = new JsonTextWriter(streamWriter) { Formatting = Formatting.Indented })
-            {
-                jsonSerializer.Serialize(jsonWriter, cacheJson);
-                streamWriter.Flush();
-            }
+            WriteEntityTypeToJsonFile(this.collectionsById.Values.OrderBy(o => o.Id), directoryPath, "collections");
+            WriteEntityTypeToJsonFile(this.companiesById.Values.OrderBy(o => o.Id), directoryPath, "companies");
+            WriteEntityTypeToJsonFile(this.franchisesById.Values.OrderBy(o => o.Id), directoryPath, "franchises");
+            WriteEntityTypeToJsonFile(this.gameModesById.Values.OrderBy(o => o.Id), directoryPath, "gameModes");
+            WriteEntityTypeToJsonFile(allGames, directoryPath, "games");
+            WriteEntityTypeToJsonFile(this.genresById.Values.OrderBy(o => o.Id), directoryPath, "genres");
+            WriteEntityTypeToJsonFile(this.involvedCompaniesById.Values.OrderBy(o => o.Id), directoryPath, "involvedCompanies");
+            WriteEntityTypeToJsonFile(this.keywordsById.Values.OrderBy(o => o.Id), directoryPath, "keywords");
+            WriteEntityTypeToJsonFile(allPlatforms, directoryPath, "platforms");
+            WriteEntityTypeToJsonFile(this.playerPerspectivesById.Values.OrderBy(o => o.Id), directoryPath, "playerPerspectives");
+            WriteEntityTypeToJsonFile(this.releaseDatesById.Values.OrderBy(o => o.Id), directoryPath, "releaseDates");
+            WriteEntityTypeToJsonFile(this.themesById.Values.OrderBy(o => o.Id), directoryPath, "themes");
         }
 
-        public static IgdbCache FromJsonFile(string directoryPath)
+        private static List<T> ReadEntityTypeFromJsonFile<T>(string directoryPath, string typeName)
+            where T : IgdbEntity
         {
-            var cacheJson = JObject.Parse(File.ReadAllText(Path.Combine(directoryPath, JsonFileName)));
+            var jsonFilePath = JsonFilePathForEntityType(directoryPath, typeName);
+            var cacheEntities = JArray.Parse(File.ReadAllText(jsonFilePath));
 
-            var allGames = cacheJson["games"]?.ToObject<List<IgdbGame>>() ?? new List<IgdbGame>();
+            return cacheEntities?.ToObject<List<T>>() ?? new List<T>();
+        }
 
-            var allPlatforms = cacheJson["platforms"]?.ToObject<List<IgdbPlatform>>() ?? new List<IgdbPlatform>();
+        public static IgdbCache FromJsonFiles(string directoryPath)
+        {
+            var allGames = ReadEntityTypeFromJsonFile<IgdbGame>(directoryPath, "games");
+            var allPlatforms = ReadEntityTypeFromJsonFile<IgdbPlatform>(directoryPath, "platforms");
 
             var cache = new IgdbCache();
-            cache.collectionsById = cacheJson["collections"]?.ToObject<List<IgdbCollection>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbCollection>();
-            cache.companiesById = cacheJson["companies"]?.ToObject<List<IgdbCompany>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbCompany>();
-            cache.franchisesById = cacheJson["franchises"]?.ToObject<List<IgdbFranchise>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbFranchise>();
-            cache.gameModesById = cacheJson["gameModes"]?.ToObject<List<IgdbGameMode>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGameMode>();
+            cache.collectionsById = ReadEntityTypeFromJsonFile<IgdbCollection>(directoryPath, "collections").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbCollection>();
+            cache.companiesById = ReadEntityTypeFromJsonFile<IgdbCompany>(directoryPath, "companies").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbCompany>();
+            cache.franchisesById = ReadEntityTypeFromJsonFile<IgdbFranchise>(directoryPath, "franchises").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbFranchise>();
+            cache.gameModesById = ReadEntityTypeFromJsonFile<IgdbGameMode>(directoryPath, "gameModes").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGameMode>();
             cache.gamesById = allGames.Where(o => o.Id != IgdbGame.IdNotFound).ToDictionary(o => o.Id, o => o);
             cache.gamesUnidentified = allGames.Where(o => o.Id == IgdbGame.IdNotFound).ToList();
-            cache.genresById = cacheJson["genres"]?.ToObject<List<IgdbGenre>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGenre>();
-            cache.involvedCompaniesById = cacheJson["involvedCompanies"]?.ToObject<List<IgdbInvolvedCompany>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbInvolvedCompany>();
-            cache.keywordsById = cacheJson["keywords"]?.ToObject<List<IgdbKeyword>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbKeyword>();
+            cache.genresById = ReadEntityTypeFromJsonFile<IgdbGenre>(directoryPath, "genres").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGenre>();
+            cache.involvedCompaniesById = ReadEntityTypeFromJsonFile<IgdbInvolvedCompany>(directoryPath, "involvedCompanies").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbInvolvedCompany>();
+            cache.keywordsById = ReadEntityTypeFromJsonFile<IgdbKeyword>(directoryPath, "keywords").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbKeyword>();
             cache.platformsById = allPlatforms.Where(o => o.Id != IgdbPlatform.IdNotFound).ToDictionary(o => o.Id, o => o);
             cache.platformsUnidentified = allPlatforms.Where(o => o.Id == IgdbPlatform.IdNotFound).ToList();
-            cache.playerPerspectivesById = cacheJson["playerPerspectives"]?.ToObject<List<IgdbPlayerPerspective>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbPlayerPerspective>();
-            cache.releaseDatesById = cacheJson["releaseDates"]?.ToObject<List<IgdbReleaseDate>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbReleaseDate>();
-            cache.themesById = cacheJson["themes"]?.ToObject<List<IgdbTheme>>().ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbTheme>();
+            cache.playerPerspectivesById = ReadEntityTypeFromJsonFile<IgdbPlayerPerspective>(directoryPath, "playerPerspectives").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbPlayerPerspective>();
+            cache.releaseDatesById = ReadEntityTypeFromJsonFile<IgdbReleaseDate>(directoryPath, "releaseDates").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbReleaseDate>();
+            cache.themesById = ReadEntityTypeFromJsonFile<IgdbTheme>(directoryPath, "themes").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbTheme>();
 
             cache.SetEntitiesForcePersistInCache();
 
