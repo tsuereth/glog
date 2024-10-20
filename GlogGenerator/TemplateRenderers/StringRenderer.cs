@@ -25,12 +25,28 @@ namespace GlogGenerator.TemplateRenderers
                 return str;
             }
 
+            if (formatString.Equals("escapeforrssxml", StringComparison.OrdinalIgnoreCase))
+            {
+                return EscapeForRssXml(str);
+            }
+
             if (formatString.Equals("urlize", StringComparison.OrdinalIgnoreCase))
             {
                 return UrlizedString.Urlize(str);
             }
 
             return base.ToString(o, formatString, culture);
+        }
+
+        static public string EscapeForRssXml(string inString)
+        {
+            return inString
+                .Trim()
+                .Replace("&", "&amp;")
+                .Replace("<", "&lt;")
+                .Replace(">", "&gt;")
+                .Replace("\"", "&#34;")
+                .Replace("'", "&#39;");
         }
     }
 }
