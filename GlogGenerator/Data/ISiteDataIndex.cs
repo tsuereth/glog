@@ -39,6 +39,8 @@ namespace GlogGenerator.Data
 
         public List<TagData> GetTags();
 
+        public void SetNonContentGameNames(List<string> gameNames);
+
         public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline, bool includeDrafts);
 
         public void ResolveReferences();
