@@ -13,6 +13,8 @@ namespace GlogGenerator.Data
         private readonly ILogger logger;
         private readonly string inputFilesBasePath;
 
+        private List<string> nonContentGameNames = new List<string>();
+
         private List<SiteDataReference<CategoryData>> categoryReferences = new List<SiteDataReference<CategoryData>>();
         private List<SiteDataReference<GameData>> gameReferences = new List<SiteDataReference<GameData>>();
         private List<SiteDataReference<PlatformData>> platformReferences = new List<SiteDataReference<PlatformData>>();
@@ -262,6 +264,11 @@ namespace GlogGenerator.Data
             }
         }
 
+        public void SetNonContentGameNames(List<string> gameNames)
+        {
+            this.nonContentGameNames = gameNames;
+        }
+
         public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline, bool includeDrafts)
         {
             // Reset the current index, while tracking old data to detect update conflicts.
@@ -504,6 +511,13 @@ namespace GlogGenerator.Data
 
                     this.pages[pageId] = pageData;
                 }
+            }
+
+            // Some games are referenced by configuration, outside of content posts and pages.
+            // Ensure that SOME tracked reference exists for those games.
+            foreach (var gameName in this.nonContentGameNames)
+            {
+                this.CreateReference<GameData>(gameName);
             }
 
             // Detect conflicts between old and updated data.
