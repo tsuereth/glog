@@ -8,65 +8,80 @@ namespace GlogGenerator.MarkdownExtensions
     {
         public string ReferenceTypeName { get; private set; }
 
-        public ISiteDataReference DataReference { get; private set; }
+        private readonly string originalReferenceKey;
+        private readonly ISiteDataReference dataReference;
 
         public GlogLinkInline(string referenceTypeName, string referenceKey, ISiteDataIndex siteDataIndex)
         {
             this.ReferenceTypeName = referenceTypeName;
-            switch (referenceTypeName)
+            this.originalReferenceKey = referenceKey;
+
+            if (siteDataIndex == null)
             {
-                case "category":
-                    this.DataReference = siteDataIndex.CreateReference<CategoryData>(referenceKey) as ISiteDataReference;
-                    break;
+                this.dataReference = null;
+            }
+            else
+            {
+                switch (referenceTypeName)
+                {
+                    case "category":
+                        this.dataReference = siteDataIndex.CreateReference<CategoryData>(referenceKey) as ISiteDataReference;
+                        break;
 
-                case "game":
-                    this.DataReference = siteDataIndex.CreateReference<GameData>(referenceKey) as ISiteDataReference;
-                    break;
+                    case "game":
+                        this.dataReference = siteDataIndex.CreateReference<GameData>(referenceKey) as ISiteDataReference;
+                        break;
 
-                case "platform":
-                    this.DataReference = siteDataIndex.CreateReference<PlatformData>(referenceKey) as ISiteDataReference;
-                    break;
+                    case "platform":
+                        this.dataReference = siteDataIndex.CreateReference<PlatformData>(referenceKey) as ISiteDataReference;
+                        break;
 
-                case "rating":
-                    this.DataReference = siteDataIndex.CreateReference<RatingData>(referenceKey) as ISiteDataReference;
-                    break;
+                    case "rating":
+                        this.dataReference = siteDataIndex.CreateReference<RatingData>(referenceKey) as ISiteDataReference;
+                        break;
 
-                case "tag":
-                    this.DataReference = siteDataIndex.CreateReference<TagData>(referenceKey) as ISiteDataReference;
-                    break;
+                    case "tag":
+                        this.dataReference = siteDataIndex.CreateReference<TagData>(referenceKey) as ISiteDataReference;
+                        break;
 
-                default:
-                    throw new NotImplementedException();
+                    default:
+                        throw new NotImplementedException();
+                }
             }
         }
 
         public string GetReferenceKey(ISiteDataIndex siteDataIndex)
         {
+            if (this.dataReference == null)
+            {
+                return this.originalReferenceKey;
+            }
+
             IGlogReferenceable data;
             switch (this.ReferenceTypeName)
             {
                 case "category":
-                    var categoryReference = this.DataReference as SiteDataReference<CategoryData>;
+                    var categoryReference = this.dataReference as SiteDataReference<CategoryData>;
                     data = siteDataIndex.GetData<CategoryData>(categoryReference);
                     break;
 
                 case "game":
-                    var gameReference = this.DataReference as SiteDataReference<GameData>;
+                    var gameReference = this.dataReference as SiteDataReference<GameData>;
                     data = siteDataIndex.GetData<GameData>(gameReference);
                     break;
 
                 case "platform":
-                    var platformReference = this.DataReference as SiteDataReference<PlatformData>;
+                    var platformReference = this.dataReference as SiteDataReference<PlatformData>;
                     data = siteDataIndex.GetData<PlatformData>(platformReference);
                     break;
 
                 case "rating":
-                    var ratingReference = this.DataReference as SiteDataReference<RatingData>;
+                    var ratingReference = this.dataReference as SiteDataReference<RatingData>;
                     data = siteDataIndex.GetData<RatingData>(ratingReference);
                     break;
 
                 case "tag":
-                    var tagReference = this.DataReference as SiteDataReference<TagData>;
+                    var tagReference = this.dataReference as SiteDataReference<TagData>;
                     data = siteDataIndex.GetData<TagData>(tagReference);
                     break;
 
@@ -76,7 +91,7 @@ namespace GlogGenerator.MarkdownExtensions
 
             if (data == null)
             {
-                throw new ArgumentException($"No {this.ReferenceTypeName} found with key {this.DataReference.GetUnresolvedReferenceKey()}");
+                throw new ArgumentException($"No {this.ReferenceTypeName} found with key {this.dataReference.GetUnresolvedReferenceKey()}");
             }
 
             return data.GetReferenceableKey();
