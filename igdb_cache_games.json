@@ -55992,7 +55992,7 @@
       12
     ],
     "player_perspectives": [
-      2
+      6
     ],
     "ports": [],
     "release_dates": [
@@ -56311,7 +56311,7 @@
       12
     ],
     "player_perspectives": [
-      2
+      6
     ],
     "ports": [],
     "release_dates": [
@@ -89384,13 +89384,16 @@
     "keywords": [
       215,
       552,
+      558,
       826,
       1438,
       4134,
       4154,
       4359,
       4440,
-      4465
+      4465,
+      5541,
+      42551
     ],
     "name": "Return of the Obra Dinn",
     "parent_game": -1,
@@ -94206,7 +94209,8 @@
       9222,
       9835,
       10167,
-      23933
+      23933,
+      45061
     ],
     "name": "Yakuza 0",
     "parent_game": -1,
@@ -125381,7 +125385,7 @@
     "ports": [],
     "release_dates": [
       603393,
-      632331
+      656703
     ],
     "remakes": [],
     "remasters": [],
