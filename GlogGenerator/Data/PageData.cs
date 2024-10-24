@@ -36,9 +36,12 @@ namespace GlogGenerator.Data
 
         public static string PageIdFromFilePath(MarkdownPipeline mdPipeline, string filePath)
         {
+            // Disable the data index in this file parse, so that it doesn't create unwanted data references.
+            var parseContext = MarkdownParserContextExtensions.DontUseSiteDataIndex();
+
             // We need to parse the file to determine its permalink, based on front matter data.
             var fileContent = File.ReadAllText(filePath);
-            var mdDoc = Markdown.Parse(fileContent, mdPipeline);
+            var mdDoc = Markdown.Parse(fileContent, mdPipeline, parseContext);
 
             string permalinkRelative = null;
             var frontMatterBlock = mdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();

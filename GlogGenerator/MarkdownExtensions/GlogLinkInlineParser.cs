@@ -76,7 +76,8 @@ namespace GlogGenerator.MarkdownExtensions
                         var referenceTypeName = linkMatchHandler.Value;
                         var referenceKey = slice.Text.Substring(slice.Start, referenceEndPos - slice.Start);
 
-                        var glogLinkInline = new GlogLinkInline(referenceTypeName, referenceKey, this.siteDataIndex)
+                        var linkDataIndex = processor.Context.UseSiteDataIndex() ? this.siteDataIndex : null;
+                        var glogLinkInline = new GlogLinkInline(referenceTypeName, referenceKey, linkDataIndex)
                         {
                             // TODO?: would filling in Span, Row, and Column accomplish anything?
                         };
