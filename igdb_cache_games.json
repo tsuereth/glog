@@ -20055,6 +20055,7 @@
       38289
     ],
     "name": "Call of Duty 4: Modern Warfare",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
