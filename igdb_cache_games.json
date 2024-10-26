@@ -21641,6 +21641,7 @@
       8172
     ],
     "name": "Saints Row",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       12
