@@ -2,13 +2,13 @@
 category = [ "Playing A Game" ]
 date = "2017-07-02T09:41:27-07:00"
 draft = false
-game = [ "Prince of Persia: The Sands of Time" ]
+game = [ "Prince of Persia: The Sands of Time (NGC, PC, PS2, PS3, XBOX)" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 title = "Time is like a storm ... time's pretty rad."
 +++
 
-Toward the end, [Sands of Time](game:Prince of Persia: The Sands of Time)'s gameplay and scenario design shows its age poorly:
+Toward the end, [Sands of Time](game:Prince of Persia: The Sands of Time (NGC, PC, PS2, PS3, XBOX))'s gameplay and scenario design shows its age poorly:
 
 * As fights become lengthier and lengthier, you're more likely to run into issues with the rewind timer being reset.  In the elevator encounter near the end, I had a handful of rage-inducing moments where I could only rewind back to a point that was already too late to avoid death.
 

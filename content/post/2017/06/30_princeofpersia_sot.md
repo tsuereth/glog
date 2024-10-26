@@ -2,13 +2,13 @@
 category = [ "Playing A Game" ]
 date = "2017-06-30T08:03:48-07:00"
 draft = false
-game = [ "Prince of Persia: The Sands of Time" ]
+game = [ "Prince of Persia: The Sands of Time (NGC, PC, PS2, PS3, XBOX)" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 title = "Weathering the Sands of Time"
 +++
 
-<game:Prince of Persia: The Sands of Time> is one of those games that sticks out prominently in my memory.  Although I've had a [rough](game:Red Dead Redemption) [time](game:BioShock Infinite) with some of those recently -- the Prince has weathered time fairly well, if not entirely unscathed.
+[Prince of Persia: The Sands of Time](game:Prince of Persia: The Sands of Time (NGC, PC, PS2, PS3, XBOX)) is one of those games that sticks out prominently in my memory.  Although I've had a [rough](game:Red Dead Redemption) [time](game:BioShock Infinite) with some of those recently -- the Prince has weathered time fairly well, if not entirely unscathed.
 
 Starting the game on my PC, the first issue I encountered was that everything looked like one big <i>blur</i>.  I guess that sometime in the past decade or so, the GPU technique that these guys used for fog has become deprecated or broken; with fog turned on in graphics options, it is impossible to see a goddamn thing.  Turned it off.  I can see!
 

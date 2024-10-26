@@ -22174,6 +22174,7 @@
       23933
     ],
     "name": "Prince of Persia: The Sands of Time",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,

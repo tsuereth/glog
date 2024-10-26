@@ -17,7 +17,7 @@ And while I wasn't wild about the one memory remix I got to do, I would have wel
 Remember Me makes surprisingly poor use of the tools it has for keeping the player engaged.  Even given the lack of polish in each of its design components, the haphazardly-assembled experience ends up feeling like <i>less</i> than the sum of its parts.
 
 <b>Better than</b>: <game:Jumper: Griffin's Story>  
-<b>Not as good as</b>: <game:Prince of Persia: The Sands of Time>, <game:Uncharted 2: Among Thieves>  
+<b>Not as good as</b>: <game:Prince of Persia: The Sands of Time (NGC, PC, PS2, PS3, XBOX)>, <game:Uncharted 2: Among Thieves>  
 <b>Still can't get over</b>: The nonsense vocabulary.  Sensen.  Remembrane.  Comfortress.  <i>Errorist.</i>  It all just sounds so... stupid.
 
 <i>Progress: Didn't finish Episode 3.</i>
