@@ -23382,6 +23382,7 @@
       26906
     ],
     "name": "Resident Evil 2",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
