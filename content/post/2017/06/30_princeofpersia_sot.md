@@ -18,7 +18,7 @@ The Prince starts telling his tale, and ... oh, there are no subtitles.  There i
 
 Aaaand now we're in the game proper!  Huzzah!... well, the controls and camera movement suck a little bit, don't they?  The Prince can't just start running, he needs to wind-up his speed first, which is somewhat irritating.  The camera can get pretty spastic when going through some doorways or rounding certain corners.  And the timing necessary for pulling off wall-jumping seems more punishing than it should be.
 
-And, okay, fights are a bit dull.  Generally speaking, the game uses a quantity-over-quality strategy of throwing enemies at you.  (A flaw that I remember [the sequel](game:Prince of Persia: Warrior Within) attempted to address.)  And the battle music gets repetitive quite fast.
+And, okay, fights are a bit dull.  Generally speaking, the game uses a quantity-over-quality strategy of throwing enemies at you.  (A flaw that I remember [the sequel](game:Prince of Persia: Warrior Within (iOS, NGC, PC, PS2, XBOX)) attempted to address.)  And the battle music gets repetitive quite fast.
 
 <i>All that aside</i> -- this is still a great game.  The story is well-told (and well-acted!), the parkour gameplay is fun, and the environments are beautiful and memorable.
 
