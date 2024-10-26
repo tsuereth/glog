@@ -194,7 +194,7 @@ namespace GlogGenerator.Data
                 {
                     foreach (var categoryName in frontMatterCategories)
                     {
-                        var categoryReference = siteDataIndex.CreateReference<CategoryData>(categoryName.ToString());
+                        var categoryReference = siteDataIndex.CreateReference<CategoryData>(categoryName.ToString(), true);
 
                         var frontMatterReference = Tuple.Create(categoryName as Tommy.TomlString, categoryReference);
                         post.categories.Add(frontMatterReference);
@@ -205,7 +205,7 @@ namespace GlogGenerator.Data
                 {
                     foreach (var gameTitle in frontMatterGames)
                     {
-                        var gameReference = siteDataIndex.CreateReference<GameData>(gameTitle.ToString());
+                        var gameReference = siteDataIndex.CreateReference<GameData>(gameTitle.ToString(), true);
 
                         var frontMatterReference = Tuple.Create(gameTitle as Tommy.TomlString, gameReference);
                         post.games.Add(frontMatterReference);
@@ -216,7 +216,7 @@ namespace GlogGenerator.Data
                 {
                     foreach (var platformAbbreviation in frontMatterPlatforms)
                     {
-                        var platformReference = siteDataIndex.CreateReference<PlatformData>(platformAbbreviation.ToString());
+                        var platformReference = siteDataIndex.CreateReference<PlatformData>(platformAbbreviation.ToString(), true);
 
                         var frontMatterReference = Tuple.Create(platformAbbreviation as Tommy.TomlString, platformReference);
                         post.platforms.Add(frontMatterReference);
@@ -227,7 +227,7 @@ namespace GlogGenerator.Data
                 {
                     foreach (var ratingName in frontMatterRatings)
                     {
-                        var ratingReference = siteDataIndex.CreateReference<RatingData>(ratingName.ToString());
+                        var ratingReference = siteDataIndex.CreateReference<RatingData>(ratingName.ToString(), true);
 
                         var frontMatterReference = Tuple.Create(ratingName as Tommy.TomlString, ratingReference);
                         post.ratings.Add(frontMatterReference);

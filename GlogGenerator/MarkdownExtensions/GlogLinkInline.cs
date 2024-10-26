@@ -25,23 +25,23 @@ namespace GlogGenerator.MarkdownExtensions
                 switch (referenceTypeName)
                 {
                     case "category":
-                        this.dataReference = siteDataIndex.CreateReference<CategoryData>(referenceKey) as ISiteDataReference;
+                        this.dataReference = siteDataIndex.CreateReference<CategoryData>(referenceKey, true) as ISiteDataReference;
                         break;
 
                     case "game":
-                        this.dataReference = siteDataIndex.CreateReference<GameData>(referenceKey) as ISiteDataReference;
+                        this.dataReference = siteDataIndex.CreateReference<GameData>(referenceKey, true) as ISiteDataReference;
                         break;
 
                     case "platform":
-                        this.dataReference = siteDataIndex.CreateReference<PlatformData>(referenceKey) as ISiteDataReference;
+                        this.dataReference = siteDataIndex.CreateReference<PlatformData>(referenceKey, true) as ISiteDataReference;
                         break;
 
                     case "rating":
-                        this.dataReference = siteDataIndex.CreateReference<RatingData>(referenceKey) as ISiteDataReference;
+                        this.dataReference = siteDataIndex.CreateReference<RatingData>(referenceKey, true) as ISiteDataReference;
                         break;
 
                     case "tag":
-                        this.dataReference = siteDataIndex.CreateReference<TagData>(referenceKey) as ISiteDataReference;
+                        this.dataReference = siteDataIndex.CreateReference<TagData>(referenceKey, true) as ISiteDataReference;
                         break;
 
                     default:

@@ -53,22 +53,25 @@ namespace GlogGenerator.Test.MarkdownExtensions
                 }
             }
 
-            mockSiteDataIndex.CreateReference<GameData>(Arg.Any<string>()).Returns(args =>
+            mockSiteDataIndex.CreateReference<GameData>(Arg.Any<string>(), Arg.Any<bool>()).Returns(args =>
             {
                 var referenceKey = args.ArgAt<string>(0);
-                return new SiteDataReference<GameData>(referenceKey);
+                var shouldUpdateOnDataChange = args.ArgAt<bool>(1);
+                return new SiteDataReference<GameData>(referenceKey, shouldUpdateOnDataChange);
             });
 
-            mockSiteDataIndex.CreateReference<PlatformData>(Arg.Any<string>()).Returns(args =>
+            mockSiteDataIndex.CreateReference<PlatformData>(Arg.Any<string>(), Arg.Any<bool>()).Returns(args =>
             {
                 var referenceKey = args.ArgAt<string>(0);
-                return new SiteDataReference<PlatformData>(referenceKey);
+                var shouldUpdateOnDataChange = args.ArgAt<bool>(1);
+                return new SiteDataReference<PlatformData>(referenceKey, shouldUpdateOnDataChange);
             });
 
-            mockSiteDataIndex.CreateReference<TagData>(Arg.Any<string>()).Returns(args =>
+            mockSiteDataIndex.CreateReference<TagData>(Arg.Any<string>(), Arg.Any<bool>()).Returns(args =>
             {
                 var referenceKey = args.ArgAt<string>(0);
-                return new SiteDataReference<TagData>(referenceKey);
+                var shouldUpdateOnDataChange = args.ArgAt<bool>(1);
+                return new SiteDataReference<TagData>(referenceKey, shouldUpdateOnDataChange);
             });
 
             mockSiteDataIndex.GetData<GameData>(Arg.Any<SiteDataReference<GameData>>()).Returns(args =>

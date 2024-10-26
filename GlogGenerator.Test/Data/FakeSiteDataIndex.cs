@@ -14,10 +14,10 @@ namespace GlogGenerator.Test
         private List<RatingData> ratings = new List<RatingData>();
         private List<TagData> tags = new List<TagData>();
 
-        public SiteDataReference<T> CreateReference<T>(string referenceKey)
+        public SiteDataReference<T> CreateReference<T>(string referenceKey, bool shouldUpdateOnDataChange)
             where T : IGlogReferenceable
         {
-            return new SiteDataReference<T>(referenceKey);
+            return new SiteDataReference<T>(referenceKey, shouldUpdateOnDataChange);
         }
 
         public T GetData<T>(SiteDataReference<T> dataReference)

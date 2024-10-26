@@ -9,5 +9,7 @@ namespace GlogGenerator.Data
         public string GetResolvedReferenceId();
 
         public void SetData(IGlogReferenceable data);
+
+        public bool GetShouldUpdateOnDataChange();
     }
 }

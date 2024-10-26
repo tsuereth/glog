@@ -68,7 +68,7 @@ namespace GlogGenerator.Data
                 game.Tags.Add(categoryString);
 
                 // Register a data reference to the category, so the data index knows it is in-use (and won't delete it).
-                siteDataIndex.CreateReference<TagData>(categoryString);
+                siteDataIndex.CreateReference<TagData>(categoryString, false);
             }
 
             if (!string.IsNullOrEmpty(igdbGame.Url))
@@ -254,7 +254,7 @@ namespace GlogGenerator.Data
                     }
 
                     // Register a data reference to the tag, so the data index knows it is in-use (and won't delete it).
-                    siteDataIndex.CreateReference<TagData>(tagReferenceString);
+                    siteDataIndex.CreateReference<TagData>(tagReferenceString, false);
                 }
             }
         }
@@ -269,7 +269,7 @@ namespace GlogGenerator.Data
                     this.RelatedGames.Add(relatedGame.GetReferenceString(igdbCache));
 
                     // Register a data reference to the related game, so the data index knows it is in-use (and won't delete it).
-                    siteDataIndex.CreateReference<GameData>(relatedGame.GetReferenceString(igdbCache));
+                    siteDataIndex.CreateReference<GameData>(relatedGame.GetReferenceString(igdbCache), false);
                 }
             }
         }
