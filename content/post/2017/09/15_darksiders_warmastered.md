@@ -8,7 +8,7 @@ rating = [ "Meh" ]
 title = "Blandsiders"
 +++
 
-When <game:Darksiders> was more recent, it compared fairly well to [Twilight Princess](game:The Legend of Zelda: Twilight Princess) -- and favorably, even, to [Skyward Sword](game:The Legend of Zelda: Skyward Sword).
+When <game:Darksiders> was more recent, it compared fairly well to [Twilight Princess](game:The Legend of Zelda: Twilight Princess (Wii)) -- and favorably, even, to [Skyward Sword](game:The Legend of Zelda: Skyward Sword).
 
 But games have moved on, and <i>even Zelda</i> [has moved on](game:The Legend of Zelda: Breath of the Wild), in the years since.
 
