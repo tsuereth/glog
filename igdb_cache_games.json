@@ -11314,6 +11314,69 @@
     "version_parent": -1
   },
   {
+    "bundles": [],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      39,
+      9320
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 690854400,
+    "forks": [],
+    "franchise": 4,
+    "franchises": [
+      4
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      31
+    ],
+    "id": 387,
+    "involved_companies": [
+      255150
+    ],
+    "keywords": [
+      521,
+      26906,
+      27629,
+      29003,
+      41036
+    ],
+    "name": "Final Fantasy II",
+    "name_glogAppendPlatforms": true,
+    "parent_game": 16587,
+    "platforms": [
+      5,
+      19
+    ],
+    "player_perspectives": [
+      3,
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      145674,
+      145675,
+      239090,
+      379388
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/final-fantasy-ii",
+    "version_parent": -1
+  },
+  {
     "bundles": [
       282727
     ],
@@ -11606,120 +11669,6 @@
       38
     ],
     "url": "https://www.igdb.com/games/final-fantasy-xii",
-    "version_parent": -1
-  },
-  {
-    "bundles": [
-      301387
-    ],
-    "category": 8,
-    "collection": -1,
-    "collections": [
-      39,
-      9320
-    ],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 1198108800,
-    "forks": [],
-    "franchise": 4,
-    "franchises": [
-      4
-    ],
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      12,
-      31
-    ],
-    "id": 399,
-    "involved_companies": [
-      5731,
-      253751,
-      253752,
-      253753
-    ],
-    "keywords": [
-      1158,
-      1186,
-      1440,
-      1494,
-      2071,
-      2472,
-      3831,
-      4004,
-      4134,
-      4138,
-      4150,
-      4353,
-      4406,
-      4514,
-      4578,
-      4852,
-      4974,
-      4998,
-      5307,
-      5466,
-      5593,
-      5595,
-      5963,
-      6064,
-      6084,
-      6088,
-      6325,
-      6326,
-      6461,
-      6471,
-      6542,
-      6616,
-      6620,
-      7075,
-      7185,
-      7215,
-      8784,
-      8983,
-      9005,
-      9182,
-      9283,
-      9322,
-      9328,
-      9329,
-      9349,
-      9374,
-      9596,
-      10006,
-      11281
-    ],
-    "name": "Final Fantasy IV",
-    "parent_game": 16587,
-    "platforms": [
-      6,
-      20,
-      34,
-      39
-    ],
-    "player_perspectives": [
-      2
-    ],
-    "ports": [],
-    "release_dates": [
-      130584,
-      130585,
-      130586,
-      130588,
-      139435,
-      363484
-    ],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [
-      1,
-      17
-    ],
-    "url": "https://www.igdb.com/games/final-fantasy-iv",
     "version_parent": -1
   },
   {
