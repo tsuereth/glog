@@ -10573,137 +10573,6 @@
     "version_parent": -1
   },
   {
-    "bundles": [],
-    "category": 0,
-    "collection": -1,
-    "collections": [
-      44
-    ],
-    "dlcs": [],
-    "expanded_games": [
-      307493
-    ],
-    "expansions": [],
-    "first_release_date": 553132800,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [
-      463
-    ],
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      5,
-      24,
-      31
-    ],
-    "id": 374,
-    "involved_companies": [
-      274341
-    ],
-    "keywords": [
-      1,
-      72,
-      164,
-      167,
-      221,
-      535,
-      558,
-      562,
-      563,
-      1033,
-      1107,
-      1219,
-      1289,
-      1373,
-      1437,
-      1440,
-      1539,
-      1638,
-      1705,
-      2115,
-      2416,
-      3079,
-      3087,
-      3486,
-      3815,
-      3831,
-      4250,
-      4259,
-      4349,
-      4384,
-      4398,
-      4587,
-      4613,
-      4843,
-      4857,
-      4877,
-      4918,
-      4998,
-      5255,
-      5257,
-      5307,
-      5323,
-      5436,
-      5466,
-      5518,
-      5697,
-      5731,
-      5896,
-      5963,
-      6062,
-      6088,
-      6189,
-      6246,
-      6848,
-      7046,
-      7335,
-      7419,
-      8299,
-      8779,
-      9081,
-      9223,
-      9322,
-      9328,
-      9329,
-      9596,
-      12282,
-      23856,
-      23933,
-      27629,
-      29745
-    ],
-    "name": "Metal Gear",
-    "parent_game": -1,
-    "platforms": [
-      5,
-      53
-    ],
-    "player_perspectives": [
-      3
-    ],
-    "ports": [
-      133917
-    ],
-    "release_dates": [
-      612445,
-      612446,
-      612494
-    ],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [
-      1,
-      18,
-      21,
-      23
-    ],
-    "url": "https://www.igdb.com/games/metal-gear",
-    "version_parent": -1
-  },
-  {
     "bundles": [
       204734
     ],
@@ -123151,6 +123020,75 @@
       34
     ],
     "url": "https://www.igdb.com/games/patricks-parabox",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      250635,
+      307490
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      44,
+      10138
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 567129600,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      463
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      31
+    ],
+    "id": 133917,
+    "involved_companies": [
+      106687,
+      225257,
+      276815,
+      276947
+    ],
+    "keywords": [],
+    "name": "Metal Gear",
+    "name_glogAppendPlatforms": true,
+    "parent_game": 374,
+    "platforms": [
+      13,
+      15,
+      18,
+      21,
+      99
+    ],
+    "player_perspectives": [
+      3
+    ],
+    "ports": [],
+    "release_dates": [
+      612584,
+      612585,
+      612586,
+      612587,
+      612588,
+      612589,
+      612590,
+      612591,
+      612592
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      23
+    ],
+    "url": "https://www.igdb.com/games/metal-gear--1",
     "version_parent": -1
   },
   {
