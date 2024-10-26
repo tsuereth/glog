@@ -8,7 +8,7 @@ rating = [ "Meh" ]
 title = "They're like hearts, but more x-treme"
 +++
 
-<game:HeartZ: Co-Hope Puzzles> is a lot like <game:Trine> (or, maybe even more like <game:The Lost Vikings>).  There are three characters, each with distinct abilities that allow them to - <i>using teamwork</i> - solve puzzles and traverse levels.  But HeartZ makes some simple mistakes that leave it firmly behind its progenitors.
+<game:HeartZ: Co-Hope Puzzles> is a lot like <game:Trine> (or, maybe even more like <tag:The Lost Vikings>).  There are three characters, each with distinct abilities that allow them to - <i>using teamwork</i> - solve puzzles and traverse levels.  But HeartZ makes some simple mistakes that leave it firmly behind its progenitors.
 
 For one thing, the story and theme are threadbare.  There's a brief scene in the beginning which seems to explain that some cybernetic creatures got their hearts combined by mad science -- but the characters have no personality, and there's no sense of continuous storytelling as the game goes on.  You're just a bunch of weird robot-things in a laboratory.
 

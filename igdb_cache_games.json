@@ -14117,6 +14117,7 @@
       37362
     ],
     "name": "The Lost Vikings",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       19,
