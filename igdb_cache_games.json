@@ -14650,145 +14650,6 @@
     "version_parent": -1
   },
   {
-    "bundles": [
-      200175,
-      247756
-    ],
-    "category": 0,
-    "collection": -1,
-    "collections": [
-      60
-    ],
-    "dlcs": [
-      17474,
-      17475,
-      17476,
-      74884,
-      74885
-    ],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 1221523200,
-    "forks": [],
-    "franchise": 1,
-    "franchises": [
-      1
-    ],
-    "game_modes": [
-      1,
-      2
-    ],
-    "genres": [
-      12,
-      25,
-      31
-    ],
-    "id": 475,
-    "involved_companies": [
-      1186,
-      42076,
-      42077,
-      182974,
-      182975,
-      273139,
-      273141,
-      273142
-    ],
-    "keywords": [
-      287,
-      558,
-      575,
-      896,
-      1033,
-      1144,
-      1286,
-      1293,
-      1313,
-      2543,
-      3486,
-      3831,
-      4134,
-      4142,
-      4245,
-      4266,
-      4284,
-      4287,
-      4352,
-      4359,
-      4484,
-      4544,
-      4869,
-      4890,
-      4926,
-      5019,
-      5025,
-      5029,
-      5386,
-      5453,
-      5633,
-      5651,
-      5691,
-      5731,
-      5783,
-      5850,
-      5909,
-      5989,
-      6687,
-      6692,
-      6752,
-      6779,
-      7369,
-      7475,
-      9349,
-      10162,
-      11210
-    ],
-    "name": "Star Wars: The Force Unleashed",
-    "parent_game": -1,
-    "platforms": [
-      5,
-      6,
-      8,
-      9,
-      12,
-      14,
-      38,
-      39,
-      42,
-      130
-    ],
-    "player_perspectives": [
-      2
-    ],
-    "ports": [
-      197926,
-      199822
-    ],
-    "release_dates": [
-      1068,
-      1069,
-      1070,
-      1071,
-      1073,
-      1074,
-      105817,
-      105818,
-      343835,
-      380289,
-      461486
-    ],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [
-      1,
-      17,
-      18
-    ],
-    "url": "https://www.igdb.com/games/star-wars-the-force-unleashed",
-    "version_parent": -1
-  },
-  {
     "bundles": [],
     "category": 0,
     "collection": -1,
@@ -124967,6 +124828,58 @@
       31
     ],
     "url": "https://www.igdb.com/games/depict1",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 11,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1221523200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      31
+    ],
+    "id": 199822,
+    "involved_companies": [
+      170203,
+      273140
+    ],
+    "keywords": [],
+    "name": "Star Wars: The Force Unleashed",
+    "name_glogAppendPlatforms": true,
+    "parent_game": 475,
+    "platforms": [
+      5
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      609334,
+      609335,
+      609336
+    ],
+    "remakes": [],
+    "remasters": [
+      198108
+    ],
+    "standalone_expansions": [],
+    "themes": [
+      18
+    ],
+    "url": "https://www.igdb.com/games/star-wars-the-force-unleashed--3",
     "version_parent": -1
   },
   {

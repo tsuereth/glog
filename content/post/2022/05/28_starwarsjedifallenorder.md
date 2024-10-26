@@ -49,7 +49,7 @@ But a sequel could <i>inject</i> some personality into them, and if it focuses u
 
 I actually didn't expect they'd get the chance to try, until <a href="https://www.youtube.com/watch?v=4HLDaBGdnLc">a trailer appeared yesterday</a>.  We'll just have to see if [Survivor](game:Star Wars Jedi: Survivor) has the wisdom to <b>focus</b> its powers.
 
-<b>Better than</b>: <game:Star Wars: The Force Unleashed>, <game:Tomb Raider (2013)>, <game:Uncharted: Drake's Fortune>  
+<b>Better than</b>: <game:Star Wars: The Force Unleashed (Wii)>, <game:Tomb Raider (2013)>, <game:Uncharted: Drake's Fortune>  
 <b>Not as good as</b>: <game:Ghost of Tsushima>, <game:Horizon Zero Dawn>, <game:Uncharted 2: Among Thieves>  
 <b>I'm not sure if the Metroid Prime games have aged well</b>: but <i>in my head</i>, Fallen Order falls short of <game:Metroid Prime>.
 
