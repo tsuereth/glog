@@ -16121,6 +16121,7 @@
       24801
     ],
     "name": "Sonic Generations",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
