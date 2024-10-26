@@ -7,11 +7,16 @@ namespace GlogGenerator.Data
     {
         private string unresolvedReferenceKey = null;
         private string resolvedReferenceId = null;
+        private bool shouldUpdateOnDataChange = true;
 
-        public SiteDataReference(string referenceKey)
+        public SiteDataReference(string referenceKey, bool shouldUpdateOnDataChange)
         {
             this.unresolvedReferenceKey = referenceKey;
+            this.shouldUpdateOnDataChange = shouldUpdateOnDataChange;
         }
+
+        public SiteDataReference(string referenceKey)
+            : this(referenceKey, true) { }
 
         public bool GetIsResolved()
         {
@@ -37,6 +42,11 @@ namespace GlogGenerator.Data
             }
             
             this.unresolvedReferenceKey = null;
+        }
+
+        public bool GetShouldUpdateOnDataChange()
+        {
+            return this.shouldUpdateOnDataChange;
         }
     }
 }

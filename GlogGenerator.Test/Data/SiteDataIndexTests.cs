@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using GlogGenerator.Data;
 using GlogGenerator.IgdbApi;
 using Microsoft.Extensions.Logging;
@@ -10,6 +12,18 @@ namespace GlogGenerator.Test.Data
     [TestClass]
     public class SiteDataIndexTests
     {
+        private static bool IsDefaultTagData(TagData tagData)
+        {
+            var igdbGameCategories = (IgdbGameCategory[])Enum.GetValues(typeof(IgdbGameCategory));
+            var igdbGameCategoryDescriptions = igdbGameCategories.Where(c => c != IgdbGameCategory.None).Select(c => c.Description());
+            if (igdbGameCategoryDescriptions.Contains(tagData.Name))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
         [TestMethod]
         public void TestLoadContentMergedTags()
         {
@@ -65,7 +79,7 @@ namespace GlogGenerator.Test.Data
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
 
-            var testReference = new SiteDataReference<GameData>("Some Game Name");
+            var testReference = testIndex.CreateReference<GameData>(testDataItem.Name, true);
             var testData = testIndex.GetData(testReference);
 
             Assert.IsTrue(testReference.GetIsResolved());
@@ -110,6 +124,9 @@ namespace GlogGenerator.Test.Data
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
 
+            testIndex.CreateReference<PlatformData>(testPlatformOld.Abbreviation, true);
+            testIndex.ResolveReferences();
+
             var testPlatformNew = new IgdbPlatform() { Id = 1, Abbreviation = "PSOne" };
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformNew });
@@ -145,6 +162,9 @@ namespace GlogGenerator.Test.Data
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
 
+            testIndex.CreateReference<PlatformData>(testPlatformOld.Abbreviation, true);
+            testIndex.ResolveReferences();
+
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
 
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
@@ -178,7 +198,10 @@ namespace GlogGenerator.Test.Data
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
             Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
 
-            var testPlatformNew = new IgdbPlatform() { Id = 2, Abbreviation = "PS1" };
+            testIndex.CreateReference<PlatformData>(testPlatformOld.Abbreviation, true);
+            testIndex.ResolveReferences();
+
+            var testPlatformNew = new IgdbPlatform() { Id = 2, Abbreviation = testPlatformOld.Abbreviation };
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformNew });
 
@@ -191,6 +214,51 @@ namespace GlogGenerator.Test.Data
 
             var expectedMessage = $"Updated data index has a different data ID for PlatformData with key {testPlatformOld.GetReferenceString(mockIgdbCache)}: old data ID {testPlatformOld.GetUniqueIdString(mockIgdbCache)} new data ID {testPlatformNew.GetUniqueIdString(mockIgdbCache)}";
             Assert.AreEqual(expectedMessage, warnings[0].Message);
+        }
+
+        [TestMethod]
+        public void TestLoadContentUpdateNonContentReferenceChanged()
+        {
+            var logger = new TestLogger();
+
+            var testCompany = new IgdbCompany() { Id = 1234, Name = "The Developer" };
+            var testInvolvedCompany = new IgdbInvolvedCompany() { Id = 5678, CompanyId = testCompany.Id };
+            var testGame = new IgdbGame()
+            {
+                Id = 1,
+                Name = "Video Game",
+                InvolvedCompanyIds = new List<int>() { testInvolvedCompany.Id },
+            };
+
+            var mockIgdbCache = Substitute.For<IIgdbCache>();
+            mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>() { testGame });
+            mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
+            mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>() { testCompany });
+
+            var testIndex = new SiteDataIndex(logger, string.Empty);
+            var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
+
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+
+            Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
+            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+
+            var indexTags = testIndex.GetTags().Where(t => !IsDefaultTagData(t)).ToList();
+            Assert.AreEqual(1, indexTags.Count);
+            Assert.AreEqual(testCompany.Name, indexTags[0].Name);
+
+            var testCompanyUpdated = new IgdbCompany() { Id = testCompany.Id, Name = "The Updated Developer" };
+
+            mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>() { testCompanyUpdated });
+
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+
+            Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
+            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+
+            indexTags = testIndex.GetTags().Where(t => !IsDefaultTagData(t)).ToList();
+            Assert.AreEqual(1, indexTags.Count);
+            Assert.AreEqual(testCompanyUpdated.Name, indexTags[0].Name);
         }
     }
 }

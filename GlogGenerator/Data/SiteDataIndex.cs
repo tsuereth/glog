@@ -39,10 +39,10 @@ namespace GlogGenerator.Data
             this.inputFilesBasePath = inputFilesBasePath;
         }
 
-        public SiteDataReference<T> CreateReference<T>(string referenceKey)
+        public SiteDataReference<T> CreateReference<T>(string referenceKey, bool shouldUpdateOnDataChange)
             where T : IGlogReferenceable
         {
-            var dataReference = new SiteDataReference<T>(referenceKey);
+            var dataReference = new SiteDataReference<T>(referenceKey, shouldUpdateOnDataChange);
 
             var dataType = typeof(T);
             if (dataType == typeof(CategoryData))
@@ -271,7 +271,9 @@ namespace GlogGenerator.Data
 
         public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline, bool includeDrafts)
         {
-            // Reset the current index, while tracking old data to detect update conflicts.
+            // Reset the current index, while tracking some* old data to detect update conflicts.
+            // (*) Only retain data associated with DataReferences which "should update" on changed data;
+            // other data (whose references should not be updated) should instead be thrown away.
             this.rawDataFiles.Clear();
             this.staticFiles.Clear();
 
@@ -281,19 +283,29 @@ namespace GlogGenerator.Data
             var oldPosts = this.posts;
             this.posts = new Dictionary<string, PostData>();
 
-            var oldCategories = this.categories;
+            var updateCategoryReferenceIds = this.categoryReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
+            var oldCategories = this.categories.Where(kv => updateCategoryReferenceIds.Contains(kv.Key)).ToDictionary(kv => kv.Key, kv => kv.Value);
+            this.categoryReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
             this.categories = new Dictionary<string, CategoryData>();
 
-            var oldGames = this.games;
+            var updateGameReferenceIds = this.gameReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
+            var oldGames = this.games.Where(kv => updateGameReferenceIds.Contains(kv.Key)).ToDictionary(kv => kv.Key, kv => kv.Value);
+            this.gameReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
             this.games = new Dictionary<string, GameData>();
 
-            var oldPlatforms = this.platforms;
+            var updatePlatformReferenceIds = this.platformReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
+            var oldPlatforms = this.platforms.Where(kv => updatePlatformReferenceIds.Contains(kv.Key)).ToDictionary(kv => kv.Key, kv => kv.Value);
+            this.platformReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
             this.platforms = new Dictionary<string, PlatformData>();
 
-            var oldRatings = this.ratings;
+            var updateRatingReferenceIds = this.ratingReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
+            var oldRatings = this.ratings.Where(kv => updateRatingReferenceIds.Contains(kv.Key)).ToDictionary(kv => kv.Key, kv => kv.Value);
+            this.ratingReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
             this.ratings = new Dictionary<string, RatingData>();
 
-            var oldTags = this.tags;
+            var updateTagReferenceIds = this.tagReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
+            var oldTags = this.tags.Where(kv => updateTagReferenceIds.Contains(kv.Key)).ToDictionary(kv => kv.Key, kv => kv.Value);
+            this.tagReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
             this.tags = new Dictionary<string, TagData>();
 
             // Load game data from the IGDB cache.
@@ -517,7 +529,7 @@ namespace GlogGenerator.Data
             // Ensure that SOME tracked reference exists for those games.
             foreach (var gameName in this.nonContentGameNames)
             {
-                this.CreateReference<GameData>(gameName);
+                this.CreateReference<GameData>(gameName, false);
             }
 
             // Detect conflicts between old and updated data.
