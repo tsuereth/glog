@@ -4,7 +4,7 @@ namespace GlogGenerator.Data
 {
     public interface ISiteDataIndex
     {
-        public SiteDataReference<T> CreateReference<T>(string referenceKey)
+        public SiteDataReference<T> CreateReference<T>(string referenceKey, bool shouldUpdateOnDataChange)
             where T : IGlogReferenceable;
 
         public T GetData<T>(SiteDataReference<T> dataReference)
