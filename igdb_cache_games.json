@@ -54453,6 +54453,7 @@
       6813
     ],
     "name": "Sonic Lost World",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
