@@ -40822,6 +40822,7 @@
       42805
     ],
     "name": "James Bond 007: Nightfire",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       8,
