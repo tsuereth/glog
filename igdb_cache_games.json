@@ -77950,6 +77950,7 @@
       12462
     ],
     "name": "Tron: Evolution",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
