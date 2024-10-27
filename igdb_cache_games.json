@@ -80199,6 +80199,7 @@
       31533
     ],
     "name": "Ristar",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       3,
