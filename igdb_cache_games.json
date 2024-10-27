@@ -75583,6 +75583,7 @@
       27629
     ],
     "name": "Sonic the Hedgehog 3",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       5,
