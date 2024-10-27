@@ -27,5 +27,5 @@ But it also:
 Grimoire has some narrative chops, for sure.  But it just isn't <i>implemented</i> as well as, say, an Ace Attorney.
 
 <b>Better than</b>: <game:Puzzle Agent>  
-<b>Not as good as</b>: <game:Phoenix Wright: Ace Attorney>  
+<b>Not as good as</b>: <game:Phoenix Wright: Ace Attorney (NDS)>  
 <b>The ending was also a little</b>: ... bizarre.

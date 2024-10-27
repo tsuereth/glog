@@ -49,7 +49,7 @@ Which is a shame, because the core action mechanics of the game are really not b
 
 I hope that Volition's next game gets the creative budget (and time) it needs to build on AoM's half-baked ideas.
 
-<b>Better than</b>: arguably, the first <game:Saints Row>.  
+<b>Better than</b>: arguably, the first <game:Saints Row (X360)>.  
 <b>Not as good as</b>: <game:Saints Row 2>, [The Third](game:Saints Row: The Third), [IV](game:Saints Row IV), or even [Gat Out of Hell](game:Saints Row: Gat Out of Hell).  
 <b>I failed to care about most of the agents</b>: but I <i>might</i> spring for a spinoff game about <a href="https://www.youtube.com/watch?v=InlFd4_AsTA">Daisy</a>.
 

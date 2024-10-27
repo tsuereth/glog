@@ -20,7 +20,7 @@ The problem is... Dyo is <i>terrible</i> at teaching you how to play.  There are
 
 The result is that figuring out each level involves a lot of staring, and a lot of trial-and-error testing if your character can make a certain-length leap or fit through a certain-size gap.  Learning the unique ins and outs of a level is tedious, and boring.
 
-I'm impressed by Dyo's cleverness (and I love the [Sands of Time](game:Prince of Persia: The Sands of Time)-style rewind/undo feature), but actually playing the game isn't very fun.
+I'm impressed by Dyo's cleverness (and I love the [Sands of Time](game:Prince of Persia: The Sands of Time (NGC, PC, PS2, PS3, XBOX))-style rewind/undo feature), but actually playing the game isn't very fun.
 
 <b>Better than</b>: <game:Kalimba>  
 <b>Not as good as</b>: <game:Dyadic>  

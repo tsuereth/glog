@@ -2,14 +2,14 @@
 date = "2020-06-07T10:56:06-07:00"
 title = "Maybe not the hero we need right now"
 category = [ "Playing A Game" ]
-game = [ "Batman: Arkham Origins" ]
+game = [ "Batman: Arkham Origins (PC, PS3, WiiU, X360)" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 +++
 
 I've been hankering for a <i>Batman</i> fix for a while, and figured I may as well start with "the <s>bad</s> less-good one."
 
-<game:Batman: Arkham Origins> has an awkward start - despite being a prequel, it feels like it assumes a moderate understanding of Batman <i>and</i> of how the [Arkham games](tag:Batman: Arkham) work - and the story pacing is a poorly-architected mess.  (Ugh, the Joker psychoanalysis sequence... <i>way</i> too long.)  Its side missions and optional content are generally uncompelling, its mechanics are minimally innovative (that's not a freeze blast, it's a glue grenade!), and it's impossible to finish the game without noticing at least a few bugs.
+[Batman: Arkham Origins](game:Batman: Arkham Origins (PC, PS3, WiiU, X360)) has an awkward start - despite being a prequel, it feels like it assumes a moderate understanding of Batman <i>and</i> of how the [Arkham games](tag:Batman: Arkham) work - and the story pacing is a poorly-architected mess.  (Ugh, the Joker psychoanalysis sequence... <i>way</i> too long.)  Its side missions and optional content are generally uncompelling, its mechanics are minimally innovative (that's not a freeze blast, it's a glue grenade!), and it's impossible to finish the game without noticing at least a few bugs.
 
 One of the more amazing bug examples I observed in my playthrough was, while interrogating a crime suspect and talking with Alfred on remote comms, the suspect's lips moved in sync with Alfred's dialog.  <i>Yikes.</i>
 

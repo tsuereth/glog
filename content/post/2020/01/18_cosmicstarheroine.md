@@ -39,7 +39,7 @@ All in all, though, Cosmic Star Heroine still isn't what I would call a "bad" ga
 
 It's a shame though, because its premise and structure show so much potential for more.
 
-<b>Better than</b>: <game:Final Fantasy IV>, <game:Lunar Legend>, <game:Secret of Evermore>  
+<b>Better than</b>: <game:Final Fantasy II (SNES, Wii)>, <game:Lunar Legend>, <game:Secret of Evermore>  
 <b>Not as good as</b>: <game:Chrono Trigger>, <game:Final Fantasy VI>, <game:Mass Effect>  
 <b>Less frustrating than, but not as interesting as</b>: <game:CrossCode>
 

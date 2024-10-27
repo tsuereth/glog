@@ -7,7 +7,7 @@ platform = [ "PC" ]
 rating = [ "Good" ]
 +++
 
-Hold it!  Has it really been <i>almost fifteen years</i> since <game:Phoenix Wright: Ace Attorney> first showed me how fun the law could be?
+Hold it!  Has it really been <i>almost fifteen years</i> since <game:Phoenix Wright: Ace Attorney (NDS)> first showed me how fun the law could be?
 
 The <game:Phoenix Wright: Ace Attorney Trilogy> package presented a surprising, and exciting, opportunity for me to revisit all those fondly-remembered cases from early in Phoenix's career.  More recent installments like [Spirit of Justice](game:Phoenix Wright: Ace Attorney - Spirit of Justice) have made me wonder, are the original games <i>really</i> as good as I remember?
 

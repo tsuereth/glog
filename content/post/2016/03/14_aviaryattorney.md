@@ -8,7 +8,7 @@ rating = [ "Good" ]
 title = "Wing it!"
 +++
 
-It would be easy to describe <game:Aviary Attorney> as [Phoenix Wright](game:Phoenix Wright: Ace Attorney) with birds, instead.  But it's not just an investigation-and-trial game about <a href="https://www.youtube.com/watch?v=qcderLXiwa8#t=1m10s">bird law</a> -- Aviary Attorney's unique aesthetic incorporates the setting of revolutionary France, and animal puns, into an imaginative and greatly amusing tale.  It's smart, funny, and almost entirely logical, despite ... birds.
+It would be easy to describe <game:Aviary Attorney> as [Phoenix Wright](game:Phoenix Wright: Ace Attorney (NDS)) with birds, instead.  But it's not just an investigation-and-trial game about <a href="https://www.youtube.com/watch?v=qcderLXiwa8#t=1m10s">bird law</a> -- Aviary Attorney's unique aesthetic incorporates the setting of revolutionary France, and animal puns, into an imaginative and greatly amusing tale.  It's smart, funny, and almost entirely logical, despite ... birds.
 
 The downside is that it's pretty short.  You should be able to get to one of the game's three endings in about 3 hours.  And the other two endings are worth seeing, but don't add much to that running length.
 

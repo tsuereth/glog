@@ -9,7 +9,7 @@ rating = [ "Good" ]
 
 Dystopian future sci-fi.  Neon vaporwave art and music.  Sword-slinging bullet-deflection and dismemberment.  Tactical slow-mo.  What's not to like about <game:Katana Zero>?
 
-Well, believe it or not, this time-manipulation action game <i>doesn't</i> let you [rewind mid-level](game:Prince of Persia: The Sands of Time) -- despite having narrative justification for it.  Instead, when you die, the game rewinds all the way back to the start of the level, making you try the whole thing again.
+Well, believe it or not, this time-manipulation action game <i>doesn't</i> let you [rewind mid-level](game:Prince of Persia: The Sands of Time (NGC, PC, PS2, PS3, XBOX)) -- despite having narrative justification for it.  Instead, when you die, the game rewinds all the way back to the start of the level, making you try the whole thing again.
 
 This is a little annoying in early levels, and becomes <i>quite</i> annoying as enemies become stronger and levels become more complex.
 

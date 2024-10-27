@@ -17,6 +17,6 @@ I don't know if I'd say that it left me wanting more, though; I feel pretty sati
 
 <b>Better than</b>: <game:Mr. Shifty>, <game:Rogue Warrior>, <game:Wanted: Weapons of Fate>  
 <b>Not as good as</b>: <game:Portal>  
-<b>Now, if there was a [rewind feature](game:Prince of Persia: The Sands of Time), encouraging longer and more-intricate levels</b>: <i>then</i> I'd be up for more.
+<b>Now, if there was a [rewind feature](game:Prince of Persia: The Sands of Time (NGC, PC, PS2, PS3, XBOX)), encouraging longer and more-intricate levels</b>: <i>then</i> I'd be up for more.
 
 <i>Progress: Finished the story levels.</i>

@@ -8,7 +8,7 @@ rating = [ "Awesome" ]
 title = "I've already used the title, A Breath of Fresh Wild"
 +++
 
-[Breath of the Wild](game:The Legend of Zelda: Breath of the Wild) is exactly the kick in the pants that the Zelda franchise needed so badly.  In some ways, it makes [Wind Waker](game:The Legend of Zelda: The Wind Waker HD), [Twilight Princess](game:The Legend of Zelda: Twilight Princess), and (especially) [Skyward Sword](game:The Legend of Zelda: Skyward Sword) look more like demos than full-fledged games -- while its forebears hinted at deep combat mechanics and a stamina system, Breath of the Wild fleshes its systems all the way out.
+[Breath of the Wild](game:The Legend of Zelda: Breath of the Wild) is exactly the kick in the pants that the Zelda franchise needed so badly.  In some ways, it makes [Wind Waker](game:The Legend of Zelda: The Wind Waker HD), [Twilight Princess](game:The Legend of Zelda: Twilight Princess (Wii)), and (especially) [Skyward Sword](game:The Legend of Zelda: Skyward Sword) look more like demos than full-fledged games -- while its forebears hinted at deep combat mechanics and a stamina system, Breath of the Wild fleshes its systems all the way out.
 
 That the game's overall design has been heavily inspired by [Skyrim](game:The Elder Scrolls V: Skyrim) is pretty clear (and, if I recall correctly, was noted explicitly by Nintendo in previous interviews).  What's really admirable, though, is that Breath of the Wild is neither a Nintendo-style "we'll do it our way" imitation that misses the point, nor a lazy copy-and-paste design; it incorporates parts of Elder Scrolls (and <game:Assassin's Creed>) games that worked, fixes some that didn't, and includes more than enough unique flavor of its own.
 

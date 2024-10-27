@@ -2,11 +2,11 @@
 date = "2024-07-28T08:20:09.0046735-07:00"
 title = "Bigger and voxelier"
 category = [ "Playing A Game" ]
-game = [ "Voxelgram", "Voxelgram: DLC #1" ]
+game = [ "Voxelgram", "Voxelgram: DLC #1 (Linux, PC)" ]
 platform = [ "PC" ]
 rating = [ "Awesome" ]
 +++
-<game:Voxelgram> was one of my [favorites in 2021]($SiteBaseURL$2022/01/01/2021-in-review-not-dead-yet/), so I was thrilled to see its [new DLC](game:Voxelgram: DLC #1) come up for sale.  No-brainer.
+<game:Voxelgram> was one of my [favorites in 2021]($SiteBaseURL$2022/01/01/2021-in-review-not-dead-yet/), so I was thrilled to see its [new DLC](game:Voxelgram: DLC #1 (Linux, PC)) come up for sale.  No-brainer.
 
 What was really surprising, though, was booting Voxelgram back up and seeing *even more* [new puzzles, added for free](https://store.steampowered.com/news/app/1158470/view/4963541146758479893).
 

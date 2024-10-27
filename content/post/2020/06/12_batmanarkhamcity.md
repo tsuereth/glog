@@ -13,7 +13,7 @@ In retrospect, a key aspect of Arkham City's story is that despite being "in" an
 
 To put it another way: Arkham City's sandbox is built to support its story, more than the other way around.  Side missions aren't just wholly detached from the main storyline, they also tend to be insubstantial on their own.  Creative effort was clearly far more focused on the story missions than on other activities in the open world.
 
-(Compared to the side missions in [Arkham Origins](game:Batman: Arkham Origins), which I recently called ["uncompelling"]($SiteBaseURL$2020/06/07/maybe-not-the-hero-we-need-right-now/), I still think Arkham City's are more interesting... but not by very much.)
+(Compared to the side missions in [Arkham Origins](game:Batman: Arkham Origins (PC, PS3, WiiU, X360)), which I recently called ["uncompelling"]($SiteBaseURL$2020/06/07/maybe-not-the-hero-we-need-right-now/), I still think Arkham City's are more interesting... but not by very much.)
 
 That being said, despite the highlight of Arkham City being its narrative, that story falls short of the bar set by Arkham Asylum.  And I can pin the blame for that on two men in paricular: Mr. Freeze and Ra's al Ghul.
 
@@ -29,7 +29,7 @@ The audio recordings particularly highlight how great Hugo Strange's voice actor
 
 Replaying Arkham City was fun, but did remove some of the rosy tint from my glasses, so to speak.  In fact, revisiting it and Arkham Origins so close together has increased my apprecation for the latter; it may have been an uninspired sequel, but it put a lot of effort into measuring up to its forebear.
 
-<b>Better than</b>: <game:Batman: Arkham Origins>, <game:Marvel's Spider-Man>  
+<b>Better than</b>: <game:Batman: Arkham Origins (PC, PS3, WiiU, X360)>, <game:Marvel's Spider-Man>  
 <b>Not as good as</b>: <game:Batman: Arkham Asylum>  
 <b>That Riddler bullshit</b>: still way too much work for an underwhelming payoff.  But I did it again, for the achievements.
 

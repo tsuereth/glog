@@ -8,7 +8,7 @@ platform = [ "PC" ]
 
 I've done quite a bit of [LEGO gaming](tag:LEGO) in the past, to say nothing of real-life LEGO-ing, and I'm well-aware that the "LEGO" part of these games' appeal is fairly shallow.
 
-I enjoyed <game:LEGO The Lord of the Rings> because I love <i>The Lord of the Rings</i>.  And I enjoyed <game:LEGO City Undercover> because I love ... [GTA](tag:Grand Theft Auto).  But <game:LEGO Batman 2: DC Super Heroes> and <game:LEGO Marvel Super Heroes> - and its dead-horse-beating follow-up <game:LEGO Marvel's Avengers> - strained my attachments to those franchises.  <game:The LEGO Movie Videogame> was fan-service-y fun just like <i>The LEGO Movie</i> was, but...
+I enjoyed [LEGO: The Lord of the Rings](game:LEGO The Lord of the Rings (Android, iOS, Mac, PC, PS3, Wii, X360)) because I love <i>The Lord of the Rings</i>.  And I enjoyed <game:LEGO City Undercover> because I love ... [GTA](tag:Grand Theft Auto).  But [LEGO Batman 2: DC Super Heroes](game:LEGO Batman 2: DC Super Heroes (3DS, Mac, PC, PS3, Wii, WiiU, X360)) and <game:LEGO Marvel Super Heroes> - and its dead-horse-beating follow-up <game:LEGO Marvel's Avengers> - strained my attachments to those franchises.  <game:The LEGO Movie Videogame> was fan-service-y fun just like <i>The LEGO Movie</i> was, but...
 
 I have no attachment to <i>Ninjago</i>, so <game:The LEGO Ninjago Movie Video Game> had an uphill battle for my attention to start with.  And this game's addition of broad combat "techniques" failed to distract me from its rote beat-em-up formula, environments which are as visually-noisy as they are <i>boring</i>, and a story which is clearly doing a lazy job of following a movie script.
 

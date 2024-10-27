@@ -17,6 +17,6 @@ And while I'm not going out of my way to finish this game's collectibles, that's
 
 Arkham Asylum may not have the openness of its followers, but its tight craftsmanship makes it a tough act to follow.
 
-<b>Better than</b>: <game:Batman: Arkham Origins>  
+<b>Better than</b>: <game:Batman: Arkham Origins (PC, PS3, WiiU, X360)>  
 <b>Not as good as</b>: <game:The Witcher 3: Wild Hunt - Hearts of Stone>  
 <b>We'll find out soon</b>: whether [Arkham City](game:Batman: Arkham City) has aged so well.

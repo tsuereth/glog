@@ -612,6 +612,10 @@
     "name": "Rockstar Leeds"
   },
   {
+    "id": 310,
+    "name": "Ultra Games"
+  },
+  {
     "id": 312,
     "name": "Konami Computer Entertainment Japan"
   },
@@ -734,14 +738,6 @@
   {
     "id": 385,
     "name": "Krome Studios"
-  },
-  {
-    "id": 389,
-    "name": "Universomo"
-  },
-  {
-    "id": 390,
-    "name": "THQ Wireless"
   },
   {
     "id": 391,
@@ -1260,10 +1256,6 @@
     "name": "Namco Tales Studio"
   },
   {
-    "id": 827,
-    "name": "Telenet Japan"
-  },
-  {
     "id": 830,
     "name": "Sega AM2"
   },
@@ -1710,10 +1702,6 @@
   {
     "id": 1261,
     "name": "MTV Games"
-  },
-  {
-    "id": 1264,
-    "name": "O3 Entertainment"
   },
   {
     "id": 1267,
@@ -4026,10 +4014,6 @@
   {
     "id": 12367,
     "name": "Headlock"
-  },
-  {
-    "id": 12390,
-    "name": "Virgin Mastertronic"
   },
   {
     "id": 12500,

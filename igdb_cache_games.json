@@ -10573,137 +10573,6 @@
     "version_parent": -1
   },
   {
-    "bundles": [],
-    "category": 0,
-    "collection": -1,
-    "collections": [
-      44
-    ],
-    "dlcs": [],
-    "expanded_games": [
-      307493
-    ],
-    "expansions": [],
-    "first_release_date": 553132800,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [
-      463
-    ],
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      5,
-      24,
-      31
-    ],
-    "id": 374,
-    "involved_companies": [
-      274341
-    ],
-    "keywords": [
-      1,
-      72,
-      164,
-      167,
-      221,
-      535,
-      558,
-      562,
-      563,
-      1033,
-      1107,
-      1219,
-      1289,
-      1373,
-      1437,
-      1440,
-      1539,
-      1638,
-      1705,
-      2115,
-      2416,
-      3079,
-      3087,
-      3486,
-      3815,
-      3831,
-      4250,
-      4259,
-      4349,
-      4384,
-      4398,
-      4587,
-      4613,
-      4843,
-      4857,
-      4877,
-      4918,
-      4998,
-      5255,
-      5257,
-      5307,
-      5323,
-      5436,
-      5466,
-      5518,
-      5697,
-      5731,
-      5896,
-      5963,
-      6062,
-      6088,
-      6189,
-      6246,
-      6848,
-      7046,
-      7335,
-      7419,
-      8299,
-      8779,
-      9081,
-      9223,
-      9322,
-      9328,
-      9329,
-      9596,
-      12282,
-      23856,
-      23933,
-      27629,
-      29745
-    ],
-    "name": "Metal Gear",
-    "parent_game": -1,
-    "platforms": [
-      5,
-      53
-    ],
-    "player_perspectives": [
-      3
-    ],
-    "ports": [
-      133917
-    ],
-    "release_dates": [
-      612445,
-      612446,
-      612494
-    ],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [
-      1,
-      18,
-      21,
-      23
-    ],
-    "url": "https://www.igdb.com/games/metal-gear",
-    "version_parent": -1
-  },
-  {
     "bundles": [
       204734
     ],
@@ -11445,6 +11314,69 @@
     "version_parent": -1
   },
   {
+    "bundles": [],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      39,
+      9320
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 690854400,
+    "forks": [],
+    "franchise": 4,
+    "franchises": [
+      4
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      31
+    ],
+    "id": 387,
+    "involved_companies": [
+      255150
+    ],
+    "keywords": [
+      521,
+      26906,
+      27629,
+      29003,
+      41036
+    ],
+    "name": "Final Fantasy II",
+    "name_glogAppendPlatforms": true,
+    "parent_game": 16587,
+    "platforms": [
+      5,
+      19
+    ],
+    "player_perspectives": [
+      3,
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      145674,
+      145675,
+      239090,
+      379388
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/final-fantasy-ii",
+    "version_parent": -1
+  },
+  {
     "bundles": [
       282727
     ],
@@ -11737,120 +11669,6 @@
       38
     ],
     "url": "https://www.igdb.com/games/final-fantasy-xii",
-    "version_parent": -1
-  },
-  {
-    "bundles": [
-      301387
-    ],
-    "category": 8,
-    "collection": -1,
-    "collections": [
-      39,
-      9320
-    ],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 1198108800,
-    "forks": [],
-    "franchise": 4,
-    "franchises": [
-      4
-    ],
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      12,
-      31
-    ],
-    "id": 399,
-    "involved_companies": [
-      5731,
-      253751,
-      253752,
-      253753
-    ],
-    "keywords": [
-      1158,
-      1186,
-      1440,
-      1494,
-      2071,
-      2472,
-      3831,
-      4004,
-      4134,
-      4138,
-      4150,
-      4353,
-      4406,
-      4514,
-      4578,
-      4852,
-      4974,
-      4998,
-      5307,
-      5466,
-      5593,
-      5595,
-      5963,
-      6064,
-      6084,
-      6088,
-      6325,
-      6326,
-      6461,
-      6471,
-      6542,
-      6616,
-      6620,
-      7075,
-      7185,
-      7215,
-      8784,
-      8983,
-      9005,
-      9182,
-      9283,
-      9322,
-      9328,
-      9329,
-      9349,
-      9374,
-      9596,
-      10006,
-      11281
-    ],
-    "name": "Final Fantasy IV",
-    "parent_game": 16587,
-    "platforms": [
-      6,
-      20,
-      34,
-      39
-    ],
-    "player_perspectives": [
-      2
-    ],
-    "ports": [],
-    "release_dates": [
-      130584,
-      130585,
-      130586,
-      130588,
-      139435,
-      363484
-    ],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [
-      1,
-      17
-    ],
-    "url": "https://www.igdb.com/games/final-fantasy-iv",
     "version_parent": -1
   },
   {
@@ -14299,6 +14117,7 @@
       37362
     ],
     "name": "The Lost Vikings",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       19,
@@ -14828,145 +14647,6 @@
       38
     ],
     "url": "https://www.igdb.com/games/the-elder-scrolls-v-skyrim",
-    "version_parent": -1
-  },
-  {
-    "bundles": [
-      200175,
-      247756
-    ],
-    "category": 0,
-    "collection": -1,
-    "collections": [
-      60
-    ],
-    "dlcs": [
-      17474,
-      17475,
-      17476,
-      74884,
-      74885
-    ],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 1221523200,
-    "forks": [],
-    "franchise": 1,
-    "franchises": [
-      1
-    ],
-    "game_modes": [
-      1,
-      2
-    ],
-    "genres": [
-      12,
-      25,
-      31
-    ],
-    "id": 475,
-    "involved_companies": [
-      1186,
-      42076,
-      42077,
-      182974,
-      182975,
-      273139,
-      273141,
-      273142
-    ],
-    "keywords": [
-      287,
-      558,
-      575,
-      896,
-      1033,
-      1144,
-      1286,
-      1293,
-      1313,
-      2543,
-      3486,
-      3831,
-      4134,
-      4142,
-      4245,
-      4266,
-      4284,
-      4287,
-      4352,
-      4359,
-      4484,
-      4544,
-      4869,
-      4890,
-      4926,
-      5019,
-      5025,
-      5029,
-      5386,
-      5453,
-      5633,
-      5651,
-      5691,
-      5731,
-      5783,
-      5850,
-      5909,
-      5989,
-      6687,
-      6692,
-      6752,
-      6779,
-      7369,
-      7475,
-      9349,
-      10162,
-      11210
-    ],
-    "name": "Star Wars: The Force Unleashed",
-    "parent_game": -1,
-    "platforms": [
-      5,
-      6,
-      8,
-      9,
-      12,
-      14,
-      38,
-      39,
-      42,
-      130
-    ],
-    "player_perspectives": [
-      2
-    ],
-    "ports": [
-      197926,
-      199822
-    ],
-    "release_dates": [
-      1068,
-      1069,
-      1070,
-      1071,
-      1073,
-      1074,
-      105817,
-      105818,
-      343835,
-      380289,
-      461486
-    ],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [
-      1,
-      17,
-      18
-    ],
-    "url": "https://www.igdb.com/games/star-wars-the-force-unleashed",
     "version_parent": -1
   },
   {
@@ -16441,6 +16121,7 @@
       24801
     ],
     "name": "Sonic Generations",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -20374,6 +20055,7 @@
       38289
     ],
     "name": "Call of Duty 4: Modern Warfare",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -21959,6 +21641,7 @@
       8172
     ],
     "name": "Saints Row",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       12
@@ -22491,6 +22174,7 @@
       23933
     ],
     "name": "Prince of Persia: The Sands of Time",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -22630,6 +22314,7 @@
       23933
     ],
     "name": "Prince of Persia: Warrior Within",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -23697,6 +23382,7 @@
       26906
     ],
     "name": "Resident Evil 2",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -27729,189 +27415,6 @@
       17
     ],
     "url": "https://www.igdb.com/games/the-legend-of-zelda-the-minish-cap",
-    "version_parent": -1
-  },
-  {
-    "bundles": [],
-    "category": 0,
-    "collection": -1,
-    "collections": [
-      106
-    ],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 1163894400,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [
-      596
-    ],
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      9,
-      12,
-      31
-    ],
-    "id": 1036,
-    "involved_companies": [
-      167545,
-      167546,
-      199426
-    ],
-    "keywords": [
-      16,
-      72,
-      137,
-      151,
-      274,
-      394,
-      509,
-      558,
-      623,
-      701,
-      770,
-      992,
-      1033,
-      1181,
-      1193,
-      1289,
-      1320,
-      1379,
-      1381,
-      1710,
-      1716,
-      1935,
-      2016,
-      2199,
-      2280,
-      2324,
-      2452,
-      2472,
-      3433,
-      3486,
-      4031,
-      4138,
-      4170,
-      4213,
-      4221,
-      4267,
-      4285,
-      4329,
-      4353,
-      4359,
-      4388,
-      4392,
-      4396,
-      4405,
-      4438,
-      4484,
-      4523,
-      4578,
-      4587,
-      4613,
-      4618,
-      4622,
-      4711,
-      4725,
-      4760,
-      4776,
-      4787,
-      4843,
-      4852,
-      4856,
-      4879,
-      4885,
-      4918,
-      4928,
-      4956,
-      4990,
-      4993,
-      4994,
-      5000,
-      5194,
-      5288,
-      5300,
-      5323,
-      5358,
-      5387,
-      5441,
-      5517,
-      5587,
-      5599,
-      5673,
-      5820,
-      5896,
-      5938,
-      5967,
-      5971,
-      6020,
-      6062,
-      6189,
-      6221,
-      6304,
-      6309,
-      6385,
-      6461,
-      6493,
-      6541,
-      6616,
-      6745,
-      6795,
-      7048,
-      7080,
-      7215,
-      7226,
-      7315,
-      7344,
-      7423,
-      8149,
-      9373,
-      9529,
-      9604,
-      9722,
-      9843,
-      10006,
-      12763,
-      13106,
-      13109,
-      13110,
-      13156,
-      14936,
-      15045,
-      15046,
-      37362
-    ],
-    "name": "The Legend of Zelda: Twilight Princess",
-    "parent_game": -1,
-    "platforms": [
-      21
-    ],
-    "player_perspectives": [
-      2
-    ],
-    "ports": [
-      134014
-    ],
-    "release_dates": [
-      509814,
-      509815,
-      509816,
-      509817
-    ],
-    "remakes": [],
-    "remasters": [
-      18017
-    ],
-    "standalone_expansions": [],
-    "themes": [
-      1,
-      17,
-      38
-    ],
-    "url": "https://www.igdb.com/games/the-legend-of-zelda-twilight-princess",
     "version_parent": -1
   },
   {
@@ -33385,6 +32888,7 @@
       13595
     ],
     "name": "Tomb Raider: Legend",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -39087,6 +38591,7 @@
       30703
     ],
     "name": "Phoenix Wright: Ace Attorney",
+    "name_glogAppendPlatforms": true,
     "parent_game": 221280,
     "platforms": [
       20
@@ -41317,6 +40822,7 @@
       42805
     ],
     "name": "James Bond 007: Nightfire",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       8,
@@ -47468,6 +46974,7 @@
       23933
     ],
     "name": "Batman: Arkham Origins",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -52448,6 +51955,7 @@
       23933
     ],
     "name": "Toki Tori",
+    "name_glogAppendReleaseYear": true,
     "parent_game": 194909,
     "platforms": [
       3,
@@ -53803,6 +53311,7 @@
       23933
     ],
     "name": "Prince of Persia: The Two Thrones",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -54139,6 +53648,7 @@
       23933
     ],
     "name": "Prince of Persia: The Forgotten Sands",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -54770,138 +54280,6 @@
     "version_parent": -1
   },
   {
-    "bundles": [
-      7189,
-      20621,
-      245662
-    ],
-    "category": 0,
-    "collection": -1,
-    "collections": [
-      2300
-    ],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 586396800,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [
-      1781
-    ],
-    "game_modes": [
-      1,
-      2,
-      3
-    ],
-    "genres": [
-      8,
-      25
-    ],
-    "id": 2604,
-    "involved_companies": [
-      54756,
-      172585,
-      239029,
-      239030
-    ],
-    "keywords": [
-      126,
-      381,
-      382,
-      558,
-      982,
-      1059,
-      1127,
-      1158,
-      1293,
-      1320,
-      1705,
-      1716,
-      2167,
-      2951,
-      3486,
-      4134,
-      4162,
-      4353,
-      4396,
-      4486,
-      4522,
-      4523,
-      4541,
-      4583,
-      4614,
-      4726,
-      4890,
-      5300,
-      5436,
-      5453,
-      5594,
-      5673,
-      5814,
-      7424,
-      8285,
-      10097,
-      10919,
-      11434,
-      11765,
-      13115,
-      23933,
-      27629,
-      29745
-    ],
-    "name": "Altered Beast",
-    "parent_game": -1,
-    "platforms": [
-      5,
-      13,
-      15,
-      16,
-      25,
-      26,
-      27,
-      39,
-      52,
-      63
-    ],
-    "player_perspectives": [
-      4
-    ],
-    "ports": [
-      38073,
-      84664,
-      86410,
-      198615,
-      202939,
-      202941
-    ],
-    "release_dates": [
-      114152,
-      114155,
-      114157,
-      114158,
-      114159,
-      114160,
-      114161,
-      114162,
-      114165,
-      377965
-    ],
-    "remakes": [
-      19411
-    ],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [
-      1,
-      17,
-      21,
-      22
-    ],
-    "url": "https://www.igdb.com/games/altered-beast",
-    "version_parent": -1
-  },
-  {
     "bundles": [],
     "category": 0,
     "collection": -1,
@@ -55075,6 +54453,7 @@
       6813
     ],
     "name": "Sonic Lost World",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -55739,6 +55118,7 @@
       42805
     ],
     "name": "LEGO Star Wars: The Video Game",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -56115,115 +55495,6 @@
   },
   {
     "bundles": [],
-    "category": 10,
-    "collection": -1,
-    "collections": [
-      4131
-    ],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 1085097600,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [],
-    "game_modes": [
-      1,
-      3,
-      4
-    ],
-    "genres": [
-      5,
-      8
-    ],
-    "id": 2690,
-    "involved_companies": [
-      8118,
-      8119,
-      8120
-    ],
-    "keywords": [
-      3,
-      21,
-      274,
-      558,
-      575,
-      660,
-      732,
-      947,
-      1059,
-      1293,
-      1710,
-      1821,
-      3486,
-      4154,
-      4400,
-      4882,
-      4999,
-      5029,
-      5151,
-      5305,
-      5316,
-      5327,
-      5379,
-      5450,
-      5523,
-      5633,
-      5720,
-      6152,
-      6328,
-      6494,
-      7303,
-      7389,
-      7402,
-      7403,
-      7488,
-      8215,
-      9344,
-      11122,
-      11782,
-      12189,
-      12748,
-      12866,
-      13068,
-      13477
-    ],
-    "name": "Alien Hominid",
-    "parent_game": 314892,
-    "platforms": [
-      8,
-      11,
-      21
-    ],
-    "player_perspectives": [
-      4
-    ],
-    "ports": [
-      210733,
-      230475
-    ],
-    "release_dates": [
-      23090,
-      23091,
-      23092,
-      23093
-    ],
-    "remakes": [],
-    "remasters": [
-      20673,
-      314895
-    ],
-    "standalone_expansions": [],
-    "themes": [
-      1,
-      18,
-      27
-    ],
-    "url": "https://www.igdb.com/games/alien-hominid",
-    "version_parent": -1
-  },
-  {
-    "bundles": [],
     "category": 0,
     "collection": -1,
     "collections": [
@@ -56445,6 +55716,7 @@
       37362
     ],
     "name": "Tetris Attack",
+    "name_glogAppendPlatforms": true,
     "parent_game": 84157,
     "platforms": [
       19
@@ -57786,6 +57058,7 @@
       4918
     ],
     "name": "The Lord of the Rings: The Two Towers",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       8,
@@ -57898,6 +57171,7 @@
       15359
     ],
     "name": "The Lord of the Rings: The Return of the King",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -60905,6 +60179,7 @@
       41055
     ],
     "name": "Sonic the Hedgehog",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       5,
@@ -67384,6 +66659,7 @@
       26906
     ],
     "name": "Lemmings",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       16,
@@ -67542,6 +66818,7 @@
       31533
     ],
     "name": "Sonic the Hedgehog 2",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       5,
@@ -67677,6 +66954,7 @@
       31533
     ],
     "name": "Dr. Robotnik's Mean Bean Machine",
+    "name_glogAppendPlatforms": true,
     "parent_game": 47250,
     "platforms": [
       3,
@@ -68007,6 +67285,7 @@
       5345
     ],
     "name": "Alien Syndrome",
+    "name_glogAppendReleaseYear": true,
     "parent_game": 4478,
     "platforms": [
       5,
@@ -69754,6 +69033,7 @@
       9364
     ],
     "name": "LEGO The Lord of the Rings",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       5,
@@ -70235,6 +69515,7 @@
       23933
     ],
     "name": "Sonic Unleashed",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -71326,134 +70607,6 @@
       38
     ],
     "url": "https://www.igdb.com/games/batman-arkham-knight",
-    "version_parent": -1
-  },
-  {
-    "bundles": [
-      80698,
-      85931,
-      245662
-    ],
-    "category": 0,
-    "collection": -1,
-    "collections": [
-      956
-    ],
-    "dlcs": [],
-    "expanded_games": [
-      305873
-    ],
-    "expansions": [],
-    "first_release_date": 601862400,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [
-      1777
-    ],
-    "game_modes": [
-      1,
-      2,
-      3
-    ],
-    "genres": [
-      25,
-      33
-    ],
-    "id": 5565,
-    "involved_companies": [
-      56338,
-      56339,
-      56340,
-      270799,
-      270800,
-      270802
-    ],
-    "keywords": [
-      226,
-      262,
-      558,
-      705,
-      962,
-      982,
-      1059,
-      1127,
-      1158,
-      1320,
-      1705,
-      2066,
-      2472,
-      2488,
-      4134,
-      4135,
-      4285,
-      4286,
-      4407,
-      4522,
-      4523,
-      4726,
-      4879,
-      4890,
-      5000,
-      5023,
-      5450,
-      5633,
-      5814,
-      6077,
-      6494,
-      7161,
-      7593,
-      9652,
-      9929,
-      11434,
-      13083
-    ],
-    "name": "Golden Axe",
-    "parent_game": -1,
-    "platforms": [
-      5,
-      9,
-      12,
-      13,
-      15,
-      16,
-      25,
-      26,
-      52,
-      63,
-      86,
-      123
-    ],
-    "player_perspectives": [
-      2,
-      4
-    ],
-    "ports": [
-      198616,
-      237310
-    ],
-    "release_dates": [
-      124446,
-      124447,
-      124448,
-      124449,
-      124450,
-      124452,
-      124453,
-      124454,
-      184881,
-      231324,
-      338466
-    ],
-    "remakes": [
-      73128
-    ],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [
-      1,
-      17
-    ],
-    "url": "https://www.igdb.com/games/golden-axe",
     "version_parent": -1
   },
   {
@@ -73919,78 +73072,6 @@
     "standalone_expansions": [],
     "themes": [],
     "url": "https://www.igdb.com/games/parappa-the-rapper",
-    "version_parent": -1
-  },
-  {
-    "bundles": [
-      245662
-    ],
-    "category": 0,
-    "collection": -1,
-    "collections": [],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 473299200,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [],
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      8
-    ],
-    "id": 6105,
-    "involved_companies": [
-      240174,
-      240400
-    ],
-    "keywords": [
-      1158,
-      1228,
-      1705,
-      2152,
-      4134,
-      4138,
-      4164,
-      4297,
-      4329,
-      4492,
-      4754,
-      4776,
-      5601,
-      5814,
-      9059
-    ],
-    "name": "Flicky",
-    "parent_game": -1,
-    "platforms": [
-      52
-    ],
-    "player_perspectives": [
-      4
-    ],
-    "ports": [
-      275674,
-      275907,
-      275909,
-      275910,
-      276021,
-      276023,
-      276024
-    ],
-    "release_dates": [
-      534456,
-      627657
-    ],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [
-      1
-    ],
-    "url": "https://www.igdb.com/games/flicky",
     "version_parent": -1
   },
   {
@@ -76502,6 +75583,7 @@
       27629
     ],
     "name": "Sonic the Hedgehog 3",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       5,
@@ -76788,6 +75870,7 @@
       10516
     ],
     "name": "LEGO Batman 2: DC Super Heroes",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       5,
@@ -77956,6 +77039,7 @@
       23933
     ],
     "name": "Kane & Lynch: Dead Men",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -78866,6 +77950,7 @@
       12462
     ],
     "name": "Tron: Evolution",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -81114,6 +80199,7 @@
       31533
     ],
     "name": "Ristar",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       3,
@@ -83229,71 +82315,6 @@
       38
     ],
     "url": "https://www.igdb.com/games/just-cause-3",
-    "version_parent": -1
-  },
-  {
-    "bundles": [
-      9250,
-      77785
-    ],
-    "category": 8,
-    "collection": -1,
-    "collections": [
-      516
-    ],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 625881600,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [
-      79
-    ],
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      9,
-      33
-    ],
-    "id": 8197,
-    "involved_companies": [
-      186057,
-      225314
-    ],
-    "keywords": [
-      208,
-      2528,
-      4142,
-      4467,
-      30703
-    ],
-    "name": "Tetris",
-    "parent_game": 130749,
-    "platforms": [
-      18
-    ],
-    "player_perspectives": [
-      4
-    ],
-    "ports": [
-      86490,
-      178110,
-      203115
-    ],
-    "release_dates": [
-      548399,
-      548400,
-      548401
-    ],
-    "remakes": [],
-    "remasters": [
-      236647
-    ],
-    "standalone_expansions": [],
-    "themes": [],
-    "url": "https://www.igdb.com/games/tetris",
     "version_parent": -1
   },
   {
@@ -88064,6 +87085,7 @@
       30703
     ],
     "name": "Sonic 3D Blast",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       3,
@@ -123154,6 +122176,137 @@
     "version_parent": -1
   },
   {
+    "bundles": [
+      250635,
+      307490
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      44,
+      10138
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 567129600,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      463
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      31
+    ],
+    "id": 133917,
+    "involved_companies": [
+      106687,
+      225257,
+      276815,
+      276947
+    ],
+    "keywords": [],
+    "name": "Metal Gear",
+    "name_glogAppendPlatforms": true,
+    "parent_game": 374,
+    "platforms": [
+      13,
+      15,
+      18,
+      21,
+      99
+    ],
+    "player_perspectives": [
+      3
+    ],
+    "ports": [],
+    "release_dates": [
+      612584,
+      612585,
+      612586,
+      612587,
+      612588,
+      612589,
+      612590,
+      612591,
+      612592
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      23
+    ],
+    "url": "https://www.igdb.com/games/metal-gear--1",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      106
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1163894400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      596
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      31
+    ],
+    "id": 134014,
+    "involved_companies": [
+      99273,
+      99274,
+      199425
+    ],
+    "keywords": [
+      2209,
+      4438
+    ],
+    "name": "The Legend of Zelda: Twilight Princess",
+    "name_glogAppendPlatforms": true,
+    "parent_game": 1036,
+    "platforms": [
+      5
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [
+      191440
+    ],
+    "release_dates": [
+      196260,
+      196261,
+      196262,
+      196263,
+      502686
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/the-legend-of-zelda-twilight-princess--1",
+    "version_parent": -1
+  },
+  {
     "bundles": [],
     "category": 2,
     "collection": -1,
@@ -125082,6 +124235,58 @@
     "version_parent": -1
   },
   {
+    "bundles": [],
+    "category": 11,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1221523200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      31
+    ],
+    "id": 199822,
+    "involved_companies": [
+      170203,
+      273140
+    ],
+    "keywords": [],
+    "name": "Star Wars: The Force Unleashed",
+    "name_glogAppendPlatforms": true,
+    "parent_game": 475,
+    "platforms": [
+      5
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      609334,
+      609335,
+      609336
+    ],
+    "remakes": [],
+    "remasters": [
+      198108
+    ],
+    "standalone_expansions": [],
+    "themes": [
+      18
+    ],
+    "url": "https://www.igdb.com/games/star-wars-the-force-unleashed--3",
+    "version_parent": -1
+  },
+  {
     "bundles": [
       312974
     ],
@@ -125145,6 +124350,124 @@
       18
     ],
     "url": "https://www.igdb.com/games/star-wars-jedi-survivor",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      7189,
+      20621,
+      46373,
+      50854,
+      52848,
+      56842,
+      80185,
+      100035,
+      131033,
+      191344,
+      202269,
+      202271,
+      202699,
+      202779,
+      202781,
+      202782,
+      202783,
+      202787,
+      202788,
+      202799,
+      202808,
+      202809,
+      202810,
+      202866,
+      202867,
+      202884,
+      213368,
+      230774,
+      230789,
+      230810,
+      230811,
+      245654,
+      287346,
+      287387,
+      287400,
+      287414
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      2300
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 587520000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1781
+    ],
+    "game_modes": [
+      1,
+      3
+    ],
+    "genres": [
+      25
+    ],
+    "id": 202939,
+    "involved_companies": [
+      172590,
+      228278,
+      239042,
+      239043
+    ],
+    "keywords": [
+      4135,
+      5525,
+      5633,
+      27629,
+      31533
+    ],
+    "name": "Altered Beast",
+    "name_glogAppendPlatforms": true,
+    "parent_game": 2604,
+    "platforms": [
+      3,
+      5,
+      6,
+      9,
+      12,
+      14,
+      29,
+      44
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [
+      202872
+    ],
+    "release_dates": [
+      534464,
+      534465,
+      534466,
+      534467,
+      534468,
+      534469,
+      534470,
+      534471,
+      534472,
+      534473,
+      534474,
+      534475,
+      534476
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/altered-beast--2",
     "version_parent": -1
   },
   {
@@ -126363,6 +125686,123 @@
     "version_parent": -1
   },
   {
+    "bundles": [
+      4157,
+      4416,
+      7189,
+      20621,
+      22297,
+      45870,
+      50852,
+      52848,
+      74302,
+      78756,
+      78759,
+      80185,
+      98648,
+      191344,
+      202271,
+      202699,
+      202779,
+      202781,
+      202782,
+      202783,
+      202787,
+      202788,
+      202799,
+      202808,
+      202809,
+      202810,
+      202866,
+      202867,
+      202870,
+      202871,
+      202875,
+      202884,
+      202885,
+      202899,
+      230774,
+      230789,
+      230810,
+      230811,
+      230834,
+      230835,
+      245654,
+      287345,
+      287346,
+      287387,
+      287400,
+      287414,
+      302165,
+      305267
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 662169600,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      8
+    ],
+    "id": 275674,
+    "involved_companies": [
+      240156,
+      240161,
+      240162,
+      240163,
+      240164,
+      240165,
+      240167,
+      240168,
+      240169,
+      240170
+    ],
+    "keywords": [
+      4135,
+      5525,
+      31533
+    ],
+    "name": "Flicky",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 6105,
+    "platforms": [
+      3,
+      6,
+      14,
+      29
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      534429,
+      534432,
+      534439,
+      534440,
+      534442,
+      534445,
+      534446
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/flicky--2",
+    "version_parent": -1
+  },
+  {
     "bundles": [],
     "category": 0,
     "collection": -1,
@@ -126482,6 +125922,129 @@
       18
     ],
     "url": "https://www.igdb.com/games/the-talos-principle-ii-road-to-elysium",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      5432,
+      7189,
+      20621,
+      27074,
+      45864,
+      46373,
+      50854,
+      56842,
+      56847,
+      78756,
+      80185,
+      86067,
+      100035,
+      191344,
+      202270,
+      202699,
+      202779,
+      202781,
+      202783,
+      202787,
+      202788,
+      202799,
+      202808,
+      202809,
+      202810,
+      202829,
+      202866,
+      202867,
+      202869,
+      202884,
+      213368,
+      215392,
+      215403,
+      230774,
+      230789,
+      230810,
+      230811,
+      245654,
+      287345,
+      287346,
+      287387,
+      287400,
+      287414,
+      302165,
+      305267
+    ],
+    "category": 10,
+    "collection": -1,
+    "collections": [
+      956
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 630288000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1777
+    ],
+    "game_modes": [
+      1,
+      2
+    ],
+    "genres": [
+      25,
+      33
+    ],
+    "id": 305873,
+    "involved_companies": [
+      270795,
+      270796,
+      270797,
+      270801
+    ],
+    "keywords": [
+      4135,
+      5525,
+      27629,
+      31533
+    ],
+    "name": "Golden Axe",
+    "name_glogAppendPlatforms": true,
+    "parent_game": 5565,
+    "platforms": [
+      3,
+      5,
+      6,
+      14,
+      29
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [
+      305875
+    ],
+    "release_dates": [
+      604667,
+      604668,
+      604669,
+      604670,
+      604671,
+      604672,
+      604673,
+      604676,
+      604677,
+      604679,
+      604681,
+      604682
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/golden-axe--4",
     "version_parent": -1
   },
   {
@@ -126621,6 +126184,7 @@
     ],
     "keywords": [],
     "name": "Voxelgram: DLC #1",
+    "name_glogAppendPlatforms": true,
     "parent_game": 122807,
     "platforms": [
       3,
@@ -126639,6 +126203,62 @@
     "standalone_expansions": [],
     "themes": [],
     "url": "https://www.igdb.com/games/voxelgram-dlc-number-1",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [
+      4131
+    ],
+    "dlcs": [],
+    "expanded_games": [
+      2690
+    ],
+    "expansions": [],
+    "first_release_date": 1028678400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      5,
+      8
+    ],
+    "id": 314892,
+    "involved_companies": [
+      283934
+    ],
+    "keywords": [
+      387,
+      599,
+      660,
+      32745
+    ],
+    "name": "Alien Hominid",
+    "parent_game": -1,
+    "platforms": [
+      82
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      634995
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      18,
+      27
+    ],
+    "url": "https://www.igdb.com/games/alien-hominid--3",
     "version_parent": -1
   },
   {
