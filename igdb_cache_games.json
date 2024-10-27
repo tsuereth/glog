@@ -66954,6 +66954,7 @@
       31533
     ],
     "name": "Dr. Robotnik's Mean Bean Machine",
+    "name_glogAppendPlatforms": true,
     "parent_game": 47250,
     "platforms": [
       3,
