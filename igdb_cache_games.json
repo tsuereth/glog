@@ -55118,6 +55118,7 @@
       42805
     ],
     "name": "LEGO Star Wars: The Video Game",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
