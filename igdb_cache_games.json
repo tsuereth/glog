@@ -38591,6 +38591,7 @@
       30703
     ],
     "name": "Phoenix Wright: Ace Attorney",
+    "name_glogAppendPlatforms": true,
     "parent_game": 221280,
     "platforms": [
       20

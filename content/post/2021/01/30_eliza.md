@@ -20,5 +20,5 @@ But Eliza <i>nails</i> its characterizations, putting its cast in just the right
 Eliza's story isn't the best I've played, visual novel or otherwise.  But its writing and voice-acting make it feel substantial, and worthwhile.
 
 <b>Better than</b>: <game:Analogue: A Hate Story>, <game:Gone Home>  
-<b>Not as good as</b>: <game:Phoenix Wright: Ace Attorney>  
+<b>Not as good as</b>: <game:Phoenix Wright: Ace Attorney (NDS)>  
 <b>Now I really hope</b>: That the next Zachtronics puzzle game has this level of narrative commitment.

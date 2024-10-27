@@ -25,5 +25,5 @@ It feels <i>weird</i> saying this, but it's a shame that there weren't a couple 
 The Wolf Among Us is still not what I'd call a top-tier story-driven game, but it's easily better than most of its contemporaries.  The premise is legitimately interesting, the characterization is usually great, and it overall <i>fits</i> its interactive and scripted content together quite well.
 
 <b>Better than</b>: other [Telltale](game:The Walking Dead) games  
-<b>Not as good as</b>: the [Ace Attorney](game:Phoenix Wright: Ace Attorney) games  
+<b>Not as good as</b>: the <tag:Ace Attorney> games  
 <b>But as long as I'm listing minor gripes</b>: the "will remember this" prompts are just ... pointless distractions.  I could lose those.
