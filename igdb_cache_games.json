@@ -57171,6 +57171,7 @@
       15359
     ],
     "name": "The Lord of the Rings: The Return of the King",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,

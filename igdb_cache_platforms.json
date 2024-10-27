@@ -197,6 +197,13 @@
     "url": "https://www.igdb.com/platforms/xboxone"
   },
   {
+    "abbreviation": "Mobile",
+    "alternative_name": "Legacy Cellphone",
+    "id": 55,
+    "name": "Legacy Mobile Device",
+    "url": "https://www.igdb.com/platforms/mobile"
+  },
+  {
     "abbreviation": "SFAM",
     "alternative_name": "SFC",
     "id": 58,
