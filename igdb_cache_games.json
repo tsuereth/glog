@@ -75870,6 +75870,7 @@
       10516
     ],
     "name": "LEGO Batman 2: DC Super Heroes",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       5,
