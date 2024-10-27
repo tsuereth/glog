@@ -73075,78 +73075,6 @@
     "version_parent": -1
   },
   {
-    "bundles": [
-      245662
-    ],
-    "category": 0,
-    "collection": -1,
-    "collections": [],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 473299200,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [],
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      8
-    ],
-    "id": 6105,
-    "involved_companies": [
-      240174,
-      240400
-    ],
-    "keywords": [
-      1158,
-      1228,
-      1705,
-      2152,
-      4134,
-      4138,
-      4164,
-      4297,
-      4329,
-      4492,
-      4754,
-      4776,
-      5601,
-      5814,
-      9059
-    ],
-    "name": "Flicky",
-    "parent_game": -1,
-    "platforms": [
-      52
-    ],
-    "player_perspectives": [
-      4
-    ],
-    "ports": [
-      275674,
-      275907,
-      275909,
-      275910,
-      276021,
-      276023,
-      276024
-    ],
-    "release_dates": [
-      534456,
-      627657
-    ],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [
-      1
-    ],
-    "url": "https://www.igdb.com/games/flicky",
-    "version_parent": -1
-  },
-  {
     "bundles": [],
     "category": 0,
     "collection": -1,
@@ -125814,6 +125742,123 @@
       38
     ],
     "url": "https://www.igdb.com/games/borderlands-3-directors-cut",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      4157,
+      4416,
+      7189,
+      20621,
+      22297,
+      45870,
+      50852,
+      52848,
+      74302,
+      78756,
+      78759,
+      80185,
+      98648,
+      191344,
+      202271,
+      202699,
+      202779,
+      202781,
+      202782,
+      202783,
+      202787,
+      202788,
+      202799,
+      202808,
+      202809,
+      202810,
+      202866,
+      202867,
+      202870,
+      202871,
+      202875,
+      202884,
+      202885,
+      202899,
+      230774,
+      230789,
+      230810,
+      230811,
+      230834,
+      230835,
+      245654,
+      287345,
+      287346,
+      287387,
+      287400,
+      287414,
+      302165,
+      305267
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 662169600,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      8
+    ],
+    "id": 275674,
+    "involved_companies": [
+      240156,
+      240161,
+      240162,
+      240163,
+      240164,
+      240165,
+      240167,
+      240168,
+      240169,
+      240170
+    ],
+    "keywords": [
+      4135,
+      5525,
+      31533
+    ],
+    "name": "Flicky",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 6105,
+    "platforms": [
+      3,
+      6,
+      14,
+      29
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      534429,
+      534432,
+      534439,
+      534440,
+      534442,
+      534445,
+      534446
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/flicky--2",
     "version_parent": -1
   },
   {
