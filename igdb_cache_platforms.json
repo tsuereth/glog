@@ -197,6 +197,12 @@
     "url": "https://www.igdb.com/platforms/xboxone"
   },
   {
+    "abbreviation": "Arcade",
+    "id": 52,
+    "name": "Arcade",
+    "url": "https://www.igdb.com/platforms/arcade"
+  },
+  {
     "abbreviation": "Mobile",
     "alternative_name": "Legacy Cellphone",
     "id": 55,

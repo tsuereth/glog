@@ -60179,6 +60179,7 @@
       41055
     ],
     "name": "Sonic the Hedgehog",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       5,
