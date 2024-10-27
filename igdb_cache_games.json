@@ -87085,6 +87085,7 @@
       30703
     ],
     "name": "Sonic 3D Blast",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       3,
