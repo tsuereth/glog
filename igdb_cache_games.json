@@ -67285,6 +67285,7 @@
       5345
     ],
     "name": "Alien Syndrome",
+    "name_glogAppendReleaseYear": true,
     "parent_game": 4478,
     "platforms": [
       5,
