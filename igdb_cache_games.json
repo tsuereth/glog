@@ -126184,6 +126184,7 @@
     ],
     "keywords": [],
     "name": "Voxelgram: DLC #1",
+    "name_glogAppendPlatforms": true,
     "parent_game": 122807,
     "platforms": [
       3,
