@@ -66818,6 +66818,7 @@
       31533
     ],
     "name": "Sonic the Hedgehog 2",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       5,
