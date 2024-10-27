@@ -2,7 +2,7 @@
 date = "2024-03-02T21:41:50.3145683-08:00"
 title = "Cold cases"
 category = [ "Playing A Game" ]
-game = [ "Apollo Justice: Ace Attorney Trilogy", "Apollo Justice: Ace Attorney" ]
+game = [ "Apollo Justice: Ace Attorney (2024)" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 +++

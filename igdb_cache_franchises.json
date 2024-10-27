@@ -44,6 +44,10 @@
     "name": "The Matrix"
   },
   {
+    "id": 21,
+    "name": "BloodRayne"
+  },
+  {
     "id": 24,
     "name": "Mario Bros."
   },
@@ -138,6 +142,10 @@
   {
     "id": 203,
     "name": "Fantastic Four"
+  },
+  {
+    "id": 205,
+    "name": "Godzilla"
   },
   {
     "id": 208,
@@ -252,6 +260,10 @@
     "name": "Metal Gear Solid"
   },
   {
+    "id": 552,
+    "name": "Persona"
+  },
+  {
     "id": 557,
     "name": "Warlords"
   },
@@ -264,12 +276,20 @@
     "name": "starcraft"
   },
   {
+    "id": 592,
+    "name": "Megami Tensei"
+  },
+  {
     "id": 596,
     "name": "The Legend of Zelda"
   },
   {
     "id": 600,
     "name": "Evil Dead"
+  },
+  {
+    "id": 633,
+    "name": "Ghosts 'n Goblins"
   },
   {
     "id": 720,
@@ -328,6 +348,10 @@
     "name": "Borderlands"
   },
   {
+    "id": 812,
+    "name": "Frogger"
+  },
+  {
     "id": 820,
     "name": "Gundam"
   },
@@ -348,12 +372,20 @@
     "name": "Tom Clancy’s"
   },
   {
+    "id": 872,
+    "name": "Goemon"
+  },
+  {
     "id": 881,
     "name": "Zero Escape"
   },
   {
     "id": 885,
     "name": "Darksiders"
+  },
+  {
+    "id": 891,
+    "name": "Tekken"
   },
   {
     "id": 892,
@@ -368,12 +400,24 @@
     "name": "Dynasty Warriors"
   },
   {
+    "id": 920,
+    "name": "Euro Truck Simulator"
+  },
+  {
+    "id": 928,
+    "name": "Double Dragon"
+  },
+  {
     "id": 942,
     "name": "Tales of"
   },
   {
     "id": 950,
     "name": "Minecraft"
+  },
+  {
+    "id": 977,
+    "name": "Total War"
   },
   {
     "id": 979,
@@ -390,6 +434,10 @@
   {
     "id": 1036,
     "name": "Battlefield"
+  },
+  {
+    "id": 1043,
+    "name": "Forza"
   },
   {
     "id": 1047,
@@ -428,12 +476,20 @@
     "name": "The House of the Dead"
   },
   {
+    "id": 1070,
+    "name": "Virtua Fighter"
+  },
+  {
     "id": 1075,
     "name": "Black Mirror"
   },
   {
     "id": 1124,
     "name": "Dark Souls"
+  },
+  {
+    "id": 1153,
+    "name": "Captain Tsubasa"
   },
   {
     "id": 1163,
@@ -468,12 +524,24 @@
     "name": "Dead Space"
   },
   {
+    "id": 1466,
+    "name": "Far Cry"
+  },
+  {
     "id": 1467,
     "name": "Yakuza: Like a Dragon"
   },
   {
     "id": 1476,
     "name": "Metal Slug"
+  },
+  {
+    "id": 1477,
+    "name": "Disney's The Lion King"
+  },
+  {
+    "id": 1483,
+    "name": "Magicka"
   },
   {
     "id": 1518,
@@ -490,6 +558,10 @@
   {
     "id": 1572,
     "name": "League of Legends"
+  },
+  {
+    "id": 1635,
+    "name": "Titanfall"
   },
   {
     "id": 1644,
@@ -536,6 +608,10 @@
     "name": "Shinobi"
   },
   {
+    "id": 1780,
+    "name": "Shenmue"
+  },
+  {
     "id": 1781,
     "name": "Altered Beast"
   },
@@ -546,6 +622,10 @@
   {
     "id": 1793,
     "name": "Excite"
+  },
+  {
+    "id": 1800,
+    "name": "Puyo Puyo"
   },
   {
     "id": 1811,
@@ -572,6 +652,10 @@
     "name": "Chrono"
   },
   {
+    "id": 1865,
+    "name": "Fatal Fury"
+  },
+  {
     "id": 1932,
     "name": "Xenoblade"
   },
@@ -580,8 +664,16 @@
     "name": "SimCity"
   },
   {
+    "id": 1999,
+    "name": "Alex Kidd"
+  },
+  {
     "id": 2000,
     "name": "Horizon"
+  },
+  {
+    "id": 2013,
+    "name": "Shining Force"
   },
   {
     "id": 2052,
@@ -592,12 +684,24 @@
     "name": "God of War"
   },
   {
+    "id": 2109,
+    "name": "Resistance"
+  },
+  {
     "id": 2121,
     "name": "Uncharted"
   },
   {
+    "id": 2132,
+    "name": "Columns"
+  },
+  {
     "id": 2135,
     "name": "Zone of the Enders"
+  },
+  {
+    "id": 2136,
+    "name": "Centipede"
   },
   {
     "id": 2151,
@@ -624,8 +728,20 @@
     "name": "Rampage"
   },
   {
+    "id": 2281,
+    "name": "Sam & Max"
+  },
+  {
     "id": 2341,
     "name": "Suicide Squad"
+  },
+  {
+    "id": 2361,
+    "name": "Wonder Boy"
+  },
+  {
+    "id": 2397,
+    "name": "Ghost of Tsushima"
   },
   {
     "id": 2416,
@@ -650,6 +766,10 @@
   {
     "id": 2675,
     "name": "The Last of Us"
+  },
+  {
+    "id": 2685,
+    "name": "Mario Kart"
   },
   {
     "id": 2687,
@@ -680,16 +800,40 @@
     "name": "Dance Dance Revolution"
   },
   {
+    "id": 3250,
+    "name": "Magical Taluluto"
+  },
+  {
+    "id": 3285,
+    "name": "Dragon Quest"
+  },
+  {
     "id": 3390,
     "name": "Kunio-kun"
+  },
+  {
+    "id": 3439,
+    "name": "Just Dance"
   },
   {
     "id": 3457,
     "name": "Vampire the Masquerade"
   },
   {
+    "id": 3583,
+    "name": "Disney's Aladdin"
+  },
+  {
+    "id": 3787,
+    "name": "Disney's The Jungle Book"
+  },
+  {
     "id": 4500,
     "name": "Dom Zelittu's"
+  },
+  {
+    "id": 4509,
+    "name": "PaRappa the Rapper"
   },
   {
     "id": 4564,
@@ -706,6 +850,10 @@
   {
     "id": 5238,
     "name": "Plants vs. Zombies"
+  },
+  {
+    "id": 5310,
+    "name": "All Night Nippon"
   },
   {
     "id": 5396,
