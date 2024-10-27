@@ -87,6 +87,13 @@
     "url": "https://www.igdb.com/platforms/c64"
   },
   {
+    "abbreviation": "Amiga",
+    "alternative_name": "Commodore Amiga",
+    "id": 16,
+    "name": "Amiga",
+    "url": "https://www.igdb.com/platforms/amiga"
+  },
+  {
     "abbreviation": "NES",
     "alternative_name": "NES",
     "id": 18,
@@ -235,11 +242,27 @@
     "url": "https://www.igdb.com/platforms/onlive-game-system"
   },
   {
+    "id": 114,
+    "name": "Amiga CD32",
+    "url": "https://www.igdb.com/platforms/amiga-cd32"
+  },
+  {
+    "id": 116,
+    "name": "Acorn Archimedes",
+    "url": "https://www.igdb.com/platforms/acorn-archimedes"
+  },
+  {
     "abbreviation": "Switch",
     "alternative_name": "NX",
     "id": 130,
     "name": "Nintendo Switch",
     "url": "https://www.igdb.com/platforms/switch"
+  },
+  {
+    "alternative_name": "Commodore Dynamic Total Vision",
+    "id": 158,
+    "name": "Commodore CDTV",
+    "url": "https://www.igdb.com/platforms/commodore-cdtv"
   },
   {
     "abbreviation": "PS5",
