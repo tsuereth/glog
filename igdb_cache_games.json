@@ -53311,6 +53311,7 @@
       23933
     ],
     "name": "Prince of Persia: The Two Thrones",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
