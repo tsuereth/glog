@@ -8,7 +8,7 @@ rating = [ "Good" ]
 title = "Keeping Justice Alive"
 +++
 
-<i>Has it really been over <b>ten years</b> since I first joined [Phoenix Wright](game:Phoenix Wright: Ace Attorney)'s legal team?  Wow.  Here's to ten more, old friend.</i>
+<i>Has it really been over <b>ten years</b> since I first joined [Phoenix Wright](game:Phoenix Wright: Ace Attorney (NDS))'s legal team?  Wow.  Here's to ten more, old friend.</i>
 
 It's been three years since [Dual Destinies](game:Phoenix Wright: Ace Attorney - Dual Destinies) - which, for its part, was a pretty innovative franchise entry - but <game:Phoenix Wright: Ace Attorney - Spirit of Justice> feels like a much "safer" installment.
 
@@ -22,7 +22,7 @@ The story, though, is pretty good.  Par for the franchise's course, many big sto
 
 The final case is a real doozy, and although part of the final trial is <i>too damn complicated</i>, it's all wrapped up in a very satisfying way.  And I only noticed a small handful of typos.  So, that's good.
 
-My one real complaint about the story is that, even though Maya "MacGuffin" Fey is actually <i>in</i> the game, her story still hasn't gone much of anywhere since she left for "training" in [the first game](game:Phoenix Wright: Ace Attorney).  Spirit of Justice sets the stage for her to actually grow as a character, ... but I guess that story will have to wait for later.
+My one real complaint about the story is that, even though Maya "MacGuffin" Fey is actually <i>in</i> the game, her story still hasn't gone much of anywhere since she left for "training" in [the first game](game:Phoenix Wright: Ace Attorney (NDS)).  Spirit of Justice sets the stage for her to actually grow as a character, ... but I guess that story will have to wait for later.
 
 Overall, Spirit of Justice is a satisfying and worthwhile Ace Attorney entry for franchise fans, with plenty of well-told story and interesting characters to read about.  But, it's a bit disappointing that it does so little to build on the series' gameplay.
 

@@ -26,5 +26,5 @@ For all the times I was curious to hear more about a character's backstory, actu
 Valhalla's got a great sense of personality, but no real gameplay and no central plot.  (The protagonist does have a character-defining story toward the end; but it doesn't feel much more impactful than any other character's story.)  I don't want to say that Valhalla is all style and no substance -- because there is quite a lot of substance, in its reams of written dialog.  It just ... isn't very <i>interesting</i> substance.
 
 <b>Better than</b>: <game:Hate Plus>  
-<b>Not as good as</b>: <game:Phoenix Wright: Ace Attorney>  
+<b>Not as good as</b>: <game:Phoenix Wright: Ace Attorney (NDS)>  
 <b>Perhaps slightly not-as-good-as</b>: <game:Analogue: A Hate Story>, which at least had a core mystery to solve.

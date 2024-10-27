@@ -31,7 +31,7 @@ But the payoff is worth it.  Again, not because of the quality of the underlying
 
 The game's imperfections - its lackluster humor, its unexciting combat, its sometimes-redundant paths, the way its narrator laboriously adds "he said" to each line of dialog - really get balanced out by the <i>cool</i> factor of going back in time to correct your decisions.
 
-A lot like <game:Prince of Persia: The Sands of Time>, I guess.  Just with worse narration and no platforming.
+A lot like [Prince of Persia: The Sands of Time](game:Prince of Persia: The Sands of Time (NGC, PC, PS2, PS3, XBOX)), I guess.  Just with worse narration and no platforming.
 
 <b>Better than</b>: <game:Bastion>, <game:Zero Escape: Nine Hours, Nine Persons, Nine Doors>  
 <b>Not as good as</b>: <game:Middle-earth: Shadow of Mordor>, <game:The Sexy Brutale>  

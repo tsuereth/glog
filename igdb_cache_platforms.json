@@ -4,6 +4,13 @@
     "id": -1
   },
   {
+    "abbreviation": "Linux",
+    "alternative_name": "GNU/Linux",
+    "id": 3,
+    "name": "Linux",
+    "url": "https://www.igdb.com/platforms/linux"
+  },
+  {
     "abbreviation": "N64",
     "alternative_name": "N64",
     "id": 4,
@@ -46,6 +53,12 @@
     "url": "https://www.igdb.com/platforms/ps3"
   },
   {
+    "abbreviation": "XBOX",
+    "id": 11,
+    "name": "Xbox",
+    "url": "https://www.igdb.com/platforms/xbox"
+  },
+  {
     "abbreviation": "X360",
     "alternative_name": "X360",
     "id": 12,
@@ -53,11 +66,32 @@
     "url": "https://www.igdb.com/platforms/xbox360"
   },
   {
+    "abbreviation": "DOS",
+    "alternative_name": "PC DOS",
+    "id": 13,
+    "name": "DOS",
+    "url": "https://www.igdb.com/platforms/dos"
+  },
+  {
     "abbreviation": "Mac",
     "alternative_name": "Mac OS",
     "id": 14,
     "name": "Mac",
     "url": "https://www.igdb.com/platforms/mac"
+  },
+  {
+    "abbreviation": "C64",
+    "alternative_name": "C64/C128/MAX",
+    "id": 15,
+    "name": "Commodore C64/128/MAX",
+    "url": "https://www.igdb.com/platforms/c64"
+  },
+  {
+    "abbreviation": "Amiga",
+    "alternative_name": "Commodore Amiga",
+    "id": 16,
+    "name": "Amiga",
+    "url": "https://www.igdb.com/platforms/amiga"
   },
   {
     "abbreviation": "NES",
@@ -88,11 +122,25 @@
     "url": "https://www.igdb.com/platforms/ngc"
   },
   {
+    "abbreviation": "DC",
+    "alternative_name": "DC",
+    "id": 23,
+    "name": "Dreamcast",
+    "url": "https://www.igdb.com/platforms/dc"
+  },
+  {
     "abbreviation": "GBA",
     "alternative_name": "GBA",
     "id": 24,
     "name": "Game Boy Advance",
     "url": "https://www.igdb.com/platforms/gba"
+  },
+  {
+    "abbreviation": "Genesis/MegaDrive",
+    "alternative_name": "Sega Genesis",
+    "id": 29,
+    "name": "Sega Mega Drive/Genesis",
+    "url": "https://www.igdb.com/platforms/genesis-slash-megadrive"
   },
   {
     "abbreviation": "Android",
@@ -116,11 +164,23 @@
     "url": "https://www.igdb.com/platforms/psp"
   },
   {
+    "abbreviation": "iOS",
+    "id": 39,
+    "name": "iOS",
+    "url": "https://www.igdb.com/platforms/ios"
+  },
+  {
     "abbreviation": "WiiU",
     "alternative_name": "Project Cafe",
     "id": 41,
     "name": "Wii U",
     "url": "https://www.igdb.com/platforms/wiiu"
+  },
+  {
+    "abbreviation": "zod",
+    "id": 44,
+    "name": "Tapwave Zodiac",
+    "url": "https://www.igdb.com/platforms/zod"
   },
   {
     "abbreviation": "Vita",
@@ -144,10 +204,52 @@
     "url": "https://www.igdb.com/platforms/xboxone"
   },
   {
+    "abbreviation": "Arcade",
+    "id": 52,
+    "name": "Arcade",
+    "url": "https://www.igdb.com/platforms/arcade"
+  },
+  {
+    "abbreviation": "Mobile",
+    "alternative_name": "Legacy Cellphone",
+    "id": 55,
+    "name": "Legacy Mobile Device",
+    "url": "https://www.igdb.com/platforms/mobile"
+  },
+  {
+    "abbreviation": "SFAM",
+    "alternative_name": "SFC",
+    "id": 58,
+    "name": "Super Famicom",
+    "url": "https://www.igdb.com/platforms/sfam"
+  },
+  {
     "abbreviation": "Ouya",
     "id": 72,
     "name": "Ouya",
     "url": "https://www.igdb.com/platforms/ouya"
+  },
+  {
+    "abbreviation": "famicom",
+    "alternative_name": "Famicom",
+    "id": 99,
+    "name": "Family Computer",
+    "url": "https://www.igdb.com/platforms/famicom"
+  },
+  {
+    "id": 113,
+    "name": "OnLive Game System",
+    "url": "https://www.igdb.com/platforms/onlive-game-system"
+  },
+  {
+    "id": 114,
+    "name": "Amiga CD32",
+    "url": "https://www.igdb.com/platforms/amiga-cd32"
+  },
+  {
+    "id": 116,
+    "name": "Acorn Archimedes",
+    "url": "https://www.igdb.com/platforms/acorn-archimedes"
   },
   {
     "abbreviation": "Switch",
@@ -155,6 +257,12 @@
     "id": 130,
     "name": "Nintendo Switch",
     "url": "https://www.igdb.com/platforms/switch"
+  },
+  {
+    "alternative_name": "Commodore Dynamic Total Vision",
+    "id": 158,
+    "name": "Commodore CDTV",
+    "url": "https://www.igdb.com/platforms/commodore-cdtv"
   },
   {
     "abbreviation": "PS5",

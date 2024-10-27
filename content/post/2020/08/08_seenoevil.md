@@ -20,7 +20,7 @@ As for the story, it's surprising enough that See No Evil <i>has</i> one - this 
 But, not neat enough to goad me into playing more.  See No Evil certainly isn't the most frustrating puzzle game I've played, but its precision issues are just frustrating enough to turn me off.
 
 <b>Better than</b>: <game:Great Permutator>  
-<b>Not as good as</b>: <game:Toki Tori>  
+<b>Not as good as</b>: <game:Toki Tori (2008)>  
 <b>Definitely not as good as</b>: <game:Mark of the Ninja Remastered>
 
 <i>Progress: Got to Chapter 3.</i>

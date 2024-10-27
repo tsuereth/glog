@@ -7,7 +7,7 @@ platform = [ "PC" ]
 rating = [ "Good" ]
 +++
 
-[Cold, Cold Heart](game:Batman: Arkham Origins - Cold, Cold Heart) is like <game:Batman: Arkham Origins> in that, even if we could have done <i>just fine</i> without it, it's a good enough excuse to go Batman-ing around town for a few hours.
+[Cold, Cold Heart](game:Batman: Arkham Origins - Cold, Cold Heart) is like [Batman: Arkham Origins](game:Batman: Arkham Origins (PC, PS3, WiiU, X360)) in that, even if we could have done <i>just fine</i> without it, it's a good enough excuse to go Batman-ing around town for a few hours.
 
 I mean, sure, it's pretty far from a master-class in DLC packs.  It's almost entirely linear: the "open world" doesn't appear until halfway through, is limited to two of the main game's nine districts, and has only a small handful of side-activities (which are even less narratively meaningful than those in Arkham Origins).  It glosses over the question of "What ability upgrades did the player already get?" by unlocking <i>everything</i> from the main game -- except, hilariously, the <a href="https://arkhamcity.fandom.com/wiki/Glue_Grenade">Glue Grenade</a>.  There's only one "new" upgrade, with minimal effects; after a few hours of build-up, Batman's new suit has the same general characteristics as his old one.  And Mr. Freeze was already in [the last game](game:Batman: Arkham City), so we're not exactly covering <i>new ground</i> here.
 

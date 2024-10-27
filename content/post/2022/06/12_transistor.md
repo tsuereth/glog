@@ -25,6 +25,6 @@ I guess the game might be expecting me to "recurse" and run it again - adding Li
 
 I enjoyed my (brief) time with Transistor, to be clear; it just doesn't feel like it lives up to the potential of its ideas.  And in retrospect, seems less like a setup for a TRON-like epic than it does a proof-of-concept for [Hades](game:Hades (2020)).
 
-<b>Better than</b>: <game:Bastion>, <game:Tron: Evolution>  
+<b>Better than</b>: <game:Bastion>, <game:Tron: Evolution (PC, PS3, X360)>  
 <b>Not as good as</b>: <game:Shadowrun: Dragonfall - Director's Cut>  
 <b>Maybe the best "inside the computer" game so far</b>: But that competition isn't very stiff.  Certainly way better than the hacking minigame in <game:Fallout 4: Far Harbor>.
