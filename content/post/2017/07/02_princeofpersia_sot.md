@@ -20,4 +20,4 @@ Hell, Sands of Time still has some things to teach modern games, particularly th
 
 <b>Better than</b>: <game:Assassin's Creed II>, <game:Uncharted: Drake's Fortune>  
 <b>Not as good as</b>: <game:Assassin's Creed IV Black Flag>, <game:Uncharted 2: Among Thieves>  
-<b>Just a reminder, Ubisoft</b>: We haven't seen the Prince since [Forgotten Sands](game:Prince of Persia: The Forgotten Sands) in <i>2010</i>.
+<b>Just a reminder, Ubisoft</b>: We haven't seen the Prince since [Forgotten Sands](game:Prince of Persia: The Forgotten Sands (PC, PS3, X360)) in <i>2010</i>.

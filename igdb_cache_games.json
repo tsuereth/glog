@@ -53648,6 +53648,7 @@
       23933
     ],
     "name": "Prince of Persia: The Forgotten Sands",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
