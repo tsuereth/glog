@@ -55495,115 +55495,6 @@
   },
   {
     "bundles": [],
-    "category": 10,
-    "collection": -1,
-    "collections": [
-      4131
-    ],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 1085097600,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [],
-    "game_modes": [
-      1,
-      3,
-      4
-    ],
-    "genres": [
-      5,
-      8
-    ],
-    "id": 2690,
-    "involved_companies": [
-      8118,
-      8119,
-      8120
-    ],
-    "keywords": [
-      3,
-      21,
-      274,
-      558,
-      575,
-      660,
-      732,
-      947,
-      1059,
-      1293,
-      1710,
-      1821,
-      3486,
-      4154,
-      4400,
-      4882,
-      4999,
-      5029,
-      5151,
-      5305,
-      5316,
-      5327,
-      5379,
-      5450,
-      5523,
-      5633,
-      5720,
-      6152,
-      6328,
-      6494,
-      7303,
-      7389,
-      7402,
-      7403,
-      7488,
-      8215,
-      9344,
-      11122,
-      11782,
-      12189,
-      12748,
-      12866,
-      13068,
-      13477
-    ],
-    "name": "Alien Hominid",
-    "parent_game": 314892,
-    "platforms": [
-      8,
-      11,
-      21
-    ],
-    "player_perspectives": [
-      4
-    ],
-    "ports": [
-      210733,
-      230475
-    ],
-    "release_dates": [
-      23090,
-      23091,
-      23092,
-      23093
-    ],
-    "remakes": [],
-    "remasters": [
-      20673,
-      314895
-    ],
-    "standalone_expansions": [],
-    "themes": [
-      1,
-      18,
-      27
-    ],
-    "url": "https://www.igdb.com/games/alien-hominid",
-    "version_parent": -1
-  },
-  {
-    "bundles": [],
     "category": 0,
     "collection": -1,
     "collections": [
@@ -126320,6 +126211,62 @@
     "standalone_expansions": [],
     "themes": [],
     "url": "https://www.igdb.com/games/voxelgram-dlc-number-1",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [
+      4131
+    ],
+    "dlcs": [],
+    "expanded_games": [
+      2690
+    ],
+    "expansions": [],
+    "first_release_date": 1028678400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      5,
+      8
+    ],
+    "id": 314892,
+    "involved_companies": [
+      283934
+    ],
+    "keywords": [
+      387,
+      599,
+      660,
+      32745
+    ],
+    "name": "Alien Hominid",
+    "parent_game": -1,
+    "platforms": [
+      82
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      634995
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      18,
+      27
+    ],
+    "url": "https://www.igdb.com/games/alien-hominid--3",
     "version_parent": -1
   },
   {
