@@ -54280,138 +54280,6 @@
     "version_parent": -1
   },
   {
-    "bundles": [
-      7189,
-      20621,
-      245662
-    ],
-    "category": 0,
-    "collection": -1,
-    "collections": [
-      2300
-    ],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 586396800,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [
-      1781
-    ],
-    "game_modes": [
-      1,
-      2,
-      3
-    ],
-    "genres": [
-      8,
-      25
-    ],
-    "id": 2604,
-    "involved_companies": [
-      54756,
-      172585,
-      239029,
-      239030
-    ],
-    "keywords": [
-      126,
-      381,
-      382,
-      558,
-      982,
-      1059,
-      1127,
-      1158,
-      1293,
-      1320,
-      1705,
-      1716,
-      2167,
-      2951,
-      3486,
-      4134,
-      4162,
-      4353,
-      4396,
-      4486,
-      4522,
-      4523,
-      4541,
-      4583,
-      4614,
-      4726,
-      4890,
-      5300,
-      5436,
-      5453,
-      5594,
-      5673,
-      5814,
-      7424,
-      8285,
-      10097,
-      10919,
-      11434,
-      11765,
-      13115,
-      23933,
-      27629,
-      29745
-    ],
-    "name": "Altered Beast",
-    "parent_game": -1,
-    "platforms": [
-      5,
-      13,
-      15,
-      16,
-      25,
-      26,
-      27,
-      39,
-      52,
-      63
-    ],
-    "player_perspectives": [
-      4
-    ],
-    "ports": [
-      38073,
-      84664,
-      86410,
-      198615,
-      202939,
-      202941
-    ],
-    "release_dates": [
-      114152,
-      114155,
-      114157,
-      114158,
-      114159,
-      114160,
-      114161,
-      114162,
-      114165,
-      377965
-    ],
-    "remakes": [
-      19411
-    ],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [
-      1,
-      17,
-      21,
-      22
-    ],
-    "url": "https://www.igdb.com/games/altered-beast",
-    "version_parent": -1
-  },
-  {
     "bundles": [],
     "category": 0,
     "collection": -1,
@@ -124838,6 +124706,124 @@
       18
     ],
     "url": "https://www.igdb.com/games/star-wars-jedi-survivor",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      7189,
+      20621,
+      46373,
+      50854,
+      52848,
+      56842,
+      80185,
+      100035,
+      131033,
+      191344,
+      202269,
+      202271,
+      202699,
+      202779,
+      202781,
+      202782,
+      202783,
+      202787,
+      202788,
+      202799,
+      202808,
+      202809,
+      202810,
+      202866,
+      202867,
+      202884,
+      213368,
+      230774,
+      230789,
+      230810,
+      230811,
+      245654,
+      287346,
+      287387,
+      287400,
+      287414
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      2300
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 587520000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1781
+    ],
+    "game_modes": [
+      1,
+      3
+    ],
+    "genres": [
+      25
+    ],
+    "id": 202939,
+    "involved_companies": [
+      172590,
+      228278,
+      239042,
+      239043
+    ],
+    "keywords": [
+      4135,
+      5525,
+      5633,
+      27629,
+      31533
+    ],
+    "name": "Altered Beast",
+    "name_glogAppendPlatforms": true,
+    "parent_game": 2604,
+    "platforms": [
+      3,
+      5,
+      6,
+      9,
+      12,
+      14,
+      29,
+      44
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [
+      202872
+    ],
+    "release_dates": [
+      534464,
+      534465,
+      534466,
+      534467,
+      534468,
+      534469,
+      534470,
+      534471,
+      534472,
+      534473,
+      534474,
+      534475,
+      534476
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/altered-beast--2",
     "version_parent": -1
   },
   {
