@@ -69033,6 +69033,7 @@
       9364
     ],
     "name": "LEGO The Lord of the Rings",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       5,
