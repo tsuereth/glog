@@ -46974,6 +46974,7 @@
       23933
     ],
     "name": "Batman: Arkham Origins",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
