@@ -77039,6 +77039,7 @@
       23933
     ],
     "name": "Kane & Lynch: Dead Men",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
