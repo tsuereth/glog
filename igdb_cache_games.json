@@ -70610,134 +70610,6 @@
     "version_parent": -1
   },
   {
-    "bundles": [
-      80698,
-      85931,
-      245662
-    ],
-    "category": 0,
-    "collection": -1,
-    "collections": [
-      956
-    ],
-    "dlcs": [],
-    "expanded_games": [
-      305873
-    ],
-    "expansions": [],
-    "first_release_date": 601862400,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [
-      1777
-    ],
-    "game_modes": [
-      1,
-      2,
-      3
-    ],
-    "genres": [
-      25,
-      33
-    ],
-    "id": 5565,
-    "involved_companies": [
-      56338,
-      56339,
-      56340,
-      270799,
-      270800,
-      270802
-    ],
-    "keywords": [
-      226,
-      262,
-      558,
-      705,
-      962,
-      982,
-      1059,
-      1127,
-      1158,
-      1320,
-      1705,
-      2066,
-      2472,
-      2488,
-      4134,
-      4135,
-      4285,
-      4286,
-      4407,
-      4522,
-      4523,
-      4726,
-      4879,
-      4890,
-      5000,
-      5023,
-      5450,
-      5633,
-      5814,
-      6077,
-      6494,
-      7161,
-      7593,
-      9652,
-      9929,
-      11434,
-      13083
-    ],
-    "name": "Golden Axe",
-    "parent_game": -1,
-    "platforms": [
-      5,
-      9,
-      12,
-      13,
-      15,
-      16,
-      25,
-      26,
-      52,
-      63,
-      86,
-      123
-    ],
-    "player_perspectives": [
-      2,
-      4
-    ],
-    "ports": [
-      198616,
-      237310
-    ],
-    "release_dates": [
-      124446,
-      124447,
-      124448,
-      124449,
-      124450,
-      124452,
-      124453,
-      124454,
-      184881,
-      231324,
-      338466
-    ],
-    "remakes": [
-      73128
-    ],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [
-      1,
-      17
-    ],
-    "url": "https://www.igdb.com/games/golden-axe",
-    "version_parent": -1
-  },
-  {
     "bundles": [],
     "category": 0,
     "collection": -1,
@@ -126064,6 +125936,129 @@
       18
     ],
     "url": "https://www.igdb.com/games/the-talos-principle-ii-road-to-elysium",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      5432,
+      7189,
+      20621,
+      27074,
+      45864,
+      46373,
+      50854,
+      56842,
+      56847,
+      78756,
+      80185,
+      86067,
+      100035,
+      191344,
+      202270,
+      202699,
+      202779,
+      202781,
+      202783,
+      202787,
+      202788,
+      202799,
+      202808,
+      202809,
+      202810,
+      202829,
+      202866,
+      202867,
+      202869,
+      202884,
+      213368,
+      215392,
+      215403,
+      230774,
+      230789,
+      230810,
+      230811,
+      245654,
+      287345,
+      287346,
+      287387,
+      287400,
+      287414,
+      302165,
+      305267
+    ],
+    "category": 10,
+    "collection": -1,
+    "collections": [
+      956
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 630288000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1777
+    ],
+    "game_modes": [
+      1,
+      2
+    ],
+    "genres": [
+      25,
+      33
+    ],
+    "id": 305873,
+    "involved_companies": [
+      270795,
+      270796,
+      270797,
+      270801
+    ],
+    "keywords": [
+      4135,
+      5525,
+      27629,
+      31533
+    ],
+    "name": "Golden Axe",
+    "name_glogAppendPlatforms": true,
+    "parent_game": 5565,
+    "platforms": [
+      3,
+      5,
+      6,
+      14,
+      29
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [
+      305875
+    ],
+    "release_dates": [
+      604667,
+      604668,
+      604669,
+      604670,
+      604671,
+      604672,
+      604673,
+      604676,
+      604677,
+      604679,
+      604681,
+      604682
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/golden-axe--4",
     "version_parent": -1
   },
   {
