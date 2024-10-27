@@ -51955,6 +51955,7 @@
       23933
     ],
     "name": "Toki Tori",
+    "name_glogAppendReleaseYear": true,
     "parent_game": 194909,
     "platforms": [
       3,
