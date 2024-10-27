@@ -55716,6 +55716,7 @@
       37362
     ],
     "name": "Tetris Attack",
+    "name_glogAppendPlatforms": true,
     "parent_game": 84157,
     "platforms": [
       19
