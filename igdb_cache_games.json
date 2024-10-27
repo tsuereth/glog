@@ -57058,6 +57058,7 @@
       4918
     ],
     "name": "The Lord of the Rings: The Two Towers",
+    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       8,
