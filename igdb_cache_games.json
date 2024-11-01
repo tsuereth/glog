@@ -16032,9 +16032,7 @@
     "dlcs": [
       133938
     ],
-    "expanded_games": [
-      284716
-    ],
+    "expanded_games": [],
     "expansions": [],
     "first_release_date": 1320105600,
     "forks": [],
@@ -16149,7 +16147,9 @@
       206704
     ],
     "remakes": [],
-    "remasters": [],
+    "remasters": [
+      320894
+    ],
     "standalone_expansions": [],
     "themes": [
       1,
@@ -32390,10 +32390,10 @@
       315315
     ],
     "release_dates": [
-      37582,
-      37583,
-      37584,
-      37585
+      658666,
+      658667,
+      658668,
+      658669
     ],
     "remakes": [],
     "remasters": [],
@@ -49903,6 +49903,9 @@
       4
     ],
     "genres": [
+      5,
+      10,
+      13,
       14
     ],
     "id": 2182,
@@ -49923,6 +49926,7 @@
       992,
       1935,
       2152,
+      3228,
       4210,
       4282,
       4328,
@@ -49947,7 +49951,10 @@
       13076,
       14569,
       17141,
-      34315
+      34315,
+      39523,
+      44529,
+      44749
     ],
     "name": "Wii Sports Resort",
     "parent_game": -1,
@@ -49969,6 +49976,7 @@
     "remasters": [],
     "standalone_expansions": [],
     "themes": [
+      1,
       40
     ],
     "url": "https://www.igdb.com/games/wii-sports-resort",
@@ -73615,8 +73623,7 @@
       9,
       12,
       14,
-      34,
-      41
+      34
     ],
     "player_perspectives": [
       4
@@ -73627,10 +73634,6 @@
       15241,
       15242,
       84331,
-      84334,
-      84335,
-      84336,
-      84337,
       106579,
       106580,
       231499,
@@ -86572,7 +86575,7 @@
     "bundles": [
       53787
     ],
-    "category": 0,
+    "category": 11,
     "collection": -1,
     "collections": [
       6255
@@ -86660,7 +86663,7 @@
       9045
     ],
     "name": "The Typing of the Dead: Overkill",
-    "parent_game": -1,
+    "parent_game": 44614,
     "platforms": [
       6
     ],
@@ -87602,14 +87605,10 @@
       23560,
       23933
     ],
-    "name": "Zero Escape: Nine Hours, Nine Persons, Nine Doors",
+    "name": "Nine Hours, Nine Persons, Nine Doors",
     "parent_game": -1,
     "platforms": [
-      6,
-      20,
-      46,
-      48,
-      49
+      20
     ],
     "player_perspectives": [
       1,
@@ -87620,15 +87619,7 @@
     ],
     "release_dates": [
       28585,
-      28586,
-      210136,
-      305307,
-      305308,
-      305343,
-      305344,
-      305345,
-      305346,
-      378169
+      28586
     ],
     "remakes": [],
     "remasters": [],
@@ -87639,7 +87630,7 @@
       21,
       43
     ],
-    "url": "https://www.igdb.com/games/zero-escape-nine-hours-nine-persons-nine-doors",
+    "url": "https://www.igdb.com/games/nine-hours-nine-persons-nine-doors",
     "version_parent": -1
   },
   {
@@ -103669,7 +103660,6 @@
       72418,
       104973,
       104974,
-      120009,
       408091
     ],
     "remakes": [],
@@ -123527,7 +123517,7 @@
     ],
     "id": 151665,
     "involved_companies": [
-      288342
+      293093
     ],
     "keywords": [
       78,
@@ -123555,8 +123545,8 @@
       551185,
       551187,
       551189,
-      602811,
-      645300
+      645300,
+      658865
     ],
     "remakes": [],
     "remasters": [],

@@ -20,6 +20,6 @@ I would complain that Oxenfree has an occasional problem with backtracking; the 
 
 Consequently, I don't have any interest in playing through it a second time to explore the different possibilities and alternate endings.  But the first playthrough was definitely, absolutely worthwhile.
 
-<b>Better than</b>: <game:Zero Escape: Nine Hours, Nine Persons, Nine Doors>, <game:Until Dawn>  
+<b>Better than</b>: <game:Nine Hours, Nine Persons, Nine Doors>, <game:Until Dawn>  
 <b>Not as good as</b>: well, it's a rough comparison, but Oxenfree's story falls just short of <game:BioShock Infinite>'s  
 <b>Also better than</b>: <a href="http://www.imdb.com/title/tt0246578/">Donnie Darko</a>, and if you liked that, you'll absolutely love this.
