@@ -25,7 +25,7 @@ The Sexy Brutale is fun and engaging, though its puzzles are pretty simple and m
 
 Nevertheless, it's a really cool experience that unravels a uniquely interesting story, and I'd definitely look forward to another game in this format.
 
-<b>Better than</b>: <game:Her Story>, <game:Zero Escape: Nine Hours, Nine Persons, Nine Doors>  
+<b>Better than</b>: <game:Her Story>, <game:Nine Hours, Nine Persons, Nine Doors>  
 <b>Not as good as</b>: <game:The Witness (2016)>  
 <b>Maybe this needs comparison to</b>: <game:Return of the Obra Dinn>?
 

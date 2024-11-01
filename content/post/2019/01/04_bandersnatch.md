@@ -31,6 +31,6 @@ It ain't perfect, but Bandersnatch is wonderfully entertaining; it has real, <i>
 
 Also, <a href="http://www.minotaurproject.co.uk/jeff.php">Jeff Minter</a> is <b>in it</b>.  (I did a double-take when I saw his name in the credits.)
 
-<b>Better than</b>: <game:Zero Escape: Nine Hours, Nine Persons, Nine Doors>  
+<b>Better than</b>: <game:Nine Hours, Nine Persons, Nine Doors>  
 <b>Not as good as</b>: <game:Her Story>  
 <b>I mean really</b>: If we can call dreck like <game:Shadow of Destiny> a "game," Bandersnatch has more than earned its place here.
