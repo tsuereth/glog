@@ -1,5 +1,66 @@
 [
   {
+    "bundles": [
+      152765
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      65
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1632355200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      895
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      8,
+      12,
+      31
+    ],
+    "id": 222412,
+    "involved_companies": [
+      191504,
+      191505
+    ],
+    "keywords": [],
+    "name": "Castlevania: Aria of Sorrow",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 1134,
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      398223,
+      398224,
+      398225,
+      398226
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      19
+    ],
+    "url": "https://www.igdb.com/games/castlevania-aria-of-sorrow--1",
+    "version_parent": -1
+  },
+  {
     "bundles": [],
     "category": -1,
     "collection": -1,
@@ -126306,6 +126367,133 @@
       1
     ],
     "url": "https://www.igdb.com/games/castlevania-dominus-collection",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      314944
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      65
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1724716800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      895
+    ],
+    "game_modes": [
+      1,
+      2
+    ],
+    "genres": [
+      8,
+      9,
+      12,
+      25,
+      31
+    ],
+    "id": 315314,
+    "involved_companies": [
+      284813
+    ],
+    "keywords": [],
+    "name": "Castlevania: Dawn of Sorrow",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 1136,
+    "platforms": [
+      6,
+      130,
+      167,
+      169
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      637083,
+      637084,
+      637085,
+      637086
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      19
+    ],
+    "url": "https://www.igdb.com/games/castlevania-dawn-of-sorrow--1",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      314944
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      65
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1724716800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      895
+    ],
+    "game_modes": [
+      1,
+      2
+    ],
+    "genres": [
+      8,
+      12,
+      25,
+      31
+    ],
+    "id": 315315,
+    "involved_companies": [
+      284814
+    ],
+    "keywords": [],
+    "name": "Castlevania: Portrait of Ruin",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 1138,
+    "platforms": [
+      6,
+      130,
+      167,
+      169
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      637089,
+      637090,
+      637091,
+      637092
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      19
+    ],
+    "url": "https://www.igdb.com/games/castlevania-portrait-of-ruin--1",
     "version_parent": -1
   },
   {
