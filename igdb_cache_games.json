@@ -35597,7 +35597,11 @@
       143738,
       256780,
       275172,
-      297259
+      297259,
+      322147,
+      322148,
+      322149,
+      322150
     ],
     "first_release_date": 1394496000,
     "forks": [],
@@ -40302,7 +40306,7 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
-    "first_release_date": 0,
+    "first_release_date": 1377820800,
     "forks": [],
     "franchise": -1,
     "franchises": [],
@@ -40352,7 +40356,7 @@
     ],
     "ports": [],
     "release_dates": [
-      525438
+      664155
     ],
     "remakes": [],
     "remasters": [],
@@ -64537,7 +64541,8 @@
     "ports": [],
     "release_dates": [
       509801,
-      509802
+      509802,
+      662639
     ],
     "remakes": [],
     "remasters": [],
@@ -67394,10 +67399,9 @@
     ],
     "ports": [],
     "release_dates": [
-      10726,
-      137658,
-      137659,
-      137660
+      662640,
+      662641,
+      662642
     ],
     "remakes": [],
     "remasters": [],
@@ -68841,10 +68845,8 @@
     "expansions": [],
     "first_release_date": 1202774400,
     "forks": [],
-    "franchise": 318,
-    "franchises": [
-      318
-    ],
+    "franchise": -1,
+    "franchises": [],
     "game_modes": [
       1
     ],
@@ -74806,7 +74808,8 @@
   {
     "bundles": [
       130692,
-      147789
+      147789,
+      321840
     ],
     "category": 11,
     "collection": -1,
@@ -76417,10 +76420,8 @@
     "expansions": [],
     "first_release_date": 1265241600,
     "forks": [],
-    "franchise": 431,
-    "franchises": [
-      431
-    ],
+    "franchise": -1,
+    "franchises": [],
     "game_modes": [
       1,
       2
@@ -100963,15 +100964,18 @@
     ],
     "id": 17026,
     "involved_companies": [
-      59425
+      295244
     ],
     "keywords": [
       103,
       905,
       911,
       1313,
+      1494,
       1495,
+      4004,
       4134,
+      4151,
       4245,
       4287,
       4347,
@@ -100984,7 +100988,8 @@
       5019,
       5311,
       18712,
-      26969
+      26969,
+      44629
     ],
     "name": "Furi",
     "parent_game": -1,
@@ -101001,13 +101006,11 @@
     ],
     "ports": [],
     "release_dates": [
-      53089,
-      60514,
-      116252,
-      131745,
-      136030,
-      357681,
-      412265
+      664646,
+      664647,
+      664648,
+      664649,
+      664650
     ],
     "remakes": [],
     "remasters": [],
@@ -102866,7 +102869,10 @@
     "collections": [
       2248
     ],
-    "dlcs": [],
+    "dlcs": [
+      50779,
+      50780
+    ],
     "expanded_games": [
       20294
     ],
