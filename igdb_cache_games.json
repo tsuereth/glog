@@ -17233,11 +17233,12 @@
       1
     ],
     "dlcs": [
-      20115,
-      127036
+      20115
     ],
     "expanded_games": [],
-    "expansions": [],
+    "expansions": [
+      127036
+    ],
     "first_release_date": 1361836800,
     "forks": [],
     "franchise": -1,
@@ -21093,7 +21094,8 @@
     "standalone_expansions": [],
     "themes": [
       1,
-      18
+      18,
+      39
     ],
     "url": "https://www.igdb.com/games/halo-combat-evolved",
     "version_parent": -1
@@ -24555,7 +24557,8 @@
     "standalone_expansions": [],
     "themes": [
       1,
-      18
+      18,
+      39
     ],
     "url": "https://www.igdb.com/games/halo-2",
     "version_parent": -1
@@ -77424,7 +77427,7 @@
     ],
     "expanded_games": [],
     "expansions": [],
-    "first_release_date": 1354579200,
+    "first_release_date": 1289174400,
     "forks": [],
     "franchise": -1,
     "franchises": [],
@@ -77439,8 +77442,8 @@
     ],
     "id": 7086,
     "involved_companies": [
-      16747,
-      16748
+      291990,
+      291991
     ],
     "keywords": [
       137,
@@ -77464,16 +77467,16 @@
     "name": "Ilomilo",
     "parent_game": -1,
     "platforms": [
-      6,
-      12
+      12,
+      74
     ],
     "player_perspectives": [
       2
     ],
     "ports": [],
     "release_dates": [
-      17774,
-      231338
+      656169,
+      656170
     ],
     "remakes": [],
     "remasters": [],
@@ -99832,7 +99835,7 @@
     "id": 16300,
     "involved_companies": [
       56654,
-      133148
+      295555
     ],
     "keywords": [
       151,
@@ -99863,17 +99866,17 @@
     ],
     "ports": [],
     "release_dates": [
-      53692,
-      53695,
-      102688,
-      102689,
       108824,
       108826,
-      489631,
-      489632,
-      489634,
-      489636,
-      489637
+      665598,
+      665599,
+      665600,
+      665601,
+      665602,
+      665603,
+      665604,
+      665605,
+      665606
     ],
     "remakes": [],
     "remasters": [],
@@ -122559,9 +122562,7 @@
     "game_modes": [
       1
     ],
-    "genres": [
-      34
-    ],
+    "genres": [],
     "id": 136096,
     "involved_companies": [
       104477
