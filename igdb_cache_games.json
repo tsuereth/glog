@@ -1,13 +1,5 @@
 [
   {
-    "id": 166722,
-    "name": "The Case of the Golden Idol"
-  },
-  {
-    "id": 279614,
-    "name": "The Rise of the Golden Idol"
-  },
-  {
     "bundles": [],
     "category": -1,
     "collection": -1,
@@ -124108,6 +124100,91 @@
     "version_parent": -1
   },
   {
+    "bundles": [
+      251480,
+      264814,
+      264843
+    ],
+    "category": 0,
+    "collection": -1,
+    "collections": [
+      10208
+    ],
+    "dlcs": [
+      247410,
+      264300
+    ],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1665619200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      2,
+      9,
+      31,
+      32
+    ],
+    "id": 166722,
+    "involved_companies": [
+      271922,
+      276926,
+      276927
+    ],
+    "keywords": [
+      215,
+      221,
+      223,
+      225,
+      1438,
+      1638,
+      1669,
+      2426
+    ],
+    "name": "The Case of the Golden Idol",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      14,
+      34,
+      39,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      607074,
+      607483,
+      607484,
+      607485,
+      607486,
+      614943,
+      614944,
+      619523,
+      619524
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      20,
+      22,
+      43
+    ],
+    "url": "https://www.igdb.com/games/the-case-of-the-golden-idol",
+    "version_parent": -1
+  },
+  {
     "bundles": [],
     "category": 3,
     "collection": -1,
@@ -125874,6 +125951,78 @@
       17
     ],
     "url": "https://www.igdb.com/games/flicky--2",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [
+      10208
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1731369600,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      2,
+      9,
+      31,
+      32
+    ],
+    "id": 279614,
+    "involved_companies": [
+      276929,
+      290914,
+      290915
+    ],
+    "keywords": [
+      72,
+      218,
+      1669,
+      1780,
+      17686
+    ],
+    "name": "The Rise of the Golden Idol",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      34,
+      39,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      652576,
+      652577,
+      652578,
+      652579,
+      652580,
+      652581,
+      652582,
+      652583
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      20,
+      43
+    ],
+    "url": "https://www.igdb.com/games/the-rise-of-the-golden-idol",
     "version_parent": -1
   },
   {
