@@ -107,6 +107,14 @@ namespace GlogGenerator
             return this.markdownPipeline;
         }
 
+        public void SetAdditionalIgdbGameIds(List<int> igdbGameIds)
+        {
+            var addIgdbGames = igdbGameIds.Select(i => new IgdbGame { Id = i }).ToList();
+
+            var igdbCache = this.GetIgdbCache();
+            igdbCache.SetAdditionalGames(addIgdbGames);
+        }
+
         public void RewriteIgdbCache()
         {
             var igdbCache = this.GetIgdbCache();
@@ -537,6 +545,7 @@ namespace GlogGenerator
             Build,
             Host,
             ReportStats,
+            UpdateDataNoOutput,
         }
 
         public enum IncludeDrafts

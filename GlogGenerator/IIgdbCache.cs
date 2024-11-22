@@ -42,6 +42,8 @@ namespace GlogGenerator
 
         public List<int> GetBundledGameIds(int bundleGameId);
 
+        public void SetAdditionalGames(List<IgdbGame> additionalGames);
+
         public Task UpdateFromApiClient(IgdbApiClient client);
 
         public void RemoveEntityByUniqueIdString(Type entityType, string uniqueIdString);
