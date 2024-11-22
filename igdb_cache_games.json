@@ -23326,7 +23326,6 @@
   {
     "bundles": [
       41860,
-      145009,
       287316
     ],
     "category": 0,
@@ -28199,7 +28198,8 @@
       5989,
       6621,
       6735,
-      24168
+      24168,
+      45061
     ],
     "name": "Mirror's Edge",
     "parent_game": -1,
@@ -43656,7 +43656,7 @@
     "expansions": [
       215769
     ],
-    "first_release_date": 1607472000,
+    "first_release_date": 1607558400,
     "forks": [],
     "franchise": -1,
     "franchises": [
@@ -43691,6 +43691,7 @@
     "parent_game": -1,
     "platforms": [
       6,
+      14,
       48,
       49,
       167,
@@ -43707,9 +43708,9 @@
       215921,
       215922,
       215923,
-      298199,
       344300,
-      344301
+      344301,
+      659463
     ],
     "remakes": [],
     "remasters": [],
@@ -63352,7 +63353,9 @@
       607
     ],
     "dlcs": [],
-    "expanded_games": [],
+    "expanded_games": [
+      322269
+    ],
     "expansions": [],
     "first_release_date": 907200000,
     "forks": [],
@@ -63366,68 +63369,49 @@
     ],
     "genres": [
       12,
-      25,
-      31
+      25
     ],
     "id": 3501,
     "involved_companies": [
-      9106,
-      101518,
       101519,
-      101520,
-      101521
+      295715
     ],
     "keywords": [
       226,
       558,
       982,
-      989,
-      1986,
       3486,
-      4282,
       4286,
       4392,
+      4699,
       4787,
       4879,
       4891,
       5801,
-      6619,
-      13119,
-      26906,
-      27048,
-      28703,
-      37362
+      6619
     ],
     "name": "Gauntlet Legends",
     "parent_game": -1,
     "platforms": [
-      4,
-      7,
-      23,
       52
     ],
     "player_perspectives": [
       3
     ],
-    "ports": [],
+    "ports": [
+      322267,
+      322268
+    ],
     "release_dates": [
-      199473,
-      199474,
-      199475,
-      199476,
-      199477,
-      199478,
-      199479,
-      199480,
-      199481
+      666379,
+      666380
     ],
     "remakes": [],
     "remasters": [],
     "standalone_expansions": [],
     "themes": [
       1,
-      17,
-      38
+      17
     ],
     "url": "https://www.igdb.com/games/gauntlet-legends",
     "version_parent": -1
@@ -80701,7 +80685,9 @@
     "standalone_expansions": [],
     "themes": [
       19,
-      21
+      21,
+      31,
+      43
     ],
     "url": "https://www.igdb.com/games/until-dawn",
     "version_parent": -1
@@ -87526,7 +87512,6 @@
   },
   {
     "bundles": [
-      25343,
       52108
     ],
     "category": 0,
@@ -87632,7 +87617,9 @@
       28586
     ],
     "remakes": [],
-    "remasters": [],
+    "remasters": [
+      319754
+    ],
     "standalone_expansions": [],
     "themes": [
       19,
@@ -99332,7 +99319,7 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
-    "first_release_date": 1275609600,
+    "first_release_date": 1277856000,
     "forks": [],
     "franchise": -1,
     "franchises": [],
@@ -99346,14 +99333,15 @@
     ],
     "id": 15995,
     "involved_companies": [
-      91132
+      295932
     ],
     "keywords": [
       101,
       215,
       1315,
       1511,
-      1721
+      1721,
+      44629
     ],
     "name": "Puzzle Agent",
     "parent_game": -1,
@@ -99361,18 +99349,22 @@
       5,
       6,
       9,
-      14
+      14,
+      39
     ],
     "player_perspectives": [
       4
     ],
     "ports": [],
     "release_dates": [
-      105032,
-      105033,
-      416197,
-      416198,
-      511766
+      511766,
+      666848,
+      666849,
+      666850,
+      666851,
+      666852,
+      666853,
+      666854
     ],
     "remakes": [],
     "remasters": [],
@@ -118883,7 +118875,9 @@
     "version_parent": -1
   },
   {
-    "bundles": [],
+    "bundles": [
+      320001
+    ],
     "category": 0,
     "collection": -1,
     "collections": [],
@@ -120029,8 +120023,7 @@
     "genres": [
       9,
       31,
-      32,
-      33
+      32
     ],
     "id": 116400,
     "involved_companies": [
@@ -120038,7 +120031,18 @@
       152072
     ],
     "keywords": [
-      170
+      69,
+      72,
+      170,
+      218,
+      225,
+      826,
+      962,
+      1697,
+      2426,
+      3586,
+      17268,
+      25527
     ],
     "name": "Eternal Threads",
     "parent_game": -1,
@@ -125993,6 +125997,7 @@
     "parent_game": -1,
     "platforms": [
       6,
+      14,
       34,
       39,
       48,
@@ -126013,7 +126018,8 @@
       652580,
       652581,
       652582,
-      652583
+      652583,
+      667839
     ],
     "remakes": [],
     "remasters": [],
