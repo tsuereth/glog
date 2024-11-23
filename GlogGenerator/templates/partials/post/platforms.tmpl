@@ -1,0 +1,3 @@
+{{if page.Platforms}}
+<span class="platforms">{{for platform in page.Platforms}}<a href="{{site.BaseURL}}platform/{{string_urlize platform.Abbreviation}}">{{platform.Abbreviation}}</a>{{if !for.last}}, {{end}}{{end}}</span>
+{{end}}

@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Glog</title>
+    <link>{{page.Permalink}}</link>
+    <language>en-us</language>
+    <author>TS</author>
+
+    <updated>{{datetime_iso8601 page.Date}}</updated>
+
+{{for postPage in page.HistoryPosts}}
+    <item>
+      <title>{{string_escape_for_rssxml postPage.Title}}</title>
+      <link>{{postPage.Permalink}}</link>
+      <pubDate>{{datetime_iso8601 postPage.Date}}</pubDate>
+      <author>TS</author>
+      <guid isPermalink="true">{{postPage.Permalink}}</guid>
+{{for category in postPage.Categories}}
+      <category>{{string_escape_for_rssxml category.Name}}</category>
+{{end}}
+      <description>
+&lt;p&gt;&lt;i&gt;Posted{{if postPage.Categories}} in {{for category in postPage.Categories}}&lt;a href="{{site.BaseURL}}category/{{string_urlize category.Name}}"&gt;{{string_escape_for_rssxml category.Name}}&lt;/a&gt;{{if !for.last}}, {{end}}{{end}}{{end}}{{if postPage.Games}} for {{for game in postPage.Games}}&lt;a href="{{site.BaseURL}}game/{{string_urlize game.Title}}"&gt;{{string_escape_for_rssxml game.Title}}&lt;/a&gt;{{if !for.last}}, {{end}}{{end}}{{end}}{{if postPage.Platforms}} on {{for platform in postPage.Platforms}}&lt;a href="{{site.BaseURL}}platform/{{string_urlize platform.Abbreviation}}"&gt;{{string_escape_for_rssxml platform.Abbreviation}}&lt;/a&gt;{{if !for.last}}, {{end}}{{end}}{{end}}&lt;/i&gt;&lt;/p&gt;
+{{string_escape_for_rssxml postPage.RenderedContent}}
+{{if postPage.Ratings}}&lt;p&gt;&lt;i&gt;Rating: {{for rating in postPage.Ratings}}&lt;a href="{{site.BaseURL}}rating/{{string_urlize rating.Name}}"&gt;{{string_escape_for_rssxml rating.Name}}&lt;/a&gt;{{if !for.last}}, {{end}}{{end}}&lt;/i&gt;&lt;/p&gt;{{end}}
+      </description>
+    </item>
+{{end}}
+  </channel>
+</rss>

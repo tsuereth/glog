@@ -1,0 +1,31 @@
+<ul class="main">
+	<li><span class="nav-title">Playing:</span>
+		<ul>
+{{for title in site.NowPlaying}}
+			<li class="nav-item"><a href="{{site.BaseURL}}game/{{string_urlize title}}">{{title}}</a></li>
+{{end}}
+		</ul>
+	</li>
+	<li><span class="nav-title">Glogging:</span>
+		<ul>
+			<li class="nav-item"><a href="{{site.BaseURL}}">Newest Posts</a></li>
+			<li class="nav-item"><a href="{{site.BaseURL}}upcoming/">Upcoming Games</a></li>
+			<li class="nav-item"><a href="{{site.BaseURL}}backlog/">Insufferable Backlog</a></li>
+		</ul>
+	</li>
+	<li><span class="nav-title">Categories:</span>
+		<ul>
+{{for category in site.CategoriesSorted}}
+			<li class="nav-item"><a href="{{site.BaseURL}}category/{{string_urlize category}}/">{{category}}</a></li>
+{{end}}
+		</ul>
+	</li>
+	<li><span class="nav-title">Archives:</span>
+		<ul>
+			<li class="nav-item"><a href="{{site.BaseURL}}game/">All Games</a></li>
+			<li class="nav-item"><a href="{{site.BaseURL}}platform/">All Platforms</a></li>
+			<li class="nav-item"><a href="{{site.BaseURL}}tag/">All Tags</a></li>
+			<li class="nav-item"><a href="{{site.BaseURL}}post/">All Posts</a></li>
+		</ul>
+	</li>
+</ul>

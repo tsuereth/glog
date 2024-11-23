@@ -1,0 +1,21 @@
+<div itemscope itemtype="http://schema.org/Blog">
+{{for linkedPost in page.LinkedPosts}}
+	<section class="archives">
+		<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+			<div class="meta">
+				<span class="date"><time datetime='{{datetime_just_date linkedPost.Date}}' data-updated="true" itemprop="datePublished">{{datetime_just_date linkedPost.Date}}</time></span>
+{{if linkedPost.Categories}}
+				<span class="categories">{{for category in linkedPost.Categories}}<a href="{{site.BaseURL}}category/{{string_urlize category}}">{{category}}</a>{{if !for.last}}, {{end}}{{end}}</span>
+{{end}}
+{{if linkedPost.Games}}
+				<span class="games">{{for game in linkedPost.Games}}<a href="{{site.BaseURL}}game/{{string_urlize game}}">{{game}}</a>{{if !for.last}}, {{end}}{{end}}</span>
+{{end}}
+{{if linkedPost.Platforms}}
+				<span class="platforms">{{for platform in linkedPost.Platforms}}<a href="{{site.BaseURL}}platform/{{string_urlize platform}}">{{platform}}</a>{{if !for.last}}, {{end}}{{end}}</span>
+{{end}}
+			</div>
+			<h1 class="title" itemprop="name"><a href="{{site.BaseURL}}{{linkedPost.PermalinkRelative}}">{{linkedPost.Title}}</a></h1>
+		</article>
+	</section>
+{{end}}
+</div>

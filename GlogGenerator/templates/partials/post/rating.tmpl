@@ -1,0 +1,3 @@
+{{if page.Ratings}}
+<div class="rating">Rating: {{for rating in page.Ratings}}<a href="{{site.BaseURL}}rating/{{string_urlize rating.Name}}">{{rating.Name}}</a>{{if !for.last}}, {{end}}{{end}}</div>
+{{end}}
