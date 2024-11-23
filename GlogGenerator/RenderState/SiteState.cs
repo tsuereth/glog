@@ -56,8 +56,7 @@ namespace GlogGenerator.RenderState
 
         public ScribanTemplateLoader CreateTemplateLoader()
         {
-            // StringTemplate requires an absolute filepath.
-            // BUT DOES SCRIBAN ?!?!?!?!?!?!
+            // Make sure the path to template files is an absolute filepath.
             var templateFilesBasePath = this.templateFilesBasePath;
             if (!Path.IsPathRooted(templateFilesBasePath))
             {
@@ -65,14 +64,6 @@ namespace GlogGenerator.RenderState
             }
 
             return new ScribanTemplateLoader(templateFilesBasePath);
-
-            /*this.templateGroup = new Antlr4.StringTemplate.TemplateGroupDirectory(
-                templateFilesBasePath,
-                delimiterStartChar: '%',
-                delimiterStopChar: '%');
-
-            this.templateGroup.RegisterRenderer(typeof(DateTimeOffset), new DateTimeRenderer());
-            this.templateGroup.RegisterRenderer(typeof(string), new StringRenderer());*/
         }
 
         public void LoadContentRoutes()
