@@ -21,6 +21,7 @@ namespace GlogGenerator
     {
         public enum NonBuildVerbs
         {
+            AddGames,
             Help,
             New,
             Undraft,
@@ -36,6 +37,7 @@ namespace GlogGenerator
 
             var igdbClientId = string.Empty;
             var igdbClientSecret = string.Empty;
+            var addIgdbGameIdsListString = string.Empty;
             var inputFilesBasePath = projectProperties.DefaultInputFilesBasePath;
             var includeDraftsString = SiteBuilder.IncludeDrafts.HostModeOnly.ToString();
             var templateFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "templates");
@@ -61,6 +63,7 @@ namespace GlogGenerator
             {
                 { "igdb-client-id=", "IGDB API (Twitch Developers) Client ID", o => igdbClientId = o },
                 { "igdb-client-secret=", "IGDB API (Twitch Developers) Client Secret", o => igdbClientSecret = o },
+                { "add-igdb-game-ids=", "Comma-separated IGDB Game IDs to optionally add to the data cache", o => addIgdbGameIdsListString = o },
                 { "i|input-path=", $"Input files base path, default: {inputFilesBasePath}", o => inputFilesBasePath = o },
                 { "d|include-drafts=", $"When to include draft content (one of {includeDraftsOptionsString}), default: {includeDraftsString}", o => includeDraftsString = o },
                 { "t|templates-path=", $"Template files base path, default: {templateFilesBasePath}", o => templateFilesBasePath = o },
@@ -125,12 +128,26 @@ namespace GlogGenerator
                 activeVerbMustLoadSiteData = true;
             }
 
+            var addIgdbGameIdsStrings = addIgdbGameIdsListString.Split(',', StringSplitOptions.RemoveEmptyEntries);
+            var addIgdbGameIds = addIgdbGameIdsStrings.Select(s =>
+            {
+                if (!int.TryParse(s, out var addIgdbGameId))
+                {
+                    throw new ArgumentException($"Failed to parse additional IGDB game ID '{s}'");
+                }
+                return addIgdbGameId;
+            }).ToList();
+            if (addIgdbGameIds.Count > 0)
+            {
+                builder.SetAdditionalIgdbGameIds(addIgdbGameIds);
+            }
+
             if (activeVerbMustLoadSiteData || updateIgdbCache || rewriteInputFiles)
             {
                 LoadSiteData(logger, builder);
             }
 
-            if (updateIgdbCache)
+            if (updateIgdbCache || activeVerb.Equals(NonBuildVerbs.AddGames))
             {
                 if (string.IsNullOrEmpty(igdbClientId))
                 {
@@ -181,6 +198,10 @@ namespace GlogGenerator
 
             switch (activeVerb)
             {
+                case NonBuildVerbs.AddGames:
+                    // The --add-igdb-game-ids values have already been added, there's nothing to do here.
+                    break;
+
                 case NonBuildVerbs.Help:
                     options.WriteOptionDescriptions(Console.Out);
                     break;
@@ -238,6 +259,10 @@ rating = []
                     logger.LogInformation(
                         "Undrafted post file at {NewPostPath}",
                         newPostPath);
+                    break;
+
+                case SiteBuilder.Mode.UpdateDataNoOutput:
+                    LoadSiteRoutes(logger, builder);
                     break;
 
                 case SiteBuilder.Mode.Build:

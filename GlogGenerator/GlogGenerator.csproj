@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
 
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
-    <AnalysisLevel>7.0</AnalysisLevel>
+    <AnalysisLevel>8.0</AnalysisLevel>
     <AnalysisMode>Recommended</AnalysisMode>
     <AnalysisModePerformance>None</AnalysisModePerformance>
     <AnalysisModeStyle>None</AnalysisModeStyle>
@@ -27,7 +27,7 @@
     <PackageReference Include="Markdig" Version="0.33.0" />
     <PackageReference Include="Mono.Options" Version="6.12.0.148" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="StringTemplate4" Version="4.0.8" />
+    <PackageReference Include="Scriban" Version="5.12.0" />
     <PackageReference Include="Tommy" Version="3.1.2" />
   </ItemGroup>
 

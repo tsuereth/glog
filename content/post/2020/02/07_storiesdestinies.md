@@ -33,7 +33,7 @@ The game's imperfections - its lackluster humor, its unexciting combat, its some
 
 A lot like [Prince of Persia: The Sands of Time](game:Prince of Persia: The Sands of Time (NGC, PC, PS2, PS3, XBOX)), I guess.  Just with worse narration and no platforming.
 
-<b>Better than</b>: <game:Bastion>, <game:Zero Escape: Nine Hours, Nine Persons, Nine Doors>  
+<b>Better than</b>: <game:Bastion>, <game:Nine Hours, Nine Persons, Nine Doors>  
 <b>Not as good as</b>: <game:Middle-earth: Shadow of Mordor>, <game:The Sexy Brutale>  
 <b>And way better than</b>: those shitty choose-your-own-adventure books I grew up with.
 

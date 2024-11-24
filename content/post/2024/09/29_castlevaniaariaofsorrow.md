@@ -2,7 +2,7 @@
 date = "2024-09-29T15:29:48.4673278-07:00"
 title = "That vampire came from the moon"
 category = [ "Playing A Game" ]
-game = [ "Castlevania Advance Collection", "Castlevania: Aria of Sorrow (2021)" ]
+game = [ "Castlevania: Aria of Sorrow (2021)" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 +++

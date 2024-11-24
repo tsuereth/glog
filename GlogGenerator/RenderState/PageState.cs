@@ -9,7 +9,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using GlogGenerator.Data;
 using GlogGenerator.MarkdownExtensions;
-using GlogGenerator.TemplateRenderers;
 using Markdig;
 using Markdig.Extensions.ListExtras;
 using Markdig.Syntax;
@@ -357,13 +356,20 @@ namespace GlogGenerator.RenderState
             return page;
         }
 
+        private IDictionary<string, object> GetTemplateProperties(SiteState site)
+        {
+            return new Dictionary<string, object>()
+            {
+                { "site", site },
+                { "page", this },
+            };
+        }
+
         public void WriteFile(SiteState site, string filePath)
         {
-            var template = site.GetTemplateGroup().GetInstanceOf(this.RenderTemplateName);
-            template.Add("site", site);
-            template.Add("page", this);
+            var templateLoader = site.CreateTemplateLoader();
+            var rendered = templateLoader.ParseAndRender(this.RenderTemplateName, this.GetTemplateProperties(site));
 
-            var rendered = template.RenderWithErrorsThrown(CultureInfo.InvariantCulture);
             rendered = rendered.ReplaceLineEndings("\n");
 
             var outputDir = Path.GetDirectoryName(filePath);
@@ -394,11 +400,9 @@ namespace GlogGenerator.RenderState
                 response.ContentType = "text/html";
             }
 
-            var template = site.GetTemplateGroup().GetInstanceOf(this.RenderTemplateName);
-            template.Add("site", site);
-            template.Add("page", this);
+            var templateLoader = site.CreateTemplateLoader();
+            var rendered = templateLoader.ParseAndRender(this.RenderTemplateName, this.GetTemplateProperties(site));
 
-            var rendered = template.RenderWithErrorsThrown(CultureInfo.InvariantCulture);
             var renderedBytes = Encoding.UTF8.GetBytes(rendered);
 
             response.ContentLength64 = renderedBytes.LongLength;

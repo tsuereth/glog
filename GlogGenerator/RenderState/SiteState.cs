@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using GlogGenerator.Data;
-using GlogGenerator.TemplateRenderers;
 using Markdig.Syntax;
 
 namespace GlogGenerator.RenderState
@@ -47,8 +46,6 @@ namespace GlogGenerator.RenderState
         private readonly SiteBuilder builder;
         private readonly string templateFilesBasePath;
 
-        private Antlr4.StringTemplate.TemplateGroupDirectory templateGroup;
-
         public SiteState(
             SiteBuilder builder,
             string templateFilesBasePath)
@@ -57,27 +54,16 @@ namespace GlogGenerator.RenderState
             this.templateFilesBasePath = templateFilesBasePath;
         }
 
-        public Antlr4.StringTemplate.TemplateGroupDirectory GetTemplateGroup()
+        public ScribanTemplateLoader CreateTemplateLoader()
         {
-            if (this.templateGroup == null)
+            // Make sure the path to template files is an absolute filepath.
+            var templateFilesBasePath = this.templateFilesBasePath;
+            if (!Path.IsPathRooted(templateFilesBasePath))
             {
-                // StringTemplate requires an absolute filepath.
-                var templateFilesBasePath = this.templateFilesBasePath;
-                if (!Path.IsPathRooted(templateFilesBasePath))
-                {
-                    templateFilesBasePath = Path.GetFullPath(templateFilesBasePath);
-                }
-
-                this.templateGroup = new Antlr4.StringTemplate.TemplateGroupDirectory(
-                    templateFilesBasePath,
-                    delimiterStartChar: '%',
-                    delimiterStopChar: '%');
-
-                this.templateGroup.RegisterRenderer(typeof(DateTimeOffset), new DateTimeRenderer());
-                this.templateGroup.RegisterRenderer(typeof(string), new StringRenderer());
+                templateFilesBasePath = Path.GetFullPath(templateFilesBasePath);
             }
 
-            return this.templateGroup;
+            return new ScribanTemplateLoader(templateFilesBasePath);
         }
 
         public void LoadContentRoutes()

@@ -45,6 +45,8 @@ namespace GlogGenerator
 
         private Dictionary<int, IgdbTheme> themesById = new Dictionary<int, IgdbTheme>();
 
+        private List<IgdbGame> additionalGames = new List<IgdbGame>();
+
         public T GetEntity<T>(int id)
             where T : IgdbEntity
         {
@@ -270,6 +272,11 @@ namespace GlogGenerator
             return this.GetAllGames().Where(g => g.BundleGameIds.Contains(bundleGameId) && g.Id != IgdbEntity.IdNotFound).Select(g => g.Id).ToList();
         }
 
+        public void SetAdditionalGames(List<IgdbGame> additionalGames)
+        {
+            this.additionalGames = additionalGames;
+        }
+
         private static IEnumerable<int> IgdbGameRelatedGameIds(IgdbGame game)
         {
             return game.BundleGameIds
@@ -303,6 +310,7 @@ namespace GlogGenerator
         {
             // Update games first, to get current IDs for metadata references.
             var gameIds = this.gamesById.Keys.ToList();
+            gameIds = gameIds.Union(this.additionalGames.Select(g => g.Id)).ToList();
             var gamesCurrent = await client.GetGamesAsync(gameIds);
 
             // Extract related game IDs (remasters, expansions, etc) and do one more update.
@@ -316,12 +324,19 @@ namespace GlogGenerator
 
             var gamesCurrentById = gamesCurrent.ToDictionary(o => o.Id, o => o);
 
-            // Re-apply overriden properties from the old cache.
+            // Re-apply overriden properties.
             foreach (var gameId in gameIds)
             {
                 if (gamesCurrentById.ContainsKey(gameId))
                 {
-                    var gameOverrides = this.gamesById[gameId].GetGlogOverrideValues();
+                    // Check "additional games" before checking the cache, in case new overrides were provided outside the cache.
+                    var gameWithId = this.additionalGames.Where(g => g.Id == gameId).FirstOrDefault();
+                    if (gameWithId == null)
+                    {
+                        gameWithId = this.gamesById[gameId];
+                    }
+
+                    var gameOverrides = gameWithId.GetGlogOverrideValues();
                     gamesCurrentById[gameId].SetGlogOverrideValues(gameOverrides);
                 }
             }
