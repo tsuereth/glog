@@ -59,11 +59,16 @@ namespace GlogGenerator
 
         public string ParseAndRender(string templateName, IDictionary<string, object> templateProperties)
         {
-            var templateContext = new TemplateContext() { TemplateLoader = this };
+            var templateContext = new TemplateContext()
+            {
+                TemplateLoader = this,
 
-            // The default loop-iteration limit is 1000, which is much lower than (for example) the site's total number of tag items.
-            // Overwrite with 0 to indicate NO LIMIT, and cross your fingers ... and watch the build time!
-            templateContext.LoopLimit = 0;
+                // The default loop-iteration limit is 1000, which is much lower than (for example) the site's total number of tag items.
+                // Overwrite with 0 to indicate NO LIMIT, and cross your fingers ... and watch the build time!
+                LoopLimit = 0,
+
+                IndentOnEmptyLines = false,
+            };
 
             var templateGlobals = CreateTemplateGlobalScriptObject(templateProperties);
             templateContext.PushGlobal(templateGlobals);

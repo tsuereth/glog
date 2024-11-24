@@ -1,8 +1,8 @@
-{{include "partials/head"}}
+{{include "partials/head" ~}}
 <body>
 	<div class="container">
 		<div class="left-col">
-			<header id="header" class="inner">{{include "partials/header"}}</header>
+			<header id="header" class="inner">{{include "partials/header" -}}</header>
 		</div>
 		<div class="mid-col">
 			<div class="mid-col-container">
@@ -11,14 +11,13 @@
 				</div>
 				<div id="content" class="inner">
 					<div itemscope itemtype="http://schema.org/Blog">
-{{for term in page.terms}}
-
+{{for term in page.terms ~}}
 						<div class="list-entry {{page.page_type}}" itemprop="name"><a href="{{site.base_url}}{{page.terms_type}}/{{string_urlize term}}/">{{term}}</a></div>
 {{end}}
 					</div>
 				</div>
 			</div>
-			<footer id="footer" class="inner">{{include "partials/footer"}}</footer>
+			<footer id="footer" class="inner">{{include "partials/footer" -}}</footer>
 		</div>
 	</div>
 </body>

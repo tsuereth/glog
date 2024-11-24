@@ -1,8 +1,8 @@
-{{include "partials/head"}}
+{{include "partials/head" ~}}
 <body>
 	<div class="container">
 		<div class="left-col">
-			<header id="header" class="inner">{{include "partials/header"}}</header>
+			<header id="header" class="inner">{{include "partials/header" -}}</header>
 		</div>
 		<div class="mid-col">
 			<div class="mid-col-container">
@@ -10,10 +10,10 @@
 					<div class="title">{{page.linked_posts_count}} posts in <span class="{{page.page_type}}">{{page.title}}</span></div>
 				</div>
 				<div id="content" class="inner">
-					{{include "partials/archive"}}
+					{{include "partials/archive" ~}}
 				</div>
 			</div>
-			<footer id="footer" class="inner">{{include "partials/footer"}}</footer>
+			<footer id="footer" class="inner">{{include "partials/footer" -}}</footer>
 		</div>
 	</div>
 </body>
