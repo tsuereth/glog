@@ -36565,7 +36565,8 @@
     "involved_companies": [
       55847,
       189853,
-      189854
+      189854,
+      296508
     ],
     "keywords": [
       16,
@@ -59934,7 +59935,8 @@
     "standalone_expansions": [],
     "themes": [
       1,
-      17
+      17,
+      19
     ],
     "url": "https://www.igdb.com/games/diablo-iii-reaper-of-souls",
     "version_parent": -1
@@ -66414,10 +66416,8 @@
     "expansions": [],
     "first_release_date": 1007683200,
     "forks": [],
-    "franchise": 250,
-    "franchises": [
-      250
-    ],
+    "franchise": -1,
+    "franchises": [],
     "game_modes": [
       1
     ],
