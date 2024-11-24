@@ -1,3 +1,0 @@
-{{if page.Categories}}
-<span class="categories">{{for category in page.Categories}}<a href="{{site.BaseURL}}category/{{string_urlize category.Name}}">{{category.Name}}</a>{{if !for.last}}, {{end}}{{end}}</span>
-{{end}}

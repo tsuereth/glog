@@ -6,7 +6,7 @@ namespace GlogGenerator
 {
 	public static class ScribanTemplateFunctions
     {
-        public static string DatetimeIso8601(DateTimeOffset inDatetime)
+        public static string DatetimeISO8601(DateTimeOffset inDatetime)
         {
             // Sat, 02 Feb 2013 16:41:36 -0700
             var dayOfWeekAbbrev = inDatetime.ToString("ddd", CultureInfo.InvariantCulture);
@@ -35,7 +35,7 @@ namespace GlogGenerator
             return inDatetime.Year.ToString(CultureInfo.InvariantCulture);
         }
 
-        public static string StringEscapeForRssxml(string inString)
+        public static string StringEscapeForRSSXML(string inString)
         {
             if (string.IsNullOrEmpty(inString))
             {

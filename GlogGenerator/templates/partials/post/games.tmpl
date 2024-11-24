@@ -1,3 +1,0 @@
-{{if page.Games}}
-<span class="games">{{for game in page.Games}}<a href="{{site.BaseURL}}game/{{string_urlize game.Title}}">{{game.Title}}</a>{{if !for.last}}, {{end}}{{end}}</span>
-{{end}}
