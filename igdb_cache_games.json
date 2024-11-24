@@ -124189,6 +124189,116 @@
     "version_parent": -1
   },
   {
+    "bundles": [
+      168670
+    ],
+    "category": 9,
+    "collection": -1,
+    "collections": [
+      97
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1643328000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      2121
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      31
+    ],
+    "id": 168668,
+    "involved_companies": [
+      148120
+    ],
+    "keywords": [],
+    "name": "Uncharted 4: A Thief's End - Remastered",
+    "parent_game": 7331,
+    "platforms": [
+      6,
+      167
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      346531,
+      403220
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1
+    ],
+    "url": "https://www.igdb.com/games/uncharted-4-a-thiefs-end-remastered",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      168670
+    ],
+    "category": 9,
+    "collection": -1,
+    "collections": [
+      97
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1643328000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      2121
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      5,
+      31
+    ],
+    "id": 168669,
+    "involved_companies": [
+      148119,
+      148122,
+      198897,
+      198898
+    ],
+    "keywords": [],
+    "name": "Uncharted: The Lost Legacy - Remastered",
+    "parent_game": 26193,
+    "platforms": [
+      6,
+      167
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      346508,
+      403221
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      22
+    ],
+    "url": "https://www.igdb.com/games/uncharted-the-lost-legacy-remastered",
+    "version_parent": -1
+  },
+  {
     "bundles": [],
     "category": 3,
     "collection": -1,
@@ -125090,6 +125200,127 @@
       12,
       31
     ],
+    "id": 222410,
+    "involved_companies": [
+      191500,
+      191501
+    ],
+    "keywords": [],
+    "name": "Castlevania: Circle of the Moon",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 1132,
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      398215,
+      398216,
+      398217,
+      398218
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      19
+    ],
+    "url": "https://www.igdb.com/games/castlevania-circle-of-the-moon--1",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      152765
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      65
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1632355200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      895
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      8,
+      12,
+      31
+    ],
+    "id": 222411,
+    "involved_companies": [
+      191502,
+      191503
+    ],
+    "keywords": [],
+    "name": "Castlevania: Harmony of Dissonance",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 1133,
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      398219,
+      398220,
+      398221,
+      398222
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1
+    ],
+    "url": "https://www.igdb.com/games/castlevania-harmony-of-dissonance--1",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      152765
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      65
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1632355200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      895
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      8,
+      12,
+      31
+    ],
     "id": 222412,
     "involved_companies": [
       191504,
@@ -125484,6 +125715,196 @@
       43
     ],
     "url": "https://www.igdb.com/games/apollo-justice-ace-attorney-trilogy",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      252997
+    ],
+    "category": 9,
+    "collection": -1,
+    "collections": [
+      302
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1706140800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1163
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      13,
+      31,
+      34
+    ],
+    "id": 253010,
+    "involved_companies": [
+      219407
+    ],
+    "keywords": [],
+    "name": "Apollo Justice: Ace Attorney",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 1429,
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167
+    ],
+    "player_perspectives": [
+      1,
+      4,
+      5
+    ],
+    "ports": [],
+    "release_dates": [
+      557741,
+      557742,
+      557743,
+      557744,
+      559078
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      31,
+      43
+    ],
+    "url": "https://www.igdb.com/games/apollo-justice-ace-attorney--1",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      252997
+    ],
+    "category": 9,
+    "collection": -1,
+    "collections": [
+      302
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1706140800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1163
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      13,
+      31,
+      34
+    ],
+    "id": 253012,
+    "involved_companies": [
+      219406
+    ],
+    "keywords": [],
+    "name": "Phoenix Wright: Ace Attorney - Dual Destinies",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 1432,
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "player_perspectives": [
+      2,
+      4,
+      5
+    ],
+    "ports": [],
+    "release_dates": [
+      558882,
+      558883,
+      558884,
+      558885
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      27,
+      31,
+      43
+    ],
+    "url": "https://www.igdb.com/games/phoenix-wright-ace-attorney-dual-destinies--1",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      252997
+    ],
+    "category": 9,
+    "collection": -1,
+    "collections": [
+      302
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1706140800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1163
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      13,
+      31,
+      34
+    ],
+    "id": 253014,
+    "involved_companies": [
+      219405
+    ],
+    "keywords": [],
+    "name": "Phoenix Wright: Ace Attorney - Spirit of Justice",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 12077,
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "player_perspectives": [
+      1,
+      4,
+      5
+    ],
+    "ports": [],
+    "release_dates": [
+      558887,
+      558888,
+      558889,
+      558890
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      27,
+      31,
+      43
+    ],
+    "url": "https://www.igdb.com/games/phoenix-wright-ace-attorney-spirit-of-justice--1",
     "version_parent": -1
   },
   {
