@@ -2,7 +2,7 @@
 date = "2024-04-13T17:02:12.8054381-07:00"
 title = "You can't change destiny, but you can remaster it"
 category = [ "Playing A Game" ]
-game = [ "Apollo Justice: Ace Attorney Trilogy", "Phoenix Wright: Ace Attorney - Dual Destinies" ]
+game = [ "Phoenix Wright: Ace Attorney - Dual Destinies (2024)" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 +++

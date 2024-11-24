@@ -2,7 +2,7 @@
 date = "2024-09-29T12:44:14.6885146-07:00"
 title = "A whip-blast from Advance's past"
 category = [ "Playing A Game" ]
-game = [ "Castlevania Advance Collection", "Castlevania: Circle of the Moon", "Castlevania: Harmony of Dissonance" ]
+game = [ "Castlevania: Circle of the Moon (2021)", "Castlevania: Harmony of Dissonance (2021)" ]
 platform = [ "PC" ]
 +++
 <game:Castlevania Advance Collection> is a faithful re-packaging of the <platform:GBA> <tag:Castlevania>s -- as is <tag:M2>'s way, it emulates the original games and wraps them with minimal modern conveniences.  These are essentially *the same games* I played 20 years ago, for better and for worse.

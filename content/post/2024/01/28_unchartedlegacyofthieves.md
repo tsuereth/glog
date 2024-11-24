@@ -2,7 +2,7 @@
 date = "2024-01-28T12:32:32.3568247-08:00"
 title = "Recent legacy"
 category = [ "Playing A Game" ]
-game = [ "Uncharted: Legacy of Thieves Collection", "Uncharted 4: A Thief's End", "Uncharted: The Lost Legacy" ]
+game = [ "Uncharted 4: A Thief's End - Remastered", "Uncharted: The Lost Legacy - Remastered" ]
 platform = [ "PC" ]
 rating = [ "Awesome" ]
 +++
