@@ -1,0 +1,57 @@
+<div class="meta">
+{{~ if !$.post.hide_date ~}}
+	<span class="date"><time datetime='{{datetime_just_date $.post.date}}' data-updated="true" itemprop="datePublished">{{datetime_just_date $.post.date}}</time></span>
+{{~ end ~}}
+{{~ if $.post.categories.size>0 ~}}
+	<span class="categories">{{for category in $.post.categories}}<a href="{{site.base_url}}category/{{string_urlize category.name}}">{{category.name}}</a>{{if !for.last}}, {{end}}{{end}}</span>
+{{~ end ~}}
+{{~ if $.post.games.size>0 ~}}
+	<span class="games">{{for game in $.post.games}}<a href="{{site.base_url}}game/{{string_urlize game.title}}">{{game.title}}</a>{{if !for.last}}, {{end}}{{end}}</span>
+{{~ end ~}}
+{{~ if $.post.platforms.size>0 ~}}
+	<span class="platforms">{{for platform in $.post.platforms}}<a href="{{site.base_url}}platform/{{string_urlize platform.abbreviation}}">{{platform.abbreviation}}</a>{{if !for.last}}, {{end}}{{end}}</span>
+{{~ end ~}}
+</div>
+<h1 class="title" itemprop="name"><a href="{{$.post.permalink}}" itemprop="url">{{$.post.title}}</a></h1>
+<div class="entry-content" id="page_{{$.post.hash_code}}" itemprop="articleBody">
+	{{$.post.rendered_content}}
+{{~ if $.post.ratings.size>0 ~}}
+	<div class="rating">Rating: {{for rating in $.post.ratings}}<a href="{{site.base_url}}rating/{{string_urlize rating.name}}">{{rating.name}}</a>{{if !for.last}}, {{end}}{{end}}</div>
+{{~ end ~}}
+</div>
+<script type="text/javascript">
+	var body_width = (document.body.innerWidth || document.body.clientWidth) * 0.8;
+	var body_height = (document.body.innerHeight || document.body.clientHeight) * 0.8;
+	var body_sizeratio = body_width / body_height;
+
+	var page_el = document.getElementById("page_{{$.post.hash_code}}");
+	var page_images = page_el.querySelectorAll("img");
+	for (var page_image of page_images) {
+		var img_width = page_image.getAttribute("width");
+		var img_height = page_image.getAttribute("height");
+		var img_sizeratio = img_width / img_height;
+		if (img_sizeratio > body_sizeratio) {
+			img_width = body_width;
+			img_height = img_width / img_sizeratio;
+		}
+		else {
+			img_height = body_height;
+			img_width = img_height * img_sizeratio;
+		}
+
+		var img_anchor = document.createElement("a");
+		img_anchor.setAttribute("href", page_image.getAttribute("src"));
+		img_anchor.classList.add("imgwrap");
+		img_anchor.setAttribute("data-pswp-width", img_width);
+		img_anchor.setAttribute("data-pswp-height", img_height);
+		page_image.parentNode.insertBefore(img_anchor, page_image);
+		img_anchor.appendChild(page_image);
+	}
+
+	var page_{{$.post.hash_code}}_lightbox = new PhotoSwipeLightbox({
+		gallery: "#page_{{$.post.hash_code}}",
+		children: "a.imgwrap",
+		pswpModule: PhotoSwipe
+	});
+	page_{{$.post.hash_code}}_lightbox.init();
+</script>
