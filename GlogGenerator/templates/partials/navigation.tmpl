@@ -1,9 +1,9 @@
 <ul class="main">
 	<li><span class="nav-title">Playing:</span>
 		<ul>
-{{for title in site.now_playing ~}}
+{{~ for title in site.now_playing ~}}
 			<li class="nav-item"><a href="{{site.base_url}}game/{{string_urlize title}}">{{title}}</a></li>
-{{end}}
+{{~ end ~}}
 		</ul>
 	</li>
 	<li><span class="nav-title">Glogging:</span>
@@ -15,9 +15,9 @@
 	</li>
 	<li><span class="nav-title">Categories:</span>
 		<ul>
-{{for category in site.categories_sorted ~}}
+{{~ for category in site.categories_sorted ~}}
 			<li class="nav-item"><a href="{{site.base_url}}category/{{string_urlize category}}/">{{category}}</a></li>
-{{end}}
+{{~ end ~}}
 		</ul>
 	</li>
 	<li><span class="nav-title">Archives:</span>

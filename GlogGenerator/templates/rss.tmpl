@@ -19,13 +19,13 @@
 {{~ end ~}}
 
       <description>
-&lt;p&gt;&lt;i&gt;Posted{{if post_page.categories.size>0}} in {{for category in post_page.categories}}&lt;a href="{{site.base_url}}category/{{string_urlize category.name}}"&gt;{{string_escape_for_rssxml category.name}}&lt;/a&gt;{{if !for.last}}, {{end}}{{end}}{{end}}{{if post_page.games.size>0}} for {{for game in post_page.games}}&lt;a href="{{site.base_url}}game/{{string_urlize game.title}}"&gt;{{string_escape_for_rssxml game.title}}&lt;/a&gt;{{if !for.last}}, {{end}}{{end}}{{end}}{{if post_page.platforms.size>0}} on {{for platform in post_page.platforms}}&lt;a href="{{site.base_url}}platform/{{string_urlize platform.abbreviation}}"&gt;{{string_escape_for_rssxml platform.abbreviation}}&lt;/a&gt;{{if !for.last}}, {{end}}{{end}}{{end}}&lt;/i&gt;&lt;/p&gt;
-{{string_escape_for_rssxml post_page.rendered_content}}
-{{if post_page.ratings.size>0}}&lt;p&gt;&lt;i&gt;Rating: {{for rating in post_page.ratings}}&lt;a href="{{site.base_url}}rating/{{string_urlize rating.name}}"&gt;{{string_escape_for_rssxml rating.name}}&lt;/a&gt;{{if !for.last}}, {{end}}{{end}}&lt;/i&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;i&gt;Posted{{if post_page.categories.size>0}} in {{for category in post_page.categories}}&lt;a href="{{site.base_url}}category/{{string_urlize category.name}}"&gt;{{string_escape_for_rssxml category.name}}&lt;/a&gt;{{if !for.last}}, {{end}}{{end}}{{end}}{{if post_page.games.size>0}} for {{for game in post_page.games}}&lt;a href="{{site.base_url}}game/{{string_urlize game.title}}"&gt;{{string_escape_for_rssxml game.title}}&lt;/a&gt;{{if !for.last}}, {{end}}{{end}}{{end}}{{if post_page.platforms.size>0}} on {{for platform in post_page.platforms}}&lt;a href="{{site.base_url}}platform/{{string_urlize platform.abbreviation}}"&gt;{{string_escape_for_rssxml platform.abbreviation}}&lt;/a&gt;{{if !for.last}}, {{end}}{{end}}{{end}}&lt;/i&gt;&lt;/p&gt;
+        {{string_escape_for_rssxml post_page.rendered_content}}
+{{~ if post_page.ratings.size>0 ~}}
+        &lt;p&gt;&lt;i&gt;Rating: {{for rating in post_page.ratings}}&lt;a href="{{site.base_url}}rating/{{string_urlize rating.name}}"&gt;{{string_escape_for_rssxml rating.name}}&lt;/a&gt;{{if !for.last}}, {{end}}{{end}}&lt;/i&gt;&lt;/p&gt;
 {{~ end ~}}
       </description>
     </item>
 {{~ end ~}}
-
   </channel>
 </rss>

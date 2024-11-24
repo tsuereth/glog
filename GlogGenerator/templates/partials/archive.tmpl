@@ -1,21 +1,21 @@
-<div itemscope itemtype="http://schema.org/Blog">{{if page.linked_posts.size>0}}
+<div itemscope itemtype="http://schema.org/Blog">
 {{~ for linked_post in page.linked_posts ~}}
 	<section class="archives">
 		<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 			<div class="meta">
 				<span class="date"><time datetime='{{datetime_just_date linked_post.date}}' data-updated="true" itemprop="datePublished">{{datetime_just_date linked_post.date}}</time></span>
-{{if linked_post.categories.size>0 ~}}
+{{~ if linked_post.categories.size>0 ~}}
 				<span class="categories">{{for category in linked_post.categories}}<a href="{{site.base_url}}category/{{string_urlize category}}">{{category}}</a>{{if !for.last}}, {{end}}{{end}}</span>
-{{end ~}}
-{{if linked_post.games.size>0 ~}}
+{{~ end ~}}
+{{~ if linked_post.games.size>0 ~}}
 				<span class="games">{{for game in linked_post.games}}<a href="{{site.base_url}}game/{{string_urlize game}}">{{game}}</a>{{if !for.last}}, {{end}}{{end}}</span>
-{{end ~}}
-{{if linked_post.platforms.size>0 ~}}
+{{~ end ~}}
+{{~ if linked_post.platforms.size>0 ~}}
 				<span class="platforms">{{for platform in linked_post.platforms}}<a href="{{site.base_url}}platform/{{string_urlize platform}}">{{platform}}</a>{{if !for.last}}, {{end}}{{end}}</span>
-{{end ~}}
+{{~ end ~}}
 			</div>
 			<h1 class="title" itemprop="name"><a href="{{site.base_url}}{{linked_post.permalink_relative}}">{{linked_post.title}}</a></h1>
 		</article>
 	</section>
-{{end}}{{end}}
+{{~ end ~}}
 </div>

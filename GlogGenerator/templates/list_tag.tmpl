@@ -2,7 +2,9 @@
 <body>
 	<div class="container">
 		<div class="left-col">
-			<header id="header" class="inner">{{include "partials/header" -}}</header>
+			<header id="header" class="inner">
+				{{include "partials/header" ~}}
+			</header>
 		</div>
 		<div class="mid-col">
 			<div class="mid-col-container">
@@ -13,7 +15,9 @@
 					{{include "partials/archive" ~}}
 				</div>
 			</div>
-			<footer id="footer" class="inner">{{include "partials/footer" -}}</footer>
+			<footer id="footer" class="inner">
+				{{include "partials/footer" ~}}
+			</footer>
 		</div>
 	</div>
 </body>

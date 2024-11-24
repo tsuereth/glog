@@ -4,15 +4,12 @@
 {{~ end ~}}
 {{~ if $.post.categories.size>0 ~}}
 	<span class="categories">{{for category in $.post.categories}}<a href="{{site.base_url}}category/{{string_urlize category.name}}">{{category.name}}</a>{{if !for.last}}, {{end}}{{end}}</span>
-
 {{~ end ~}}
 {{~ if $.post.games.size>0 ~}}
 	<span class="games">{{for game in $.post.games}}<a href="{{site.base_url}}game/{{string_urlize game.title}}">{{game.title}}</a>{{if !for.last}}, {{end}}{{end}}</span>
-
 {{~ end ~}}
 {{~ if $.post.platforms.size>0 ~}}
 	<span class="platforms">{{for platform in $.post.platforms}}<a href="{{site.base_url}}platform/{{string_urlize platform.abbreviation}}">{{platform.abbreviation}}</a>{{if !for.last}}, {{end}}{{end}}</span>
-
 {{~ end ~}}
 </div>
 <h1 class="title" itemprop="name"><a href="{{$.post.permalink}}" itemprop="url">{{$.post.title}}</a></h1>
@@ -20,7 +17,6 @@
 	{{$.post.rendered_content}}
 {{~ if $.post.ratings.size>0 ~}}
 	<div class="rating">Rating: {{for rating in $.post.ratings}}<a href="{{site.base_url}}rating/{{string_urlize rating.name}}">{{rating.name}}</a>{{if !for.last}}, {{end}}{{end}}</div>
-
 {{~ end ~}}
 </div>
 <script type="text/javascript">
