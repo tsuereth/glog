@@ -21,6 +21,7 @@ namespace GlogGenerator
     {
         public enum NonBuildVerbs
         {
+            AddGames,
             Help,
             New,
             Undraft,
@@ -146,7 +147,7 @@ namespace GlogGenerator
                 LoadSiteData(logger, builder);
             }
 
-            if (updateIgdbCache)
+            if (updateIgdbCache || activeVerb.Equals(NonBuildVerbs.AddGames))
             {
                 if (string.IsNullOrEmpty(igdbClientId))
                 {
@@ -197,6 +198,10 @@ namespace GlogGenerator
 
             switch (activeVerb)
             {
+                case NonBuildVerbs.AddGames:
+                    // The --add-igdb-game-ids values have already been added, there's nothing to do here.
+                    break;
+
                 case NonBuildVerbs.Help:
                     options.WriteOptionDescriptions(Console.Out);
                     break;
