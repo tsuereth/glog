@@ -51,6 +51,13 @@ namespace GlogGenerator.RenderState
 
         public string RenderTemplateName { get; set; } = string.Empty;
 
+        // FIXME: compartmentalize type-specific properties? (things related to Games, or Platforms, etc)
+        public List<string> ParentGames { get; set; } = new List<string>();
+
+        public List<string> OtherReleases { get; set; } = new List<string>();
+
+        public List<string> ChildGames { get; set; } = new List<string>();
+
         public List<string> Tags { get; set; } = new List<string>();
 
         public List<string> RelatedGames { get; set; } = new List<string>();
@@ -230,6 +237,9 @@ namespace GlogGenerator.RenderState
             page.PageType = "games";
 
             page.IgdbUrl = gameData.IgdbUrl;
+            page.ParentGames = gameData.ParentGames.OrderBy(s => s).ToList();
+            page.OtherReleases = gameData.OtherReleases.OrderBy(s => s).ToList();
+            page.ChildGames = gameData.ChildGames.OrderBy(s => s).ToList();
             page.Tags = gameData.Tags.ToList();
             page.RelatedGames = gameData.RelatedGames.OrderBy(s => s).ToList();
 

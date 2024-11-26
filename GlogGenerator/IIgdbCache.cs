@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using GlogGenerator.IgdbApi;
 
@@ -40,7 +41,13 @@ namespace GlogGenerator
 
         public List<IgdbEntity> GetAllGameMetadata();
 
-        public List<int> GetBundledGameIds(int bundleGameId);
+        public IEnumerable<int> GetParentGameIds(int gameId);
+
+        public IEnumerable<int> GetOtherReleaseGameIds(int gameId);
+
+        public IEnumerable<int> GetChildGameIds(int gameId);
+
+        public IEnumerable<int> GetRelatedGameIds(int gameId);
 
         public void SetAdditionalGames(List<IgdbGame> additionalGames);
 

@@ -176,5 +176,47 @@ namespace GlogGenerator.IgdbApi
 
             return nameBuilder.ToString();
         }
+
+        public IEnumerable<int> GetParentGameIds()
+        {
+            var parentGameIds = new List<int>()
+            {
+                this.ParentGameId,
+            };
+
+            return parentGameIds
+                .Union(this.BundleGameIds)
+                .Where(i => i != IgdbEntity.IdNotFound);
+        }
+
+        public IEnumerable<int> GetOtherReleaseGameIds()
+        {
+            var otherReleaseGameIds = new List<int>()
+            {
+                this.VersionParentGameId,
+            };
+
+            return otherReleaseGameIds
+                .Union(this.ExpandedGameIds)
+                .Union(this.PortGameIds)
+                .Union(this.RemakeGameIds)
+                .Union(this.RemasterGameIds)
+                .Where(i => i != IgdbEntity.IdNotFound);
+        }
+
+        public IEnumerable<int> GetChildGameIds()
+        {
+            return this.DlcGameIds
+                .Union(this.ExpansionGameIds)
+                .Union(this.StandaloneExpansionGameIds)
+                .Where(i => i != IgdbEntity.IdNotFound);
+        }
+
+        public IEnumerable<int> GetRelatedGameIds()
+        {
+            // Forks don't seem to be(?) "other releases" of this game, but totally different, spun-off games.
+            return this.ForkGameIds
+                .Where(i => i != IgdbEntity.IdNotFound);
+        }
     }
 }
