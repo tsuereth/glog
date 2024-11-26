@@ -2,7 +2,7 @@
 date = "2021-05-29T13:35:18-07:00"
 title = "Jane Shepard Rides Again"
 category = [ "Playing A Game" ]
-game = [ "Mass Effect" ]
+game = [ "Mass Effect (2021)" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 +++

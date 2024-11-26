@@ -2,7 +2,7 @@
 date = "2019-05-27T09:16:08-07:00"
 title = "Holding it..."
 category = [ "Playing A Game" ]
-game = [ "Phoenix Wright: Ace Attorney Trilogy" ]
+game = [ "Phoenix Wright: Ace Attorney - Justice For All (2013)", "Phoenix Wright: Ace Attorney - Trials and Tribulations (2013)" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 +++
