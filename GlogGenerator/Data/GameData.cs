@@ -212,7 +212,9 @@ namespace GlogGenerator.Data
             if (parentGameId != IgdbEntity.IdNotFound)
             {
                 var parentGame = igdbCache.GetGame(parentGameId);
-                if (parentGame != null && !this.ParentGames.Contains(parentGame.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
+                if (parentGame != null &&
+                    !parentGame.GetUniqueIdString(igdbCache).Equals(this.dataId, StringComparison.Ordinal) &&
+                    !this.ParentGames.Contains(parentGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
                 {
                     this.ParentGames.Add(parentGame.GetReferenceString(igdbCache));
 
@@ -222,7 +224,13 @@ namespace GlogGenerator.Data
                     // Register a data reference to the parent, so the data index knows it is in-use (and won't delete it).
                     siteDataIndex.CreateReference<GameData>(parentGame.GetReferenceString(igdbCache), false);
 
-                    // Recursively add the parent's parents, too.
+                    // Add the parent's other releases, too.
+                    foreach (var parentOtherReleaseGameId in igdbCache.GetOtherReleaseGameIds(parentGameId))
+                    {
+                        this.TryAddOtherRelease(igdbCache, parentOtherReleaseGameId, siteDataIndex);
+                    }
+
+                    // AND, recursively add the parent's parents.
                     foreach (var grandparentGameId in igdbCache.GetParentGameIds(parentGameId))
                     {
                         this.TryAddParentGame(igdbCache, grandparentGameId, siteDataIndex);
@@ -236,8 +244,11 @@ namespace GlogGenerator.Data
             if (otherReleaseGameId != IgdbEntity.IdNotFound)
             {
                 var otherReleaseGame = igdbCache.GetGame(otherReleaseGameId);
-                if (otherReleaseGame != null && !this.OtherReleases.Contains(otherReleaseGame.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
+                if (otherReleaseGame != null &&
+                    !otherReleaseGame.GetUniqueIdString(igdbCache).Equals(this.dataId, StringComparison.Ordinal) &&
+                    !this.OtherReleases.Contains(otherReleaseGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
                 {
+                    //game.dataId = igdbGame.GetUniqueIdString(igdbCache);
                     this.OtherReleases.Add(otherReleaseGame.GetReferenceString(igdbCache));
 
                     // Include this game's posts in the other release's list of posts.
@@ -260,7 +271,9 @@ namespace GlogGenerator.Data
             if (childGameId != IgdbEntity.IdNotFound)
             {
                 var childGame = igdbCache.GetGame(childGameId);
-                if (childGame != null && !this.ChildGames.Contains(childGame.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
+                if (childGame != null &&
+                    !childGame.GetUniqueIdString(igdbCache).Equals(this.dataId, StringComparison.Ordinal) &&
+                    !this.ChildGames.Contains(childGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
                 {
                     this.ChildGames.Add(childGame.GetReferenceString(igdbCache));
 
@@ -275,7 +288,9 @@ namespace GlogGenerator.Data
             if (relatedGameId != IgdbEntity.IdNotFound)
             {
                 var relatedGame = igdbCache.GetGame(relatedGameId);
-                if (relatedGame != null && !this.RelatedGames.Contains(relatedGame.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
+                if (relatedGame != null &&
+                    !relatedGame.GetUniqueIdString(igdbCache).Equals(this.dataId, StringComparison.Ordinal) &&
+                    !this.RelatedGames.Contains(relatedGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
                 {
                     this.RelatedGames.Add(relatedGame.GetReferenceString(igdbCache));
 
