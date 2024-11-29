@@ -12,25 +12,25 @@ namespace GlogGenerator.Data
         {
             get
             {
-                var nameVariations = this.GetAllReferenceableKeys();
-                nameVariations.Sort(StringComparer.Ordinal);
-                return nameVariations.FirstOrDefault();
+                return this.referenceableTypedKeyStringsCache.OrderBy(s => s, StringComparer.Ordinal).FirstOrDefault();
             }
         }
 
         public HashSet<string> LinkedPostIds { get; set; } = new HashSet<string>();
 
         private List<Tuple<Type, string>> referenceableTypedKeys = new List<Tuple<Type, string>>();
+        private HashSet<string> referenceableTypedKeyStringsCache = new HashSet<string>();
 
         public TagData(Type gameMetadataType, string gameMetadataName) : base(gameMetadataType, gameMetadataName)
         {
             var typedKey = new Tuple<Type, string>(gameMetadataType, gameMetadataName);
             this.referenceableTypedKeys.Add(typedKey);
+            this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
         }
 
         public bool MatchesReferenceableKey(string matchKey)
         {
-            return this.GetAllReferenceableKeys().Contains(matchKey);
+            return this.referenceableTypedKeyStringsCache.Contains(matchKey);
         }
 
         public bool ShouldMergeWithReferenceableKey(string checkKey)
@@ -45,6 +45,7 @@ namespace GlogGenerator.Data
         {
             var typedKey = new Tuple<Type, string>(mergeKeyType, mergeKey);
             this.referenceableTypedKeys.Add(typedKey);
+            this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
         }
 
         public string GetDataId()
@@ -72,11 +73,6 @@ namespace GlogGenerator.Data
         {
             var urlized = UrlizedString.Urlize(this.GetReferenceableKey());
             return $"tag/{urlized}/";
-        }
-
-        private List<string> GetAllReferenceableKeys()
-        {
-            return this.referenceableTypedKeys.Select(t => t.Item2).Distinct().ToList();
         }
 
         public List<Tuple<Type, string>> GetReferenceableTypedKeys()

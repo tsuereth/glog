@@ -31,6 +31,8 @@ namespace GlogGenerator.Data
         private List<StaticFileData> staticFiles = new List<StaticFileData>();
         private Dictionary<string, TagData> tags = new Dictionary<string, TagData>();
 
+        private Dictionary<string, string> tagDataIdsByNameUrlized = new Dictionary<string, string>();
+
         public SiteDataIndex(
             ILogger logger,
             string inputFilesBasePath)
@@ -240,33 +242,18 @@ namespace GlogGenerator.Data
 
         public TagData GetTag(string tagName)
         {
-            var tag = this.tags.Values.Where(d => d.MatchesReferenceableKey(tagName)).FirstOrDefault();
-            if (tag == null)
+            var tagNameUrlized = UrlizedString.Urlize(tagName);
+            if (!this.tagDataIdsByNameUrlized.TryGetValue(tagNameUrlized, out var tagDataId))
             {
                 throw new ArgumentException($"No tag found for name {tagName}");
             }
 
-            return tag;
+            return this.tags[tagDataId];
         }
 
         public List<TagData> GetTags()
         {
             return this.tags.Values.ToList();
-        }
-
-        private static void CreateOrMergeMultiKeyReferenceableData<T>(Dictionary<string, T> index, Type dataType, string dataKey)
-            where T : GlogDataFromIgdbGameMetadata, IGlogMultiKeyReferenceable
-        {
-            var dataMatchingKey = index.Values.Where(v => v.ShouldMergeWithReferenceableKey(dataKey)).FirstOrDefault();
-            if (dataMatchingKey != null)
-            {
-                dataMatchingKey.MergeReferenceableKey(dataType, dataKey);
-            }
-            else
-            {
-                var createdData = Activator.CreateInstance(typeof(T), new object[] { dataType, dataKey } ) as T;
-                index.Add(createdData.GetDataId(), createdData);
-            }
         }
 
         public void SetNonContentGameNames(List<string> gameNames)
@@ -312,6 +299,7 @@ namespace GlogGenerator.Data
             var oldTags = this.tags.Where(kv => updateTagReferenceIds.Contains(kv.Key)).ToDictionary(kv => kv.Key, kv => kv.Value);
             this.tagReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
             this.tags = new Dictionary<string, TagData>();
+            this.tagDataIdsByNameUrlized.Clear();
 
             // Load game data from the IGDB cache.
             foreach (var igdbGame in igdbCache.GetAllGames())
@@ -340,6 +328,9 @@ namespace GlogGenerator.Data
                 var tagData = new TagData(typeof(IgdbGameCategory), igdbGameCategory.Description());
 
                 this.tags.Add(tagData.GetDataId(), tagData);
+
+                var tagNameUrlized = UrlizedString.Urlize(tagData.Name);
+                this.tagDataIdsByNameUrlized[tagNameUrlized] = tagData.GetDataId();
             }
 
             foreach (var igdbGameMetadata in igdbCache.GetAllGameMetadata())
@@ -347,7 +338,18 @@ namespace GlogGenerator.Data
                 var tagType = igdbGameMetadata.GetType();
                 var tagName = igdbGameMetadata.GetReferenceString(igdbCache);
 
-                CreateOrMergeMultiKeyReferenceableData(this.tags, tagType, tagName);
+                var tagNameUrlized = UrlizedString.Urlize(tagName);
+                if (this.tagDataIdsByNameUrlized.TryGetValue(tagNameUrlized, out var tagDataId))
+                {
+                    var tagDataMatchingKey = this.tags[tagDataId];
+                    tagDataMatchingKey.MergeReferenceableKey(tagType, tagName);
+                }
+                else
+                {
+                    var createdData = Activator.CreateInstance(typeof(TagData), new object[] { tagType, tagName }) as TagData;
+                    this.tags.Add(createdData.GetDataId(), createdData);
+                    this.tagDataIdsByNameUrlized[tagNameUrlized] = createdData.GetDataId();
+                }
             }
 
             if (!string.IsNullOrEmpty(this.inputFilesBasePath))
@@ -620,6 +622,9 @@ namespace GlogGenerator.Data
             foreach (var unreferencedTagKeypair in unreferencedTagKeypairs)
             {
                 this.tags.Remove(unreferencedTagKeypair.Key);
+
+                var tagNameUrlized = UrlizedString.Urlize(unreferencedTagKeypair.Value.Name);
+                this.tagDataIdsByNameUrlized.Remove(tagNameUrlized);
 
                 if (igdbCache != null)
                 {
