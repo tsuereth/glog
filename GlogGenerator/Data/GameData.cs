@@ -16,14 +16,16 @@ namespace GlogGenerator.Data
 
         public HashSet<string> Tags { get; set; } = new HashSet<string>();
 
-        public HashSet<string> RelatedGames { get; set; } = new HashSet<string>();
-
         public HashSet<string> LinkedPostIds { get; set; } = new HashSet<string>();
 
         public HashSet<string> LinkPostsToOtherGames { get; set; } = new HashSet<string>();
 
         private string dataId;
         private string referenceableKey;
+        private HashSet<string> parentGames { get; set; } = new HashSet<string>();
+        private HashSet<string> otherReleases { get; set; } = new HashSet<string>();
+        private HashSet<string> childGames { get; set; } = new HashSet<string>();
+        private HashSet<string> relatedGames { get; set; } = new HashSet<string>();
 
         public string GetDataId()
         {
@@ -50,6 +52,26 @@ namespace GlogGenerator.Data
         {
             var urlized = UrlizedString.Urlize(this.GetReferenceableKey());
             return $"game/{urlized}/";
+        }
+
+        public IEnumerable<string> GetParentGames(ISiteDataIndex siteDataIndex)
+        {
+            return this.parentGames.Where(s => siteDataIndex.HasGame(s));
+        }
+
+        public IEnumerable<string> GetOtherReleases(ISiteDataIndex siteDataIndex)
+        {
+            return this.otherReleases.Where(s => siteDataIndex.HasGame(s));
+        }
+
+        public IEnumerable<string> GetChildGames(ISiteDataIndex siteDataIndex)
+        {
+            return this.childGames.Where(s => siteDataIndex.HasGame(s));
+        }
+
+        public IEnumerable<string> GetRelatedGames(ISiteDataIndex siteDataIndex)
+        {
+            return this.relatedGames.Where(s => siteDataIndex.HasGame(s));
         }
 
         public static GameData FromIgdbGame(IIgdbCache igdbCache, IgdbGame igdbGame, ISiteDataIndex siteDataIndex)
@@ -133,80 +155,22 @@ namespace GlogGenerator.Data
                 game.TryAddTag<IgdbTheme>(igdbCache, themeId, siteDataIndex);
             }
 
-            game.TryAddRelatedGame(igdbCache, igdbGame.ParentGameId, siteDataIndex);
-            game.TryAddRelatedGame(igdbCache, igdbGame.VersionParentGameId, siteDataIndex);
-
-            // If this game is a "bundle," then add its bundled games as related.
-            if (igdbGame.Category == IgdbGameCategory.bundle)
+            foreach (var parentGameId in igdbCache.GetParentGameIds(igdbGame.Id))
             {
-                var bundledGameIds = igdbCache.GetBundledGameIds(igdbGame.Id);
-                foreach (var bundledGameId in bundledGameIds)
-                {
-                    game.TryAddRelatedGame(igdbCache, bundledGameId, siteDataIndex);
-                }
+                game.TryAddParentGame(igdbCache, parentGameId, siteDataIndex);
             }
 
-            foreach (var relatedGameId in igdbGame.BundleGameIds)
+            foreach (var otherReleaseGameId in igdbCache.GetOtherReleaseGameIds(igdbGame.Id))
             {
-                game.TryAddRelatedGame(igdbCache, relatedGameId, siteDataIndex);
-
-                // Add other games from the same bundle, too.
-                var bundledGameIds = igdbCache.GetBundledGameIds(relatedGameId);
-                foreach (var bundledGameId in bundledGameIds)
-                {
-                    // (But not the current game, as "related" to itself, that'd be silly!)
-                    if (bundledGameId == igdbGame.Id)
-                    {
-                        continue;
-                    }
-
-                    game.TryAddRelatedGame(igdbCache, bundledGameId, siteDataIndex);
-                }
-
-                // The bundle should link to posts for this game.
-                var bundleGame = igdbCache.GetGame(relatedGameId);
-                if (bundleGame != null)
-                {
-                    game.LinkPostsToOtherGames.Add(bundleGame.GetReferenceString(igdbCache));
-                }
+                game.TryAddOtherRelease(igdbCache, otherReleaseGameId, siteDataIndex);
             }
 
-            foreach (var relatedGameId in igdbGame.DlcGameIds)
+            foreach (var childGameId in igdbCache.GetChildGameIds(igdbGame.Id))
             {
-                game.TryAddRelatedGame(igdbCache, relatedGameId, siteDataIndex);
+                game.TryAddChildGame(igdbCache, childGameId, siteDataIndex);
             }
 
-            foreach (var relatedGameId in igdbGame.ExpandedGameIds)
-            {
-                game.TryAddRelatedGame(igdbCache, relatedGameId, siteDataIndex);
-            }
-
-            foreach (var relatedGameId in igdbGame.ExpansionGameIds)
-            {
-                game.TryAddRelatedGame(igdbCache, relatedGameId, siteDataIndex);
-            }
-
-            foreach (var relatedGameId in igdbGame.ForkGameIds)
-            {
-                game.TryAddRelatedGame(igdbCache, relatedGameId, siteDataIndex);
-            }
-
-            foreach (var relatedGameId in igdbGame.PortGameIds)
-            {
-                game.TryAddRelatedGame(igdbCache, relatedGameId, siteDataIndex);
-            }
-
-            foreach (var relatedGameId in igdbGame.RemakeGameIds)
-            {
-                game.TryAddRelatedGame(igdbCache, relatedGameId, siteDataIndex);
-            }
-
-            foreach (var relatedGameId in igdbGame.RemasterGameIds)
-            {
-                game.TryAddRelatedGame(igdbCache, relatedGameId, siteDataIndex);
-            }
-
-            foreach (var relatedGameId in igdbGame.StandaloneExpansionGameIds)
+            foreach (var relatedGameId in igdbCache.GetRelatedGameIds(igdbGame.Id))
             {
                 game.TryAddRelatedGame(igdbCache, relatedGameId, siteDataIndex);
             }
@@ -259,17 +223,89 @@ namespace GlogGenerator.Data
             }
         }
 
-        private void TryAddRelatedGame(IIgdbCache igdbCache, int gameId, ISiteDataIndex siteDataIndex)
+        private void TryAddParentGame(IIgdbCache igdbCache, int parentGameId, ISiteDataIndex siteDataIndex)
         {
-            if (gameId != IgdbEntity.IdNotFound)
+            if (parentGameId != IgdbEntity.IdNotFound)
             {
-                var relatedGame = igdbCache.GetGame(gameId);
-                if (relatedGame != null && !this.RelatedGames.Contains(relatedGame.GetReferenceString(igdbCache), StringComparer.OrdinalIgnoreCase))
+                var parentGame = igdbCache.GetGame(parentGameId);
+                if (parentGame != null &&
+                    !parentGame.GetUniqueIdString(igdbCache).Equals(this.dataId, StringComparison.Ordinal) &&
+                    !this.parentGames.Contains(parentGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
                 {
-                    this.RelatedGames.Add(relatedGame.GetReferenceString(igdbCache));
+                    var parentGameReferenceString = parentGame.GetReferenceString(igdbCache);
+                    this.parentGames.Add(parentGameReferenceString);
 
-                    // Register a data reference to the related game, so the data index knows it is in-use (and won't delete it).
-                    siteDataIndex.CreateReference<GameData>(relatedGame.GetReferenceString(igdbCache), false);
+                    // Include this game's posts in the parent's list of posts.
+                    this.LinkPostsToOtherGames.Add(parentGame.GetReferenceString(igdbCache));
+
+                    // Add the parent's other releases, too.
+                    foreach (var parentOtherReleaseGameId in igdbCache.GetOtherReleaseGameIds(parentGameId))
+                    {
+                        this.TryAddParentGame(igdbCache, parentOtherReleaseGameId, siteDataIndex);
+                    }
+
+                    // AND, recursively add the parent's parents.
+                    foreach (var grandparentGameId in igdbCache.GetParentGameIds(parentGameId))
+                    {
+                        this.TryAddParentGame(igdbCache, grandparentGameId, siteDataIndex);
+                    }
+                }
+            }
+        }
+
+        private void TryAddOtherRelease(IIgdbCache igdbCache, int otherReleaseGameId, ISiteDataIndex siteDataIndex)
+        {
+            if (otherReleaseGameId != IgdbEntity.IdNotFound)
+            {
+                var otherReleaseGame = igdbCache.GetGame(otherReleaseGameId);
+                if (otherReleaseGame != null &&
+                    !otherReleaseGame.GetUniqueIdString(igdbCache).Equals(this.dataId, StringComparison.Ordinal) &&
+                    !this.otherReleases.Contains(otherReleaseGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
+                {
+                    var otherReleaseReferenceString = otherReleaseGame.GetReferenceString(igdbCache);
+                    this.otherReleases.Add(otherReleaseReferenceString);
+
+                    // Include this game's posts in the other release's list of posts.
+                    this.LinkPostsToOtherGames.Add(otherReleaseGame.GetReferenceString(igdbCache));
+
+                    // Register a data reference to the other release, so the data index knows it is in-use (and won't delete it).
+                    siteDataIndex.CreateReference<GameData>(otherReleaseReferenceString, true);
+
+                    // Add the other release's parents, too.
+                    foreach (var parentGameId in igdbCache.GetParentGameIds(otherReleaseGameId))
+                    {
+                        this.TryAddParentGame(igdbCache, parentGameId, siteDataIndex);
+                    }
+                }
+            }
+        }
+
+        private void TryAddChildGame(IIgdbCache igdbCache, int childGameId, ISiteDataIndex siteDataIndex)
+        {
+            if (childGameId != IgdbEntity.IdNotFound)
+            {
+                var childGame = igdbCache.GetGame(childGameId);
+                if (childGame != null &&
+                    !childGame.GetUniqueIdString(igdbCache).Equals(this.dataId, StringComparison.Ordinal) &&
+                    !this.childGames.Contains(childGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
+                {
+                    var childGameReferenceString = childGame.GetReferenceString(igdbCache);
+                    this.childGames.Add(childGameReferenceString);
+                }
+            }
+        }
+
+        private void TryAddRelatedGame(IIgdbCache igdbCache, int relatedGameId, ISiteDataIndex siteDataIndex)
+        {
+            if (relatedGameId != IgdbEntity.IdNotFound)
+            {
+                var relatedGame = igdbCache.GetGame(relatedGameId);
+                if (relatedGame != null &&
+                    !relatedGame.GetUniqueIdString(igdbCache).Equals(this.dataId, StringComparison.Ordinal) &&
+                    !this.relatedGames.Contains(relatedGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
+                {
+                    var relatedGameReferenceString = relatedGame.GetReferenceString(igdbCache);
+                    this.relatedGames.Add(relatedGameReferenceString);
                 }
             }
         }

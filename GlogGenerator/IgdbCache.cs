@@ -45,6 +45,14 @@ namespace GlogGenerator
 
         private Dictionary<int, IgdbTheme> themesById = new Dictionary<int, IgdbTheme>();
 
+        private Dictionary<int, HashSet<int>> gamesParentGameIds = new Dictionary<int, HashSet<int>>();
+
+        private Dictionary<int, HashSet<int>> gamesOtherReleaseGameIds = new Dictionary<int, HashSet<int>>();
+
+        private Dictionary<int, HashSet<int>> gamesChildGameIds = new Dictionary<int, HashSet<int>>();
+
+        private Dictionary<int, HashSet<int>> gamesRelatedGameIds = new Dictionary<int, HashSet<int>>();
+
         private List<IgdbGame> additionalGames = new List<IgdbGame>();
 
         public T GetEntity<T>(int id)
@@ -267,14 +275,113 @@ namespace GlogGenerator
             return allMetadata;
         }
 
-        public List<int> GetBundledGameIds(int bundleGameId)
+        public IEnumerable<int> GetParentGameIds(int gameId)
         {
-            return this.GetAllGames().Where(g => g.BundleGameIds.Contains(bundleGameId) && g.Id != IgdbEntity.IdNotFound).Select(g => g.Id).ToList();
+            if (this.gamesParentGameIds.TryGetValue(gameId, out var parentGameIds))
+            {
+                return parentGameIds;
+            }
+
+            return Enumerable.Empty<int>();
+        }
+
+        public IEnumerable<int> GetOtherReleaseGameIds(int gameId)
+        {
+            if (this.gamesOtherReleaseGameIds.TryGetValue(gameId, out var otherReleaseGameIds))
+            {
+                return otherReleaseGameIds;
+            }
+
+            return Enumerable.Empty<int>();
+        }
+
+        public IEnumerable<int> GetChildGameIds(int gameId)
+        {
+            if (this.gamesChildGameIds.TryGetValue(gameId, out var childGameIds))
+            {
+                return childGameIds;
+            }
+
+            return Enumerable.Empty<int>();
+        }
+
+        public IEnumerable<int> GetRelatedGameIds(int gameId)
+        {
+            if (this.gamesRelatedGameIds.TryGetValue(gameId, out var relatedGameIds))
+            {
+                return relatedGameIds;
+            }
+
+            return Enumerable.Empty<int>();
         }
 
         public void SetAdditionalGames(List<IgdbGame> additionalGames)
         {
             this.additionalGames = additionalGames;
+        }
+
+        private static IEnumerable<int> IgdbGameAllAssociatedGameIds(IgdbGame game)
+        {
+            return game.GetParentGameIds()
+                .Union(game.GetOtherReleaseGameIds())
+                .Union(game.GetChildGameIds())
+                .Union(game.GetRelatedGameIds());
+        }
+
+        private static void AppendIdToDictionarySet(Dictionary<int, HashSet<int>> dictionary, int key, int appendId)
+        {
+            AppendIdsToDictionarySet(dictionary, key, new[] { appendId });
+        }
+
+        private static void AppendIdsToDictionarySet(Dictionary<int, HashSet<int>> dictionary, int key, IEnumerable<int> appendIds)
+        {
+            if (!dictionary.ContainsKey(key))
+            {
+                dictionary.Add(key, new HashSet<int>(appendIds));
+            }
+            else
+            {
+                dictionary[key].UnionWith(appendIds);
+            }
+        }
+
+        private void RebuildAssociatedGamesIndexes()
+        {
+            this.gamesParentGameIds.Clear();
+            this.gamesOtherReleaseGameIds.Clear();
+            this.gamesChildGameIds.Clear();
+            this.gamesRelatedGameIds.Clear();
+
+            foreach (var game in this.gamesById.Values)
+            {
+                var parentGameIds = game.GetParentGameIds();
+                AppendIdsToDictionarySet(this.gamesParentGameIds, game.Id, parentGameIds);
+                foreach (var parentGameId in parentGameIds)
+                {
+                    AppendIdToDictionarySet(this.gamesChildGameIds, parentGameId, game.Id);
+                }
+
+                var otherReleaseGameIds = game.GetOtherReleaseGameIds();
+                AppendIdsToDictionarySet(this.gamesOtherReleaseGameIds, game.Id, otherReleaseGameIds);
+                foreach (var otherReleaseGameId in otherReleaseGameIds)
+                {
+                    AppendIdToDictionarySet(this.gamesOtherReleaseGameIds, otherReleaseGameId, game.Id);
+                }
+
+                var childGameIds = game.GetChildGameIds();
+                AppendIdsToDictionarySet(this.gamesChildGameIds, game.Id, childGameIds);
+                foreach (var childGameId in childGameIds)
+                {
+                    AppendIdToDictionarySet(this.gamesParentGameIds, childGameId, game.Id);
+                }
+
+                var relatedGameIds = game.GetRelatedGameIds();
+                AppendIdsToDictionarySet(this.gamesRelatedGameIds, game.Id, relatedGameIds);
+                foreach (var relatedGameId in relatedGameIds)
+                {
+                    AppendIdToDictionarySet(this.gamesRelatedGameIds, relatedGameId, game.Id);
+                }
+            }
         }
 
         private void SetEntitiesForcePersistInCache()
@@ -296,6 +403,15 @@ namespace GlogGenerator
             var gameIds = this.gamesById.Keys.ToList();
             gameIds = gameIds.Union(this.additionalGames.Select(g => g.Id)).ToList();
             var gamesCurrent = await client.GetGamesAsync(gameIds);
+
+            // Extract associated game IDs (remasters, expansions, etc) and do one more update.
+            var associatedGameIds = gamesCurrent.SelectMany(g => IgdbGameAllAssociatedGameIds(g)).Distinct();
+            var newAssociatedGameIds = associatedGameIds.Except(gameIds).ToList();
+            var associatedGames = await client.GetGamesAsync(newAssociatedGameIds);
+
+            // To avoid problems integrating this update, DON'T use games which are missing important metadata.
+            associatedGames = associatedGames.Where(g => g.GetFirstReleaseDate(this) != null).ToList();
+            gamesCurrent.AddRange(associatedGames);
 
             var gamesCurrentById = gamesCurrent.ToDictionary(o => o.Id, o => o);
 
@@ -455,6 +571,8 @@ namespace GlogGenerator
             }
 
             this.gamesById = gamesCurrentById;
+
+            this.RebuildAssociatedGamesIndexes();
 
             this.SetEntitiesForcePersistInCache();
         }
@@ -658,6 +776,8 @@ namespace GlogGenerator
             cache.playerPerspectivesById = ReadEntityTypeFromJsonFile<IgdbPlayerPerspective>(directoryPath, "playerPerspectives").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbPlayerPerspective>();
             cache.releaseDatesById = ReadEntityTypeFromJsonFile<IgdbReleaseDate>(directoryPath, "releaseDates").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbReleaseDate>();
             cache.themesById = ReadEntityTypeFromJsonFile<IgdbTheme>(directoryPath, "themes").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbTheme>();
+
+            cache.RebuildAssociatedGamesIndexes();
 
             cache.SetEntitiesForcePersistInCache();
 

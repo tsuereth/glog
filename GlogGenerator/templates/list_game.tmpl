@@ -13,6 +13,15 @@
 {{~ if page.igdb_url ~}}
 					<p class="link">Metadata from <a href="{{page.igdb_url}}">IGDB</a></p>
 {{~ end ~}}
+{{~ if page.parent_games.size>0 ~}}
+					<div class="games">Included in: {{for game in page.parent_games}}<a href="{{site.base_url}}game/{{string_urlize game}}">{{game}}</a>{{if !for.last}}, {{end}}{{end}}</div>
+{{~ end ~}}
+{{~ if page.other_releases.size>0 ~}}
+					<div class="games">Other releases: {{for game in page.other_releases}}<a href="{{site.base_url}}game/{{string_urlize game}}">{{game}}</a>{{if !for.last}}, {{end}}{{end}}</div>
+{{~ end ~}}
+{{~ if page.child_games.size>0 ~}}
+					<div class="games">Includes games: {{for game in page.child_games}}<a href="{{site.base_url}}game/{{string_urlize game}}">{{game}}</a>{{if !for.last}}, {{end}}{{end}}</div>
+{{~ end ~}}
 {{~ if page.tags.size>0 ~}}
 					<div class="tags">{{for tag in page.tags}}<a href="{{site.base_url}}tag/{{string_urlize tag}}">{{tag}}</a>{{if !for.last}}, {{end}}{{end}}</div>
 {{~ end ~}}

@@ -2,7 +2,7 @@
 date = "2019-06-09T09:25:50-07:00"
 title = "Closed, pending new evidence."
 category = [ "Playing A Game" ]
-game = [ "Phoenix Wright: Ace Attorney Trilogy" ]
+game = [ "Phoenix Wright: Ace Attorney - Trials and Tribulations (2013)" ]
 platform = [ "PC" ]
 rating = [ "Awesome" ]
 +++

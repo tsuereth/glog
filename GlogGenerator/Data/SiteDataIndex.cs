@@ -166,6 +166,11 @@ namespace GlogGenerator.Data
             return this.categories.Values.ToList();
         }
 
+        public bool HasGame(string gameTitle)
+        {
+            return this.games.Values.Where(d => d.Title.Equals(gameTitle, StringComparison.Ordinal)).Any();
+        }
+
         public GameData GetGame(string gameTitle)
         {
             var game = this.games.Values.Where(d => d.Title.Equals(gameTitle, StringComparison.Ordinal)).FirstOrDefault();

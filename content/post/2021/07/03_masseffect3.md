@@ -2,7 +2,7 @@
 date = "2021-07-03T19:58:38-07:00"
 title = "The cycle continues"
 category = [ "Playing A Game" ]
-game = [ "Mass Effect 3" ]
+game = [ "Mass Effect 3 (2021)" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 +++

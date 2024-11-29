@@ -2,7 +2,7 @@
 date = "2021-06-27T20:37:11-07:00"
 title = "\"We're some kind of suicide squad.\""
 category = [ "Playing A Game" ]
-game = [ "Mass Effect 2" ]
+game = [ "Mass Effect 2 (2021)" ]
 platform = [ "PC" ]
 rating = [ "Awesome" ]
 +++

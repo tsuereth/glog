@@ -15,6 +15,8 @@ namespace GlogGenerator.Data
 
         public List<CategoryData> GetCategories();
 
+        public bool HasGame(string gameTitle);
+
         public GameData GetGame(string gameTitle);
 
         public List<GameData> GetGames();
