@@ -8,7 +8,7 @@ rating = [ "Good" ]
 +++
 ... like I [was just saying]($SiteBaseURL$2024/09/29/a-whip-blast-from-advances-past/), [Aria of Sorrow](game:Castlevania: Aria of Sorrow)'s introduction of collectible soul-powers, its variety of equippable weapons and fighting techniques, and its modern setting are all refreshing and exciting changes to the <tag:Castlevania> norm.
 
-Back when I [first played it]($SiteBaseURL$2006/05/29/castlevania-aria-of-sorrow-2/), I'd *already* finished [Dawn of Sorrow](game:Castlevania: Dawn of Sorrow), so Aria couldn't help but pale in comparison.  Now that I've blissfully forgotten the details of the sequel -- I can really appreciate how strong this game is on its own.
+Back when I [first played it]($SiteBaseURL$2006/05/29/castlevania-aria-of-sorrow-2/) in the [GBA Double Pack](game:Castlevania Double Pack), I'd *already* finished [Dawn of Sorrow](game:Castlevania: Dawn of Sorrow), so Aria couldn't help but pale in comparison.  Now that I've blissfully forgotten the details of the sequel -- I can really appreciate how strong this game is on its own.
 
 Even if some aspects of its storytelling and user interface feel a bit outdated, the foundations that would become "Igavania" - the same principles which eventually made <game:Bloodstained: Ritual of the Night> so compelling - are all accounted for, and already working well.
 
