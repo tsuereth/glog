@@ -1560,16 +1560,8 @@
     "name": "Sega Vintage Collection"
   },
   {
-    "id": 5200,
-    "name": "Super Mario Advance"
-  },
-  {
     "id": 5205,
     "name": "Game & Watch"
-  },
-  {
-    "id": 5249,
-    "name": "GoldenEye 007"
   },
   {
     "id": 5345,
@@ -1854,10 +1846,6 @@
   {
     "id": 7904,
     "name": "Arcade Nano"
-  },
-  {
-    "id": 7953,
-    "name": "Nintendo Mini Classics"
   },
   {
     "id": 7987,
