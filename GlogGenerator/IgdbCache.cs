@@ -345,6 +345,44 @@ namespace GlogGenerator
             }
         }
 
+        private void RebuildAssociatedGamesIndexes()
+        {
+            this.gamesParentGameIds.Clear();
+            this.gamesOtherReleaseGameIds.Clear();
+            this.gamesChildGameIds.Clear();
+            this.gamesRelatedGameIds.Clear();
+            foreach (var game in this.gamesById.Values)
+            {
+                var parentGameIds = game.GetParentGameIds();
+                AppendIdsToDictionarySet(this.gamesParentGameIds, game.Id, parentGameIds);
+                foreach (var parentGameId in parentGameIds)
+                {
+                    AppendIdToDictionarySet(this.gamesChildGameIds, parentGameId, game.Id);
+                }
+
+                var otherReleaseGameIds = game.GetOtherReleaseGameIds();
+                AppendIdsToDictionarySet(this.gamesOtherReleaseGameIds, game.Id, otherReleaseGameIds);
+                foreach (var otherReleaseGameId in otherReleaseGameIds)
+                {
+                    AppendIdToDictionarySet(this.gamesOtherReleaseGameIds, otherReleaseGameId, game.Id);
+                }
+
+                var childGameIds = game.GetChildGameIds();
+                AppendIdsToDictionarySet(this.gamesChildGameIds, game.Id, childGameIds);
+                foreach (var childGameId in childGameIds)
+                {
+                    AppendIdToDictionarySet(this.gamesParentGameIds, childGameId, game.Id);
+                }
+
+                var relatedGameIds = game.GetRelatedGameIds();
+                AppendIdsToDictionarySet(this.gamesRelatedGameIds, game.Id, relatedGameIds);
+                foreach (var relatedGameId in relatedGameIds)
+                {
+                    AppendIdToDictionarySet(this.gamesRelatedGameIds, relatedGameId, game.Id);
+                }
+            }
+        }
+
         private void SetEntitiesForcePersistInCache()
         {
             var gamesRequiringPlatformsToPersist = this.GetAllGames().Where(g => g.NameGlogAppendPlatforms == true);
@@ -533,41 +571,7 @@ namespace GlogGenerator
 
             this.gamesById = gamesCurrentById;
 
-            // Build the indexes of related game IDs (parent, child, other releases, etc).
-            this.gamesParentGameIds.Clear();
-            this.gamesOtherReleaseGameIds.Clear();
-            this.gamesChildGameIds.Clear();
-            this.gamesRelatedGameIds.Clear();
-            foreach (var game in this.gamesById.Values)
-            {
-                var parentGameIds = game.GetParentGameIds();
-                AppendIdsToDictionarySet(this.gamesParentGameIds, game.Id, parentGameIds);
-                foreach (var parentGameId in parentGameIds)
-                {
-                    AppendIdToDictionarySet(this.gamesChildGameIds, parentGameId, game.Id);
-                }
-
-                var otherReleaseGameIds = game.GetOtherReleaseGameIds();
-                AppendIdsToDictionarySet(this.gamesOtherReleaseGameIds, game.Id, otherReleaseGameIds);
-                foreach (var otherReleaseGameId in otherReleaseGameIds)
-                {
-                    AppendIdToDictionarySet(this.gamesOtherReleaseGameIds, otherReleaseGameId, game.Id);
-                }
-
-                var childGameIds = game.GetChildGameIds();
-                AppendIdsToDictionarySet(this.gamesChildGameIds, game.Id, childGameIds);
-                foreach (var childGameId in childGameIds)
-                {
-                    AppendIdToDictionarySet(this.gamesParentGameIds, childGameId, game.Id);
-                }
-
-                var relatedGameIds = game.GetRelatedGameIds();
-                AppendIdsToDictionarySet(this.gamesRelatedGameIds, game.Id, relatedGameIds);
-                foreach (var relatedGameId in relatedGameIds)
-                {
-                    AppendIdToDictionarySet(this.gamesRelatedGameIds, relatedGameId, game.Id);
-                }
-            }
+            this.RebuildAssociatedGamesIndexes();
 
             this.SetEntitiesForcePersistInCache();
         }
@@ -771,6 +775,8 @@ namespace GlogGenerator
             cache.playerPerspectivesById = ReadEntityTypeFromJsonFile<IgdbPlayerPerspective>(directoryPath, "playerPerspectives").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbPlayerPerspective>();
             cache.releaseDatesById = ReadEntityTypeFromJsonFile<IgdbReleaseDate>(directoryPath, "releaseDates").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbReleaseDate>();
             cache.themesById = ReadEntityTypeFromJsonFile<IgdbTheme>(directoryPath, "themes").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbTheme>();
+
+            cache.RebuildAssociatedGamesIndexes();
 
             cache.SetEntitiesForcePersistInCache();
 
