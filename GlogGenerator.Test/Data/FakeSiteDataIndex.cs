@@ -115,6 +115,11 @@ namespace GlogGenerator.Test
             return this.categories.ToList();
         }
 
+        public bool HasGame(string gameTitle)
+        {
+            return this.games.Where(d => d.Title.Equals(gameTitle, StringComparison.Ordinal)).Any();
+        }
+
         public GameData GetGame(string gameTitle)
         {
             var game = this.games.Where(d => d.Title.Equals(gameTitle, StringComparison.Ordinal)).FirstOrDefault();
