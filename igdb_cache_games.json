@@ -8097,7 +8097,8 @@
     "category": 0,
     "collection": -1,
     "collections": [
-      61
+      61,
+      4357
     ],
     "dlcs": [],
     "expanded_games": [
@@ -31544,6 +31545,7 @@
   },
   {
     "bundles": [
+      42951,
       136697,
       164703
     ],
@@ -50981,10 +50983,8 @@
     "expansions": [],
     "first_release_date": 1278979200,
     "forks": [],
-    "franchise": 55,
-    "franchises": [
-      55
-    ],
+    "franchise": -1,
+    "franchises": [],
     "game_modes": [
       1,
       2
@@ -69160,7 +69160,9 @@
     "first_release_date": 1166054400,
     "forks": [],
     "franchise": -1,
-    "franchises": [],
+    "franchises": [
+      1476
+    ],
     "game_modes": [
       1,
       3
