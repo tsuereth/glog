@@ -179,13 +179,13 @@ namespace GlogGenerator.IgdbApi
 
         public IEnumerable<int> GetParentGameIds()
         {
-            var parentGameIds = new List<int>()
-            {
-                this.ParentGameId,
-            };
 
-            return parentGameIds
-                .Union(this.BundleGameIds)
+            // DO NOT include ParentGameId in this!
+            // The meaning of ParentGameId varies by this game's category --
+            // It may indicate a DLC or expansion's parent game, or a collected game's bundle;
+            // Or, it may indicate a remaster's original release, or a standalone expansion's preceding game.
+
+            return this.BundleGameIds
                 .Where(i => i != IgdbEntity.IdNotFound);
         }
 
@@ -208,14 +208,15 @@ namespace GlogGenerator.IgdbApi
         {
             return this.DlcGameIds
                 .Union(this.ExpansionGameIds)
-                .Union(this.StandaloneExpansionGameIds)
                 .Where(i => i != IgdbEntity.IdNotFound);
         }
 
         public IEnumerable<int> GetRelatedGameIds()
         {
             // Forks don't seem to be(?) "other releases" of this game, but totally different, spun-off games.
+            // And Standalone Expansions are, well, standalone -- really separate games from the original.
             return this.ForkGameIds
+                .Union(this.StandaloneExpansionGameIds)
                 .Where(i => i != IgdbEntity.IdNotFound);
         }
     }

@@ -237,11 +237,11 @@ namespace GlogGenerator.RenderState
             page.PageType = "games";
 
             page.IgdbUrl = gameData.IgdbUrl;
-            page.ParentGames = gameData.ParentGames.OrderBy(s => s).ToList();
-            page.OtherReleases = gameData.OtherReleases.OrderBy(s => s).ToList();
-            page.ChildGames = gameData.ChildGames.OrderBy(s => s).ToList();
+            page.ParentGames = gameData.GetParentGames(siteDataIndex).OrderBy(s => s).ToList();
+            page.OtherReleases = gameData.GetOtherReleases(siteDataIndex).OrderBy(s => s).ToList();
+            page.ChildGames = gameData.GetChildGames(siteDataIndex).OrderBy(s => s).ToList();
             page.Tags = gameData.Tags.ToList();
-            page.RelatedGames = gameData.RelatedGames.OrderBy(s => s).ToList();
+            page.RelatedGames = gameData.GetRelatedGames(siteDataIndex).OrderBy(s => s).ToList();
 
             page.LinkedPosts = gameData.LinkedPostIds.Distinct()
                 .Select(i => siteDataIndex.GetPostById(i))

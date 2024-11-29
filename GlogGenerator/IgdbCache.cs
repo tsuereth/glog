@@ -351,6 +351,7 @@ namespace GlogGenerator
             this.gamesOtherReleaseGameIds.Clear();
             this.gamesChildGameIds.Clear();
             this.gamesRelatedGameIds.Clear();
+
             foreach (var game in this.gamesById.Values)
             {
                 var parentGameIds = game.GetParentGameIds();
