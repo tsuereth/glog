@@ -136,6 +136,25 @@
     "url": "https://www.igdb.com/platforms/gba"
   },
   {
+    "abbreviation": "ACPC",
+    "alternative_name": "Colour Personal Computer",
+    "id": 25,
+    "name": "Amstrad CPC",
+    "url": "https://www.igdb.com/platforms/acpc"
+  },
+  {
+    "abbreviation": "ZXS",
+    "id": 26,
+    "name": "ZX Spectrum",
+    "url": "https://www.igdb.com/platforms/zxs"
+  },
+  {
+    "abbreviation": "MSX",
+    "id": 27,
+    "name": "MSX",
+    "url": "https://www.igdb.com/platforms/msx"
+  },
+  {
     "abbreviation": "Genesis/MegaDrive",
     "alternative_name": "Sega Genesis",
     "id": 29,
@@ -143,11 +162,32 @@
     "url": "https://www.igdb.com/platforms/genesis-slash-megadrive"
   },
   {
+    "abbreviation": "Saturn",
+    "alternative_name": "JVC Saturn, Hi-Saturn, Samsung Saturn, V-Saturn",
+    "id": 32,
+    "name": "Sega Saturn",
+    "url": "https://www.igdb.com/platforms/saturn"
+  },
+  {
+    "abbreviation": "Game Boy",
+    "alternative_name": "GB",
+    "id": 33,
+    "name": "Game Boy",
+    "url": "https://www.igdb.com/platforms/gb"
+  },
+  {
     "abbreviation": "Android",
     "alternative_name": "Infocusa3",
     "id": 34,
     "name": "Android",
     "url": "https://www.igdb.com/platforms/android"
+  },
+  {
+    "abbreviation": "Game Gear",
+    "alternative_name": "GG",
+    "id": 35,
+    "name": "Sega Game Gear",
+    "url": "https://www.igdb.com/platforms/gamegear"
   },
   {
     "abbreviation": "3DS",
@@ -224,10 +264,56 @@
     "url": "https://www.igdb.com/platforms/sfam"
   },
   {
+    "abbreviation": "Atari2600",
+    "alternative_name": "Atari VCS",
+    "id": 59,
+    "name": "Atari 2600",
+    "url": "https://www.igdb.com/platforms/atari2600"
+  },
+  {
+    "abbreviation": "Atari7800",
+    "alternative_name": "Atari 7800 ProSystem",
+    "id": 60,
+    "name": "Atari 7800",
+    "url": "https://www.igdb.com/platforms/atari7800"
+  },
+  {
+    "abbreviation": "Lynx",
+    "id": 61,
+    "name": "Atari Lynx",
+    "url": "https://www.igdb.com/platforms/lynx"
+  },
+  {
+    "abbreviation": "Atari-ST",
+    "id": 63,
+    "name": "Atari ST/STE",
+    "url": "https://www.igdb.com/platforms/atari-st"
+  },
+  {
+    "abbreviation": "SMS",
+    "alternative_name": "SMS, Mark III",
+    "id": 64,
+    "name": "Sega Master System/Mark III",
+    "url": "https://www.igdb.com/platforms/sms"
+  },
+  {
+    "abbreviation": "Atari8bit",
+    "id": 65,
+    "name": "Atari 8-bit",
+    "url": "https://www.igdb.com/platforms/atari8bit"
+  },
+  {
     "abbreviation": "Ouya",
     "id": 72,
     "name": "Ouya",
     "url": "https://www.igdb.com/platforms/ouya"
+  },
+  {
+    "abbreviation": "Apple][",
+    "alternative_name": "apple ][",
+    "id": 75,
+    "name": "Apple II",
+    "url": "https://www.igdb.com/platforms/appleii"
   },
   {
     "abbreviation": "famicom",
@@ -252,11 +338,43 @@
     "url": "https://www.igdb.com/platforms/acorn-archimedes"
   },
   {
+    "id": 117,
+    "name": "Philips CD-i",
+    "url": "https://www.igdb.com/platforms/philips-cd-i"
+  },
+  {
+    "id": 118,
+    "name": "FM Towns",
+    "url": "https://www.igdb.com/platforms/fm-towns"
+  },
+  {
+    "id": 121,
+    "name": "Sharp X68000",
+    "url": "https://www.igdb.com/platforms/sharp-x68000"
+  },
+  {
+    "id": 126,
+    "name": "TRS-80",
+    "url": "https://www.igdb.com/platforms/trs-80"
+  },
+  {
     "abbreviation": "Switch",
     "alternative_name": "NX",
     "id": 130,
     "name": "Nintendo Switch",
     "url": "https://www.igdb.com/platforms/switch"
+  },
+  {
+    "alternative_name": "PC-98",
+    "id": 149,
+    "name": "PC-9800 Series",
+    "url": "https://www.igdb.com/platforms/pc-9800-series"
+  },
+  {
+    "alternative_name": "TG-16CD/PCECD",
+    "id": 150,
+    "name": "Turbografx-16/PC Engine CD",
+    "url": "https://www.igdb.com/platforms/turbografx-16-slash-pc-engine-cd"
   },
   {
     "alternative_name": "Commodore Dynamic Total Vision",
@@ -270,5 +388,35 @@
     "id": 167,
     "name": "PlayStation 5",
     "url": "https://www.igdb.com/platforms/ps5"
+  },
+  {
+    "abbreviation": "Stadia",
+    "alternative_name": "Stadia",
+    "id": 170,
+    "name": "Google Stadia",
+    "url": "https://www.igdb.com/platforms/stadia"
+  },
+  {
+    "id": 306,
+    "name": "Satellaview",
+    "url": "https://www.igdb.com/platforms/satellaview"
+  },
+  {
+    "alternative_name": "TV Game",
+    "id": 377,
+    "name": "Plug & Play",
+    "url": "https://www.igdb.com/platforms/plug-and-play"
+  },
+  {
+    "alternative_name": "Tiger Game.com",
+    "id": 379,
+    "name": "Game.com",
+    "url": "https://www.igdb.com/platforms/game-dot-com"
+  },
+  {
+    "alternative_name": "Handheld LCD Game",
+    "id": 411,
+    "name": "Handheld Electronic LCD",
+    "url": "https://www.igdb.com/platforms/handheld-electronic-lcd"
   }
 ]
