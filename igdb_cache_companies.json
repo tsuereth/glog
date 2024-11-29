@@ -1928,10 +1928,6 @@
     "name": "Collision Studios"
   },
   {
-    "id": 1322,
-    "name": "DC Studios"
-  },
-  {
     "id": 1327,
     "name": "SouthPeak Interactive"
   },
@@ -2182,6 +2178,10 @@
   {
     "id": 1802,
     "name": "Westone"
+  },
+  {
+    "id": 1804,
+    "name": "Genki"
   },
   {
     "id": 1809,
@@ -3724,6 +3724,10 @@
     "name": "Double Damage Games"
   },
   {
+    "id": 6205,
+    "name": "Digital Arrow"
+  },
+  {
     "id": 6209,
     "name": "Mobius Digital"
   },
@@ -4282,10 +4286,6 @@
   {
     "id": 9435,
     "name": "Cape Guy"
-  },
-  {
-    "id": 9467,
-    "name": "Wolf Brew Games"
   },
   {
     "id": 9489,
@@ -5224,10 +5224,6 @@
     "name": "Lab42 Games"
   },
   {
-    "id": 20003,
-    "name": "Stovetop Studios"
-  },
-  {
     "id": 20202,
     "name": "The Knights of Unity"
   },
@@ -5462,10 +5458,6 @@
   {
     "id": 23704,
     "name": "PleasingFungus"
-  },
-  {
-    "id": 23753,
-    "name": "Videlectrix"
   },
   {
     "id": 23818,
@@ -5872,10 +5864,6 @@
     "name": "Secret Mode"
   },
   {
-    "id": 36658,
-    "name": "Sega PC"
-  },
-  {
     "id": 36851,
     "name": "Sixela Productions"
   },
@@ -5898,10 +5886,6 @@
   {
     "id": 37853,
     "name": "Zeon"
-  },
-  {
-    "id": 37868,
-    "name": "Atari Interactive, Inc."
   },
   {
     "id": 37893,
@@ -6020,8 +6004,8 @@
     "name": "Candide"
   },
   {
-    "id": 43715,
-    "name": "World's Smallest"
+    "id": 43714,
+    "name": "Basic Fun"
   },
   {
     "id": 43716,
