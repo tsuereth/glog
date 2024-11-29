@@ -159366,6 +159366,62 @@
   },
   {
     "bundles": [],
+    "category": 9,
+    "collection": -1,
+    "collections": [
+      345
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1519689600,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1844
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      31
+    ],
+    "id": 206320,
+    "involved_companies": [
+      176503
+    ],
+    "keywords": [
+      170,
+      226,
+      992,
+      1707
+    ],
+    "name": "Chrono Trigger",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 89828,
+    "platforms": [
+      6
+    ],
+    "player_perspectives": [
+      3
+    ],
+    "ports": [],
+    "release_dates": [
+      368201
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/chrono-trigger--3",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
     "category": 11,
     "collection": -1,
     "collections": [
