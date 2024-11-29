@@ -81476,6 +81476,87 @@
     "version_parent": -1
   },
   {
+    "bundles": [],
+    "category": 3,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1363219200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      4,
+      26,
+      720
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      8,
+      12,
+      25,
+      31
+    ],
+    "id": 7356,
+    "involved_companies": [
+      103464,
+      194759,
+      194760
+    ],
+    "keywords": [
+      226,
+      723,
+      960,
+      1181,
+      2242,
+      2472,
+      4245,
+      4396,
+      4843,
+      4918,
+      5296,
+      5306,
+      5323,
+      5329,
+      5417,
+      5574,
+      5936,
+      6221,
+      7351,
+      7386
+    ],
+    "name": "Kingdom Hearts HD 1.5 Remix",
+    "parent_game": -1,
+    "platforms": [
+      9
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      18994,
+      103844,
+      103845,
+      103846
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      27,
+      31,
+      35
+    ],
+    "url": "https://www.igdb.com/games/kingdom-hearts-hd-1-dot-5-remix",
+    "version_parent": -1
+  },
+  {
     "bundles": [
       301756
     ],
@@ -83162,6 +83243,93 @@
       38
     ],
     "url": "https://www.igdb.com/games/saints-row-gat-out-of-hell",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 3,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1412208000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      720
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      31
+    ],
+    "id": 7841,
+    "involved_companies": [
+      193352,
+      193353,
+      194761
+    ],
+    "keywords": [
+      4,
+      226,
+      497,
+      960,
+      1033,
+      1181,
+      1293,
+      1381,
+      1563,
+      2184,
+      2242,
+      2472,
+      3486,
+      4162,
+      4245,
+      4353,
+      4396,
+      4843,
+      4918,
+      5296,
+      5315,
+      5316,
+      5317,
+      5323,
+      5329,
+      6064,
+      6221,
+      6225,
+      6241,
+      6636,
+      7351,
+      16851,
+      23933
+    ],
+    "name": "Kingdom Hearts HD 2.5 Remix",
+    "parent_game": -1,
+    "platforms": [
+      9
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      20672,
+      20674,
+      103847,
+      103848
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/kingdom-hearts-hd-2-dot-5-remix",
     "version_parent": -1
   },
   {
@@ -99705,6 +99873,106 @@
     "version_parent": -1
   },
   {
+    "bundles": [],
+    "category": 3,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1388016000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      4
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      15
+    ],
+    "id": 14144,
+    "involved_companies": [
+      131347,
+      132798
+    ],
+    "keywords": [
+      563,
+      960,
+      2071,
+      2242,
+      2472,
+      4134,
+      4514,
+      4998,
+      5305,
+      5307,
+      5314,
+      5323,
+      5328,
+      5329,
+      5411,
+      5417,
+      5574,
+      5735,
+      5904,
+      5905,
+      5938,
+      5963,
+      5989,
+      6117,
+      6391,
+      6648,
+      7112,
+      7185,
+      7215,
+      7467
+    ],
+    "name": "Final Fantasy X/X-2 HD Remaster",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      9,
+      46,
+      48,
+      49,
+      130
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      242842,
+      242843,
+      242844,
+      242848,
+      242849,
+      242850,
+      242851,
+      242852,
+      242853,
+      242854,
+      242855,
+      242856,
+      242857,
+      242858,
+      243847,
+      243848,
+      243849
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      17
+    ],
+    "url": "https://www.igdb.com/games/final-fantasy-x-slash-x-2-hd-remaster",
+    "version_parent": -1
+  },
+  {
     "bundles": [
       124869,
       124977,
@@ -110620,6 +110888,76 @@
       17
     ],
     "url": "https://www.igdb.com/games/final-fantasy-vi-advance",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      274442
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      4131
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1698796800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "genres": [
+      5,
+      8,
+      32,
+      33
+    ],
+    "id": 20673,
+    "involved_companies": [
+      277985
+    ],
+    "keywords": [
+      3
+    ],
+    "name": "Alien Hominid HD",
+    "parent_game": 314895,
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      507962,
+      507963,
+      531913,
+      532536,
+      532537,
+      557139,
+      622085,
+      622086
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      18,
+      27
+    ],
+    "url": "https://www.igdb.com/games/alien-hominid-hd",
     "version_parent": -1
   },
   {
@@ -124241,6 +124579,60 @@
     "version_parent": -1
   },
   {
+    "bundles": [],
+    "category": 3,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1395100800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      4
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      4,
+      9,
+      12,
+      15,
+      31
+    ],
+    "id": 41836,
+    "involved_companies": [
+      89199
+    ],
+    "keywords": [],
+    "name": "Final Fantasy X/X-2 HD Remaster: Limited Edition",
+    "name_glogAppendPlatforms": true,
+    "parent_game": -1,
+    "platforms": [
+      9,
+      48
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      244000,
+      244001
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/final-fantasy-x-slash-x-2-hd-remaster-limited-edition",
+    "version_parent": 14144
+  },
+  {
     "bundles": [
       170052
     ],
@@ -125093,6 +125485,64 @@
     ],
     "url": "https://www.igdb.com/games/watch-dogs-complete-edition",
     "version_parent": 1121
+  },
+  {
+    "bundles": [],
+    "category": 3,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1412208000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      720
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      4,
+      12,
+      31
+    ],
+    "id": 42985,
+    "involved_companies": [
+      103554,
+      103555,
+      103556
+    ],
+    "keywords": [
+      1673,
+      18167,
+      23128
+    ],
+    "name": "Kingdom Hearts HD 2.5 Remix: Collector's Edition",
+    "parent_game": -1,
+    "platforms": [
+      9
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      203499,
+      203500,
+      203501,
+      203502
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/kingdom-hearts-hd-2-dot-5-remix-collectors-edition",
+    "version_parent": 7841
   },
   {
     "bundles": [],
@@ -125988,6 +126438,63 @@
     ],
     "url": "https://www.igdb.com/games/halo-2-limited-collectors-edition",
     "version_parent": 986
+  },
+  {
+    "bundles": [],
+    "category": 3,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1412208000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      720
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      31
+    ],
+    "id": 45159,
+    "involved_companies": [
+      103550,
+      103551,
+      103552
+    ],
+    "keywords": [
+      1673,
+      18167,
+      23128
+    ],
+    "name": "Kingdom Hearts HD 2.5 Remix: Limited Edition",
+    "parent_game": -1,
+    "platforms": [
+      9
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      203493,
+      203494,
+      203495,
+      203496
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/kingdom-hearts-hd-2-dot-5-remix-limited-edition",
+    "version_parent": 7841
   },
   {
     "bundles": [],
@@ -129851,6 +130358,67 @@
       18
     ],
     "url": "https://www.igdb.com/games/techno-kitten-adventure",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      240,
+      6118
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 883267200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      845
+    ],
+    "game_modes": [
+      1,
+      2
+    ],
+    "genres": [
+      8
+    ],
+    "id": 67025,
+    "involved_companies": [
+      100776,
+      100777,
+      154736
+    ],
+    "keywords": [
+      2152,
+      2555,
+      4134,
+      25264,
+      25265,
+      25891,
+      31076,
+      31077
+    ],
+    "name": "BS Super Mario Collection",
+    "parent_game": 5199,
+    "platforms": [
+      306
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      198351
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1
+    ],
+    "url": "https://www.igdb.com/games/bs-super-mario-collection",
     "version_parent": -1
   },
   {
@@ -134012,6 +134580,67 @@
   },
   {
     "bundles": [],
+    "category": 3,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1363219200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      4,
+      26,
+      720
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      8,
+      12,
+      25,
+      31
+    ],
+    "id": 81206,
+    "involved_companies": [
+      59892,
+      59893,
+      103546
+    ],
+    "keywords": [
+      960
+    ],
+    "name": "Kingdom Hearts HD 1.5 Remix: Limited Edition",
+    "parent_game": -1,
+    "platforms": [
+      9
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      135048,
+      135049,
+      135050,
+      135051
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      31,
+      35
+    ],
+    "url": "https://www.igdb.com/games/kingdom-hearts-hd-1-dot-5-remix-limited-edition",
+    "version_parent": 7356
+  },
+  {
+    "bundles": [],
     "category": 6,
     "collection": -1,
     "collections": [],
@@ -135947,6 +136576,65 @@
       1
     ],
     "url": "https://www.igdb.com/games/mega-man-mobile",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 9,
+    "collection": -1,
+    "collections": [
+      345
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1323302400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1844
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      31
+    ],
+    "id": 89828,
+    "involved_companies": [
+      176500
+    ],
+    "keywords": [
+      170,
+      226,
+      992,
+      1707
+    ],
+    "name": "Chrono Trigger",
+    "name_glogAppendPlatforms": true,
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 20398,
+    "platforms": [
+      34,
+      39
+    ],
+    "player_perspectives": [],
+    "ports": [],
+    "release_dates": [
+      150037,
+      368196
+    ],
+    "remakes": [],
+    "remasters": [
+      206320
+    ],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/chrono-trigger--2",
     "version_parent": -1
   },
   {
@@ -148599,6 +149287,283 @@
     "version_parent": 20744
   },
   {
+    "bundles": [],
+    "category": 3,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1320710400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      463
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      5,
+      24,
+      31,
+      34
+    ],
+    "id": 136811,
+    "involved_companies": [
+      114119,
+      114120,
+      114121,
+      114122
+    ],
+    "keywords": [
+      8,
+      16,
+      21,
+      22,
+      57,
+      64,
+      129,
+      159,
+      167,
+      211,
+      221,
+      271,
+      274,
+      283,
+      472,
+      558,
+      562,
+      563,
+      575,
+      623,
+      669,
+      789,
+      977,
+      1033,
+      1075,
+      1107,
+      1188,
+      1212,
+      1219,
+      1289,
+      1299,
+      1345,
+      1373,
+      1403,
+      1437,
+      1440,
+      1539,
+      1638,
+      1756,
+      1779,
+      1834,
+      1898,
+      1953,
+      1971,
+      2115,
+      2280,
+      2415,
+      2416,
+      2574,
+      2992,
+      3087,
+      3224,
+      3486,
+      3502,
+      3815,
+      3831,
+      4090,
+      4138,
+      4179,
+      4235,
+      4239,
+      4245,
+      4250,
+      4266,
+      4272,
+      4287,
+      4333,
+      4359,
+      4384,
+      4398,
+      4403,
+      4410,
+      4412,
+      4452,
+      4477,
+      4484,
+      4541,
+      4578,
+      4613,
+      4615,
+      4641,
+      4709,
+      4730,
+      4843,
+      4855,
+      4857,
+      4860,
+      4877,
+      4940,
+      4956,
+      4974,
+      4990,
+      4992,
+      4993,
+      4998,
+      4999,
+      5029,
+      5170,
+      5175,
+      5209,
+      5214,
+      5257,
+      5277,
+      5307,
+      5323,
+      5359,
+      5386,
+      5411,
+      5436,
+      5437,
+      5451,
+      5453,
+      5466,
+      5481,
+      5486,
+      5500,
+      5518,
+      5564,
+      5593,
+      5595,
+      5626,
+      5697,
+      5722,
+      5731,
+      5789,
+      5823,
+      5896,
+      5963,
+      5989,
+      5999,
+      6006,
+      6084,
+      6088,
+      6141,
+      6189,
+      6221,
+      6246,
+      6248,
+      6295,
+      6309,
+      6326,
+      6340,
+      6385,
+      6391,
+      6457,
+      6461,
+      6619,
+      6736,
+      6746,
+      6828,
+      6848,
+      6864,
+      6870,
+      7046,
+      7048,
+      7051,
+      7110,
+      7112,
+      7185,
+      7215,
+      7334,
+      7341,
+      7343,
+      7355,
+      7419,
+      7480,
+      7498,
+      7576,
+      7590,
+      7665,
+      8156,
+      8300,
+      8311,
+      8827,
+      8828,
+      8983,
+      9081,
+      9083,
+      9222,
+      9283,
+      9286,
+      9322,
+      9323,
+      9328,
+      9329,
+      9374,
+      9529,
+      9596,
+      9838,
+      10184,
+      10408,
+      10433,
+      10756,
+      11281,
+      11533,
+      11538,
+      11818,
+      12282,
+      13110,
+      13115,
+      23856,
+      23933,
+      24168
+    ],
+    "name": "Metal Gear Solid HD Edition: 2 & 3",
+    "parent_game": -1,
+    "platforms": [
+      9,
+      12,
+      34,
+      46
+    ],
+    "player_perspectives": [
+      1,
+      2,
+      3
+    ],
+    "ports": [],
+    "release_dates": [
+      220675,
+      220676,
+      220677,
+      220678,
+      220679,
+      220680,
+      220681,
+      220682,
+      220683,
+      220684,
+      220685,
+      220686
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      21,
+      22,
+      23,
+      31
+    ],
+    "url": "https://www.igdb.com/games/metal-gear-solid-hd-edition-2-and-3",
+    "version_parent": -1
+  },
+  {
     "bundles": [
       201037
     ],
@@ -151726,6 +152691,86 @@
     ],
     "url": "https://www.igdb.com/games/final-fantasy-x-international",
     "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 3,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1395360000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      4
+    ],
+    "game_modes": [],
+    "genres": [],
+    "id": 147061,
+    "involved_companies": [
+      130976
+    ],
+    "keywords": [],
+    "name": "Final Fantasy X/X-2 HD Remaster: Limited Edition",
+    "name_glogAppendPlatforms": true,
+    "name_glogAppendReleaseNumber": 2,
+    "parent_game": -1,
+    "platforms": [
+      9,
+      48
+    ],
+    "player_perspectives": [],
+    "ports": [],
+    "release_dates": [
+      243805,
+      243806
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [],
+    "url": "https://www.igdb.com/games/final-fantasy-x-slash-x-2-hd-remaster-limited-edition--1",
+    "version_parent": 14144
+  },
+  {
+    "bundles": [],
+    "category": 3,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1395100800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      4
+    ],
+    "game_modes": [],
+    "genres": [],
+    "id": 147086,
+    "involved_companies": [
+      131275
+    ],
+    "keywords": [],
+    "name": "Final Fantasy X/X-2 HD Remaster: Collector's Edition",
+    "parent_game": -1,
+    "platforms": [
+      9
+    ],
+    "player_perspectives": [],
+    "ports": [],
+    "release_dates": [
+      243841
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [],
+    "url": "https://www.igdb.com/games/final-fantasy-x-slash-x-2-hd-remaster-collectors-edition",
+    "version_parent": 14144
   },
   {
     "bundles": [],
@@ -155759,6 +156804,55 @@
     "category": 11,
     "collection": -1,
     "collections": [
+      269
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1379980800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      942
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12
+    ],
+    "id": 196660,
+    "involved_companies": [],
+    "keywords": [],
+    "name": "Tales of Phantasia",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 196654,
+    "platforms": [
+      39
+    ],
+    "player_perspectives": [
+      3,
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      352330,
+      352331
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      17
+    ],
+    "url": "https://www.igdb.com/games/tales-of-phantasia--3",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 11,
+    "collection": -1,
+    "collections": [
       2156
     ],
     "dlcs": [],
@@ -158728,6 +159822,63 @@
   },
   {
     "bundles": [],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      39,
+      5134
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1439942400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      4
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      16
+    ],
+    "id": 207028,
+    "involved_companies": [
+      177553,
+      177554
+    ],
+    "keywords": [],
+    "name": "Final Fantasy VII",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 207026,
+    "platforms": [
+      34,
+      39
+    ],
+    "player_perspectives": [
+      2,
+      3
+    ],
+    "ports": [],
+    "release_dates": [
+      369970,
+      369971
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      17,
+      18,
+      31
+    ],
+    "url": "https://www.igdb.com/games/final-fantasy-vii--7",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
     "category": 0,
     "collection": -1,
     "collections": [],
@@ -160785,6 +161936,62 @@
       1
     ],
     "url": "https://www.igdb.com/games/resident-evil-2--4",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      218404
+    ],
+    "category": 10,
+    "collection": -1,
+    "collections": [
+      17
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1582156800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      834
+    ],
+    "game_modes": [
+      1,
+      3
+    ],
+    "genres": [
+      25,
+      31
+    ],
+    "id": 218390,
+    "involved_companies": [
+      188179,
+      188180
+    ],
+    "keywords": [],
+    "name": "Devil May Cry 3: Dante's Awakening - Special Edition",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 222656,
+    "platforms": [
+      130
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      391478
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      19
+    ],
+    "url": "https://www.igdb.com/games/devil-may-cry-3-dantes-awakening-special-edition--1",
     "version_parent": -1
   },
   {
@@ -168361,6 +169568,53 @@
   },
   {
     "bundles": [],
+    "category": 8,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1519862400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      13
+    ],
+    "id": 256938,
+    "involved_companies": [
+      223085
+    ],
+    "keywords": [],
+    "name": "The Oregon Trail",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 213730,
+    "platforms": [
+      411
+    ],
+    "player_perspectives": [
+      4,
+      5
+    ],
+    "ports": [],
+    "release_dates": [
+      492198
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      21,
+      34
+    ],
+    "url": "https://www.igdb.com/games/the-oregon-trail--8",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
     "category": 1,
     "collection": -1,
     "collections": [],
@@ -168857,6 +170111,60 @@
       18
     ],
     "url": "https://www.igdb.com/games/chrono-trigger--4",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      345
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1303689600,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1844
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12
+    ],
+    "id": 263447,
+    "involved_companies": [
+      228789
+    ],
+    "keywords": [
+      30641,
+      30887
+    ],
+    "name": "Chrono Trigger",
+    "name_glogAppendPlatforms": true,
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 20398,
+    "platforms": [
+      55
+    ],
+    "player_perspectives": [
+      3
+    ],
+    "ports": [],
+    "release_dates": [
+      508283
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      17,
+      18
+    ],
+    "url": "https://www.igdb.com/games/chrono-trigger--5",
     "version_parent": -1
   },
   {
@@ -172216,6 +173524,61 @@
     ],
     "url": "https://www.igdb.com/games/call-of-duty-4-modern-warfare-game-of-the-year-edition",
     "version_parent": 623
+  },
+  {
+    "bundles": [],
+    "category": 3,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1322006400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      551
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      5,
+      24,
+      31
+    ],
+    "id": 298015,
+    "involved_companies": [
+      262967,
+      262968
+    ],
+    "keywords": [],
+    "name": "Metal Gear Solid HD Edition - Premium Package",
+    "parent_game": -1,
+    "platforms": [
+      9,
+      12
+    ],
+    "player_perspectives": [
+      1,
+      2,
+      3
+    ],
+    "ports": [],
+    "release_dates": [
+      585161,
+      585162
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      23,
+      31
+    ],
+    "url": "https://www.igdb.com/games/metal-gear-solid-hd-edition-premium-package--1",
+    "version_parent": 136811
   },
   {
     "bundles": [],
