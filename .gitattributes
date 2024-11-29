@@ -1,0 +1,2 @@
+# Don't count test data files as "code" in this repository.
+GlogGenerator.Test/TestFiles/** linguist-documentation
