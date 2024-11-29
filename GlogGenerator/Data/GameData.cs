@@ -74,7 +74,7 @@ namespace GlogGenerator.Data
             return this.relatedGames.Where(s => siteDataIndex.HasGame(s));
         }
 
-        public static GameData FromIgdbGame(IIgdbCache igdbCache, IgdbGame igdbGame, ISiteDataIndex siteDataIndex)
+        public static GameData FromIgdbGame(IIgdbCache igdbCache, IgdbGame igdbGame)
         {
             var game = new GameData();
             game.dataId = igdbGame.GetUniqueIdString(igdbCache);
@@ -88,9 +88,6 @@ namespace GlogGenerator.Data
 
                 var categoryString = igdbGame.Category.Description();
                 game.Tags.Add(categoryString);
-
-                // Register a data reference to the category, so the data index knows it is in-use (and won't delete it).
-                siteDataIndex.CreateReference<TagData>(categoryString, false);
             }
 
             if (!string.IsNullOrEmpty(igdbGame.Url))
@@ -98,18 +95,18 @@ namespace GlogGenerator.Data
                 game.IgdbUrl = igdbGame.Url;
             }
 
-            game.TryAddTag<IgdbCollection>(igdbCache, igdbGame.MainCollectionId, siteDataIndex);
+            game.TryAddTag<IgdbCollection>(igdbCache, igdbGame.MainCollectionId);
 
             foreach (var collectionId in igdbGame.CollectionIds)
             {
-                game.TryAddTag<IgdbCollection>(igdbCache, collectionId, siteDataIndex);
+                game.TryAddTag<IgdbCollection>(igdbCache, collectionId);
             }
 
-            game.TryAddTag<IgdbFranchise>(igdbCache, igdbGame.MainFranchiseId, siteDataIndex);
+            game.TryAddTag<IgdbFranchise>(igdbCache, igdbGame.MainFranchiseId);
 
             foreach (var franchiseId in igdbGame.FranchiseIds)
             {
-                game.TryAddTag<IgdbFranchise>(igdbCache, franchiseId, siteDataIndex);
+                game.TryAddTag<IgdbFranchise>(igdbCache, franchiseId);
             }
 
             var companyIds = new List<int>(igdbGame.InvolvedCompanyIds.Count);
@@ -127,58 +124,58 @@ namespace GlogGenerator.Data
 
             foreach (var companyId in companyIds)
             {
-                game.TryAddTag<IgdbCompany>(igdbCache, companyId, siteDataIndex);
+                game.TryAddTag<IgdbCompany>(igdbCache, companyId);
             }
 
             foreach (var genreId in igdbGame.GenreIds)
             {
-                game.TryAddTag<IgdbGenre>(igdbCache, genreId, siteDataIndex);
+                game.TryAddTag<IgdbGenre>(igdbCache, genreId);
             }
 
             foreach (var gameModeId in igdbGame.GameModeIds)
             {
-                game.TryAddTag<IgdbGameMode>(igdbCache, gameModeId, siteDataIndex);
+                game.TryAddTag<IgdbGameMode>(igdbCache, gameModeId);
             }
 
             foreach (var keywordId in igdbGame.KeywordIds)
             {
-                game.TryAddTag<IgdbKeyword>(igdbCache, keywordId, siteDataIndex);
+                game.TryAddTag<IgdbKeyword>(igdbCache, keywordId);
             }
 
             foreach (var playerPerspectiveId in igdbGame.PlayerPerspectiveIds)
             {
-                game.TryAddTag<IgdbPlayerPerspective>(igdbCache, playerPerspectiveId, siteDataIndex);
+                game.TryAddTag<IgdbPlayerPerspective>(igdbCache, playerPerspectiveId);
             }
 
             foreach (var themeId in igdbGame.ThemeIds)
             {
-                game.TryAddTag<IgdbTheme>(igdbCache, themeId, siteDataIndex);
+                game.TryAddTag<IgdbTheme>(igdbCache, themeId);
             }
 
             foreach (var parentGameId in igdbCache.GetParentGameIds(igdbGame.Id))
             {
-                game.TryAddParentGame(igdbCache, parentGameId, siteDataIndex);
+                game.TryAddParentGame(igdbCache, parentGameId);
             }
 
             foreach (var otherReleaseGameId in igdbCache.GetOtherReleaseGameIds(igdbGame.Id))
             {
-                game.TryAddOtherRelease(igdbCache, otherReleaseGameId, siteDataIndex);
+                game.TryAddOtherRelease(igdbCache, otherReleaseGameId);
             }
 
             foreach (var childGameId in igdbCache.GetChildGameIds(igdbGame.Id))
             {
-                game.TryAddChildGame(igdbCache, childGameId, siteDataIndex);
+                game.TryAddChildGame(igdbCache, childGameId);
             }
 
             foreach (var relatedGameId in igdbCache.GetRelatedGameIds(igdbGame.Id))
             {
-                game.TryAddRelatedGame(igdbCache, relatedGameId, siteDataIndex);
+                game.TryAddRelatedGame(igdbCache, relatedGameId);
             }
 
             return game;
         }
 
-        private void TryAddTag<T>(IIgdbCache igdbCache, int tagId, ISiteDataIndex siteDataIndex)
+        private void TryAddTag<T>(IIgdbCache igdbCache, int tagId)
             where T : IgdbEntity
         {
             if (tagId != IgdbEntity.IdNotFound)
@@ -216,14 +213,11 @@ namespace GlogGenerator.Data
                     {
                         this.Tags.Add(tagReferenceString);
                     }
-
-                    // Register a data reference to the tag, so the data index knows it is in-use (and won't delete it).
-                    siteDataIndex.CreateReference<TagData>(tagReferenceString, false);
                 }
             }
         }
 
-        private void TryAddParentGame(IIgdbCache igdbCache, int parentGameId, ISiteDataIndex siteDataIndex)
+        private void TryAddParentGame(IIgdbCache igdbCache, int parentGameId)
         {
             if (parentGameId != IgdbEntity.IdNotFound)
             {
@@ -236,24 +230,24 @@ namespace GlogGenerator.Data
                     this.parentGames.Add(parentGameReferenceString);
 
                     // Include this game's posts in the parent's list of posts.
-                    this.LinkPostsToOtherGames.Add(parentGame.GetReferenceString(igdbCache));
+                    this.LinkPostsToOtherGames.Add(parentGameReferenceString);
 
                     // Add the parent's other releases, too.
                     foreach (var parentOtherReleaseGameId in igdbCache.GetOtherReleaseGameIds(parentGameId))
                     {
-                        this.TryAddParentGame(igdbCache, parentOtherReleaseGameId, siteDataIndex);
+                        this.TryAddParentGame(igdbCache, parentOtherReleaseGameId);
                     }
 
                     // AND, recursively add the parent's parents.
                     foreach (var grandparentGameId in igdbCache.GetParentGameIds(parentGameId))
                     {
-                        this.TryAddParentGame(igdbCache, grandparentGameId, siteDataIndex);
+                        this.TryAddParentGame(igdbCache, grandparentGameId);
                     }
                 }
             }
         }
 
-        private void TryAddOtherRelease(IIgdbCache igdbCache, int otherReleaseGameId, ISiteDataIndex siteDataIndex)
+        private void TryAddOtherRelease(IIgdbCache igdbCache, int otherReleaseGameId)
         {
             if (otherReleaseGameId != IgdbEntity.IdNotFound)
             {
@@ -266,18 +260,18 @@ namespace GlogGenerator.Data
                     this.otherReleases.Add(otherReleaseReferenceString);
 
                     // Include this game's posts in the other release's list of posts.
-                    this.LinkPostsToOtherGames.Add(otherReleaseGame.GetReferenceString(igdbCache));
+                    this.LinkPostsToOtherGames.Add(otherReleaseReferenceString);
 
                     // Add the other release's parents, too.
                     foreach (var parentGameId in igdbCache.GetParentGameIds(otherReleaseGameId))
                     {
-                        this.TryAddParentGame(igdbCache, parentGameId, siteDataIndex);
+                        this.TryAddParentGame(igdbCache, parentGameId);
                     }
                 }
             }
         }
 
-        private void TryAddChildGame(IIgdbCache igdbCache, int childGameId, ISiteDataIndex siteDataIndex)
+        private void TryAddChildGame(IIgdbCache igdbCache, int childGameId)
         {
             if (childGameId != IgdbEntity.IdNotFound)
             {
@@ -292,7 +286,7 @@ namespace GlogGenerator.Data
             }
         }
 
-        private void TryAddRelatedGame(IIgdbCache igdbCache, int relatedGameId, ISiteDataIndex siteDataIndex)
+        private void TryAddRelatedGame(IIgdbCache igdbCache, int relatedGameId)
         {
             if (relatedGameId != IgdbEntity.IdNotFound)
             {

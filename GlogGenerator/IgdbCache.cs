@@ -623,18 +623,14 @@ namespace GlogGenerator
             {
                 throw new ArgumentException($"No {typeof(T).Name} found with reference string {referenceString}");
             }
-            else if (cachedKeypairs.Count() > 1)
-            {
-                throw new InvalidDataException($"More than one {typeof(T).Name} found with reference string {referenceString}");
-            }
 
-            var cachedKeypair = cachedKeypairs.First();
-            if (cachedKeypair.Value.ShouldForcePersistInCache())
+            foreach (var cachedKeypair in cachedKeypairs)
             {
-                return;
+                if (!cachedKeypair.Value.ShouldForcePersistInCache())
+                {
+                    entitiesById.Remove(cachedKeypair.Key);
+                }
             }
-
-            entitiesById.Remove(cachedKeypair.Key);
         }
 
         public void RemoveEntityByReferenceString(Type entityType, string referenceString)

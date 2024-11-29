@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace GlogGenerator.Data
 {
-    public class SiteDataIndex: ISiteDataIndex
+    public class SiteDataIndex : ISiteDataIndex
     {
         private readonly ILogger logger;
         private readonly string inputFilesBasePath;
@@ -304,7 +304,7 @@ namespace GlogGenerator.Data
             // Load game data from the IGDB cache.
             foreach (var igdbGame in igdbCache.GetAllGames())
             {
-                var gameData = GameData.FromIgdbGame(igdbCache, igdbGame, this);
+                var gameData = GameData.FromIgdbGame(igdbCache, igdbGame);
 
                 this.games.Add(gameData.GetDataId(), gameData);
             }
@@ -346,9 +346,9 @@ namespace GlogGenerator.Data
                 }
                 else
                 {
-                    var createdData = Activator.CreateInstance(typeof(TagData), new object[] { tagType, tagName }) as TagData;
-                    this.tags.Add(createdData.GetDataId(), createdData);
-                    this.tagDataIdsByNameUrlized[tagNameUrlized] = createdData.GetDataId();
+                    var createdTag = new TagData(tagType, tagName);
+                    this.tags.Add(createdTag.GetDataId(), createdTag);
+                    this.tagDataIdsByNameUrlized[tagNameUrlized] = createdTag.GetDataId();
                 }
             }
 
@@ -537,6 +537,18 @@ namespace GlogGenerator.Data
             foreach (var gameName in this.nonContentGameNames)
             {
                 this.CreateReference<GameData>(gameName, false);
+            }
+
+            // For every currently-referenced game, register references to that game's associated tags.
+            var referencedGameDataIds = this.gameReferences.Where(r => r.GetIsResolved()).Select(r => r.GetResolvedReferenceId()).Distinct();
+            foreach (var gameDataId in referencedGameDataIds)
+            {
+                var game = this.games[gameDataId];
+
+                foreach (var tag in game.Tags)
+                {
+                    this.CreateReference<TagData>(tag, false);
+                }
             }
 
             // Detect conflicts between old and updated data.

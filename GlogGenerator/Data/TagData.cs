@@ -33,19 +33,14 @@ namespace GlogGenerator.Data
             return this.referenceableTypedKeyStringsCache.Contains(matchKey);
         }
 
-        public bool ShouldMergeWithReferenceableKey(string checkKey)
-        {
-            var thisKeyUrlized = new UrlizedString(this.Name);
-            var checkKeyUrlized = new UrlizedString(checkKey);
-
-            return thisKeyUrlized.Equals(checkKeyUrlized);
-        }
-
         public void MergeReferenceableKey(Type mergeKeyType, string mergeKey)
         {
             var typedKey = new Tuple<Type, string>(mergeKeyType, mergeKey);
-            this.referenceableTypedKeys.Add(typedKey);
-            this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
+            if (!this.referenceableTypedKeys.Contains(typedKey))
+            {
+                this.referenceableTypedKeys.Add(typedKey);
+                this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
+            }
         }
 
         public string GetDataId()
