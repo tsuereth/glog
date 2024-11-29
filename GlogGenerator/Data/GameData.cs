@@ -268,9 +268,6 @@ namespace GlogGenerator.Data
                     // Include this game's posts in the other release's list of posts.
                     this.LinkPostsToOtherGames.Add(otherReleaseGame.GetReferenceString(igdbCache));
 
-                    // Register a data reference to the other release, so the data index knows it is in-use (and won't delete it).
-                    siteDataIndex.CreateReference<GameData>(otherReleaseReferenceString, true);
-
                     // Add the other release's parents, too.
                     foreach (var parentGameId in igdbCache.GetParentGameIds(otherReleaseGameId))
                     {
