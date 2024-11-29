@@ -372,10 +372,6 @@
     "name": "Virgin Interactive Entertainment (Europe) Ltd."
   },
   {
-    "id": 145,
-    "name": "cdv Software Entertainment"
-  },
-  {
     "id": 147,
     "name": "Vivendi Universal"
   },
@@ -1024,10 +1020,6 @@
     "name": "EA Orlando"
   },
   {
-    "id": 564,
-    "name": "Presto Studios"
-  },
-  {
     "id": 566,
     "name": "Midway"
   },
@@ -1326,10 +1318,6 @@
   {
     "id": 800,
     "name": "Jupiter Corporation"
-  },
-  {
-    "id": 801,
-    "name": "Square Enix Product Development Division 5"
   },
   {
     "id": 804,
@@ -1888,10 +1876,6 @@
     "name": "O3 Entertainment"
   },
   {
-    "id": 1265,
-    "name": "Tuna Technologies"
-  },
-  {
     "id": 1267,
     "name": "Backbone Entertainment"
   },
@@ -1986,10 +1970,6 @@
   {
     "id": 1406,
     "name": "Going Load Studios"
-  },
-  {
-    "id": 1415,
-    "name": "Quintet"
   },
   {
     "id": 1418,
@@ -2178,10 +2158,6 @@
   {
     "id": 1802,
     "name": "Westone"
-  },
-  {
-    "id": 1804,
-    "name": "Genki"
   },
   {
     "id": 1809,
@@ -2636,10 +2612,6 @@
     "name": "Midnight City"
   },
   {
-    "id": 2514,
-    "name": "Limbic Entertainment"
-  },
-  {
     "id": 2518,
     "name": "The Astronauts"
   },
@@ -2944,10 +2916,6 @@
     "name": "cdp.pl"
   },
   {
-    "id": 3121,
-    "name": "1C-SoftClub"
-  },
-  {
     "id": 3130,
     "name": "Zenimax Europe"
   },
@@ -2962,10 +2930,6 @@
   {
     "id": 3191,
     "name": "Rain Games"
-  },
-  {
-    "id": 3209,
-    "name": "Pendulo Studios"
   },
   {
     "id": 3212,
@@ -3022,10 +2986,6 @@
   {
     "id": 3470,
     "name": "Vykarian"
-  },
-  {
-    "id": 3484,
-    "name": "Snowball Studios"
   },
   {
     "id": 3491,
@@ -3266,10 +3226,6 @@
   {
     "id": 4379,
     "name": "Puny Human"
-  },
-  {
-    "id": 4410,
-    "name": "Presage Software"
   },
   {
     "id": 4423,
@@ -3600,10 +3556,6 @@
     "name": "Square Product Development Division 4"
   },
   {
-    "id": 5599,
-    "name": "K2 Co. Ltd."
-  },
-  {
     "id": 5674,
     "name": "Original Force 3D"
   },
@@ -3722,10 +3674,6 @@
   {
     "id": 6191,
     "name": "Double Damage Games"
-  },
-  {
-    "id": 6205,
-    "name": "Digital Arrow"
   },
   {
     "id": 6209,
@@ -4400,10 +4348,6 @@
     "name": "Mi'pu'mi Games"
   },
   {
-    "id": 10419,
-    "name": "J-Wing"
-  },
-  {
     "id": 10490,
     "name": "Dan & Gary Games"
   },
@@ -4964,10 +4908,6 @@
     "name": "PlatinumGames TOKYO"
   },
   {
-    "id": 15802,
-    "name": "Ys Interactive"
-  },
-  {
     "id": 15826,
     "name": "Ukiyotei"
   },
@@ -4994,10 +4934,6 @@
   {
     "id": 16055,
     "name": "NEXT Studio"
-  },
-  {
-    "id": 16073,
-    "name": "MGA Entertainment"
   },
   {
     "id": 16202,
@@ -5088,10 +5024,6 @@
     "name": "Epic Games"
   },
   {
-    "id": 17562,
-    "name": "Mi’pu’mi Games"
-  },
-  {
     "id": 17601,
     "name": "DigiToys"
   },
@@ -5136,10 +5068,6 @@
     "name": "Athlon Games"
   },
   {
-    "id": 18463,
-    "name": "Petroglyph Games Inc"
-  },
-  {
     "id": 18556,
     "name": "h.a.n.d. Inc."
   },
@@ -5168,10 +5096,6 @@
     "name": "Arkane Studios SA"
   },
   {
-    "id": 18872,
-    "name": "Storm City Games"
-  },
-  {
     "id": 19025,
     "name": "Springtail Studio"
   },
@@ -5198,10 +5122,6 @@
   {
     "id": 19320,
     "name": "Ocean Software Ltd."
-  },
-  {
-    "id": 19321,
-    "name": "Lemon Sky Studios"
   },
   {
     "id": 19354,
@@ -5298,10 +5218,6 @@
   {
     "id": 21435,
     "name": "Elecorn"
-  },
-  {
-    "id": 21472,
-    "name": "Visual Sciences"
   },
   {
     "id": 21480,
@@ -5552,10 +5468,6 @@
     "name": "Jajaben Games"
   },
   {
-    "id": 25663,
-    "name": "NAMCO BANDAI Games Inc."
-  },
-  {
     "id": 25666,
     "name": "Japan System House"
   },
@@ -5566,10 +5478,6 @@
   {
     "id": 25749,
     "name": "Bane Games"
-  },
-  {
-    "id": 25754,
-    "name": "Christian Whitehead"
   },
   {
     "id": 25978,
@@ -5696,10 +5604,6 @@
     "name": "Ziggurat"
   },
   {
-    "id": 29251,
-    "name": "Argos Games"
-  },
-  {
     "id": 29370,
     "name": "Skunkape"
   },
@@ -5734,10 +5638,6 @@
   {
     "id": 32350,
     "name": "Hyundai"
-  },
-  {
-    "id": 32363,
-    "name": "ak tronic"
   },
   {
     "id": 32471,
@@ -5810,10 +5710,6 @@
   {
     "id": 34440,
     "name": "Activision Italia"
-  },
-  {
-    "id": 34539,
-    "name": "Pipeline Software"
   },
   {
     "id": 34617,
@@ -5952,14 +5848,6 @@
     "name": "H&B"
   },
   {
-    "id": 41458,
-    "name": "E-Concept"
-  },
-  {
-    "id": 41460,
-    "name": "Ingo Devices"
-  },
-  {
     "id": 41465,
     "name": "Ubisoft Mainz"
   },
@@ -5972,16 +5860,8 @@
     "name": "Frost Giant Studios"
   },
   {
-    "id": 41793,
-    "name": "Stadlbauer"
-  },
-  {
     "id": 42265,
     "name": "Capcom Development Division 1"
-  },
-  {
-    "id": 42369,
-    "name": "Matrix Interactive"
   },
   {
     "id": 42627,
@@ -5990,22 +5870,6 @@
   {
     "id": 42888,
     "name": "Color Gray Games"
-  },
-  {
-    "id": 43194,
-    "name": "Toymax"
-  },
-  {
-    "id": 43195,
-    "name": "It's Outrageous"
-  },
-  {
-    "id": 43197,
-    "name": "Candide"
-  },
-  {
-    "id": 43714,
-    "name": "Basic Fun"
   },
   {
     "id": 43716,
@@ -6076,10 +5940,6 @@
     "name": "4000Do."
   },
   {
-    "id": 45869,
-    "name": "Distinctive Developments"
-  },
-  {
     "id": 46613,
     "name": "Sweet Baby Inc."
   },
@@ -6112,16 +5972,8 @@
     "name": "snekflat"
   },
   {
-    "id": 48817,
-    "name": "logicalbeat"
-  },
-  {
     "id": 50620,
     "name": "Jaleco USA"
-  },
-  {
-    "id": 51031,
-    "name": "Legacy Engineering"
   },
   {
     "id": 51419,
@@ -6202,10 +6054,6 @@
   {
     "id": 57555,
     "name": "Team Wrench"
-  },
-  {
-    "id": 58038,
-    "name": "Paul Koller"
   },
   {
     "id": 59778,
