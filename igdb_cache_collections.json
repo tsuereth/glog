@@ -672,10 +672,6 @@
     "name": "Baten Kaitos"
   },
   {
-    "id": 654,
-    "name": "Midway Arcade Treasures"
-  },
-  {
     "id": 655,
     "name": "Peggle"
   },
@@ -868,10 +864,6 @@
     "name": "Drox Operative"
   },
   {
-    "id": 1186,
-    "name": "Star Wars: TIE Fighter"
-  },
-  {
     "id": 1193,
     "name": "Starpoint Gemini"
   },
@@ -922,10 +914,6 @@
   {
     "id": 1362,
     "name": "Dark Void"
-  },
-  {
-    "id": 1366,
-    "name": "Mega Games"
   },
   {
     "id": 1373,
@@ -1096,10 +1084,6 @@
     "name": "Space Run"
   },
   {
-    "id": 2176,
-    "name": "Deadlight"
-  },
-  {
     "id": 2190,
     "name": "Grow Home"
   },
@@ -1122,10 +1106,6 @@
   {
     "id": 2264,
     "name": "Mercenaries"
-  },
-  {
-    "id": 2277,
-    "name": "Xbox Live Arcade Unplugged"
   },
   {
     "id": 2278,
@@ -1156,10 +1136,6 @@
     "name": "Hearthstone"
   },
   {
-    "id": 2380,
-    "name": "Star Wars: The Old Republic"
-  },
-  {
     "id": 2384,
     "name": "Ittle Dew"
   },
@@ -1174,10 +1150,6 @@
   {
     "id": 2406,
     "name": "Destiny"
-  },
-  {
-    "id": 2476,
-    "name": "Atari Flashback Classics"
   },
   {
     "id": 2491,
@@ -1312,10 +1284,6 @@
     "name": "Watchmen"
   },
   {
-    "id": 3192,
-    "name": "PopCap Hits!"
-  },
-  {
     "id": 3207,
     "name": "Rusty Lake"
   },
@@ -1340,10 +1308,6 @@
     "name": "Puyo Puyo"
   },
   {
-    "id": 3381,
-    "name": "The Oregon Trail"
-  },
-  {
     "id": 3431,
     "name": "Picross"
   },
@@ -1354,10 +1318,6 @@
   {
     "id": 3471,
     "name": "Piczle"
-  },
-  {
-    "id": 3476,
-    "name": "Sega Top"
   },
   {
     "id": 3502,
@@ -1400,16 +1360,8 @@
     "name": "Slaves to Armok"
   },
   {
-    "id": 3940,
-    "name": "Boggle"
-  },
-  {
     "id": 3949,
     "name": "Picross 3D"
-  },
-  {
-    "id": 3959,
-    "name": "SEGA 3D Classics Collection"
   },
   {
     "id": 4036,
@@ -1418,10 +1370,6 @@
   {
     "id": 4037,
     "name": "Swords & Soldiers"
-  },
-  {
-    "id": 4040,
-    "name": "PixelJunk Shooter"
   },
   {
     "id": 4099,
@@ -1442,10 +1390,6 @@
   {
     "id": 4190,
     "name": "Star Wars: Jedi Knight"
-  },
-  {
-    "id": 4332,
-    "name": "SEGA AGES 2500"
   },
   {
     "id": 4357,
@@ -1492,16 +1436,8 @@
     "name": "Matt Hazard"
   },
   {
-    "id": 4647,
-    "name": "Atari Masterpieces"
-  },
-  {
     "id": 4654,
     "name": "LostWinds"
-  },
-  {
-    "id": 4761,
-    "name": "SimTower"
   },
   {
     "id": 4782,
@@ -1520,14 +1456,6 @@
     "name": "Robotech"
   },
   {
-    "id": 4954,
-    "name": "Arcade's Greatest Hits"
-  },
-  {
-    "id": 4967,
-    "name": "SNK Arcade Classics"
-  },
-  {
     "id": 5003,
     "name": "Skies of Arcadia"
   },
@@ -1544,24 +1472,12 @@
     "name": "Robotron"
   },
   {
-    "id": 5091,
-    "name": "Ivalice Alliance"
-  },
-  {
     "id": 5098,
     "name": "The Matrix"
   },
   {
     "id": 5134,
     "name": "Compilation of Final Fantasy VII"
-  },
-  {
-    "id": 5140,
-    "name": "Sega Vintage Collection"
-  },
-  {
-    "id": 5205,
-    "name": "Game & Watch"
   },
   {
     "id": 5345,
@@ -1598,10 +1514,6 @@
   {
     "id": 5526,
     "name": "The LEGO Movie"
-  },
-  {
-    "id": 5583,
-    "name": "Award Winners"
   },
   {
     "id": 5654,
@@ -1688,20 +1600,8 @@
     "name": "The Typing of the Dead"
   },
   {
-    "id": 6280,
-    "name": "Technōs Collection"
-  },
-  {
     "id": 6304,
     "name": "Horizon"
-  },
-  {
-    "id": 6319,
-    "name": "Mega Man Legacy Collections"
-  },
-  {
-    "id": 6438,
-    "name": "Sega Smash Pack"
   },
   {
     "id": 6448,
@@ -1740,20 +1640,12 @@
     "name": "Outer Wilds"
   },
   {
-    "id": 6983,
-    "name": "Top Shot"
-  },
-  {
     "id": 7001,
     "name": "Excite"
   },
   {
     "id": 7027,
     "name": "Oxenfree"
-  },
-  {
-    "id": 7040,
-    "name": "Atari Arcade"
   },
   {
     "id": 7094,
@@ -1764,14 +1656,6 @@
     "name": "The Outer Worlds"
   },
   {
-    "id": 7117,
-    "name": "Game & Watch: Color Screen"
-  },
-  {
-    "id": 7120,
-    "name": "Game & Watch: Crystal Screen"
-  },
-  {
     "id": 7158,
     "name": "Yoshi's Island"
   },
@@ -1780,24 +1664,12 @@
     "name": "Marvel's Spider-Man"
   },
   {
-    "id": 7313,
-    "name": "Classic NES Series"
-  },
-  {
     "id": 7321,
     "name": "Undertale"
   },
   {
-    "id": 7338,
-    "name": "Game Watch"
-  },
-  {
     "id": 7346,
     "name": "EarthBound"
-  },
-  {
-    "id": 7401,
-    "name": "Gamewatch Boy"
   },
   {
     "id": 7427,
@@ -1806,10 +1678,6 @@
   {
     "id": 7463,
     "name": "Warhammer 40,000: Space Marine"
-  },
-  {
-    "id": 7501,
-    "name": "Midway's Greatest Arcade Hits"
   },
   {
     "id": 7586,
@@ -1824,44 +1692,16 @@
     "name": "Monaco"
   },
   {
-    "id": 7791,
-    "name": "Bomberman Collection"
-  },
-  {
     "id": 7814,
     "name": "Tales from the Borderlands"
-  },
-  {
-    "id": 7827,
-    "name": "Pocket Arcade"
-  },
-  {
-    "id": 7856,
-    "name": "Extreme Chain Games"
   },
   {
     "id": 7875,
     "name": "Star Wars Jedi"
   },
   {
-    "id": 7904,
-    "name": "Arcade Nano"
-  },
-  {
-    "id": 7987,
-    "name": "Sega Ages"
-  },
-  {
-    "id": 8096,
-    "name": "99X Games"
-  },
-  {
     "id": 8178,
     "name": "Moving Out"
-  },
-  {
-    "id": 8218,
-    "name": "Nintendo Classic Mini"
   },
   {
     "id": 8228,
@@ -1878,10 +1718,6 @@
   {
     "id": 8324,
     "name": "Detective Grimoire"
-  },
-  {
-    "id": 8329,
-    "name": "SEGA Genesis Classics"
   },
   {
     "id": 8332,
@@ -1912,20 +1748,8 @@
     "name": "X-Men Legends"
   },
   {
-    "id": 8729,
-    "name": "Atari Flashback"
-  },
-  {
-    "id": 8751,
-    "name": "Golden Idol Mysteries"
-  },
-  {
     "id": 8854,
     "name": "Super Mario RPG"
-  },
-  {
-    "id": 8919,
-    "name": "Super Rare Mixtape"
   },
   {
     "id": 8988,
@@ -1942,10 +1766,6 @@
   {
     "id": 8993,
     "name": "The Legend of Zelda: Ocarina of Time"
-  },
-  {
-    "id": 8997,
-    "name": "BS Zelda no Densetsu"
   },
   {
     "id": 9003,
@@ -1972,16 +1792,8 @@
     "name": "Vampire: The Masquerade – Bloodlines"
   },
   {
-    "id": 9149,
-    "name": "Sega Archives from USA"
-  },
-  {
     "id": 9167,
     "name": "Lara Croft"
-  },
-  {
-    "id": 9192,
-    "name": "The Sims Console"
   },
   {
     "id": 9208,
@@ -2028,14 +1840,6 @@
     "name": "Donkey Kong Jungle Beat"
   },
   {
-    "id": 9537,
-    "name": "Atari Arcade Hits"
-  },
-  {
-    "id": 9544,
-    "name": "BS F-Zero Grand Prix"
-  },
-  {
     "id": 9600,
     "name": "Talos Principle"
   },
@@ -2080,10 +1884,6 @@
     "name": "Super Mario Party"
   },
   {
-    "id": 10066,
-    "name": "Nintendo World Championships"
-  },
-  {
     "id": 10111,
     "name": "Valiant Hearts"
   },
@@ -2102,9 +1902,5 @@
   {
     "id": 10557,
     "name": "Ghost"
-  },
-  {
-    "id": 10770,
-    "name": "Super Pocket"
   }
 ]
