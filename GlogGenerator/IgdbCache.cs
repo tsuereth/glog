@@ -384,19 +384,6 @@ namespace GlogGenerator
             }
         }
 
-        private void SetEntitiesForcePersistInCache()
-        {
-            var gamesRequiringPlatformsToPersist = this.GetAllGames().Where(g => g.NameGlogAppendPlatforms == true);
-            foreach (var game in gamesRequiringPlatformsToPersist)
-            {
-                var platformsToPersist = game.PlatformIds.Select(id => this.GetPlatform(id));
-                foreach (var platform in platformsToPersist)
-                {
-                    platform.SetForcePersistInCache();
-                }
-            }
-        }
-
         public async Task UpdateFromApiClient(IgdbApiClient client)
         {
             // Update games first, to get current IDs for metadata references.
@@ -573,8 +560,6 @@ namespace GlogGenerator
             this.gamesById = gamesCurrentById;
 
             this.RebuildAssociatedGamesIndexes();
-
-            this.SetEntitiesForcePersistInCache();
         }
 
         private void RemoveEntityFromDictionaryByUniqueIdString<T>(Dictionary<int, T> entitiesById, string uniqueIdString)
@@ -774,8 +759,6 @@ namespace GlogGenerator
             cache.themesById = ReadEntityTypeFromJsonFile<IgdbTheme>(directoryPath, "themes").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbTheme>();
 
             cache.RebuildAssociatedGamesIndexes();
-
-            cache.SetEntitiesForcePersistInCache();
 
             return cache;
         }

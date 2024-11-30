@@ -213,6 +213,11 @@ namespace GlogGenerator.Test
             throw new NotImplementedException();
         }
 
+        public void RegisterAutomaticReferences(IIgdbCache igdbCache)
+        {
+            throw new NotImplementedException();
+        }
+
         public void RemoveUnreferencedData(IIgdbCache igdbCache)
         {
             throw new NotImplementedException();

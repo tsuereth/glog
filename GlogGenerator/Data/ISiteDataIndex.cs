@@ -47,6 +47,8 @@ namespace GlogGenerator.Data
 
         public void ResolveReferences();
 
+        public void RegisterAutomaticReferences(IIgdbCache igdbCache);
+
         public void RemoveUnreferencedData(IIgdbCache igdbCache);
 
         public void RewriteSourceContent(Markdig.MarkdownPipeline markdownPipeline);

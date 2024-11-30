@@ -10,6 +10,10 @@ namespace GlogGenerator.Data
     {
         public string Title { get; set; } = string.Empty;
 
+        public bool TitleIncludesPlatforms { get; set; } = false;
+
+        public HashSet<string> TitlePlatforms { get; set; } = new HashSet<string>();
+
         public IgdbGameCategory IgdbCategory { get; set; } = IgdbGameCategory.None;
 
         public string IgdbUrl { get; set; }
@@ -81,6 +85,11 @@ namespace GlogGenerator.Data
             game.referenceableKey = igdbGame.GetReferenceString(igdbCache);
 
             game.Title = igdbGame.GetReferenceString(igdbCache);
+            if (igdbGame.NameGlogAppendPlatforms == true)
+            {
+                game.TitleIncludesPlatforms = true;
+                game.TitlePlatforms = igdbGame.PlatformIds.Select(i => igdbCache.GetPlatform(i).GetReferenceString(igdbCache)).ToHashSet();
+            }
 
             if (igdbGame.Category != IgdbGameCategory.None)
             {

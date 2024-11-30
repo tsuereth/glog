@@ -539,18 +539,6 @@ namespace GlogGenerator.Data
                 this.CreateReference<GameData>(gameName, false);
             }
 
-            // For every currently-referenced game, register references to that game's associated tags.
-            var referencedGameDataIds = this.gameReferences.Where(r => r.GetIsResolved()).Select(r => r.GetResolvedReferenceId()).Distinct();
-            foreach (var gameDataId in referencedGameDataIds)
-            {
-                var game = this.games[gameDataId];
-
-                foreach (var tag in game.Tags)
-                {
-                    this.CreateReference<TagData>(tag, false);
-                }
-            }
-
             // Detect conflicts between old and updated data.
             this.CheckUpdatedReferenceableDataForConflict(oldCategories.Values, this.categories.Values);
             this.CheckUpdatedReferenceableDataForConflict(oldGames.Values, this.games.Values);
@@ -584,6 +572,34 @@ namespace GlogGenerator.Data
             foreach (var dataReference in this.tagReferences)
             {
                 _ = this.GetData(dataReference);
+            }
+        }
+
+        public void RegisterAutomaticReferences(IIgdbCache igdbCache)
+        {
+            var allIgdbPlatforms = igdbCache.GetAllPlatforms();
+
+            // For every currently-referenced game, register references to that game's associated tags.
+            var referencedGameDataIds = this.gameReferences.Where(r => r.GetIsResolved()).Select(r => r.GetResolvedReferenceId()).Distinct();
+            foreach (var gameDataId in referencedGameDataIds)
+            {
+                var game = this.games[gameDataId];
+
+                foreach (var tag in game.Tags)
+                {
+                    var gameTagReference = this.CreateReference<TagData>(tag, false);
+                    _ = this.GetData(gameTagReference); // Resolve the reference, to ensure it isn't deleted later.
+                }
+
+                // And... if the game's title is based on some platform data, force those platforms to persist in the cache.
+                if (game.TitleIncludesPlatforms)
+                {
+                    foreach (var platform in game.TitlePlatforms)
+                    {
+                        var igdbPlatform = allIgdbPlatforms.Where(p => p.GetReferenceString(igdbCache).Equals(platform, StringComparison.Ordinal)).First();
+                        igdbPlatform.SetForcePersistInCache();
+                    }
+                }
             }
         }
 

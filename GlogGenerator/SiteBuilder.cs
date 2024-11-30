@@ -147,6 +147,7 @@ namespace GlogGenerator
         public void ResolveDataReferences()
         {
             this.siteDataIndex.ResolveReferences();
+            this.siteDataIndex.RegisterAutomaticReferences(this.igdbCache);
         }
 
         public List<PageData> GetPages()
