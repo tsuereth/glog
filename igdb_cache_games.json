@@ -122247,6 +122247,70 @@
     "version_parent": -1
   },
   {
+    "bundles": [
+      213363
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      39
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 782611200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      4
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      31
+    ],
+    "id": 146170,
+    "involved_companies": [
+      165898
+    ],
+    "keywords": [
+      27629,
+      29003,
+      30703,
+      31177
+    ],
+    "name": "Final Fantasy III",
+    "name_glogAppendPlatforms": true,
+    "parent_game": 426,
+    "platforms": [
+      5,
+      19
+    ],
+    "player_perspectives": [
+      3,
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      546825,
+      546826,
+      546827,
+      546828
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      17,
+      33,
+      38
+    ],
+    "url": "https://www.igdb.com/games/final-fantasy-iii--2",
+    "version_parent": -1
+  },
+  {
     "bundles": [],
     "category": 0,
     "collection": -1,
@@ -124010,6 +124074,7 @@
     "parent_game": 1877,
     "platforms": [
       6,
+      14,
       167,
       169
     ],
@@ -124021,7 +124086,8 @@
     "release_dates": [
       482776,
       482777,
-      482778
+      482778,
+      659476
     ],
     "remakes": [],
     "remasters": [],
@@ -125713,6 +125779,154 @@
       43
     ],
     "url": "https://www.igdb.com/games/the-rise-of-the-golden-idol",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      423,
+      41855,
+      282727
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      39
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 921110400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      4
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      31
+    ],
+    "id": 288348,
+    "involved_companies": [
+      255579,
+      255580,
+      255744
+    ],
+    "keywords": [
+      2543,
+      4372,
+      5328
+    ],
+    "name": "Final Fantasy VI",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 426,
+    "platforms": [
+      7,
+      9,
+      38
+    ],
+    "player_perspectives": [
+      3,
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      568112,
+      568113,
+      568114,
+      568115,
+      568116,
+      568117,
+      568118,
+      568119,
+      568120
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      17,
+      33,
+      38
+    ],
+    "url": "https://www.igdb.com/games/final-fantasy-vi--4",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      423,
+      41855,
+      146214,
+      282727
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      39
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 890265600,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      4
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      31
+    ],
+    "id": 288349,
+    "involved_companies": [
+      255593,
+      255594,
+      285577
+    ],
+    "keywords": [
+      2543,
+      4372,
+      12708,
+      17436
+    ],
+    "name": "Final Fantasy V",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 419,
+    "platforms": [
+      7,
+      9,
+      38
+    ],
+    "player_perspectives": [
+      3,
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      568158,
+      568159,
+      568160,
+      568161,
+      568162,
+      568163,
+      568164,
+      568165,
+      568166
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      38
+    ],
+    "url": "https://www.igdb.com/games/final-fantasy-v--3",
     "version_parent": -1
   },
   {
