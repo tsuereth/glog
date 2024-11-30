@@ -111665,6 +111665,196 @@
   },
   {
     "bundles": [
+      10962,
+      89929
+    ],
+    "category": 9,
+    "collection": -1,
+    "collections": [
+      97
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1444176000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      2121
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      5,
+      8,
+      31
+    ],
+    "id": 41876,
+    "involved_companies": [
+      75641,
+      110501,
+      215735
+    ],
+    "keywords": [
+      1190,
+      1385,
+      2206,
+      8311
+    ],
+    "name": "Uncharted 3: Drake's Deception Remastered",
+    "parent_game": 512,
+    "platforms": [
+      48
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      298871,
+      449900
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      22
+    ],
+    "url": "https://www.igdb.com/games/uncharted-3-drakes-deception-remastered",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      10962,
+      89929
+    ],
+    "category": 9,
+    "collection": -1,
+    "collections": [
+      97
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1444176000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      2121
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      5,
+      8,
+      31
+    ],
+    "id": 41877,
+    "involved_companies": [
+      75633,
+      110398,
+      245224
+    ],
+    "keywords": [
+      1536,
+      8311
+    ],
+    "name": "Uncharted 2: Among Thieves Remastered",
+    "parent_game": 565,
+    "platforms": [
+      48
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      248041,
+      248042,
+      298870
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      22
+    ],
+    "url": "https://www.igdb.com/games/uncharted-2-among-thieves-remastered",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      10962,
+      89929
+    ],
+    "category": 9,
+    "collection": -1,
+    "collections": [
+      97
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1444176000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      2121
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      8,
+      9,
+      31
+    ],
+    "id": 41878,
+    "involved_companies": [
+      75635,
+      110502,
+      181216
+    ],
+    "keywords": [
+      1190,
+      1385,
+      1536,
+      2206,
+      8311,
+      10433
+    ],
+    "name": "Uncharted: Drake's Fortune Remastered",
+    "parent_game": 431,
+    "platforms": [
+      48
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      298869,
+      449898
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      22,
+      27,
+      31
+    ],
+    "url": "https://www.igdb.com/games/uncharted-drakes-fortune-remastered",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
       64337,
       215422,
       215423

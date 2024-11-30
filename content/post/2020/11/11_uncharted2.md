@@ -2,7 +2,7 @@
 date = "2020-11-11T07:15:42-08:00"
 title = "Romancing the Cintamani Stone"
 category = [ "Playing A Game" ]
-game = [ "Uncharted 2: Among Thieves" ]
+game = [ "Uncharted 2: Among Thieves Remastered" ]
 platform = [ "PS4" ]
 rating = [ "Good" ]
 +++

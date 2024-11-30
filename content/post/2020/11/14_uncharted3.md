@@ -2,7 +2,7 @@
 date = "2020-11-14T11:37:35-08:00"
 title = "Another day, another lost city to discover and inadvertently destroy"
 category = [ "Playing A Game" ]
-game = [ "Uncharted 3: Drake's Deception" ]
+game = [ "Uncharted 3: Drake's Deception Remastered" ]
 platform = [ "PS4" ]
 rating = [ "Good" ]
 +++

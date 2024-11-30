@@ -2,7 +2,7 @@
 category = [ "Playing A Game" ]
 date = "2016-04-03T12:27:02-07:00"
 draft = false
-game = [ "Uncharted: Drake's Fortune" ]
+game = [ "Uncharted: Drake's Fortune Remastered" ]
 platform = [ "PS4" ]
 rating = [ "Bad" ]
 title = "Unpolished: Drake's Misfortune"
