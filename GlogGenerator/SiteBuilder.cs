@@ -148,6 +148,8 @@ namespace GlogGenerator
         {
             this.siteDataIndex.ResolveReferences();
             this.siteDataIndex.RegisterAutomaticReferences(this.igdbCache);
+            this.siteDataIndex.RemoveUnreferencedData(this.igdbCache);
+            this.siteDataIndex.LinkPostsToAssociatedGames();
         }
 
         public List<PageData> GetPages()
@@ -409,9 +411,6 @@ namespace GlogGenerator
                 };
                 contentRoutes.Add(rssFeedPage.OutputPathRelative, rssFeedPage);
             }
-
-            // After processing posts' references to games and other data, we can determine which data was un-referenced, and remove it.
-            this.siteDataIndex.RemoveUnreferencedData(this.igdbCache);
 
             var categoriesIndex = new PageState(this)
             {

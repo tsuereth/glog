@@ -223,6 +223,11 @@ namespace GlogGenerator.Test
             throw new NotImplementedException();
         }
 
+        public void LinkPostsToAssociatedGames()
+        {
+            throw new NotImplementedException();
+        }
+
         public void RewriteSourceContent(Markdig.MarkdownPipeline markdownPipeline)
         {
             throw new NotImplementedException();

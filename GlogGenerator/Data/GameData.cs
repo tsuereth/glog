@@ -58,9 +58,45 @@ namespace GlogGenerator.Data
             return $"game/{urlized}/";
         }
 
+        private static void CollectAncestorGamesRecursive(HashSet<string> ancestorGameTitles, ISiteDataIndex siteDataIndex, GameData game)
+        {
+            var parentGameTitles = game.parentGames.Where(s => siteDataIndex.HasGame(s));
+            foreach (var parentGameTitle in parentGameTitles)
+            {
+                if (!ancestorGameTitles.Contains(parentGameTitle))
+                {
+                    ancestorGameTitles.Add(parentGameTitle);
+
+                    var parentGame = siteDataIndex.GetGame(parentGameTitle);
+                    CollectAncestorGamesRecursive(ancestorGameTitles, siteDataIndex, parentGame);
+                }
+            }
+
+            // Add ancestry for the game's other releases, too.
+            var otherReleaseTitles = game.otherReleases.Where(s => siteDataIndex.HasGame(s));
+            foreach (var otherReleaseTitle in otherReleaseTitles)
+            {
+                var otherRelease = siteDataIndex.GetGame(otherReleaseTitle);
+                var otherReleaseParentGameTitles = otherRelease.parentGames.Where(s => siteDataIndex.HasGame(s));
+                foreach (var parentGameTitle in otherReleaseParentGameTitles)
+                {
+                    if (!ancestorGameTitles.Contains(parentGameTitle))
+                    {
+                        ancestorGameTitles.Add(parentGameTitle);
+
+                        var parentGame = siteDataIndex.GetGame(parentGameTitle);
+                        CollectAncestorGamesRecursive(ancestorGameTitles, siteDataIndex, parentGame);
+                    }
+                }
+            }
+        }
+
         public IEnumerable<string> GetParentGames(ISiteDataIndex siteDataIndex)
         {
-            return this.parentGames.Where(s => siteDataIndex.HasGame(s));
+            var ancestorGameTitles = new HashSet<string>();
+            CollectAncestorGamesRecursive(ancestorGameTitles, siteDataIndex, this);
+
+            return ancestorGameTitles;
         }
 
         public IEnumerable<string> GetOtherReleases(ISiteDataIndex siteDataIndex)
@@ -237,21 +273,6 @@ namespace GlogGenerator.Data
                 {
                     var parentGameReferenceString = parentGame.GetReferenceString(igdbCache);
                     this.parentGames.Add(parentGameReferenceString);
-
-                    // Include this game's posts in the parent's list of posts.
-                    this.LinkPostsToOtherGames.Add(parentGameReferenceString);
-
-                    // Add the parent's other releases, too.
-                    foreach (var parentOtherReleaseGameId in igdbCache.GetOtherReleaseGameIds(parentGameId))
-                    {
-                        this.TryAddParentGame(igdbCache, parentOtherReleaseGameId);
-                    }
-
-                    // AND, recursively add the parent's parents.
-                    foreach (var grandparentGameId in igdbCache.GetParentGameIds(parentGameId))
-                    {
-                        this.TryAddParentGame(igdbCache, grandparentGameId);
-                    }
                 }
             }
         }
@@ -267,15 +288,6 @@ namespace GlogGenerator.Data
                 {
                     var otherReleaseReferenceString = otherReleaseGame.GetReferenceString(igdbCache);
                     this.otherReleases.Add(otherReleaseReferenceString);
-
-                    // Include this game's posts in the other release's list of posts.
-                    this.LinkPostsToOtherGames.Add(otherReleaseReferenceString);
-
-                    // Add the other release's parents, too.
-                    foreach (var parentGameId in igdbCache.GetParentGameIds(otherReleaseGameId))
-                    {
-                        this.TryAddParentGame(igdbCache, parentGameId);
-                    }
                 }
             }
         }

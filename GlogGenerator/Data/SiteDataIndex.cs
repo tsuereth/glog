@@ -31,6 +31,7 @@ namespace GlogGenerator.Data
         private List<StaticFileData> staticFiles = new List<StaticFileData>();
         private Dictionary<string, TagData> tags = new Dictionary<string, TagData>();
 
+        private Dictionary<string, string> gameDataIdsByName = new Dictionary<string, string>();
         private Dictionary<string, string> tagDataIdsByNameUrlized = new Dictionary<string, string>();
 
         public SiteDataIndex(
@@ -170,18 +171,17 @@ namespace GlogGenerator.Data
 
         public bool HasGame(string gameTitle)
         {
-            return this.games.Values.Where(d => d.Title.Equals(gameTitle, StringComparison.Ordinal)).Any();
+            return this.gameDataIdsByName.ContainsKey(gameTitle);
         }
 
         public GameData GetGame(string gameTitle)
         {
-            var game = this.games.Values.Where(d => d.Title.Equals(gameTitle, StringComparison.Ordinal)).FirstOrDefault();
-            if (game == null)
+            if (!this.gameDataIdsByName.TryGetValue(gameTitle, out var gameDataId))
             {
                 throw new ArgumentException($"No game found for title {gameTitle}");
             }
 
-            return game;
+            return this.games[gameDataId];
         }
 
         public List<GameData> GetGames()
@@ -284,6 +284,7 @@ namespace GlogGenerator.Data
             var oldGames = this.games.Where(kv => updateGameReferenceIds.Contains(kv.Key)).ToDictionary(kv => kv.Key, kv => kv.Value);
             this.gameReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
             this.games = new Dictionary<string, GameData>();
+            this.gameDataIdsByName.Clear();
 
             var updatePlatformReferenceIds = this.platformReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
             var oldPlatforms = this.platforms.Where(kv => updatePlatformReferenceIds.Contains(kv.Key)).ToDictionary(kv => kv.Key, kv => kv.Value);
@@ -307,6 +308,9 @@ namespace GlogGenerator.Data
                 var gameData = GameData.FromIgdbGame(igdbCache, igdbGame);
 
                 this.games.Add(gameData.GetDataId(), gameData);
+
+                var gameName = gameData.Title;
+                this.gameDataIdsByName[gameName] = gameData.GetDataId();
             }
 
             // And platform data!
@@ -447,12 +451,6 @@ namespace GlogGenerator.Data
                             {
                                 var gameData = this.GetDataWithOldLookup(gameReference, oldGames);
                                 gameData.LinkedPostIds.Add(postId);
-
-                                foreach (var linkToOtherGameName in gameData.LinkPostsToOtherGames)
-                                {
-                                    var otherGameData = this.GetGame(linkToOtherGameName);
-                                    otherGameData.LinkedPostIds.Add(postId);
-                                }
 
                                 foreach (var tagName in gameData.Tags)
                                 {
@@ -618,6 +616,9 @@ namespace GlogGenerator.Data
             {
                 this.games.Remove(unreferencedGameKeypair.Key);
 
+                var gameName = unreferencedGameKeypair.Value.Title;
+                this.gameDataIdsByName.Remove(gameName);
+
                 if (igdbCache != null)
                 {
                     var gameDataId = unreferencedGameKeypair.Value.GetDataId();
@@ -662,6 +663,38 @@ namespace GlogGenerator.Data
                         var tagDataId = typedKey.Item2;
 
                         igdbCache.RemoveEntityByReferenceString(tagDataType, tagDataId);
+                    }
+                }
+            }
+        }
+
+        public void LinkPostsToAssociatedGames()
+        {
+            foreach (var kv in this.posts)
+            {
+                var postId = kv.Key;
+                var postData = kv.Value;
+
+                if (postData.Games != null)
+                {
+                    foreach (var postGameReference in postData.Games)
+                    {
+                        var postGameData = this.GetData(postGameReference);
+
+                        var parentGameTitles = postGameData.GetParentGames(this);
+                        var otherReleaseTitles = postGameData.GetOtherReleases(this);
+
+                        foreach (var parentGameTitle in parentGameTitles)
+                        {
+                            var parentGameData = this.GetGame(parentGameTitle);
+                            parentGameData.LinkedPostIds.Add(postId);
+                        }
+
+                        foreach (var otherReleaseTitle in otherReleaseTitles)
+                        {
+                            var otherReleaseData = this.GetGame(otherReleaseTitle);
+                            otherReleaseData.LinkedPostIds.Add(postId);
+                        }
                     }
                 }
             }

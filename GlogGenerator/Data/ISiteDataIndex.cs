@@ -51,6 +51,8 @@ namespace GlogGenerator.Data
 
         public void RemoveUnreferencedData(IIgdbCache igdbCache);
 
+        public void LinkPostsToAssociatedGames();
+
         public void RewriteSourceContent(Markdig.MarkdownPipeline markdownPipeline);
     }
 }
