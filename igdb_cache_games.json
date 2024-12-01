@@ -99122,6 +99122,82 @@
     "category": 0,
     "collection": -1,
     "collections": [
+      39,
+      9320
+    ],
+    "dlcs": [],
+    "expanded_games": [
+      406
+    ],
+    "expansions": [],
+    "first_release_date": 679881600,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      4
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12
+    ],
+    "id": 16587,
+    "involved_companies": [
+      159787,
+      256714
+    ],
+    "keywords": [
+      25265,
+      26906,
+      27629,
+      29745,
+      30367,
+      30490
+    ],
+    "name": "Final Fantasy IV",
+    "parent_game": -1,
+    "platforms": [
+      5,
+      41,
+      58,
+      137
+    ],
+    "player_perspectives": [
+      3
+    ],
+    "ports": [
+      387,
+      205703,
+      282725,
+      283093,
+      283313,
+      283317
+    ],
+    "release_dates": [
+      570242,
+      570243,
+      570244,
+      570245
+    ],
+    "remakes": [
+      399
+    ],
+    "remasters": [
+      158983
+    ],
+    "standalone_expansions": [],
+    "themes": [
+      17
+    ],
+    "url": "https://www.igdb.com/games/final-fantasy-iv--1",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [
       305
     ],
     "dlcs": [],
@@ -125472,6 +125548,76 @@
     "version_parent": -1
   },
   {
+    "bundles": [
+      420
+    ],
+    "category": 10,
+    "collection": -1,
+    "collections": [
+      345
+    ],
+    "dlcs": [],
+    "expanded_games": [
+      20398
+    ],
+    "expansions": [],
+    "first_release_date": 941500800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1844
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12
+    ],
+    "id": 263446,
+    "involved_companies": [
+      228785,
+      228786,
+      248412,
+      258856
+    ],
+    "keywords": [
+      1313,
+      2543
+    ],
+    "name": "Chrono Trigger",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 1802,
+    "platforms": [
+      7,
+      9,
+      38,
+      46
+    ],
+    "player_perspectives": [
+      3
+    ],
+    "ports": [],
+    "release_dates": [
+      508279,
+      508281,
+      553839,
+      553840,
+      553841,
+      553842,
+      553843
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      18
+    ],
+    "url": "https://www.igdb.com/games/chrono-trigger--4",
+    "version_parent": -1
+  },
+  {
     "bundles": [],
     "category": 8,
     "collection": -1,
@@ -125779,6 +125925,70 @@
       43
     ],
     "url": "https://www.igdb.com/games/the-rise-of-the-golden-idol",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      420,
+      41855,
+      146214,
+      282727
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      39,
+      9320
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 858902400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      4
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12
+    ],
+    "id": 282725,
+    "involved_companies": [
+      248426,
+      248427
+    ],
+    "keywords": [
+      2543
+    ],
+    "name": "Final Fantasy IV",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 16587,
+    "platforms": [
+      7,
+      9,
+      38,
+      46
+    ],
+    "player_perspectives": [
+      3
+    ],
+    "ports": [],
+    "release_dates": [
+      553887,
+      553888,
+      553889,
+      553890
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      17
+    ],
+    "url": "https://www.igdb.com/games/final-fantasy-iv--3",
     "version_parent": -1
   },
   {
