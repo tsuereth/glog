@@ -73,7 +73,8 @@ namespace GlogGenerator.Data
             }
 
             // Add ancestry for the game's other releases, too.
-            var otherReleaseTitles = game.otherReleases.Where(s => siteDataIndex.HasGame(s));
+            var otherReleaseTitles = new HashSet<string>();
+            CollectAllOtherReleasesRecursive(otherReleaseTitles, siteDataIndex, game);
             foreach (var otherReleaseTitle in otherReleaseTitles)
             {
                 var otherRelease = siteDataIndex.GetGame(otherReleaseTitle);
@@ -91,17 +92,37 @@ namespace GlogGenerator.Data
             }
         }
 
+        private static void CollectAllOtherReleasesRecursive(HashSet<string> allOtherReleaseTitles, ISiteDataIndex siteDataIndex, GameData game)
+        {
+            var otherReleaseTitles = game.otherReleases.Where(s => siteDataIndex.HasGame(s));
+            foreach (var otherReleaseTitle in otherReleaseTitles)
+            {
+                if (!allOtherReleaseTitles.Contains(otherReleaseTitle))
+                {
+                    allOtherReleaseTitles.Add(otherReleaseTitle);
+
+                    var otherRelease = siteDataIndex.GetGame(otherReleaseTitle);
+                    CollectAllOtherReleasesRecursive(allOtherReleaseTitles, siteDataIndex, otherRelease);
+                }
+            }
+        }
+
         public IEnumerable<string> GetParentGames(ISiteDataIndex siteDataIndex)
         {
             var ancestorGameTitles = new HashSet<string>();
             CollectAncestorGamesRecursive(ancestorGameTitles, siteDataIndex, this);
+            ancestorGameTitles.Remove(this.Title);
 
             return ancestorGameTitles;
         }
 
         public IEnumerable<string> GetOtherReleases(ISiteDataIndex siteDataIndex)
         {
-            return this.otherReleases.Where(s => siteDataIndex.HasGame(s));
+            var allOtherReleaseTitles = new HashSet<string>();
+            CollectAllOtherReleasesRecursive(allOtherReleaseTitles, siteDataIndex, this);
+            allOtherReleaseTitles.Remove(this.Title);
+
+            return allOtherReleaseTitles;
         }
 
         public IEnumerable<string> GetChildGames(ISiteDataIndex siteDataIndex)
