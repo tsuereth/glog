@@ -17,6 +17,8 @@ namespace GlogGenerator.Data
 
         public string SourceFilePath { get; private set; } = string.Empty;
 
+        public string SourceFileContentHash { get; private set; } = string.Empty;
+
         public string PermalinkRelative
         {
             get
@@ -89,8 +91,21 @@ namespace GlogGenerator.Data
 
             var fileContent = this.ToMarkdownString(mdPipeline, siteDataIndex);
 
-            var utf8WithoutBom = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
-            File.WriteAllText(this.SourceFilePath, fileContent, utf8WithoutBom);
+            using (var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
+            {
+                var contentBytes = Encoding.UTF8.GetBytes(fileContent);
+                hash.AppendData(contentBytes);
+                var contentHashBytes = hash.GetCurrentHash();
+                var contentHash = Convert.ToHexString(contentHashBytes);
+
+                if (!contentHash.Equals(this.SourceFileContentHash, StringComparison.Ordinal))
+                {
+                    this.SourceFileContentHash = contentHash;
+
+                    var utf8WithoutBom = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
+                    File.WriteAllText(this.SourceFilePath, fileContent, utf8WithoutBom);
+                }
+            }
         }
 
         public MarkdownDocument MdDoc { get; private set; }
@@ -151,6 +166,14 @@ namespace GlogGenerator.Data
             var fileContent = File.ReadAllText(filePath);
             var post = MarkdownFromString(mdPipeline, fileContent, siteDataIndex);
             post.SourceFilePath = filePath;
+
+            using (var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
+            {
+                var contentBytes = Encoding.UTF8.GetBytes(fileContent);
+                hash.AppendData(contentBytes);
+                var contentHashBytes = hash.GetCurrentHash();
+                post.SourceFileContentHash = Convert.ToHexString(contentHashBytes);
+            }
 
             return post;
         }
