@@ -377,7 +377,7 @@ namespace GlogGenerator.RenderState
 
         public void WriteFile(SiteState site, string filePath)
         {
-            var templateLoader = site.CreateTemplateLoader();
+            var templateLoader = site.GetTemplateLoader();
             var rendered = templateLoader.ParseAndRender(this.RenderTemplateName, this.GetTemplateProperties(site));
 
             rendered = rendered.ReplaceLineEndings("\n");
@@ -410,7 +410,7 @@ namespace GlogGenerator.RenderState
                 response.ContentType = "text/html";
             }
 
-            var templateLoader = site.CreateTemplateLoader();
+            var templateLoader = site.GetTemplateLoader();
             var rendered = templateLoader.ParseAndRender(this.RenderTemplateName, this.GetTemplateProperties(site));
 
             var renderedBytes = Encoding.UTF8.GetBytes(rendered);

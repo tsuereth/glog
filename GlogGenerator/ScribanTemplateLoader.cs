@@ -13,6 +13,8 @@ namespace GlogGenerator
 
         private readonly string templateFilesBasePath;
 
+        private Dictionary<string, string> templateFileCache = new Dictionary<string, string>();
+
         public ScribanTemplateLoader(string templateFilesBasePath)
         {
             this.templateFilesBasePath = templateFilesBasePath;
@@ -33,14 +35,24 @@ namespace GlogGenerator
 
         public string Load(TemplateContext context, SourceSpan callerSpan, string templatePath)
         {
-            return File.ReadAllText(templatePath);
+            if (!this.templateFileCache.TryGetValue(templatePath, out var templateText))
+            {
+                templateText = File.ReadAllText(templatePath);
+                this.templateFileCache[templatePath] = templateText;
+            }
+
+            return templateText;
         }
 
-        public ValueTask<string> LoadAsync(TemplateContext context, SourceSpan callerSpan, string templatePath)
+        public async ValueTask<string> LoadAsync(TemplateContext context, SourceSpan callerSpan, string templatePath)
         {
-            // TODO: really async!
-            var fileText = File.ReadAllText(templatePath);
-            return ValueTask.FromResult(fileText);
+            if (!this.templateFileCache.TryGetValue(templatePath, out var templateText))
+            {
+                templateText = await File.ReadAllTextAsync(templatePath);
+                this.templateFileCache[templatePath] = templateText;
+            }
+
+            return templateText;
         }
 
         private static ScriptObject CreateTemplateGlobalScriptObject(IDictionary<string, object> templateProperties)
@@ -74,7 +86,13 @@ namespace GlogGenerator
             templateContext.PushGlobal(templateGlobals);
 
             var templatePath = GetTemplateFilePath(this.templateFilesBasePath, templateName);
-            var templateText = File.ReadAllText(templatePath);
+
+            if (!this.templateFileCache.TryGetValue(templatePath, out var templateText))
+            {
+                templateText = File.ReadAllText(templatePath);
+                this.templateFileCache[templatePath] = templateText;
+            }
+
             var template = Template.Parse(templateText, templatePath);
 
             if (template.HasErrors)

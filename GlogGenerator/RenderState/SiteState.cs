@@ -46,6 +46,8 @@ namespace GlogGenerator.RenderState
         private readonly SiteBuilder builder;
         private readonly string templateFilesBasePath;
 
+        private ScribanTemplateLoader templateLoader;
+
         public SiteState(
             SiteBuilder builder,
             string templateFilesBasePath)
@@ -54,16 +56,21 @@ namespace GlogGenerator.RenderState
             this.templateFilesBasePath = templateFilesBasePath;
         }
 
-        public ScribanTemplateLoader CreateTemplateLoader()
+        public ScribanTemplateLoader GetTemplateLoader()
         {
-            // Make sure the path to template files is an absolute filepath.
-            var templateFilesBasePath = this.templateFilesBasePath;
-            if (!Path.IsPathRooted(templateFilesBasePath))
+            if (this.templateLoader == null)
             {
-                templateFilesBasePath = Path.GetFullPath(templateFilesBasePath);
+                // Make sure the path to template files is an absolute filepath.
+                var templateFilesBasePath = this.templateFilesBasePath;
+                if (!Path.IsPathRooted(templateFilesBasePath))
+                {
+                    templateFilesBasePath = Path.GetFullPath(templateFilesBasePath);
+                }
+
+                this.templateLoader = new ScribanTemplateLoader(templateFilesBasePath);
             }
 
-            return new ScribanTemplateLoader(templateFilesBasePath);
+            return this.templateLoader;
         }
 
         public void LoadContentRoutes()
