@@ -14,6 +14,7 @@ namespace GlogGenerator
         private readonly string templateFilesBasePath;
 
         private Dictionary<string, string> templateFileCache = new Dictionary<string, string>();
+        private Dictionary<string, Template> templateCacheByPath = new Dictionary<string, Template>();
 
         public ScribanTemplateLoader(string templateFilesBasePath)
         {
@@ -87,17 +88,22 @@ namespace GlogGenerator
 
             var templatePath = GetTemplateFilePath(this.templateFilesBasePath, templateName);
 
-            if (!this.templateFileCache.TryGetValue(templatePath, out var templateText))
+            if (!this.templateCacheByPath.TryGetValue(templatePath, out var template))
             {
-                templateText = File.ReadAllText(templatePath);
-                this.templateFileCache[templatePath] = templateText;
-            }
+                if (!this.templateFileCache.TryGetValue(templatePath, out var templateText))
+                {
+                    templateText = File.ReadAllText(templatePath);
+                    this.templateFileCache[templatePath] = templateText;
+                }
 
-            var template = Template.Parse(templateText, templatePath);
+                template = Template.Parse(templateText, templatePath);
 
-            if (template.HasErrors)
-            {
-                throw new InvalidDataException(template.Messages.ToString());
+                if (template.HasErrors)
+                {
+                    throw new InvalidDataException(template.Messages.ToString());
+                }
+
+                this.templateCacheByPath[templatePath] = template;
             }
 
             var rendered = template.Render(templateContext);
