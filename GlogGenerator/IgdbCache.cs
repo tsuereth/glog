@@ -366,6 +366,8 @@ namespace GlogGenerator
 
             foreach (var game in this.gamesById.Values)
             {
+                var gameIsBundle = game.Category == IgdbGameCategory.bundle;
+
                 var parentGameIds = game.GetParentGameIds();
                 AppendIdsToDictionarySet(this.gamesParentGameIds, game.Id, parentGameIds);
                 foreach (var parentGameId in parentGameIds)
@@ -374,10 +376,19 @@ namespace GlogGenerator
                 }
 
                 var otherReleaseGameIds = game.GetOtherReleaseGameIds();
-                AppendIdsToDictionarySet(this.gamesOtherReleaseGameIds, game.Id, otherReleaseGameIds);
                 foreach (var otherReleaseGameId in otherReleaseGameIds)
                 {
-                    AppendIdToDictionarySet(this.gamesOtherReleaseGameIds, otherReleaseGameId, game.Id);
+                    if (this.gamesById.TryGetValue(otherReleaseGameId, out var otherRelease))
+                    {
+                        var otherReleaseIsBundle = otherRelease.Category == IgdbGameCategory.bundle;
+
+                        // Bundles and non-bundles shouldn't be considered "other releases" of one another.
+                        if (gameIsBundle == otherReleaseIsBundle)
+                        {
+                            AppendIdToDictionarySet(this.gamesOtherReleaseGameIds, game.Id, otherReleaseGameId);
+                            AppendIdToDictionarySet(this.gamesOtherReleaseGameIds, otherReleaseGameId, game.Id);
+                        }
+                    }
                 }
 
                 var childGameIds = game.GetChildGameIds();
