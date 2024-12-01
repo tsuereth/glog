@@ -122474,7 +122474,12 @@
     "keywords": [
       23,
       72,
-      4869
+      1494,
+      4004,
+      4150,
+      4869,
+      11478,
+      44629
     ],
     "name": "Outer Wilds: Echoes of the Eye",
     "parent_game": 11737,
@@ -126781,6 +126786,70 @@
       19
     ],
     "url": "https://www.igdb.com/games/castlevania-portrait-of-ruin--1",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      314944
+    ],
+    "category": 11,
+    "collection": -1,
+    "collections": [
+      65
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1724716800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      895
+    ],
+    "game_modes": [
+      1,
+      2
+    ],
+    "genres": [
+      8,
+      9,
+      12,
+      25,
+      31
+    ],
+    "id": 315317,
+    "involved_companies": [
+      284818
+    ],
+    "keywords": [],
+    "name": "Castlevania: Order of Ecclesia",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 1141,
+    "platforms": [
+      6,
+      130,
+      167,
+      169
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      637097,
+      637098,
+      637099,
+      637100
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      19
+    ],
+    "url": "https://www.igdb.com/games/castlevania-order-of-ecclesia--1",
     "version_parent": -1
   },
   {
