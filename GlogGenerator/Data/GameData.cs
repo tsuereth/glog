@@ -69,6 +69,20 @@ namespace GlogGenerator.Data
 
                     var parentGame = siteDataIndex.GetGame(parentGameTitle);
                     CollectAncestorGamesRecursive(ancestorGameTitles, siteDataIndex, parentGame);
+
+                    // The parent's other releases are also considered parents.
+                    var parentOtherReleaseTitles = new HashSet<string>();
+                    CollectAllOtherReleasesRecursive(parentOtherReleaseTitles, siteDataIndex, parentGame);
+                    foreach (var parentOtherReleaseTitle in parentOtherReleaseTitles)
+                    {
+                        if (!ancestorGameTitles.Contains(parentOtherReleaseTitle))
+                        {
+                            ancestorGameTitles.Add(parentOtherReleaseTitle);
+
+                            var parentOtherReleaseGame = siteDataIndex.GetGame(parentOtherReleaseTitle);
+                            CollectAncestorGamesRecursive(ancestorGameTitles, siteDataIndex, parentOtherReleaseGame);
+                        }
+                    }
                 }
             }
 
