@@ -18547,9 +18547,8 @@
     "expansions": [],
     "first_release_date": 1271116800,
     "forks": [],
-    "franchise": 9,
+    "franchise": -1,
     "franchises": [
-      9,
       857
     ],
     "game_modes": [
@@ -22555,9 +22554,7 @@
       3272
     ],
     "first_release_date": 1285027200,
-    "forks": [
-      144487
-    ],
+    "forks": [],
     "franchise": 10,
     "franchises": [
       10
