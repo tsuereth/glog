@@ -97706,7 +97706,11 @@
     "keywords": [
       1102,
       1440,
-      2024
+      2024,
+      4004,
+      4150,
+      4275,
+      44629
     ],
     "name": "The Talos Principle: Road to Gehenna",
     "parent_game": 7386,
@@ -97722,9 +97726,9 @@
     ],
     "ports": [],
     "release_dates": [
-      414608,
-      414609,
-      414610
+      674266,
+      674267,
+      674268
     ],
     "remakes": [],
     "remasters": [],
@@ -98596,7 +98600,8 @@
       4989,
       5106,
       5151,
-      5704
+      5704,
+      45737
     ],
     "name": "Paint it Back",
     "parent_game": -1,
