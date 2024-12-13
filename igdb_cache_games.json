@@ -39053,6 +39053,7 @@
     ],
     "genres": [
       8,
+      10,
       31
     ],
     "id": 1528,
@@ -39127,7 +39128,9 @@
     "player_perspectives": [
       2
     ],
-    "ports": [],
+    "ports": [
+      325261
+    ],
     "release_dates": [
       135008,
       201082,
@@ -41924,7 +41927,9 @@
     "player_perspectives": [
       2
     ],
-    "ports": [],
+    "ports": [
+      325150
+    ],
     "release_dates": [
       166537,
       166538,
@@ -42027,7 +42032,9 @@
     "player_perspectives": [
       2
     ],
-    "ports": [],
+    "ports": [
+      325157
+    ],
     "release_dates": [
       166550,
       166551,
@@ -53601,10 +53608,8 @@
     "expansions": [],
     "first_release_date": 1377216000,
     "forks": [],
-    "franchise": 83,
-    "franchises": [
-      83
-    ],
+    "franchise": -1,
+    "franchises": [],
     "game_modes": [
       1,
       2,
@@ -78624,7 +78629,9 @@
       304271,
       375815
     ],
-    "remakes": [],
+    "remakes": [
+      324927
+    ],
     "remasters": [],
     "standalone_expansions": [],
     "themes": [
@@ -87649,7 +87656,9 @@
     "bundles": [],
     "category": 0,
     "collection": -1,
-    "collections": [],
+    "collections": [
+      10945
+    ],
     "dlcs": [],
     "expanded_games": [
       107295
@@ -95341,7 +95350,10 @@
       185004,
       185005
     ],
-    "keywords": [],
+    "keywords": [
+      4004,
+      44629
+    ],
     "name": "BioShock 2: Minerva's Den",
     "parent_game": 21,
     "platforms": [
@@ -101047,7 +101059,9 @@
     ],
     "category": 0,
     "collection": -1,
-    "collections": [],
+    "collections": [
+      10938
+    ],
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
@@ -101126,7 +101140,7 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
-    "first_release_date": 1384387200,
+    "first_release_date": 1426550400,
     "forks": [],
     "franchise": -1,
     "franchises": [],
@@ -101142,7 +101156,7 @@
     "involved_companies": [
       43993,
       44009,
-      291859
+      299330
     ],
     "keywords": [
       509,
@@ -101170,7 +101184,6 @@
       6,
       14,
       34,
-      39,
       46,
       48,
       49,
@@ -101187,8 +101200,7 @@
       655747,
       655748,
       655749,
-      655750,
-      655751
+      655750
     ],
     "remakes": [],
     "remasters": [],
@@ -116124,10 +116136,11 @@
     ],
     "id": 90558,
     "involved_companies": [
-      276675,
-      276676
+      298915,
+      298916
     ],
     "keywords": [
+      510,
       1905,
       41972
     ],
@@ -123699,7 +123712,9 @@
       314281
     ],
     "expanded_games": [],
-    "expansions": [],
+    "expansions": [
+      325582
+    ],
     "first_release_date": 1687910400,
     "forks": [],
     "franchise": -1,
@@ -126415,6 +126430,7 @@
       1
     ],
     "genres": [
+      9,
       31
     ],
     "id": 306149,
@@ -126425,7 +126441,8 @@
     ],
     "keywords": [
       962,
-      2750
+      2750,
+      7080
     ],
     "name": "The Legend of Zelda: Echoes of Wisdom",
     "parent_game": -1,
