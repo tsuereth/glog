@@ -35958,7 +35958,9 @@
     "bundles": [],
     "category": 10,
     "collection": -1,
-    "collections": [],
+    "collections": [
+      10774
+    ],
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
@@ -57099,7 +57101,6 @@
     ],
     "dlcs": [
       21596,
-      46919,
       53360
     ],
     "expanded_games": [],
@@ -59861,7 +59862,9 @@
     "category": 0,
     "collection": -1,
     "collections": [],
-    "dlcs": [],
+    "dlcs": [
+      325562
+    ],
     "expanded_games": [],
     "expansions": [],
     "first_release_date": 1470700800,
@@ -88392,7 +88395,11 @@
       962,
       1136,
       1439,
-      1779
+      1494,
+      1779,
+      4004,
+      4150,
+      44629
     ],
     "name": "BioShock Infinite: Burial at Sea - Episode 1",
     "parent_game": 127036,
@@ -88414,13 +88421,13 @@
       231652,
       231653,
       231654,
-      231655,
-      231656,
       231657,
       231658,
       231659,
       231660,
-      231661
+      231661,
+      677519,
+      677520
     ],
     "remakes": [],
     "remasters": [],
@@ -104236,7 +104243,7 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
-    "first_release_date": 1247011200,
+    "first_release_date": 1244505600,
     "forks": [],
     "franchise": -1,
     "franchises": [],
@@ -104245,7 +104252,10 @@
       12
     ],
     "id": 21124,
-    "involved_companies": [],
+    "involved_companies": [
+      299847,
+      299848
+    ],
     "keywords": [
       78,
       226,
@@ -104263,8 +104273,8 @@
     "player_perspectives": [],
     "ports": [],
     "release_dates": [
-      92476,
-      511064
+      511064,
+      677811
     ],
     "remakes": [],
     "remasters": [],
@@ -119237,7 +119247,12 @@
       120441,
       185033
     ],
-    "keywords": [],
+    "keywords": [
+      1494,
+      4004,
+      4150,
+      44629
+    ],
     "name": "BioShock Infinite: Burial at Sea - Episode 2",
     "parent_game": 127036,
     "platforms": [
@@ -119255,16 +119270,16 @@
     ],
     "ports": [],
     "release_dates": [
-      168104,
       168105,
       168106,
       223576,
-      231663,
       231664,
       231665,
       231666,
       231667,
-      231668
+      231668,
+      677521,
+      677522
     ],
     "remakes": [],
     "remasters": [],
@@ -119907,7 +119922,8 @@
       6,
       48,
       49,
-      130
+      130,
+      167
     ],
     "player_perspectives": [
       2,
@@ -119920,7 +119936,8 @@
       217965,
       248830,
       341684,
-      402098
+      402098,
+      677800
     ],
     "remakes": [],
     "remasters": [],
