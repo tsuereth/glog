@@ -101143,6 +101143,86 @@
   },
   {
     "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1500940800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1,
+      2
+    ],
+    "genres": [
+      12,
+      31,
+      32,
+      34
+    ],
+    "id": 18822,
+    "involved_companies": [
+      96622
+    ],
+    "keywords": [
+      589,
+      1495,
+      2377,
+      2814,
+      4134,
+      4154,
+      4284,
+      4345,
+      4347,
+      4468,
+      4768,
+      4854,
+      4855,
+      4871,
+      4882,
+      4883,
+      5542,
+      5792,
+      5896,
+      9935,
+      12087,
+      12556,
+      39028
+    ],
+    "name": "Pyre",
+    "parent_game": -1,
+    "platforms": [
+      3,
+      6,
+      14,
+      48
+    ],
+    "player_perspectives": [
+      1,
+      3
+    ],
+    "ports": [],
+    "release_dates": [
+      76228,
+      76229,
+      100862,
+      189258
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/pyre",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
     "category": 9,
     "collection": -1,
     "collections": [
@@ -120684,6 +120764,67 @@
     "bundles": [],
     "category": 0,
     "collection": -1,
+    "collections": [
+      5956
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1684800000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1572
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      8,
+      31,
+      32
+    ],
+    "id": 127354,
+    "involved_companies": [
+      156612,
+      156613
+    ],
+    "keywords": [],
+    "name": "Convergence: A League of Legends Story",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
+    "player_perspectives": [],
+    "ports": [],
+    "release_dates": [
+      492168,
+      492169,
+      492170,
+      492171,
+      492172,
+      492173,
+      492222,
+      492223
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1
+    ],
+    "url": "https://www.igdb.com/games/convergence-a-league-of-legends-story",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
     "collections": [],
     "dlcs": [
       170875
@@ -121019,6 +121160,99 @@
       38
     ],
     "url": "https://www.igdb.com/games/saints-row-the-third-remastered",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      284920
+    ],
+    "category": 8,
+    "collection": -1,
+    "collections": [
+      83
+    ],
+    "dlcs": [
+      242726
+    ],
+    "expanded_games": [],
+    "expansions": [
+      266717
+    ],
+    "first_release_date": 1679616000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      29
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      5,
+      9,
+      31
+    ],
+    "id": 132181,
+    "involved_companies": [
+      231038,
+      231039,
+      231040
+    ],
+    "keywords": [
+      5,
+      72,
+      131,
+      223,
+      283,
+      606,
+      840,
+      1308,
+      1697,
+      1836,
+      1971,
+      2489,
+      2653,
+      3257,
+      4397,
+      4614,
+      6246,
+      24039,
+      42787,
+      44753
+    ],
+    "name": "Resident Evil 4",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": 974,
+    "platforms": [
+      6,
+      14,
+      39,
+      48,
+      167,
+      169
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      515279,
+      515280,
+      515281,
+      515282,
+      515560,
+      535064,
+      535065
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      19,
+      43
+    ],
+    "url": "https://www.igdb.com/games/resident-evil-4--1",
     "version_parent": -1
   },
   {
@@ -121374,6 +121608,79 @@
       18
     ],
     "url": "https://www.igdb.com/games/new-play-control-metroid-prime-2-dark-echoes",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      138947
+    ],
+    "category": 4,
+    "collection": -1,
+    "collections": [
+      7292
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1605139200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      124,
+      151
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      25,
+      31
+    ],
+    "id": 134581,
+    "involved_companies": [
+      148079,
+      148080
+    ],
+    "keywords": [
+      1293,
+      1401,
+      2156,
+      2387,
+      4287,
+      11696
+    ],
+    "name": "Marvel's Spider-Man: Miles Morales",
+    "parent_game": 19565,
+    "platforms": [
+      6,
+      48,
+      167
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      210953,
+      210954,
+      210955,
+      210956,
+      210957,
+      210958,
+      210959,
+      210960,
+      210961,
+      397020
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      23,
+      38
+    ],
+    "url": "https://www.igdb.com/games/marvels-spider-man-miles-morales",
     "version_parent": -1
   },
   {
@@ -121870,6 +122177,67 @@
     "version_parent": -1
   },
   {
+    "bundles": [
+      138947,
+      262164
+    ],
+    "category": 9,
+    "collection": -1,
+    "collections": [
+      7292
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1605139200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      124,
+      151
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      25,
+      31
+    ],
+    "id": 138949,
+    "involved_companies": [
+      108477,
+      108478,
+      182762
+    ],
+    "keywords": [],
+    "name": "Marvel's Spider-Man Remastered",
+    "parent_game": 19565,
+    "platforms": [
+      6,
+      167
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      211033,
+      211034,
+      362572
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      23,
+      31,
+      38
+    ],
+    "url": "https://www.igdb.com/games/marvels-spider-man-remastered",
+    "version_parent": -1
+  },
+  {
     "bundles": [],
     "category": 0,
     "collection": -1,
@@ -122118,6 +122486,128 @@
       40
     ],
     "url": "https://www.igdb.com/games/nerts-online",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [
+      321852
+    ],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1733702400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      2
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      9,
+      31
+    ],
+    "id": 142415,
+    "involved_companies": [
+      282780,
+      282781
+    ],
+    "keywords": [
+      19,
+      225,
+      250,
+      2231,
+      2426
+    ],
+    "name": "Indiana Jones and the Great Circle",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      167,
+      169
+    ],
+    "player_perspectives": [
+      1,
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      632224,
+      632225,
+      632249,
+      663089,
+      663090
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      23
+    ],
+    "url": "https://www.igdb.com/games/indiana-jones-and-the-great-circle",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1689638400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      8,
+      9,
+      31,
+      32
+    ],
+    "id": 142549,
+    "involved_companies": [
+      195874,
+      226166
+    ],
+    "keywords": [
+      287,
+      308,
+      1495,
+      1629,
+      4928
+    ],
+    "name": "Viewfinder",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      48,
+      167
+    ],
+    "player_perspectives": [
+      1
+    ],
+    "ports": [],
+    "release_dates": [
+      489856,
+      489857,
+      489858
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      18
+    ],
+    "url": "https://www.igdb.com/games/viewfinder",
     "version_parent": -1
   },
   {
@@ -122587,6 +123077,100 @@
       43
     ],
     "url": "https://www.igdb.com/games/outer-wilds-echoes-of-the-eye",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1687478400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      9,
+      32,
+      34
+    ],
+    "id": 149149,
+    "involved_companies": [
+      211593
+    ],
+    "keywords": [
+      78
+    ],
+    "name": "Tyrion Cuthbert: Attorney of the Arcane",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      14
+    ],
+    "player_perspectives": [],
+    "ports": [],
+    "release_dates": [
+      492692,
+      492693
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      17,
+      43
+    ],
+    "url": "https://www.igdb.com/games/tyrion-cuthbert-attorney-of-the-arcane",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1715299200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      13
+    ],
+    "id": 149952,
+    "involved_companies": [
+      157303
+    ],
+    "keywords": [
+      287
+    ],
+    "name": "Instruments of Destruction",
+    "parent_game": -1,
+    "platforms": [
+      6
+    ],
+    "player_perspectives": [],
+    "ports": [],
+    "release_dates": [
+      554521,
+      593614
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1
+    ],
+    "url": "https://www.igdb.com/games/instruments-of-destruction",
     "version_parent": -1
   },
   {
@@ -123434,6 +124018,63 @@
     "bundles": [],
     "category": 0,
     "collection": -1,
+    "collections": [
+      5956
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1698796800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      9,
+      31,
+      32
+    ],
+    "id": 182190,
+    "involved_companies": [
+      156607,
+      156608
+    ],
+    "keywords": [],
+    "name": "Song of Nunu: A League of Legends Story",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
+    "player_perspectives": [],
+    "ports": [],
+    "release_dates": [
+      516101,
+      534941,
+      552849,
+      552850,
+      552851,
+      552852
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1
+    ],
+    "url": "https://www.igdb.com/games/song-of-nunu-a-league-of-legends-story",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
     "collections": [],
     "dlcs": [],
     "expanded_games": [],
@@ -123516,6 +124157,123 @@
       31
     ],
     "url": "https://www.igdb.com/games/depict1",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1715212800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      8,
+      9,
+      31,
+      32
+    ],
+    "id": 191435,
+    "involved_companies": [
+      199080,
+      199081
+    ],
+    "keywords": [
+      72,
+      126,
+      223,
+      288,
+      477,
+      1387,
+      1697,
+      1705,
+      1721,
+      1780,
+      2084,
+      16877
+    ],
+    "name": "Animal Well",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      130,
+      167,
+      169
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      574880,
+      574881,
+      574882,
+      655485
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      19,
+      21,
+      43
+    ],
+    "url": "https://www.igdb.com/games/animal-well",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1712016000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      5,
+      31,
+      32
+    ],
+    "id": 191761,
+    "involved_companies": [
+      219087,
+      219088
+    ],
+    "keywords": [],
+    "name": "Minishoot' Adventures",
+    "parent_game": -1,
+    "platforms": [
+      6
+    ],
+    "player_perspectives": [
+      3
+    ],
+    "ports": [],
+    "release_dates": [
+      569949
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1
+    ],
+    "url": "https://www.igdb.com/games/minishoot-adventures",
     "version_parent": -1
   },
   {
@@ -124769,6 +125527,66 @@
     "version_parent": -1
   },
   {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [
+      5956
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1681776000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1572
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      31,
+      32
+    ],
+    "id": 239302,
+    "involved_companies": [
+      204946,
+      204947
+    ],
+    "keywords": [],
+    "name": "The Mageseeker: A League of Legends Story",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
+    "player_perspectives": [],
+    "ports": [],
+    "release_dates": [
+      493610,
+      493611,
+      493612,
+      493613,
+      493614,
+      493615
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/the-mageseeker-a-league-of-legends-story",
+    "version_parent": -1
+  },
+  {
     "bundles": [
       140839
     ],
@@ -125078,6 +125896,64 @@
       38
     ],
     "url": "https://www.igdb.com/games/cat-quest-iii",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 9,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1730332800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      5,
+      9,
+      31
+    ],
+    "id": 252501,
+    "involved_companies": [
+      277647
+    ],
+    "keywords": [],
+    "name": "Shadows of the Damned: Hella Remastered",
+    "parent_game": 5971,
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      621229,
+      621230,
+      621231,
+      621232,
+      621233,
+      621234
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      19,
+      27
+    ],
+    "url": "https://www.igdb.com/games/shadows-of-the-damned-hella-remastered",
     "version_parent": -1
   },
   {
@@ -125696,6 +126572,128 @@
       18
     ],
     "url": "https://www.igdb.com/games/chrono-trigger--4",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1710460800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      9,
+      13,
+      15,
+      32
+    ],
+    "id": 263886,
+    "involved_companies": [
+      266350
+    ],
+    "keywords": [
+      101,
+      147,
+      215,
+      225,
+      226,
+      288,
+      510,
+      1140,
+      1780,
+      2366,
+      2426,
+      2925,
+      4054,
+      4527,
+      19452,
+      23825,
+      26248,
+      34318
+    ],
+    "name": "Logiart Grimoire",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      130
+    ],
+    "player_perspectives": [
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      514072,
+      575101,
+      593816
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      17,
+      34,
+      43
+    ],
+    "url": "https://www.igdb.com/games/logiart-grimoire",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1708473600,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      1572
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      13,
+      31
+    ],
+    "id": 266687,
+    "involved_companies": [
+      231283,
+      231284
+    ],
+    "keywords": [],
+    "name": "Bandle Tale: A League of Legends Story",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      130
+    ],
+    "player_perspectives": [
+      3
+    ],
+    "ports": [],
+    "release_dates": [
+      555185,
+      555186
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      17
+    ],
+    "url": "https://www.igdb.com/games/bandle-tale-a-league-of-legends-story",
     "version_parent": -1
   },
   {

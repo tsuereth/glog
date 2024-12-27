@@ -3492,6 +3492,10 @@
     "name": "Nintendo EPD"
   },
   {
+    "id": 7914,
+    "name": "Lazy Bear Games"
+  },
+  {
     "id": 7919,
     "name": "Missing Link Games"
   },
@@ -4008,6 +4012,10 @@
     "name": "Thekla, Inc"
   },
   {
+    "id": 12319,
+    "name": "Digital Sun Games"
+  },
+  {
     "id": 12346,
     "name": "Cold Beam Games"
   },
@@ -4216,6 +4224,10 @@
     "name": "Somnium Games d.o.o."
   },
   {
+    "id": 15509,
+    "name": "Double Stallion Games"
+  },
+  {
     "id": 15512,
     "name": "SCE Santa Monica Studio"
   },
@@ -4284,6 +4296,10 @@
     "name": "doinksoft"
   },
   {
+    "id": 16337,
+    "name": "Thunderful"
+  },
+  {
     "id": 16437,
     "name": "Team17"
   },
@@ -4348,6 +4364,10 @@
     "name": "studio wasp"
   },
   {
+    "id": 18324,
+    "name": "Radiangames"
+  },
+  {
     "id": 18344,
     "name": "Crunchy Leaf Games"
   },
@@ -4362,6 +4382,10 @@
   {
     "id": 18629,
     "name": "Fellow Traveller"
+  },
+  {
+    "id": 18684,
+    "name": "SoulGame Studio"
   },
   {
     "id": 19025,
@@ -4560,6 +4584,10 @@
     "name": "Bandai Namco Studios"
   },
   {
+    "id": 22901,
+    "name": "Riot Forge"
+  },
+  {
     "id": 22994,
     "name": "NVIDIA Lightspeed Studios"
   },
@@ -4638,6 +4666,10 @@
   {
     "id": 25341,
     "name": "Capcom Co., LTD."
+  },
+  {
+    "id": 25385,
+    "name": "M-TWO"
   },
   {
     "id": 25444,
@@ -4808,6 +4840,10 @@
     "name": "Marvelous Entertainment Inc."
   },
   {
+    "id": 36410,
+    "name": "Diamondhenge Entertainment"
+  },
+  {
     "id": 36610,
     "name": "Secret Mode"
   },
@@ -4836,6 +4872,10 @@
     "name": "Jetpack Interactive"
   },
   {
+    "id": 40206,
+    "name": "Shared Memory"
+  },
+  {
     "id": 41283,
     "name": "Flagship"
   },
@@ -4850,6 +4890,10 @@
   {
     "id": 41665,
     "name": "Frost Giant Studios"
+  },
+  {
+    "id": 42265,
+    "name": "Capcom Development Division 1"
   },
   {
     "id": 42627,
@@ -4870,6 +4914,14 @@
   {
     "id": 43770,
     "name": "Supergenius Studio"
+  },
+  {
+    "id": 44606,
+    "name": "Sad Owl Studios"
+  },
+  {
+    "id": 45133,
+    "name": "Bigmode"
   },
   {
     "id": 45209,
