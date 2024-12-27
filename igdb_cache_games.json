@@ -6317,7 +6317,8 @@
       1
     ],
     "genres": [
-      25
+      25,
+      31
     ],
     "id": 134,
     "involved_companies": [
@@ -40131,7 +40132,6 @@
       50962,
       50963,
       50964,
-      50969,
       50970,
       50971,
       50972,
@@ -40140,7 +40140,8 @@
       505783,
       617781,
       617782,
-      617783
+      617783,
+      680485
     ],
     "remakes": [],
     "remasters": [],
@@ -44569,7 +44570,9 @@
       2
     ],
     "genres": [
-      5
+      5,
+      13,
+      15
     ],
     "id": 1979,
     "involved_companies": [
@@ -61194,7 +61197,8 @@
       1
     ],
     "genres": [
-      12
+      12,
+      31
     ],
     "id": 3351,
     "involved_companies": [
@@ -109433,7 +109437,31 @@
       189113
     ],
     "keywords": [
-      4527
+      962,
+      1187,
+      1422,
+      1495,
+      1705,
+      1780,
+      2109,
+      2225,
+      2493,
+      2668,
+      2760,
+      4287,
+      4359,
+      4527,
+      4754,
+      4787,
+      5628,
+      5709,
+      11312,
+      17195,
+      19452,
+      23954,
+      38565,
+      42385,
+      45058
     ],
     "name": "Recursed",
     "parent_game": -1,
@@ -112215,7 +112243,7 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
-    "first_release_date": 1212624000,
+    "first_release_date": 1209945600,
     "forks": [],
     "franchise": -1,
     "franchises": [],
@@ -112223,12 +112251,14 @@
       1
     ],
     "genres": [
-      9
+      9,
+      26
     ],
     "id": 47766,
     "involved_companies": [
       121489,
-      121490
+      121490,
+      300439
     ],
     "keywords": [
       1304,
@@ -112246,12 +112276,16 @@
     ],
     "ports": [],
     "release_dates": [
-      94366
+      680307,
+      680308,
+      680309
     ],
     "remakes": [],
     "remasters": [],
     "standalone_expansions": [],
-    "themes": [],
+    "themes": [
+      34
+    ],
     "url": "https://www.igdb.com/games/crosswords-ds",
     "version_parent": -1
   },
@@ -120131,7 +120165,9 @@
     ],
     "category": 2,
     "collection": -1,
-    "collections": [],
+    "collections": [
+      8415
+    ],
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
@@ -120195,7 +120231,9 @@
     ],
     "category": 2,
     "collection": -1,
-    "collections": [],
+    "collections": [
+      8415
+    ],
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
@@ -125680,7 +125718,8 @@
       1
     ],
     "genres": [
-      12
+      12,
+      31
     ],
     "id": 266690,
     "involved_companies": [
