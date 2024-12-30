@@ -45886,7 +45886,8 @@
     "category": 0,
     "collection": -1,
     "collections": [
-      68
+      68,
+      11020
     ],
     "dlcs": [
       10028,
@@ -57597,7 +57598,8 @@
     "platforms": [
       3,
       6,
-      14
+      14,
+      163
     ],
     "player_perspectives": [
       1,
@@ -57611,7 +57613,8 @@
       122647,
       216677,
       216678,
-      216679
+      216679,
+      684575
     ],
     "remakes": [],
     "remasters": [],
@@ -79926,7 +79929,8 @@
     "category": 0,
     "collection": -1,
     "collections": [
-      68
+      68,
+      11020
     ],
     "dlcs": [],
     "expanded_games": [
@@ -88108,7 +88112,8 @@
     "category": 1,
     "collection": -1,
     "collections": [
-      68
+      68,
+      11020
     ],
     "dlcs": [],
     "expanded_games": [],
