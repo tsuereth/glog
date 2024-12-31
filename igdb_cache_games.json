@@ -109374,7 +109374,7 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
-    "first_release_date": 1481241600,
+    "first_release_date": 1421452800,
     "forks": [],
     "franchise": -1,
     "franchises": [],
@@ -109398,8 +109398,8 @@
     "player_perspectives": [],
     "ports": [],
     "release_dates": [
-      73246,
-      73247
+      685108,
+      685109
     ],
     "remakes": [],
     "remasters": [],
@@ -119490,7 +119490,8 @@
     "id": 119171,
     "involved_companies": [
       207626,
-      214383
+      214383,
+      301215
     ],
     "keywords": [
       72,
