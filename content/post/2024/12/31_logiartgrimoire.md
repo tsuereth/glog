@@ -18,7 +18,7 @@ I kinda wish that Logiart Grimoire had more mechanical accommodations for its bi
 
 ![]($SiteBaseURL$logiart-grimoire_40-by-30.jpg){width=960 height=540}
 
-But while a minimal story and scale-limiting mechanics keep Logiart Grimoire from being a *great*, nonogram game, it's nevertheless a solid genre entry, with enough content to occupy an addict like me for 70+ hours of scanning and clicking.
+But while a minimal story and scale-limiting mechanics keep Logiart Grimoire from being a *great* nonogram game, it's nevertheless a solid genre entry, with enough content to occupy an addict like me for 70+ hours of scanning and clicking.
 
 **Better than**: <game:Picross e>, <game:Puppy Cross>  
 **Not as good as**: <game:Piczle Cross Adventure>, <game:Voxelgram>  
