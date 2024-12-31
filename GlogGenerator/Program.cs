@@ -226,7 +226,7 @@ namespace GlogGenerator
 date = ""{newPostDate}""
 draft = true
 title = """"
-category = [ ""Playing A Game"" ]
+category = [ ""{CategoryData.PlayingAGameCategoryName}"" ]
 game = []
 platform = []
 rating = []

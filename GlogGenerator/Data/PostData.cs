@@ -41,6 +41,20 @@ namespace GlogGenerator.Data
 
         public List<SiteDataReference<RatingData>> Ratings { get { return this.ratings.Select(t => t.Item2).ToList(); } }
 
+        public bool IsInPlayingAGameCategory()
+        {
+            foreach (var category in this.categories)
+            {
+                var categoryName = category.Item1.Value;
+                if (categoryName.Equals(CategoryData.PlayingAGameCategoryName, StringComparison.OrdinalIgnoreCase))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public string GetPostId()
         {
             return CalculatePostId(this.PermalinkRelative);

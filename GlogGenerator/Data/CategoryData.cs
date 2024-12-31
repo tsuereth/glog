@@ -7,6 +7,9 @@ namespace GlogGenerator.Data
 {
     public class CategoryData : IGlogReferenceable
     {
+        // This category string is special, and frequently referenced programmatically.
+        public const string PlayingAGameCategoryName = "Playing A Game";
+
         public string Name { get; set; } = string.Empty;
 
         public HashSet<string> LinkedPostIds { get; set; } = new HashSet<string>();

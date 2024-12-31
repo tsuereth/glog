@@ -169,8 +169,12 @@ namespace GlogGenerator
 
         public List<GameStats> GetGameStatsForDateRange(DateTimeOffset startDate, DateTimeOffset endDate)
         {
+            var reportPosts = this.siteDataIndex.GetPosts()
+                .Where(p => p.Date >= startDate && p.Date <= endDate)
+                .Where(p => p.IsInPlayingAGameCategory())
+                .ToList();
+
             var statsByGameAndPlatform = new Dictionary<string, GameStats>();
-            var reportPosts = this.siteDataIndex.GetPosts().Where(p => p.Date >= startDate && p.Date <= endDate).ToList();
             foreach (var reportPost in reportPosts)
             {
                 if (reportPost.Games != null)
