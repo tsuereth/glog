@@ -432,10 +432,6 @@
     "name": "Iron Lore Entertainment"
   },
   {
-    "id": 200,
-    "name": "Electronic Arts Victor"
-  },
-  {
     "id": 201,
     "name": "Cyberlore Studios"
   },
@@ -2654,6 +2650,10 @@
   {
     "id": 3681,
     "name": "CGBot"
+  },
+  {
+    "id": 3693,
+    "name": "Infinity"
   },
   {
     "id": 3697,
