@@ -22,7 +22,6 @@ permalink = "/backlog"
 * <game:Marvel's Spider-Man Remastered> (<platform:PC>)
 * <game:Metroid Dread> (<platform:Switch>)
 * <game:Metroid Prime Remastered> (<platform:Switch>)
-* <game:Minishoot' Adventures> (<platform:PC>)
 * <game:No More Heroes III> (<platform:PC>)
 * <game:Ori and the Will of the Wisps> (<platform:PC>)
 * <game:Oxenfree II: Lost Signals> (<platform:PC>)
