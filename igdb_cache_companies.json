@@ -4401,7 +4401,7 @@
   },
   {
     "id": 19080,
-    "name": "Ryu ga Gotoku Studios"
+    "name": "Ryu Ga Gotoku Studios"
   },
   {
     "id": 19166,
@@ -4998,5 +4998,9 @@
   {
     "id": 60426,
     "name": "Studio Archcraft"
+  },
+  {
+    "id": 60731,
+    "name": "Dong Seo Interactive"
   }
 ]
