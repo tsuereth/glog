@@ -4,7 +4,6 @@ permalink = "/backlog"
 
 # Games I Will Play One Day, Maybe
 
-* <game:Ace Attorney Investigations Collection> (<platform:PC>)
 * <game:Afterparty> (<platform:PC>)
 * <game:Animal Well> (<platform:PC>)
 * <game:Bandle Tale: A League of Legends Story> (<platform:PC>)
