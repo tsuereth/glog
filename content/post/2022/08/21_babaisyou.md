@@ -2,12 +2,12 @@
 date = "2022-08-21T14:14:19-07:00"
 title = "Baba is Tired"
 category = [ "Playing A Game" ]
-game = [ "Baba is You" ]
+game = [ "Baba Is You" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 +++
 
-<game:Baba is You>, with its straightforward way of messaging "the rules" on the game field - but spiraling in complexity as you <i>modify</i> those rules to solve the puzzle - hooked me right away.
+<game:Baba Is You>, with its straightforward way of messaging "the rules" on the game field - but spiraling in complexity as you <i>modify</i> those rules to solve the puzzle - hooked me right away.
 
 That was six months ago.
 
