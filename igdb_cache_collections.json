@@ -148,6 +148,10 @@
     "name": "Myst"
   },
   {
+    "id": 75,
+    "name": "Kane & Lynch"
+  },
+  {
     "id": 77,
     "name": "System Shock"
   },
@@ -1914,6 +1918,10 @@
   {
     "id": 10557,
     "name": "Ghost"
+  },
+  {
+    "id": 10748,
+    "name": "Star Citizen"
   },
   {
     "id": 10774,
