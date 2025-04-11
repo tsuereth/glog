@@ -1569,7 +1569,7 @@
   },
   {
     "id": 6096,
-    "name": "rogue legacy"
+    "name": "Rogue Legacy"
   },
   {
     "id": 6097,
@@ -1962,5 +1962,9 @@
   {
     "id": 11404,
     "name": "Voxelgram"
+  },
+  {
+    "id": 11543,
+    "name": "Biped"
   }
 ]
