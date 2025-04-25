@@ -121179,6 +121179,84 @@
     "category": 0,
     "collection": -1,
     "collections": [
+      7292
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1697760000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      124,
+      151
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      25,
+      31
+    ],
+    "id": 127044,
+    "involved_companies": [
+      196216,
+      306021,
+      306022,
+      306023
+    ],
+    "keywords": [
+      72,
+      247,
+      283,
+      390,
+      524,
+      840,
+      977,
+      1204,
+      1401,
+      1884,
+      1971,
+      2387,
+      3403,
+      4266,
+      4494,
+      5792,
+      7344,
+      17268,
+      26965
+    ],
+    "name": "Marvel's Spider-Man 2",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      167
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      481925,
+      656113
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      23,
+      31,
+      38
+    ],
+    "url": "https://www.igdb.com/games/marvels-spider-man-2",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [
       5956
     ],
     "dlcs": [],
@@ -127209,6 +127287,65 @@
   },
   {
     "bundles": [],
+    "category": 9,
+    "collection": -1,
+    "collections": [
+      6
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1745280000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      456
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      31
+    ],
+    "id": 267306,
+    "involved_companies": [
+      245240,
+      315980,
+      315981
+    ],
+    "keywords": [],
+    "name": "The Elder Scrolls IV: Oblivion Remastered",
+    "parent_game": 59,
+    "platforms": [
+      169,
+      6,
+      167
+    ],
+    "player_perspectives": [
+      1,
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      732179,
+      732174,
+      732175
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      33,
+      38
+    ],
+    "url": "https://www.igdb.com/games/the-elder-scrolls-iv-oblivion-remastered",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
     "category": 13,
     "collection": -1,
     "collections": [],
@@ -127387,6 +127524,69 @@
       17
     ],
     "url": "https://www.igdb.com/games/flicky--2",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      340213
+    ],
+    "category": 9,
+    "collection": -1,
+    "collections": [
+      864
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1705622400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      2675
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      5,
+      31
+    ],
+    "id": 277143,
+    "involved_companies": [
+      299426,
+      299427,
+      299428,
+      299429
+    ],
+    "keywords": [
+      69,
+      16877,
+      37861
+    ],
+    "name": "The Last of Us Part II: Remastered",
+    "parent_game": 26192,
+    "platforms": [
+      6,
+      167
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      537746,
+      676410
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      19,
+      21,
+      23
+    ],
+    "url": "https://www.igdb.com/games/the-last-of-us-part-ii-remastered",
     "version_parent": -1
   },
   {
@@ -128605,6 +128805,126 @@
       38
     ],
     "url": "https://www.igdb.com/games/ghost-of-yotei",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 8,
+    "collection": -1,
+    "collections": [
+      9600
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1744243200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      9,
+      31,
+      32
+    ],
+    "id": 324927,
+    "involved_companies": [
+      298836,
+      298837
+    ],
+    "keywords": [],
+    "name": "The Talos Principle: Reawakened",
+    "parent_game": 7386,
+    "platforms": [
+      169,
+      6,
+      167
+    ],
+    "player_perspectives": [
+      1,
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      708566,
+      708567,
+      708565
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      18
+    ],
+    "url": "https://www.igdb.com/games/the-talos-principle-reawakened",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1741219200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      2,
+      3,
+      4
+    ],
+    "genres": [
+      8,
+      31
+    ],
+    "id": 325594,
+    "involved_companies": [
+      299399,
+      299406
+    ],
+    "keywords": [
+      332,
+      1634,
+      1635,
+      1677,
+      16877,
+      36805,
+      37861,
+      39201
+    ],
+    "name": "Split Fiction",
+    "parent_game": -1,
+    "platforms": [
+      169,
+      508,
+      6,
+      167
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      722958,
+      676367,
+      676414,
+      676415
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      18
+    ],
+    "url": "https://www.igdb.com/games/split-fiction",
     "version_parent": -1
   }
 ]
