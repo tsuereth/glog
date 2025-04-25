@@ -30,7 +30,6 @@ permalink = "/backlog"
 * <game:Paper Mario: The Thousand-Year Door (2024)> (<platform:Switch>)
 * <game:Pyre> (<platform:PC>)
 * <game:Resident Evil 4 (2023)> (<platform:PC>)
-* <game:Satisfactory> (<platform:PC>)
 * <game:Shadows of the Damned: Hella Remastered> (<platform:PC>)
 * <game:Song of Nunu: A League of Legends Story> (<platform:PC>)
 * <game:Spiritfarer> (<platform:PC>)
