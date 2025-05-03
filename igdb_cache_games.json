@@ -8736,8 +8736,8 @@
       6744
     ],
     "standalone_expansions": [
-      232,
       2549,
+      232,
       6738
     ],
     "themes": [
@@ -8849,8 +8849,8 @@
     "remakes": [],
     "remasters": [],
     "standalone_expansions": [
-      247,
       338,
+      247,
       237522
     ],
     "themes": [
@@ -14594,7 +14594,9 @@
     "version_parent": -1
   },
   {
-    "bundles": [],
+    "bundles": [
+      335681
+    ],
     "category": 0,
     "collection": -1,
     "collections": [
@@ -24734,8 +24736,8 @@
       106244
     ],
     "remakes": [
-      204350,
-      215089
+      215089,
+      204350
     ],
     "remasters": [
       6036
@@ -32351,7 +32353,9 @@
     "first_release_date": 996624000,
     "forks": [],
     "franchise": -1,
-    "franchises": [],
+    "franchises": [
+      6595
+    ],
     "game_modes": [
       1,
       2
@@ -34465,7 +34469,9 @@
   },
   {
     "bundles": [
-      57228
+      57228,
+      342043,
+      342044
     ],
     "category": 0,
     "collection": -1,
@@ -36269,8 +36275,8 @@
     ],
     "remakes": [],
     "remasters": [
-      278326,
-      20437
+      20437,
+      278326
     ],
     "standalone_expansions": [],
     "themes": [
@@ -42261,9 +42267,7 @@
     "version_parent": -1
   },
   {
-    "bundles": [
-      191404
-    ],
+    "bundles": [],
     "category": 0,
     "collection": -1,
     "collections": [
@@ -42410,7 +42414,9 @@
       29741
     ],
     "remakes": [],
-    "remasters": [],
+    "remasters": [
+      335488
+    ],
     "standalone_expansions": [],
     "themes": [
       17,
@@ -43467,8 +43473,8 @@
     "expanded_games": [],
     "expansions": [
       105041,
-      75682,
-      298931
+      298931,
+      75682
     ],
     "first_release_date": 1456358400,
     "forks": [],
@@ -44029,8 +44035,8 @@
     ],
     "expanded_games": [],
     "expansions": [
-      12503,
-      13166
+      13166,
+      12503
     ],
     "first_release_date": 1431993600,
     "forks": [],
@@ -55183,7 +55189,8 @@
     "themes": [
       1,
       18,
-      33
+      33,
+      38
     ],
     "url": "https://www.igdb.com/games/crackdown",
     "version_parent": -1
@@ -55245,7 +55252,8 @@
     "themes": [
       1,
       18,
-      33
+      33,
+      38
     ],
     "url": "https://www.igdb.com/games/crackdown-2",
     "version_parent": -1
@@ -55525,9 +55533,9 @@
     "expansions": [
       22660,
       22669,
-      110889,
       23850,
       22664,
+      110889,
       23980,
       22668,
       26426,
@@ -66006,8 +66014,8 @@
       84657,
       264476,
       202256,
-      239069,
-      264477
+      264477,
+      239069
     ],
     "release_dates": [
       161743,
@@ -87026,11 +87034,11 @@
     ],
     "ports": [],
     "release_dates": [
-      45916,
-      498332,
-      45918,
-      45917,
-      45919
+      733077,
+      733078,
+      733079,
+      733080,
+      733081
     ],
     "remakes": [],
     "remasters": [],
@@ -101909,6 +101917,7 @@
     ],
     "dlcs": [
       139967,
+      341802,
       164399,
       164403,
       164400,
@@ -102098,8 +102107,8 @@
     "expanded_games": [],
     "expansions": [
       131784,
-      134100,
       138354,
+      134100,
       126138
     ],
     "first_release_date": 1568332800,
@@ -108218,6 +108227,7 @@
       8,
       9,
       15,
+      24,
       32
     ],
     "id": 26972,
@@ -109287,10 +109297,8 @@
     "parent_game": -1,
     "platforms": [
       170,
-      169,
       48,
       6,
-      167,
       49
     ],
     "player_perspectives": [
@@ -109300,8 +109308,6 @@
     "release_dates": [
       112816,
       239702,
-      527081,
-      527082,
       112814,
       419142
     ],
@@ -117897,8 +117903,7 @@
     "category": 0,
     "collection": -1,
     "collections": [
-      453,
-      10065
+      453
     ],
     "dlcs": [],
     "expanded_games": [],
@@ -119441,7 +119446,7 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
-    "first_release_date": 1767139200,
+    "first_release_date": 1759276800,
     "forks": [],
     "franchise": -1,
     "franchises": [
@@ -119473,9 +119478,9 @@
     ],
     "ports": [],
     "release_dates": [
-      632377,
-      632378,
-      632379
+      718666,
+      718667,
+      718668
     ],
     "remakes": [],
     "remasters": [],
@@ -123767,9 +123772,9 @@
       225
     ],
     "dlcs": [
-      204919,
       222661,
       205019,
+      204919,
       293727,
       206302
     ],
@@ -128834,6 +128839,7 @@
     ],
     "genres": [
       8,
+      9,
       31
     ],
     "id": 325594,
