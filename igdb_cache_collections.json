@@ -1324,10 +1324,6 @@
     "name": "Picross"
   },
   {
-    "id": 3470,
-    "name": "Smurfs"
-  },
-  {
     "id": 3471,
     "name": "Piczle"
   },
@@ -1962,5 +1958,9 @@
   {
     "id": 11543,
     "name": "Biped"
+  },
+  {
+    "id": 11897,
+    "name": "Ben and Dan"
   }
 ]
