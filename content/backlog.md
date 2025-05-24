@@ -9,6 +9,7 @@ permalink = "/backlog"
 * <game:Bandle Tale: A League of Legends Story> (<platform:PC>)
 * <game:Convergence: A League of Legends Story> (<platform:PC>)
 * <game:Cyberpunk 2077: Phantom Liberty> (<platform:PC>)
+* <game:Deliver At All Costs> (<platform:PC>)
 * <game:Ghost of Tsushima: Director's Cut> (<platform:PC>)
 * <game:Hades (2020)> (<platform:PC>)
 * <game:Indiana Jones and the Great Circle> (<platform:PC>)

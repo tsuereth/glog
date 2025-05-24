@@ -4153,8 +4153,8 @@
     ],
     "dlcs": [
       13911,
-      13690,
       25299,
+      13690,
       13912,
       13910,
       78460,
@@ -5504,10 +5504,10 @@
       7
     ],
     "ports": [
-      135400,
       85614,
       140272,
       94752,
+      135400,
       84610,
       94029,
       325724,
@@ -5552,17 +5552,17 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [
-      227,
-      11593,
       229,
-      3157,
-      125175,
-      75380,
-      228,
       1332,
-      275177,
+      125175,
+      228,
+      11593,
       198157,
+      227,
+      3157,
+      75380,
       275176,
+      275177,
       275178
     ],
     "first_release_date": 1101168000,
@@ -9038,8 +9038,8 @@
     "remakes": [],
     "remasters": [],
     "standalone_expansions": [
-      458,
-      457
+      457,
+      458
     ],
     "themes": [
       1,
@@ -27286,7 +27286,9 @@
     "collections": [
       428
     ],
-    "dlcs": [],
+    "dlcs": [
+      344631
+    ],
     "expanded_games": [],
     "expansions": [],
     "first_release_date": 1226361600,
@@ -28663,7 +28665,8 @@
       11400,
       11750,
       11782,
-      29622
+      29622,
+      48194
     ],
     "name": "Super Mario 3D Land",
     "parent_game": -1,
@@ -28750,7 +28753,8 @@
       11396,
       11400,
       29622,
-      30703
+      30703,
+      48194
     ],
     "name": "New Super Mario Bros. 2",
     "parent_game": -1,
@@ -28762,11 +28766,11 @@
     ],
     "ports": [],
     "release_dates": [
-      81007,
-      81008,
-      81010,
-      501919,
-      240636
+      744666,
+      744667,
+      744668,
+      744669,
+      744670
     ],
     "remakes": [],
     "remasters": [],
@@ -52048,7 +52052,8 @@
       23983,
       25315,
       29428,
-      30703
+      30703,
+      48194
     ],
     "name": "Mario Kart 7",
     "parent_game": -1,
@@ -55547,7 +55552,8 @@
       7224,
       7226,
       7229,
-      42064
+      42064,
+      48194
     ],
     "name": "The Legend of Zelda: A Link Between Worlds",
     "parent_game": -1,
@@ -55560,10 +55566,10 @@
     ],
     "ports": [],
     "release_dates": [
-      206717,
-      144226,
-      22558,
-      22559
+      744370,
+      744367,
+      744368,
+      744369
     ],
     "remakes": [],
     "remasters": [],
@@ -85737,11 +85743,11 @@
       6255
     ],
     "dlcs": [
-      53867,
-      53868,
+      53785,
       53786,
-      53869,
-      53785
+      53868,
+      53867,
+      53869
     ],
     "expanded_games": [],
     "expansions": [],
@@ -87084,13 +87090,16 @@
     "keywords": [
       1075,
       2165,
+      2229,
       2555,
       2646,
+      7224,
       9641,
       16992,
       23983,
       25315,
-      29622
+      29622,
+      48194
     ],
     "name": "Super Smash Bros. for Nintendo 3DS",
     "parent_game": -1,
@@ -91009,10 +91018,10 @@
     ],
     "dlcs": [
       74745,
-      105422,
-      96134,
       153697,
-      153698
+      153698,
+      105422,
+      96134
     ],
     "expanded_games": [],
     "expansions": [],
@@ -108562,6 +108571,73 @@
     "bundles": [],
     "category": 0,
     "collection": -1,
+    "collections": [
+      9042
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1589328000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1,
+      2,
+      3
+    ],
+    "genres": [
+      5,
+      31,
+      32
+    ],
+    "id": 27134,
+    "involved_companies": [
+      226553,
+      226554
+    ],
+    "keywords": [
+      2066,
+      3203,
+      4357
+    ],
+    "name": "Deep Rock Galactic",
+    "parent_game": -1,
+    "platforms": [
+      169,
+      48,
+      6,
+      167,
+      49
+    ],
+    "player_perspectives": [
+      1
+    ],
+    "ports": [],
+    "release_dates": [
+      502374,
+      502376,
+      502381,
+      502379,
+      502377,
+      502380,
+      502375,
+      502378
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      18
+    ],
+    "url": "https://www.igdb.com/games/deep-rock-galactic",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
     "collections": [],
     "dlcs": [],
     "expanded_games": [],
@@ -116050,17 +116126,17 @@
       4442
     ],
     "dlcs": [
+      230579,
+      230575,
+      230581,
       230577,
       230576,
-      230581,
       21889,
-      230574,
-      230575,
-      230582,
       230578,
-      230583,
-      230579,
-      230584
+      230584,
+      230574,
+      230582,
+      230583
     ],
     "expanded_games": [],
     "expansions": [
@@ -117941,8 +118017,8 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [
-      122312,
-      122313
+      122313,
+      122312
     ],
     "first_release_date": 1566864000,
     "forks": [],
@@ -124680,6 +124756,56 @@
       22
     ],
     "url": "https://www.igdb.com/games/uncharted-legacy-of-thieves-collection",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1747872000,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      10,
+      31
+    ],
+    "id": 177169,
+    "involved_companies": [
+      286362,
+      286361
+    ],
+    "keywords": [],
+    "name": "Deliver At All Costs",
+    "parent_game": -1,
+    "platforms": [
+      169,
+      6,
+      167
+    ],
+    "player_perspectives": [
+      3
+    ],
+    "ports": [],
+    "release_dates": [
+      716599,
+      716600,
+      716601
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1
+    ],
+    "url": "https://www.igdb.com/games/deliver-at-all-costs",
     "version_parent": -1
   },
   {
