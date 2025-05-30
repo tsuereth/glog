@@ -1368,6 +1368,10 @@
     "name": "Picross 3D"
   },
   {
+    "id": 4027,
+    "name": "Marvel Cinematic Universe"
+  },
+  {
     "id": 4036,
     "name": "World of Mana"
   },
@@ -1962,5 +1966,13 @@
   {
     "id": 11897,
     "name": "Ben and Dan"
+  },
+  {
+    "id": 12075,
+    "name": "American McGee's Alice"
+  },
+  {
+    "id": 12076,
+    "name": "American McGee's Alice"
   }
 ]

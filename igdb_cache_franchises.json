@@ -608,6 +608,10 @@
     "name": "SimCity"
   },
   {
+    "id": 1999,
+    "name": "Alex Kidd"
+  },
+  {
     "id": 2000,
     "name": "Horizon"
   },
@@ -700,6 +704,10 @@
     "name": "Lemmings"
   },
   {
+    "id": 2763,
+    "name": "Duke Nukem"
+  },
+  {
     "id": 2775,
     "name": "Musou"
   },
@@ -738,6 +746,10 @@
   {
     "id": 4564,
     "name": "Xeno"
+  },
+  {
+    "id": 4820,
+    "name": "Guardians of the Galaxy"
   },
   {
     "id": 4834,

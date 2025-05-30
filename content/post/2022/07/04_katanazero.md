@@ -18,7 +18,7 @@ So when I reached the halfway point of the game's final "bunker" area, and neede
 Katana Zero's storytelling and aesthetics are really compelling; and when the action is flowing, it's a thrill.  I enjoyed those parts of the game in spite of its frustrating retry loops.  And I'm acutely aware that, if I kept going, the frustrations would overtake the fun.
 
 <b>Better than</b>: <game:Deadbolt>, <game:Ronin>, <game:Stealth Inc 2: A Game of Clones>, <game:Super Time Force Ultra>  
-<b>Not as good as</b>: <game:Mark of the Ninja Remastered>  
+<b>Not as good as</b>: <game:Mark of the Ninja: Remastered>  
 <b>It's a short game, but</b>: its soundtrack will be in my playlist for many more hours to come.
 
 <i>Progress: gave up in the bunker.</i>
