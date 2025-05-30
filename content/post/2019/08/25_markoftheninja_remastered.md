@@ -2,12 +2,12 @@
 date = "2019-08-25T08:46:37-07:00"
 title = "Re-Marked"
 category = [ "Playing A Game" ]
-game = [ "Mark of the Ninja Remastered" ]
+game = [ "Mark of the Ninja: Remastered" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 +++
 
-<game:Mark of the Ninja Remastered> taught me that I've been spoiled by the last 5-6 years of video games.
+<game:Mark of the Ninja: Remastered> taught me that I've been spoiled by the last 5-6 years of video games.
 
 What I remembered from my [original Ninja](game:Mark of the Ninja)-ing was all <i>awesome</i> -- largely because of how great the game was at clearly telegraphing enemy line of sight, hearing ranges, alert status, light cones... et cetera.  It was such a breath of fresh air from <tag:Hitman>-style stealth games, where if you don't know what path to take through a level, you have to try, die, and try again until you find it.
 
