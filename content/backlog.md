@@ -7,6 +7,7 @@ permalink = "/backlog"
 * <game:Afterparty> (<platform:PC>)
 * <game:Animal Well> (<platform:PC>)
 * <game:Bandle Tale: A League of Legends Story> (<platform:PC>)
+* <game:Clair Obscur: Expedition 33> (<platform:PC>)
 * <game:Convergence: A League of Legends Story> (<platform:PC>)
 * <game:Cyberpunk 2077: Phantom Liberty> (<platform:PC>)
 * <game:Deliver At All Costs> (<platform:PC>)
