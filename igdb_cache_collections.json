@@ -1132,6 +1132,10 @@
     "name": "Chibi-Robo!"
   },
   {
+    "id": 2310,
+    "name": "Shirubaa Jiken"
+  },
+  {
     "id": 2327,
     "name": "Don't Starve"
   },
@@ -1446,10 +1450,6 @@
   {
     "id": 4654,
     "name": "LostWinds"
-  },
-  {
-    "id": 4782,
-    "name": "Kill the Past"
   },
   {
     "id": 4808,
@@ -1974,5 +1974,9 @@
   {
     "id": 12076,
     "name": "American McGee's Alice"
+  },
+  {
+    "id": 12257,
+    "name": "Kirby: Canvas Curse"
   }
 ]
