@@ -5510,14 +5510,14 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [
+      229,
       198157,
-      11593,
-      75380,
       275176,
       1332,
-      229,
       227,
       228,
+      75380,
+      11593,
       3157,
       125175,
       275177,
@@ -14191,9 +14191,7 @@
       6068,
       6069
     ],
-    "expanded_games": [
-      165192
-    ],
+    "expanded_games": [],
     "expansions": [],
     "first_release_date": 1320883200,
     "forks": [],
@@ -39209,8 +39207,8 @@
     ],
     "expanded_games": [],
     "expansions": [
-      14725,
-      18919
+      18919,
+      14725
     ],
     "first_release_date": 1427328000,
     "forks": [],
@@ -41937,7 +41935,9 @@
     ],
     "game_modes": [
       1,
-      2
+      2,
+      3,
+      4
     ],
     "genres": [
       8,
@@ -42005,6 +42005,8 @@
       325157
     ],
     "release_dates": [
+      762503,
+      762504,
       723367,
       723368,
       723369
@@ -44364,7 +44366,9 @@
       710467,
       710468
     ],
-    "remakes": [],
+    "remakes": [
+      337738
+    ],
     "remasters": [],
     "standalone_expansions": [
       3775
@@ -62403,12 +62407,12 @@
   },
   {
     "bundles": [
+      43925,
       4007,
       4360,
-      7070,
-      43925,
-      57234,
       71407,
+      7070,
+      57234,
       93496
     ],
     "category": 0,
@@ -73182,16 +73186,16 @@
   {
     "bundles": [
       22745,
-      43223,
-      50851,
-      52848,
       80185,
       131033,
+      43223,
+      52848,
       191344,
-      213368,
       215392,
+      213368,
       215403,
-      215415
+      215415,
+      50851
     ],
     "category": 0,
     "collection": -1,
@@ -92570,7 +92574,7 @@
     ],
     "expanded_games": [],
     "expansions": [],
-    "first_release_date": 1559001600,
+    "first_release_date": 1559088000,
     "forks": [],
     "franchise": -1,
     "franchises": [],
@@ -92611,14 +92615,13 @@
     ],
     "ports": [],
     "release_dates": [
-      376404,
-      207369,
-      207370,
+      762498,
+      762499,
+      762500,
+      762501,
+      762502,
       536384,
-      536749,
-      376405,
-      301062,
-      207368
+      536749
     ],
     "remakes": [],
     "remasters": [],
@@ -102277,7 +102280,9 @@
       6
     ],
     "dlcs": [],
-    "expanded_games": [],
+    "expanded_games": [
+      165192
+    ],
     "expansions": [],
     "first_release_date": 1477526400,
     "forks": [],
@@ -109081,8 +109086,8 @@
     ],
     "expanded_games": [],
     "expansions": [
-      22964,
-      17783
+      17783,
+      22964
     ],
     "first_release_date": 1508976000,
     "forks": [],
@@ -128165,6 +128170,60 @@
       18
     ],
     "url": "https://www.igdb.com/games/the-talos-principle-ii-road-to-elysium",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1749254400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      9,
+      13,
+      15,
+      32
+    ],
+    "id": 305074,
+    "involved_companies": [
+      324924
+    ],
+    "keywords": [
+      2423,
+      4176,
+      19453,
+      23825
+    ],
+    "name": "Squeakross: Home Squeak Home",
+    "parent_game": -1,
+    "platforms": [
+      6,
+      14,
+      130
+    ],
+    "player_perspectives": [],
+    "ports": [],
+    "release_dates": [
+      752684,
+      752685,
+      752686
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      34
+    ],
+    "url": "https://www.igdb.com/games/squeakross-home-squeak-home",
     "version_parent": -1
   },
   {
