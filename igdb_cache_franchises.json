@@ -176,6 +176,10 @@
     "name": "Captain America"
   },
   {
+    "id": 307,
+    "name": "Green Lantern"
+  },
+  {
     "id": 311,
     "name": "Harvey Birdman, Attorney at Law"
   },
@@ -202,6 +206,10 @@
   {
     "id": 390,
     "name": "Hard Boiled"
+  },
+  {
+    "id": 417,
+    "name": "The Flash"
   },
   {
     "id": 425,
@@ -278,6 +286,10 @@
   {
     "id": 600,
     "name": "Evil Dead"
+  },
+  {
+    "id": 644,
+    "name": "Superman"
   },
   {
     "id": 720,
@@ -762,6 +774,10 @@
   {
     "id": 5238,
     "name": "Plants vs. Zombies"
+  },
+  {
+    "id": 5326,
+    "name": "Wonder Woman"
   },
   {
     "id": 5396,
