@@ -13377,8 +13377,8 @@
       705540
     ],
     "remakes": [
-      11169,
-      133236
+      133236,
+      11169
     ],
     "remasters": [],
     "standalone_expansions": [],
@@ -13925,7 +13925,7 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
-    "first_release_date": 912384000,
+    "first_release_date": 913939200,
     "forks": [],
     "franchise": -1,
     "franchises": [
@@ -14010,8 +14010,9 @@
     ],
     "ports": [],
     "release_dates": [
-      751,
-      752
+      772250,
+      772251,
+      772252
     ],
     "remakes": [],
     "remasters": [],
@@ -36128,7 +36129,8 @@
       9156,
       9395,
       12189,
-      15524
+      15524,
+      27015
     ],
     "name": "Beyond Good & Evil",
     "parent_game": -1,
@@ -54540,6 +54542,7 @@
       9935,
       10489,
       23933,
+      27015,
       28668,
       42805
     ],
@@ -69468,10 +69471,10 @@
     ],
     "dlcs": [
       26031,
-      15529,
       15519,
-      15530,
       25975,
+      15529,
+      15530,
       26034,
       15523
     ],
@@ -77618,6 +77621,7 @@
     "platforms": [
       9,
       48,
+      34,
       6,
       39,
       12,
@@ -77639,7 +77643,8 @@
       298718,
       298719,
       373976,
-      130304
+      130304,
+      776140
     ],
     "remakes": [],
     "remasters": [],
@@ -87461,7 +87466,8 @@
       1392,
       2071,
       2472,
-      4918
+      4918,
+      49307
     ],
     "name": "Dungeons 2",
     "parent_game": -1,
@@ -92486,6 +92492,7 @@
       4580,
       4609,
       5792,
+      49307,
       49437
     ],
     "name": "Epistory: Typing Chronicles",
@@ -111401,7 +111408,9 @@
       49423,
       60532
     ],
-    "keywords": [],
+    "keywords": [
+      49307
+    ],
     "name": "Extinction",
     "parent_game": -1,
     "platforms": [
@@ -120548,6 +120557,7 @@
       4284,
       4287,
       24560,
+      49307,
       49326
     ],
     "name": "The Dungeon of Naheulbeuk: The Amulet of Chaos",
@@ -129382,6 +129392,160 @@
       18
     ],
     "url": "https://www.igdb.com/games/split-fiction",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 10,
+    "collection": -1,
+    "collections": [
+      8988,
+      106
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1749081600,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      596
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      9,
+      31
+    ],
+    "id": 338073,
+    "involved_companies": [
+      314016,
+      314014,
+      314015
+    ],
+    "keywords": [
+      510,
+      703,
+      705,
+      3433,
+      4179,
+      4392,
+      6246,
+      9604,
+      38071
+    ],
+    "name": "The Legend of Zelda: Tears of the Kingdom - Nintendo Switch 2 Edition",
+    "parent_game": 119388,
+    "platforms": [
+      508
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      722874
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      18,
+      33,
+      38
+    ],
+    "url": "https://www.igdb.com/games/the-legend-of-zelda-tears-of-the-kingdom-nintendo-switch-2-edition",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": 0,
+    "collection": -1,
+    "collections": [
+      242
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1752710400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      763
+    ],
+    "game_modes": [
+      1,
+      2
+    ],
+    "genres": [
+      8,
+      31
+    ],
+    "id": 338106,
+    "involved_companies": [
+      314004,
+      314005,
+      330791
+    ],
+    "keywords": [
+      182,
+      250,
+      968,
+      1283,
+      1385,
+      1536,
+      1879,
+      1986,
+      2184,
+      2231,
+      2280,
+      3017,
+      3486,
+      4170,
+      4176,
+      4292,
+      4852,
+      5453,
+      23466,
+      23933,
+      26248,
+      34588,
+      38085,
+      38778,
+      42101,
+      42386,
+      43160,
+      44930,
+      47983,
+      48328,
+      48329,
+      48929
+    ],
+    "name": "Donkey Kong Bananza",
+    "parent_game": -1,
+    "platforms": [
+      508,
+      130
+    ],
+    "player_perspectives": [
+      2,
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      722868,
+      774192
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1
+    ],
+    "url": "https://www.igdb.com/games/donkey-kong-bananza",
     "version_parent": -1
   }
 ]

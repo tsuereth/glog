@@ -270,5 +270,12 @@
     "id": 167,
     "name": "PlayStation 5",
     "url": "https://www.igdb.com/platforms/ps5"
+  },
+  {
+    "abbreviation": "Switch 2",
+    "alternative_name": "Switch 2",
+    "id": 508,
+    "name": "Nintendo Switch 2",
+    "url": "https://www.igdb.com/platforms/switch-2"
   }
 ]
