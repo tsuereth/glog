@@ -2,11 +2,11 @@
 date = "2024-09-07T20:24:02.1223536-07:00"
 title = "Third quest's the charm"
 category = [ "Playing A Game" ]
-game = [ "Baldur's Gate 3" ]
+game = [ "Baldur's Gate III" ]
 platform = [ "PC" ]
 rating = [ "Awesome" ]
 +++
-Given I couldn't get into [Baldur's Gate](game:Baldur's Gate: Enhanced Edition) *or* [Divinity: Original Sin](game:Divinity: Original Sin - Enhanced Edition) - I was years late in both cases, but, still - I was initially skeptical of <game:Baldur's Gate 3>, even despite the "[universal acclaim](https://en.wikipedia.org/wiki/Baldur%27s_Gate_3#Reception)."  Now, after dozens of hours of magic missiles and [reckless attacks](https://bg3.wiki/wiki/Reckless_Attack), chatting up goblins and demigods and [livestock](https://bg3.wiki/wiki/Strange_Ox), searching abandoned temples and haunted houses and random corpses for quest clues -- after I realized, *more than 30 hours deep, I was still in the game's first act*; I couldn't be more glad I was wrong.
+Given I couldn't get into [Baldur's Gate](game:Baldur's Gate: Enhanced Edition) *or* [Divinity: Original Sin](game:Divinity: Original Sin - Enhanced Edition) - I was years late in both cases, but, still - I was initially skeptical of <game:Baldur's Gate III>, even despite the "[universal acclaim](https://en.wikipedia.org/wiki/Baldur%27s_Gate_3#Reception)."  Now, after dozens of hours of magic missiles and [reckless attacks](https://bg3.wiki/wiki/Reckless_Attack), chatting up goblins and demigods and [livestock](https://bg3.wiki/wiki/Strange_Ox), searching abandoned temples and haunted houses and random corpses for quest clues -- after I realized, *more than 30 hours deep, I was still in the game's first act*; I couldn't be more glad I was wrong.
 
 There are, I have to say, some parts of this game I still don't care for.  Things I'd call legacy genre baggage, like an overabundance of options with unclear consequences; from the character creator's enormous menus and lengthy list of abilities at level 1, through to mid-level upgrade selections and *sub-selections* -- just as an example, I reset and re-leveled my barbarian after using a feat to [unlock heavy armor](https://bg3.wiki/wiki/Heavily_Armoured), *then* finding out that heavy armor [disables raging](https://bg3.wiki/wiki/Rage_Impeded_(Condition)).
 

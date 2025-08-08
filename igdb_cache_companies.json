@@ -4976,6 +4976,10 @@
     "name": "Nintendo EPD Production Group No. 3"
   },
   {
+    "id": 45212,
+    "name": "Nintendo EPD Production Group No. 7"
+  },
+  {
     "id": 45213,
     "name": "Nintendo EPD Production Group No. 8"
   },
@@ -5062,5 +5066,9 @@
   {
     "id": 65520,
     "name": "Nintendo EPD Production Group No. 6"
+  },
+  {
+    "id": 66292,
+    "name": "ComCODE"
   }
 ]

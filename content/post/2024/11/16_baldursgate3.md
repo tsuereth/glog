@@ -2,7 +2,7 @@
 date = "2024-11-16T23:31:08.3838740-08:00"
 title = "Critical Hit"
 category = [ "Playing A Game" ]
-game = [ "Baldur's Gate 3" ]
+game = [ "Baldur's Gate III" ]
 platform = [ "PC" ]
 rating = [ "Awesome" ]
 +++
