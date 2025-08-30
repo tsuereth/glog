@@ -46,3 +46,4 @@ permalink = "/backlog"
 * <game:Tiny Tina's Wonderlands> (<platform:PC>)
 * <game:Tyrion Cuthbert: Attorney of the Arcane> (<platform:PC>)
 * <game:Viewfinder> (<platform:PC>)
+* <game:Voxelgram 2> (<platform:PC>)
