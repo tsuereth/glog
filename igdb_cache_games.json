@@ -271,7 +271,8 @@
     "bundles": [
       53796,
       56723,
-      93888
+      93888,
+      154657
     ],
     "category": 0,
     "collection": -1,
@@ -784,7 +785,7 @@
       21892,
       171798
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       3
@@ -1140,7 +1141,7 @@
       25532,
       45129
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       3
@@ -1387,7 +1388,7 @@
       47467,
       150642
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1
@@ -2261,7 +2262,7 @@
     "bundles": [
       46712
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       9
@@ -2288,12 +2289,13 @@
     ],
     "id": 41,
     "involved_companies": [
-      19772,
       179660,
       179662,
       265316,
       265317,
-      265318
+      265318,
+      343087,
+      343086
     ],
     "keywords": [
       3,
@@ -2443,9 +2445,9 @@
   },
   {
     "bundles": [
-      75569,
+      56723,
       75568,
-      56723
+      75569
     ],
     "category": 0,
     "collection": -1,
@@ -3038,7 +3040,7 @@
       53731,
       171798
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       6
@@ -4229,7 +4231,7 @@
     "bundles": [
       27911
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       10
@@ -4620,8 +4622,8 @@
       18
     ],
     "dlcs": [
-      8216,
-      64133
+      64133,
+      8216
     ],
     "expanded_games": [],
     "expansions": [],
@@ -4784,7 +4786,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       23
@@ -5328,7 +5330,7 @@
       118499,
       204910
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1130
@@ -5510,9 +5512,9 @@
     "ports": [
       140272,
       85614,
-      135400,
       84610,
       93620,
+      135400,
       94752,
       94029,
       325724,
@@ -5908,8 +5910,8 @@
       18
     ],
     "dlcs": [
-      22974,
-      9562
+      9562,
+      22974
     ],
     "expanded_games": [],
     "expansions": [],
@@ -7403,7 +7405,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -8954,8 +8956,8 @@
       775636
     ],
     "remakes": [
-      141568,
-      16198
+      16198,
+      141568
     ],
     "remasters": [
       16203
@@ -9570,7 +9572,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       10121
@@ -10623,7 +10625,7 @@
     "bundles": [
       204734
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2128
@@ -10877,7 +10879,8 @@
       781210
     ],
     "remakes": [
-      250634
+      250634,
+      365026
     ],
     "remasters": [],
     "standalone_expansions": [],
@@ -13290,8 +13293,6 @@
       1
     ],
     "genres": [
-      10,
-      11,
       12,
       31
     ],
@@ -13322,6 +13323,8 @@
       1299,
       1440,
       1881,
+      2377,
+      2399,
       2415,
       2543,
       3002,
@@ -13390,6 +13393,7 @@
       10348,
       12708,
       23933,
+      25963,
       29745,
       30703,
       39712
@@ -14572,7 +14576,7 @@
     "bundles": [
       335681
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       64
@@ -14756,7 +14760,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       66
@@ -14771,7 +14775,9 @@
     "first_release_date": 1316476800,
     "forks": [],
     "franchise": -1,
-    "franchises": [],
+    "franchises": [
+      7084
+    ],
     "game_modes": [
       1,
       2,
@@ -17041,7 +17047,7 @@
       41595,
       41598
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1
@@ -17561,7 +17567,9 @@
     "first_release_date": 1162857600,
     "forks": [],
     "franchise": -1,
-    "franchises": [],
+    "franchises": [
+      7084
+    ],
     "game_modes": [
       1,
       2,
@@ -17665,7 +17673,7 @@
     "bundles": [
       136314
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       66
@@ -17681,7 +17689,9 @@
     "first_release_date": 1226016000,
     "forks": [],
     "franchise": -1,
-    "franchises": [],
+    "franchises": [
+      7084
+    ],
     "game_modes": [
       1,
       2,
@@ -19356,7 +19366,7 @@
     "bundles": [
       335613
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       7463
@@ -20517,12 +20527,12 @@
       123523,
       55583,
       147098,
-      123524,
       3318,
       468249,
       749990,
       749992,
-      749991
+      749991,
+      776985
     ],
     "remakes": [],
     "remasters": [
@@ -21417,7 +21427,7 @@
       25500,
       144125
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       197
@@ -21491,7 +21501,7 @@
       25500,
       144125
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       197
@@ -22577,9 +22587,9 @@
       89
     ],
     "dlcs": [
-      52806,
       164394,
       164390,
+      52806,
       349021,
       164396,
       164395,
@@ -22742,7 +22752,7 @@
     "bundles": [
       25500
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       197
@@ -23089,7 +23099,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2897
@@ -23197,7 +23207,7 @@
     "bundles": [
       339
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       218
@@ -24293,61 +24303,61 @@
       2378
     ],
     "keywords": [
-      3,
-      5,
-      25,
+      5987,
+      17689,
+      1898,
       70,
-      98,
-      129,
+      5691,
+      10618,
+      4869,
+      1536,
+      4273,
       161,
-      518,
+      4891,
+      18055,
+      1463,
+      5,
+      1550,
+      8262,
+      4357,
       546,
       562,
-      563,
-      1107,
-      1293,
-      1440,
-      1463,
-      1536,
-      1550,
-      1710,
-      1821,
-      1898,
-      2111,
       2439,
-      2750,
-      3988,
-      4273,
-      4357,
-      4360,
-      4610,
-      4770,
-      4869,
-      4886,
-      4890,
-      4891,
-      4927,
-      4989,
-      4996,
-      5029,
-      5690,
-      5691,
-      5987,
-      6328,
       6502,
-      6614,
-      6716,
-      8262,
+      4886,
+      4989,
+      3988,
+      4890,
       9083,
-      10618,
-      10626,
-      10919,
-      11680,
-      16833,
+      4610,
+      6716,
+      1710,
+      129,
+      5690,
+      563,
+      4927,
+      6328,
+      6614,
+      2750,
+      518,
+      5029,
+      23933,
+      98,
+      4770,
+      4360,
       17083,
-      17689,
-      18055,
-      23933
+      1440,
+      3,
+      1821,
+      10919,
+      1293,
+      16833,
+      11680,
+      2111,
+      4996,
+      25,
+      10626,
+      1107
     ],
     "name": "Halo 3",
     "parent_game": -1,
@@ -26267,6 +26277,7 @@
       7048,
       7226,
       7595,
+      26906,
       30703,
       31533,
       37362,
@@ -27219,7 +27230,7 @@
       154503,
       212588
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       105
@@ -27372,7 +27383,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -29138,6 +29149,7 @@
       4247,
       4683,
       4940,
+      26906,
       48478
     ],
     "name": "Donkey Kong Jungle Beat",
@@ -29739,7 +29751,6 @@
     "genres": [
       5,
       8,
-      9,
       31
     ],
     "id": 1105,
@@ -29840,6 +29851,7 @@
       13223,
       15306,
       15558,
+      26906,
       37362,
       42805
     ],
@@ -30077,6 +30089,7 @@
       10554,
       11926,
       13223,
+      26906,
       37362
     ],
     "name": "Metroid Prime 2: Echoes",
@@ -30677,7 +30690,7 @@
       136697,
       164703
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2173
@@ -31284,7 +31297,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       65
@@ -31413,10 +31426,10 @@
       315314
     ],
     "release_dates": [
-      626966,
       626968,
       626967,
-      626969
+      626969,
+      626966
     ],
     "remakes": [],
     "remasters": [],
@@ -34689,7 +34702,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       27,
@@ -34698,24 +34711,24 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [
-      21973,
       138798,
-      322149,
       21975,
-      21977,
+      322149,
       143738,
+      19162,
+      125176,
+      21977,
+      21973,
       121499,
       297259,
       325842,
       116236,
-      19162,
       21971,
       27429,
       322148,
       322150,
       21974,
       275172,
-      125176,
       76152,
       96374,
       52016,
@@ -35426,7 +35439,7 @@
       165866,
       201170
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -35883,7 +35896,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1890
@@ -37622,7 +37635,7 @@
       271120,
       337848
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       298
@@ -38403,6 +38416,7 @@
       9890,
       10006,
       10740,
+      26906,
       31533,
       37362
     ],
@@ -38701,7 +38715,7 @@
     "bundles": [
       11147
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       307
@@ -39375,7 +39389,7 @@
       38780,
       75357
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2599
@@ -40584,7 +40598,7 @@
       314758,
       317711
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       337
@@ -40719,7 +40733,7 @@
       1728,
       28323
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       337
@@ -40819,7 +40833,7 @@
       1728,
       28323
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       337
@@ -40907,7 +40921,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       337
@@ -40986,7 +41000,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       337
@@ -41052,7 +41066,7 @@
       213594,
       246090
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       337,
@@ -41148,7 +41162,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       338
@@ -41217,7 +41231,7 @@
       206810,
       206844
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       340,
@@ -41299,7 +41313,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       340
@@ -41359,7 +41373,7 @@
       24355,
       122048
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       341,
@@ -41450,7 +41464,7 @@
       24355,
       122048
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       341
@@ -41535,7 +41549,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       341
@@ -41605,7 +41619,7 @@
     "bundles": [
       122048
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       341,
@@ -41681,7 +41695,7 @@
     "bundles": [
       122048
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       342
@@ -42849,7 +42863,7 @@
     "bundles": [
       277807
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -42930,7 +42944,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       555
@@ -43116,7 +43130,7 @@
       136374,
       242666
     ],
-    "category": 9,
+    "category": -1,
     "collection": -1,
     "collections": [
       7
@@ -43304,7 +43318,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -43397,7 +43411,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -43594,9 +43608,9 @@
     "expansions": [
       75570,
       262570,
-      51543,
       142400,
       75571,
+      51543,
       294626,
       75572,
       75573,
@@ -44373,7 +44387,7 @@
       219000,
       230702
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       18
@@ -44591,7 +44605,7 @@
       249580,
       251285
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       46
@@ -44728,7 +44742,7 @@
       52642,
       83506
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       34
@@ -45289,7 +45303,7 @@
       25637,
       136680
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2128
@@ -45975,7 +45989,7 @@
       219001,
       223558
     ],
-    "category": 4,
+    "category": -1,
     "collection": -1,
     "collections": [
       103
@@ -46367,7 +46381,7 @@
       139958,
       152339
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       9768,
@@ -46877,7 +46891,7 @@
     "bundles": [
       115019
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2715
@@ -48472,7 +48486,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -51031,7 +51045,7 @@
     "bundles": [
       82543
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -54083,6 +54097,8 @@
       87,
       250,
       509,
+      1103,
+      2452,
       3463,
       4162,
       4484,
@@ -54092,13 +54108,20 @@
       8221,
       10091,
       23353,
+      23466,
+      26906,
       31242,
       37362,
       38856,
+      38887,
       42064,
+      42180,
+      42386,
       42805,
       44373,
       44403,
+      44845,
+      44930,
       47789,
       48308,
       48328,
@@ -54689,6 +54712,7 @@
       9935,
       10489,
       23933,
+      26906,
       27015,
       28668,
       42805
@@ -56139,7 +56163,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2946
@@ -56977,7 +57001,7 @@
     "bundles": [
       11147
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       440
@@ -57129,7 +57153,7 @@
       136925,
       154181
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       554,
@@ -57534,7 +57558,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -58158,7 +58182,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -58286,7 +58310,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       566
@@ -58393,7 +58417,7 @@
     "bundles": [
       231007
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       5761
@@ -58625,7 +58649,7 @@
     ],
     "id": 3153,
     "involved_companies": [
-      8089
+      340161
     ],
     "keywords": [
       4,
@@ -60126,7 +60150,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -60244,7 +60268,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       6699
@@ -62560,6 +62584,7 @@
       9529,
       11278,
       11596,
+      26906,
       31533,
       42805
     ],
@@ -63137,7 +63162,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       244
@@ -63224,12 +63249,12 @@
       647096,
       646868,
       509941,
-      509942,
-      509943,
-      509944,
       647095,
       509946,
-      509945
+      509945,
+      509943,
+      509942,
+      509944
     ],
     "remakes": [],
     "remasters": [],
@@ -63701,7 +63726,8 @@
       9344,
       9557,
       9596,
-      12357
+      12357,
+      26906
     ],
     "name": "Baten Kaitos: Eternal Wings and the Lost Ocean",
     "parent_game": -1,
@@ -63713,10 +63739,10 @@
     ],
     "ports": [],
     "release_dates": [
-      41033,
-      41034,
-      41035,
-      41032
+      794980,
+      794981,
+      794982,
+      794983
     ],
     "remakes": [],
     "remasters": [
@@ -63766,6 +63792,7 @@
       1162,
       1710,
       1821,
+      26906,
       37362
     ],
     "name": "Battalion Wars",
@@ -63841,6 +63868,7 @@
       7221,
       9931,
       11623,
+      26906,
       31533,
       37362,
       40744,
@@ -63904,6 +63932,7 @@
       1033,
       1295,
       9081,
+      26906,
       37362
     ],
     "name": "Eternal Darkness: Sanity's Requiem",
@@ -64469,7 +64498,8 @@
       10390
     ],
     "keywords": [
-      189
+      189,
+      26906
     ],
     "name": "Metal Gear Solid: The Twin Snakes",
     "parent_game": 375,
@@ -64481,9 +64511,9 @@
     ],
     "ports": [],
     "release_dates": [
-      87958,
-      87959,
-      87960
+      795000,
+      795001,
+      795002
     ],
     "remakes": [],
     "remasters": [],
@@ -66417,7 +66447,7 @@
   },
   {
     "bundles": [],
-    "category": 8,
+    "category": -1,
     "collection": -1,
     "collections": [
       423
@@ -66641,7 +66671,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -67379,7 +67409,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       173
@@ -67697,7 +67727,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -68623,9 +68653,9 @@
       2156
     ],
     "dlcs": [
+      337214,
       334240,
       337219,
-      337214,
       337217,
       337216,
       337218
@@ -69640,19 +69670,19 @@
       112659,
       254329
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       68
     ],
     "dlcs": [
       25975,
-      15529,
       26034,
+      15519,
+      15529,
       15523,
       15530,
-      26031,
-      15519
+      26031
     ],
     "expanded_games": [],
     "expansions": [
@@ -69756,7 +69786,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -69882,7 +69912,7 @@
     "bundles": [
       52883
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       9
@@ -70115,7 +70145,7 @@
       230498,
       230702
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       18
@@ -70244,7 +70274,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -70427,7 +70457,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       824
@@ -71247,7 +71277,7 @@
     "bundles": [
       300781
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -73471,7 +73501,7 @@
       215403,
       215415
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       906
@@ -73567,14 +73597,14 @@
       140018,
       229900,
       361102,
-      402146,
-      402147,
-      402148,
       140020,
       229901,
       15566,
-      15571,
-      507335
+      507335,
+      402146,
+      402147,
+      402148,
+      15571
     ],
     "remakes": [],
     "remasters": [],
@@ -74507,7 +74537,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -74645,22 +74675,22 @@
   },
   {
     "bundles": [
-      7189,
-      20502,
       4157,
+      7189,
+      11219,
+      20502,
+      22297,
       50924,
       72129,
-      22297,
-      11219,
-      232768,
       230774,
-      230810,
       230789,
+      230810,
       230811,
-      305267,
-      287414,
+      232768,
       287387,
-      287400
+      287400,
+      287414,
+      305267
     ],
     "category": 0,
     "collection": -1,
@@ -74748,7 +74778,7 @@
       45144,
       264941
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       173
@@ -75036,7 +75066,7 @@
     "bundles": [
       99765
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -76188,7 +76218,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -76806,7 +76836,7 @@
     "bundles": [
       155188
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2070
@@ -77591,7 +77621,7 @@
     "bundles": [
       23331
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       9209,
@@ -77946,7 +77976,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       995
@@ -78172,7 +78202,7 @@
     "bundles": [
       165866
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -78434,7 +78464,7 @@
   },
   {
     "bundles": [],
-    "category": 3,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -78670,7 +78700,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       25
@@ -79792,7 +79822,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -79948,7 +79978,7 @@
     "bundles": [
       154964
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2634
@@ -80113,7 +80143,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -80267,7 +80297,7 @@
       25500,
       82419
     ],
-    "category": 4,
+    "category": -1,
     "collection": -1,
     "collections": [
       197
@@ -80652,7 +80682,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2384
@@ -81036,7 +81066,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -81852,7 +81882,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -82496,11 +82526,11 @@
   },
   {
     "bundles": [
-      213368,
       50851,
-      191344,
       80185,
-      85812
+      85812,
+      191344,
+      213368
     ],
     "category": 0,
     "collection": -1,
@@ -82832,7 +82862,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1140
@@ -84198,7 +84228,7 @@
     "bundles": [
       115023
     ],
-    "category": 10,
+    "category": -1,
     "collection": -1,
     "collections": [
       1201
@@ -84289,7 +84319,7 @@
       136925,
       154181
     ],
-    "category": 4,
+    "category": -1,
     "collection": -1,
     "collections": [
       554,
@@ -84484,7 +84514,7 @@
     "bundles": [
       218845
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -84492,7 +84522,7 @@
     "expansions": [
       22689
     ],
-    "first_release_date": 1423958400,
+    "first_release_date": 1423180800,
     "forks": [],
     "franchise": -1,
     "franchises": [],
@@ -84545,10 +84575,10 @@
     ],
     "ports": [],
     "release_dates": [
-      201054,
-      201055,
-      201053,
-      28340
+      768575,
+      768574,
+      768576,
+      768577
     ],
     "remakes": [],
     "remasters": [],
@@ -84736,7 +84766,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       3516
@@ -84898,7 +84928,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -84980,7 +85010,7 @@
     "bundles": [
       212873
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -85199,7 +85229,7 @@
       139958,
       152339
     ],
-    "category": 4,
+    "category": -1,
     "collection": -1,
     "collections": [
       9768,
@@ -85926,27 +85956,27 @@
   },
   {
     "bundles": [
-      7189,
-      20502,
       4157,
-      72129,
-      22297,
+      7189,
       11219,
-      136876,
-      202699,
+      20502,
+      22297,
       50924,
-      202792,
-      202791,
+      72129,
+      136876,
       202270,
       202271,
-      202793,
+      202699,
       202779,
-      202809,
       202781,
       202782,
       202783,
       202787,
       202788,
+      202791,
+      202792,
+      202793,
+      202809,
       202810,
       202875,
       202884,
@@ -86139,7 +86169,7 @@
     "bundles": [
       52883
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       9
@@ -86721,7 +86751,7 @@
     "bundles": [
       231788
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       325
@@ -86964,7 +86994,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       325
@@ -87192,7 +87222,7 @@
     "bundles": [
       54612
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       3
@@ -87385,7 +87415,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -87459,7 +87489,7 @@
     "bundles": [
       263588
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -87607,7 +87637,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1373
@@ -88420,7 +88450,7 @@
     "bundles": [
       154556
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       5701
@@ -88901,7 +88931,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -89165,7 +89195,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -89572,7 +89602,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       8319
@@ -90225,7 +90255,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -90640,7 +90670,7 @@
       139569,
       331402
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1494
@@ -90964,7 +90994,7 @@
       53622,
       164783
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2950
@@ -91055,7 +91085,7 @@
       133299,
       144024
     ],
-    "category": 8,
+    "category": -1,
     "collection": -1,
     "collections": [
       5134,
@@ -91284,7 +91314,7 @@
     "bundles": [
       264941
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       66
@@ -91295,7 +91325,9 @@
     "first_release_date": 1476144000,
     "forks": [],
     "franchise": -1,
-    "franchises": [],
+    "franchises": [
+      7084
+    ],
     "game_modes": [
       1,
       2,
@@ -92134,7 +92166,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -92334,7 +92366,7 @@
       112915,
       295644
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       3057,
@@ -92422,7 +92454,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -92569,7 +92601,7 @@
     "bundles": [
       351251
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1508
@@ -92642,7 +92674,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       11086
@@ -92889,7 +92921,7 @@
       139065,
       173172
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       6980
@@ -92899,7 +92931,7 @@
     ],
     "expanded_games": [],
     "expansions": [],
-    "first_release_date": 1559088000,
+    "first_release_date": 1559001600,
     "forks": [],
     "franchise": -1,
     "franchises": [],
@@ -92940,13 +92972,13 @@
     ],
     "ports": [],
     "release_dates": [
-      762498,
       762499,
       762500,
-      762501,
       762502,
       536384,
-      536749
+      536749,
+      795750,
+      795751
     ],
     "remakes": [],
     "remasters": [],
@@ -93273,7 +93305,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       7321
@@ -93367,10 +93399,10 @@
       421552,
       97199,
       157718,
-      157719,
       233933,
       155763,
       45798,
+      157719,
       45799
     ],
     "remakes": [],
@@ -93387,7 +93419,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -93632,7 +93664,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       9809
@@ -93845,7 +93877,7 @@
       164686,
       225949
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -94119,7 +94151,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -94185,7 +94217,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -95807,7 +95839,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2594
@@ -96079,7 +96111,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       7027
@@ -96162,7 +96194,7 @@
     "bundles": [
       116151
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       5702
@@ -96262,7 +96294,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -96424,7 +96456,8 @@
     ],
     "id": 14746,
     "involved_companies": [
-      133097
+      133097,
+      341949
     ],
     "keywords": [
       901,
@@ -97988,7 +98021,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       9294
@@ -98286,7 +98319,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -98535,7 +98568,7 @@
       245654,
       339849
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2156
@@ -98868,7 +98901,7 @@
   },
   {
     "bundles": [],
-    "category": 10,
+    "category": -1,
     "collection": -1,
     "collections": [
       2007
@@ -99863,7 +99896,7 @@
     "bundles": [
       315824
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2394
@@ -100085,7 +100118,7 @@
     "bundles": [
       201943
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -100508,7 +100541,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -101180,7 +101213,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -101314,7 +101347,7 @@
       135915,
       135963
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       5443
@@ -101823,7 +101856,7 @@
       112915,
       295644
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       3057
@@ -101910,7 +101943,7 @@
       112915,
       295644
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       3057
@@ -102179,7 +102212,7 @@
     "bundles": [
       264479
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       225
@@ -102261,7 +102294,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -102335,7 +102368,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       6179,
@@ -102404,9 +102437,9 @@
     ],
     "ports": [],
     "release_dates": [
-      143330,
       50812,
-      50813
+      50813,
+      143330
     ],
     "remakes": [],
     "remasters": [],
@@ -102426,7 +102459,7 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
-    "first_release_date": 1181865600,
+    "first_release_date": 1172102400,
     "forks": [],
     "franchise": -1,
     "franchises": [],
@@ -102470,9 +102503,10 @@
     ],
     "ports": [],
     "release_dates": [
-      182775,
       182776,
-      231426
+      231426,
+      769232,
+      769233
     ],
     "remakes": [],
     "remasters": [],
@@ -102563,7 +102597,7 @@
       138965,
       143447
     ],
-    "category": 10,
+    "category": -1,
     "collection": -1,
     "collections": [
       2782
@@ -102625,7 +102659,7 @@
     "bundles": [
       164666
     ],
-    "category": 9,
+    "category": -1,
     "collection": -1,
     "collections": [
       6
@@ -102702,7 +102736,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       62
@@ -102766,8 +102800,8 @@
     "remakes": [],
     "remasters": [],
     "standalone_expansions": [
-      208307,
-      107300
+      107300,
+      208307
     ],
     "themes": [
       17
@@ -102781,7 +102815,7 @@
       139569,
       331402
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -103287,7 +103321,7 @@
     "bundles": [
       83771
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -103414,7 +103448,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -103815,7 +103849,7 @@
     "bundles": [
       154960
     ],
-    "category": 10,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -103962,7 +103996,7 @@
     "bundles": [
       144728
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -104359,7 +104393,7 @@
     "bundles": [
       154960
     ],
-    "category": 10,
+    "category": -1,
     "collection": -1,
     "collections": [
       62
@@ -104584,7 +104618,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       67
@@ -105482,7 +105516,7 @@
       299313,
       304805
     ],
-    "category": 3,
+    "category": -1,
     "collection": -1,
     "collections": [
       302
@@ -106221,7 +106255,7 @@
     "bundles": [
       263588
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -106337,7 +106371,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -106684,7 +106718,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -106896,7 +106930,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -107016,7 +107050,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -107087,7 +107121,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -107214,7 +107248,7 @@
     "bundles": [
       262052
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2100
@@ -107877,7 +107911,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -107953,7 +107987,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -108050,7 +108084,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -108374,7 +108408,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -108530,7 +108564,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -108610,7 +108644,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       9042
@@ -108721,7 +108755,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -108779,7 +108813,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -108915,7 +108949,7 @@
     "bundles": [
       106764
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2624
@@ -109015,7 +109049,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -109094,7 +109128,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -109292,7 +109326,7 @@
     "bundles": [
       119079
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       280
@@ -109521,7 +109555,7 @@
       164782,
       218994
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       18
@@ -109816,7 +109850,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -109918,7 +109952,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -109988,7 +110022,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1516
@@ -110352,7 +110386,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -110982,11 +111016,12 @@
       297024,
       297023,
       339666,
-      159564,
       199154,
       199155,
-      159563,
-      159565
+      794889,
+      794890,
+      794891,
+      794892
     ],
     "remakes": [],
     "remasters": [],
@@ -111163,7 +111198,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -111217,7 +111252,7 @@
       136925,
       154181
     ],
-    "category": 10,
+    "category": -1,
     "collection": -1,
     "collections": [
       554
@@ -111449,7 +111484,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1140
@@ -111518,7 +111553,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -111578,7 +111613,7 @@
       129999,
       313223
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       5785
@@ -111763,7 +111798,7 @@
     "bundles": [
       219184
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -111826,7 +111861,7 @@
       139958,
       152339
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       9768,
@@ -111917,7 +111952,7 @@
       138965,
       143447
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2782
@@ -111981,7 +112016,7 @@
       139569,
       331402
     ],
-    "category": 4,
+    "category": -1,
     "collection": -1,
     "collections": [
       1494
@@ -113751,7 +113786,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -113949,7 +113984,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -114419,7 +114454,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -114475,7 +114510,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -114653,7 +114688,7 @@
     "bundles": [
       310441
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -114862,7 +114897,7 @@
     "bundles": [
       312974
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       7875
@@ -115297,7 +115332,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -116194,7 +116229,7 @@
       301756,
       314150
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       9600
@@ -116566,7 +116601,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -116711,7 +116746,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       6699
@@ -116770,7 +116805,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -116823,7 +116858,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -116865,7 +116900,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       325
@@ -117011,7 +117046,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -117129,7 +117164,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -117436,7 +117471,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -117688,7 +117723,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1427
@@ -117756,7 +117791,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -117826,7 +117861,7 @@
       129999,
       313223
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       5785
@@ -117936,7 +117971,7 @@
       142818,
       161180
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       66
@@ -117949,7 +117984,9 @@
     "first_release_date": 1567987200,
     "forks": [],
     "franchise": -1,
-    "franchises": [],
+    "franchises": [
+      7084
+    ],
     "game_modes": [
       1,
       2,
@@ -118066,7 +118103,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -118122,7 +118159,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -118202,7 +118239,7 @@
       136604,
       140503
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       8415
@@ -118581,7 +118618,7 @@
     "bundles": [
       154960
     ],
-    "category": 4,
+    "category": -1,
     "collection": -1,
     "collections": [
       5505
@@ -118777,7 +118814,7 @@
       115766,
       347277
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       887
@@ -118847,7 +118884,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -119318,7 +119355,7 @@
       140668,
       146157
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       7098
@@ -119510,7 +119547,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -119564,7 +119601,7 @@
       281406,
       331402
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -119647,7 +119684,7 @@
     "bundles": [
       261873
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       8178
@@ -119777,7 +119814,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       5702
@@ -119879,7 +119916,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -119950,7 +119987,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       9142
@@ -120010,7 +120047,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -120071,7 +120108,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -120368,7 +120405,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       7
@@ -120469,11 +120506,11 @@
       574300,
       487025,
       543182,
-      508258,
       543563,
       543566,
+      781205,
       543567,
-      781205
+      508258
     ],
     "remakes": [],
     "remasters": [],
@@ -120623,7 +120660,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       467
@@ -120767,7 +120804,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -120827,7 +120864,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -120940,7 +120977,7 @@
       186539,
       214053
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       11543
@@ -121074,7 +121111,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -121127,7 +121164,7 @@
   },
   {
     "bundles": [],
-    "category": 10,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -121473,7 +121510,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -121684,7 +121721,7 @@
   },
   {
     "bundles": [],
-    "category": 2,
+    "category": -1,
     "collection": -1,
     "collections": [
       225
@@ -121745,7 +121782,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       7292
@@ -121832,7 +121869,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       5956
@@ -122118,7 +122155,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       6097
@@ -122171,7 +122208,7 @@
   },
   {
     "bundles": [],
-    "category": 9,
+    "category": -1,
     "collection": -1,
     "collections": [
       197
@@ -122331,7 +122368,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -122528,7 +122565,7 @@
   },
   {
     "bundles": [],
-    "category": 2,
+    "category": -1,
     "collection": -1,
     "collections": [
       225
@@ -122777,7 +122814,7 @@
     "bundles": [
       219184
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -122905,7 +122942,7 @@
     "bundles": [
       140668
     ],
-    "category": 2,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -123021,7 +123058,7 @@
     "bundles": [
       140668
     ],
-    "category": 2,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -123078,7 +123115,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       68
@@ -123153,7 +123190,7 @@
     "bundles": [
       201037
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -123221,7 +123258,7 @@
   },
   {
     "bundles": [],
-    "category": 2,
+    "category": -1,
     "collection": -1,
     "collections": [
       225
@@ -123343,7 +123380,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -123404,7 +123441,7 @@
   },
   {
     "bundles": [],
-    "category": 3,
+    "category": -1,
     "collection": -1,
     "collections": [
       25
@@ -123468,7 +123505,7 @@
   },
   {
     "bundles": [],
-    "category": 10,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -123546,7 +123583,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -123601,7 +123638,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -123669,7 +123706,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -124126,7 +124163,7 @@
     "bundles": [
       173172
     ],
-    "category": 1,
+    "category": -1,
     "collection": -1,
     "collections": [
       6980
@@ -124297,7 +124334,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -124369,7 +124406,7 @@
     "bundles": [
       169160
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       225
@@ -125148,7 +125185,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -125523,7 +125560,7 @@
     "bundles": [
       312974
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       7875
@@ -125709,15 +125746,15 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
       314279,
       279619,
+      284718,
       331201,
       314280,
-      284718,
       314281
     ],
     "expanded_games": [],
@@ -125809,7 +125846,7 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
-    "first_release_date": 1661990400,
+    "first_release_date": 1662076800,
     "forks": [],
     "franchise": -1,
     "franchises": [
@@ -125846,7 +125883,7 @@
     "ports": [],
     "release_dates": [
       449155,
-      394572
+      795193
     ],
     "remakes": [],
     "remasters": [],
@@ -125862,7 +125899,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -126166,7 +126203,7 @@
     "bundles": [
       277807
     ],
-    "category": 2,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -126743,7 +126780,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       5956
@@ -127046,7 +127083,7 @@
     "bundles": [
       313223
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       5785
@@ -127177,7 +127214,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -127819,7 +127856,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -127902,7 +127939,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -128009,7 +128046,7 @@
   },
   {
     "bundles": [],
-    "category": 9,
+    "category": -1,
     "collection": -1,
     "collections": [
       6
@@ -128068,7 +128105,7 @@
   },
   {
     "bundles": [],
-    "category": 1,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -128667,7 +128704,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       6304
@@ -128729,7 +128766,7 @@
     "bundles": [
       314150
     ],
-    "category": 2,
+    "category": -1,
     "collection": -1,
     "collections": [
       9600
@@ -128789,7 +128826,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -128843,7 +128880,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -129393,7 +129430,7 @@
     "bundles": [
       314944
     ],
-    "category": 11,
+    "category": -1,
     "collection": -1,
     "collections": [
       65
@@ -129642,7 +129679,7 @@
   },
   {
     "bundles": [],
-    "category": 8,
+    "category": -1,
     "collection": -1,
     "collections": [
       9600
@@ -129699,7 +129736,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -129888,7 +129925,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       242
@@ -129970,8 +130007,8 @@
     ],
     "ports": [],
     "release_dates": [
-      722868,
-      774192
+      774192,
+      722868
     ],
     "remakes": [],
     "remasters": [],
