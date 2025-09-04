@@ -14,6 +14,7 @@ permalink = "/backlog"
 * <game:Donkey Kong Bananza> (<platform:Switch 2>)
 * <game:Ghost of Tsushima: Director's Cut> (<platform:PC>)
 * <game:Hades (2020)> (<platform:PC>)
+* <game:Hollow Knight: Silksong> (<platform:PC>)
 * <game:Indiana Jones and the Great Circle> (<platform:PC>)
 * <game:Instruments of Destruction> (<platform:PC>)
 * <game:The Last of Us Part I> (<platform:PC>)
