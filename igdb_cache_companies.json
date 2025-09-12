@@ -752,6 +752,10 @@
     "name": "Ubisoft Shanghai"
   },
   {
+    "id": 400,
+    "name": "SCE Japan Studio"
+  },
+  {
     "id": 401,
     "name": "Naughty Dog"
   },
@@ -2594,10 +2598,6 @@
   {
     "id": 3262,
     "name": "Ubisoft North America"
-  },
-  {
-    "id": 3263,
-    "name": "(Archive) Ubisoft EMEA"
   },
   {
     "id": 3276,
@@ -4666,6 +4666,10 @@
   {
     "id": 24158,
     "name": "Pineapple Works"
+  },
+  {
+    "id": 24170,
+    "name": "Squaresoft"
   },
   {
     "id": 24171,
