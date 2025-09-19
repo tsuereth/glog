@@ -237,16 +237,19 @@
     "url": "https://www.igdb.com/platforms/famicom"
   },
   {
+    "abbreviation": "OnLive",
     "id": 113,
     "name": "OnLive Game System",
-    "url": "https://www.igdb.com/platforms/onlive-game-system"
+    "url": "https://www.igdb.com/platforms/onlive"
   },
   {
+    "abbreviation": "Amiga CD32",
     "id": 114,
     "name": "Amiga CD32",
     "url": "https://www.igdb.com/platforms/amiga-cd32"
   },
   {
+    "abbreviation": "Acorn Archimedes",
     "id": 116,
     "name": "Acorn Archimedes",
     "url": "https://www.igdb.com/platforms/acorn-archimedes"
