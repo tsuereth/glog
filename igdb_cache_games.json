@@ -348,11 +348,11 @@
     "name": "Thief",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14,
       48,
+      6,
+      14,
+      12,
       49
     ],
     "player_perspectives": [
@@ -748,11 +748,11 @@
     "name": "Fallout: A Post Nuclear Role Playing Game",
     "parent_game": -1,
     "platforms": [
+      113,
       3,
       6,
-      13,
       14,
-      113
+      13
     ],
     "player_perspectives": [
       3
@@ -1654,8 +1654,8 @@
     "parent_game": -1,
     "platforms": [
       6,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       1
@@ -1915,10 +1915,10 @@
     "name": "BioShock 2",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       1
@@ -2230,8 +2230,8 @@
     "name": "Mafia II",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -2434,7 +2434,9 @@
       760454
     ],
     "remakes": [],
-    "remasters": [],
+    "remasters": [
+      369987
+    ],
     "standalone_expansions": [],
     "themes": [
       1,
@@ -2735,8 +2737,8 @@
     "name": "Overlord",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -2800,8 +2802,8 @@
     "name": "Overlord: Raising Hell",
     "parent_game": 44,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -2809,8 +2811,8 @@
     ],
     "ports": [],
     "release_dates": [
-      108540,
       108541,
+      108540,
       793,
       794,
       795
@@ -2897,8 +2899,8 @@
     "name": "Overlord II",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -3392,11 +3394,11 @@
     "name": "The Secret of Monkey Island: Special Edition",
     "parent_game": 60,
     "platforms": [
-      6,
       9,
-      12,
+      6,
+      39,
       14,
-      39
+      12
     ],
     "player_perspectives": [
       4
@@ -3599,12 +3601,12 @@
     "name": "Portal",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
       9,
-      12,
-      14,
+      3,
       34,
+      6,
+      14,
+      12,
       130
     ],
     "player_perspectives": [
@@ -3708,11 +3710,11 @@
     "name": "Portal 2",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
-      12,
       14,
+      12,
       130
     ],
     "player_perspectives": [
@@ -4126,9 +4128,10 @@
       25
     ],
     "dlcs": [
-      25299,
+      367327,
       13911,
       13690,
+      25299,
       13912,
       13910,
       78460,
@@ -4242,9 +4245,9 @@
       22975,
       22963,
       17462,
+      17464,
       17466,
       17465,
-      17464,
       120314
     ],
     "expanded_games": [],
@@ -4478,10 +4481,10 @@
     "name": "L.A. Noire",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      163
+      6,
+      163,
+      12
     ],
     "player_perspectives": [
       2
@@ -4577,10 +4580,10 @@
     "name": "Amnesia: The Dark Descent",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -4742,10 +4745,10 @@
     "name": "Assassin's Creed Brotherhood",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       2
@@ -5563,13 +5566,13 @@
     "expanded_games": [],
     "expansions": [
       75380,
-      3157,
       275176,
       228,
       1332,
+      227,
       11593,
       229,
-      227,
+      3157,
       125175,
       198157,
       275177,
@@ -6104,11 +6107,11 @@
     "name": "Assassin's Creed II",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
+      6,
+      39,
       14,
-      39
+      12
     ],
     "player_perspectives": [
       2
@@ -6903,10 +6906,12 @@
       25,
       896,
       992,
+      1286,
       3627,
       3898,
       4142,
-      7570
+      7570,
+      26906
     ],
     "name": "Star Wars: Episode I - Battle for Naboo",
     "parent_game": -1,
@@ -6922,7 +6927,6 @@
       549132,
       549133,
       549134,
-      549135,
       549136,
       549137,
       549138
@@ -7382,8 +7386,8 @@
     "platforms": [
       3,
       6,
-      13,
-      14
+      14,
+      13
     ],
     "player_perspectives": [
       4
@@ -7775,8 +7779,8 @@
     "platforms": [
       5,
       6,
-      8,
-      23
+      23,
+      8
     ],
     "player_perspectives": [
       2
@@ -7865,9 +7869,9 @@
     "parent_game": -1,
     "platforms": [
       6,
-      7,
+      14,
       13,
-      14
+      7
     ],
     "player_perspectives": [
       2
@@ -8919,19 +8923,19 @@
     "name": "Myst",
     "parent_game": -1,
     "platforms": [
-      6,
-      7,
-      9,
-      14,
-      16,
-      32,
-      38,
-      46,
-      50,
-      117,
       405,
+      117,
+      9,
+      6,
+      50,
+      14,
+      487,
+      16,
       410,
-      487
+      46,
+      32,
+      7,
+      38
     ],
     "player_perspectives": [
       1
@@ -8966,8 +8970,8 @@
       727739
     ],
     "remakes": [
-      141568,
-      16198
+      16198,
+      141568
     ],
     "remasters": [
       16203
@@ -9047,8 +9051,8 @@
     "remakes": [],
     "remasters": [],
     "standalone_expansions": [
-      457,
-      458
+      458,
+      457
     ],
     "themes": [
       1,
@@ -9167,9 +9171,9 @@
     ],
     "ports": [],
     "release_dates": [
-      24283,
       24282,
-      24281
+      24281,
+      24283
     ],
     "remakes": [],
     "remasters": [],
@@ -9288,9 +9292,9 @@
     "name": "Counter-Strike",
     "parent_game": -1,
     "platforms": [
+      11,
       3,
       6,
-      11,
       14
     ],
     "player_perspectives": [
@@ -9407,10 +9411,10 @@
     "name": "The Bureau: XCOM Declassified",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       1
@@ -9719,10 +9723,10 @@
     "name": "Command & Conquer: Red Alert",
     "parent_game": -1,
     "platforms": [
-      6,
-      7,
       9,
+      6,
       13,
+      7,
       38
     ],
     "player_perspectives": [
@@ -9822,10 +9826,10 @@
     "name": "American McGee's Alice",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       2
@@ -10033,8 +10037,8 @@
     "name": "Battlefield 3",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -10230,13 +10234,13 @@
     "name": "Super Mario Bros.",
     "parent_game": -1,
     "platforms": [
-      5,
-      18,
-      37,
-      41,
       51,
       52,
-      99
+      37,
+      5,
+      99,
+      41,
+      18
     ],
     "player_perspectives": [
       4
@@ -10249,22 +10253,22 @@
       41272
     ],
     "release_dates": [
+      514462,
+      514457,
+      514465,
+      514452,
       548331,
       514446,
       514447,
       548309,
       514449,
       514453,
-      514457,
       514459,
-      514462,
-      514465,
       514450,
       514451,
       514458,
       514460,
       514464,
-      514452,
       514448,
       514454,
       514455,
@@ -10600,23 +10604,23 @@
     "name": "Metal Gear Rising: Revengeance",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       2
     ],
     "ports": [],
     "release_dates": [
+      14448,
       108020,
       418325,
       108019,
       374000,
       108021,
-      14446,
-      14448
+      14446
     ],
     "remakes": [],
     "remasters": [],
@@ -10889,8 +10893,8 @@
       781210
     ],
     "remakes": [
-      365026,
-      250634
+      250634,
+      365026
     ],
     "remasters": [],
     "standalone_expansions": [],
@@ -11022,8 +11026,8 @@
     "name": "Final Fantasy XIII-2",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12,
       49
     ],
@@ -11104,11 +11108,11 @@
     "name": "Final Fantasy",
     "parent_game": -1,
     "platforms": [
-      5,
-      18,
       37,
+      5,
+      99,
       41,
-      99
+      18
     ],
     "player_perspectives": [
       3,
@@ -11183,8 +11187,8 @@
     "name_glogAppendPlatforms": true,
     "parent_game": 16587,
     "platforms": [
-      5,
-      19
+      19,
+      5
     ],
     "player_perspectives": [
       3,
@@ -11279,8 +11283,8 @@
     "name": "Final Fantasy XIII",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -11514,8 +11518,8 @@
     "expansions": [
       402,
       405,
-      10319,
       80589,
+      10319,
       416,
       409
     ],
@@ -12052,8 +12056,8 @@
     "name": "Final Fantasy Tactics Advance",
     "parent_game": -1,
     "platforms": [
-      24,
-      41
+      41,
+      24
     ],
     "player_perspectives": [
       3
@@ -12506,8 +12510,8 @@
     "name": "Final Fantasy IX",
     "parent_game": -1,
     "platforms": [
-      7,
       9,
+      7,
       38
     ],
     "player_perspectives": [
@@ -13007,8 +13011,8 @@
     "name": "Final Fantasy VIII",
     "parent_game": -1,
     "platforms": [
-      7,
       9,
+      7,
       38
     ],
     "player_perspectives": [
@@ -13249,8 +13253,8 @@
     "platforms": [
       5,
       41,
-      58,
-      137
+      137,
+      58
     ],
     "player_perspectives": [
       3,
@@ -13410,8 +13414,8 @@
     "name": "Final Fantasy VII",
     "parent_game": -1,
     "platforms": [
-      7,
       9,
+      7,
       38
     ],
     "player_perspectives": [
@@ -13432,8 +13436,8 @@
       705539
     ],
     "remakes": [
-      133236,
-      11169
+      11169,
+      133236
     ],
     "remasters": [],
     "standalone_expansions": [],
@@ -13567,8 +13571,8 @@
     "name": "Final Fantasy Tactics",
     "parent_game": -1,
     "platforms": [
-      7,
       9,
+      7,
       38
     ],
     "player_perspectives": [
@@ -14434,8 +14438,8 @@
     "name": "The Elder Scrolls V: Skyrim",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -14443,8 +14447,8 @@
       2
     ],
     "ports": [
-      37034,
-      37088
+      37088,
+      37034
     ],
     "release_dates": [
       106167,
@@ -14560,8 +14564,8 @@
     "platforms": [
       3,
       6,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       2
@@ -14659,10 +14663,10 @@
     "name": "Duke Nukem Forever",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       1,
@@ -14693,7 +14697,7 @@
       21713,
       21877
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       2491,
@@ -14754,12 +14758,12 @@
     ],
     "ports": [],
     "release_dates": [
-      102154,
-      63203,
       63207,
       102153,
       102155,
-      63205
+      63205,
+      102154,
+      63203
     ],
     "remakes": [],
     "remasters": [],
@@ -15191,11 +15195,11 @@
     "name": "Dead Rising 2",
     "parent_game": -1,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
       12,
-      48,
       49
     ],
     "player_perspectives": [
@@ -15204,16 +15208,16 @@
     "ports": [],
     "release_dates": [
       135953,
+      102425,
       102427,
       375,
+      56476,
       404384,
       56477,
       102426,
       134554,
       376,
-      56476,
-      190333,
-      102425
+      190333
     ],
     "remakes": [],
     "remasters": [],
@@ -15296,8 +15300,8 @@
     "name": "Resident Evil: The Darkside Chronicles",
     "parent_game": -1,
     "platforms": [
-      5,
-      9
+      9,
+      5
     ],
     "player_perspectives": [
       1
@@ -15390,10 +15394,10 @@
     "name": "Borderlands",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
+      6,
       14,
+      12,
       49,
       130
     ],
@@ -15686,11 +15690,11 @@
     "name": "Batman: Arkham Asylum",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14,
       72,
+      6,
+      14,
+      12,
       130
     ],
     "player_perspectives": [
@@ -15814,10 +15818,10 @@
     "name": "Batman: Arkham City",
     "parent_game": -1,
     "platforms": [
-      6,
-      9,
-      12,
       113,
+      9,
+      6,
+      12,
       130
     ],
     "player_perspectives": [
@@ -15959,8 +15963,8 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -16163,8 +16167,8 @@
     "name": "Red Faction: Armageddon",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -16327,8 +16331,8 @@
     "name": "Far Cry 3",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -16412,27 +16416,26 @@
     "name": "Hitman: Absolution",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14,
       34,
-      39
+      6,
+      39,
+      14,
+      12
     ],
     "player_perspectives": [
       2
     ],
     "ports": [],
     "release_dates": [
-      3532,
+      809736,
+      809737,
+      809738,
+      809739,
       319981,
-      3534,
       103551,
       103552,
-      627901,
-      3533,
-      781455,
-      782396
+      627901
     ],
     "remakes": [],
     "remasters": [
@@ -16458,9 +16461,9 @@
       1494
     ],
     "dlcs": [
-      14569,
       14568,
-      14572
+      14572,
+      14569
     ],
     "expanded_games": [],
     "expansions": [],
@@ -16630,8 +16633,8 @@
     "name": "Dishonored",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -16906,8 +16909,8 @@
     "name": "Dead Island",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -17022,8 +17025,8 @@
     "name": "Assassin's Creed Revelations",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -17276,11 +17279,11 @@
     "name": "BioShock Infinite",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       1
@@ -17536,8 +17539,8 @@
     "name": "The Darkness II",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -18444,9 +18447,9 @@
     "name": "Just Cause 2",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
       12
     ],
     "player_perspectives": [
@@ -18559,10 +18562,10 @@
     "name": "Call of Duty: Modern Warfare 2",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       1
@@ -18634,11 +18637,11 @@
     "name": "Tom Clancy's Splinter Cell: Conviction",
     "parent_game": -1,
     "platforms": [
-      6,
-      12,
-      14,
       34,
+      6,
       39,
+      14,
+      12,
       49
     ],
     "player_perspectives": [
@@ -18873,7 +18876,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -18968,9 +18971,9 @@
       48730,
       48719,
       103269,
-      103270,
       48724,
-      48716
+      48716,
+      103270
     ],
     "remakes": [],
     "remasters": [
@@ -19254,10 +19257,10 @@
     "name": "Prototype",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49
     ],
     "player_perspectives": [
@@ -19291,7 +19294,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       4640
@@ -19621,8 +19624,8 @@
     "name": "Burnout Paradise",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -19888,17 +19891,17 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       1
     ],
     "ports": [
-      134651,
       21199,
+      134651,
       135294
     ],
     "release_dates": [
@@ -20018,10 +20021,10 @@
     "platforms": [
       4,
       6,
-      7,
-      13,
       14,
-      32
+      13,
+      32,
+      7
     ],
     "player_perspectives": [
       3
@@ -20246,13 +20249,13 @@
     "name": "Grand Theft Auto III",
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
       11,
-      14,
+      48,
       34,
+      6,
       39,
-      48
+      14,
+      8
     ],
     "player_perspectives": [
       2,
@@ -20384,8 +20387,8 @@
     "name": "Grand Theft Auto IV",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -21025,10 +21028,10 @@
     "name": "Hitman 2: Silent Assassin",
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
       11,
-      21
+      21,
+      6,
+      8
     ],
     "player_perspectives": [
       2
@@ -21370,8 +21373,8 @@
     "name": "Mass Effect 2: Lair of the Shadow Broker",
     "parent_game": 74,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -21428,8 +21431,8 @@
     "name": "Mass Effect 2: Overlord",
     "parent_game": 74,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -21860,11 +21863,11 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
-      9,
       11,
-      21
+      9,
+      21,
+      6,
+      8
     ],
     "player_perspectives": [
       2
@@ -22000,11 +22003,11 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
       11,
       21,
-      39
+      6,
+      39,
+      8
     ],
     "player_perspectives": [
       2
@@ -22289,8 +22292,8 @@
     "name": "Resident Evil 5",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -22955,9 +22958,9 @@
     "name": "Saints Row: The Third",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
       12,
       130
     ],
@@ -23072,12 +23075,12 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      6,
-      7,
       9,
       21,
-      23,
-      38
+      6,
+      7,
+      38,
+      23
     ],
     "player_perspectives": [
       2
@@ -23434,11 +23437,11 @@
     "platforms": [
       3,
       5,
-      6,
-      14,
-      34,
-      39,
       74,
+      34,
+      6,
+      39,
+      14,
       130
     ],
     "player_perspectives": [
@@ -23606,10 +23609,10 @@
     "name": "Command & Conquer: Red Alert 3",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       3
@@ -23628,8 +23631,8 @@
     "remakes": [],
     "remasters": [],
     "standalone_expansions": [
-      759,
-      833
+      833,
+      759
     ],
     "themes": [
       1,
@@ -23785,10 +23788,10 @@
     "name": "Max Payne 3",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       2
@@ -23969,8 +23972,8 @@
     "name": "Resident Evil: The Umbrella Chronicles",
     "parent_game": -1,
     "platforms": [
-      5,
       9,
+      5,
       41
     ],
     "player_perspectives": [
@@ -24000,7 +24003,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       221
@@ -24047,12 +24050,12 @@
       264874
     ],
     "release_dates": [
+      106464,
       3107,
       3108,
       106463,
       3106,
-      2392,
-      106464
+      2392
     ],
     "remakes": [],
     "remasters": [],
@@ -24264,8 +24267,8 @@
     "name": "Halo 2",
     "parent_game": -1,
     "platforms": [
-      6,
       11,
+      6,
       49
     ],
     "player_perspectives": [
@@ -24400,8 +24403,8 @@
     ],
     "ports": [],
     "release_dates": [
-      210382,
-      2405,
+      807660,
+      807659,
       168651
     ],
     "remakes": [],
@@ -24788,8 +24791,8 @@
       759926
     ],
     "remakes": [
-      215089,
-      204350
+      204350,
+      215089
     ],
     "remasters": [
       6036
@@ -24823,10 +24826,10 @@
     "dlcs": [
       13921,
       119267,
-      13923,
+      13922,
       13927,
       13926,
-      13922,
+      13923,
       75690,
       13925,
       13924,
@@ -24992,11 +24995,11 @@
     "name": "BloodRayne",
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
       11,
+      21,
+      6,
       14,
-      21
+      8
     ],
     "player_perspectives": [
       2
@@ -25084,10 +25087,10 @@
     "name": "BloodRayne 2",
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
+      11,
       9,
-      11
+      6,
+      8
     ],
     "player_perspectives": [
       2
@@ -25365,10 +25368,10 @@
     "name": "Grand Theft Auto V",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49
     ],
     "player_perspectives": [
@@ -25479,12 +25482,12 @@
     "name": "The Legend of Zelda",
     "parent_game": -1,
     "platforms": [
-      5,
-      18,
-      37,
-      41,
       51,
-      99
+      37,
+      5,
+      99,
+      41,
+      18
     ],
     "player_perspectives": [
       3
@@ -25799,12 +25802,12 @@
     "name": "The Legend of Zelda: A Link to the Past",
     "parent_game": -1,
     "platforms": [
-      5,
+      306,
       19,
+      5,
       41,
-      58,
       137,
-      306
+      58
     ],
     "player_perspectives": [
       3
@@ -26108,10 +26111,10 @@
     "name": "The Legend of Zelda: Ocarina of Time",
     "parent_game": -1,
     "platforms": [
-      4,
       5,
-      41,
-      416
+      4,
+      416,
+      41
     ],
     "player_perspectives": [
       2
@@ -26226,10 +26229,10 @@
     "name": "The Legend of Zelda: Majora's Mask",
     "parent_game": -1,
     "platforms": [
-      4,
       5,
-      41,
-      416
+      4,
+      416,
+      41
     ],
     "player_perspectives": [
       2
@@ -27048,8 +27051,8 @@
     "name": "Alice: Madness Returns",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -27214,10 +27217,10 @@
     "name": "Hitman: Blood Money",
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
       11,
-      12
+      6,
+      12,
+      8
     ],
     "player_perspectives": [
       1,
@@ -27290,10 +27293,10 @@
     "name": "Hitman: Contracts",
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
       11,
-      14
+      6,
+      14,
+      8
     ],
     "player_perspectives": [
       1,
@@ -27376,8 +27379,8 @@
     "name": "Mirror's Edge",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -27453,9 +27456,9 @@
     "name": "Oil Rush",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
       14
     ],
     "player_perspectives": [
@@ -27463,10 +27466,10 @@
     ],
     "ports": [],
     "release_dates": [
-      2574,
       191505,
       191506,
-      191507
+      191507,
+      2574
     ],
     "remakes": [],
     "remasters": [],
@@ -27517,8 +27520,8 @@
     "name": "Kingdoms of Amalur: Reckoning",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -27765,12 +27768,12 @@
     "name": "Super Mario Bros. 3",
     "parent_game": -1,
     "platforms": [
-      5,
-      18,
-      37,
-      41,
       52,
-      99
+      37,
+      5,
+      99,
+      41,
+      18
     ],
     "player_perspectives": [
       4
@@ -27892,12 +27895,12 @@
     "name": "Super Mario World",
     "parent_game": -1,
     "platforms": [
-      5,
-      19,
-      41,
       52,
-      58,
-      137
+      19,
+      5,
+      41,
+      137,
+      58
     ],
     "player_perspectives": [
       4
@@ -28098,8 +28101,8 @@
     "name": "Super Mario 64",
     "parent_game": -1,
     "platforms": [
-      4,
       5,
+      4,
       41
     ],
     "player_perspectives": [
@@ -29043,8 +29046,8 @@
     "name": "Resident Evil 6",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -29112,14 +29115,15 @@
     "keywords": [
       4370,
       4396,
+      26906,
       29960
     ],
     "name": "Donkey Kong",
     "name_glogAppendReleaseYear": true,
     "parent_game": 1086,
     "platforms": [
-      33,
-      37
+      37,
+      33
     ],
     "player_perspectives": [
       4
@@ -29577,11 +29581,11 @@
     "name": "Super Metroid",
     "parent_game": -1,
     "platforms": [
-      5,
       19,
+      5,
       41,
-      58,
-      137
+      137,
+      58
     ],
     "player_perspectives": [
       4
@@ -29736,19 +29740,19 @@
     ],
     "ports": [],
     "release_dates": [
-      110348,
       110354,
       110353,
       110352,
       501900,
       505140,
-      110347,
-      110349,
       110350,
       110351,
       505143,
       505141,
-      505142
+      505142,
+      110347,
+      110348,
+      110349
     ],
     "remakes": [],
     "remasters": [],
@@ -31018,10 +31022,10 @@
     "name": "Castlevania: Symphony of the Night",
     "parent_game": -1,
     "platforms": [
-      7,
       9,
-      12,
-      38
+      7,
+      38,
+      12
     ],
     "player_perspectives": [
       4
@@ -32633,8 +32637,8 @@
     "name": "Castlevania: Lords of Shadow 2",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -33695,10 +33699,10 @@
     "name": "South Park: The Stick of Truth",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49,
       130
     ],
@@ -33813,10 +33817,10 @@
     "name": "Assassin's Creed III",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      41
+      6,
+      41,
+      12
     ],
     "player_perspectives": [
       2
@@ -33937,8 +33941,8 @@
     "name": "Sleeping Dogs",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -34030,10 +34034,10 @@
     "name": "Darksiders II",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      41
+      6,
+      41,
+      12
     ],
     "player_perspectives": [
       2
@@ -34120,9 +34124,9 @@
     "name": "Darksiders",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
       12
     ],
     "player_perspectives": [
@@ -34744,12 +34748,12 @@
     "expanded_games": [],
     "expansions": [
       322149,
-      21973,
       143738,
-      19162,
       138798,
       21977,
       21975,
+      21973,
+      19162,
       125176,
       121499,
       297259,
@@ -34762,8 +34766,8 @@
       21974,
       275172,
       76152,
-      52016,
       96374,
+      52016,
       322147,
       105125,
       21976,
@@ -34833,10 +34837,10 @@
     "name": "Hearthstone",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       3,
@@ -35255,10 +35259,10 @@
     "name": "Tom Clancy's Splinter Cell: Blacklist",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      41
+      6,
+      41,
+      12
     ],
     "player_perspectives": [
       2
@@ -35429,13 +35433,13 @@
     "name": "XCOM: Enemy Unknown",
     "parent_game": 24,
     "platforms": [
-      3,
-      6,
       9,
-      12,
-      14,
+      3,
       34,
-      39
+      6,
+      39,
+      14,
+      12
     ],
     "player_perspectives": [
       3
@@ -35896,10 +35900,10 @@
     "name": "Torchlight II",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -36303,11 +36307,11 @@
     "name": "Beyond Good & Evil",
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
       11,
+      21,
+      6,
       12,
-      21
+      8
     ],
     "player_perspectives": [
       1,
@@ -36607,10 +36611,10 @@
     "name": "Journey",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      39,
-      48
+      48,
+      6,
+      39
     ],
     "player_perspectives": [
       2,
@@ -36690,11 +36694,11 @@
     "name": "flOw",
     "parent_game": -1,
     "platforms": [
+      82,
       9,
-      38,
-      46,
       48,
-      82
+      46,
+      38
     ],
     "player_perspectives": [
       3
@@ -36703,10 +36707,10 @@
     "release_dates": [
       103150,
       26509,
-      26501,
       26506,
       26511,
       26507,
+      26501,
       214406,
       214407,
       26508,
@@ -36788,11 +36792,11 @@
     "name": "Flower",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      48,
+      6,
       39,
-      46,
-      48
+      46
     ],
     "player_perspectives": [
       2
@@ -36941,10 +36945,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
+      6,
       39,
+      14,
       41,
       130
     ],
@@ -37041,9 +37045,9 @@
     "name": "Sniper: Ghost Warrior",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
       12
     ],
     "player_perspectives": [
@@ -37054,9 +37058,9 @@
     ],
     "release_dates": [
       24514,
+      105630,
       24523,
       105631,
-      105630,
       24521,
       190090,
       24519,
@@ -37210,11 +37214,11 @@
     "name": "Spec Ops: The Line",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       2
@@ -37311,18 +37315,18 @@
     "name": "Hotline Miami",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
-      9,
-      14,
-      34,
-      46,
-      48,
-      49,
-      130,
-      167,
+      170,
       169,
-      170
+      9,
+      48,
+      3,
+      34,
+      6,
+      167,
+      14,
+      46,
+      49,
+      130
     ],
     "player_perspectives": [
       3
@@ -37472,9 +37476,9 @@
     "name": "Professor Layton and the Curious Village",
     "parent_game": -1,
     "platforms": [
-      20,
       34,
-      39
+      39,
+      20
     ],
     "player_perspectives": [
       4,
@@ -37705,21 +37709,22 @@
       4372,
       5328,
       12708,
-      27629
+      27629,
+      49376
     ],
     "name": "Metal Slug",
     "parent_game": -1,
     "platforms": [
+      80,
+      52,
+      9,
       3,
       5,
-      6,
-      9,
-      14,
       34,
-      38,
+      6,
       39,
-      52,
-      80,
+      14,
+      38,
       136
     ],
     "player_perspectives": [
@@ -39007,7 +39012,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       310
@@ -39085,7 +39090,7 @@
     "bundles": [
       281760
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       4357
@@ -39307,8 +39312,8 @@
     "name": "Jak and Daxter: The Precursor Legacy",
     "parent_game": -1,
     "platforms": [
-      8,
-      48
+      48,
+      8
     ],
     "player_perspectives": [
       2
@@ -39501,10 +39506,10 @@
     "name": "Pillars of Eternity",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -40706,11 +40711,11 @@
     "name": "Mega Man",
     "parent_game": -1,
     "platforms": [
-      5,
-      18,
       37,
+      5,
+      99,
       41,
-      99
+      18
     ],
     "player_perspectives": [
       4
@@ -40824,8 +40829,8 @@
       19,
       37,
       41,
-      58,
-      137
+      137,
+      58
     ],
     "player_perspectives": [
       4
@@ -40914,11 +40919,11 @@
     "name": "Mega Man 8",
     "parent_game": -1,
     "platforms": [
-      7,
       9,
+      46,
       32,
-      38,
-      46
+      7,
+      38
     ],
     "player_perspectives": [
       4
@@ -40993,8 +40998,8 @@
     "name": "Mega Man & Bass",
     "parent_game": -1,
     "platforms": [
-      24,
       41,
+      24,
       58
     ],
     "player_perspectives": [
@@ -41138,14 +41143,14 @@
     "name": "Mega Man X",
     "parent_game": -1,
     "platforms": [
-      5,
-      13,
       19,
       37,
+      5,
       39,
+      13,
       41,
-      58,
-      137
+      137,
+      58
     ],
     "player_perspectives": [
       4
@@ -41223,8 +41228,8 @@
     "name": "Mega Man X: Command Mission",
     "parent_game": -1,
     "platforms": [
-      8,
-      21
+      21,
+      8
     ],
     "player_perspectives": [
       4
@@ -41305,8 +41310,8 @@
     "name": "Mega Man Battle Network",
     "parent_game": -1,
     "platforms": [
-      24,
-      41
+      41,
+      24
     ],
     "player_perspectives": [
       3,
@@ -41458,8 +41463,8 @@
     "name": "Mega Man Zero",
     "parent_game": -1,
     "platforms": [
-      24,
-      41
+      41,
+      24
     ],
     "player_perspectives": [
       4
@@ -41544,8 +41549,8 @@
     "name": "Mega Man Zero 2",
     "parent_game": -1,
     "platforms": [
-      24,
-      41
+      41,
+      24
     ],
     "player_perspectives": [
       4
@@ -41612,8 +41617,8 @@
     "name": "Mega Man Zero 3",
     "parent_game": -1,
     "platforms": [
-      24,
-      41
+      41,
+      24
     ],
     "player_perspectives": [
       4
@@ -42303,7 +42308,8 @@
       30703,
       41039,
       44020,
-      48263
+      48263,
+      48878
     ],
     "name": "Chrono Trigger",
     "parent_game": -1,
@@ -42608,8 +42614,8 @@
     "name": "Remember Me",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -42706,15 +42712,15 @@
     "name": "The Walking Dead",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
       9,
-      12,
-      14,
-      34,
-      39,
-      46,
       48,
+      3,
+      34,
+      6,
+      39,
+      14,
+      46,
+      12,
       49,
       130
     ],
@@ -43317,12 +43323,12 @@
     "name": "Might & Magic: Clash of Heroes",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      20,
       34,
-      39
+      6,
+      39,
+      12,
+      20
     ],
     "player_perspectives": [
       3
@@ -43413,10 +43419,10 @@
     "name": "Pid",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -43515,11 +43521,11 @@
     "name": "Gone Home",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
-      14,
       39,
-      48,
+      14,
       49,
       130
     ],
@@ -43562,8 +43568,8 @@
     "expanded_games": [],
     "expansions": [
       105041,
-      75682,
-      298931
+      298931,
+      75682
     ],
     "first_release_date": 1456358400,
     "forks": [],
@@ -43638,10 +43644,10 @@
     "expanded_games": [],
     "expansions": [
       75570,
-      142400,
       262570,
       75571,
       51543,
+      142400,
       294626,
       75572,
       75573,
@@ -43696,11 +43702,11 @@
     "name": "Path of Exile",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
       48,
-      49,
-      167
+      6,
+      167,
+      14,
+      49
     ],
     "player_perspectives": [
       3
@@ -43791,10 +43797,10 @@
     "name": "Indigo Prophecy",
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
       11,
-      48
+      48,
+      6,
+      8
     ],
     "player_perspectives": [
       2
@@ -43996,8 +44002,8 @@
     "parent_game": -1,
     "platforms": [
       9,
-      12,
       48,
+      12,
       49
     ],
     "player_perspectives": [
@@ -44116,8 +44122,8 @@
     ],
     "expanded_games": [],
     "expansions": [
-      12503,
-      13166
+      13166,
+      12503
     ],
     "first_release_date": 1431993600,
     "forks": [],
@@ -44582,14 +44588,14 @@
     "name": "Assassin's Creed IV Black Flag",
     "parent_game": -1,
     "platforms": [
-      6,
+      170,
       9,
-      12,
-      41,
       48,
+      6,
+      41,
+      12,
       49,
-      130,
-      170
+      130
     ],
     "player_perspectives": [
       2
@@ -45157,11 +45163,11 @@
     "name": "Saints Row IV",
     "parent_game": -1,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
       12,
-      48,
       49
     ],
     "player_perspectives": [
@@ -45293,13 +45299,13 @@
     "name": "Bastion",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
-      12,
-      14,
       39,
+      14,
       46,
-      48,
+      12,
       49,
       130
     ],
@@ -45515,10 +45521,10 @@
     "name": "Metal Gear Solid V: The Phantom Pain",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49
     ],
     "player_perspectives": [
@@ -45682,11 +45688,11 @@
     "name": "XIII",
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
       11,
+      21,
+      6,
       14,
-      21
+      8
     ],
     "player_perspectives": [
       1
@@ -45695,6 +45701,7 @@
       358119
     ],
     "release_dates": [
+      131418,
       131416,
       131419,
       131412,
@@ -45704,9 +45711,8 @@
       131414,
       131417,
       131413,
-      131409,
       131411,
-      131418
+      131409
     ],
     "remakes": [
       117509
@@ -45814,15 +45820,15 @@
     "name": "VVVVVV",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
-      14,
-      34,
-      37,
-      39,
-      46,
       48,
       72,
+      3,
+      37,
+      34,
+      6,
+      39,
+      14,
+      46,
       130
     ],
     "player_perspectives": [
@@ -45972,14 +45978,14 @@
     "name": "Fez",
     "parent_game": -1,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
-      12,
-      14,
       39,
+      14,
       46,
-      48,
+      12,
       130
     ],
     "player_perspectives": [
@@ -46139,8 +46145,8 @@
       11020
     ],
     "dlcs": [
-      75531,
       10028,
+      75531,
       75529
     ],
     "expanded_games": [],
@@ -46287,10 +46293,10 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      41
+      6,
+      41,
+      12
     ],
     "player_perspectives": [
       2
@@ -46377,10 +46383,10 @@
     "parent_game": 315652,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       3,
@@ -46758,11 +46764,11 @@
     "name": "Call of Duty: Ghosts",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      41,
       48,
+      6,
+      41,
+      12,
       49
     ],
     "player_perspectives": [
@@ -47079,12 +47085,12 @@
     "name": "LEGO Marvel Super Heroes",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
+      48,
+      6,
       14,
       41,
-      48,
+      12,
       49,
       130
     ],
@@ -47555,8 +47561,8 @@
     "platforms": [
       3,
       6,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -47673,12 +47679,12 @@
     "name": "Dust: An Elysian Tail",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
-      12,
-      14,
       39,
-      48,
+      14,
+      12,
       130
     ],
     "player_perspectives": [
@@ -47766,8 +47772,8 @@
     "name": "Bayonetta",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -48045,8 +48051,8 @@
     "name": "Dark Souls",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -48123,9 +48129,9 @@
     "name": "Proteus",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
       14,
       46
     ],
@@ -48621,11 +48627,11 @@
     ],
     "ports": [],
     "release_dates": [
+      229506,
       370948,
       4606,
       118777,
       229505,
-      229506,
       144106,
       4493,
       4492,
@@ -48685,9 +48691,9 @@
     "name": "Mighty Switch Force! Hyper Drive Edition",
     "parent_game": 22919,
     "platforms": [
+      48,
       6,
       41,
-      48,
       49
     ],
     "player_perspectives": [
@@ -50231,10 +50237,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       3
@@ -50328,11 +50334,11 @@
     "name": "DeathSpank",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       2
@@ -51150,15 +51156,15 @@
     "name": "Thomas Was Alone",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
       9,
-      14,
+      48,
+      3,
       34,
+      6,
       39,
+      14,
       41,
       46,
-      48,
       49,
       130
     ],
@@ -51260,13 +51266,13 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": 194909,
     "platforms": [
+      9,
       3,
       5,
-      6,
-      9,
-      14,
       34,
+      6,
       39,
+      14,
       41,
       130
     ],
@@ -51468,11 +51474,11 @@
     "name": "Super Mario Kart",
     "parent_game": -1,
     "platforms": [
-      5,
       19,
+      5,
       41,
-      58,
-      137
+      137,
+      58
     ],
     "player_perspectives": [
       2
@@ -52385,16 +52391,16 @@
     "name": "Puzzle Quest: Challenge of the Warlords",
     "parent_game": -1,
     "platforms": [
+      9,
+      48,
       5,
       6,
-      8,
-      9,
-      12,
-      20,
-      38,
       39,
-      48,
-      159
+      38,
+      12,
+      159,
+      20,
+      8
     ],
     "player_perspectives": [
       3,
@@ -52434,7 +52440,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -52632,12 +52638,12 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
-      9,
       11,
+      9,
+      21,
+      6,
       14,
-      21
+      8
     ],
     "player_perspectives": [
       2
@@ -52717,10 +52723,10 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       2
@@ -52853,8 +52859,8 @@
     "name": "Quantum Conundrum",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -52969,8 +52975,8 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -53112,8 +53118,8 @@
     "platforms": [
       3,
       6,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       3
@@ -53138,7 +53144,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       490,
@@ -53272,8 +53278,8 @@
     "name": "Enslaved: Odyssey to the West",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -53353,10 +53359,10 @@
     "name": "Alpha Protocol",
     "parent_game": -1,
     "platforms": [
-      6,
+      113,
       9,
-      12,
-      113
+      6,
+      12
     ],
     "player_perspectives": [
       2
@@ -53454,10 +53460,10 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49
     ],
     "player_perspectives": [
@@ -53694,8 +53700,8 @@
     "platforms": [
       3,
       6,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -54683,7 +54689,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       506
@@ -55235,11 +55241,11 @@
     "name": "Braid",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -55506,10 +55512,10 @@
     "parent_game": -1,
     "platforms": [
       19,
-      24,
       41,
-      58,
-      137
+      137,
+      24,
+      58
     ],
     "player_perspectives": [
       1,
@@ -55671,9 +55677,9 @@
     ],
     "expanded_games": [],
     "expansions": [
+      23850,
       22660,
       22669,
-      23850,
       110889,
       23980,
       22668,
@@ -55902,10 +55908,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
+      6,
       39,
+      14,
       46
     ],
     "player_perspectives": [
@@ -56033,8 +56039,8 @@
     "name": "The Vanishing of Ethan Carter",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -56363,9 +56369,9 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      8,
       11,
-      21
+      21,
+      8
     ],
     "player_perspectives": [
       2
@@ -56475,12 +56481,12 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
       11,
-      14,
       21,
-      55
+      6,
+      14,
+      55,
+      8
     ],
     "player_perspectives": [
       2
@@ -56634,14 +56640,14 @@
     "name": "Machinarium",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
       9,
-      14,
-      34,
-      39,
-      46,
       48,
+      3,
+      34,
+      6,
+      39,
+      14,
+      46,
       49,
       130
     ],
@@ -56725,10 +56731,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
+      6,
       39,
+      14,
       130
     ],
     "player_perspectives": [
@@ -56789,8 +56795,8 @@
     "name": "The Elder Scrolls V: Skyrim - Dawnguard",
     "parent_game": 472,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -56920,14 +56926,14 @@
     "name": "The Wolf Among Us",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14,
-      34,
-      39,
-      46,
       48,
+      34,
+      6,
+      39,
+      14,
+      46,
+      12,
       49
     ],
     "player_perspectives": [
@@ -57008,8 +57014,8 @@
     "parent_game": -1,
     "platforms": [
       6,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -57381,11 +57387,11 @@
     "name": "Transistor",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
-      14,
       39,
-      48,
+      14,
       130
     ],
     "player_perspectives": [
@@ -57542,12 +57548,12 @@
     "name": "Middle-earth: Shadow of Mordor",
     "parent_game": -1,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
-      12,
       14,
-      48,
+      12,
       49
     ],
     "player_perspectives": [
@@ -57646,8 +57652,8 @@
     "platforms": [
       3,
       6,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -57860,10 +57866,10 @@
     ],
     "expanded_games": [],
     "expansions": [
-      125011,
-      76432,
       26254,
       145585,
+      76432,
+      125011,
       284138,
       349790,
       349765,
@@ -57918,13 +57924,13 @@
     "name": "Euro Truck Simulator 2",
     "parent_game": -1,
     "platforms": [
+      169,
+      48,
       3,
       6,
-      14,
-      48,
-      49,
       167,
-      169
+      14,
+      49
     ],
     "player_perspectives": [
       1,
@@ -58034,8 +58040,8 @@
     "platforms": [
       3,
       6,
-      14,
-      39
+      39,
+      14
     ],
     "player_perspectives": [
       3
@@ -58417,10 +58423,10 @@
     "name": "Wasteland 2",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49
     ],
     "player_perspectives": [
@@ -58500,11 +58506,11 @@
     "name": "Kerbal Space Program",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
       41,
-      48,
       49,
       130
     ],
@@ -58554,8 +58560,8 @@
     ],
     "expanded_games": [],
     "expansions": [
-      88917,
-      52177
+      52177,
+      88917
     ],
     "first_release_date": 1366675200,
     "forks": [],
@@ -58611,10 +58617,10 @@
     "name": "Don't Starve",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -58813,10 +58819,10 @@
     "name": "Castle Crashers",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -58915,8 +58921,8 @@
     "ports": [],
     "release_dates": [
       207505,
-      121657,
       207504,
+      121657,
       207506
     ],
     "remakes": [],
@@ -59033,8 +59039,8 @@
     "name": "The Saboteur",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -59109,8 +59115,8 @@
     "name": "Grand Theft Auto IV: The Ballad of Gay Tony",
     "parent_game": 731,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -59354,10 +59360,10 @@
     "name": "Murdered: Soul Suspect",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49
     ],
     "player_perspectives": [
@@ -59494,13 +59500,13 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      5,
-      6,
+      52,
       9,
-      12,
+      5,
       29,
+      6,
       39,
-      52
+      12
     ],
     "player_perspectives": [
       4
@@ -59909,10 +59915,10 @@
     "name": "Vanquish",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49
     ],
     "player_perspectives": [
@@ -60062,12 +60068,12 @@
     "name": "Rogue Legacy",
     "parent_game": -1,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
       14,
       46,
-      48,
       49,
       130
     ],
@@ -60150,11 +60156,11 @@
     "name": "Chasm",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
       46,
-      48,
       49,
       130
     ],
@@ -60222,6 +60228,7 @@
       510,
       574,
       577,
+      595,
       947,
       1033,
       1045,
@@ -60802,8 +60809,8 @@
     "name": "Grand Theft Auto IV: The Lost and Damned",
     "parent_game": 731,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -61600,7 +61607,8 @@
       30490,
       30703,
       31533,
-      48325
+      48325,
+      50485
     ],
     "name": "Mario & Luigi: Superstar Saga",
     "parent_game": -1,
@@ -62225,7 +62233,7 @@
     "bundles": [
       64336
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       6848
@@ -62293,7 +62301,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       606
@@ -62520,13 +62528,13 @@
     "name": "F-Zero",
     "parent_game": -1,
     "platforms": [
-      5,
-      19,
-      41,
       52,
-      58,
+      306,
+      19,
+      5,
+      41,
       137,
-      306
+      58
     ],
     "player_perspectives": [
       2
@@ -62564,7 +62572,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       605
@@ -62651,7 +62659,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       607
@@ -62722,15 +62730,15 @@
   },
   {
     "bundles": [
-      43925,
       4007,
       4360,
-      71407,
       7070,
+      43925,
       57234,
+      71407,
       93496
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       607
@@ -62884,12 +62892,14 @@
     "keywords": [
       78,
       249,
+      4141,
       4210,
       4467,
       4522,
       5807,
       8784,
       9853,
+      26906,
       27629,
       31533,
       37741
@@ -63669,13 +63679,13 @@
     "name": "Assassin's Creed: Freedom Cry",
     "parent_game": 1970,
     "platforms": [
-      6,
+      170,
       9,
-      12,
       48,
+      6,
+      12,
       49,
-      130,
-      170
+      130
     ],
     "player_perspectives": [
       2
@@ -64386,9 +64396,9 @@
     "name": "Killer7",
     "parent_game": -1,
     "platforms": [
+      21,
       6,
-      8,
-      21
+      8
     ],
     "player_perspectives": [
       1
@@ -65102,10 +65112,10 @@
     "name": "Sonic Mega Collection",
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
       11,
-      21
+      21,
+      6,
+      8
     ],
     "player_perspectives": [
       2,
@@ -65618,8 +65628,8 @@
     "parent_game": -1,
     "platforms": [
       6,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       1
@@ -65680,8 +65690,8 @@
     "name": "Dark Void",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -66134,13 +66144,13 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      5,
-      6,
       9,
-      12,
-      29,
       37,
-      41
+      5,
+      29,
+      6,
+      41,
+      12
     ],
     "player_perspectives": [
       4
@@ -66305,7 +66315,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1516
@@ -66372,18 +66382,18 @@
     "release_dates": [
       107163,
       117977,
-      107162,
       145362,
-      49336,
       49335,
-      49334,
       49340,
       49344,
       49345,
-      49341,
-      49342,
       49343,
-      49338
+      107162,
+      49334,
+      49336,
+      49338,
+      49341,
+      49342
     ],
     "remakes": [],
     "remasters": [],
@@ -66397,7 +66407,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       8709
@@ -66531,6 +66541,7 @@
     ],
     "ports": [],
     "release_dates": [
+      337503,
       137131,
       157016,
       157008,
@@ -66538,7 +66549,6 @@
       157017,
       157019,
       157023,
-      337503,
       323105,
       43677,
       43674,
@@ -66778,12 +66788,12 @@
     ],
     "ports": [],
     "release_dates": [
-      309547,
-      309548,
-      309549,
       309550,
       309551,
       309552,
+      309547,
+      309548,
+      309549,
       309544,
       309545,
       413719,
@@ -67140,9 +67150,9 @@
     "name": "Dead Rising",
     "parent_game": -1,
     "platforms": [
+      48,
       6,
       12,
-      48,
       49
     ],
     "player_perspectives": [
@@ -67597,14 +67607,14 @@
     "name": "LEGO The Hobbit",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14,
+      48,
       37,
+      6,
+      14,
       41,
       46,
-      48,
+      12,
       49
     ],
     "player_perspectives": [
@@ -67707,13 +67717,13 @@
     "name": "The LEGO Movie Videogame",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
+      48,
+      6,
       14,
       41,
       46,
-      48,
+      12,
       49
     ],
     "player_perspectives": [
@@ -68354,13 +68364,13 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      5,
-      6,
       9,
-      12,
-      14,
+      5,
       34,
-      39
+      6,
+      39,
+      14,
+      12
     ],
     "player_perspectives": [
       2
@@ -68530,10 +68540,10 @@
     "name": "Metal Slug Anthology",
     "parent_game": -1,
     "platforms": [
+      48,
       5,
-      8,
       38,
-      48
+      8
     ],
     "player_perspectives": [
       4
@@ -68644,15 +68654,15 @@
     "name": "To the Moon",
     "parent_game": -1,
     "platforms": [
+      169,
       3,
-      6,
-      14,
       34,
+      6,
       39,
-      49,
-      130,
       167,
-      169
+      14,
+      49,
+      130
     ],
     "player_perspectives": [
       3
@@ -68744,11 +68754,11 @@
     "release_dates": [
       107632,
       107644,
-      301710,
-      301711,
       301712,
       301713,
       301714,
+      301710,
+      301711,
       107636
     ],
     "remakes": [],
@@ -69083,10 +69093,10 @@
     "name": "Metal Gear Solid V: Ground Zeroes",
     "parent_game": 1985,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49
     ],
     "player_perspectives": [
@@ -69183,10 +69193,10 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49
     ],
     "player_perspectives": [
@@ -69324,11 +69334,11 @@
     "platforms": [
       3,
       5,
-      6,
-      12,
-      14,
       29,
+      6,
       39,
+      14,
+      12,
       78
     ],
     "player_perspectives": [
@@ -69465,7 +69475,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       4628
@@ -69578,7 +69588,8 @@
       5533,
       5651,
       6498,
-      6735
+      6735,
+      49376
     ],
     "name": "Q.U.B.E.",
     "parent_game": -1,
@@ -69610,7 +69621,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       3878
@@ -69711,10 +69722,10 @@
       68
     ],
     "dlcs": [
-      15529,
       15523,
       26034,
       25975,
+      15529,
       15519,
       26031,
       15530
@@ -69865,11 +69876,11 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
-      34,
-      39,
       74,
+      34,
+      6,
+      39,
+      14,
       130
     ],
     "player_perspectives": [
@@ -69895,7 +69906,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -70048,8 +70059,8 @@
     "name": "Deus Ex: The Fall",
     "parent_game": -1,
     "platforms": [
-      6,
       34,
+      6,
       39
     ],
     "player_perspectives": [
@@ -70141,10 +70152,10 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
-      39,
       48,
+      6,
+      39,
+      14,
       49
     ],
     "player_perspectives": [
@@ -70354,10 +70365,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       4
@@ -70466,8 +70477,8 @@
     "name": "Hell Yeah! Wrath of the Dead Rabbit",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -70897,16 +70908,16 @@
     "name": "SteamWorld Dig",
     "parent_game": -1,
     "platforms": [
+      170,
+      48,
       3,
+      37,
       6,
       14,
-      37,
       41,
       46,
-      48,
       49,
-      130,
-      170
+      130
     ],
     "player_perspectives": [
       4
@@ -71092,13 +71103,13 @@
     "name": "The Swapper",
     "parent_game": -1,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
       14,
       41,
       46,
-      48,
       49
     ],
     "player_perspectives": [
@@ -71177,12 +71188,12 @@
     "name": "Foul Play",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
-      12,
       14,
       46,
-      48
+      12
     ],
     "player_perspectives": [
       4
@@ -71369,10 +71380,10 @@
     "name": "Broforce",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -71595,10 +71606,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
+      6,
       39,
+      14,
       49,
       130
     ],
@@ -71642,8 +71653,8 @@
       225
     ],
     "dlcs": [
-      52687,
       13918,
+      52687,
       13919,
       186629,
       13917
@@ -71707,13 +71718,13 @@
     "name": "Borderlands: The Pre-Sequel",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
       9,
-      12,
-      14,
-      34,
       48,
+      3,
+      34,
+      6,
+      14,
+      12,
       49,
       130
     ],
@@ -72068,10 +72079,10 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49
     ],
     "player_perspectives": [
@@ -72139,8 +72150,8 @@
     "name": "The Elder Scrolls V: Skyrim - Hearthfire",
     "parent_game": 472,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -72198,8 +72209,8 @@
     "name": "The Elder Scrolls V: Skyrim - Dragonborn",
     "parent_game": 472,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -72470,10 +72481,10 @@
     "name": "Mercenary Kings",
     "parent_game": -1,
     "platforms": [
+      48,
       6,
       14,
       46,
-      48,
       49
     ],
     "player_perspectives": [
@@ -72563,8 +72574,8 @@
     "platforms": [
       3,
       6,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -72634,8 +72645,8 @@
     "name": "Tron 2.0",
     "parent_game": -1,
     "platforms": [
-      6,
       11,
+      6,
       14
     ],
     "player_perspectives": [
@@ -72739,9 +72750,9 @@
     "name": "Trine",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
       14,
       41
     ],
@@ -72810,12 +72821,12 @@
     "name": "Trine 2",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
       9,
-      12,
+      3,
+      34,
+      6,
       14,
-      34
+      12
     ],
     "player_perspectives": [
       4
@@ -72983,11 +72994,11 @@
     "name": "Red Faction",
     "parent_game": -1,
     "platforms": [
-      6,
-      8,
       9,
+      48,
+      6,
       14,
-      48
+      8
     ],
     "player_perspectives": [
       1
@@ -73325,11 +73336,11 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      12,
-      14,
       34,
-      39
+      6,
+      39,
+      14,
+      12
     ],
     "player_perspectives": [
       3
@@ -73480,12 +73491,12 @@
     "name": "Contra III: The Alien Wars",
     "parent_game": -1,
     "platforms": [
-      5,
-      19,
-      41,
       52,
-      58,
-      137
+      19,
+      5,
+      41,
+      137,
+      58
     ],
     "player_perspectives": [
       2,
@@ -73494,8 +73505,8 @@
     ],
     "ports": [
       48914,
-      49158,
-      186205
+      186205,
+      49158
     ],
     "release_dates": [
       514901,
@@ -73612,15 +73623,15 @@
     "name": "Gunstar Heroes",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       5,
-      6,
-      9,
-      12,
-      14,
       29,
       34,
-      39
+      6,
+      39,
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -73823,7 +73834,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -73925,7 +73936,7 @@
     "bundles": [
       136061
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1391
@@ -74153,10 +74164,10 @@
     "name": "Rock n' Roll Racing",
     "parent_game": -1,
     "platforms": [
-      6,
       19,
-      24,
-      29
+      29,
+      6,
+      24
     ],
     "player_perspectives": [
       2,
@@ -74530,13 +74541,13 @@
     "name": "Tales from the Borderlands",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14,
-      34,
-      39,
       48,
+      34,
+      6,
+      39,
+      14,
+      12,
       49,
       130
     ],
@@ -74618,10 +74629,10 @@
     "name": "Rise & Shine",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -74780,8 +74791,8 @@
     "parent_game": -1,
     "platforms": [
       5,
-      12,
-      29
+      29,
+      12
     ],
     "player_perspectives": [
       4
@@ -75064,13 +75075,13 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
+      9,
+      37,
       5,
       6,
-      9,
-      12,
       14,
-      37,
-      41
+      41,
+      12
     ],
     "player_perspectives": [
       2
@@ -75198,10 +75209,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       4
@@ -75340,8 +75351,8 @@
     "name": "Binary Domain",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -75472,8 +75483,8 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -76220,8 +76231,8 @@
     "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -76475,8 +76486,8 @@
     "name": "Legendary",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -76927,13 +76938,13 @@
     "name": "SuperHot",
     "parent_game": -1,
     "platforms": [
+      170,
+      48,
       3,
       6,
       14,
-      48,
       49,
-      130,
-      170
+      130
     ],
     "player_perspectives": [
       1
@@ -77299,8 +77310,8 @@
     "name": "Viking: Battle for Asgard",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -77481,8 +77492,8 @@
     "name": "Watchmen: The End Is Nigh",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -77537,6 +77548,7 @@
     ],
     "keywords": [
       126,
+      595,
       3079
     ],
     "name": "3D Dot Game Heroes",
@@ -77862,12 +77874,12 @@
     "name": "Valiant Hearts: The Great War",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      34,
-      39,
       48,
+      34,
+      6,
+      39,
+      12,
       49,
       130
     ],
@@ -78921,12 +78933,12 @@
     "name": "The Talos Principle",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
-      14,
-      34,
-      39,
       48,
+      3,
+      34,
+      6,
+      39,
+      14,
       49,
       130
     ],
@@ -79021,9 +79033,9 @@
     "name": "Papo & Yo",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
       14
     ],
     "player_perspectives": [
@@ -79103,12 +79115,12 @@
     "name": "Hoard",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
       14,
-      38,
-      46
+      46,
+      38
     ],
     "player_perspectives": [
       3
@@ -79435,11 +79447,11 @@
     "name": "Shank",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -79447,12 +79459,12 @@
     "ports": [],
     "release_dates": [
       387352,
+      105480,
       190324,
       19581,
       19582,
       19580,
-      105481,
-      105480
+      105481
     ],
     "remakes": [],
     "remasters": [],
@@ -79624,10 +79636,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       4
@@ -79726,8 +79738,8 @@
     "name": "Assassin's Creed Rogue",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -80062,15 +80074,15 @@
     "name": "Teslagrad",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
       9,
-      14,
+      48,
+      3,
       34,
+      6,
       39,
+      14,
       41,
       46,
-      48,
       49,
       130
     ],
@@ -80153,9 +80165,9 @@
     "name": "Tiny Brains",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      48
+      48,
+      6
     ],
     "player_perspectives": [
       4
@@ -80418,9 +80430,9 @@
       26008,
       26014,
       26005,
+      26013,
       26009,
       26010,
-      26013,
       741446,
       105384,
       105385
@@ -80632,10 +80644,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       4
@@ -80795,13 +80807,13 @@
     "name": "Ittle Dew",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
-      14,
-      34,
-      39,
-      41,
       72,
+      3,
+      34,
+      6,
+      39,
+      14,
+      41,
       130
     ],
     "player_perspectives": [
@@ -81365,9 +81377,9 @@
     "name": "Closure",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
       14
     ],
     "player_perspectives": [
@@ -81457,8 +81469,8 @@
     "name": "Just Cause 3",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -81739,10 +81751,10 @@
     "name": "Dark Souls II: Scholar of the First Sin",
     "parent_game": 2368,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49
     ],
     "player_perspectives": [
@@ -81889,10 +81901,10 @@
     "name": "Trine 3: The Artifacts of Power",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -81957,10 +81969,10 @@
     "name": "Tacoma",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49
     ],
     "player_perspectives": [
@@ -82047,8 +82059,8 @@
     "name": "Magrunner: Dark Pulse",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -82393,11 +82405,11 @@
     "name": "Outland",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -82467,10 +82479,10 @@
     "name": "Bardbarian",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       3
@@ -82537,9 +82549,9 @@
     "name": "Vessel",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
-      6,
-      9
+      6
     ],
     "player_perspectives": [
       4
@@ -82716,10 +82728,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       3
@@ -82784,8 +82796,8 @@
     "name": "Blood Knights",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -82933,6 +82945,7 @@
       1158,
       1756,
       1821,
+      2887,
       3831,
       4134,
       4168,
@@ -82948,7 +82961,8 @@
       5175,
       5305,
       6145,
-      49308
+      49308,
+      49376
     ],
     "name": "Shantae and the Pirate's Curse",
     "parent_game": -1,
@@ -82968,8 +82982,8 @@
     "ports": [],
     "release_dates": [
       148965,
-      148962,
       148963,
+      148962,
       149012,
       401058,
       146501,
@@ -83051,14 +83065,14 @@
     "name": "The Bridge",
     "parent_game": -1,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
-      12,
       14,
       41,
       46,
-      48,
+      12,
       49,
       130
     ],
@@ -83138,10 +83152,10 @@
     "name": "Strike Suit Zero",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49
     ],
     "player_perspectives": [
@@ -83269,10 +83283,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       5
@@ -83502,10 +83516,10 @@
     "name": "Element4l",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
-      46,
-      48
+      46
     ],
     "player_perspectives": [
       4
@@ -83662,8 +83676,8 @@
     "platforms": [
       3,
       6,
-      12,
       14,
+      12,
       130
     ],
     "player_perspectives": [
@@ -83671,11 +83685,11 @@
     ],
     "ports": [],
     "release_dates": [
+      211564,
       26132,
       26133,
       26134,
-      211563,
-      211564
+      211563
     ],
     "remakes": [],
     "remasters": [],
@@ -83816,14 +83830,14 @@
     "name": "Anomaly: Warzone Earth",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
+      73,
       9,
-      12,
-      14,
+      3,
       34,
+      6,
       39,
-      73
+      14,
+      12
     ],
     "player_perspectives": [
       3
@@ -83901,9 +83915,9 @@
     "name": "Grow Home",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
-      6,
-      48
+      6
     ],
     "player_perspectives": [
       2
@@ -84236,8 +84250,8 @@
     "name": "Mitsurugi Kamui Hikae",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -84246,8 +84260,8 @@
     ],
     "ports": [],
     "release_dates": [
-      136152,
       168509,
+      136152,
       29032,
       117720,
       230049
@@ -84517,12 +84531,12 @@
     "name": "Super Time Force Ultra",
     "parent_game": 5336,
     "platforms": [
+      48,
       3,
       6,
-      12,
       14,
       46,
-      48,
+      12,
       49
     ],
     "player_perspectives": [
@@ -84604,8 +84618,8 @@
     "platforms": [
       3,
       6,
-      14,
-      39
+      39,
+      14
     ],
     "player_perspectives": [
       3
@@ -84778,8 +84792,8 @@
     "platforms": [
       3,
       6,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -84939,10 +84953,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [],
     "ports": [],
@@ -85012,10 +85026,10 @@
     "name": "Chroma Squad",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -85094,10 +85108,10 @@
     "name": "80 Days",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
       34,
+      6,
       39,
+      14,
       130
     ],
     "player_perspectives": [
@@ -85170,9 +85184,9 @@
     "name": "Ibb & Obb",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
       130
     ],
     "player_perspectives": [
@@ -85408,9 +85422,9 @@
     "name": "Shiftlings",
     "parent_game": -1,
     "platforms": [
+      48,
       6,
       41,
-      48,
       49,
       130
     ],
@@ -85483,8 +85497,8 @@
     "name": "Tembo the Badass Elephant",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -85548,8 +85562,8 @@
     "name": "Deadly Premonition: Director's Cut",
     "parent_game": 1276,
     "platforms": [
-      6,
-      9
+      9,
+      6
     ],
     "player_perspectives": [
       2
@@ -85966,8 +85980,8 @@
     "name": "Strike Suit Zero: Director's Cut",
     "parent_game": 8507,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -86057,8 +86071,8 @@
     "parent_game": 6797,
     "platforms": [
       5,
-      12,
-      29
+      29,
+      12
     ],
     "player_perspectives": [
       4
@@ -86067,9 +86081,9 @@
       239072
     ],
     "release_dates": [
-      100739,
-      196983,
       196984,
+      196983,
+      100739,
       100741,
       100738,
       143298,
@@ -86168,9 +86182,9 @@
     "platforms": [
       3,
       5,
+      29,
       6,
-      14,
-      29
+      14
     ],
     "player_perspectives": [
       1,
@@ -87007,8 +87021,8 @@
     "platforms": [
       3,
       6,
-      14,
-      39
+      39,
+      14
     ],
     "player_perspectives": [
       1
@@ -87229,11 +87243,11 @@
     "name": "Shank 2",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -87266,9 +87280,9 @@
     ],
     "dlcs": [
       18030,
-      19534,
       19532,
       18031,
+      19534,
       19533,
       18029
     ],
@@ -87493,9 +87507,9 @@
     "name": "Return of the Obra Dinn",
     "parent_game": -1,
     "platforms": [
+      48,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -87561,10 +87575,10 @@
     "name": "Infinifactory",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
-      14,
-      48
+      14
     ],
     "player_perspectives": [
       1
@@ -87645,10 +87659,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       4
@@ -87718,10 +87732,10 @@
     "name": "Dungeons 2",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
-      14,
-      48
+      14
     ],
     "player_perspectives": [
       3
@@ -87811,8 +87825,8 @@
       3,
       5,
       6,
-      14,
-      39
+      39,
+      14
     ],
     "player_perspectives": [
       4
@@ -87886,8 +87900,8 @@
     "platforms": [
       3,
       6,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [],
     "ports": [],
@@ -87955,12 +87969,12 @@
     "name": "Caster",
     "parent_game": -1,
     "platforms": [
+      72,
       3,
-      6,
-      14,
       37,
+      6,
       39,
-      72
+      14
     ],
     "player_perspectives": [
       2
@@ -88057,12 +88071,12 @@
     "name": "Hyper Light Drifter",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
       41,
       46,
-      48,
       49
     ],
     "player_perspectives": [
@@ -88402,12 +88416,12 @@
     "name": "Cogs",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
       9,
-      14,
+      3,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       4
@@ -88461,8 +88475,8 @@
     "name": "Batman: Arkham Origins - Cold, Cold Heart",
     "parent_game": 2003,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -88935,11 +88949,11 @@
     "name": "Home",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
-      39,
-      46,
       48,
+      6,
+      39,
+      14,
+      46,
       130
     ],
     "player_perspectives": [
@@ -89017,9 +89031,9 @@
     "name": "Toren",
     "parent_game": -1,
     "platforms": [
+      48,
       6,
-      14,
-      48
+      14
     ],
     "player_perspectives": [
       2
@@ -89158,8 +89172,8 @@
     "name": "Hamilton's Great Adventure",
     "parent_game": -1,
     "platforms": [
-      6,
-      9
+      9,
+      6
     ],
     "player_perspectives": [],
     "ports": [],
@@ -89269,10 +89283,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       1,
@@ -89779,13 +89793,13 @@
     "name": "Swords & Soldiers",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       5,
-      6,
-      9,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       4
@@ -89866,9 +89880,9 @@
     "parent_game": -1,
     "platforms": [
       3,
+      34,
       6,
-      14,
-      34
+      14
     ],
     "player_perspectives": [
       1,
@@ -89956,13 +89970,13 @@
     "name": "Sine Mora",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
+      72,
       34,
+      6,
       39,
       46,
-      72
+      12
     ],
     "player_perspectives": [
       4
@@ -90013,10 +90027,10 @@
     "name": "Sleeping Dogs: Nightmare in North Point",
     "parent_game": 1267,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49
     ],
     "player_perspectives": [],
@@ -90066,10 +90080,10 @@
     "name": "Sleeping Dogs: Year of the Snake",
     "parent_game": 1267,
     "platforms": [
-      6,
       9,
-      12,
-      48
+      48,
+      6,
+      12
     ],
     "player_perspectives": [
       2
@@ -90180,12 +90194,12 @@
     "name": "Stealth Bastard Deluxe",
     "parent_game": 10923,
     "platforms": [
-      3,
-      6,
       9,
-      14,
+      3,
       34,
+      6,
       39,
+      14,
       46
     ],
     "player_perspectives": [
@@ -90334,8 +90348,8 @@
     "platforms": [
       3,
       6,
-      14,
-      39
+      39,
+      14
     ],
     "player_perspectives": [
       1,
@@ -90477,8 +90491,8 @@
     "platforms": [
       3,
       6,
-      14,
-      39
+      39,
+      14
     ],
     "player_perspectives": [
       1
@@ -90519,7 +90533,9 @@
       320,
       280,
       210,
-      350
+      350,
+      6899,
+      6897
     ],
     "game_modes": [
       1,
@@ -90561,14 +90577,14 @@
     "name": "LEGO Marvel's Avengers",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14,
+      48,
       37,
+      6,
+      14,
       41,
       46,
-      48,
+      12,
       49
     ],
     "player_perspectives": [
@@ -90666,12 +90682,12 @@
     "name": "Anodyne",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
-      14,
-      34,
-      39,
       48,
+      3,
+      34,
+      6,
+      39,
+      14,
       49,
       130
     ],
@@ -90901,8 +90917,8 @@
     "name": "Horizon Zero Dawn",
     "parent_game": -1,
     "platforms": [
-      6,
-      48
+      48,
+      6
     ],
     "player_perspectives": [
       2
@@ -90996,12 +91012,12 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
+      170,
+      48,
       3,
       6,
       14,
-      48,
-      49,
-      170
+      49
     ],
     "player_perspectives": [
       2
@@ -91239,10 +91255,10 @@
     "name": "Transformers: Devastation",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49
     ],
     "player_perspectives": [
@@ -91325,10 +91341,10 @@
     "name": "Ronin",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
-      14,
-      48
+      14
     ],
     "player_perspectives": [
       4
@@ -92258,10 +92274,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       1
@@ -92369,9 +92385,9 @@
     "name": "Yakuza 0",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -92531,10 +92547,10 @@
     "name": "AER: Memories of Old",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -92612,8 +92628,8 @@
     "name": "The Surge",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -92689,8 +92705,8 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
-      6,
       34,
+      6,
       39,
       130
     ],
@@ -92760,11 +92776,11 @@
     "name": "Epistory: Typing Chronicles",
     "parent_game": -1,
     "platforms": [
+      170,
       3,
       6,
       14,
-      130,
-      170
+      130
     ],
     "player_perspectives": [
       3
@@ -92924,9 +92940,9 @@
     "name": "Rebel Galaxy",
     "parent_game": -1,
     "platforms": [
+      48,
       6,
       14,
-      48,
       49
     ],
     "player_perspectives": [
@@ -93001,12 +93017,12 @@
     "name": "Outer Wilds",
     "parent_game": -1,
     "platforms": [
-      6,
+      169,
       48,
-      49,
-      130,
+      6,
       167,
-      169
+      49,
+      130
     ],
     "player_perspectives": [
       1
@@ -93096,10 +93112,10 @@
     "name": "Evoland 2",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       2,
@@ -93313,12 +93329,12 @@
     "name": "The Witcher 3: Wild Hunt - Hearts of Stone",
     "parent_game": 1942,
     "platforms": [
-      6,
+      169,
       48,
-      49,
-      130,
+      6,
       167,
-      169
+      49,
+      130
     ],
     "player_perspectives": [
       2
@@ -93423,11 +93439,11 @@
     "name": "Undertale",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
       46,
-      48,
       49,
       130
     ],
@@ -93502,10 +93518,10 @@
     "name": "Lovers in a Dangerous Spacetime",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -93659,16 +93675,25 @@
       42559
     ],
     "keywords": [
-      1438
+      215,
+      962,
+      1186,
+      1438,
+      1504,
+      4241,
+      4287,
+      5963,
+      23933,
+      26965
     ],
     "name": "Danganronpa V3: Killing Harmony",
     "parent_game": -1,
     "platforms": [
-      6,
+      48,
       34,
+      6,
       39,
       46,
-      48,
       130
     ],
     "player_perspectives": [
@@ -93747,14 +93772,14 @@
     "name": "Job Simulator: The 2050 Archives",
     "parent_game": -1,
     "platforms": [
-      161,
-      163,
-      165,
-      384,
-      385,
       386,
       390,
-      472
+      161,
+      165,
+      472,
+      163,
+      385,
+      384
     ],
     "player_perspectives": [
       1,
@@ -93766,9 +93791,9 @@
       314265,
       314266,
       351891,
+      170474,
       439770,
       314267,
-      170474,
       598203
     ],
     "remakes": [],
@@ -94085,12 +94110,12 @@
     "name": "The Witcher 3: Wild Hunt - Blood and Wine",
     "parent_game": 1942,
     "platforms": [
-      6,
+      169,
       48,
-      49,
-      130,
+      6,
       167,
-      169
+      49,
+      130
     ],
     "player_perspectives": [
       2
@@ -94377,8 +94402,8 @@
     "platforms": [
       3,
       6,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -94433,8 +94458,8 @@
     "name": "Mass Effect 3: Citadel",
     "parent_game": 75,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -94491,8 +94516,8 @@
     "name": "Mass Effect: Bring Down the Sky",
     "parent_game": 73,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -94548,8 +94573,8 @@
     "name": "Mass Effect 2: Firewalker Pack",
     "parent_game": 74,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -94606,8 +94631,8 @@
     "name": "Mass Effect 2: Arrival",
     "parent_game": 74,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -94663,8 +94688,8 @@
     "name": "Mass Effect 2: Zaeed - The Price of Revenge",
     "parent_game": 74,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -94720,8 +94745,8 @@
     "name": "Mass Effect 2: Kasumi - Stolen Memory",
     "parent_game": 74,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -94729,8 +94754,8 @@
     ],
     "ports": [],
     "release_dates": [
-      219010,
       39453,
+      219010,
       39452
     ],
     "remakes": [],
@@ -94925,8 +94950,8 @@
     "name": "Mass Effect 3: Leviathan",
     "parent_game": 75,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -94934,8 +94959,8 @@
     ],
     "ports": [],
     "release_dates": [
-      39471,
       39472,
+      39471,
       39470
     ],
     "remakes": [],
@@ -94981,8 +95006,8 @@
     "name": "Mass Effect 3: Omega",
     "parent_game": 75,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -95040,10 +95065,10 @@
     "name": "Borderlands: The Pre-Sequel - Claptastic Voyage",
     "parent_game": 6032,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49
     ],
     "player_perspectives": [
@@ -95105,12 +95130,12 @@
     "name": "Borderlands 2: Captain Scarlett and Her Pirate's Booty",
     "parent_game": 1011,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
-      12,
       14,
-      48,
+      12,
       49
     ],
     "player_perspectives": [
@@ -95177,12 +95202,12 @@
     "name": "Borderlands 2: Mr. Torgue's Campaign of Carnage",
     "parent_game": 1011,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
-      12,
       14,
-      48,
+      12,
       49
     ],
     "player_perspectives": [
@@ -95250,12 +95275,12 @@
     "name": "Borderlands 2: Sir Hammerlock's Big Game Hunt",
     "parent_game": 1011,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
-      12,
       14,
-      48,
+      12,
       49
     ],
     "player_perspectives": [
@@ -95266,9 +95291,9 @@
       334491,
       334492,
       387592,
+      334490,
       583827,
       708474,
-      334490,
       387591
     ],
     "remakes": [],
@@ -95320,12 +95345,12 @@
     "name": "Borderlands 2: Tiny Tina's Assault on Dragon Keep",
     "parent_game": 1011,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
-      12,
       14,
-      48,
+      12,
       49
     ],
     "player_perspectives": [
@@ -95390,12 +95415,12 @@
     "name": "Borderlands 2: T.K. Baha's Bloody Harvest",
     "parent_game": 1011,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
-      12,
       14,
-      48,
+      12,
       49
     ],
     "player_perspectives": [
@@ -95459,8 +95484,8 @@
     "name": "Borderlands 2: The Horrible Hunger of the Ravenous Wattle Gobbler",
     "parent_game": 1011,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -95518,11 +95543,11 @@
     "name": "Borderlands 2: How Marcus Saved Mercenary Day",
     "parent_game": 1011,
     "platforms": [
+      9,
       3,
       6,
-      9,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       1
@@ -95580,11 +95605,11 @@
     "name": "Borderlands 2: Mad Moxxi and the Wedding Day Massacre",
     "parent_game": 1011,
     "platforms": [
+      9,
       3,
       6,
-      9,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       1
@@ -95642,11 +95667,11 @@
     "name": "Borderlands 2: Sir Hammerlock vs. the Son of Crawmerax",
     "parent_game": 1011,
     "platforms": [
+      9,
       3,
       6,
-      9,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       1
@@ -95714,10 +95739,10 @@
     "name": "Divinity: Original Sin - Enhanced Edition",
     "parent_game": 5082,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49
     ],
     "player_perspectives": [
@@ -95781,10 +95806,10 @@
     "name": "BioShock 2: Minerva's Den",
     "parent_game": 21,
     "platforms": [
-      6,
       9,
-      12,
-      14
+      6,
+      14,
+      12
     ],
     "player_perspectives": [
       1
@@ -95843,10 +95868,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
+      6,
       39,
+      14,
       41,
       130
     ],
@@ -95923,10 +95948,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       3,
@@ -95982,10 +96007,10 @@
     "name": "Dishonored: The Knife of Dunwall",
     "parent_game": 533,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49
     ],
     "player_perspectives": [
@@ -96042,10 +96067,10 @@
     "name": "Dishonored: The Brigmore Witches",
     "parent_game": 533,
     "platforms": [
-      6,
       9,
-      12,
       48,
+      6,
+      12,
       49
     ],
     "player_perspectives": [
@@ -96122,10 +96147,10 @@
     "name": "Ink",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -96195,12 +96220,12 @@
     "name": "Oxenfree",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
-      14,
-      34,
-      39,
       48,
+      3,
+      34,
+      6,
+      39,
+      14,
       49,
       130
     ],
@@ -96209,6 +96234,7 @@
     ],
     "ports": [],
     "release_dates": [
+      147515,
       250785,
       408226,
       408227,
@@ -96216,7 +96242,6 @@
       408228,
       53749,
       116489,
-      147515,
       118611
     ],
     "remakes": [],
@@ -96446,8 +96471,8 @@
     "name": "The Deadly Tower of Monsters",
     "parent_game": -1,
     "platforms": [
-      6,
-      48
+      48,
+      6
     ],
     "player_perspectives": [
       3
@@ -96515,13 +96540,13 @@
     "name": "Batman: The Telltale Series",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
-      14,
-      34,
-      39,
       48,
+      34,
+      6,
+      39,
+      14,
+      12,
       49,
       130
     ],
@@ -96596,8 +96621,8 @@
     "name": "Hob",
     "parent_game": -1,
     "platforms": [
-      6,
-      48
+      48,
+      6
     ],
     "player_perspectives": [
       3
@@ -96715,11 +96740,11 @@
     "name": "Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness - Episode Two",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       3
@@ -96844,10 +96869,10 @@
     "parent_game": 70935,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       4
@@ -96928,10 +96953,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       3
@@ -96988,11 +97013,11 @@
     "name": "Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness - Episode One",
     "parent_game": -1,
     "platforms": [
+      9,
       3,
       6,
-      9,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       3
@@ -97054,11 +97079,11 @@
     "name": "Penny Arcade's On the Rain-Slick Precipice of Darkness 3",
     "parent_game": -1,
     "platforms": [
-      6,
-      12,
-      14,
       34,
-      39
+      6,
+      39,
+      14,
+      12
     ],
     "player_perspectives": [
       3,
@@ -97337,8 +97362,8 @@
     ],
     "ports": [],
     "release_dates": [
-      403721,
       403719,
+      403721,
       403720
     ],
     "remakes": [],
@@ -97531,17 +97556,17 @@
     "name": "SteamWorld Heist",
     "parent_game": -1,
     "platforms": [
+      170,
+      48,
       3,
-      6,
-      14,
       37,
+      6,
       39,
+      14,
       41,
       46,
-      48,
       49,
-      130,
-      170
+      130
     ],
     "player_perspectives": [
       4
@@ -97549,6 +97574,7 @@
     "ports": [],
     "release_dates": [
       145778,
+      412519,
       248775,
       398944,
       412522,
@@ -97560,7 +97586,6 @@
       147776,
       239445,
       511285,
-      412519,
       412521,
       145777
     ],
@@ -97615,10 +97640,10 @@
     "name": "Crashlands",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
       34,
+      6,
       39,
+      14,
       49,
       130
     ],
@@ -97691,12 +97716,12 @@
     "name": "VA-11 Hall-A: Cyberpunk Bartender Action",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
-      14,
       39,
+      14,
       46,
-      48,
       130
     ],
     "player_perspectives": [
@@ -97707,10 +97732,10 @@
       128358,
       407427,
       166161,
+      229552,
       152593,
       152596,
       166162,
-      229552,
       248566,
       567957,
       407426,
@@ -97768,8 +97793,8 @@
     "name": "Batman: Arkham Knight - A Matter of Family",
     "parent_game": 5503,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -97835,8 +97860,8 @@
     "name": "Batman: Arkham Knight - Season of Infamy: Most Wanted Expansion",
     "parent_game": 5503,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -98335,9 +98360,9 @@
     "name": "Headlander",
     "parent_game": -1,
     "platforms": [
+      48,
       6,
       14,
-      48,
       49
     ],
     "player_perspectives": [
@@ -98483,11 +98508,11 @@
     "name": "Puzzle Agent",
     "parent_game": -1,
     "platforms": [
+      9,
       5,
       6,
-      9,
-      14,
-      39
+      39,
+      14
     ],
     "player_perspectives": [
       4
@@ -98682,11 +98707,11 @@
       279052
     ],
     "release_dates": [
+      617856,
+      617857,
       617853,
       617854,
       617855,
-      617856,
-      617857,
       617860,
       617861,
       617862,
@@ -98771,13 +98796,13 @@
     "name": "Greed Corp",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
       9,
-      12,
-      14,
+      3,
       34,
-      39
+      6,
+      39,
+      14,
+      12
     ],
     "player_perspectives": [
       3
@@ -98912,11 +98937,11 @@
     "name": "Toki Tori 2+",
     "parent_game": 2351,
     "platforms": [
+      48,
       3,
       6,
       14,
       41,
-      48,
       130
     ],
     "player_perspectives": [
@@ -99075,8 +99100,8 @@
     "platforms": [
       3,
       6,
-      14,
-      39
+      39,
+      14
     ],
     "player_perspectives": [
       4
@@ -99231,8 +99256,8 @@
     "name": "Noitu Love 2: Devolution",
     "parent_game": -1,
     "platforms": [
-      6,
       37,
+      6,
       41
     ],
     "player_perspectives": [
@@ -99374,13 +99399,13 @@
     "name": "Unmechanical",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
       9,
-      12,
-      14,
+      3,
       34,
-      39
+      6,
+      39,
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -99435,8 +99460,8 @@
     "name": "Retro/Grade",
     "parent_game": -1,
     "platforms": [
-      6,
-      9
+      9,
+      6
     ],
     "player_perspectives": [],
     "ports": [],
@@ -99638,8 +99663,8 @@
     "platforms": [
       5,
       41,
-      58,
-      137
+      137,
+      58
     ],
     "player_perspectives": [
       3
@@ -99851,8 +99876,8 @@
     "platforms": [
       3,
       6,
-      14,
-      39
+      39,
+      14
     ],
     "player_perspectives": [
       4
@@ -100000,11 +100025,11 @@
     "name": "Dex",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
       46,
-      48,
       49,
       130
     ],
@@ -100078,8 +100103,8 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
-      6,
       34,
+      6,
       39
     ],
     "player_perspectives": [],
@@ -100131,10 +100156,10 @@
     "name": "Shadow Blade: Reload",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       130
     ],
     "player_perspectives": [
@@ -100214,11 +100239,11 @@
     "name": "Furi",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
+      167,
       49,
-      130,
-      167
+      130
     ],
     "player_perspectives": [
       2,
@@ -100358,8 +100383,8 @@
     "name": "Titanfall 2",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -100624,10 +100649,10 @@
     "name": "The Magic Circle",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49
     ],
     "player_perspectives": [
@@ -100742,9 +100767,9 @@
     "name": "Letter Quest: Grimm's Journey",
     "parent_game": -1,
     "platforms": [
+      34,
       6,
-      14,
-      34
+      14
     ],
     "player_perspectives": [],
     "ports": [],
@@ -100820,14 +100845,14 @@
     "name": "Stealth Inc 2: A Game of Clones",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      48,
+      74,
       34,
+      6,
       41,
       46,
-      48,
-      49,
-      74
+      49
     ],
     "player_perspectives": [],
     "ports": [],
@@ -100893,8 +100918,8 @@
     "name": "Fallout 4: Automatron",
     "parent_game": 9630,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -100955,8 +100980,8 @@
     "name": "Fallout 4: Far Harbor",
     "parent_game": 9630,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -101157,10 +101182,10 @@
     "name": "Momodora: Reverie Under the Moonlight",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -101170,8 +101195,8 @@
     "ports": [],
     "release_dates": [
       123484,
-      411498,
       163243,
+      411498,
       423415,
       227014,
       411499
@@ -101357,10 +101382,10 @@
     "name": "Deadbolt",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       46,
-      48,
       130
     ],
     "player_perspectives": [
@@ -101447,10 +101472,10 @@
     ],
     "ports": [],
     "release_dates": [
-      54840,
-      136192,
       54838,
-      54839
+      54839,
+      54840,
+      136192
     ],
     "remakes": [],
     "remasters": [],
@@ -101502,8 +101527,8 @@
     "name": "Batman: Arkham City - Harley Quinn's Revenge",
     "parent_game": 501,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -101574,10 +101599,10 @@
     "name": "Manual Samuel",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -101657,10 +101682,10 @@
     "name": "Pyre",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
-      14,
-      48
+      14
     ],
     "player_perspectives": [
       1,
@@ -101734,11 +101759,11 @@
     "name": "Oceanhorn: Monster of Uncharted Seas",
     "parent_game": 22117,
     "platforms": [
+      48,
+      34,
       6,
       14,
-      34,
       46,
-      48,
       49,
       130
     ],
@@ -101800,9 +101825,9 @@
     "name": "Shadow Complex Remastered",
     "parent_game": 11328,
     "platforms": [
+      48,
       6,
       14,
-      48,
       49
     ],
     "player_perspectives": [
@@ -101954,7 +101979,9 @@
     ],
     "ports": [],
     "release_dates": [
+      234523,
       283930,
+      234526,
       303641,
       118745,
       93368,
@@ -101963,9 +101990,7 @@
       147206,
       234527,
       234524,
-      234523,
       234525,
-      234526,
       93370
     ],
     "remakes": [],
@@ -102214,13 +102239,13 @@
     "name": "CastleStorm",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
-      12,
+      48,
+      6,
       39,
       41,
       46,
-      48,
+      12,
       49,
       130
     ],
@@ -102607,8 +102632,8 @@
     "name": "Agents of Mayhem",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -102823,10 +102848,10 @@
     "name": "Gwent: The Witcher Card Game",
     "parent_game": -1,
     "platforms": [
-      6,
-      34,
-      39,
       48,
+      34,
+      6,
+      39,
       49
     ],
     "player_perspectives": [
@@ -103043,8 +103068,8 @@
     "name": "Fallout 4: Vault-Tec Workshop",
     "parent_game": 9630,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -103104,8 +103129,8 @@
     "name": "Fallout 4: Nuka World",
     "parent_game": 9630,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -103204,8 +103229,8 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
-      6,
-      48
+      48,
+      6
     ],
     "player_perspectives": [
       2
@@ -103411,10 +103436,10 @@
     "name": "Mr. Shifty",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -103423,13 +103448,13 @@
     ],
     "ports": [],
     "release_dates": [
+      141543,
       67884,
       190019,
       190020,
       67883,
       67881,
       119995,
-      141543,
       67882
     ],
     "remakes": [],
@@ -103731,13 +103756,13 @@
     "name": "Darksiders II: Deathinitive Edition",
     "parent_game": 1269,
     "platforms": [
-      6,
-      48,
-      49,
-      130,
-      167,
+      170,
       169,
-      170
+      48,
+      6,
+      167,
+      49,
+      130
     ],
     "player_perspectives": [
       2
@@ -103813,10 +103838,10 @@
     "name": "Katana Zero",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
       34,
+      6,
       39,
+      14,
       49,
       130
     ],
@@ -104205,7 +104230,7 @@
     "bundles": [
       222231
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       950
@@ -104240,8 +104265,8 @@
     "ports": [],
     "release_dates": [
       87371,
-      558202,
       144482,
+      558202,
       125594,
       558203
     ],
@@ -104569,9 +104594,9 @@
     "name": "Ōkami HD",
     "parent_game": 1271,
     "platforms": [
-      6,
       9,
       48,
+      6,
       49,
       130
     ],
@@ -104640,8 +104665,8 @@
     "name": "Dark Souls: Prepare to Die Edition",
     "parent_game": -1,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -105318,7 +105343,7 @@
   },
   {
     "bundles": [],
-    "category": 11,
+    "category": -1,
     "collection": -1,
     "collections": [
       2721
@@ -105529,12 +105554,12 @@
     "name": "Middle-earth: Shadow of Mordor - The Bright Lord",
     "parent_game": 3025,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
-      12,
       14,
-      48,
+      12,
       49
     ],
     "player_perspectives": [
@@ -105598,16 +105623,17 @@
     "name": "Phoenix Wright: Ace Attorney Trilogy",
     "parent_game": -1,
     "platforms": [
-      6,
-      37,
-      39,
       48,
+      37,
+      6,
+      39,
       49,
       130
     ],
     "player_perspectives": [],
     "ports": [],
     "release_dates": [
+      639613,
       568994,
       639607,
       639616,
@@ -105616,7 +105642,6 @@
       639611,
       639612,
       639610,
-      639613,
       639617,
       639615,
       639608
@@ -105851,8 +105876,8 @@
     "name": "Super Daryl Deluxe",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       130
     ],
     "player_perspectives": [
@@ -106125,8 +106150,8 @@
     "name": "Super Mario 64 DS",
     "parent_game": 1074,
     "platforms": [
-      20,
-      41
+      41,
+      20
     ],
     "player_perspectives": [
       2
@@ -106390,9 +106415,9 @@
     "name": "Book of Demons",
     "parent_game": -1,
     "platforms": [
+      48,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -106458,8 +106483,8 @@
     "name": "The Sexy Brutale",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -106570,7 +106595,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -106884,8 +106909,8 @@
     "name": "Sonic Adventure DX: Director's Cut",
     "parent_game": 7860,
     "platforms": [
-      6,
-      21
+      21,
+      6
     ],
     "player_perspectives": [
       2
@@ -106894,10 +106919,10 @@
       192113
     ],
     "release_dates": [
+      200028,
       200024,
       200029,
       200025,
-      200028,
       200026,
       179906,
       200027,
@@ -106918,7 +106943,7 @@
       24421,
       77648
     ],
-    "category": 1,
+    "category": -1,
     "collection": -1,
     "collections": [
       1937,
@@ -107140,9 +107165,9 @@
     "name": "Masquerada: Songs and Shadows",
     "parent_game": -1,
     "platforms": [
+      48,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -107203,8 +107228,8 @@
     "platforms": [
       3,
       6,
-      14,
-      39
+      39,
+      14
     ],
     "player_perspectives": [
       1,
@@ -107456,9 +107481,9 @@
     "name": "Darksiders: Warmastered Edition",
     "parent_game": 1270,
     "platforms": [
+      48,
       6,
       41,
-      48,
       49,
       130
     ],
@@ -107692,13 +107717,13 @@
     "name": "The Pedestrian",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
+      169,
       48,
-      49,
-      130,
+      6,
       167,
-      169
+      14,
+      49,
+      130
     ],
     "player_perspectives": [
       4
@@ -107706,12 +107731,12 @@
     "ports": [],
     "release_dates": [
       334939,
+      225464,
       184760,
       554125,
       225467,
       184759,
-      334940,
-      225464
+      334940
     ],
     "remakes": [],
     "remasters": [],
@@ -107809,8 +107834,8 @@
     "name": "Batman: Arkham Knight - Harley Quinn Story Pack",
     "parent_game": 5503,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -108004,10 +108029,10 @@
     "name": "Splasher",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -108316,8 +108341,8 @@
     "name": "Super Mario Odyssey",
     "parent_game": -1,
     "platforms": [
-      130,
-      508
+      508,
+      130
     ],
     "player_perspectives": [
       2
@@ -108372,8 +108397,8 @@
     "platforms": [
       3,
       6,
-      12,
-      14
+      14,
+      12
     ],
     "player_perspectives": [
       4
@@ -108506,12 +108531,12 @@
     "name": "Death Squared",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
-      14,
-      34,
-      39,
       48,
+      3,
+      34,
+      6,
+      39,
+      14,
       49,
       130
     ],
@@ -108578,12 +108603,12 @@
     "name": "Linelight",
     "parent_game": -1,
     "platforms": [
-      3,
-      6,
-      14,
-      34,
-      39,
       48,
+      3,
+      34,
+      6,
+      39,
+      14,
       130,
       384
     ],
@@ -108664,9 +108689,9 @@
     "name": "Stories Untold",
     "parent_game": -1,
     "platforms": [
+      48,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -108893,13 +108918,13 @@
     "name": "Forma.8",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
+      48,
       34,
+      6,
       39,
+      14,
       41,
       46,
-      48,
       49,
       130
     ],
@@ -108969,8 +108994,8 @@
     "name": "Yoku's Island Express",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -109144,12 +109169,12 @@
     "name": "Cosmic Star Heroine",
     "parent_game": -1,
     "platforms": [
+      170,
+      48,
       6,
       46,
-      48,
       49,
-      130,
-      170
+      130
     ],
     "player_perspectives": [
       3
@@ -109356,11 +109381,11 @@
     "release_dates": [
       185222,
       363498,
+      67530,
       176777,
       185221,
       67531,
-      67532,
-      67530
+      67532
     ],
     "remakes": [],
     "remasters": [],
@@ -109813,11 +109838,11 @@
     "name": "Timespinner",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
       46,
-      48,
       49,
       130
     ],
@@ -109877,9 +109902,9 @@
     "name": "Strong Bad's Cool Game for Attractive People Episode 1: Homestar Ruiner",
     "parent_game": 9463,
     "platforms": [
+      9,
       5,
       6,
-      9,
       14
     ],
     "player_perspectives": [],
@@ -110041,9 +110066,9 @@
     "name": "Transcripted",
     "parent_game": -1,
     "platforms": [
+      48,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -110101,8 +110126,8 @@
     "name": "Adventure Time: Finn and Jake's Epic Quest",
     "parent_game": -1,
     "platforms": [
-      6,
-      82
+      82,
+      6
     ],
     "player_perspectives": [
       3
@@ -110779,9 +110804,9 @@
     "name": "BioShock Remastered",
     "parent_game": 20,
     "platforms": [
+      48,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -110851,9 +110876,9 @@
     "name": "BioShock 2 Remastered",
     "parent_game": 21,
     "platforms": [
+      48,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -110919,11 +110944,11 @@
     "name": "Iconoclasts",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
       14,
       46,
-      48,
       49,
       130
     ],
@@ -111048,13 +111073,13 @@
     "name": "CrossCode",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
+      167,
       14,
-      48,
       49,
-      130,
-      167
+      130
     ],
     "player_perspectives": [
       3
@@ -111166,9 +111191,9 @@
     "name": "Galacide",
     "parent_game": -1,
     "platforms": [
+      48,
       3,
       6,
-      48,
       49,
       130
     ],
@@ -111232,8 +111257,8 @@
     "release_dates": [
       81965,
       81966,
-      316840,
-      337442
+      337442,
+      316840
     ],
     "remakes": [],
     "remasters": [],
@@ -111562,6 +111587,7 @@
       477,
       4168,
       40090,
+      49376,
       49437
     ],
     "name": "Shantae: Risky's Revenge - Director's Cut",
@@ -111581,15 +111607,15 @@
     ],
     "ports": [],
     "release_dates": [
+      807213,
       214272,
+      145744,
       327662,
       83363,
       145743,
-      145744,
       214274,
       214273,
-      238864,
-      239722
+      238864
     ],
     "remakes": [],
     "remasters": [],
@@ -111635,8 +111661,8 @@
     "name": "Last Day of June",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       130
     ],
     "player_perspectives": [
@@ -111826,9 +111852,9 @@
     "ports": [],
     "release_dates": [
       248631,
-      341487,
       413597,
       413598,
+      341487,
       188665,
       194584,
       228798
@@ -112187,8 +112213,8 @@
     "name": "Horizon Zero Dawn: The Frozen Wilds",
     "parent_game": 11156,
     "platforms": [
-      6,
-      48
+      48,
+      6
     ],
     "player_perspectives": [
       2
@@ -112313,8 +112339,8 @@
     "name": "Metroid Prime 4: Beyond",
     "parent_game": -1,
     "platforms": [
-      130,
-      508
+      508,
+      130
     ],
     "player_perspectives": [
       1
@@ -112414,8 +112440,8 @@
       183
     ],
     "dlcs": [
-      113988,
       117711,
+      113988,
       115200,
       116800,
       113987,
@@ -113414,10 +113440,10 @@
     "name": "Shaq Fu: A Legend Reborn",
     "parent_game": -1,
     "platforms": [
-      6,
-      34,
-      39,
       48,
+      34,
+      6,
+      39,
       49,
       130
     ],
@@ -113616,8 +113642,8 @@
     "name": "The LEGO Ninjago Movie Video Game",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -113707,12 +113733,12 @@
     "name": "Middle-earth: Shadow of Mordor - Lord of the Hunt",
     "parent_game": 3025,
     "platforms": [
+      9,
+      48,
       3,
       6,
-      9,
-      12,
       14,
-      48,
+      12,
       49
     ],
     "player_perspectives": [
@@ -114188,7 +114214,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -114278,7 +114304,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -114470,16 +114496,18 @@
     "name": "Zone of The Enders: The 2nd Runner Mars",
     "parent_game": 1473,
     "platforms": [
-      6,
-      48,
       162,
-      165
+      48,
+      165,
+      6
     ],
     "player_perspectives": [
       7
     ],
     "ports": [],
     "release_dates": [
+      152551,
+      152553,
       153317,
       153318,
       153316,
@@ -114487,11 +114515,9 @@
       152557,
       152556,
       152558,
-      152551,
       152552,
-      152553,
-      152554,
-      152555
+      152555,
+      152554
     ],
     "remakes": [],
     "remasters": [],
@@ -114605,13 +114631,13 @@
     ],
     "ports": [],
     "release_dates": [
+      208469,
       208471,
       206937,
       208470,
       580542,
       580543,
-      585479,
-      208469
+      585479
     ],
     "remakes": [],
     "remasters": [],
@@ -114786,9 +114812,9 @@
     "name": "Untitled Goose Game",
     "parent_game": -1,
     "platforms": [
+      48,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -114797,12 +114823,12 @@
     ],
     "ports": [],
     "release_dates": [
-      563640,
-      563641,
       563642,
       563643,
       563644,
       563645,
+      563640,
+      563641,
       563639
     ],
     "remakes": [],
@@ -115285,10 +115311,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
+      6,
       39,
+      14,
       130
     ],
     "player_perspectives": [
@@ -115350,11 +115376,11 @@
     "name": "Adventure Time: Pirates of the Enchiridion",
     "parent_game": -1,
     "platforms": [
-      6,
+      170,
       48,
+      6,
       49,
-      130,
-      170
+      130
     ],
     "player_perspectives": [],
     "ports": [],
@@ -115413,9 +115439,9 @@
     "name": "Afterparty",
     "parent_game": -1,
     "platforms": [
+      48,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -115443,7 +115469,7 @@
   },
   {
     "bundles": [],
-    "category": 1,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -115589,8 +115615,8 @@
     "name": "Sleeping Dogs: Zodiac Tournament",
     "parent_game": 1267,
     "platforms": [
-      6,
-      9
+      9,
+      6
     ],
     "player_perspectives": [
       2
@@ -115613,7 +115639,7 @@
     "bundles": [
       19839
     ],
-    "category": 1,
+    "category": -1,
     "collection": -1,
     "collections": [
       1
@@ -115658,10 +115684,10 @@
     "ports": [],
     "release_dates": [
       408916,
-      384165,
       384167,
       384166,
-      384168
+      384168,
+      384165
     ],
     "remakes": [],
     "remasters": [],
@@ -115704,8 +115730,8 @@
     "name": "Saints Row: The Third - The Trouble with Clones",
     "parent_game": 873,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -115755,8 +115781,8 @@
     "name": "Saints Row: The Third - Gangstas in Space",
     "parent_game": 873,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [],
@@ -115802,8 +115828,8 @@
     "name": "Saints Row: The Third - Genkibowl VII",
     "parent_game": 873,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [],
@@ -115824,7 +115850,7 @@
   },
   {
     "bundles": [],
-    "category": 1,
+    "category": -1,
     "collection": -1,
     "collections": [
       100
@@ -115872,7 +115898,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -115919,7 +115945,7 @@
   },
   {
     "bundles": [],
-    "category": 1,
+    "category": -1,
     "collection": -1,
     "collections": [
       1268
@@ -115969,7 +115995,7 @@
   },
   {
     "bundles": [],
-    "category": 11,
+    "category": -1,
     "collection": -1,
     "collections": [
       2086
@@ -116072,8 +116098,8 @@
     "name": "Mass Effect 3: Extended Cut",
     "parent_game": 75,
     "platforms": [
-      6,
       9,
+      6,
       12
     ],
     "player_perspectives": [
@@ -116081,9 +116107,9 @@
     ],
     "ports": [],
     "release_dates": [
+      131461,
       131459,
-      131460,
-      131461
+      131460
     ],
     "remakes": [],
     "remasters": [],
@@ -116098,7 +116124,7 @@
   },
   {
     "bundles": [],
-    "category": 1,
+    "category": -1,
     "collection": -1,
     "collections": [
       302
@@ -116161,7 +116187,7 @@
   },
   {
     "bundles": [],
-    "category": 1,
+    "category": -1,
     "collection": -1,
     "collections": [
       302
@@ -116219,7 +116245,7 @@
   },
   {
     "bundles": [],
-    "category": 1,
+    "category": -1,
     "collection": -1,
     "collections": [
       302
@@ -116481,6 +116507,7 @@
     "themes": [
       1,
       17,
+      27,
       31
     ],
     "url": "https://www.igdb.com/games/tales-of-monkey-island-chapter-1-launch-of-the-screaming-narwhal",
@@ -116560,10 +116587,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       3
@@ -116622,10 +116649,10 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
-      14,
       34,
+      6,
       39,
+      14,
       130
     ],
     "player_perspectives": [
@@ -116761,11 +116788,11 @@
     "name": "Panel de Pon",
     "parent_game": -1,
     "platforms": [
+      306,
       5,
       41,
-      58,
       137,
-      306
+      58
     ],
     "player_perspectives": [
       4
@@ -117200,8 +117227,8 @@
     "release_dates": [
       339715,
       174132,
-      174134,
       179464,
+      174134,
       174135
     ],
     "remakes": [],
@@ -117297,10 +117324,10 @@
     "name": "Mark of the Ninja: Remastered",
     "parent_game": 2129,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -117374,8 +117401,8 @@
     "name": "Red Faction: Guerrilla Re-Mars-tered",
     "parent_game": 846,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -117427,8 +117454,8 @@
     "name": "South Park: The Fractured But Whole - From Dusk Till Casa Bonita",
     "parent_game": 11161,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -117488,15 +117515,15 @@
     "name": "Inked",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
-      34,
-      39,
+      169,
       48,
-      49,
-      130,
+      34,
+      6,
+      39,
       167,
-      169
+      14,
+      49,
+      130
     ],
     "player_perspectives": [
       3
@@ -117678,10 +117705,10 @@
     "name": "Cube Escape: Paradox",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
       34,
-      39
+      6,
+      39,
+      14
     ],
     "player_perspectives": [
       1,
@@ -117743,10 +117770,10 @@
     "name": "Bloodstained: Curse of the Moon",
     "parent_game": -1,
     "platforms": [
-      6,
-      37,
-      46,
       48,
+      37,
+      6,
+      46,
       49,
       130
     ],
@@ -118130,8 +118157,8 @@
     "name": "Prey: Mooncrash",
     "parent_game": 19531,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -118140,8 +118167,8 @@
     "ports": [],
     "release_dates": [
       412542,
-      168487,
-      168486
+      168486,
+      168487
     ],
     "remakes": [],
     "remasters": [],
@@ -118188,8 +118215,8 @@
     "platforms": [
       3,
       6,
-      14,
       39,
+      14,
       130
     ],
     "player_perspectives": [
@@ -118537,8 +118564,8 @@
     "name": "South Park: The Fractured But Whole - Bring the Crunch",
     "parent_game": 11161,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -118834,8 +118861,8 @@
     "name": "Rebel Galaxy Outlaw",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -118907,11 +118934,11 @@
     "name": "Trine 4: The Nightmare Prince",
     "parent_game": -1,
     "platforms": [
-      6,
+      170,
       48,
+      6,
       49,
-      130,
-      170
+      130
     ],
     "player_perspectives": [
       4
@@ -119101,8 +119128,8 @@
     "name": "Horizon Forbidden West",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       167
     ],
     "player_perspectives": [
@@ -119224,8 +119251,8 @@
     "name": "God of War Ragnarök",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       167
     ],
     "player_perspectives": [
@@ -119517,8 +119544,8 @@
     "name": "Lightmatter",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -119527,8 +119554,8 @@
     "ports": [],
     "release_dates": [
       183409,
-      183407,
-      183408
+      183408,
+      183407
     ],
     "remakes": [],
     "remasters": [],
@@ -119572,8 +119599,8 @@
     "name": "MO:Astray",
     "parent_game": -1,
     "platforms": [
-      6,
       34,
+      6,
       39,
       130
     ],
@@ -119834,12 +119861,12 @@
     "name": "Roombo: First Blood",
     "parent_game": -1,
     "platforms": [
+      169,
+      48,
       6,
       14,
-      48,
       49,
-      130,
-      169
+      130
     ],
     "player_perspectives": [
       3
@@ -120046,7 +120073,9 @@
       9142
     ],
     "dlcs": [
-      361902
+      361902,
+      370208,
+      370209
     ],
     "expanded_games": [],
     "expansions": [],
@@ -120069,7 +120098,9 @@
       282843,
       282844
     ],
-    "keywords": [],
+    "keywords": [
+      3208
+    ],
     "name": "Vampire: The Masquerade - Bloodlines 2",
     "parent_game": -1,
     "platforms": [
@@ -120244,8 +120275,8 @@
     "name": "Lair of the Clockwork God",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -120305,11 +120336,11 @@
     "name": "Drunken Fist",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
+      167,
       49,
-      130,
-      167
+      130
     ],
     "player_perspectives": [
       2,
@@ -120611,9 +120642,9 @@
     "name": "Borderlands 2: Commander Lilith and the Fight for Sanctuary",
     "parent_game": 1011,
     "platforms": [
+      48,
       6,
       14,
-      48,
       49,
       130
     ],
@@ -120680,13 +120711,13 @@
     "name": "Spiritfarer",
     "parent_game": -1,
     "platforms": [
+      170,
+      48,
       3,
       6,
       14,
-      48,
       49,
-      130,
-      170
+      130
     ],
     "player_perspectives": [
       4
@@ -121071,11 +121102,11 @@
     "name": "Biped",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
+      167,
       49,
-      130,
-      167
+      130
     ],
     "player_perspectives": [
       2,
@@ -121140,12 +121171,12 @@
     "name": "PictoQuest: The Cursed Grids",
     "parent_game": -1,
     "platforms": [
-      6,
-      34,
+      169,
       48,
+      34,
+      6,
       49,
-      130,
-      169
+      130
     ],
     "player_perspectives": [],
     "ports": [],
@@ -121448,8 +121479,8 @@
     "parent_game": -1,
     "platforms": [
       3,
-      6,
       34,
+      6,
       130
     ],
     "player_perspectives": [
@@ -121636,9 +121667,9 @@
     "name": "Murder by Numbers",
     "parent_game": -1,
     "platforms": [
+      170,
       6,
-      130,
-      170
+      130
     ],
     "player_perspectives": [
       2,
@@ -121844,7 +121875,8 @@
     "category": -1,
     "collection": -1,
     "collections": [
-      7292
+      7292,
+      108
     ],
     "dlcs": [],
     "expanded_games": [],
@@ -121854,7 +121886,8 @@
     "franchise": -1,
     "franchises": [
       124,
-      151
+      151,
+      6900
     ],
     "game_modes": [
       1
@@ -121959,12 +121992,12 @@
     "name": "Convergence: A League of Legends Story",
     "parent_game": -1,
     "platforms": [
-      6,
+      169,
       48,
-      49,
-      130,
+      6,
       167,
-      169
+      49,
+      130
     ],
     "player_perspectives": [],
     "ports": [],
@@ -122186,8 +122219,8 @@
     "name": "Borderlands 3: Guns, Love and Tentacles - The Marriage of Wainwright & Hammerlock",
     "parent_game": 19164,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -122394,12 +122427,12 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": 974,
     "platforms": [
-      6,
-      14,
-      39,
+      169,
       48,
+      6,
+      39,
       167,
-      169
+      14
     ],
     "player_perspectives": [
       2
@@ -122467,9 +122500,9 @@
     "platforms": [
       3,
       6,
+      167,
       14,
-      130,
-      167
+      130
     ],
     "player_perspectives": [
       3
@@ -122838,8 +122871,8 @@
     "name": "Marvel's Spider-Man: Miles Morales",
     "parent_game": 19565,
     "platforms": [
-      6,
       48,
+      6,
       167
     ],
     "player_perspectives": [
@@ -123473,8 +123506,8 @@
     "name": "Batbarian: Testament of the Primordials",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -123614,14 +123647,14 @@
     "name": "Disco Elysium: The Final Cut",
     "parent_game": 26472,
     "platforms": [
-      6,
-      14,
-      48,
-      49,
-      130,
-      167,
+      170,
       169,
-      170
+      48,
+      6,
+      167,
+      14,
+      49,
+      130
     ],
     "player_perspectives": [
       3
@@ -123811,11 +123844,11 @@
     "name": "Viewfinder",
     "parent_game": -1,
     "platforms": [
-      6,
+      169,
       48,
-      130,
+      6,
       167,
-      169
+      130
     ],
     "player_perspectives": [
       1
@@ -123925,12 +123958,12 @@
     "name": "Oxenfree II: Lost Signals",
     "parent_game": -1,
     "platforms": [
-      6,
-      34,
-      39,
       48,
-      130,
-      167
+      34,
+      6,
+      39,
+      167,
+      130
     ],
     "player_perspectives": [
       4
@@ -123996,8 +124029,8 @@
     "name": "The Great Ace Attorney Chronicles",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       130
     ],
     "player_perspectives": [
@@ -124151,8 +124184,8 @@
     "name_glogAppendPlatforms": true,
     "parent_game": 426,
     "platforms": [
-      5,
-      19
+      19,
+      5
     ],
     "player_perspectives": [
       3,
@@ -124273,12 +124306,12 @@
     "name": "Outer Wilds: Echoes of the Eye",
     "parent_game": 11737,
     "platforms": [
-      6,
+      169,
       48,
-      49,
-      130,
+      6,
       167,
-      169
+      49,
+      130
     ],
     "player_perspectives": [
       1
@@ -124382,9 +124415,9 @@
     "name": "Instruments of Destruction",
     "parent_game": -1,
     "platforms": [
+      169,
       6,
-      167,
-      169
+      167
     ],
     "player_perspectives": [],
     "ports": [],
@@ -124488,10 +124521,10 @@
       225
     ],
     "dlcs": [
-      205019,
       204919,
       293727,
       222661,
+      205019,
       206302
     ],
     "expanded_games": [],
@@ -124523,7 +124556,8 @@
       250,
       1332,
       1352,
-      3138
+      3138,
+      49376
     ],
     "name": "Tiny Tina's Wonderlands",
     "parent_game": -1,
@@ -124540,10 +124574,10 @@
     "ports": [],
     "release_dates": [
       416989,
-      309945,
-      309946,
       309947,
-      309948
+      309948,
+      309945,
+      309946
     ],
     "remakes": [],
     "remasters": [],
@@ -124609,11 +124643,11 @@
     "name": "Marvel's Guardians of the Galaxy",
     "parent_game": -1,
     "platforms": [
-      6,
+      169,
       48,
-      49,
+      6,
       167,
-      169
+      49
     ],
     "player_perspectives": [
       1,
@@ -124673,8 +124707,8 @@
     "name": "Castlevania Advance Collection",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -124768,7 +124802,7 @@
     "bundles": [
       77336
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       106,
@@ -124866,8 +124900,8 @@
     "name": "Middle-earth: Shadow of War - Blade of Galadriel",
     "parent_game": 27421,
     "platforms": [
-      6,
       48,
+      6,
       49
     ],
     "player_perspectives": [
@@ -124982,12 +125016,12 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
-      6,
-      48,
-      49,
-      167,
+      170,
       169,
-      170
+      48,
+      6,
+      167,
+      49
     ],
     "player_perspectives": [
       2
@@ -125061,15 +125095,15 @@
     "name": "The Case of the Golden Idol",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
-      34,
-      39,
+      169,
       48,
-      49,
-      130,
+      34,
+      6,
+      39,
       167,
-      169
+      14,
+      49,
+      130
     ],
     "player_perspectives": [
       4
@@ -125291,9 +125325,9 @@
     "name": "Deliver At All Costs",
     "parent_game": -1,
     "platforms": [
+      169,
       6,
-      167,
-      169
+      167
     ],
     "player_perspectives": [
       3
@@ -125347,12 +125381,12 @@
     "name": "Song of Nunu: A League of Legends Story",
     "parent_game": -1,
     "platforms": [
-      6,
+      169,
       48,
-      49,
-      130,
+      6,
       167,
-      169
+      49,
+      130
     ],
     "player_perspectives": [],
     "ports": [],
@@ -125506,10 +125540,10 @@
     "name": "Animal Well",
     "parent_game": -1,
     "platforms": [
+      169,
       6,
-      130,
       167,
-      169
+      130
     ],
     "player_perspectives": [
       4
@@ -126059,8 +126093,8 @@
     "name": "Ara: History Untold",
     "parent_game": -1,
     "platforms": [
-      6,
-      169
+      169,
+      6
     ],
     "player_perspectives": [
       3
@@ -126887,12 +126921,12 @@
     "name": "The Mageseeker: A League of Legends Story",
     "parent_game": -1,
     "platforms": [
-      6,
+      169,
       48,
-      49,
-      130,
+      6,
       167,
-      169
+      49,
+      130
     ],
     "player_perspectives": [],
     "ports": [],
@@ -127195,14 +127229,14 @@
     "name": "Cat Quest III",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
-      39,
+      169,
       48,
-      49,
-      130,
+      6,
+      39,
       167,
-      169
+      14,
+      49,
+      130
     ],
     "player_perspectives": [
       3
@@ -127258,12 +127292,12 @@
     "name": "Shadows of the Damned: Hella Remastered",
     "parent_game": 5971,
     "platforms": [
-      6,
+      169,
       48,
-      49,
-      130,
+      6,
       167,
-      169
+      49,
+      130
     ],
     "player_perspectives": [
       2
@@ -127397,8 +127431,8 @@
     "name": "Apollo Justice: Ace Attorney Trilogy",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -127990,8 +128024,8 @@
     "name": "Logiart Grimoire",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       130
     ],
     "player_perspectives": [
@@ -128337,9 +128371,9 @@
     "parent_game": 6105,
     "platforms": [
       3,
+      29,
       6,
-      14,
-      29
+      14
     ],
     "player_perspectives": [
       4
@@ -128401,7 +128435,7 @@
       16877,
       37861
     ],
-    "name": "The Last of Us Part II: Remastered",
+    "name": "The Last of Us Part II Remastered",
     "parent_game": 26192,
     "platforms": [
       6,
@@ -128437,7 +128471,8 @@
     "dlcs": [
       354873,
       342844,
-      333390
+      333390,
+      369787
     ],
     "expanded_games": [],
     "expansions": [],
@@ -128474,15 +128509,15 @@
     "name": "The Rise of the Golden Idol",
     "parent_game": -1,
     "platforms": [
-      6,
-      14,
-      34,
-      39,
+      169,
       48,
-      49,
-      130,
+      34,
+      6,
+      39,
       167,
-      169
+      14,
+      49,
+      130
     ],
     "player_perspectives": [
       4
@@ -128610,10 +128645,10 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": 16587,
     "platforms": [
-      7,
       9,
-      38,
-      46
+      46,
+      7,
+      38
     ],
     "player_perspectives": [
       3
@@ -128676,8 +128711,8 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": 426,
     "platforms": [
-      7,
       9,
+      7,
       38
     ],
     "player_perspectives": [
@@ -128750,8 +128785,8 @@
     "name_glogAppendReleaseYear": true,
     "parent_game": 419,
     "platforms": [
-      7,
       9,
+      7,
       38
     ],
     "player_perspectives": [
@@ -128879,9 +128914,9 @@
     "name": "The Talos Principle II: Road to Elysium",
     "parent_game": 79864,
     "platforms": [
+      169,
       6,
-      167,
-      169
+      167
     ],
     "player_perspectives": [
       1,
@@ -129133,9 +129168,9 @@
     "platforms": [
       3,
       5,
+      29,
       6,
-      14,
-      29
+      14
     ],
     "player_perspectives": [
       4
@@ -129261,8 +129296,8 @@
     "name": "Ace Attorney Investigations Collection",
     "parent_game": -1,
     "platforms": [
-      6,
       48,
+      6,
       49,
       130
     ],
@@ -129481,10 +129516,10 @@
     "name": "Castlevania Dominus Collection",
     "parent_game": -1,
     "platforms": [
+      169,
       6,
-      130,
       167,
-      169
+      130
     ],
     "player_perspectives": [
       4
@@ -130080,8 +130115,8 @@
     "name": "Donkey Kong Bananza",
     "parent_game": -1,
     "platforms": [
-      130,
-      508
+      508,
+      130
     ],
     "player_perspectives": [
       2,

@@ -18,7 +18,7 @@ permalink = "/backlog"
 * <game:Indiana Jones and the Great Circle> (<platform:PC>)
 * <game:Instruments of Destruction> (<platform:PC>)
 * <game:The Last of Us Part I> (<platform:PC>)
-* <game:The Last of Us Part II: Remastered> (<platform:PC>)
+* <game:The Last of Us Part II Remastered> (<platform:PC>)
 * <game:The Legend of Zelda: Echoes of Wisdom> (<platform:Switch>)
 * <game:The Legend of Zelda: Tears of the Kingdom - Nintendo Switch 2 Edition> (<platform:Switch 2>)
 * <game:LEGO Horizon Adventures> (<platform:PC>)
