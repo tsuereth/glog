@@ -88,6 +88,10 @@
     "name": "DC Comics"
   },
   {
+    "id": 45,
+    "name": "Deadpool"
+  },
+  {
     "id": 47,
     "name": "XIII"
   },
@@ -812,6 +816,10 @@
     "name": "Unreal"
   },
   {
+    "id": 5771,
+    "name": "Myst"
+  },
+  {
     "id": 6013,
     "name": "Dragon's Dogma"
   },
@@ -830,6 +838,10 @@
   {
     "id": 6686,
     "name": "Jumper"
+  },
+  {
+    "id": 6893,
+    "name": "Wolverine"
   },
   {
     "id": 6897,
