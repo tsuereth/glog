@@ -1150,9 +1150,9 @@
     ],
     "dlcs": [
       10305,
+      10306,
       10307,
-      10304,
-      10306
+      10304
     ],
     "expanded_games": [],
     "expansions": [],
@@ -5519,8 +5519,8 @@
     "ports": [
       140272,
       94752,
-      85614,
       135400,
+      85614,
       84610,
       93620,
       94029,
@@ -8865,9 +8865,9 @@
     "remakes": [],
     "remasters": [],
     "standalone_expansions": [
-      247,
       338,
-      237522
+      237522,
+      247
     ],
     "themes": [
       1,
@@ -36339,8 +36339,8 @@
     ],
     "remakes": [],
     "remasters": [
-      20437,
-      278326
+      278326,
+      20437
     ],
     "standalone_expansions": [],
     "themes": [
@@ -43837,7 +43837,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       361
@@ -43883,9 +43883,9 @@
     ],
     "ports": [],
     "release_dates": [
-      357652,
       448917,
-      184769
+      184769,
+      357652
     ],
     "remakes": [],
     "remasters": [],
@@ -44036,7 +44036,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       1820
@@ -64019,7 +64019,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -64082,7 +64082,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       4099
@@ -66930,10 +66930,10 @@
     "ports": [],
     "release_dates": [
       20389,
-      135939,
       121961,
       29763,
-      117938
+      117938,
+      135939
     ],
     "remakes": [],
     "remasters": [],
@@ -67766,12 +67766,12 @@
       696919,
       696924,
       696925,
-      696927,
       696916,
       696918,
       696920,
       696932,
-      696933
+      696933,
+      696927
     ],
     "remakes": [],
     "remasters": [],
@@ -68029,7 +68029,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       489
@@ -68161,7 +68161,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -75376,16 +75376,16 @@
     ],
     "ports": [],
     "release_dates": [
-      16919,
       101878,
-      16914,
       16912,
       16911,
       16913,
-      16915,
       16917,
       418719,
-      101879
+      101879,
+      16915,
+      16914,
+      16919
     ],
     "remakes": [],
     "remasters": [],
@@ -75530,7 +75530,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -102125,9 +102125,9 @@
     ],
     "dlcs": [
       164402,
-      164406,
       146007,
       164408,
+      164406,
       139967,
       341802,
       141185,
@@ -108474,10 +108474,10 @@
     "name": "Deus Ex: Mankind Divided - A Criminal Past",
     "parent_game": 9498,
     "platforms": [
+      48,
       3,
       6,
       14,
-      48,
       49
     ],
     "player_perspectives": [
@@ -122552,7 +122552,7 @@
       250635,
       307490
     ],
-    "category": 11,
+    "category": -1,
     "collection": -1,
     "collections": [
       44,
