@@ -8865,8 +8865,8 @@
     "remakes": [],
     "remasters": [],
     "standalone_expansions": [
-      338,
       237522,
+      338,
       247
     ],
     "themes": [
@@ -9675,8 +9675,8 @@
     "dlcs": [],
     "expanded_games": [],
     "expansions": [
-      676,
-      652
+      652,
+      676
     ],
     "first_release_date": 848620800,
     "forks": [],
@@ -36339,8 +36339,8 @@
     ],
     "remakes": [],
     "remasters": [
-      278326,
-      20437
+      20437,
+      278326
     ],
     "standalone_expansions": [],
     "themes": [
@@ -68228,7 +68228,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -129499,6 +129499,71 @@
     "category": -1,
     "collection": -1,
     "collections": [
+      225
+    ],
+    "dlcs": [
+      370632
+    ],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1757548800,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      808
+    ],
+    "game_modes": [
+      1,
+      2,
+      3
+    ],
+    "genres": [
+      5,
+      12,
+      31
+    ],
+    "id": 314246,
+    "involved_companies": [
+      346493,
+      346494
+    ],
+    "keywords": [
+      4004,
+      36805
+    ],
+    "name": "Borderlands 4",
+    "parent_game": -1,
+    "platforms": [
+      169,
+      508,
+      6,
+      167
+    ],
+    "player_perspectives": [
+      1
+    ],
+    "ports": [],
+    "release_dates": [
+      809854,
+      800162,
+      800163,
+      800164
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      18
+    ],
+    "url": "https://www.igdb.com/games/borderlands-4",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": -1,
+    "collection": -1,
+    "collections": [
       4131
     ],
     "dlcs": [],
@@ -130237,6 +130302,161 @@
       1
     ],
     "url": "https://www.igdb.com/games/donkey-kong-bananza",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": -1,
+    "collection": -1,
+    "collections": [
+      533
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1798675200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      3028,
+      5,
+      51
+    ],
+    "game_modes": [
+      1,
+      3,
+      4
+    ],
+    "genres": [
+      9,
+      31
+    ],
+    "id": 361855,
+    "involved_companies": [
+      337850,
+      337851
+    ],
+    "keywords": [],
+    "name": "LEGO Batman: Legacy of the Dark Knight",
+    "parent_game": -1,
+    "platforms": [
+      169,
+      508,
+      6,
+      167
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      787993,
+      787994,
+      787995,
+      787996
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      27
+    ],
+    "url": "https://www.igdb.com/games/lego-batman-legacy-of-the-dark-knight",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": -1,
+    "collection": -1,
+    "collections": [
+      242
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1757635200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      763
+    ],
+    "game_modes": [
+      1,
+      2
+    ],
+    "genres": [
+      8,
+      31
+    ],
+    "id": 366892,
+    "involved_companies": [
+      346035,
+      346036
+    ],
+    "keywords": [
+      182,
+      250,
+      595,
+      968,
+      1283,
+      1385,
+      1536,
+      1756,
+      1879,
+      1986,
+      2052,
+      2184,
+      2231,
+      2280,
+      3017,
+      3486,
+      4170,
+      4176,
+      4231,
+      4232,
+      4292,
+      4314,
+      4484,
+      4852,
+      5453,
+      8132,
+      11696,
+      23466,
+      23933,
+      26248,
+      34588,
+      38085,
+      38778,
+      42101,
+      42386,
+      43160,
+      44930,
+      47983,
+      48328,
+      48329,
+      48929
+    ],
+    "name": "Donkey Kong Bananza: DK Island & Emerald Rush",
+    "parent_game": 338106,
+    "platforms": [
+      508
+    ],
+    "player_perspectives": [
+      2,
+      4
+    ],
+    "ports": [],
+    "release_dates": [
+      800754
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1
+    ],
+    "url": "https://www.igdb.com/games/donkey-kong-bananza-dk-island-and-emerald-rush",
     "version_parent": -1
   }
 ]
