@@ -40,7 +40,6 @@ permalink = "/backlog"
 * <game:Spiritfarer> (<platform:PC>)
 * <game:Split Fiction> (<platform:PC>)
 * <game:Star Wars Outlaws> (<platform:PC>)
-* <game:Starfield> (<platform:PC>)
 * <game:Super Mario Bros. Wonder> (<platform:Switch>)
 * <game:Super Mario RPG (2023)> (<platform:Switch>)
 * <game:The Talos Principle II: Road to Elysium> (<platform:PC>)

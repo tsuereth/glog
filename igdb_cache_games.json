@@ -23370,6 +23370,135 @@
   },
   {
     "bundles": [
+      27844,
+      27845,
+      53731
+    ],
+    "category": -1,
+    "collection": -1,
+    "collections": [
+      6
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1174867200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12
+    ],
+    "id": 894,
+    "involved_companies": [
+      78342,
+      78341,
+      95337
+    ],
+    "keywords": [
+      147,
+      151,
+      159,
+      221,
+      226,
+      497,
+      558,
+      592,
+      623,
+      1032,
+      1033,
+      1503,
+      1779,
+      1886,
+      1986,
+      4132,
+      4134,
+      4249,
+      4272,
+      4284,
+      4285,
+      4345,
+      4352,
+      4353,
+      4359,
+      4392,
+      4399,
+      4404,
+      4407,
+      4541,
+      4580,
+      4613,
+      4781,
+      4787,
+      4869,
+      4878,
+      4891,
+      4918,
+      4998,
+      5029,
+      5450,
+      5476,
+      5517,
+      5820,
+      5904,
+      5967,
+      6074,
+      6295,
+      6653,
+      6702,
+      7117,
+      7440,
+      7498,
+      7605,
+      7610,
+      8099,
+      8205,
+      9474,
+      9557,
+      9567,
+      9900,
+      11149,
+      12440,
+      23856
+    ],
+    "name": "The Elder Scrolls IV: Shivering Isles",
+    "parent_game": 59,
+    "platforms": [
+      9,
+      6,
+      12
+    ],
+    "player_perspectives": [
+      1
+    ],
+    "ports": [],
+    "release_dates": [
+      229513,
+      169056,
+      169060,
+      169059,
+      169061,
+      169057,
+      169062,
+      169063
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      17,
+      22,
+      33,
+      38
+    ],
+    "url": "https://www.igdb.com/games/the-elder-scrolls-iv-shivering-isles",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
       124784
     ],
     "category": -1,
@@ -36339,8 +36468,8 @@
     ],
     "remakes": [],
     "remasters": [
-      20437,
-      278326
+      278326,
+      20437
     ],
     "standalone_expansions": [],
     "themes": [
@@ -38350,14 +38479,14 @@
     ],
     "ports": [],
     "release_dates": [
-      185903,
       353126,
       28419,
       29688,
-      185902,
       28418,
       28416,
-      28417
+      28417,
+      185902,
+      185903
     ],
     "remakes": [],
     "remasters": [
@@ -41014,12 +41143,12 @@
     "ports": [],
     "release_dates": [
       524876,
-      524877,
       524879,
       524878,
       524881,
       524880,
-      524882
+      524882,
+      524877
     ],
     "remakes": [],
     "remasters": [],
@@ -41709,10 +41838,10 @@
     ],
     "ports": [],
     "release_dates": [
-      31904,
       31902,
       141263,
-      31903
+      31903,
+      31904
     ],
     "remakes": [],
     "remasters": [],
@@ -64161,7 +64290,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [],
@@ -68415,7 +68544,7 @@
   },
   {
     "bundles": [],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [
       106
@@ -68472,9 +68601,9 @@
     ],
     "ports": [],
     "release_dates": [
-      140785,
       140786,
-      140784
+      140784,
+      140785
     ],
     "remakes": [],
     "remasters": [],
@@ -75610,7 +75739,7 @@
     "bundles": [
       232832
     ],
-    "category": 0,
+    "category": -1,
     "collection": -1,
     "collections": [],
     "dlcs": [
@@ -75748,11 +75877,11 @@
       17112,
       102342,
       17118,
-      17113,
       17120,
       17121,
       17114,
       17116,
+      17113,
       102340
     ],
     "remakes": [],
@@ -76735,11 +76864,11 @@
     "player_perspectives": [],
     "ports": [],
     "release_dates": [
-      17941,
-      17942,
       17940,
       17938,
-      17939
+      17939,
+      17942,
+      17941
     ],
     "remakes": [],
     "remasters": [],
@@ -78249,8 +78378,8 @@
     "ports": [],
     "release_dates": [
       64826,
-      64827,
       64828,
+      64827,
       64829
     ],
     "remakes": [],
@@ -79662,11 +79791,11 @@
     ],
     "ports": [],
     "release_dates": [
-      63947,
       63948,
       21697,
       21699,
-      21696
+      21696,
+      63947
     ],
     "remakes": [],
     "remasters": [],
@@ -97045,13 +97174,13 @@
     ],
     "ports": [],
     "release_dates": [
-      156956,
-      156957,
       72002,
       157668,
       157678,
       157677,
-      157676
+      157676,
+      156956,
+      156957
     ],
     "remakes": [],
     "remasters": [],
@@ -98837,8 +98966,8 @@
       63932,
       190383,
       63930,
-      63934,
       63937,
+      63934,
       103368,
       103370
     ],
@@ -105906,9 +106035,9 @@
     ],
     "ports": [],
     "release_dates": [
-      148956,
       148957,
-      148958
+      148958,
+      148956
     ],
     "remakes": [],
     "remasters": [],
@@ -107276,7 +107405,7 @@
   },
   {
     "bundles": [],
-    "category": 1,
+    "category": -1,
     "collection": -1,
     "collections": [
       302
@@ -107751,13 +107880,13 @@
     ],
     "ports": [],
     "release_dates": [
-      334939,
       225464,
       184760,
       554125,
       225467,
-      334940,
-      184759
+      184759,
+      334939,
+      334940
     ],
     "remakes": [],
     "remasters": [],
@@ -108640,11 +108769,11 @@
     "ports": [],
     "release_dates": [
       193958,
-      64953,
       717212,
       717896,
       218991,
       435743,
+      64953,
       64954,
       64955
     ],
@@ -111604,7 +111733,7 @@
     ],
     "id": 36402,
     "involved_companies": [
-      194986
+      352768
     ],
     "keywords": [
       477,
@@ -116488,6 +116617,61 @@
     "bundles": [],
     "category": -1,
     "collection": -1,
+    "collections": [
+      6
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 0,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [
+      456
+    ],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      12,
+      31
+    ],
+    "id": 81249,
+    "involved_companies": [
+      65579,
+      95250
+    ],
+    "keywords": [],
+    "name": "The Elder Scrolls VI",
+    "parent_game": -1,
+    "platforms": [
+      169,
+      6
+    ],
+    "player_perspectives": [
+      1,
+      2
+    ],
+    "ports": [],
+    "release_dates": [
+      209899,
+      209900
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      38
+    ],
+    "url": "https://www.igdb.com/games/the-elder-scrolls-vi",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": -1,
+    "collection": -1,
     "collections": [],
     "dlcs": [],
     "expanded_games": [],
@@ -118968,12 +119152,12 @@
     ],
     "ports": [],
     "release_dates": [
-      173961,
-      173964,
-      173962,
-      173963,
       239738,
-      339717
+      339717,
+      173961,
+      173962,
+      173964,
+      173963
     ],
     "remakes": [],
     "remasters": [],
