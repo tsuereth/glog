@@ -9,7 +9,7 @@ rating = [ "Good" ]
 
 <game:Masquerada: Songs and Shadows> feels spiritually similar to a <tag:Final Fantasy> game, in some key ways.
 
-Its got a deep world-mythos, for one.  Not unlike your [Espers](game:Final Fantasy III (SNES, Wii)) or your [Mako](game:Final Fantasy VII), the setting of Masquerada is steeped in an original mythology which shapes the game's characters and events; and the protagonists discover dramatic truths about that mythology as the story proceeds.
+Its got a deep world-mythos, for one.  Not unlike your [Espers](game:Final Fantasy III (1994)) or your [Mako](game:Final Fantasy VII), the setting of Masquerada is steeped in an original mythology which shapes the game's characters and events; and the protagonists discover dramatic truths about that mythology as the story proceeds.
 
 The game has an introductory problem, with an overload of mytho-babble about mascherines and Contadani and The Registry and other buzzwords that haven't been explained yet.  But the pieces come together after the first hour or so, and as the plot's central mystery takes off, that initial sense of confusion turns into a <i>hunger</i> to learn more about this magical world.
 
