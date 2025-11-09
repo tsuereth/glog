@@ -1,4 +1,4 @@
-name: Test
+name: UpdateDataTest
 
 on:
   workflow_dispatch:
