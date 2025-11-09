@@ -32,14 +32,17 @@ namespace GlogGenerator.Test.Data
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
         public void TestResolveEmptyIdException()
         {
             var mockData = Substitute.For<IGlogReferenceable>();
             mockData.GetDataId().Returns(string.Empty);
 
             var testReference = new SiteDataReference<IGlogReferenceable>("Test Tag");
-            testReference.SetData(mockData);
+
+            Assert.ThrowsExactly<ArgumentException>(() =>
+            {
+                testReference.SetData(mockData);
+            });
         }
     }
 }

@@ -131,14 +131,16 @@ namespace GlogGenerator.Test.MarkdownExtensions
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
         public void TestGlogGameAutolinkNotFound()
         {
             var builder = PrepareTestSiteBuilder();
 
             var testText = "Remember <game:Test Game: With a Subtitle>?";
 
-            Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            Assert.ThrowsExactly<ArgumentException>(() =>
+            {
+                Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            });
         }
 
         [TestMethod]
@@ -198,14 +200,16 @@ namespace GlogGenerator.Test.MarkdownExtensions
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
         public void TestGlogGameLinkNotFound()
         {
             var builder = PrepareTestSiteBuilder();
 
             var testText = "Remember [that game with a stupid subtitle](game:Test Game: With a Subtitle)?";
 
-            Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            Assert.ThrowsExactly<ArgumentException>(() =>
+            {
+                Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            });
         }
 
         [TestMethod]
@@ -266,14 +270,16 @@ namespace GlogGenerator.Test.MarkdownExtensions
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
         public void TestGlogPlatformAutolinkNotFound()
         {
             var builder = PrepareTestSiteBuilder();
 
             var testText = "There were no good <platform:GS2> games";
 
-            Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            Assert.ThrowsExactly<ArgumentException>(() =>
+            {
+                Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            });
         }
 
         [TestMethod]
@@ -336,14 +342,16 @@ namespace GlogGenerator.Test.MarkdownExtensions
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
         public void TestGlogPlatformLinkNotFound()
         {
             var builder = PrepareTestSiteBuilder();
 
             var testText = "There were no good [GlogStation 2](platform:GS2) games";
 
-            Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            Assert.ThrowsExactly<ArgumentException>(() =>
+            {
+                Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            });
         }
 
         [TestMethod]
@@ -402,14 +410,16 @@ namespace GlogGenerator.Test.MarkdownExtensions
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
         public void TestGlogTagAutolinkNotFound()
         {
             var builder = PrepareTestSiteBuilder();
 
             var testText = "Waiting for <tag:Gamedev Inc.>'s next game";
 
-            Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            Assert.ThrowsExactly<ArgumentException>(() =>
+            {
+                Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            });
         }
 
         [TestMethod]
@@ -460,14 +470,16 @@ namespace GlogGenerator.Test.MarkdownExtensions
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
         public void TestGlogTagLinkNotFound()
         {
             var builder = PrepareTestSiteBuilder();
 
             var testText = "Waiting for [that studio](tag:Gamedev Inc.)'s next game";
 
-            Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            Assert.ThrowsExactly<ArgumentException>(() =>
+            {
+                Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            });
         }
 
         [TestMethod]

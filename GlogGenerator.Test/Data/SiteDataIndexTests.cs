@@ -45,8 +45,8 @@ namespace GlogGenerator.Test.Data
 
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
             var testTag = testIndex.GetTag("Sonic the Hedgehog");
             Assert.AreEqual("Sonic The Hedgehog", testTag.Name);
@@ -76,8 +76,8 @@ namespace GlogGenerator.Test.Data
 
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
             var testReference = testIndex.CreateReference<GameData>(testDataItem.Name, true);
             var testData = testIndex.GetData(testReference);
@@ -90,12 +90,12 @@ namespace GlogGenerator.Test.Data
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
             var errors = logger.GetLogs(LogLevel.Error);
-            Assert.AreEqual(1, errors.Count);
+            Assert.HasCount(1, errors);
 
             var expectedMessage = $"Updated data index has a different key for GameData with data ID {testDataItem.GetUniqueIdString(mockIgdbCache)}: old key Some Game Name new key Corrected Game Name";
             Assert.AreEqual(expectedMessage, errors[0].Message);
 
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
             Assert.IsTrue(testReference.GetIsResolved());
 
@@ -121,8 +121,8 @@ namespace GlogGenerator.Test.Data
 
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
             testIndex.CreateReference<PlatformData>(testPlatformOld.Abbreviation, true);
             testIndex.ResolveReferences();
@@ -134,12 +134,12 @@ namespace GlogGenerator.Test.Data
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
             var errors = logger.GetLogs(LogLevel.Error);
-            Assert.AreEqual(1, errors.Count);
+            Assert.HasCount(1, errors);
 
             var expectedMessage = $"Updated data index has a different key for PlatformData with data ID {testPlatformOld.GetUniqueIdString(mockIgdbCache)}: old key {testPlatformOld.GetReferenceString(mockIgdbCache)} new key {testPlatformNew.GetReferenceString(mockIgdbCache)}";
             Assert.AreEqual(expectedMessage, errors[0].Message);
 
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
         }
 
         [TestMethod]
@@ -159,8 +159,8 @@ namespace GlogGenerator.Test.Data
 
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
             testIndex.CreateReference<PlatformData>(testPlatformOld.Abbreviation, true);
             testIndex.ResolveReferences();
@@ -170,12 +170,12 @@ namespace GlogGenerator.Test.Data
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
             var errors = logger.GetLogs(LogLevel.Error);
-            Assert.AreEqual(1, errors.Count);
+            Assert.HasCount(1, errors);
 
             var expectedMessage = $"Updated data index is missing old PlatformData with data ID {testPlatformOld.GetUniqueIdString(mockIgdbCache)} and key {testPlatformOld.GetReferenceString(mockIgdbCache)}";
             Assert.AreEqual(expectedMessage, errors[0].Message);
 
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
         }
 
         [TestMethod]
@@ -195,8 +195,8 @@ namespace GlogGenerator.Test.Data
 
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
             testIndex.CreateReference<PlatformData>(testPlatformOld.Abbreviation, true);
             testIndex.ResolveReferences();
@@ -207,10 +207,10 @@ namespace GlogGenerator.Test.Data
 
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
 
             var warnings = logger.GetLogs(LogLevel.Warning);
-            Assert.AreEqual(1, warnings.Count);
+            Assert.HasCount(1, warnings);
 
             var expectedMessage = $"Updated data index has a different data ID for PlatformData with key {testPlatformOld.GetReferenceString(mockIgdbCache)}: old data ID {testPlatformOld.GetUniqueIdString(mockIgdbCache)} new data ID {testPlatformNew.GetUniqueIdString(mockIgdbCache)}";
             Assert.AreEqual(expectedMessage, warnings[0].Message);
@@ -240,11 +240,11 @@ namespace GlogGenerator.Test.Data
 
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
             var indexTags = testIndex.GetTags().Where(t => !IsDefaultTagData(t)).ToList();
-            Assert.AreEqual(1, indexTags.Count);
+            Assert.HasCount(1, indexTags);
             Assert.AreEqual(testCompany.Name, indexTags[0].Name);
 
             var testCompanyUpdated = new IgdbCompany() { Id = testCompany.Id, Name = "The Updated Developer" };
@@ -253,11 +253,11 @@ namespace GlogGenerator.Test.Data
 
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
             indexTags = testIndex.GetTags().Where(t => !IsDefaultTagData(t)).ToList();
-            Assert.AreEqual(1, indexTags.Count);
+            Assert.HasCount(1, indexTags);
             Assert.AreEqual(testCompanyUpdated.Name, indexTags[0].Name);
         }
     }

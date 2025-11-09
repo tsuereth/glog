@@ -82,8 +82,8 @@ game = [ ""Middle-earth: Shadow of Mordor"" ]
 
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
 
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Error).Count);
-            Assert.AreEqual(0, logger.GetLogs(LogLevel.Warning).Count);
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
+            Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
             var testPostData = PostData.MarkdownFromString(builder.GetMarkdownPipeline(), testPostFileText, testIndex);
             testIndex.ResolveReferences();

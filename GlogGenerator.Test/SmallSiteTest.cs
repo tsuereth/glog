@@ -48,18 +48,18 @@ namespace GlogGenerator.Test
             BuildStaticSite.Build(builder.GetSiteState(), staticSiteOutputBasePath);
 
             var actualFilePaths = Directory.EnumerateFiles(staticSiteOutputBasePath, "*.*", SearchOption.AllDirectories).ToList();
-            Assert.IsTrue(actualFilePaths.Count > 0);
+            Assert.IsNotEmpty(actualFilePaths);
 
             var outputExpected = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "public-expected");
             var expectedFilePaths = Directory.EnumerateFiles(outputExpected, "*.*", SearchOption.AllDirectories).ToList();
-            Assert.AreEqual(expectedFilePaths.Count, actualFilePaths.Count);
+            Assert.HasCount(expectedFilePaths.Count, actualFilePaths);
 
             foreach (var expectedFilePath in expectedFilePaths)
             {
                 var relativeFilePath = expectedFilePath.Substring(outputExpected.Length + 1); // + 1 for the directory separator
                 var actualFilePath = Path.Combine(staticSiteOutputBasePath, relativeFilePath);
 
-                Assert.IsTrue(actualFilePaths.Contains(actualFilePath));
+                Assert.Contains(actualFilePath, actualFilePaths);
 
                 var expectedFileBytes = File.ReadAllBytes(expectedFilePath);
                 var actualFileBytes = File.ReadAllBytes(actualFilePath);
@@ -105,18 +105,18 @@ namespace GlogGenerator.Test
             BuildStaticSite.Build(builder.GetSiteState(), staticSiteOutputBasePath);
 
             var actualFilePaths = Directory.EnumerateFiles(staticSiteOutputBasePath, "*.*", SearchOption.AllDirectories).ToList();
-            Assert.IsTrue(actualFilePaths.Count > 0);
+            Assert.IsNotEmpty(actualFilePaths);
 
             var outputExpected = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "public-expected");
             var expectedFilePaths = Directory.EnumerateFiles(outputExpected, "*.*", SearchOption.AllDirectories).ToList();
-            Assert.AreEqual(expectedFilePaths.Count, actualFilePaths.Count);
+            Assert.HasCount(expectedFilePaths.Count, actualFilePaths);
 
             foreach (var expectedFilePath in expectedFilePaths)
             {
                 var relativeFilePath = expectedFilePath.Substring(outputExpected.Length + 1); // + 1 for the directory separator
                 var actualFilePath = Path.Combine(staticSiteOutputBasePath, relativeFilePath);
 
-                Assert.IsTrue(actualFilePaths.Contains(actualFilePath));
+                Assert.Contains(actualFilePath, actualFilePaths);
 
                 var expectedFileBytes = File.ReadAllBytes(expectedFilePath);
                 var actualFileBytes = File.ReadAllBytes(actualFilePath);
