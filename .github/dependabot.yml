@@ -2,9 +2,21 @@ version: 2
 updates:
   - package-ecosystem: github-actions
     directory: "/"
+    groups:
+      all:
+        patterns:
+          - *
     schedule:
       interval: daily
   - package-ecosystem: nuget
-    directory: "/"
+    directory: "/GlogGenerator"
+    schedule:
+      interval: daily
+  - package-ecosystem: nuget
+    directory: "/GlogGenerator.Test"
+    groups:
+      all:
+        patterns:
+          - *
     schedule:
       interval: daily
