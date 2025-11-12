@@ -5,7 +5,7 @@ updates:
     groups:
       all:
         patterns:
-          - *
+          - "*"
     schedule:
       interval: daily
   - package-ecosystem: nuget
@@ -17,6 +17,6 @@ updates:
     groups:
       all:
         patterns:
-          - *
+          - "*"
     schedule:
       interval: daily
