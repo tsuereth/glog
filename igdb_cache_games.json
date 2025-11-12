@@ -13480,8 +13480,8 @@
       705539
     ],
     "remakes": [
-      11169,
-      133236
+      133236,
+      11169
     ],
     "remasters": [],
     "standalone_expansions": [],
@@ -75784,11 +75784,11 @@
     "ports": [],
     "release_dates": [
       16977,
-      16976,
       16975,
       16974,
       16973,
-      16972
+      16972,
+      16976
     ],
     "remakes": [],
     "remasters": [],
@@ -104774,7 +104774,7 @@
       17
     ],
     "url": "https://www.igdb.com/games/the-witcher-2-assassins-of-kings-enhanced-edition",
-    "version_parent": 478
+    "version_parent": -1
   },
   {
     "bundles": [
