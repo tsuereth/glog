@@ -43,7 +43,7 @@ namespace GlogGenerator.Test.Data
             var testIndex = new SiteDataIndex(logger, string.Empty);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -74,7 +74,7 @@ namespace GlogGenerator.Test.Data
             var testIndex = new SiteDataIndex(logger, string.Empty);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -87,7 +87,7 @@ namespace GlogGenerator.Test.Data
 
             testDataItem.Name = "Corrected Game Name";
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.HasCount(1, errors);
@@ -119,7 +119,7 @@ namespace GlogGenerator.Test.Data
             var testIndex = new SiteDataIndex(logger, string.Empty);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -131,7 +131,7 @@ namespace GlogGenerator.Test.Data
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformNew });
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.HasCount(1, errors);
@@ -157,7 +157,7 @@ namespace GlogGenerator.Test.Data
             var testIndex = new SiteDataIndex(logger, string.Empty);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -167,7 +167,7 @@ namespace GlogGenerator.Test.Data
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.HasCount(1, errors);
@@ -193,7 +193,7 @@ namespace GlogGenerator.Test.Data
             var testIndex = new SiteDataIndex(logger, string.Empty);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -205,7 +205,7 @@ namespace GlogGenerator.Test.Data
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformNew });
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
 
@@ -238,7 +238,7 @@ namespace GlogGenerator.Test.Data
             var testIndex = new SiteDataIndex(logger, string.Empty);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -251,7 +251,7 @@ namespace GlogGenerator.Test.Data
 
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>() { testCompanyUpdated });
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));

@@ -10,7 +10,9 @@ namespace GlogGenerator
 {
     public interface ISiteBuilder
     {
-        public MarkdownPipeline GetMarkdownPipeline();
+        public MarkdownPipeline GetMarkdownHtmlPipeline();
+
+        public MarkdownPipeline GetMarkdownRoundtripPipeline();
 
         public Task UpdateIgdbCacheFromApiAsync(IgdbApiClient apiClient);
 

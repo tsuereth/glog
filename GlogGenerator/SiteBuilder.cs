@@ -30,7 +30,13 @@ namespace GlogGenerator
         private ISiteDataIndex siteDataIndex;
         private SiteState siteState;
         private GlogMarkdownExtension glogMarkdownExtension;
-        private MarkdownPipeline markdownPipeline;
+
+        // Separate markdown (Markdig) pipelines are needed for HTML rendering versus source upkeep (roundtrips).
+        // Some normalization/roundtrip settings are detrimental to HTML output!
+        // Particularly, TrackTrivia captures spacing that _isn't intended_ to render in HTML.
+        // https://github.com/xoofx/markdig/issues/561#issuecomment-1064848909
+        private MarkdownPipeline markdownHtmlPipeline;
+        private MarkdownPipeline markdownRoundtripPipeline;
 
         private IgdbCache igdbCache = null;
 
@@ -66,7 +72,15 @@ namespace GlogGenerator
 
             this.glogMarkdownExtension = new GlogMarkdownExtension(this, this.siteDataIndex, this.siteState);
 
-            this.markdownPipeline = new MarkdownPipelineBuilder()
+            this.markdownHtmlPipeline = new MarkdownPipelineBuilder()
+                .UseEmphasisExtras()
+                .UseMediaLinks()
+                .UsePipeTables()
+                .UseSoftlineBreakAsHardlineBreak()
+                .Use(this.glogMarkdownExtension)
+                .Build();
+
+            this.markdownRoundtripPipeline = new MarkdownPipelineBuilder()
                 .EnableTrackTrivia()
                 .UseEmphasisExtras()
                 .UseMediaLinks()
@@ -102,9 +116,14 @@ namespace GlogGenerator
             this.buildDate = buildDate;
         }
 
-        public MarkdownPipeline GetMarkdownPipeline()
+        public MarkdownPipeline GetMarkdownHtmlPipeline()
         {
-            return this.markdownPipeline;
+            return this.markdownHtmlPipeline;
+        }
+
+        public MarkdownPipeline GetMarkdownRoundtripPipeline()
+        {
+            return this.markdownRoundtripPipeline;
         }
 
         public void SetAdditionalIgdbGameIds(List<int> igdbGameIds)
@@ -141,7 +160,7 @@ namespace GlogGenerator
                 (this.includeDrafts == IncludeDrafts.Always) ||
                 (this.mode == Mode.Host && this.includeDrafts == IncludeDrafts.HostModeOnly);
 
-            this.siteDataIndex.LoadContent(igdbCache, this.GetMarkdownPipeline(), dataIncludesDrafts);
+            this.siteDataIndex.LoadContent(igdbCache, this.GetMarkdownHtmlPipeline(), this.GetMarkdownRoundtripPipeline(), dataIncludesDrafts);
         }
 
         public void ResolveDataReferences()
@@ -164,7 +183,7 @@ namespace GlogGenerator
 
         public void RewriteData()
         {
-            this.siteDataIndex.RewriteSourceContent(this.GetMarkdownPipeline());
+            this.siteDataIndex.RewriteSourceContent(this.GetMarkdownRoundtripPipeline());
         }
 
         public List<GameStats> GetGameStatsForDateRange(DateTimeOffset startDate, DateTimeOffset endDate)
@@ -280,7 +299,7 @@ namespace GlogGenerator
 
         public string RenderHtml(MarkdownDocument parsedDocument)
         {
-            return parsedDocument.ToHtml(this.markdownPipeline);
+            return parsedDocument.ToHtml(this.markdownHtmlPipeline);
         }
 
         public Dictionary<string, IOutputContent> ResolveContentRoutes()

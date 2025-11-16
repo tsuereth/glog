@@ -27,7 +27,7 @@ namespace GlogGenerator.Data
                 throw new InvalidDataException("SourceFilePath is empty");
             }
 
-            var fileContent = this.MdDoc.ToMarkdownString(mdPipeline);
+            var fileContent = this.MdDocRoundtrippable.ToMarkdownString(mdPipeline);
 
             using (var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
             {
@@ -46,7 +46,9 @@ namespace GlogGenerator.Data
             }
         }
 
-        public MarkdownDocument MdDoc { get; private set; }
+        public MarkdownDocument MdDocHtmlRenderable { get; private set; }
+
+        public MarkdownDocument MdDocRoundtrippable { get; private set; }
 
         private string permalinkRelative = null;
 
@@ -88,16 +90,17 @@ namespace GlogGenerator.Data
             return permalinkRelative;
         }
 
-        public static PageData MarkdownFromFilePath(MarkdownPipeline mdPipeline, string filePath)
+        public static PageData MarkdownFromFilePath(MarkdownPipeline mdHtmlPipeline, MarkdownPipeline mdRoundtripPipeline, string filePath)
         {
             var text = File.ReadAllText(filePath);
 
             var page = new PageData();
             page.SourceFilePath = filePath;
 
-            page.MdDoc = Markdown.Parse(text, mdPipeline);
+            page.MdDocHtmlRenderable = Markdown.Parse(text, mdHtmlPipeline);
+            page.MdDocRoundtrippable = Markdown.Parse(text, mdRoundtripPipeline);
 
-            var frontMatterBlock = page.MdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
+            var frontMatterBlock = page.MdDocRoundtrippable.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
             if (frontMatterBlock != null)
             {
                 var frontMatter = frontMatterBlock.GetModel();

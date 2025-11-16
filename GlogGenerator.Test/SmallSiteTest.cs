@@ -63,7 +63,7 @@ namespace GlogGenerator.Test
 
                 var expectedFileBytes = File.ReadAllBytes(expectedFilePath);
                 var actualFileBytes = File.ReadAllBytes(actualFilePath);
-                CollectionAssert.AreEqual(expectedFileBytes, actualFileBytes, $"Output file {relativeFilePath} contents differed from expected");
+                CollectionAssert.AreEqual(expectedFileBytes, actualFileBytes, $"Output file {actualFilePath} contents differed from expected at {expectedFilePath}");
             }
         }
 
@@ -120,7 +120,7 @@ namespace GlogGenerator.Test
 
                 var expectedFileBytes = File.ReadAllBytes(expectedFilePath);
                 var actualFileBytes = File.ReadAllBytes(actualFilePath);
-                CollectionAssert.AreEqual(expectedFileBytes, actualFileBytes, $"Output file {relativeFilePath} contents differed from expected");
+                CollectionAssert.AreEqual(expectedFileBytes, actualFileBytes, $"Output file {actualFilePath} contents differed from expected at {expectedFilePath}");
             }
         }
 
@@ -143,7 +143,7 @@ namespace GlogGenerator.Test
 
             foreach (var page in builder.GetPages())
             {
-                var rewrittenFileText = page.MdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+                var rewrittenFileText = page.MdDocRoundtrippable.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
 
                 var expectedFileBytes = File.ReadAllBytes(page.SourceFilePath);
                 var actualFileBytes = Encoding.UTF8.GetBytes(rewrittenFileText);
@@ -152,7 +152,7 @@ namespace GlogGenerator.Test
 
             foreach (var post in builder.GetPosts())
             {
-                var rewrittenFileText = post.MdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+                var rewrittenFileText = post.MdDocRoundtrippable.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
 
                 var expectedFileBytes = File.ReadAllBytes(post.SourceFilePath);
                 var actualFileBytes = Encoding.UTF8.GetBytes(rewrittenFileText);

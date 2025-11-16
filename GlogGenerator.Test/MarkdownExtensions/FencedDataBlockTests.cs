@@ -21,7 +21,7 @@ key1: ""value1""
 key2: ""value2""
 :::";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownHtmlPipeline());
             var fencedDataBlock = mdDoc.Descendants<FencedDataBlock>().FirstOrDefault();
 
             Assert.IsNotNull(fencedDataBlock);
@@ -45,7 +45,7 @@ key1: ""value1""
 key2: ""value2""
 :::";
 
-            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownPipeline());
+            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -60,9 +60,9 @@ key1: ""value1""
 key2: ""value2""
 :::";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -82,9 +82,9 @@ key1: ""value1""
 key2: ""value2""
 :::";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
