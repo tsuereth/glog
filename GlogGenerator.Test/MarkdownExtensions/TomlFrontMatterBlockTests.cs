@@ -22,7 +22,7 @@ someArray = [ ""an"", ""array"" ]
 +++
 hello, world";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownHtmlPipeline());
             var tomlFrontMatter = mdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
 
             Assert.IsNotNull(tomlFrontMatter);
@@ -47,7 +47,7 @@ someArray = [ ""an"", ""array"" ]
 +++
 hello, world";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
 
             Assert.AreEqual("<p>hello, world</p>\n", result);
         }
@@ -63,9 +63,9 @@ someArray = [ ""an"", ""array"" ]
 +++
 hello, world";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -81,7 +81,7 @@ someArray = [ ""an"", ""array"" ]
 +++
 hello, world";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
             var tomlFrontMatter = mdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
 
             Assert.IsNotNull(tomlFrontMatter);
@@ -91,7 +91,7 @@ hello, world";
             tomlModel["someArray"][1] = "other";
             tomlModel["someArray"].Add("array");
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
 
             var expectedText = @"+++
 someString = ""another string value""

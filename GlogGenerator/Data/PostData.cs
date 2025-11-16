@@ -93,7 +93,7 @@ namespace GlogGenerator.Data
                 tomlString.Value = data.GetReferenceableKey();
             }
 
-            return this.MdDoc.ToMarkdownString(mdPipeline);
+            return this.MdDocRoundtrippable.ToMarkdownString(mdPipeline);
         }
 
         public void RewriteSourceFile(MarkdownPipeline mdPipeline, ISiteDataIndex siteDataIndex)
@@ -122,7 +122,9 @@ namespace GlogGenerator.Data
             }
         }
 
-        public MarkdownDocument MdDoc { get; private set; }
+        public MarkdownDocument MdDocHtmlRenderable { get; private set; }
+
+        public MarkdownDocument MdDocRoundtrippable { get; private set; }
 
         private DateTimeOffset date = DateTimeOffset.MinValue;
         private bool? draft = null;
@@ -175,10 +177,10 @@ namespace GlogGenerator.Data
             return CalculatePostId(permalinkRelative);
         }
 
-        public static PostData MarkdownFromFilePath(MarkdownPipeline mdPipeline, string filePath, ISiteDataIndex siteDataIndex)
+        public static PostData MarkdownFromFilePath(MarkdownPipeline mdHtmlPipeline, MarkdownPipeline mdRoundtripPipeline, string filePath, ISiteDataIndex siteDataIndex)
         {
             var fileContent = File.ReadAllText(filePath);
-            var post = MarkdownFromString(mdPipeline, fileContent, siteDataIndex);
+            var post = MarkdownFromString(mdHtmlPipeline, mdRoundtripPipeline, fileContent, siteDataIndex);
             post.SourceFilePath = filePath;
 
             using (var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
@@ -192,13 +194,14 @@ namespace GlogGenerator.Data
             return post;
         }
 
-        public static PostData MarkdownFromString(MarkdownPipeline mdPipeline, string fileContent, ISiteDataIndex siteDataIndex)
+        public static PostData MarkdownFromString(MarkdownPipeline mdHtmlPipeline, MarkdownPipeline mdRoundtripPipeline, string fileContent, ISiteDataIndex siteDataIndex)
         {
             var post = new PostData();
 
-            post.MdDoc = Markdown.Parse(fileContent, mdPipeline);
+            post.MdDocHtmlRenderable = Markdown.Parse(fileContent, mdHtmlPipeline);
+            post.MdDocRoundtrippable = Markdown.Parse(fileContent, mdRoundtripPipeline);
 
-            var frontMatterBlock = post.MdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
+            var frontMatterBlock = post.MdDocRoundtrippable.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
             if (frontMatterBlock != null)
             {
                 var frontMatter = frontMatterBlock.GetModel();

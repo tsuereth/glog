@@ -203,7 +203,7 @@ namespace GlogGenerator.Test
             // no-op
         }
 
-        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline, bool includeDrafts)
+        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownHtmlPipeline, Markdig.MarkdownPipeline markdownRoundtripPipeline, bool includeDrafts)
         {
             throw new NotImplementedException();
         }

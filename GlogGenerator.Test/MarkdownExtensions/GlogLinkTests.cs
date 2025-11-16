@@ -125,7 +125,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Remember <game:Test Game: With a Subtitle>?";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
 
             Assert.AreEqual("<p>Remember <a href=\"fake://test.url/game/test-game-with-a-subtitle\">Test Game: With a Subtitle</a>?</p>\n", result);
         }
@@ -139,7 +139,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             Assert.ThrowsExactly<ArgumentException>(() =>
             {
-                Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+                Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
             });
         }
 
@@ -156,7 +156,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Remember <game:Test Game: With a Subtitle>?";
 
-            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownPipeline());
+            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -174,9 +174,9 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Remember <game:Test Game: With a Subtitle>?";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -194,7 +194,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Remember [that game with a stupid subtitle](game:Test Game: With a Subtitle)?";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
 
             Assert.AreEqual("<p>Remember <a href=\"fake://test.url/game/test-game-with-a-subtitle\">that game with a stupid subtitle</a>?</p>\n", result);
         }
@@ -208,7 +208,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             Assert.ThrowsExactly<ArgumentException>(() =>
             {
-                Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+                Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
             });
         }
 
@@ -225,7 +225,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Remember [that game with a stupid subtitle](game:Test Game: With a Subtitle)?";
 
-            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownPipeline());
+            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -243,9 +243,9 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Remember [that game with a stupid subtitle](game:Test Game: With a Subtitle)?";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -264,7 +264,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "There were no good <platform:GS2> games";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
 
             Assert.AreEqual("<p>There were no good <a href=\"fake://test.url/platform/gs2\">GS2</a> games</p>\n", result);
         }
@@ -278,7 +278,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             Assert.ThrowsExactly<ArgumentException>(() =>
             {
-                Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+                Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
             });
         }
 
@@ -296,7 +296,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "There were no good <platform:GS2> games";
 
-            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownPipeline());
+            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -315,9 +315,9 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "There were no good <platform:GS2> games";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -336,7 +336,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "There were no good [GlogStation 2](platform:GS2) games";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
 
             Assert.AreEqual("<p>There were no good <a href=\"fake://test.url/platform/gs2\">GlogStation 2</a> games</p>\n", result);
         }
@@ -350,7 +350,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             Assert.ThrowsExactly<ArgumentException>(() =>
             {
-                Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+                Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
             });
         }
 
@@ -368,7 +368,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "There were no good [GlogStation 2](platform:GS2) games";
 
-            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownPipeline());
+            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -387,9 +387,9 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "There were no good [GlogStation 2](platform:GS2) games";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -404,7 +404,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Waiting for <tag:Gamedev Inc.>'s next game";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
 
             Assert.AreEqual("<p>Waiting for <a href=\"fake://test.url/tag/gamedev-inc\">Gamedev Inc.</a>'s next game</p>\n", result);
         }
@@ -418,7 +418,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             Assert.ThrowsExactly<ArgumentException>(() =>
             {
-                Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+                Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
             });
         }
 
@@ -432,7 +432,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Waiting for <tag:Gamedev Inc.>'s next game";
 
-            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownPipeline());
+            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -447,9 +447,9 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Waiting for <tag:Gamedev Inc.>'s next game";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -464,7 +464,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Waiting for [that studio](tag:Gamedev Inc.)'s next game";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
 
             Assert.AreEqual("<p>Waiting for <a href=\"fake://test.url/tag/gamedev-inc\">that studio</a>'s next game</p>\n", result);
         }
@@ -478,7 +478,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             Assert.ThrowsExactly<ArgumentException>(() =>
             {
-                Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+                Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
             });
         }
 
@@ -492,7 +492,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Waiting for [that studio](tag:Gamedev Inc.)'s next game";
 
-            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownPipeline());
+            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -507,9 +507,9 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Waiting for [that studio](tag:Gamedev Inc.)'s next game";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }

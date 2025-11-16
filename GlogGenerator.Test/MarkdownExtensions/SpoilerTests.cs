@@ -16,7 +16,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Incoming spoiler: >!ohno spoiler!<";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
 
             Assert.AreEqual("<p>Incoming spoiler: <noscript><i>JavaScript is disabled, and this concealed spoiler may not appear as expected.</i></noscript><spoiler class=\"spoiler_hidden\" onClick=\"spoiler_toggle(this);\">ohno spoiler</spoiler></p>\n", result);
         }
@@ -28,7 +28,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "This is a poorly-formatted spoiler: >!forgot to close it\n\nBut it just keeps going";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
 
             Assert.AreEqual("<p>This is a poorly-formatted spoiler: <noscript><i>JavaScript is disabled, and this concealed spoiler may not appear as expected.</i></noscript><spoiler class=\"spoiler_hidden\" onClick=\"spoiler_toggle(this);\">forgot to close it</p>\n<p>But it just keeps going</p>\n", result);
         }
@@ -40,7 +40,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Exciting spoiler: >!super duper <i>spoiler!</i>!<";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
 
             Assert.AreEqual("<p>Exciting spoiler: <noscript><i>JavaScript is disabled, and this concealed spoiler may not appear as expected.</i></noscript><spoiler class=\"spoiler_hidden\" onClick=\"spoiler_toggle(this);\">super duper <i>spoiler!</i></spoiler></p>\n", result);
         }
@@ -52,7 +52,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Incoming spoiler: >!ohno >!spoiler within a!< spoiler!<";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownPipeline());
+            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
 
             Assert.AreEqual("<p>Incoming spoiler: <noscript><i>JavaScript is disabled, and this concealed spoiler may not appear as expected.</i></noscript><spoiler class=\"spoiler_hidden\" onClick=\"spoiler_toggle(this);\">ohno <noscript><i>JavaScript is disabled, and this concealed spoiler may not appear as expected.</i></noscript><spoiler class=\"spoiler_hidden\" onClick=\"spoiler_toggle(this);\">spoiler within a</spoiler> spoiler</spoiler></p>\n", result);
         }
@@ -64,7 +64,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Incoming spoiler: >!ohno spoiler!<";
 
-            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownPipeline());
+            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }
@@ -76,9 +76,9 @@ namespace GlogGenerator.Test.MarkdownExtensions
 
             var testText = "Incoming spoiler: >!ohno spoiler!<";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownPipeline());
+            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownPipeline());
+            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
 
             Assert.AreEqual(testText, result);
         }

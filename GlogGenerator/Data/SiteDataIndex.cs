@@ -261,7 +261,7 @@ namespace GlogGenerator.Data
             this.nonContentGameNames = gameNames;
         }
 
-        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownPipeline, bool includeDrafts)
+        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownHtmlPipeline, Markdig.MarkdownPipeline markdownRoundtripPipeline, bool includeDrafts)
         {
             // Reset the current index, while tracking some* old data to detect update conflicts.
             // (*) Only retain data associated with DataReferences which "should update" on changed data;
@@ -401,7 +401,7 @@ namespace GlogGenerator.Data
                 {
                     try
                     {
-                        var postId = PostData.PostIdFromFilePath(markdownPipeline, postPath);
+                        var postId = PostData.PostIdFromFilePath(markdownRoundtripPipeline, postPath);
                         PostData postData;
 
                         // Was this post loaded before?
@@ -414,7 +414,7 @@ namespace GlogGenerator.Data
                         }
                         else
                         {
-                            postData = PostData.MarkdownFromFilePath(markdownPipeline, postPath, this);
+                            postData = PostData.MarkdownFromFilePath(markdownHtmlPipeline, markdownRoundtripPipeline, postPath, this);
                         }
 
                         if (!includeDrafts && postData.Draft == true)
@@ -510,7 +510,7 @@ namespace GlogGenerator.Data
                 };
                 foreach (var pageFilePath in additionalPageFilePaths)
                 {
-                    var pageId = PageData.PageIdFromFilePath(markdownPipeline, pageFilePath);
+                    var pageId = PageData.PageIdFromFilePath(markdownRoundtripPipeline, pageFilePath);
                     PageData pageData;
 
                     // Was this page loaded before?
@@ -523,7 +523,7 @@ namespace GlogGenerator.Data
                     }
                     else
                     {
-                        pageData = PageData.MarkdownFromFilePath(markdownPipeline, pageFilePath);
+                        pageData = PageData.MarkdownFromFilePath(markdownHtmlPipeline, markdownRoundtripPipeline, pageFilePath);
                     }
 
                     this.pages[pageId] = pageData;

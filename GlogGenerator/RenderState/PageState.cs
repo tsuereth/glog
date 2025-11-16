@@ -66,8 +66,6 @@ namespace GlogGenerator.RenderState
 
         public string IgdbUrl { get; set; }
 
-        public MarkdownDocument SourceContent { get; set; }
-
         public string RenderedContent
         {
             get
@@ -117,6 +115,8 @@ namespace GlogGenerator.RenderState
 
         private readonly SiteBuilder siteBuilder;
 
+        private MarkdownDocument htmlRenderableDocument;
+
         private string renderedContent;
 
         public PageState(SiteBuilder siteBuilder)
@@ -126,14 +126,14 @@ namespace GlogGenerator.RenderState
 
         private string RenderContentFromSourceMarkdown()
         {
-            if (this.SourceContent.Count == 0)
+            if (this.htmlRenderableDocument.Count == 0)
             {
                 return string.Empty;
             }
 
             var rendererContext = this.siteBuilder.GetRendererContext();
             rendererContext.SetPageHashCode(this.HashCode);
-            var rendered = this.siteBuilder.RenderHtml(this.SourceContent);
+            var rendered = this.siteBuilder.RenderHtml(this.htmlRenderableDocument);
             rendererContext.Clear();
 
             return rendered;
@@ -145,7 +145,7 @@ namespace GlogGenerator.RenderState
             page.HideDate = true;
             page.HideTitle = true;
 
-            page.SourceContent = pageData.MdDoc;
+            page.htmlRenderableDocument = pageData.MdDocHtmlRenderable;
 
             page.Permalink = $"{siteBuilder.GetBaseURL()}{pageData.PermalinkRelative}";
 
@@ -182,7 +182,7 @@ namespace GlogGenerator.RenderState
 
             page.Title = postData.Title;
 
-            page.SourceContent = postData.MdDoc;
+            page.htmlRenderableDocument = postData.MdDocHtmlRenderable;
 
             var outputPathRelative = postData.PermalinkRelative;
             if (!outputPathRelative.EndsWith('/'))

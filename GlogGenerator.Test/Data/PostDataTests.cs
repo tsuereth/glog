@@ -22,7 +22,7 @@ namespace GlogGenerator.Test.Data
 
             var siteDataIndex = new FakeSiteDataIndex();
             var builder = new SiteBuilder(logger, new ConfigData(), siteDataIndex);
-            var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownPipeline(), testPostFilePath, siteDataIndex);
+            var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), testPostFilePath, siteDataIndex);
 
             Assert.AreEqual("2023/07/23/re-climbing-the-orc-chart/", testPostData.PermalinkRelative);
         }
@@ -37,8 +37,8 @@ namespace GlogGenerator.Test.Data
 
             var siteDataIndex = new FakeSiteDataIndex();
             var builder = new SiteBuilder(logger, new ConfigData(), siteDataIndex);
-            var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownPipeline(), testPostFilePath, siteDataIndex);
-            var testPostToString = testPostData.ToMarkdownString(builder.GetMarkdownPipeline(), siteDataIndex);
+            var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), testPostFilePath, siteDataIndex);
+            var testPostToString = testPostData.ToMarkdownString(builder.GetMarkdownRoundtripPipeline(), siteDataIndex);
 
             Assert.AreEqual(testPostFileText, testPostToString);
         }
@@ -53,8 +53,8 @@ namespace GlogGenerator.Test.Data
 
             var siteDataIndex = new FakeSiteDataIndex();
             var builder = new SiteBuilder(logger, new ConfigData(), siteDataIndex);
-            var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownPipeline(), testPostFilePath, siteDataIndex);
-            var testPostToString = testPostData.ToMarkdownString(builder.GetMarkdownPipeline(), siteDataIndex);
+            var testPostData = PostData.MarkdownFromFilePath(builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), testPostFilePath, siteDataIndex);
+            var testPostToString = testPostData.ToMarkdownString(builder.GetMarkdownRoundtripPipeline(), siteDataIndex);
 
             Assert.AreEqual(testPostFileText, testPostToString);
         }
@@ -80,20 +80,20 @@ game = [ ""Middle-earth: Shadow of Mordor"" ]
             var testIndex = new SiteDataIndex(logger, string.Empty);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
-            var testPostData = PostData.MarkdownFromString(builder.GetMarkdownPipeline(), testPostFileText, testIndex);
+            var testPostData = PostData.MarkdownFromString(builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), testPostFileText, testIndex);
             testIndex.ResolveReferences();
 
             testIgdbGameShadowOfMordor.Name = "Assassin's Creed Mordor";
             testIgdbGameGollum.Name = "Goblin Mode";
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownPipeline(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
-            var testPostToString = testPostData.ToMarkdownString(builder.GetMarkdownPipeline(), testIndex);
+            var testPostToString = testPostData.ToMarkdownString(builder.GetMarkdownRoundtripPipeline(), testIndex);
 
             var expectedText = @"+++
 game = [ ""Assassin's Creed Mordor"" ]
