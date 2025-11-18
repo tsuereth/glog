@@ -9,11 +9,7 @@ updates:
     schedule:
       interval: daily
   - package-ecosystem: nuget
-    directory: "/GlogGenerator"
-    schedule:
-      interval: daily
-  - package-ecosystem: nuget
-    directory: "/GlogGenerator.Test"
+    directory: "/"
     groups:
       all:
         patterns:
