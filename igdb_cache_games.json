@@ -3091,8 +3091,8 @@
     ],
     "expanded_games": [],
     "expansions": [
-      894,
-      7959
+      7959,
+      894
     ],
     "first_release_date": 1142812800,
     "forks": [],
@@ -5598,7 +5598,6 @@
     "expanded_games": [],
     "expansions": [
       75380,
-      227,
       125175,
       198157,
       11593,
@@ -5606,6 +5605,7 @@
       1332,
       229,
       228,
+      227,
       275177,
       275176,
       275178
@@ -8900,8 +8900,8 @@
     "remasters": [],
     "standalone_expansions": [
       338,
-      237522,
-      247
+      247,
+      237522
     ],
     "themes": [
       1,
@@ -13480,8 +13480,8 @@
       705539
     ],
     "remakes": [
-      11169,
-      133236
+      133236,
+      11169
     ],
     "remasters": [],
     "standalone_expansions": [],
@@ -16266,7 +16266,9 @@
     "first_release_date": 1354060800,
     "forks": [],
     "franchise": -1,
-    "franchises": [],
+    "franchises": [
+      1466
+    ],
     "game_modes": [
       1,
       2,
@@ -16509,8 +16511,8 @@
       1494
     ],
     "dlcs": [
-      14568,
       14572,
+      14568,
       14569
     ],
     "expanded_games": [],
@@ -44623,8 +44625,8 @@
       18
     ],
     "dlcs": [
-      26095,
       26092,
+      26095,
       26094
     ],
     "expanded_games": [],
@@ -103098,8 +103100,8 @@
     "remakes": [],
     "remasters": [],
     "standalone_expansions": [
-      107300,
-      208307
+      208307,
+      107300
     ],
     "themes": [
       17
@@ -112512,7 +112514,8 @@
       51110
     ],
     "keywords": [
-      1060
+      1060,
+      42165
     ],
     "name": "Shadow of the Colossus",
     "name_glogAppendReleaseYear": true,
@@ -114833,7 +114836,9 @@
     "bundles": [],
     "category": -1,
     "collection": -1,
-    "collections": [],
+    "collections": [
+      13157
+    ],
     "dlcs": [],
     "expanded_games": [],
     "expansions": [],
@@ -116833,18 +116838,23 @@
     ],
     "id": 81443,
     "involved_companies": [
-      60527
+      359348,
+      359349
     ],
     "keywords": [],
     "name": "Algo Bot",
     "parent_game": -1,
     "platforms": [
-      6
+      3,
+      6,
+      14
     ],
     "player_perspectives": [],
     "ports": [],
     "release_dates": [
-      137076
+      835535,
+      835536,
+      835537
     ],
     "remakes": [],
     "remasters": [],
@@ -126200,6 +126210,7 @@
     "name": "Dave the Diver",
     "parent_game": -1,
     "platforms": [
+      169,
       48,
       508,
       6,
@@ -126219,7 +126230,8 @@
       482019,
       482020,
       579970,
-      832890
+      832890,
+      836105
     ],
     "remakes": [],
     "remasters": [],
