@@ -130333,6 +130333,60 @@
     "bundles": [],
     "category": -1,
     "collection": -1,
+    "collections": [],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1761091200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "genres": [
+      15,
+      31,
+      32,
+      34
+    ],
+    "id": 325609,
+    "involved_companies": [
+      346649
+    ],
+    "keywords": [
+      2387,
+      48285
+    ],
+    "name": "Dispatch",
+    "name_glogAppendReleaseYear": true,
+    "parent_game": -1,
+    "platforms": [
+      6,
+      167
+    ],
+    "player_perspectives": [
+      5
+    ],
+    "ports": [],
+    "release_dates": [
+      804221,
+      804222
+    ],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      27
+    ],
+    "url": "https://www.igdb.com/games/dispatch--3",
+    "version_parent": -1
+  },
+  {
+    "bundles": [],
+    "category": -1,
+    "collection": -1,
     "collections": [
       11404
     ],

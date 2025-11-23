@@ -12,6 +12,7 @@ permalink = "/backlog"
 * <game:Convergence: A League of Legends Story> (<platform:PC>)
 * <game:Cyberpunk 2077: Phantom Liberty> (<platform:PC>)
 * <game:Deliver At All Costs> (<platform:PC>)
+* <game:Dispatch (2025)> (<platform:PC>)
 * <game:Ghost of Tsushima: Director's Cut> (<platform:PC>)
 * <game:Ghost of Yotei> (<platform:PS5>)
 * <game:Hades (2020)> (<platform:PC>)
