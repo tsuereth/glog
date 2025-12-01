@@ -54,5 +54,7 @@ namespace GlogGenerator.Data
         public void LinkPostsToAssociatedGames();
 
         public void RewriteSourceContent(Markdig.MarkdownPipeline markdownPipeline);
+
+        public void WriteToJsonFiles(string directoryPath);
     }
 }

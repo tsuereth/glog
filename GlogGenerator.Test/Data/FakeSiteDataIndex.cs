@@ -232,5 +232,10 @@ namespace GlogGenerator.Test
         {
             throw new NotImplementedException();
         }
+
+        public void WriteToJsonFiles(string directoryPath)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -8,6 +8,8 @@
 
         public bool MatchesReferenceableKey(string matchKey);
 
+        public object GetReferenceProperties();
+
         public string GetPermalinkRelative();
     }
 }

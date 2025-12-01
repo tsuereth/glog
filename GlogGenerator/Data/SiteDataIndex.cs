@@ -3,13 +3,22 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using GlogGenerator.IgdbApi;
+using GlogGenerator.NewtonsoftJsonHelpers;
 using GlogGenerator.RenderState;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace GlogGenerator.Data
 {
     public class SiteDataIndex : ISiteDataIndex
     {
+        private static readonly JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings()
+        {
+            NullValueHandling = NullValueHandling.Ignore,
+
+            ContractResolver = new AlphaOrderedContractResolver(),
+        };
+
         private readonly ILogger logger;
         private readonly string inputFilesBasePath;
 
@@ -342,18 +351,22 @@ namespace GlogGenerator.Data
                 var tagType = igdbGameMetadata.GetType();
                 var tagName = igdbGameMetadata.GetReferenceString(igdbCache);
 
+                TagData tag;
                 var tagNameUrlized = UrlizedString.Urlize(tagName);
                 if (this.tagDataIdsByNameUrlized.TryGetValue(tagNameUrlized, out var tagDataId))
                 {
-                    var tagDataMatchingKey = this.tags[tagDataId];
-                    tagDataMatchingKey.MergeReferenceableKey(tagType, tagName);
+                    tag = this.tags[tagDataId];
+                    tag.MergeReferenceableKey(tagType, tagName);
                 }
                 else
                 {
-                    var createdTag = new TagData(tagType, tagName);
-                    this.tags.Add(createdTag.GetDataId(), createdTag);
-                    this.tagDataIdsByNameUrlized[tagNameUrlized] = createdTag.GetDataId();
+                    tag = new TagData(tagType, tagName);
+                    this.tags.Add(tag.GetDataId(), tag);
+                    this.tagDataIdsByNameUrlized[tagNameUrlized] = tag.GetDataId();
                 }
+
+                var metadataReference = new IgdbMetadataReference(igdbGameMetadata);
+                tag.AddIgdbMetadataReference(metadataReference);
             }
 
             if (!string.IsNullOrEmpty(this.inputFilesBasePath))
@@ -711,6 +724,44 @@ namespace GlogGenerator.Data
             {
                 post.RewriteSourceFile(markdownPipeline, this);
             }
+        }
+        private static string JsonFilePathForReferenceType(string directoryPath, string typeName)
+        {
+            return Path.Combine(directoryPath, $"index_{typeName}.json");
+        }
+
+        private static void WriteDataItemsToJsonFile<T>(IEnumerable<T> dataItems, string directoryPath, string typeName)
+            where T : class, IGlogReferenceable
+        {
+            var records = new SortedDictionary<string, object>();
+            foreach (var dataItem in dataItems)
+            {
+                records.Add(dataItem.GetReferenceableKey(), dataItem.GetReferenceProperties());
+            }
+
+            if (!string.IsNullOrEmpty(directoryPath) && !Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            var jsonSerializer = JsonSerializer.Create(jsonSerializerSettings);
+            var jsonFilePath = JsonFilePathForReferenceType(directoryPath, typeName);
+            using (var fileStream = new FileStream(jsonFilePath, FileMode.Create))
+            using (var streamWriter = new StreamWriter(fileStream) { NewLine = "\n" })
+            using (var jsonWriter = new JsonTextWriter(streamWriter) { Formatting = Formatting.Indented })
+            {
+                jsonSerializer.Serialize(jsonWriter, records);
+                streamWriter.Flush();
+            }
+        }
+
+        public void WriteToJsonFiles(string directoryPath)
+        {
+            // Category references are trivial, don't bother writing them down.
+            WriteDataItemsToJsonFile(this.games.Values, directoryPath, "games");
+            WriteDataItemsToJsonFile(this.platforms.Values, directoryPath, "platforms");
+            // Ratings references are trivial, don't bother writing them down.
+            WriteDataItemsToJsonFile(this.tags.Values, directoryPath, "tags");
         }
 
         private void CheckUpdatedReferenceableDataForConflict<T>(IReadOnlyCollection<T> oldDataCollection, IReadOnlyCollection<T> newDataCollection)

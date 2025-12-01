@@ -14,6 +14,7 @@ namespace GlogGenerator.Data
 
         public HashSet<string> LinkedPostIds { get; set; } = new HashSet<string>();
 
+        private IgdbPlatformReference igdbReference;
         private string dataId;
         private string referenceableKey;
 
@@ -38,6 +39,11 @@ namespace GlogGenerator.Data
             return thisKey.Equals(matchKey, StringComparison.Ordinal);
         }
 
+        public object GetReferenceProperties()
+        {
+            return this.igdbReference;
+        }
+
         public string GetPermalinkRelative()
         {
             var urlized = UrlizedString.Urlize(this.GetReferenceableKey());
@@ -47,6 +53,7 @@ namespace GlogGenerator.Data
         public static PlatformData FromIgdbPlatform(IIgdbCache igdbCache, IgdbPlatform igdbPlatform)
         {
             var platform = new PlatformData();
+            platform.igdbReference = new IgdbPlatformReference(igdbPlatform);
             platform.dataId = igdbPlatform.GetUniqueIdString(igdbCache);
             platform.referenceableKey = igdbPlatform.GetReferenceString(igdbCache);
 

@@ -138,6 +138,9 @@ namespace GlogGenerator
         {
             var igdbCache = this.GetIgdbCache();
             igdbCache.WriteToJsonFiles(this.configData.InputFilesBasePath);
+
+            // FIXME: This should be written separately from the IGDB cache.
+            this.siteDataIndex.WriteToJsonFiles(this.configData.SiteDataIndexFilesBasePath);
         }
 
         public async Task UpdateIgdbCacheFromApiAsync(IgdbApiClient apiClient)

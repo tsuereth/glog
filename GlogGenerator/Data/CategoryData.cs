@@ -40,6 +40,11 @@ namespace GlogGenerator.Data
             return thisKey.Equals(matchKey, StringComparison.Ordinal);
         }
 
+        public object GetReferenceProperties()
+        {
+            return this.Name;
+        }
+
         public string GetPermalinkRelative()
         {
             var urlized = UrlizedString.Urlize(this.GetReferenceableKey());

@@ -179,7 +179,6 @@ namespace GlogGenerator.IgdbApi
 
         public IEnumerable<int> GetParentGameIds()
         {
-
             // DO NOT include ParentGameId in this!
             // The meaning of ParentGameId varies by this game's category --
             // It may indicate a DLC or expansion's parent game, or a collected game's bundle;

@@ -24,6 +24,7 @@ namespace GlogGenerator.Data
 
         public HashSet<string> LinkPostsToOtherGames { get; set; } = new HashSet<string>();
 
+        private IgdbGameReference igdbReference;
         private string dataId;
         private string referenceableKey;
         private HashSet<string> parentGames { get; set; } = new HashSet<string>();
@@ -50,6 +51,11 @@ namespace GlogGenerator.Data
         {
             var thisKey = this.GetReferenceableKey();
             return thisKey.Equals(matchKey, StringComparison.Ordinal);
+        }
+
+        public object GetReferenceProperties()
+        {
+            return this.igdbReference;
         }
 
         public string GetPermalinkRelative()
@@ -152,6 +158,7 @@ namespace GlogGenerator.Data
         public static GameData FromIgdbGame(IIgdbCache igdbCache, IgdbGame igdbGame)
         {
             var game = new GameData();
+            game.igdbReference = new IgdbGameReference(igdbGame, igdbCache);
             game.dataId = igdbGame.GetUniqueIdString(igdbCache);
             game.referenceableKey = igdbGame.GetReferenceString(igdbCache);
 

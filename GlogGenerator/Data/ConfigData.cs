@@ -10,6 +10,8 @@ namespace GlogGenerator.Data
 
         public string InputFilesBasePath { get; set; } = Directory.GetCurrentDirectory();
 
+        public string SiteDataIndexFilesBasePath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "sitedataindex");
+
         public List<string> NowPlaying { get; set; } = new List<string>();
 
         public string TemplateFilesBasePath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "templates");

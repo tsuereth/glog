@@ -1,0 +1,144 @@
+{
+  "3DS": {
+    "igdbEntityId": 37,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "3DS",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "Android": {
+    "igdbEntityId": 34,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "Android",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "GBA": {
+    "igdbEntityId": 24,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "GBA",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "Mac": {
+    "igdbEntityId": 14,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "Mac",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "N64": {
+    "igdbEntityId": 4,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "N64",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "NDS": {
+    "igdbEntityId": 20,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "NDS",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "NES": {
+    "igdbEntityId": 18,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "NES",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "Netflix": {
+    "referenceName": "Netflix",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "NGC": {
+    "igdbEntityId": 21,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "NGC",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "Ouya": {
+    "igdbEntityId": 72,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "Ouya",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "PC": {
+    "igdbEntityId": 6,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "PC",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "PS1": {
+    "igdbEntityId": 7,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "PS1",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "PS2": {
+    "igdbEntityId": 8,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "PS2",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "PS3": {
+    "igdbEntityId": 9,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "PS3",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "PS4": {
+    "igdbEntityId": 48,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "PS4",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "PS5": {
+    "igdbEntityId": 167,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "PS5",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "SNES": {
+    "igdbEntityId": 19,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "SNES",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "Switch": {
+    "igdbEntityId": 130,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "Switch",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "Switch 2": {
+    "igdbEntityId": 508,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "Switch 2",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "Vita": {
+    "igdbEntityId": 46,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "Vita",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "Wii": {
+    "igdbEntityId": 5,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "Wii",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "WiiU": {
+    "igdbEntityId": 41,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "WiiU",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "X360": {
+    "igdbEntityId": 12,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "X360",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "XONE": {
+    "igdbEntityId": 49,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "XONE",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  }
+}

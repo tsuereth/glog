@@ -18,6 +18,7 @@ namespace GlogGenerator.Data
 
         public HashSet<string> LinkedPostIds { get; set; } = new HashSet<string>();
 
+        private List<IgdbMetadataReference> igdbReferences = new List<IgdbMetadataReference>();
         private List<Tuple<Type, string>> referenceableTypedKeys = new List<Tuple<Type, string>>();
         private HashSet<string> referenceableTypedKeyStringsCache = new HashSet<string>();
 
@@ -41,6 +42,16 @@ namespace GlogGenerator.Data
                 this.referenceableTypedKeys.Add(typedKey);
                 this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
             }
+        }
+
+        public void AddIgdbMetadataReference(IgdbMetadataReference igdbReference)
+        {
+            this.igdbReferences.Add(igdbReference);
+        }
+
+        public object GetReferenceProperties()
+        {
+            return this.igdbReferences;
         }
 
         public string GetDataId()
