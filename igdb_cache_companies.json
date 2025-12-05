@@ -4360,12 +4360,20 @@
     "name": "Produce!"
   },
   {
+    "id": 17287,
+    "name": "Critical Role"
+  },
+  {
     "id": 17457,
     "name": "Flame Hearts"
   },
   {
     "id": 17463,
     "name": "Epic Games"
+  },
+  {
+    "id": 17467,
+    "name": "Igloo Studio"
   },
   {
     "id": 17601,
@@ -4430,6 +4438,10 @@
   {
     "id": 19281,
     "name": "Square Enix Business Division 3"
+  },
+  {
+    "id": 19335,
+    "name": "Plastic Fern Studios"
   },
   {
     "id": 19354,
@@ -5106,5 +5118,9 @@
   {
     "id": 66292,
     "name": "ComCODE"
+  },
+  {
+    "id": 71522,
+    "name": "UQU Creative"
   }
 ]

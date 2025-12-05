@@ -2531,6 +2531,13 @@
       "name": "Criterion Games"
     }
   ],
+  "Critical Role": [
+    {
+      "igdbEntityId": 17287,
+      "igdbEntityType": "IgdbCompany",
+      "name": "Critical Role"
+    }
+  ],
   "CrossCode": [
     {
       "igdbEntityId": 10021,
@@ -5436,6 +5443,13 @@
       "igdbEntityId": 22280,
       "igdbEntityType": "IgdbCompany",
       "name": "Ideal Audio Inc."
+    }
+  ],
+  "Igloo Studio": [
+    {
+      "igdbEntityId": 17467,
+      "igdbEntityType": "IgdbCompany",
+      "name": "Igloo Studio"
     }
   ],
   "Ignited Minds, LLC": [
@@ -8608,6 +8622,13 @@
       "igdbEntityId": 5238,
       "igdbEntityType": "IgdbFranchise",
       "name": "Plants vs. Zombies"
+    }
+  ],
+  "Plastic Fern Studios": [
+    {
+      "igdbEntityId": 19335,
+      "igdbEntityType": "IgdbCompany",
+      "name": "Plastic Fern Studios"
     }
   ],
   "Platform": [
@@ -13129,6 +13150,13 @@
       "igdbEntityId": 8422,
       "igdbEntityType": "IgdbCompany",
       "name": "Uppercut Games Pty Ltd"
+    }
+  ],
+  "UQU Creative": [
+    {
+      "igdbEntityId": 71522,
+      "igdbEntityType": "IgdbCompany",
+      "name": "UQU Creative"
     }
   ],
   "UTV Ignition Entertainment": [
