@@ -1,24 +1,31 @@
 ﻿using System;
 using GlogGenerator.IgdbApi;
+using GlogGenerator.NewtonsoftJsonHelpers;
 using Newtonsoft.Json;
 
 namespace GlogGenerator.Data
 {
     public abstract class IgdbEntityReference<T> where T : IgdbEntity
     {
+        [JsonConverter(typeof(StringTypeNameConverter), "GlogGenerator", "GlogGenerator.IgdbApi")]
         [JsonProperty("igdbEntityType")]
-        public string IgdbType { get; private set; } = null;
+        public Type IgdbEntityType { get; private set; } = null;
 
         [JsonProperty("igdbEntityId")]
-        public int? IgdbId { get; private set; } = null;
+        public int? IgdbEntityId { get; private set; } = null;
 
         public IgdbEntityReference(T fromEntity)
         {
             if (fromEntity.GetEntityId() != IgdbEntity.IdNotFound)
             {
-                this.IgdbType = fromEntity.GetType().Name;
-                this.IgdbId = fromEntity.GetEntityId();
+                this.IgdbEntityType = fromEntity.GetType();
+                this.IgdbEntityId = fromEntity.GetEntityId();
             }
+        }
+
+        public bool HasIgdbEntityData()
+        {
+            return this.IgdbEntityId.HasValue && this.IgdbEntityId.Value != IgdbEntity.IdNotFound;
         }
 
         public virtual string GetReferenceableKey()

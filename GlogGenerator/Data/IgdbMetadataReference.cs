@@ -7,7 +7,7 @@ namespace GlogGenerator.Data
 {
     public class IgdbMetadataReference : IgdbEntityReference<IgdbEntity>
     {
-        [JsonProperty("name")]
+        [JsonProperty("igdbMetadataName")]
         public string Name { get; private set; }
 
         public IgdbMetadataReference(IgdbEntity fromEntity) : base(fromEntity)
@@ -49,6 +49,11 @@ namespace GlogGenerator.Data
             {
                 throw new NotImplementedException();
             }
+        }
+
+        public override string GetReferenceableKey()
+        {
+            return Name;
         }
     }
 }

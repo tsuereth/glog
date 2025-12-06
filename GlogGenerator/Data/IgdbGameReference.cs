@@ -105,7 +105,7 @@ namespace GlogGenerator.Data
             {
                 if (!this.FirstReleaseYear.HasValue)
                 {
-                    throw new InvalidDataException($"Game reference with ID {this.IgdbId} named \"{this.Name}\" is set to append a release year to its name, but has no valid release year.");
+                    throw new InvalidDataException($"Game reference with ID {this.IgdbEntityId} named \"{this.Name}\" is set to append a release year to its name, but has no valid release year.");
                 }
 
                 nameBuilder.Append(" (");
@@ -117,7 +117,7 @@ namespace GlogGenerator.Data
             {
                 if (this.ReleasePlatformNames == null || this.ReleasePlatformNames.Count == 0)
                 {
-                    throw new InvalidDataException($"Game ID {this.IgdbId} named \"{this.Name}\" is set to append platforms to its name, but has no valid platforms.");
+                    throw new InvalidDataException($"Game ID {this.IgdbEntityId} named \"{this.Name}\" is set to append platforms to its name, but has no valid platforms.");
                 }
 
                 nameBuilder.Append(" (");
@@ -129,7 +129,7 @@ namespace GlogGenerator.Data
             {
                 if (!this.ReleaseNumber.HasValue)
                 {
-                    throw new InvalidDataException($"Game ID {this.IgdbId} named \"{this.Name}\" is set to append a release number to its name, but has no valid release number.");
+                    throw new InvalidDataException($"Game ID {this.IgdbEntityId} named \"{this.Name}\" is set to append a release number to its name, but has no valid release number.");
                 }
 
                 nameBuilder.Append(" (");
