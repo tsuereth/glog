@@ -6,7 +6,7 @@ using System.Text;
 
 namespace GlogGenerator.Data
 {
-    public class TagData : GlogDataFromIgdbGameMetadata, IGlogMultiKeyReferenceable
+    public class TagData : IGlogMultiKeyReferenceable
     {
         public string Name
         {
@@ -22,11 +22,35 @@ namespace GlogGenerator.Data
         private List<Tuple<Type, string>> referenceableTypedKeys = new List<Tuple<Type, string>>();
         private HashSet<string> referenceableTypedKeyStringsCache = new HashSet<string>();
 
-        public TagData(Type gameMetadataType, string gameMetadataName) : base(gameMetadataType, gameMetadataName)
+        public TagData(Type gameMetadataType, string gameMetadataName)
         {
+            // FIXME: deduplicate these internal properties (the list of igdbReferences should be sufficient).
             var typedKey = new Tuple<Type, string>(gameMetadataType, gameMetadataName);
             this.referenceableTypedKeys.Add(typedKey);
             this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
+        }
+
+        public TagData(IgdbMetadataReference igdbReference)
+        {
+            this.igdbReferences.Add(igdbReference);
+
+            // FIXME: deduplicate these internal properties (the list of igdbReferences should be sufficient).
+            var typedKey = new Tuple<Type, string>(igdbReference.IgdbEntityType, igdbReference.Name);
+            this.referenceableTypedKeys.Add(typedKey);
+            this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
+        }
+
+        public TagData(IEnumerable<IgdbMetadataReference> igdbReferences)
+        {
+            foreach (var igdbReference in igdbReferences)
+            {
+                this.igdbReferences.Add(igdbReference);
+
+                // FIXME: deduplicate these internal properties (the list of igdbReferences should be sufficient).
+                var typedKey = new Tuple<Type, string>(igdbReference.IgdbEntityType, igdbReference.Name);
+                this.referenceableTypedKeys.Add(typedKey);
+                this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
+            }
         }
 
         public bool MatchesReferenceableKey(string matchKey)
@@ -36,9 +60,23 @@ namespace GlogGenerator.Data
 
         public void MergeReferenceableKey(Type mergeKeyType, string mergeKey)
         {
+            // FIXME: This should search for an existing IgdbReference instead!
             var typedKey = new Tuple<Type, string>(mergeKeyType, mergeKey);
             if (!this.referenceableTypedKeys.Contains(typedKey))
             {
+                this.referenceableTypedKeys.Add(typedKey);
+                this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
+            }
+        }
+
+        public void MergeIgdbMetadataReference(IgdbMetadataReference igdbReference)
+        {
+            // FIXME: This should search for an existing IgdbReference instead!
+            var typedKey = new Tuple<Type, string>(igdbReference.IgdbEntityType, igdbReference.Name);
+            if (!this.referenceableTypedKeys.Contains(typedKey))
+            {
+                this.igdbReferences.Add(igdbReference);
+
                 this.referenceableTypedKeys.Add(typedKey);
                 this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
             }
@@ -49,30 +87,21 @@ namespace GlogGenerator.Data
             this.igdbReferences.Add(igdbReference);
         }
 
-        public object GetReferenceProperties()
-        {
-            return this.igdbReferences;
-        }
-
         public string GetDataId()
         {
-            using (var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
-            {
-                var typeBytes = Encoding.UTF8.GetBytes(nameof(TagData));
-                hash.AppendData(typeBytes);
-
-                var nameUrlized = UrlizedString.Urlize(this.Name);
-                var nameUrlizedBytes = Encoding.UTF8.GetBytes(nameUrlized);
-                hash.AppendData(nameUrlizedBytes);
-
-                var idBytes = hash.GetCurrentHash();
-                return Convert.ToHexString(idBytes);
-            }
+            // FIXME: This should be deprecated or renamed, "data id" is ambiguous here since there may be multiple entities.
+            var nameUrlized = UrlizedString.Urlize(this.Name);
+            return $"{nameof(TagData)}:key={nameUrlized}";
         }
 
         public string GetReferenceableKey()
         {
             return this.Name;
+        }
+
+        public object GetReferenceProperties()
+        {
+            return this.igdbReferences;
         }
 
         public string GetPermalinkRelative()

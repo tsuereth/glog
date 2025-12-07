@@ -64,10 +64,10 @@ namespace GlogGenerator.Test.Data
         {
             var logger = new TestLogger();
 
-            var testDataItem = new IgdbGame() { Id = 1, Name = "Some Game Name" };
+            var testIgdbEntity = new IgdbGame() { Id = 1, Name = "Some Game Name" };
 
             var mockIgdbCache = Substitute.For<IIgdbCache>();
-            mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>() { testDataItem });
+            mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>() { testIgdbEntity });
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>());
 
@@ -79,20 +79,20 @@ namespace GlogGenerator.Test.Data
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
-            var testReference = testIndex.CreateReference<GameData>(testDataItem.Name, true);
+            var testReference = testIndex.CreateReference<GameData>(testIgdbEntity.Name, true);
             var testData = testIndex.GetData(testReference);
 
             Assert.IsTrue(testReference.GetIsResolved());
             Assert.AreEqual("Some Game Name", testData.Title);
 
-            testDataItem.Name = "Corrected Game Name";
+            testIgdbEntity.Name = "Corrected Game Name";
 
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
 
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.HasCount(1, errors);
 
-            var expectedMessage = $"Updated data index has a different key for GameData with data ID {testDataItem.GetUniqueIdString(mockIgdbCache)}: old key Some Game Name new key Corrected Game Name";
+            var expectedMessage = $"Updated data index has a different key for GameData with data ID {testData.GetDataId()}: old key Some Game Name new key Corrected Game Name";
             Assert.AreEqual(expectedMessage, errors[0].Message);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -124,8 +124,9 @@ namespace GlogGenerator.Test.Data
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
-            testIndex.CreateReference<PlatformData>(testPlatformOld.Abbreviation, true);
+            var testDataReference = testIndex.CreateReference<PlatformData>(testPlatformOld.Abbreviation, true);
             testIndex.ResolveReferences();
+            var testDataId = testDataReference.GetResolvedReferenceId();
 
             var testPlatformNew = new IgdbPlatform() { Id = 1, Abbreviation = "PSOne" };
 
@@ -136,7 +137,7 @@ namespace GlogGenerator.Test.Data
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.HasCount(1, errors);
 
-            var expectedMessage = $"Updated data index has a different key for PlatformData with data ID {testPlatformOld.GetUniqueIdString(mockIgdbCache)}: old key {testPlatformOld.GetReferenceString(mockIgdbCache)} new key {testPlatformNew.GetReferenceString(mockIgdbCache)}";
+            var expectedMessage = $"Updated data index has a different key for PlatformData with data ID {testDataId}: old key {testPlatformOld.GetReferenceString(mockIgdbCache)} new key {testPlatformNew.GetReferenceString(mockIgdbCache)}";
             Assert.AreEqual(expectedMessage, errors[0].Message);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -162,8 +163,9 @@ namespace GlogGenerator.Test.Data
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
-            testIndex.CreateReference<PlatformData>(testPlatformOld.Abbreviation, true);
+            var testDataReference = testIndex.CreateReference<PlatformData>(testPlatformOld.Abbreviation, true);
             testIndex.ResolveReferences();
+            var testDataId = testDataReference.GetResolvedReferenceId();
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
 
@@ -172,7 +174,7 @@ namespace GlogGenerator.Test.Data
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.HasCount(1, errors);
 
-            var expectedMessage = $"Updated data index is missing old PlatformData with data ID {testPlatformOld.GetUniqueIdString(mockIgdbCache)} and key {testPlatformOld.GetReferenceString(mockIgdbCache)}";
+            var expectedMessage = $"Updated data index is missing old PlatformData with data ID {testDataId} and key {testPlatformOld.GetReferenceString(mockIgdbCache)}";
             Assert.AreEqual(expectedMessage, errors[0].Message);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -183,7 +185,8 @@ namespace GlogGenerator.Test.Data
         {
             var logger = new TestLogger();
 
-            var testPlatformOld = new IgdbPlatform() { Id = 1, Abbreviation = "PS1" };
+            var testPlatformKey = "PS1";
+            var testPlatformOld = new IgdbPlatform() { Id = 1, Abbreviation = testPlatformKey };
 
             var mockIgdbCache = Substitute.For<IIgdbCache>();
             mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>());
@@ -198,21 +201,26 @@ namespace GlogGenerator.Test.Data
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
-            testIndex.CreateReference<PlatformData>(testPlatformOld.Abbreviation, true);
+            var testDataReferenceOld = testIndex.CreateReference<PlatformData>(testPlatformKey, true);
             testIndex.ResolveReferences();
+            var testDataIdOld = testDataReferenceOld.GetResolvedReferenceId();
 
-            var testPlatformNew = new IgdbPlatform() { Id = 2, Abbreviation = testPlatformOld.Abbreviation };
+            var testPlatformNew = new IgdbPlatform() { Id = 2, Abbreviation = testPlatformKey };
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformNew });
 
             testIndex.LoadContent(mockIgdbCache, builder.GetMarkdownHtmlPipeline(), builder.GetMarkdownRoundtripPipeline(), includeDrafts: false);
+
+            // A new data entry won't be created, but the data ID string it "would" have can be simulated.
+            var testDataEntityReferenceNew = new IgdbPlatformReference(testPlatformNew);
+            var testDataIdNew = testDataEntityReferenceNew.GetIgdbEntityDataId();
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
 
             var warnings = logger.GetLogs(LogLevel.Warning);
             Assert.HasCount(1, warnings);
 
-            var expectedMessage = $"Updated data index has a different data ID for PlatformData with key {testPlatformOld.GetReferenceString(mockIgdbCache)}: old data ID {testPlatformOld.GetUniqueIdString(mockIgdbCache)} new data ID {testPlatformNew.GetUniqueIdString(mockIgdbCache)}";
+            var expectedMessage = $"Updated data index has a different data ID for PlatformData with key {testPlatformKey}: old data ID {testDataIdOld} new data ID {testDataIdNew}";
             Assert.AreEqual(expectedMessage, warnings[0].Message);
         }
 

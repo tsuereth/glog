@@ -57,38 +57,6 @@ namespace GlogGenerator.IgdbApi
             return (int)idObject;
         }
 
-        public string GetUniqueIdString(IIgdbCache cache)
-        {
-            var entityType = this.GetType();
-
-            using (var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
-            {
-                var typeBytes = Encoding.UTF8.GetBytes(entityType.Name);
-                hash.AppendData(typeBytes);
-
-                var entityId = this.GetEntityId();
-                if (entityId != IdNotFound)
-                {
-                    var entityIdBytes = BitConverter.GetBytes(entityId);
-                    hash.AppendData(entityIdBytes);
-                }
-                else
-                {
-                    var referenceString = this.GetReferenceString(cache);
-                    if (string.IsNullOrEmpty(referenceString))
-                    {
-                        throw new InvalidDataException($"An {entityType} is unable to generate a unique ID string because it has no Entity ID and no Reference String");
-                    }
-
-                    var keyBytes = Encoding.UTF8.GetBytes(referenceString);
-                    hash.AppendData(keyBytes);
-                }
-
-                var idStringBytes = hash.GetCurrentHash();
-                return Convert.ToHexString(idStringBytes);
-            }
-        }
-
         public virtual string GetReferenceString(IIgdbCache cache)
         {
             throw new NotImplementedException();

@@ -4,7 +4,7 @@ using Newtonsoft.Json.Converters;
 
 namespace GlogGenerator.Data
 {
-    public class IgdbPlatformReference : IgdbEntityReference<IgdbPlatform>
+    public class IgdbPlatformReference : IgdbEntityReference<IgdbPlatform>, IIgdbEntityReference
     {
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ReferenceNameSourceType
@@ -20,6 +20,8 @@ namespace GlogGenerator.Data
 
         [JsonProperty("referenceNameSource")]
         public ReferenceNameSourceType ReferenceNameSource { get; private set; } = ReferenceNameSourceType.None;
+
+        public IgdbPlatformReference() : base() { }
 
         public IgdbPlatformReference(IgdbPlatform fromPlatform) : base(fromPlatform)
         {

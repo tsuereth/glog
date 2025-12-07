@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace GlogGenerator.Data
 {
-    public class IgdbGameReference : IgdbEntityReference<IgdbGame>
+    public class IgdbGameReference : IgdbEntityReference<IgdbGame>, IIgdbEntityReference
     {
         [JsonProperty("igdbGameName")]
         public string Name { get; private set; }
@@ -59,6 +59,8 @@ namespace GlogGenerator.Data
         public bool? NameAppendReleaseNumber { get; private set; } = null;
         [JsonProperty("igdbGameReleaseNumber")]
         public int? ReleaseNumber { get; private set; } = null;
+
+        public IgdbGameReference() : base() { }
 
         public IgdbGameReference(IgdbGame fromGame, IIgdbCache cache) : base(fromGame)
         {

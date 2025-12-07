@@ -24,24 +24,33 @@ namespace GlogGenerator.Data
 
         public HashSet<string> LinkPostsToOtherGames { get; set; } = new HashSet<string>();
 
-        private IgdbGameReference igdbReference;
-        private string dataId;
-        private string referenceableKey;
+        private IgdbGameReference igdbReference = null;
         private HashSet<string> parentGames { get; set; } = new HashSet<string>();
         private HashSet<string> otherReleases { get; set; } = new HashSet<string>();
         private HashSet<string> childGames { get; set; } = new HashSet<string>();
         private HashSet<string> relatedGames { get; set; } = new HashSet<string>();
 
+        public IgdbGameReference GetIgdbEntityReference()
+        {
+            return igdbReference;
+        }
+
         public string GetDataId()
         {
-            return this.dataId;
+            if (this.igdbReference != null && this.igdbReference.HasIgdbEntityData())
+            {
+                return this.igdbReference.GetIgdbEntityDataId();
+            }
+
+            // When a backing data ID isn't available, there's not much choice left but the referenceable key.
+            return $"{nameof(GameData)}:key={this.GetReferenceableKey()}";
         }
 
         public string GetReferenceableKey()
         {
-            if (!string.IsNullOrEmpty(this.referenceableKey))
+            if (this.igdbReference != null)
             {
-                return this.referenceableKey;
+                return this.igdbReference.GetReferenceableKey();
             }
 
             return this.Title;
@@ -155,12 +164,18 @@ namespace GlogGenerator.Data
             return this.relatedGames.Where(s => siteDataIndex.HasGame(s));
         }
 
+        public static GameData FromIgdbGameReference(IgdbGameReference igdbGameReference)
+        {
+            var game = new GameData();
+            game.igdbReference = igdbGameReference;
+
+            return game;
+        }
+
         public static GameData FromIgdbGame(IIgdbCache igdbCache, IgdbGame igdbGame)
         {
             var game = new GameData();
             game.igdbReference = new IgdbGameReference(igdbGame, igdbCache);
-            game.dataId = igdbGame.GetUniqueIdString(igdbCache);
-            game.referenceableKey = igdbGame.GetReferenceString(igdbCache);
 
             game.Title = igdbGame.GetReferenceString(igdbCache);
             if (igdbGame.NameGlogAppendPlatforms == true)
@@ -306,11 +321,11 @@ namespace GlogGenerator.Data
 
         private void TryAddParentGame(IIgdbCache igdbCache, int parentGameId)
         {
-            if (parentGameId != IgdbEntity.IdNotFound)
+            var thisGameId = (this.igdbReference != null && this.igdbReference.HasIgdbEntityData()) ? this.igdbReference.IgdbEntityId : IgdbEntity.IdNotFound;
+            if (parentGameId != IgdbEntity.IdNotFound && parentGameId != thisGameId)
             {
                 var parentGame = igdbCache.GetGame(parentGameId);
                 if (parentGame != null &&
-                    !parentGame.GetUniqueIdString(igdbCache).Equals(this.dataId, StringComparison.Ordinal) &&
                     !this.parentGames.Contains(parentGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
                 {
                     var parentGameReferenceString = parentGame.GetReferenceString(igdbCache);
@@ -321,11 +336,11 @@ namespace GlogGenerator.Data
 
         private void TryAddOtherRelease(IIgdbCache igdbCache, int otherReleaseGameId)
         {
-            if (otherReleaseGameId != IgdbEntity.IdNotFound)
+            var thisGameId = (this.igdbReference != null && this.igdbReference.HasIgdbEntityData()) ? this.igdbReference.IgdbEntityId : IgdbEntity.IdNotFound;
+            if (otherReleaseGameId != IgdbEntity.IdNotFound && otherReleaseGameId != thisGameId)
             {
                 var otherReleaseGame = igdbCache.GetGame(otherReleaseGameId);
                 if (otherReleaseGame != null &&
-                    !otherReleaseGame.GetUniqueIdString(igdbCache).Equals(this.dataId, StringComparison.Ordinal) &&
                     !this.otherReleases.Contains(otherReleaseGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
                 {
                     var otherReleaseReferenceString = otherReleaseGame.GetReferenceString(igdbCache);
@@ -336,11 +351,11 @@ namespace GlogGenerator.Data
 
         private void TryAddChildGame(IIgdbCache igdbCache, int childGameId)
         {
-            if (childGameId != IgdbEntity.IdNotFound)
+            var thisGameId = (this.igdbReference != null && this.igdbReference.HasIgdbEntityData()) ? this.igdbReference.IgdbEntityId : IgdbEntity.IdNotFound;
+            if (childGameId != IgdbEntity.IdNotFound && childGameId != thisGameId)
             {
                 var childGame = igdbCache.GetGame(childGameId);
                 if (childGame != null &&
-                    !childGame.GetUniqueIdString(igdbCache).Equals(this.dataId, StringComparison.Ordinal) &&
                     !this.childGames.Contains(childGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
                 {
                     var childGameReferenceString = childGame.GetReferenceString(igdbCache);
@@ -351,11 +366,11 @@ namespace GlogGenerator.Data
 
         private void TryAddRelatedGame(IIgdbCache igdbCache, int relatedGameId)
         {
-            if (relatedGameId != IgdbEntity.IdNotFound)
+            var thisGameId = (this.igdbReference != null && this.igdbReference.HasIgdbEntityData()) ? this.igdbReference.IgdbEntityId : IgdbEntity.IdNotFound;
+            if (relatedGameId != IgdbEntity.IdNotFound && relatedGameId != thisGameId)
             {
                 var relatedGame = igdbCache.GetGame(relatedGameId);
                 if (relatedGame != null &&
-                    !relatedGame.GetUniqueIdString(igdbCache).Equals(this.dataId, StringComparison.Ordinal) &&
                     !this.relatedGames.Contains(relatedGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
                 {
                     var relatedGameReferenceString = relatedGame.GetReferenceString(igdbCache);

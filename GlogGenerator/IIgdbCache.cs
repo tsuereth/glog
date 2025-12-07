@@ -53,7 +53,7 @@ namespace GlogGenerator
 
         public Task UpdateFromApiClient(IgdbApiClient client);
 
-        public void RemoveEntityByUniqueIdString(Type entityType, string uniqueIdString);
+        public void RemoveEntityById(Type entityType, int id);
 
         public void RemoveEntityByReferenceString(Type entityType, string referenceString);
 

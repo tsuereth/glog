@@ -634,8 +634,8 @@ namespace GlogGenerator.Data
 
                 if (igdbCache != null)
                 {
-                    var gameDataId = unreferencedGameKeypair.Value.GetDataId();
-                    igdbCache.RemoveEntityByUniqueIdString(typeof(IgdbGame), gameDataId);
+                    var igdbGame = unreferencedGameKeypair.Value.GetIgdbEntityReference();
+                    igdbCache.RemoveEntityById(typeof(IgdbGame), igdbGame.IgdbEntityId.Value);
                 }
             }
 
@@ -647,8 +647,8 @@ namespace GlogGenerator.Data
 
                 if (igdbCache != null)
                 {
-                    var platformDataId = unreferencedPlatformKeypair.Value.GetDataId();
-                    igdbCache.RemoveEntityByUniqueIdString(typeof(IgdbPlatform), platformDataId);
+                    var igdbPlatform = unreferencedPlatformKeypair.Value.GetIgdbEntityReference();
+                    igdbCache.RemoveEntityById(typeof(IgdbPlatform), igdbPlatform.IgdbEntityId.Value);
                 }
             }
 

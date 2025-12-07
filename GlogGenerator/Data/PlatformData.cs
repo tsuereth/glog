@@ -15,19 +15,28 @@ namespace GlogGenerator.Data
         public HashSet<string> LinkedPostIds { get; set; } = new HashSet<string>();
 
         private IgdbPlatformReference igdbReference;
-        private string dataId;
-        private string referenceableKey;
+
+        public IgdbPlatformReference GetIgdbEntityReference()
+        {
+            return igdbReference;
+        }
 
         public string GetDataId()
         {
-            return this.dataId;
+            if (this.igdbReference != null && this.igdbReference.HasIgdbEntityData())
+            {
+                return this.igdbReference.GetIgdbEntityDataId();
+            }
+
+            // When a backing data ID isn't available, there's not much choice left but the referenceable key.
+            return $"{nameof(PlatformData)}:key={this.GetReferenceableKey()}";
         }
 
         public string GetReferenceableKey()
         {
-            if (!string.IsNullOrEmpty(this.referenceableKey))
+            if (this.igdbReference != null)
             {
-                return this.referenceableKey;
+                return this.igdbReference.GetReferenceableKey();
             }
 
             return this.Abbreviation;
@@ -50,12 +59,18 @@ namespace GlogGenerator.Data
             return $"platform/{urlized}/";
         }
 
+        public static PlatformData FromIgdbPlatformReference(IgdbPlatformReference igdbPlatformReference)
+        {
+            var platform = new PlatformData();
+            platform.igdbReference = igdbPlatformReference;
+
+            return platform;
+        }
+
         public static PlatformData FromIgdbPlatform(IIgdbCache igdbCache, IgdbPlatform igdbPlatform)
         {
             var platform = new PlatformData();
             platform.igdbReference = new IgdbPlatformReference(igdbPlatform);
-            platform.dataId = igdbPlatform.GetUniqueIdString(igdbCache);
-            platform.referenceableKey = igdbPlatform.GetReferenceString(igdbCache);
 
             platform.Abbreviation = igdbPlatform.GetReferenceString(igdbCache);
             platform.Name = igdbPlatform.Name;

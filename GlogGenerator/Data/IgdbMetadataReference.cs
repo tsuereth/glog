@@ -5,10 +5,12 @@ using Newtonsoft.Json;
 
 namespace GlogGenerator.Data
 {
-    public class IgdbMetadataReference : IgdbEntityReference<IgdbEntity>
+    public class IgdbMetadataReference : IgdbEntityReference<IgdbEntity>, IIgdbEntityReference
     {
         [JsonProperty("igdbMetadataName")]
         public string Name { get; private set; }
+
+        public IgdbMetadataReference() : base() { }
 
         public IgdbMetadataReference(IgdbEntity fromEntity) : base(fromEntity)
         {

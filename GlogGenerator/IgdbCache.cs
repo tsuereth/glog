@@ -28,7 +28,6 @@ namespace GlogGenerator
 
         private Dictionary<int, IgdbGame> gamesById = new Dictionary<int, IgdbGame>();
         private Dictionary<string, HashSet<int>> gameIdsByReferenceString = new Dictionary<string, HashSet<int>>();
-        private Dictionary<string, int> gameIdsByUniqueIdString = new Dictionary<string, int>();
 
         private List<IgdbGame> gamesUnidentified = new List<IgdbGame>();
 
@@ -45,7 +44,6 @@ namespace GlogGenerator
 
         private Dictionary<int, IgdbPlatform> platformsById = new Dictionary<int, IgdbPlatform>();
         private Dictionary<string, HashSet<int>> platformIdsByReferenceString = new Dictionary<string, HashSet<int>>();
-        private Dictionary<string, int> platformIdsByUniqueIdString = new Dictionary<string, int>();
 
         private List<IgdbPlatform> platformsUnidentified = new List<IgdbPlatform>();
 
@@ -429,28 +427,6 @@ namespace GlogGenerator
             return entityIdsByReferenceString;
         }
 
-        private Dictionary<string, int> GenerateEntityIdsByUniqueIdStringLookup<T>(Dictionary<int, T> entitiesById)
-            where T : IgdbEntity
-        {
-            var entityIdsByUniqueIdString = new Dictionary<string, int>();
-            foreach (var entityKv in entitiesById)
-            {
-                var entityId = entityKv.Key;
-                var entityUniqueIdString = entityKv.Value.GetUniqueIdString(this);
-
-                if (entityIdsByUniqueIdString.TryGetValue(entityUniqueIdString, out var existingEntityId))
-                {
-                    throw new InvalidDataException($"A {typeof(T).Name} with unique ID string {entityUniqueIdString} and ID {existingEntityId} conflicts with alternate ID {entityId}");
-                }
-                else
-                {
-                    entityIdsByUniqueIdString.Add(entityUniqueIdString, entityId);
-                }
-            }
-
-            return entityIdsByUniqueIdString;
-        }
-
         public async Task UpdateFromApiClient(IgdbApiClient client)
         {
             // Update games first, to get current IDs for metadata references.
@@ -547,7 +523,6 @@ namespace GlogGenerator
 
             this.platformsById = platformsCurrentById;
             this.platformIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.platformsById);
-            this.platformIdsByUniqueIdString = this.GenerateEntityIdsByUniqueIdStringLookup(this.platformsById);
 
             var playerPerspectiveIds = gamesCurrent.SelectMany(g => g.PlayerPerspectiveIds).Distinct().ToList();
             var playerPerspectivesCurrent = await client.GetPlayerPerspectivesAsync(playerPerspectiveIds);
@@ -636,36 +611,33 @@ namespace GlogGenerator
 
             this.gamesById = gamesCurrentById;
             this.gameIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.gamesById);
-            this.gameIdsByUniqueIdString = this.GenerateEntityIdsByUniqueIdStringLookup(this.gamesById);
 
             this.RebuildAssociatedGamesIndexes();
         }
 
-        private void RemoveEntityFromDictionaryByUniqueIdString<T>(Dictionary<string, int> entityIdsByUniqueIdString, Dictionary<int, T> entitiesById, string uniqueIdString)
+        private void RemoveEntityByIdInternal<T>(Dictionary<int, T> entitiesById, int id)
             where T : IgdbEntity
         {
-            if (!entityIdsByUniqueIdString.TryGetValue(uniqueIdString, out var entityId))
+            if (!entitiesById.TryGetValue(id, out var entity))
             {
-                throw new ArgumentException($"No {typeof(T).Name} found with unique ID string {uniqueIdString}");
+                throw new ArgumentException($"No {typeof(T).Name} found with ID {id}");
             }
 
-            var entity = entitiesById[entityId];
             if (!entity.ShouldForcePersistInCache())
             {
-                entitiesById.Remove(entityId);
-                entityIdsByUniqueIdString.Remove(uniqueIdString);
+                entitiesById.Remove(id);
             }
         }
 
-        public void RemoveEntityByUniqueIdString(Type entityType, string uniqueIdString)
+        public void RemoveEntityById(Type entityType, int id)
         {
             if (entityType == typeof(IgdbGame))
             {
-                this.RemoveEntityFromDictionaryByUniqueIdString(this.gameIdsByUniqueIdString, this.gamesById, uniqueIdString);
+                this.RemoveEntityByIdInternal(this.gamesById, id);
             }
             else if (entityType == typeof(IgdbPlatform))
             {
-                this.RemoveEntityFromDictionaryByUniqueIdString(this.platformIdsByUniqueIdString, this.platformsById, uniqueIdString);
+                this.RemoveEntityByIdInternal(this.platformsById, id);
             }
             else
             {
@@ -830,11 +802,9 @@ namespace GlogGenerator
             cache.franchiseIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.franchisesById);
             cache.gameModeIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.gameModesById);
             cache.gameIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.gamesById);
-            cache.gameIdsByUniqueIdString = cache.GenerateEntityIdsByUniqueIdStringLookup(cache.gamesById);
             cache.genreIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.genresById);
             cache.keywordIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.keywordsById);
             cache.platformIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.platformsById);
-            cache.platformIdsByUniqueIdString = cache.GenerateEntityIdsByUniqueIdStringLookup(cache.platformsById);
             cache.playerPerspectiveIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.playerPerspectivesById);
             cache.themeIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.themesById);
 

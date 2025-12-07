@@ -5,7 +5,8 @@ using Newtonsoft.Json;
 
 namespace GlogGenerator.Data
 {
-    public abstract class IgdbEntityReference<T> where T : IgdbEntity
+    public abstract class IgdbEntityReference<T> : IIgdbEntityReference
+        where T : IgdbEntity
     {
         [JsonConverter(typeof(StringTypeNameConverter), "GlogGenerator", "GlogGenerator.IgdbApi")]
         [JsonProperty("igdbEntityType")]
@@ -13,6 +14,8 @@ namespace GlogGenerator.Data
 
         [JsonProperty("igdbEntityId")]
         public int? IgdbEntityId { get; private set; } = null;
+
+        public IgdbEntityReference() { }
 
         public IgdbEntityReference(T fromEntity)
         {
@@ -26,6 +29,11 @@ namespace GlogGenerator.Data
         public bool HasIgdbEntityData()
         {
             return this.IgdbEntityId.HasValue && this.IgdbEntityId.Value != IgdbEntity.IdNotFound;
+        }
+
+        public string GetIgdbEntityDataId()
+        {
+            return $"{this.IgdbEntityType.Name}:id={this.IgdbEntityId}";
         }
 
         public virtual string GetReferenceableKey()

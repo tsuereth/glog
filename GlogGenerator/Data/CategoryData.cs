@@ -16,17 +16,8 @@ namespace GlogGenerator.Data
 
         public string GetDataId()
         {
-            using (var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
-            {
-                var typeBytes = Encoding.UTF8.GetBytes(nameof(CategoryData));
-                hash.AppendData(typeBytes);
-
-                var nameBytes = Encoding.UTF8.GetBytes(this.Name);
-                hash.AppendData(nameBytes);
-
-                var idBytes = hash.GetCurrentHash();
-                return Convert.ToHexString(idBytes);
-            }
+            // Categories have no backing metadata, they're identified simply by name.
+            return $"{nameof(CategoryData)}:name={this.Name}";
         }
 
         public string GetReferenceableKey()
