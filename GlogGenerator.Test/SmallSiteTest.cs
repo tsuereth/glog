@@ -21,6 +21,7 @@ namespace GlogGenerator.Test
 
             var logger = loggerFactory.CreateLogger<Program>();
 
+            var siteIndexFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "sitedataindex");
             var inputFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest");
             var templateFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "templates");
             var hostOrigin = "http://fakeorigin.com";
@@ -28,7 +29,7 @@ namespace GlogGenerator.Test
             var staticSiteOutputBasePath = Path.Combine(Directory.GetCurrentDirectory(), "public");
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
-            var configData = ConfigData.FromFilePaths(configFilePath, inputFilesBasePath, templateFilesBasePath);
+            var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, inputFilesBasePath, templateFilesBasePath);
             var builder = new SiteBuilder(logger, configData);
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
@@ -74,6 +75,7 @@ namespace GlogGenerator.Test
 
             var logger = loggerFactory.CreateLogger<Program>();
 
+            var siteIndexFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "sitedataindex");
             var inputFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest");
             var templateFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "templates");
             var hostOrigin = "http://fakeorigin.com";
@@ -81,7 +83,7 @@ namespace GlogGenerator.Test
             var staticSiteOutputBasePath = Path.Combine(Directory.GetCurrentDirectory(), "public-reload");
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
-            var configData = ConfigData.FromFilePaths(configFilePath, inputFilesBasePath, templateFilesBasePath);
+            var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, inputFilesBasePath, templateFilesBasePath);
             var builder = new SiteBuilder(logger, configData);
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
@@ -131,12 +133,13 @@ namespace GlogGenerator.Test
 
             var logger = loggerFactory.CreateLogger<Program>();
 
+            var siteIndexFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "sitedataindex");
             var inputFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest");
             var templateFilesBasePath = string.Empty;
             var staticSiteOutputBasePath = string.Empty;
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
-            var configData = ConfigData.FromFilePaths(configFilePath, inputFilesBasePath, templateFilesBasePath);
+            var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, inputFilesBasePath, templateFilesBasePath);
             var builder = new SiteBuilder(logger, configData);
 
             builder.UpdateDataIndex();

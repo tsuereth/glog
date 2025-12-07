@@ -8,15 +8,15 @@ namespace GlogGenerator.Data
     {
         public string BaseURL { get; set; } = "https://localhost:1313/glog/";
 
-        public string InputFilesBasePath { get; set; } = Directory.GetCurrentDirectory();
-
         public string SiteDataIndexFilesBasePath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "sitedataindex");
+
+        public string InputFilesBasePath { get; set; } = Directory.GetCurrentDirectory();
 
         public List<string> NowPlaying { get; set; } = new List<string>();
 
         public string TemplateFilesBasePath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "templates");
 
-        public static ConfigData FromFilePaths(string configFilePath, string inputFilesBasePath, string templateFilesBasePath)
+        public static ConfigData FromFilePaths(string configFilePath, string siteIndexFilesBasePath, string inputFilesBasePath, string templateFilesBasePath)
         {
             var filePathDir = Path.GetDirectoryName(configFilePath);
             if (string.IsNullOrEmpty(filePathDir))
@@ -26,6 +26,7 @@ namespace GlogGenerator.Data
 
             var config = new ConfigData()
             {
+                SiteDataIndexFilesBasePath = siteIndexFilesBasePath,
                 InputFilesBasePath = inputFilesBasePath,
                 TemplateFilesBasePath = templateFilesBasePath,
             };

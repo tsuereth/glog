@@ -15,7 +15,12 @@
 
   <ItemGroup>
     <AssemblyAttribute Include="GlogGenerator.ProjectProperties">
-      <_Parameter1>$(MSBuildProjectDirectory)/..</_Parameter1>
+      <!-- The order of parameters is implemented in the ProjectPropertiesAttribute class. -->
+      <!-- These parameter values will be used during IDE run and debug tasks. -->
+      <!-- "DefaultSiteIndexFilesBasePath" is where SiteDataIndex files are stored (unless overridden by command-line). -->
+      <_Parameter1>$(MSBuildProjectDirectory)/../sitedataindex</_Parameter1>
+      <!-- "DefaultInputFilesBasePath" is where content input files are stored (unless overridden by command-line). -->
+      <_Parameter2>$(MSBuildProjectDirectory)/..</_Parameter2>
     </AssemblyAttribute>
   </ItemGroup>
 
