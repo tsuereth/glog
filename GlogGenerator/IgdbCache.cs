@@ -34,6 +34,9 @@ namespace GlogGenerator
         private Dictionary<int, IgdbGameMode> gameModesById = new Dictionary<int, IgdbGameMode>();
         private Dictionary<string, HashSet<int>> gameModeIdsByReferenceString = new Dictionary<string, HashSet<int>>();
 
+        private Dictionary<int, IgdbGameType> gameTypesById = new Dictionary<int, IgdbGameType>();
+        private Dictionary<string, HashSet<int>> gameTypeIdsByReferenceString = new Dictionary<string, HashSet<int>>();
+
         private Dictionary<int, IgdbGenre> genresById = new Dictionary<int, IgdbGenre>();
         private Dictionary<string, HashSet<int>> genreIdsByReferenceString = new Dictionary<string, HashSet<int>>();
 
@@ -89,6 +92,10 @@ namespace GlogGenerator
             else if (entityType == typeof(IgdbGameMode))
             {
                 entitiesById = this.gameModesById as Dictionary<int, T>;
+            }
+            else if (entityType == typeof(IgdbGameType))
+            {
+                entitiesById = this.gameTypesById as Dictionary<int, T>;
             }
             else if (entityType == typeof(IgdbGenre))
             {
@@ -190,6 +197,16 @@ namespace GlogGenerator
             return null;
         }
 
+        public IgdbGameType GetGameType(int id)
+        {
+            if (this.gameTypesById.TryGetValue(id, out var result))
+            {
+                return result;
+            }
+
+            return null;
+        }
+
         public IgdbGenre GetGenre(int id)
         {
             if (this.genresById.TryGetValue(id, out var result))
@@ -277,6 +294,7 @@ namespace GlogGenerator
             allMetadata.AddRange(this.companiesById.Values);
             allMetadata.AddRange(this.franchisesById.Values);
             allMetadata.AddRange(this.gameModesById.Values);
+            allMetadata.AddRange(this.gameTypesById.Values);
             allMetadata.AddRange(this.genresById.Values);
             allMetadata.AddRange(this.keywordsById.Values);
             allMetadata.AddRange(this.playerPerspectivesById.Values);
@@ -364,7 +382,7 @@ namespace GlogGenerator
 
             foreach (var game in this.gamesById.Values)
             {
-                var gameIsBundle = game.Category == IgdbGameCategory.bundle;
+                var gameIsBundle = this.GetGameType(game.GameTypeId)?.IsBundle() ?? false;
 
                 var parentGameIds = game.GetParentGameIds();
                 AppendIdsToDictionarySet(this.gamesParentGameIds, game.Id, parentGameIds);
@@ -378,7 +396,7 @@ namespace GlogGenerator
                 {
                     if (this.gamesById.TryGetValue(otherReleaseGameId, out var otherRelease))
                     {
-                        var otherReleaseIsBundle = otherRelease.Category == IgdbGameCategory.bundle;
+                        var otherReleaseIsBundle = this.GetGameType(otherRelease.GameTypeId)?.IsBundle() ?? false;
 
                         // Bundles and non-bundles shouldn't be considered "other releases" of one another.
                         if (gameIsBundle == otherReleaseIsBundle)
@@ -489,6 +507,11 @@ namespace GlogGenerator
             var gameModesCurrent = await client.GetGameModesAsync(gameModeIds);
             this.gameModesById = gameModesCurrent.ToDictionary(o => o.Id, o => o);
             this.gameModeIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.gameModesById);
+
+            var gameTypeIds = gamesCurrent.Where(g => g.GameTypeId != IgdbGameType.IdNotFound).Select(g => g.GameTypeId).Distinct().ToList();
+            var gameTypesCurrent = await client.GetGameTypesAsync(gameTypeIds);
+            this.gameTypesById = gameTypesCurrent.ToDictionary(o => o.Id, o => o);
+            this.gameTypeIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.gameTypesById);
 
             var genreIds = gamesCurrent.SelectMany(g => g.GenreIds).Distinct().ToList();
             var genresCurrent = await client.GetGenresAsync(genreIds);
@@ -665,12 +688,6 @@ namespace GlogGenerator
 
         public void RemoveEntityByReferenceString(Type entityType, string referenceString)
         {
-            if (entityType == typeof(IgdbGameCategory))
-            {
-                // IgdbGameCategory isn't a cache-entity, it's in code; it can't be removed and that's just fine.
-                return;
-            }
-
             if (entityType == typeof(IgdbCollection))
             {
                 this.RemoveEntityFromDictionaryByReferenceString(this.collectionIdsByReferenceString, this.collectionsById, referenceString);
@@ -690,6 +707,10 @@ namespace GlogGenerator
             else if (entityType == typeof(IgdbGameMode))
             {
                 this.RemoveEntityFromDictionaryByReferenceString(this.gameModeIdsByReferenceString, this.gameModesById, referenceString);
+            }
+            else if (entityType == typeof(IgdbGameType))
+            {
+                this.RemoveEntityFromDictionaryByReferenceString(this.gameTypeIdsByReferenceString, this.gameTypesById, referenceString);
             }
             else if (entityType == typeof(IgdbGenre))
             {
@@ -755,6 +776,7 @@ namespace GlogGenerator
             WriteEntityTypeToJsonFile(this.companiesById.Values.OrderBy(o => o.Id), directoryPath, "companies");
             WriteEntityTypeToJsonFile(this.franchisesById.Values.OrderBy(o => o.Id), directoryPath, "franchises");
             WriteEntityTypeToJsonFile(this.gameModesById.Values.OrderBy(o => o.Id), directoryPath, "gameModes");
+            WriteEntityTypeToJsonFile(this.gameTypesById.Values.OrderBy(o => o.Id), directoryPath, "gameTypes");
             WriteEntityTypeToJsonFile(allGames, directoryPath, "games");
             WriteEntityTypeToJsonFile(this.genresById.Values.OrderBy(o => o.Id), directoryPath, "genres");
             WriteEntityTypeToJsonFile(this.involvedCompaniesById.Values.OrderBy(o => o.Id), directoryPath, "involvedCompanies");
@@ -769,8 +791,12 @@ namespace GlogGenerator
             where T : IgdbEntity
         {
             var jsonFilePath = JsonFilePathForEntityType(directoryPath, typeName);
-            var cacheEntities = JArray.Parse(File.ReadAllText(jsonFilePath));
+            if (!File.Exists(jsonFilePath))
+            {
+                return new List<T>();
+            }
 
+            var cacheEntities = JArray.Parse(File.ReadAllText(jsonFilePath));
             return cacheEntities?.ToObject<List<T>>() ?? new List<T>();
         }
 
@@ -785,6 +811,7 @@ namespace GlogGenerator
             cache.companiesById = ReadEntityTypeFromJsonFile<IgdbCompany>(directoryPath, "companies").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbCompany>();
             cache.franchisesById = ReadEntityTypeFromJsonFile<IgdbFranchise>(directoryPath, "franchises").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbFranchise>();
             cache.gameModesById = ReadEntityTypeFromJsonFile<IgdbGameMode>(directoryPath, "gameModes").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGameMode>();
+            cache.gameTypesById = ReadEntityTypeFromJsonFile<IgdbGameType>(directoryPath, "gameTypes").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGameType>();
             cache.gamesById = allGames.Where(o => o.Id != IgdbGame.IdNotFound).ToDictionary(o => o.Id, o => o);
             cache.gamesUnidentified = allGames.Where(o => o.Id == IgdbGame.IdNotFound).ToList();
             cache.genresById = ReadEntityTypeFromJsonFile<IgdbGenre>(directoryPath, "genres").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGenre>();
@@ -800,6 +827,7 @@ namespace GlogGenerator
             cache.companyIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.companiesById);
             cache.franchiseIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.franchisesById);
             cache.gameModeIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.gameModesById);
+            cache.gameTypeIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.gameTypesById);
             cache.gameIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.gamesById);
             cache.genreIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.genresById);
             cache.keywordIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.keywordsById);

@@ -23,6 +23,8 @@ namespace GlogGenerator
 
         public IgdbGameMode GetGameMode(int id);
 
+        public IgdbGameType GetGameType(int id);
+
         public IgdbGenre GetGenre(int id);
 
         public IgdbInvolvedCompany GetInvolvedCompany(int id);

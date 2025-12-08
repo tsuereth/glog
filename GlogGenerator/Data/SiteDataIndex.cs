@@ -331,21 +331,6 @@ namespace GlogGenerator.Data
             }
 
             // Prepare tags from game metadata.
-            foreach (var igdbGameCategory in (IgdbGameCategory[])Enum.GetValues(typeof(IgdbGameCategory)))
-            {
-                if (igdbGameCategory == IgdbGameCategory.None)
-                {
-                    continue;
-                }
-
-                var tagData = new TagData(typeof(IgdbGameCategory), igdbGameCategory.Description());
-
-                this.tags.Add(tagData.GetDataId(), tagData);
-
-                var tagNameUrlized = UrlizedString.Urlize(tagData.Name);
-                this.tagDataIdsByNameUrlized[tagNameUrlized] = tagData.GetDataId();
-            }
-
             foreach (var igdbGameMetadata in igdbCache.GetAllGameMetadata())
             {
                 var tagType = igdbGameMetadata.GetType();

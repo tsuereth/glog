@@ -15,9 +15,6 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("bundles")]
         public List<int> BundleGameIds { get; set; } = new List<int>();
 
-        [JsonProperty("category")]
-        public IgdbGameCategory Category { get; set; } = IgdbGameCategory.None;
-
         [JsonProperty("collections")]
         public List<int> CollectionIds { get; set; } = new List<int>();
 
@@ -44,6 +41,9 @@ namespace GlogGenerator.IgdbApi
 
         [JsonProperty("game_modes")]
         public List<int> GameModeIds { get; set; } = new List<int>();
+
+        [JsonProperty("game_type")]
+        public int GameTypeId { get; set; } = IgdbGameType.IdNotFound;
 
         [JsonProperty("genres")]
         public List<int> GenreIds { get; set; } = new List<int>();

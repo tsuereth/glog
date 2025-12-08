@@ -219,7 +219,7 @@ namespace GlogGenerator
                                     {
                                         Title = postGameData.Title,
                                         Platform = postPlatformData.Abbreviation,
-                                        Type = postGameData.IgdbCategory.Description(),
+                                        Type = postGameData.GameType,
                                         FirstPosted = reportPost.Date,
                                         LastPosted = reportPost.Date,
                                     };
