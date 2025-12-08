@@ -197,8 +197,6 @@ namespace GlogGenerator.Data
                 game.IgdbUrl = igdbGame.Url;
             }
 
-            game.TryAddTag<IgdbCollection>(igdbCache, igdbGame.MainCollectionId);
-
             foreach (var collectionId in igdbGame.CollectionIds)
             {
                 game.TryAddTag<IgdbCollection>(igdbCache, collectionId);

@@ -474,8 +474,7 @@ namespace GlogGenerator
 
             // Now, update the rest of the ID-driven metadata.
 
-            var collectionIds = gamesCurrent.Where(g => g.MainCollectionId != IgdbCollection.IdNotFound).Select(g => g.MainCollectionId).Distinct().ToList();
-            collectionIds.AddRange(gamesCurrent.SelectMany(g => g.CollectionIds).Distinct());
+            var collectionIds = gamesCurrent.SelectMany(g => g.CollectionIds).Distinct().ToList();
             var collectionsCurrent = await client.GetCollectionsAsync(collectionIds.Distinct().ToList());
             this.collectionsById = collectionsCurrent.ToDictionary(o => o.Id, o => o);
             this.collectionIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.collectionsById);

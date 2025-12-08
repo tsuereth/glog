@@ -18,9 +18,6 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("category")]
         public IgdbGameCategory Category { get; set; } = IgdbGameCategory.None;
 
-        [JsonProperty("collection")]
-        public int MainCollectionId { get; set; } = IgdbCollection.IdNotFound;
-
         [JsonProperty("collections")]
         public List<int> CollectionIds { get; set; } = new List<int>();
 
