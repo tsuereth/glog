@@ -1,0 +1,14 @@
+{
+  "Android": {
+    "igdbEntityId": 34,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "Android",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  },
+  "PC": {
+    "igdbEntityId": 6,
+    "igdbEntityType": "IgdbPlatform",
+    "referenceName": "PC",
+    "referenceNameSource": "IgdbPlatformAbbreviation"
+  }
+}

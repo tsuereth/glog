@@ -1,0 +1,30 @@
+{
+  "Biped": {
+    "igdbGameName": "Biped"
+  },
+  "Cat Quest": {
+    "igdbEntityId": 36597,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Cat Quest"
+  },
+  "Cat Quest II": {
+    "igdbEntityId": 101869,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Cat Quest II"
+  },
+  "Cat Quest III": {
+    "igdbGameName": "Cat Quest III"
+  },
+  "Child of Light": {
+    "igdbGameName": "Child of Light"
+  },
+  "Ittle Dew": {
+    "igdbGameName": "Ittle Dew"
+  },
+  "Swords & Soldiers": {
+    "igdbGameName": "Swords & Soldiers"
+  },
+  "Uncharted: Fortune Hunter": {
+    "igdbGameName": "Uncharted: Fortune Hunter"
+  }
+}
