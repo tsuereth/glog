@@ -12,18 +12,6 @@ namespace GlogGenerator.Test.Data
     [TestClass]
     public class SiteDataIndexTests
     {
-        private static bool IsDefaultTagData(TagData tagData)
-        {
-            var igdbGameCategories = (IgdbGameCategory[])Enum.GetValues(typeof(IgdbGameCategory));
-            var igdbGameCategoryDescriptions = igdbGameCategories.Where(c => c != IgdbGameCategory.None).Select(c => c.Description());
-            if (igdbGameCategoryDescriptions.Contains(tagData.Name))
-            {
-                return true;
-            }
-
-            return false;
-        }
-
         [TestMethod]
         public void TestLoadContentMergedTags()
         {
@@ -251,7 +239,7 @@ namespace GlogGenerator.Test.Data
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
-            var indexTags = testIndex.GetTags().Where(t => !IsDefaultTagData(t)).ToList();
+            var indexTags = testIndex.GetTags();
             Assert.HasCount(1, indexTags);
             Assert.AreEqual(testCompany.Name, indexTags[0].Name);
 
@@ -264,7 +252,7 @@ namespace GlogGenerator.Test.Data
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
-            indexTags = testIndex.GetTags().Where(t => !IsDefaultTagData(t)).ToList();
+            indexTags = testIndex.GetTags();
             Assert.HasCount(1, indexTags);
             Assert.AreEqual(testCompanyUpdated.Name, indexTags[0].Name);
         }

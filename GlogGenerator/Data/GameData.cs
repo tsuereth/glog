@@ -184,6 +184,8 @@ namespace GlogGenerator.Data
                 game.TitlePlatforms = igdbGame.PlatformIds.Select(i => igdbCache.GetPlatform(i).GetReferenceString(igdbCache)).ToHashSet();
             }
 
+            game.TryAddTag<IgdbGameType>(igdbCache, igdbGame.GameTypeId);
+
             if (!string.IsNullOrEmpty(igdbGame.Url))
             {
                 game.IgdbUrl = igdbGame.Url;
@@ -228,8 +230,6 @@ namespace GlogGenerator.Data
             {
                 game.TryAddTag<IgdbGameMode>(igdbCache, gameModeId);
             }
-
-            game.TryAddTag<IgdbGameType>(igdbCache, igdbGame.GameTypeId);
 
             foreach (var keywordId in igdbGame.KeywordIds)
             {

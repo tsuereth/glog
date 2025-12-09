@@ -970,6 +970,13 @@
       "igdbMetadataName": "Avanquest Software Publishing"
     }
   ],
+  "Azerion casual": [
+    {
+      "igdbEntityId": 65069,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Azerion casual"
+    }
+  ],
   "Baba is You": [
     {
       "igdbEntityId": 8228,
@@ -3115,6 +3122,13 @@
       "igdbMetadataName": "Digital Eclipse"
     }
   ],
+  "Digital Eclipse Software": [
+    {
+      "igdbEntityId": 13722,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Digital Eclipse Software"
+    }
+  ],
   "Digital Extremes": [
     {
       "igdbEntityId": 17,
@@ -3983,6 +3997,13 @@
       "igdbEntityId": 4070,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Eyebrow Interactive"
+    }
+  ],
+  "Eyepax": [
+    {
+      "igdbEntityId": 71591,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Eyepax"
     }
   ],
   "F-Zero": [
@@ -5368,6 +5389,13 @@
       "igdbEntityId": 5228,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Humble Hearts"
+    }
+  ],
+  "Hunter Electronics": [
+    {
+      "igdbEntityId": 71590,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Hunter Electronics"
     }
   ],
   "Hyper Hippo Entertainment": [
@@ -12652,6 +12680,13 @@
       "igdbEntityId": 3621,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "toneworx GmbH"
+    }
+  ],
+  "TOPICS Entertainment": [
+    {
+      "igdbEntityId": 32459,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "TOPICS Entertainment"
     }
   ],
   "TopWare Interactive": [
