@@ -14,7 +14,7 @@ namespace GlogGenerator.Data
 
         public HashSet<string> TitlePlatforms { get; set; } = new HashSet<string>();
 
-        public IgdbGameCategory IgdbCategory { get; set; } = IgdbGameCategory.None;
+        public string GameType { get; set; } = null;
 
         public string IgdbUrl { get; set; }
 
@@ -184,20 +184,12 @@ namespace GlogGenerator.Data
                 game.TitlePlatforms = igdbGame.PlatformIds.Select(i => igdbCache.GetPlatform(i).GetReferenceString(igdbCache)).ToHashSet();
             }
 
-            if (igdbGame.Category != IgdbGameCategory.None)
-            {
-                game.IgdbCategory = igdbGame.Category;
-
-                var categoryString = igdbGame.Category.Description();
-                game.Tags.Add(categoryString);
-            }
+            game.TryAddTag<IgdbGameType>(igdbCache, igdbGame.GameTypeId);
 
             if (!string.IsNullOrEmpty(igdbGame.Url))
             {
                 game.IgdbUrl = igdbGame.Url;
             }
-
-            game.TryAddTag<IgdbCollection>(igdbCache, igdbGame.MainCollectionId);
 
             foreach (var collectionId in igdbGame.CollectionIds)
             {

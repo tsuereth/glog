@@ -31,6 +31,10 @@ namespace GlogGenerator.Data
             {
                 this.Name = (fromEntity as IgdbGameMode).Name;
             }
+            else if (entityType == typeof(IgdbGameType))
+            {
+                this.Name = (fromEntity as IgdbGameType).Type;
+            }
             else if (entityType == typeof(IgdbGenre))
             {
                 this.Name = (fromEntity as IgdbGenre).Name;

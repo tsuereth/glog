@@ -970,6 +970,13 @@
       "igdbMetadataName": "Avanquest Software Publishing"
     }
   ],
+  "Azerion casual": [
+    {
+      "igdbEntityId": 65069,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Azerion casual"
+    }
+  ],
   "Baba is You": [
     {
       "igdbEntityId": 8228,
@@ -1717,6 +1724,13 @@
       "igdbEntityId": 5252,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "BulkyPix"
+    }
+  ],
+  "Bundle": [
+    {
+      "igdbEntityId": 3,
+      "igdbEntityType": "IgdbGameType",
+      "igdbMetadataName": "Bundle"
     }
   ],
   "Bungie": [
@@ -3108,6 +3122,13 @@
       "igdbMetadataName": "Digital Eclipse"
     }
   ],
+  "Digital Eclipse Software": [
+    {
+      "igdbEntityId": 13722,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Digital Eclipse Software"
+    }
+  ],
   "Digital Extremes": [
     {
       "igdbEntityId": 17,
@@ -3230,6 +3251,13 @@
       "igdbEntityId": 1024,
       "igdbEntityType": "IgdbCollection",
       "igdbMetadataName": "Divinity"
+    }
+  ],
+  "DLC": [
+    {
+      "igdbEntityId": 1,
+      "igdbEntityType": "IgdbGameType",
+      "igdbMetadataName": "DLC"
     }
   ],
   "DMA Design": [
@@ -3823,6 +3851,13 @@
       "igdbMetadataName": "Epic Games"
     }
   ],
+  "Episode": [
+    {
+      "igdbEntityId": 6,
+      "igdbEntityType": "IgdbGameType",
+      "igdbMetadataName": "Episode"
+    }
+  ],
   "Escape Velocity": [
     {
       "igdbEntityId": 4582,
@@ -3929,6 +3964,20 @@
       "igdbMetadataName": "Exosyphen Studios"
     }
   ],
+  "Expanded Game": [
+    {
+      "igdbEntityId": 10,
+      "igdbEntityType": "IgdbGameType",
+      "igdbMetadataName": "Expanded Game"
+    }
+  ],
+  "Expansion": [
+    {
+      "igdbEntityId": 2,
+      "igdbEntityType": "IgdbGameType",
+      "igdbMetadataName": "Expansion"
+    }
+  ],
   "Experimental Gameplay Group": [
     {
       "igdbEntityId": 11984,
@@ -3948,6 +3997,13 @@
       "igdbEntityId": 4070,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Eyebrow Interactive"
+    }
+  ],
+  "Eyepax": [
+    {
+      "igdbEntityId": 71591,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Eyepax"
     }
   ],
   "F-Zero": [
@@ -5335,6 +5391,13 @@
       "igdbMetadataName": "Humble Hearts"
     }
   ],
+  "Hunter Electronics": [
+    {
+      "igdbEntityId": 71590,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Hunter Electronics"
+    }
+  ],
   "Hyper Hippo Entertainment": [
     {
       "igdbEntityId": 8863,
@@ -6573,6 +6636,13 @@
       "igdbEntityId": 1483,
       "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "Magicka"
+    }
+  ],
+  "Main Game": [
+    {
+      "igdbEntityId": 0,
+      "igdbEntityType": "IgdbGameType",
+      "igdbMetadataName": "Main Game"
     }
   ],
   "Majesco Entertainment": [
@@ -8816,6 +8886,13 @@
       "igdbMetadataName": "PopCap Games"
     }
   ],
+  "Port": [
+    {
+      "igdbEntityId": 11,
+      "igdbEntityType": "IgdbGameType",
+      "igdbMetadataName": "Port"
+    }
+  ],
   "Portal": [
     {
       "igdbEntityId": 87,
@@ -9374,6 +9451,20 @@
       "igdbEntityId": 196,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Relic Entertainment"
+    }
+  ],
+  "Remake": [
+    {
+      "igdbEntityId": 8,
+      "igdbEntityType": "IgdbGameType",
+      "igdbMetadataName": "Remake"
+    }
+  ],
+  "Remaster": [
+    {
+      "igdbEntityId": 9,
+      "igdbEntityType": "IgdbGameType",
+      "igdbMetadataName": "Remaster"
     }
   ],
   "Remedy Entertainment": [
@@ -10972,6 +11063,13 @@
       "igdbEntityId": 25230,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "St. GIGA"
+    }
+  ],
+  "Standalone Expansion": [
+    {
+      "igdbEntityId": 4,
+      "igdbEntityType": "IgdbGameType",
+      "igdbMetadataName": "Standalone Expansion"
     }
   ],
   "Star Citizen": [
@@ -12582,6 +12680,13 @@
       "igdbEntityId": 3621,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "toneworx GmbH"
+    }
+  ],
+  "TOPICS Entertainment": [
+    {
+      "igdbEntityId": 32459,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "TOPICS Entertainment"
     }
   ],
   "TopWare Interactive": [

@@ -1,12 +1,14 @@
 [
   {
     "abbreviation": "PC",
+    "alternative_name": "mswin",
     "id": 6,
     "name": "PC (Microsoft Windows)",
     "url": "https://www.igdb.com/platforms/win"
   },
   {
     "abbreviation": "Android",
+    "alternative_name": "Infocusa3",
     "id": 34,
     "name": "Android",
     "url": "https://www.igdb.com/platforms/android"

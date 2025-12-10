@@ -1,0 +1,128 @@
+{
+  "Action": [
+    {
+      "igdbEntityId": 1,
+      "igdbEntityType": "IgdbTheme",
+      "igdbMetadataName": "Action"
+    }
+  ],
+  "Adventure": [
+    {
+      "igdbEntityId": 31,
+      "igdbEntityType": "IgdbGenre",
+      "igdbMetadataName": "Adventure"
+    }
+  ],
+  "Bird view / Isometric": [
+    {
+      "igdbEntityId": 3,
+      "igdbEntityType": "IgdbPlayerPerspective",
+      "igdbMetadataName": "Bird view / Isometric"
+    }
+  ],
+  "Cat Quest": [
+    {
+      "igdbEntityId": 5785,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Cat Quest"
+    }
+  ],
+  "Co-operative": [
+    {
+      "igdbEntityId": 3,
+      "igdbEntityType": "IgdbGameMode",
+      "igdbMetadataName": "Co-operative"
+    }
+  ],
+  "Fantasy": [
+    {
+      "igdbEntityId": 17,
+      "igdbEntityType": "IgdbTheme",
+      "igdbMetadataName": "Fantasy"
+    }
+  ],
+  "Flyhigh Works": [
+    {
+      "igdbEntityId": 6957,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Flyhigh Works"
+    }
+  ],
+  "Indie": [
+    {
+      "igdbEntityId": 32,
+      "igdbEntityType": "IgdbGenre",
+      "igdbMetadataName": "Indie"
+    }
+  ],
+  "Kepler Interactive": [
+    {
+      "igdbEntityId": 37893,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Kepler Interactive"
+    }
+  ],
+  "Kids": [
+    {
+      "igdbEntityId": 35,
+      "igdbEntityType": "IgdbTheme",
+      "igdbMetadataName": "Kids"
+    }
+  ],
+  "Main Game": [
+    {
+      "igdbEntityId": 0,
+      "igdbEntityType": "IgdbGameType",
+      "igdbMetadataName": "Main Game"
+    }
+  ],
+  "Multiplayer": [
+    {
+      "igdbEntityId": 2,
+      "igdbEntityType": "IgdbGameMode",
+      "igdbMetadataName": "Multiplayer"
+    }
+  ],
+  "Open world": [
+    {
+      "igdbEntityId": 38,
+      "igdbEntityType": "IgdbTheme",
+      "igdbMetadataName": "Open world"
+    }
+  ],
+  "PQube": [
+    {
+      "igdbEntityId": 4091,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "PQube"
+    }
+  ],
+  "Role-playing (RPG)": [
+    {
+      "igdbEntityId": 12,
+      "igdbEntityType": "IgdbGenre",
+      "igdbMetadataName": "Role-playing (RPG)"
+    }
+  ],
+  "Single player": [
+    {
+      "igdbEntityId": 1,
+      "igdbEntityType": "IgdbGameMode",
+      "igdbMetadataName": "Single player"
+    }
+  ],
+  "The Gentlebros": [
+    {
+      "igdbEntityId": 12832,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "The Gentlebros"
+    }
+  ],
+  "Third person": [
+    {
+      "igdbEntityId": 2,
+      "igdbEntityType": "IgdbPlayerPerspective",
+      "igdbMetadataName": "Third person"
+    }
+  ]
+}

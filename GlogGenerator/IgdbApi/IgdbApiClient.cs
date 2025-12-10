@@ -232,6 +232,11 @@ namespace GlogGenerator.IgdbApi
             return await this.GetItemsAsync<IgdbGameMode>("game_modes", ids);
         }
 
+        public async Task<List<IgdbGameType>> GetGameTypesAsync(List<int> ids)
+        {
+            return await this.GetItemsAsync<IgdbGameType>("game_types", ids);
+        }
+
         public async Task<List<IgdbGenre>> GetGenresAsync(List<int> ids)
         {
             return await this.GetItemsAsync<IgdbGenre>("genres", ids);
