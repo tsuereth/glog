@@ -57,8 +57,6 @@ namespace GlogGenerator
 
         public void RemoveEntityById(Type entityType, int id);
 
-        public void RemoveEntityByReferenceString(Type entityType, string referenceString);
-
         public void WriteToJsonFiles(string directoryPath);
     }
 }

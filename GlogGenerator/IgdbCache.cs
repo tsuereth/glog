@@ -653,84 +653,57 @@ namespace GlogGenerator
 
         public void RemoveEntityById(Type entityType, int id)
         {
-            if (entityType == typeof(IgdbGame))
+            if (entityType == typeof(IgdbCollection))
+            {
+                this.RemoveEntityByIdInternal(this.collectionsById, id);
+            }
+            else if (entityType == typeof(IgdbCompany))
+            {
+                this.RemoveEntityByIdInternal(this.companiesById, id);
+            }
+            else if (entityType == typeof(IgdbFranchise))
+            {
+                this.RemoveEntityByIdInternal(this.franchisesById, id);
+            }
+            else if (entityType == typeof(IgdbGame))
             {
                 this.RemoveEntityByIdInternal(this.gamesById, id);
+            }
+            else if (entityType == typeof(IgdbGameMode))
+            {
+                this.RemoveEntityByIdInternal(this.gameModesById, id);
+            }
+            else if (entityType == typeof(IgdbGameType))
+            {
+                this.RemoveEntityByIdInternal(this.gameTypesById, id);
+            }
+            else if (entityType == typeof(IgdbGenre))
+            {
+                this.RemoveEntityByIdInternal(this.genresById, id);
+            }
+            else if (entityType == typeof(IgdbInvolvedCompany))
+            {
+                this.RemoveEntityByIdInternal(this.involvedCompaniesById, id);
+            }
+            else if (entityType == typeof(IgdbKeyword))
+            {
+                this.RemoveEntityByIdInternal(this.keywordsById, id);
             }
             else if (entityType == typeof(IgdbPlatform))
             {
                 this.RemoveEntityByIdInternal(this.platformsById, id);
             }
-            else
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        private void RemoveEntityFromDictionaryByReferenceString<T>(Dictionary<string, HashSet<int>> entityIdsByReferenceString, Dictionary<int, T> entitiesById, string referenceString)
-            where T : IgdbEntity
-        {
-            if (!entityIdsByReferenceString.TryGetValue(referenceString, out var entityIds))
-            {
-                throw new ArgumentException($"No {typeof(T).Name} found with reference string {referenceString}");
-            }
-
-            foreach (var entityId in entityIds)
-            {
-                var entity = entitiesById[entityId];
-                if (!entity.ShouldForcePersistInCache())
-                {
-                    entitiesById.Remove(entityId);
-                    entityIdsByReferenceString[referenceString].Remove(entityId);
-                }
-            }
-        }
-
-        public void RemoveEntityByReferenceString(Type entityType, string referenceString)
-        {
-            if (entityType == typeof(IgdbCollection))
-            {
-                this.RemoveEntityFromDictionaryByReferenceString(this.collectionIdsByReferenceString, this.collectionsById, referenceString);
-            }
-            else if (entityType == typeof(IgdbCompany))
-            {
-                this.RemoveEntityFromDictionaryByReferenceString(this.companyIdsByReferenceString, this.companiesById, referenceString);
-            }
-            else if (entityType == typeof(IgdbFranchise))
-            {
-                this.RemoveEntityFromDictionaryByReferenceString(this.franchiseIdsByReferenceString, this.franchisesById, referenceString);
-            }
-            else if (entityType == typeof(IgdbGame))
-            {
-                this.RemoveEntityFromDictionaryByReferenceString(this.gameIdsByReferenceString, this.gamesById, referenceString);
-            }
-            else if (entityType == typeof(IgdbGameMode))
-            {
-                this.RemoveEntityFromDictionaryByReferenceString(this.gameModeIdsByReferenceString, this.gameModesById, referenceString);
-            }
-            else if (entityType == typeof(IgdbGameType))
-            {
-                this.RemoveEntityFromDictionaryByReferenceString(this.gameTypeIdsByReferenceString, this.gameTypesById, referenceString);
-            }
-            else if (entityType == typeof(IgdbGenre))
-            {
-                this.RemoveEntityFromDictionaryByReferenceString(this.genreIdsByReferenceString, this.genresById, referenceString);
-            }
-            else if (entityType == typeof(IgdbKeyword))
-            {
-                this.RemoveEntityFromDictionaryByReferenceString(this.keywordIdsByReferenceString, this.keywordsById, referenceString);
-            }
-            else if (entityType == typeof(IgdbPlatform))
-            {
-                this.RemoveEntityFromDictionaryByReferenceString(this.platformIdsByReferenceString, this.platformsById, referenceString);
-            }
             else if (entityType == typeof(IgdbPlayerPerspective))
             {
-                this.RemoveEntityFromDictionaryByReferenceString(this.playerPerspectiveIdsByReferenceString, this.playerPerspectivesById, referenceString);
+                this.RemoveEntityByIdInternal(this.playerPerspectivesById, id);
+            }
+            else if (entityType == typeof(IgdbReleaseDate))
+            {
+                this.RemoveEntityByIdInternal(this.releaseDatesById, id);
             }
             else if (entityType == typeof(IgdbTheme))
             {
-                this.RemoveEntityFromDictionaryByReferenceString(this.themeIdsByReferenceString, this.themesById, referenceString);
+                this.RemoveEntityByIdInternal(this.themesById, id);
             }
             else
             {
