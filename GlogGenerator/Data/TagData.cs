@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
+using GlogGenerator.IgdbApi;
 
 namespace GlogGenerator.Data
 {
@@ -12,7 +12,7 @@ namespace GlogGenerator.Data
         {
             get
             {
-                return this.referenceableTypedKeyStringsCache.OrderBy(s => s, StringComparer.Ordinal).FirstOrDefault();
+                return this.igdbReferences.Select(r => r.GetReferenceableKey()).OrderBy(n => n, StringComparer.Ordinal).FirstOrDefault();
             }
         }
 
@@ -20,14 +20,15 @@ namespace GlogGenerator.Data
 
         private List<IgdbMetadataReference> igdbReferences = new List<IgdbMetadataReference>();
         private List<Tuple<Type, string>> referenceableTypedKeys = new List<Tuple<Type, string>>();
-        private HashSet<string> referenceableTypedKeyStringsCache = new HashSet<string>();
 
-        public TagData(Type gameMetadataType, string gameMetadataName)
+        public TagData(string tagName)
         {
+            var igdbReference = new IgdbMetadataReference(tagName);
+            this.igdbReferences.Add(igdbReference);
+
             // FIXME: deduplicate these internal properties (the list of igdbReferences should be sufficient).
-            var typedKey = new Tuple<Type, string>(gameMetadataType, gameMetadataName);
+            var typedKey = new Tuple<Type, string>(typeof(IgdbEntity), tagName);
             this.referenceableTypedKeys.Add(typedKey);
-            this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
         }
 
         public TagData(IgdbMetadataReference igdbReference)
@@ -37,7 +38,6 @@ namespace GlogGenerator.Data
             // FIXME: deduplicate these internal properties (the list of igdbReferences should be sufficient).
             var typedKey = new Tuple<Type, string>(igdbReference.IgdbEntityType, igdbReference.Name);
             this.referenceableTypedKeys.Add(typedKey);
-            this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
         }
 
         public TagData(IEnumerable<IgdbMetadataReference> igdbReferences)
@@ -49,13 +49,12 @@ namespace GlogGenerator.Data
                 // FIXME: deduplicate these internal properties (the list of igdbReferences should be sufficient).
                 var typedKey = new Tuple<Type, string>(igdbReference.IgdbEntityType, igdbReference.Name);
                 this.referenceableTypedKeys.Add(typedKey);
-                this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
             }
         }
 
         public bool MatchesReferenceableKey(string matchKey)
         {
-            return this.referenceableTypedKeyStringsCache.Contains(matchKey);
+            return this.igdbReferences.Select(r => r.GetReferenceableKey()).Contains(matchKey);
         }
 
         public void MergeReferenceableKey(Type mergeKeyType, string mergeKey)
@@ -65,7 +64,6 @@ namespace GlogGenerator.Data
             if (!this.referenceableTypedKeys.Contains(typedKey))
             {
                 this.referenceableTypedKeys.Add(typedKey);
-                this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
             }
         }
 
@@ -78,13 +76,17 @@ namespace GlogGenerator.Data
                 this.igdbReferences.Add(igdbReference);
 
                 this.referenceableTypedKeys.Add(typedKey);
-                this.referenceableTypedKeyStringsCache = this.referenceableTypedKeys.Select(t => t.Item2).ToHashSet();
             }
         }
 
         public void AddIgdbMetadataReference(IgdbMetadataReference igdbReference)
         {
             this.igdbReferences.Add(igdbReference);
+        }
+
+        public IEnumerable<IgdbMetadataReference> GetIgdbEntityReferences()
+        {
+            return this.igdbReferences.Where(r => r.HasIgdbEntityData());
         }
 
         public string GetDataId()
@@ -108,11 +110,6 @@ namespace GlogGenerator.Data
         {
             var urlized = UrlizedString.Urlize(this.GetReferenceableKey());
             return $"tag/{urlized}/";
-        }
-
-        public List<Tuple<Type, string>> GetReferenceableTypedKeys()
-        {
-            return this.referenceableTypedKeys;
         }
     }
 }

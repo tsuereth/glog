@@ -10,7 +10,15 @@ namespace GlogGenerator.Data
         [JsonProperty("igdbMetadataName")]
         public string Name { get; private set; }
 
+        [JsonProperty("nameOverride")]
+        public string NameOverride { get; private set; } = null;
+
         public IgdbMetadataReference() : base() { }
+
+        public IgdbMetadataReference(string inNameOverride) : base()
+        {
+            this.NameOverride = inNameOverride;
+        }
 
         public IgdbMetadataReference(IgdbEntity fromEntity) : base(fromEntity)
         {
@@ -59,6 +67,11 @@ namespace GlogGenerator.Data
 
         public override string GetReferenceableKey()
         {
+            if (!string.IsNullOrEmpty(this.NameOverride))
+            {
+                return this.NameOverride;
+            }
+
             return Name;
         }
     }

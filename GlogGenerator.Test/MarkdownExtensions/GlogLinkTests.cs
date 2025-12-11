@@ -397,7 +397,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
         [TestMethod]
         public void TestGlogTagAutolink()
         {
-            var testTagData = new TagData(typeof(IgdbEntity), "Gamedev Inc.");
+            var testTagData = new TagData("Gamedev Inc.");
 
             var builder = PrepareTestSiteBuilder(
                 testTagData);
@@ -425,7 +425,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
         [TestMethod]
         public void TestGlogTagAutolinkNormalize()
         {
-            var testTagData = new TagData(typeof(IgdbEntity), "Gamedev Inc.");
+            var testTagData = new TagData("Gamedev Inc.");
 
             var builder = PrepareTestSiteBuilder(
                 testTagData);
@@ -440,7 +440,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
         [TestMethod]
         public void TestGlogTagAutolinkRoundtrip()
         {
-            var testTagData = new TagData(typeof(IgdbEntity), "Gamedev Inc.");
+            var testTagData = new TagData("Gamedev Inc.");
 
             var builder = PrepareTestSiteBuilder(
                 testTagData);
@@ -457,7 +457,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
         [TestMethod]
         public void TestGlogTagLink()
         {
-            var testTagData = new TagData(typeof(IgdbEntity), "Gamedev Inc.");
+            var testTagData = new TagData("Gamedev Inc.");
 
             var builder = PrepareTestSiteBuilder(
                 testTagData);
@@ -485,7 +485,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
         [TestMethod]
         public void TestGlogTagLinkNormalize()
         {
-            var testTagData = new TagData(typeof(IgdbEntity), "Gamedev Inc.");
+            var testTagData = new TagData("Gamedev Inc.");
 
             var builder = PrepareTestSiteBuilder(
                 testTagData);
@@ -500,7 +500,7 @@ namespace GlogGenerator.Test.MarkdownExtensions
         [TestMethod]
         public void TestGlogTagLinkRoundtrip()
         {
-            var testTagData = new TagData(typeof(IgdbEntity), "Gamedev Inc.");
+            var testTagData = new TagData("Gamedev Inc.");
 
             var builder = PrepareTestSiteBuilder(
                 testTagData);

@@ -91,7 +91,7 @@ namespace GlogGenerator.Test
                 }
                 else if (dataType == typeof(TagData))
                 {
-                    var tagData = new TagData(typeof(IgdbEntity), referenceKey);
+                    var tagData = new TagData(referenceKey);
                     this.tags.Add(tagData);
                     data = tagData as T;
                 }
