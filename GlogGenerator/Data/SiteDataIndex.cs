@@ -233,8 +233,7 @@ namespace GlogGenerator.Data
 
         public TagData GetTag(string tagName)
         {
-            var tagNameUrlized = UrlizedString.Urlize(tagName);
-            return this.tags.GetDataByReferenceableKey(tagNameUrlized);
+            return this.tags.GetDataByReferenceableKey(tagName);
         }
 
         public List<TagData> GetTags()
@@ -306,15 +305,14 @@ namespace GlogGenerator.Data
             foreach (var igdbGameMetadata in igdbCache.GetAllGameMetadata())
             {
                 var metadataReference = new IgdbMetadataReference(igdbGameMetadata);
-                var tagNameUrlized = UrlizedString.Urlize(metadataReference.GetReferenceableKey());
-                if (this.tags.TryGetDataByReferenceableKey(tagNameUrlized, out var tag))
+                var tagData = new TagData(metadataReference);
+                if (this.tags.TryGetDataById(tagData.GetDataId(), out var existingTag))
                 {
-                    tag.MergeIgdbMetadataReference(metadataReference);
+                    existingTag.MergeIgdbMetadataReference(metadataReference);
                 }
                 else
                 {
-                    tag = new TagData(metadataReference);
-                    this.tags.AddData(tag);
+                    this.tags.AddData(tagData);
                 }
             }
 
