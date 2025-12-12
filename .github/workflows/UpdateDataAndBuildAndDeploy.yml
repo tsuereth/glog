@@ -43,7 +43,7 @@ jobs:
           echo "GLOG_PR_DESCRIPTION=[skip ci] Automatically-updated content." >> "$GITHUB_ENV"
 
       - name: CreatePullRequest
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           author: GitHub <noreply@github.com>
