@@ -5143,6 +5143,11 @@
       "igdbEntityId": 2342,
       "igdbEntityType": "IgdbCollection",
       "igdbMetadataName": "Hearthstone"
+    },
+    {
+      "igdbEntityId": 9012,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Hearthstone"
     }
   ],
   "Helix": [
