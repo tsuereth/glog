@@ -6,7 +6,7 @@ using GlogGenerator.IgdbApi;
 
 namespace GlogGenerator.Data
 {
-    public class TagData : IGlogMultiKeyReferenceable
+    public class TagData : IGlogReferenceable
     {
         public string Name
         {
@@ -19,25 +19,16 @@ namespace GlogGenerator.Data
         public HashSet<string> LinkedPostIds { get; set; } = new HashSet<string>();
 
         private List<IgdbMetadataReference> igdbReferences = new List<IgdbMetadataReference>();
-        private List<Tuple<Type, string>> referenceableTypedKeys = new List<Tuple<Type, string>>();
 
         public TagData(string tagName)
         {
             var igdbReference = new IgdbMetadataReference(tagName);
             this.igdbReferences.Add(igdbReference);
-
-            // FIXME: deduplicate these internal properties (the list of igdbReferences should be sufficient).
-            var typedKey = new Tuple<Type, string>(typeof(IgdbEntity), tagName);
-            this.referenceableTypedKeys.Add(typedKey);
         }
 
         public TagData(IgdbMetadataReference igdbReference)
         {
             this.igdbReferences.Add(igdbReference);
-
-            // FIXME: deduplicate these internal properties (the list of igdbReferences should be sufficient).
-            var typedKey = new Tuple<Type, string>(igdbReference.IgdbEntityType, igdbReference.Name);
-            this.referenceableTypedKeys.Add(typedKey);
         }
 
         public TagData(IEnumerable<IgdbMetadataReference> igdbReferences)
@@ -45,37 +36,22 @@ namespace GlogGenerator.Data
             foreach (var igdbReference in igdbReferences)
             {
                 this.igdbReferences.Add(igdbReference);
-
-                // FIXME: deduplicate these internal properties (the list of igdbReferences should be sufficient).
-                var typedKey = new Tuple<Type, string>(igdbReference.IgdbEntityType, igdbReference.Name);
-                this.referenceableTypedKeys.Add(typedKey);
             }
         }
 
         public bool MatchesReferenceableKey(string matchKey)
         {
-            return this.igdbReferences.Select(r => r.GetReferenceableKey()).Contains(matchKey);
-        }
-
-        public void MergeReferenceableKey(Type mergeKeyType, string mergeKey)
-        {
-            // FIXME: This should search for an existing IgdbReference instead!
-            var typedKey = new Tuple<Type, string>(mergeKeyType, mergeKey);
-            if (!this.referenceableTypedKeys.Contains(typedKey))
-            {
-                this.referenceableTypedKeys.Add(typedKey);
-            }
+            var referenceableKeyUrlized = UrlizedString.Urlize(this.GetReferenceableKey());
+            var matchKeyUrlized = UrlizedString.Urlize(matchKey);
+            return referenceableKeyUrlized.Equals(matchKeyUrlized, StringComparison.Ordinal);
         }
 
         public void MergeIgdbMetadataReference(IgdbMetadataReference igdbReference)
         {
-            // FIXME: This should search for an existing IgdbReference instead!
-            var typedKey = new Tuple<Type, string>(igdbReference.IgdbEntityType, igdbReference.Name);
-            if (!this.referenceableTypedKeys.Contains(typedKey))
+            var mergeId = igdbReference.GetIgdbEntityDataId();
+            if (!this.igdbReferences.Where(r => r.GetIgdbEntityDataId().Equals(mergeId, StringComparison.Ordinal)).Any())
             {
                 this.igdbReferences.Add(igdbReference);
-
-                this.referenceableTypedKeys.Add(typedKey);
             }
         }
 
