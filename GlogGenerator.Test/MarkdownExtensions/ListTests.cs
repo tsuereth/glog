@@ -16,7 +16,8 @@ namespace GlogGenerator.Test.MarkdownExtensions
 * second item
 * third item";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
+            var mdPipeline = builder.GetContentParser().GetHtmlRenderPipeline();
+            var result = Markdown.ToHtml(testText, mdPipeline);
 
             Assert.AreEqual("<ul>\n<li>first item</li>\n<li>second item</li>\n<li>third item</li>\n</ul>\n", result);
         }
@@ -30,9 +31,10 @@ namespace GlogGenerator.Test.MarkdownExtensions
 * second item
 * third item";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
+            var mdPipeline = builder.GetContentParser().GetRoundtripRenderPipeline();
+            var mdDoc = Markdown.Parse(testText, mdPipeline);
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
+            var result = mdDoc.ToMarkdownString(mdPipeline);
 
             Assert.AreEqual(testText, result);
         }
@@ -46,7 +48,8 @@ namespace GlogGenerator.Test.MarkdownExtensions
 2. second item
 3. third item";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
+            var mdPipeline = builder.GetContentParser().GetHtmlRenderPipeline();
+            var result = Markdown.ToHtml(testText, mdPipeline);
 
             Assert.AreEqual("<ol>\n<li>first item</li>\n<li>second item</li>\n<li>third item</li>\n</ol>\n", result);
         }
@@ -60,9 +63,10 @@ namespace GlogGenerator.Test.MarkdownExtensions
 2. second item
 3. third item";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
+            var mdPipeline = builder.GetContentParser().GetRoundtripRenderPipeline();
+            var mdDoc = Markdown.Parse(testText, mdPipeline);
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
+            var result = mdDoc.ToMarkdownString(mdPipeline);
 
             Assert.AreEqual(testText, result);
         }
@@ -76,7 +80,8 @@ namespace GlogGenerator.Test.MarkdownExtensions
 B. second item
 C. third item";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
+            var mdPipeline = builder.GetContentParser().GetHtmlRenderPipeline();
+            var result = Markdown.ToHtml(testText, mdPipeline);
 
             Assert.AreEqual("<ol type=\"A\">\n<li>first item</li>\n<li>second item</li>\n<li>third item</li>\n</ol>\n", result);
         }
@@ -90,9 +95,10 @@ C. third item";
 B. second item
 C. third item";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
+            var mdPipeline = builder.GetContentParser().GetRoundtripRenderPipeline();
+            var mdDoc = Markdown.Parse(testText, mdPipeline);
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
+            var result = mdDoc.ToMarkdownString(mdPipeline);
 
             Assert.AreEqual(testText, result);
         }

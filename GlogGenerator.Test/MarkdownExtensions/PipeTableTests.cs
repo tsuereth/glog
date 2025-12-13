@@ -15,9 +15,10 @@ namespace GlogGenerator.Test.MarkdownExtensions
             var testText = @"| ![](img1.png){width=200 height=127} | ![](img2.png){width=586 height=251} |
 | - | - |";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
+            var mdPipeline = builder.GetContentParser().GetRoundtripRenderPipeline();
+            var mdDoc = Markdown.Parse(testText, mdPipeline);
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
+            var result = mdDoc.ToMarkdownString(mdPipeline);
 
             Assert.AreEqual(testText, result);
         }
@@ -32,9 +33,10 @@ namespace GlogGenerator.Test.MarkdownExtensions
 | ![](img4.jpg){width=200 height=150} | ![](img5.jpg){width=200 height=150} | ![](img6.jpg){width=200 height=150} |
 | ![](img7.jpg){width=200 height=150} | ![](img8.jpg){width=200 height=150} | ![](img9.jpg){width=200 height=150} |";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
+            var mdPipeline = builder.GetContentParser().GetRoundtripRenderPipeline();
+            var mdDoc = Markdown.Parse(testText, mdPipeline);
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
+            var result = mdDoc.ToMarkdownString(mdPipeline);
 
             Assert.AreEqual(testText, result);
         }

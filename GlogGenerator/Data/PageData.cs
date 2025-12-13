@@ -20,14 +20,14 @@ namespace GlogGenerator.Data
 
         public string PermalinkRelative { get { return this.permalinkRelative; } }
 
-        public void RewriteSourceFile(MarkdownPipeline mdPipeline)
+        public void RewriteSourceFile(ContentParser contentParser)
         {
             if (string.IsNullOrEmpty(SourceFilePath))
             {
                 throw new InvalidDataException("SourceFilePath is empty");
             }
 
-            var fileContent = this.MdDocRoundtrippable.ToMarkdownString(mdPipeline);
+            var fileContent = this.MdDocRoundtrippable.ToMarkdownString(contentParser.GetRoundtripRenderPipeline());
 
             using (var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
             {
@@ -52,14 +52,14 @@ namespace GlogGenerator.Data
 
         private string permalinkRelative = null;
 
-        public static string PageIdFromFilePath(MarkdownPipeline mdPipeline, string filePath)
+        public static string PageIdFromFilePath(ContentParser contentParser, string filePath)
         {
             // Disable the data index in this file parse, so that it doesn't create unwanted data references.
             var parseContext = MarkdownParserContextExtensions.DontUseSiteDataIndex();
 
             // We need to parse the file to determine its permalink, based on front matter data.
             var fileContent = File.ReadAllText(filePath);
-            var mdDoc = Markdown.Parse(fileContent, mdPipeline, parseContext);
+            var mdDoc = Markdown.Parse(fileContent, contentParser.GetHtmlRenderPipeline(), parseContext);
 
             string permalinkRelative = null;
             var frontMatterBlock = mdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
@@ -90,15 +90,15 @@ namespace GlogGenerator.Data
             return permalinkRelative;
         }
 
-        public static PageData MarkdownFromFilePath(MarkdownPipeline mdHtmlPipeline, MarkdownPipeline mdRoundtripPipeline, string filePath)
+        public static PageData MarkdownFromFilePath(ContentParser contentParser, string filePath)
         {
             var text = File.ReadAllText(filePath);
 
             var page = new PageData();
             page.SourceFilePath = filePath;
 
-            page.MdDocHtmlRenderable = Markdown.Parse(text, mdHtmlPipeline);
-            page.MdDocRoundtrippable = Markdown.Parse(text, mdRoundtripPipeline);
+            page.MdDocHtmlRenderable = Markdown.Parse(text, contentParser.GetHtmlRenderPipeline());
+            page.MdDocRoundtrippable = Markdown.Parse(text, contentParser.GetRoundtripRenderPipeline());
 
             var frontMatterBlock = page.MdDocRoundtrippable.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
             if (frontMatterBlock != null)

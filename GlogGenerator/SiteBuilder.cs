@@ -26,17 +26,9 @@ namespace GlogGenerator
         private Mode mode;
         private IncludeDrafts includeDrafts;
         private DateTimeOffset buildDate;
-        private VariableSubstitution variableSubstitution;
         private ISiteDataIndex siteDataIndex;
         private SiteState siteState;
-        private GlogMarkdownExtension glogMarkdownExtension;
-
-        // Separate markdown (Markdig) pipelines are needed for HTML rendering versus source upkeep (roundtrips).
-        // Some normalization/roundtrip settings are detrimental to HTML output!
-        // Particularly, TrackTrivia captures spacing that _isn't intended_ to render in HTML.
-        // https://github.com/xoofx/markdig/issues/561#issuecomment-1064848909
-        private MarkdownPipeline markdownHtmlPipeline;
-        private MarkdownPipeline markdownRoundtripPipeline;
+        private ContentParser contentParser;
 
         private IgdbCache igdbCache = null;
 
@@ -56,9 +48,6 @@ namespace GlogGenerator
             this.includeDrafts = IncludeDrafts.Never;
             this.buildDate = DateTimeOffset.Now;
 
-            this.variableSubstitution = new VariableSubstitution();
-            this.variableSubstitution.SetSubstitution(VariableNameSiteBaseURL, this.configData.BaseURL);
-
             if (siteDataIndex != null)
             {
                 this.siteDataIndex = siteDataIndex;
@@ -70,24 +59,9 @@ namespace GlogGenerator
 
             this.siteState = new SiteState(this, this.configData.TemplateFilesBasePath);
 
-            this.glogMarkdownExtension = new GlogMarkdownExtension(this, this.siteDataIndex, this.siteState);
-
-            this.markdownHtmlPipeline = new MarkdownPipelineBuilder()
-                .UseEmphasisExtras()
-                .UseMediaLinks()
-                .UsePipeTables()
-                .UseSoftlineBreakAsHardlineBreak()
-                .Use(this.glogMarkdownExtension)
-                .Build();
-
-            this.markdownRoundtripPipeline = new MarkdownPipelineBuilder()
-                .EnableTrackTrivia()
-                .UseEmphasisExtras()
-                .UseMediaLinks()
-                .UsePipeTables()
-                .UseSoftlineBreakAsHardlineBreak()
-                .Use(this.glogMarkdownExtension)
-                .Build();
+            var renderVariableSubstitution = new VariableSubstitution();
+            renderVariableSubstitution.SetSubstitution(VariableNameSiteBaseURL, this.configData.BaseURL);
+            this.contentParser = new ContentParser(renderVariableSubstitution, this.siteDataIndex, this.siteState);
         }
 
         private IIgdbCache GetIgdbCache()
@@ -116,14 +90,9 @@ namespace GlogGenerator
             this.buildDate = buildDate;
         }
 
-        public MarkdownPipeline GetMarkdownHtmlPipeline()
+        public ContentParser GetContentParser()
         {
-            return this.markdownHtmlPipeline;
-        }
-
-        public MarkdownPipeline GetMarkdownRoundtripPipeline()
-        {
-            return this.markdownRoundtripPipeline;
+            return this.contentParser;
         }
 
         public void SetAdditionalIgdbGameIds(List<int> igdbGameIds)
@@ -163,7 +132,7 @@ namespace GlogGenerator
                 (this.includeDrafts == IncludeDrafts.Always) ||
                 (this.mode == Mode.Host && this.includeDrafts == IncludeDrafts.HostModeOnly);
 
-            this.siteDataIndex.LoadContent(igdbCache, this.GetMarkdownHtmlPipeline(), this.GetMarkdownRoundtripPipeline(), dataIncludesDrafts);
+            this.siteDataIndex.LoadContent(igdbCache, this.contentParser, dataIncludesDrafts);
         }
 
         public void ResolveDataReferences()
@@ -186,7 +155,7 @@ namespace GlogGenerator
 
         public void RewriteData()
         {
-            this.siteDataIndex.RewriteSourceContent(this.GetMarkdownRoundtripPipeline());
+            this.siteDataIndex.RewriteSourceContent(this.contentParser);
         }
 
         public List<GameStats> GetGameStatsForDateRange(DateTimeOffset startDate, DateTimeOffset endDate)
@@ -266,7 +235,7 @@ namespace GlogGenerator
 
         public string GetBaseURL()
         {
-            if (!this.variableSubstitution.TryGetSubstitution(VariableNameSiteBaseURL, out var baseURL))
+            if (!this.contentParser.GetVariableSubstitution().TryGetSubstitution(VariableNameSiteBaseURL, out var baseURL))
             {
                 // Since this variable is set in the constructor, it should never, ever be missing.
                 throw new InvalidDataException();
@@ -277,7 +246,7 @@ namespace GlogGenerator
 
         public void SetBaseURL(string baseURL)
         {
-            this.variableSubstitution.SetSubstitution(VariableNameSiteBaseURL, baseURL);
+            this.contentParser.GetVariableSubstitution().SetSubstitution(VariableNameSiteBaseURL, baseURL);
         }
 
         public List<string> GetCategories()
@@ -292,17 +261,17 @@ namespace GlogGenerator
 
         public VariableSubstitution GetVariableSubstitution()
         {
-            return this.variableSubstitution;
+            return this.contentParser.GetVariableSubstitution();
         }
 
         public HtmlRendererContext GetRendererContext()
         {
-            return this.glogMarkdownExtension.GetRendererContext();
+            return this.contentParser.GetGlogMarkdownExtension().GetRendererContext();
         }
 
         public string RenderHtml(MarkdownDocument parsedDocument)
         {
-            return parsedDocument.ToHtml(this.markdownHtmlPipeline);
+            return parsedDocument.ToHtml(this.contentParser.GetHtmlRenderPipeline());
         }
 
         public Dictionary<string, IOutputContent> ResolveContentRoutes()

@@ -22,7 +22,8 @@ someArray = [ ""an"", ""array"" ]
 +++
 hello, world";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownHtmlPipeline());
+            var mdPipeline = builder.GetContentParser().GetHtmlRenderPipeline();
+            var mdDoc = Markdown.Parse(testText, mdPipeline);
             var tomlFrontMatter = mdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
 
             Assert.IsNotNull(tomlFrontMatter);
@@ -47,7 +48,8 @@ someArray = [ ""an"", ""array"" ]
 +++
 hello, world";
 
-            var result = Markdown.ToHtml(testText, builder.GetMarkdownHtmlPipeline());
+            var mdPipeline = builder.GetContentParser().GetHtmlRenderPipeline();
+            var result = Markdown.ToHtml(testText, mdPipeline);
 
             Assert.AreEqual("<p>hello, world</p>\n", result);
         }
@@ -63,9 +65,10 @@ someArray = [ ""an"", ""array"" ]
 +++
 hello, world";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
+            var mdPipeline = builder.GetContentParser().GetRoundtripRenderPipeline();
+            var mdDoc = Markdown.Parse(testText, mdPipeline);
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
+            var result = mdDoc.ToMarkdownString(mdPipeline);
 
             Assert.AreEqual(testText, result);
         }
@@ -81,7 +84,8 @@ someArray = [ ""an"", ""array"" ]
 +++
 hello, world";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
+            var mdPipeline = builder.GetContentParser().GetRoundtripRenderPipeline();
+            var mdDoc = Markdown.Parse(testText, mdPipeline);
             var tomlFrontMatter = mdDoc.Descendants<TomlFrontMatterBlock>().FirstOrDefault();
 
             Assert.IsNotNull(tomlFrontMatter);
@@ -91,7 +95,7 @@ hello, world";
             tomlModel["someArray"][1] = "other";
             tomlModel["someArray"].Add("array");
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
+            var result = mdDoc.ToMarkdownString(mdPipeline);
 
             var expectedText = @"+++
 someString = ""another string value""

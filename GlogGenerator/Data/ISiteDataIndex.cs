@@ -43,7 +43,7 @@ namespace GlogGenerator.Data
 
         public void SetNonContentGameNames(List<string> gameNames);
 
-        public void LoadContent(IIgdbCache igdbCache, Markdig.MarkdownPipeline markdownHtmlPipeline, Markdig.MarkdownPipeline markdownRoundtripPipeline, bool includeDrafts);
+        public void LoadContent(IIgdbCache igdbCache, ContentParser contentParser, bool includeDrafts);
 
         public void ResolveReferences();
 
@@ -53,7 +53,7 @@ namespace GlogGenerator.Data
 
         public void LinkPostsToAssociatedGames();
 
-        public void RewriteSourceContent(Markdig.MarkdownPipeline markdownPipeline);
+        public void RewriteSourceContent(ContentParser contentParser);
 
         public void WriteToJsonFiles(string directoryPath);
     }

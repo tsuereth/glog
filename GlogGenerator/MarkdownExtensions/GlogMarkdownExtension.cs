@@ -16,18 +16,18 @@ namespace GlogGenerator.MarkdownExtensions
 {
     public class GlogMarkdownExtension : IMarkdownExtension
     {
-        private readonly SiteBuilder siteBuilder;
+        private readonly VariableSubstitution variableSubstitution;
         private readonly ISiteDataIndex siteDataIndex;
         private readonly SiteState siteState;
 
         private HtmlRendererContext htmlRendererContext;
 
         public GlogMarkdownExtension(
-            SiteBuilder siteBuilder,
+            VariableSubstitution variableSubstitution,
             ISiteDataIndex siteDataIndex,
             SiteState siteState)
         {
-            this.siteBuilder = siteBuilder;
+            this.variableSubstitution = variableSubstitution;
             this.siteDataIndex = siteDataIndex;
             this.siteState = siteState;
 
@@ -85,20 +85,18 @@ namespace GlogGenerator.MarkdownExtensions
                 renderer.ObjectWriteBefore += new Action<IMarkdownRenderer, MarkdownObject>(
                     (IMarkdownRenderer r, MarkdownObject o) =>
                     {
-                        var vs = this.siteBuilder.GetVariableSubstitution();
-
                         if (o is AutolinkInline)
                         {
-                            (o as AutolinkInline).Url = vs.TryMakeSubstitutions((o as AutolinkInline).Url);
+                            (o as AutolinkInline).Url = this.variableSubstitution.TryMakeSubstitutions((o as AutolinkInline).Url);
                         }
                         else if (o is LinkInline)
                         {
-                            (o as LinkInline).Url = vs.TryMakeSubstitutions((o as LinkInline).Url);
+                            (o as LinkInline).Url = this.variableSubstitution.TryMakeSubstitutions((o as LinkInline).Url);
                         }
                         else if (o is LiteralInline)
                         {
                             // FIXME?: Can (or must) the substitution check preserve un-changed StringSlices?
-                            var substitutedString = vs.TryMakeSubstitutions((o as LiteralInline).Content.ToString());
+                            var substitutedString = this.variableSubstitution.TryMakeSubstitutions((o as LiteralInline).Content.ToString());
                             (o as LiteralInline).Content = new StringSlice(substitutedString);
                         }
                     });

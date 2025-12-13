@@ -20,8 +20,8 @@ namespace GlogGenerator.Test.MarkdownExtensions
 key1: ""value1""
 key2: ""value2""
 :::";
-
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownHtmlPipeline());
+            var mdPipeline = builder.GetContentParser().GetHtmlRenderPipeline();
+            var mdDoc = Markdown.Parse(testText, mdPipeline);
             var fencedDataBlock = mdDoc.Descendants<FencedDataBlock>().FirstOrDefault();
 
             Assert.IsNotNull(fencedDataBlock);
@@ -45,7 +45,8 @@ key1: ""value1""
 key2: ""value2""
 :::";
 
-            var result = Markdown.Normalize(testText, pipeline: builder.GetMarkdownRoundtripPipeline());
+            var mdPipeline = builder.GetContentParser().GetRoundtripRenderPipeline();
+            var result = Markdown.Normalize(testText, pipeline: mdPipeline);
 
             Assert.AreEqual(testText, result);
         }
@@ -60,9 +61,10 @@ key1: ""value1""
 key2: ""value2""
 :::";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
+            var mdPipeline = builder.GetContentParser().GetRoundtripRenderPipeline();
+            var mdDoc = Markdown.Parse(testText, mdPipeline);
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
+            var result = mdDoc.ToMarkdownString(mdPipeline);
 
             Assert.AreEqual(testText, result);
         }
@@ -82,9 +84,10 @@ key1: ""value1""
 key2: ""value2""
 :::";
 
-            var mdDoc = Markdown.Parse(testText, builder.GetMarkdownRoundtripPipeline());
+            var mdPipeline = builder.GetContentParser().GetRoundtripRenderPipeline();
+            var mdDoc = Markdown.Parse(testText, mdPipeline);
 
-            var result = mdDoc.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
+            var result = mdDoc.ToMarkdownString(mdPipeline);
 
             Assert.AreEqual(testText, result);
         }

@@ -146,7 +146,8 @@ namespace GlogGenerator.Test
 
             foreach (var page in builder.GetPages())
             {
-                var rewrittenFileText = page.MdDocRoundtrippable.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
+                var mdPipeline = builder.GetContentParser().GetRoundtripRenderPipeline();
+                var rewrittenFileText = page.MdDocRoundtrippable.ToMarkdownString(mdPipeline);
 
                 var expectedFileBytes = File.ReadAllBytes(page.SourceFilePath);
                 var actualFileBytes = Encoding.UTF8.GetBytes(rewrittenFileText);
@@ -155,7 +156,8 @@ namespace GlogGenerator.Test
 
             foreach (var post in builder.GetPosts())
             {
-                var rewrittenFileText = post.MdDocRoundtrippable.ToMarkdownString(builder.GetMarkdownRoundtripPipeline());
+                var mdPipeline = builder.GetContentParser().GetRoundtripRenderPipeline();
+                var rewrittenFileText = post.MdDocRoundtrippable.ToMarkdownString(mdPipeline);
 
                 var expectedFileBytes = File.ReadAllBytes(post.SourceFilePath);
                 var actualFileBytes = Encoding.UTF8.GetBytes(rewrittenFileText);
