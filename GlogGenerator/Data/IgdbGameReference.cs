@@ -11,7 +11,7 @@ namespace GlogGenerator.Data
     public class IgdbGameReference : IgdbEntityReference<IgdbGame>, IIgdbEntityReference
     {
         [JsonProperty("igdbGameName")]
-        public string Name { get; private set; }
+        public string Name { get; private set; } = null;
 
         [JsonProperty("nameOverride")]
         public string NameOverride { get; private set; } = null;
@@ -64,7 +64,13 @@ namespace GlogGenerator.Data
 
         public IgdbGameReference(IgdbGame fromGame, IIgdbCache cache) : base(fromGame)
         {
-            this.Name = fromGame.Name;
+            // FIXME: There should be no such thing as "empty IGDB game name," but...
+            // non-IGDB games currently injected into the IGDB cache have an empty Name.
+            // Those non-IGDB games should, ultimately, not be `IgdbGame`s at all. (right?)
+            if (!string.IsNullOrEmpty(fromGame.Name))
+            {
+                this.Name = fromGame.Name;
+            }
 
             this.NameOverride = fromGame.NameGlogOverride;
             if (this.NameOverride == null)

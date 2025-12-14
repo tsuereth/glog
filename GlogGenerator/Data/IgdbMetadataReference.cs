@@ -8,7 +8,7 @@ namespace GlogGenerator.Data
     public class IgdbMetadataReference : IgdbEntityReference<IgdbEntity>, IIgdbEntityReference
     {
         [JsonProperty("igdbMetadataName")]
-        public string Name { get; private set; }
+        public string Name { get; private set; } = null;
 
         [JsonProperty("nameOverride")]
         public string NameOverride { get; private set; } = null;

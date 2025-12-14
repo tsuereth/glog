@@ -9,43 +9,54 @@ namespace GlogGenerator.Data
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ReferenceNameSourceType
         {
-            None,
             IgdbPlatformAbbreviation,
             IgdbPlatformAlternativeName,
             IgdbPlatformName,
         };
 
         [JsonProperty("referenceName")]
-        public string ReferenceName { get; private set; }
+        public string ReferenceName { get; private set; } = null;
+
+        [JsonProperty("nameOverride")]
+        public string NameOverride { get; private set; } = null;
 
         [JsonProperty("referenceNameSource")]
-        public ReferenceNameSourceType ReferenceNameSource { get; private set; } = ReferenceNameSourceType.None;
+        public ReferenceNameSourceType? ReferenceNameSource { get; private set; } = null;
 
         public IgdbPlatformReference() : base() { }
 
         public IgdbPlatformReference(IgdbPlatform fromPlatform) : base(fromPlatform)
         {
-            // Some platforms are known by an abbreviation, like "GBA" (Game Boy Advance)
-            if (!string.IsNullOrEmpty(fromPlatform.Abbreviation))
+            this.NameOverride = fromPlatform.AbbreviationGlogOverride;
+            if (this.NameOverride == null)
             {
-                this.ReferenceName = fromPlatform.Abbreviation;
-                this.ReferenceNameSource = ReferenceNameSourceType.IgdbPlatformAbbreviation;
-            }
-            // Some platforms are known by a nickname, like "Vita" (PlayStation Vita)
-            else if (!string.IsNullOrEmpty(fromPlatform.AlternativeName))
-            {
-                this.ReferenceName = fromPlatform.AlternativeName;
-                this.ReferenceNameSource = ReferenceNameSourceType.IgdbPlatformAlternativeName;
-            }
-            else
-            {
-                this.ReferenceName = fromPlatform.Name;
-                this.ReferenceNameSource = ReferenceNameSourceType.IgdbPlatformName;
+                // Some platforms are known by an abbreviation, like "GBA" (Game Boy Advance)
+                if (!string.IsNullOrEmpty(fromPlatform.Abbreviation))
+                {
+                    this.ReferenceName = fromPlatform.Abbreviation;
+                    this.ReferenceNameSource = ReferenceNameSourceType.IgdbPlatformAbbreviation;
+                }
+                // Some platforms are known by a nickname, like "Vita" (PlayStation Vita)
+                else if (!string.IsNullOrEmpty(fromPlatform.AlternativeName))
+                {
+                    this.ReferenceName = fromPlatform.AlternativeName;
+                    this.ReferenceNameSource = ReferenceNameSourceType.IgdbPlatformAlternativeName;
+                }
+                else
+                {
+                    this.ReferenceName = fromPlatform.Name;
+                    this.ReferenceNameSource = ReferenceNameSourceType.IgdbPlatformName;
+                }
             }
         }
 
         public override string GetReferenceableKey()
         {
+            if (!string.IsNullOrEmpty(this.NameOverride))
+            {
+                return this.NameOverride;
+            }
+
             return ReferenceName;
         }
     }

@@ -1913,7 +1913,7 @@
     "igdbGameName": "Euro Truck Simulator 2"
   },
   "Everybody Votes Channel": {
-    "igdbGameName": "Everybody Votes Channel"
+    "nameOverride": "Everybody Votes Channel"
   },
   "Evil Dead: A Fistful of Boomstick": {
     "igdbEntityId": 5827,
@@ -2919,7 +2919,7 @@
     "igdbGameName": "Instruments of Destruction"
   },
   "Internet Channel": {
-    "igdbGameName": "Internet Channel"
+    "nameOverride": "Internet Channel"
   },
   "Iron Brigade": {
     "igdbEntityId": 7668,
@@ -4129,10 +4129,10 @@
     "igdbGameName": "Ninja Gaiden: Dragon Sword"
   },
   "Nintendo Channel": {
-    "igdbGameName": "Nintendo Channel"
+    "nameOverride": "Nintendo Channel"
   },
   "Nintendo DS Browser": {
-    "igdbGameName": "Nintendo DS Browser"
+    "nameOverride": "Nintendo DS Browser"
   },
   "Nintendo Land": {
     "igdbEntityId": 2172,
@@ -4610,7 +4610,7 @@
     "igdbGameName": "Pinstripe"
   },
   "Pirate Battle": {
-    "igdbGameName": "Pirate Battle"
+    "nameOverride": "Pirate Battle"
   },
   "Pitfall Planet": {
     "igdbEntityId": 32919,
@@ -5015,7 +5015,7 @@
     "igdbGameName": "Regeria Hope Episode 1"
   },
   "Regex Crossword": {
-    "igdbGameName": "Regex Crossword"
+    "nameOverride": "Regex Crossword"
   },
   "Remember Me": {
     "igdbEntityId": 1827,

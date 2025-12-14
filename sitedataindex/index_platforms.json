@@ -42,8 +42,7 @@
     "referenceNameSource": "IgdbPlatformAbbreviation"
   },
   "Netflix": {
-    "referenceName": "Netflix",
-    "referenceNameSource": "IgdbPlatformAbbreviation"
+    "nameOverride": "Netflix"
   },
   "NGC": {
     "igdbEntityId": 21,
