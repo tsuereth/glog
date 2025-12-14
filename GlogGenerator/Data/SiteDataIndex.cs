@@ -30,11 +30,7 @@ namespace GlogGenerator.Data
         private List<SiteDataReference<RatingData>> ratingReferences = new List<SiteDataReference<RatingData>>();
         private List<SiteDataReference<TagData>> tagReferences = new List<SiteDataReference<TagData>>();
 
-        private GlogReferenceableLookup<CategoryData> categories = new GlogReferenceableLookup<CategoryData>();
-        private GlogReferenceableLookup<GameData> games = new GlogReferenceableLookup<GameData>();
-        private GlogReferenceableLookup<PlatformData> platforms = new GlogReferenceableLookup<PlatformData>();
-        private GlogReferenceableLookup<RatingData> ratings = new GlogReferenceableLookup<RatingData>();
-        private GlogReferenceableLookup<TagData> tags = new GlogReferenceableLookup<TagData>();
+        private SiteDataLookups Lookups = new SiteDataLookups();
 
         private Dictionary<string, PageData> pages = new Dictionary<string, PageData>();
         private Dictionary<string, PostData> posts = new Dictionary<string, PostData>();
@@ -89,38 +85,13 @@ namespace GlogGenerator.Data
             return this.GetDataWithOldLookup<T>(dataReference, null);
         }
 
-        public T GetDataWithOldLookup<T>(SiteDataReference<T> dataReference, Dictionary<string, T> oldDataLookup)
+        public T GetDataWithOldLookup<T>(SiteDataReference<T> dataReference, GlogReferenceableLookup<T> oldDataLookup)
             where T : class, IGlogReferenceable
         {
+            var dataLookup = this.Lookups.GetLookup<T>();
+
             var dataType = typeof(T);
             T data;
-
-            GlogReferenceableLookup<T> dataLookup;
-            if (dataType == typeof(CategoryData))
-            {
-                dataLookup = this.categories as GlogReferenceableLookup<T>;
-            }
-            else if (dataType == typeof(GameData))
-            {
-                dataLookup = this.games as GlogReferenceableLookup<T>;
-            }
-            else if (dataType == typeof(PlatformData))
-            {
-                dataLookup = this.platforms as GlogReferenceableLookup<T>;
-            }
-            else if (dataType == typeof(RatingData))
-            {
-                dataLookup = this.ratings as GlogReferenceableLookup<T>;
-            }
-            else if (dataType == typeof(TagData))
-            {
-                dataLookup = this.tags as GlogReferenceableLookup<T>;
-            }
-            else
-            {
-                throw new NotImplementedException($"Missing lookup for type {dataType.Name}");
-            }
-
             if (!dataReference.GetIsResolved())
             {
                 var referenceKey = dataReference.GetUnresolvedReferenceKey();
@@ -147,10 +118,8 @@ namespace GlogGenerator.Data
                     }
                     else
                     {
-                        if (oldDataLookup.ContainsKey(referenceId))
+                        if (oldDataLookup.TryGetDataById(referenceId, out data))
                         {
-                            data = oldDataLookup[referenceId];
-
                             // Well, if the current lookup didn't have this reference, but the "old" one does,
                             // then it'll need to get re-added to the current index.
                             dataLookup.AddData(data);
@@ -168,22 +137,22 @@ namespace GlogGenerator.Data
 
         public List<CategoryData> GetCategories()
         {
-            return this.categories.GetValues();
+            return this.Lookups.GetValues<CategoryData>();
         }
 
         public bool HasGame(string gameTitle)
         {
-            return this.games.HasDataByReferenceableKey(gameTitle);
+            return this.Lookups.HasDataByReferenceableKey<GameData>(gameTitle);
         }
 
         public GameData GetGame(string gameTitle)
         {
-            return this.games.GetDataByReferenceableKey(gameTitle);
+            return this.Lookups.GetDataByReferenceableKey<GameData>(gameTitle);
         }
 
         public List<GameData> GetGames()
         {
-            return this.games.GetValues();
+            return this.Lookups.GetValues<GameData>();
         }
 
         public List<PageData> GetPages()
@@ -193,12 +162,12 @@ namespace GlogGenerator.Data
 
         public PlatformData GetPlatform(string platformAbbreviation)
         {
-            return this.platforms.GetDataByReferenceableKey(platformAbbreviation);
+            return this.Lookups.GetDataByReferenceableKey<PlatformData>(platformAbbreviation);
         }
 
         public List<PlatformData> GetPlatforms()
         {
-            return this.platforms.GetValues();
+            return this.Lookups.GetValues<PlatformData>();
         }
 
         public PostData GetPostById(string postId)
@@ -213,7 +182,7 @@ namespace GlogGenerator.Data
 
         public List<RatingData> GetRatings()
         {
-            return this.ratings.GetValues();
+            return this.Lookups.GetValues<RatingData>();
         }
 
         public string GetRawDataFile(string filePath)
@@ -233,12 +202,12 @@ namespace GlogGenerator.Data
 
         public TagData GetTag(string tagName)
         {
-            return this.tags.GetDataByReferenceableKey(tagName);
+            return this.Lookups.GetDataByReferenceableKey<TagData>(tagName);
         }
 
         public List<TagData> GetTags()
         {
-            return this.tags.GetValues();
+            return this.Lookups.GetValues<TagData>();
         }
 
         public void SetNonContentGameNames(List<string> gameNames)
@@ -246,11 +215,8 @@ namespace GlogGenerator.Data
             this.nonContentGameNames = gameNames;
         }
 
-        public void LoadContent(IIgdbCache igdbCache, ContentParser contentParser, bool includeDrafts)
+        private void UpdateReferencesFromContent(SiteDataLookups oldLookups, ContentParser contentParser, bool includeDrafts)
         {
-            // Reset the current index, while tracking some* old data to detect update conflicts.
-            // (*) Only retain data associated with DataReferences which "should update" on changed data;
-            // other data (whose references should not be updated) should instead be thrown away.
             this.rawDataFiles.Clear();
             this.staticFiles.Clear();
 
@@ -259,62 +225,6 @@ namespace GlogGenerator.Data
 
             var oldPosts = this.posts;
             this.posts = new Dictionary<string, PostData>();
-
-            var updateCategoryReferenceIds = this.categoryReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
-            var oldCategories = this.categories.GetValues().Where(d => updateCategoryReferenceIds.Contains(d.GetDataId())).ToDictionary(d => d.GetDataId(), d => d);
-            this.categoryReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
-            this.categories.Clear();
-
-            var updateGameReferenceIds = this.gameReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
-            var oldGames = this.games.GetValues().Where(d => updateGameReferenceIds.Contains(d.GetDataId())).ToDictionary(d => d.GetDataId(), d => d);
-            this.gameReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
-            this.games.Clear();
-
-            var updatePlatformReferenceIds = this.platformReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
-            var oldPlatforms = this.platforms.GetValues().Where(d => updatePlatformReferenceIds.Contains(d.GetDataId())).ToDictionary(d => d.GetDataId(), d => d);
-            this.platformReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
-            this.platforms.Clear();
-
-            var updateRatingReferenceIds = this.ratingReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
-            var oldRatings = this.ratings.GetValues().Where(d => updateRatingReferenceIds.Contains(d.GetDataId())).ToDictionary(d => d.GetDataId(), d => d);
-            this.ratingReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
-            this.ratings.Clear();
-
-            var updateTagReferenceIds = this.tagReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
-            var oldTags = this.tags.GetValues().Where(d => updateTagReferenceIds.Contains(d.GetDataId())).ToDictionary(d => d.GetDataId(), d => d);
-            this.tagReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
-            this.tags.Clear();
-
-            // Load game data from the IGDB cache.
-            foreach (var igdbGame in igdbCache.GetAllGames())
-            {
-                var gameData = GameData.FromIgdbGame(igdbCache, igdbGame);
-
-                this.games.AddData(gameData);
-            }
-
-            // And platform data!
-            foreach (var igdbPlatform in igdbCache.GetAllPlatforms())
-            {
-                var platformData = PlatformData.FromIgdbPlatform(igdbCache, igdbPlatform);
-
-                this.platforms.AddData(platformData);
-            }
-
-            // Prepare tags from game metadata.
-            foreach (var igdbGameMetadata in igdbCache.GetAllGameMetadata())
-            {
-                var metadataReference = new IgdbMetadataReference(igdbGameMetadata);
-                var tagData = new TagData(metadataReference);
-                if (this.tags.TryGetDataById(tagData.GetDataId(), out var existingTag))
-                {
-                    existingTag.MergeIgdbMetadataReference(metadataReference);
-                }
-                else
-                {
-                    this.tags.AddData(tagData);
-                }
-            }
 
             if (!string.IsNullOrEmpty(this.inputFilesBasePath))
             {
@@ -389,7 +299,7 @@ namespace GlogGenerator.Data
                             CategoryData categoryData;
                             try
                             {
-                                categoryData = this.GetDataWithOldLookup(categoryReference, oldCategories);
+                                categoryData = this.GetDataWithOldLookup(categoryReference, oldLookups.Categories);
                             }
                             catch (ArgumentException)
                             {
@@ -398,7 +308,7 @@ namespace GlogGenerator.Data
                                     Name = categoryReference.GetUnresolvedReferenceKey(),
                                 };
 
-                                this.categories.AddData(categoryData);
+                                this.Lookups.AddData<CategoryData>(categoryData);
                             }
 
                             categoryData.LinkedPostIds.Add(postId);
@@ -409,7 +319,7 @@ namespace GlogGenerator.Data
                         {
                             foreach (var gameReference in postData.Games)
                             {
-                                var gameData = this.GetDataWithOldLookup(gameReference, oldGames);
+                                var gameData = this.GetDataWithOldLookup(gameReference, oldLookups.Games);
                                 gameData.LinkedPostIds.Add(postId);
 
                                 foreach (var tagName in gameData.Tags)
@@ -429,7 +339,7 @@ namespace GlogGenerator.Data
                         {
                             foreach (var platformReference in postData.Platforms)
                             {
-                                var platformData = this.GetDataWithOldLookup(platformReference, oldPlatforms);
+                                var platformData = this.GetDataWithOldLookup(platformReference, oldLookups.Platforms);
                                 platformData.LinkedPostIds.Add(postId);
                             }
                         }
@@ -441,7 +351,7 @@ namespace GlogGenerator.Data
                                 RatingData ratingData;
                                 try
                                 {
-                                    ratingData = this.GetDataWithOldLookup(ratingReference, oldRatings);
+                                    ratingData = this.GetDataWithOldLookup(ratingReference, oldLookups.Ratings);
                                 }
                                 catch (ArgumentException)
                                 {
@@ -450,7 +360,7 @@ namespace GlogGenerator.Data
                                         Name = ratingReference.GetUnresolvedReferenceKey(),
                                     };
 
-                                    this.ratings.AddData(ratingData);
+                                    this.Lookups.AddData<RatingData>(ratingData);
                                 }
 
                                 ratingData.LinkedPostIds.Add(postId);
@@ -498,11 +408,82 @@ namespace GlogGenerator.Data
             }
 
             // Detect conflicts between old and updated data.
-            this.CheckUpdatedReferenceableDataForConflict(oldCategories.Values, this.categories.GetValues());
-            this.CheckUpdatedReferenceableDataForConflict(oldGames.Values, this.games.GetValues());
-            this.CheckUpdatedReferenceableDataForConflict(oldPlatforms.Values, this.platforms.GetValues());
-            this.CheckUpdatedReferenceableDataForConflict(oldRatings.Values, this.ratings.GetValues());
-            this.CheckUpdatedReferenceableDataForConflict(oldTags.Values, this.tags.GetValues());
+            this.CheckUpdatedReferenceableDataForConflict(oldLookups.GetValues<CategoryData>(), this.Lookups.GetValues<CategoryData>());
+            this.CheckUpdatedReferenceableDataForConflict(oldLookups.GetValues<GameData>(), this.Lookups.GetValues<GameData>());
+            this.CheckUpdatedReferenceableDataForConflict(oldLookups.GetValues<PlatformData>(), this.Lookups.GetValues<PlatformData>());
+            this.CheckUpdatedReferenceableDataForConflict(oldLookups.GetValues<RatingData>(), this.Lookups.GetValues<RatingData>());
+            this.CheckUpdatedReferenceableDataForConflict(oldLookups.GetValues<TagData>(), this.Lookups.GetValues<TagData>());
+        }
+
+        public void LoadContent(IIgdbCache igdbCache, ContentParser contentParser, bool includeDrafts)
+        {
+            // Reset the current index, while tracking some* old data to detect update conflicts.
+            // (*) Only retain data associated with DataReferences which "should update" on changed data;
+            // other data (whose references should not be updated) should instead be thrown away.
+
+            var updateCategoryReferenceIds = this.categoryReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
+            var oldCategories = new GlogReferenceableLookup<CategoryData>(this.Lookups.Categories.GetValues().Where(d => updateCategoryReferenceIds.Contains(d.GetDataId())));
+            this.categoryReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
+
+            var updateGameReferenceIds = this.gameReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
+            var oldGames = new GlogReferenceableLookup<GameData>(this.Lookups.Games.GetValues().Where(d => updateGameReferenceIds.Contains(d.GetDataId())));
+            this.gameReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
+
+            var updatePlatformReferenceIds = this.platformReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
+            var oldPlatforms = new GlogReferenceableLookup<PlatformData>(this.Lookups.Platforms.GetValues().Where(d => updatePlatformReferenceIds.Contains(d.GetDataId())));
+            this.platformReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
+
+            var updateRatingReferenceIds = this.ratingReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
+            var oldRatings = new GlogReferenceableLookup<RatingData>(this.Lookups.Ratings.GetValues().Where(d => updateRatingReferenceIds.Contains(d.GetDataId())));
+            this.ratingReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
+
+            var updateTagReferenceIds = this.tagReferences.Where(r => r.GetShouldUpdateOnDataChange()).Select(r => r.GetResolvedReferenceId());
+            var oldTags = new GlogReferenceableLookup<TagData>(this.Lookups.Tags.GetValues().Where(d => updateTagReferenceIds.Contains(d.GetDataId())));
+            this.tagReferences.RemoveAll(r => !r.GetShouldUpdateOnDataChange());
+
+            this.Lookups.ClearAll();
+
+            // Load game data from the IGDB cache.
+            foreach (var igdbGame in igdbCache.GetAllGames())
+            {
+                var gameData = GameData.FromIgdbGame(igdbCache, igdbGame);
+
+                this.Lookups.AddData<GameData>(gameData);
+            }
+
+            // And platform data!
+            foreach (var igdbPlatform in igdbCache.GetAllPlatforms())
+            {
+                var platformData = PlatformData.FromIgdbPlatform(igdbCache, igdbPlatform);
+
+                this.Lookups.AddData<PlatformData>(platformData);
+            }
+
+            // Prepare tags from game metadata.
+            foreach (var igdbGameMetadata in igdbCache.GetAllGameMetadata())
+            {
+                var metadataReference = new IgdbMetadataReference(igdbGameMetadata);
+                var tagData = new TagData(metadataReference);
+                if (this.Lookups.TryGetDataById<TagData>(tagData.GetDataId(), out var existingTag))
+                {
+                    existingTag.MergeIgdbMetadataReference(metadataReference);
+                }
+                else
+                {
+                    this.Lookups.AddData<TagData>(tagData);
+                }
+            }
+
+            var oldLookups = new SiteDataLookups()
+            {
+                Categories = oldCategories,
+                Games = oldGames,
+                Platforms = oldPlatforms,
+                Ratings = oldRatings,
+                Tags = oldTags,
+            };
+
+            this.UpdateReferencesFromContent(oldLookups, contentParser, includeDrafts);
         }
 
         public void ResolveReferences()
@@ -541,7 +522,7 @@ namespace GlogGenerator.Data
             var referencedGameDataIds = this.gameReferences.Where(r => r.GetIsResolved()).Select(r => r.GetResolvedReferenceId()).Distinct();
             foreach (var gameDataId in referencedGameDataIds)
             {
-                var game = this.games.GetDataById(gameDataId);
+                var game = this.Lookups.GetDataById<GameData>(gameDataId);
 
                 foreach (var tag in game.Tags)
                 {
@@ -564,59 +545,59 @@ namespace GlogGenerator.Data
         public void RemoveUnreferencedData(IIgdbCache igdbCache)
         {
             var referencedCategoryIds = this.categoryReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
-            var unreferencedCategoryIds = this.categories.GetIds().Where(id => !referencedCategoryIds.Contains(id));
+            var unreferencedCategoryIds = this.Lookups.GetIds<CategoryData>().Where(id => !referencedCategoryIds.Contains(id));
             foreach (var unreferencedCategoryId in unreferencedCategoryIds)
             {
-                this.categories.RemoveDataById(unreferencedCategoryId);
+                this.Lookups.RemoveDataById<CategoryData>(unreferencedCategoryId);
             }
 
             var referencedGameIds = this.gameReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
-            var unreferencedGameIds = this.games.GetIds().Where(id => !referencedGameIds.Contains(id));
+            var unreferencedGameIds = this.Lookups.GetIds<GameData>().Where(id => !referencedGameIds.Contains(id));
             foreach (var unreferencedGameId in unreferencedGameIds)
             {
                 if (igdbCache != null)
                 {
-                    var igdbGame = this.games.GetDataById(unreferencedGameId).GetIgdbEntityReference();
+                    var igdbGame = this.Lookups.GetDataById<GameData>(unreferencedGameId).GetIgdbEntityReference();
                     igdbCache.RemoveEntityById(typeof(IgdbGame), igdbGame.IgdbEntityId.Value);
                 }
 
-                this.games.RemoveDataById(unreferencedGameId);
+                this.Lookups.RemoveDataById<GameData>(unreferencedGameId);
             }
 
             var referencedPlatformIds = this.platformReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
-            var unreferencedPlatformIds = this.platforms.GetIds().Where(id => !referencedPlatformIds.Contains(id));
+            var unreferencedPlatformIds = this.Lookups.GetIds<PlatformData>().Where(id => !referencedPlatformIds.Contains(id));
             foreach (var unreferencedPlatformId in unreferencedPlatformIds)
             {
                 if (igdbCache != null)
                 {
-                    var igdbPlatform = this.platforms.GetDataById(unreferencedPlatformId).GetIgdbEntityReference();
+                    var igdbPlatform = this.Lookups.GetDataById<PlatformData>(unreferencedPlatformId).GetIgdbEntityReference();
                     igdbCache.RemoveEntityById(typeof(IgdbPlatform), igdbPlatform.IgdbEntityId.Value);
                 }
 
-                this.platforms.RemoveDataById(unreferencedPlatformId);
+                this.Lookups.RemoveDataById<PlatformData>(unreferencedPlatformId);
             }
 
             var referencedRatingIds = this.ratingReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
-            var unreferencedRatingIds = this.ratings.GetIds().Where(id => !referencedRatingIds.Contains(id));
+            var unreferencedRatingIds = this.Lookups.GetIds<RatingData>().Where(id => !referencedRatingIds.Contains(id));
             foreach (var unreferencedRatingId in unreferencedRatingIds)
             {
-                this.ratings.RemoveDataById(unreferencedRatingId);
+                this.Lookups.RemoveDataById<RatingData>(unreferencedRatingId);
             }
 
             var referencedTagIds = this.tagReferences.Select(r => r.GetResolvedReferenceId()).Distinct();
-            var unreferencedTagIds = this.tags.GetIds().Where(id => !referencedTagIds.Contains(id));
+            var unreferencedTagIds = this.Lookups.GetIds<TagData>().Where(id => !referencedTagIds.Contains(id));
             foreach (var unreferencedTagId in unreferencedTagIds)
             {
                 if (igdbCache != null)
                 {
-                    var igdbEntities = this.tags.GetDataById(unreferencedTagId).GetIgdbEntityReferences();
+                    var igdbEntities = this.Lookups.GetDataById<TagData>(unreferencedTagId).GetIgdbEntityReferences();
                     foreach (var igdbEntity in igdbEntities)
                     {
                         igdbCache.RemoveEntityById(igdbEntity.IgdbEntityType, igdbEntity.IgdbEntityId.Value);
                     }
                 }
 
-                this.tags.RemoveDataById(unreferencedTagId);
+                this.Lookups.RemoveDataById<TagData>(unreferencedTagId);
             }
         }
 
@@ -697,10 +678,10 @@ namespace GlogGenerator.Data
         public void WriteToJsonFiles(string directoryPath)
         {
             // Category references are trivial, don't bother writing them down.
-            WriteDataItemsToJsonFile(this.games.GetValues(), directoryPath, "games");
-            WriteDataItemsToJsonFile(this.platforms.GetValues(), directoryPath, "platforms");
+            WriteDataItemsToJsonFile(this.Lookups.GetValues<GameData>(), directoryPath, "games");
+            WriteDataItemsToJsonFile(this.Lookups.GetValues<PlatformData>(), directoryPath, "platforms");
             // Ratings references are trivial, don't bother writing them down.
-            WriteDataItemsToJsonFile(this.tags.GetValues(), directoryPath, "tags");
+            WriteDataItemsToJsonFile(this.Lookups.GetValues<TagData>(), directoryPath, "tags");
         }
 
         private void CheckUpdatedReferenceableDataForConflict<T>(IReadOnlyCollection<T> oldDataCollection, IReadOnlyCollection<T> newDataCollection)

@@ -10,6 +10,16 @@ namespace GlogGenerator.Data
 
         private Dictionary<string, string> idsByReferenceableKey = new Dictionary<string, string>();
 
+        public GlogReferenceableLookup() { }
+
+        public GlogReferenceableLookup(IEnumerable<T> initialData)
+        {
+            foreach (T data in initialData)
+            {
+                this.AddData(data);
+            }
+        }
+
         public void AddData(T data)
         {
             var dataId = data.GetDataId();
