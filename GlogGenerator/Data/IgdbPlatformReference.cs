@@ -1,27 +1,21 @@
 ﻿using GlogGenerator.IgdbApi;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 
 namespace GlogGenerator.Data
 {
     public class IgdbPlatformReference : IgdbEntityReference<IgdbPlatform>, IIgdbEntityReference
     {
-        [JsonConverter(typeof(StringEnumConverter))]
-        public enum ReferenceNameSourceType
-        {
-            IgdbPlatformAbbreviation,
-            IgdbPlatformAlternativeName,
-            IgdbPlatformName,
-        };
-
-        [JsonProperty("referenceName")]
-        public string ReferenceName { get; private set; } = null;
-
         [JsonProperty("nameOverride")]
         public string NameOverride { get; private set; } = null;
 
-        [JsonProperty("referenceNameSource")]
-        public ReferenceNameSourceType? ReferenceNameSource { get; private set; } = null;
+        [JsonProperty("igdbPlatformAbbreviation")]
+        public string IgdbPlatformAbbreviation { get; private set; } = null;
+
+        [JsonProperty("igdbPlatformAlternativeName")]
+        public string IgdbPlatformAlternativeName { get; private set; } = null;
+
+        [JsonProperty("igdbPlatformName")]
+        public string IgdbPlatformName { get; private set; } = null;
 
         public IgdbPlatformReference() : base() { }
 
@@ -33,19 +27,16 @@ namespace GlogGenerator.Data
                 // Some platforms are known by an abbreviation, like "GBA" (Game Boy Advance)
                 if (!string.IsNullOrEmpty(fromPlatform.Abbreviation))
                 {
-                    this.ReferenceName = fromPlatform.Abbreviation;
-                    this.ReferenceNameSource = ReferenceNameSourceType.IgdbPlatformAbbreviation;
+                    this.IgdbPlatformAbbreviation = fromPlatform.Abbreviation;
                 }
                 // Some platforms are known by a nickname, like "Vita" (PlayStation Vita)
                 else if (!string.IsNullOrEmpty(fromPlatform.AlternativeName))
                 {
-                    this.ReferenceName = fromPlatform.AlternativeName;
-                    this.ReferenceNameSource = ReferenceNameSourceType.IgdbPlatformAlternativeName;
+                    this.IgdbPlatformAlternativeName = fromPlatform.AlternativeName;
                 }
                 else
                 {
-                    this.ReferenceName = fromPlatform.Name;
-                    this.ReferenceNameSource = ReferenceNameSourceType.IgdbPlatformName;
+                    this.IgdbPlatformName = fromPlatform.Name;
                 }
             }
         }
@@ -57,7 +48,17 @@ namespace GlogGenerator.Data
                 return this.NameOverride;
             }
 
-            return ReferenceName;
+            if (!string.IsNullOrEmpty(this.IgdbPlatformAbbreviation))
+            {
+                return this.IgdbPlatformAbbreviation;
+            }
+
+            if (!string.IsNullOrEmpty(this.IgdbPlatformAlternativeName))
+            {
+                return this.IgdbPlatformAlternativeName;
+            }
+
+            return IgdbPlatformName;
         }
     }
 }

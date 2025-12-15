@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -10,11 +11,11 @@ namespace GlogGenerator.Data
 {
     public class IgdbGameReference : IgdbEntityReference<IgdbGame>, IIgdbEntityReference
     {
-        [JsonProperty("igdbGameName")]
-        public string Name { get; private set; } = null;
-
         [JsonProperty("nameOverride")]
         public string NameOverride { get; private set; } = null;
+
+        [JsonProperty("igdbGameName")]
+        public string Name { get; private set; } = null;
 
         // If multiple games have the same name, they're often disambiguated by release year.
         // (And if a game is re-released i.e. on more platforms, the original/first release year is used.)
@@ -88,7 +89,7 @@ namespace GlogGenerator.Data
                     this.ReleasePlatformNames = fromGame.PlatformIds
                         .Select(platformId => cache.GetPlatform(platformId))
                         .Select(platform => platform.GetReferenceString(cache))
-                        .Order().ToList();
+                        .Order(StringComparer.OrdinalIgnoreCase).ToList();
                 }
 
                 this.NameAppendReleaseNumber = fromGame.NameGlogAppendReleaseNumber.HasValue ? true : null;
