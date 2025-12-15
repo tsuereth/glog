@@ -18,45 +18,32 @@ namespace GlogGenerator
         };
 
         private Dictionary<int, IgdbCollection> collectionsById = new Dictionary<int, IgdbCollection>();
-        private Dictionary<string, HashSet<int>> collectionIdsByReferenceString = new Dictionary<string, HashSet<int>>();
 
         private Dictionary<int, IgdbCompany> companiesById = new Dictionary<int, IgdbCompany>();
-        private Dictionary<string, HashSet<int>> companyIdsByReferenceString = new Dictionary<string, HashSet<int>>();
 
         private Dictionary<int, IgdbFranchise> franchisesById = new Dictionary<int, IgdbFranchise>();
-        private Dictionary<string, HashSet<int>> franchiseIdsByReferenceString = new Dictionary<string, HashSet<int>>();
 
         private Dictionary<int, IgdbGame> gamesById = new Dictionary<int, IgdbGame>();
-        private Dictionary<string, HashSet<int>> gameIdsByReferenceString = new Dictionary<string, HashSet<int>>();
-
         private List<IgdbGame> gamesUnidentified = new List<IgdbGame>();
 
         private Dictionary<int, IgdbGameMode> gameModesById = new Dictionary<int, IgdbGameMode>();
-        private Dictionary<string, HashSet<int>> gameModeIdsByReferenceString = new Dictionary<string, HashSet<int>>();
 
         private Dictionary<int, IgdbGameType> gameTypesById = new Dictionary<int, IgdbGameType>();
-        private Dictionary<string, HashSet<int>> gameTypeIdsByReferenceString = new Dictionary<string, HashSet<int>>();
 
         private Dictionary<int, IgdbGenre> genresById = new Dictionary<int, IgdbGenre>();
-        private Dictionary<string, HashSet<int>> genreIdsByReferenceString = new Dictionary<string, HashSet<int>>();
 
         private Dictionary<int, IgdbInvolvedCompany> involvedCompaniesById = new Dictionary<int, IgdbInvolvedCompany>();
 
         private Dictionary<int, IgdbKeyword> keywordsById = new Dictionary<int, IgdbKeyword>();
-        private Dictionary<string, HashSet<int>> keywordIdsByReferenceString = new Dictionary<string, HashSet<int>>();
 
         private Dictionary<int, IgdbPlatform> platformsById = new Dictionary<int, IgdbPlatform>();
-        private Dictionary<string, HashSet<int>> platformIdsByReferenceString = new Dictionary<string, HashSet<int>>();
-
         private List<IgdbPlatform> platformsUnidentified = new List<IgdbPlatform>();
 
         private Dictionary<int, IgdbPlayerPerspective> playerPerspectivesById = new Dictionary<int, IgdbPlayerPerspective>();
-        private Dictionary<string, HashSet<int>> playerPerspectiveIdsByReferenceString = new Dictionary<string, HashSet<int>>();
 
         private Dictionary<int, IgdbReleaseDate> releaseDatesById = new Dictionary<int, IgdbReleaseDate>();
 
         private Dictionary<int, IgdbTheme> themesById = new Dictionary<int, IgdbTheme>();
-        private Dictionary<string, HashSet<int>> themeIdsByReferenceString = new Dictionary<string, HashSet<int>>();
 
         private Dictionary<int, HashSet<int>> gamesParentGameIds = new Dictionary<int, HashSet<int>>();
 
@@ -423,28 +410,6 @@ namespace GlogGenerator
             }
         }
 
-        private Dictionary<string, HashSet<int>> GenerateEntityIdsByReferenceStringLookup<T>(Dictionary<int, T> entitiesById)
-            where T : IgdbEntity
-        {
-            var entityIdsByReferenceString = new Dictionary<string, HashSet<int>>();
-            foreach (var entityKv in entitiesById)
-            {
-                var entityId = entityKv.Key;
-                var entityReferenceString = entityKv.Value.GetReferenceString(this);
-
-                if (entityIdsByReferenceString.TryGetValue(entityReferenceString, out var entityIdsSet))
-                {
-                    entityIdsSet.Add(entityId);
-                }
-                else
-                {
-                    entityIdsByReferenceString.Add(entityReferenceString, new HashSet<int>() { entityId });
-                }
-            }
-
-            return entityIdsByReferenceString;
-        }
-
         public async Task UpdateFromApiClient(IgdbApiClient client)
         {
             // Update games first, to get current IDs for metadata references.
@@ -488,35 +453,29 @@ namespace GlogGenerator
             var companyIds = involvedCompaniesCurrent.Select(i => i.CompanyId).Distinct().ToList();
             var companiesCurrent = await client.GetCompaniesAsync(companyIds);
             this.companiesById = companiesCurrent.ToDictionary(o => o.Id, o => o);
-            this.companyIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.companiesById);
 
             // Now, update the rest of the ID-driven metadata.
 
             var collectionIds = gamesCurrent.SelectMany(g => g.CollectionIds).Distinct().ToList();
             var collectionsCurrent = await client.GetCollectionsAsync(collectionIds.Distinct().ToList());
             this.collectionsById = collectionsCurrent.ToDictionary(o => o.Id, o => o);
-            this.collectionIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.collectionsById);
 
             var franchiseIds = gamesCurrent.Where(g => g.MainFranchiseId != IgdbFranchise.IdNotFound).Select(g => g.MainFranchiseId).Distinct().ToList();
             franchiseIds.AddRange(gamesCurrent.SelectMany(g => g.FranchiseIds).Distinct());
             var franchisesCurrent = await client.GetFranchisesAsync(franchiseIds.Distinct().ToList());
             this.franchisesById = franchisesCurrent.ToDictionary(o => o.Id, o => o);
-            this.franchiseIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.franchisesById);
 
             var gameModeIds = gamesCurrent.SelectMany(g => g.GameModeIds).Distinct().ToList();
             var gameModesCurrent = await client.GetGameModesAsync(gameModeIds);
             this.gameModesById = gameModesCurrent.ToDictionary(o => o.Id, o => o);
-            this.gameModeIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.gameModesById);
 
             var gameTypeIds = gamesCurrent.Where(g => g.GameTypeId != IgdbGameType.IdNotFound).Select(g => g.GameTypeId).Distinct().ToList();
             var gameTypesCurrent = await client.GetGameTypesAsync(gameTypeIds);
             this.gameTypesById = gameTypesCurrent.ToDictionary(o => o.Id, o => o);
-            this.gameTypeIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.gameTypesById);
 
             var genreIds = gamesCurrent.SelectMany(g => g.GenreIds).Distinct().ToList();
             var genresCurrent = await client.GetGenresAsync(genreIds);
             this.genresById = genresCurrent.ToDictionary(o => o.Id, o => o);
-            this.genreIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.genresById);
 
             // NOTE: As of writing, "keywords" are way too abundant and vague to be useful; ignore 'em.
 #if false
@@ -526,7 +485,6 @@ namespace GlogGenerator
             var keywordsCurrent = new List<IgdbKeyword>();
 #endif
             this.keywordsById = keywordsCurrent.ToDictionary(o => o.Id, o => o);
-            this.keywordIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.keywordsById);
 
             var platformIds = gamesCurrent.SelectMany(g => g.PlatformIds).Distinct().ToList();
             var platformsCurrent = await client.GetPlatformsAsync(platformIds);
@@ -544,12 +502,10 @@ namespace GlogGenerator
             }
 
             this.platformsById = platformsCurrentById;
-            this.platformIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.platformsById);
 
             var playerPerspectiveIds = gamesCurrent.SelectMany(g => g.PlayerPerspectiveIds).Distinct().ToList();
             var playerPerspectivesCurrent = await client.GetPlayerPerspectivesAsync(playerPerspectiveIds);
             this.playerPerspectivesById = playerPerspectivesCurrent.ToDictionary(o => o.Id, o => o);
-            this.playerPerspectiveIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.playerPerspectivesById);
 
             // Note: we only care about IgdbReleaseDate data for games which are missing a direct FirstReleasedDate.
             var releaseDateIds = gamesCurrent.Where(g => g.FirstReleaseDateTimestamp == 0).SelectMany(g => g.ReleaseDateIds).Distinct().ToList();
@@ -559,7 +515,6 @@ namespace GlogGenerator
             var themeIds = gamesCurrent.SelectMany(g => g.ThemeIds).Distinct().ToList();
             var themesCurrent = await client.GetThemesAsync(themeIds);
             this.themesById = themesCurrent.ToDictionary(o => o.Id, o => o);
-            this.themeIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.themesById);
 
             // Check game data for quirks to override/fix.
 
@@ -632,7 +587,6 @@ namespace GlogGenerator
             }
 
             this.gamesById = gamesCurrentById;
-            this.gameIdsByReferenceString = this.GenerateEntityIdsByReferenceStringLookup(this.gamesById);
 
             this.RebuildAssociatedGamesIndexes();
         }
@@ -795,18 +749,6 @@ namespace GlogGenerator
             cache.playerPerspectivesById = ReadEntityTypeFromJsonFile<IgdbPlayerPerspective>(directoryPath, "playerPerspectives").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbPlayerPerspective>();
             cache.releaseDatesById = ReadEntityTypeFromJsonFile<IgdbReleaseDate>(directoryPath, "releaseDates").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbReleaseDate>();
             cache.themesById = ReadEntityTypeFromJsonFile<IgdbTheme>(directoryPath, "themes").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbTheme>();
-
-            cache.collectionIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.collectionsById);
-            cache.companyIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.companiesById);
-            cache.franchiseIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.franchisesById);
-            cache.gameModeIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.gameModesById);
-            cache.gameTypeIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.gameTypesById);
-            cache.gameIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.gamesById);
-            cache.genreIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.genresById);
-            cache.keywordIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.keywordsById);
-            cache.platformIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.platformsById);
-            cache.playerPerspectiveIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.playerPerspectivesById);
-            cache.themeIdsByReferenceString = cache.GenerateEntityIdsByReferenceStringLookup(cache.themesById);
 
             cache.RebuildAssociatedGamesIndexes();
 
