@@ -56,6 +56,7 @@ namespace GlogGenerator.Test.Data
 
             var mockIgdbCache = Substitute.For<IIgdbCache>();
             mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>() { testIgdbEntity });
+            mockIgdbCache.GetGame(testIgdbEntity.Id).Returns(testIgdbEntity);
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>());
 
@@ -102,6 +103,7 @@ namespace GlogGenerator.Test.Data
             var mockIgdbCache = Substitute.For<IIgdbCache>();
             mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>());
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformOld });
+            mockIgdbCache.GetPlatform(testPlatformOld.Id).Returns(testPlatformOld);
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>());
 
             var testIndex = new SiteDataIndex(logger, string.Empty);
@@ -119,6 +121,7 @@ namespace GlogGenerator.Test.Data
             var testPlatformNew = new IgdbPlatform() { Id = 1, Abbreviation = "PSOne" };
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformNew });
+            mockIgdbCache.GetPlatform(testPlatformNew.Id).Returns(testPlatformNew);
 
             testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
 
@@ -141,6 +144,7 @@ namespace GlogGenerator.Test.Data
             var mockIgdbCache = Substitute.For<IIgdbCache>();
             mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>());
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformOld });
+            mockIgdbCache.GetPlatform(testPlatformOld.Id).Returns(testPlatformOld);
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>());
 
             var testIndex = new SiteDataIndex(logger, string.Empty);
@@ -156,6 +160,7 @@ namespace GlogGenerator.Test.Data
             var testDataId = testDataReference.GetResolvedReferenceId();
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
+            mockIgdbCache.GetPlatform(testPlatformOld.Id).Returns((IgdbPlatform)null);
 
             testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
 
@@ -179,6 +184,7 @@ namespace GlogGenerator.Test.Data
             var mockIgdbCache = Substitute.For<IIgdbCache>();
             mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>());
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformOld });
+            mockIgdbCache.GetPlatform(testPlatformOld.Id).Returns(testPlatformOld);
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>());
 
             var testIndex = new SiteDataIndex(logger, string.Empty);
@@ -196,6 +202,7 @@ namespace GlogGenerator.Test.Data
             var testPlatformNew = new IgdbPlatform() { Id = 2, Abbreviation = testPlatformKey };
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformNew });
+            mockIgdbCache.GetPlatform(testPlatformNew.Id).Returns(testPlatformNew);
 
             testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
 
@@ -228,6 +235,7 @@ namespace GlogGenerator.Test.Data
 
             var mockIgdbCache = Substitute.For<IIgdbCache>();
             mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>() { testGame });
+            mockIgdbCache.GetGame(testGame.Id).Returns(testGame);
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>() { testCompany });
 

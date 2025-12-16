@@ -446,7 +446,9 @@ namespace GlogGenerator.Data
             // Load game data from the IGDB cache.
             foreach (var igdbGame in igdbCache.GetAllGames())
             {
-                var gameData = GameData.FromIgdbGame(igdbCache, igdbGame);
+                var gameEntityReference = new IgdbGameReference(igdbGame, igdbCache);
+                var gameData = GameData.FromIgdbGameReference(gameEntityReference);
+                gameData.PopulateRelatedIgdbData(igdbCache);
 
                 this.Lookups.AddData<GameData>(gameData);
             }
@@ -454,7 +456,9 @@ namespace GlogGenerator.Data
             // And platform data!
             foreach (var igdbPlatform in igdbCache.GetAllPlatforms())
             {
-                var platformData = PlatformData.FromIgdbPlatform(igdbCache, igdbPlatform);
+                var platformEntityReference = new IgdbPlatformReference(igdbPlatform);
+                var platformData = PlatformData.FromIgdbPlatformReference(platformEntityReference);
+                platformData.PopulateRelatedIgdbData(igdbCache);
 
                 this.Lookups.AddData<PlatformData>(platformData);
             }

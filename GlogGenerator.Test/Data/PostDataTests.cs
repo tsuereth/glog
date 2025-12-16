@@ -74,6 +74,8 @@ game = [ ""Middle-earth: Shadow of Mordor"" ]
 
             var mockIgdbCache = Substitute.For<IIgdbCache>();
             mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>() { testIgdbGameShadowOfMordor, testIgdbGameGollum });
+            mockIgdbCache.GetGame(testIgdbGameShadowOfMordor.Id).Returns(testIgdbGameShadowOfMordor);
+            mockIgdbCache.GetGame(testIgdbGameGollum.Id).Returns(testIgdbGameGollum);
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>());
 
