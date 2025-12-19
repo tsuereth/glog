@@ -2631,6 +2631,11 @@
   ],
   "Cyberpunk": [
     {
+      "igdbEntityId": 13280,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Cyberpunk"
+    },
+    {
       "igdbEntityId": 451,
       "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "Cyberpunk"
