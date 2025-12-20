@@ -56,5 +56,7 @@ namespace GlogGenerator.Data
         public void RewriteSourceContent(ContentParser contentParser);
 
         public void WriteToJsonFiles(string directoryPath);
+
+        public void LoadFromJsonFiles(string directoryPath, string inputFilesBasePath, ContentParser contentParser);
     }
 }

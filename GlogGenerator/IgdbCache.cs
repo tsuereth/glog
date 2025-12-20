@@ -445,6 +445,8 @@ namespace GlogGenerator
                 }
             }
 
+            this.gamesById = gamesCurrentById;
+
             // Update involvedCompanies to get most-current company IDs.
             var involvedCompanyIds = gamesCurrent.SelectMany(g => g.InvolvedCompanyIds).Distinct().ToList();
             var involvedCompaniesCurrent = await client.GetInvolvedCompaniesAsync(involvedCompanyIds);
@@ -515,78 +517,6 @@ namespace GlogGenerator
             var themeIds = gamesCurrent.SelectMany(g => g.ThemeIds).Distinct().ToList();
             var themesCurrent = await client.GetThemesAsync(themeIds);
             this.themesById = themesCurrent.ToDictionary(o => o.Id, o => o);
-
-            // Check game data for quirks to override/fix.
-
-            var gamesDuplicatedUrls = gamesCurrentById.Values
-                .GroupBy(g => UrlizedString.Urlize(g.GetReferenceString(this)))
-                .Where(g => g.Count() > 1);
-            foreach (var gamesDuplicatedUrl in gamesDuplicatedUrls)
-            {
-                var duplicatedUrl = gamesDuplicatedUrl.Key;
-
-                // We can disambiguate games with the same name/URL based on their release dates.
-                // Unless some release dates aren't available -- that'll be trouble.
-                var gamesMissingReleaseDate = gamesDuplicatedUrl.Where(g => g.GetFirstReleaseDate(this) == null);
-                if (gamesMissingReleaseDate.Any())
-                {
-                    throw new InvalidDataException($"Multiple games have the same URL \"{duplicatedUrl}\" and cannot be disambiguated because some are missing a release date.");
-                }
-
-                var gamesByReleaseYear = gamesDuplicatedUrl.GroupBy(g => g.GetFirstReleaseDate(this).Value.Year).ToDictionary(g => g.Key, g => g);
-                var earliestReleaseYear = gamesByReleaseYear.Keys.OrderBy(y => y).First();
-                foreach (var releaseYear in gamesByReleaseYear.Keys)
-                {
-                    var disambiguateByReleaseYear = false;
-                    var disambiguateByPlatforms = false;
-
-                    // If this release year isn't the earliest year for a game of this name, later-released games will be disambiguated by release year.
-                    if (releaseYear != earliestReleaseYear)
-                    {
-                        disambiguateByReleaseYear = true;
-                    }
-
-                    // If multiple games with this name were released in the SAME year, then they need to be disambiguated by their release platforms.
-                    if (gamesByReleaseYear[releaseYear].Count() > 1)
-                    {
-                        disambiguateByPlatforms = true;
-                    }
-
-                    foreach (var game in gamesByReleaseYear[releaseYear])
-                    {
-                        if (disambiguateByPlatforms)
-                        {
-                            gamesCurrentById[game.Id].NameGlogAppendPlatforms = true;
-                        }
-
-                        if (disambiguateByReleaseYear)
-                        {
-                            gamesCurrentById[game.Id].NameGlogAppendReleaseYear = true;
-                        }
-                    }
-                }
-            }
-
-            // Sometimes... disambiguating game names/URLs by release-year and platform STILL isn't enough!
-            // This is so rare and bizarre that we may as well just start slapping numbers on the games' names.
-            gamesDuplicatedUrls = gamesCurrentById.Values
-                .GroupBy(g => UrlizedString.Urlize(g.GetReferenceString(this)))
-                .Where(g => g.Count() > 1);
-            foreach (var gamesDuplicatedUrl in gamesDuplicatedUrls)
-            {
-                var duplicatedUrl = gamesDuplicatedUrl.Key;
-
-                var gamesInReleaseOrder = gamesDuplicatedUrl.OrderBy(g => g.GetFirstReleaseDate(this)).ToList();
-                for (var i = 1; i < gamesInReleaseOrder.Count; ++i)
-                {
-                    var gameId = gamesInReleaseOrder[i].Id;
-
-                    // Start with release number "2"
-                    gamesCurrentById[gameId].NameGlogAppendReleaseNumber = i + 1;
-                }
-            }
-
-            this.gamesById = gamesCurrentById;
 
             this.RebuildAssociatedGamesIndexes();
         }
@@ -712,6 +642,26 @@ namespace GlogGenerator
             WriteEntityTypeToJsonFile(this.playerPerspectivesById.Values.OrderBy(o => o.Id), directoryPath, "playerPerspectives");
             WriteEntityTypeToJsonFile(this.releaseDatesById.Values.OrderBy(o => o.Id), directoryPath, "releaseDates");
             WriteEntityTypeToJsonFile(this.themesById.Values.OrderBy(o => o.Id), directoryPath, "themes");
+        }
+
+        public static bool JsonFilesExist(string directoryPath)
+        {
+            if (!Directory.Exists(directoryPath))
+            {
+                return false;
+            }
+
+            var checkForTypeNames = new List<string>() { "games", "platforms" };
+            foreach (var typeName in checkForTypeNames)
+            {
+                var jsonFilePath = JsonFilePathForEntityType(directoryPath, typeName);
+                if (!File.Exists(jsonFilePath))
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         private static List<T> ReadEntityTypeFromJsonFile<T>(string directoryPath, string typeName)

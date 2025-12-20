@@ -148,5 +148,39 @@ namespace GlogGenerator.Data
 
             return nameBuilder.ToString();
         }
+
+        public void SetNameOverride(string nameOverride)
+        {
+            this.NameOverride = nameOverride;
+        }
+
+        public void SetNameAppendReleaseYear(int firstReleaseYear)
+        {
+            this.NameAppendReleaseYear = true;
+            this.FirstReleaseYear = firstReleaseYear;
+        }
+
+        public void SetNameAppendReleasePlatforms(List<string> releasePlatformNames)
+        {
+            this.NameAppendReleasePlatforms = true;
+            this.ReleasePlatformNames = releasePlatformNames;
+        }
+
+        public void SetNameAppendReleaseNumber(int releaseNumber)
+        {
+            this.NameAppendReleaseNumber = true;
+            this.ReleaseNumber = releaseNumber;
+        }
+
+        public virtual void ReapplyCustomPropertiesTo(IgdbGameReference target)
+        {
+            target.NameOverride = this.NameOverride;
+            target.NameAppendReleaseYear = this.NameAppendReleaseYear;
+            target.FirstReleaseYear = this.FirstReleaseYear;
+            target.NameAppendReleasePlatforms = this.NameAppendReleasePlatforms;
+            target.ReleasePlatformNames = this.ReleasePlatformNames;
+            target.NameAppendReleaseNumber = this.NameAppendReleaseNumber;
+            target.ReleaseNumber = this.ReleaseNumber;
+        }
     }
 }

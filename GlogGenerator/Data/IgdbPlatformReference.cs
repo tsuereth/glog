@@ -60,5 +60,15 @@ namespace GlogGenerator.Data
 
             return IgdbPlatformName;
         }
+
+        public void SetNameOverride(string nameOverride)
+        {
+            this.NameOverride = nameOverride;
+        }
+
+        public virtual void ReapplyCustomPropertiesTo(IgdbPlatformReference target)
+        {
+            target.NameOverride = this.NameOverride;
+        }
     }
 }

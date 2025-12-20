@@ -74,5 +74,15 @@ namespace GlogGenerator.Data
 
             return Name;
         }
+
+        public void SetNameOverride(string nameOverride)
+        {
+            this.NameOverride = nameOverride;
+        }
+
+        public virtual void ReapplyCustomPropertiesTo(IgdbMetadataReference target)
+        {
+            target.NameOverride = this.NameOverride;
+        }
     }
 }

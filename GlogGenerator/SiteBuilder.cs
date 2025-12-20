@@ -90,9 +90,33 @@ namespace GlogGenerator
             this.buildDate = buildDate;
         }
 
+        public void LoadSiteDataIndexFiles()
+        {
+            this.siteDataIndex.LoadFromJsonFiles(
+                this.configData.SiteDataIndexFilesBasePath,
+                this.configData.InputFilesBasePath,
+                this.GetContentParser());
+        }
+
+        public void RewriteSiteDataIndexFiles()
+        {
+            this.siteDataIndex.WriteToJsonFiles(this.configData.SiteDataIndexFilesBasePath);
+        }
+
         public ContentParser GetContentParser()
         {
             return this.contentParser;
+        }
+
+        public bool TryLoadIgdbCache()
+        {
+            if (IgdbCache.JsonFilesExist(this.configData.InputFilesBasePath))
+            {
+                this.igdbCache = IgdbCache.FromJsonFiles(this.configData.InputFilesBasePath);
+                return true;
+            }
+
+            return false;
         }
 
         public void SetAdditionalIgdbGameIds(List<int> igdbGameIds)
@@ -107,9 +131,6 @@ namespace GlogGenerator
         {
             var igdbCache = this.GetIgdbCache();
             igdbCache.WriteToJsonFiles(this.configData.InputFilesBasePath);
-
-            // FIXME: This should be written separately from the IGDB cache.
-            this.siteDataIndex.WriteToJsonFiles(this.configData.SiteDataIndexFilesBasePath);
         }
 
         public async Task UpdateIgdbCacheFromApiAsync(IgdbApiClient apiClient)

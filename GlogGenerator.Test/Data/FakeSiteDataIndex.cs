@@ -237,5 +237,10 @@ namespace GlogGenerator.Test
         {
             throw new NotImplementedException();
         }
+
+        public void LoadFromJsonFiles(string directoryPath, string inputFilesBasePath, ContentParser contentParser)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

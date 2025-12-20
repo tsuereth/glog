@@ -443,34 +443,169 @@ namespace GlogGenerator.Data
 
             this.Lookups.ClearAll();
 
-            // Load game data from the IGDB cache.
-            foreach (var igdbGame in igdbCache.GetAllGames())
+            // Create referenceable properties from the IGDB cache's entity data.
+            // If old data includes customizations which override that entity data, reapply those customizations.
+
+            var gameEntityReferences = igdbCache.GetAllGames().Select(game => new IgdbGameReference(game, igdbCache));
+            foreach (var gameEntityReference in gameEntityReferences)
             {
-                var gameEntityReference = new IgdbGameReference(igdbGame, igdbCache);
+                // FIXME: `HasIgdbEntityData()` shouldn't be necessary here, but some tests provide fake game data to this codepath!
+                if (gameEntityReference.HasIgdbEntityData() && oldGames.TryGetDataById(gameEntityReference.GetIgdbEntityDataId(), out var oldData))
+                {
+                    var oldEntityReference = oldData.GetIgdbEntityReference();
+                    if (oldEntityReference != null)
+                    {
+                        oldEntityReference.ReapplyCustomPropertiesTo(gameEntityReference);
+                    }
+                }
+            }
+
+            var platformEntityReferences = igdbCache.GetAllPlatforms().Select(platform => new IgdbPlatformReference(platform));
+            foreach (var platformEntityReference in platformEntityReferences)
+            {
+                // FIXME: `HasIgdbEntityData()` shouldn't be necessary here, but some tests provide fake game data to this codepath!
+                if (platformEntityReference.HasIgdbEntityData() && oldPlatforms.TryGetDataById(platformEntityReference.GetIgdbEntityDataId(), out var oldData))
+                {
+                    var oldEntityReference = oldData.GetIgdbEntityReference();
+                    if (oldEntityReference != null)
+                    {
+                        oldEntityReference.ReapplyCustomPropertiesTo(platformEntityReference);
+                    }
+                }
+            }
+
+            var metadataEntityReferences = igdbCache.GetAllGameMetadata().Select(metadata => new IgdbMetadataReference(metadata));
+            /* FIXME: Old tags (and their associated metadata) cannot be retrieved by IGDB entity ID,
+             * because TagData is indexed by its abstract key, not by the IGDB entity ID.
+             * This means any metadata customizations will be unrecoverable in a data update!
+            foreach (var metadataEntityReference in metadataEntityReferences)
+            {
+                if (oldTags.TryGetDataById(metadataEntityReference.GetIgdbEntityDataId(), out var oldData)
+                {
+                    var oldEntityReference = oldData.GetIgdbEntityReference();
+                    if (oldEntityReference != null)
+                    {
+                        oldEntityReference.ReapplyCustomPropertiesTo(metadataEntityReference);
+                    }
+                }
+            }
+            */
+
+            var ambiguousGameReferenceGroups = gameEntityReferences
+                .GroupBy(game => UrlizedString.Urlize(game.GetReferenceableKey()))
+                .Where(group => group.Count() > 1);
+            foreach (var ambiguousGameReferenceGroup in ambiguousGameReferenceGroups)
+            {
+                var duplicatedUrl = ambiguousGameReferenceGroup.Key;
+
+                var ambiguousReferences = ambiguousGameReferenceGroup.ToDictionary(r => r.GetIgdbEntityDataId(), r => r);
+                var ambiguousGames = ambiguousGameReferenceGroup.ToDictionary(r => r.GetIgdbEntityDataId(), r => r.HasIgdbEntityData() ? igdbCache.GetGame(r.IgdbEntityId.Value) : null);
+
+                // TODO: If one of the IgdbEntities IS null, then what??
+                // The following IgdbCache lookups will fail!
+
+                // We can disambiguate games with the same name/URL based on their release dates.
+                // Unless some release dates aren't available -- that'll be trouble.
+                var gamesMissingReleaseDate = ambiguousGames.Values.Where(g => g.GetFirstReleaseDate(igdbCache) == null);
+                if (gamesMissingReleaseDate.Any())
+                {
+                    throw new InvalidDataException($"Multiple games have the same URL \"{duplicatedUrl}\" and cannot be disambiguated because some are missing a release date.");
+                }
+
+                var gamesByReleaseYear = ambiguousGames.Values.GroupBy(g => g.GetFirstReleaseDate(igdbCache).Value.Year).ToDictionary(group => group.Key, group => group);
+                var earliestReleaseYear = gamesByReleaseYear.Keys.OrderBy(y => y).First();
+                foreach (var releaseYear in gamesByReleaseYear.Keys)
+                {
+                    var disambiguateByReleaseYear = false;
+                    var disambiguateByPlatforms = false;
+
+                    // If this release year isn't the earliest year for a game of this name, later-released games will be disambiguated by release year.
+                    if (releaseYear != earliestReleaseYear)
+                    {
+                        disambiguateByReleaseYear = true;
+                    }
+
+                    // If multiple games with this name were released in the SAME year, then they need to be disambiguated by their release platforms.
+                    if (gamesByReleaseYear[releaseYear].Count() > 1)
+                    {
+                        disambiguateByPlatforms = true;
+                    }
+
+                    foreach (var game in gamesByReleaseYear[releaseYear])
+                    {
+                        var gameReferenceDataId = IIgdbEntityReference.GetIgdbEntityReferenceDataId(game);
+
+                        if (disambiguateByPlatforms)
+                        {
+                            var releasePlatformNames = ambiguousGames[gameReferenceDataId].PlatformIds
+                                .Select(platformId => igdbCache.GetPlatform(platformId))
+                                .Select(platform => platform.GetReferenceString(igdbCache))
+                                .Order(StringComparer.OrdinalIgnoreCase).ToList();
+                            ambiguousReferences[gameReferenceDataId].SetNameAppendReleasePlatforms(releasePlatformNames);
+
+                            // FIXME: IgdbEntity override properties are deprecated!
+                            ambiguousGames[gameReferenceDataId].NameGlogAppendPlatforms = true;
+                        }
+
+                        if (disambiguateByReleaseYear)
+                        {
+                            ambiguousReferences[gameReferenceDataId].SetNameAppendReleaseYear(releaseYear);
+
+                            // FIXME: IgdbEntity override properties are deprecated!
+                            ambiguousGames[gameReferenceDataId].NameGlogAppendReleaseYear = true;
+                        }
+                    }
+                }
+            }
+
+            // Sometimes... disambiguating game names/URLs by release-year and platform STILL isn't enough!
+            // This is so rare and bizarre that we may as well just start slapping numbers on the games' names.
+            ambiguousGameReferenceGroups = gameEntityReferences
+                .GroupBy(game => UrlizedString.Urlize(game.GetReferenceableKey()))
+                .Where(group => group.Count() > 1);
+            foreach (var ambiguousGameReferenceGroup in ambiguousGameReferenceGroups)
+            {
+                var ambiguousReferences = ambiguousGameReferenceGroup.ToDictionary(r => r.GetIgdbEntityDataId(), r => r);
+                var ambiguousGames = ambiguousGameReferenceGroup.ToDictionary(r => r.GetIgdbEntityDataId(), r => r.HasIgdbEntityData() ? igdbCache.GetGame(r.IgdbEntityId.Value) : null);
+
+                var gamesInReleaseOrder = ambiguousGames.Values.OrderBy(g => g.GetFirstReleaseDate(igdbCache)).ToList();
+                for (var i = 1; i < gamesInReleaseOrder.Count; ++i)
+                {
+                    var game = gamesInReleaseOrder[i];
+
+                    // Start with release number "2"
+                    var releaseNumber = i + 1;
+
+                    var gameReferenceDataId = IIgdbEntityReference.GetIgdbEntityReferenceDataId(game);
+                    ambiguousReferences[gameReferenceDataId].SetNameAppendReleaseNumber(releaseNumber);
+
+                    // FIXME: IgdbEntity override properties are deprecated!
+                    ambiguousGames[gameReferenceDataId].NameGlogAppendReleaseNumber = releaseNumber;
+                }
+            }
+
+            // Use these entity references to create Glog data, and populate that data with additional IGDB details.
+
+            foreach (var gameEntityReference in gameEntityReferences)
+            {
                 var gameData = GameData.FromIgdbGameReference(gameEntityReference);
                 gameData.PopulateRelatedIgdbData(igdbCache);
-
                 this.Lookups.AddData<GameData>(gameData);
             }
 
-            // And platform data!
-            foreach (var igdbPlatform in igdbCache.GetAllPlatforms())
+            foreach (var platformEntityReference in platformEntityReferences)
             {
-                var platformEntityReference = new IgdbPlatformReference(igdbPlatform);
                 var platformData = PlatformData.FromIgdbPlatformReference(platformEntityReference);
                 platformData.PopulateRelatedIgdbData(igdbCache);
-
                 this.Lookups.AddData<PlatformData>(platformData);
             }
 
-            // Prepare tags from game metadata.
-            foreach (var igdbGameMetadata in igdbCache.GetAllGameMetadata())
+            foreach (var metadataEntityReference in metadataEntityReferences)
             {
-                var metadataReference = new IgdbMetadataReference(igdbGameMetadata);
-                var tagData = new TagData(metadataReference);
+                var tagData = new TagData(metadataEntityReference);
                 if (this.Lookups.TryGetDataById<TagData>(tagData.GetDataId(), out var existingTag))
                 {
-                    existingTag.MergeIgdbMetadataReference(metadataReference);
+                    existingTag.MergeIgdbMetadataReference(metadataEntityReference);
                 }
                 else
                 {
@@ -686,6 +821,61 @@ namespace GlogGenerator.Data
             WriteDataItemsToJsonFile(this.Lookups.GetValues<PlatformData>(), directoryPath, "platforms");
             // Ratings references are trivial, don't bother writing them down.
             WriteDataItemsToJsonFile(this.Lookups.GetValues<TagData>(), directoryPath, "tags");
+        }
+
+        private static GlogReferenceableLookup<T> ReadDataItemsFromJsonFile<T>(string directoryPath, string typeName)
+            where T : class, IGlogReferenceable
+        {
+            var jsonFilePath = JsonFilePathForReferenceType(directoryPath, typeName);
+            var jsonText = File.ReadAllText(jsonFilePath);
+
+            var dataType = typeof(T);
+            IEnumerable<T> dataItems;
+            if (dataType == typeof(GameData))
+            {
+                var dataReferences = JsonConvert.DeserializeObject<Dictionary<string, IgdbGameReference>>(jsonText);
+                dataItems = dataReferences.Values.Select(r => GameData.FromIgdbGameReference(r)) as IEnumerable<T>;
+            }
+            else if (dataType == typeof(PlatformData))
+            {
+                var dataReferences = JsonConvert.DeserializeObject<Dictionary<string, IgdbPlatformReference>>(jsonText);
+                dataItems = dataReferences.Values.Select(r => PlatformData.FromIgdbPlatformReference(r)) as IEnumerable<T>;
+            }
+            else if (dataType == typeof(TagData))
+            {
+                var dataReferences = JsonConvert.DeserializeObject<Dictionary<string, List<IgdbMetadataReference>>>(jsonText);
+                dataItems = dataReferences.Values.Select(r => new TagData(r)) as IEnumerable<T>;
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+
+            var dataLookup = new GlogReferenceableLookup<T>();
+            foreach (var dataItem in dataItems)
+            {
+                dataLookup.AddData(dataItem);
+            }
+
+            return dataLookup;
+        }
+
+        public void LoadFromJsonFiles(string directoryPath, string inputFilesBasePath, ContentParser contentParser)
+        {
+            this.Lookups.ClearAll();
+
+            // Categories don't need to be loaded, they'll be derived from content.
+            this.Lookups.Games = ReadDataItemsFromJsonFile<GameData>(directoryPath, "games");
+            this.Lookups.Platforms = ReadDataItemsFromJsonFile<PlatformData>(directoryPath, "platforms");
+            // Ratings don't need to be loaded, they'll be derived from content.
+            this.Lookups.Tags = ReadDataItemsFromJsonFile<TagData>(directoryPath, "tags");
+
+            if (!string.IsNullOrEmpty(inputFilesBasePath) && Directory.Exists(inputFilesBasePath))
+            {
+                // Parse and validate content references to the freshly-loaded index data.
+                var oldLookups = new SiteDataLookups();
+                this.UpdateReferencesFromContent(oldLookups, contentParser, includeDrafts: true);
+            }
         }
 
         private void CheckUpdatedReferenceableDataForConflict<T>(IReadOnlyCollection<T> oldDataCollection, IReadOnlyCollection<T> newDataCollection)

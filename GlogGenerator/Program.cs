@@ -146,7 +146,12 @@ namespace GlogGenerator
 
             if (activeVerbMustLoadSiteData || updateIgdbCache || rewriteInputFiles)
             {
-                LoadSiteData(logger, builder);
+                var loadedIgdbCache = InitializeSiteData(logger, builder);
+                if (!loadedIgdbCache)
+                {
+                    logger.LogInformation("No IGDB cache was loaded, data must be fetched from IGDB");
+                    updateIgdbCache = true;
+                }
             }
 
             if (updateIgdbCache || activeVerb.Equals(NonBuildVerbs.AddGames))
@@ -338,11 +343,36 @@ rating = []
 
             if (activeVerbMustLoadSiteData || updateIgdbCache || rewriteInputFiles)
             {
-                // After the site's been built, an updated data cache (pruned of unused data) can be rewritten.
+                // After the site's been built, an updated data index and cache (pruned of unused data) can be rewritten.
+                builder.RewriteSiteDataIndexFiles();
                 builder.RewriteIgdbCache();
             }
 
             return 0;
+        }
+
+        private static bool InitializeSiteData(ILogger logger, SiteBuilder builder)
+        {
+            logger.LogInformation("Initializing data...");
+
+            var loadIndexTimer = Stopwatch.StartNew();
+            builder.LoadSiteDataIndexFiles();
+            loadIndexTimer.Stop();
+            logger.LogInformation(
+                "Finished initializing site data index in {LoadTimeMs} ms",
+                loadIndexTimer.ElapsedMilliseconds);
+
+            var loadCacheTimer = Stopwatch.StartNew();
+            var loadedCache = builder.TryLoadIgdbCache();
+            loadCacheTimer.Stop();
+            if (loadedCache)
+            {
+                logger.LogInformation(
+                    "Finished initializing site IGDB cache in {LoadTimeMs} ms",
+                    loadCacheTimer.ElapsedMilliseconds);
+            }
+
+            return loadedCache;
         }
 
         private static void LoadSiteData(ILogger logger, SiteBuilder builder)
