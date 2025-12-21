@@ -147,7 +147,12 @@ namespace GlogGenerator
             if (activeVerbMustLoadSiteData || updateIgdbCache || rewriteInputFiles)
             {
                 var loadedIgdbCache = InitializeSiteData(logger, builder);
-                if (!loadedIgdbCache)
+                if (loadedIgdbCache)
+                {
+                    // Add the cached IGDB data to the site data index.
+                    LoadSiteData(logger, builder);
+                }
+                else
                 {
                     logger.LogInformation("No IGDB cache was loaded, data must be fetched from IGDB");
                     updateIgdbCache = true;
