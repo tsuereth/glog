@@ -461,8 +461,7 @@ namespace GlogGenerator.Data
             var gameEntityReferences = igdbCache.GetAllGames().Select(game => new IgdbGameReference(game)).ToList();
             foreach (var gameEntityReference in gameEntityReferences)
             {
-                // FIXME: `HasIgdbEntityData()` shouldn't be necessary here, but some tests provide fake game data to this codepath!
-                if (gameEntityReference.HasIgdbEntityData() && oldGames.TryGetDataById(gameEntityReference.GetIgdbEntityDataId(), out var oldData))
+                if (oldGames.TryGetDataById(gameEntityReference.GetIgdbEntityDataId(), out var oldData))
                 {
                     var oldEntityReference = oldData.GetIgdbEntityReference();
                     if (oldEntityReference != null)
@@ -475,8 +474,7 @@ namespace GlogGenerator.Data
             var platformEntityReferences = igdbCache.GetAllPlatforms().Select(platform => new IgdbPlatformReference(platform)).ToList();
             foreach (var platformEntityReference in platformEntityReferences)
             {
-                // FIXME: `HasIgdbEntityData()` shouldn't be necessary here, but some tests provide fake game data to this codepath!
-                if (platformEntityReference.HasIgdbEntityData() && oldPlatforms.TryGetDataById(platformEntityReference.GetIgdbEntityDataId(), out var oldData))
+                if (oldPlatforms.TryGetDataById(platformEntityReference.GetIgdbEntityDataId(), out var oldData))
                 {
                     var oldEntityReference = oldData.GetIgdbEntityReference();
                     if (oldEntityReference != null)
@@ -518,50 +516,59 @@ namespace GlogGenerator.Data
                 // TODO: If one of the IgdbEntities IS null, then what??
                 // The following IgdbCache lookups will fail!
 
-                // We can disambiguate games with the same name/URL based on their release dates.
-                // Unless some release dates aren't available -- that'll be trouble.
-                var gamesMissingReleaseDate = ambiguousGames.Values.Where(g => g.GetFirstReleaseDate(igdbCache) == null);
-                if (gamesMissingReleaseDate.Any())
+                var gamesByReleaseYear = ambiguousGames.Values
+                    .Where(g => g.GetFirstReleaseDate() != null)
+                    .GroupBy(g => g.GetFirstReleaseDate().Value.Year)
+                    .ToDictionary(group => group.Key, group => group);
+                if (gamesByReleaseYear.Any())
                 {
-                    throw new InvalidDataException($"Multiple games have the same URL \"{duplicatedUrl}\" and cannot be disambiguated because some are missing a release date.");
+                    var earliestReleaseYear = gamesByReleaseYear.Keys.OrderBy(y => y).First();
+                    foreach (var releaseYear in gamesByReleaseYear.Keys)
+                    {
+                        var disambiguateByReleaseYear = false;
+                        var disambiguateByPlatforms = false;
+
+                        // If this release year isn't the earliest year for a game of this name, later-released games will be disambiguated by release year.
+                        if (releaseYear != earliestReleaseYear)
+                        {
+                            disambiguateByReleaseYear = true;
+                        }
+
+                        // If multiple games with this name were released in the SAME year, then they need to be disambiguated by their release platforms.
+                        if (gamesByReleaseYear[releaseYear].Count() > 1)
+                        {
+                            disambiguateByPlatforms = true;
+                        }
+
+                        foreach (var game in gamesByReleaseYear[releaseYear])
+                        {
+                            var gameReferenceDataId = IIgdbEntityReference.GetIgdbEntityReferenceDataId(game);
+
+                            if (disambiguateByPlatforms)
+                            {
+                                var releasePlatformNames = ambiguousGames[gameReferenceDataId].PlatformIds
+                                    .Select(platformId => platformReferencesByIgdbId[platformId].GetReferenceableKey())
+                                    .Order(StringComparer.OrdinalIgnoreCase).ToList();
+                                ambiguousReferences[gameReferenceDataId].SetNameAppendReleasePlatforms(releasePlatformNames);
+                            }
+
+                            if (disambiguateByReleaseYear)
+                            {
+                                ambiguousReferences[gameReferenceDataId].SetNameAppendReleaseYear(releaseYear);
+                            }
+                        }
+                    }
                 }
 
-                var gamesByReleaseYear = ambiguousGames.Values.GroupBy(g => g.GetFirstReleaseDate(igdbCache).Value.Year).ToDictionary(group => group.Key, group => group);
-                var earliestReleaseYear = gamesByReleaseYear.Keys.OrderBy(y => y).First();
-                foreach (var releaseYear in gamesByReleaseYear.Keys)
+                // For games which don't have a release date, but do have a Game Status, use that Status instead.
+                var gamesUnreleasedWithGameStatus = ambiguousGames.Values
+                    .Where(g => g.GetFirstReleaseDate() == null && g.GameStatusId != IgdbGameStatus.IdNotFound);
+                foreach (var game in gamesUnreleasedWithGameStatus)
                 {
-                    var disambiguateByReleaseYear = false;
-                    var disambiguateByPlatforms = false;
+                    var gameReferenceDataId = IIgdbEntityReference.GetIgdbEntityReferenceDataId(game);
 
-                    // If this release year isn't the earliest year for a game of this name, later-released games will be disambiguated by release year.
-                    if (releaseYear != earliestReleaseYear)
-                    {
-                        disambiguateByReleaseYear = true;
-                    }
-
-                    // If multiple games with this name were released in the SAME year, then they need to be disambiguated by their release platforms.
-                    if (gamesByReleaseYear[releaseYear].Count() > 1)
-                    {
-                        disambiguateByPlatforms = true;
-                    }
-
-                    foreach (var game in gamesByReleaseYear[releaseYear])
-                    {
-                        var gameReferenceDataId = IIgdbEntityReference.GetIgdbEntityReferenceDataId(game);
-
-                        if (disambiguateByPlatforms)
-                        {
-                            var releasePlatformNames = ambiguousGames[gameReferenceDataId].PlatformIds
-                                .Select(platformId => platformReferencesByIgdbId[platformId].GetReferenceableKey())
-                                .Order(StringComparer.OrdinalIgnoreCase).ToList();
-                            ambiguousReferences[gameReferenceDataId].SetNameAppendReleasePlatforms(releasePlatformNames);
-                        }
-
-                        if (disambiguateByReleaseYear)
-                        {
-                            ambiguousReferences[gameReferenceDataId].SetNameAppendReleaseYear(releaseYear);
-                        }
-                    }
+                    var gameStatus = igdbCache.GetGameStatus(game.GameStatusId);
+                    ambiguousReferences[gameReferenceDataId].SetNameAppendGameStatus(gameStatus.Status);
                 }
             }
 
@@ -575,7 +582,8 @@ namespace GlogGenerator.Data
                 var ambiguousReferences = ambiguousGameReferenceGroup.ToDictionary(r => r.GetIgdbEntityDataId(), r => r);
                 var ambiguousGames = ambiguousGameReferenceGroup.ToDictionary(r => r.GetIgdbEntityDataId(), r => r.HasIgdbEntityData() ? igdbCache.GetGame(r.IgdbEntityId.Value) : null);
 
-                var gamesInReleaseOrder = ambiguousGames.Values.OrderBy(g => g.GetFirstReleaseDate(igdbCache)).ToList();
+                // For games missing a FirstReleaseDate, sort them toward the end (after valid releases).
+                var gamesInReleaseOrder = ambiguousGames.Values.OrderBy(g => g.GetFirstReleaseDate() ?? DateTimeOffset.MaxValue).ToList();
                 for (var i = 1; i < gamesInReleaseOrder.Count; ++i)
                 {
                     var game = gamesInReleaseOrder[i];

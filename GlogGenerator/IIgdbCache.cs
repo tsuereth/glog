@@ -23,6 +23,8 @@ namespace GlogGenerator
 
         public IgdbGameMode GetGameMode(int id);
 
+        public IgdbGameStatus GetGameStatus(int id);
+
         public IgdbGameType GetGameType(int id);
 
         public IgdbGenre GetGenre(int id);
@@ -36,8 +38,6 @@ namespace GlogGenerator
         public List<IgdbPlatform> GetAllPlatforms();
 
         public IgdbPlayerPerspective GetPlayerPerspective(int id);
-
-        public IgdbReleaseDate GetReleaseDate(int id);
 
         public IgdbTheme GetTheme(int id);
 

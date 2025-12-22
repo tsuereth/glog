@@ -42,6 +42,9 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("game_modes")]
         public List<int> GameModeIds { get; set; } = new List<int>();
 
+        [JsonProperty("game_status")]
+        public int GameStatusId { get; set; } = IgdbGameStatus.IdNotFound;
+
         [JsonProperty("game_type")]
         public int GameTypeId { get; set; } = IgdbGameType.IdNotFound;
 
@@ -73,9 +76,6 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("ports")]
         public List<int> PortGameIds { get; set; } = new List<int>();
 
-        [JsonProperty("release_dates")]
-        public List<int> ReleaseDateIds { get; set; } = new List<int>();
-
         [JsonProperty("remakes")]
         public List<int> RemakeGameIds { get; set; } = new List<int>();
 
@@ -94,17 +94,11 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("version_parent")]
         public int VersionParentGameId { get; set; } = IdNotFound;
 
-        public DateTimeOffset? GetFirstReleaseDate(IIgdbCache cache)
+        public DateTimeOffset? GetFirstReleaseDate()
         {
             if (this.FirstReleaseDateTimestamp != 0)
             {
                 return DateTimeOffset.FromUnixTimeSeconds(this.FirstReleaseDateTimestamp);
-            }
-
-            var releaseDates = this.ReleaseDateIds.Select(id => cache.GetReleaseDate(id)).Where(d => d != null && d.DateTimestamp != 0);
-            if (releaseDates.Any())
-            {
-                return releaseDates.OrderBy(d => d.DateTimestamp).First().Date;
             }
 
             return null;
@@ -150,6 +144,14 @@ namespace GlogGenerator.IgdbApi
             return this.ForkGameIds
                 .Union(this.StandaloneExpansionGameIds)
                 .Where(i => i != IgdbEntity.IdNotFound);
+        }
+
+        public IEnumerable<int> GetAllAssociatedGameIds()
+        {
+            return this.GetParentGameIds()
+                .Union(this.GetOtherReleaseGameIds())
+                .Union(this.GetChildGameIds())
+                .Union(this.GetRelatedGameIds());
         }
     }
 }
