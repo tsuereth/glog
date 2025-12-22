@@ -17,6 +17,7 @@
     "game_modes": [
       1
     ],
+    "game_status": -1,
     "game_type": 0,
     "genres": [
       12,
@@ -46,18 +47,6 @@
       2
     ],
     "ports": [],
-    "release_dates": [
-      719889,
-      363424,
-      148103,
-      127560,
-      127597,
-      127600,
-      127601,
-      127594,
-      127593,
-      127599
-    ],
     "remakes": [],
     "remasters": [],
     "standalone_expansions": [],
@@ -88,6 +77,7 @@
       2,
       3
     ],
+    "game_status": -1,
     "game_type": 0,
     "genres": [
       12,
@@ -120,14 +110,6 @@
       3
     ],
     "ports": [],
-    "release_dates": [
-      622493,
-      177714,
-      177865,
-      176609,
-      177864,
-      831806
-    ],
     "remakes": [],
     "remasters": [],
     "standalone_expansions": [],

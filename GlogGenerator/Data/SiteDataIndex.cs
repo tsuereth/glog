@@ -703,17 +703,20 @@ namespace GlogGenerator.Data
                     _ = this.GetData(gameTagReference); // Resolve the reference, to ensure it isn't deleted later.
                 }
 
-                // And... if the game's title is based on some platform data, force those platforms to persist in the cache.
-                var gameIgdbReference = game.GetIgdbEntityReference();
-                if (gameIgdbReference.NameAppendReleasePlatforms == true)
+                if (igdbCache != null)
                 {
-                    foreach (var platformName in gameIgdbReference.ReleasePlatformNames)
+                    // And... if the game's title is based on some platform data, force those platforms to persist in the cache.
+                    var gameIgdbReference = game.GetIgdbEntityReference();
+                    if (gameIgdbReference.NameAppendReleasePlatforms == true)
                     {
-                        var platform = this.Lookups.GetDataByReferenceableKey<PlatformData>(platformName);
-                        var platformEntityReference = platform.GetIgdbEntityReference();
-                        var platformId = platformEntityReference.IgdbEntityId.Value;
-                        var igdbPlatform = igdbCache.GetPlatform(platformId);
-                        igdbPlatform.SetForcePersistInCache();
+                        foreach (var platformName in gameIgdbReference.ReleasePlatformNames)
+                        {
+                            var platform = this.Lookups.GetDataByReferenceableKey<PlatformData>(platformName);
+                            var platformEntityReference = platform.GetIgdbEntityReference();
+                            var platformId = platformEntityReference.IgdbEntityId.Value;
+                            var igdbPlatform = igdbCache.GetPlatform(platformId);
+                            igdbPlatform.SetForcePersistInCache();
+                        }
                     }
                 }
             }

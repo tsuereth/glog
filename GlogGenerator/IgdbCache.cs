@@ -393,24 +393,21 @@ namespace GlogGenerator
             }
         }
 
-        public async Task UpdateFromApiClient(IgdbApiClient client)
+        public void UpdateFromApiData(IgdbApiBatchDataResponse data)
         {
-            var gameIds = this.gamesById.Keys.ToList();
-            var allData = await client.GetAllDataForGameIdsAsync(gameIds);
-
-            this.collectionsById = allData.Collections.ToDictionary(o => o.Id, o => o);
-            this.companiesById = allData.Companies.ToDictionary(o => o.Id, o => o);
-            this.franchisesById = allData.Franchises.ToDictionary(o => o.Id, o => o);
-            this.gamesById = allData.Games.ToDictionary(o => o.Id, o => o);
-            this.gameModesById = allData.GameModes.ToDictionary(o => o.Id, o => o);
-            this.gameStatusesById = allData.GameStatuses.ToDictionary(o => o.Id, o => o);
-            this.gameTypesById = allData.GameTypes.ToDictionary(o => o.Id, o => o);
-            this.genresById = allData.Genres.ToDictionary(o => o.Id, o => o);
-            this.involvedCompaniesById = allData.InvolvedCompanies.ToDictionary(o => o.Id, o => o);
-            this.keywordsById = allData.Keywords.ToDictionary(o => o.Id, o => o);
-            this.platformsById = allData.Platforms.ToDictionary(o => o.Id, o => o);
-            this.playerPerspectivesById = allData.PlayerPerspectives.ToDictionary(o => o.Id, o => o);
-            this.themesById = allData.Themes.ToDictionary(o => o.Id, o => o);
+            this.collectionsById = data.Collections.ToDictionary(o => o.Id, o => o);
+            this.companiesById = data.Companies.ToDictionary(o => o.Id, o => o);
+            this.franchisesById = data.Franchises.ToDictionary(o => o.Id, o => o);
+            this.gamesById = data.Games.ToDictionary(o => o.Id, o => o);
+            this.gameModesById = data.GameModes.ToDictionary(o => o.Id, o => o);
+            this.gameStatusesById = data.GameStatuses.ToDictionary(o => o.Id, o => o);
+            this.gameTypesById = data.GameTypes.ToDictionary(o => o.Id, o => o);
+            this.genresById = data.Genres.ToDictionary(o => o.Id, o => o);
+            this.involvedCompaniesById = data.InvolvedCompanies.ToDictionary(o => o.Id, o => o);
+            this.keywordsById = data.Keywords.ToDictionary(o => o.Id, o => o);
+            this.platformsById = data.Platforms.ToDictionary(o => o.Id, o => o);
+            this.playerPerspectivesById = data.PlayerPerspectives.ToDictionary(o => o.Id, o => o);
+            this.themesById = data.Themes.ToDictionary(o => o.Id, o => o);
 
             this.RebuildAssociatedGamesIndexes();
         }
@@ -569,6 +566,7 @@ namespace GlogGenerator
             cache.companiesById = ReadEntityTypeFromJsonFile<IgdbCompany>(directoryPath, "companies").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbCompany>();
             cache.franchisesById = ReadEntityTypeFromJsonFile<IgdbFranchise>(directoryPath, "franchises").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbFranchise>();
             cache.gameModesById = ReadEntityTypeFromJsonFile<IgdbGameMode>(directoryPath, "gameModes").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGameMode>();
+            cache.gameStatusesById = ReadEntityTypeFromJsonFile<IgdbGameStatus>(directoryPath, "gameStatuses").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGameStatus>();
             cache.gameTypesById = ReadEntityTypeFromJsonFile<IgdbGameType>(directoryPath, "gameTypes").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGameType>();
             cache.gamesById = ReadEntityTypeFromJsonFile<IgdbGame>(directoryPath, "games").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGame>();
             cache.genresById = ReadEntityTypeFromJsonFile<IgdbGenre>(directoryPath, "genres").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGenre>();

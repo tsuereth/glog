@@ -132,8 +132,16 @@ namespace GlogGenerator
 
         public async Task UpdateIgdbCacheFromApiAsync(IgdbApiClient apiClient)
         {
+            var igdbGameReferences = this.siteDataIndex.GetGames()
+                .Select(g => g.GetIgdbEntityReference())
+                .Where(r => r.HasIgdbEntityData());
+
+            var igdbGameIds = igdbGameReferences.Select(r => r.IgdbEntityId.Value).ToList();
+
+            var igdbData = await apiClient.GetAllDataForGameIdsAsync(igdbGameIds);
+
             var igdbCache = this.GetIgdbCache();
-            await igdbCache.UpdateFromApiClient(apiClient);
+            igdbCache.UpdateFromApiData(igdbData);
 
             igdbCache.WriteToJsonFiles(this.configData.InputFilesBasePath);
         }
