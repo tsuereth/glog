@@ -49,6 +49,16 @@ namespace GlogGenerator.Data
             return thisKey.Equals(matchKey, StringComparison.Ordinal);
         }
 
+        public IEnumerable<string> GetIgdbEntityReferenceIds()
+        {
+            if (this.igdbReference != null && this.igdbReference.HasIgdbEntityData())
+            {
+                return new List<string>() { this.igdbReference.GetIgdbEntityDataId() };
+            }
+
+            return new List<string>();
+        }
+
         public object GetReferenceProperties()
         {
             return this.igdbReference;
@@ -87,7 +97,7 @@ namespace GlogGenerator.Data
                 throw new InvalidDataException($"No IGDB Platform found with ID {this.igdbReference.IgdbEntityId.Value}");
             }
 
-            this.Abbreviation = igdbPlatform.GetReferenceString(igdbCache);
+            this.Abbreviation = igdbPlatform.Abbreviation;
             this.Name = igdbPlatform.Name;
 
             if (!string.IsNullOrEmpty(igdbPlatform.Url))

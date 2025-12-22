@@ -10,6 +10,8 @@ namespace GlogGenerator.Data
 
         private Dictionary<string, string> idsByReferenceableKey = new Dictionary<string, string>();
 
+        private Dictionary<string, string> idsByIgdbEntityReferenceId = new Dictionary<string, string>();
+
         public GlogReferenceableLookup() { }
 
         public GlogReferenceableLookup(IEnumerable<T> initialData)
@@ -42,8 +44,21 @@ namespace GlogGenerator.Data
                 throw new ArgumentException($"A data item with normalized referenceable key {normalizedKey} already exists");
             }
 
+            var igdbEntityReferenceIds = data.GetIgdbEntityReferenceIds();
+            foreach (var igdbEntityReferenceId in igdbEntityReferenceIds)
+            {
+                if (this.idsByIgdbEntityReferenceId.ContainsKey(igdbEntityReferenceId))
+                {
+                    throw new ArgumentException($"A data item with IGDB entity reference ID {igdbEntityReferenceId} already exists");
+                }
+            }
+
             this.dataById.Add(dataId, data);
             this.idsByReferenceableKey.Add(normalizedKey, dataId);
+            foreach (var igdbEntityReferenceId in igdbEntityReferenceIds)
+            {
+                this.idsByIgdbEntityReferenceId.Add(igdbEntityReferenceId, dataId);
+            }
         }
 
         public void RemoveDataById(string id)
@@ -53,9 +68,16 @@ namespace GlogGenerator.Data
                 throw new ArgumentException($"No {typeof(T).Name} found with ID {id}");
             }
 
+            this.dataById.Remove(id);
+
             var normalizedKey = UrlizedString.Urlize(data.GetReferenceableKey());
             this.idsByReferenceableKey.Remove(normalizedKey);
-            this.dataById.Remove(id);
+
+            var igdbEntityReferenceIds = data.GetIgdbEntityReferenceIds();
+            foreach (var igdbEntityReferenceId in igdbEntityReferenceIds)
+            {
+                this.idsByIgdbEntityReferenceId.Remove(igdbEntityReferenceId);
+            }
         }
 
         public void RemoveDataByReferenceableKey(string key)
@@ -66,8 +88,22 @@ namespace GlogGenerator.Data
                 throw new ArgumentException($"No {typeof(T).Name} found with key {normalizedKey}");
             }
 
-            this.idsByReferenceableKey.Remove(normalizedKey);
+            var data = this.dataById[id];
+
             this.dataById.Remove(id);
+
+            this.idsByReferenceableKey.Remove(normalizedKey);
+
+            var igdbEntityReferenceIds = data.GetIgdbEntityReferenceIds();
+            foreach (var igdbEntityReferenceId in igdbEntityReferenceIds)
+            {
+                this.idsByIgdbEntityReferenceId.Remove(igdbEntityReferenceId);
+            }
+        }
+
+        public bool HasDataById(string id)
+        {
+            return this.dataById.ContainsKey(id);
         }
 
         public bool TryGetDataById(string id, out T data)
@@ -115,6 +151,33 @@ namespace GlogGenerator.Data
             return this.GetDataById(id);
         }
 
+        public bool HasDataByIgdbEntityReferenceId(string igdbEntityReferenceId)
+        {
+            return this.idsByIgdbEntityReferenceId.ContainsKey(igdbEntityReferenceId);
+        }
+
+        public bool TryGetDataByIgdbEntityReferenceId(string igdbEntityReferenceId, out T data)
+        {
+            if (!this.idsByIgdbEntityReferenceId.TryGetValue(igdbEntityReferenceId, out var id))
+            {
+                data = null;
+                return false;
+            }
+
+            data = this.dataById[id];
+            return true;
+        }
+
+        public T GetDataByIgdbEntityReferenceId(string igdbEntityReferenceId)
+        {
+            if (!this.idsByIgdbEntityReferenceId.TryGetValue(igdbEntityReferenceId, out var id))
+            {
+                throw new ArgumentException($"No {typeof(T).Name} found with IGDB entity reference ID {igdbEntityReferenceId}");
+            }
+
+            return this.GetDataById(id);
+        }
+
         public ISet<string> GetIds()
         {
             return this.dataById.Keys.ToHashSet();
@@ -127,8 +190,9 @@ namespace GlogGenerator.Data
 
         public void Clear()
         {
-            dataById.Clear();
-            idsByReferenceableKey.Clear();
+            this.dataById.Clear();
+            this.idsByReferenceableKey.Clear();
+            this.idsByIgdbEntityReferenceId.Clear();
         }
     }
 }

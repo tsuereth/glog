@@ -121,10 +121,7 @@ namespace GlogGenerator
 
         public void SetAdditionalIgdbGameIds(List<int> igdbGameIds)
         {
-            var addIgdbGames = igdbGameIds.Select(i => new IgdbGame { Id = i }).ToList();
-
-            var igdbCache = this.GetIgdbCache();
-            igdbCache.SetAdditionalGames(addIgdbGames);
+            this.siteDataIndex.SetAdditionalIgdbGameIds(igdbGameIds);
         }
 
         public void RewriteIgdbCache()

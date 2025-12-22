@@ -1,180 +1,6 @@
 [
   {
     "bundles": [],
-    "collections": [],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 0,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [],
-    "game_modes": [],
-    "game_type": -1,
-    "genres": [],
-    "id": -1,
-    "involved_companies": [],
-    "keywords": [],
-    "name": "",
-    "name_glogOverride": "Everybody Votes Channel",
-    "parent_game": -1,
-    "platforms": [],
-    "player_perspectives": [],
-    "ports": [],
-    "release_dates": [],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [],
-    "version_parent": -1
-  },
-  {
-    "bundles": [],
-    "collections": [],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 0,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [],
-    "game_modes": [],
-    "game_type": -1,
-    "genres": [],
-    "id": -1,
-    "involved_companies": [],
-    "keywords": [],
-    "name": "",
-    "name_glogOverride": "Internet Channel",
-    "parent_game": -1,
-    "platforms": [],
-    "player_perspectives": [],
-    "ports": [],
-    "release_dates": [],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [],
-    "version_parent": -1
-  },
-  {
-    "bundles": [],
-    "collections": [],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 0,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [],
-    "game_modes": [],
-    "game_type": -1,
-    "genres": [],
-    "id": -1,
-    "involved_companies": [],
-    "keywords": [],
-    "name": "",
-    "name_glogOverride": "Nintendo Channel",
-    "parent_game": -1,
-    "platforms": [],
-    "player_perspectives": [],
-    "ports": [],
-    "release_dates": [],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [],
-    "version_parent": -1
-  },
-  {
-    "bundles": [],
-    "collections": [],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 0,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [],
-    "game_modes": [],
-    "game_type": -1,
-    "genres": [],
-    "id": -1,
-    "involved_companies": [],
-    "keywords": [],
-    "name": "",
-    "name_glogOverride": "Nintendo DS Browser",
-    "parent_game": -1,
-    "platforms": [],
-    "player_perspectives": [],
-    "ports": [],
-    "release_dates": [],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [],
-    "version_parent": -1
-  },
-  {
-    "bundles": [],
-    "collections": [],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 0,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [],
-    "game_modes": [],
-    "game_type": -1,
-    "genres": [],
-    "id": -1,
-    "involved_companies": [],
-    "keywords": [],
-    "name": "",
-    "name_glogOverride": "Pirate Battle",
-    "parent_game": -1,
-    "platforms": [],
-    "player_perspectives": [],
-    "ports": [],
-    "release_dates": [],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [],
-    "version_parent": -1
-  },
-  {
-    "bundles": [],
-    "collections": [],
-    "dlcs": [],
-    "expanded_games": [],
-    "expansions": [],
-    "first_release_date": 0,
-    "forks": [],
-    "franchise": -1,
-    "franchises": [],
-    "game_modes": [],
-    "game_type": -1,
-    "genres": [],
-    "id": -1,
-    "involved_companies": [],
-    "keywords": [],
-    "name": "",
-    "name_glogOverride": "Regex Crossword",
-    "parent_game": -1,
-    "platforms": [],
-    "player_perspectives": [],
-    "ports": [],
-    "release_dates": [],
-    "remakes": [],
-    "remasters": [],
-    "standalone_expansions": [],
-    "themes": [],
-    "version_parent": -1
-  },
-  {
-    "bundles": [],
     "collections": [
       2
     ],
@@ -11141,7 +10967,6 @@
       41036
     ],
     "name": "Final Fantasy II",
-    "name_glogAppendPlatforms": true,
     "parent_game": 16587,
     "platforms": [
       19,
@@ -13193,7 +13018,6 @@
       39459
     ],
     "name": "Final Fantasy III",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       19,
@@ -13892,7 +13716,6 @@
       37362
     ],
     "name": "The Lost Vikings",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       19,
@@ -15891,7 +15714,6 @@
       24801
     ],
     "name": "Sonic Generations",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -18862,7 +18684,6 @@
       11247
     ],
     "name": "Ghostbusters: The Video Game",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -19794,7 +19615,6 @@
       38289
     ],
     "name": "Call of Duty 4: Modern Warfare",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -21393,7 +21213,6 @@
       8172
     ],
     "name": "Saints Row",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       12
@@ -21752,7 +21571,6 @@
       23933
     ],
     "name": "Prince of Persia: The Sands of Time",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       11,
@@ -21891,7 +21709,6 @@
       23933
     ],
     "name": "Prince of Persia: Warrior Within",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       11,
@@ -22955,7 +22772,6 @@
       26906
     ],
     "name": "Resident Evil 2",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -24604,7 +24420,6 @@
       23933
     ],
     "name": "Syndicate",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -29094,7 +28909,6 @@
       29960
     ],
     "name": "Donkey Kong",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 1086,
     "platforms": [
       37,
@@ -32018,7 +31832,6 @@
       13595
     ],
     "name": "Tomb Raider: Legend",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       113,
@@ -32241,7 +32054,6 @@
       9364
     ],
     "name": "Tomb Raider",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -33019,7 +32831,6 @@
       521
     ],
     "name": "Tales of Hearts: Anime Movie Edition",
-    "name_glogOverride": "Tales of Hearts",
     "parent_game": -1,
     "platforms": [
       20
@@ -34340,7 +34151,6 @@
       8784
     ],
     "name": "SimCity",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -37763,7 +37573,6 @@
       30703
     ],
     "name": "Phoenix Wright: Ace Attorney",
-    "name_glogAppendPlatforms": true,
     "parent_game": 221280,
     "platforms": [
       20
@@ -39966,7 +39775,6 @@
       42805
     ],
     "name": "James Bond 007: Nightfire",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       11,
@@ -44171,7 +43979,6 @@
       23933
     ],
     "name": "Alone in the Dark",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -46140,7 +45947,6 @@
       23933
     ],
     "name": "Batman: Arkham Origins",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -49596,7 +49402,6 @@
       49393
     ],
     "name": "Punch-Out!!",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 84799,
     "platforms": [
       5,
@@ -49856,7 +49661,6 @@
       47789
     ],
     "name": "Pikmin 2",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       21
@@ -51069,7 +50873,6 @@
       23933
     ],
     "name": "Toki Tori",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 194909,
     "platforms": [
       9,
@@ -52428,7 +52231,6 @@
       23933
     ],
     "name": "Prince of Persia: The Two Thrones",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       11,
@@ -52512,7 +52314,6 @@
       7688
     ],
     "name": "Prince of Persia",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -52762,7 +52563,6 @@
       23933
     ],
     "name": "Prince of Persia: The Forgotten Sands",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -53242,7 +53042,6 @@
       46438
     ],
     "name": "Mad Max",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       48,
@@ -53581,7 +53380,6 @@
       44629
     ],
     "name": "Sonic Lost World",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       6,
@@ -54187,7 +53985,6 @@
       42805
     ],
     "name": "LEGO Star Wars: The Video Game",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       11,
@@ -54779,7 +54576,6 @@
       37362
     ],
     "name": "Tetris Attack",
-    "name_glogAppendPlatforms": true,
     "parent_game": 84157,
     "platforms": [
       19
@@ -56125,7 +55921,6 @@
       4918
     ],
     "name": "The Lord of the Rings: The Two Towers",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       11,
@@ -56236,7 +56031,6 @@
       15359
     ],
     "name": "The Lord of the Rings: The Return of the King",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       11,
@@ -59227,7 +59021,6 @@
       41055
     ],
     "name": "Sonic the Hedgehog",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       52,
@@ -65647,7 +65440,6 @@
       26906
     ],
     "name": "Lemmings",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       116,
@@ -65805,7 +65597,6 @@
       31533
     ],
     "name": "Sonic the Hedgehog 2",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -65940,7 +65731,6 @@
       31533
     ],
     "name": "Dr. Robotnik's Mean Bean Machine",
-    "name_glogAppendPlatforms": true,
     "parent_game": 47250,
     "platforms": [
       3,
@@ -66181,7 +65971,6 @@
     ],
     "keywords": [],
     "name": "A Boy and His Blob",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 2109,
     "platforms": [
       9,
@@ -66264,7 +66053,6 @@
       5345
     ],
     "name": "Alien Syndrome",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 4478,
     "platforms": [
       5,
@@ -68001,7 +67789,6 @@
       46438
     ],
     "name": "LEGO The Lord of the Rings",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -68374,7 +68161,6 @@
       23933
     ],
     "name": "Sonic Unleashed",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -68821,7 +68607,6 @@
       5844
     ],
     "name": "Strider",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -69771,7 +69556,6 @@
       39028
     ],
     "name": "The Witness",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       48,
@@ -71681,7 +71465,6 @@
       23933
     ],
     "name": "Shadow Warrior",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       48,
@@ -74372,7 +74155,6 @@
       27629
     ],
     "name": "Sonic the Hedgehog 3",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       5,
@@ -74655,7 +74437,6 @@
       49308
     ],
     "name": "LEGO Batman 2: DC Super Heroes",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -75060,7 +74841,6 @@
       23933
     ],
     "name": "Bionic Commando",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -75293,7 +75073,6 @@
       23933
     ],
     "name": "Dante's Inferno",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -75800,7 +75579,6 @@
       23933
     ],
     "name": "Kane & Lynch: Dead Men",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -76704,7 +76482,6 @@
       11549
     ],
     "name": "Tron: Evolution",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -77882,7 +77659,6 @@
       39049
     ],
     "name": "Inside",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       48,
@@ -78916,7 +78692,6 @@
       31533
     ],
     "name": "Ristar",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       3,
@@ -84374,7 +84149,6 @@
       11247
     ],
     "name": "Conan",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       9,
@@ -85646,7 +85420,6 @@
       30703
     ],
     "name": "Sonic 3D Blast",
-    "name_glogAppendPlatforms": true,
     "parent_game": -1,
     "platforms": [
       3,
@@ -90427,7 +90200,6 @@
       49437
     ],
     "name": "Hitman",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       170,
@@ -92103,7 +91875,6 @@
       23560
     ],
     "name": "The Room",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       34,
@@ -99406,7 +99177,6 @@
       4836
     ],
     "name": "Epoch",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       34,
@@ -102267,7 +102037,6 @@
       40744
     ],
     "name": "Prey",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       48,
@@ -102492,7 +102261,6 @@
       44373
     ],
     "name": "God of War",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       48,
@@ -105262,7 +105030,6 @@
     ],
     "keywords": [],
     "name": "Bomberman",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       20
@@ -111421,7 +111188,6 @@
       42165
     ],
     "name": "Shadow of the Colossus",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 2207,
     "platforms": [
       48
@@ -116048,7 +115814,6 @@
       4784
     ],
     "name": "Cypher",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       3,
@@ -116343,7 +116108,6 @@
       274
     ],
     "name": "Eliza",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       3,
@@ -118492,7 +118256,6 @@
       41459
     ],
     "name": "Hades",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       169,
@@ -121485,7 +121248,6 @@
       44753
     ],
     "name": "Resident Evil 4",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 974,
     "platforms": [
       169,
@@ -121619,7 +121381,6 @@
     ],
     "keywords": [],
     "name": "Metal Gear",
-    "name_glogAppendPlatforms": true,
     "parent_game": 374,
     "platforms": [
       15,
@@ -121685,7 +121446,6 @@
       4438
     ],
     "name": "The Legend of Zelda: Twilight Princess",
-    "name_glogAppendPlatforms": true,
     "parent_game": 1036,
     "platforms": [
       5
@@ -123972,7 +123732,6 @@
       182
     ],
     "name": "Saints Row",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       170,
@@ -124589,7 +124348,6 @@
     ],
     "keywords": [],
     "name": "Star Wars: The Force Unleashed",
-    "name_glogAppendPlatforms": true,
     "parent_game": 475,
     "platforms": [
       5
@@ -124758,7 +124516,6 @@
       31533
     ],
     "name": "Altered Beast",
-    "name_glogAppendPlatforms": true,
     "parent_game": 2604,
     "platforms": [
       44,
@@ -125262,7 +125019,6 @@
     ],
     "keywords": [],
     "name": "Ghostbusters: The Video Game",
-    "name_glogAppendPlatforms": true,
     "parent_game": 566,
     "platforms": [
       5,
@@ -125392,7 +125148,6 @@
     ],
     "keywords": [],
     "name": "Phoenix Wright: Ace Attorney",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 1426,
     "platforms": [
       48,
@@ -125464,7 +125219,6 @@
     ],
     "keywords": [],
     "name": "Phoenix Wright: Ace Attorney - Justice For All",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 1427,
     "platforms": [
       48,
@@ -125536,7 +125290,6 @@
     ],
     "keywords": [],
     "name": "Phoenix Wright: Ace Attorney - Trials and Tribulations",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 1428,
     "platforms": [
       48,
@@ -125606,7 +125359,6 @@
     ],
     "keywords": [],
     "name": "Castlevania: Circle of the Moon",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 1132,
     "platforms": [
       48,
@@ -125666,7 +125418,6 @@
     ],
     "keywords": [],
     "name": "Castlevania: Harmony of Dissonance",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 1133,
     "platforms": [
       48,
@@ -125725,7 +125476,6 @@
     ],
     "keywords": [],
     "name": "Castlevania: Aria of Sorrow",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 1134,
     "platforms": [
       48,
@@ -125958,7 +125708,6 @@
     ],
     "keywords": [],
     "name": "Mass Effect",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 73,
     "platforms": [
       48,
@@ -126018,7 +125767,6 @@
     ],
     "keywords": [],
     "name": "Mass Effect 2",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 74,
     "platforms": [
       48,
@@ -126079,7 +125827,6 @@
     ],
     "keywords": [],
     "name": "Mass Effect 3",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 75,
     "platforms": [
       48,
@@ -126459,7 +126206,6 @@
     ],
     "keywords": [],
     "name": "Apollo Justice: Ace Attorney",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 1429,
     "platforms": [
       48,
@@ -126522,7 +126268,6 @@
     ],
     "keywords": [],
     "name": "Phoenix Wright: Ace Attorney - Dual Destinies",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 1432,
     "platforms": [
       48,
@@ -126584,7 +126329,6 @@
     ],
     "keywords": [],
     "name": "Phoenix Wright: Ace Attorney - Spirit of Justice",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 12077,
     "platforms": [
       48,
@@ -126648,7 +126392,6 @@
       25963
     ],
     "name": "Super Mario RPG",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 5418,
     "platforms": [
       130
@@ -126900,7 +126643,6 @@
       12708
     ],
     "name": "Chrono Trigger",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 1802,
     "platforms": [
       9,
@@ -127094,7 +126836,6 @@
       42082
     ],
     "name": "Paper Mario: The Thousand-Year Door",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 3349,
     "platforms": [
       130
@@ -127324,7 +127065,6 @@
       31533
     ],
     "name": "Flicky",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 6105,
     "platforms": [
       3,
@@ -127595,7 +127335,6 @@
       2543
     ],
     "name": "Final Fantasy IV",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 16587,
     "platforms": [
       9,
@@ -127660,7 +127399,6 @@
       5328
     ],
     "name": "Final Fantasy VI",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 426,
     "platforms": [
       9,
@@ -127733,7 +127471,6 @@
       12708
     ],
     "name": "Final Fantasy V",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 419,
     "platforms": [
       9,
@@ -128117,7 +127854,6 @@
       31533
     ],
     "name": "Golden Axe",
-    "name_glogAppendPlatforms": true,
     "parent_game": 5565,
     "platforms": [
       3,
@@ -128299,7 +128035,6 @@
     ],
     "keywords": [],
     "name": "Voxelgram: DLC #1",
-    "name_glogAppendPlatforms": true,
     "parent_game": 122807,
     "platforms": [
       3,
@@ -128588,7 +128323,6 @@
     ],
     "keywords": [],
     "name": "Castlevania: Dawn of Sorrow",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 1136,
     "platforms": [
       169,
@@ -128650,7 +128384,6 @@
     ],
     "keywords": [],
     "name": "Castlevania: Portrait of Ruin",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 1138,
     "platforms": [
       169,
@@ -128712,7 +128445,6 @@
     ],
     "keywords": [],
     "name": "Castlevania: Order of Ecclesia",
-    "name_glogAppendReleaseYear": true,
     "parent_game": 1141,
     "platforms": [
       169,
@@ -128994,7 +128726,6 @@
       48285
     ],
     "name": "Dispatch",
-    "name_glogAppendReleaseYear": true,
     "parent_game": -1,
     "platforms": [
       508,

@@ -45,20 +45,6 @@ namespace GlogGenerator.Data
             return referenceableKeyUrlized.Equals(matchKeyUrlized, StringComparison.Ordinal);
         }
 
-        public void MergeIgdbMetadataReference(IgdbMetadataReference igdbReference)
-        {
-            var mergeId = igdbReference.GetIgdbEntityDataId();
-            if (!this.igdbReferences.Where(r => r.GetIgdbEntityDataId().Equals(mergeId, StringComparison.Ordinal)).Any())
-            {
-                this.igdbReferences.Add(igdbReference);
-            }
-        }
-
-        public void AddIgdbMetadataReference(IgdbMetadataReference igdbReference)
-        {
-            this.igdbReferences.Add(igdbReference);
-        }
-
         public IEnumerable<IgdbMetadataReference> GetIgdbEntityReferences()
         {
             return this.igdbReferences.Where(r => r.HasIgdbEntityData());
@@ -74,6 +60,11 @@ namespace GlogGenerator.Data
         public string GetReferenceableKey()
         {
             return this.Name;
+        }
+
+        public IEnumerable<string> GetIgdbEntityReferenceIds()
+        {
+            return this.igdbReferences.Where(r => r.HasIgdbEntityData()).Select(r => r.GetIgdbEntityDataId());
         }
 
         public object GetReferenceProperties()

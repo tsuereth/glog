@@ -23,6 +23,7 @@ namespace GlogGenerator.Data
         private readonly string inputFilesBasePath;
 
         private List<string> nonContentGameNames = new List<string>();
+        private List<int> additionalIgdbGameIds = new List<int>();
 
         private List<SiteDataReference<CategoryData>> categoryReferences = new List<SiteDataReference<CategoryData>>();
         private List<SiteDataReference<GameData>> gameReferences = new List<SiteDataReference<GameData>>();
@@ -135,6 +136,12 @@ namespace GlogGenerator.Data
             return data;
         }
 
+        public bool TryGetDataByIgdbEntityReferenceId<T>(string igdbEntityReferenceId, out T data)
+            where T : class, IGlogReferenceable
+        {
+            return this.Lookups.TryGetDataByIgdbEntityReferenceId<T>(igdbEntityReferenceId, out data);
+        }
+
         public List<CategoryData> GetCategories()
         {
             return this.Lookups.GetValues<CategoryData>();
@@ -213,6 +220,11 @@ namespace GlogGenerator.Data
         public void SetNonContentGameNames(List<string> gameNames)
         {
             this.nonContentGameNames = gameNames;
+        }
+
+        public void SetAdditionalIgdbGameIds(List<int> igdbGameIds)
+        {
+            this.additionalIgdbGameIds = igdbGameIds;
         }
 
         private void UpdateReferencesFromContent(SiteDataLookups oldLookups, ContentParser contentParser, bool includeDrafts)
@@ -314,7 +326,7 @@ namespace GlogGenerator.Data
                             categoryData.LinkedPostIds.Add(postId);
                         }
 
-                        var postGameTags = new Dictionary<string, TagData>();
+                        var postGameTagStrings = new HashSet<string>();
                         if (postData.Games != null)
                         {
                             foreach (var gameReference in postData.Games)
@@ -322,16 +334,16 @@ namespace GlogGenerator.Data
                                 var gameData = this.GetDataWithOldLookup(gameReference, oldLookups.Games);
                                 gameData.LinkedPostIds.Add(postId);
 
-                                foreach (var tagName in gameData.Tags)
+                                foreach (var tagString in gameData.GetTagStrings(this))
                                 {
-                                    var tagData = this.GetTag(tagName);
-                                    postGameTags[tagData.GetDataId()] = tagData;
+                                    postGameTagStrings.Add(tagString);
                                 }
                             }
                         }
 
-                        foreach (var tagData in postGameTags.Values)
+                        foreach (var tagString in postGameTagStrings)
                         {
+                            var tagData = this.GetTag(tagString);
                             tagData.LinkedPostIds.Add(postId);
                         }
 
@@ -446,7 +458,7 @@ namespace GlogGenerator.Data
             // Create referenceable properties from the IGDB cache's entity data.
             // If old data includes customizations which override that entity data, reapply those customizations.
 
-            var gameEntityReferences = igdbCache.GetAllGames().Select(game => new IgdbGameReference(game, igdbCache));
+            var gameEntityReferences = igdbCache.GetAllGames().Select(game => new IgdbGameReference(game)).ToList();
             foreach (var gameEntityReference in gameEntityReferences)
             {
                 // FIXME: `HasIgdbEntityData()` shouldn't be necessary here, but some tests provide fake game data to this codepath!
@@ -455,12 +467,12 @@ namespace GlogGenerator.Data
                     var oldEntityReference = oldData.GetIgdbEntityReference();
                     if (oldEntityReference != null)
                     {
-                        oldEntityReference.ReapplyCustomPropertiesTo(gameEntityReference);
+                        gameEntityReference.ReapplyCustomPropertiesFrom(oldEntityReference);
                     }
                 }
             }
 
-            var platformEntityReferences = igdbCache.GetAllPlatforms().Select(platform => new IgdbPlatformReference(platform));
+            var platformEntityReferences = igdbCache.GetAllPlatforms().Select(platform => new IgdbPlatformReference(platform)).ToList();
             foreach (var platformEntityReference in platformEntityReferences)
             {
                 // FIXME: `HasIgdbEntityData()` shouldn't be necessary here, but some tests provide fake game data to this codepath!
@@ -469,23 +481,25 @@ namespace GlogGenerator.Data
                     var oldEntityReference = oldData.GetIgdbEntityReference();
                     if (oldEntityReference != null)
                     {
-                        oldEntityReference.ReapplyCustomPropertiesTo(platformEntityReference);
+                        platformEntityReference.ReapplyCustomPropertiesFrom(oldEntityReference);
                     }
                 }
             }
 
-            var metadataEntityReferences = igdbCache.GetAllGameMetadata().Select(metadata => new IgdbMetadataReference(metadata));
-            /* FIXME: Old tags (and their associated metadata) cannot be retrieved by IGDB entity ID,
-             * because TagData is indexed by its abstract key, not by the IGDB entity ID.
+            var platformReferencesByIgdbId = platformEntityReferences.ToDictionary(r => r.IgdbEntityId.Value, r => r);
+
+            var metadataEntityReferences = igdbCache.GetAllGameMetadata().Select(metadata => new IgdbMetadataReference(metadata)).ToList();
+            /* FIXME: TagData doesn't facilitate individual IgdbMetadataReference retrieval or modification.
              * This means any metadata customizations will be unrecoverable in a data update!
             foreach (var metadataEntityReference in metadataEntityReferences)
             {
-                if (oldTags.TryGetDataById(metadataEntityReference.GetIgdbEntityDataId(), out var oldData)
+                if (oldTags.TryGetDataByIgdbEntityReferenceId(metadataEntityReference.GetIgdbEntityDataId(), out var oldData))
                 {
+                    // TODO: Retrieve the TagData's matching IgdbMetadataReference (from potentially multiple items!) and modify that one.
                     var oldEntityReference = oldData.GetIgdbEntityReference();
                     if (oldEntityReference != null)
                     {
-                        oldEntityReference.ReapplyCustomPropertiesTo(metadataEntityReference);
+                        metadataEntityReference.ReapplyCustomPropertiesFrom(oldEntityReference);
                     }
                 }
             }
@@ -538,21 +552,14 @@ namespace GlogGenerator.Data
                         if (disambiguateByPlatforms)
                         {
                             var releasePlatformNames = ambiguousGames[gameReferenceDataId].PlatformIds
-                                .Select(platformId => igdbCache.GetPlatform(platformId))
-                                .Select(platform => platform.GetReferenceString(igdbCache))
+                                .Select(platformId => platformReferencesByIgdbId[platformId].GetReferenceableKey())
                                 .Order(StringComparer.OrdinalIgnoreCase).ToList();
                             ambiguousReferences[gameReferenceDataId].SetNameAppendReleasePlatforms(releasePlatformNames);
-
-                            // FIXME: IgdbEntity override properties are deprecated!
-                            ambiguousGames[gameReferenceDataId].NameGlogAppendPlatforms = true;
                         }
 
                         if (disambiguateByReleaseYear)
                         {
                             ambiguousReferences[gameReferenceDataId].SetNameAppendReleaseYear(releaseYear);
-
-                            // FIXME: IgdbEntity override properties are deprecated!
-                            ambiguousGames[gameReferenceDataId].NameGlogAppendReleaseYear = true;
                         }
                     }
                 }
@@ -578,9 +585,6 @@ namespace GlogGenerator.Data
 
                     var gameReferenceDataId = IIgdbEntityReference.GetIgdbEntityReferenceDataId(game);
                     ambiguousReferences[gameReferenceDataId].SetNameAppendReleaseNumber(releaseNumber);
-
-                    // FIXME: IgdbEntity override properties are deprecated!
-                    ambiguousGames[gameReferenceDataId].NameGlogAppendReleaseNumber = releaseNumber;
                 }
             }
 
@@ -600,16 +604,40 @@ namespace GlogGenerator.Data
                 this.Lookups.AddData<PlatformData>(platformData);
             }
 
-            foreach (var metadataEntityReference in metadataEntityReferences)
+            var metadataEntityReferenceGroups = metadataEntityReferences
+                .GroupBy(metadata => UrlizedString.Urlize(metadata.GetReferenceableKey()));
+            foreach (var metadataEntityReferenceGroup in metadataEntityReferenceGroups)
             {
-                var tagData = new TagData(metadataEntityReference);
-                if (this.Lookups.TryGetDataById<TagData>(tagData.GetDataId(), out var existingTag))
+                var tagData = new TagData(metadataEntityReferenceGroup);
+                this.Lookups.AddData<TagData>(tagData);
+            }
+
+            // Re-add old Glog data that wasn't backed by IGDB entities, and which hasn't been replaced by the IGDB cache.
+
+            foreach (var oldGameData in oldGames.GetValues().Where(g => g.GetIgdbEntityReferenceIds().Count() == 0))
+            {
+                var oldGameDataId = oldGameData.GetDataId();
+                if (!this.Lookups.HasDataById<GameData>(oldGameDataId))
                 {
-                    existingTag.MergeIgdbMetadataReference(metadataEntityReference);
+                    this.Lookups.AddData<GameData>(oldGameData);
                 }
-                else
+            }
+
+            foreach (var oldPlatformData in oldPlatforms.GetValues().Where(p => p.GetIgdbEntityReferenceIds().Count() == 0))
+            {
+                var oldPlatformDataId = oldPlatformData.GetDataId();
+                if (!this.Lookups.HasDataById<PlatformData>(oldPlatformDataId))
                 {
-                    this.Lookups.AddData<TagData>(tagData);
+                    this.Lookups.AddData<PlatformData>(oldPlatformData);
+                }
+            }
+
+            foreach (var oldTagData in oldTags.GetValues().Where(t => t.GetIgdbEntityReferenceIds().Count() == 0))
+            {
+                var oldTagDataId = oldTagData.GetDataId();
+                if (!this.Lookups.HasDataById<TagData>(oldTagDataId))
+                {
+                    this.Lookups.AddData<TagData>(oldTagData);
                 }
             }
 
@@ -655,26 +683,28 @@ namespace GlogGenerator.Data
 
         public void RegisterAutomaticReferences(IIgdbCache igdbCache)
         {
-            var allIgdbPlatforms = igdbCache.GetAllPlatforms();
-
             // For every currently-referenced game, register references to that game's associated tags.
             var referencedGameDataIds = this.gameReferences.Where(r => r.GetIsResolved()).Select(r => r.GetResolvedReferenceId()).Distinct();
             foreach (var gameDataId in referencedGameDataIds)
             {
                 var game = this.Lookups.GetDataById<GameData>(gameDataId);
 
-                foreach (var tag in game.Tags)
+                foreach (var tagString in game.GetTagStrings(this))
                 {
-                    var gameTagReference = this.CreateReference<TagData>(tag, false);
+                    var gameTagReference = this.CreateReference<TagData>(tagString, false);
                     _ = this.GetData(gameTagReference); // Resolve the reference, to ensure it isn't deleted later.
                 }
 
                 // And... if the game's title is based on some platform data, force those platforms to persist in the cache.
-                if (game.TitleIncludesPlatforms)
+                var gameIgdbReference = game.GetIgdbEntityReference();
+                if (gameIgdbReference.NameAppendReleasePlatforms == true)
                 {
-                    foreach (var platform in game.TitlePlatforms)
+                    foreach (var platformName in gameIgdbReference.ReleasePlatformNames)
                     {
-                        var igdbPlatform = allIgdbPlatforms.Where(p => p.GetReferenceString(igdbCache).Equals(platform, StringComparison.Ordinal)).First();
+                        var platform = this.Lookups.GetDataByReferenceableKey<PlatformData>(platformName);
+                        var platformEntityReference = platform.GetIgdbEntityReference();
+                        var platformId = platformEntityReference.IgdbEntityId.Value;
+                        var igdbPlatform = igdbCache.GetPlatform(platformId);
                         igdbPlatform.SetForcePersistInCache();
                     }
                 }
@@ -753,8 +783,8 @@ namespace GlogGenerator.Data
                     {
                         var postGameData = this.GetData(postGameReference);
 
-                        var parentGameTitles = postGameData.GetParentGames(this);
-                        var otherReleaseTitles = postGameData.GetOtherReleases(this);
+                        var parentGameTitles = postGameData.GetParentGameTitles(this);
+                        var otherReleaseTitles = postGameData.GetOtherReleaseTitles(this);
 
                         foreach (var parentGameTitle in parentGameTitles)
                         {
@@ -870,11 +900,19 @@ namespace GlogGenerator.Data
             // Ratings don't need to be loaded, they'll be derived from content.
             this.Lookups.Tags = ReadDataItemsFromJsonFile<TagData>(directoryPath, "tags");
 
+            foreach (var additionalIgdbGameId in this.additionalIgdbGameIds)
+            {
+                var placeholderIgdbGame = new IgdbGame() { Id = additionalIgdbGameId };
+                var placeholderGameReference = new IgdbGameReference(placeholderIgdbGame);
+                this.Lookups.AddData<GameData>(GameData.FromIgdbGameReference(placeholderGameReference));
+            }
+
             if (!string.IsNullOrEmpty(inputFilesBasePath) && Directory.Exists(inputFilesBasePath))
             {
                 // Parse and validate content references to the freshly-loaded index data.
                 var oldLookups = new SiteDataLookups();
                 this.UpdateReferencesFromContent(oldLookups, contentParser, includeDrafts: true);
+                this.ResolveReferences();
             }
         }
 

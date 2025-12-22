@@ -110,6 +110,12 @@ namespace GlogGenerator.Test
             throw new NotImplementedException();
         }
 
+        public bool TryGetDataByIgdbEntityReferenceId<T>(string igdbEntityReferenceId, out T data)
+            where T : class, IGlogReferenceable
+        {
+            throw new NotImplementedException();
+        }
+
         public List<CategoryData> GetCategories()
         {
             return this.categories.ToList();
@@ -201,6 +207,11 @@ namespace GlogGenerator.Test
         public void SetNonContentGameNames(List<string> gameNames)
         {
             // no-op
+        }
+
+        public void SetAdditionalIgdbGameIds(List<int> igdbGameIds)
+        {
+            throw new NotImplementedException();
         }
 
         public void LoadContent(IIgdbCache igdbCache, ContentParser contentParser, bool includeDrafts)

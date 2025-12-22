@@ -13,6 +13,9 @@ namespace GlogGenerator.Data
         public T GetDataWithOldLookup<T>(SiteDataReference<T> dataReference, GlogReferenceableLookup<T> oldDataLookup)
             where T : class, IGlogReferenceable;
 
+        public bool TryGetDataByIgdbEntityReferenceId<T>(string igdbEntityReferenceId, out T data)
+            where T : class, IGlogReferenceable;
+
         public List<CategoryData> GetCategories();
 
         public bool HasGame(string gameTitle);
@@ -42,6 +45,8 @@ namespace GlogGenerator.Data
         public List<TagData> GetTags();
 
         public void SetNonContentGameNames(List<string> gameNames);
+
+        public void SetAdditionalIgdbGameIds(List<int> igdbGameIds);
 
         public void LoadContent(IIgdbCache igdbCache, ContentParser contentParser, bool includeDrafts);
 

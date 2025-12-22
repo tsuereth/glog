@@ -116,13 +116,6 @@ namespace GlogGenerator.IgdbApi
                     throw new ArgumentException($"{typeof(T).FullName}.{typeProperty.Name} has an empty JsonProperty name");
                 }
 
-                // Skip properties which are Glog overrides.
-                var glogOverrideAttr = typeProperty.GetCustomAttribute<IgdbEntityGlogOverrideValueAttribute>();
-                if (glogOverrideAttr != null)
-                {
-                    continue;
-                }
-
                 fields.Add(jsonPropertyAttr.PropertyName);
             }
 

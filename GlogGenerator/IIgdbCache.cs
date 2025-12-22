@@ -51,8 +51,6 @@ namespace GlogGenerator
 
         public IEnumerable<int> GetRelatedGameIds(int gameId);
 
-        public void SetAdditionalGames(List<IgdbGame> additionalGames);
-
         public Task UpdateFromApiClient(IgdbApiClient client);
 
         public void RemoveEntityById(Type entityType, int id);

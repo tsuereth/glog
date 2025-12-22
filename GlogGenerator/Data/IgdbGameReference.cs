@@ -63,41 +63,9 @@ namespace GlogGenerator.Data
 
         public IgdbGameReference() : base() { }
 
-        public IgdbGameReference(IgdbGame fromGame, IIgdbCache cache) : base(fromGame)
+        public IgdbGameReference(IgdbGame fromGame) : base(fromGame)
         {
-            // FIXME: There should be no such thing as "empty IGDB game name," but...
-            // non-IGDB games currently injected into the IGDB cache have an empty Name.
-            // Those non-IGDB games should, ultimately, not be `IgdbGame`s at all. (right?)
-            if (!string.IsNullOrEmpty(fromGame.Name))
-            {
-                this.Name = fromGame.Name;
-            }
-
-            this.NameOverride = fromGame.NameGlogOverride;
-            if (this.NameOverride == null)
-            {
-                this.NameAppendReleaseYear = fromGame.NameGlogAppendReleaseYear;
-                if (this.NameAppendReleaseYear == true)
-                {
-                    var firstReleaseDate = fromGame.GetFirstReleaseDate(cache);
-                    this.FirstReleaseYear = firstReleaseDate.HasValue ? firstReleaseDate.Value.Year : null;
-                }
-
-                this.NameAppendReleasePlatforms = fromGame.NameGlogAppendPlatforms;
-                if (this.NameAppendReleasePlatforms == true)
-                {
-                    this.ReleasePlatformNames = fromGame.PlatformIds
-                        .Select(platformId => cache.GetPlatform(platformId))
-                        .Select(platform => platform.GetReferenceString(cache))
-                        .Order(StringComparer.OrdinalIgnoreCase).ToList();
-                }
-
-                this.NameAppendReleaseNumber = fromGame.NameGlogAppendReleaseNumber.HasValue ? true : null;
-                if (this.NameAppendReleaseNumber == true)
-                {
-                    this.ReleaseNumber = fromGame.NameGlogAppendReleaseNumber.Value;
-                }
-            }
+            this.Name = fromGame.Name;
         }
 
         public override string GetReferenceableKey()
@@ -172,15 +140,15 @@ namespace GlogGenerator.Data
             this.ReleaseNumber = releaseNumber;
         }
 
-        public virtual void ReapplyCustomPropertiesTo(IgdbGameReference target)
+        public void ReapplyCustomPropertiesFrom(IgdbGameReference source)
         {
-            target.NameOverride = this.NameOverride;
-            target.NameAppendReleaseYear = this.NameAppendReleaseYear;
-            target.FirstReleaseYear = this.FirstReleaseYear;
-            target.NameAppendReleasePlatforms = this.NameAppendReleasePlatforms;
-            target.ReleasePlatformNames = this.ReleasePlatformNames;
-            target.NameAppendReleaseNumber = this.NameAppendReleaseNumber;
-            target.ReleaseNumber = this.ReleaseNumber;
+            this.NameOverride = source.NameOverride;
+            this.NameAppendReleaseYear = source.NameAppendReleaseYear;
+            this.FirstReleaseYear = source.FirstReleaseYear;
+            this.NameAppendReleasePlatforms = source.NameAppendReleasePlatforms;
+            this.ReleasePlatformNames = source.ReleasePlatformNames;
+            this.NameAppendReleaseNumber = source.NameAppendReleaseNumber;
+            this.ReleaseNumber = source.ReleaseNumber;
         }
     }
 }

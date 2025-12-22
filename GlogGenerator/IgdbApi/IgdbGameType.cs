@@ -13,11 +13,6 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("type", Required = Required.Always)]
         public string Type { get; set; }
 
-        public override string GetReferenceString(IIgdbCache cache)
-        {
-            return this.Type;
-        }
-
         // The "Bundle" type is specially handled, so recognize that type specifically.
         public bool IsBundle()
         {

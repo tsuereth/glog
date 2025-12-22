@@ -36,6 +36,9 @@ namespace GlogGenerator.Test
             // For testing, pretend that our "build date" is some constant date.
             builder.SetBuildDate(DateTimeOffset.Parse("2025-12-09T17:00:00.0+00:00", CultureInfo.InvariantCulture));
 
+            builder.LoadSiteDataIndexFiles();
+            var loadedCache = builder.TryLoadIgdbCache();
+            Assert.IsTrue(loadedCache);
             builder.UpdateDataIndex();
 
             builder.ResolveDataReferences();
@@ -90,6 +93,9 @@ namespace GlogGenerator.Test
             // For testing, pretend that our "build date" is some constant date.
             builder.SetBuildDate(DateTimeOffset.Parse("2025-12-09T17:00:00.0+00:00", CultureInfo.InvariantCulture));
 
+            builder.LoadSiteDataIndexFiles();
+            var loadedCache = builder.TryLoadIgdbCache();
+            Assert.IsTrue(loadedCache);
             builder.UpdateDataIndex();
 
             // Simulate the data-update flow by re-loading the data index.
@@ -142,6 +148,9 @@ namespace GlogGenerator.Test
             var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, inputFilesBasePath, templateFilesBasePath);
             var builder = new SiteBuilder(logger, configData);
 
+            builder.LoadSiteDataIndexFiles();
+            var loadedCache = builder.TryLoadIgdbCache();
+            Assert.IsTrue(loadedCache);
             builder.UpdateDataIndex();
 
             foreach (var page in builder.GetPages())

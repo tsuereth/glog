@@ -61,22 +61,6 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("name", Required = Required.Always)]
         public string Name { get; set; }
 
-        [IgdbEntityGlogOverrideValue]
-        [JsonProperty("name_glogAppendPlatforms")]
-        public bool? NameGlogAppendPlatforms { get; set; } = null;
-
-        [IgdbEntityGlogOverrideValue]
-        [JsonProperty("name_glogAppendReleaseNumber")]
-        public int? NameGlogAppendReleaseNumber { get; set; } = null;
-
-        [IgdbEntityGlogOverrideValue]
-        [JsonProperty("name_glogAppendReleaseYear")]
-        public bool? NameGlogAppendReleaseYear { get; set; } = null;
-
-        [IgdbEntityGlogOverrideValue]
-        [JsonProperty("name_glogOverride")]
-        public string NameGlogOverride { get; set; } = null;
-
         [JsonProperty("parent_game")]
         public int ParentGameId { get; set; } = IdNotFound;
 
@@ -124,54 +108,6 @@ namespace GlogGenerator.IgdbApi
             }
 
             return null;
-        }
-
-        public override string GetReferenceString(IIgdbCache cache)
-        {
-            if (!string.IsNullOrEmpty(this.NameGlogOverride))
-            {
-                return this.NameGlogOverride;
-            }
-
-            var nameBuilder = new StringBuilder();
-            nameBuilder.Append(this.Name);
-
-            if (this.NameGlogAppendReleaseYear == true)
-            {
-                var firstReleaseDate = this.GetFirstReleaseDate(cache);
-                if (firstReleaseDate == null)
-                {
-                    throw new InvalidDataException($"Game ID {this.Id} named \"{this.Name}\" is set to append a release year to its name, but has no valid release date.");
-                }
-
-                nameBuilder.Append(" (");
-                nameBuilder.Append(firstReleaseDate.Value.Year);
-                nameBuilder.Append(")");
-            }
-
-            if (this.NameGlogAppendPlatforms == true)
-            {
-                var platforms = this.PlatformIds.Select(id => cache.GetPlatform(id));
-                if (!platforms.Any())
-                {
-                    throw new InvalidDataException($"Game ID {this.Id} named \"{this.Name}\" is set to append platforms to its name, but has no valid platforms.");
-                }
-
-                var platformStringsOrdered = platforms.Select(p => p.GetReferenceString(cache)).OrderBy(s => s);
-
-                nameBuilder.Append(" (");
-                nameBuilder.Append(string.Join(", ", platformStringsOrdered));
-                nameBuilder.Append(")");
-            }
-
-            if (this.NameGlogAppendReleaseNumber.HasValue)
-            {
-                nameBuilder.Append(" (");
-                nameBuilder.Append(this.NameGlogAppendReleaseNumber.Value.ToString(CultureInfo.InvariantCulture));
-                nameBuilder.Append(")");
-            }
-
-            return nameBuilder.ToString();
         }
 
         public IEnumerable<int> GetParentGameIds()

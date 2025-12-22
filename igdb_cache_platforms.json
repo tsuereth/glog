@@ -1,9 +1,5 @@
 [
   {
-    "abbreviation_glogOverride": "Netflix",
-    "id": -1
-  },
-  {
     "abbreviation": "Linux",
     "alternative_name": "GNU/Linux",
     "id": 3,

@@ -80,9 +80,9 @@ namespace GlogGenerator.Data
             this.NameOverride = nameOverride;
         }
 
-        public virtual void ReapplyCustomPropertiesTo(IgdbMetadataReference target)
+        public void ReapplyCustomPropertiesFrom(IgdbMetadataReference source)
         {
-            target.NameOverride = this.NameOverride;
+            this.NameOverride = source.NameOverride;
         }
     }
 }

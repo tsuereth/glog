@@ -11,10 +11,6 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("abbreviation")]
         public string Abbreviation { get; set; }
 
-        [IgdbEntityGlogOverrideValue]
-        [JsonProperty("abbreviation_glogOverride")]
-        public string AbbreviationGlogOverride { get; set; }
-
         [JsonProperty("alternative_name")]
         public string AlternativeName { get; set; }
 
@@ -27,25 +23,5 @@ namespace GlogGenerator.IgdbApi
 
         [JsonProperty("url")]
         public string Url { get; set; }
-
-        public override string GetReferenceString(IIgdbCache cache)
-        {
-            if (!string.IsNullOrEmpty(this.AbbreviationGlogOverride))
-            {
-                return this.AbbreviationGlogOverride;
-            }
-
-            if (!string.IsNullOrEmpty(this.Abbreviation))
-            {
-                return this.Abbreviation;
-            }
-
-            if (!string.IsNullOrEmpty(this.AlternativeName))
-            {
-                return this.AlternativeName;
-            }
-
-            return this.Name;
-        }
     }
 }
