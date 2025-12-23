@@ -79,10 +79,10 @@ game = [ ""Middle-earth: Shadow of Mordor"" ]
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>());
 
-            var testIndex = new SiteDataIndex(logger, string.Empty);
+            var testIndex = new SiteDataIndex(logger);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, null, builder.GetContentParser(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -93,7 +93,7 @@ game = [ ""Middle-earth: Shadow of Mordor"" ]
             testIgdbGameShadowOfMordor.Name = "Assassin's Creed Mordor";
             testIgdbGameGollum.Name = "Goblin Mode";
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, null, builder.GetContentParser(), includeDrafts: false);
 
             var testPostToString = testPostData.ToMarkdownString(builder.GetContentParser(), testIndex);
 

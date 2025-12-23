@@ -54,7 +54,7 @@ namespace GlogGenerator
             }
             else
             {
-                this.siteDataIndex = new SiteDataIndex(this.logger, this.configData.InputFilesBasePath);
+                this.siteDataIndex = new SiteDataIndex(this.logger);
             }
 
             this.siteState = new SiteState(this, this.configData.TemplateFilesBasePath);
@@ -68,7 +68,7 @@ namespace GlogGenerator
         {
             if (this.igdbCache == null)
             {
-                this.igdbCache = IgdbCache.FromJsonFiles(this.configData.InputFilesBasePath);
+                this.igdbCache = IgdbCache.FromJsonFiles(this.configData.IgdbCacheFilesBasePath);
             }
 
             return this.igdbCache;
@@ -110,9 +110,9 @@ namespace GlogGenerator
 
         public bool TryLoadIgdbCache()
         {
-            if (IgdbCache.JsonFilesExist(this.configData.InputFilesBasePath))
+            if (IgdbCache.JsonFilesExist(this.configData.IgdbCacheFilesBasePath))
             {
-                this.igdbCache = IgdbCache.FromJsonFiles(this.configData.InputFilesBasePath);
+                this.igdbCache = IgdbCache.FromJsonFiles(this.configData.IgdbCacheFilesBasePath);
                 return true;
             }
 
@@ -127,7 +127,7 @@ namespace GlogGenerator
         public void RewriteIgdbCache()
         {
             var igdbCache = this.GetIgdbCache();
-            igdbCache.WriteToJsonFiles(this.configData.InputFilesBasePath);
+            igdbCache.WriteToJsonFiles(this.configData.IgdbCacheFilesBasePath);
         }
 
         public async Task UpdateIgdbCacheFromApiAsync(IgdbApiClient apiClient)
@@ -143,7 +143,7 @@ namespace GlogGenerator
             var igdbCache = this.GetIgdbCache();
             igdbCache.UpdateFromApiData(igdbData);
 
-            igdbCache.WriteToJsonFiles(this.configData.InputFilesBasePath);
+            igdbCache.WriteToJsonFiles(this.configData.IgdbCacheFilesBasePath);
         }
 
         public void UpdateDataIndex()
@@ -158,7 +158,7 @@ namespace GlogGenerator
                 (this.includeDrafts == IncludeDrafts.Always) ||
                 (this.mode == Mode.Host && this.includeDrafts == IncludeDrafts.HostModeOnly);
 
-            this.siteDataIndex.LoadContent(igdbCache, this.contentParser, dataIncludesDrafts);
+            this.siteDataIndex.LoadContent(igdbCache, this.configData.InputFilesBasePath, this.contentParser, dataIncludesDrafts);
         }
 
         public void ResolveDataReferences()

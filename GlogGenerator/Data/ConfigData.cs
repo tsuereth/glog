@@ -10,13 +10,20 @@ namespace GlogGenerator.Data
 
         public string SiteDataIndexFilesBasePath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "sitedataindex");
 
+        public string IgdbCacheFilesBasePath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "igdbcache");
+
         public string InputFilesBasePath { get; set; } = Directory.GetCurrentDirectory();
 
         public List<string> NowPlaying { get; set; } = new List<string>();
 
         public string TemplateFilesBasePath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "templates");
 
-        public static ConfigData FromFilePaths(string configFilePath, string siteIndexFilesBasePath, string inputFilesBasePath, string templateFilesBasePath)
+        public static ConfigData FromFilePaths(
+            string configFilePath,
+            string siteIndexFilesBasePath,
+            string igdbCacheFilesBasePath,
+            string inputFilesBasePath,
+            string templateFilesBasePath)
         {
             var filePathDir = Path.GetDirectoryName(configFilePath);
             if (string.IsNullOrEmpty(filePathDir))
@@ -27,6 +34,7 @@ namespace GlogGenerator.Data
             var config = new ConfigData()
             {
                 SiteDataIndexFilesBasePath = siteIndexFilesBasePath,
+                IgdbCacheFilesBasePath = igdbCacheFilesBasePath,
                 InputFilesBasePath = inputFilesBasePath,
                 TemplateFilesBasePath = templateFilesBasePath,
             };

@@ -39,6 +39,7 @@ namespace GlogGenerator
             var igdbClientSecret = string.Empty;
             var addIgdbGameIdsListString = string.Empty;
             var siteIndexFilesBasePath = projectProperties.DefaultSiteIndexFilesBasePath;
+            var igdbCacheFilesBasePath = projectProperties.DefaultIgdbCacheFilesBasePath;
             var inputFilesBasePath = projectProperties.DefaultInputFilesBasePath;
             var includeDraftsString = SiteBuilder.IncludeDrafts.HostModeOnly.ToString();
             var templateFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "templates");
@@ -66,6 +67,7 @@ namespace GlogGenerator
                 { "igdb-client-secret=", "IGDB API (Twitch Developers) Client Secret", o => igdbClientSecret = o },
                 { "add-igdb-game-ids=", "Comma-separated IGDB Game IDs to optionally add to the data cache", o => addIgdbGameIdsListString = o },
                 { "index-files-path=", $"Site data index files base path, default: {siteIndexFilesBasePath}", o => siteIndexFilesBasePath = o },
+                { "cache-files-path=", $"IGDB cache files base path, default: {igdbCacheFilesBasePath}", o => igdbCacheFilesBasePath = o },
                 { "i|input-path=", $"Input files base path, default: {inputFilesBasePath}", o => inputFilesBasePath = o },
                 { "d|include-drafts=", $"When to include draft content (one of {includeDraftsOptionsString}), default: {includeDraftsString}", o => includeDraftsString = o },
                 { "t|templates-path=", $"Template files base path, default: {templateFilesBasePath}", o => templateFilesBasePath = o },
@@ -119,7 +121,12 @@ namespace GlogGenerator
             }
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
-            var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, inputFilesBasePath, templateFilesBasePath);
+            var configData = ConfigData.FromFilePaths(
+                configFilePath,
+                siteIndexFilesBasePath,
+                igdbCacheFilesBasePath,
+                inputFilesBasePath,
+                templateFilesBasePath);
             var builder = new SiteBuilder(logger, configData);
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 

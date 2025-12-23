@@ -214,7 +214,7 @@ namespace GlogGenerator.Test
             throw new NotImplementedException();
         }
 
-        public void LoadContent(IIgdbCache igdbCache, ContentParser contentParser, bool includeDrafts)
+        public void LoadContent(IIgdbCache igdbCache, string inputFilesBasePath, ContentParser contentParser, bool includeDrafts)
         {
             throw new NotImplementedException();
         }

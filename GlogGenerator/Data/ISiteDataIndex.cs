@@ -48,7 +48,7 @@ namespace GlogGenerator.Data
 
         public void SetAdditionalIgdbGameIds(List<int> igdbGameIds);
 
-        public void LoadContent(IIgdbCache igdbCache, ContentParser contentParser, bool includeDrafts);
+        public void LoadContent(IIgdbCache igdbCache, string inputFilesBasePath, ContentParser contentParser, bool includeDrafts);
 
         public void ResolveReferences();
 

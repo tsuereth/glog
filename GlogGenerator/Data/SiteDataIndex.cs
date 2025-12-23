@@ -20,7 +20,6 @@ namespace GlogGenerator.Data
         };
 
         private readonly ILogger logger;
-        private readonly string inputFilesBasePath;
 
         private List<string> nonContentGameNames = new List<string>();
         private List<int> additionalIgdbGameIds = new List<int>();
@@ -38,12 +37,9 @@ namespace GlogGenerator.Data
         private Dictionary<string, string> rawDataFiles = new Dictionary<string, string>();
         private List<StaticFileData> staticFiles = new List<StaticFileData>();
 
-        public SiteDataIndex(
-            ILogger logger,
-            string inputFilesBasePath)
+        public SiteDataIndex(ILogger logger)
         {
             this.logger = logger;
-            this.inputFilesBasePath = inputFilesBasePath;
         }
 
         public SiteDataReference<T> CreateReference<T>(string referenceKey, bool shouldUpdateOnDataChange)
@@ -227,7 +223,7 @@ namespace GlogGenerator.Data
             this.additionalIgdbGameIds = igdbGameIds;
         }
 
-        private void UpdateReferencesFromContent(SiteDataLookups oldLookups, ContentParser contentParser, bool includeDrafts)
+        private void UpdateReferencesFromContent(SiteDataLookups oldLookups, string inputFilesBasePath, ContentParser contentParser, bool includeDrafts)
         {
             this.rawDataFiles.Clear();
             this.staticFiles.Clear();
@@ -238,10 +234,10 @@ namespace GlogGenerator.Data
             var oldPosts = this.posts;
             this.posts = new Dictionary<string, PostData>();
 
-            if (!string.IsNullOrEmpty(this.inputFilesBasePath))
+            if (!string.IsNullOrEmpty(inputFilesBasePath))
             {
                 // List raw data files.
-                var rawDataBasePath = Path.Combine(this.inputFilesBasePath, "data");
+                var rawDataBasePath = Path.Combine(inputFilesBasePath, "data");
                 var rawDataFilePaths = Directory.EnumerateFiles(rawDataBasePath, "*.*", SearchOption.AllDirectories).ToList();
                 foreach (var rawDataFilePath in rawDataFilePaths)
                 {
@@ -260,7 +256,7 @@ namespace GlogGenerator.Data
                 }
 
                 // List static content.
-                var staticBasePath = Path.Combine(this.inputFilesBasePath, StaticFileData.StaticContentBaseDir);
+                var staticBasePath = Path.Combine(inputFilesBasePath, StaticFileData.StaticContentBaseDir);
                 var staticFilePaths = Directory.EnumerateFiles(staticBasePath, "*.*", SearchOption.AllDirectories).ToList();
                 foreach (var staticFilePath in staticFilePaths)
                 {
@@ -276,7 +272,7 @@ namespace GlogGenerator.Data
                 }
 
                 // Parse content to collect data.
-                var postContentBasePath = Path.Combine(this.inputFilesBasePath, PostData.PostContentBaseDir);
+                var postContentBasePath = Path.Combine(inputFilesBasePath, PostData.PostContentBaseDir);
                 var postPaths = Directory.EnumerateFiles(postContentBasePath, "*.md", SearchOption.AllDirectories).ToList();
 
                 foreach (var postPath in postPaths)
@@ -387,8 +383,8 @@ namespace GlogGenerator.Data
 
                 var additionalPageFilePaths = new List<string>()
                 {
-                    Path.Combine(this.inputFilesBasePath, "content", "backlog.md"),
-                    Path.Combine(this.inputFilesBasePath, "content", "upcoming.md"),
+                    Path.Combine(inputFilesBasePath, "content", "backlog.md"),
+                    Path.Combine(inputFilesBasePath, "content", "upcoming.md"),
                 };
                 foreach (var pageFilePath in additionalPageFilePaths)
                 {
@@ -427,7 +423,7 @@ namespace GlogGenerator.Data
             this.CheckUpdatedReferenceableDataForConflict(oldLookups.GetValues<TagData>(), this.Lookups.GetValues<TagData>());
         }
 
-        public void LoadContent(IIgdbCache igdbCache, ContentParser contentParser, bool includeDrafts)
+        public void LoadContent(IIgdbCache igdbCache, string inputFilesBasePath, ContentParser contentParser, bool includeDrafts)
         {
             // Reset the current index, while tracking some* old data to detect update conflicts.
             // (*) Only retain data associated with DataReferences which "should update" on changed data;
@@ -658,7 +654,7 @@ namespace GlogGenerator.Data
                 Tags = oldTags,
             };
 
-            this.UpdateReferencesFromContent(oldLookups, contentParser, includeDrafts);
+            this.UpdateReferencesFromContent(oldLookups, inputFilesBasePath, contentParser, includeDrafts);
         }
 
         public void ResolveReferences()
@@ -922,7 +918,7 @@ namespace GlogGenerator.Data
             {
                 // Parse and validate content references to the freshly-loaded index data.
                 var oldLookups = new SiteDataLookups();
-                this.UpdateReferencesFromContent(oldLookups, contentParser, includeDrafts: true);
+                this.UpdateReferencesFromContent(oldLookups, inputFilesBasePath, contentParser, includeDrafts: true);
                 this.ResolveReferences();
             }
         }
