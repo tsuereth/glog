@@ -3,6 +3,7 @@ To refresh this test content, run:
 ```
 ./path/to/GlogGenerator build \
 	--index-files-path GlogGenerator.Test/TestFiles/SmallSiteTest/sitedataindex \
+	--cache-files-path GlogGenerator.Test/TestFiles/SmallSiteTest/igdbcache \
 	-i GlogGenerator.Test/TestFiles/SmallSiteTest \
 	-t GlogGenerator/templates \
 	-u true \

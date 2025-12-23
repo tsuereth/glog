@@ -110,6 +110,12 @@ namespace GlogGenerator.Test
             throw new NotImplementedException();
         }
 
+        public bool TryGetDataByIgdbEntityReferenceId<T>(string igdbEntityReferenceId, out T data)
+            where T : class, IGlogReferenceable
+        {
+            throw new NotImplementedException();
+        }
+
         public List<CategoryData> GetCategories()
         {
             return this.categories.ToList();
@@ -203,7 +209,12 @@ namespace GlogGenerator.Test
             // no-op
         }
 
-        public void LoadContent(IIgdbCache igdbCache, ContentParser contentParser, bool includeDrafts)
+        public void SetAdditionalIgdbGameIds(List<int> igdbGameIds)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void LoadContent(IIgdbCache igdbCache, string inputFilesBasePath, ContentParser contentParser, bool includeDrafts)
         {
             throw new NotImplementedException();
         }
@@ -234,6 +245,11 @@ namespace GlogGenerator.Test
         }
 
         public void WriteToJsonFiles(string directoryPath)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void LoadFromJsonFiles(string directoryPath, string inputFilesBasePath, ContentParser contentParser)
         {
             throw new NotImplementedException();
         }

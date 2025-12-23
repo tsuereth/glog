@@ -19,8 +19,10 @@
       <!-- These parameter values will be used during IDE run and debug tasks. -->
       <!-- "DefaultSiteIndexFilesBasePath" is where SiteDataIndex files are stored (unless overridden by command-line). -->
       <_Parameter1>$(MSBuildProjectDirectory)/../sitedataindex</_Parameter1>
+      <!-- "DefaultIgdbCacheFilesBasePath" is where IgdbCache files are stored (unless overridden by command-line). -->
+      <_Parameter2>$(MSBuildProjectDirectory)/../igdbcache</_Parameter2>
       <!-- "DefaultInputFilesBasePath" is where content input files are stored (unless overridden by command-line). -->
-      <_Parameter2>$(MSBuildProjectDirectory)/..</_Parameter2>
+      <_Parameter3>$(MSBuildProjectDirectory)/..</_Parameter3>
     </AssemblyAttribute>
   </ItemGroup>
 

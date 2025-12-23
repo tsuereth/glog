@@ -23,6 +23,8 @@ namespace GlogGenerator
 
         public IgdbGameMode GetGameMode(int id);
 
+        public IgdbGameStatus GetGameStatus(int id);
+
         public IgdbGameType GetGameType(int id);
 
         public IgdbGenre GetGenre(int id);
@@ -37,8 +39,6 @@ namespace GlogGenerator
 
         public IgdbPlayerPerspective GetPlayerPerspective(int id);
 
-        public IgdbReleaseDate GetReleaseDate(int id);
-
         public IgdbTheme GetTheme(int id);
 
         public List<IgdbEntity> GetAllGameMetadata();
@@ -51,9 +51,7 @@ namespace GlogGenerator
 
         public IEnumerable<int> GetRelatedGameIds(int gameId);
 
-        public void SetAdditionalGames(List<IgdbGame> additionalGames);
-
-        public Task UpdateFromApiClient(IgdbApiClient client);
+        public void UpdateFromApiData(IgdbApiBatchDataResponse data);
 
         public void RemoveEntityById(Type entityType, int id);
 

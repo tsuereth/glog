@@ -12,10 +12,5 @@ namespace GlogGenerator.IgdbApi
 
         [JsonProperty("name", Required = Required.Always)]
         public string Name { get; set; }
-
-        public override string GetReferenceString(IIgdbCache cache)
-        {
-            return this.Name;
-        }
     }
 }

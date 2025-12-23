@@ -32,6 +32,17 @@ namespace GlogGenerator.Data
         [JsonProperty("igdbGameFirstReleaseYear")]
         public int? FirstReleaseYear { get; private set; } = null;
 
+        // ... if an ambiguous game has no release date, then a status such as "Cancelled" may serve the same purpose.
+        //
+        // For example:
+        //   "Castlevania: Symphony of the Night" was initially released in 1997 for PlayStation;
+        //   "Castlevania: Symphony of the Night (2018)" was remastered in 2018 for PlayStation 4;
+        //   "Castlevania: Symphony of the Night (Cancelled)" was a planned Tiger Electronics port which never released.
+        [JsonProperty("nameAppendGameStatus")]
+        public bool? NameAppendGameStatus { get; private set; } = null;
+        [JsonProperty("igdbGameStatus")]
+        public string GameStatus { get; private set; } = null;
+
         // Sometimes, multiple games with the same name are disambiguated by platform.
         // (And if a game is re-released on additional platforms, those new platforms will be included too.)
         //
@@ -63,41 +74,9 @@ namespace GlogGenerator.Data
 
         public IgdbGameReference() : base() { }
 
-        public IgdbGameReference(IgdbGame fromGame, IIgdbCache cache) : base(fromGame)
+        public IgdbGameReference(IgdbGame fromGame) : base(fromGame)
         {
-            // FIXME: There should be no such thing as "empty IGDB game name," but...
-            // non-IGDB games currently injected into the IGDB cache have an empty Name.
-            // Those non-IGDB games should, ultimately, not be `IgdbGame`s at all. (right?)
-            if (!string.IsNullOrEmpty(fromGame.Name))
-            {
-                this.Name = fromGame.Name;
-            }
-
-            this.NameOverride = fromGame.NameGlogOverride;
-            if (this.NameOverride == null)
-            {
-                this.NameAppendReleaseYear = fromGame.NameGlogAppendReleaseYear;
-                if (this.NameAppendReleaseYear == true)
-                {
-                    var firstReleaseDate = fromGame.GetFirstReleaseDate(cache);
-                    this.FirstReleaseYear = firstReleaseDate.HasValue ? firstReleaseDate.Value.Year : null;
-                }
-
-                this.NameAppendReleasePlatforms = fromGame.NameGlogAppendPlatforms;
-                if (this.NameAppendReleasePlatforms == true)
-                {
-                    this.ReleasePlatformNames = fromGame.PlatformIds
-                        .Select(platformId => cache.GetPlatform(platformId))
-                        .Select(platform => platform.GetReferenceString(cache))
-                        .Order(StringComparer.OrdinalIgnoreCase).ToList();
-                }
-
-                this.NameAppendReleaseNumber = fromGame.NameGlogAppendReleaseNumber.HasValue ? true : null;
-                if (this.NameAppendReleaseNumber == true)
-                {
-                    this.ReleaseNumber = fromGame.NameGlogAppendReleaseNumber.Value;
-                }
-            }
+            this.Name = fromGame.Name;
         }
 
         public override string GetReferenceableKey()
@@ -119,6 +98,18 @@ namespace GlogGenerator.Data
 
                 nameBuilder.Append(" (");
                 nameBuilder.Append(this.FirstReleaseYear.Value);
+                nameBuilder.Append(")");
+            }
+
+            if (this.NameAppendGameStatus == true)
+            {
+                if (string.IsNullOrEmpty(this.GameStatus))
+                {
+                    throw new InvalidDataException($"Game reference with ID {this.IgdbEntityId} named \"{this.Name}\" is set to append game status to its name, but has no valid game status.");
+                }
+
+                nameBuilder.Append(" (");
+                nameBuilder.Append(this.GameStatus);
                 nameBuilder.Append(")");
             }
 
@@ -147,6 +138,48 @@ namespace GlogGenerator.Data
             }
 
             return nameBuilder.ToString();
+        }
+
+        public void SetNameOverride(string nameOverride)
+        {
+            this.NameOverride = nameOverride;
+        }
+
+        public void SetNameAppendReleaseYear(int firstReleaseYear)
+        {
+            this.NameAppendReleaseYear = true;
+            this.FirstReleaseYear = firstReleaseYear;
+        }
+
+        public void SetNameAppendGameStatus(string gameStatus)
+        {
+            this.NameAppendGameStatus = true;
+            this.GameStatus = gameStatus;
+        }
+
+        public void SetNameAppendReleasePlatforms(List<string> releasePlatformNames)
+        {
+            this.NameAppendReleasePlatforms = true;
+            this.ReleasePlatformNames = releasePlatformNames;
+        }
+
+        public void SetNameAppendReleaseNumber(int releaseNumber)
+        {
+            this.NameAppendReleaseNumber = true;
+            this.ReleaseNumber = releaseNumber;
+        }
+
+        public void ReapplyCustomPropertiesFrom(IgdbGameReference source)
+        {
+            this.NameOverride = source.NameOverride;
+            this.NameAppendReleaseYear = source.NameAppendReleaseYear;
+            this.FirstReleaseYear = source.FirstReleaseYear;
+            this.NameAppendGameStatus = source.NameAppendGameStatus;
+            this.GameStatus = source.GameStatus;
+            this.NameAppendReleasePlatforms = source.NameAppendReleasePlatforms;
+            this.ReleasePlatformNames = source.ReleasePlatformNames;
+            this.NameAppendReleaseNumber = source.NameAppendReleaseNumber;
+            this.ReleaseNumber = source.ReleaseNumber;
         }
     }
 }

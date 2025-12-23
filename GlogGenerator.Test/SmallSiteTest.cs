@@ -22,6 +22,7 @@ namespace GlogGenerator.Test
             var logger = loggerFactory.CreateLogger<Program>();
 
             var siteIndexFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "sitedataindex");
+            var igdbCacheFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "igdbcache");
             var inputFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest");
             var templateFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "templates");
             var hostOrigin = "http://fakeorigin.com";
@@ -29,13 +30,16 @@ namespace GlogGenerator.Test
             var staticSiteOutputBasePath = Path.Combine(Directory.GetCurrentDirectory(), "public");
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
-            var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, inputFilesBasePath, templateFilesBasePath);
+            var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, igdbCacheFilesBasePath, inputFilesBasePath, templateFilesBasePath);
             var builder = new SiteBuilder(logger, configData);
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
             // For testing, pretend that our "build date" is some constant date.
             builder.SetBuildDate(DateTimeOffset.Parse("2025-12-09T17:00:00.0+00:00", CultureInfo.InvariantCulture));
 
+            builder.LoadSiteDataIndexFiles();
+            var loadedCache = builder.TryLoadIgdbCache();
+            Assert.IsTrue(loadedCache);
             builder.UpdateDataIndex();
 
             builder.ResolveDataReferences();
@@ -76,6 +80,7 @@ namespace GlogGenerator.Test
             var logger = loggerFactory.CreateLogger<Program>();
 
             var siteIndexFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "sitedataindex");
+            var igdbCacheFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "igdbcache");
             var inputFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest");
             var templateFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "templates");
             var hostOrigin = "http://fakeorigin.com";
@@ -83,13 +88,16 @@ namespace GlogGenerator.Test
             var staticSiteOutputBasePath = Path.Combine(Directory.GetCurrentDirectory(), "public-reload");
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
-            var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, inputFilesBasePath, templateFilesBasePath);
+            var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, igdbCacheFilesBasePath, inputFilesBasePath, templateFilesBasePath);
             var builder = new SiteBuilder(logger, configData);
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
             // For testing, pretend that our "build date" is some constant date.
             builder.SetBuildDate(DateTimeOffset.Parse("2025-12-09T17:00:00.0+00:00", CultureInfo.InvariantCulture));
 
+            builder.LoadSiteDataIndexFiles();
+            var loadedCache = builder.TryLoadIgdbCache();
+            Assert.IsTrue(loadedCache);
             builder.UpdateDataIndex();
 
             // Simulate the data-update flow by re-loading the data index.
@@ -134,14 +142,18 @@ namespace GlogGenerator.Test
             var logger = loggerFactory.CreateLogger<Program>();
 
             var siteIndexFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "sitedataindex");
+            var igdbCacheFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "igdbcache");
             var inputFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest");
             var templateFilesBasePath = string.Empty;
             var staticSiteOutputBasePath = string.Empty;
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
-            var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, inputFilesBasePath, templateFilesBasePath);
+            var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, igdbCacheFilesBasePath, inputFilesBasePath, templateFilesBasePath);
             var builder = new SiteBuilder(logger, configData);
 
+            builder.LoadSiteDataIndexFiles();
+            var loadedCache = builder.TryLoadIgdbCache();
+            Assert.IsTrue(loadedCache);
             builder.UpdateDataIndex();
 
             foreach (var page in builder.GetPages())

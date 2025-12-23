@@ -57,6 +57,11 @@ namespace GlogGenerator.Data
             this.GetLookup<T>().RemoveDataByReferenceableKey(key);
         }
 
+        public bool HasDataById<T>(string id) where T : class, IGlogReferenceable
+        {
+            return this.GetLookup<T>().HasDataById(id);
+        }
+
         public bool TryGetDataById<T>(string id, out T data) where T : class, IGlogReferenceable
         {
             return this.GetLookup<T>().TryGetDataById(id, out data);
@@ -80,6 +85,21 @@ namespace GlogGenerator.Data
         public T GetDataByReferenceableKey<T>(string key) where T : class, IGlogReferenceable
         {
             return this.GetLookup<T>().GetDataByReferenceableKey(key);
+        }
+
+        public bool HasDataByIgdbEntityReferenceId<T>(string igdbEntityReferenceId) where T : class, IGlogReferenceable
+        {
+            return this.GetLookup<T>().HasDataByIgdbEntityReferenceId(igdbEntityReferenceId);
+        }
+
+        public bool TryGetDataByIgdbEntityReferenceId<T>(string igdbEntityReferenceId, out T data) where T : class, IGlogReferenceable
+        {
+            return this.GetLookup<T>().TryGetDataByIgdbEntityReferenceId(igdbEntityReferenceId, out data);
+        }
+
+        public T GetDataByIgdbEntityReferenceId<T>(string igdbEntityReferenceId) where T : class, IGlogReferenceable
+        {
+            return this.GetLookup<T>().GetDataByIgdbEntityReferenceId(igdbEntityReferenceId);
         }
 
         public ISet<string> GetIds<T>() where T : class, IGlogReferenceable

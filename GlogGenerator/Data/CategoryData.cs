@@ -30,6 +30,12 @@ namespace GlogGenerator.Data
             return thisKey.Equals(matchKey, StringComparison.Ordinal);
         }
 
+        public IEnumerable<string> GetIgdbEntityReferenceIds()
+        {
+            // Categories have no backing IGDB entity.
+            return new List<string>();
+        }
+
         public object GetReferenceProperties()
         {
             return this.Name;

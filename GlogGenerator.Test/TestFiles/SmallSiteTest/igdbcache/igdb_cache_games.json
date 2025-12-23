@@ -1,0 +1,125 @@
+[
+  {
+    "bundles": [
+      129999,
+      313223
+    ],
+    "collections": [
+      5785
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1502150400,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1
+    ],
+    "game_status": -1,
+    "game_type": 0,
+    "genres": [
+      12,
+      31,
+      32
+    ],
+    "id": 36597,
+    "involved_companies": [
+      57560,
+      57562,
+      57561,
+      248616
+    ],
+    "keywords": [],
+    "name": "Cat Quest",
+    "parent_game": -1,
+    "platforms": [
+      48,
+      3,
+      34,
+      6,
+      39,
+      14,
+      130
+    ],
+    "player_perspectives": [
+      2
+    ],
+    "ports": [],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17
+    ],
+    "url": "https://www.igdb.com/games/cat-quest",
+    "version_parent": -1
+  },
+  {
+    "bundles": [
+      129999,
+      313223
+    ],
+    "collections": [
+      5785
+    ],
+    "dlcs": [],
+    "expanded_games": [],
+    "expansions": [],
+    "first_release_date": 1568851200,
+    "forks": [],
+    "franchise": -1,
+    "franchises": [],
+    "game_modes": [
+      1,
+      2,
+      3
+    ],
+    "game_status": -1,
+    "game_type": 0,
+    "genres": [
+      12,
+      31,
+      32
+    ],
+    "id": 101869,
+    "involved_companies": [
+      84851,
+      84850,
+      262895,
+      357563
+    ],
+    "keywords": [
+      570,
+      49310
+    ],
+    "name": "Cat Quest II",
+    "parent_game": -1,
+    "platforms": [
+      48,
+      6,
+      39,
+      14,
+      49,
+      130
+    ],
+    "player_perspectives": [
+      2,
+      3
+    ],
+    "ports": [],
+    "remakes": [],
+    "remasters": [],
+    "standalone_expansions": [],
+    "themes": [
+      1,
+      17,
+      35,
+      38
+    ],
+    "url": "https://www.igdb.com/games/cat-quest-ii",
+    "version_parent": -1
+  }
+]

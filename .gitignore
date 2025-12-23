@@ -4,6 +4,7 @@
 **/Properties/launchSettings.json
 
 .igdb-client-credentials
+igdbcache
 GlogGeneratorBuild
 public
 GlogGenerator/public

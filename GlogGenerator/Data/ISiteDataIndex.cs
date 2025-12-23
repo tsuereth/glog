@@ -13,6 +13,9 @@ namespace GlogGenerator.Data
         public T GetDataWithOldLookup<T>(SiteDataReference<T> dataReference, GlogReferenceableLookup<T> oldDataLookup)
             where T : class, IGlogReferenceable;
 
+        public bool TryGetDataByIgdbEntityReferenceId<T>(string igdbEntityReferenceId, out T data)
+            where T : class, IGlogReferenceable;
+
         public List<CategoryData> GetCategories();
 
         public bool HasGame(string gameTitle);
@@ -43,7 +46,9 @@ namespace GlogGenerator.Data
 
         public void SetNonContentGameNames(List<string> gameNames);
 
-        public void LoadContent(IIgdbCache igdbCache, ContentParser contentParser, bool includeDrafts);
+        public void SetAdditionalIgdbGameIds(List<int> igdbGameIds);
+
+        public void LoadContent(IIgdbCache igdbCache, string inputFilesBasePath, ContentParser contentParser, bool includeDrafts);
 
         public void ResolveReferences();
 
@@ -56,5 +61,7 @@ namespace GlogGenerator.Data
         public void RewriteSourceContent(ContentParser contentParser);
 
         public void WriteToJsonFiles(string directoryPath);
+
+        public void LoadFromJsonFiles(string directoryPath, string inputFilesBasePath, ContentParser contentParser);
     }
 }

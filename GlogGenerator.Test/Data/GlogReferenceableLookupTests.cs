@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using GlogGenerator.Data;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -152,6 +153,30 @@ namespace GlogGenerator.Test.Data
         }
 
         [TestMethod]
+        public void TestHasDataById()
+        {
+            var testLookup = new GlogReferenceableLookup<IGlogReferenceable>();
+
+            var mockData = Substitute.For<IGlogReferenceable>();
+            mockData.GetDataId().Returns("testid");
+            mockData.GetReferenceableKey().Returns("testkey");
+
+            testLookup.AddData(mockData);
+
+            var result = testLookup.HasDataById("testid");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void TestHasDataByIdNotFound()
+        {
+            var testLookup = new GlogReferenceableLookup<IGlogReferenceable>();
+
+            var result = testLookup.HasDataById("testid");
+            Assert.IsFalse(result);
+        }
+
+        [TestMethod]
         public void TestTryGetDataById()
         {
             var testLookup = new GlogReferenceableLookup<IGlogReferenceable>();
@@ -280,6 +305,87 @@ namespace GlogGenerator.Test.Data
             Assert.ThrowsExactly<ArgumentException>(() =>
             {
                 testLookup.GetDataByReferenceableKey("testkey");
+            });
+        }
+
+        [TestMethod]
+        public void TestHasDataByIgdbEntityReferenceId()
+        {
+            var testLookup = new GlogReferenceableLookup<IGlogReferenceable>();
+
+            var mockData = Substitute.For<IGlogReferenceable>();
+            mockData.GetDataId().Returns("testid");
+            mockData.GetReferenceableKey().Returns("testkey");
+            mockData.GetIgdbEntityReferenceIds().Returns(new List<string>() { "igdb:reference:id" });
+
+            testLookup.AddData(mockData);
+
+            var result = testLookup.HasDataByIgdbEntityReferenceId("igdb:reference:id");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void TestHasDataByIgdbEntityReferenceIdNotFound()
+        {
+            var testLookup = new GlogReferenceableLookup<IGlogReferenceable>();
+
+            var result = testLookup.HasDataByIgdbEntityReferenceId("igdb:reference:id");
+            Assert.IsFalse(result);
+        }
+
+        [TestMethod]
+        public void TestTryGetDataByIgdbEntityReferenceId()
+        {
+            var testLookup = new GlogReferenceableLookup<IGlogReferenceable>();
+
+            var mockData = Substitute.For<IGlogReferenceable>();
+            mockData.GetDataId().Returns("testid");
+            mockData.GetReferenceableKey().Returns("testkey");
+            mockData.GetIgdbEntityReferenceIds().Returns(new List<string>() { "igdb:reference:id" });
+
+            testLookup.AddData(mockData);
+
+            var result = testLookup.TryGetDataByIgdbEntityReferenceId("igdb:reference:id", out var resultData);
+            Assert.IsTrue(result);
+            Assert.IsNotNull(resultData);
+            Assert.AreEqual(mockData, resultData);
+        }
+
+        [TestMethod]
+        public void TestTryGetDataByIgdbEntityReferenceIdNotFound()
+        {
+            var testLookup = new GlogReferenceableLookup<IGlogReferenceable>();
+
+            var result = testLookup.TryGetDataByIgdbEntityReferenceId("igdb:reference:id", out var resultData);
+            Assert.IsFalse(result);
+            Assert.IsNull(resultData);
+        }
+
+        [TestMethod]
+        public void TestGetDataByIgdbEntityReferenceId()
+        {
+            var testLookup = new GlogReferenceableLookup<IGlogReferenceable>();
+
+            var mockData = Substitute.For<IGlogReferenceable>();
+            mockData.GetDataId().Returns("testid");
+            mockData.GetReferenceableKey().Returns("testkey");
+            mockData.GetIgdbEntityReferenceIds().Returns(new List<string>() { "igdb:reference:id" });
+
+            testLookup.AddData(mockData);
+
+            var result = testLookup.GetDataByIgdbEntityReferenceId("igdb:reference:id");
+            Assert.IsNotNull(result);
+            Assert.AreEqual(mockData, result);
+        }
+
+        [TestMethod]
+        public void TestGetDataByIgdbEntityReferenceIdNotFound()
+        {
+            var testLookup = new GlogReferenceableLookup<IGlogReferenceable>();
+
+            Assert.ThrowsExactly<ArgumentException>(() =>
+            {
+                testLookup.GetDataByIgdbEntityReferenceId("igdb:reference:id");
             });
         }
 

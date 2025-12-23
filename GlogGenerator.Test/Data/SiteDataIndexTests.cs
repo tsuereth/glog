@@ -28,10 +28,10 @@ namespace GlogGenerator.Test.Data
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
             mockIgdbCache.GetAllGameMetadata().Returns(testGameMetadata);
 
-            var testIndex = new SiteDataIndex(logger, string.Empty);
+            var testIndex = new SiteDataIndex(logger);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, null, builder.GetContentParser(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -60,10 +60,10 @@ namespace GlogGenerator.Test.Data
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>());
 
-            var testIndex = new SiteDataIndex(logger, string.Empty);
+            var testIndex = new SiteDataIndex(logger);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, null, builder.GetContentParser(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -76,7 +76,7 @@ namespace GlogGenerator.Test.Data
 
             testIgdbEntity.Name = "Corrected Game Name";
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, null, builder.GetContentParser(), includeDrafts: false);
 
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.HasCount(1, errors);
@@ -98,37 +98,39 @@ namespace GlogGenerator.Test.Data
         {
             var logger = new TestLogger();
 
-            var testPlatformOld = new IgdbPlatform() { Id = 1, Abbreviation = "PS1" };
+            var testPlatformOldIgdbEntity = new IgdbPlatform() { Id = 1, Abbreviation = "PS1" };
+            var testPlatformOldRefData = new IgdbPlatformReference(testPlatformOldIgdbEntity);
 
             var mockIgdbCache = Substitute.For<IIgdbCache>();
             mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>());
-            mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformOld });
-            mockIgdbCache.GetPlatform(testPlatformOld.Id).Returns(testPlatformOld);
+            mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformOldIgdbEntity });
+            mockIgdbCache.GetPlatform(testPlatformOldIgdbEntity.Id).Returns(testPlatformOldIgdbEntity);
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>());
 
-            var testIndex = new SiteDataIndex(logger, string.Empty);
+            var testIndex = new SiteDataIndex(logger);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, null, builder.GetContentParser(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
-            var testDataReference = testIndex.CreateReference<PlatformData>(testPlatformOld.Abbreviation, true);
+            var testDataReference = testIndex.CreateReference<PlatformData>(testPlatformOldRefData.GetReferenceableKey(), true);
             testIndex.ResolveReferences();
             var testDataId = testDataReference.GetResolvedReferenceId();
 
-            var testPlatformNew = new IgdbPlatform() { Id = 1, Abbreviation = "PSOne" };
+            var testPlatformNewIgdbEntity = new IgdbPlatform() { Id = 1, Abbreviation = "PSOne" };
+            var testPlatformNewRefData = new IgdbPlatformReference(testPlatformNewIgdbEntity);
 
-            mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformNew });
-            mockIgdbCache.GetPlatform(testPlatformNew.Id).Returns(testPlatformNew);
+            mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformNewIgdbEntity });
+            mockIgdbCache.GetPlatform(testPlatformNewIgdbEntity.Id).Returns(testPlatformNewIgdbEntity);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, null, builder.GetContentParser(), includeDrafts: false);
 
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.HasCount(1, errors);
 
-            var expectedMessage = $"Updated data index has a different key for PlatformData with data ID {testDataId}: old key {testPlatformOld.GetReferenceString(mockIgdbCache)} new key {testPlatformNew.GetReferenceString(mockIgdbCache)}";
+            var expectedMessage = $"Updated data index has a different key for PlatformData with data ID {testDataId}: old key {testPlatformOldRefData.GetReferenceableKey()} new key {testPlatformNewRefData.GetReferenceableKey()}";
             Assert.AreEqual(expectedMessage, errors[0].Message);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -139,35 +141,36 @@ namespace GlogGenerator.Test.Data
         {
             var logger = new TestLogger();
 
-            var testPlatformOld = new IgdbPlatform() { Id = 1, Abbreviation = "PS1" };
+            var testPlatformOldIgdbEntity = new IgdbPlatform() { Id = 1, Abbreviation = "PS1" };
+            var testPlatformOldRefData = new IgdbPlatformReference(testPlatformOldIgdbEntity);
 
             var mockIgdbCache = Substitute.For<IIgdbCache>();
             mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>());
-            mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformOld });
-            mockIgdbCache.GetPlatform(testPlatformOld.Id).Returns(testPlatformOld);
+            mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformOldIgdbEntity });
+            mockIgdbCache.GetPlatform(testPlatformOldIgdbEntity.Id).Returns(testPlatformOldIgdbEntity);
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>());
 
-            var testIndex = new SiteDataIndex(logger, string.Empty);
+            var testIndex = new SiteDataIndex(logger);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, null, builder.GetContentParser(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
 
-            var testDataReference = testIndex.CreateReference<PlatformData>(testPlatformOld.Abbreviation, true);
+            var testDataReference = testIndex.CreateReference<PlatformData>(testPlatformOldRefData.GetReferenceableKey(), true);
             testIndex.ResolveReferences();
             var testDataId = testDataReference.GetResolvedReferenceId();
 
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
-            mockIgdbCache.GetPlatform(testPlatformOld.Id).Returns((IgdbPlatform)null);
+            mockIgdbCache.GetPlatform(testPlatformOldIgdbEntity.Id).Returns((IgdbPlatform)null);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, null, builder.GetContentParser(), includeDrafts: false);
 
             var errors = logger.GetLogs(LogLevel.Error);
             Assert.HasCount(1, errors);
 
-            var expectedMessage = $"Updated data index is missing old PlatformData with data ID {testDataId} and key {testPlatformOld.GetReferenceString(mockIgdbCache)}";
+            var expectedMessage = $"Updated data index is missing old PlatformData with data ID {testDataId} and key {testPlatformOldRefData.GetReferenceableKey()}";
             Assert.AreEqual(expectedMessage, errors[0].Message);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -179,18 +182,18 @@ namespace GlogGenerator.Test.Data
             var logger = new TestLogger();
 
             var testPlatformKey = "PS1";
-            var testPlatformOld = new IgdbPlatform() { Id = 1, Abbreviation = testPlatformKey };
+            var testPlatformOldIgdbEntity = new IgdbPlatform() { Id = 1, Abbreviation = testPlatformKey };
 
             var mockIgdbCache = Substitute.For<IIgdbCache>();
             mockIgdbCache.GetAllGames().Returns(new List<IgdbGame>());
-            mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformOld });
-            mockIgdbCache.GetPlatform(testPlatformOld.Id).Returns(testPlatformOld);
+            mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformOldIgdbEntity });
+            mockIgdbCache.GetPlatform(testPlatformOldIgdbEntity.Id).Returns(testPlatformOldIgdbEntity);
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>());
 
-            var testIndex = new SiteDataIndex(logger, string.Empty);
+            var testIndex = new SiteDataIndex(logger);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, null, builder.GetContentParser(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -204,11 +207,10 @@ namespace GlogGenerator.Test.Data
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>() { testPlatformNew });
             mockIgdbCache.GetPlatform(testPlatformNew.Id).Returns(testPlatformNew);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, null, builder.GetContentParser(), includeDrafts: false);
 
             // A new data entry won't be created, but the data ID string it "would" have can be simulated.
-            var testDataEntityReferenceNew = new IgdbPlatformReference(testPlatformNew);
-            var testDataIdNew = testDataEntityReferenceNew.GetIgdbEntityDataId();
+            var testDataIdNew = IIgdbEntityReference.GetIgdbEntityReferenceDataId(testPlatformNew);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
 
@@ -239,10 +241,10 @@ namespace GlogGenerator.Test.Data
             mockIgdbCache.GetAllPlatforms().Returns(new List<IgdbPlatform>());
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>() { testCompany });
 
-            var testIndex = new SiteDataIndex(logger, string.Empty);
+            var testIndex = new SiteDataIndex(logger);
             var builder = new SiteBuilder(logger, new ConfigData(), testIndex);
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, null, builder.GetContentParser(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));
@@ -255,7 +257,7 @@ namespace GlogGenerator.Test.Data
 
             mockIgdbCache.GetAllGameMetadata().Returns(new List<IgdbEntity>() { testCompanyUpdated });
 
-            testIndex.LoadContent(mockIgdbCache, builder.GetContentParser(), includeDrafts: false);
+            testIndex.LoadContent(mockIgdbCache, null, builder.GetContentParser(), includeDrafts: false);
 
             Assert.IsEmpty(logger.GetLogs(LogLevel.Error));
             Assert.IsEmpty(logger.GetLogs(LogLevel.Warning));

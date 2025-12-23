@@ -21,14 +21,3 @@ jobs:
       - name: TestGlogGenerator
         run: |
           dotnet test GlogGenerator.Test/GlogGenerator.Test.csproj
-
-      - name: BuildGlogGenerator
-        run: |
-          rm -rf GlogGeneratorBuild
-          dotnet build GlogGenerator/GlogGenerator.csproj --configuration Release --output GlogGeneratorBuild
-
-      - name: BuildStaticSite
-        run: |
-          rm -rf public
-          ./GlogGeneratorBuild/GlogGenerator build -i . -t GlogGeneratorBuild/templates -h "https://tsuereth.com" -o public
-

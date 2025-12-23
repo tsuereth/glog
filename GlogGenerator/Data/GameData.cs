@@ -10,25 +10,20 @@ namespace GlogGenerator.Data
     {
         public string Title { get; set; } = string.Empty;
 
-        public bool TitleIncludesPlatforms { get; set; } = false;
-
-        public HashSet<string> TitlePlatforms { get; set; } = new HashSet<string>();
-
         public string GameType { get; set; } = null;
 
         public string IgdbUrl { get; set; }
-
-        public HashSet<string> Tags { get; set; } = new HashSet<string>();
 
         public HashSet<string> LinkedPostIds { get; set; } = new HashSet<string>();
 
         public HashSet<string> LinkPostsToOtherGames { get; set; } = new HashSet<string>();
 
         private IgdbGameReference igdbReference = null;
-        private HashSet<string> parentGames { get; set; } = new HashSet<string>();
-        private HashSet<string> otherReleases { get; set; } = new HashSet<string>();
-        private HashSet<string> childGames { get; set; } = new HashSet<string>();
-        private HashSet<string> relatedGames { get; set; } = new HashSet<string>();
+        private HashSet<string> parentGameReferenceIds { get; set; } = new HashSet<string>();
+        private HashSet<string> otherReleaseReferenceIds { get; set; } = new HashSet<string>();
+        private HashSet<string> childGameReferenceIds { get; set; } = new HashSet<string>();
+        private HashSet<string> tagMetadataReferenceIds { get; set; } = new HashSet<string>();
+        private HashSet<string> relatedGameReferenceIds { get; set; } = new HashSet<string>();
 
         public IgdbGameReference GetIgdbEntityReference()
         {
@@ -62,6 +57,16 @@ namespace GlogGenerator.Data
             return thisKey.Equals(matchKey, StringComparison.Ordinal);
         }
 
+        public IEnumerable<string> GetIgdbEntityReferenceIds()
+        {
+            if (this.igdbReference != null && this.igdbReference.HasIgdbEntityData())
+            {
+                return new List<string>() { this.igdbReference.GetIgdbEntityDataId() };
+            }
+
+            return new List<string>();
+        }
+
         public object GetReferenceProperties()
         {
             return this.igdbReference;
@@ -73,95 +78,142 @@ namespace GlogGenerator.Data
             return $"game/{urlized}/";
         }
 
-        private static void CollectAncestorGamesRecursive(HashSet<string> ancestorGameTitles, ISiteDataIndex siteDataIndex, GameData game)
+        private static void CollectAncestorGameReferenceIdsRecursive(HashSet<string> ancestorGameReferenceIds, ISiteDataIndex siteDataIndex, GameData game)
         {
-            var parentGameTitles = game.parentGames.Where(s => siteDataIndex.HasGame(s));
-            foreach (var parentGameTitle in parentGameTitles)
+            foreach (var parentGameReferenceId in game.parentGameReferenceIds)
             {
-                if (!ancestorGameTitles.Contains(parentGameTitle))
+                if (!ancestorGameReferenceIds.Contains(parentGameReferenceId) && siteDataIndex.TryGetDataByIgdbEntityReferenceId<GameData>(parentGameReferenceId, out var parentGame))
                 {
-                    ancestorGameTitles.Add(parentGameTitle);
-
-                    var parentGame = siteDataIndex.GetGame(parentGameTitle);
-                    CollectAncestorGamesRecursive(ancestorGameTitles, siteDataIndex, parentGame);
+                    ancestorGameReferenceIds.Add(parentGameReferenceId);
+                    CollectAncestorGameReferenceIdsRecursive(ancestorGameReferenceIds, siteDataIndex, parentGame);
 
                     // The parent's other releases are also considered parents.
-                    var parentOtherReleaseTitles = new HashSet<string>();
-                    CollectAllOtherReleasesRecursive(parentOtherReleaseTitles, siteDataIndex, parentGame);
-                    foreach (var parentOtherReleaseTitle in parentOtherReleaseTitles)
+                    var parentOtherReleaseReferenceIds = new HashSet<string>();
+                    CollectAllOtherReleaseReferenceIdsRecursive(parentOtherReleaseReferenceIds, siteDataIndex, parentGame);
+                    foreach (var parentOtherReleaseReferenceId in parentOtherReleaseReferenceIds)
                     {
-                        if (!ancestorGameTitles.Contains(parentOtherReleaseTitle))
+                        if (!ancestorGameReferenceIds.Contains(parentOtherReleaseReferenceId) && siteDataIndex.TryGetDataByIgdbEntityReferenceId<GameData>(parentOtherReleaseReferenceId, out var parentOtherReleaseGame))
                         {
-                            ancestorGameTitles.Add(parentOtherReleaseTitle);
-
-                            var parentOtherReleaseGame = siteDataIndex.GetGame(parentOtherReleaseTitle);
-                            CollectAncestorGamesRecursive(ancestorGameTitles, siteDataIndex, parentOtherReleaseGame);
+                            ancestorGameReferenceIds.Add(parentOtherReleaseReferenceId);
+                            CollectAncestorGameReferenceIdsRecursive(ancestorGameReferenceIds, siteDataIndex, parentOtherReleaseGame);
                         }
                     }
                 }
             }
 
             // Add ancestry for the game's other releases, too.
-            var otherReleaseTitles = new HashSet<string>();
-            CollectAllOtherReleasesRecursive(otherReleaseTitles, siteDataIndex, game);
-            foreach (var otherReleaseTitle in otherReleaseTitles)
+            var otherReleaseReferenceIds = new HashSet<string>();
+            CollectAllOtherReleaseReferenceIdsRecursive(otherReleaseReferenceIds, siteDataIndex, game);
+            foreach (var otherReleaseReferenceId in otherReleaseReferenceIds)
             {
-                var otherRelease = siteDataIndex.GetGame(otherReleaseTitle);
-                var otherReleaseParentGameTitles = otherRelease.parentGames.Where(s => siteDataIndex.HasGame(s));
-                foreach (var parentGameTitle in otherReleaseParentGameTitles)
+                if (siteDataIndex.TryGetDataByIgdbEntityReferenceId<GameData>(otherReleaseReferenceId, out var otherRelease))
                 {
-                    if (!ancestorGameTitles.Contains(parentGameTitle))
+                    foreach (var parentGameReferenceId in otherRelease.parentGameReferenceIds)
                     {
-                        ancestorGameTitles.Add(parentGameTitle);
-
-                        var parentGame = siteDataIndex.GetGame(parentGameTitle);
-                        CollectAncestorGamesRecursive(ancestorGameTitles, siteDataIndex, parentGame);
+                        if (!ancestorGameReferenceIds.Contains(parentGameReferenceId) && siteDataIndex.TryGetDataByIgdbEntityReferenceId<GameData>(parentGameReferenceId, out var parentGame))
+                        {
+                            ancestorGameReferenceIds.Add(parentGameReferenceId);
+                            CollectAncestorGameReferenceIdsRecursive(ancestorGameReferenceIds, siteDataIndex, parentGame);
+                        }
                     }
                 }
             }
         }
 
-        private static void CollectAllOtherReleasesRecursive(HashSet<string> allOtherReleaseTitles, ISiteDataIndex siteDataIndex, GameData game)
+        private static void CollectAllOtherReleaseReferenceIdsRecursive(HashSet<string> allOtherReleaseReferenceIds, ISiteDataIndex siteDataIndex, GameData game)
         {
-            var otherReleaseTitles = game.otherReleases.Where(s => siteDataIndex.HasGame(s));
-            foreach (var otherReleaseTitle in otherReleaseTitles)
+            foreach (var otherReleaseReferenceId in game.otherReleaseReferenceIds)
             {
-                if (!allOtherReleaseTitles.Contains(otherReleaseTitle))
+                if (!allOtherReleaseReferenceIds.Contains(otherReleaseReferenceId) && siteDataIndex.TryGetDataByIgdbEntityReferenceId<GameData>(otherReleaseReferenceId, out var otherRelease))
                 {
-                    allOtherReleaseTitles.Add(otherReleaseTitle);
-
-                    var otherRelease = siteDataIndex.GetGame(otherReleaseTitle);
-                    CollectAllOtherReleasesRecursive(allOtherReleaseTitles, siteDataIndex, otherRelease);
+                    allOtherReleaseReferenceIds.Add(otherReleaseReferenceId);
+                    CollectAllOtherReleaseReferenceIdsRecursive(allOtherReleaseReferenceIds, siteDataIndex, otherRelease);
                 }
             }
         }
 
-        public IEnumerable<string> GetParentGames(ISiteDataIndex siteDataIndex)
+        public IEnumerable<string> GetParentGameTitles(ISiteDataIndex siteDataIndex)
         {
+            var ancestorGameReferenceIds = new HashSet<string>();
+            CollectAncestorGameReferenceIdsRecursive(ancestorGameReferenceIds, siteDataIndex, this);
+
             var ancestorGameTitles = new HashSet<string>();
-            CollectAncestorGamesRecursive(ancestorGameTitles, siteDataIndex, this);
+            foreach (var ancestorGameReferenceId in ancestorGameReferenceIds)
+            {
+                if (!siteDataIndex.TryGetDataByIgdbEntityReferenceId<GameData>(ancestorGameReferenceId, out var ancestorGame))
+                {
+                    throw new InvalidDataException($"No Game data found with IGDB entity reference ID {ancestorGameReferenceId}");
+                }
+
+                ancestorGameTitles.Add(ancestorGame.Title);
+            }
+
             ancestorGameTitles.Remove(this.Title);
 
             return ancestorGameTitles;
         }
 
-        public IEnumerable<string> GetOtherReleases(ISiteDataIndex siteDataIndex)
+        public IEnumerable<string> GetOtherReleaseTitles(ISiteDataIndex siteDataIndex)
         {
+            var allOtherReleaseReferenceIds = new HashSet<string>();
+            CollectAllOtherReleaseReferenceIdsRecursive(allOtherReleaseReferenceIds, siteDataIndex, this);
+
             var allOtherReleaseTitles = new HashSet<string>();
-            CollectAllOtherReleasesRecursive(allOtherReleaseTitles, siteDataIndex, this);
+            foreach (var allOtherReleaseReferenceId in allOtherReleaseReferenceIds)
+            {
+                if (!siteDataIndex.TryGetDataByIgdbEntityReferenceId<GameData>(allOtherReleaseReferenceId, out var otherRelease))
+                {
+                    throw new InvalidDataException($"No Game data found with IGDB entity reference ID {allOtherReleaseReferenceId}");
+                }
+
+                allOtherReleaseTitles.Add(otherRelease.Title);
+            }
+
             allOtherReleaseTitles.Remove(this.Title);
 
             return allOtherReleaseTitles;
         }
 
-        public IEnumerable<string> GetChildGames(ISiteDataIndex siteDataIndex)
+        public IEnumerable<string> GetChildGameTitles(ISiteDataIndex siteDataIndex)
         {
-            return this.childGames.Where(s => siteDataIndex.HasGame(s));
+            var childGameTitles = new HashSet<string>();
+            foreach (var childGameReferenceId in this.childGameReferenceIds)
+            {
+                if (siteDataIndex.TryGetDataByIgdbEntityReferenceId<GameData>(childGameReferenceId, out var childGame))
+                {
+                    childGameTitles.Add(childGame.Title);
+                }
+            }
+
+            return childGameTitles;
         }
 
-        public IEnumerable<string> GetRelatedGames(ISiteDataIndex siteDataIndex)
+        public IEnumerable<string> GetTagStrings(ISiteDataIndex siteDataIndex)
         {
-            return this.relatedGames.Where(s => siteDataIndex.HasGame(s));
+            var tagStrings = new HashSet<string>();
+            foreach (var tagMetadataReferenceId in this.tagMetadataReferenceIds)
+            {
+                if (siteDataIndex.TryGetDataByIgdbEntityReferenceId<TagData>(tagMetadataReferenceId, out var tag))
+                {
+                    tagStrings.Add(tag.Name);
+                }
+            }
+
+            return tagStrings;
+        }
+
+        public IEnumerable<string> GetRelatedGameTitles(ISiteDataIndex siteDataIndex)
+        {
+            var relatedGameTitles = new HashSet<string>();
+            foreach (var relatedGameReferenceId in this.relatedGameReferenceIds)
+            {
+                if (siteDataIndex.TryGetDataByIgdbEntityReferenceId<GameData>(relatedGameReferenceId, out var relatedGame))
+                {
+                    relatedGameTitles.Add(relatedGame.Title);
+                }
+            }
+
+            return relatedGameTitles;
         }
 
         public static GameData FromIgdbGameReference(IgdbGameReference igdbGameReference)
@@ -170,12 +222,6 @@ namespace GlogGenerator.Data
             game.igdbReference = igdbGameReference;
 
             game.Title = game.igdbReference.GetReferenceableKey();
-
-            if (game.igdbReference.NameAppendReleasePlatforms == true)
-            {
-                game.TitleIncludesPlatforms = true;
-                game.TitlePlatforms = game.igdbReference.ReleasePlatformNames.ToHashSet();
-            }
 
             return game;
         }
@@ -193,7 +239,7 @@ namespace GlogGenerator.Data
                 throw new InvalidDataException($"No IGDB Game found with ID {this.igdbReference.IgdbEntityId.Value}");
             }
 
-            this.TryAddTag<IgdbGameType>(igdbCache, igdbGame.GameTypeId);
+            this.TryAddTagMetadataReferenceId<IgdbGameType>(igdbCache, igdbGame.GameTypeId);
 
             if (!string.IsNullOrEmpty(igdbGame.Url))
             {
@@ -202,14 +248,14 @@ namespace GlogGenerator.Data
 
             foreach (var collectionId in igdbGame.CollectionIds)
             {
-                this.TryAddTag<IgdbCollection>(igdbCache, collectionId);
+                this.TryAddTagMetadataReferenceId<IgdbCollection>(igdbCache, collectionId);
             }
 
-            this.TryAddTag<IgdbFranchise>(igdbCache, igdbGame.MainFranchiseId);
+            this.TryAddTagMetadataReferenceId<IgdbFranchise>(igdbCache, igdbGame.MainFranchiseId);
 
             foreach (var franchiseId in igdbGame.FranchiseIds)
             {
-                this.TryAddTag<IgdbFranchise>(igdbCache, franchiseId);
+                this.TryAddTagMetadataReferenceId<IgdbFranchise>(igdbCache, franchiseId);
             }
 
             var companyIds = new List<int>(igdbGame.InvolvedCompanyIds.Count);
@@ -227,154 +273,97 @@ namespace GlogGenerator.Data
 
             foreach (var companyId in companyIds)
             {
-                this.TryAddTag<IgdbCompany>(igdbCache, companyId);
+                this.TryAddTagMetadataReferenceId<IgdbCompany>(igdbCache, companyId);
             }
 
             foreach (var genreId in igdbGame.GenreIds)
             {
-                this.TryAddTag<IgdbGenre>(igdbCache, genreId);
+                this.TryAddTagMetadataReferenceId<IgdbGenre>(igdbCache, genreId);
             }
 
             foreach (var gameModeId in igdbGame.GameModeIds)
             {
-                this.TryAddTag<IgdbGameMode>(igdbCache, gameModeId);
+                this.TryAddTagMetadataReferenceId<IgdbGameMode>(igdbCache, gameModeId);
             }
 
             foreach (var keywordId in igdbGame.KeywordIds)
             {
-                this.TryAddTag<IgdbKeyword>(igdbCache, keywordId);
+                this.TryAddTagMetadataReferenceId<IgdbKeyword>(igdbCache, keywordId);
             }
 
             foreach (var playerPerspectiveId in igdbGame.PlayerPerspectiveIds)
             {
-                this.TryAddTag<IgdbPlayerPerspective>(igdbCache, playerPerspectiveId);
+                this.TryAddTagMetadataReferenceId<IgdbPlayerPerspective>(igdbCache, playerPerspectiveId);
             }
 
             foreach (var themeId in igdbGame.ThemeIds)
             {
-                this.TryAddTag<IgdbTheme>(igdbCache, themeId);
+                this.TryAddTagMetadataReferenceId<IgdbTheme>(igdbCache, themeId);
             }
 
             foreach (var parentGameId in igdbCache.GetParentGameIds(igdbGame.Id))
             {
-                this.TryAddParentGame(igdbCache, parentGameId);
+                this.TryAddParentGameReferenceId(igdbCache, parentGameId);
             }
 
             foreach (var otherReleaseGameId in igdbCache.GetOtherReleaseGameIds(igdbGame.Id))
             {
-                this.TryAddOtherRelease(igdbCache, otherReleaseGameId);
+                this.TryAddOtherReleaseReferenceId(igdbCache, otherReleaseGameId);
             }
 
             foreach (var childGameId in igdbCache.GetChildGameIds(igdbGame.Id))
             {
-                this.TryAddChildGame(igdbCache, childGameId);
+                this.TryAddChildGameReferenceId(igdbCache, childGameId);
             }
 
             foreach (var relatedGameId in igdbCache.GetRelatedGameIds(igdbGame.Id))
             {
-                this.TryAddRelatedGame(igdbCache, relatedGameId);
+                this.TryAddRelatedGameReferenceId(igdbCache, relatedGameId);
             }
         }
 
-        private void TryAddTag<T>(IIgdbCache igdbCache, int tagId)
+        private void TryAddTagMetadataReferenceId<T>(IIgdbCache igdbCache, int metadataId)
             where T : IgdbEntity
         {
-            if (tagId != IgdbEntity.IdNotFound)
+            if (metadataId != IgdbEntity.IdNotFound)
             {
-                var tagEntity = igdbCache.GetEntity<T>(tagId);
-                if (tagEntity != null)
-                {
-                    var tagReferenceString = tagEntity.GetReferenceString(igdbCache);
-                    var addTagString = false;
-
-                    var tagUrlized = UrlizedString.Urlize(tagReferenceString);
-                    var matchingTag = this.Tags.Where(s => UrlizedString.Urlize(s) == tagUrlized);
-                    if (!matchingTag.Any())
-                    {
-                        addTagString = true;
-                    }
-                    else
-                    {
-                        if (matchingTag.Count() > 1)
-                        {
-                            throw new InvalidDataException($"More than one game tag matches urlized string {tagUrlized}");
-                        }
-
-                        // Ensure the listed tag value is the "canonical" value.
-                        // (When a tag has multiple variant strings, use the alpha-sorted-higher string.)
-                        var existingTagReferenceString = matchingTag.First();
-                        if (string.CompareOrdinal(tagReferenceString, existingTagReferenceString) < 0)
-                        {
-                            this.Tags.Remove(existingTagReferenceString);
-                            addTagString = true;
-                        }
-                    }
-
-                    if (addTagString)
-                    {
-                        this.Tags.Add(tagReferenceString);
-                    }
-                }
+                this.tagMetadataReferenceIds.Add(IIgdbEntityReference.FormatIgdbEntityReferenceDataId(typeof(T), metadataId));
             }
         }
 
-        private void TryAddParentGame(IIgdbCache igdbCache, int parentGameId)
+        private void TryAddParentGameReferenceId(IIgdbCache igdbCache, int parentGameId)
         {
             var thisGameId = (this.igdbReference != null && this.igdbReference.HasIgdbEntityData()) ? this.igdbReference.IgdbEntityId : IgdbEntity.IdNotFound;
             if (parentGameId != IgdbEntity.IdNotFound && parentGameId != thisGameId)
             {
-                var parentGame = igdbCache.GetGame(parentGameId);
-                if (parentGame != null &&
-                    !this.parentGames.Contains(parentGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
-                {
-                    var parentGameReferenceString = parentGame.GetReferenceString(igdbCache);
-                    this.parentGames.Add(parentGameReferenceString);
-                }
+                this.parentGameReferenceIds.Add(IIgdbEntityReference.FormatIgdbEntityReferenceDataId(typeof(IgdbGame), parentGameId));
             }
         }
 
-        private void TryAddOtherRelease(IIgdbCache igdbCache, int otherReleaseGameId)
+        private void TryAddOtherReleaseReferenceId(IIgdbCache igdbCache, int otherReleaseGameId)
         {
             var thisGameId = (this.igdbReference != null && this.igdbReference.HasIgdbEntityData()) ? this.igdbReference.IgdbEntityId : IgdbEntity.IdNotFound;
             if (otherReleaseGameId != IgdbEntity.IdNotFound && otherReleaseGameId != thisGameId)
             {
-                var otherReleaseGame = igdbCache.GetGame(otherReleaseGameId);
-                if (otherReleaseGame != null &&
-                    !this.otherReleases.Contains(otherReleaseGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
-                {
-                    var otherReleaseReferenceString = otherReleaseGame.GetReferenceString(igdbCache);
-                    this.otherReleases.Add(otherReleaseReferenceString);
-                }
+                this.otherReleaseReferenceIds.Add(IIgdbEntityReference.FormatIgdbEntityReferenceDataId(typeof(IgdbGame), otherReleaseGameId));
             }
         }
 
-        private void TryAddChildGame(IIgdbCache igdbCache, int childGameId)
+        private void TryAddChildGameReferenceId(IIgdbCache igdbCache, int childGameId)
         {
             var thisGameId = (this.igdbReference != null && this.igdbReference.HasIgdbEntityData()) ? this.igdbReference.IgdbEntityId : IgdbEntity.IdNotFound;
             if (childGameId != IgdbEntity.IdNotFound && childGameId != thisGameId)
             {
-                var childGame = igdbCache.GetGame(childGameId);
-                if (childGame != null &&
-                    !this.childGames.Contains(childGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
-                {
-                    var childGameReferenceString = childGame.GetReferenceString(igdbCache);
-                    this.childGames.Add(childGameReferenceString);
-                }
+                this.childGameReferenceIds.Add(IIgdbEntityReference.FormatIgdbEntityReferenceDataId(typeof(IgdbGame), childGameId));
             }
         }
 
-        private void TryAddRelatedGame(IIgdbCache igdbCache, int relatedGameId)
+        private void TryAddRelatedGameReferenceId(IIgdbCache igdbCache, int relatedGameId)
         {
             var thisGameId = (this.igdbReference != null && this.igdbReference.HasIgdbEntityData()) ? this.igdbReference.IgdbEntityId : IgdbEntity.IdNotFound;
             if (relatedGameId != IgdbEntity.IdNotFound && relatedGameId != thisGameId)
             {
-                var relatedGame = igdbCache.GetGame(relatedGameId);
-                if (relatedGame != null &&
-                    !this.relatedGames.Contains(relatedGame.GetReferenceString(igdbCache), StringComparer.Ordinal))
-                {
-                    var relatedGameReferenceString = relatedGame.GetReferenceString(igdbCache);
-                    this.relatedGames.Add(relatedGameReferenceString);
-                }
+                this.relatedGameReferenceIds.Add(IIgdbEntityReference.FormatIgdbEntityReferenceDataId(typeof(IgdbGame), relatedGameId));
             }
         }
     }

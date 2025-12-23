@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using GlogGenerator.IgdbApi;
 using GlogGenerator.NewtonsoftJsonHelpers;
 using Newtonsoft.Json;
@@ -33,7 +34,12 @@ namespace GlogGenerator.Data
 
         public string GetIgdbEntityDataId()
         {
-            return $"{this.IgdbEntityType.Name}:id={this.IgdbEntityId}";
+            if (!this.HasIgdbEntityData())
+            {
+                throw new InvalidDataException();
+            }
+
+            return IIgdbEntityReference.FormatIgdbEntityReferenceDataId(this.IgdbEntityType, this.IgdbEntityId.Value);
         }
 
         public virtual string GetReferenceableKey()

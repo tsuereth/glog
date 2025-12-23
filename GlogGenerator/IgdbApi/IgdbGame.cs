@@ -42,6 +42,9 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("game_modes")]
         public List<int> GameModeIds { get; set; } = new List<int>();
 
+        [JsonProperty("game_status")]
+        public int GameStatusId { get; set; } = IgdbGameStatus.IdNotFound;
+
         [JsonProperty("game_type")]
         public int GameTypeId { get; set; } = IgdbGameType.IdNotFound;
 
@@ -61,22 +64,6 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("name", Required = Required.Always)]
         public string Name { get; set; }
 
-        [IgdbEntityGlogOverrideValue]
-        [JsonProperty("name_glogAppendPlatforms")]
-        public bool? NameGlogAppendPlatforms { get; set; } = null;
-
-        [IgdbEntityGlogOverrideValue]
-        [JsonProperty("name_glogAppendReleaseNumber")]
-        public int? NameGlogAppendReleaseNumber { get; set; } = null;
-
-        [IgdbEntityGlogOverrideValue]
-        [JsonProperty("name_glogAppendReleaseYear")]
-        public bool? NameGlogAppendReleaseYear { get; set; } = null;
-
-        [IgdbEntityGlogOverrideValue]
-        [JsonProperty("name_glogOverride")]
-        public string NameGlogOverride { get; set; } = null;
-
         [JsonProperty("parent_game")]
         public int ParentGameId { get; set; } = IdNotFound;
 
@@ -88,9 +75,6 @@ namespace GlogGenerator.IgdbApi
 
         [JsonProperty("ports")]
         public List<int> PortGameIds { get; set; } = new List<int>();
-
-        [JsonProperty("release_dates")]
-        public List<int> ReleaseDateIds { get; set; } = new List<int>();
 
         [JsonProperty("remakes")]
         public List<int> RemakeGameIds { get; set; } = new List<int>();
@@ -110,68 +94,14 @@ namespace GlogGenerator.IgdbApi
         [JsonProperty("version_parent")]
         public int VersionParentGameId { get; set; } = IdNotFound;
 
-        public DateTimeOffset? GetFirstReleaseDate(IIgdbCache cache)
+        public DateTimeOffset? GetFirstReleaseDate()
         {
             if (this.FirstReleaseDateTimestamp != 0)
             {
                 return DateTimeOffset.FromUnixTimeSeconds(this.FirstReleaseDateTimestamp);
             }
 
-            var releaseDates = this.ReleaseDateIds.Select(id => cache.GetReleaseDate(id)).Where(d => d != null && d.DateTimestamp != 0);
-            if (releaseDates.Any())
-            {
-                return releaseDates.OrderBy(d => d.DateTimestamp).First().Date;
-            }
-
             return null;
-        }
-
-        public override string GetReferenceString(IIgdbCache cache)
-        {
-            if (!string.IsNullOrEmpty(this.NameGlogOverride))
-            {
-                return this.NameGlogOverride;
-            }
-
-            var nameBuilder = new StringBuilder();
-            nameBuilder.Append(this.Name);
-
-            if (this.NameGlogAppendReleaseYear == true)
-            {
-                var firstReleaseDate = this.GetFirstReleaseDate(cache);
-                if (firstReleaseDate == null)
-                {
-                    throw new InvalidDataException($"Game ID {this.Id} named \"{this.Name}\" is set to append a release year to its name, but has no valid release date.");
-                }
-
-                nameBuilder.Append(" (");
-                nameBuilder.Append(firstReleaseDate.Value.Year);
-                nameBuilder.Append(")");
-            }
-
-            if (this.NameGlogAppendPlatforms == true)
-            {
-                var platforms = this.PlatformIds.Select(id => cache.GetPlatform(id));
-                if (!platforms.Any())
-                {
-                    throw new InvalidDataException($"Game ID {this.Id} named \"{this.Name}\" is set to append platforms to its name, but has no valid platforms.");
-                }
-
-                var platformStringsOrdered = platforms.Select(p => p.GetReferenceString(cache)).OrderBy(s => s);
-
-                nameBuilder.Append(" (");
-                nameBuilder.Append(string.Join(", ", platformStringsOrdered));
-                nameBuilder.Append(")");
-            }
-
-            if (this.NameGlogAppendReleaseNumber.HasValue)
-            {
-                nameBuilder.Append(" (");
-                nameBuilder.Append(this.NameGlogAppendReleaseNumber.Value.ToString(CultureInfo.InvariantCulture));
-                nameBuilder.Append(")");
-            }
-
-            return nameBuilder.ToString();
         }
 
         public IEnumerable<int> GetParentGameIds()
@@ -214,6 +144,14 @@ namespace GlogGenerator.IgdbApi
             return this.ForkGameIds
                 .Union(this.StandaloneExpansionGameIds)
                 .Where(i => i != IgdbEntity.IdNotFound);
+        }
+
+        public IEnumerable<int> GetAllAssociatedGameIds()
+        {
+            return this.GetParentGameIds()
+                .Union(this.GetOtherReleaseGameIds())
+                .Union(this.GetChildGameIds())
+                .Union(this.GetRelatedGameIds());
         }
     }
 }

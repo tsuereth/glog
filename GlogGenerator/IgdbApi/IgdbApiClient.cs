@@ -22,6 +22,23 @@ namespace GlogGenerator.IgdbApi
         // https://api-docs.igdb.com/#rate-limits
         private static readonly TimeSpan RequestDelayTimeMin = TimeSpan.FromSeconds(0.25);
 
+        private static readonly Dictionary<Type, string> GetItemsEndpointPaths = new Dictionary<Type, string>()
+        {
+            { typeof(IgdbCollection), "collections" },
+            { typeof(IgdbCompany), "companies" },
+            { typeof(IgdbFranchise), "franchises" },
+            { typeof(IgdbGame), "games" },
+            { typeof(IgdbGameMode), "game_modes" },
+            { typeof(IgdbGameStatus), "game_statuses" },
+            { typeof(IgdbGameType), "game_types" },
+            { typeof(IgdbGenre), "genres" },
+            { typeof(IgdbInvolvedCompany), "involved_companies" },
+            { typeof(IgdbKeyword), "keywords" },
+            { typeof(IgdbPlatform), "platforms" },
+            { typeof(IgdbPlayerPerspective), "player_perspectives" },
+            { typeof(IgdbTheme), "themes" },
+        };
+
         private readonly ILogger logger;
         private readonly string clientId;
         private readonly string clientSecret;
@@ -116,13 +133,6 @@ namespace GlogGenerator.IgdbApi
                     throw new ArgumentException($"{typeof(T).FullName}.{typeProperty.Name} has an empty JsonProperty name");
                 }
 
-                // Skip properties which are Glog overrides.
-                var glogOverrideAttr = typeProperty.GetCustomAttribute<IgdbEntityGlogOverrideValueAttribute>();
-                if (glogOverrideAttr != null)
-                {
-                    continue;
-                }
-
                 fields.Add(jsonPropertyAttr.PropertyName);
             }
 
@@ -207,69 +217,77 @@ namespace GlogGenerator.IgdbApi
             return items;
         }
 
-        public async Task<List<IgdbCollection>> GetCollectionsAsync(List<int> ids)
+        public async Task<List<T>> GetEntitiesAsync<T>(List<int> ids)
+            where T : IgdbEntity
         {
-            return await this.GetItemsAsync<IgdbCollection>("collections", ids);
+            if (!GetItemsEndpointPaths.TryGetValue(typeof(T), out var itemsEndpointPath))
+            {
+                throw new NotImplementedException();
+            }
+
+            return await this.GetItemsAsync<T>(itemsEndpointPath, ids);
         }
 
-        public async Task<List<IgdbCompany>> GetCompaniesAsync(List<int> ids)
+        public async Task<IgdbApiBatchDataResponse> GetAllDataForGameIdsAsync(List<int> gameIds)
         {
-            return await this.GetItemsAsync<IgdbCompany>("companies", ids);
-        }
+            var allData = new IgdbApiBatchDataResponse();
 
-        public async Task<List<IgdbFranchise>> GetFranchisesAsync(List<int> ids)
-        {
-            return await this.GetItemsAsync<IgdbFranchise>("franchises", ids);
-        }
+            // Fetch the games first, to get current IDs for metadata references.
+            var requestedGames = await this.GetEntitiesAsync<IgdbGame>(gameIds);
+            allData.Games = requestedGames;
 
-        public async Task<List<IgdbGame>> GetGamesAsync(List<int> ids)
-        {
-            return await this.GetItemsAsync<IgdbGame>("games", ids);
-        }
+            // Extract associated game IDs (remasters, expansions, etc) and fetch those games as well.
+            var associatedGameIds = requestedGames.SelectMany(g => g.GetAllAssociatedGameIds()).Distinct();
+            var newAssociatedGameIds = associatedGameIds.Except(gameIds).ToList();
+            var associatedGames = await this.GetEntitiesAsync<IgdbGame>(newAssociatedGameIds);
+            allData.Games.AddRange(associatedGames);
 
-        public async Task<List<IgdbGameMode>> GetGameModesAsync(List<int> ids)
-        {
-            return await this.GetItemsAsync<IgdbGameMode>("game_modes", ids);
-        }
+            // Update involvedCompanies to get most-current company IDs.
+            var involvedCompanyIds = allData.Games.SelectMany(g => g.InvolvedCompanyIds).Distinct().ToList();
+            allData.InvolvedCompanies = await this.GetEntitiesAsync<IgdbInvolvedCompany>(involvedCompanyIds);
 
-        public async Task<List<IgdbGameType>> GetGameTypesAsync(List<int> ids)
-        {
-            return await this.GetItemsAsync<IgdbGameType>("game_types", ids);
-        }
+            var companyIds = allData.InvolvedCompanies.Select(i => i.CompanyId).Distinct().ToList();
+            allData.Companies = await this.GetEntitiesAsync<IgdbCompany>(companyIds);
 
-        public async Task<List<IgdbGenre>> GetGenresAsync(List<int> ids)
-        {
-            return await this.GetItemsAsync<IgdbGenre>("genres", ids);
-        }
+            // Now, update the rest of the ID-driven metadata.
 
-        public async Task<List<IgdbInvolvedCompany>> GetInvolvedCompaniesAsync(List<int> ids)
-        {
-            return await this.GetItemsAsync<IgdbInvolvedCompany>("involved_companies", ids);
-        }
+            var collectionIds = allData.Games.SelectMany(g => g.CollectionIds).Distinct().ToList();
+            allData.Collections = await this.GetEntitiesAsync<IgdbCollection>(collectionIds.Distinct().ToList());
 
-        public async Task<List<IgdbKeyword>> GetKeywordsAsync(List<int> ids)
-        {
-            return await this.GetItemsAsync<IgdbKeyword>("keywords", ids);
-        }
+            var franchiseIds = allData.Games.Where(g => g.MainFranchiseId != IgdbFranchise.IdNotFound).Select(g => g.MainFranchiseId).Distinct().ToList();
+            franchiseIds.AddRange(allData.Games.SelectMany(g => g.FranchiseIds).Distinct());
+            allData.Franchises = await this.GetEntitiesAsync<IgdbFranchise>(franchiseIds.Distinct().ToList());
 
-        public async Task<List<IgdbPlatform>> GetPlatformsAsync(List<int> ids)
-        {
-            return await this.GetItemsAsync<IgdbPlatform>("platforms", ids);
-        }
+            var gameModeIds = allData.Games.SelectMany(g => g.GameModeIds).Distinct().ToList();
+            allData.GameModes = await this.GetEntitiesAsync<IgdbGameMode>(gameModeIds);
 
-        public async Task<List<IgdbPlayerPerspective>> GetPlayerPerspectivesAsync(List<int> ids)
-        {
-            return await this.GetItemsAsync<IgdbPlayerPerspective>("player_perspectives", ids);
-        }
+            var gameStatusIds = allData.Games.Where(g => g.GameStatusId != IgdbGameStatus.IdNotFound).Select(g => g.GameStatusId).Distinct().ToList();
+            allData.GameStatuses = await this.GetEntitiesAsync<IgdbGameStatus>(gameStatusIds);
 
-        public async Task<List<IgdbReleaseDate>> GetReleaseDatesAsync(List<int> ids)
-        {
-            return await this.GetItemsAsync<IgdbReleaseDate>("release_dates", ids);
-        }
+            var gameTypeIds = allData.Games.Where(g => g.GameTypeId != IgdbGameType.IdNotFound).Select(g => g.GameTypeId).Distinct().ToList();
+            allData.GameTypes = await this.GetEntitiesAsync<IgdbGameType>(gameTypeIds);
 
-        public async Task<List<IgdbTheme>> GetThemesAsync(List<int> ids)
-        {
-            return await this.GetItemsAsync<IgdbTheme>("themes", ids);
+            var genreIds = allData.Games.SelectMany(g => g.GenreIds).Distinct().ToList();
+            allData.Genres = await this.GetEntitiesAsync<IgdbGenre>(genreIds);
+
+            // NOTE: As of writing, "keywords" are way too abundant and vague to be useful; ignore 'em.
+#if false
+            var keywordIds = allData.Games.SelectMany(g => g.KeywordIds).Distinct().ToList();
+            allData.Keywords = await this.GetEntitiesAsync<IgdbKeyword>(keywordIds);
+#else
+            allData.Keywords = new List<IgdbKeyword>();
+#endif
+
+            var platformIds = allData.Games.SelectMany(g => g.PlatformIds).Distinct().ToList();
+            allData.Platforms = await this.GetEntitiesAsync<IgdbPlatform>(platformIds);
+
+            var playerPerspectiveIds = allData.Games.SelectMany(g => g.PlayerPerspectiveIds).Distinct().ToList();
+            allData.PlayerPerspectives = await this.GetEntitiesAsync<IgdbPlayerPerspective>(playerPerspectiveIds);
+
+            var themeIds = allData.Games.SelectMany(g => g.ThemeIds).Distinct().ToList();
+            allData.Themes = await this.GetEntitiesAsync<IgdbTheme>(themeIds);
+
+            return allData;
         }
     }
 }

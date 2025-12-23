@@ -24,9 +24,10 @@ namespace GlogGenerator
         private Dictionary<int, IgdbFranchise> franchisesById = new Dictionary<int, IgdbFranchise>();
 
         private Dictionary<int, IgdbGame> gamesById = new Dictionary<int, IgdbGame>();
-        private List<IgdbGame> gamesUnidentified = new List<IgdbGame>();
 
         private Dictionary<int, IgdbGameMode> gameModesById = new Dictionary<int, IgdbGameMode>();
+
+        private Dictionary<int, IgdbGameStatus> gameStatusesById = new Dictionary<int, IgdbGameStatus>();
 
         private Dictionary<int, IgdbGameType> gameTypesById = new Dictionary<int, IgdbGameType>();
 
@@ -37,11 +38,8 @@ namespace GlogGenerator
         private Dictionary<int, IgdbKeyword> keywordsById = new Dictionary<int, IgdbKeyword>();
 
         private Dictionary<int, IgdbPlatform> platformsById = new Dictionary<int, IgdbPlatform>();
-        private List<IgdbPlatform> platformsUnidentified = new List<IgdbPlatform>();
 
         private Dictionary<int, IgdbPlayerPerspective> playerPerspectivesById = new Dictionary<int, IgdbPlayerPerspective>();
-
-        private Dictionary<int, IgdbReleaseDate> releaseDatesById = new Dictionary<int, IgdbReleaseDate>();
 
         private Dictionary<int, IgdbTheme> themesById = new Dictionary<int, IgdbTheme>();
 
@@ -52,8 +50,6 @@ namespace GlogGenerator
         private Dictionary<int, HashSet<int>> gamesChildGameIds = new Dictionary<int, HashSet<int>>();
 
         private Dictionary<int, HashSet<int>> gamesRelatedGameIds = new Dictionary<int, HashSet<int>>();
-
-        private List<IgdbGame> additionalGames = new List<IgdbGame>();
 
         public T GetEntity<T>(int id)
             where T : IgdbEntity
@@ -80,6 +76,10 @@ namespace GlogGenerator
             {
                 entitiesById = this.gameModesById as Dictionary<int, T>;
             }
+            else if (entityType == typeof(IgdbGameStatus))
+            {
+                entitiesById = this.gameStatusesById as Dictionary<int, T>;
+            }
             else if (entityType == typeof(IgdbGameType))
             {
                 entitiesById = this.gameTypesById as Dictionary<int, T>;
@@ -103,10 +103,6 @@ namespace GlogGenerator
             else if (entityType == typeof(IgdbPlayerPerspective))
             {
                 entitiesById = this.playerPerspectivesById as Dictionary<int, T>;
-            }
-            else if (entityType == typeof(IgdbReleaseDate))
-            {
-                entitiesById = this.releaseDatesById as Dictionary<int, T>;
             }
             else if (entityType == typeof(IgdbTheme))
             {
@@ -167,16 +163,22 @@ namespace GlogGenerator
 
         public List<IgdbGame> GetAllGames()
         {
-            var results = this.gamesById.Values.ToList();
-
-            results.AddRange(this.gamesUnidentified);
-
-            return results;
+            return this.gamesById.Values.ToList();
         }
 
         public IgdbGameMode GetGameMode(int id)
         {
             if (this.gameModesById.TryGetValue(id, out var result))
+            {
+                return result;
+            }
+
+            return null;
+        }
+
+        public IgdbGameStatus GetGameStatus(int id)
+        {
+            if (this.gameStatusesById.TryGetValue(id, out var result))
             {
                 return result;
             }
@@ -236,26 +238,12 @@ namespace GlogGenerator
 
         public List<IgdbPlatform> GetAllPlatforms()
         {
-            var results = this.platformsById.Values.ToList();
-
-            results.AddRange(this.platformsUnidentified);
-
-            return results;
+            return this.platformsById.Values.ToList();
         }
 
         public IgdbPlayerPerspective GetPlayerPerspective(int id)
         {
             if (this.playerPerspectivesById.TryGetValue(id, out var result))
-            {
-                return result;
-            }
-
-            return null;
-        }
-
-        public IgdbReleaseDate GetReleaseDate(int id)
-        {
-            if (this.releaseDatesById.TryGetValue(id, out var result))
             {
                 return result;
             }
@@ -328,11 +316,6 @@ namespace GlogGenerator
             }
 
             return Enumerable.Empty<int>();
-        }
-
-        public void SetAdditionalGames(List<IgdbGame> additionalGames)
-        {
-            this.additionalGames = additionalGames;
         }
 
         private static IEnumerable<int> IgdbGameAllAssociatedGameIds(IgdbGame game)
@@ -410,183 +393,21 @@ namespace GlogGenerator
             }
         }
 
-        public async Task UpdateFromApiClient(IgdbApiClient client)
+        public void UpdateFromApiData(IgdbApiBatchDataResponse data)
         {
-            // Update games first, to get current IDs for metadata references.
-            var gameIds = this.gamesById.Keys.ToList();
-            gameIds = gameIds.Union(this.additionalGames.Select(g => g.Id)).ToList();
-            var gamesCurrent = await client.GetGamesAsync(gameIds);
-
-            // Extract associated game IDs (remasters, expansions, etc) and do one more update.
-            var associatedGameIds = gamesCurrent.SelectMany(g => IgdbGameAllAssociatedGameIds(g)).Distinct();
-            var newAssociatedGameIds = associatedGameIds.Except(gameIds).ToList();
-            var associatedGames = await client.GetGamesAsync(newAssociatedGameIds);
-
-            // To avoid problems integrating this update, DON'T use games which are missing important metadata.
-            associatedGames = associatedGames.Where(g => g.GetFirstReleaseDate(this) != null).ToList();
-            gamesCurrent.AddRange(associatedGames);
-
-            var gamesCurrentById = gamesCurrent.ToDictionary(o => o.Id, o => o);
-
-            // Re-apply overriden properties.
-            foreach (var gameId in gameIds)
-            {
-                if (gamesCurrentById.ContainsKey(gameId))
-                {
-                    // Check "additional games" before checking the cache, in case new overrides were provided outside the cache.
-                    var gameWithId = this.additionalGames.Where(g => g.Id == gameId).FirstOrDefault();
-                    if (gameWithId == null)
-                    {
-                        gameWithId = this.gamesById[gameId];
-                    }
-
-                    var gameOverrides = gameWithId.GetGlogOverrideValues();
-                    gamesCurrentById[gameId].SetGlogOverrideValues(gameOverrides);
-                }
-            }
-
-            // Update involvedCompanies to get most-current company IDs.
-            var involvedCompanyIds = gamesCurrent.SelectMany(g => g.InvolvedCompanyIds).Distinct().ToList();
-            var involvedCompaniesCurrent = await client.GetInvolvedCompaniesAsync(involvedCompanyIds);
-            this.involvedCompaniesById = involvedCompaniesCurrent.ToDictionary(o => o.Id, o => o);
-
-            var companyIds = involvedCompaniesCurrent.Select(i => i.CompanyId).Distinct().ToList();
-            var companiesCurrent = await client.GetCompaniesAsync(companyIds);
-            this.companiesById = companiesCurrent.ToDictionary(o => o.Id, o => o);
-
-            // Now, update the rest of the ID-driven metadata.
-
-            var collectionIds = gamesCurrent.SelectMany(g => g.CollectionIds).Distinct().ToList();
-            var collectionsCurrent = await client.GetCollectionsAsync(collectionIds.Distinct().ToList());
-            this.collectionsById = collectionsCurrent.ToDictionary(o => o.Id, o => o);
-
-            var franchiseIds = gamesCurrent.Where(g => g.MainFranchiseId != IgdbFranchise.IdNotFound).Select(g => g.MainFranchiseId).Distinct().ToList();
-            franchiseIds.AddRange(gamesCurrent.SelectMany(g => g.FranchiseIds).Distinct());
-            var franchisesCurrent = await client.GetFranchisesAsync(franchiseIds.Distinct().ToList());
-            this.franchisesById = franchisesCurrent.ToDictionary(o => o.Id, o => o);
-
-            var gameModeIds = gamesCurrent.SelectMany(g => g.GameModeIds).Distinct().ToList();
-            var gameModesCurrent = await client.GetGameModesAsync(gameModeIds);
-            this.gameModesById = gameModesCurrent.ToDictionary(o => o.Id, o => o);
-
-            var gameTypeIds = gamesCurrent.Where(g => g.GameTypeId != IgdbGameType.IdNotFound).Select(g => g.GameTypeId).Distinct().ToList();
-            var gameTypesCurrent = await client.GetGameTypesAsync(gameTypeIds);
-            this.gameTypesById = gameTypesCurrent.ToDictionary(o => o.Id, o => o);
-
-            var genreIds = gamesCurrent.SelectMany(g => g.GenreIds).Distinct().ToList();
-            var genresCurrent = await client.GetGenresAsync(genreIds);
-            this.genresById = genresCurrent.ToDictionary(o => o.Id, o => o);
-
-            // NOTE: As of writing, "keywords" are way too abundant and vague to be useful; ignore 'em.
-#if false
-            var keywordIds = gamesCurrent.SelectMany(g => g.KeywordIds).Distinct().ToList();
-            var keywordsCurrent = await client.GetKeywordsAsync(keywordIds);
-#else
-            var keywordsCurrent = new List<IgdbKeyword>();
-#endif
-            this.keywordsById = keywordsCurrent.ToDictionary(o => o.Id, o => o);
-
-            var platformIds = gamesCurrent.SelectMany(g => g.PlatformIds).Distinct().ToList();
-            var platformsCurrent = await client.GetPlatformsAsync(platformIds);
-
-            var platformsCurrentById = platformsCurrent.ToDictionary(o => o.Id, o => o);
-
-            // Re-apply overridden properties from the old cache.
-            foreach (var platformId in this.platformsById.Keys)
-            {
-                if (platformsCurrentById.ContainsKey(platformId))
-                {
-                    var platformOverrides = this.platformsById[platformId].GetGlogOverrideValues();
-                    platformsCurrentById[platformId].SetGlogOverrideValues(platformOverrides);
-                }
-            }
-
-            this.platformsById = platformsCurrentById;
-
-            var playerPerspectiveIds = gamesCurrent.SelectMany(g => g.PlayerPerspectiveIds).Distinct().ToList();
-            var playerPerspectivesCurrent = await client.GetPlayerPerspectivesAsync(playerPerspectiveIds);
-            this.playerPerspectivesById = playerPerspectivesCurrent.ToDictionary(o => o.Id, o => o);
-
-            // Note: we only care about IgdbReleaseDate data for games which are missing a direct FirstReleasedDate.
-            var releaseDateIds = gamesCurrent.Where(g => g.FirstReleaseDateTimestamp == 0).SelectMany(g => g.ReleaseDateIds).Distinct().ToList();
-            var releaseDatesCurrent = await client.GetReleaseDatesAsync(releaseDateIds);
-            this.releaseDatesById = releaseDatesCurrent.ToDictionary(o => o.Id, o => o);
-
-            var themeIds = gamesCurrent.SelectMany(g => g.ThemeIds).Distinct().ToList();
-            var themesCurrent = await client.GetThemesAsync(themeIds);
-            this.themesById = themesCurrent.ToDictionary(o => o.Id, o => o);
-
-            // Check game data for quirks to override/fix.
-
-            var gamesDuplicatedUrls = gamesCurrentById.Values
-                .GroupBy(g => UrlizedString.Urlize(g.GetReferenceString(this)))
-                .Where(g => g.Count() > 1);
-            foreach (var gamesDuplicatedUrl in gamesDuplicatedUrls)
-            {
-                var duplicatedUrl = gamesDuplicatedUrl.Key;
-
-                // We can disambiguate games with the same name/URL based on their release dates.
-                // Unless some release dates aren't available -- that'll be trouble.
-                var gamesMissingReleaseDate = gamesDuplicatedUrl.Where(g => g.GetFirstReleaseDate(this) == null);
-                if (gamesMissingReleaseDate.Any())
-                {
-                    throw new InvalidDataException($"Multiple games have the same URL \"{duplicatedUrl}\" and cannot be disambiguated because some are missing a release date.");
-                }
-
-                var gamesByReleaseYear = gamesDuplicatedUrl.GroupBy(g => g.GetFirstReleaseDate(this).Value.Year).ToDictionary(g => g.Key, g => g);
-                var earliestReleaseYear = gamesByReleaseYear.Keys.OrderBy(y => y).First();
-                foreach (var releaseYear in gamesByReleaseYear.Keys)
-                {
-                    var disambiguateByReleaseYear = false;
-                    var disambiguateByPlatforms = false;
-
-                    // If this release year isn't the earliest year for a game of this name, later-released games will be disambiguated by release year.
-                    if (releaseYear != earliestReleaseYear)
-                    {
-                        disambiguateByReleaseYear = true;
-                    }
-
-                    // If multiple games with this name were released in the SAME year, then they need to be disambiguated by their release platforms.
-                    if (gamesByReleaseYear[releaseYear].Count() > 1)
-                    {
-                        disambiguateByPlatforms = true;
-                    }
-
-                    foreach (var game in gamesByReleaseYear[releaseYear])
-                    {
-                        if (disambiguateByPlatforms)
-                        {
-                            gamesCurrentById[game.Id].NameGlogAppendPlatforms = true;
-                        }
-
-                        if (disambiguateByReleaseYear)
-                        {
-                            gamesCurrentById[game.Id].NameGlogAppendReleaseYear = true;
-                        }
-                    }
-                }
-            }
-
-            // Sometimes... disambiguating game names/URLs by release-year and platform STILL isn't enough!
-            // This is so rare and bizarre that we may as well just start slapping numbers on the games' names.
-            gamesDuplicatedUrls = gamesCurrentById.Values
-                .GroupBy(g => UrlizedString.Urlize(g.GetReferenceString(this)))
-                .Where(g => g.Count() > 1);
-            foreach (var gamesDuplicatedUrl in gamesDuplicatedUrls)
-            {
-                var duplicatedUrl = gamesDuplicatedUrl.Key;
-
-                var gamesInReleaseOrder = gamesDuplicatedUrl.OrderBy(g => g.GetFirstReleaseDate(this)).ToList();
-                for (var i = 1; i < gamesInReleaseOrder.Count; ++i)
-                {
-                    var gameId = gamesInReleaseOrder[i].Id;
-
-                    // Start with release number "2"
-                    gamesCurrentById[gameId].NameGlogAppendReleaseNumber = i + 1;
-                }
-            }
-
-            this.gamesById = gamesCurrentById;
+            this.collectionsById = data.Collections.ToDictionary(o => o.Id, o => o);
+            this.companiesById = data.Companies.ToDictionary(o => o.Id, o => o);
+            this.franchisesById = data.Franchises.ToDictionary(o => o.Id, o => o);
+            this.gamesById = data.Games.ToDictionary(o => o.Id, o => o);
+            this.gameModesById = data.GameModes.ToDictionary(o => o.Id, o => o);
+            this.gameStatusesById = data.GameStatuses.ToDictionary(o => o.Id, o => o);
+            this.gameTypesById = data.GameTypes.ToDictionary(o => o.Id, o => o);
+            this.genresById = data.Genres.ToDictionary(o => o.Id, o => o);
+            this.involvedCompaniesById = data.InvolvedCompanies.ToDictionary(o => o.Id, o => o);
+            this.keywordsById = data.Keywords.ToDictionary(o => o.Id, o => o);
+            this.platformsById = data.Platforms.ToDictionary(o => o.Id, o => o);
+            this.playerPerspectivesById = data.PlayerPerspectives.ToDictionary(o => o.Id, o => o);
+            this.themesById = data.Themes.ToDictionary(o => o.Id, o => o);
 
             this.RebuildAssociatedGamesIndexes();
         }
@@ -651,10 +472,6 @@ namespace GlogGenerator
             {
                 this.RemoveEntityByIdInternal(this.playerPerspectivesById, id);
             }
-            else if (entityType == typeof(IgdbReleaseDate))
-            {
-                this.RemoveEntityByIdInternal(this.releaseDatesById, id);
-            }
             else if (entityType == typeof(IgdbTheme))
             {
                 this.RemoveEntityByIdInternal(this.themesById, id);
@@ -693,25 +510,39 @@ namespace GlogGenerator
 
         public void WriteToJsonFiles(string directoryPath)
         {
-            var allGames = this.gamesUnidentified.OrderBy(o => o.GetReferenceString(this)).ToList();
-            allGames.AddRange(this.gamesById.Values.OrderBy(o => o.Id));
-
-            var allPlatforms = this.platformsUnidentified.OrderBy(o => o.GetReferenceString(this)).ToList();
-            allPlatforms.AddRange(this.platformsById.Values.OrderBy(o => o.Id));
-
             WriteEntityTypeToJsonFile(this.collectionsById.Values.OrderBy(o => o.Id), directoryPath, "collections");
             WriteEntityTypeToJsonFile(this.companiesById.Values.OrderBy(o => o.Id), directoryPath, "companies");
             WriteEntityTypeToJsonFile(this.franchisesById.Values.OrderBy(o => o.Id), directoryPath, "franchises");
             WriteEntityTypeToJsonFile(this.gameModesById.Values.OrderBy(o => o.Id), directoryPath, "gameModes");
+            WriteEntityTypeToJsonFile(this.gameStatusesById.Values.OrderBy(o => o.Id), directoryPath, "gameStatuses");
             WriteEntityTypeToJsonFile(this.gameTypesById.Values.OrderBy(o => o.Id), directoryPath, "gameTypes");
-            WriteEntityTypeToJsonFile(allGames, directoryPath, "games");
+            WriteEntityTypeToJsonFile(this.gamesById.Values.OrderBy(o => o.Id), directoryPath, "games");
             WriteEntityTypeToJsonFile(this.genresById.Values.OrderBy(o => o.Id), directoryPath, "genres");
             WriteEntityTypeToJsonFile(this.involvedCompaniesById.Values.OrderBy(o => o.Id), directoryPath, "involvedCompanies");
             WriteEntityTypeToJsonFile(this.keywordsById.Values.OrderBy(o => o.Id), directoryPath, "keywords");
-            WriteEntityTypeToJsonFile(allPlatforms, directoryPath, "platforms");
+            WriteEntityTypeToJsonFile(this.platformsById.Values.OrderBy(o => o.Id), directoryPath, "platforms");
             WriteEntityTypeToJsonFile(this.playerPerspectivesById.Values.OrderBy(o => o.Id), directoryPath, "playerPerspectives");
-            WriteEntityTypeToJsonFile(this.releaseDatesById.Values.OrderBy(o => o.Id), directoryPath, "releaseDates");
             WriteEntityTypeToJsonFile(this.themesById.Values.OrderBy(o => o.Id), directoryPath, "themes");
+        }
+
+        public static bool JsonFilesExist(string directoryPath)
+        {
+            if (!Directory.Exists(directoryPath))
+            {
+                return false;
+            }
+
+            var checkForTypeNames = new List<string>() { "games", "platforms" };
+            foreach (var typeName in checkForTypeNames)
+            {
+                var jsonFilePath = JsonFilePathForEntityType(directoryPath, typeName);
+                if (!File.Exists(jsonFilePath))
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         private static List<T> ReadEntityTypeFromJsonFile<T>(string directoryPath, string typeName)
@@ -729,25 +560,20 @@ namespace GlogGenerator
 
         public static IgdbCache FromJsonFiles(string directoryPath)
         {
-            var allGames = ReadEntityTypeFromJsonFile<IgdbGame>(directoryPath, "games");
-            var allPlatforms = ReadEntityTypeFromJsonFile<IgdbPlatform>(directoryPath, "platforms");
-
             var cache = new IgdbCache();
 
             cache.collectionsById = ReadEntityTypeFromJsonFile<IgdbCollection>(directoryPath, "collections").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbCollection>();
             cache.companiesById = ReadEntityTypeFromJsonFile<IgdbCompany>(directoryPath, "companies").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbCompany>();
             cache.franchisesById = ReadEntityTypeFromJsonFile<IgdbFranchise>(directoryPath, "franchises").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbFranchise>();
             cache.gameModesById = ReadEntityTypeFromJsonFile<IgdbGameMode>(directoryPath, "gameModes").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGameMode>();
+            cache.gameStatusesById = ReadEntityTypeFromJsonFile<IgdbGameStatus>(directoryPath, "gameStatuses").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGameStatus>();
             cache.gameTypesById = ReadEntityTypeFromJsonFile<IgdbGameType>(directoryPath, "gameTypes").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGameType>();
-            cache.gamesById = allGames.Where(o => o.Id != IgdbGame.IdNotFound).ToDictionary(o => o.Id, o => o);
-            cache.gamesUnidentified = allGames.Where(o => o.Id == IgdbGame.IdNotFound).ToList();
+            cache.gamesById = ReadEntityTypeFromJsonFile<IgdbGame>(directoryPath, "games").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGame>();
             cache.genresById = ReadEntityTypeFromJsonFile<IgdbGenre>(directoryPath, "genres").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbGenre>();
             cache.involvedCompaniesById = ReadEntityTypeFromJsonFile<IgdbInvolvedCompany>(directoryPath, "involvedCompanies").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbInvolvedCompany>();
             cache.keywordsById = ReadEntityTypeFromJsonFile<IgdbKeyword>(directoryPath, "keywords").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbKeyword>();
-            cache.platformsById = allPlatforms.Where(o => o.Id != IgdbPlatform.IdNotFound).ToDictionary(o => o.Id, o => o);
-            cache.platformsUnidentified = allPlatforms.Where(o => o.Id == IgdbPlatform.IdNotFound).ToList();
+            cache.platformsById = ReadEntityTypeFromJsonFile<IgdbPlatform>(directoryPath, "platforms").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbPlatform>();
             cache.playerPerspectivesById = ReadEntityTypeFromJsonFile<IgdbPlayerPerspective>(directoryPath, "playerPerspectives").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbPlayerPerspective>();
-            cache.releaseDatesById = ReadEntityTypeFromJsonFile<IgdbReleaseDate>(directoryPath, "releaseDates").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbReleaseDate>();
             cache.themesById = ReadEntityTypeFromJsonFile<IgdbTheme>(directoryPath, "themes").ToDictionary(o => o.Id, o => o) ?? new Dictionary<int, IgdbTheme>();
 
             cache.RebuildAssociatedGamesIndexes();

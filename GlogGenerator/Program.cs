@@ -39,6 +39,7 @@ namespace GlogGenerator
             var igdbClientSecret = string.Empty;
             var addIgdbGameIdsListString = string.Empty;
             var siteIndexFilesBasePath = projectProperties.DefaultSiteIndexFilesBasePath;
+            var igdbCacheFilesBasePath = projectProperties.DefaultIgdbCacheFilesBasePath;
             var inputFilesBasePath = projectProperties.DefaultInputFilesBasePath;
             var includeDraftsString = SiteBuilder.IncludeDrafts.HostModeOnly.ToString();
             var templateFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "templates");
@@ -66,6 +67,7 @@ namespace GlogGenerator
                 { "igdb-client-secret=", "IGDB API (Twitch Developers) Client Secret", o => igdbClientSecret = o },
                 { "add-igdb-game-ids=", "Comma-separated IGDB Game IDs to optionally add to the data cache", o => addIgdbGameIdsListString = o },
                 { "index-files-path=", $"Site data index files base path, default: {siteIndexFilesBasePath}", o => siteIndexFilesBasePath = o },
+                { "cache-files-path=", $"IGDB cache files base path, default: {igdbCacheFilesBasePath}", o => igdbCacheFilesBasePath = o },
                 { "i|input-path=", $"Input files base path, default: {inputFilesBasePath}", o => inputFilesBasePath = o },
                 { "d|include-drafts=", $"When to include draft content (one of {includeDraftsOptionsString}), default: {includeDraftsString}", o => includeDraftsString = o },
                 { "t|templates-path=", $"Template files base path, default: {templateFilesBasePath}", o => templateFilesBasePath = o },
@@ -119,7 +121,12 @@ namespace GlogGenerator
             }
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
-            var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, inputFilesBasePath, templateFilesBasePath);
+            var configData = ConfigData.FromFilePaths(
+                configFilePath,
+                siteIndexFilesBasePath,
+                igdbCacheFilesBasePath,
+                inputFilesBasePath,
+                templateFilesBasePath);
             var builder = new SiteBuilder(logger, configData);
             builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
 
@@ -146,7 +153,17 @@ namespace GlogGenerator
 
             if (activeVerbMustLoadSiteData || updateIgdbCache || rewriteInputFiles)
             {
-                LoadSiteData(logger, builder);
+                var loadedIgdbCache = InitializeSiteData(logger, builder);
+                if (loadedIgdbCache)
+                {
+                    // Add the cached IGDB data to the site data index.
+                    LoadSiteData(logger, builder);
+                }
+                else
+                {
+                    logger.LogInformation("No IGDB cache was loaded, data must be fetched from IGDB");
+                    updateIgdbCache = true;
+                }
             }
 
             if (updateIgdbCache || activeVerb.Equals(NonBuildVerbs.AddGames))
@@ -338,11 +355,36 @@ rating = []
 
             if (activeVerbMustLoadSiteData || updateIgdbCache || rewriteInputFiles)
             {
-                // After the site's been built, an updated data cache (pruned of unused data) can be rewritten.
+                // After the site's been built, an updated data index and cache (pruned of unused data) can be rewritten.
+                builder.RewriteSiteDataIndexFiles();
                 builder.RewriteIgdbCache();
             }
 
             return 0;
+        }
+
+        private static bool InitializeSiteData(ILogger logger, SiteBuilder builder)
+        {
+            logger.LogInformation("Initializing data...");
+
+            var loadIndexTimer = Stopwatch.StartNew();
+            builder.LoadSiteDataIndexFiles();
+            loadIndexTimer.Stop();
+            logger.LogInformation(
+                "Finished initializing site data index in {LoadTimeMs} ms",
+                loadIndexTimer.ElapsedMilliseconds);
+
+            var loadCacheTimer = Stopwatch.StartNew();
+            var loadedCache = builder.TryLoadIgdbCache();
+            loadCacheTimer.Stop();
+            if (loadedCache)
+            {
+                logger.LogInformation(
+                    "Finished initializing site IGDB cache in {LoadTimeMs} ms",
+                    loadCacheTimer.ElapsedMilliseconds);
+            }
+
+            return loadedCache;
         }
 
         private static void LoadSiteData(ILogger logger, SiteBuilder builder)
