@@ -43,18 +43,27 @@ namespace GlogGenerator.IgdbApi
         private readonly string clientId;
         private readonly string clientSecret;
 
+        private static DateTimeOffset lastRequestTime = DateTimeOffset.MinValue;
+
         private HttpClient httpClient;
         private bool disposed;
 
         private IgdbApiClientToken token;
-
-        private DateTimeOffset lastRequestTime = DateTimeOffset.MinValue;
 
         public IgdbApiClient(
             ILogger logger,
             string clientId,
             string clientSecret)
         {
+            if (string.IsNullOrEmpty(clientId))
+            {
+                throw new ArgumentException("Missing or empty IGDB Client ID");
+            }
+            if (string.IsNullOrEmpty(clientSecret))
+            {
+                throw new ArgumentException("Missing or empty IGDB Client Secret");
+            }
+
             this.logger = logger;
             this.clientId = clientId;
             this.clientSecret = clientSecret;
@@ -170,7 +179,7 @@ namespace GlogGenerator.IgdbApi
                     request.Headers.Add("Client-ID", this.clientId);
                     request.Content = new StringContent(queryBuilder.ToString());
 
-                    var timeSinceLastRequest = DateTimeOffset.UtcNow - this.lastRequestTime;
+                    var timeSinceLastRequest = DateTimeOffset.UtcNow - lastRequestTime;
                     if (timeSinceLastRequest < RequestDelayTimeMin)
                     {
                         await Task.Delay(RequestDelayTimeMin - timeSinceLastRequest);
@@ -183,7 +192,7 @@ namespace GlogGenerator.IgdbApi
                     }
                     finally
                     {
-                        this.lastRequestTime = DateTimeOffset.UtcNow;
+                        lastRequestTime = DateTimeOffset.UtcNow;
                     }
 
                     var responseText = await response.Content.ReadAsStringAsync();

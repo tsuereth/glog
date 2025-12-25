@@ -46,7 +46,7 @@ namespace GlogGenerator.Data
 
         public void SetNonContentGameNames(List<string> gameNames);
 
-        public void SetAdditionalIgdbGameIds(List<int> igdbGameIds);
+        public void AddGameReferences(List<IgdbGameReference> gameReferences);
 
         public void LoadContent(IIgdbCache igdbCache, string inputFilesBasePath, ContentParser contentParser, bool includeDrafts);
 
@@ -60,8 +60,10 @@ namespace GlogGenerator.Data
 
         public void RewriteSourceContent(ContentParser contentParser);
 
-        public void WriteToJsonFiles(string directoryPath);
+        public void WriteJsonFiles(string directoryPath);
 
-        public void LoadFromJsonFiles(string directoryPath, string inputFilesBasePath, ContentParser contentParser);
+        public void ReadJsonFiles(string directoryPath);
+
+        public void InitializeFromFiles(string jsonDirectoryPath, string inputFilesBasePath, ContentParser contentParser);
     }
 }

@@ -209,7 +209,7 @@ namespace GlogGenerator.Test
             // no-op
         }
 
-        public void SetAdditionalIgdbGameIds(List<int> igdbGameIds)
+        public void AddGameReferences(List<IgdbGameReference> gameReferences)
         {
             throw new NotImplementedException();
         }
@@ -244,12 +244,17 @@ namespace GlogGenerator.Test
             throw new NotImplementedException();
         }
 
-        public void WriteToJsonFiles(string directoryPath)
+        public void WriteJsonFiles(string directoryPath)
         {
             throw new NotImplementedException();
         }
 
-        public void LoadFromJsonFiles(string directoryPath, string inputFilesBasePath, ContentParser contentParser)
+        public void ReadJsonFiles(string directoryPath)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void InitializeFromFiles(string jsonDirectoryPath, string inputFilesBasePath, ContentParser contentParser)
         {
             throw new NotImplementedException();
         }

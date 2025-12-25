@@ -92,7 +92,7 @@ namespace GlogGenerator
 
         public void LoadSiteDataIndexFiles()
         {
-            this.siteDataIndex.LoadFromJsonFiles(
+            this.siteDataIndex.InitializeFromFiles(
                 this.configData.SiteDataIndexFilesBasePath,
                 this.configData.InputFilesBasePath,
                 this.GetContentParser());
@@ -100,7 +100,7 @@ namespace GlogGenerator
 
         public void RewriteSiteDataIndexFiles()
         {
-            this.siteDataIndex.WriteToJsonFiles(this.configData.SiteDataIndexFilesBasePath);
+            this.siteDataIndex.WriteJsonFiles(this.configData.SiteDataIndexFilesBasePath);
         }
 
         public ContentParser GetContentParser()
@@ -119,24 +119,64 @@ namespace GlogGenerator
             return false;
         }
 
-        public void SetAdditionalIgdbGameIds(List<int> igdbGameIds)
-        {
-            this.siteDataIndex.SetAdditionalIgdbGameIds(igdbGameIds);
-        }
-
         public void RewriteIgdbCache()
         {
             var igdbCache = this.GetIgdbCache();
             igdbCache.WriteToJsonFiles(this.configData.IgdbCacheFilesBasePath);
         }
 
+        public bool DataIndexRequiresIgdbCacheUpdate()
+        {
+            if (this.igdbCache == null)
+            {
+                return true;
+            }
+
+            var dataIndexIgdbGameIds = this.siteDataIndex.GetGames()
+                .Select(g => g.GetIgdbEntityReference())
+                .Where(r => r.HasIgdbEntityData())
+                .Select(r => r.IgdbEntityId.Value);
+            var cachedIgdbGameIds = this.igdbCache.GetAllGames()
+                .Select(g => g.GetEntityId());
+            var gameIdsMissingFromCache = dataIndexIgdbGameIds.Except(cachedIgdbGameIds);
+            if (gameIdsMissingFromCache.Any())
+            {
+                return true;
+            }
+
+            var dataIndexIgdbPlatformIds = this.siteDataIndex.GetPlatforms()
+                .Select(p => p.GetIgdbEntityReference())
+                .Where(r => r.HasIgdbEntityData())
+                .Select(r => r.IgdbEntityId.Value).ToList();
+            var cachedIgdbPlatformIds = this.igdbCache.GetAllPlatforms()
+                .Select(p => p.GetEntityId());
+            var platformIdsMissingFromCache = dataIndexIgdbPlatformIds.Except(cachedIgdbPlatformIds);
+            if (platformIdsMissingFromCache.Any())
+            {
+                return true;
+            }
+
+            var dataIndexIgdbMetadataIds = this.siteDataIndex.GetTags()
+                .SelectMany(t => t.GetIgdbEntityReferences())
+                .Where(r => r.HasIgdbEntityData())
+                .Select(r => r.IgdbEntityId.Value).ToList();
+            var cachedIgdbMetadataIds = this.igdbCache.GetAllGameMetadata()
+                .Select(m => m.GetEntityId());
+            var metadataIdsMissingFromCache = dataIndexIgdbMetadataIds.Except(cachedIgdbMetadataIds);
+            if (metadataIdsMissingFromCache.Any())
+            {
+                return true;
+            }
+
+            return false;
+        }
+
         public async Task UpdateIgdbCacheFromApiAsync(IgdbApiClient apiClient)
         {
-            var igdbGameReferences = this.siteDataIndex.GetGames()
+            var igdbGameIds = this.siteDataIndex.GetGames()
                 .Select(g => g.GetIgdbEntityReference())
-                .Where(r => r.HasIgdbEntityData());
-
-            var igdbGameIds = igdbGameReferences.Select(r => r.IgdbEntityId.Value).ToList();
+                .Where(r => r.HasIgdbEntityData())
+                .Select(r => r.IgdbEntityId.Value).ToList();
 
             var igdbData = await apiClient.GetAllDataForGameIdsAsync(igdbGameIds);
 
@@ -163,9 +203,12 @@ namespace GlogGenerator
 
         public void ResolveDataReferences()
         {
+            // Only modify the IGDB cache if it's already up-to-date.
+            IIgdbCache modifyIgdbCache = this.DataIndexRequiresIgdbCacheUpdate() ? null : this.igdbCache;
+
             this.siteDataIndex.ResolveReferences();
-            this.siteDataIndex.RegisterAutomaticReferences(this.igdbCache);
-            this.siteDataIndex.RemoveUnreferencedData(this.igdbCache);
+            this.siteDataIndex.RegisterAutomaticReferences(modifyIgdbCache);
+            this.siteDataIndex.RemoveUnreferencedData(modifyIgdbCache);
             this.siteDataIndex.LinkPostsToAssociatedGames();
         }
 

@@ -22,7 +22,6 @@ namespace GlogGenerator.Data
         private readonly ILogger logger;
 
         private List<string> nonContentGameNames = new List<string>();
-        private List<int> additionalIgdbGameIds = new List<int>();
 
         private List<SiteDataReference<CategoryData>> categoryReferences = new List<SiteDataReference<CategoryData>>();
         private List<SiteDataReference<GameData>> gameReferences = new List<SiteDataReference<GameData>>();
@@ -218,9 +217,12 @@ namespace GlogGenerator.Data
             this.nonContentGameNames = gameNames;
         }
 
-        public void SetAdditionalIgdbGameIds(List<int> igdbGameIds)
+        public void AddGameReferences(List<IgdbGameReference> gameReferences)
         {
-            this.additionalIgdbGameIds = igdbGameIds;
+            foreach (var gameReference in gameReferences)
+            {
+                this.Lookups.AddData(GameData.FromIgdbGameReference(gameReference));
+            }
         }
 
         private void UpdateReferencesFromContent(SiteDataLookups oldLookups, string inputFilesBasePath, ContentParser contentParser, bool includeDrafts)
@@ -851,7 +853,7 @@ namespace GlogGenerator.Data
             }
         }
 
-        public void WriteToJsonFiles(string directoryPath)
+        public void WriteJsonFiles(string directoryPath)
         {
             // Category references are trivial, don't bother writing them down.
             WriteDataItemsToJsonFile(this.Lookups.GetValues<GameData>(), directoryPath, "games");
@@ -897,7 +899,7 @@ namespace GlogGenerator.Data
             return dataLookup;
         }
 
-        public void LoadFromJsonFiles(string directoryPath, string inputFilesBasePath, ContentParser contentParser)
+        public void ReadJsonFiles(string directoryPath)
         {
             this.Lookups.ClearAll();
 
@@ -906,15 +908,14 @@ namespace GlogGenerator.Data
             this.Lookups.Platforms = ReadDataItemsFromJsonFile<PlatformData>(directoryPath, "platforms");
             // Ratings don't need to be loaded, they'll be derived from content.
             this.Lookups.Tags = ReadDataItemsFromJsonFile<TagData>(directoryPath, "tags");
+        }
 
-            foreach (var additionalIgdbGameId in this.additionalIgdbGameIds)
-            {
-                var placeholderIgdbGame = new IgdbGame() { Id = additionalIgdbGameId };
-                var placeholderGameReference = new IgdbGameReference(placeholderIgdbGame);
-                this.Lookups.AddData<GameData>(GameData.FromIgdbGameReference(placeholderGameReference));
-            }
+        public void InitializeFromFiles(string jsonDirectoryPath, string inputFilesBasePath, ContentParser contentParser)
+        {
+            this.Lookups.ClearAll();
+            this.ReadJsonFiles(jsonDirectoryPath);
 
-            if (!string.IsNullOrEmpty(inputFilesBasePath) && Directory.Exists(inputFilesBasePath))
+            if (!string.IsNullOrEmpty(inputFilesBasePath) && Directory.Exists(inputFilesBasePath) && contentParser != null)
             {
                 // Parse and validate content references to the freshly-loaded index data.
                 var oldLookups = new SiteDataLookups();

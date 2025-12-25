@@ -146,37 +146,25 @@ namespace GlogGenerator
                 }
                 return addIgdbGameId;
             }).ToList();
-            if (addIgdbGameIds.Count > 0)
-            {
-                builder.SetAdditionalIgdbGameIds(addIgdbGameIds);
-            }
 
             if (activeVerbMustLoadSiteData || updateIgdbCache || rewriteInputFiles)
             {
-                var loadedIgdbCache = InitializeSiteData(logger, builder);
-                if (loadedIgdbCache)
+                InitializeSiteData(logger, builder);
+
+                if (builder.DataIndexRequiresIgdbCacheUpdate())
+                {
+                    logger.LogInformation("An IGDB cache update is required by the current data index");
+                    updateIgdbCache = true;
+                }
+                else
                 {
                     // Add the cached IGDB data to the site data index.
                     LoadSiteData(logger, builder);
                 }
-                else
-                {
-                    logger.LogInformation("No IGDB cache was loaded, data must be fetched from IGDB");
-                    updateIgdbCache = true;
-                }
             }
 
-            if (updateIgdbCache || activeVerb.Equals(NonBuildVerbs.AddGames))
+            if (updateIgdbCache)
             {
-                if (string.IsNullOrEmpty(igdbClientId))
-                {
-                    throw new ArgumentException("Missing or empty --igdb-client-id");
-                }
-                if (string.IsNullOrEmpty(igdbClientSecret))
-                {
-                    throw new ArgumentException("Missing or empty --igdb-client-secret");
-                }
-
                 // Ensure that data references are resolved to underlying IDs,
                 // before potentially modifying data keys with this update.
                 builder.ResolveDataReferences();
@@ -217,12 +205,36 @@ namespace GlogGenerator
 
             switch (activeVerb)
             {
-                case NonBuildVerbs.AddGames:
-                    // The --add-igdb-game-ids values have already been added, there's nothing to do here.
-                    break;
-
                 case NonBuildVerbs.Help:
                     options.WriteOptionDescriptions(Console.Out);
+                    break;
+
+                case NonBuildVerbs.AddGames:
+                    if (!addIgdbGameIds.Any())
+                    {
+                        throw new ArgumentException("Missing or empty --add-igdb-game-ids");
+                    }
+
+                    // This verb works around SiteBuilder entirely, to access and modify SiteDataIndex files directly.
+                    var siteDataIndex = new SiteDataIndex(logger);
+                    siteDataIndex.ReadJsonFiles(configData.SiteDataIndexFilesBasePath);
+
+                    using (var igdbApiClient = new IgdbApiClient(logger, igdbClientId, igdbClientSecret))
+                    {
+                        logger.LogInformation("Fetching additional IGDB games...");
+                        var fetchGamesTimer = Stopwatch.StartNew();
+                        var addIgdbGames = await igdbApiClient.GetEntitiesAsync<IgdbGame>(addIgdbGameIds);
+                        fetchGamesTimer.Stop();
+                        logger.LogInformation(
+                            "Finished games fetch in {FetchGamesTimer} ms",
+                            fetchGamesTimer.ElapsedMilliseconds);
+
+                        var addGameReferences = addIgdbGames.Select(game => new IgdbGameReference(game));
+                        siteDataIndex.AddGameReferences(addGameReferences.ToList());
+                    }
+
+                    siteDataIndex.WriteJsonFiles(configData.SiteDataIndexFilesBasePath);
+
                     break;
 
                 case NonBuildVerbs.New:
@@ -278,10 +290,6 @@ rating = []
                     logger.LogInformation(
                         "Undrafted post file at {NewPostPath}",
                         newPostPath);
-                    break;
-
-                case SiteBuilder.Mode.UpdateDataNoOutput:
-                    LoadSiteRoutes(logger, builder);
                     break;
 
                 case SiteBuilder.Mode.Build:
@@ -349,6 +357,10 @@ rating = []
                         reportPath);
                     break;
 
+                case SiteBuilder.Mode.UpdateDataNoOutput:
+                    LoadSiteRoutes(logger, builder);
+                    break;
+
                 default:
                     throw new ArgumentException($"Unhandled verb `{activeVerb}`");
             }
@@ -363,7 +375,7 @@ rating = []
             return 0;
         }
 
-        private static bool InitializeSiteData(ILogger logger, SiteBuilder builder)
+        private static void InitializeSiteData(ILogger logger, SiteBuilder builder)
         {
             logger.LogInformation("Initializing data...");
 
@@ -383,8 +395,6 @@ rating = []
                     "Finished initializing site IGDB cache in {LoadTimeMs} ms",
                     loadCacheTimer.ElapsedMilliseconds);
             }
-
-            return loadedCache;
         }
 
         private static void LoadSiteData(ILogger logger, SiteBuilder builder)
