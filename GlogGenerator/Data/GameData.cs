@@ -239,6 +239,9 @@ namespace GlogGenerator.Data
                 throw new InvalidDataException($"No IGDB Game found with ID {this.igdbReference.IgdbEntityId.Value}");
             }
 
+            var igdbGameType = igdbCache.GetGameType(igdbGame.GameTypeId);
+            this.GameType = igdbGameType.Type;
+
             this.TryAddTagMetadataReferenceId<IgdbGameType>(igdbCache, igdbGame.GameTypeId);
 
             if (!string.IsNullOrEmpty(igdbGame.Url))
