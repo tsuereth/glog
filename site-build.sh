@@ -12,7 +12,7 @@ if [ -f "$IGDB_CLIENT_CREDSFILE" ]; then
     IGDB_CLIENT_ID=$(cat "$IGDB_CLIENT_CREDSFILE" | cut -d ':' -f 1)
     IGDB_CLIENT_SECRET=$(cat "$IGDB_CLIENT_CREDSFILE" | cut -d ':' -f 2)
 
-    #IGDB_UPDATE_OPTIONS="-u true --igdb-client-id $IGDB_CLIENT_ID --igdb-client-secret $IGDB_CLIENT_SECRET"
+    IGDB_CREDENTIAL_OPTIONS="--igdb-client-id $IGDB_CLIENT_ID --igdb-client-secret $IGDB_CLIENT_SECRET"
 fi
 
-$GLOGGENERATOR build -i . -t GlogGenerator/templates/ $IGDB_UPDATE_OPTIONS -w true -h "https://tsuereth.com" -o public
+$GLOGGENERATOR build -i . -t GlogGenerator/templates/ $IGDB_CREDENTIAL_OPTIONS -w true -h "https://tsuereth.com" -o public

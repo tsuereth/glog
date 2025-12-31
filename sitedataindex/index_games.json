@@ -5910,6 +5910,16 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Star Wars Outlaws"
   },
+  "Star Wars Outlaws: A Pirate's Fortune": {
+    "igdbEntityId": 315805,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Star Wars Outlaws: A Pirate's Fortune"
+  },
+  "Star Wars Outlaws: Wild Card": {
+    "igdbEntityId": 315804,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Star Wars Outlaws: Wild Card"
+  },
   "Star Wars: 1313": {
     "igdbEntityId": 1386,
     "igdbEntityType": "IgdbGame",
@@ -7049,6 +7059,11 @@
     "igdbEntityId": 562,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Tom Clancy's Splinter Cell: Conviction"
+  },
+  "Tom Clancy's The Division": {
+    "igdbEntityId": 2114,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Tom Clancy's The Division"
   },
   "Tomb Raider (2013)": {
     "igdbEntityId": 1164,
