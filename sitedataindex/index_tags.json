@@ -12095,6 +12095,13 @@
       "igdbMetadataName": "The Defenestration Trilogy"
     }
   ],
+  "The Division": [
+    {
+      "igdbEntityId": 5402,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "The Division"
+    }
+  ],
   "The Dome": [
     {
       "igdbEntityId": 4512,
@@ -13129,6 +13136,13 @@
       "igdbEntityId": 15790,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Ubisoft Québec"
+    }
+  ],
+  "Ubisoft Red Storm": [
+    {
+      "igdbEntityId": 897,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Ubisoft Red Storm"
     }
   ],
   "Ubisoft Reflections": [
