@@ -2608,13 +2608,6 @@
       "igdbMetadataName": "Cyan Worlds"
     }
   ],
-  "CyberConnect2": [
-    {
-      "igdbEntityId": 2438,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "CyberConnect2"
-    }
-  ],
   "CyberFront": [
     {
       "igdbEntityId": 74,
@@ -7002,6 +6995,11 @@
       "igdbEntityId": 338,
       "igdbEntityType": "IgdbCollection",
       "igdbMetadataName": "Mega Man X"
+    },
+    {
+      "igdbEntityId": 2104,
+      "igdbEntityType": "IgdbFranchise",
+      "igdbMetadataName": "Mega Man X"
     }
   ],
   "Mega Man Zero": [
@@ -10972,6 +10970,13 @@
       "igdbMetadataName": "Square Enix Creative Business Unit I"
     }
   ],
+  "Square Enix Creative Studio I": [
+    {
+      "igdbEntityId": 72234,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Square Enix Creative Studio I"
+    }
+  ],
   "Square Enix Europe": [
     {
       "igdbEntityId": 4940,
@@ -11435,6 +11440,11 @@
     {
       "igdbEntityId": 6118,
       "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Super Mario Bros."
+    },
+    {
+      "igdbEntityId": 7056,
+      "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "Super Mario Bros."
     }
   ],
