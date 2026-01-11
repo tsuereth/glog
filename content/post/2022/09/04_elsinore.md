@@ -32,7 +32,7 @@ But ultimately those are pretty minor defects in Elsinore's expertly-written sto
 Not what I was expecting from a game based on Shakespeare.
 
 <b>Better than</b>: <game:Eliza (2019)>, <game:Omensight: Definitive Edition>, <game:The Sexy Brutale>  
-<b>Not as good as</b>: <game:The Great Ace Attorney: Adventures>, <game:The Great Ace Attorney 2 Resolve>  
+<b>Not as good as</b>: <game:The Great Ace Attorney: Adventures>, <game:The Great Ace Attorney 2: Resolve>  
 <b>A much slower burn, but about as good as</b>: <game:Outer Wilds>
 
 <i>Progress: saw all the endings, with some internet tips.</i>
