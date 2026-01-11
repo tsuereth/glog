@@ -57,6 +57,10 @@ namespace GlogGenerator
                 this.siteDataIndex = new SiteDataIndex(this.logger);
             }
 
+            // "Now Playing" game references, outside of content files, may not otherwise be known to the data index.
+            // Make sure that the index knows those game names later when it's loading and handling data references.
+            this.siteDataIndex.SetNonContentGameNames(this.GetNowPlaying());
+
             this.siteState = new SiteState(this, this.configData.TemplateFilesBasePath);
 
             var renderVariableSubstitution = new VariableSubstitution();
@@ -188,10 +192,6 @@ namespace GlogGenerator
 
         public void UpdateDataIndex()
         {
-            // "Now Playing" game references, outside of content files, may not otherwise be known to the data index.
-            // Make sure that the index knows those game names when it's loading and handling data references.
-            this.siteDataIndex.SetNonContentGameNames(this.GetNowPlaying());
-
             var igdbCache = this.GetIgdbCache();
 
             var dataIncludesDrafts =
