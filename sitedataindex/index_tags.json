@@ -10558,6 +10558,13 @@
       "igdbMetadataName": "Sonic Boom"
     }
   ],
+  "Sonic Racing": [
+    {
+      "igdbEntityId": 11263,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Sonic Racing"
+    }
+  ],
   "Sonic Rush": [
     {
       "igdbEntityId": 6179,
