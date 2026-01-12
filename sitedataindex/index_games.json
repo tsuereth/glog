@@ -4575,6 +4575,11 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Piczle Cross Adventure"
   },
+  "Piczle World of Puzzles": {
+    "igdbEntityId": 358033,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Piczle World of Puzzles"
+  },
   "Pid": {
     "igdbEntityId": 1892,
     "igdbEntityType": "IgdbGame",
