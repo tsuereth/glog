@@ -3516,6 +3516,13 @@
       "igdbMetadataName": "Duang! Games, LLC"
     }
   ],
+  "Duck Detective": [
+    {
+      "igdbEntityId": 12042,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Duck Detective"
+    }
+  ],
   "Duke Nukem": [
     {
       "igdbEntityId": 64,
@@ -5050,6 +5057,13 @@
       "igdbEntityId": 1379,
       "igdbEntityType": "IgdbCollection",
       "igdbMetadataName": "Hamilton's Great Adventure"
+    }
+  ],
+  "Happy Broccoli Games": [
+    {
+      "igdbEntityId": 28282,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Happy Broccoli Games"
     }
   ],
   "Hard Boiled": [
