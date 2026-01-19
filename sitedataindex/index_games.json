@@ -5063,6 +5063,15 @@
     "igdbGameName": "Resident Evil 4",
     "nameAppendReleaseYear": true
   },
+  "Resident Evil 4 (NGC)": {
+    "igdbEntityId": 974,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Resident Evil 4",
+    "igdbGameReleasePlatformNames": [
+      "NGC"
+    ],
+    "nameAppendReleasePlatforms": true
+  },
   "Resident Evil 4: Wii Edition": {
     "igdbEntityId": 21533,
     "igdbEntityType": "IgdbGame",
