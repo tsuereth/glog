@@ -5498,6 +5498,21 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Sid Meier's Civilization VI"
   },
+  "Sid Meier's Civilization VI: Gathering Storm": {
+    "igdbEntityId": 113374,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Sid Meier's Civilization VI: Gathering Storm"
+  },
+  "Sid Meier's Civilization VI: Rise and Fall": {
+    "igdbEntityId": 76420,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Sid Meier's Civilization VI: Rise and Fall"
+  },
+  "Sid Meier's Civilization VII": {
+    "igdbEntityId": 305006,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Sid Meier's Civilization VII"
+  },
   "Sid Meier's Civilization: Beyond Earth": {
     "igdbEntityId": 6038,
     "igdbEntityType": "IgdbGame",
