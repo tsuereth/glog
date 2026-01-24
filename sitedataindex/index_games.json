@@ -5056,6 +5056,11 @@
     ],
     "nameAppendReleasePlatforms": true
   },
+  "Resident Evil 4": {
+    "igdbEntityId": 145191,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Resident Evil 4"
+  },
   "Resident Evil 4 (2023)": {
     "igdbEntityId": 132181,
     "igdbEntityType": "IgdbGame",
