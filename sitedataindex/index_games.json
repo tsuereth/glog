@@ -5072,6 +5072,11 @@
     ],
     "nameAppendReleasePlatforms": true
   },
+  "Resident Evil 4: Separate Ways": {
+    "igdbEntityId": 266717,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Resident Evil 4: Separate Ways"
+  },
   "Resident Evil 4: Wii Edition": {
     "igdbEntityId": 21533,
     "igdbEntityType": "IgdbGame",
