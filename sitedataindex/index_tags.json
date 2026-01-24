@@ -1,4 +1,11 @@
 {
+  "(Archive) Capcom Co., LTD.": [
+    {
+      "igdbEntityId": 25341,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "(Archive) Capcom Co., LTD."
+    }
+  ],
   "1-UP Studio": [
     {
       "igdbEntityId": 2910,
@@ -1567,6 +1574,11 @@
       "igdbEntityId": 5028,
       "igdbEntityType": "IgdbCollection",
       "igdbMetadataName": "Boktai"
+    },
+    {
+      "igdbEntityId": 7295,
+      "igdbEntityType": "IgdbFranchise",
+      "igdbMetadataName": "Boktai"
     }
   ],
   "Boll AG": [
@@ -1820,13 +1832,6 @@
       "igdbEntityId": 37,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Capcom"
-    }
-  ],
-  "Capcom Co., LTD.": [
-    {
-      "igdbEntityId": 25341,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Capcom Co., LTD."
     }
   ],
   "Capcom Development Division 1": [
