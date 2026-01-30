@@ -4204,6 +4204,13 @@
       "igdbMetadataName": "Final Fantasy Tactics"
     }
   ],
+  "Final Fantasy VII": [
+    {
+      "igdbEntityId": 9007,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Final Fantasy VII"
+    }
+  ],
   "Final Fantasy VII Remake": [
     {
       "igdbEntityId": 9321,
