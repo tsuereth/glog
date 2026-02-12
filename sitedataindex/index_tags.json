@@ -5595,6 +5595,13 @@
       "igdbMetadataName": "Imagineering Inc."
     }
   ],
+  "IMBA Interactive": [
+    {
+      "igdbEntityId": 29776,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "IMBA Interactive"
+    }
+  ],
   "IMGN.PRO": [
     {
       "igdbEntityId": 5966,
@@ -7850,13 +7857,6 @@
       "igdbMetadataName": "Nintendo"
     }
   ],
-  "Nintendo EAD": [
-    {
-      "igdbEntityId": 421,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Nintendo EAD"
-    }
-  ],
   "Nintendo EAD Software Development Group No.1": [
     {
       "igdbEntityId": 1103,
@@ -7899,11 +7899,18 @@
       "igdbMetadataName": "Nintendo EAD Tokyo Software Development Group No.1"
     }
   ],
-  "Nintendo EPD": [
+  "Nintendo Entertainment Analysis & Development": [
+    {
+      "igdbEntityId": 421,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Nintendo Entertainment Analysis & Development"
+    }
+  ],
+  "Nintendo Entertainment Planning & Development": [
     {
       "igdbEntityId": 7902,
       "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Nintendo EPD"
+      "igdbMetadataName": "Nintendo Entertainment Planning & Development"
     }
   ],
   "Nintendo EPD Production Group No. 10": [
@@ -9445,6 +9452,13 @@
       "igdbEntityId": 391,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Red Fly Studio"
+    }
+  ],
+  "Red Spider": [
+    {
+      "igdbEntityId": 13606,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Red Spider"
     }
   ],
   "Red Steel": [
