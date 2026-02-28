@@ -1110,6 +1110,11 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "CIMA: The Enemy"
   },
+  "Cinicross": {
+    "igdbEntityId": 367828,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Cinicross"
+  },
   "Civilization Online": {
     "igdbEntityId": 63915,
     "igdbEntityType": "IgdbGame",
