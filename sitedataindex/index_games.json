@@ -5042,10 +5042,15 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Remember Me"
   },
-  "Resident Evil": {
+  "Resident Evil (PC, PS1)": {
     "igdbEntityId": 424,
     "igdbEntityType": "IgdbGame",
-    "igdbGameName": "Resident Evil"
+    "igdbGameName": "Resident Evil",
+    "igdbGameReleasePlatformNames": [
+      "PC",
+      "PS1"
+    ],
+    "nameAppendReleasePlatforms": true
   },
   "Resident Evil 2 (DC, NGC, PC, PS1, PS3, PSP)": {
     "igdbEntityId": 880,
