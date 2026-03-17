@@ -16,7 +16,7 @@ Character upgrades and customization are bewilderingly complicated. Between the 
 
 There are so many options and possible combinations, with intricate combat impacts - oh yeah, each character's combat tactics are completely unique!, reminiscent of [Final Fantasy VI](game:Final Fantasy III (1994)) - and many upgrade choices turn out to be worthless, or even objectively harmful. The staggering complexity discourages experimentation; once you find a configuration that "works," screwing with it doesn't feel worth the effort.
 
-And unfortunately, this leads to the combat itself becoming intensely repetitive, especially as battles get more frequent in the game's 2nd and 3rd acts. Both from overlong dungeons with the same enemies copied-and-pasted over and over again, and from gaps inbetween level expectations -- but like I mentioned earlier, *"a majority of [optional content] isn't accessible until the game's final act"*, so keeping your levels up with story expectations more-or-less requires some grinding.
+And unfortunately, this leads to the combat itself becoming intensely repetitive, especially as battles get more frequent in the game's 2nd and 3rd acts. Both from overlong dungeons with the same enemies copied-and-pasted over and over again, and from gaps inbetween level expectations -- but like I mentioned earlier, *"a majority of [optional content] isn't accessible until the game's final act"*, so keeping your levels up with the story more-or-less requires some grinding.
 
 I really wish that Clair Obscur's parry and dodge and attack-timing interactions could make that combat more interesting, but these mechanics are *confounding* in their unpredictability. Enemy "tells" aren't very clear or consistent, enemy attacks include way too many hits, and the timing requirements are incredibly narrow. Much like I [once wrote about Mario & Luigi: Bowser's Inside Story]($SiteBaseURL$2017/12/10/bowsers-indigestion-story/):
 
@@ -30,7 +30,7 @@ All this may sound like I'm down on Clair Obscur's gameplay, and, well... I am. 
 
 Clair Obscur succeeds as art, aesthetically, thanks to outstanding visuals and *especially* thanks to a moving and memorable soundtrack.
 
-As an interactive experience, it's weighed down by archaic game designs that don't respect the modern player's time. But if you're as enamored by late-90s-early-00s Final Fantasy as this game's creators evidently were, maybe those quirks are exactly what you want.
+As an interactive experience, it's weighed down by archaic game designs that don't respect the modern player's time. But if you're as enamored by late-90s-early-00s Final Fantasy as this game's creators evidently were, maybe you'll enjoy the time-sinks of grinding levels and customizing your characters; maybe that's just what you've been looking for.
 
 **Better than**: <game:Mario & Luigi: Bowser's Inside Story>  
 **Not as good as**: <game:South Park: The Stick of Truth>  
