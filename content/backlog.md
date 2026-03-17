@@ -19,7 +19,6 @@ permalink = "/backlog"
 * <game:The Last of Us Part I> (<platform:PC>)
 * <game:The Last of Us Part II Remastered> (<platform:PC>)
 * <game:The Legend of Zelda: Echoes of Wisdom> (<platform:Switch>)
-* <game:The Legend of Zelda: Tears of the Kingdom - Nintendo Switch 2 Edition> (<platform:Switch 2>)
 * <game:The Mageseeker: A League of Legends Story> (<platform:PC>)
 * <game:Marvel's Spider-Man 2> (<platform:PC>)
 * <game:Marvel's Spider-Man Remastered> (<platform:PC>)
