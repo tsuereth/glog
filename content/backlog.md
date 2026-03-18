@@ -14,6 +14,7 @@ permalink = "/backlog"
 * <game:Ghost of Yotei> (<platform:PS5>)
 * <game:Hades (2020)> (<platform:PC>)
 * <game:Hollow Knight: Silksong> (<platform:PC>)
+* <game:Hyrule Warriors: Age of Calamity> (<platform:Switch>)
 * <game:Indiana Jones and the Great Circle> (<platform:PC>)
 * <game:Instruments of Destruction> (<platform:PC>)
 * <game:The Last of Us Part I> (<platform:PC>)

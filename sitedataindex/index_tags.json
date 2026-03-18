@@ -6189,6 +6189,13 @@
       "igdbMetadataName": "Koei"
     }
   ],
+  "Koei Tecmo": [
+    {
+      "igdbEntityId": 18532,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Koei Tecmo"
+    }
+  ],
   "Koei Tecmo Games": [
     {
       "igdbEntityId": 858,
