@@ -1,0 +1,46 @@
+name: Build
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  BuildSite:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: SetupDotNet
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+
+      - name: RunTests
+        run: |
+          dotnet test GlogGenerator.Test/GlogGenerator.Test.csproj
+
+      - name: RunGlogGenerator
+        env:
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+        run: |
+          rm -rf GlogGeneratorBuild
+          dotnet build GlogGenerator/GlogGenerator.csproj --configuration Release --output GlogGeneratorBuild
+          rm -rf public
+          ./GlogGeneratorBuild/GlogGenerator build -i . -t GlogGeneratorBuild/templates -u true --igdb-client-id jy5t8x2w2eqdc7bax2zx3rlne7eup4 --igdb-client-secret $TWITCH_CLIENT_SECRET -w true -h "https://tsuereth.com" -o public
+
+      - name: DiffWithMain
+        if: github.ref != 'refs/heads/main'
+        uses: './.github/shared-steps/diff-with-branch'
+        with:
+          branch-ref: 'refs/heads/main'
+          twitch-client-secret: ${{ secrets.TWITCH_CLIENT_SECRET }}
+          files-path: 'public'
+
+      - name: DiffWithLive
+        uses: './.github/shared-steps/diff-with-live'
+        with:
+          deploy-glog-private-key: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
+          files-path: 'public'

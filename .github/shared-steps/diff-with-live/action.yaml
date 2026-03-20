@@ -1,0 +1,42 @@
+name: DiffWithLive
+
+inputs:
+  deploy-glog-private-key:
+    required: true
+    type: string
+  files-path:
+    required: true
+    type: string
+
+runs:
+  using: composite
+  steps:
+    - name: DiffLiveSite
+      shell: bash
+      env:
+        DEPLOY_GLOG_PRIVATE_KEY: ${{ inputs.deploy-glog-private-key }}
+      run: |
+        echo "$DEPLOY_GLOG_PRIVATE_KEY" > deploy-glog_id_rsa
+        chmod 0600 deploy-glog_id_rsa
+        rm -rf live-public
+        # Use the current static site build as a basis for rsync, to reduce what's downloaded.
+        cp -a ${{ inputs.files-path }} live-public
+        rsync -vr --checksum --delete \
+          -e "ssh -p 31771 -i deploy-glog_id_rsa -o StrictHostKeyChecking=no" \
+          "deploy-glog@tsuereth.com:/var/www/tsuereth_web/glog/" \
+          live-public/
+        # Diff exits with 0 if all files are identical.
+        diff -ur live-public ${{ inputs.files-path }} > live-diff.txt && echo "No differences found." >> live-diff.txt || true
+
+    - name: ReportLiveDiff
+      uses: actions/upload-artifact@v7
+      with:
+        name: 'live-diff'
+        path: 'live-diff.txt'
+        archive: false
+
+    - name: CleanupKey
+      if: ${{ always() }}
+      shell: bash
+      run: |
+        rm -f deploy-glog_id_rsa
