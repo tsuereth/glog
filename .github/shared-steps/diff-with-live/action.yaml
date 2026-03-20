@@ -12,6 +12,7 @@ runs:
   using: composite
   steps:
     - name: DiffLiveSite
+      shell: bash
       env:
         DEPLOY_GLOG_PRIVATE_KEY: ${{ inputs.deploy-glog-private-key }}
       run: |
@@ -36,5 +37,6 @@ runs:
 
     - name: CleanupKey
       if: ${{ always() }}
+      shell: bash
       run: |
         rm -f deploy-glog_id_rsa

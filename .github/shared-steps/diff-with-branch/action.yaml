@@ -21,6 +21,7 @@ runs:
         path: 'branch-checkout'
 
     - name: DiffBranchStaticSite
+      shell: bash
       env:
         TWITCH_CLIENT_SECRET: ${{ inputs.twitch-client-secret }}
       run: |
