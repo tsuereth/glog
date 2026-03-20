@@ -51,7 +51,8 @@ jobs:
           dotnet build base-checkout/GlogGenerator/GlogGenerator.csproj --configuration Release --output BaseGlogGeneratorBuild
           rm -rf base-public
           ./BaseGlogGeneratorBuild/GlogGenerator build -i . -t BaseGlogGeneratorBuild/templates -u true --igdb-client-id jy5t8x2w2eqdc7bax2zx3rlne7eup4 --igdb-client-secret $TWITCH_CLIENT_SECRET -h "https://tsuereth.com" -o base-public
-          diff -ur base-public public > public-diff.txt
+          # Diff exits with 0 if all files are identical.
+          diff -ur base-public public > public-diff.txt && echo "No differences found." >> public-diff.txt
 
       - name: ReportDiff
         #if: github.event_name == 'pull_request'
