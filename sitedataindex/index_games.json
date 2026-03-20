@@ -3883,12 +3883,14 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Metroid Prime"
   },
-  "Metroid Prime (2009)": {
+  "Metroid Prime (Wii)": {
     "igdbEntityId": 134257,
     "igdbEntityType": "IgdbGame",
-    "igdbGameFirstReleaseYear": 2009,
     "igdbGameName": "Metroid Prime",
-    "nameAppendReleaseYear": true
+    "igdbGameReleasePlatformNames": [
+      "Wii"
+    ],
+    "nameAppendReleasePlatforms": true
   },
   "Metroid Prime 2: Dark Echoes": {
     "igdbEntityId": 134258,
