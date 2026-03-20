@@ -4,9 +4,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  Test:
+  BuildSite:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -16,77 +15,29 @@ jobs:
         with:
           dotnet-version: 10.0.x
 
-      - name: TestGlogGenerator
+      - name: RunTests
         run: |
           dotnet test GlogGenerator.Test/GlogGenerator.Test.csproj
 
-      - name: BuildGlogGenerator
+      - name: RunGlogGenerator
+        env:
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
         run: |
           rm -rf GlogGeneratorBuild
           dotnet build GlogGenerator/GlogGenerator.csproj --configuration Release --output GlogGeneratorBuild
-
-      - name: UpdateDataAndBuildStaticSite
-        env:
-          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
-        run: |
           rm -rf public
           ./GlogGeneratorBuild/GlogGenerator build -i . -t GlogGeneratorBuild/templates -u true --igdb-client-id jy5t8x2w2eqdc7bax2zx3rlne7eup4 --igdb-client-secret $TWITCH_CLIENT_SECRET -w true -h "https://tsuereth.com" -o public
 
-      - name: CheckoutBase
-        #if: github.event_name == 'pull_request'
+      - name: DiffWithMain
         if: github.ref != 'refs/heads/main'
-        uses: actions/checkout@v6
+        uses: './.github/shared-steps/diff-with-branch.yaml'
         with:
-          #ref: github.base_ref
-          ref: 'refs/heads/main'
-          path: 'base-checkout'
+          branch-ref: 'refs/heads/main'
+          twitch-client-secret: ${{ secrets.TWITCH_CLIENT_SECRET }}
+          files-path: 'public'
 
-      - name: DiffBaseStaticSite
-        #if: github.event_name == 'pull_request'
-        if: github.ref != 'refs/heads/main'
-        env:
-          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
-        run: |
-          rm -rf BaseGlogGeneratorBuild
-          dotnet build base-checkout/GlogGenerator/GlogGenerator.csproj --configuration Release --output BaseGlogGeneratorBuild
-          rm -rf base-public
-          ./BaseGlogGeneratorBuild/GlogGenerator build -i . -t BaseGlogGeneratorBuild/templates -u true --igdb-client-id jy5t8x2w2eqdc7bax2zx3rlne7eup4 --igdb-client-secret $TWITCH_CLIENT_SECRET -h "https://tsuereth.com" -o base-public
-          # Diff exits with 0 if all files are identical.
-          diff -ur base-public public > base-diff.txt && echo "No differences found." >> base-diff.txt || true
-
-      - name: ReportBaseDiff
-        #if: github.event_name == 'pull_request'
-        if: github.ref != 'refs/heads/main'
-        uses: actions/upload-artifact@v7
-        with:
-          name: 'base-diff'
-          path: 'base-diff.txt'
-          archive: false
-
-      - name: DiffLiveSite
-        env:
-          DEPLOY_GLOG_PRIVATE_KEY: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
-        run: |
-          echo "$DEPLOY_GLOG_PRIVATE_KEY" > deploy-glog_id_rsa
-          chmod 0600 deploy-glog_id_rsa
-          rm -rf live-public
-          # Use the current static site build as a basis for rsync, to reduce what's downloaded.
-          cp -a public live-public
-          rsync -vr --checksum --delete \
-            -e "ssh -p 31771 -i deploy-glog_id_rsa -o StrictHostKeyChecking=no" \
-            "deploy-glog@tsuereth.com:/var/www/tsuereth_web/glog/" \
-            live-public/
-          # Diff exits with 0 if all files are identical.
-          diff -ur live-public public > live-diff.txt && echo "No differences found." >> live-diff.txt || true
-
-      - name: ReportLiveDiff
-        uses: actions/upload-artifact@v7
-        with:
-          name: 'live-diff'
-          path: 'live-diff.txt'
-          archive: false
-
-      - name: Cleanup
-        if: ${{ always() }}
-        run: |
-          rm -f deploy-glog_id_rsa
+      #- name: DiffWithLive
+      #  uses: './.github/shared-steps/diff-with-live.yaml'
+      #  with:
+      #    deploy-glog-private-key: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
+      #    files-path: 'public'
