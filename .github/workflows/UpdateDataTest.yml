@@ -44,6 +44,8 @@ jobs:
       - name: DiffStaticSite
         #if: github.event_name == 'pull_request'
         if: github.ref != 'refs/heads/main'
+        env:
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
         run: |
           rm -rf BaseGlogGeneratorBuild
           dotnet build base-checkout/GlogGenerator/GlogGenerator.csproj --configuration Release --output BaseGlogGeneratorBuild
