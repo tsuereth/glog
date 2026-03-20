@@ -50,7 +50,7 @@ jobs:
           rm -rf BaseGlogGeneratorBuild
           dotnet build base-checkout/GlogGenerator/GlogGenerator.csproj --configuration Release --output BaseGlogGeneratorBuild
           rm -rf base-public
-          ./BaseGlogGeneratorBuild/GlogGenerator build -i . -t BaseGlogGeneratorBuild/templates -u true --igdb-client-id jy5t8x2w2eqdc7bax2zx3rlne7eup4 --igdb-client-secret $TWITCH_CLIENT_SECRET -w true -h "https://tsuereth.com" -o base-public
+          ./BaseGlogGeneratorBuild/GlogGenerator build -i . -t BaseGlogGeneratorBuild/templates -u true --igdb-client-id jy5t8x2w2eqdc7bax2zx3rlne7eup4 --igdb-client-secret $TWITCH_CLIENT_SECRET -h "https://tsuereth.com" -o base-public
           diff -ur base-public public > public.diff
 
       - name: ReportDiff
