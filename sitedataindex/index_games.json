@@ -3883,6 +3883,20 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Metroid Prime"
   },
+  "Metroid Prime (Wii)": {
+    "igdbEntityId": 134257,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Metroid Prime",
+    "igdbGameReleasePlatformNames": [
+      "Wii"
+    ],
+    "nameAppendReleasePlatforms": true
+  },
+  "Metroid Prime 2: Dark Echoes": {
+    "igdbEntityId": 134258,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Metroid Prime 2: Dark Echoes"
+  },
   "Metroid Prime 2: Echoes": {
     "igdbEntityId": 1108,
     "igdbEntityType": "IgdbGame",
@@ -4097,16 +4111,6 @@
     "igdbEntityId": 142226,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Nerts!: Online"
-  },
-  "New Play Control! Metroid Prime": {
-    "igdbEntityId": 134257,
-    "igdbEntityType": "IgdbGame",
-    "igdbGameName": "New Play Control! Metroid Prime"
-  },
-  "New Play Control! Metroid Prime 2: Dark Echoes": {
-    "igdbEntityId": 134258,
-    "igdbEntityType": "IgdbGame",
-    "igdbGameName": "New Play Control! Metroid Prime 2: Dark Echoes"
   },
   "New Super Mario Bros.": {
     "igdbEntityId": 1076,

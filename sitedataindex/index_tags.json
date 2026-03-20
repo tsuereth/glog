@@ -5847,6 +5847,13 @@
       "igdbMetadataName": "Ittle Dew"
     }
   ],
+  "Ivalice Alliance": [
+    {
+      "igdbEntityId": 5091,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Ivalice Alliance"
+    }
+  ],
   "Ivy Games": [
     {
       "igdbEntityId": 6277,
@@ -6229,6 +6236,13 @@
       "igdbEntityId": 312,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Konami Computer Entertainment Japan"
+    }
+  ],
+  "Konami Computer Entertainment Kobe": [
+    {
+      "igdbEntityId": 777,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Konami Computer Entertainment Kobe"
     }
   ],
   "Konami Computer Entertainment Tokyo": [
