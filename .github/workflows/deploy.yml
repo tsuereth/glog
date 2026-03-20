@@ -1,57 +1,41 @@
-name: UpdateDataAndBuildAndDeploy
+name: Deploy
 
 on:
   workflow_dispatch:
   push:
     branches:
       - main
-  # Run on a schedule to keep data updated even if there's no new content.
-  schedule:
-    - cron: '0 12 * * 5'
 
 jobs:
-  UpdateDataAndBuildAndDeploy:
+  DeploySite:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout
+        uses: actions/checkout@v6
 
       - name: SetupDotNet
         uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 10.0.x
 
-      - name: TestGlogGenerator
+      - name: RunTests
         run: |
           dotnet test GlogGenerator.Test/GlogGenerator.Test.csproj
 
-      - name: BuildGlogGenerator
-        run: |
-          rm -rf GlogGeneratorBuild
-          dotnet build GlogGenerator/GlogGenerator.csproj --configuration Release --output GlogGeneratorBuild
-
-      - name: UpdateDataAndBuildStaticSite
+      - name: RunGlogGenerator
         env:
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
         run: |
+          rm -rf GlogGeneratorBuild
+          dotnet build GlogGenerator/GlogGenerator.csproj --configuration Release --output GlogGeneratorBuild
           rm -rf public
           ./GlogGeneratorBuild/GlogGenerator build -i . -t GlogGeneratorBuild/templates -u true --igdb-client-id jy5t8x2w2eqdc7bax2zx3rlne7eup4 --igdb-client-secret $TWITCH_CLIENT_SECRET -w true -h "https://tsuereth.com" -o public
 
-      - name: SetupPullRequestValues
-        run: |
-          echo "GLOG_PR_BRANCH=autoupdate-$GITHUB_RUN_NUMBER.$GITHUB_RUN_ATTEMPT" >> "$GITHUB_ENV"
-          echo "GLOG_PR_DESCRIPTION=[skip ci] Automatically-updated content." >> "$GITHUB_ENV"
-
-      - name: CreatePullRequest
-        uses: peter-evans/create-pull-request@v8
+      - name: DiffWithLive
+        uses: './.github/shared-steps/diff-with-live'
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          author: GitHub <noreply@github.com>
-          commit-message: ${{ env.GLOG_PR_DESCRIPTION }}
-          title: ${{ env.GLOG_PR_DESCRIPTION }}
-          body: ${{ env.GLOG_PR_DESCRIPTION }}
-          branch: ${{ env.GLOG_PR_BRANCH }}
-          base: main
+          deploy-glog-private-key: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
+          files-path: 'public'
 
       - name: Deploy
         env:
@@ -68,4 +52,3 @@ jobs:
         if: ${{ always() }}
         run: |
           rm -f deploy-glog_id_rsa
-

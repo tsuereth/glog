@@ -1,0 +1,40 @@
+name: DiffWithBranch
+
+inputs:
+  branch-ref:
+    required: true
+    type: string
+  twitch-client-secret:
+    required: true
+    type: string
+  files-path:
+    required: true
+    type: string
+
+runs:
+  using: composite
+  steps:
+    - name: CheckoutBranch
+      uses: actions/checkout@v6
+      with:
+        ref: ${{ inputs.branch-ref }}
+        path: 'branch-checkout'
+
+    - name: DiffBranchStaticSite
+      shell: bash
+      env:
+        TWITCH_CLIENT_SECRET: ${{ inputs.twitch-client-secret }}
+      run: |
+        rm -rf BranchGlogGeneratorBuild
+        dotnet build branch-checkout/GlogGenerator/GlogGenerator.csproj --configuration Release --output BranchGlogGeneratorBuild
+        rm -rf branch-public
+        ./BranchGlogGeneratorBuild/GlogGenerator build -i branch-checkout -t BranchGlogGeneratorBuild/templates -u true --igdb-client-id jy5t8x2w2eqdc7bax2zx3rlne7eup4 --igdb-client-secret $TWITCH_CLIENT_SECRET -h "https://tsuereth.com" -o branch-public
+        # Diff exits with 0 if all files are identical.
+        diff -ur branch-public ${{ inputs.files-path }} > branch-diff.txt && echo "No differences found." >> branch-diff.txt || true
+
+    - name: ReportBranchDiff
+      uses: actions/upload-artifact@v7
+      with:
+        name: 'branch-diff'
+        path: 'branch-diff.txt'
+        archive: false
