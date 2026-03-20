@@ -77,8 +77,10 @@ namespace GlogGenerator
                 TemplateLoader = this,
 
                 // The default loop-iteration limit is 1000, which is much lower than (for example) the site's total number of tag items.
+                // And the default string buffer limit is 1 MB, which is much lower than needed for pages which e.g. "list all items."
                 // Overwrite with 0 to indicate NO LIMIT, and cross your fingers ... and watch the build time!
                 LoopLimit = 0,
+                LimitToString = 0,
 
                 IndentOnEmptyLines = false,
             };
