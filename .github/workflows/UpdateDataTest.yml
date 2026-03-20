@@ -30,14 +30,14 @@ jobs:
 
       - name: DiffWithMain
         if: github.ref != 'refs/heads/main'
-        uses: './.github/shared-steps/diff-with-branch.yaml'
+        uses: './.github/shared-steps/diff-with-branch'
         with:
           branch-ref: 'refs/heads/main'
           twitch-client-secret: ${{ secrets.TWITCH_CLIENT_SECRET }}
           files-path: 'public'
 
       #- name: DiffWithLive
-      #  uses: './.github/shared-steps/diff-with-live.yaml'
+      #  uses: './.github/shared-steps/diff-with-live'
       #  with:
       #    deploy-glog-private-key: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
       #    files-path: 'public'
