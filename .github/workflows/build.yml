@@ -1,7 +1,10 @@
-name: UpdateDataTest
+name: Build
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 
 jobs:
   BuildSite:
@@ -36,8 +39,8 @@ jobs:
           twitch-client-secret: ${{ secrets.TWITCH_CLIENT_SECRET }}
           files-path: 'public'
 
-      #- name: DiffWithLive
-      #  uses: './.github/shared-steps/diff-with-live'
-      #  with:
-      #    deploy-glog-private-key: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
-      #    files-path: 'public'
+      - name: DiffWithLive
+        uses: './.github/shared-steps/diff-with-live'
+        with:
+          deploy-glog-private-key: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
+          files-path: 'public'
