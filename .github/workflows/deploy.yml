@@ -24,12 +24,13 @@ jobs:
 
       - name: RunGlogGenerator
         env:
+          TWITCH_CLIENT_ID: ${{ vars.TWITCH_CLIENT_ID }}
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
         run: |
           rm -rf GlogGeneratorBuild
           dotnet build GlogGenerator/GlogGenerator.csproj --configuration Release --output GlogGeneratorBuild
           rm -rf public
-          ./GlogGeneratorBuild/GlogGenerator build -i . -t GlogGeneratorBuild/templates -u true --igdb-client-id jy5t8x2w2eqdc7bax2zx3rlne7eup4 --igdb-client-secret $TWITCH_CLIENT_SECRET -w true -h "https://tsuereth.com" -o public
+          ./GlogGeneratorBuild/GlogGenerator build -i . -t GlogGeneratorBuild/templates -u true --igdb-client-id $TWITCH_CLIENT_ID --igdb-client-secret $TWITCH_CLIENT_SECRET -w true -h "https://tsuereth.com" -o public
 
       - name: DiffWithLive
         uses: './.github/shared-steps/diff-with-live'
