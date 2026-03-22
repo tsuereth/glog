@@ -24,7 +24,7 @@ jobs:
 
       - name: RunGlogGenerator
         env:
-          TWITCH_CLIENT_ID: ${{ vars.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
         run: |
           rm -rf GlogGeneratorBuild
@@ -37,7 +37,7 @@ jobs:
         uses: './.github/shared-steps/diff-with-branch'
         with:
           branch-ref: 'refs/heads/main'
-          twitch-client-id: ${{ vars.TWITCH_CLIENT_ID }}
+          twitch-client-id: ${{ secrets.TWITCH_CLIENT_ID }}
           twitch-client-secret: ${{ secrets.TWITCH_CLIENT_SECRET }}
           files-path: 'public'
 
