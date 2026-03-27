@@ -1174,6 +1174,13 @@
       "igdbMetadataName": "Beamdog"
     }
   ],
+  "Beat Hazard": [
+    {
+      "igdbEntityId": 12786,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Beat Hazard"
+    }
+  ],
   "Bedtime Digital Games": [
     {
       "igdbEntityId": 6916,
@@ -1224,6 +1231,11 @@
     }
   ],
   "Bemani": [
+    {
+      "igdbEntityId": 1806,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Bemani"
+    },
     {
       "igdbEntityId": 1651,
       "igdbEntityType": "IgdbFranchise",
@@ -11696,11 +11708,11 @@
       "igdbMetadataName": "Suzak"
     }
   ],
-  "Sweet Baby Inc.": [
+  "Sweet Baby": [
     {
       "igdbEntityId": 46613,
       "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Sweet Baby Inc."
+      "igdbMetadataName": "Sweet Baby"
     }
   ],
   "Swing Swing Submarine": [
