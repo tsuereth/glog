@@ -31,7 +31,7 @@ jobs:
       - name: SetupPullRequestValues
         run: |
           echo "GLOG_PR_BRANCH=autoupdate-$GITHUB_RUN_NUMBER.$GITHUB_RUN_ATTEMPT" >> "$GITHUB_ENV"
-          echo "GLOG_PR_DESCRIPTION=[skip ci] Automatically-updated content." >> "$GITHUB_ENV"
+          echo "GLOG_PR_DESCRIPTION=Automatically-updated content." >> "$GITHUB_ENV"
 
       - name: CreatePullRequest
         uses: peter-evans/create-pull-request@v8
