@@ -874,6 +874,13 @@
       "igdbMetadataName": "Assassin's Creed"
     }
   ],
+  "Assassin's Creed II": [
+    {
+      "igdbEntityId": 12998,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Assassin's Creed II"
+    }
+  ],
   "Asteroid Base": [
     {
       "igdbEntityId": 6547,
@@ -11554,6 +11561,13 @@
       "igdbEntityId": 6083,
       "igdbEntityType": "IgdbCollection",
       "igdbMetadataName": "Super Mario Galaxy"
+    }
+  ],
+  "Super Mario Party": [
+    {
+      "igdbEntityId": 10065,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Super Mario Party"
     }
   ],
   "Super Mario RPG": [
