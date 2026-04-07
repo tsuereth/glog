@@ -42,6 +42,7 @@ jobs:
 
       - name: CreatePullRequest
         uses: peter-evans/create-pull-request@v8
+        id: pull-request
         with:
           token: ${{ steps.app-token.outputs.token }}
           sign-commits: true
@@ -50,3 +51,32 @@ jobs:
           body: ${{ env.GLOG_PR_DESCRIPTION }}
           branch: ${{ env.GLOG_PR_BRANCH }}
           base: main
+
+      # If there were no data-index changes, and no pull request was created...
+      # then show any diff between current data values and the live site.
+      - name: DiffWithLive
+        if: ${{ steps.pull-request.outputs.pull-request-url == '' }}
+        uses: './.github/shared-steps/diff-with-live'
+        with:
+          deploy-glog-private-key: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
+          files-path: 'public'
+
+      # TODO: Ideally we would PROMPT for deployment, using the diff above.
+      # But workflow notification options don't really facilitate this kind
+      # of on-success prompt! so just try the deployment automatically.
+      - name: Deploy
+        if: ${{ steps.pull-request.outputs.pull-request-url == '' }}
+        env:
+          DEPLOY_GLOG_PRIVATE_KEY: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
+        run: |
+          echo "$DEPLOY_GLOG_PRIVATE_KEY" > deploy-glog_id_rsa
+          chmod 0600 deploy-glog_id_rsa
+          rsync -vrtL --checksum --omit-dir-times --cvs-exclude --delete \
+            -e "ssh -p 31771 -i deploy-glog_id_rsa -o StrictHostKeyChecking=no" \
+            public/* \
+            "deploy-glog@tsuereth.com:/var/www/tsuereth_web/glog/"
+
+      - name: Cleanup
+        if: ${{ always() }}
+        run: |
+          rm -f deploy-glog_id_rsa
