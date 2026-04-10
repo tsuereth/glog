@@ -874,6 +874,13 @@
       "igdbMetadataName": "Assassin's Creed"
     }
   ],
+  "Assassin's Creed II": [
+    {
+      "igdbEntityId": 12998,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Assassin's Creed II"
+    }
+  ],
   "Asteroid Base": [
     {
       "igdbEntityId": 6547,
@@ -4750,13 +4757,6 @@
       "igdbEntityId": 2098,
       "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "God of War"
-    }
-  ],
-  "GOG.com": [
-    {
-      "igdbEntityId": 3491,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "GOG.com"
     }
   ],
   "Going Load Studios": [
@@ -11554,6 +11554,13 @@
       "igdbEntityId": 6083,
       "igdbEntityType": "IgdbCollection",
       "igdbMetadataName": "Super Mario Galaxy"
+    }
+  ],
+  "Super Mario Party": [
+    {
+      "igdbEntityId": 10065,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Super Mario Party"
     }
   ],
   "Super Mario RPG": [
