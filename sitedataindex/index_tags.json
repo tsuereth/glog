@@ -1,11 +1,4 @@
 {
-  "(Archive) Capcom Co., LTD.": [
-    {
-      "igdbEntityId": 25341,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "(Archive) Capcom Co., LTD."
-    }
-  ],
   "1-UP Studio": [
     {
       "igdbEntityId": 2910,
@@ -3908,6 +3901,13 @@
       "igdbMetadataName": "Escape Velocity"
     }
   ],
+  "ESDigital Games": [
+    {
+      "igdbEntityId": 43575,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "ESDigital Games"
+    }
+  ],
   "Esoterics": [
     {
       "igdbEntityId": 16749,
@@ -7103,13 +7103,6 @@
       "igdbMetadataName": "Mega Man ZX"
     }
   ],
-  "Meine Tierklinik": [
-    {
-      "igdbEntityId": 4099,
-      "igdbEntityType": "IgdbCollection",
-      "igdbMetadataName": "Meine Tierklinik"
-    }
-  ],
   "Melos Han-Tani": [
     {
       "igdbEntityId": 27072,
@@ -8301,13 +8294,6 @@
       "igdbEntityId": 2815,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Orbital Media"
-    }
-  ],
-  "Oregon Trail": [
-    {
-      "igdbEntityId": 2767,
-      "igdbEntityType": "IgdbCollection",
-      "igdbMetadataName": "Oregon Trail"
     }
   ],
   "Ori": [
@@ -12449,6 +12435,13 @@
       "igdbEntityId": 173,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "The Omni Group"
+    }
+  ],
+  "The Oregon Trail": [
+    {
+      "igdbEntityId": 3381,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "The Oregon Trail"
     }
   ],
   "The Outer Worlds": [
