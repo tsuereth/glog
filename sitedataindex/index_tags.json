@@ -504,6 +504,13 @@
       "igdbMetadataName": "Alexander Bruce"
     }
   ],
+  "Algebra Factory": [
+    {
+      "igdbEntityId": 52304,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Algebra Factory"
+    }
+  ],
   "Alice & Smith": [
     {
       "igdbEntityId": 11756,
@@ -879,6 +886,13 @@
       "igdbEntityId": 6547,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Asteroid Base"
+    }
+  ],
+  "Astra Logical": [
+    {
+      "igdbEntityId": 60170,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Astra Logical"
     }
   ],
   "Atari": [
@@ -2353,6 +2367,13 @@
       "igdbMetadataName": "Coilworks"
     }
   ],
+  "Coincidence": [
+    {
+      "igdbEntityId": 62098,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Coincidence"
+    }
+  ],
   "Cold Beam Games": [
     {
       "igdbEntityId": 12346,
@@ -2809,6 +2830,13 @@
       "igdbEntityId": 11887,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Darkwind Media Ltd."
+    }
+  ],
+  "Dashing Strike": [
+    {
+      "igdbEntityId": 68528,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Dashing Strike"
     }
   ],
   "Day 1 Studios": [
@@ -5104,6 +5132,13 @@
       "igdbMetadataName": "Happy Broccoli Games"
     }
   ],
+  "Happy Volcano": [
+    {
+      "igdbEntityId": 10680,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Happy Volcano"
+    }
+  ],
   "Hard Boiled": [
     {
       "igdbEntityId": 390,
@@ -6325,6 +6360,13 @@
       "igdbEntityId": 3390,
       "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "Kunio-kun"
+    }
+  ],
+  "Kwalee": [
+    {
+      "igdbEntityId": 18643,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Kwalee"
     }
   ],
   "Kyle Hyde": [
@@ -8542,6 +8584,13 @@
       "igdbEntityId": 1650,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "PCB Productions"
+    }
+  ],
+  "Pearl Abyss": [
+    {
+      "igdbEntityId": 2746,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Pearl Abyss"
     }
   ],
   "Peggle": [
@@ -11069,6 +11118,13 @@
       "igdbEntityId": 72234,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Square Enix Creative Studio I"
+    }
+  ],
+  "Square Enix Creative Studio III": [
+    {
+      "igdbEntityId": 54647,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Square Enix Creative Studio III"
     }
   ],
   "Square Enix Europe": [

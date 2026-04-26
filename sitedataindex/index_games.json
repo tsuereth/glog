@@ -1267,6 +1267,11 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Crayon Physics Deluxe"
   },
+  "Crimson Desert": {
+    "igdbEntityId": 125633,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Crimson Desert"
+  },
   "CrossCells": {
     "igdbEntityId": 28924,
     "igdbEntityType": "IgdbGame",
@@ -1995,6 +2000,11 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Factorio"
   },
+  "Factorio: Space Age": {
+    "igdbEntityId": 263344,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Factorio: Space Age"
+  },
   "Fairytale Fights": {
     "igdbEntityId": 6991,
     "igdbEntityType": "IgdbGame",
@@ -2118,6 +2128,11 @@
     "igdbEntityId": 414,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Final Fantasy Tactics Advance"
+  },
+  "Final Fantasy Tactics: The Ivalice Chronicles": {
+    "igdbEntityId": 347121,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Final Fantasy Tactics: The Ivalice Chronicles"
   },
   "Final Fantasy V": {
     "igdbEntityId": 419,
@@ -3021,6 +3036,11 @@
     "igdbEntityId": 10479,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Kairo"
+  },
+  "Kaizen: A Factory Story": {
+    "igdbEntityId": 333883,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Kaizen: A Factory Story"
   },
   "Kalimba": {
     "igdbEntityId": 14711,
@@ -4027,6 +4047,11 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "MO:Astray"
   },
+  "Modulus: Factory Automation": {
+    "igdbEntityId": 324265,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Modulus: Factory Automation"
+  },
   "Molek-Syntez": {
     "igdbEntityId": 125208,
     "igdbEntityType": "IgdbGame",
@@ -4262,6 +4287,11 @@
     "igdbEntityId": 74545,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Opus Magnum"
+  },
+  "Opus Magnum: De Re Metallica": {
+    "igdbEntityId": 391819,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Opus Magnum: De Re Metallica"
   },
   "Organ Trail: Director's Cut": {
     "igdbEntityId": 6859,
@@ -4716,6 +4746,11 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Portal 2"
   },
+  "Pragmata": {
+    "igdbEntityId": 134612,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Pragmata"
+  },
   "Prelogate": {
     "igdbEntityId": 36151,
     "igdbEntityType": "IgdbGame",
@@ -4897,6 +4932,11 @@
     "igdbEntityId": 7149,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Quantum Theory"
+  },
+  "QuantumPulse 2A": {
+    "igdbEntityId": 333349,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "QuantumPulse 2A"
   },
   "QWOP": {
     "igdbEntityId": 8814,
