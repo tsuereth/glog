@@ -65,6 +65,9 @@ jobs:
           body: ${{ env.GLOG_PR_DESCRIPTION }}
           branch: ${{ env.GLOG_PR_BRANCH }}
           base: main
+          add-paths: |
+            content
+            sitedataindex
 
       # TODO: Ideally we would PROMPT for deployment, using the diff above.
       # But workflow notification options don't really facilitate this kind
