@@ -135,6 +135,68 @@ namespace GlogGenerator.Test
         }
 
         [TestMethod]
+        public void TestBuildStaticSiteAndCompareTo()
+        {
+            using var loggerFactory = LoggerFactory.Create(c => c.AddConsole());
+
+            var logger = loggerFactory.CreateLogger<Program>();
+
+            var siteIndexFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "sitedataindex");
+            var igdbCacheFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "igdbcache");
+            var inputFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest");
+            var templateFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "templates");
+            var hostOrigin = "http://fakeorigin.com";
+            var pathPrefix = "/glog/";
+            var compareToBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "public-compare-to");
+
+            var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
+            var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, igdbCacheFilesBasePath, inputFilesBasePath, templateFilesBasePath);
+            var builder = new SiteBuilder(logger, configData);
+            builder.SetBaseURL($"{hostOrigin}{pathPrefix}"); // TODO: ensure proper slash-usage between origin and path
+
+            // For testing, pretend that our "build date" is some constant date.
+            builder.SetBuildDate(DateTimeOffset.Parse("2025-12-09T17:00:00.0+00:00", CultureInfo.InvariantCulture));
+
+            builder.LoadSiteDataIndexFiles();
+            var loadedCache = builder.TryLoadIgdbCache();
+            Assert.IsTrue(loadedCache);
+            builder.UpdateDataIndex();
+
+            builder.ResolveDataReferences();
+            builder.UpdateContentRoutes();
+
+            var compareToOutputString = string.Empty;
+            var compareToOutputFilePath = Path.Combine(Directory.GetCurrentDirectory(), "public-compare-to.txt");
+
+            using (var compareToOutput = new MemoryStream())
+            {
+                BuildStaticSite.CompareTo(builder.GetSiteState(), compareToBasePath, compareToOutput);
+
+                using (var compareToOutputReader = new StreamReader(compareToOutput))
+                {
+                    compareToOutput.Seek(0, SeekOrigin.Begin);
+                    compareToOutputString = compareToOutputReader.ReadToEnd();
+                }
+
+                // Always use unix-style line endings.
+                compareToOutputString = compareToOutputString.ReplaceLineEndings("\n");
+                var outputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
+
+                // Record the output in a file, too, for verification/debugging reference.
+                using (var compareToOutputFile = File.Open(compareToOutputFilePath, FileMode.Create, FileAccess.Write))
+                using (var compareToOutputFileStream = new StreamWriter(compareToOutputFile, outputEncoding))
+                {
+                    compareToOutputFileStream.Write(compareToOutputString);
+                    compareToOutputFileStream.Flush();
+                }
+            }
+
+            var compareToExpectedOutputFilePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "public-compare-to-expected.txt");
+            var compareToExpectedOutputString = File.ReadAllText(compareToExpectedOutputFilePath);
+            Assert.AreEqual(compareToExpectedOutputString, compareToOutputString, $"CompareTo output at file {compareToOutputFilePath} mismatched expected output at file {compareToExpectedOutputFilePath}");
+        }
+
+        [TestMethod]
         public void TestRewriteInputFiles()
         {
             using var loggerFactory = LoggerFactory.Create(c => c.AddConsole());
@@ -145,7 +207,6 @@ namespace GlogGenerator.Test
             var igdbCacheFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest", "igdbcache");
             var inputFilesBasePath = Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "SmallSiteTest");
             var templateFilesBasePath = string.Empty;
-            var staticSiteOutputBasePath = string.Empty;
 
             var configFilePath = Path.Combine(inputFilesBasePath, "config.toml");
             var configData = ConfigData.FromFilePaths(configFilePath, siteIndexFilesBasePath, igdbCacheFilesBasePath, inputFilesBasePath, templateFilesBasePath);

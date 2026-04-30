@@ -375,12 +375,42 @@ namespace GlogGenerator.RenderState
             };
         }
 
-        public void WriteFile(SiteState site, string filePath)
+        public string GetContentType()
+        {
+            var typeProvider = new FileExtensionContentTypeProvider();
+            if (typeProvider.TryGetContentType(this.OutputPathRelative, out var contentType))
+            {
+                return contentType;
+            }
+
+            // If a page's type can't be determined, assume/fallback to HTML.
+            return "text/html";
+        }
+
+        public bool GetContentTypeIsText()
+        {
+            // By definition, a "page" is always made of text.
+            return true;
+        }
+
+        public byte[] GetBytes(SiteState site)
+        {
+            var renderedText = this.GetText(site);
+            return Encoding.UTF8.GetBytes(renderedText);
+        }
+
+        public string GetText(SiteState site)
         {
             var templateLoader = site.GetTemplateLoader();
             var rendered = templateLoader.ParseAndRender(this.RenderTemplateName, this.GetTemplateProperties(site));
 
-            rendered = rendered.ReplaceLineEndings("\n");
+            // Always use unix-style line endings.
+            return rendered.ReplaceLineEndings("\n");
+        }
+
+        public void WriteFile(SiteState site, string filePath)
+        {
+            var renderedText = this.GetText(site);
 
             var outputDir = Path.GetDirectoryName(filePath);
             if (string.IsNullOrEmpty(outputDir))
@@ -395,25 +425,12 @@ namespace GlogGenerator.RenderState
             }
 
             var outputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
-            File.WriteAllText(filePath, rendered, outputEncoding);
+            File.WriteAllText(filePath, renderedText, outputEncoding);
         }
 
         public void WriteHttpListenerResponse(SiteState site, ref HttpListenerResponse response)
         {
-            var typeProvider = new FileExtensionContentTypeProvider();
-            if (typeProvider.TryGetContentType(this.OutputPathRelative, out var contentType))
-            {
-                response.ContentType = contentType;
-            }
-            else
-            {
-                response.ContentType = "text/html";
-            }
-
-            var templateLoader = site.GetTemplateLoader();
-            var rendered = templateLoader.ParseAndRender(this.RenderTemplateName, this.GetTemplateProperties(site));
-
-            var renderedBytes = Encoding.UTF8.GetBytes(rendered);
+            var renderedBytes = this.GetBytes(site);
 
             response.ContentLength64 = renderedBytes.LongLength;
 

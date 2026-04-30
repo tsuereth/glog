@@ -1,0 +1,1117 @@
+--- 2017/08/13/an-rpg-for-kittens/index.html
++++ 2017/08/13/an-rpg-for-kittens/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- 2017/09/15/a-purrfect-fit/index.html
++++ 2017/09/15/a-purrfect-fit/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -106,7 +105,7 @@
+ 								<p>But given the simple nature of the game, having it in my pocket is pretty ideal.  I can play it while I'm waiting for important things to happen.</p>
+ 								<p>(With the aforementioned deleterious effect to my phone battery.)</p>
+ 								<p>What's impressed me most is that Cat Quest is signposting a lot more content than I expected.  The map is surprisingly big!  There are a ton more equipment types than I though there'd be.  I walked by a dungeon that says I should be <b>level 40</b>.</p>
+-								<p>Purrfect!</p>
++								<p>Neat.</p>
+ 								<p><i>Progress: Level 18</i></p>
+ 
+ 								<div class="rating">Rating: <a href="http://fakeorigin.com/glog/rating/good">Good</a></div>
+--- 2017/09/19/a-furry-good-time/index.html
++++ 2017/09/19/a-furry-good-time/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- backlog/index.html
++++ backlog/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- category/index.html
++++ category/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- category/playing-a-game/index.html
++++ category/playing-a-game/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="categories">Playing A Game</span></div>
++					<div class="title">5 posts in <span class="categories">Playing A Game</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+Binary files catquest-1.png and catquest-1.png differ
+--- game/biped/index.html
++++ game/biped/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- game/cat-quest-ii/index.html
++++ game/cat-quest-ii/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -105,7 +104,7 @@
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
+ 							</article>
+ 						</section>
+ 					</div>
+--- game/cat-quest-iii/index.html
++++ game/cat-quest-iii/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- game/cat-quest/index.html
++++ game/cat-quest/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -97,6 +96,17 @@
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
++							</article>
++						</section>
+ 						<section class="archives">
+ 							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+ 								<div class="meta">
+--- game/child-of-light/index.html
++++ game/child-of-light/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- game/index.html
++++ game/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- game/ittle-dew/index.html
++++ game/ittle-dew/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- game/swords-soldiers/index.html
++++ game/swords-soldiers/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- game/uncharted-fortune-hunter/index.html
++++ game/uncharted-fortune-hunter/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- index.html
++++ index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -99,8 +98,8 @@
+ 								<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 								<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
+ 							</div>
+-							<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/" itemprop="url">A purrfect f oh I used that title before</a></h1>
+-							<div class="entry-content" id="page_722D67DD74F3ADADB5576D3C234985B9BA036F0D22D1543453B892C6237662EA" itemprop="articleBody">
++							<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/" itemprop="url">Such a good boi</a></h1>
++							<div class="entry-content" id="page_19F2B386C8949C250548D89170F01D1E0BA2B7D6020210FC045FB4BDB7BDD6F0" itemprop="articleBody">
+ 								<p>Like the first <a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a>, <a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a> is, well, not exactly a genre-redefining masterpiece.  (Unless that genre is <i>cat puns</i>.)  It's a competent, adorable, and straightforward action RPG; with experience points and gold pieces, upgrade-able weapons and armor, and a whole lot of &quot;go here&quot; or &quot;kill that&quot; quests serving an unremarkable narrative.</p>
+ 								<p>A headline for this sequel is: <b>co-op</b>!  Two players can do those quests, buy those upgrades, and bludgeon enemies to death <i>together</i>.  The simple formula allows partners of any skill level to collaborate on this pun-filled adventure through the Felingard and Lupus kingdoms.</p>
+ 								<p>Sub-headline: you can still play solo, with an AI-controlled buddy, which works well enough.</p>
+@@ -113,13 +112,62 @@
+ 								<p><i>Progress: Level 180, completed all dungeons and found all equipment.</i></p>
+ 
+ 								<div class="rating">Rating: <a href="http://fakeorigin.com/glog/rating/good">Good</a></div>
++							</div>
++							<script type="text/javascript">
++								var body_width = (document.body.innerWidth || document.body.clientWidth) * 0.8;
++								var body_height = (document.body.innerHeight || document.body.clientHeight) * 0.8;
++								var body_sizeratio = body_width / body_height;
++
++								var page_el = document.getElementById("page_19F2B386C8949C250548D89170F01D1E0BA2B7D6020210FC045FB4BDB7BDD6F0");
++								var page_images = page_el.querySelectorAll("img");
++								for (var page_image of page_images) {
++									var img_width = page_image.getAttribute("width");
++									var img_height = page_image.getAttribute("height");
++									var img_sizeratio = img_width / img_height;
++									if (img_sizeratio > body_sizeratio) {
++										img_width = body_width;
++										img_height = img_width / img_sizeratio;
++									}
++									else {
++										img_height = body_height;
++										img_width = img_height * img_sizeratio;
++									}
++
++									var img_anchor = document.createElement("a");
++									img_anchor.setAttribute("href", page_image.getAttribute("src"));
++									img_anchor.classList.add("imgwrap");
++									img_anchor.setAttribute("data-pswp-width", img_width);
++									img_anchor.setAttribute("data-pswp-height", img_height);
++									page_image.parentNode.insertBefore(img_anchor, page_image);
++									img_anchor.appendChild(page_image);
++								}
++
++								var page_19F2B386C8949C250548D89170F01D1E0BA2B7D6020210FC045FB4BDB7BDD6F0_lightbox = new PhotoSwipeLightbox({
++									gallery: "#page_19F2B386C8949C250548D89170F01D1E0BA2B7D6020210FC045FB4BDB7BDD6F0",
++									children: "a.imgwrap",
++									pswpModule: PhotoSwipe
++								});
++								page_19F2B386C8949C250548D89170F01D1E0BA2B7D6020210FC045FB4BDB7BDD6F0_lightbox.init();
++							</script>
++						</article>
++					    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++							<div class="meta">
++								<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++								<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++								<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++								<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 							</div>
++							<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/" itemprop="url">Meowy Xmas!</a></h1>
++							<div class="entry-content" id="page_0197F9ED419D8FBC654FE5F4E646E749C4E0E9ACB861A4DCAD2AA64AB6A3559E" itemprop="articleBody">
++								<p><img src="http://fakeorigin.com/glog/catquest-5.png" width="400" height="300" alt="" /></p>
++
++							</div>
+ 							<script type="text/javascript">
+ 								var body_width = (document.body.innerWidth || document.body.clientWidth) * 0.8;
+ 								var body_height = (document.body.innerHeight || document.body.clientHeight) * 0.8;
+ 								var body_sizeratio = body_width / body_height;
+ 
+-								var page_el = document.getElementById("page_722D67DD74F3ADADB5576D3C234985B9BA036F0D22D1543453B892C6237662EA");
++								var page_el = document.getElementById("page_0197F9ED419D8FBC654FE5F4E646E749C4E0E9ACB861A4DCAD2AA64AB6A3559E");
+ 								var page_images = page_el.querySelectorAll("img");
+ 								for (var page_image of page_images) {
+ 									var img_width = page_image.getAttribute("width");
+@@ -143,12 +191,12 @@
+ 									img_anchor.appendChild(page_image);
+ 								}
+ 
+-								var page_722D67DD74F3ADADB5576D3C234985B9BA036F0D22D1543453B892C6237662EA_lightbox = new PhotoSwipeLightbox({
+-									gallery: "#page_722D67DD74F3ADADB5576D3C234985B9BA036F0D22D1543453B892C6237662EA",
++								var page_0197F9ED419D8FBC654FE5F4E646E749C4E0E9ACB861A4DCAD2AA64AB6A3559E_lightbox = new PhotoSwipeLightbox({
++									gallery: "#page_0197F9ED419D8FBC654FE5F4E646E749C4E0E9ACB861A4DCAD2AA64AB6A3559E",
+ 									children: "a.imgwrap",
+ 									pswpModule: PhotoSwipe
+ 								});
+-								page_722D67DD74F3ADADB5576D3C234985B9BA036F0D22D1543453B892C6237662EA_lightbox.init();
++								page_0197F9ED419D8FBC654FE5F4E646E749C4E0E9ACB861A4DCAD2AA64AB6A3559E_lightbox.init();
+ 							</script>
+ 						</article>
+ 					    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+@@ -227,7 +275,7 @@
+ 								<p>But given the simple nature of the game, having it in my pocket is pretty ideal.  I can play it while I'm waiting for important things to happen.</p>
+ 								<p>(With the aforementioned deleterious effect to my phone battery.)</p>
+ 								<p>What's impressed me most is that Cat Quest is signposting a lot more content than I expected.  The map is surprisingly big!  There are a ton more equipment types than I though there'd be.  I walked by a dungeon that says I should be <b>level 40</b>.</p>
+-								<p>Purrfect!</p>
++								<p>Neat.</p>
+ 								<p><i>Progress: Level 18</i></p>
+ 
+ 								<div class="rating">Rating: <a href="http://fakeorigin.com/glog/rating/good">Good</a></div>
+--- index.xml
++++ index.xml
+@@ -8,11 +8,11 @@
+     <updated>Sun, 13 Mar 2022 16:56:21 -0700</updated>
+ 
+     <item>
+-      <title>A purrfect f oh I used that title before</title>
+-      <link>http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/</link>
++      <title>Such a good boi</title>
++      <link>http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/</link>
+       <pubDate>Sun, 13 Mar 2022 16:56:21 -0700</pubDate>
+       <author>TS</author>
+-      <guid isPermalink="true">http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/</guid>
++      <guid isPermalink="true">http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/</guid>
+       <category>Playing A Game</category>
+ 
+       <description>
+@@ -31,6 +31,19 @@
+       </description>
+     </item>
+     <item>
++      <title>Meowy Xmas!</title>
++      <link>http://fakeorigin.com/glog/2017/12/27/meowy-xmas/</link>
++      <pubDate>Wed, 27 Dec 2017 20:55:11 -0800</pubDate>
++      <author>TS</author>
++      <guid isPermalink="true">http://fakeorigin.com/glog/2017/12/27/meowy-xmas/</guid>
++      <category>Playing A Game</category>
++
++      <description>
++        &lt;p&gt;&lt;i&gt;Posted in &lt;a href="http://fakeorigin.com/glog/category/playing-a-game"&gt;Playing A Game&lt;/a&gt; for &lt;a href="http://fakeorigin.com/glog/game/cat-quest"&gt;Cat Quest&lt;/a&gt; on &lt;a href="http://fakeorigin.com/glog/platform/android"&gt;Android&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;
++        &lt;p&gt;&lt;img src=&#34;http://fakeorigin.com/glog/catquest-5.png&#34; width=&#34;400&#34; height=&#34;300&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
++      </description>
++    </item>
++    <item>
+       <title>A furry good time</title>
+       <link>http://fakeorigin.com/glog/2017/09/19/a-furry-good-time/</link>
+       <pubDate>Tue, 19 Sep 2017 07:16:45 -0700</pubDate>
+@@ -71,7 +84,7 @@
+         &lt;p&gt;But given the simple nature of the game, having it in my pocket is pretty ideal.  I can play it while I&#39;m waiting for important things to happen.&lt;/p&gt;
+         &lt;p&gt;(With the aforementioned deleterious effect to my phone battery.)&lt;/p&gt;
+         &lt;p&gt;What&#39;s impressed me most is that Cat Quest is signposting a lot more content than I expected.  The map is surprisingly big!  There are a ton more equipment types than I though there&#39;d be.  I walked by a dungeon that says I should be &lt;b&gt;level 40&lt;/b&gt;.&lt;/p&gt;
+-        &lt;p&gt;Purrfect!&lt;/p&gt;
++        &lt;p&gt;Neat.&lt;/p&gt;
+         &lt;p&gt;&lt;i&gt;Progress: Level 18&lt;/i&gt;&lt;/p&gt;
+         &lt;p&gt;&lt;i&gt;Rating: &lt;a href="http://fakeorigin.com/glog/rating/good"&gt;Good&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;
+       </description>
+--- platform/android/index.html
++++ platform/android/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -96,6 +95,17 @@
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
++							</article>
++						</section>
+ 						<section class="archives">
+ 							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+ 								<div class="meta">
+--- platform/index.html
++++ platform/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- platform/pc/index.html
++++ platform/pc/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -104,7 +103,7 @@
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- post/index.html
++++ post/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="posts">Posts</span></div>
++					<div class="title">5 posts in <span class="posts">Posts</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- rating/good/index.html
++++ rating/good/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -103,7 +102,7 @@
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- rating/index.html
++++ rating/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- tag/action/index.html
++++ tag/action/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="tags">Action</span></div>
++					<div class="title">5 posts in <span class="tags">Action</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- tag/adventure/index.html
++++ tag/adventure/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="tags">Adventure</span></div>
++					<div class="title">5 posts in <span class="tags">Adventure</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- tag/bird-view-isometric/index.html
++++ tag/bird-view-isometric/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -103,7 +102,7 @@
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
+ 							</article>
+ 						</section>
+ 					</div>
+--- tag/cat-quest/index.html
++++ tag/cat-quest/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="tags">Cat Quest</span></div>
++					<div class="title">5 posts in <span class="tags">Cat Quest</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- tag/co-operative/index.html
++++ tag/co-operative/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -103,7 +102,7 @@
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
+ 							</article>
+ 						</section>
+ 					</div>
+--- tag/fantasy/index.html
++++ tag/fantasy/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="tags">Fantasy</span></div>
++					<div class="title">5 posts in <span class="tags">Fantasy</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- tag/flyhigh-works/index.html
++++ tag/flyhigh-works/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -103,7 +102,7 @@
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
+ 							</article>
+ 						</section>
+ 					</div>
+--- tag/index.html
++++ tag/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+--- tag/indie/index.html
++++ tag/indie/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="tags">Indie</span></div>
++					<div class="title">5 posts in <span class="tags">Indie</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- tag/kepler-interactive/index.html
++++ tag/kepler-interactive/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="tags">Kepler Interactive</span></div>
++					<div class="title">5 posts in <span class="tags">Kepler Interactive</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- tag/kids/index.html
++++ tag/kids/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -103,7 +102,7 @@
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
+ 							</article>
+ 						</section>
+ 					</div>
+--- tag/main-game/index.html
++++ tag/main-game/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="tags">Main Game</span></div>
++					<div class="title">5 posts in <span class="tags">Main Game</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- tag/multiplayer/index.html
++++ tag/multiplayer/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -103,7 +102,7 @@
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
+ 							</article>
+ 						</section>
+ 					</div>
+--- tag/open-world/index.html
++++ tag/open-world/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -103,7 +102,7 @@
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
+ 							</article>
+ 						</section>
+ 					</div>
+--- tag/pqube/index.html
++++ tag/pqube/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="tags">PQube</span></div>
++					<div class="title">5 posts in <span class="tags">PQube</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- tag/role-playing-rpg/index.html
++++ tag/role-playing-rpg/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="tags">Role-playing (RPG)</span></div>
++					<div class="title">5 posts in <span class="tags">Role-playing (RPG)</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- tag/single-player/index.html
++++ tag/single-player/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="tags">Single player</span></div>
++					<div class="title">5 posts in <span class="tags">Single player</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- tag/the-gentlebros/index.html
++++ tag/the-gentlebros/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="tags">The Gentlebros</span></div>
++					<div class="title">5 posts in <span class="tags">The Gentlebros</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- tag/third-person/index.html
++++ tag/third-person/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+@@ -91,7 +90,7 @@
+ 		<div class="mid-col">
+ 			<div class="mid-col-container">
+ 				<div class="list-header">
+-					<div class="title">4 posts in <span class="tags">Third person</span></div>
++					<div class="title">5 posts in <span class="tags">Third person</span></div>
+ 				</div>
+ 				<div id="content" class="inner">
+ 					<div itemscope itemtype="http://schema.org/Blog">
+@@ -102,8 +101,19 @@
+ 									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
+ 									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></span>
+ 									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/pc">PC</a></span>
++								</div>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/such-a-good-boi/">Such a good boi</a></h1>
++							</article>
++						</section>
++						<section class="archives">
++							<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
++								<div class="meta">
++									<span class="date"><time datetime='Wed, Dec 27, 2017' data-updated="true" itemprop="datePublished">Wed, Dec 27, 2017</time></span>
++									<span class="categories"><a href="http://fakeorigin.com/glog/category/playing-a-game">Playing A Game</a></span>
++									<span class="games"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></span>
++									<span class="platforms"><a href="http://fakeorigin.com/glog/platform/android">Android</a></span>
+ 								</div>
+-								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2022/03/13/a-purrfect-f-oh-i-used-that-title-before/">A purrfect f oh I used that title before</a></h1>
++								<h1 class="title" itemprop="name"><a href="http://fakeorigin.com/glog/2017/12/27/meowy-xmas/">Meowy Xmas!</a></h1>
+ 							</article>
+ 						</section>
+ 						<section class="archives">
+--- upcoming/index.html
++++ upcoming/index.html
+@@ -54,7 +54,6 @@
+ 					<ul class="main">
+ 						<li><span class="nav-title">Playing:</span>
+ 							<ul>
+-								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest">Cat Quest</a></li>
+ 								<li class="nav-item"><a href="http://fakeorigin.com/glog/game/cat-quest-ii">Cat Quest II</a></li>
+ 							</ul>
+ 						</li>
+Only in compare-to: 2022/03/13/a-purrfect-f-oh-i-used-that-title-before/index.html
+Only in http://fakeorigin.com/glog/: 2017/12/27/meowy-xmas/index.html
+Only in http://fakeorigin.com/glog/: 2022/03/13/such-a-good-boi/index.html
+Only in http://fakeorigin.com/glog/: catquest-5.png

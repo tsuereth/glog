@@ -10,5 +10,11 @@ To refresh this test content, run:
 	--igdb-client-id ... \
 	--igdb-client-secret ... \
 	-h "http://fakeorigin.com" \
-	-o GlogGenerator.Test/TestFiles/SmallSiteBuild/public-expected
+	-o GlogGenerator.Test/TestFiles/SmallSiteTest/public-expected
+```
+
+To refresh compare-to test output, add this option:
+
+```
+	--compare-to GlogGenerator.Test/TestFiles/SmallSiteTest/public-compare-to-expected.txt=GlogGenerator.Test/TestFiles/SmallSiteTest/public-compare-to
 ```

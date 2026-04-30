@@ -50,6 +50,7 @@ namespace GlogGenerator
             var reportEndDateString = DateTimeOffset.Now.ToString("yyyy-MM-ddTHH:mm:ss", null);
             var reportStartDateString = DateTimeOffset.Now.ToString("yyyy-01-01T00:00:00", null);
             var staticSiteOutputBasePath = Path.Combine(Directory.GetCurrentDirectory(), "public");
+            var compareToStrings = new List<string>();
             var updateIgdbCache = false;
             var rewriteInputFiles = false;
 
@@ -78,6 +79,7 @@ namespace GlogGenerator
                 { "e|end-date=", $"REPORTSTATS: end date for generating a report, default: {reportEndDateString}", o => reportEndDateString = o },
                 { "s|start-date=", $"REPORTSTATS: start date for generating a report, default: {reportStartDateString}", o => reportStartDateString = o },
                 { "o|output-path=", $"BUILD: static site output base path, default: {staticSiteOutputBasePath}", o => staticSiteOutputBasePath = o },
+                { "compare-to=", "BUILD: optional static site output comparison specifications like [output.txt=]path/to/site/output, multiple may be provided", o => compareToStrings.Add(o) },
                 { "u|update-igdb-cache=", $"Update the IGDB data cache (requires IGDB API credentials), default: {updateIgdbCache}", o => updateIgdbCache = bool.Parse(o) },
                 { "w|rewrite-input-files=", $"Rewrite input files after loading site data, default: {rewriteInputFiles}", o => rewriteInputFiles = bool.Parse(o) },
             };
@@ -295,7 +297,9 @@ rating = []
                 case SiteBuilder.Mode.Build:
                     LoadSiteRoutes(logger, builder);
 
-                    logger.LogInformation("Building content...");
+                    logger.LogInformation(
+                        "Building content to {OutputBasePath}...",
+                        staticSiteOutputBasePath);
                     var buildTimer = Stopwatch.StartNew();
                     BuildStaticSite.Build(builder.GetSiteState(), staticSiteOutputBasePath);
                     buildTimer.Stop();
@@ -303,6 +307,52 @@ rating = []
                         "Finished building {ContentCount} content routes in {BuildTimeMs} ms",
                         builder.GetSiteState().ContentRoutes.Count,
                         buildTimer.ElapsedMilliseconds);
+
+                    foreach (var compareToString in compareToStrings)
+                    {
+                        var compareToOutputFilePath = string.Empty;
+                        var compareToBasePath = compareToString;
+
+                        // If the supplied argument contains '=' then split it into an output file path + the input path.
+                        // Otherwise, the supplied argument is just an input path, and we'll output to STDOUT.
+                        var compareToStringSeparatorPosition = compareToString.IndexOf('=');
+                        if (compareToStringSeparatorPosition != -1)
+                        {
+                            compareToOutputFilePath = compareToString.Substring(0, compareToStringSeparatorPosition);
+                            compareToBasePath = compareToString.Substring(compareToStringSeparatorPosition + 1);
+                        }
+
+                        Stream compareToOutputStream;
+                        var openedCompareToOutputFile = false;
+                        if (!string.IsNullOrEmpty(compareToOutputFilePath))
+                        {
+                            compareToOutputStream = File.Open(compareToOutputFilePath, FileMode.Create, FileAccess.Write);
+                            openedCompareToOutputFile = true;
+                        }
+                        else
+                        {
+                            compareToOutputStream = Console.OpenStandardOutput();
+                        }
+
+                        logger.LogInformation(
+                            "Comparing content with {CompareToBasePath}...",
+                            compareToBasePath);
+                        var compareToTimer = Stopwatch.StartNew();
+                        BuildStaticSite.CompareTo(builder.GetSiteState(), compareToBasePath, compareToOutputStream);
+                        compareToTimer.Stop();
+                        logger.LogInformation(
+                            "Finished comparing {ContentCount} content routes in {BuildTimeMs} ms",
+                            builder.GetSiteState().ContentRoutes.Count,
+                            compareToTimer.ElapsedMilliseconds);
+
+                        if (openedCompareToOutputFile)
+                        {
+                            logger.LogInformation(
+                                "Wrote comparison to {CompareToOutputFilePath}",
+                                compareToOutputFilePath);
+                            compareToOutputStream.Close();
+                        }
+                    }
                     break;
 
                 case SiteBuilder.Mode.Host:
