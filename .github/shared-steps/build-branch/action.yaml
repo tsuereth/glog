@@ -1,4 +1,4 @@
-name: DiffWithBranch
+name: BuildBranch
 
 inputs:
   branch-ref:
@@ -10,7 +10,7 @@ inputs:
   twitch-client-secret:
     required: true
     type: string
-  files-path:
+  output-path:
     required: true
     type: string
 
@@ -23,7 +23,7 @@ runs:
         ref: ${{ inputs.branch-ref }}
         path: 'branch-checkout'
 
-    - name: DiffBranchStaticSite
+    - name: BuildBranchStaticSite
       shell: bash
       env:
         TWITCH_CLIENT_ID: ${{ inputs.twitch-client-id }}
@@ -31,14 +31,5 @@ runs:
       run: |
         rm -rf BranchGlogGeneratorBuild
         dotnet build branch-checkout/GlogGenerator/GlogGenerator.csproj --configuration Release --output BranchGlogGeneratorBuild
-        rm -rf branch-public
-        ./BranchGlogGeneratorBuild/GlogGenerator build -i branch-checkout -t BranchGlogGeneratorBuild/templates -u true --igdb-client-id $TWITCH_CLIENT_ID --igdb-client-secret $TWITCH_CLIENT_SECRET -h "https://tsuereth.com" -o branch-public
-        # Diff exits with 0 if all files are identical.
-        diff -ur branch-public ${{ inputs.files-path }} > branch-diff.txt && echo "No differences found." >> branch-diff.txt || true
-
-    - name: ReportBranchDiff
-      uses: actions/upload-artifact@v7
-      with:
-        name: 'branch-diff'
-        path: 'branch-diff.txt'
-        archive: false
+        rm -rf ${{ inputs.output-path }}
+        ./BranchGlogGeneratorBuild/GlogGenerator build -i branch-checkout -t BranchGlogGeneratorBuild/templates -u true --igdb-client-id $TWITCH_CLIENT_ID --igdb-client-secret $TWITCH_CLIENT_SECRET -h "https://tsuereth.com" -o ${{ inputs.output-path }}

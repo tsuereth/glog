@@ -29,6 +29,38 @@ namespace GlogGenerator.RenderState
             return file;
         }
 
+        public string GetContentType()
+        {
+            var typeProvider = new FileExtensionContentTypeProvider();
+            if (typeProvider.TryGetContentType(this.StaticFile.SourceFilePath, out var contentType))
+            {
+                return contentType;
+            }
+
+            // If a static file's type can't be determined, assume/fallback to raw bytes.
+            return "application/octet-stream";
+        }
+
+        public bool GetContentTypeIsText()
+        {
+            return this.GetContentType().StartsWith("text/", StringComparison.InvariantCultureIgnoreCase);
+        }
+
+        public byte[] GetBytes(SiteState site)
+        {
+            return File.ReadAllBytes(this.StaticFile.SourceFilePath);
+        }
+
+        public string GetText(SiteState site)
+        {
+            if (!this.GetContentTypeIsText())
+            {
+                return null;
+            }
+
+            return File.ReadAllText(this.StaticFile.SourceFilePath);
+        }
+
         public void WriteFile(SiteState site, string filePath)
         {
             var outputDir = Path.GetDirectoryName(filePath);
@@ -48,15 +80,7 @@ namespace GlogGenerator.RenderState
 
         public void WriteHttpListenerResponse(SiteState site, ref HttpListenerResponse response)
         {
-            var typeProvider = new FileExtensionContentTypeProvider();
-            if (typeProvider.TryGetContentType(this.StaticFile.SourceFilePath, out var contentType))
-            {
-                response.ContentType = contentType;
-            }
-            else
-            {
-                response.ContentType = "application/octet-stream";
-            }
+            response.ContentType = this.GetContentType();
 
             using (var fileStream = File.OpenRead(this.StaticFile.SourceFilePath))
             {

@@ -18,15 +18,29 @@ jobs:
         with:
           dotnet-version: 10.0.x
 
+      - name: FetchLive
+        uses: './.github/shared-steps/fetch-live'
+        with:
+          deploy-glog-private-key: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
+          output-path: 'public-live'
+
       - name: RunGlogGenerator
         env:
           TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+          COMPARE_TO_LIVE: '--compare-to live-diff.txt=public-live'
         run: |
           rm -rf GlogGeneratorBuild
           dotnet build GlogGenerator/GlogGenerator.csproj --configuration Release --output GlogGeneratorBuild
           rm -rf public
-          ./GlogGeneratorBuild/GlogGenerator build -i . -t GlogGeneratorBuild/templates -u true --igdb-client-id $TWITCH_CLIENT_ID --igdb-client-secret $TWITCH_CLIENT_SECRET -w true -h "https://tsuereth.com" -o public
+          ./GlogGeneratorBuild/GlogGenerator build -i . -t GlogGeneratorBuild/templates -u true --igdb-client-id $TWITCH_CLIENT_ID --igdb-client-secret $TWITCH_CLIENT_SECRET -w true -h "https://tsuereth.com" -o public $COMPARE_TO_LIVE
+
+      - name: ReportLiveDiff
+        uses: actions/upload-artifact@v7
+        with:
+          name: 'live-diff'
+          path: 'live-diff.txt'
+          archive: false
 
       - name: AuthorizeGlogAutoUpdateApp
         uses: actions/create-github-app-token@v3
@@ -51,15 +65,6 @@ jobs:
           body: ${{ env.GLOG_PR_DESCRIPTION }}
           branch: ${{ env.GLOG_PR_BRANCH }}
           base: main
-
-      # If there were no data-index changes, and no pull request was created...
-      # then show any diff between current data values and the live site.
-      - name: DiffWithLive
-        if: ${{ steps.pull-request.outputs.pull-request-url == '' }}
-        uses: './.github/shared-steps/diff-with-live'
-        with:
-          deploy-glog-private-key: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
-          files-path: 'public'
 
       # TODO: Ideally we would PROMPT for deployment, using the diff above.
       # But workflow notification options don't really facilitate this kind
