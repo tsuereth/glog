@@ -97,6 +97,7 @@
  							</article>
  						</section>
  						<section class="archives">
+Binary files catquest-1.png and catquest-1.png differ
 --- game/biped/index.html
 +++ game/biped/index.html
 @@ -54,7 +54,6 @@
