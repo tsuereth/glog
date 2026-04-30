@@ -178,9 +178,13 @@ namespace GlogGenerator.Test
                     compareToOutputString = compareToOutputReader.ReadToEnd();
                 }
 
+                // Always use unix-style line endings.
+                compareToOutputString = compareToOutputString.ReplaceLineEndings("\n");
+                var outputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
+
                 // Record the output in a file, too, for verification/debugging reference.
                 using (var compareToOutputFile = File.Open(compareToOutputFilePath, FileMode.Create, FileAccess.Write))
-                using (var compareToOutputFileStream = new StreamWriter(compareToOutputFile))
+                using (var compareToOutputFileStream = new StreamWriter(compareToOutputFile, outputEncoding))
                 {
                     compareToOutputFileStream.Write(compareToOutputString);
                     compareToOutputFileStream.Flush();

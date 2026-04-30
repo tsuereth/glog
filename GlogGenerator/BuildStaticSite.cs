@@ -60,14 +60,13 @@ namespace GlogGenerator
                     compareToContentRoutes.Remove(contentRoute.Key);
 
                     var compareToFilePath = Path.Combine(compareToBasePath, contentRoute.Key).Replace(Path.DirectorySeparatorChar, '/');
-                    var currentRoute = site.BaseURL + contentRoute.Key;
 
                     if (contentRoute.Value.GetContentTypeIsText())
                     {
                         var compareToText = File.ReadAllText(compareToFilePath);
                         var currentText = contentRoute.Value.GetText(site);
 
-                        var unidiff = UnidiffRenderer.GenerateUnidiff(compareToText, currentText, compareToFilePath, currentRoute);
+                        var unidiff = UnidiffRenderer.GenerateUnidiff(compareToText, currentText, contentRoute.Key, contentRoute.Key);
                         if (!string.IsNullOrEmpty(unidiff))
                         {
                             diffBuilder.Append(unidiff);
@@ -80,7 +79,7 @@ namespace GlogGenerator
 
                         if (!compareToBytes.SequenceEqual(currentBytes))
                         {
-                            var binaryDiffLine = $"Binary files {compareToFilePath} and {currentRoute} differ";
+                            var binaryDiffLine = $"Binary files {contentRoute.Key} and {contentRoute.Key} differ";
                             diffBuilder.AppendLine(binaryDiffLine);
                         }
                     }
@@ -93,7 +92,7 @@ namespace GlogGenerator
 
             foreach (var compareToRouteNotFound in compareToContentRoutes.OrderBy(r => r))
             {
-                var onlyInCompareToLine = $"Only in {compareToBasePath}: {compareToRouteNotFound}";
+                var onlyInCompareToLine = $"Only in compare-to: {compareToRouteNotFound}";
                 diffBuilder.AppendLine(onlyInCompareToLine);
             }
 
