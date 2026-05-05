@@ -1,8 +1,9 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using DiffPlex.Renderer;
+using GlogGenerator.DiffSummary;
 using GlogGenerator.RenderState;
 
 namespace GlogGenerator
@@ -42,19 +43,27 @@ namespace GlogGenerator
 
                 // Runtime content routes should ALWAYS use unix-style path separators '/'
                 contentRoute = contentRoute.Replace(Path.DirectorySeparatorChar, '/');
+
+                // Skip files which begin with "page/..." because these diffs are largely just
+                // pagination shifts: a new post "shifting" an older post out of page N, and into page N+1.
+                // (FIXME?: can diff summarization detect these content moves as a pagination change?)
+                if (contentRoute.StartsWith("page/", StringComparison.InvariantCulture))
+                {
+                    continue;
+                }
+
                 compareToContentRoutes.Add(contentRoute);
             }
 
-            // TODO: NOT THIS! Not a stringbuilder of results from each file's diff!
-            // Instead, track diff-line batches <-> the files relevant to them
-            // I.e. after extracting diff-lines from 3.html, recognize that Batch N
-            // matches previously seen diff-lines from 1.html and 2.html
-            var diffBuilder = new StringBuilder();
-
-            var onlyInCurrentSiteRoutes = new HashSet<string>();
-
-            foreach (var contentRoute in site.ContentRoutes.OrderBy(r => r.Key))
+            var diffSummaryTracker = new DiffSummaryTracker();
+            foreach (var contentRoute in site.ContentRoutes)
             {
+                // Skip files which begin with "page/..." -- see note above.
+                if (contentRoute.Key.StartsWith("page/", StringComparison.InvariantCulture))
+                {
+                    continue;
+                }
+
                 if (compareToContentRoutes.Contains(contentRoute.Key))
                 {
                     compareToContentRoutes.Remove(contentRoute.Key);
@@ -66,53 +75,29 @@ namespace GlogGenerator
                         var compareToText = File.ReadAllText(compareToFilePath);
                         var currentText = contentRoute.Value.GetText(site);
 
-                        var unidiff = UnidiffRenderer.GenerateUnidiff(compareToText, currentText, contentRoute.Key, contentRoute.Key);
-                        if (!string.IsNullOrEmpty(unidiff))
-                        {
-                            diffBuilder.Append(unidiff);
-                        }
+                        diffSummaryTracker.AddTextFile(contentRoute.Key, compareToText, currentText);
                     }
                     else
                     {
                         var compareToBytes = File.ReadAllBytes(compareToFilePath);
                         var currentBytes = contentRoute.Value.GetBytes(site);
 
-                        if (!compareToBytes.SequenceEqual(currentBytes))
-                        {
-                            var binaryDiffLine = $"Binary files {contentRoute.Key} and {contentRoute.Key} differ";
-                            diffBuilder.AppendLine(binaryDiffLine);
-                        }
+                        diffSummaryTracker.AddBinaryFile(contentRoute.Key, compareToBytes, currentBytes);
                     }
                 }
                 else
                 {
-                    onlyInCurrentSiteRoutes.Add(contentRoute.Key);
+                    diffSummaryTracker.AddFileOnlyInCurrent(contentRoute.Key);
                 }
             }
 
-            foreach (var compareToRouteNotFound in compareToContentRoutes.OrderBy(r => r))
+            foreach (var compareToRouteNotFound in compareToContentRoutes)
             {
-                var onlyInCompareToLine = $"Only in compare-to: {compareToRouteNotFound}";
-                diffBuilder.AppendLine(onlyInCompareToLine);
+                diffSummaryTracker.AddFileOnlyInCompareTo(compareToRouteNotFound);
             }
 
-            foreach (var currentSiteRouteNotFound in onlyInCurrentSiteRoutes.OrderBy(r => r))
-            {
-                var onlyInCurrentSiteLine = $"Only in {site.BaseURL}: {currentSiteRouteNotFound}";
-                diffBuilder.AppendLine(onlyInCurrentSiteLine);
-            }
-
-            if (diffBuilder.Length == 0)
-            {
-                diffBuilder.AppendLine("No differences found.");
-            }
-
-            // `leaveOpen` refers to the given outputStream; let the caller decide when to close that.
-            using (var diffWriter = new StreamWriter(outputStream, Encoding.UTF8, leaveOpen: true))
-            {
-                diffWriter.Write(diffBuilder);
-                diffWriter.Flush();
-            }
+            diffSummaryTracker.WriteSummary(outputStream);
+            outputStream.Flush();
         }
     }
 }
