@@ -193,6 +193,15 @@ namespace GlogGenerator.DiffSummary
                 diffSections.Add(new OnlyInCurrentDiffSection(onlyInCurrentPath));
             }
 
+            if (diffSections.Count == 0)
+            {
+                using (var writer = new StreamWriter(outputStream, Encoding.UTF8, leaveOpen: true))
+                {
+                    writer.WriteLine("No differences found.");
+                }
+                return;
+            }
+
             foreach (var diffSection in diffSections.OrderBy(s => s.GetSectionFilePaths()))
             {
                 diffSection.WriteSection(outputStream);
