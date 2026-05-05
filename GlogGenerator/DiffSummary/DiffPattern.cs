@@ -47,23 +47,6 @@ namespace GlogGenerator.DiffSummary
             return this.FilePaths.FilePaths.Order().ToList();
         }
 
-        /*
-        public string GetId()
-        {
-            var diffText = new StringBuilder();
-            foreach (var line in this.DiffLines)
-            {
-                diffText.Append(line.GetDiffTypeChar());
-                diffText.AppendLine(line.Line);
-            }
-
-            var diffBytes = Encoding.UTF8.GetBytes(diffText.ToString());
-            var diffHash = SHA256.HashData(diffBytes);
-
-            return Convert.ToHexString(diffHash);
-        }
-        */
-
         public bool MatchesDiffLines(DiffLine[] otherDiffLines)
         {
             if (this.DiffLines.Length != otherDiffLines.Length)
