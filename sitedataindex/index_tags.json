@@ -230,6 +230,13 @@
       "igdbMetadataName": "A Boy and His Blob"
     }
   ],
+  "AAA Games Studio": [
+    {
+      "igdbEntityId": 71999,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "AAA Games Studio"
+    }
+  ],
   "Absolute Entertainment": [
     {
       "igdbEntityId": 1000,
@@ -4007,6 +4014,13 @@
       "igdbEntityId": 1968,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Evolved Games"
+    }
+  ],
+  "Ex Machina": [
+    {
+      "igdbEntityId": 13063,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Ex Machina"
     }
   ],
   "Excite": [
