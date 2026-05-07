@@ -64,6 +64,6 @@ namespace GlogGenerator.Data
 
         public void ReadJsonFiles(string directoryPath);
 
-        public void InitializeFromFiles(string jsonDirectoryPath, string inputFilesBasePath, ContentParser contentParser);
+        public void InitializeFromFiles(string jsonDirectoryPath, string inputFilesBasePath, ContentParser contentParser, bool includeDrafts);
     }
 }

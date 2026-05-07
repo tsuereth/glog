@@ -96,10 +96,15 @@ namespace GlogGenerator
 
         public void LoadSiteDataIndexFiles()
         {
+            var dataIncludesDrafts =
+                (this.includeDrafts == IncludeDrafts.Always) ||
+                (this.mode == Mode.Host && this.includeDrafts == IncludeDrafts.HostModeOnly);
+
             this.siteDataIndex.InitializeFromFiles(
                 this.configData.SiteDataIndexFilesBasePath,
                 this.configData.InputFilesBasePath,
-                this.GetContentParser());
+                this.GetContentParser(),
+                dataIncludesDrafts);
         }
 
         public void RewriteSiteDataIndexFiles()

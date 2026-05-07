@@ -254,7 +254,7 @@ namespace GlogGenerator.Test
             throw new NotImplementedException();
         }
 
-        public void InitializeFromFiles(string jsonDirectoryPath, string inputFilesBasePath, ContentParser contentParser)
+        public void InitializeFromFiles(string jsonDirectoryPath, string inputFilesBasePath, ContentParser contentParser, bool includeDrafts)
         {
             throw new NotImplementedException();
         }

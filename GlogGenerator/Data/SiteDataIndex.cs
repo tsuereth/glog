@@ -910,7 +910,7 @@ namespace GlogGenerator.Data
             this.Lookups.Tags = ReadDataItemsFromJsonFile<TagData>(directoryPath, "tags");
         }
 
-        public void InitializeFromFiles(string jsonDirectoryPath, string inputFilesBasePath, ContentParser contentParser)
+        public void InitializeFromFiles(string jsonDirectoryPath, string inputFilesBasePath, ContentParser contentParser, bool includeDrafts)
         {
             this.Lookups.ClearAll();
             this.ReadJsonFiles(jsonDirectoryPath);
@@ -919,7 +919,7 @@ namespace GlogGenerator.Data
             {
                 // Parse and validate content references to the freshly-loaded index data.
                 var oldLookups = new SiteDataLookups();
-                this.UpdateReferencesFromContent(oldLookups, inputFilesBasePath, contentParser, includeDrafts: true);
+                this.UpdateReferencesFromContent(oldLookups, inputFilesBasePath, contentParser, includeDrafts);
                 this.ResolveReferences();
             }
         }
