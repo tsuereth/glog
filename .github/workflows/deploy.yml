@@ -50,14 +50,14 @@ jobs:
         env:
           DEPLOY_GLOG_PRIVATE_KEY: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
         run: |
-          echo "$DEPLOY_GLOG_PRIVATE_KEY" > deploy-glog_id_rsa
-          chmod 0600 deploy-glog_id_rsa
+          echo "$DEPLOY_GLOG_PRIVATE_KEY" > deploy-glog_sshkey
+          chmod 0600 deploy-glog_sshkey
           rsync -vrtL --checksum --omit-dir-times --cvs-exclude --delete \
-            -e "ssh -p 31771 -i deploy-glog_id_rsa -o StrictHostKeyChecking=no" \
+            -e "ssh -p 31771 -i deploy-glog_sshkey -o StrictHostKeyChecking=no" \
             public/* \
             "deploy-glog@tsuereth.com:/var/www/tsuereth_web/glog/"
 
       - name: Cleanup
         if: ${{ always() }}
         run: |
-          rm -f deploy-glog_id_rsa
+          rm -f deploy-glog_sshkey

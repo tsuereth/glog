@@ -16,11 +16,11 @@ runs:
       env:
         DEPLOY_GLOG_PRIVATE_KEY: ${{ inputs.deploy-glog-private-key }}
       run: |
-        echo "$DEPLOY_GLOG_PRIVATE_KEY" > deploy-glog_id_rsa
-        chmod 0600 deploy-glog_id_rsa
+        echo "$DEPLOY_GLOG_PRIVATE_KEY" > deploy-glog_sshkey
+        chmod 0600 deploy-glog_sshkey
         rm -rf ${{ inputs.output-path }}
         rsync -vr --checksum --delete \
-          -e "ssh -p 31771 -i deploy-glog_id_rsa -o StrictHostKeyChecking=no" \
+          -e "ssh -p 31771 -i deploy-glog_sshkey -o StrictHostKeyChecking=no" \
           "deploy-glog@tsuereth.com:/var/www/tsuereth_web/glog/" \
           ${{ inputs.output-path }}/
 
@@ -28,4 +28,4 @@ runs:
       if: ${{ always() }}
       shell: bash
       run: |
-        rm -f deploy-glog_id_rsa
+        rm -f deploy-glog_sshkey
