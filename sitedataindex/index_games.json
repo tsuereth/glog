@@ -3917,15 +3917,17 @@
     ],
     "nameAppendReleasePlatforms": true
   },
-  "Metroid Prime 2: Dark Echoes": {
-    "igdbEntityId": 134258,
-    "igdbEntityType": "IgdbGame",
-    "igdbGameName": "Metroid Prime 2: Dark Echoes"
-  },
   "Metroid Prime 2: Echoes": {
     "igdbEntityId": 1108,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Metroid Prime 2: Echoes"
+  },
+  "Metroid Prime 2: Echoes (2009)": {
+    "igdbEntityId": 134258,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameFirstReleaseYear": 2009,
+    "igdbGameName": "Metroid Prime 2: Echoes",
+    "nameAppendReleaseYear": true
   },
   "Metroid Prime 3: Corruption": {
     "igdbEntityId": 1111,
