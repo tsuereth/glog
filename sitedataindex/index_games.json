@@ -1488,6 +1488,11 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Deep Rock Galactic"
   },
+  "Deep Rock Galactic: Rogue Core": {
+    "igdbEntityId": 270354,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Deep Rock Galactic: Rogue Core"
+  },
   "Defend Your Castle": {
     "igdbEntityId": 21359,
     "igdbEntityType": "IgdbGame",
@@ -5943,6 +5948,11 @@
     "igdbEntityId": 119304,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Spiritfarer"
+  },
+  "Spiritfarer: Farewell Edition": {
+    "igdbEntityId": 187506,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Spiritfarer: Farewell Edition"
   },
   "Splasher": {
     "igdbEntityId": 26363,
