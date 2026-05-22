@@ -13536,6 +13536,11 @@
   ],
   "Vampire the Masquerade": [
     {
+      "igdbEntityId": 15,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Vampire: The Masquerade"
+    },
+    {
       "igdbEntityId": 3457,
       "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "Vampire the Masquerade"
