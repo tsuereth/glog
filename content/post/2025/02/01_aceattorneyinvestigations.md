@@ -2,11 +2,11 @@
 date = "2025-02-01T13:21:08.9555899-08:00"
 title = "Detective Prosecutor Inspector Edgeworth, Esquire"
 category = [ "Playing A Game" ]
-game = [ "Ace Attorney Investigations: Miles Edgeworth" ]
+game = [ "Ace Attorney Investigations: Miles Edgeworth (2024)" ]
 platform = [ "PC" ]
 rating = [ "Good" ]
 +++
-Fifteen years on, <game:Ace Attorney Investigations: Miles Edgeworth> might still be my least-favorite <tag:Ace Attorney> game.  But! the [Collection](game:Ace Attorney Investigations Collection)'s high-def remake *improves* the game, enough that it's satisfying to play through despite some deep flaws.
+Fifteen years on, <game:Ace Attorney Investigations: Miles Edgeworth> might still be my least-favorite <tag:Ace Attorney> game.  But! the [Collection](game:Ace Attorney Investigations Collection)'s [high-def remake](game:Ace Attorney Investigations: Miles Edgeworth (2024)) *improves* the game, enough that it's satisfying to play through despite some deep flaws.
 
 Edgeworth's side-view investigation scenes **work better on a big screen**: where hunting for clues on an <platform:NDS> touchscreen was a fiddly squint-and-poke exercise, now there's plenty of room to walk around and much more detailed art to grab your eye.
 

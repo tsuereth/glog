@@ -71,6 +71,13 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Ace Attorney Investigations: Miles Edgeworth"
   },
+  "Ace Attorney Investigations: Miles Edgeworth (2024)": {
+    "igdbEntityId": 384241,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameFirstReleaseYear": 2024,
+    "igdbGameName": "Ace Attorney Investigations: Miles Edgeworth",
+    "nameAppendReleaseYear": true
+  },
   "Advance Wars": {
     "igdbEntityId": 1691,
     "igdbEntityType": "IgdbGame",

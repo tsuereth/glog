@@ -6,7 +6,7 @@ game = [ "Ace Attorney Investigations 2: Prosecutor's Gambit" ]
 platform = [ "PC" ]
 rating = [ "Awesome" ]
 +++
-Since it languished without an official English translation for *almost 14 years*, I was immensely surprised that <game:Ace Attorney Investigations 2: Prosecutor's Gambit> tells **an incredibly good story** -- not only an improvement over Edgeworth's [earlier, chronologically-chaotic investigation](game:Ace Attorney Investigations: Miles Edgeworth), but one of the best in <tag:Ace Attorney>'s long history.
+Since it languished without an official English translation for *almost 14 years*, I was immensely surprised that <game:Ace Attorney Investigations 2: Prosecutor's Gambit> tells **an incredibly good story** -- not only an improvement over Edgeworth's [earlier, chronologically-chaotic investigation](game:Ace Attorney Investigations: Miles Edgeworth (2024)), but one of the best in <tag:Ace Attorney>'s long history.
 
 I was less-pleasantly surprised by just **how shitty its (il)logical puzzles** are.  I've lamented this before - *"sometimes-confounding evidence solutions"* ([Trials and Tribulations]($SiteBaseURL$2019/06/09/closed-pending-new-evidence/)), *"leap-of-logic evidence puzzles"* ([Apollo Justice]($SiteBaseURL$2024/03/02/cold-cases/)), *"expected connections are a leap too far"* ([Edgeworth's last game]($SiteBaseURL$2025/02/01/detective-prosecutor-inspector-edgeworth-esquire/)) - but I don't think any Ace Attorney game's been quite this bad.  *Maybe* <game:Professor Layton vs. Phoenix Wright: Ace Attorney> was worse; it's hard to remember.
 
@@ -60,6 +60,6 @@ I'm so glad to have finally played Edgeworth's story -- and that's really what I
 
 ![]($SiteBaseURL$ace-attorney-investigations-2-prosecutors-gambit_no-one-special.jpg){width=960 height=540}
 
-**Better than**: <game:Ace Attorney Investigations: Miles Edgeworth>, <game:Apollo Justice: Ace Attorney>, <game:Phoenix Wright: Ace Attorney - Dual Destinies>  
+**Better than**: <game:Ace Attorney Investigations: Miles Edgeworth (2024)>, <game:Apollo Justice: Ace Attorney>, <game:Phoenix Wright: Ace Attorney - Dual Destinies>  
 **Not as good as**: <game:Phoenix Wright: Ace Attorney - Spirit of Justice> (... though it'd be close, if this game's logic puzzles weren't so stupid)  
 **So that's the whole series remastered, then**: wonder if we'll [survive long enough](https://arstechnica.com/space/2025/02/thanks-to-nasa-you-probably-wont-have-to-worry-about-this-asteroid-killing-you/) to see a *new* <tag:Ace Attorney> game.
