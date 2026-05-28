@@ -4,4 +4,4 @@ permalink = "/upcoming"
 
 # Upcoming Releases of Interest
 
-`¯\_(ツ)_/¯`
+* ????/2027 - <game:The Witcher 3: Wild Hunt - Songs of the Past> (<platform:PC>)

@@ -16,7 +16,6 @@ permalink = "/backlog"
 * <game:Final Fantasy Tactics: The Ivalice Chronicles> (<platform:PC>)
 * <game:Ghost of Tsushima: Director's Cut> (<platform:PC>)
 * <game:Ghost of Yotei> (<platform:PS5>)
-* <game:Hades (2020)> (<platform:PC>)
 * <game:Hollow Knight: Silksong> (<platform:PC>)
 * <game:Hyrule Warriors: Age of Calamity> (<platform:Switch>)
 * <game:Indiana Jones and the Great Circle> (<platform:PC>)
