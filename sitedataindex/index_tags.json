@@ -1150,6 +1150,13 @@
       "igdbMetadataName": "Battalion Wars"
     }
   ],
+  "Battle Royale": [
+    {
+      "igdbEntityId": 6,
+      "igdbEntityType": "IgdbGameMode",
+      "igdbMetadataName": "Battle Royale"
+    }
+  ],
   "Battlefield": [
     {
       "igdbEntityId": 34,
@@ -2844,6 +2851,13 @@
       "igdbEntityId": 68528,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Dashing Strike"
+    }
+  ],
+  "Dave the Diver": [
+    {
+      "igdbEntityId": 14452,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Dave the Diver"
     }
   ],
   "Day 1 Studios": [
