@@ -2646,6 +2646,11 @@
     "igdbGameName": "Hades",
     "nameAppendReleaseYear": true
   },
+  "Hades II": {
+    "igdbEntityId": 228525,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Hades II"
+  },
   "Half-Life": {
     "igdbEntityId": 231,
     "igdbEntityType": "IgdbGame",
@@ -3074,6 +3079,11 @@
       "X360"
     ],
     "nameAppendReleasePlatforms": true
+  },
+  "Katamari Damacy": {
+    "igdbEntityId": 6453,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Katamari Damacy"
   },
   "Katana Zero": {
     "igdbEntityId": 20150,

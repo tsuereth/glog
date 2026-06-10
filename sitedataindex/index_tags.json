@@ -6128,11 +6128,25 @@
       "igdbMetadataName": "Kane & Lynch"
     }
   ],
+  "Katamari Damacy": [
+    {
+      "igdbEntityId": 910,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Katamari Damacy"
+    }
+  ],
   "Kawasaki Motors": [
     {
       "igdbEntityId": 5184,
       "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "Kawasaki Motors"
+    }
+  ],
+  "Keita Takahashi": [
+    {
+      "igdbEntityId": 38076,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Keita Takahashi"
     }
   ],
   "Kemco": [
@@ -8252,6 +8266,13 @@
       "igdbEntityId": 2359,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Novotrade"
+    }
+  ],
+  "NOW Production": [
+    {
+      "igdbEntityId": 1976,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "NOW Production"
     }
   ],
   "Ntreev Soft": [
