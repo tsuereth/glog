@@ -8086,20 +8086,6 @@
       "igdbMetadataName": "Nintendo EPD Production Group No. 8"
     }
   ],
-  "Nintendo of America": [
-    {
-      "igdbEntityId": 2850,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Nintendo of America"
-    }
-  ],
-  "Nintendo of Europe": [
-    {
-      "igdbEntityId": 4034,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Nintendo of Europe"
-    }
-  ],
   "Nintendo R&D1": [
     {
       "igdbEntityId": 1809,
@@ -11148,6 +11134,13 @@
       "igdbMetadataName": "Square Enix Business Division 3"
     }
   ],
+  "Square Enix Business Division 5": [
+    {
+      "igdbEntityId": 52267,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Square Enix Business Division 5"
+    }
+  ],
   "Square Enix Business Division 6": [
     {
       "igdbEntityId": 53031,
@@ -11167,6 +11160,13 @@
       "igdbEntityId": 45304,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Square Enix Creative Business Unit I"
+    }
+  ],
+  "Square Enix Creative Business Unit III": [
+    {
+      "igdbEntityId": 38128,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Square Enix Creative Business Unit III"
     }
   ],
   "Square Enix Creative Studio I": [
@@ -11209,6 +11209,13 @@
       "igdbEntityId": 10938,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Square Enix Product Development Division 2"
+    }
+  ],
+  "Square Enix Product Development Division 3": [
+    {
+      "igdbEntityId": 336,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Square Enix Product Development Division 3"
     }
   ],
   "Square Enix Product Development Division 4": [
