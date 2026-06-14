@@ -4,8 +4,8 @@ permalink = "/backlog"
 
 # Games I Will Play One Day, Maybe
 
+* <game:007 First Light> (<platform:PC>)
 * <game:Afterparty> (<platform:PC>)
-* <game:Bandle Tale: A League of Legends Story> (<platform:PC>)
 * <game:Borderlands 4> (<platform:PC>)
 * <game:Convergence: A League of Legends Story> (<platform:PC>)
 * <game:Crimson Desert> (<platform:PC>)
@@ -47,3 +47,4 @@ permalink = "/backlog"
 * <game:The Talos Principle II: Road to Elysium> (<platform:PC>)
 * <game:The Talos Principle: Reawakened> (<platform:PC>)
 * <game:Tiny Tina's Wonderlands> (<platform:PC>)
+* <game:U.V.S. Nirmana> (<platform:PC>)

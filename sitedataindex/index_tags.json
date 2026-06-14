@@ -3010,6 +3010,13 @@
       "igdbMetadataName": "DEKLAZON"
     }
   ],
+  "Delphi Interactive": [
+    {
+      "igdbEntityId": 72357,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Delphi Interactive"
+    }
+  ],
   "Delphine Software": [
     {
       "igdbEntityId": 501,
@@ -6264,6 +6271,13 @@
       "igdbMetadataName": "Klei Entertainment"
     }
   ],
+  "Klei Publishing": [
+    {
+      "igdbEntityId": 47931,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Klei Publishing"
+    }
+  ],
   "Kloonigames": [
     {
       "igdbEntityId": 7472,
@@ -6472,13 +6486,6 @@
       "igdbEntityId": 5360,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Lazy 8 Studios"
-    }
-  ],
-  "Lazy Bear Games": [
-    {
-      "igdbEntityId": 7914,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Lazy Bear Games"
     }
   ],
   "LCG Entertainment": [

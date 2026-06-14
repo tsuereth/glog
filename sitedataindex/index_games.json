@@ -1,4 +1,9 @@
 {
+  "007 First Light": {
+    "igdbEntityId": 141114,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "007 First Light"
+  },
   "1000 Amps": {
     "igdbEntityId": 6281,
     "igdbEntityType": "IgdbGame",
@@ -364,11 +369,6 @@
     "igdbEntityId": 1880,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Baldur's Gate: Enhanced Edition"
-  },
-  "Bandle Tale: A League of Legends Story": {
-    "igdbEntityId": 266687,
-    "igdbEntityType": "IgdbGame",
-    "igdbGameName": "Bandle Tale: A League of Legends Story"
   },
   "Bangai-O Spirits": {
     "igdbEntityId": 21278,
@@ -7348,6 +7348,11 @@
     "igdbEntityId": 149149,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Tyrion Cuthbert: Attorney of the Arcane"
+  },
+  "U.V.S. Nirmana": {
+    "igdbEntityId": 400475,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "U.V.S. Nirmana"
   },
   "Uncharted 2: Among Thieves": {
     "igdbEntityId": 565,
