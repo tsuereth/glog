@@ -7,7 +7,6 @@ permalink = "/backlog"
 * <game:007 First Light> (<platform:PC>)
 * <game:Afterparty> (<platform:PC>)
 * <game:Borderlands 4> (<platform:PC>)
-* <game:Convergence: A League of Legends Story> (<platform:PC>)
 * <game:Crimson Desert> (<platform:PC>)
 * <game:Cyberpunk 2077: Phantom Liberty> (<platform:PC>)
 * <game:Deep Rock Galactic: Rogue Core> (<platform:PC>)
