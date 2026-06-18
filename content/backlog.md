@@ -10,7 +10,6 @@ permalink = "/backlog"
 * <game:Crimson Desert> (<platform:PC>)
 * <game:Cyberpunk 2077: Phantom Liberty> (<platform:PC>)
 * <game:Deep Rock Galactic: Rogue Core> (<platform:PC>)
-* <game:Deliver At All Costs> (<platform:PC>)
 * <game:Factorio: Space Age> (<platform:PC>)
 * <game:Final Fantasy Tactics: The Ivalice Chronicles> (<platform:PC>)
 * <game:Ghost of Tsushima: Director's Cut> (<platform:PC>)
