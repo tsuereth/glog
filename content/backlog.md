@@ -24,7 +24,6 @@ permalink = "/backlog"
 * <game:The Last of Us Part II Remastered> (<platform:PC>)
 * <game:The Legend of Zelda: Echoes of Wisdom> (<platform:Switch>)
 * <game:LEGO Batman: Legacy of the Dark Knight> (<platform:PC>)
-* <game:The Mageseeker: A League of Legends Story> (<platform:PC>)
 * <game:Marvel's Spider-Man 2> (<platform:PC>)
 * <game:Marvel's Spider-Man Remastered> (<platform:PC>)
 * <game:Marvel's Spider-Man: Miles Morales> (<platform:PC>)
