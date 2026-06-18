@@ -37,7 +37,6 @@ permalink = "/backlog"
 * <game:Pragmata> (<platform:PC>)
 * <game:QuantumPulse 2A> (<platform:PC>)
 * <game:Shadows of the Damned: Hella Remastered> (<platform:PC>)
-* <game:Song of Nunu: A League of Legends Story> (<platform:PC>)
 * <game:Split Fiction> (<platform:PC>)
 * <game:Super Mario Bros. Wonder> (<platform:Switch>)
 * <game:Super Mario RPG (2023)> (<platform:Switch>)

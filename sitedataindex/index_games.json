@@ -1503,11 +1503,6 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Defender's Quest: Valley of the Forgotten"
   },
-  "Deliver At All Costs": {
-    "igdbEntityId": 177169,
-    "igdbEntityType": "IgdbGame",
-    "igdbGameName": "Deliver At All Costs"
-  },
   "Depict1": {
     "igdbEntityId": 186635,
     "igdbEntityType": "IgdbGame",
@@ -6897,11 +6892,6 @@
     "igdbEntityId": 1253,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "The Lost Vikings 2"
-  },
-  "The Mageseeker: A League of Legends Story": {
-    "igdbEntityId": 239302,
-    "igdbEntityType": "IgdbGame",
-    "igdbGameName": "The Mageseeker: A League of Legends Story"
   },
   "The Magic Circle": {
     "igdbEntityId": 17847,

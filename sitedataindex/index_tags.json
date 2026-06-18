@@ -3249,13 +3249,6 @@
       "igdbMetadataName": "Digital Scapes Studios"
     }
   ],
-  "Digital Sun Games": [
-    {
-      "igdbEntityId": 12319,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Digital Sun Games"
-    }
-  ],
   "Digital Tribe": [
     {
       "igdbEntityId": 2561,
@@ -4202,13 +4195,6 @@
       "igdbEntityId": 1466,
       "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "Far Cry"
-    }
-  ],
-  "Far Out Games": [
-    {
-      "igdbEntityId": 58074,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Far Out Games"
     }
   ],
   "Farjay.com": [
