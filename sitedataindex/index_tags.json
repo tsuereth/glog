@@ -2590,13 +2590,6 @@
       "igdbMetadataName": "Crazy Taxi"
     }
   ],
-  "Creatures Inc.": [
-    {
-      "igdbEntityId": 1393,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Creatures Inc."
-    }
-  ],
   "Criterion Games": [
     {
       "igdbEntityId": 347,
@@ -11120,13 +11113,6 @@
       "igdbMetadataName": "Square Enix Business Division 2"
     }
   ],
-  "Square Enix Business Division 3": [
-    {
-      "igdbEntityId": 19281,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Square Enix Business Division 3"
-    }
-  ],
   "Square Enix Business Division 5": [
     {
       "igdbEntityId": 52267,
@@ -11258,13 +11244,6 @@
       "igdbEntityId": 3061,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Square USA"
-    }
-  ],
-  "Squaresoft": [
-    {
-      "igdbEntityId": 24170,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Squaresoft"
     }
   ],
   "SquareSoft USA": [
