@@ -9,10 +9,10 @@ rating = [ "Good" ]
 
 <game:Pepper's Puzzles> sometimes feels like it's testing the boundaries of "<a href="https://www.copyright.gov/fair-use/">fair use</a>."
 
-| ![]($SiteBaseURL$pepperspuzzles_pacman.jpg){width=200 height=150} | ![]($SiteBaseURL$pepperspuzzles_koopa.jpg){width=200 height=150} | ![]($SiteBaseURL$pepperspuzzles_masterchief.jpg){width=200 height=150} |
+| ![]($SiteBaseURL$pepperspuzzles_pacman.jpg){width=240 height=135} | ![]($SiteBaseURL$pepperspuzzles_koopa.jpg){width=240 height=135} | ![]($SiteBaseURL$pepperspuzzles_masterchief.jpg){width=240 height=135} |
 | - | - | - |
-| ![]($SiteBaseURL$pepperspuzzles_phoenixwright.jpg){width=200 height=150} | ![]($SiteBaseURL$pepperspuzzles_sauron.jpg){width=200 height=150} | ![]($SiteBaseURL$pepperspuzzles_yoda.jpg){width=200 height=150} |
-| ![]($SiteBaseURL$pepperspuzzles_doctorwho.jpg){width=200 height=150} | ![]($SiteBaseURL$pepperspuzzles_deadpool.jpg){width=200 height=150} | ![]($SiteBaseURL$pepperspuzzles_americanpsycho.jpg){width=200 height=150} |
+| ![]($SiteBaseURL$pepperspuzzles_phoenixwright.jpg){width=240 height=135} | ![]($SiteBaseURL$pepperspuzzles_sauron.jpg){width=240 height=135} | ![]($SiteBaseURL$pepperspuzzles_yoda.jpg){width=240 height=135} |
+| ![]($SiteBaseURL$pepperspuzzles_doctorwho.jpg){width=240 height=135} | ![]($SiteBaseURL$pepperspuzzles_deadpool.jpg){width=240 height=135} | ![]($SiteBaseURL$pepperspuzzles_americanpsycho.jpg){width=240 height=135} |
 
 ... that aside, it's a <i>hefty</i> picross game.  At 240 regular picture puzzles, and 184 more puzzles that form the larger "mosaics," it easily has more pre-baked puzzles than any picross game I've played before.
 

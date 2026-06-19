@@ -6,4 +6,4 @@ game = [ "Cat Quest" ]
 platform = [ "Android" ]
 +++
 
-![]($SiteBaseURL$catquest-5.png){width=400 height=300}
+![]($SiteBaseURL$catquest-5.png){width=400 height=225}

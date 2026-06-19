@@ -33,11 +33,11 @@ Oh yeah, and then there are truth-finding minigames.  These aren't like Ace Atto
 
 Danganronpa has matching puzzles.
 
-![]($SiteBaseURL$danganronpa_v3_demo_matching.jpg){width=400 height=300}
+![]($SiteBaseURL$danganronpa_v3_demo_matching.jpg){width=400 height=225}
 
 And ... <game:OutRun>?
 
-![]($SiteBaseURL$danganronpa_v3_demo_driving.jpg){width=400 height=300}
+![]($SiteBaseURL$danganronpa_v3_demo_driving.jpg){width=400 height=225}
 
 These are just, plain, stupid.
 
@@ -45,7 +45,7 @@ And then there are the technical issues.  The screen is scaled to the <platform:
 
 Here's how to control the debate segments:
 
-![]($SiteBaseURL$danganronpa_v3_demo_debatecontrols.jpg){width=400 height=300}
+![]($SiteBaseURL$danganronpa_v3_demo_debatecontrols.jpg){width=400 height=225}
 
 <i>What?</i>
 

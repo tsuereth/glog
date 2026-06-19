@@ -17,7 +17,7 @@ The good news is that, when I finally <i>did</i> jump back into Hallownest, it d
 
 Hollow Knight's <i>literally-dark</i> aesthetics and <i>eldritch</i> lore can make the thought of delving its depths <b>intimidating</b>.  (Especially in Deepnest.  With the low visibility and the crawling noises and the surprise spiders.)  Hell, [last time I said]($SiteBaseURL$2019/10/06/anything-but-hollow/) that I "lacked the courage" to keep going.  So it was really ... comforting, I guess, that a little bravery was enough to get me back in the game.
 
-![]($SiteBaseURL$hollowknight_fear.jpg){width=400 height=300}
+![]($SiteBaseURL$hollowknight_fear.jpg){width=400 height=225}
 
 And "when it works," which is most of the time, Hollow Knight delivers a sharply-focused take on the Metroidvania subgenre.  The joy of discovering a new room, or of finally unlocking a door you've passed by, is even more poignant in the face of Hallownest's dark and mysterious hostility.
 
@@ -31,7 +31,7 @@ Also, the sometimes-evil challenges are ... evil, sometimes.  Many hazards or en
 
 Ultimately I would say that my successes in Hollow Knight had less to do with my timing or reflexes, and more to do with my studious investments in health and damage upgrades.
 
-![]($SiteBaseURL$hollowknight_strength.jpg){width=400 height=300}
+![]($SiteBaseURL$hollowknight_strength.jpg){width=400 height=225}
 
 Which isn't a bad thing, is it?  I mean, I wanna be clear, that while I can complain about some frustrating encounters and not enough fast-travel nodes -- I had a <i>lot</i> of fun poking around the map, unlocking new abilities, and increasing the Knight's mastery over this dark fantasy world.
 

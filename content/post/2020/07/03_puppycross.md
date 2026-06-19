@@ -15,7 +15,7 @@ Unfortunately, Puppy Cross's strengths are dulled by some unpolished fundamental
 
 Even though there's barely any text in the game, it suffers from a clear and <i>frequent</i> localization/grammar error.  Every completed puzzle unlocks a new item, but they <a href="https://knowyourmeme.com/memes/i-accidentally">accidentally</a> a word in this messaging:
 
-![]($SiteBaseURL$puppycross_stump.jpg){width=400 height=300}
+![]($SiteBaseURL$puppycross_stump.jpg){width=400 height=225}
 
 ... and then there are the <b>input problems</b>.
 
