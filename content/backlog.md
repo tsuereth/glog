@@ -5,7 +5,6 @@ permalink = "/backlog"
 # Games I Will Play One Day, Maybe
 
 * <game:007 First Light> (<platform:PC>)
-* <game:Afterparty> (<platform:PC>)
 * <game:Borderlands 4> (<platform:PC>)
 * <game:Crimson Desert> (<platform:PC>)
 * <game:Cyberpunk 2077: Phantom Liberty> (<platform:PC>)
