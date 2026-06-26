@@ -1216,6 +1216,13 @@
       "igdbMetadataName": "Bedtime Digital Games"
     }
   ],
+  "BEE TRIBE CO., LTD": [
+    {
+      "igdbEntityId": 25387,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "BEE TRIBE CO., LTD"
+    }
+  ],
   "Beenox": [
     {
       "igdbEntityId": 432,
@@ -1262,11 +1269,6 @@
     {
       "igdbEntityId": 1806,
       "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Bemani"
-    },
-    {
-      "igdbEntityId": 1651,
-      "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "Bemani"
     }
   ],
@@ -2588,13 +2590,6 @@
       "igdbEntityId": 1067,
       "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "Crazy Taxi"
-    }
-  ],
-  "Creatures Inc.": [
-    {
-      "igdbEntityId": 1393,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Creatures Inc."
     }
   ],
   "Criterion Games": [
@@ -6992,6 +6987,20 @@
       "igdbMetadataName": "Marvelous Europe Ltd."
     }
   ],
+  "Marvelous Inc.": [
+    {
+      "igdbEntityId": 32411,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Marvelous Inc."
+    }
+  ],
+  "Marvelous USA, Inc.": [
+    {
+      "igdbEntityId": 8207,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Marvelous USA, Inc."
+    }
+  ],
   "Mass Effect": [
     {
       "igdbEntityId": 25,
@@ -11120,13 +11129,6 @@
       "igdbMetadataName": "Square Enix Business Division 2"
     }
   ],
-  "Square Enix Business Division 3": [
-    {
-      "igdbEntityId": 19281,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Square Enix Business Division 3"
-    }
-  ],
   "Square Enix Business Division 5": [
     {
       "igdbEntityId": 52267,
@@ -11258,13 +11260,6 @@
       "igdbEntityId": 3061,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Square USA"
-    }
-  ],
-  "Squaresoft": [
-    {
-      "igdbEntityId": 24170,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Squaresoft"
     }
   ],
   "SquareSoft USA": [
