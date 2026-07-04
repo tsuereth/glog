@@ -6950,6 +6950,11 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "The Sexy Brutale"
   },
+  "The Silver Case": {
+    "igdbEntityId": 21560,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "The Silver Case"
+  },
   "The Sims": {
     "igdbEntityId": 223,
     "igdbEntityType": "IgdbGame",
@@ -7277,6 +7282,11 @@
     "igdbEntityId": 3022,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Transistor"
+  },
+  "Travis Strikes Again: No More Heroes": {
+    "igdbEntityId": 55195,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Travis Strikes Again: No More Heroes"
   },
   "Trials of Mana": {
     "igdbEntityId": 11227,
