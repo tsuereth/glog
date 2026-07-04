@@ -18,21 +18,23 @@ It also brings back the first game's open world, as a repository of optional act
 
 ![]($SiteBaseURL$no-more-heroes-iii_toilet-victory.jpg){width=960 height=540}
 
+And the music! As much as I miss how the previous games would riff on Masafumi Takada's iconic title theme, Nobuaki Kaneko's new compositions here are as energizing and pulse-pounding as ever.
+
 When No More Heroes III is firing on all cylinders, it's like nothing else out there. ... Well, other than the first and second games. It's just like those! Which, so many years later, is extremely refreshing.
 
 But, it misfires, too. In some ways just like its predecessors: the open world is relatively empty, like NMH1's that I [wrote about in 2008]($SiteBaseURL$2008/02/05/no-more-heroes-6/), *"The actual overworld ... is fairly dull, especially in the early game. ... about as exciting as untoasted bread."* Graphical quality is a let-down, disappointingly similar to my [musings on NMH2 in 2010]($SiteBaseURL$2010/01/29/no-more-heroes-2-desperate-struggle-5/), *"The visual style is amazing. At a higher resolution, I imagine it would be absolutely incredible."*
 
 (NMH3 is "high def," sure, but its textures are - for a game released in 2021 - shockingly low-detail.)
 
-And then there are storytelling misfires which feel a little like, if you'll pardon my language, Suda-san smelling his own farts. This series has always been fond of referencing Takashi Miike (whom I know as the director of [the live action Ace Attorney film](https://www.imdb.com/title/tt1891974/)), but this time Travis and Bishop chat entirely too much about their favorite Miike works. On and on for minutes. *Frequently*.
+And then there are storytelling misfires, which feel a little like, if you'll pardon my language, Suda-san smelling his own farts. It's been so long since NMH2 that I really could've used some recapping -- instead, NMH3 jumps right in with Shinobu and Bad Girl (who's ... alive, now?), Dr. Naomi (who's ... a tree, now?), Henry, and other characters I have virtually no memory of.
 
-I'll cop to having skipped the [Travis Strikes Again](game:Travis Strikes Again: No More Heroes) spinoff, but it's jarring how this game references TSA story beats without context, like Bad Girl ... who died in the first game, is alive again? And her dad is Travis's friend now?
+I'll cop to having skipped the [Travis Strikes Again](game:Travis Strikes Again: No More Heroes) spinoff, but it's jarring how a resurrected Bad Girl - and her dad, who's also Travis's friend now? - are *just here*, without context. There's even a non-sequitur appearance from a character named Kamui who, I guess, is from <game:The Silver Case>. Suda's text adventure series. Huh.
 
-There's even a non-sequitur appearance from a character named Kamui who, I guess, is from <game:The Silver Case>. Suda's text adventure series. Huh.
+This series has always been fond of referencing Takashi Miike (whom I know as the director of [the live action Ace Attorney film](https://www.imdb.com/title/tt1891974/)); this time Travis and Bishop's chats about their favorite Miike works are *too frequent*. And long. On and on for minutes. *Repeatedly*.
 
 I should temper my gripes about NMH3's reference-heaviness by pointing out how I *love* its reverence to *other* pop-nerd culture. When Travis and Sylvia encountered some alien eggs that looked exactly like [Alien](https://www.imdb.com/title/tt0078748/)'s facehugger eggs, when battle events beamed Travis up to a spaceship while playing an [X-Files](https://www.imdb.com/title/tt0106179/)-like jingle, and when he came back to Earth crouching in a teleportation sphere like [Terminator](https://www.imdb.com/title/tt0088247/), I just couldn't stop grinning.
 
-That's emblematic of my overall experience with No More Heroes III. Its *vibe* is definitely not for everyone, and its overall craftsmanship doesn't measure up against modern masterpieces; what might've been negligible technical quirks in the late 2000s are harder to ignore, now. But it's not afraid of making those mistakes, it wears its heart (and influences) on its sleeve, and as a games nerd myself I appreciate the fuck out of it.
+That qualified enjoyment is emblematic of my overall experience with No More Heroes III. Its *vibe* is definitely not for everyone, and its overall craftsmanship doesn't measure up against modern masterpieces -- what might've been negligible quirks in the late 2000s are harder to ignore, now. But it's not afraid of making mistakes, it wears its heart (and influences) on its sleeve, and as a games nerd myself I appreciate the fuck out of it.
 
 Almost 20 years after [proclaiming "punk's not dead"](https://www.gamedeveloper.com/game-platforms/post-gdc-suda-says-punk-s-not-dead), Suda is still proving it.
 
