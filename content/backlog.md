@@ -15,7 +15,6 @@ permalink = "/backlog"
 * <game:Hollow Knight: Silksong> (<platform:PC>)
 * <game:Hyrule Warriors: Age of Calamity> (<platform:Switch>)
 * <game:Indiana Jones and the Great Circle> (<platform:PC>)
-* <game:Kaizen: A Factory Story> (<platform:PC>)
 * <game:The Last of Us Part I> (<platform:PC>)
 * <game:The Last of Us Part II Remastered> (<platform:PC>)
 * <game:The Legend of Zelda: Echoes of Wisdom> (<platform:Switch>)
