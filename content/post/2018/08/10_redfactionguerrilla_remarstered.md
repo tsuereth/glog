@@ -13,7 +13,7 @@ Guerrilla is getting on in years, though, and it shows.  This Re-Mars-tering hel
 
 Then again, I haven't even gotten the Rocket Launcher yet.  That should distract me from the red-brown desert.
 
-Nine years later, it's funny to me that some of RFG's most distinctive features still haven't been copied into more games.  Not just Geo-Mod destructibility -- but its discoverable, dynamic-feeling "Guerrilla Missions," and how civilians react to high morale by joining your fight.  These are things that would feel right at home in <a href="http://www.pointandclickbait.com/2014/06/ubisoft-game-review/">Ubisoft Game</a>.
+Nine years later, it's funny to me that some of RFG's most distinctive features still haven't been copied into more games.  Not just Geo-Mod destructibility -- but its discoverable, dynamic-feeling "Guerrilla Missions," and how civilians react to high morale by joining your fight.  These are things that would feel right at home in <a href="https://www.pointandclickbait.com/2014/06/ubisoft-game-review/">Ubisoft Game</a>.
 
 Between "[Deathinitive](game:Darksiders II: Deathinitive Edition)," "[Warmastered](game:Darksiders: Warmastered Edition)," and now "Re-Mars-tered" editions of THQ's old games, THQ Nordic has established a clear pattern.  I really hope it leads to a "Resanctified" version of <game:Saints Row 2> or maybe a "Waterfront Genkification" edition of [The Third](game:Saints Row: The Third).  (And I hope Volition comes up with better puns than mine.)
 

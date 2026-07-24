@@ -19,7 +19,7 @@ There is a beautiful sense of cohesion, or even <i>harmony</i>, to how The Talos
 
 >!While ultimately it would be easy to summarize the story as "humans build AI to replace themselves post-extinction," it is awe-inspiring how <i>thoroughly detailed</i> that story gets.  The early game piques interest with analyses of ancient civilizations and philosophy; and as those develop into thought experiments about the meaning of "life" as a society or as a species, other bits of info start to clarify the fate of the humans, and the reason for this virtual world's existence.  It's an enthralling tale from top to bottom, despite being made up by only a few dozen text documents and audio diaries.!<
 
->!And I love that the in-game narrative makes a point of mentioning that their AI training world was built in ... <a href="http://www.croteam.com/technology/">the Serious Engine</a>.  Now <i>that</i> is some commitment to <i>veritas</i>.!<
+>!And I love that the in-game narrative makes a point of mentioning that their AI training world was built in ... <a href="https://www.croteam.com/technology/">the Serious Engine</a>.  Now <i>that</i> is some commitment to <i>veritas</i>.!<
 
 Sadly, I wouldn't have made it all the way through that plot if not for some internet guidance.  And here's where I complain about the "walls" I hit in The Talos Principle's puzzles.
 

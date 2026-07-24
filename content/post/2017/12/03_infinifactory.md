@@ -17,6 +17,6 @@ But despite that, I have to commend Infinifactory on the whole, for delivering a
 
 <b>Better than</b>: <game:Shenzhen I/O> and <game:TIS-100> for sure; and probably <game:SpaceChem>, in general.  
 <b>Not as good as</b>: <game:SpaceChem> had a better difficulty curve (although its final boss was kind of terrible bullshit, too).  
-<b>Just in time</b>: for <game:Opus Magnum>! (hopefully coming out of Early Access <a href="http://steamcommunity.com/games/558990/announcements/detail/1465222576769789696">soon?</a>)
+<b>Just in time</b>: for <game:Opus Magnum>! (hopefully coming out of Early Access <a href="https://steamcommunity.com/games/558990/announcements/detail/1465222576769789696">soon?</a>)
 
 <i>Progress: stopped at The Homeward Fleet - Fusion Reactor</i>

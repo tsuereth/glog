@@ -29,7 +29,7 @@ Pro: In many cases, <i>before</i> the credits, Bandersnatch does give you the op
 
 It ain't perfect, but Bandersnatch is wonderfully entertaining; it has real, <i>meaningful</i> interactive qualities; and it treats its [Adventure game](tag:Adventure) heritage with respect and awe.  This is an all-around treat for the game aficionado.
 
-Also, <a href="http://www.minotaurproject.co.uk/jeff.php">Jeff Minter</a> is <b>in it</b>.  (I did a double-take when I saw his name in the credits.)
+Also, <a href="https://en.wikipedia.org/wiki/Jeff_Minter">Jeff Minter</a> is <b>in it</b>.  (I did a double-take when I saw his name in the credits.)
 
 <b>Better than</b>: <game:Nine Hours, Nine Persons, Nine Doors>  
 <b>Not as good as</b>: <game:Her Story>  

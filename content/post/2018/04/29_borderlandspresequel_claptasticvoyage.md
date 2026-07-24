@@ -17,7 +17,7 @@ And while these elements may have been meant to <i>punctuate</i> the flow of the
 
 An unfortunate consequence of this uninteresting game world is that my partner and I were utterly uncompelled to do its side-quests.  And this, in turn, meant that we were underleveled as the campaign moved on.  For the most part, this wasn't a problem; enemies with flashing red skulls were still no match for us.
 
-The final boss, though, was a tiring chore with an unreasonable health bar.  ... and then it turned out, that <i>wasn't</i> the final boss.  The "real" final boss was an even bigger bullet-sponge, and its attacks destroyed us almost instantaneously.  (Fun anecdote: as <a href="http://borderlands.wikia.com/wiki/Wilhelm">Wilhelm</a>, my partner used the Termination Protocols skill to die, revive, and immediately die again back-to-back for about a full minute.)
+The final boss, though, was a tiring chore with an unreasonable health bar.  ... and then it turned out, that <i>wasn't</i> the final boss.  The "real" final boss was an even bigger bullet-sponge, and its attacks destroyed us almost instantaneously.  (Fun anecdote: as <a href="https://borderlands.fandom.com/wiki/Wilhelm">Wilhelm</a>, my partner used the Termination Protocols skill to die, revive, and immediately die again back-to-back for about a full minute.)
 
 We could have gone back to do an hour or two of sidequests, and probably stand a much better chance in that fight.  But neither of us cared enough to keep playing.
 

@@ -9,7 +9,7 @@ rating = [ "Good" ]
 
 Sure, a <a href="https://regexcrossword.com/">website with some form fields</a> is a bit of a loose fit for this video game blog.  But <game:Regex Crossword> is an interactive experience that entertained me for most of the weekend ... and it compares favorably to <game:Copy Editor>.
 
-Following a co-worker tip to <a href="http://jimbly.github.io/regex-crossword/">this harrowing puzzle</a>, I saw the same link posted to <a href="https://old.reddit.com/r/programming/comments/m3opih/regex_crossword/">/r/programming</a> and followed that trail to the Regex Crossword site.  <i>Of course</i> I did that standalone puzzle, too; but the Regex Crossword site is much more noteworthy.
+Following a co-worker tip to <a href="https://jimbly.github.io/regex-crossword/">this harrowing puzzle</a>, I saw the same link posted to <a href="https://old.reddit.com/r/programming/comments/m3opih/regex_crossword/">/r/programming</a> and followed that trail to the Regex Crossword site.  <i>Of course</i> I did that standalone puzzle, too; but the Regex Crossword site is much more noteworthy.
 
 The puzzles with bi-directional hints could get pretty annoying, and I swear that <i>some</i> puzzles could have had multiple solutions (more than one character fitting the row and column hints).  Especially in the Hamlet section, I got the feeling that quotation-based solutions weren't deterministically verified quite as thoroughly.
 

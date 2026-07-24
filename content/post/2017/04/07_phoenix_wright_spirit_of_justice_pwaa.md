@@ -14,7 +14,7 @@ It's terribly stupid.  It's of a subpar quality even by fan-fiction standards.  
 
 ![]($SiteBaseURL$phoenix_wright_spirit_of_justice_pwaa.jpg){width=400 height=300}
 
-You can find much better, and more substantive!, additional cases <a href="http://aceattorney.sparklin.org/">for free, online</a>.
+You can find much better, and more substantive!, additional cases <a href="https://aaonline.fr/">for free, online</a>.
 
 If this episode had been included with the game, I would at least be able to write it off as a gimmicky extra.  But as paid DLC, I expect something way, way better than this garbage.  As it is, I feel like I was tricked into buying the 3DS theme, and this episode just came along for the ride.
 

@@ -7,4 +7,4 @@ platform = [ "WiiU" ]
 title = "God damn you, Uematsu!"
 +++
 
-Even more so than playing [Super Smash Bros.](game:Super Smash Bros. for Wii U) again, <a href="http://www.vg247.com/2015/11/12/final-fantasy-7s-cloud-joins-super-smash-bros-roster/">this musically-splendid trailer</a> really makes me want to revisit [FF7](game:Final Fantasy VII).  Where that remake at, guys?
+Even more so than playing [Super Smash Bros.](game:Super Smash Bros. for Wii U) again, <a href="https://www.vg247.com/2015/11/12/final-fantasy-7s-cloud-joins-super-smash-bros-roster/">this musically-splendid trailer</a> really makes me want to revisit [FF7](game:Final Fantasy VII).  Where that remake at, guys?

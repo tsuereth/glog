@@ -13,7 +13,7 @@ But it's disappointing how <i>easily</i> TPS is eclipsed by [its predecessor](ga
 
 Its additions to the franchise don't feel that worthwhile.  The limited-oxygen mechanic isn't meaningful.  The butt-stomp attack isn't fun to use.  Low-gravity levels are occasionally cool, but feel under-served by the game's level design.  (Works best with boost pads!)  The laser guns -- okay, the laser guns are pretty radical.  I hope those stick around for Borderlands 3.
 
-And as for the narrative, it varies between lazy and uninspired (returning characters like Wilhelm and Nisha get roughly 30 seconds of <i>new</i> backstory), and trying too hard (Handsome Jack's character arc is about as graceful as <a href="http://knowyourmeme.com/memes/i-dont-like-sand">Anakin's distaste for sand</a>).
+And as for the narrative, it varies between lazy and uninspired (returning characters like Wilhelm and Nisha get roughly 30 seconds of <i>new</i> backstory), and trying too hard (Handsome Jack's character arc is about as graceful as <a href="https://knowyourmeme.com/memes/i-dont-like-sand">Anakin's distaste for sand</a>).
 
 Again, TPS isn't a "bad" game; headshotting fools and scrounging for upgrades is as fun as ever.  And the lasers are sweet.
 

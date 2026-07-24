@@ -25,7 +25,7 @@ That aside, the plot is adequately engaging -- and does a good job of supporting
 
 Timespinner's dialog tries to make its characters feel real and relatable, with mixed results.  The protagonist Lunais is a <i>sassy broad</i>, and the game lets her play into this role fairly well.  A few of the NPCs have strong personalities too, notably the duty-bound Haristel, who even goes through a character arc (if you do the side-quests for it).
 
-But for several NPCs, the game's only attempt at characterization is by talking about their sex lives.  A ton of the cast is gay or bisexual.  <a href="http://www.seinfeldscripts.com/TheOuting.htm">There's nothing wrong with that!</a>, but "is gay" <i>isn't a defining character trait</i>.  And, the fact that everyone talks so freely about who they've banged - regardless of affiliation - can feel kinda awkward.
+But for several NPCs, the game's only attempt at characterization is by talking about their sex lives.  A ton of the cast is gay or bisexual.  <a href="https://en.wikipedia.org/wiki/The_Outing">There's nothing wrong with that!</a>, but "is gay" <i>isn't a defining character trait</i>.  And, the fact that everyone talks so freely about who they've banged - regardless of affiliation - can feel kinda awkward.
 
 Thankfully, that awkward dialog isn't an important-enough part of the game to drag it down.  I wasn't as concerned about that as I was about the slightly-broken weapon upgrading system.  (I never even tried half the weapons, because the one I was using had gained so much experience already!)
 

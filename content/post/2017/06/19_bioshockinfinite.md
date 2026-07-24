@@ -17,7 +17,7 @@ Infinite's gameplay mechanics hardly need to be called out, but I'll call them o
 * Randomized equipment upgrades are almost never useful;
 * All of the vigors are criminally useless;
 * Paying to upgrade vigors is futile, since you'll need to spend money on weapon upgrades if you actually want to kill anything;
-* Redundant weapons, like the <a href="http://bioshock.wikia.com/wiki/BioShock_Infinite_weapons#Triple_R_Machine_Gun_.2F_Repeater">Machine Gun versus the Repeater</a>, feel like a cruel joke;
+* Redundant weapons, like the <a href="https://bioshock.fandom.com/wiki/BioShock_Infinite_weapons#Triple_R_Machine_Gun_.2F_Repeater">Machine Gun versus the Repeater</a>, feel like a cruel joke;
 * Replacing the hacking minigames with a lockpick item is borderline insulting;
 * You can only carry two weapons!?;
 * You can't save manually!;

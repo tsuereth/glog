@@ -14,7 +14,7 @@ The clever part is that dialog choices take place in real time, as other charact
 
 However, it isn't all that long before the <i>real</i> star of Oxenfree shows up: its supernatural, radio-signals, creepy-shit plot.  Dialog choices are still crucial, but they - and the excellent writing and voice acting - support the telling of a chilling, fascinating, and scary story.
 
-It's not a horror game in the Resident Evil sense, at all.  There aren't any moments that I would call "jump-scares."  But there are <i>events</i>, and <i>spooky noises</i>, and it's all very curious and foreboding and tense.  It's like the first half of <a href="http://www.imdb.com/title/tt4574334/">Stranger Things</a>.  Yeah, the good shit.
+It's not a horror game in the Resident Evil sense, at all.  There aren't any moments that I would call "jump-scares."  But there are <i>events</i>, and <i>spooky noises</i>, and it's all very curious and foreboding and tense.  It's like the first half of <a href="https://www.imdb.com/title/tt4574334/">Stranger Things</a>.  Yeah, the good shit.
 
 I would complain that Oxenfree has an occasional problem with backtracking; the map can be a little confusing, and the path you walk re-treads a fair amount of ground.  I was really hoping for the game to end just a bit faster than it did.
 
@@ -22,4 +22,4 @@ Consequently, I don't have any interest in playing through it a second time to e
 
 <b>Better than</b>: <game:Nine Hours, Nine Persons, Nine Doors>, <game:Until Dawn>  
 <b>Not as good as</b>: well, it's a rough comparison, but Oxenfree's story falls just short of <game:BioShock Infinite>'s  
-<b>Also better than</b>: <a href="http://www.imdb.com/title/tt0246578/">Donnie Darko</a>, and if you liked that, you'll absolutely love this.
+<b>Also better than</b>: <a href="https://www.imdb.com/title/tt0246578/">Donnie Darko</a>, and if you liked that, you'll absolutely love this.

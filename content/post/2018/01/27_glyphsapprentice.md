@@ -10,7 +10,7 @@ While the most striking thing about <game:Glyphs Apprentice> is how terrible its
 
 ![]($SiteBaseURL$glyphsapprentice_transmuter.jpg){width=400 height=225}
 
-Today I learned: both games are based closely on some of <tag:Zachtronics>' <a href="http://www.zachtronics.com/the-codex-of-alchemical-engineering/">pre-Steam work</a>.  Huh.
+Today I learned: both games are based closely on some of <tag:Zachtronics>' <a href="https://www.zachtronics.com/the-codex-of-alchemical-engineering/">pre-Steam work</a>.  Huh.
 
 From my limited time with it, Glyphs looks like it has a couple of advantages over Opus Magnum -- more puzzles, and more complexity in its later puzzles.  And while my biggest gripe with Opus Magnum was how "simple" it felt... this feels like the wrong kind of complexity.
 

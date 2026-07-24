@@ -12,6 +12,6 @@ Playing [the first Uncharted](game:Uncharted: Drake's Fortune) again on <platfor
 
 Oh, did I [already complain about this]($SiteBaseURL$2010/12/25/uncharted-drakes-fortune-2/)?  Huh.
 
-Yeah, it's still just <b>bad</b>.  (Here's hoping for that <a href="http://www.imdb.com/title/tt1464335/">film adaptation</a>.)
+Yeah, it's still just <b>bad</b>.  (Here's hoping for that <a href="https://www.imdb.com/title/tt1464335/">film adaptation</a>.)
 
 <i>Progress: Somewhere in the stupid jungle.  Who can tell.</i>

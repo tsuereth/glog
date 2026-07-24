@@ -12,6 +12,6 @@ At least so far, <game:Shenzhen I/O> feels a lot like a direct sequel to <game:T
 
 Time will tell, but at this point Shenzhen feels like a simpler game than its forebears, with puzzles that are more "cool" than puzzling.
 
-Minor digression, but <a href="http://store.steampowered.com/app/570490/">the solitaire minigame</a> is total bullshit.  The unstackable "dragon" cards really ruin it.  I guess I'm supposed to fully analyze the card layout before making a hasty play; but <i>ugh</i>.
+Minor digression, but <a href="https://store.steampowered.com/app/570490/">the solitaire minigame</a> is total bullshit.  The unstackable "dragon" cards really ruin it.  I guess I'm supposed to fully analyze the card layout before making a hasty play; but <i>ugh</i>.
 
 <i>Progress: "Prototyping new ideas"</i>
