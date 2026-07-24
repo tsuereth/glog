@@ -1745,13 +1745,6 @@
       "igdbMetadataName": "Budcat Creations"
     }
   ],
-  "Buena Vista Games": [
-    {
-      "igdbEntityId": 789,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Buena Vista Games"
-    }
-  ],
   "Buena Vista Interactive": [
     {
       "igdbEntityId": 23209,
@@ -8342,6 +8335,13 @@
       "igdbMetadataName": "Oceanhorn"
     }
   ],
+  "Oculus Studios": [
+    {
+      "igdbEntityId": 11586,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Oculus Studios"
+    }
+  ],
   "Ōkami": [
     {
       "igdbEntityId": 305,
@@ -12565,6 +12565,13 @@
       "igdbEntityId": 7098,
       "igdbEntityType": "IgdbCollection",
       "igdbMetadataName": "The Outer Worlds"
+    }
+  ],
+  "The Pokémon Company": [
+    {
+      "igdbEntityId": 1074,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "The Pokémon Company"
     }
   ],
   "The Quantum Astrophysicists Guild": [
