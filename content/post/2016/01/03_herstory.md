@@ -18,4 +18,4 @@ Although the end is a bit of an immersion-breaking let-down, the (brief) ride th
 
 <b>Better than</b>: <game:Gone Home>  
 <b>Not as good as</b>: <game:BioShock Infinite>, I guess?, I don't fuckin' know what's comparable.  
-<b>One specific complaint</b>: The "Delete Session Data" function <a href="http://steamcommunity.com/app/368370/discussions/0/530645446327020006/">deletes more than just "session" data</a>.  That was annoying.
+<b>One specific complaint</b>: The "Delete Session Data" function <a href="https://steamcommunity.com/app/368370/discussions/0/530645446327020006/">deletes more than just "session" data</a>.  That was annoying.

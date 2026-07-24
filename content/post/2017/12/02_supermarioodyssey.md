@@ -13,7 +13,7 @@ For another thing, you can use gold coins to <i>buy</i> an infinite amount of mo
 
 At any rate, there are 836 collectible moons - not counting triples! - and I got 816 of them.  The majority of those, I even got without help from the interweb!  And the game was really most fun when I was just wandering around a kingdom, looking for things I'd missed.
 
-The 20 moons I've got left are from challenges that I'm deeming <i>too fucking hard</i>, like footraces that require mastery of difficult shortcut-enabling jumps, or <a href="http://www.ign.com/wikis/super-mario-odyssey/Darker_Side">the final level that doesn't have any checkpoints</a>.
+The 20 moons I've got left are from challenges that I'm deeming <i>too fucking hard</i>, like footraces that require mastery of difficult shortcut-enabling jumps, or <a href="https://www.ign.com/wikis/super-mario-odyssey/Darker_Side">the final level that doesn't have any checkpoints</a>.
 
 And I collected all the purple coins for special outfits, which really seems like the most important in-game accomplishment.
 

@@ -25,4 +25,4 @@ Overall, Hacknet is <b>good enough</b>.  The immersiveness is imperfect, the UI 
 
 <b>Better than</b>: <game:Hacker Evolution>, <game:Hackmud>, <game:NITE Team 4> (the demo at least), <game:Uplink>  
 <b>Not as good as</b>: my perfect hacking game.  ... maybe someday.  
-<b>The internet-culture humor was amusing</b>: but surely there are more sources than just <a href="http://bash.org">bash.org</a>?  There have to be, right?  (Maybe not.)
+<b>The internet-culture humor was amusing</b>: but surely there are more sources than just <a href="https://bash-org-archive.com/">bash.org</a>?  There have to be, right?  (Maybe not.)

@@ -9,4 +9,4 @@ In 2014, when I <a href="https://tsuereth.com/glog/2014/06/29/im-just-gonna-stic
 
 At least, the info teased so far for Pirates of the Enchiridion sounds like just the thing I want.  It isn't being made by WayForward.  It's "An original Adventure Time story, all voiced by the show’s cast."  It has <i>pirates</i>.  BMO is <i>playable</i>?
 
-Dare I get my hopes up?  ... especially considering the publisher's <a href="http://www.metacritic.com/game/switch/ben-10">less-than-stellar record</a>?
+Dare I get my hopes up?  ... especially considering the publisher's <a href="https://www.metacritic.com/game/switch/ben-10">less-than-stellar record</a>?

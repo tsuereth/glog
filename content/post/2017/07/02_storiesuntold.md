@@ -7,7 +7,7 @@ platform = [ "PC" ]
 title = "...shall remain untold."
 +++
 
-The <a href="http://store.steampowered.com/app/558420/">free demo</a> for <game:Stories Untold> conveys a few messages very powerfully:
+The <a href="https://store.steampowered.com/app/558420/">free demo</a> for <game:Stories Untold> conveys a few messages very powerfully:
 
 1. These guys know how to write a creepy fucking story.  (I would say, moreso than <game:Until Dawn>'s admirable creep-factor.)  The combination of evocative text and well-directed graphical effects makes for a <i>very</i> powerfully-ominous presentation.
 

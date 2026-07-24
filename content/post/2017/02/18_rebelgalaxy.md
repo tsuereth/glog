@@ -33,4 +33,4 @@ But nevertheless, the upgrade chase and the space-truckin' soundtrack worked wel
 <b>Not as good as</b>: <game:Strike Suit Zero: Director's Cut>  
 <b>Maybe better, maybe worse than</b>: <game:Escape Velocity Nova>, but hard to compare them a decade apart
 
-<i>Progress: Finished the main story, bought a <a href="http://rebelgalaxy.gamepedia.com/Ships/Blackgate">Blackgate</a></i>
+<i>Progress: Finished the main story, bought a <a href="https://rebelgalaxy.fandom.com/wiki/Blackgate">Blackgate</a></i>

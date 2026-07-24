@@ -14,15 +14,15 @@ It feels like most of my list has been shifting from "releasing this year" to "r
 
 * <game:Chasm>, like A.N.N.E., looked like a fun little Kickstarter in May of 2013.  Campaign page says estimated delivery in May of 2014.  Their current estimate is "TBD."
 
-* I rarely spend time on Early Access games, but <game:CrossCode> had a good demo and hooked me ... in November of 2015.  Their last release-date estimate, from May of last year, <a href="http://steamcommunity.com/games/368340/announcements/detail/1271551010185546031">targeted Early 2018</a>.
+* I rarely spend time on Early Access games, but <game:CrossCode> had a good demo and hooked me ... in November of 2015.  Their last release-date estimate, from May of last year, <a href="https://steamcommunity.com/games/368340/announcements/detail/1271551010185546031">targeted Early 2018</a>.
 
 * <game:Factorio> similarly wowed me with its pre-release demo.  That was in November of 2014.  Their <a href="https://wiki.factorio.com/Roadmap/Coming_Releases">roadmap</a> looks like it's close to completion, but there doesn't seem to be a formal release date estimate.
 
-* <game:Indivisible> had a pretty cool demo while it was up on Indiegogo, in December of 2016.  "<a href="http://www.indivisiblegame.com/">Indivisible will be released in 2018.</a>"
+* <game:Indivisible> had a pretty cool demo while it was up on Indiegogo, in December of 2016.  "<a href="https://web.archive.org/web/20180117031821/https://www.indivisiblegame.com/">Indivisible will be released in 2018.</a>"
 
 * Even in the initial May, 2014 Indiegogo campaign, <game:Shaq Fu: A Legend Reborn> seemed like a bit of a joke.  The <a href="https://www.indiegogo.com/projects/shaq-fu-a-legend-reborn">campaign's last update</a>, in December of 2016, said "we're 99% there."
 
-* I liked the look and description of <game:Timespinner> in their Kickstarter campaign.  That was in August of 2014.  <a href="http://steamcommunity.com/games/368620/announcements/detail/1477601466706005583">As of September</a>: "For awhile now I've said that I hope to release in 2017 and it's looking like that's less likely to happen."
+* I liked the look and description of <game:Timespinner> in their Kickstarter campaign.  That was in August of 2014.  <a href="https://steamcommunity.com/games/368620/announcements/detail/1477601466706005583">As of September</a>: "For awhile now I've said that I hope to release in 2017 and it's looking like that's less likely to happen."
 
 Game development is hard; it is known.  And scheduling things is also pretty hard.  Even the industry's heavy-hitters <a href="https://www.vg247.com/2017/08/25/announcing-crackdown-3-too-early-was-a-mistake-xbox-exec-says/">screw this pooch</a> with some frequency.  But ... come on, really guys?
 

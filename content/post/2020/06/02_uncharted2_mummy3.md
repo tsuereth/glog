@@ -23,7 +23,7 @@ For the record, <i>Mummy: Jet Li</i> was <a href="https://www.rottentomatoes.com
 <i>The Mummy: Tomb of the Dragon Emperor</i>
 
 ![]($SiteBaseURL$uncharted2_yeti.jpg){width=620 height=275}  
-<i>Uncharted 2: Among Thieves (image credit: <a href="http://ilovetheyeti.blogspot.com/2011/11/yeti-arcade-uncharted-2-among-thieves.html">ilovetheyeti.blogspot.com</a>)</i>
+<i>Uncharted 2: Among Thieves (image credit: <a href="https://ilovetheyeti.blogspot.com/2011/11/yeti-arcade-uncharted-2-among-thieves.html">ilovetheyeti.blogspot.com</a>)</i>
 
 <b>Exhibit C</b>: Both the Dragon Emperor and Lazarevic seek eternal life in Shangri-La (which Nathan Drake calls "Shambhala").
 

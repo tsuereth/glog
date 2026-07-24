@@ -19,7 +19,7 @@ It feels janky.  And weird.
 
 I don't want to overplay my frustrations with the game, because I did have some fun with it, especially in the early and simple puzzles.  It just felt like, as the puzzles became more complicated, their ambitions outstripped the game's mechanical capabilities.
 
-The dull story didn't help, either.  (I'd recommend the first season of <a href="http://www.imdb.com/title/tt2543312">Halt and Catch Fire</a>, instead.)
+The dull story didn't help, either.  (I'd recommend the first season of <a href="https://www.imdb.com/title/tt2543312">Halt and Catch Fire</a>, instead.)
 
 Silicon Zeroes is somewhat short, unless you want to do the extra post-campaign puzzles -- which I didn't.  Longer than <game:Human Resource Machine>, if not by much.  By the time I saw the "ending" cinematic, I was very ready to stop playing, despite how many more puzzles I have left.
 

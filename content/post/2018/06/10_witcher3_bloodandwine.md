@@ -11,7 +11,7 @@ Most of [Witcher 3](game:The Witcher 3: Wild Hunt)'s environmental influences ha
 
 Toussaint, the setting of [Blood and Wine](game:The Witcher 3: Wild Hunt - Blood and Wine), is France.
 
-This association is made loud and clear from the outset of the expansion: in how Toussaint's knights speak and act, in the layout of the beautiful, vineyard-dotted landscape, in how the people of Beauclair are always talking about wines and cheeses, and happily, in French puns like the <a href="http://witcher.wikia.com/wiki/M%C3%A8re-Lachaiselongue_Cemetery">Mere-Lachaiselongue Cemetery</a>.
+This association is made loud and clear from the outset of the expansion: in how Toussaint's knights speak and act, in the layout of the beautiful, vineyard-dotted landscape, in how the people of Beauclair are always talking about wines and cheeses, and happily, in French puns like the <a href="https://witcher.fandom.com/wiki/M%C3%A8re-Lachaiselongue_Cemetery">Mere-Lachaiselongue Cemetery</a>.
 
 Wild Hunt and [Hearts of Stone](game:The Witcher 3: Wild Hunt - Hearts of Stone) had their fair shares of humor, but it really feels like CD Projekt let loose and enjoyed themselves this time.
 

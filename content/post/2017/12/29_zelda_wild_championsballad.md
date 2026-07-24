@@ -14,7 +14,7 @@ Champions' Ballad <i>starts</i> with a series of challenges using a new weapon, 
 
 There's just no fucking way that I can pull this off.
 
-I'd need to sink significant time back into rebuilding my atrophied Zelda muscles, before I'd be comfortable tackling the challenges in this DLC.  And there seems to be <a href="http://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild---the-champions-ballad">some critical consensus</a> that the rewards here, on their own, wouldn't really be worth that much effort.
+I'd need to sink significant time back into rebuilding my atrophied Zelda muscles, before I'd be comfortable tackling the challenges in this DLC.  And there seems to be <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild---the-champions-ballad">some critical consensus</a> that the rewards here, on their own, wouldn't really be worth that much effort.
 
 I'm actually more inclined to start over from scratch, and attempt the Champions' Ballad challenges more organically as part of Breath of the Wild's vast world of content.  I'd been planning on - eventually - doing a fresh playthrough on <platform:Switch>, anyway.
 

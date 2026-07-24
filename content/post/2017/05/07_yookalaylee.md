@@ -14,7 +14,7 @@ Games could get away with this in bygone eras, because there <i>weren't many oth
 
 Yooka-Laylee isn't <i>all</i> bad.  But even at its best, exploring its worlds and solving its puzzles just feels ... stale.  If you've played 3D character platformers before, Yooka-Laylee doesn't really offer anything new or interesting.
 
-I think it's pretty telling that Playtonic didn't notice its own game's <a href="http://www.playtonicgames.com/spit-n-polish/">glaring, archaic issues</a> until three weeks after release (April 11 -> May 2).  As much as I would like to believe in [time travel]($SiteBaseURL$2017/04/13/banjo-timewarpey/) -- I've come to the simpler and sadder conclusion that Playtonic's designers played and replayed the old Banjo games so thoroughly, that they merely lost perspective of the industry's last fifteen years.
+I think it's pretty telling that Playtonic didn't notice its own game's <a href="https://web.archive.org/web/20210922080445/https://www.playtonicgames.com/spit-n-polish/">glaring, archaic issues</a> until three weeks after release (April 11 -> May 2).  As much as I would like to believe in [time travel]($SiteBaseURL$2017/04/13/banjo-timewarpey/) -- I've come to the simpler and sadder conclusion that Playtonic's designers played and replayed the old Banjo games so thoroughly, that they merely lost perspective of the industry's last fifteen years.
 
 Anyway, having visited all five book-worlds and attained all of Yooka and Laylee's abilities (including the gameplay-trivializing ability to <i>fly</i>) - and still being under halfway to unlocking the final boss area (<b>100</b> pagies!) - I've got no reservations against calling it quits.
 

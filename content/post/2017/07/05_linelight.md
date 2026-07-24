@@ -8,7 +8,7 @@ rating = [ "Good" ]
 title = "Blinded by the Linelight"
 +++
 
-<i>"<game:Linelight> is a refreshingly inventive, minimalist puzzle-adventure game."</i> ... it's not as pretentious <a href="http://store.steampowered.com/app/469790/">as it sounds</a>, I promise.
+<i>"<game:Linelight> is a refreshingly inventive, minimalist puzzle-adventure game."</i> ... it's not as pretentious <a href="https://store.steampowered.com/app/469790/">as it sounds</a>, I promise.
 
 Linelight is a puzzle-platformer, although it doesn't immediately identify itself as such.  Imagine if a game like <game:Limbo> or <game:Braid> replaced the ground with a line, and your character with a line segment, and you'll basically have it.  It's <i>abstract</i>; like <game:Thomas Was Alone>, but without a narrator.  Just ... shapes.
 
