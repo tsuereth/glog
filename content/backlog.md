@@ -35,4 +35,3 @@ permalink = "/backlog"
 * <game:The Talos Principle II: Road to Elysium> (<platform:PC>)
 * <game:The Talos Principle: Reawakened> (<platform:PC>)
 * <game:Tiny Tina's Wonderlands> (<platform:PC>)
-* <game:U.V.S. Nirmana> (<platform:PC>)
