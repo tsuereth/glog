@@ -2620,6 +2620,13 @@
       "igdbMetadataName": "Crunchy Leaf Games"
     }
   ],
+  "Crunchyroll Games": [
+    {
+      "igdbEntityId": 20661,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Crunchyroll Games"
+    }
+  ],
   "Crusader Kings": [
     {
       "igdbEntityId": 540,
@@ -9966,11 +9973,11 @@
       "igdbMetadataName": "Ryan C. Gordon"
     }
   ],
-  "Ryu Ga Gotoku Studios": [
+  "Ryu Ga Gotoku Studio": [
     {
       "igdbEntityId": 19080,
       "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Ryu Ga Gotoku Studios"
+      "igdbMetadataName": "Ryu Ga Gotoku Studio"
     }
   ],
   "Saber Interactive": [
