@@ -11908,16 +11908,11 @@
       "igdbMetadataName": "Taito"
     }
   ],
-  "Take Two Interactive": [
+  "Take-Two Interactive": [
     {
       "igdbEntityId": 139,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Take-Two Interactive"
-    },
-    {
-      "igdbEntityId": 33682,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Take Two Interactive"
     }
   ],
   "Talawa Games": [
