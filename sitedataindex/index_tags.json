@@ -469,6 +469,13 @@
       "igdbMetadataName": "ak tronic"
     }
   ],
+  "ak tronic Software & Services": [
+    {
+      "igdbEntityId": 77162,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "ak tronic Software & Services"
+    }
+  ],
   "Aksys Games": [
     {
       "igdbEntityId": 2103,
@@ -8342,13 +8349,6 @@
       "igdbMetadataName": "Oceanhorn"
     }
   ],
-  "Oculus Studios": [
-    {
-      "igdbEntityId": 11586,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Oculus Studios"
-    }
-  ],
   "Ōkami": [
     {
       "igdbEntityId": 305,
@@ -8884,6 +8884,13 @@
       "igdbEntityId": 19335,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Plastic Fern Studios"
+    }
+  ],
+  "Plastic Wax": [
+    {
+      "igdbEntityId": 3142,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Plastic Wax"
     }
   ],
   "Platform": [
@@ -14065,6 +14072,13 @@
       "igdbEntityId": 22277,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Whoodoo EFX, Inc."
+    }
+  ],
+  "Wii": [
+    {
+      "igdbEntityId": 4530,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Wii"
     }
   ],
   "Wii Fit": [
