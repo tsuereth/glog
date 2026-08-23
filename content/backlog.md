@@ -28,7 +28,6 @@ permalink = "/backlog"
 * <game:Paper Mario: The Thousand-Year Door (2024)> (<platform:Switch>)
 * <game:Pragmata> (<platform:PC>)
 * <game:QuantumPulse 2A> (<platform:PC>)
-* <game:Shadows of the Damned: Hella Remastered> (<platform:PC>)
 * <game:Split Fiction> (<platform:PC>)
 * <game:Super Mario Bros. Wonder> (<platform:Switch>)
 * <game:Super Mario RPG (2023)> (<platform:Switch>)
