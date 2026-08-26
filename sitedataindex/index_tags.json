@@ -8265,11 +8265,11 @@
       "igdbMetadataName": "Novotrade"
     }
   ],
-  "NOW Production": [
+  "Now Production": [
     {
       "igdbEntityId": 1976,
       "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "NOW Production"
+      "igdbMetadataName": "Now Production"
     }
   ],
   "Ntreev Soft": [
@@ -8637,13 +8637,6 @@
       "igdbEntityId": 1650,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "PCB Productions"
-    }
-  ],
-  "Pearl Abyss": [
-    {
-      "igdbEntityId": 2746,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Pearl Abyss"
     }
   ],
   "Peggle": [
@@ -10502,6 +10495,13 @@
       "igdbEntityId": 21507,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Simon Fredholm"
+    }
+  ],
+  "SimTower": [
+    {
+      "igdbEntityId": 4761,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "SimTower"
     }
   ],
   "Simulator": [
@@ -13531,6 +13531,13 @@
       "igdbEntityId": 1819,
       "igdbEntityType": "IgdbCollection",
       "igdbMetadataName": "Until Dawn"
+    }
+  ],
+  "Update": [
+    {
+      "igdbEntityId": 14,
+      "igdbEntityType": "IgdbGameType",
+      "igdbMetadataName": "Update"
     }
   ],
   "Uppercut Games Pty Ltd": [

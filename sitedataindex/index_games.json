@@ -1274,10 +1274,10 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Crayon Physics Deluxe"
   },
-  "Crimson Desert": {
-    "igdbEntityId": 125633,
+  "Crimson Desert Enhanced": {
+    "igdbEntityId": 414979,
     "igdbEntityType": "IgdbGame",
-    "igdbGameName": "Crimson Desert"
+    "igdbGameName": "Crimson Desert Enhanced"
   },
   "CrossCells": {
     "igdbEntityId": 28924,
@@ -7059,6 +7059,11 @@
     "igdbEntityId": 403150,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "The Witcher 3: Wild Hunt - Songs of the Past"
+  },
+  "The Witcher 3: Wild Hunt Remastered": {
+    "igdbEntityId": 415005,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "The Witcher 3: Wild Hunt Remastered"
   },
   "The Witcher: Enhanced Edition": {
     "igdbEntityId": 20275,
