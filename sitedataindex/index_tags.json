@@ -3910,11 +3910,11 @@
       "igdbMetadataName": "Engine Software"
     }
   ],
-  "Enix Corporation": [
+  "Enix": [
     {
-      "igdbEntityId": 1854,
+      "igdbEntityId": 26323,
       "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Enix Corporation"
+      "igdbMetadataName": "Enix"
     }
   ],
   "Entertainment Software Publishing": [
@@ -8637,6 +8637,13 @@
       "igdbEntityId": 1650,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "PCB Productions"
+    }
+  ],
+  "Pearl Abyss": [
+    {
+      "igdbEntityId": 2746,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Pearl Abyss"
     }
   ],
   "Peggle": [
