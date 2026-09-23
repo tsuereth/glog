@@ -6633,6 +6633,13 @@
       "igdbMetadataName": "Loki Software"
     }
   ],
+  "Lollipop Chainsaw": [
+    {
+      "igdbEntityId": 12480,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Lollipop Chainsaw"
+    }
+  ],
   "LookAtMyGame": [
     {
       "igdbEntityId": 8287,
@@ -7349,6 +7356,13 @@
       "igdbEntityId": 53,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Microsoft Game Studios"
+    }
+  ],
+  "Microsoft Game Studios Japan": [
+    {
+      "igdbEntityId": 81488,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Microsoft Game Studios Japan"
     }
   ],
   "Microsoft Studios": [
@@ -13537,6 +13551,11 @@
     {
       "igdbEntityId": 1819,
       "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Until Dawn"
+    },
+    {
+      "igdbEntityId": 8315,
+      "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "Until Dawn"
     }
   ],
