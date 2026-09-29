@@ -10057,6 +10057,13 @@
       "igdbMetadataName": "Sandfall Interactive"
     }
   ],
+  "Santa Monica Studio": [
+    {
+      "igdbEntityId": 4357,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Santa Monica Studio"
+    }
+  ],
   "Sanzaru Games": [
     {
       "igdbEntityId": 1898,
@@ -10429,13 +10436,6 @@
       "igdbEntityId": 10692,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "SIE Japan Studio"
-    }
-  ],
-  "SIE Santa Monica Studio": [
-    {
-      "igdbEntityId": 4357,
-      "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "SIE Santa Monica Studio"
     }
   ],
   "Sierra": [
@@ -11194,18 +11194,18 @@
       "igdbMetadataName": "Square Enix Creative Business Unit III"
     }
   ],
-  "Square Enix Creative Studio I": [
+  "Square Enix Creative Studio 1": [
     {
       "igdbEntityId": 72234,
       "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Square Enix Creative Studio I"
+      "igdbMetadataName": "Square Enix Creative Studio 1"
     }
   ],
-  "Square Enix Creative Studio III": [
+  "Square Enix Creative Studio 3": [
     {
       "igdbEntityId": 54647,
       "igdbEntityType": "IgdbCompany",
-      "igdbMetadataName": "Square Enix Creative Studio III"
+      "igdbMetadataName": "Square Enix Creative Studio 3"
     }
   ],
   "Square Enix Europe": [
