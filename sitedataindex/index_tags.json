@@ -216,6 +216,13 @@
       "igdbMetadataName": "87eleven"
     }
   ],
+  "8FLOOR": [
+    {
+      "igdbEntityId": 17561,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "8FLOOR"
+    }
+  ],
   "8monkey Labs": [
     {
       "igdbEntityId": 2955,
@@ -6766,6 +6773,13 @@
       "igdbMetadataName": "M2"
     }
   ],
+  "Machinarium": [
+    {
+      "igdbEntityId": 15696,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Machinarium"
+    }
+  ],
   "MachineGames": [
     {
       "igdbEntityId": 1242,
@@ -10031,6 +10045,11 @@
   ],
   "Sam & Max": [
     {
+      "igdbEntityId": 15718,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Sam & Max"
+    },
+    {
       "igdbEntityId": 2281,
       "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "Sam & Max"
@@ -10752,6 +10771,13 @@
       "igdbEntityId": 4699,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Soldak Entertainment"
+    }
+  ],
+  "Somer Games": [
+    {
+      "igdbEntityId": 18268,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Somer Games"
     }
   ],
   "Somnium Games d.o.o.": [
