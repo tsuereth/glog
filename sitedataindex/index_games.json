@@ -955,6 +955,11 @@
     "igdbGameName": "Castlevania: Aria of Sorrow",
     "nameAppendReleaseYear": true
   },
+  "Castlevania: Belmont's Curse": {
+    "igdbEntityId": 389434,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Castlevania: Belmont's Curse"
+  },
   "Castlevania: Circle of the Moon": {
     "igdbEntityId": 1132,
     "igdbEntityType": "IgdbGame",
@@ -1854,6 +1859,11 @@
     "igdbEntityId": 5378,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Ecco the Dolphin"
+  },
+  "Echo Weaver": {
+    "igdbEntityId": 290107,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Echo Weaver"
   },
   "Elebits": {
     "igdbEntityId": 2747,
@@ -6549,6 +6559,11 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "The Basement Collection"
   },
+  "The Blood of Dawnwalker": {
+    "igdbEntityId": 282831,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "The Blood of Dawnwalker"
+  },
   "The Bridge": {
     "igdbEntityId": 8440,
     "igdbEntityType": "IgdbGame",
@@ -6877,6 +6892,11 @@
       "XBOX"
     ],
     "nameAppendReleasePlatforms": true
+  },
+  "The Lord of the Rings: War in the North - Legacy Edition": {
+    "igdbEntityId": 413144,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "The Lord of the Rings: War in the North - Legacy Edition"
   },
   "The Lost Vikings (SFAM, SNES)": {
     "igdbEntityId": 454,
@@ -7798,6 +7818,11 @@
     "igdbEntityId": 2264,
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Zack & Wiki: Quest for Barbaros' Treasure"
+  },
+  "Zero Parades: Director's Cut": {
+    "igdbEntityId": 421057,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Zero Parades: Director's Cut"
   },
   "Zigfrak": {
     "igdbEntityId": 16771,

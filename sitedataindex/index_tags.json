@@ -490,6 +490,13 @@
       "igdbMetadataName": "Aksys Games"
     }
   ],
+  "Akupara Games": [
+    {
+      "igdbEntityId": 14952,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Akupara Games"
+    }
+  ],
   "Alan Wake": [
     {
       "igdbEntityId": 511,
@@ -4009,6 +4016,13 @@
       "igdbEntityId": 600,
       "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "Evil Dead"
+    }
+  ],
+  "Evil Empire": [
+    {
+      "igdbEntityId": 39329,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Evil Empire"
     }
   ],
   "Evil Genius": [
@@ -7646,6 +7660,13 @@
       "igdbMetadataName": "Moon Studios"
     }
   ],
+  "Moonlight Kids": [
+    {
+      "igdbEntityId": 21254,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Moonlight Kids"
+    }
+  ],
   "Morbidware": [
     {
       "igdbEntityId": 16202,
@@ -7665,6 +7686,13 @@
       "igdbEntityId": 3014,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "MOSS Co., Ltd."
+    }
+  ],
+  "Motion Twin": [
+    {
+      "igdbEntityId": 11960,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Motion Twin"
     }
   ],
   "Moving Out": [
@@ -9594,6 +9622,13 @@
       "igdbEntityId": 6448,
       "igdbEntityType": "IgdbCollection",
       "igdbMetadataName": "Rebel Galaxy"
+    }
+  ],
+  "Rebel Wolves": [
+    {
+      "igdbEntityId": 52205,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Rebel Wolves"
     }
   ],
   "Rebellion Developments": [
@@ -13817,6 +13852,13 @@
       "igdbEntityId": 794,
       "igdbEntityType": "IgdbCompany",
       "igdbMetadataName": "Virtuos"
+    }
+  ],
+  "Virtuos Games": [
+    {
+      "igdbEntityId": 29744,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Virtuos Games"
     }
   ],
   "VIS Entertainment": [
