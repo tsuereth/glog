@@ -5063,6 +5063,13 @@
       "igdbMetadataName": "Gunfire Games"
     }
   ],
+  "Gunpey": [
+    {
+      "igdbEntityId": 6750,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Gunpey"
+    }
+  ],
   "Gunstar Heroes": [
     {
       "igdbEntityId": 906,
