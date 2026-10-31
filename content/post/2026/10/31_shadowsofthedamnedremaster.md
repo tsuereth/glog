@@ -1,6 +1,5 @@
 +++
-date = "2026-10-31T14:58:59.9659574-07:00"
-draft = true
+date = "2026-10-31T16:28:20.2151170-07:00"
 title = "An Aging Game's Pale Shadow"
 category = [ "Playing A Game" ]
 game = [ "Shadows of the Damned: Hella Remastered" ]
