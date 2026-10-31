@@ -40,4 +40,5 @@ permalink = "/backlog"
 * <game:The Talos Principle: Reawakened> (<platform:PC>)
 * <game:Tiny Tina's Wonderlands> (<platform:PC>)
 * <game:The Witcher 3: Wild Hunt Remastered> (<platform:PC>)
+* <game:The Wolf Among Us Remastered> (<platform:PC>)
 * <game:Zero Parades: Director's Cut> (<platform:PC>)

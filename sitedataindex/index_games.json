@@ -7107,6 +7107,11 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "The Wolf Among Us"
   },
+  "The Wolf Among Us Remastered": {
+    "igdbEntityId": 404716,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "The Wolf Among Us Remastered"
+  },
   "The Wonderful 101": {
     "igdbEntityId": 2639,
     "igdbEntityType": "IgdbGame",
