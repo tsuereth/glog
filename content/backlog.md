@@ -14,7 +14,6 @@ permalink = "/backlog"
 * <game:Deep Rock Galactic: Rogue Core> (<platform:PC>)
 * <game:Echo Weaver> (<platform:PC>)
 * <game:Final Fantasy Tactics: The Ivalice Chronicles> (<platform:PC>)
-* <game:Ghost of Tsushima: Director's Cut> (<platform:PC>)
 * <game:Ghost of Yotei> (<platform:PS5>)
 * <game:Hollow Knight: Silksong> (<platform:PC>)
 * <game:Hyrule Warriors: Age of Calamity> (<platform:Switch>)
