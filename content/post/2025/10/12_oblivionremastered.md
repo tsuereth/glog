@@ -40,4 +40,4 @@ The [Shivering Isles](game:The Elder Scrolls IV: Shivering Isles) await!
 
 **Better than**: <game:Fallout 4>, <game:The Outer Worlds>, probably attempting to replay the original.  
 **Not as good as**: <game:Baldur's Gate III>, <game:The Elder Scrolls V: Skyrim - Special Edition>, <game:The Witcher 3: Wild Hunt>  
-**Becoming more aware of Bethesda's patterns**: *has* dulled my enthusiasm for <game:Starfield>, and made me a little more skeptical about <game:The Elder Scrolls VI>.
+**Becoming more aware of Bethesda's patterns**: *has* dulled my enthusiasm for <game:Starfield>, and made me a little more skeptical about <game:The Elder Scrolls VI: Sentinel>.
