@@ -20,4 +20,4 @@ But it's nevertheless an exciting counterpoint, an engaging and self-contained s
 
 **Better than**: <game:Fallout 4: Far Harbor>  
 **Not as good as**: <game:The Elder Scrolls V: Skyrim - Dawnguard>, <game:The Elder Scrolls V: Skyrim - Dragonborn>  
-**I'm still not sure what I should expect**: from <game:The Elder Scrolls VI>; hopefully more focused stories and more strong personalities, but if not, at least there'll always be plenty of these remasters!
+**I'm still not sure what I should expect**: from <game:The Elder Scrolls VI: Sentinel>; hopefully more focused stories and more strong personalities, but if not, at least there'll always be plenty of these remasters!
