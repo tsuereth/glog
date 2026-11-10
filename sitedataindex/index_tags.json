@@ -792,6 +792,13 @@
       "igdbMetadataName": "Arika"
     }
   ],
+  "Arkane Austin": [
+    {
+      "igdbEntityId": 35055,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "Arkane Austin"
+    }
+  ],
   "Arkane Studios": [
     {
       "igdbEntityId": 19,
@@ -4751,6 +4758,13 @@
       "igdbMetadataName": "Gears of War"
     }
   ],
+  "GemCraft": [
+    {
+      "igdbEntityId": 4046,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "GemCraft"
+    }
+  ],
   "genDESIGN": [
     {
       "igdbEntityId": 13071,
@@ -5742,6 +5756,13 @@
       "igdbEntityId": 32,
       "igdbEntityType": "IgdbGenre",
       "igdbMetadataName": "Indie"
+    }
+  ],
+  "IndieArk": [
+    {
+      "igdbEntityId": 34947,
+      "igdbEntityType": "IgdbCompany",
+      "igdbMetadataName": "IndieArk"
     }
   ],
   "IndiePub": [
