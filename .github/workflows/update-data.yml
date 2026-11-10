@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   # Run on a schedule to keep data updated even if there's no new content.
   schedule:
-    - cron: '0 12 * * 5'
+    - cron: '0 12 * * 4'
 
 jobs:
   UpdateData:
