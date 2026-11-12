@@ -1,13 +1,24 @@
-name: Deploy
+name: Update
 
 on:
   workflow_dispatch:
+    inputs:
+      force_deploy:
+        type: choice
+        description: Force Deployment
+        default: 'no'
+        options:
+          - 'no'
+          - 'yes'
   push:
     branches:
       - main
+  # Run on a schedule to keep data updated even if there's no new content.
+  schedule:
+    - cron: '0 12 * * 4'
 
 jobs:
-  DeploySite:
+  UpdateSite:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -46,7 +57,38 @@ jobs:
           path: 'live-diff.txt'
           archive: false
 
+      - name: AuthorizeGlogAutoUpdateApp
+        uses: actions/create-github-app-token@v3
+        id: app-token
+        with:
+          client-id: ${{ secrets.GLOG_AUTO_UPDATE_CLIENT_ID }}
+          private-key: ${{ secrets.GLOG_AUTO_UPDATE_PRIVATE_KEY }}
+
+      - name: SetupPullRequestValues
+        run: |
+          echo "GLOG_PR_BRANCH=autoupdate-$GITHUB_RUN_NUMBER.$GITHUB_RUN_ATTEMPT" >> "$GITHUB_ENV"
+          echo "GLOG_PR_DESCRIPTION=Automatically-updated content." >> "$GITHUB_ENV"
+
+      - name: CreatePullRequest
+        uses: peter-evans/create-pull-request@v8
+        id: pull-request
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          sign-commits: true
+          commit-message: ${{ env.GLOG_PR_DESCRIPTION }}
+          title: ${{ env.GLOG_PR_DESCRIPTION }}
+          body: ${{ env.GLOG_PR_DESCRIPTION }}
+          branch: ${{ env.GLOG_PR_BRANCH }}
+          base: main
+          add-paths: |
+            content
+            sitedataindex
+
+      # Only execute a deployment if the above hasn't created a PR, i.e.
+      # only deploy if already-committed metadata is up to date.
+      # (Or, if an input argument forces deployment anyway.)
       - name: Deploy
+        if: ${{ steps.pull-request.outputs.pull-request-url == '' || inputs.force_deploy == 'yes' }}
         env:
           DEPLOY_GLOG_PRIVATE_KEY: ${{ secrets.DEPLOY_GLOG_PRIVATE_KEY }}
         run: |
