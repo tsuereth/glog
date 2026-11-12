@@ -6794,6 +6794,13 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "The Legend of Zelda: Ocarina of Time - Master Quest"
   },
+  "The Legend of Zelda: Ocarina of Time (2026)": {
+    "igdbEntityId": 405460,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameFirstReleaseYear": 2026,
+    "igdbGameName": "The Legend of Zelda: Ocarina of Time",
+    "nameAppendReleaseYear": true
+  },
   "The Legend of Zelda: Ocarina of Time 3D": {
     "igdbEntityId": 1039,
     "igdbEntityType": "IgdbGame",

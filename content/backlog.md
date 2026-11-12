@@ -21,6 +21,7 @@ permalink = "/backlog"
 * <game:The Last of Us Part I> (<platform:PC>)
 * <game:The Last of Us Part II Remastered> (<platform:PC>)
 * <game:The Legend of Zelda: Echoes of Wisdom> (<platform:Switch>)
+* <game:The Legend of Zelda: Ocarina of Time (2026)> (<platform:Switch 2>)
 * <game:LEGO Batman: Legacy of the Dark Knight> (<platform:PC>)
 * <game:The Lord of the Rings: War in the North - Legacy Edition> (<platform:PC>)
 * <game:Marvel's Spider-Man 2> (<platform:PC>)
