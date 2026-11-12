@@ -2,9 +2,9 @@
 date = "2025-10-11T09:48:28.3233283-07:00"
 title = "Across the Yoko-Taro-Verse"
 category = [ "Video Game Theory" ]
-game = [ "NieR: Automata" ]
+game = [ "NieR:Automata" ]
 +++
-I knew going into <game:NieR: Automata>, last year, that its full story was a multiple-playthroughs affair -- and since I tapped out after one playthrough, I never did get that full story. "Might be better as an anime series," [I mused]($SiteBaseURL$2024/09/15/nier-but-far/).
+I knew going into <game:NieR:Automata>, last year, that its full story was a multiple-playthroughs affair -- and since I tapped out after one playthrough, I never did get that full story. "Might be better as an anime series," [I mused]($SiteBaseURL$2024/09/15/nier-but-far/).
 
 And [yeah, it is](https://www.imdb.com/title/tt18311412/).
 

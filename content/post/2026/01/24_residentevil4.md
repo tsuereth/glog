@@ -30,6 +30,6 @@ This is just the experience I was hoping for: exploring the map to collect treas
 
 Action-adventure games have come a long way since 2005, and so the now-classic campaign of Resident Evil 4 doesn't stand quite as tall as it once did. But this remake does an exceptional, commendable job of re-creating that journey in a way that *plays* like it's brand new.
 
-**Better than**: <game:NieR: Automata>  
+**Better than**: <game:NieR:Automata>  
 **Not as good as**: <game:Uncharted 2: Among Thieves Remastered>, <game:Uncharted 3: Drake's Deception Remastered>  
 **Although I appreciate the New Game Plus option to become even more overpowered**: I'll probably just settle for the additional content in [Separate Ways](game:Resident Evil 4: Separate Ways).
