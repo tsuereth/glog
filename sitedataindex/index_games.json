@@ -4113,6 +4113,11 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Monkey Wrench"
   },
+  "Monster Hunter Wilds": {
+    "igdbEntityId": 279661,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Monster Hunter Wilds"
+  },
   "Moonbase Alpha": {
     "igdbEntityId": 10264,
     "igdbEntityType": "IgdbGame",

@@ -7681,6 +7681,18 @@
       "igdbMetadataName": "Monster Games"
     }
   ],
+  "Monster Hunter": [
+    {
+      "igdbEntityId": 2948,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Monster Hunter"
+    },
+    {
+      "igdbEntityId": 824,
+      "igdbEntityType": "IgdbFranchise",
+      "igdbMetadataName": "Monster Hunter"
+    }
+  ],
   "Moon Studios": [
     {
       "igdbEntityId": 5052,
