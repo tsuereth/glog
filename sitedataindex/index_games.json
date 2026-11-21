@@ -2529,6 +2529,11 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "Grand Theft Auto V"
   },
+  "Grand Theft Auto VI": {
+    "igdbEntityId": 52189,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameName": "Grand Theft Auto VI"
+  },
   "Grand Theft Auto: Chinatown Wars": {
     "igdbEntityId": 3270,
     "igdbEntityType": "IgdbGame",
