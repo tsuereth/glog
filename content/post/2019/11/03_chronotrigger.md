@@ -2,7 +2,7 @@
 date = "2019-11-03T21:40:57-08:00"
 title = "Triggered"
 category = [ "Playing A Game" ]
-game = [ "Chrono Trigger" ]
+game = [ "Chrono Trigger (2018)" ]
 platform = [ "PC" ]
 rating = [ "Awesome" ]
 +++

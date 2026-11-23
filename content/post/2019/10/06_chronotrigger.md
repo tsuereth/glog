@@ -2,7 +2,7 @@
 date = "2019-10-06T11:45:12-07:00"
 title = "Blast to the Past"
 category = [ "Playing A Game" ]
-game = [ "Chrono Trigger" ]
+game = [ "Chrono Trigger (2018)" ]
 platform = [ "PC" ]
 rating = [ "Awesome" ]
 +++
