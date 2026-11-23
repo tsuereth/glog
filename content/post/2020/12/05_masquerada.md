@@ -38,7 +38,7 @@ Considering that Masquerada's writing and story presentation are far and away th
 It makes me feel a little bad for the people who worked on those parts of the game; their admirable design considerations and attention to detail didn't really pay off.  But Masquerada was nevertheless a satisfying experience, due to its well-grounded, and well-told, fantasy story.
 
 <b>Better than</b>: <game:Analogue: A Hate Story>, <game:CrossCode>, <game:Final Fantasy XII>  
-<b>Not as good as</b>: <game:Chrono Trigger>, <game:Indivisible>  
+<b>Not as good as</b>: <game:Chrono Trigger (2018)>, <game:Indivisible>  
 <b>It's awkward to compare it to</b>: other real-time-with-pause RPGs like <tag:Baldur's Gate> or <tag:Dragon Age>, because Masquerada's combat is such an <i>insignificant</i> part of the game overall.
 
 <i>Progress: Finished on Normal, got ... most? of the lore pickups.</i>

@@ -2,7 +2,7 @@
 date = "2019-10-06T11:45:12-07:00"
 title = "Blast to the Past"
 category = [ "Playing A Game" ]
-game = [ "Chrono Trigger" ]
+game = [ "Chrono Trigger (2018)" ]
 platform = [ "PC" ]
 rating = [ "Awesome" ]
 +++
@@ -15,7 +15,7 @@ I'm not blind to its imperfections -- I know that it's too easy to get lost if y
 
 And even though I'll never get to experience Chrono Trigger "for the first time" again, I think I'll always have the same grin on my face when I meet Robo, or storm Magus's castle, or retrieve the Epoch.
 
-... it's a bit of a shame that the PC port didn't receive the love this game clearly deserves.  And while <a href="https://www.pcgamer.com/five-months-after-its-woeful-pc-release-chrono-trigger-receives-its-final-patch/">it's gotten better</a>, the current state of this version still isn't ideal.  (Button responsiveness on the end-of-battle text still feels very fuzzy, and the rendering quality on pop-up damage numbers is surprisingly bad.)  But it's <b>good enough</b> to enjoy the game again, and again, and again.
+... it's a bit of a shame that the PC port - of the [mobile port](game:Chrono Trigger (2011) (Android, iOS)), of the [DS port](game:Chrono Trigger (2008)), of the [Playstation port](game:Chrono Trigger (1999)) - didn't receive the love this game clearly deserves.  And while <a href="https://www.pcgamer.com/five-months-after-its-woeful-pc-release-chrono-trigger-receives-its-final-patch/">it's gotten better</a>, the current state of this version still isn't ideal.  (Button responsiveness on the end-of-battle text still feels very fuzzy, and the rendering quality on pop-up damage numbers is surprisingly bad.)  But it's <b>good enough</b> to enjoy the game again, and again, and again.
 
 I could really only add that this is my first time playing a version of the game with the <a href="https://www.chronowiki.org/wiki/Full_Motion_Video">animated cutscenes</a>, and they feel pretty damned superfluous.  The game flows better without them.
 

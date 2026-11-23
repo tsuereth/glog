@@ -1112,6 +1112,32 @@
     "igdbGameName": "Chrono Trigger",
     "nameAppendReleaseYear": true
   },
+  "Chrono Trigger (2008)": {
+    "igdbEntityId": 20398,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameFirstReleaseYear": 2008,
+    "igdbGameName": "Chrono Trigger",
+    "nameAppendReleaseYear": true
+  },
+  "Chrono Trigger (2011) (Android, iOS)": {
+    "igdbEntityId": 89828,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameFirstReleaseYear": 2011,
+    "igdbGameName": "Chrono Trigger",
+    "igdbGameReleasePlatformNames": [
+      "Android",
+      "iOS"
+    ],
+    "nameAppendReleasePlatforms": true,
+    "nameAppendReleaseYear": true
+  },
+  "Chrono Trigger (2018)": {
+    "igdbEntityId": 206320,
+    "igdbEntityType": "IgdbGame",
+    "igdbGameFirstReleaseYear": 2018,
+    "igdbGameName": "Chrono Trigger",
+    "nameAppendReleaseYear": true
+  },
   "Chronology": {
     "igdbEntityId": 10087,
     "igdbEntityType": "IgdbGame",
