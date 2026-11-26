@@ -19,5 +19,5 @@ Which I did! Because I'm a sucker for this formula, for the popcorn-like collect
 LEGO Horizon Adventures *isn't a bad game,* it's a perfectly playable iteration of the tried-and-true LEGO game formula established by <tag:Traveller's Tales>. But a lack of meaningful connection to Horizon, and an underwhelming amount of content, make it one of that formula's weaker entries.
 
 **Better than**: ... <game:Hob> ?  
-**Not as good as**: <game:LEGO City Undercover>, <game:LEGO Marvel's Avengers>, <game:The LEGO Movie Videogame>  
+**Not as good as**: <game:LEGO City Undercover>, <game:LEGO Marvel's Avengers (3DS, Mac, PC, PS3, PS4, Vita, WiiU, X360, XONE)>, <game:The LEGO Movie Videogame>  
 **Weirdly, though**: LEGO Horizon *was not* developed by Traveller's Tales, instead being co-developed by [Guerrilla](tag:Guerrilla Games) and partner <tag:Studio Gobo>. Kinda odd that they mimicked the button-mashy parts of TT's games, without the open-world or huge-character-library parts.

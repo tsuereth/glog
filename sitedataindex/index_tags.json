@@ -2634,6 +2634,13 @@
       "igdbMetadataName": "CrossCode"
     }
   ],
+  "CrossworDS": [
+    {
+      "igdbEntityId": 15740,
+      "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "CrossworDS"
+    }
+  ],
   "Croteam": [
     {
       "igdbEntityId": 414,
@@ -5423,6 +5430,11 @@
     {
       "igdbEntityId": 5702,
       "igdbEntityType": "IgdbCollection",
+      "igdbMetadataName": "Hollow Knight"
+    },
+    {
+      "igdbEntityId": 8542,
+      "igdbEntityType": "IgdbFranchise",
       "igdbMetadataName": "Hollow Knight"
     }
   ],

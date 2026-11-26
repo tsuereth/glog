@@ -3301,10 +3301,22 @@
     "igdbEntityType": "IgdbGame",
     "igdbGameName": "LEGO Marvel Super Heroes"
   },
-  "LEGO Marvel's Avengers": {
+  "LEGO Marvel's Avengers (3DS, Mac, PC, PS3, PS4, Vita, WiiU, X360, XONE)": {
     "igdbEntityId": 11069,
     "igdbEntityType": "IgdbGame",
-    "igdbGameName": "LEGO Marvel's Avengers"
+    "igdbGameName": "LEGO Marvel's Avengers",
+    "igdbGameReleasePlatformNames": [
+      "3DS",
+      "Mac",
+      "PC",
+      "PS3",
+      "PS4",
+      "Vita",
+      "WiiU",
+      "X360",
+      "XONE"
+    ],
+    "nameAppendReleasePlatforms": true
   },
   "LEGO Star Wars: The Video Game (Mac, NGC, PC, PS2, XBOX)": {
     "igdbEntityId": 2681,
