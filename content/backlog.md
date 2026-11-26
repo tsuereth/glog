@@ -29,7 +29,6 @@ permalink = "/backlog"
 * <game:Marvel's Spider-Man Remastered> (<platform:PC>)
 * <game:Marvel's Spider-Man: Miles Morales> (<platform:PC>)
 * <game:Metroid Dread> (<platform:Switch>)
-* <game:Metroid Prime 4: Beyond> (<platform:Switch>)
 * <game:Metroid Prime Remastered> (<platform:Switch>)
 * <game:Oxenfree II: Lost Signals> (<platform:PC>)
 * <game:Paper Mario: The Thousand-Year Door (2024)> (<platform:Switch>)
